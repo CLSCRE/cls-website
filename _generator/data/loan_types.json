@@ -1,0 +1,140 @@
+[
+  {
+    "slug": "permanent-loans",
+    "name": "Permanent Loans",
+    "short_name": "Permanent",
+    "headline": "Long-Term Permanent Commercial Mortgage Financing",
+    "description": "Permanent loans provide long-term, fixed-rate financing for stabilized commercial real estate assets. These loans typically feature 5 to 25-year terms with competitive rates from banks, life insurance companies, CMBS conduits, and agency lenders. Ideal for cash-flowing properties with stable occupancy, permanent financing locks in predictable debt service and maximizes long-term returns.",
+    "description_extended": "As the most common form of commercial real estate financing, permanent loans serve as the backbone of investment strategy for owners seeking to hold and operate income-producing properties. Sources include traditional banks, credit unions, life insurance companies, CMBS lenders, and government-sponsored agencies like Fannie Mae and Freddie Mac for multifamily assets. Each source offers different advantages in terms of rate, leverage, flexibility, and prepayment structure.",
+    "key_features": {
+      "loan_amount": "$500K - $100M+",
+      "term": "5 - 25 Years",
+      "rates": "5.34% - 8.25%",
+      "ltv": "Up to 75% LTV",
+      "amortization": "25 - 30 Years",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": ["Banks", "Credit Unions", "Life Insurance Companies", "CMBS Conduits", "Fannie Mae / Freddie Mac", "Debt Funds"],
+    "ideal_for": ["Stabilized multifamily apartments", "Industrial warehouses and distribution centers", "Anchored retail shopping centers", "Net lease properties with credit tenants", "Office buildings with strong occupancy", "Mixed-use assets with proven cash flow"],
+    "seo": {
+      "title": "Permanent Commercial Loans | CLS CRE",
+      "meta_description": "Long-term permanent commercial mortgage financing from $500K to $100M+. Competitive rates from banks, life insurance companies, CMBS, and agency lenders. Get a quote today.",
+      "h1": "Permanent Commercial Real Estate Loans"
+    }
+  },
+  {
+    "slug": "construction-loans",
+    "name": "Construction Loans",
+    "short_name": "Construction",
+    "headline": "Ground-Up Construction & Renovation Financing",
+    "description": "Construction loans fund ground-up development and major renovation projects for commercial real estate. These short-term facilities typically feature 12 to 36-month terms with interest-only payments during the build period, funded through progressive draws as construction milestones are met. Lenders include banks, debt funds, and specialized construction lenders.",
+    "description_extended": "Construction financing is inherently higher risk than permanent lending, which means lender selection and deal structuring are critical. Experienced borrowers with strong track records can access competitive bank construction loans, while more complex or speculative projects may require debt fund capital. Key considerations include loan-to-cost ratios, interest reserves, completion guarantees, and the exit strategy — whether that's a permanent loan take-out, sale, or refinance.",
+    "key_features": {
+      "loan_amount": "$1M - $100M+",
+      "term": "12 - 36 Months",
+      "rates": "6.79% - 13.04%",
+      "ltc": "Up to 80% LTC",
+      "structure": "Interest-Only, Progressive Draws",
+      "recourse": "Recourse Typical, Non-Recourse Available"
+    },
+    "lender_sources": ["Banks", "Debt Funds", "Private Lenders", "Credit Unions", "CDFI Lenders"],
+    "ideal_for": ["Ground-up apartment developments", "Industrial warehouse construction", "Build-to-suit retail and office", "Hotel development and rehabilitation", "Fix-and-flip residential projects", "Major property renovations and repositioning"],
+    "seo": {
+      "title": "Construction Loans for Commercial Real Estate | CLS CRE",
+      "meta_description": "Commercial construction financing from $1M to $100M+. Ground-up development, renovation, and build-to-suit loans. Banks, debt funds, and private lenders. Get a quote.",
+      "h1": "Commercial Construction Loans"
+    }
+  },
+  {
+    "slug": "bridge-loans",
+    "name": "Bridge Loans",
+    "short_name": "Bridge",
+    "headline": "Short-Term Bridge Financing for Transitional Assets",
+    "description": "Bridge loans provide short-term financing for commercial properties in transition — whether during lease-up, renovation, repositioning, or acquisition. These 6 to 36-month facilities offer speed and flexibility that traditional lenders cannot match, making them ideal for time-sensitive opportunities and value-add strategies.",
+    "description_extended": "Bridge lending fills the gap between acquisition or current state and permanent financing eligibility. Common use cases include acquiring a property that doesn't yet qualify for permanent debt, funding tenant improvements and lease-up, providing time for entitlement and permitting, or bridging to a construction loan start. Sources include debt funds, private lenders, and select banks willing to provide transitional capital.",
+    "key_features": {
+      "loan_amount": "$1M - $100M+",
+      "term": "6 - 36 Months",
+      "rates": "6.79% - 13.04%",
+      "ltv": "Up to 75% LTV",
+      "structure": "Interest-Only",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": ["Debt Funds", "Private Lenders", "Banks", "Insurance Companies"],
+    "ideal_for": ["Value-add multifamily renovations", "Lease-up and tenant improvement periods", "Land entitlement and pre-development", "Acquisitions needing quick close", "Properties transitioning between uses", "Recapitalizations and partner buyouts"],
+    "seo": {
+      "title": "Bridge Loans for Commercial Real Estate | CLS CRE",
+      "meta_description": "Short-term bridge financing from $1M to $100M+ for transitional commercial properties. Fast close, flexible terms. Value-add, lease-up, and acquisition bridge loans.",
+      "h1": "Commercial Bridge Loans"
+    }
+  },
+  {
+    "slug": "sba-loans",
+    "name": "SBA Loans",
+    "short_name": "SBA",
+    "headline": "SBA 504 & 7(a) Loans for Owner-Occupied Properties",
+    "description": "SBA loans offer below-market rates and high leverage for qualifying owner-occupied commercial properties. The SBA 504 program provides up to 90% financing with long-term fixed rates, while the 7(a) program offers flexible terms for business acquisitions, expansions, and working capital. These programs are specifically designed for small businesses that occupy at least 51% of the property.",
+    "description_extended": "The U.S. Small Business Administration partners with banks and Certified Development Companies (CDCs) to provide guaranteed lending programs that reduce risk for lenders and increase access to capital for small business owners. The 504 program features a unique two-loan structure: a first mortgage from a bank (50% LTV) and a second position CDC/SBA loan (40% LTV), with only 10% borrower equity required. The 7(a) program provides a single-source loan with an SBA guarantee up to 85%.",
+    "key_features": {
+      "loan_amount": "$250K - $14M",
+      "term": "5 - 25 Years",
+      "rates": "5.54% - 8.25%",
+      "ltv": "Up to 90% LTV (504)",
+      "equity": "As Low as 10% Down",
+      "recourse": "Full Recourse (Personal Guarantee)"
+    },
+    "lender_sources": ["SBA-Approved Banks", "Certified Development Companies (CDCs)", "Credit Unions", "Community Banks"],
+    "ideal_for": ["Owner-occupied office buildings", "Restaurant and hospitality acquisitions", "Medical and dental practices", "Retail storefronts and service businesses", "Industrial and manufacturing owner-users", "Business expansions and equipment purchases"],
+    "seo": {
+      "title": "SBA 504 & 7(a) Commercial Loans | CLS CRE",
+      "meta_description": "SBA 504 and 7(a) loans for owner-occupied commercial real estate. Up to 90% financing, below-market rates. $250K to $14M for small businesses. Get a quote.",
+      "h1": "SBA 504 & 7(a) Commercial Loans"
+    }
+  },
+  {
+    "slug": "mezzanine",
+    "name": "Mezzanine & Preferred Equity",
+    "short_name": "Mezzanine",
+    "headline": "Mezzanine Debt & Preferred Equity Financing",
+    "description": "Mezzanine and preferred equity fill the gap between senior debt and common equity in the commercial real estate capital stack. These subordinate capital positions allow borrowers to increase total leverage beyond what senior lenders provide, reducing the equity required for acquisitions, developments, and recapitalizations.",
+    "description_extended": "Mezzanine debt is secured by a pledge of ownership interest in the borrowing entity rather than a mortgage lien on the property, while preferred equity involves an actual equity investment with a preferred return. Both serve a similar function — increasing leverage and reducing sponsor equity requirements. These structures are commonly used for value-add acquisitions, development projects, and recapitalizations where senior lenders cap at 65-75% LTV.",
+    "key_features": {
+      "loan_amount": "$1M - $50M+",
+      "term": "1 - 5 Years",
+      "rates": "10% - 18%",
+      "position": "Behind Senior Debt",
+      "structure": "Interest-Only or Accruing",
+      "total_leverage": "Up to 85-90% LTC"
+    },
+    "lender_sources": ["Debt Funds", "Private Equity Firms", "Family Offices", "Insurance Companies", "Specialty Lenders"],
+    "ideal_for": ["High-leverage acquisitions", "Development projects needing additional capital", "Value-add strategies with equity gap", "Recapitalizations and cash-out scenarios", "Joint venture equity structures", "Portfolio-level capital solutions"],
+    "seo": {
+      "title": "Mezzanine & Preferred Equity Financing | CLS CRE",
+      "meta_description": "Mezzanine debt and preferred equity for commercial real estate. Fill the capital stack gap with subordinate financing from $1M to $50M+. Increase leverage, reduce equity.",
+      "h1": "Mezzanine & Preferred Equity Financing"
+    }
+  },
+  {
+    "slug": "specialty",
+    "name": "Specialty Financing",
+    "short_name": "Specialty",
+    "headline": "Specialty & Niche Commercial Real Estate Financing",
+    "description": "Specialty financing covers non-traditional property types and unique lending situations that require creative structuring and specialized lender relationships. From self-storage and data centers to marinas and religious facilities, these deals demand a broker who understands niche underwriting criteria and can source capital from lenders experienced in these asset classes.",
+    "description_extended": "Specialty properties often fall outside standard underwriting guidelines, requiring lenders with specific experience and appetite for the asset class. CLS CRE's extensive network of 1,000+ lender relationships includes specialists in virtually every property type, enabling us to source competitive financing for assets that other brokers struggle to place. Our structuring expertise allows us to present deals in a way that maximizes lender comfort and borrower terms.",
+    "key_features": {
+      "loan_amount": "$500K - $100M+",
+      "term": "1 - 25 Years",
+      "rates": "5.54% - 13.04%",
+      "ltv": "Varies by Asset Class",
+      "structure": "Customized per Deal",
+      "recourse": "Varies by Lender"
+    },
+    "lender_sources": ["Specialty Lenders", "Banks with Niche Expertise", "Debt Funds", "Life Insurance Companies", "Private Lenders", "CMBS Conduits"],
+    "ideal_for": ["Self-storage facilities", "Data centers and tech infrastructure", "Marinas and boat storage", "Religious and nonprofit facilities", "Entertainment and recreation venues", "Adaptive reuse and conversion projects"],
+    "seo": {
+      "title": "Specialty Commercial Real Estate Financing | CLS CRE",
+      "meta_description": "Financing for specialty commercial properties: self-storage, data centers, marinas, entertainment venues, and more. Creative structuring with 1,000+ lender relationships.",
+      "h1": "Specialty Commercial Real Estate Financing"
+    }
+  }
+]

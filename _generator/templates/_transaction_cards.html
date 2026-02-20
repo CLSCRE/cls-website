@@ -1,0 +1,23 @@
+{% if transactions %}
+<section class="content-section {{ 'alt' if txn_alt|default(false) }}">
+<div class="section-inner">
+  <div class="section-label reveal">Track Record</div>
+  <h2 class="section-title reveal">{{ txn_title|default('Related Transactions') }}</h2>
+  <p class="section-desc reveal">{{ txn_desc|default('A selection of deals we have closed in this category.') }}</p>
+  <div class="txn-grid">
+    {% for txn in transactions[:6] %}
+    <div class="txn-card reveal">
+      <img src="{{ txn.image }}" alt="{{ txn.property_type }} - {{ txn.city }}, {{ txn.state }}" class="txn-photo" loading="lazy">
+      <div class="txn-body">
+        <div class="txn-badge {{ txn.category }}">{{ txn.category|replace('perm','Permanent')|replace('constr','Construction')|replace('bridge','Bridge') }}</div>
+        <div class="txn-amount">{{ txn.amount }}</div>
+        <div class="txn-type">{{ txn.property_type }}</div>
+        <div class="txn-loc">{{ txn.city }}, {{ txn.state }}</div>
+        <div class="txn-summary">{{ txn.summary }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}

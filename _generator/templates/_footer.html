@@ -1,0 +1,36 @@
+<footer>
+<div class="footer-grid">
+  <div class="footer-brand">
+    <img src="{{ depth }}images/cls-logo-emblem.png" alt="Commercial Lending Solutions">
+    <p>Over $1 billion in commercial loans closed. Institutional expertise. Personal service. Every deal, every time.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Financing</h4>
+    {% for lt in all_loan_types %}
+    <a href="{{ depth }}financing/{{ lt.slug }}.html">{{ lt.name }}</a>
+    {% endfor %}
+  </div>
+  <div class="footer-col">
+    <h4>Properties</h4>
+    {% for pt in all_property_types %}
+    <a href="{{ depth }}property/{{ pt.slug }}.html">{{ pt.name }}</a>
+    {% endfor %}
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="{{ depth }}index.html#team">Our Team</a>
+    <a href="{{ depth }}index.html#transactions">Transactions</a>
+    <a href="{{ depth }}market-data.html">Market Data</a>
+    <a href="{{ depth }}index.html#why-us">Why Choose Us</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="{{ depth }}index.html#contact">Contact</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>&copy; 2026 Commercial Lending Solutions. All rights reserved. DRE #02244836</span>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/commercialloanbroker" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+</footer>

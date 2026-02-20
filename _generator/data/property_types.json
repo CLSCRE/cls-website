@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "multifamily",
+    "name": "Multifamily",
+    "headline": "Multifamily & Apartment Financing",
+    "description": "Multifamily properties are the most actively financed asset class in commercial real estate. From small 5-unit apartment buildings to large 500+ unit communities, multifamily assets benefit from the broadest range of financing sources including agency lenders (Fannie Mae, Freddie Mac), banks, life insurance companies, CMBS conduits, and debt funds.",
+    "description_extended": "The multifamily sector consistently attracts strong capital flows due to fundamental housing demand, favorable demographics, and government-backed lending programs. Agency financing through Fannie Mae and Freddie Mac offers the most competitive long-term rates with non-recourse terms, while bank and life company options provide flexibility for portfolio borrowers. CLS CRE specializes in multifamily financing across all subtypes, from conventional apartments to manufactured housing communities.",
+    "subtypes": ["Conventional Apartments", "Garden-Style Communities", "Mid-Rise & High-Rise", "Manufactured Housing / Mobile Homes", "Student Housing", "Senior Living & Assisted Living", "Affordable / Workforce Housing", "Single-Family Rental Portfolios"],
+    "financing_options": ["Agency (Fannie Mae / Freddie Mac)", "Bank Permanent Loans", "Life Insurance Company Loans", "CMBS", "Bridge & Value-Add", "Construction"],
+    "seo": {
+      "title": "Multifamily & Apartment Financing | CLS CRE",
+      "meta_description": "Multifamily and apartment financing from $500K to $100M+. Agency, bank, life company, CMBS, bridge, and construction loans. Nationwide coverage. Get a quote.",
+      "h1": "Multifamily & Apartment Financing"
+    }
+  },
+  {
+    "slug": "industrial",
+    "name": "Industrial",
+    "headline": "Industrial & Warehouse Financing",
+    "description": "Industrial properties have emerged as one of the most sought-after asset classes in commercial real estate, driven by e-commerce growth, supply chain reshoring, and data center demand. Financing is widely available from banks, life insurance companies, CMBS lenders, and debt funds for warehouses, distribution centers, manufacturing facilities, and flex/R&D space.",
+    "description_extended": "The industrial sector benefits from strong tenant demand, low vacancy rates, and favorable rent growth trends across most major markets. Lenders view industrial assets favorably due to long-term lease structures, creditworthy tenants, and relatively low capital expenditure requirements. CLS CRE's track record includes financing for distribution centers, cold storage, manufacturing plants, truck terminals, data centers, and specialty industrial assets.",
+    "subtypes": ["Distribution & Logistics Centers", "Cold Storage & Food Processing", "Manufacturing & Production", "Flex / R&D Space", "Truck Terminals & Cross-Dock", "Data Centers", "Self-Storage", "Industrial Showrooms"],
+    "financing_options": ["Bank Permanent Loans", "Life Insurance Company Loans", "CMBS", "Bridge Loans", "Construction Loans", "SBA 504 (Owner-Occupied)"],
+    "seo": {
+      "title": "Industrial & Warehouse Financing | CLS CRE",
+      "meta_description": "Industrial and warehouse financing for distribution, manufacturing, cold storage, data centers, and more. Competitive rates from $500K to $100M+. Get a quote.",
+      "h1": "Industrial & Warehouse Financing"
+    }
+  },
+  {
+    "slug": "retail",
+    "name": "Retail",
+    "headline": "Retail & Shopping Center Financing",
+    "description": "Retail property financing spans single-tenant net lease assets to large multi-tenant shopping centers. Creditworthy tenancy and long-term lease structures drive the most competitive terms, with strong net lease assets qualifying for life insurance company and CMBS financing. Community and neighborhood centers with grocery anchors remain attractive to bank and agency lenders.",
+    "description_extended": "While retail has evolved significantly with the growth of e-commerce, well-located, well-tenanted retail properties continue to generate strong returns and attract financing. Net lease properties with investment-grade tenants command premium financing terms, while value-add retail opportunities may leverage bridge capital for repositioning. CLS CRE structures financing for the full spectrum of retail assets, from single-tenant pharmacies to regional shopping centers.",
+    "subtypes": ["Single-Tenant Net Lease (NNN)", "Multi-Tenant Shopping Centers", "Grocery-Anchored Centers", "Power Centers & Outlet Malls", "Strip Retail & Inline Shops", "Restaurant & Food Service", "Auto Service & Car Wash", "Entertainment & Experiential Retail"],
+    "financing_options": ["Life Insurance Company Loans", "CMBS", "Bank Permanent Loans", "Bridge Loans", "Construction (Build-to-Suit)", "SBA 504 (Owner-Occupied)"],
+    "seo": {
+      "title": "Retail & Shopping Center Financing | CLS CRE",
+      "meta_description": "Retail property financing for net lease, shopping centers, grocery-anchored, and multi-tenant assets. Life company, CMBS, bank, and bridge loans. Get a quote.",
+      "h1": "Retail & Shopping Center Financing"
+    }
+  },
+  {
+    "slug": "office",
+    "name": "Office",
+    "headline": "Office Building Financing",
+    "description": "Office property financing serves Class A through C buildings, from single-tenant headquarters to multi-tenant towers. While the office sector has faced headwinds from remote work trends, well-located assets with strong tenancy continue to attract competitive financing from banks, life insurance companies, and CMBS lenders.",
+    "description_extended": "Office financing underwriting focuses heavily on tenant quality, lease rollover risk, and market fundamentals. Properties with long-term leases to creditworthy tenants and located in strong submarkets with low vacancy continue to access favorable terms. CLS CRE helps office investors navigate the current lending landscape to secure optimal financing, whether for stabilized holdings, value-add repositioning, or owner-occupied acquisitions.",
+    "subtypes": ["Class A Trophy Office", "Class B Value-Add Office", "Creative / Flex Office", "Medical & Dental Office", "Co-Working & Shared Space", "Owner-Occupied Office", "Government & GSA-Leased", "Suburban Office Campus"],
+    "financing_options": ["Bank Permanent Loans", "Life Insurance Company Loans", "CMBS", "Bridge Loans", "SBA 504 / 7(a) (Owner-Occupied)", "Construction"],
+    "seo": {
+      "title": "Office Building Financing | CLS CRE",
+      "meta_description": "Office building financing for Class A, B, and C properties. Banks, life companies, CMBS, bridge, and SBA loans. Nationwide coverage from $500K to $100M+. Get a quote.",
+      "h1": "Office Building Financing"
+    }
+  },
+  {
+    "slug": "mixed-use",
+    "name": "Mixed-Use",
+    "headline": "Mixed-Use Property Financing",
+    "description": "Mixed-use properties combine residential, commercial, and sometimes industrial uses within a single asset or development. These properties can be challenging to finance due to their hybrid nature, but experienced brokers can source competitive capital from banks, CMBS lenders, and specialized mixed-use lenders who understand the unique underwriting dynamics.",
+    "description_extended": "Mixed-use financing requires lenders comfortable with multiple income streams and use types within a single property. Vertical mixed-use (retail ground floor with apartments above) is the most common structure, followed by horizontal mixed-use developments. Lenders typically underwrite the residential and commercial components separately, then blend the analysis. CLS CRE's expertise in mixed-use structuring helps investors maximize leverage across the full capital stack.",
+    "subtypes": ["Retail + Residential", "Office + Residential", "Live-Work Spaces", "Transit-Oriented Development", "Land & Development Sites", "Adaptive Reuse & Conversion", "Ground-Floor Commercial + Apartments", "Mixed-Use Portfolios"],
+    "financing_options": ["Bank Permanent Loans", "Bridge Loans", "Construction Loans", "CMBS", "Agency (If 80%+ Residential)", "Mezzanine & Preferred Equity"],
+    "seo": {
+      "title": "Mixed-Use Property Financing | CLS CRE",
+      "meta_description": "Mixed-use property financing for retail + residential, live-work, TOD, and adaptive reuse projects. Bank, bridge, construction, and CMBS loans. Get a quote.",
+      "h1": "Mixed-Use Property Financing"
+    }
+  },
+  {
+    "slug": "hospitality",
+    "name": "Hospitality",
+    "headline": "Hotel & Hospitality Financing",
+    "description": "Hospitality financing covers hotels, motels, resorts, and specialty entertainment venues. As operating businesses with volatile revenue streams, hospitality properties require lenders with specific expertise in underwriting room revenue, occupancy trends, and management quality. Sources include banks, CMBS conduits, SBA programs, and specialized hospitality lenders.",
+    "description_extended": "Hotel financing is among the most complex in commercial real estate due to the operating business nature of the asset. Lenders evaluate not just the real estate but also brand affiliation, management quality, competitive set positioning, and market-level supply/demand dynamics. CLS CRE has financed boutique hotels, flagged properties, entertainment venues, and specialty hospitality assets, bringing deep lender relationships and structuring expertise to every deal.",
+    "subtypes": ["Full-Service Hotels", "Limited-Service / Select-Service", "Boutique & Independent Hotels", "Extended Stay", "Resorts & Spas", "Entertainment Venues", "Conference & Event Centers", "Specialty Hospitality (Aquariums, TopGolf, etc.)"],
+    "financing_options": ["Bank Permanent Loans", "CMBS", "SBA 504 / 7(a)", "Bridge Loans", "Construction & Renovation", "Mezzanine & Preferred Equity"],
+    "seo": {
+      "title": "Hotel & Hospitality Financing | CLS CRE",
+      "meta_description": "Hotel and hospitality financing for full-service, boutique, limited-service, and specialty venues. Bank, CMBS, SBA, bridge, and construction loans. Get a quote.",
+      "h1": "Hotel & Hospitality Financing"
+    }
+  }
+]

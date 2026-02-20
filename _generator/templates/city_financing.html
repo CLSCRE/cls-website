@@ -1,0 +1,97 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":"{{ loan.name }} in {{ city.city }}, {{ city.state }} | CLS CRE","url":"https://commerciallendingsolutions.ai/financing/{{ loan.slug }}-{{ city.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"{{ loan.name }}","item":"https://commerciallendingsolutions.ai/financing/{{ loan.slug }}.html"},{"@type":"ListItem","position":3,"name":"{{ city.city }}","item":"https://commerciallendingsolutions.ai/financing/{{ loan.slug }}-{{ city.slug }}.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}financing/{{ loan.slug }}.html">{{ loan.name }}</a></li>
+  <li><span>{{ city.city }}, {{ city.state }}</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">{{ loan.short_name }} Financing</div>
+  <h1 class="reveal">{{ loan.name }} in {{ city.city }}, {{ city.state }}</h1>
+  <p class="reveal">{{ city.context }}</p>
+  <a href="{{ depth }}index.html#contact" class="btn-primary reveal">Get a {{ city.city }} {{ loan.short_name }} Quote &rarr;</a>
+</div>
+</section>
+
+<!-- KEY FEATURES -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">{{ loan.short_name }} Loan Details</div>
+  <h2 class="section-title reveal">{{ loan.short_name }} Financing for {{ city.city }} Commercial Properties</h2>
+  <p class="reveal">CLS CRE provides {{ loan.name|lower }} for commercial real estate investors in the {{ city.metro }} market. With access to 1,000+ lender relationships nationwide, we source the most competitive terms available for {{ city.city }} properties.</p>
+  <div class="feature-grid">
+    {% for key, val in loan.key_features.items() %}
+    <div class="feature-card reveal">
+      <div class="label">{{ key|replace('_',' ')|title }}</div>
+      <div class="value">{{ val }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- TRANSACTIONS -->
+{% set txn_title = loan.short_name + ' Deals Near ' + city.city %}
+{% set txn_desc = 'Selected ' + loan.short_name|lower + ' transactions in and around the ' + city.metro + ' market.' %}
+{% set txn_alt = true %}
+{% include '_transaction_cards.html' %}
+
+<!-- OTHER LOAN TYPES IN THIS CITY -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Other Financing in {{ city.city }}</h2>
+  <div class="cross-link-grid">
+    {% for lt in all_loan_types %}
+    {% if lt.slug != loan.slug %}
+    <a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ lt.name }}</div>
+      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- SAME LOAN TYPE IN OTHER CITIES -->
+<section class="content-section alt">
+<div class="section-inner">
+  <h2 class="section-title reveal">{{ loan.name }} in Other Cities</h2>
+  <div class="pill-links">
+    {% for c in all_cities %}
+    {% if c.slug != city.slug %}
+    <a href="{{ depth }}financing/{{ loan.slug }}-{{ c.slug }}.html" class="pill-link">{{ c.city }}, {{ c.state }}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+{% set faq_title = loan.name + ' in ' + city.city + ' FAQ' %}
+{% include '_faq_section.html' %}
+
+<!-- CTA -->
+{% set cta_title = 'Get ' + loan.short_name + ' Financing in ' + city.city %}
+{% set cta_description = 'Contact CLS CRE for a free, no-obligation ' + loan.short_name|lower + ' loan quote for your ' + city.city + ' commercial property.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

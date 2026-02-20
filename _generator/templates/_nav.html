@@ -1,0 +1,30 @@
+<nav class="nav" id="nav">
+<div class="nav-inner">
+  <a href="{{ depth }}index.html" class="nav-logo"><img src="{{ depth }}images/cls-logo-emblem.png" alt="Commercial Lending Solutions"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
+  <div class="nav-links" id="navLinks">
+    <div class="nav-dropdown">
+      <a href="{{ depth }}index.html#programs">Financing</a>
+      <div class="nav-dropdown-menu">
+        {% for lt in all_loan_types %}
+        <a href="{{ depth }}financing/{{ lt.slug }}.html">{{ lt.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="{{ depth }}index.html#transactions">Properties</a>
+      <div class="nav-dropdown-menu">
+        {% for pt in all_property_types %}
+        <a href="{{ depth }}property/{{ pt.slug }}.html">{{ pt.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <a href="{{ depth }}index.html#transactions">Transactions</a>
+    <a href="{{ depth }}market-data.html">Market Data</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="{{ depth }}index.html#contact" class="nav-cta">Get a Quote</a>
+  </div>
+  <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</nav>

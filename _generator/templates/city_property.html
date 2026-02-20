@@ -1,0 +1,108 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":"{{ prop.name }} Financing in {{ city.city }}, {{ city.state }} | CLS CRE","url":"https://commerciallendingsolutions.ai/property/{{ prop.slug }}-{{ city.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"{{ prop.name }}","item":"https://commerciallendingsolutions.ai/property/{{ prop.slug }}.html"},{"@type":"ListItem","position":3,"name":"{{ city.city }}","item":"https://commerciallendingsolutions.ai/property/{{ prop.slug }}-{{ city.slug }}.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}property/{{ prop.slug }}.html">{{ prop.name }}</a></li>
+  <li><span>{{ city.city }}, {{ city.state }}</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">{{ prop.name }} Financing</div>
+  <h1 class="reveal">{{ prop.name }} Financing in {{ city.city }}, {{ city.state }}</h1>
+  <p class="reveal">{{ city.context }}</p>
+  <a href="{{ depth }}index.html#contact" class="btn-primary reveal">Get a {{ city.city }} {{ prop.name }} Quote &rarr;</a>
+</div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">{{ prop.name }} in {{ city.city }}</div>
+  <h2 class="section-title reveal">Financing for {{ city.city }} {{ prop.name }} Properties</h2>
+  <p class="reveal">CLS CRE provides comprehensive financing for {{ prop.name|lower }} properties in the {{ city.metro }} market. Whether you're acquiring, refinancing, or developing {{ prop.name|lower }} assets, our 1,000+ lender relationships ensure you get the most competitive terms available.</p>
+
+  <div class="list-grid">
+    <div class="list-card reveal">
+      <h3>{{ prop.name }} Subtypes We Finance</h3>
+      <ul>
+        {% for sub in prop.subtypes %}
+        <li>{{ sub }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="list-card reveal">
+      <h3>Financing Options</h3>
+      <ul>
+        {% for opt in prop.financing_options %}
+        <li>{{ opt }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TRANSACTIONS -->
+{% set txn_title = prop.name + ' Deals Near ' + city.city %}
+{% set txn_desc = 'Selected ' + prop.name|lower + ' transactions in and around the ' + city.metro + ' market.' %}
+{% set txn_alt = true %}
+{% include '_transaction_cards.html' %}
+
+<!-- OTHER PROPERTY TYPES IN THIS CITY -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Other Property Types in {{ city.city }}</h2>
+  <div class="cross-link-grid">
+    {% for pt in all_property_types %}
+    {% if pt.slug != prop.slug %}
+    <a href="{{ depth }}property/{{ pt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ pt.name }}</div>
+      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- SAME PROPERTY TYPE IN OTHER CITIES -->
+<section class="content-section alt">
+<div class="section-inner">
+  <h2 class="section-title reveal">{{ prop.name }} Financing in Other Cities</h2>
+  <div class="pill-links">
+    {% for c in all_cities %}
+    {% if c.slug != city.slug %}
+    <a href="{{ depth }}property/{{ prop.slug }}-{{ c.slug }}.html" class="pill-link">{{ c.city }}, {{ c.state }}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+{% set faq_title = prop.name + ' Financing in ' + city.city + ' FAQ' %}
+{% include '_faq_section.html' %}
+
+<!-- CTA -->
+{% set cta_title = 'Finance Your ' + city.city + ' ' + prop.name + ' Property' %}
+{% set cta_description = 'Contact CLS CRE for a free, no-obligation quote on ' + prop.name|lower + ' financing in ' + city.city + '. We respond within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

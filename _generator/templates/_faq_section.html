@@ -1,0 +1,14 @@
+<section class="faq-section {{ 'alt' if faq_alt|default(false) }}" id="faq">
+<div class="section-inner">
+  <div class="section-label reveal">FAQ</div>
+  <h2 class="section-title reveal">{{ faq_title|default('Frequently Asked Questions') }}</h2>
+  <div class="faq-list">
+    {% for faq in faqs %}
+    <div class="faq-item reveal">
+      <button class="faq-question">{{ faq.q }}</button>
+      <div class="faq-answer"><div class="faq-answer-inner">{{ faq.a }}</div></div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
