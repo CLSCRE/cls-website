@@ -90,6 +90,16 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .rate-change.down{color:#16a34a;background:rgba(22,163,74,.06)}
 .rate-change.flat{color:var(--gray-500);background:var(--gray-100)}
 .rate-updated{font-size:11px;color:var(--gray-500);text-align:right;margin-top:14px}
+.rate-table-scroll{overflow-x:auto;margin:0 -4px;padding:0 4px}
+.rate-table{width:100%;border-collapse:collapse;font-size:13px}
+.rate-table thead{background:var(--navy)}
+.rate-table th{padding:8px 12px;text-align:right;font-size:10px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.rate-table th:first-child{text-align:left}
+.rate-table td{padding:7px 12px;text-align:right;border-bottom:1px solid var(--gray-100);font-variant-numeric:tabular-nums;color:var(--gray-700);font-size:12px;white-space:nowrap}
+.rate-table tbody tr:last-child td{border:none}
+.rate-table tbody tr:hover{background:rgba(0,106,78,.02)}
+.rt-name{text-align:left!important;font-weight:600;color:var(--navy)!important;font-size:12px}
+.rt-today{font-family:var(--font-display);font-size:14px!important;color:var(--navy)!important}
 
 /* ===== STATS BAR ===== */
 .stats-bar{background:var(--navy);padding:56px 0}
@@ -267,7 +277,7 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
     </div>
     <a href="#transactions">Transactions</a>
     <a href="#team">Team</a>
-    <a href="#markets">Market Data</a>
+    <a href="market-data.html">Market Data</a>
     <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
     <a href="#contact" class="nav-cta">Get a Quote</a>
   </div>
@@ -294,35 +304,24 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
       <div class="rate-title">Market Snapshot</div>
       <div class="rate-live"><span class="pulse-dot"></span> Live Rates</div>
     </div>
-    <div class="rate-row">
-      <span class="rate-label">10-Yr Treasury</span>
-      <div class="rate-val-wrap">
-        <span class="rate-value">4.087%</span>
-        <span class="rate-change up">+3bp</span>
-      </div>
+    <div class="rate-table-scroll">
+    <table class="rate-table">
+      <thead><tr><th>Index</th><th>Today</th><th>Yesterday</th><th>1 Month</th><th>1 Year</th></tr></thead>
+      <tbody>
+        <tr><td class="rt-name">10-Yr Treasury</td><td class="rt-today">4.087%</td><td>4.054%</td><td>4.313%</td><td>4.290%</td></tr>
+        <tr><td class="rt-name">30-Yr Treasury</td><td class="rt-today">4.711%</td><td>4.689%</td><td>4.850%</td><td>4.530%</td></tr>
+        <tr><td class="rt-name">5-Yr Treasury</td><td class="rt-today">3.748%</td><td>3.719%</td><td>3.990%</td><td>4.280%</td></tr>
+        <tr><td class="rt-name">2-Yr Treasury</td><td class="rt-today">3.468%</td><td>3.435%</td><td>3.780%</td><td>4.610%</td></tr>
+        <tr><td class="rt-name">Fed Funds</td><td class="rt-today">3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>4.25&ndash;4.50%</td></tr>
+        <tr><td class="rt-name">SOFR</td><td class="rt-today">3.56%</td><td>3.56%</td><td>3.56%</td><td>4.31%</td></tr>
+        <tr><td class="rt-name">Prime Rate</td><td class="rt-today">7.00%</td><td>7.00%</td><td>7.00%</td><td>7.75%</td></tr>
+        <tr><td class="rt-name">S&amp;P 500</td><td class="rt-today">6,905</td><td>6,843</td><td>6,841</td><td>6,115</td></tr>
+        <tr><td class="rt-name">Gold ($/oz)</td><td class="rt-today">$4,972</td><td>$4,952</td><td>$5,550</td><td>$2,015</td></tr>
+        <tr><td class="rt-name">Bitcoin</td><td class="rt-today">$67,758</td><td>$67,800</td><td>$78,050</td><td>$95,200</td></tr>
+      </tbody>
+    </table>
     </div>
-    <div class="rate-row">
-      <span class="rate-label">30-Yr Treasury</span>
-      <div class="rate-val-wrap">
-        <span class="rate-value">4.711%</span>
-        <span class="rate-change up">+2bp</span>
-      </div>
-    </div>
-    <div class="rate-row">
-      <span class="rate-label">2-Yr Treasury</span>
-      <div class="rate-val-wrap">
-        <span class="rate-value">3.468%</span>
-        <span class="rate-change up">+3bp</span>
-      </div>
-    </div>
-    <div class="rate-row">
-      <span class="rate-label">Fed Funds Rate</span>
-      <div class="rate-val-wrap">
-        <span class="rate-value">3.50&ndash;3.75%</span>
-        <span class="rate-change flat">HOLD</span>
-      </div>
-    </div>
-    <div class="rate-updated">Updated Feb 19, 2026</div>
+    <div class="rate-updated">Updated Feb 19, 2026 &middot; <a href="market-data.html" style="color:var(--green);text-decoration:none;font-weight:600">Full Market Data &rarr;</a></div>
   </div>
 </div>
 </section>
@@ -813,34 +812,6 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
 </div>
 </section>
 
-<!-- MARKET INDICES -->
-<section class="indices" id="markets">
-<div class="section-inner">
-  <div class="section-label reveal">Market Intelligence</div>
-  <div class="section-title reveal">Market Indices &amp; Rates</div>
-  <p class="section-desc reveal">Real-time data for the indices and rates that drive commercial real estate financing decisions.</p>
-  <div class="idx-scroll reveal">
-  <table class="indices-table">
-    <thead><tr><th>Index</th><th>Today</th><th>Yesterday</th><th>Last Month</th><th>Last Year</th></tr></thead>
-    <tbody>
-      <tr><td class="idx-name">10-Yr Treasury</td><td class="idx-val">4.087%</td><td>4.054%</td><td>4.313%</td><td>4.290%</td></tr>
-      <tr><td class="idx-name">30-Yr Treasury</td><td class="idx-val">4.711%</td><td>4.689%</td><td>4.850%</td><td>4.530%</td></tr>
-      <tr><td class="idx-name">2-Yr Treasury</td><td class="idx-val">3.468%</td><td>3.435%</td><td>3.780%</td><td>4.610%</td></tr>
-      <tr><td class="idx-name">Fed Funds Rate</td><td class="idx-val">3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>4.25&ndash;4.50%</td></tr>
-      <tr><td class="idx-name">S&amp;P 500</td><td class="idx-val">6,905</td><td>6,843</td><td>6,841</td><td>6,115</td></tr>
-      <tr><td class="idx-name">Dow Jones</td><td class="idx-val">49,841</td><td>49,533</td><td>49,408</td><td>43,461</td></tr>
-      <tr><td class="idx-name">NASDAQ</td><td class="idx-val">22,876</td><td>22,578</td><td>22,592</td><td>19,649</td></tr>
-      <tr><td class="idx-name">Gold ($/oz)</td><td class="idx-val">$4,972</td><td>$4,952</td><td>$5,550</td><td>$2,015</td></tr>
-      <tr><td class="idx-name">Silver ($/oz)</td><td class="idx-val">$76.01</td><td>$74.43</td><td>$109.30</td><td>$32.50</td></tr>
-      <tr><td class="idx-name">Bitcoin</td><td class="idx-val">$67,758</td><td>$67,800</td><td>$78,050</td><td>$95,200</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="idx-cta reveal">
-    <a href="market-data.html">View Full Economic Outlook &amp; Yield Curve &rarr;</a>
-  </div>
-</div>
-</section>
 
 <!-- CONTACT -->
 <section class="contact-section" id="contact">
