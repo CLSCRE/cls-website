@@ -169,22 +169,28 @@
     <div class="contact-right reveal">
       <h3>Request a Quote</h3>
       <p>Fill out the form below and we'll get back to you within 24 hours.</p>
-      <form action="mailto:inquiries@clscre.com" method="POST" enctype="text/plain">
+      <form action="https://formsubmit.co/inquiries@clscre.com" method="POST">
+        <!-- Formsubmit config -->
+        <input type="hidden" name="_subject" value="New Quote Request — CLS CRE Website">
+        <input type="hidden" name="_next" value="https://commerciallendingsolutions.ai/thank-you.html">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
         <div class="form-row">
-          <div class="form-field"><label>First Name *</label><input type="text" name="firstName" required></div>
-          <div class="form-field"><label>Last Name *</label><input type="text" name="lastName" required></div>
+          <div class="form-field"><label>First Name *</label><input type="text" name="First Name" required></div>
+          <div class="form-field"><label>Last Name *</label><input type="text" name="Last Name" required></div>
         </div>
         <div class="form-row">
-          <div class="form-field"><label>Email *</label><input type="email" name="email" required></div>
-          <div class="form-field"><label>Phone</label><input type="tel" name="phone"></div>
+          <div class="form-field"><label>Email *</label><input type="email" name="Email" required></div>
+          <div class="form-field"><label>Phone</label><input type="tel" name="Phone"></div>
         </div>
         <div class="form-row">
-          <div class="form-field"><label>Company</label><input type="text" name="company"></div>
-          <div class="form-field"><label>Loan Amount</label><input type="text" name="loanAmount" placeholder="e.g. $5,000,000"></div>
+          <div class="form-field"><label>Company</label><input type="text" name="Company"></div>
+          <div class="form-field"><label>Loan Amount</label><input type="text" name="Loan Amount" placeholder="e.g. $5,000,000"></div>
         </div>
         <div class="form-row">
           <div class="form-field"><label>Property Type</label>
-            <select name="propertyType">
+            <select name="Property Type">
               <option value="">Select...</option>
               <option>Multi-Family</option>
               <option>Industrial</option>
@@ -197,7 +203,7 @@
             </select>
           </div>
           <div class="form-field"><label>Loan Type</label>
-            <select name="loanType">
+            <select name="Loan Type">
               <option value="">Select...</option>
               <option>Permanent Financing</option>
               <option>Construction Financing</option>
@@ -209,10 +215,10 @@
           </div>
         </div>
         <div class="form-row">
-          <div class="form-field full"><label>Property City &amp; State *</label><input type="text" name="location" placeholder="e.g. Los Angeles, CA" required></div>
+          <div class="form-field full"><label>Property City &amp; State *</label><input type="text" name="Property Location" placeholder="e.g. Los Angeles, CA" required></div>
         </div>
         <div class="form-row">
-          <div class="form-field full"><label>Tell Us About Your Deal</label><textarea name="comments" rows="5" placeholder="Property details, timeline, goals, any specific requirements..."></textarea></div>
+          <div class="form-field full"><label>Tell Us About Your Deal</label><textarea name="Deal Details" rows="5" placeholder="Property details, timeline, goals, any specific requirements..."></textarea></div>
         </div>
         <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px">Submit Quote Request &rarr;</button>
       </form>
