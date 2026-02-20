@@ -1,0 +1,74 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"CLS CRE Insights — Commercial Real Estate Finance Blog","url":"https://commerciallendingsolutions.ai/blog/","description":"Expert insights on commercial real estate financing, market trends, and investment strategies from CLS CRE.","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://commerciallendingsolutions.ai/blog/"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><span>Insights</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">CLS CRE Blog</div>
+  <h1 class="reveal">Commercial Real Estate Insights</h1>
+  <p class="reveal">Expert analysis on CRE financing, market trends, investment strategies, and industry news from the CLS CRE team.</p>
+</div>
+</section>
+
+<!-- CATEGORY FILTER -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="blog-filters">
+    <button class="blog-filter active" data-cat="all">All</button>
+    {% for cat in categories %}
+    <button class="blog-filter" data-cat="{{ cat|lower|replace(' ','-') }}">{{ cat }}</button>
+    {% endfor %}
+  </div>
+
+  <!-- ARTICLE GRID -->
+  <div class="blog-grid">
+    {% for article in articles %}
+    <a href="{{ depth }}blog/{{ article.slug }}.html" class="blog-card reveal" data-cat="{{ article.category|lower|replace(' ','-') }}">
+      <div class="blog-card-category">{{ article.category }}</div>
+      <h3 class="blog-card-title">{{ article.title }}</h3>
+      <p class="blog-card-excerpt">{{ article.excerpt }}</p>
+      <div class="blog-card-meta">
+        <span>{{ article.author }}</span>
+        <span>{{ article.date_formatted }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+{% set cta_title = 'Have a Deal to Discuss?' %}
+{% set cta_description = 'Get a free, no-obligation quote on your commercial real estate financing. We respond within 24 hours.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+document.querySelectorAll('.blog-filter').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.blog-filter').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat=btn.dataset.cat;
+    document.querySelectorAll('.blog-card').forEach(card=>{
+      card.style.display=(cat==='all'||card.dataset.cat===cat)?'':'none';
+    });
+  });
+});
+</script>
+{% endblock %}

@@ -14,7 +14,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 import json
 import os
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
@@ -110,9 +110,17 @@ def main():
 
     page_count = 0
 
+    # ── Load articles ─────────────────────────────────────────────────
+    articles = load_json("articles.json")
+    # Format dates and sort by date descending
+    for a in articles:
+        a["date_formatted"] = datetime.strptime(a["date"], "%Y-%m-%d").strftime("%B %d, %Y")
+    articles.sort(key=lambda x: x["date"], reverse=True)
+
     # ── Ensure output dirs ─────────────────────────────────────────────
     (WEBSITE_DIR / "financing").mkdir(exist_ok=True)
     (WEBSITE_DIR / "property").mkdir(exist_ok=True)
+    (WEBSITE_DIR / "blog").mkdir(exist_ok=True)
 
     # ── 1. Loan Type Hub Pages ─────────────────────────────────────────
     print("\n=== Generating Loan Type Hub Pages ===")
@@ -233,7 +241,59 @@ def main():
             })
         print(f"  [OK] property/{prop['slug']}-*.html  (15 city pages)")
 
-    # ── 5. Sitemap.xml ─────────────────────────────────────────────────
+    # ── 5. Blog Index Page ──────────────────────────────────────────────
+    print("\n=== Generating Blog Pages ===")
+    tpl_blog_index = env.get_template("blog_index.html")
+    categories = sorted(set(a["category"] for a in articles))
+    html = tpl_blog_index.render(
+        **shared,
+        articles=articles,
+        categories=categories,
+        seo={
+            "title": "CRE Insights & Market Analysis | CLS CRE Blog",
+            "meta_description": "Expert insights on commercial real estate financing, interest rates, market trends, and investment strategies from CLS CRE.",
+        },
+        canonical_path="blog/index.html",
+        depth="../",
+    )
+    (WEBSITE_DIR / "blog" / "index.html").write_text(html, encoding="utf-8")
+    page_count += 1
+    sitemap_urls.append({
+        "loc": f"{BASE_URL}/blog/",
+        "lastmod": TODAY, "changefreq": "weekly", "priority": "0.8",
+    })
+    print(f"  [OK] blog/index.html  ({len(articles)} articles)")
+
+    # ── 6. Blog Article Pages ─────────────────────────────────────────
+    tpl_blog_article = env.get_template("blog_article.html")
+    for article in articles:
+        # Find related articles (same category, excluding self)
+        related = [a for a in articles if a["category"] == article["category"] and a["slug"] != article["slug"]][:3]
+        if len(related) < 2:
+            # Fill with other recent articles
+            related = [a for a in articles if a["slug"] != article["slug"]][:3]
+        html = tpl_blog_article.render(
+            **shared,
+            article=article,
+            faqs=article.get("faqs", []),
+            related_articles=related,
+            seo={
+                "title": f"{article['title']} | CLS CRE",
+                "meta_description": article["excerpt"],
+            },
+            canonical_path=f"blog/{article['slug']}.html",
+            depth="../",
+        )
+        out_path = WEBSITE_DIR / "blog" / f"{article['slug']}.html"
+        out_path.write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/blog/{article['slug']}.html",
+            "lastmod": article["date"], "changefreq": "monthly", "priority": "0.8",
+        })
+    print(f"  [OK] blog/*.html  ({len(articles)} article pages)")
+
+    # ── 7. Sitemap.xml ─────────────────────────────────────────────────
     print("\n=== Generating sitemap.xml ===")
     tpl_sitemap = env.get_template("sitemap.xml.j2")
     sitemap_xml = tpl_sitemap.render(urls=sitemap_urls)

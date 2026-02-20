@@ -1,0 +1,102 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"{{ article.title }}","description":"{{ article.excerpt }}","author":{"@type":"Person","name":"{{ article.author }}"},"datePublished":"{{ article.date }}","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai","logo":{"@type":"ImageObject","url":"https://commerciallendingsolutions.ai/images/cls-logo-emblem.png"}},"mainEntityOfPage":"https://commerciallendingsolutions.ai/blog/{{ article.slug }}.html"}
+</script>
+{% if faqs %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+{% endif %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://commerciallendingsolutions.ai/blog/"},{"@type":"ListItem","position":3,"name":"{{ article.title }}","item":"https://commerciallendingsolutions.ai/blog/{{ article.slug }}.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}blog/index.html">Insights</a></li>
+  <li><span>{{ article.title }}</span></li>
+</ol>
+</nav>
+
+<!-- ARTICLE -->
+<article class="blog-article">
+<div class="section-inner">
+  <div class="article-header reveal">
+    <div class="blog-card-category">{{ article.category }}</div>
+    <h1>{{ article.title }}</h1>
+    <div class="article-meta">
+      <span class="article-author">By {{ article.author }}</span>
+      <span class="article-date">{{ article.date_formatted }}</span>
+    </div>
+  </div>
+
+  <div class="article-layout">
+    <div class="article-body reveal">
+      {{ article.content }}
+    </div>
+
+    <aside class="article-sidebar">
+      <div class="sidebar-card reveal">
+        <h4>Get a Free Quote</h4>
+        <p>Discuss your deal with a CLS CRE advisor. We respond within 24 hours.</p>
+        <a href="{{ depth }}contact.html" class="btn-primary" style="font-size:14px;padding:10px 20px">Request a Quote &rarr;</a>
+      </div>
+      <div class="sidebar-card reveal">
+        <h4>Call Us</h4>
+        <p style="margin:0"><a href="tel:+13107584042" style="color:var(--green);text-decoration:none;font-weight:600">310.758.4042</a></p>
+      </div>
+      {% if article.tags %}
+      <div class="sidebar-card reveal">
+        <h4>Topics</h4>
+        <div class="sidebar-tags">
+          {% for tag in article.tags %}
+          <span class="sidebar-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </aside>
+  </div>
+</div>
+</article>
+
+<!-- FAQ -->
+{% if faqs %}
+{% set faq_title = 'Frequently Asked Questions' %}
+{% set faq_alt = true %}
+{% include '_faq_section.html' %}
+{% endif %}
+
+<!-- RELATED ARTICLES -->
+{% if related_articles %}
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Related Articles</h2>
+  <div class="blog-grid">
+    {% for rel in related_articles %}
+    <a href="{{ depth }}blog/{{ rel.slug }}.html" class="blog-card reveal" data-cat="{{ rel.category|lower|replace(' ','-') }}">
+      <div class="blog-card-category">{{ rel.category }}</div>
+      <h3 class="blog-card-title">{{ rel.title }}</h3>
+      <p class="blog-card-excerpt">{{ rel.excerpt }}</p>
+      <div class="blog-card-meta">
+        <span>{{ rel.author }}</span>
+        <span>{{ rel.date_formatted }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- CTA -->
+{% set cta_title = 'Ready to Get Started?' %}
+{% set cta_description = 'Contact CLS CRE for a free, no-obligation quote on your commercial real estate financing.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}
