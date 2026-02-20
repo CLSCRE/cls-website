@@ -26,7 +26,7 @@ DATA_DIR = SCRIPT_DIR / "data"
 TEMPLATE_DIR = SCRIPT_DIR / "templates"
 WEBSITE_DIR = SCRIPT_DIR.parent  # website/
 
-BASE_URL = "https://commerciallendingsolutions.ai"
+BASE_URL = "https://landtoyield.com"
 TODAY = date.today().isoformat()
 
 
