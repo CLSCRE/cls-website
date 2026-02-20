@@ -104,6 +104,8 @@ def main():
     sitemap_urls = [
         {"loc": f"{BASE_URL}/", "lastmod": TODAY, "changefreq": "weekly", "priority": "1.0"},
         {"loc": f"{BASE_URL}/market-data.html", "lastmod": TODAY, "changefreq": "daily", "priority": "0.8"},
+        {"loc": f"{BASE_URL}/about.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6"},
+        {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
     ]
 
     page_count = 0

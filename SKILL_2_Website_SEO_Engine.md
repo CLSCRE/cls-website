@@ -112,10 +112,16 @@ Template-driven pages for every combination of:
 | Homepage v1 (dark navy) | Rejected | User didn't like dark/heavy feel |
 | Homepage v2 (bright/CBRE) | **LIVE** | Deployed to GitHub Pages |
 | Nav link fix | Done | Dropdown links scroll to specific service cards |
-| Loan type pages | Not started | Next priority |
-| Property type pages | Not started | After loan type pages |
-| Programmatic SEO pages | Not started | Template system needed |
-| Custom domain | Not started | Need DNS setup |
+| Market Data page | **LIVE** | Treasury yields, yield curve, economic calendar |
+| Loan type hub pages (6) | **LIVE** | Jinja2 generator, Schema.org, FAQ, cross-links |
+| Property type hub pages (6) | **LIVE** | Same generator, filtered transactions per type |
+| Programmatic SEO city pages (180) | **LIVE** | 15 cities x 6 loan types + 15 cities x 6 property types |
+| Sitemap + robots.txt | **LIVE** | 194 URLs in sitemap.xml |
+| About page | Not started | Standalone team + company story page |
+| Contact page | Not started | Dedicated quote request page |
+| Custom domain | Not started | Need DNS setup for commerciallendingsolutions.ai |
+| Google Search Console | Not started | Submit sitemap, request indexing |
+| Blog / Insights | Not started | Rate commentary, deal case studies |
 
 ## Content Rules
 - **Voice**: Professional, authoritative, deal-focused — "capital markets insider, not salesperson"

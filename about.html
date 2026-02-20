@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Commercial Lending Solutions</title>
+<meta name="description" content="Meet the CLS CRE team. Former CBRE and Marcus &amp; Millichap professionals with $1B+ in commercial loans closed. Institutional pedigree, boutique service. Los Angeles.">
+<link rel="canonical" href="https://commerciallendingsolutions.ai/about.html">
+<meta property="og:title" content="About Us | Commercial Lending Solutions">
+<meta property="og:description" content="Meet the CLS CRE team. Former CBRE and Marcus &amp; Millichap professionals with $1B+ in commercial loans closed.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://commerciallendingsolutions.ai/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AboutPage","mainEntity":{"@type":"FinancialService","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://commerciallendingsolutions.ai","description":"Commercial mortgage brokerage in Los Angeles. Over $1 billion in aggregate loan volume.","telephone":"+13107584042","email":"inquiries@clscre.com","founder":{"@type":"Person","name":"Trevor Damyan","jobTitle":"CEO / Founder"},"address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048"}}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"About","item":"https://commerciallendingsolutions.ai/about.html"}]}
+</script>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/pages.css">
+<style>
+/* About-specific styles */
+.about-story{padding:80px 0}
+.about-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-story-img{border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.about-story-img img{width:100%;height:auto;display:block}
+.about-story h2{font-family:var(--font-display);font-size:clamp(28px,3vw,40px);color:var(--navy);margin-bottom:20px}
+.about-story p{font-size:15px;color:var(--gray-700);line-height:1.75;margin-bottom:16px}
+
+.stats-bar{background:var(--navy);padding:56px 0}
+.stats-grid{max-width:1280px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.stat-item{text-align:center}
+.stat-num{font-family:var(--font-display);font-size:clamp(30px,3.5vw,48px);color:var(--white);letter-spacing:-.02em}
+.stat-label{font-size:13px;color:rgba(255,255,255,.55);margin-top:4px;font-weight:500}
+
+.values{padding:80px 0;background:var(--gray-50)}
+.values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:40px}
+.value-card{background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:32px;transition:all .3s}
+.value-card:hover{border-color:var(--green);box-shadow:0 8px 28px rgba(0,0,0,.06)}
+.value-card h3{font-family:var(--font-display);font-size:20px;color:var(--navy);margin-bottom:10px}
+.value-card p{font-size:14px;color:var(--gray-500);line-height:1.7}
+
+.team{padding:80px 0}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;margin-top:40px}
+.team-card{background:var(--white);border-radius:12px;overflow:hidden;border:1px solid var(--gray-200);transition:all .3s;text-align:center}
+.team-card:hover{border-color:var(--green);box-shadow:0 8px 28px rgba(0,0,0,.06);transform:translateY(-3px)}
+.team-photo{width:100%;height:300px;object-fit:cover;object-position:center top}
+.team-info{padding:20px}
+.team-name{font-family:var(--font-display);font-size:18px;color:var(--navy);margin-bottom:4px}
+.team-title{font-size:12px;font-weight:600;color:var(--green);letter-spacing:.04em;text-transform:uppercase;margin-bottom:10px}
+.team-bio{font-size:13px;color:var(--gray-500);line-height:1.6}
+.team-linkedin{display:inline-flex;align-items:center;gap:4px;margin-top:12px;font-size:12px;color:var(--green);font-weight:600;text-decoration:none;transition:color .2s}
+.team-linkedin:hover{color:var(--navy)}
+
+.timeline{padding:80px 0;background:var(--gray-50)}
+.timeline-list{max-width:700px;margin-top:40px;position:relative;padding-left:32px}
+.timeline-list::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--gray-200)}
+.timeline-item{position:relative;margin-bottom:32px}
+.timeline-item::before{content:'';position:absolute;left:-25px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--green);border:2px solid var(--white);box-shadow:0 0 0 3px rgba(0,106,78,.15)}
+.timeline-item h3{font-family:var(--font-display);font-size:18px;color:var(--navy);margin-bottom:4px}
+.timeline-item p{font-size:14px;color:var(--gray-500);line-height:1.65}
+
+@media(max-width:1024px){
+.about-story-grid{grid-template-columns:1fr}
+.values-grid{grid-template-columns:1fr}
+.stats-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+}
+@media(max-width:768px){
+.team-grid{grid-template-columns:repeat(2,1fr)}
+.stats-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+<div class="nav-inner">
+  <a href="index.html" class="nav-logo"><img src="images/cls-logo-emblem.png" alt="Commercial Lending Solutions"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
+  <div class="nav-links" id="navLinks">
+    <div class="nav-dropdown">
+      <a href="index.html#programs">Financing</a>
+      <div class="nav-dropdown-menu">
+        <a href="financing/permanent-loans.html">Permanent Loans</a>
+        <a href="financing/construction-loans.html">Construction Loans</a>
+        <a href="financing/bridge-loans.html">Bridge Loans</a>
+        <a href="financing/sba-loans.html">SBA Loans</a>
+        <a href="financing/mezzanine.html">Mezzanine &amp; Pref Equity</a>
+        <a href="financing/specialty.html">Specialty Financing</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="index.html#transactions">Properties</a>
+      <div class="nav-dropdown-menu">
+        <a href="property/multifamily.html">Multifamily</a>
+        <a href="property/industrial.html">Industrial</a>
+        <a href="property/retail.html">Retail</a>
+        <a href="property/office.html">Office</a>
+        <a href="property/mixed-use.html">Mixed-Use</a>
+        <a href="property/hospitality.html">Hospitality</a>
+      </div>
+    </div>
+    <a href="about.html" class="active">About</a>
+    <a href="market-data.html">Market Data</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="contact.html" class="nav-cta">Get a Quote</a>
+  </div>
+  <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</nav>
+
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="index.html">Home</a></li>
+  <li><span>About</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">About CLS CRE</div>
+  <h1 class="reveal">Institutional Pedigree.<br>Boutique Service.</h1>
+  <p class="reveal">We came from CBRE and Marcus &amp; Millichap. We brought the best of those platforms &mdash; and left behind everything that doesn't serve you.</p>
+  <a href="contact.html" class="btn-primary reveal">Work With Us &rarr;</a>
+</div>
+</section>
+
+<!-- OUR STORY -->
+<section class="about-story">
+<div class="section-inner">
+  <div class="about-story-grid">
+    <div class="reveal">
+      <div class="section-label">Our Story</div>
+      <h2>Built by Brokers. For Borrowers.</h2>
+      <p>Commercial Lending Solutions was founded with a simple premise: borrowers deserve the same quality of execution and lender access that was previously only available through the largest institutional brokerages &mdash; but with direct principal attention and zero bureaucracy.</p>
+      <p>Our team came from the debt and structured finance divisions of CBRE, Marcus &amp; Millichap Capital Corporation, Genesis Capital, and Slatt Capital. We've underwritten, structured, and closed over $1 billion in commercial real estate transactions across every major property type and market nationwide.</p>
+      <p>What makes us different is access. Most brokers work with a handful of banks and call it a day. We correspond directly with over 1,000 capital sources &mdash; including life insurance companies that most brokers can't reach &mdash; to engineer the optimal capital stack for every deal.</p>
+    </div>
+    <div class="about-story-img reveal">
+      <img src="images/trevor-damyan.jpg" alt="Trevor Damyan, CEO of Commercial Lending Solutions" loading="lazy">
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-bar">
+<div class="stats-grid">
+  <div class="stat-item reveal"><div class="stat-num">$1B+</div><div class="stat-label">Aggregate Loan Volume</div></div>
+  <div class="stat-item reveal"><div class="stat-num">1,000+</div><div class="stat-label">Lender Relationships</div></div>
+  <div class="stat-item reveal"><div class="stat-num">$250-400M</div><div class="stat-label">Originated Annually</div></div>
+  <div class="stat-item reveal"><div class="stat-num">$12M</div><div class="stat-label">Average Deal Size</div></div>
+</div>
+</section>
+
+<!-- VALUES / DIFFERENTIATORS -->
+<section class="values">
+<div class="section-inner">
+  <div class="section-label reveal">What Sets Us Apart</div>
+  <div class="section-title reveal">Four Reasons to Work With CLS CRE</div>
+  <div class="values-grid">
+    <div class="value-card reveal">
+      <h3>Institutional Pedigree, Boutique Service</h3>
+      <p>Our principals came from CBRE, Marcus &amp; Millichap, and other top-tier institutional brokerages. You get Fortune 500 capabilities with direct principal access &mdash; no bureaucracy, no gatekeeping. Every deal gets personal attention from a senior professional.</p>
+    </div>
+    <div class="value-card reveal">
+      <h3>Direct Life Insurance Company Access</h3>
+      <p>Most brokers can't correspond directly with life insurance companies. We can. This unlocks the most competitive long-term fixed rates in market &mdash; rates banks simply cannot match. For stabilized multifamily, industrial, and retail assets, this access is a game-changer.</p>
+    </div>
+    <div class="value-card reveal">
+      <h3>Creative Structuring Expertise</h3>
+      <p>From nonprofit GP structures on affordable housing to industrial lease restructuring that unlocks higher leverage &mdash; we engineer deals, not just place them. Our structuring expertise means more proceeds, better terms, and faster closings for our clients.</p>
+    </div>
+    <div class="value-card reveal">
+      <h3>Free AI Tools for Investors</h3>
+      <p>We've built proprietary analysis tools at <a href="https://clscre.ai" target="_blank" rel="noopener" style="color:var(--green);text-decoration:underline;font-weight:600">clscre.ai</a> &mdash; refinance vs. sell calculators, 1031 exchange analysis, and more. No other brokerage in LA offers this level of technology to their clients.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+<div class="section-inner">
+  <div class="section-label reveal">Our Team</div>
+  <div class="section-title reveal">Meet the Professionals Behind CLS CRE</div>
+  <p class="section-desc reveal">Every member of our team brings institutional experience and a commitment to exceptional client service.</p>
+  <div class="team-grid">
+    <div class="team-card reveal">
+      <img src="images/trevor-damyan.jpg" alt="Trevor Damyan" class="team-photo" loading="lazy">
+      <div class="team-info">
+        <div class="team-name">Trevor Damyan</div>
+        <div class="team-title">CEO / Founder</div>
+        <div class="team-bio">President and founder leading nationwide debt and equity financing with Southern California focus. Nearly a decade of CRE experience. Prior: CBRE Debt &amp; Structured Finance, Marcus &amp; Millichap Capital Corporation, Genesis Capital, Slatt Capital.</div>
+        <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener" class="team-linkedin">LinkedIn &rarr;</a>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <img src="https://clscre.com/wp-content/uploads/2025/09/Roman-H-238x300.png" alt="Roman Hess" class="team-photo" loading="lazy">
+      <div class="team-info">
+        <div class="team-name">Roman Hess</div>
+        <div class="team-title">Senior Associate</div>
+        <div class="team-bio">Assists investors securing customized financing nationwide across multifamily, industrial, retail, office, hospitality, and mixed-use assets.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Lucas-M.-1-254x300.png" alt="Lucas Morton" class="team-photo" loading="lazy">
+      <div class="team-info">
+        <div class="team-name">Lucas Morton</div>
+        <div class="team-title">Senior Associate</div>
+        <div class="team-bio">Nationwide commercial mortgage broker specializing in multifamily through mixed-use properties with a proven track record of competitive rates.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <img src="https://clscre.com/wp-content/uploads/2025/09/Brendan-M-238x300.png" alt="Brendan Mengali" class="team-photo" loading="lazy">
+      <div class="team-info">
+        <div class="team-name">Brendan Mengali</div>
+        <div class="team-title">Senior Associate</div>
+        <div class="team-bio">Specializes in nationwide commercial financing from multifamily to mixed-use assets with tailored solutions for every investor.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <img src="https://clscre.com/wp-content/uploads/2024/09/Andi-S-254x300.png" alt="Suandi Louise Sabas" class="team-photo" loading="lazy">
+      <div class="team-info">
+        <div class="team-name">Suandi "Andi" Louise Sabas</div>
+        <div class="team-title">Senior Analyst</div>
+        <div class="team-bio">Focuses on financial analysis, risk assessment, and market trends to strengthen deals and support the origination team.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <img src="https://clscre.com/wp-content/uploads/2024/01/Zoey-F-254x300.png" alt="Zoey Fermilan" class="team-photo" loading="lazy">
+      <div class="team-info">
+        <div class="team-name">Zoey Fermilan</div>
+        <div class="team-title">Associate</div>
+        <div class="team-bio">Specializes in multifamily, industrial, retail, office, and hospitality financing with focus on tailored growth solutions.</div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <img src="https://clscre.com/wp-content/uploads/2025/09/Raya-R-238x300.png" alt="Raya Reyna" class="team-photo" loading="lazy">
+      <div class="team-info">
+        <div class="team-name">Raya Reyna</div>
+        <div class="team-title">Marketing Manager</div>
+        <div class="team-bio">Builds strategies elevating the CLS brand and connecting clients to smart commercial financing solutions.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline">
+<div class="section-inner">
+  <div class="section-label reveal">Our Journey</div>
+  <div class="section-title reveal">From Institutional Brokerage to Independent Firm</div>
+  <div class="timeline-list">
+    <div class="timeline-item reveal">
+      <h3>CBRE &amp; Marcus &amp; Millichap</h3>
+      <p>Trevor Damyan and team members trained at CBRE Debt &amp; Structured Finance and Marcus &amp; Millichap Capital Corporation, learning institutional underwriting, lender relationships, and capital markets execution at the highest level.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <h3>Building the Lender Network</h3>
+      <p>Over nearly a decade, the team built direct relationships with 1,000+ capital sources nationwide &mdash; banks, life insurance companies, debt funds, CMBS conduits, agency lenders, and private equity firms. This network is the foundation of CLS CRE's competitive advantage.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <h3>Commercial Lending Solutions Founded</h3>
+      <p>CLS CRE launched as an independent brokerage headquartered in Los Angeles, bringing institutional capabilities to a boutique platform. The focus: transparent execution, direct principal access, and the best terms in market for every deal.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <h3>$1 Billion+ in Volume</h3>
+      <p>Today, CLS CRE has facilitated over $1 billion in aggregate loan volume across permanent, construction, bridge, SBA, mezzanine, and specialty financing programs &mdash; serving clients in all 50 states from multifamily apartments to industrial warehouses to specialty assets.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <h3>AI Tools &amp; Technology</h3>
+      <p>CLS CRE launched <a href="https://clscre.ai" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;text-decoration:none">clscre.ai</a> &mdash; proprietary AI-powered analysis tools for commercial real estate investors. Free refinance vs. sell calculators, 1031 exchange analysis, and more. No other brokerage in LA offers this.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+<div class="section-inner" style="position:relative;z-index:1">
+  <h2>Ready to Work With Us?</h2>
+  <p>Tell us about your deal. We respond within 24 hours with financing options tailored to your property and goals.</p>
+  <a href="contact.html" class="btn-primary">Request a Quote &rarr;</a>
+  <div style="margin-top:20px">
+    <a href="tel:+13107584042" style="color:rgba(255,255,255,.6);text-decoration:none;font-size:14px">Or call us: 310.758.4042</a>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-grid">
+  <div class="footer-brand">
+    <img src="images/cls-logo-emblem.png" alt="Commercial Lending Solutions">
+    <p>Over $1 billion in commercial loans closed. Institutional expertise. Personal service. Every deal, every time.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Financing</h4>
+    <a href="financing/permanent-loans.html">Permanent Loans</a>
+    <a href="financing/construction-loans.html">Construction Loans</a>
+    <a href="financing/bridge-loans.html">Bridge Loans</a>
+    <a href="financing/sba-loans.html">SBA Loans</a>
+    <a href="financing/mezzanine.html">Mezzanine &amp; Pref Equity</a>
+    <a href="financing/specialty.html">Specialty Financing</a>
+  </div>
+  <div class="footer-col">
+    <h4>Properties</h4>
+    <a href="property/multifamily.html">Multifamily</a>
+    <a href="property/industrial.html">Industrial</a>
+    <a href="property/retail.html">Retail</a>
+    <a href="property/office.html">Office</a>
+    <a href="property/mixed-use.html">Mixed-Use</a>
+    <a href="property/hospitality.html">Hospitality</a>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="about.html">About Us</a>
+    <a href="index.html#transactions">Transactions</a>
+    <a href="market-data.html">Market Data</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>&copy; 2026 Commercial Lending Solutions. All rights reserved. DRE #02244836</span>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/commercialloanbroker" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+const reveals=document.querySelectorAll('.reveal');const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});reveals.forEach(el=>observer.observe(el));
+const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
+</script>
+</body>
+</html>
