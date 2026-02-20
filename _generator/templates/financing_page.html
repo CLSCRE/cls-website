@@ -2,13 +2,13 @@
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — {{ loan.name }}","url":"https://landtoyield.com/financing/{{ loan.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://landtoyield.com"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — {{ loan.name }}","url":"https://commerciallendingsolutions.ai/financing/{{ loan.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://landtoyield.com"},{"@type":"ListItem","position":2,"name":"Financing","item":"https://landtoyield.com/financing/"},{"@type":"ListItem","position":3,"name":"{{ loan.name }}","item":"https://landtoyield.com/financing/{{ loan.slug }}.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"Financing","item":"https://commerciallendingsolutions.ai/financing/"},{"@type":"ListItem","position":3,"name":"{{ loan.name }}","item":"https://commerciallendingsolutions.ai/financing/{{ loan.slug }}.html"}]}
 </script>
 {% endblock %}
 

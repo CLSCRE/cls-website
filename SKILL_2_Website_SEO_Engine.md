@@ -6,7 +6,7 @@ description: "Use this skill whenever the user asks to build, edit, or update we
 # Skill 2: CLS CRE Website & SEO Engine
 
 ## Overview
-Full website rebuild for Commercial Lending Solutions (landtoyield.com) with programmatic SEO targeting commercial real estate borrowers across all loan types, property types, and geographic markets.
+Full website rebuild for Commercial Lending Solutions (commerciallendingsolutions.ai) with programmatic SEO targeting commercial real estate borrowers across all loan types, property types, and geographic markets.
 
 ## Live Test Site
 - **URL**: https://clscre.github.io/cls-website/
@@ -102,7 +102,7 @@ Template-driven pages for every combination of:
 ## Technical Stack
 - **Static HTML/CSS/JS** — no framework, maximum performance
 - **Hosting**: GitHub Pages (test) → Netlify or custom domain (production)
-- **Domain**: landtoyield.com (target)
+- **Domain**: commerciallendingsolutions.ai (target)
 - **Performance targets**: Lighthouse 95+, < 2s load, < 500KB total
 - **SEO**: Schema.org FinancialService markup, Open Graph, canonical URLs
 
@@ -119,7 +119,7 @@ Template-driven pages for every combination of:
 | Sitemap + robots.txt | **LIVE** | 196 URLs in sitemap.xml |
 | About page | **LIVE** | Team bios, company story, timeline, differentiators |
 | Contact page | **LIVE** | Quote form, contact info, hours, process steps |
-| Custom domain | **LIVE** | landtoyield.com → GitHub Pages, HTTPS enforced |
+| Custom domain | **LIVE** | commerciallendingsolutions.ai → GitHub Pages, HTTPS enforced |
 | Google Search Console | **LIVE** | Sitemap submitted, 196 pages discovered |
 | Blog / Insights | Not started | Rate commentary, deal case studies |
 
