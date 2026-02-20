@@ -80,16 +80,41 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 
 /* YIELD CURVE */
 .yield-curve{padding:64px 0;background:var(--gray-50)}
-.yc-container{background:var(--white);border-radius:12px;padding:36px;border:1px solid var(--gray-200);box-shadow:0 4px 16px rgba(0,0,0,.03)}
-.yc-chart{width:100%;height:320px;position:relative;margin-top:16px}
-.yc-svg{width:100%;height:100%}
-.yc-line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-.yc-current{stroke:var(--navy)}
-.yc-year-ago{stroke:var(--green);stroke-dasharray:6,4;opacity:.55}
-.yc-dot{r:4;stroke:var(--white);stroke-width:2}
-.yc-legend{display:flex;gap:28px;margin-top:20px}
+.yc-container{background:var(--white);border-radius:12px;padding:32px;border:1px solid var(--gray-200);box-shadow:0 4px 16px rgba(0,0,0,.03)}
+.yc-controls{display:flex;gap:24px;align-items:flex-end;flex-wrap:wrap;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--gray-100)}
+.yc-control{display:flex;flex-direction:column;gap:6px}
+.yc-control label{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gray-500);display:flex;align-items:center;gap:8px}
+.yc-color-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.yc-control select{padding:8px 32px 8px 12px;border:1px solid var(--gray-200);border-radius:6px;font-size:14px;font-family:var(--font-body);font-weight:500;color:var(--navy);background:var(--white);cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' stroke='%236B7280' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;min-width:180px;transition:border-color .2s}
+.yc-control select:hover{border-color:var(--green)}
+.yc-control select:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(0,106,78,.08)}
+.yc-quick-btns{display:flex;gap:6px;align-items:flex-end;margin-left:auto}
+.yc-quick-btn{padding:7px 14px;border:1px solid var(--gray-200);border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;background:var(--white);color:var(--gray-700);transition:all .2s;white-space:nowrap}
+.yc-quick-btn:hover{border-color:var(--green);color:var(--green)}
+.yc-quick-btn.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.yc-chart-wrap{position:relative;width:100%;padding-bottom:42%}
+.yc-svg{position:absolute;top:0;left:0;width:100%;height:100%}
+.yc-line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:d .4s ease}
+.yc-dot-group{cursor:pointer}
+.yc-dot{stroke-width:2;transition:cx .4s ease,cy .4s ease}
+.yc-dot-hover{r:8;fill:transparent;stroke:none;cursor:pointer}
+.yc-tooltip{position:absolute;background:var(--navy);color:var(--white);padding:10px 14px;border-radius:8px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:10;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.yc-tooltip::after{content:'';position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid var(--navy)}
+.yc-tooltip-label{font-weight:600;margin-bottom:4px;font-size:13px}
+.yc-tooltip-row{display:flex;justify-content:space-between;gap:16px;align-items:center}
+.yc-tooltip-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:4px}
+.yc-legend{display:flex;gap:28px;margin-top:16px;flex-wrap:wrap;align-items:center}
 .yc-legend-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray-500);font-weight:500}
 .yc-legend-line{width:24px;height:3px;border-radius:2px}
+.yc-spread{margin-left:auto;font-size:12px;color:var(--gray-500);font-weight:500}
+.yc-spread strong{color:var(--navy);font-family:var(--font-display);font-size:14px}
+@media(max-width:768px){
+.yc-controls{flex-direction:column;gap:12px}
+.yc-quick-btns{margin-left:0;flex-wrap:wrap}
+.yc-control select{min-width:100%;width:100%}
+.yc-legend{flex-direction:column;align-items:flex-start;gap:8px}
+.yc-spread{margin-left:0}
+}
 
 /* MACRO INDICATORS */
 .macro{padding:64px 0;background:var(--white)}
@@ -235,44 +260,37 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
 </div>
 </section>
 
-<!-- YIELD CURVE -->
+<!-- YIELD CURVE (INTERACTIVE) -->
 <section class="yield-curve" id="yield-curve">
 <div class="section-inner">
   <div class="section-label reveal">Treasury Market</div>
   <div class="section-title reveal">U.S. Treasury Yield Curve</div>
-  <p class="section-desc reveal">The yield curve shows Treasury rates across maturities. An upward slope is normal; inversions historically signal recession. The curve has normalized from its 2023-2024 inversion.</p>
+  <p class="section-desc reveal">Select any two dates to compare how the yield curve has shifted. Hover over data points for exact rates at each maturity.</p>
   <div class="yc-container reveal">
-    <div class="yc-chart">
-      <svg class="yc-svg" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
-        <line x1="60" y1="20" x2="60" y2="260" stroke="rgba(0,0,0,.06)" stroke-width="1"/>
-        <line x1="60" y1="260" x2="780" y2="260" stroke="rgba(0,0,0,.06)" stroke-width="1"/>
-        <line x1="60" y1="80" x2="780" y2="80" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
-        <line x1="60" y1="140" x2="780" y2="140" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
-        <line x1="60" y1="200" x2="780" y2="200" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
-        <text x="50" y="24" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">5.0%</text>
-        <text x="50" y="84" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">4.5%</text>
-        <text x="50" y="144" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">4.0%</text>
-        <text x="50" y="204" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3.5%</text>
-        <text x="50" y="264" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3.0%</text>
-        <text x="80" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">1M</text>
-        <text x="145" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3M</text>
-        <text x="210" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">6M</text>
-        <text x="280" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">1Y</text>
-        <text x="350" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">2Y</text>
-        <text x="420" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3Y</text>
-        <text x="500" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">5Y</text>
-        <text x="580" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">7Y</text>
-        <text x="660" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">10Y</text>
-        <text x="720" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">20Y</text>
-        <text x="770" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">30Y</text>
-        <polyline class="yc-line yc-current" points="80,217 145,211 210,209 280,214 350,200 420,191 500,175 580,164 660,147 720,117 770,97"/>
-        <polyline class="yc-line yc-year-ago" points="80,131 145,130 210,128 280,140 350,141 420,143 500,147 580,138 660,133 720,114 770,113"/>
-        <circle cx="80" cy="217" class="yc-dot" fill="var(--navy)"/><circle cx="145" cy="211" class="yc-dot" fill="var(--navy)"/><circle cx="210" cy="209" class="yc-dot" fill="var(--navy)"/><circle cx="280" cy="214" class="yc-dot" fill="var(--navy)"/><circle cx="350" cy="200" class="yc-dot" fill="var(--navy)"/><circle cx="420" cy="191" class="yc-dot" fill="var(--navy)"/><circle cx="500" cy="175" class="yc-dot" fill="var(--navy)"/><circle cx="580" cy="164" class="yc-dot" fill="var(--navy)"/><circle cx="660" cy="147" class="yc-dot" fill="var(--navy)"/><circle cx="720" cy="117" class="yc-dot" fill="var(--navy)"/><circle cx="770" cy="97" class="yc-dot" fill="var(--navy)"/>
-      </svg>
+    <div class="yc-controls">
+      <div class="yc-control">
+        <label><span class="yc-color-dot" style="background:#153D63"></span> Curve 1</label>
+        <select id="ycDate1"></select>
+      </div>
+      <div class="yc-control">
+        <label><span class="yc-color-dot" style="background:#006A4E"></span> Curve 2 (Compare)</label>
+        <select id="ycDate2"></select>
+      </div>
+      <div class="yc-quick-btns">
+        <button class="yc-quick-btn active" data-preset="1y">1Y Ago</button>
+        <button class="yc-quick-btn" data-preset="2y">2Y Ago</button>
+        <button class="yc-quick-btn" data-preset="peak">Peak Inversion</button>
+        <button class="yc-quick-btn" data-preset="covid">COVID Low</button>
+      </div>
+    </div>
+    <div class="yc-chart-wrap">
+      <svg class="yc-svg" id="ycSvg" viewBox="0 0 800 340" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="yc-tooltip" id="ycTooltip"></div>
     </div>
     <div class="yc-legend">
-      <div class="yc-legend-item"><div class="yc-legend-line" style="background:var(--navy)"></div>Current (Feb 19, 2026)</div>
-      <div class="yc-legend-item"><div class="yc-legend-line" style="background:var(--green)"></div>1 Year Ago (Feb 2025)</div>
+      <div class="yc-legend-item"><div class="yc-legend-line" style="background:#153D63"></div><span id="ycLegend1">Feb 2026</span></div>
+      <div class="yc-legend-item"><div class="yc-legend-line" style="background:#006A4E;opacity:.7"></div><span id="ycLegend2">Feb 2025</span></div>
+      <div class="yc-spread">2s/10s Spread: <strong id="ycSpread">+62bp</strong></div>
     </div>
   </div>
 </div>
@@ -442,6 +460,263 @@ const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
 mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
 navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); }); });
+
+// =============================================
+// INTERACTIVE YIELD CURVE
+// =============================================
+(function() {
+  // Maturities on X-axis
+  const MAT = ['1M','3M','6M','1Y','2Y','3Y','5Y','7Y','10Y','20Y','30Y'];
+  const COLORS = { c1: '#153D63', c2: '#006A4E' };
+
+  // Historical monthly yield curve data (end-of-month rates)
+  // Format: [1M, 3M, 6M, 1Y, 2Y, 3Y, 5Y, 7Y, 10Y, 20Y, 30Y]
+  const DATA = {
+    '2020-03': [0.01, 0.11, 0.23, 0.17, 0.25, 0.32, 0.37, 0.55, 0.70, 1.13, 1.35],
+    '2020-06': [0.08, 0.14, 0.18, 0.16, 0.15, 0.18, 0.29, 0.49, 0.66, 1.16, 1.41],
+    '2020-09': [0.08, 0.10, 0.11, 0.12, 0.13, 0.16, 0.27, 0.46, 0.69, 1.20, 1.46],
+    '2020-12': [0.07, 0.09, 0.09, 0.10, 0.12, 0.17, 0.36, 0.65, 0.93, 1.45, 1.65],
+    '2021-03': [0.03, 0.04, 0.06, 0.07, 0.16, 0.35, 0.92, 1.30, 1.74, 2.29, 2.41],
+    '2021-06': [0.04, 0.05, 0.06, 0.07, 0.25, 0.46, 0.87, 1.21, 1.47, 2.01, 2.09],
+    '2021-09': [0.04, 0.04, 0.05, 0.09, 0.28, 0.51, 0.98, 1.30, 1.52, 1.99, 2.08],
+    '2021-12': [0.06, 0.06, 0.19, 0.39, 0.73, 0.97, 1.26, 1.44, 1.51, 1.94, 1.90],
+    '2022-01': [0.05, 0.20, 0.52, 0.78, 1.18, 1.43, 1.63, 1.78, 1.78, 2.16, 2.10],
+    '2022-03': [0.17, 0.52, 1.02, 1.63, 2.28, 2.45, 2.42, 2.42, 2.32, 2.65, 2.59],
+    '2022-06': [1.15, 1.61, 2.27, 2.81, 2.95, 3.01, 3.04, 3.08, 3.01, 3.40, 3.19],
+    '2022-09': [2.73, 3.28, 3.77, 3.96, 3.92, 3.88, 3.73, 3.65, 3.52, 3.85, 3.65],
+    '2022-12': [4.09, 4.30, 4.72, 4.69, 4.38, 4.12, 3.91, 3.85, 3.68, 4.02, 3.81],
+    '2023-01': [4.43, 4.58, 4.73, 4.68, 4.21, 3.93, 3.62, 3.57, 3.52, 3.87, 3.63],
+    '2023-03': [4.59, 4.69, 4.86, 4.59, 4.06, 3.81, 3.59, 3.58, 3.47, 3.86, 3.65],
+    '2023-06': [5.17, 5.28, 5.36, 5.24, 4.71, 4.37, 4.10, 4.05, 3.84, 4.16, 3.86],
+    '2023-07': [5.33, 5.41, 5.44, 5.34, 4.87, 4.53, 4.20, 4.12, 3.97, 4.30, 4.02],
+    '2023-09': [5.42, 5.46, 5.50, 5.39, 5.02, 4.70, 4.43, 4.40, 4.40, 4.73, 4.50],
+    '2023-10': [5.44, 5.45, 5.49, 5.41, 5.05, 4.82, 4.67, 4.66, 4.80, 5.15, 4.95],
+    '2023-12': [5.36, 5.33, 5.26, 4.83, 4.40, 4.13, 3.91, 3.93, 3.88, 4.25, 4.03],
+    '2024-01': [5.34, 5.32, 5.21, 4.73, 4.30, 4.05, 3.94, 3.98, 4.01, 4.36, 4.17],
+    '2024-03': [5.37, 5.34, 5.22, 4.90, 4.56, 4.33, 4.14, 4.14, 4.19, 4.50, 4.34],
+    '2024-06': [5.35, 5.32, 5.25, 5.05, 4.71, 4.47, 4.28, 4.27, 4.26, 4.55, 4.39],
+    '2024-07': [5.33, 5.28, 5.18, 4.94, 4.49, 4.24, 4.08, 4.10, 4.12, 4.42, 4.30],
+    '2024-09': [4.85, 4.72, 4.51, 3.93, 3.55, 3.45, 3.44, 3.56, 3.73, 4.10, 4.03],
+    '2024-10': [4.65, 4.53, 4.38, 4.02, 3.89, 3.82, 3.84, 3.92, 4.02, 4.37, 4.25],
+    '2024-12': [4.32, 4.25, 4.15, 4.05, 4.15, 4.11, 4.12, 4.18, 4.25, 4.53, 4.40],
+    '2025-01': [4.30, 4.22, 4.13, 4.08, 4.18, 4.16, 4.20, 4.27, 4.29, 4.57, 4.47],
+    '2025-02': [4.28, 4.20, 4.10, 3.97, 4.12, 4.10, 4.14, 4.21, 4.22, 4.50, 4.42],
+    '2025-03': [4.25, 4.18, 4.08, 3.95, 3.99, 3.96, 4.00, 4.07, 4.10, 4.40, 4.32],
+    '2025-04': [4.22, 4.15, 4.05, 3.92, 3.88, 3.85, 3.90, 3.98, 4.03, 4.35, 4.28],
+    '2025-06': [4.10, 4.02, 3.90, 3.78, 3.75, 3.74, 3.80, 3.88, 3.94, 4.26, 4.18],
+    '2025-07': [4.00, 3.92, 3.82, 3.72, 3.72, 3.71, 3.78, 3.86, 3.92, 4.24, 4.16],
+    '2025-09': [3.70, 3.64, 3.58, 3.55, 3.60, 3.62, 3.70, 3.78, 3.85, 4.18, 4.10],
+    '2025-10': [3.60, 3.55, 3.50, 3.48, 3.58, 3.61, 3.72, 3.82, 3.92, 4.25, 4.18],
+    '2025-12': [3.50, 3.45, 3.42, 3.40, 3.62, 3.68, 3.82, 3.92, 4.02, 4.38, 4.30],
+    '2026-01': [3.46, 3.42, 3.40, 3.38, 3.58, 3.65, 3.78, 3.88, 3.99, 4.35, 4.28],
+    '2026-02': [3.42, 3.38, 3.36, 3.35, 3.47, 3.56, 3.75, 3.85, 4.09, 4.50, 4.71]
+  };
+
+  const DATES = Object.keys(DATA).sort();
+  const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function formatDate(key) {
+    const [y, m] = key.split('-');
+    return MONTH_NAMES[parseInt(m)-1] + ' ' + y;
+  }
+
+  // Chart geometry
+  const SVG_W = 800, SVG_H = 340;
+  const PAD = { l: 58, r: 20, t: 20, b: 50 };
+  const CW = SVG_W - PAD.l - PAD.r;
+  const CH = SVG_H - PAD.t - PAD.b;
+
+  // X positions for each maturity (spread unevenly to mirror log-ish time scale)
+  const X_POS = [0, 0.06, 0.13, 0.22, 0.33, 0.42, 0.55, 0.66, 0.78, 0.90, 1.0];
+
+  function getX(i) { return PAD.l + X_POS[i] * CW; }
+
+  function getYRange(d1, d2) {
+    const all = [...(d1||[]), ...(d2||[])];
+    const mn = Math.floor(Math.min(...all) * 2) / 2;
+    const mx = Math.ceil(Math.max(...all) * 2) / 2;
+    return [Math.max(0, mn - 0.25), mx + 0.25];
+  }
+
+  function getY(val, yMin, yMax) {
+    return PAD.t + CH - ((val - yMin) / (yMax - yMin)) * CH;
+  }
+
+  const svg = document.getElementById('ycSvg');
+  const tooltip = document.getElementById('ycTooltip');
+  const sel1 = document.getElementById('ycDate1');
+  const sel2 = document.getElementById('ycDate2');
+
+  // Populate selects
+  DATES.forEach(d => {
+    const o1 = document.createElement('option');
+    o1.value = d; o1.textContent = formatDate(d);
+    sel1.appendChild(o1);
+    const o2 = o1.cloneNode(true);
+    sel2.appendChild(o2);
+  });
+  sel1.value = DATES[DATES.length - 1]; // latest
+  sel2.value = DATES[DATES.length - 2 >= 0 ? DATES.length - 2 : 0];
+  // Default: compare to ~1 year ago
+  const oneYearAgo = DATES.find(d => d.startsWith((parseInt(DATES[DATES.length-1].split('-')[0])-1).toString()));
+  if (oneYearAgo) sel2.value = oneYearAgo;
+
+  function buildSVG() {
+    const d1 = DATA[sel1.value];
+    const d2 = DATA[sel2.value];
+    const [yMin, yMax] = getYRange(d1, d2);
+
+    let html = '';
+
+    // Grid lines
+    const nGrid = Math.round((yMax - yMin) / 0.5) + 1;
+    for (let i = 0; i < nGrid; i++) {
+      const val = yMin + i * 0.5;
+      const y = getY(val, yMin, yMax);
+      if (y < PAD.t - 5 || y > PAD.t + CH + 5) continue;
+      html += '<line x1="'+PAD.l+'" y1="'+y+'" x2="'+(SVG_W-PAD.r)+'" y2="'+y+'" stroke="rgba(0,0,0,.06)" stroke-width="1"'+(i>0?' stroke-dasharray="4"':'')+'/>';
+      html += '<text x="'+(PAD.l-8)+'" y="'+(y+4)+'" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">'+val.toFixed(1)+'%</text>';
+    }
+
+    // X-axis labels
+    MAT.forEach((m, i) => {
+      const x = getX(i);
+      html += '<text x="'+x+'" y="'+(SVG_H - PAD.b + 28)+'" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">'+m+'</text>';
+      html += '<line x1="'+x+'" y1="'+(PAD.t)+'" x2="'+x+'" y2="'+(PAD.t+CH)+'" stroke="rgba(0,0,0,.02)" stroke-width="1"/>';
+    });
+
+    // Axes
+    html += '<line x1="'+PAD.l+'" y1="'+PAD.t+'" x2="'+PAD.l+'" y2="'+(PAD.t+CH)+'" stroke="rgba(0,0,0,.08)" stroke-width="1"/>';
+    html += '<line x1="'+PAD.l+'" y1="'+(PAD.t+CH)+'" x2="'+(SVG_W-PAD.r)+'" y2="'+(PAD.t+CH)+'" stroke="rgba(0,0,0,.08)" stroke-width="1"/>';
+
+    // Curve 2 (comparison, drawn first = behind)
+    let pts2 = '';
+    d2.forEach((v, i) => { pts2 += getX(i)+','+getY(v, yMin, yMax)+' '; });
+    html += '<polyline class="yc-line" fill="none" stroke="'+COLORS.c2+'" stroke-width="2.5" stroke-dasharray="6,4" opacity=".6" stroke-linecap="round" stroke-linejoin="round" points="'+pts2.trim()+'"/>';
+
+    // Curve 2 area fill
+    html += '<polygon fill="'+COLORS.c2+'" opacity=".04" points="'+getX(0)+','+(PAD.t+CH)+' '+pts2.trim()+' '+getX(10)+','+(PAD.t+CH)+'"/>';
+
+    // Curve 1 (primary)
+    let pts1 = '';
+    d1.forEach((v, i) => { pts1 += getX(i)+','+getY(v, yMin, yMax)+' '; });
+    html += '<polyline class="yc-line" fill="none" stroke="'+COLORS.c1+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="'+pts1.trim()+'"/>';
+
+    // Curve 1 area fill
+    html += '<polygon fill="'+COLORS.c1+'" opacity=".04" points="'+getX(0)+','+(PAD.t+CH)+' '+pts1.trim()+' '+getX(10)+','+(PAD.t+CH)+'"/>';
+
+    // Dots for curve 2
+    d2.forEach((v, i) => {
+      const x = getX(i), y = getY(v, yMin, yMax);
+      html += '<circle cx="'+x+'" cy="'+y+'" r="3.5" fill="'+COLORS.c2+'" stroke="white" stroke-width="2" opacity=".7"/>';
+    });
+
+    // Dots for curve 1
+    d1.forEach((v, i) => {
+      const x = getX(i), y = getY(v, yMin, yMax);
+      html += '<circle cx="'+x+'" cy="'+y+'" r="4" fill="'+COLORS.c1+'" stroke="white" stroke-width="2"/>';
+    });
+
+    // Invisible hover targets (larger hit area)
+    MAT.forEach((m, i) => {
+      const x = getX(i);
+      html += '<rect x="'+(x-24)+'" y="'+PAD.t+'" width="48" height="'+CH+'" fill="transparent" data-idx="'+i+'" class="yc-hover-target" style="cursor:pointer"/>';
+    });
+
+    svg.innerHTML = html;
+
+    // Hover events
+    svg.querySelectorAll('.yc-hover-target').forEach(rect => {
+      rect.addEventListener('mouseenter', function(e) {
+        const idx = parseInt(this.dataset.idx);
+        const x = getX(idx);
+        const y1 = getY(d1[idx], yMin, yMax);
+        const diff = d1[idx] - d2[idx];
+        const diffStr = (diff >= 0 ? '+' : '') + (diff * 100).toFixed(0) + 'bp';
+        tooltip.innerHTML =
+          '<div class="yc-tooltip-label">' + MAT[idx] + ' Treasury</div>' +
+          '<div class="yc-tooltip-row"><span><span class="yc-tooltip-dot" style="background:'+COLORS.c1+'"></span>' + formatDate(sel1.value) + '</span><strong>' + d1[idx].toFixed(3) + '%</strong></div>' +
+          '<div class="yc-tooltip-row"><span><span class="yc-tooltip-dot" style="background:'+COLORS.c2+'"></span>' + formatDate(sel2.value) + '</span><strong>' + d2[idx].toFixed(3) + '%</strong></div>' +
+          '<div class="yc-tooltip-row" style="border-top:1px solid rgba(255,255,255,.15);padding-top:4px;margin-top:4px"><span>Change</span><strong style="color:'+(diff>0?'#fca5a5':'#86efac')+'">' + diffStr + '</strong></div>';
+        const wrap = svg.closest('.yc-chart-wrap');
+        const svgRect = svg.getBoundingClientRect();
+        const wrapRect = wrap.getBoundingClientRect();
+        const pxX = ((x / SVG_W) * svgRect.width) + svgRect.left - wrapRect.left;
+        const pxY = ((y1 / SVG_H) * svgRect.height) + svgRect.top - wrapRect.top;
+        tooltip.style.left = pxX + 'px';
+        tooltip.style.top = (pxY - 10) + 'px';
+        tooltip.style.transform = 'translate(-50%, -100%)';
+        tooltip.style.opacity = '1';
+      });
+      rect.addEventListener('mouseleave', function() {
+        tooltip.style.opacity = '0';
+      });
+    });
+
+    // Update legend
+    document.getElementById('ycLegend1').textContent = formatDate(sel1.value);
+    document.getElementById('ycLegend2').textContent = formatDate(sel2.value);
+
+    // 2s/10s spread (curve 1)
+    const spread = ((d1[8] - d1[4]) * 100).toFixed(0);
+    document.getElementById('ycSpread').textContent = (spread >= 0 ? '+' : '') + spread + 'bp';
+  }
+
+  sel1.addEventListener('change', function() {
+    clearActivePreset();
+    buildSVG();
+  });
+  sel2.addEventListener('change', function() {
+    clearActivePreset();
+    buildSVG();
+  });
+
+  // Quick presets
+  function clearActivePreset() {
+    document.querySelectorAll('.yc-quick-btn').forEach(b => b.classList.remove('active'));
+  }
+
+  const PRESETS = {
+    '1y': function() {
+      sel1.value = DATES[DATES.length - 1];
+      const y = parseInt(sel1.value.split('-')[0]) - 1;
+      const m = sel1.value.split('-')[1];
+      const target = y + '-' + m;
+      sel2.value = DATES.includes(target) ? target : DATES.reduce((p, c) => Math.abs(new Date(c) - new Date(target)) < Math.abs(new Date(p) - new Date(target)) ? c : p);
+    },
+    '2y': function() {
+      sel1.value = DATES[DATES.length - 1];
+      const y = parseInt(sel1.value.split('-')[0]) - 2;
+      const m = sel1.value.split('-')[1];
+      const target = y + '-' + m;
+      sel2.value = DATES.includes(target) ? target : DATES.reduce((p, c) => Math.abs(new Date(c) - new Date(target)) < Math.abs(new Date(p) - new Date(target)) ? c : p);
+    },
+    'peak': function() {
+      sel1.value = DATES[DATES.length - 1];
+      sel2.value = '2023-10'; // Peak inversion
+    },
+    'covid': function() {
+      sel1.value = DATES[DATES.length - 1];
+      sel2.value = '2020-03'; // COVID low
+    }
+  };
+
+  document.querySelectorAll('.yc-quick-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      clearActivePreset();
+      this.classList.add('active');
+      const preset = this.dataset.preset;
+      if (PRESETS[preset]) {
+        PRESETS[preset]();
+        buildSVG();
+      }
+    });
+  });
+
+  // Initial render
+  PRESETS['1y']();
+  buildSVG();
+})();
 </script>
 </body>
 </html>
