@@ -204,7 +204,7 @@ def main():
                 "loc": f"{BASE_URL}/financing/{slug}.html",
                 "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
             })
-        print(f"  [OK] financing/{loan['slug']}-*.html  (15 city pages)")
+        print(f"  [OK] financing/{loan['slug']}-*.html  ({len(cities)} city pages)")
 
     # ── 4. City × Property Type Pages ──────────────────────────────────
     print("\n=== Generating City × Property Type Pages ===")
@@ -239,7 +239,7 @@ def main():
                 "loc": f"{BASE_URL}/property/{slug}.html",
                 "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
             })
-        print(f"  [OK] property/{prop['slug']}-*.html  (15 city pages)")
+        print(f"  [OK] property/{prop['slug']}-*.html  ({len(cities)} city pages)")
 
     # ── 5. Blog Index Page ──────────────────────────────────────────────
     print("\n=== Generating Blog Pages ===")
