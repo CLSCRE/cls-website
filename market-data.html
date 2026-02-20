@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Data & Economic Outlook | Commercial Lending Solutions</title>
+<meta name="description" content="Real-time treasury yields, yield curve analysis, economic calendar, and macro indicators for commercial real estate investors. Updated daily by CLS CRE.">
+<link rel="canonical" href="https://commerciallendingsolutions.ai/market-data.html">
+<meta property="og:title" content="Market Data & Economic Outlook | Commercial Lending Solutions">
+<meta property="og:description" content="Treasury yields, yield curve, economic calendar, and macro indicators that drive CRE financing decisions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://commerciallendingsolutions.ai/market-data.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--navy:#153D63;--navy-deep:#0D2B47;--green:#006A4E;--green-light:#008060;--green-bright:#00A676;
+--white:#FFFFFF;--gray-50:#F9FAFB;--gray-100:#F3F4F6;--gray-200:#E5E7EB;--gray-300:#D1D5DB;
+--gray-500:#6B7280;--gray-700:#374151;--gray-900:#111827;--gold:#C5A355;
+--font-display:'DM Serif Display',Georgia,serif;--font-body:'Inter',system-ui,-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--white);box-shadow:0 1px 12px rgba(0,0,0,.06);border-bottom:1px solid var(--gray-200)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo img{height:44px}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links>a,.nav-dropdown>a{color:var(--gray-700);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;padding:8px 0}
+.nav-links>a:hover,.nav-dropdown:hover>a{color:var(--green)}
+.nav-links>a.active{color:var(--green);font-weight:600}
+.nav-cta{background:var(--navy);color:var(--white)!important;padding:10px 24px!important;border-radius:6px;font-weight:600!important;font-size:14px;text-decoration:none;transition:all .2s;display:inline-block}
+.nav-cta:hover{background:var(--green);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,106,78,.2)}
+.nav-mobile{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.nav-mobile span{display:block;width:22px;height:2px;background:var(--gray-700);margin:5px 0;transition:.3s}
+.nav-dropdown{position:relative}
+.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 8px);left:-16px;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;box-shadow:0 12px 40px rgba(0,0,0,.08);min-width:260px;padding:8px 0;z-index:100}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+.nav-dropdown-menu a{display:block;padding:10px 20px;color:var(--gray-700)!important;font-size:13px!important;font-weight:500;text-decoration:none;transition:all .15s}
+.nav-dropdown-menu a:hover{background:var(--gray-50);color:var(--green)!important}
+.nav-dropdown>a::after{content:'';display:inline-block;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid currentColor;margin-left:6px;vertical-align:middle;transition:transform .2s}
+.nav-dropdown:hover>a::after{transform:rotate(180deg)}
+
+/* SHARED */
+.section-inner{max-width:1280px;margin:0 auto;padding:0 40px}
+.section-label{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section-label::before{content:'';width:24px;height:2px;background:var(--green)}
+.section-title{font-family:var(--font-display);font-size:clamp(28px,3vw,42px);color:var(--navy);margin-bottom:16px;letter-spacing:-.01em}
+.section-desc{font-size:16px;color:var(--gray-500);max-width:600px;line-height:1.65;margin-bottom:48px}
+.btn-primary{background:var(--navy);color:var(--white);padding:14px 32px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--green);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,106,78,.18)}
+
+/* PAGE HERO */
+.page-hero{padding:120px 0 48px;background:var(--navy);position:relative;overflow:hidden}
+.page-hero::after{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,166,118,.12),transparent 70%);pointer-events:none}
+.page-hero .section-label{color:var(--green-bright)}
+.page-hero .section-label::before{background:var(--green-bright)}
+.page-hero .section-title{color:var(--white);font-size:clamp(32px,4vw,52px)}
+.page-hero .section-desc{color:rgba(255,255,255,.6);max-width:700px}
+.breadcrumb{font-size:13px;color:rgba(255,255,255,.45);margin-bottom:20px}
+.breadcrumb a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s}
+.breadcrumb a:hover{color:var(--green-bright)}
+
+/* INDICES TABLE */
+.indices{padding:64px 0;background:var(--white)}
+.idx-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.indices-table{width:100%;border-collapse:collapse;border:1px solid var(--gray-200);border-radius:12px;overflow:hidden;min-width:600px}
+.indices-table thead{background:var(--navy)}
+.indices-table th{padding:14px 20px;text-align:left;font-size:12px;font-weight:600;color:rgba(255,255,255,.9);letter-spacing:.04em;text-transform:uppercase}
+.indices-table th:not(:first-child){text-align:right}
+.indices-table td{padding:13px 20px;font-size:14px;border-bottom:1px solid var(--gray-100)}
+.indices-table td:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.indices-table tr:last-child td{border:none}
+.indices-table .idx-name{font-weight:600;color:var(--navy)}
+.indices-table .idx-val{font-family:var(--font-display);font-size:15px;color:var(--navy)}
+.indices-table tbody tr:hover{background:rgba(0,106,78,.02)}
+
+/* YIELD CURVE */
+.yield-curve{padding:64px 0;background:var(--gray-50)}
+.yc-container{background:var(--white);border-radius:12px;padding:36px;border:1px solid var(--gray-200);box-shadow:0 4px 16px rgba(0,0,0,.03)}
+.yc-chart{width:100%;height:320px;position:relative;margin-top:16px}
+.yc-svg{width:100%;height:100%}
+.yc-line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.yc-current{stroke:var(--navy)}
+.yc-year-ago{stroke:var(--green);stroke-dasharray:6,4;opacity:.55}
+.yc-dot{r:4;stroke:var(--white);stroke-width:2}
+.yc-legend{display:flex;gap:28px;margin-top:20px}
+.yc-legend-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray-500);font-weight:500}
+.yc-legend-line{width:24px;height:3px;border-radius:2px}
+
+/* MACRO INDICATORS */
+.macro{padding:64px 0;background:var(--white)}
+.macro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.macro-card{background:var(--white);border-radius:10px;padding:24px;border:1px solid var(--gray-200);transition:all .3s}
+.macro-card:hover{border-color:var(--green);box-shadow:0 4px 16px rgba(0,0,0,.04);transform:translateY(-2px)}
+.macro-value{font-family:var(--font-display);font-size:28px;color:var(--navy);margin-bottom:4px}
+.macro-name{font-size:14px;font-weight:600;color:var(--gray-700);margin-bottom:6px}
+.macro-detail{font-size:12px;color:var(--gray-500);line-height:1.5}
+.macro-trend{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;margin-top:8px;padding:2px 8px;border-radius:4px}
+.macro-trend.positive{color:#16a34a;background:rgba(22,163,74,.06)}
+.macro-trend.negative{color:#dc2626;background:rgba(220,38,38,.06)}
+.macro-trend.neutral{color:var(--gray-500);background:var(--gray-100)}
+
+/* ECONOMIC EVENTS */
+.events{padding:64px 0;background:var(--gray-50)}
+.events-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
+.event-card{background:var(--white);border-radius:10px;padding:24px;border:1px solid var(--gray-200);transition:all .3s;border-left:3px solid transparent}
+.event-card:hover{border-left-color:var(--green);box-shadow:0 4px 16px rgba(0,0,0,.04);transform:translateY(-2px)}
+.event-date{font-size:11px;font-weight:600;color:var(--green);letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
+.event-name{font-family:var(--font-display);font-size:18px;color:var(--navy);margin-bottom:8px}
+.event-desc{font-size:13px;color:var(--gray-500);line-height:1.6}
+.event-impact{display:inline-flex;align-items:center;font-size:11px;font-weight:600;margin-top:12px;padding:3px 10px;border-radius:20px}
+.impact-high{background:rgba(220,38,38,.05);color:#dc2626}
+.impact-med{background:rgba(234,179,8,.06);color:#b45309}
+
+/* RATE COMMENTARY */
+.commentary{padding:64px 0;background:var(--white)}
+.commentary-box{background:var(--gray-50);border-radius:12px;padding:40px;border:1px solid var(--gray-200)}
+.commentary-box h3{font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:16px}
+.commentary-box p{font-size:15px;color:var(--gray-700);line-height:1.75;margin-bottom:12px}
+.commentary-box p:last-child{margin-bottom:0}
+
+/* CTA */
+.page-cta{padding:64px 0 88px;background:var(--gray-50);text-align:center}
+
+/* FOOTER */
+footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
+.footer-grid{max-width:1280px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:40px}
+.footer-brand img{height:52px;margin-bottom:16px;filter:brightness(0) invert(1);opacity:.85}
+.footer-brand p{font-size:13px;line-height:1.6;max-width:280px}
+.footer-col h4{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:16px}
+.footer-col a{display:block;color:rgba(255,255,255,.5);text-decoration:none;font-size:14px;padding:4px 0;transition:color .2s}
+.footer-col a:hover{color:var(--green-bright)}
+.footer-bottom{max-width:1280px;margin:40px auto 0;padding:20px 40px 0;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;font-size:12px}
+.footer-social{display:flex;gap:20px}
+.footer-social a{color:rgba(255,255,255,.5);transition:color .2s;text-decoration:none;font-size:13px}
+.footer-social a:hover{color:var(--green-bright)}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+.footer-grid{grid-template-columns:repeat(2,1fr)}
+.macro-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+.nav-links{display:none;flex-direction:column;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--white);padding:24px 40px;gap:0;z-index:999;border-top:1px solid var(--gray-200);overflow-y:auto}
+.nav-links.open{display:flex}
+.nav-links>a,.nav-dropdown>a{padding:16px 0!important;border-bottom:1px solid var(--gray-100);font-size:16px!important;width:100%;display:block}
+.nav-links .nav-cta{margin-top:16px;text-align:center;display:block!important;padding:14px 24px!important}
+.nav-links .nav-dropdown-menu{display:none!important}
+.nav-mobile{display:block}
+.section-inner{padding:0 24px}
+.events-grid{grid-template-columns:1fr}
+.macro-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr;gap:32px}
+.footer-bottom{flex-direction:column;gap:12px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+<div class="nav-inner">
+  <a href="index.html" class="nav-logo"><img src="images/cls-logo-skyline.png" alt="Commercial Lending Solutions"></a>
+  <div class="nav-links" id="navLinks">
+    <div class="nav-dropdown">
+      <a href="index.html#programs">Financing</a>
+      <div class="nav-dropdown-menu">
+        <a href="index.html#prog-bank">Bank Loans</a>
+        <a href="index.html#prog-credit-union">Credit Union Loans</a>
+        <a href="index.html#prog-agency">Agency Multifamily</a>
+        <a href="index.html#prog-cmbs">CMBS Loans</a>
+        <a href="index.html#prog-debt-fund">Debt Fund Loans</a>
+        <a href="index.html#prog-life-co">Life Insurance Loans</a>
+        <a href="index.html#prog-sba">SBA 504 / 7(a)</a>
+        <a href="index.html#prog-private-equity">Private Equity</a>
+      </div>
+    </div>
+    <a href="index.html#transactions">Transactions</a>
+    <a href="index.html#team">Team</a>
+    <a href="market-data.html" class="active">Market Data</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="index.html#contact" class="nav-cta">Get a Quote</a>
+  </div>
+  <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Market Data</div>
+  <div class="section-label reveal">Market Intelligence</div>
+  <div class="section-title reveal">Economic Outlook &amp; Market Data</div>
+  <p class="section-desc reveal">Treasury yields, macro indicators, economic calendar, and yield curve analysis — the data that drives commercial real estate financing decisions.</p>
+</div>
+</section>
+
+<!-- MARKET INDICES TABLE -->
+<section class="indices" id="rates">
+<div class="section-inner">
+  <div class="section-label reveal">Rates &amp; Indices</div>
+  <div class="section-title reveal">Market Indices &amp; Rates</div>
+  <p class="section-desc reveal">Key benchmarks that determine commercial mortgage pricing across every capital source.</p>
+  <div class="idx-scroll reveal">
+  <table class="indices-table">
+    <thead><tr><th>Index</th><th>Today</th><th>Yesterday</th><th>Last Month</th><th>Last Year</th></tr></thead>
+    <tbody>
+      <tr><td class="idx-name">10-Yr Treasury</td><td class="idx-val">4.087%</td><td>4.054%</td><td>4.313%</td><td>4.290%</td></tr>
+      <tr><td class="idx-name">30-Yr Treasury</td><td class="idx-val">4.711%</td><td>4.689%</td><td>4.850%</td><td>4.530%</td></tr>
+      <tr><td class="idx-name">2-Yr Treasury</td><td class="idx-val">3.468%</td><td>3.435%</td><td>3.780%</td><td>4.610%</td></tr>
+      <tr><td class="idx-name">5-Yr Treasury</td><td class="idx-val">3.748%</td><td>3.719%</td><td>3.990%</td><td>4.280%</td></tr>
+      <tr><td class="idx-name">1-Yr Treasury</td><td class="idx-val">3.610%</td><td>3.592%</td><td>3.840%</td><td>4.880%</td></tr>
+      <tr><td class="idx-name">Fed Funds Rate</td><td class="idx-val">3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>4.25&ndash;4.50%</td></tr>
+      <tr><td class="idx-name">SOFR</td><td class="idx-val">3.56%</td><td>3.56%</td><td>3.56%</td><td>4.31%</td></tr>
+      <tr><td class="idx-name">Prime Rate</td><td class="idx-val">7.00%</td><td>7.00%</td><td>7.00%</td><td>7.75%</td></tr>
+      <tr><td class="idx-name">S&amp;P 500</td><td class="idx-val">6,905</td><td>6,843</td><td>6,841</td><td>6,115</td></tr>
+      <tr><td class="idx-name">Dow Jones</td><td class="idx-val">49,841</td><td>49,533</td><td>49,408</td><td>43,461</td></tr>
+      <tr><td class="idx-name">NASDAQ</td><td class="idx-val">22,876</td><td>22,578</td><td>22,592</td><td>19,649</td></tr>
+      <tr><td class="idx-name">Gold ($/oz)</td><td class="idx-val">$4,972</td><td>$4,952</td><td>$5,550</td><td>$2,015</td></tr>
+      <tr><td class="idx-name">Silver ($/oz)</td><td class="idx-val">$76.01</td><td>$74.43</td><td>$109.30</td><td>$32.50</td></tr>
+      <tr><td class="idx-name">Bitcoin</td><td class="idx-val">$67,758</td><td>$67,800</td><td>$78,050</td><td>$95,200</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</section>
+
+<!-- YIELD CURVE -->
+<section class="yield-curve" id="yield-curve">
+<div class="section-inner">
+  <div class="section-label reveal">Treasury Market</div>
+  <div class="section-title reveal">U.S. Treasury Yield Curve</div>
+  <p class="section-desc reveal">The yield curve shows Treasury rates across maturities. An upward slope is normal; inversions historically signal recession. The curve has normalized from its 2023-2024 inversion.</p>
+  <div class="yc-container reveal">
+    <div class="yc-chart">
+      <svg class="yc-svg" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
+        <line x1="60" y1="20" x2="60" y2="260" stroke="rgba(0,0,0,.06)" stroke-width="1"/>
+        <line x1="60" y1="260" x2="780" y2="260" stroke="rgba(0,0,0,.06)" stroke-width="1"/>
+        <line x1="60" y1="80" x2="780" y2="80" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
+        <line x1="60" y1="140" x2="780" y2="140" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
+        <line x1="60" y1="200" x2="780" y2="200" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
+        <text x="50" y="24" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">5.0%</text>
+        <text x="50" y="84" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">4.5%</text>
+        <text x="50" y="144" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">4.0%</text>
+        <text x="50" y="204" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3.5%</text>
+        <text x="50" y="264" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3.0%</text>
+        <text x="80" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">1M</text>
+        <text x="145" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3M</text>
+        <text x="210" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">6M</text>
+        <text x="280" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">1Y</text>
+        <text x="350" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">2Y</text>
+        <text x="420" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3Y</text>
+        <text x="500" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">5Y</text>
+        <text x="580" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">7Y</text>
+        <text x="660" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">10Y</text>
+        <text x="720" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">20Y</text>
+        <text x="770" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">30Y</text>
+        <polyline class="yc-line yc-current" points="80,217 145,211 210,209 280,214 350,200 420,191 500,175 580,164 660,147 720,117 770,97"/>
+        <polyline class="yc-line yc-year-ago" points="80,131 145,130 210,128 280,140 350,141 420,143 500,147 580,138 660,133 720,114 770,113"/>
+        <circle cx="80" cy="217" class="yc-dot" fill="var(--navy)"/><circle cx="145" cy="211" class="yc-dot" fill="var(--navy)"/><circle cx="210" cy="209" class="yc-dot" fill="var(--navy)"/><circle cx="280" cy="214" class="yc-dot" fill="var(--navy)"/><circle cx="350" cy="200" class="yc-dot" fill="var(--navy)"/><circle cx="420" cy="191" class="yc-dot" fill="var(--navy)"/><circle cx="500" cy="175" class="yc-dot" fill="var(--navy)"/><circle cx="580" cy="164" class="yc-dot" fill="var(--navy)"/><circle cx="660" cy="147" class="yc-dot" fill="var(--navy)"/><circle cx="720" cy="117" class="yc-dot" fill="var(--navy)"/><circle cx="770" cy="97" class="yc-dot" fill="var(--navy)"/>
+      </svg>
+    </div>
+    <div class="yc-legend">
+      <div class="yc-legend-item"><div class="yc-legend-line" style="background:var(--navy)"></div>Current (Feb 19, 2026)</div>
+      <div class="yc-legend-item"><div class="yc-legend-line" style="background:var(--green)"></div>1 Year Ago (Feb 2025)</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- MACRO INDICATORS -->
+<section class="macro" id="macro">
+<div class="section-inner">
+  <div class="section-label reveal">Macro Indicators</div>
+  <div class="section-title reveal">Key Economic Indicators</div>
+  <p class="section-desc reveal">The macro data that shapes Fed policy, investor sentiment, and commercial real estate lending conditions.</p>
+  <div class="macro-grid">
+    <div class="macro-card reveal">
+      <div class="macro-value">2.4%</div>
+      <div class="macro-name">CPI (Annual, January 2026)</div>
+      <div class="macro-detail">Consumer Price Index — headline inflation measure. Down from 2.9% in December. Approaching the Fed's 2% target.</div>
+      <div class="macro-trend positive">Trending Down</div>
+    </div>
+    <div class="macro-card reveal">
+      <div class="macro-value">2.8%</div>
+      <div class="macro-name">Core PCE (Annual, December 2025)</div>
+      <div class="macro-detail">The Fed's preferred inflation gauge excluding food and energy. January reading due Feb 21.</div>
+      <div class="macro-trend neutral">Holding Steady</div>
+    </div>
+    <div class="macro-card reveal">
+      <div class="macro-value">2.3%</div>
+      <div class="macro-name">GDP Growth (Q4 2025, 1st Est.)</div>
+      <div class="macro-detail">Annualized real GDP growth. Economy remains resilient despite higher rates, supporting asset values.</div>
+      <div class="macro-trend positive">Solid Growth</div>
+    </div>
+    <div class="macro-card reveal">
+      <div class="macro-value">4.0%</div>
+      <div class="macro-name">Unemployment Rate (January 2026)</div>
+      <div class="macro-detail">Labor market remains tight but gradually cooling. Supports gradual rate normalization from the Fed.</div>
+      <div class="macro-trend neutral">Stable</div>
+    </div>
+    <div class="macro-card reveal">
+      <div class="macro-value">143K</div>
+      <div class="macro-name">Nonfarm Payrolls (January 2026)</div>
+      <div class="macro-detail">Monthly job gains. Below the 2024 average of 186K, signaling a gradual labor market cooldown.</div>
+      <div class="macro-trend neutral">Moderating</div>
+    </div>
+    <div class="macro-card reveal">
+      <div class="macro-value">95.3%</div>
+      <div class="macro-name">Fed Hold Probability (March 2026)</div>
+      <div class="macro-detail">CME FedWatch probability of no change at the March 18 FOMC meeting. Next cut expected mid-2026.</div>
+      <div class="macro-trend neutral">Hold Expected</div>
+    </div>
+    <div class="macro-card reveal">
+      <div class="macro-value">$35.8T</div>
+      <div class="macro-name">National Debt</div>
+      <div class="macro-detail">Total U.S. federal debt. Continued fiscal expansion puts upward pressure on long-term Treasury yields.</div>
+      <div class="macro-trend negative">Rising</div>
+    </div>
+    <div class="macro-card reveal">
+      <div class="macro-value">49.2</div>
+      <div class="macro-name">ISM Manufacturing PMI (Jan 2026)</div>
+      <div class="macro-detail">Below 50 signals contraction in manufacturing. Industrial property demand remains bifurcated: logistics strong, traditional manufacturing soft.</div>
+      <div class="macro-trend negative">Contraction</div>
+    </div>
+    <div class="macro-card reveal">
+      <div class="macro-value">5.2%</div>
+      <div class="macro-name">National CRE Cap Rate (Avg)</div>
+      <div class="macro-detail">Average all-property-type capitalization rate. Spread over 10-Yr Treasury remains healthy at ~110bp, supporting valuations.</div>
+      <div class="macro-trend neutral">Stabilizing</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ECONOMIC EVENTS -->
+<section class="events" id="events">
+<div class="section-inner">
+  <div class="section-label reveal">Economic Calendar</div>
+  <div class="section-title reveal">Upcoming Macro Events</div>
+  <p class="section-desc reveal">Key economic releases and Fed decisions that impact commercial real estate lending rates.</p>
+  <div class="events-grid">
+    <div class="event-card reveal"><div class="event-date">Feb 21, 2026 &middot; 8:30 AM ET</div><div class="event-name">PCE Price Index (January)</div><div class="event-desc">The Fed's preferred inflation measure. Key for rate cut probability and commercial mortgage rate direction. December core PCE came in at 2.8% annual.</div><div class="event-impact impact-high">High Impact</div></div>
+    <div class="event-card reveal"><div class="event-date">Feb 21, 2026 &middot; 8:30 AM ET</div><div class="event-name">Q4 2025 GDP (2nd Estimate)</div><div class="event-desc">Second estimate of Q4 GDP. The first estimate came in at 2.3% annualized. Strong GDP supports higher-for-longer rates.</div><div class="event-impact impact-med">Medium Impact</div></div>
+    <div class="event-card reveal"><div class="event-date">Mar 7, 2026 &middot; 8:30 AM ET</div><div class="event-name">February Jobs Report (Nonfarm Payrolls)</div><div class="event-desc">Labor market health directly affects Fed policy. January added 143K jobs. A cooling market strengthens the case for rate cuts.</div><div class="event-impact impact-high">High Impact</div></div>
+    <div class="event-card reveal"><div class="event-date">Mar 12, 2026 &middot; 8:30 AM ET</div><div class="event-name">CPI Report (February)</div><div class="event-desc">Consumer Price Index for February. January CPI dropped to 2.4% annual — continued progress toward 2% target would support rate cut expectations.</div><div class="event-impact impact-high">High Impact</div></div>
+    <div class="event-card reveal"><div class="event-date">Mar 18, 2026 &middot; 2:00 PM ET</div><div class="event-name">FOMC Rate Decision &amp; Projections</div><div class="event-desc">Next scheduled decision with updated economic projections and dot plot. Markets pricing 95.3% probability of a hold at 3.50&ndash;3.75%. Powell press conference at 2:30 PM.</div><div class="event-impact impact-high">High Impact</div></div>
+    <div class="event-card reveal"><div class="event-date">Mar 26, 2026 &middot; 8:30 AM ET</div><div class="event-name">Durable Goods Orders (February)</div><div class="event-desc">Measures new orders for manufactured durable goods. Indicator of business investment and industrial demand.</div><div class="event-impact impact-med">Medium Impact</div></div>
+    <div class="event-card reveal"><div class="event-date">Apr 2, 2026 &middot; 8:30 AM ET</div><div class="event-name">March Jobs Report</div><div class="event-desc">First look at Q1 2026 labor market. Key indicator for May FOMC positioning and mid-year rate cut timing.</div><div class="event-impact impact-high">High Impact</div></div>
+    <div class="event-card reveal"><div class="event-date">Apr 10, 2026 &middot; 8:30 AM ET</div><div class="event-name">CPI Report (March)</div><div class="event-desc">March inflation data. Trend direction critical for determining if Fed achieves its 2% target by year-end.</div><div class="event-impact impact-high">High Impact</div></div>
+  </div>
+</div>
+</section>
+
+<!-- RATE COMMENTARY -->
+<section class="commentary">
+<div class="section-inner">
+  <div class="section-label reveal">Rate Commentary</div>
+  <div class="section-title reveal">CLS CRE Market Perspective</div>
+  <div class="commentary-box reveal">
+    <h3>February 2026 Rate Environment</h3>
+    <p>The Fed held rates at 3.50&ndash;3.75% at the January meeting, and the March decision is widely expected to be another hold. Inflation continues to moderate — January CPI dropped to 2.4% — but the Fed wants sustained evidence before cutting further. Markets expect the next cut in mid-2026.</p>
+    <p>For CRE borrowers, this means the 10-Year Treasury remains range-bound between 3.9&ndash;4.3%, and permanent financing rates have stabilized. Life insurance company rates remain the most competitive at 5.50&ndash;6.25% for stabilized assets, while bank and CMBS spreads have tightened ~20bp since Q4 2025.</p>
+    <p>Construction and bridge rates continue to compress as debt fund competition intensifies. We're seeing bridge rates as low as S+275 for strong sponsors, and construction rates at S+325&ndash;375 depending on leverage and asset type. This is a meaningful improvement from the 2024 peak.</p>
+    <p>The yield curve has fully normalized after its historic 2022&ndash;2024 inversion. The positive slope supports the case for economic stability, though elevated long-end yields reflect fiscal deficit concerns and persistent term premium.</p>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="page-cta">
+<div class="section-inner">
+  <div class="section-title reveal" style="text-align:center;margin-bottom:16px">Ready to Finance Your Next Deal?</div>
+  <p class="section-desc reveal" style="text-align:center;margin:0 auto 32px;max-width:500px">Our team monitors these markets daily to secure the best rates for our clients. Let's talk about your project.</p>
+  <a href="index.html#contact" class="btn-primary reveal">Get a Quote <span>&rarr;</span></a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-grid">
+  <div class="footer-brand">
+    <img src="images/cls-logo-skyline.png" alt="Commercial Lending Solutions">
+    <p>Over $600 million in commercial loans closed. Institutional expertise. Personal service. Every deal, every time.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Financing</h4>
+    <a href="index.html#prog-bank">Bank Loans</a>
+    <a href="index.html#prog-agency">Agency Multifamily</a>
+    <a href="index.html#prog-cmbs">CMBS</a>
+    <a href="index.html#prog-life-co">Life Insurance</a>
+    <a href="index.html#prog-sba">SBA 504 / 7(a)</a>
+    <a href="index.html#prog-debt-fund">Debt Funds</a>
+    <a href="index.html#prog-private-equity">Private Equity</a>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="index.html#team">Our Team</a>
+    <a href="index.html#transactions">Transactions</a>
+    <a href="market-data.html">Market Data</a>
+    <a href="index.html#why-us">Why Choose Us</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <div class="footer-col">
+    <h4>Connect</h4>
+    <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/commercialloanbroker" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:inquiries@clscre.com">inquiries@clscre.com</a>
+    <a href="tel:+13107584042">310.758.4042</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>&copy; 2026 Commercial Lending Solutions. All rights reserved. DRE #02244836</span>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/commercialloanbroker" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+</footer>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+
+// Mobile nav
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
+navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); }); });
+</script>
+</body>
+</html>

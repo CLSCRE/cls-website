@@ -123,16 +123,19 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .txn-tab{padding:8px 20px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid var(--gray-200);background:var(--white);color:var(--gray-700);transition:all .2s}
 .txn-tab:hover{border-color:var(--green);color:var(--green)}
 .txn-tab.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
-.txn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
-.txn-card{background:var(--white);border-radius:8px;padding:22px;border:1px solid var(--gray-200);transition:all .3s}
-.txn-card:hover{border-color:var(--green);box-shadow:0 4px 16px rgba(0,0,0,.04);transform:translateY(-2px)}
+.txn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.txn-card{background:var(--white);border-radius:10px;border:1px solid var(--gray-200);transition:all .3s;overflow:hidden}
+.txn-card:hover{border-color:var(--green);box-shadow:0 8px 24px rgba(0,0,0,.06);transform:translateY(-3px)}
+.txn-photo{width:100%;height:200px;object-fit:cover;display:block;background:var(--gray-100)}
+.txn-body{padding:20px}
 .txn-badge{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;display:inline-block;padding:3px 10px;border-radius:4px;margin-bottom:10px}
 .txn-badge.perm{color:var(--green);background:rgba(0,106,78,.07)}
 .txn-badge.constr{color:#7c3aed;background:rgba(124,58,237,.07)}
 .txn-badge.bridge{color:#b45309;background:rgba(234,179,8,.08)}
 .txn-amount{font-family:var(--font-display);font-size:24px;color:var(--navy);margin-bottom:4px}
 .txn-type{font-size:13px;color:var(--navy);font-weight:600;margin-bottom:2px}
-.txn-loc{font-size:12px;color:var(--gray-500)}
+.txn-loc{font-size:12px;color:var(--gray-500);margin-bottom:8px}
+.txn-summary{font-size:12px;color:var(--gray-500);line-height:1.55;border-top:1px solid var(--gray-100);padding-top:8px}
 .txn-hidden{display:none}
 
 /* ===== TEAM ===== */
@@ -174,31 +177,9 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .indices-table .idx-name{font-weight:600;color:var(--navy)}
 .indices-table .idx-val{font-family:var(--font-display);font-size:15px;color:var(--navy)}
 .indices-table tbody tr:hover{background:rgba(0,106,78,.02)}
-
-/* ===== YIELD CURVE ===== */
-.yield-curve{padding:88px 0;background:var(--gray-50)}
-.yc-container{background:var(--white);border-radius:12px;padding:36px;border:1px solid var(--gray-200);box-shadow:0 4px 16px rgba(0,0,0,.03)}
-.yc-chart{width:100%;height:320px;position:relative;margin-top:16px}
-.yc-svg{width:100%;height:100%}
-.yc-line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-.yc-current{stroke:var(--navy)}
-.yc-year-ago{stroke:var(--green);stroke-dasharray:6,4;opacity:.55}
-.yc-dot{r:4;stroke:var(--white);stroke-width:2}
-.yc-legend{display:flex;gap:28px;margin-top:20px}
-.yc-legend-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray-500);font-weight:500}
-.yc-legend-line{width:24px;height:3px;border-radius:2px}
-
-/* ===== ECONOMIC EVENTS ===== */
-.events{padding:88px 0;background:var(--white)}
-.events-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
-.event-card{background:var(--white);border-radius:10px;padding:24px;border:1px solid var(--gray-200);transition:all .3s;border-left:3px solid transparent}
-.event-card:hover{border-left-color:var(--green);box-shadow:0 4px 16px rgba(0,0,0,.04);transform:translateY(-2px)}
-.event-date{font-size:11px;font-weight:600;color:var(--green);letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
-.event-name{font-family:var(--font-display);font-size:18px;color:var(--navy);margin-bottom:8px}
-.event-desc{font-size:13px;color:var(--gray-500);line-height:1.6}
-.event-impact{display:inline-flex;align-items:center;font-size:11px;font-weight:600;margin-top:12px;padding:3px 10px;border-radius:20px}
-.impact-high{background:rgba(220,38,38,.05);color:#dc2626}
-.impact-med{background:rgba(234,179,8,.06);color:#b45309}
+.idx-cta{margin-top:24px;text-align:right}
+.idx-cta a{color:var(--green);font-weight:600;font-size:14px;text-decoration:none;transition:color .2s}
+.idx-cta a:hover{color:var(--navy)}
 
 /* ===== CONTACT ===== */
 .contact-section{padding:88px 0;background:var(--gray-50)}
@@ -257,7 +238,6 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
 .programs-grid{grid-template-columns:1fr}
 .txn-grid{grid-template-columns:1fr}
 .team-grid{grid-template-columns:repeat(2,1fr)}
-.events-grid{grid-template-columns:1fr}
 .section-inner{padding:0 24px}
 .footer-grid{grid-template-columns:1fr;gap:32px}
 .footer-bottom{flex-direction:column;gap:12px;text-align:center}
@@ -305,8 +285,8 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
     <h1 class="reveal">Your Capital.<br>Our Relationships.<br>Every Deal.</h1>
     <p class="hero-sub reveal">Transparent, efficient access to the capital markets for commercial real estate investors. Over $600 million financed through 1,000+ banks, debt funds, life insurance companies, and private equity firms.</p>
     <div class="hero-actions reveal">
-      <a href="#contact" class="btn-primary">Get a Quote <span>→</span></a>
-      <a href="#transactions" class="btn-secondary">View Our Track Record →</a>
+      <a href="#contact" class="btn-primary">Get a Quote <span>&rarr;</span></a>
+      <a href="#transactions" class="btn-secondary">View Our Track Record &rarr;</a>
     </div>
   </div>
   <div class="rate-widget reveal">
@@ -338,7 +318,7 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
     <div class="rate-row">
       <span class="rate-label">Fed Funds Rate</span>
       <div class="rate-val-wrap">
-        <span class="rate-value">3.50–3.75%</span>
+        <span class="rate-value">3.50&ndash;3.75%</span>
         <span class="rate-change flat">HOLD</span>
       </div>
     </div>
@@ -362,68 +342,68 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
 <div class="section-inner">
   <div class="section-label reveal">Financing Programs</div>
   <div class="section-title reveal">Every Capital Source. One Broker.</div>
-  <p class="section-desc reveal">We don't just place loans — we engineer capital stacks across every source in the market to get you the best terms possible.</p>
+  <p class="section-desc reveal">We don't just place loans &mdash; we engineer capital stacks across every source in the market to get you the best terms possible.</p>
   <div class="programs-grid">
     <div class="program-card reveal" id="prog-bank">
       <h3>Bank Loans</h3>
       <p>Competitive for cash-flowing scenarios and construction for strong borrowers. Long a staple of the commercial mortgage market.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$500K – $75M+</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$500K &ndash; $75M+</span></div>
       <div class="program-detail"><span>Term</span><span>5, 7, or 10 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>5.54% – 8.25%</span></div>
+      <div class="program-detail"><span>Rates</span><span>5.54% &ndash; 8.25%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Available</span></div>
     </div>
     <div class="program-card reveal" id="prog-credit-union">
       <h3>Credit Union Loans</h3>
       <p>Alternative lending that works well for local commercial real estate projects with competitive terms.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$250K – $10M+</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$250K &ndash; $10M+</span></div>
       <div class="program-detail"><span>Term</span><span>5, 7, or 10 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>5.54% – 8.25%</span></div>
+      <div class="program-detail"><span>Rates</span><span>5.54% &ndash; 8.25%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>No</span></div>
     </div>
     <div class="program-card reveal" id="prog-agency">
       <h3>Agency Multifamily</h3>
       <p>Fannie Mae and Freddie Mac programs including Small Loans capped at $5M. Best long-term rates for multifamily assets.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$750K – $100M+</span></div>
-      <div class="program-detail"><span>Term</span><span>5 – 30 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>5.34% – 6.98%</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$750K &ndash; $100M+</span></div>
+      <div class="program-detail"><span>Term</span><span>5 &ndash; 30 Years</span></div>
+      <div class="program-detail"><span>Rates</span><span>5.34% &ndash; 6.98%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Yes</span></div>
     </div>
     <div class="program-card reveal" id="prog-cmbs">
       <h3>CMBS Loans</h3>
       <p>Securitized lending for $3M+ stabilized office, industrial, retail, hospitality, and multifamily assets.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$3M – $100M+</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$3M &ndash; $100M+</span></div>
       <div class="program-detail"><span>Term</span><span>5, 7, or 10 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>6.79% – 13.04%</span></div>
+      <div class="program-detail"><span>Rates</span><span>6.79% &ndash; 13.04%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Available</span></div>
     </div>
     <div class="program-card reveal" id="prog-debt-fund">
       <h3>Debt Fund Loans</h3>
       <p>Private lending with quicker, more flexible execution than traditional sources. Bridge and transitional assets.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$1M – $100M+</span></div>
-      <div class="program-detail"><span>Term</span><span>1 – 3 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>6.79% – 13.04%</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$1M &ndash; $100M+</span></div>
+      <div class="program-detail"><span>Term</span><span>1 &ndash; 3 Years</span></div>
+      <div class="program-detail"><span>Rates</span><span>6.79% &ndash; 13.04%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Available</span></div>
     </div>
     <div class="program-card reveal" id="prog-life-co">
       <h3>Life Insurance Loans</h3>
-      <p>The most competitive long-term fixed rates in market. Stable property loans from experienced, reliable borrowers. Most brokers can't correspond directly — we can.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$2M – $100M+</span></div>
-      <div class="program-detail"><span>Term</span><span>5 – 25 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>5.54% – 8.25%</span></div>
+      <p>The most competitive long-term fixed rates in market. Stable property loans from experienced, reliable borrowers. Most brokers can't correspond directly &mdash; we can.</p>
+      <div class="program-detail"><span>Loan Amount</span><span>$2M &ndash; $100M+</span></div>
+      <div class="program-detail"><span>Term</span><span>5 &ndash; 25 Years</span></div>
+      <div class="program-detail"><span>Rates</span><span>5.54% &ndash; 8.25%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Available</span></div>
     </div>
     <div class="program-card reveal" id="prog-sba">
       <h3>SBA 504 / 7(a)</h3>
       <p>High maximum leverage (90% LTC) for qualified businesses. Below-market rates for owner-occupied properties.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$250K – $14M</span></div>
-      <div class="program-detail"><span>Term</span><span>5 – 25 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>5.54% – 8.25%</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$250K &ndash; $14M</span></div>
+      <div class="program-detail"><span>Term</span><span>5 &ndash; 25 Years</span></div>
+      <div class="program-detail"><span>Rates</span><span>5.54% &ndash; 8.25%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>No</span></div>
     </div>
     <div class="program-card reveal" id="prog-private-equity">
       <h3>Private Equity</h3>
       <p>Direct equity investment for development and value-add projects. Joint ventures and preferred equity structures.</p>
-      <div class="program-detail"><span>Check Size</span><span>$5M – $100M+</span></div>
+      <div class="program-detail"><span>Check Size</span><span>$5M &ndash; $100M+</span></div>
       <div class="program-detail"><span>Structure</span><span>JV / Pref Equity</span></div>
       <div class="program-detail"><span>Strategy</span><span>Value-Add / Dev</span></div>
       <div class="program-detail"><span>Returns</span><span>Market IRR</span></div>
@@ -446,79 +426,294 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
   </div>
   <div class="txn-grid" id="txnGrid">
     <!-- PERMANENT -->
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$75,000,000</div><div class="txn-type">Industrial Warehouse</div><div class="txn-loc">Phoenix, AZ</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$45,000,000</div><div class="txn-type">Industrial Food Processing</div><div class="txn-loc">San Antonio, TX</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$42,000,000</div><div class="txn-type">Industrial Cold Storage</div><div class="txn-loc">Houston, TX</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$36,400,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">San Jose, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$34,000,000</div><div class="txn-type">Industrial Distribution</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$32,000,000</div><div class="txn-type">Retail Shopping Center</div><div class="txn-loc">Sacramento, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$27,500,000</div><div class="txn-type">TopGolf / Specialty</div><div class="txn-loc">Fort Myers, FL</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$27,500,000</div><div class="txn-type">Heavy Industrial</div><div class="txn-loc">Vernon, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$26,800,000</div><div class="txn-type">Industrial &amp; Medical Office</div><div class="txn-loc">Tustin, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$26,300,000</div><div class="txn-type">Multifamily Apartments</div><div class="txn-loc">Jacksonville, FL</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$23,600,000</div><div class="txn-type">Single Tenant Net Lease</div><div class="txn-loc">Kansas City, MO</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$19,500,000</div><div class="txn-type">Office</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$19,124,000</div><div class="txn-type">Net Lease Pharmacies</div><div class="txn-loc">Sylvania, OH</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$18,200,000</div><div class="txn-type">Industrial Data Center</div><div class="txn-loc">San Diego, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$18,000,000</div><div class="txn-type">Net Lease Industrial &amp; Retail</div><div class="txn-loc">Torrance, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$18,000,000</div><div class="txn-type">Industrial Manufacturing</div><div class="txn-loc">Chicago, IL</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$16,250,000</div><div class="txn-type">Industrial</div><div class="txn-loc">Vista, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$16,160,000</div><div class="txn-type">Apartments (88 Units)</div><div class="txn-loc">San Mateo, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$15,400,000</div><div class="txn-type">Single Tenant Net Lease</div><div class="txn-loc">Colorado Springs, CO</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$14,500,000</div><div class="txn-type">Industrial Truck Terminal</div><div class="txn-loc">Philadelphia, PA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$13,620,000</div><div class="txn-type">Retail Shopping Center</div><div class="txn-loc">Simi Valley, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$13,400,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">Seattle, WA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$12,500,000</div><div class="txn-type">Mixed Use Portfolio</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$12,400,000</div><div class="txn-type">Industrial Showroom</div><div class="txn-loc">Dallas, TX</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$12,000,000</div><div class="txn-type">Infill Land</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$11,500,000</div><div class="txn-type">Creative Office</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$11,200,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">Charlotte, NC</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$11,000,000</div><div class="txn-type">Commercial Condominiums</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$9,500,000</div><div class="txn-type">Apartments (48 Units)</div><div class="txn-loc">Alameda, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$9,400,000</div><div class="txn-type">Multifamily Apartments</div><div class="txn-loc">Fort Worth, TX</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$9,300,000</div><div class="txn-type">Single Family Rental</div><div class="txn-loc">Malibu, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$8,900,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">Columbus, OH</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$8,700,000</div><div class="txn-type">Class B Office</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$8,100,000</div><div class="txn-type">Co-Working Office</div><div class="txn-loc">Burbank, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$6,500,000</div><div class="txn-type">Multi-Tenant Retail (35 Units)</div><div class="txn-loc">Long Beach, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$6,500,000</div><div class="txn-type">Owner User Aquarium</div><div class="txn-loc">Houston, TX</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$6,470,000</div><div class="txn-type">Commercial Condominium</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$6,000,000</div><div class="txn-type">Boat Storage</div><div class="txn-loc">Mentone, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,800,000</div><div class="txn-type">Boutique Hotel</div><div class="txn-loc">Malibu, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,600,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">Indianapolis, IN</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,500,000</div><div class="txn-type">Industrial Manufacturing</div><div class="txn-loc">Long Beach, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,500,000</div><div class="txn-type">Aquarium</div><div class="txn-loc">San Antonio, TX</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,500,000</div><div class="txn-type">Multifamily Apartments</div><div class="txn-loc">Austin, TX</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,000,000</div><div class="txn-type">Multi-Tenant Autobody</div><div class="txn-loc">Santa Monica, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,800,000</div><div class="txn-type">New Construction</div><div class="txn-loc">Shoreline, WA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,750,000</div><div class="txn-type">Apartments (24 Units)</div><div class="txn-loc">Ojai, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,640,000</div><div class="txn-type">Apartments (18 Units)</div><div class="txn-loc">Santa Barbara, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,500,000</div><div class="txn-type">Mixed Use (Apts &amp; Retail)</div><div class="txn-loc">Carlsbad, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,500,000</div><div class="txn-type">Industrial Warehouse</div><div class="txn-loc">Southampton, NY</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,300,000</div><div class="txn-type">Apartments (20 Units)</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,300,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">San Francisco, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$2,255,000</div><div class="txn-type">Industrial / Church</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$2,200,000</div><div class="txn-type">Owner User</div><div class="txn-loc">Torrance, CA</div></div>
-    <div class="txn-card reveal" data-cat="perm"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$1,380,000</div><div class="txn-type">Restaurant &amp; Coffee Shop</div><div class="txn-loc">Santa Ana, CA</div></div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Industrial-Warehouse-75MM-Phoenix-Arizona.png" alt="Industrial Warehouse - Phoenix, AZ" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$75,000,000</div><div class="txn-type">Industrial Warehouse</div><div class="txn-loc">Phoenix, AZ</div><div class="txn-summary">Major distribution center refinancing in the Phoenix metro's prime industrial corridor, one of the fastest-growing logistics hubs in the Southwest.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Industrial-Food-Processing-45MM-San-Antonio-Texas.png" alt="Industrial Food Processing - San Antonio, TX" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$45,000,000</div><div class="txn-type">Industrial Food Processing</div><div class="txn-loc">San Antonio, TX</div><div class="txn-summary">Long-term financing for a specialized food processing and cold chain facility serving the South Texas distribution market.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Industrial-Cold-Storage-42MM-Houston-Texas.png" alt="Industrial Cold Storage - Houston, TX" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$42,000,000</div><div class="txn-type">Industrial Cold Storage</div><div class="txn-loc">Houston, TX</div><div class="txn-summary">Permanent financing for a temperature-controlled distribution hub serving the Gulf Coast supply chain network.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Mobile-Homes-36.4MM-San-Jose-California.png" alt="Multifamily Mobile Homes - San Jose, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$36,400,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">San Jose, CA</div><div class="txn-summary">Manufactured housing community portfolio refinancing in one of the nation's tightest and most expensive housing markets.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Industrial-Distribution-34MM-Los-Angeles-CA.png" alt="Industrial Distribution - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$34,000,000</div><div class="txn-type">Industrial Distribution</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Acquisition financing for a Class A distribution facility in the Los Angeles industrial core with long-term credit tenancy.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Retail-Shopping-Center-32MM-Sacramento-CA.png" alt="Retail Shopping Center - Sacramento, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$32,000,000</div><div class="txn-type">Retail Shopping Center</div><div class="txn-loc">Sacramento, CA</div><div class="txn-summary">Stabilized retail center anchored by national tenants in Northern California's growing capital region.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Marq-San-Mateo-1201-and-1307-Monte-Diablo-Avenue-2.png" alt="TopGolf / Specialty - Fort Myers, FL" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$27,500,000</div><div class="txn-type">TopGolf / Specialty</div><div class="txn-loc">Fort Myers, FL</div><div class="txn-summary">Specialty entertainment venue financing for a nationally branded tenant with long-term lease structure in Southwest Florida.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/03/Transaction-Photos-Sizing.png" alt="Heavy Industrial - Vernon, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$27,500,000</div><div class="txn-type">Heavy Industrial</div><div class="txn-loc">Vernon, CA</div><div class="txn-summary">Heavy manufacturing and industrial campus refinancing in the Vernon industrial district, a premier hub for production facilities in LA County.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/04/2742-Dow-Ave-Tustin.jpg" alt="Industrial &amp; Medical Office - Tustin, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$26,800,000</div><div class="txn-type">Industrial &amp; Medical Office</div><div class="txn-loc">Tustin, CA</div><div class="txn-summary">Portfolio financing spanning industrial and medical office assets in Orange County's Tustin corridor.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Apartments-26.3MM-Jacksonville-Florida.png" alt="Multifamily Apartments - Jacksonville, FL" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$26,300,000</div><div class="txn-type">Multifamily Apartments</div><div class="txn-loc">Jacksonville, FL</div><div class="txn-summary">Permanent financing for a stabilized multifamily community in one of Florida's fastest-growing metro areas.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Retail-Single-Tenant-Net-Lease-23.6MM-Kansas-City-Missouri.png" alt="Single Tenant Net Lease - Kansas City, MO" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$23,600,000</div><div class="txn-type">Single Tenant Net Lease</div><div class="txn-loc">Kansas City, MO</div><div class="txn-summary">Net lease portfolio financing with investment-grade credit tenancy and long-term lease remaining in the Kansas City market.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/01/Transaction-Photos-Sizing-1.png" alt="Office - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$19,500,000</div><div class="txn-type">Office</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Class A office building refinancing in a premier Los Angeles submarket with strong institutional tenancy.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/04/6484-Monroe-St-Sylvania-OH-2.png" alt="Net Lease Pharmacies - Sylvania, OH" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$19,124,000</div><div class="txn-type">Net Lease Pharmacies</div><div class="txn-loc">Sylvania, OH</div><div class="txn-summary">Multi-property pharmacy portfolio with national credit tenants and triple-net lease structures across Ohio locations.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Industrial-Data-Center-18.2MM-San-Diego-California.png" alt="Industrial Data Center - San Diego, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$18,200,000</div><div class="txn-type">Industrial Data Center</div><div class="txn-loc">San Diego, CA</div><div class="txn-summary">Specialized data center financing in San Diego's growing technology and defense corridor.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/04/21815-Hawthorne-Blvd-2.png" alt="Net Lease Industrial &amp; Retail - Torrance, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$18,000,000</div><div class="txn-type">Net Lease Industrial &amp; Retail</div><div class="txn-loc">Torrance, CA</div><div class="txn-summary">Mixed net lease portfolio spanning industrial and retail assets along the South Bay's Hawthorne Boulevard corridor.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Industrial-Manufacturing-18MM-Chicago-IL.png" alt="Industrial Manufacturing - Chicago, IL" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$18,000,000</div><div class="txn-type">Industrial Manufacturing</div><div class="txn-loc">Chicago, IL</div><div class="txn-summary">Manufacturing facility refinancing in Chicago's industrial belt, featuring specialized production infrastructure and rail access.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/01/Transaction-Photos-Sizing.png" alt="Industrial - Vista, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$16,250,000</div><div class="txn-type">Industrial</div><div class="txn-loc">Vista, CA</div><div class="txn-summary">Industrial asset refinancing in North San Diego County's Vista submarket, a growing hub for light manufacturing and distribution.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/04/Marq-San-Mateo-1201-and-1307-Monte-Diablo-Avenue.png" alt="Apartments (88 Units) - San Mateo, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$16,160,000</div><div class="txn-type">Apartments (88 Units)</div><div class="txn-loc">San Mateo, CA</div><div class="txn-summary">88-unit apartment community refinancing on the San Francisco Peninsula, one of the Bay Area's strongest rental markets.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Retail-Single-Tenant-Net-Lease-15.4MM-Colorado-Springs-Colorado.png" alt="Single Tenant Net Lease - Colorado Springs, CO" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$15,400,000</div><div class="txn-type">Single Tenant Net Lease</div><div class="txn-loc">Colorado Springs, CO</div><div class="txn-summary">Credit-tenant net lease financing in Colorado Springs, leveraging strong lease terms and market fundamentals.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Industrial-Truck-Terminal-14.5MM-Philadelphia-Pennsylvania.png" alt="Industrial Truck Terminal - Philadelphia, PA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$14,500,000</div><div class="txn-type">Industrial Truck Terminal</div><div class="txn-loc">Philadelphia, PA</div><div class="txn-summary">Truck terminal and logistics facility financing in the Philadelphia corridor, a critical East Coast distribution hub.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/04/Griffin-Plaza-Simi-Valley-CA-1.png" alt="Retail Shopping Center - Simi Valley, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$13,620,000</div><div class="txn-type">Retail Shopping Center</div><div class="txn-loc">Simi Valley, CA</div><div class="txn-summary">Grocery-anchored retail center refinancing in Simi Valley with strong occupancy and established tenancy.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Mobile-Homes-13.4MM-Seattle-Washington.png" alt="Multifamily Mobile Homes - Seattle, WA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$13,400,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">Seattle, WA</div><div class="txn-summary">Manufactured housing community financing in the greater Seattle area, providing affordable workforce housing.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/09/3371-W-Cahuenga.png" alt="Mixed Use Portfolio - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$12,500,000</div><div class="txn-type">Mixed Use Portfolio</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Mixed-use portfolio refinancing spanning residential and commercial assets in Los Angeles's Cahuenga corridor.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Industrial-Showroom-12.4MM-Dallas-Texas.png" alt="Industrial Showroom - Dallas, TX" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$12,400,000</div><div class="txn-type">Industrial Showroom</div><div class="txn-loc">Dallas, TX</div><div class="txn-summary">Industrial showroom and flex space financing in the Dallas-Fort Worth metroplex, one of the nation's fastest-growing industrial markets.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/04/940-Hill-Street.png" alt="Infill Land - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$12,000,000</div><div class="txn-type">Infill Land</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Infill land acquisition financing in Downtown Los Angeles with entitlement potential for future ground-up development.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/3371-3425-Cahuenga-Boulevard-West-2.png" alt="Creative Office - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$11,500,000</div><div class="txn-type">Creative Office</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Creative office campus refinancing in the media-centric Cahuenga Pass area, attracting entertainment and tech tenants.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Mobile-Homes-11.2MM-Charlotte-North-Carolina.png" alt="Multifamily Mobile Homes - Charlotte, NC" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$11,200,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">Charlotte, NC</div><div class="txn-summary">Manufactured housing community refinancing in the Charlotte metro, one of the Southeast's strongest growth markets.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Stanford-Pico-Plaza-2.png" alt="Commercial Condominiums - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$11,000,000</div><div class="txn-type">Commercial Condominiums</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Commercial condominium portfolio financing for a multi-tenant complex near the Pico-Robertson neighborhood.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Outrigger-GrandStreet-Alameda-2.png" alt="Apartments (48 Units) - Alameda, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$9,500,000</div><div class="txn-type">Apartments (48 Units)</div><div class="txn-loc">Alameda, CA</div><div class="txn-summary">48-unit apartment community refinancing on Alameda Island in the East Bay, with waterfront proximity and strong occupancy.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Apartments-9.4MM-Fort-Worth-Texas.png" alt="Multifamily Apartments - Fort Worth, TX" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$9,400,000</div><div class="txn-type">Multifamily Apartments</div><div class="txn-loc">Fort Worth, TX</div><div class="txn-summary">Stabilized apartment community financing in the Fort Worth submarket with strong population and job growth fundamentals.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Cactus-House-Malibu-2.png" alt="Single Family Rental - Malibu, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$9,300,000</div><div class="txn-type">Single Family Rental</div><div class="txn-loc">Malibu, CA</div><div class="txn-summary">Luxury single-family rental financing for a premier oceanside Malibu property commanding premium monthly rents.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Mobile-Homes-8.9MM-Columbus-Ohio.png" alt="Multifamily Mobile Homes - Columbus, OH" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$8,900,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">Columbus, OH</div><div class="txn-summary">Manufactured housing community financing in the Columbus metro area, a growing affordable housing market in the Midwest.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/1415-N-Cahuenga-Blvd-Los-Angeles-2.png" alt="Class B Office - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$8,700,000</div><div class="txn-type">Class B Office</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Class B office building refinancing in the Hollywood submarket with diverse tenant base and value-add upside.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/2740-Magnolia-Burbank-2.png" alt="Co-Working Office - Burbank, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$8,100,000</div><div class="txn-type">Co-Working Office</div><div class="txn-loc">Burbank, CA</div><div class="txn-summary">Co-working and creative office space financing in the Burbank Media District, home to major entertainment studios.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/3303-EAST-ARTESIA-BOULEVARD-2.png" alt="Multi-Tenant Retail (35 Units) - Long Beach, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$6,500,000</div><div class="txn-type">Multi-Tenant Retail (35 Units)</div><div class="txn-loc">Long Beach, CA</div><div class="txn-summary">35-unit neighborhood retail center refinancing in Long Beach with diversified small-business tenancy and strong foot traffic.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/09/Houston-Aquarium.png" alt="Owner User Aquarium - Houston, TX" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$6,500,000</div><div class="txn-type">Owner User Aquarium</div><div class="txn-loc">Houston, TX</div><div class="txn-summary">Specialty owner-user financing for a commercial aquarium and entertainment venue in the Houston metro area.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/02/Transaction-Photos-Sizing-3.png" alt="Commercial Condominium - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$6,470,000</div><div class="txn-type">Commercial Condominium</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Commercial condo acquisition financing in a prime Los Angeles location with mixed retail and office use.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/1897-E-Colton-Avenue-Mentone-2.png" alt="Boat Storage - Mentone, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$6,000,000</div><div class="txn-type">Boat Storage</div><div class="txn-loc">Mentone, CA</div><div class="txn-summary">Specialty boat and RV storage facility financing in the Inland Empire, a high-demand niche asset class with strong NOI.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/6506-Westward-Malibu-Country-Inn-2.png" alt="Boutique Hotel - Malibu, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,800,000</div><div class="txn-type">Boutique Hotel</div><div class="txn-loc">Malibu, CA</div><div class="txn-summary">Boutique hospitality financing for a charming country inn on Pacific Coast Highway in Malibu.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Mobile-Homes-5.6MM-Indianapolis-Indiana.png" alt="Multifamily Mobile Homes - Indianapolis, IN" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,600,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">Indianapolis, IN</div><div class="txn-summary">Manufactured housing community in the Indianapolis metro providing essential affordable housing.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/1621-East-Spring-St.-Long-Beach.png" alt="Industrial Manufacturing - Long Beach, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,500,000</div><div class="txn-type">Industrial Manufacturing</div><div class="txn-loc">Long Beach, CA</div><div class="txn-summary">Manufacturing facility refinancing near the Port of Long Beach with proximity to major transportation infrastructure.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/09/Houston-Aquarium.png" alt="Aquarium - San Antonio, TX" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,500,000</div><div class="txn-type">Aquarium</div><div class="txn-loc">San Antonio, TX</div><div class="txn-summary">Specialty aquarium and entertainment venue financing in San Antonio's tourism-driven market along the River Walk.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Apartments-5.5MM-Austin-Texas.png" alt="Multifamily Apartments - Austin, TX" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,500,000</div><div class="txn-type">Multifamily Apartments</div><div class="txn-loc">Austin, TX</div><div class="txn-summary">Apartment community financing in Austin, one of the nation's top tech-driven growth markets for multifamily demand.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/09/Lincoln-Blvd.png" alt="Multi-Tenant Autobody - Santa Monica, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$5,000,000</div><div class="txn-type">Multi-Tenant Autobody</div><div class="txn-loc">Santa Monica, CA</div><div class="txn-summary">Multi-tenant automotive service center on Lincoln Boulevard in Santa Monica with strong local demand and stable cash flow.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/09/Shoreline-22-unit-Multifamily.png" alt="New Construction - Shoreline, WA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,800,000</div><div class="txn-type">New Construction</div><div class="txn-loc">Shoreline, WA</div><div class="txn-summary">Permanent take-out financing for a newly constructed 22-unit multifamily project in the Seattle suburb of Shoreline.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/906-Foothill-Road-Ojai-2.png" alt="Apartments (24 Units) - Ojai, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,750,000</div><div class="txn-type">Apartments (24 Units)</div><div class="txn-loc">Ojai, CA</div><div class="txn-summary">24-unit apartment community in the scenic Ojai Valley, a supply-constrained market with strong rental demand.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/620-Stone-Meadow-Ln-2.png" alt="Apartments (18 Units) - Santa Barbara, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,640,000</div><div class="txn-type">Apartments (18 Units)</div><div class="txn-loc">Santa Barbara, CA</div><div class="txn-summary">18-unit apartment complex refinancing in the highly desirable Santa Barbara market with limited new supply.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/2633-Ocean-St-2.png" alt="Mixed Use (Apts &amp; Retail) - Carlsbad, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,500,000</div><div class="txn-type">Mixed Use (Apts &amp; Retail)</div><div class="txn-loc">Carlsbad, CA</div><div class="txn-summary">Mixed-use property with ground-floor retail and upper-level apartments in coastal North San Diego County.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/153-Powell-Avenue-2.png" alt="Industrial Warehouse - Southampton, NY" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,500,000</div><div class="txn-type">Industrial Warehouse</div><div class="txn-loc">Southampton, NY</div><div class="txn-summary">Industrial warehouse financing in the Hamptons on Long Island's East End, a unique and supply-constrained market.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/4807-Elmwood-Avenue-2.png" alt="Apartments (20 Units) - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,300,000</div><div class="txn-type">Apartments (20 Units)</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">20-unit apartment building refinancing in a residential Los Angeles neighborhood with strong rental fundamentals.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Permanent-Multifamily-Mobile-Homes-4.3MM-San-Francisco-California.png" alt="Multifamily Mobile Homes - San Francisco, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$4,300,000</div><div class="txn-type">Multifamily Mobile Homes</div><div class="txn-loc">San Francisco, CA</div><div class="txn-summary">Manufactured housing community in the San Francisco Bay Area, providing essential affordable housing in one of the nation's priciest markets.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/04/2.png" alt="Industrial / Church - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$2,255,000</div><div class="txn-type">Industrial / Church</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Adaptive reuse financing for a dual-purpose industrial and religious facility in the Los Angeles area.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/09/Hawthorne-1.png" alt="Owner User - Torrance, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$2,200,000</div><div class="txn-type">Owner User</div><div class="txn-loc">Torrance, CA</div><div class="txn-summary">Owner-user acquisition financing for an operating business property in the South Bay's Torrance market.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="perm">
+      <img src="https://clscre.com/wp-content/uploads/2024/09/400-W-4th-St-Fleenors-.png" alt="Restaurant &amp; Coffee Shop - Santa Ana, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge perm">Permanent</div><div class="txn-amount">$1,380,000</div><div class="txn-type">Restaurant &amp; Coffee Shop</div><div class="txn-loc">Santa Ana, CA</div><div class="txn-summary">SBA financing for an owner-operated restaurant and coffee shop in downtown Santa Ana's revitalized arts district.</div></div>
+    </div>
+
     <!-- CONSTRUCTION -->
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$60,000,000</div><div class="txn-type">125-Unit Ground Up</div><div class="txn-loc">Seattle, WA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$43,900,000</div><div class="txn-type">Single Tenant Net Lease</div><div class="txn-loc">Fairfield, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$43,400,000</div><div class="txn-type">Single Tenant Net Lease</div><div class="txn-loc">Inglewood, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$18,750,000</div><div class="txn-type">250,000 SF Ground Up</div><div class="txn-loc">Sacramento, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$18,000,000</div><div class="txn-type">55-Unit Ground Up</div><div class="txn-loc">Orange County, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$15,000,000</div><div class="txn-type">Multitenant Retail</div><div class="txn-loc">Palm Springs, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$12,000,000</div><div class="txn-type">35-Unit Ground Up</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$12,000,000</div><div class="txn-type">150,000 SF Ground Up</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$12,000,000</div><div class="txn-type">Multi-Unit Additional SF</div><div class="txn-loc">San Fernando Valley, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$8,000,000</div><div class="txn-type">Hotel Rehabilitation</div><div class="txn-loc">Santa Barbara, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$6,000,000</div><div class="txn-type">Single Family Fix &amp; Flip</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="constr"><div class="txn-badge constr">Construction</div><div class="txn-amount">$1,000,000</div><div class="txn-type">Single Family Fix &amp; Flip</div><div class="txn-loc">Los Angeles, CA</div></div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/125-Unit-Ground-Up-Construction.png" alt="125-Unit Ground Up - Seattle, WA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$60,000,000</div><div class="txn-type">125-Unit Ground Up</div><div class="txn-loc">Seattle, WA</div><div class="txn-summary">Ground-up construction financing for a 125-unit luxury apartment development in Seattle's booming residential market.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Construction-Retail-Single-Tenant-Net-Lease-43.9MM-Fairfield-CA.png" alt="Single Tenant Net Lease - Fairfield, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$43,900,000</div><div class="txn-type">Single Tenant Net Lease</div><div class="txn-loc">Fairfield, CA</div><div class="txn-summary">Build-to-suit construction for a national credit tenant in Fairfield, combining development returns with investment-grade lease security.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2025/01/Construction-Retail-Single-Tenant-Net-Lease-43.4MM-Inglewood-CA.png" alt="Single Tenant Net Lease - Inglewood, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$43,400,000</div><div class="txn-type">Single Tenant Net Lease</div><div class="txn-loc">Inglewood, CA</div><div class="txn-summary">Major build-to-suit construction near SoFi Stadium in Inglewood, one of LA's most dynamic development corridors.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/250000-SF-Ground-up-constrcution.png" alt="250,000 SF Ground Up - Sacramento, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$18,750,000</div><div class="txn-type">250,000 SF Ground Up</div><div class="txn-loc">Sacramento, CA</div><div class="txn-summary">Ground-up construction of a 250,000 SF industrial warehouse in Sacramento's expanding logistics and distribution market.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/55-Unit-Ground-Up.png" alt="55-Unit Ground Up - Orange County, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$18,000,000</div><div class="txn-type">55-Unit Ground Up</div><div class="txn-loc">Orange County, CA</div><div class="txn-summary">55-unit multifamily ground-up construction in Orange County, targeting high demand for new Class A rental product.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Multitenant-Retail-Construction.png" alt="Multitenant Retail - Palm Springs, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$15,000,000</div><div class="txn-type">Multitenant Retail</div><div class="txn-loc">Palm Springs, CA</div><div class="txn-summary">New multi-tenant retail center construction in the Palm Springs resort market, capitalizing on tourism-driven demand.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/35-Unit-Ground-Up.png" alt="35-Unit Ground Up - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$12,000,000</div><div class="txn-type">35-Unit Ground Up</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">35-unit apartment ground-up development in Los Angeles, addressing the city's persistent housing shortage.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/150000-SF-Ground-up-constrcution.png" alt="150,000 SF Ground Up - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$12,000,000</div><div class="txn-type">150,000 SF Ground Up</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">150,000 SF industrial warehouse construction in the Los Angeles industrial market, one of the lowest vacancy markets in the country.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Multi-unit-additonal-SF.png" alt="Multi-Unit Additional SF - San Fernando Valley, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$12,000,000</div><div class="txn-type">Multi-Unit Additional SF</div><div class="txn-loc">San Fernando Valley, CA</div><div class="txn-summary">Expansion and renovation of an existing multi-unit property in the San Fernando Valley with significant value-add potential.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Hotel-Rehabilitation-1.png" alt="Hotel Rehabilitation - Santa Barbara, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$8,000,000</div><div class="txn-type">Hotel Rehabilitation</div><div class="txn-loc">Santa Barbara, CA</div><div class="txn-summary">Comprehensive hotel rehabilitation in Santa Barbara's premium hospitality market, upgrading to boutique luxury positioning.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Single-Family-Rental-Fix-n-Flip.png" alt="Single Family Fix &amp; Flip - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$6,000,000</div><div class="txn-type">Single Family Fix &amp; Flip</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">High-end residential fix-and-flip financing for a luxury renovation project in a prime Los Angeles neighborhood.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="constr">
+      <img src="https://clscre.com/wp-content/uploads/2024/03/Transaction-Photos-Sizing-1.png" alt="Single Family Fix &amp; Flip - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge constr">Construction</div><div class="txn-amount">$1,000,000</div><div class="txn-type">Single Family Fix &amp; Flip</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Residential renovation financing for a fix-and-flip project in the Los Angeles market.</div></div>
+    </div>
+
     <!-- BRIDGE -->
-    <div class="txn-card reveal" data-cat="bridge"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$14,250,000</div><div class="txn-type">Value-Add Multifamily</div><div class="txn-loc">Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="bridge"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$14,000,000</div><div class="txn-type">Unentitled Land</div><div class="txn-loc">Downtown Los Angeles, CA</div></div>
-    <div class="txn-card reveal" data-cat="bridge"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$8,500,000</div><div class="txn-type">Entitled Land</div><div class="txn-loc">San Francisco, CA</div></div>
-    <div class="txn-card reveal" data-cat="bridge"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$5,600,000</div><div class="txn-type">High-End Retail</div><div class="txn-loc">Beverly Hills, CA</div></div>
-    <div class="txn-card reveal" data-cat="bridge"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$5,500,000</div><div class="txn-type">Lease-Up Multitenant Retail</div><div class="txn-loc">Los Angeles, CA</div></div>
+    <div class="txn-card reveal" data-cat="bridge">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Value-add-Multifamily.png" alt="Value-Add Multifamily - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$14,250,000</div><div class="txn-type">Value-Add Multifamily</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Bridge financing for a multifamily value-add renovation in Los Angeles, targeting significant rent growth post-renovation.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="bridge">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Unentitled-Land-Downtown-LA.png" alt="Unentitled Land - Downtown Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$14,000,000</div><div class="txn-type">Unentitled Land</div><div class="txn-loc">Downtown Los Angeles, CA</div><div class="txn-summary">Land bridge loan for an unentitled Downtown LA parcel during the entitlement and planning process for a major development.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="bridge">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Entitled-Land-SF-CA.png" alt="Entitled Land - San Francisco, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$8,500,000</div><div class="txn-type">Entitled Land</div><div class="txn-loc">San Francisco, CA</div><div class="txn-summary">Bridge financing for entitled development land in San Francisco, bridging to construction start.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="bridge">
+      <img src="https://clscre.com/wp-content/uploads/2024/04/1.png" alt="High-End Retail - Beverly Hills, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$5,600,000</div><div class="txn-type">High-End Retail</div><div class="txn-loc">Beverly Hills, CA</div><div class="txn-summary">Bridge loan for a high-end retail property in Beverly Hills during tenant transition and lease-up.</div></div>
+    </div>
+    <div class="txn-card reveal" data-cat="bridge">
+      <img src="https://clscre.com/wp-content/uploads/2023/05/Lease-up-and-TI-Multitentant-Retail.png" alt="Lease-Up Multitenant Retail - Los Angeles, CA" class="txn-photo" loading="lazy">
+      <div class="txn-body"><div class="txn-badge bridge">Bridge</div><div class="txn-amount">$5,500,000</div><div class="txn-type">Lease-Up Multitenant Retail</div><div class="txn-loc">Los Angeles, CA</div><div class="txn-summary">Bridge financing for a multi-tenant retail center during lease-up and tenant improvement phase in Los Angeles.</div></div>
+    </div>
   </div>
 </div>
 </section>
@@ -536,7 +731,7 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
         <div class="team-name">Trevor Damyan</div>
         <div class="team-title">CEO / Founder</div>
         <div class="team-bio">President and founder leading nationwide debt and equity financing with Southern California focus. Nearly a decade of CRE experience. Prior: CBRE Debt &amp; Structured Finance, Marcus &amp; Millichap Capital Corporation, Genesis Capital, Slatt Capital.</div>
-        <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener" class="team-linkedin">LinkedIn →</a>
+        <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener" class="team-linkedin">LinkedIn &rarr;</a>
       </div>
     </div>
     <div class="team-card reveal">
@@ -596,23 +791,23 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
 <div class="section-inner">
   <div class="section-label reveal">Why Us</div>
   <div class="section-title reveal">What Sets Us Apart</div>
-  <p class="section-desc reveal">We came from CBRE and Marcus &amp; Millichap. We brought the best of those platforms — and left behind everything that doesn't serve you.</p>
+  <p class="section-desc reveal">We came from CBRE and Marcus &amp; Millichap. We brought the best of those platforms &mdash; and left behind everything that doesn't serve you.</p>
   <div class="diff-grid">
     <div class="diff-card reveal">
       <h3>Institutional Pedigree, Boutique Service</h3>
-      <p>Our principals came from CBRE, Marcus &amp; Millichap, and other top-tier institutional brokerages. You get Fortune 500 capabilities with direct principal access — no bureaucracy, no gatekeeping.</p>
+      <p>Our principals came from CBRE, Marcus &amp; Millichap, and other top-tier institutional brokerages. You get Fortune 500 capabilities with direct principal access &mdash; no bureaucracy, no gatekeeping.</p>
     </div>
     <div class="diff-card reveal">
       <h3>Direct Life Insurance Company Access</h3>
-      <p>Most brokers can't correspond directly with life insurance companies. We can. This unlocks the most competitive long-term fixed rates in market — rates banks simply cannot match.</p>
+      <p>Most brokers can't correspond directly with life insurance companies. We can. This unlocks the most competitive long-term fixed rates in market &mdash; rates banks simply cannot match.</p>
     </div>
     <div class="diff-card reveal">
       <h3>Creative Structuring Expertise</h3>
-      <p>From nonprofit GP structures on affordable housing to industrial lease restructuring that unlocks higher leverage — we engineer deals, not just place them.</p>
+      <p>From nonprofit GP structures on affordable housing to industrial lease restructuring that unlocks higher leverage &mdash; we engineer deals, not just place them.</p>
     </div>
     <div class="diff-card reveal">
       <h3>Free AI Tools for Investors</h3>
-      <p>We've built proprietary analysis tools at <a href="https://clscre.ai" target="_blank" rel="noopener" style="color:var(--green-bright);text-decoration:underline">clscre.ai</a> — refinance vs. sell calculators, 1031 exchange analysis, and more. No other brokerage in LA offers this.</p>
+      <p>We've built proprietary analysis tools at <a href="https://clscre.ai" target="_blank" rel="noopener" style="color:var(--green-bright);text-decoration:underline">clscre.ai</a> &mdash; refinance vs. sell calculators, 1031 exchange analysis, and more. No other brokerage in LA offers this.</p>
     </div>
   </div>
 </div>
@@ -631,7 +826,7 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
       <tr><td class="idx-name">10-Yr Treasury</td><td class="idx-val">4.087%</td><td>4.054%</td><td>4.313%</td><td>4.290%</td></tr>
       <tr><td class="idx-name">30-Yr Treasury</td><td class="idx-val">4.711%</td><td>4.689%</td><td>4.850%</td><td>4.530%</td></tr>
       <tr><td class="idx-name">2-Yr Treasury</td><td class="idx-val">3.468%</td><td>3.435%</td><td>3.780%</td><td>4.610%</td></tr>
-      <tr><td class="idx-name">Fed Funds Rate</td><td class="idx-val">3.50–3.75%</td><td>3.50–3.75%</td><td>3.50–3.75%</td><td>4.25–4.50%</td></tr>
+      <tr><td class="idx-name">Fed Funds Rate</td><td class="idx-val">3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>4.25&ndash;4.50%</td></tr>
       <tr><td class="idx-name">S&amp;P 500</td><td class="idx-val">6,905</td><td>6,843</td><td>6,841</td><td>6,115</td></tr>
       <tr><td class="idx-name">Dow Jones</td><td class="idx-val">49,841</td><td>49,533</td><td>49,408</td><td>43,461</td></tr>
       <tr><td class="idx-name">NASDAQ</td><td class="idx-val">22,876</td><td>22,578</td><td>22,592</td><td>19,649</td></tr>
@@ -641,64 +836,8 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
     </tbody>
   </table>
   </div>
-</div>
-</section>
-
-<!-- YIELD CURVE -->
-<section class="yield-curve" id="yield-curve">
-<div class="section-inner">
-  <div class="section-label reveal">Treasury Market</div>
-  <div class="section-title reveal">U.S. Treasury Yield Curve</div>
-  <div class="yc-container reveal">
-    <div class="yc-chart">
-      <svg class="yc-svg" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
-        <line x1="60" y1="20" x2="60" y2="260" stroke="rgba(0,0,0,.06)" stroke-width="1"/>
-        <line x1="60" y1="260" x2="780" y2="260" stroke="rgba(0,0,0,.06)" stroke-width="1"/>
-        <line x1="60" y1="80" x2="780" y2="80" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
-        <line x1="60" y1="140" x2="780" y2="140" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
-        <line x1="60" y1="200" x2="780" y2="200" stroke="rgba(0,0,0,.04)" stroke-width="1" stroke-dasharray="4"/>
-        <text x="50" y="24" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">5.0%</text>
-        <text x="50" y="84" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">4.5%</text>
-        <text x="50" y="144" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">4.0%</text>
-        <text x="50" y="204" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3.5%</text>
-        <text x="50" y="264" text-anchor="end" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3.0%</text>
-        <text x="80" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">1M</text>
-        <text x="145" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3M</text>
-        <text x="210" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">6M</text>
-        <text x="280" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">1Y</text>
-        <text x="350" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">2Y</text>
-        <text x="420" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">3Y</text>
-        <text x="500" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">5Y</text>
-        <text x="580" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">7Y</text>
-        <text x="660" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">10Y</text>
-        <text x="720" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">20Y</text>
-        <text x="770" y="280" text-anchor="middle" font-size="10" fill="#6B7280" font-family="Inter,sans-serif">30Y</text>
-        <polyline class="yc-line yc-current" points="80,217 145,211 210,209 280,214 350,200 420,191 500,175 580,164 660,147 720,117 770,97"/>
-        <polyline class="yc-line yc-year-ago" points="80,131 145,130 210,128 280,140 350,141 420,143 500,147 580,138 660,133 720,114 770,113"/>
-        <circle cx="80" cy="217" class="yc-dot" fill="var(--navy)"/><circle cx="145" cy="211" class="yc-dot" fill="var(--navy)"/><circle cx="210" cy="209" class="yc-dot" fill="var(--navy)"/><circle cx="280" cy="214" class="yc-dot" fill="var(--navy)"/><circle cx="350" cy="200" class="yc-dot" fill="var(--navy)"/><circle cx="420" cy="191" class="yc-dot" fill="var(--navy)"/><circle cx="500" cy="175" class="yc-dot" fill="var(--navy)"/><circle cx="580" cy="164" class="yc-dot" fill="var(--navy)"/><circle cx="660" cy="147" class="yc-dot" fill="var(--navy)"/><circle cx="720" cy="117" class="yc-dot" fill="var(--navy)"/><circle cx="770" cy="97" class="yc-dot" fill="var(--navy)"/>
-      </svg>
-    </div>
-    <div class="yc-legend">
-      <div class="yc-legend-item"><div class="yc-legend-line" style="background:var(--navy)"></div>Current (Feb 19, 2026)</div>
-      <div class="yc-legend-item"><div class="yc-legend-line" style="background:var(--green)"></div>1 Year Ago (Feb 2025)</div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ECONOMIC EVENTS -->
-<section class="events" id="events">
-<div class="section-inner">
-  <div class="section-label reveal">Economic Calendar</div>
-  <div class="section-title reveal">Upcoming Macro Events</div>
-  <p class="section-desc reveal">Key economic releases and Fed decisions that impact commercial real estate lending rates.</p>
-  <div class="events-grid">
-    <div class="event-card reveal"><div class="event-date">Feb 21, 2026 · 8:30 AM ET</div><div class="event-name">PCE Price Index (January)</div><div class="event-desc">The Fed's preferred inflation measure. Key for rate cut probability and commercial mortgage rate direction.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Feb 21, 2026 · 8:30 AM ET</div><div class="event-name">Q4 2025 GDP (2nd Estimate)</div><div class="event-desc">Strong GDP supports higher-for-longer rates; weakness opens the door to cuts and lower borrowing costs.</div><div class="event-impact impact-med">Medium Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Mar 7, 2026 · 8:30 AM ET</div><div class="event-name">February Jobs Report</div><div class="event-desc">Labor market health directly affects Fed policy. A cooling job market strengthens the case for rate cuts in 2026.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Mar 18, 2026 · 2:00 PM ET</div><div class="event-name">FOMC Rate Decision</div><div class="event-desc">Next scheduled decision. Markets pricing 95.3% probability of a hold at 3.50–3.75%.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Mar 26, 2026 · 8:30 AM ET</div><div class="event-name">CPI Report (February)</div><div class="event-desc">January CPI dropped to 2.4% annual — continued progress toward 2% target would support future rate cuts.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Apr 2, 2026 · 8:30 AM ET</div><div class="event-name">March Jobs Report</div><div class="event-desc">First look at Q1 2026 labor market. Key indicator for May FOMC positioning.</div><div class="event-impact impact-high">High Impact</div></div>
+  <div class="idx-cta reveal">
+    <a href="market-data.html">View Full Economic Outlook &amp; Yield Curve &rarr;</a>
   </div>
 </div>
 </section>
@@ -713,23 +852,23 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
     <div class="contact-info reveal">
       <h3>Contact Information</h3>
       <div class="contact-item">
-        <div class="contact-icon">📞</div>
+        <div class="contact-icon">&#128222;</div>
         <div class="contact-item-text"><strong>Phone</strong><a href="tel:+13107584042" style="color:var(--green);text-decoration:none">310.758.4042</a></div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">✉️</div>
+        <div class="contact-icon">&#9993;&#65039;</div>
         <div class="contact-item-text"><strong>Email</strong><a href="mailto:inquiries@clscre.com" style="color:var(--green);text-decoration:none">inquiries@clscre.com</a></div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">📍</div>
+        <div class="contact-icon">&#128205;</div>
         <div class="contact-item-text"><strong>Office</strong>7951 Blackburn Avenue<br>Los Angeles, CA 90048</div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">🕐</div>
-        <div class="contact-item-text"><strong>Hours</strong>Mon–Fri: 9am – 5pm<br>Saturday: By Appointment</div>
+        <div class="contact-icon">&#128336;</div>
+        <div class="contact-item-text"><strong>Hours</strong>Mon&ndash;Fri: 9am &ndash; 5pm<br>Saturday: By Appointment</div>
       </div>
       <div style="margin-top:24px">
-        <a href="https://clscre.ai" target="_blank" rel="noopener" class="btn-outline">Try Our Free AI Tools →</a>
+        <a href="https://clscre.ai" target="_blank" rel="noopener" class="btn-outline">Try Our Free AI Tools &rarr;</a>
       </div>
     </div>
     <div class="contact-form reveal">
@@ -778,7 +917,7 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
         <div class="form-row">
           <div class="form-field full"><label>Tell Us About Your Deal</label><textarea name="comments" rows="4" placeholder="Property details, timeline, goals..."></textarea></div>
         </div>
-        <button type="submit" class="btn-primary form-submit">Submit Quote Request →</button>
+        <button type="submit" class="btn-primary form-submit">Submit Quote Request &rarr;</button>
       </form>
     </div>
   </div>
@@ -806,7 +945,7 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
     <h4>Company</h4>
     <a href="#team">Our Team</a>
     <a href="#transactions">Transactions</a>
-    <a href="#markets">Market Data</a>
+    <a href="market-data.html">Market Data</a>
     <a href="#why-us">Why Choose Us</a>
     <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
     <a href="#contact">Contact</a>
