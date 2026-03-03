@@ -265,6 +265,59 @@ def main():
     print(f"  [OK] blog/index.html  ({len(articles)} articles)")
 
     # ── 6. Blog Article Pages ─────────────────────────────────────────
+    # Mapping from article tags/slugs to loan/property type slugs for cross-linking
+    TAG_TO_SLUG = {
+        "bridge loans": ("financing", "bridge-loans"),
+        "permanent loans": ("financing", "permanent-loans"),
+        "construction loans": ("financing", "construction-loans"),
+        "construction": ("financing", "construction-loans"),
+        "sba": ("financing", "sba-loans"),
+        "sba 504": ("financing", "sba-loans"),
+        "mezzanine": ("financing", "mezzanine"),
+        "multifamily": ("property", "multifamily"),
+        "apartment investing": ("property", "multifamily"),
+        "industrial": ("property", "industrial"),
+        "retail": ("property", "retail"),
+        "office": ("property", "office"),
+        "mixed-use": ("property", "mixed-use"),
+        "hospitality": ("property", "hospitality"),
+        "hotel": ("property", "hospitality"),
+    }
+    # Featured cities for cross-links (mix of large and emerging markets)
+    FEATURED_CITIES = [c for c in cities if c["slug"] in (
+        "los-angeles", "new-york", "dallas", "phoenix", "atlanta",
+        "miami", "chicago", "boston", "nashville", "tampa",
+        "seattle", "denver", "austin", "charlotte", "riverside",
+    )]
+
+    def build_related_cities(article):
+        """Build related city page links based on article tags."""
+        tags = [t.lower() for t in article.get("tags", [])]
+        slug_title = article["slug"].lower()
+        links = []
+        matched_type = None
+        # Find the best matching loan/property type
+        for tag in tags:
+            if tag in TAG_TO_SLUG:
+                matched_type = TAG_TO_SLUG[tag]
+                break
+        # Also check article slug for hints
+        if not matched_type:
+            for key, val in TAG_TO_SLUG.items():
+                if key.replace(" ", "-") in slug_title:
+                    matched_type = val
+                    break
+        # Default to permanent-loans for rate/general articles
+        if not matched_type:
+            matched_type = ("financing", "permanent-loans")
+        section, type_slug = matched_type
+        for city in FEATURED_CITIES:
+            links.append({
+                "label": f"{city['city']}, {city['state']}",
+                "url": f"{section}/{type_slug}-{city['slug']}.html",
+            })
+        return links
+
     tpl_blog_article = env.get_template("blog_article.html")
     for article in articles:
         # Find related articles (same category, excluding self)
@@ -272,11 +325,13 @@ def main():
         if len(related) < 2:
             # Fill with other recent articles
             related = [a for a in articles if a["slug"] != article["slug"]][:3]
+        related_cities = build_related_cities(article)
         html = tpl_blog_article.render(
             **shared,
             article=article,
             faqs=article.get("faqs", []),
             related_articles=related,
+            related_cities=related_cities,
             seo={
                 "title": f"{article['title']} | CLS CRE",
                 "meta_description": article["excerpt"],

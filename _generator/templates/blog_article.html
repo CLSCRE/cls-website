@@ -61,6 +61,19 @@
         </div>
       </div>
       {% endif %}
+      {% if related_cities %}
+      <div class="sidebar-card reveal">
+        <h4>Related Markets</h4>
+        <ul style="list-style:none;padding:0;margin:0">
+          {% for rc in related_cities[:8] %}
+          <li style="padding:4px 0;border-bottom:1px solid var(--gray-100)">
+            <a href="{{ depth }}{{ rc.url }}" style="font-size:13px;color:var(--navy);text-decoration:none;font-weight:500;transition:color .2s">{{ rc.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <a href="{{ depth }}locations.html" style="display:inline-block;margin-top:10px;font-size:12px;color:var(--green);text-decoration:none;font-weight:600">View All 61 Markets &rarr;</a>
+      </div>
+      {% endif %}
     </aside>
   </div>
 </div>
@@ -90,6 +103,26 @@
       </div>
     </a>
     {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- EXPLORE BY MARKET -->
+{% if related_cities %}
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Explore by Market</h2>
+  <p style="font-size:15px;color:var(--gray-500);margin-bottom:24px" class="reveal">Find financing options and local market insights for top commercial real estate metros.</p>
+  <div class="cross-link-grid">
+    {% for rc in related_cities %}
+    <a href="{{ depth }}{{ rc.url }}" class="cross-link-card reveal">
+      <span style="font-weight:600;color:var(--navy);font-size:14px">{{ rc.label }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  <div style="text-align:center;margin-top:24px">
+    <a href="{{ depth }}locations.html" class="pill-link reveal" style="font-size:14px">View All 61 Markets &rarr;</a>
   </div>
 </div>
 </section>
