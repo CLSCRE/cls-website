@@ -94,6 +94,21 @@
 .blog-card-excerpt{font-size:14px;color:var(--gray-600);line-height:1.65;flex:1;margin-bottom:16px}
 .blog-card-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--gray-400);border-top:1px solid var(--gray-100);padding-top:12px}
 
+/* ===== BLOG CARD HERO ===== */
+.blog-card-hero{height:8px;border-radius:12px 12px 0 0;margin:-32px -32px 20px -32px}
+.blog-card-hero[data-category="market-insights"]{background:linear-gradient(135deg,#0a8f6a,#0cc5a0)}
+.blog-card-hero[data-category="educational"]{background:linear-gradient(135deg,#1a5fb4,#3a8fd8)}
+.blog-card-hero[data-category="rate-commentary"]{background:linear-gradient(135deg,#b8860b,#d4a833)}
+.blog-card-hero[data-category="industry-news"]{background:linear-gradient(135deg,#153D63,#2a6ba5)}
+
+/* ===== ARTICLE HERO ===== */
+.article-hero{padding:120px 0 32px;position:relative;overflow:hidden}
+.article-hero[data-category="market-insights"]{background:linear-gradient(135deg,#0a8f6a,#0cc5a0)}
+.article-hero[data-category="educational"]{background:linear-gradient(135deg,#1a5fb4,#3a8fd8)}
+.article-hero[data-category="rate-commentary"]{background:linear-gradient(135deg,#b8860b,#d4a833)}
+.article-hero[data-category="industry-news"]{background:linear-gradient(135deg,#153D63,#2a6ba5)}
+.article-hero-label{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.9)}
+
 /* ===== BLOG ARTICLE ===== */
 .blog-article{padding:60px 0}
 .article-header{margin-bottom:48px;max-width:800px}

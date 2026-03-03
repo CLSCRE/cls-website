@@ -7,7 +7,7 @@
 <li>{{ use }}</li>
 {% endfor %}
 </ul>
-<p>In the {{ city.metro }} metro, {{ loan.name.lower() }} are particularly relevant given the market's {{ data.stats.rent_growth }} rent growth and {{ data.stats.job_growth }} job growth, which support {% if loan_key == "bridge" %}aggressive value-add business plans and confident exit strategies{% elif loan_key == "permanent" %}conservative underwriting with strong debt service coverage{% else %}development feasibility and absorption timelines{% endif %}.</p>
+<p>In the {{ city.metro }} metro, {{ loan.name.lower() }} are particularly relevant given the market's {{ data.stats.rent_growth }} rent growth and {{ data.stats.job_growth }} job growth, which support {% if loan_key == "bridge" %}aggressive value-add business plans and confident exit strategies{% elif loan_key == "permanent" %}conservative underwriting with strong debt service coverage{% elif loan_key == "construction" %}development feasibility and absorption timelines{% elif loan_key == "sba" %}small business expansion and owner-occupied acquisition strategies{% elif loan_key == "mezzanine" %}higher-leverage capital structures for competitive acquisitions{% else %}creative financing solutions across niche asset classes{% endif %}.</p>
 
 <h2>Current {{ loan.short_name }} Loan Rates in {{ city.city }}</h2>
 <p>As of 2026, {{ loan.name.lower() }} in the {{ city.city }} market are pricing at the following levels:</p>
@@ -15,7 +15,13 @@
 <li><strong>Rate Range:</strong> {{ loan.key_features.rates }}</li>
 <li><strong>Loan Amount:</strong> {{ loan.key_features.loan_amount }}</li>
 <li><strong>Term:</strong> {{ loan.key_features.term }}</li>
-<li><strong>Maximum {{ "LTC" if loan.key_features.ltc is defined else "LTV" }}:</strong> {{ loan.key_features.ltc if loan.key_features.ltc is defined else loan.key_features.ltv }}</li>
+{% if loan.key_features.ltc is defined %}
+<li><strong>Maximum LTC:</strong> {{ loan.key_features.ltc }}</li>
+{% elif loan.key_features.ltv is defined %}
+<li><strong>Maximum LTV:</strong> {{ loan.key_features.ltv }}</li>
+{% elif loan.key_features.total_leverage is defined %}
+<li><strong>Total Leverage:</strong> {{ loan.key_features.total_leverage }}</li>
+{% endif %}
 {% if loan.key_features.amortization %}
 <li><strong>Amortization:</strong> {{ loan.key_features.amortization }}</li>
 {% endif %}
@@ -28,7 +34,7 @@
 <ul>
 <li><strong>Borrower Experience:</strong> Lenders evaluate your track record with similar assets in {{ city.city }} or comparable markets</li>
 <li><strong>Net Worth &amp; Liquidity:</strong> Most lenders require net worth equal to the loan amount and 6-12 months of debt service in liquid reserves</li>
-<li><strong>Property Performance:</strong> {% if loan_key == "permanent" %}Stabilized occupancy of 90%+ with a minimum DSCR of 1.20x-1.25x{% elif loan_key == "bridge" %}Clear value-add business plan with realistic renovation budgets and exit assumptions{% else %}Detailed construction budget, timeline, and evidence of market demand for the finished product{% endif %}</li>
+<li><strong>Property Performance:</strong> {% if loan_key == "permanent" %}Stabilized occupancy of 90%+ with a minimum DSCR of 1.20x-1.25x{% elif loan_key == "bridge" %}Clear value-add business plan with realistic renovation budgets and exit assumptions{% elif loan_key == "construction" %}Detailed construction budget, timeline, and evidence of market demand for the finished product{% elif loan_key == "sba" %}Owner-occupied property with at least 51% business use, strong business financials and tax returns{% elif loan_key == "mezzanine" %}Existing senior debt in place, property cash flow or value-add plan supporting the combined capital stack{% else %}Property-specific underwriting based on asset class, cash flow, and market positioning{% endif %}</li>
 <li><strong>Market Position:</strong> Asset location within {{ city.city }}'s strongest submarkets, including {{ data.stats.top_submarkets }}</li>
 </ul>
 
@@ -48,8 +54,17 @@
 {% elif loan_key == "permanent" %}
 <p>Permanent loans in {{ city.city }} are designed for long-term hold strategies, but borrowers should consider prepayment provisions carefully. Common structures include yield maintenance, defeasance, and declining prepayment penalties. The right prepayment structure depends on your expected hold period and the likelihood of refinancing or selling before maturity.</p>
 <p>With {{ city.city }}'s {{ data.stats.rent_growth }} rent growth, properties financed with permanent loans should see improving cash flow over the hold period, supporting both debt service and equity returns.</p>
-{% else %}
+{% elif loan_key == "construction" %}
 <p>Construction loans in {{ city.city }} are interim financing that must be replaced upon project completion. The typical exit is a permanent loan once the property is built and stabilized, or a sale to a long-term investor. The {{ city.city }} market's {{ data.stats.job_growth }} job growth and {{ data.stats.population_growth }} population growth support absorption assumptions, but borrowers should underwrite conservatively and have backup exit options.</p>
+{% elif loan_key == "sba" %}
+<p>SBA loans in {{ city.city }} are long-term financing designed for owner-occupied properties, so the primary exit is continued business operation and eventual loan payoff. The SBA 504 program features below-market fixed rates that make early repayment unnecessary for most borrowers. The 7(a) program offers more flexibility for business transitions.</p>
+<p>If you plan to sell the property before loan maturity, review your prepayment terms carefully — SBA 504 loans have declining prepayment penalties over the first 10 years, while 7(a) terms vary by lender.</p>
+{% elif loan_key == "mezzanine" %}
+<p>Mezzanine and preferred equity positions in {{ city.city }} are structured with clear exit timelines, typically aligning with the business plan execution period. The exit is usually through a refinance that consolidates the capital stack at a lower blended cost once the property's value has increased, or through a property sale that generates sufficient proceeds to repay all capital layers.</p>
+<p>Given {{ city.city }}'s {{ data.stats.rent_growth }} rent growth, well-executed value-add strategies can create the equity cushion needed to refinance into permanent financing that fully repays the mezzanine position.</p>
+{% else %}
+<p>Specialty financing exits in {{ city.city }} vary significantly by asset type and business plan. Some specialty properties — like self-storage and data centers — can transition to permanent agency or CMBS financing once stabilized. Others may require continued specialty lending or a sale to a specialized operator.</p>
+<p>The key is structuring the initial financing with a realistic exit timeline and identifying permanent capital sources early in the process. The {{ city.city }} market's {{ data.stats.job_growth }} job growth supports demand across specialty property types.</p>
 {% endif %}
 
 <h2>{{ city.city }} Market Context</h2>
@@ -62,7 +77,7 @@
 <ul>
 <li><a href="../financing/{{ loan.slug }}.html">{{ loan.name }} — National Overview</a></li>
 <li><a href="../financing/{{ loan.slug }}-{{ city.slug }}.html">{{ loan.name }} in {{ city.city }}</a></li>
-<li><a href="../property/multifamily-{{ city.slug }}.html">Multifamily Financing in {{ city.city }}</a></li>
-<li><a href="../property/industrial-{{ city.slug }}.html">Industrial Financing in {{ city.city }}</a></li>
+<li><a href="multifamily-investing-{{ city.slug }}-guide.html">Multifamily Investing in {{ city.city }}</a></li>
+<li><a href="industrial-investing-{{ city.slug }}-guide.html">Industrial Investing in {{ city.city }}</a></li>
 <li><a href="cre-market-report-{{ city.slug }}-2026.html">{{ city.city }} Commercial Real Estate Market Report 2026</a></li>
 </ul>

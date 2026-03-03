@@ -11,8 +11,9 @@
 <link rel="canonical" href="https://commerciallendingsolutions.ai/{{ canonical_path }}">
 <meta property="og:title" content="{{ seo.title }}">
 <meta property="og:description" content="{{ seo.meta_description }}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{% block og_type %}website{% endblock %}">
 <meta property="og:url" content="https://commerciallendingsolutions.ai/{{ canonical_path }}">
+{% block extra_meta %}{% endblock %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">

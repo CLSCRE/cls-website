@@ -2,10 +2,10 @@
 """
 CLS CRE — Programmatic Blog Article Generator
 
-Generates 51 market-specific blog articles from templates + city data:
+Generates 195 market-specific blog articles from templates + city data:
   - 15 City Market Reports (Type A)
-  - 18 City × Loan Type Guides (Type B)
-  - 18 City × Property Type Guides (Type C)
+  - 90 City × Loan Type Guides (Type B) — 6 loan types × 15 cities
+  - 90 City × Property Type Guides (Type C) — 6 property types × 15 cities
 
 Merges with existing hand-written articles in articles.json.
 """
@@ -33,55 +33,49 @@ MARKET_REPORT_CITIES = [
     "austin", "nashville", "tampa", "charlotte", "boston",
 ]
 
-# Type B: 18 City × Loan Type Guides (3 loan types × 6 cities each)
-LOAN_GUIDE_COMBOS = [
-    # Bridge Loans × 6 cities
-    ("bridge-loans", "bridge", "los-angeles"),
-    ("bridge-loans", "bridge", "dallas"),
-    ("bridge-loans", "bridge", "phoenix"),
-    ("bridge-loans", "bridge", "miami"),
-    ("bridge-loans", "bridge", "atlanta"),
-    ("bridge-loans", "bridge", "nashville"),
-    # Permanent Loans × 6 cities
-    ("permanent-loans", "permanent", "new-york"),
-    ("permanent-loans", "permanent", "chicago"),
-    ("permanent-loans", "permanent", "boston"),
-    ("permanent-loans", "permanent", "seattle"),
-    ("permanent-loans", "permanent", "houston"),
-    ("permanent-loans", "permanent", "charlotte"),
-    # Construction Loans × 6 cities
-    ("construction-loans", "construction", "austin"),
-    ("construction-loans", "construction", "denver"),
-    ("construction-loans", "construction", "tampa"),
-    ("construction-loans", "construction", "miami"),
-    ("construction-loans", "construction", "dallas"),
-    ("construction-loans", "construction", "phoenix"),
+# All 15 cities used across all guide types
+ALL_CITIES = [
+    "los-angeles", "new-york", "dallas", "phoenix", "houston",
+    "miami", "atlanta", "chicago", "denver", "seattle",
+    "austin", "nashville", "tampa", "charlotte", "boston",
 ]
 
-# Type C: 18 City × Property Type Guides (3 property types × 6 cities each)
-PROPERTY_GUIDE_COMBOS = [
-    # Multifamily × 6 cities
-    ("multifamily", "los-angeles"),
-    ("multifamily", "new-york"),
-    ("multifamily", "dallas"),
-    ("multifamily", "phoenix"),
-    ("multifamily", "austin"),
-    ("multifamily", "boston"),
-    # Industrial × 6 cities
-    ("industrial", "chicago"),
-    ("industrial", "houston"),
-    ("industrial", "atlanta"),
-    ("industrial", "seattle"),
-    ("industrial", "miami"),
-    ("industrial", "tampa"),
-    # Retail × 6 cities
-    ("retail", "nashville"),
-    ("retail", "charlotte"),
-    ("retail", "denver"),
-    ("retail", "phoenix"),
-    ("retail", "dallas"),
-    ("retail", "miami"),
+# Loan slug → context key mapping
+LOAN_TYPES_MAP = [
+    ("bridge-loans", "bridge"),
+    ("permanent-loans", "permanent"),
+    ("construction-loans", "construction"),
+    ("sba-loans", "sba"),
+    ("mezzanine", "mezzanine"),
+    ("specialty", "specialty"),
 ]
+
+# Type B: 90 City × Loan Type Guides (6 loan types × 15 cities each)
+LOAN_GUIDE_COMBOS = [
+    (loan_slug, loan_key, city)
+    for loan_slug, loan_key in LOAN_TYPES_MAP
+    for city in ALL_CITIES
+]
+
+# Property slug → stats key mapping (handles mixed-use hyphen)
+PROP_TYPES_MAP = [
+    ("multifamily", "multifamily"),
+    ("industrial", "industrial"),
+    ("retail", "retail"),
+    ("office", "office"),
+    ("mixed-use", "mixed_use"),
+    ("hospitality", "hospitality"),
+]
+
+# Type C: 90 City × Property Type Guides (6 property types × 15 cities each)
+PROPERTY_GUIDE_COMBOS = [
+    (prop_slug, city)
+    for prop_slug, _ in PROP_TYPES_MAP
+    for city in ALL_CITIES
+]
+
+# Slug to stats key for property lookups
+PROP_STATS_KEY = dict(PROP_TYPES_MAP)
 
 
 def load_json(name: str):
@@ -140,7 +134,7 @@ def build_loan_guide_faqs(city, loan, data, loan_key):
         },
         {
             "q": f"How long does it take to close a {loan['short_name'].lower()} loan in {city['city']}?",
-            "a": f"{'Bridge loans can close in as little as 2-4 weeks' if loan_key == 'bridge' else 'Permanent loans typically close in 60-90 days' if loan_key == 'permanent' else 'Construction loans typically close in 45-90 days'} in the {city['city']} market, depending on deal complexity, lender requirements, and property condition."
+            "a": f"{'Bridge loans can close in as little as 2-4 weeks' if loan_key == 'bridge' else 'Permanent loans typically close in 60-90 days' if loan_key == 'permanent' else 'Construction loans typically close in 45-90 days' if loan_key == 'construction' else 'SBA loans typically close in 60-120 days' if loan_key == 'sba' else 'Mezzanine and preferred equity can close in 30-60 days' if loan_key == 'mezzanine' else 'Specialty financing timelines vary widely, typically 30-90 days'} in the {city['city']} market, depending on deal complexity, lender requirements, and property condition."
         },
     ]
 
@@ -241,9 +235,9 @@ def main():
         generated_articles.append(article)
         print(f"    [OK] {article['slug']}")
 
-    # ── Type B: City × Loan Type Guides (18) ─────────────────────────
+    # ── Type B: City × Loan Type Guides (90) ─────────────────────────
     print("\n  --- Type B: City × Loan Type Guides ---")
-    type_b_dates = stagger_dates("2025-12-05", 18, 3)
+    type_b_dates = stagger_dates("2025-10-15", len(LOAN_GUIDE_COMBOS), 1)
 
     for i, (loan_slug, loan_key, city_slug) in enumerate(LOAN_GUIDE_COMBOS):
         city = city_by_slug[city_slug]
@@ -274,17 +268,18 @@ def main():
         generated_articles.append(article)
         print(f"    [OK] {article['slug']}")
 
-    # ── Type C: City × Property Type Guides (18) ─────────────────────
+    # ── Type C: City × Property Type Guides (90) ─────────────────────
     print("\n  --- Type C: City × Property Type Guides ---")
-    type_c_dates = stagger_dates("2025-11-01", 18, 3)
+    type_c_dates = stagger_dates("2025-11-01", len(PROPERTY_GUIDE_COMBOS), 1)
 
     for i, (prop_slug, city_slug) in enumerate(PROPERTY_GUIDE_COMBOS):
         city = city_by_slug[city_slug]
         prop = prop_by_slug[prop_slug]
         data = city_data[city_slug]
 
+        prop_key = PROP_STATS_KEY[prop_slug]
         tpl = env.get_template("city_property_guide.j2")
-        content = tpl.render(city=city, prop=prop, data=data, prop_key=prop_slug)
+        content = tpl.render(city=city, prop=prop, data=data, prop_key=prop_key)
 
         article = {
             "slug": f"{prop_slug}-investing-{city_slug}-guide",
@@ -301,7 +296,7 @@ def main():
             ],
             "image": f"{prop_slug}-{city_slug}.jpg",
             "content": content,
-            "faqs": build_property_guide_faqs(city, prop, data, prop_slug),
+            "faqs": build_property_guide_faqs(city, prop, data, prop_key),
             "_generated": True,
         }
         generated_articles.append(article)
