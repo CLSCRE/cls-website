@@ -1,0 +1,51 @@
+<p>{{ data.market_report.overview }}</p>
+
+<h2>{{ city.city }} Market Overview: Key Metrics</h2>
+<p>The {{ city.city }} commercial real estate market in 2026 reflects a market shaped by {{ data.stats.major_employers }}. Here are the key metrics investors and borrowers should know:</p>
+<ul>
+<li><strong>Multifamily Vacancy:</strong> {{ data.stats.multifamily_vacancy }} — {% if data.stats.multifamily_vacancy|replace('%','')|float < 5.0 %}well below the national average, signaling tight supply conditions{% elif data.stats.multifamily_vacancy|replace('%','')|float < 7.0 %}near the national average with healthy absorption{% else %}above the national average as new supply is absorbed{% endif %}</li>
+<li><strong>Industrial Vacancy:</strong> {{ data.stats.industrial_vacancy }} — {% if data.stats.industrial_vacancy|replace('%','')|float < 5.0 %}among the tightest markets nationally{% elif data.stats.industrial_vacancy|replace('%','')|float < 6.0 %}reflecting strong logistics and distribution demand{% else %}normalizing as speculative development is absorbed{% endif %}</li>
+<li><strong>Office Vacancy:</strong> {{ data.stats.office_vacancy }}</li>
+<li><strong>Retail Vacancy:</strong> {{ data.stats.retail_vacancy }}</li>
+<li><strong>Rent Growth:</strong> {{ data.stats.rent_growth }} year-over-year</li>
+<li><strong>Job Growth:</strong> {{ data.stats.job_growth }} — {{ "outpacing the national average" if data.stats.job_growth|replace('%','')|float > 2.0 else "tracking near the national average" }}</li>
+<li><strong>Population Growth:</strong> {{ data.stats.population_growth }} annually</li>
+<li><strong>Median Asking Rent:</strong> {{ data.stats.median_asking_rent }}</li>
+</ul>
+
+<h2>Multifamily Outlook in {{ city.city }}</h2>
+<p>{{ data.market_report.multifamily }}</p>
+
+<h2>Industrial &amp; Logistics Market</h2>
+<p>{{ data.market_report.industrial }}</p>
+
+<h2>Office &amp; Retail Dynamics</h2>
+<p>{{ data.market_report.office_retail }}</p>
+
+<h2>Financing Landscape in {{ city.city }}</h2>
+<p>{{ data.market_report.financing }}</p>
+<p>For borrowers in the {{ city.metro }} area, current commercial mortgage rates range from {{ data.stats.multifamily_cap_rate.split('-')[0] }} for agency multifamily to higher rates for transitional and value-add projects. Key factors that influence your rate include property type, leverage, sponsor experience, and asset location within the metro.</p>
+
+<h2>Top Submarkets to Watch</h2>
+<p>The {{ city.city }} metro features several distinct submarkets that present unique investment opportunities:</p>
+<ul>
+{% for neighborhood in city.neighborhoods %}
+<li><strong>{{ neighborhood }}</strong></li>
+{% endfor %}
+</ul>
+<p>Each of these submarkets has distinct characteristics in terms of tenant demand, development activity, and pricing. The top investment corridors in {{ city.city }} include {{ data.stats.top_submarkets }}.</p>
+
+<h2>Investment Outlook: {{ city.city }} 2026</h2>
+<p>{{ data.market_report.outlook }}</p>
+
+<h2>CLS CRE in {{ city.city }}</h2>
+<p>CLS CRE provides commercial mortgage brokerage services throughout the {{ city.metro }} metropolitan area, with access to 1,000+ lenders including banks, life insurance companies, CMBS conduits, agency lenders, debt funds, and credit unions. Whether you're acquiring, refinancing, or developing commercial property in {{ city.city }}, our market expertise and lender relationships help you secure the most competitive terms available.</p>
+<p>Explore our financing programs for {{ city.city }}:</p>
+<ul>
+<li><a href="../financing/bridge-loans-{{ city.slug }}.html">Bridge Loans in {{ city.city }}</a></li>
+<li><a href="../financing/permanent-loans-{{ city.slug }}.html">Permanent Loans in {{ city.city }}</a></li>
+<li><a href="../financing/construction-loans-{{ city.slug }}.html">Construction Loans in {{ city.city }}</a></li>
+<li><a href="../property/multifamily-{{ city.slug }}.html">Multifamily Financing in {{ city.city }}</a></li>
+<li><a href="../property/industrial-{{ city.slug }}.html">Industrial Financing in {{ city.city }}</a></li>
+<li><a href="../property/retail-{{ city.slug }}.html">Retail Financing in {{ city.city }}</a></li>
+</ul>

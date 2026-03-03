@@ -1,0 +1,68 @@
+<p>{{ data.loan_context[loan_key] }}</p>
+
+<h2>When to Use {{ loan.name }} in {{ city.city }}</h2>
+<p>{{ city.city }}'s commercial real estate market, driven by {{ data.stats.major_employers }}, creates specific scenarios where {{ loan.name.lower() }} are the optimal financing choice:</p>
+<ul>
+{% for use in loan.ideal_for[:6] %}
+<li>{{ use }}</li>
+{% endfor %}
+</ul>
+<p>In the {{ city.metro }} metro, {{ loan.name.lower() }} are particularly relevant given the market's {{ data.stats.rent_growth }} rent growth and {{ data.stats.job_growth }} job growth, which support {% if loan_key == "bridge" %}aggressive value-add business plans and confident exit strategies{% elif loan_key == "permanent" %}conservative underwriting with strong debt service coverage{% else %}development feasibility and absorption timelines{% endif %}.</p>
+
+<h2>Current {{ loan.short_name }} Loan Rates in {{ city.city }}</h2>
+<p>As of 2026, {{ loan.name.lower() }} in the {{ city.city }} market are pricing at the following levels:</p>
+<ul>
+<li><strong>Rate Range:</strong> {{ loan.key_features.rates }}</li>
+<li><strong>Loan Amount:</strong> {{ loan.key_features.loan_amount }}</li>
+<li><strong>Term:</strong> {{ loan.key_features.term }}</li>
+<li><strong>Maximum {{ "LTC" if loan.key_features.ltc is defined else "LTV" }}:</strong> {{ loan.key_features.ltc if loan.key_features.ltc is defined else loan.key_features.ltv }}</li>
+{% if loan.key_features.amortization %}
+<li><strong>Amortization:</strong> {{ loan.key_features.amortization }}</li>
+{% endif %}
+<li><strong>Recourse:</strong> {{ loan.key_features.recourse }}</li>
+</ul>
+<p>Rates in {{ city.city }} may vary from national averages based on local market conditions, property type, and sponsor experience. The {{ city.city }} market's {{ data.stats.multifamily_cap_rate }} multifamily cap rates and {{ data.stats.industrial_cap_rate }} industrial cap rates influence lender pricing as they underwrite to specific debt yield and coverage targets.</p>
+
+<h2>Qualification Requirements</h2>
+<p>Qualifying for {{ loan.name.lower() }} in {{ city.city }} requires demonstrating both borrower strength and property fundamentals. Key requirements include:</p>
+<ul>
+<li><strong>Borrower Experience:</strong> Lenders evaluate your track record with similar assets in {{ city.city }} or comparable markets</li>
+<li><strong>Net Worth &amp; Liquidity:</strong> Most lenders require net worth equal to the loan amount and 6-12 months of debt service in liquid reserves</li>
+<li><strong>Property Performance:</strong> {% if loan_key == "permanent" %}Stabilized occupancy of 90%+ with a minimum DSCR of 1.20x-1.25x{% elif loan_key == "bridge" %}Clear value-add business plan with realistic renovation budgets and exit assumptions{% else %}Detailed construction budget, timeline, and evidence of market demand for the finished product{% endif %}</li>
+<li><strong>Market Position:</strong> Asset location within {{ city.city }}'s strongest submarkets, including {{ data.stats.top_submarkets }}</li>
+</ul>
+
+<h2>Capital Sources for {{ loan.short_name }} Loans in {{ city.city }}</h2>
+<p>The {{ city.city }} market offers access to a diverse set of capital sources for {{ loan.name.lower() }}:</p>
+<ul>
+{% for source in loan.lender_sources %}
+<li><strong>{{ source }}</strong></li>
+{% endfor %}
+</ul>
+<p>Each capital source has distinct appetites for property types, leverage levels, and borrower profiles. Working with a commercial mortgage broker who maintains relationships across all these capital sources ensures you're seeing the most competitive terms available in {{ city.city }}.</p>
+
+<h2>Exit Strategy Considerations</h2>
+{% if loan_key == "bridge" %}
+<p>Every bridge loan in {{ city.city }} requires a clear exit strategy — typically either a permanent loan refinance or a property sale. Given the market's {{ data.stats.rent_growth }} rent growth and {{ data.stats.multifamily_cap_rate }} multifamily cap rates, well-executed value-add business plans can create significant equity value that supports attractive permanent refinancing terms or profitable dispositions.</p>
+<p>The key risk factors for bridge loan exits in {{ city.city }} include renovation timeline delays, market rent assumptions, and the pace of lease-up. Budget conservatively and build in a 6-month cushion on your bridge term to account for unforeseen circumstances.</p>
+{% elif loan_key == "permanent" %}
+<p>Permanent loans in {{ city.city }} are designed for long-term hold strategies, but borrowers should consider prepayment provisions carefully. Common structures include yield maintenance, defeasance, and declining prepayment penalties. The right prepayment structure depends on your expected hold period and the likelihood of refinancing or selling before maturity.</p>
+<p>With {{ city.city }}'s {{ data.stats.rent_growth }} rent growth, properties financed with permanent loans should see improving cash flow over the hold period, supporting both debt service and equity returns.</p>
+{% else %}
+<p>Construction loans in {{ city.city }} are interim financing that must be replaced upon project completion. The typical exit is a permanent loan once the property is built and stabilized, or a sale to a long-term investor. The {{ city.city }} market's {{ data.stats.job_growth }} job growth and {{ data.stats.population_growth }} population growth support absorption assumptions, but borrowers should underwrite conservatively and have backup exit options.</p>
+{% endif %}
+
+<h2>{{ city.city }} Market Context</h2>
+<p>{{ city.context }}</p>
+<p>Understanding the local market dynamics is critical for structuring the right financing. The {{ city.city }} metro's key commercial neighborhoods include {{ city.neighborhoods | join(', ') }}, each with distinct property characteristics and tenant demand profiles.</p>
+
+<h2>Get a {{ loan.short_name }} Loan Quote for {{ city.city }}</h2>
+<p>CLS CRE provides {{ loan.name.lower() }} throughout the {{ city.metro }} metro area, with access to 1,000+ lenders competing for your deal. Our market expertise in {{ city.city }} commercial real estate helps you navigate the lending landscape and secure the most competitive terms available.</p>
+<p>Related resources:</p>
+<ul>
+<li><a href="../financing/{{ loan.slug }}.html">{{ loan.name }} — National Overview</a></li>
+<li><a href="../financing/{{ loan.slug }}-{{ city.slug }}.html">{{ loan.name }} in {{ city.city }}</a></li>
+<li><a href="../property/multifamily-{{ city.slug }}.html">Multifamily Financing in {{ city.city }}</a></li>
+<li><a href="../property/industrial-{{ city.slug }}.html">Industrial Financing in {{ city.city }}</a></li>
+<li><a href="cre-market-report-{{ city.slug }}-2026.html">{{ city.city }} Commercial Real Estate Market Report 2026</a></li>
+</ul>

@@ -19,6 +19,8 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
+from generate_articles import main as generate_articles_main
+
 
 # ── Paths ──────────────────────────────────────────────────────────────
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -78,6 +80,9 @@ def build_city_faqs(templates, loan=None, prop=None, city=None):
 
 
 def main():
+    # ── Pre-generate programmatic blog articles ───────────────────────
+    generate_articles_main()
+
     # ── Load data ──────────────────────────────────────────────────────
     transactions = load_json("transactions.json")
     loan_types = load_json("loan_types.json")

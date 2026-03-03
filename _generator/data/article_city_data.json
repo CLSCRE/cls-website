@@ -1,0 +1,572 @@
+{
+  "los-angeles": {
+    "city": "Los Angeles",
+    "state": "CA",
+    "stats": {
+      "multifamily_vacancy": "4.2%",
+      "industrial_vacancy": "3.8%",
+      "office_vacancy": "18.5%",
+      "retail_vacancy": "5.1%",
+      "multifamily_cap_rate": "4.75%-5.25%",
+      "industrial_cap_rate": "4.50%-5.00%",
+      "office_cap_rate": "6.50%-7.50%",
+      "retail_cap_rate": "5.50%-6.25%",
+      "rent_growth": "3.8%",
+      "job_growth": "1.9%",
+      "population_growth": "0.4%",
+      "median_asking_rent": "$2,150",
+      "major_employers": "entertainment, technology, logistics, aerospace, healthcare",
+      "top_submarkets": "South Bay industrial corridor, Downtown LA multifamily, West LA office, San Fernando Valley industrial"
+    },
+    "market_report": {
+      "overview": "Los Angeles remains one of the most dynamic and complex commercial real estate markets in the United States. With a metro population exceeding 13 million and a GDP rivaling mid-sized nations, the region's commercial property landscape reflects an economy driven by entertainment, technology, international trade, and a massive logistics infrastructure connecting the nation's busiest port complex to inland distribution networks.",
+      "multifamily": "LA's chronic housing shortage continues to support multifamily fundamentals, with vacancy rates hovering near historic lows at 4.2%. Rent growth has moderated from the double-digit pace of 2021-2022 but remains healthy at 3.8% year-over-year. Institutional investors remain active in Class A urban product, while value-add operators target the metro's deep supply of 1970s-1980s vintage Class B/C apartments in neighborhoods experiencing demographic shifts.",
+      "industrial": "The industrial market in Greater Los Angeles, particularly the Inland Empire gateway, continues to be the tightest in the nation. Vacancy at 3.8% reflects extraordinary tenant demand from e-commerce fulfillment, third-party logistics, and cold storage operators. Rental rates have more than doubled over the past five years, and while the pace of growth has normalized, the structural undersupply of last-mile distribution space near the ports ensures strong fundamentals for the foreseeable future.",
+      "office_retail": "The LA office market presents a bifurcated picture: creative office and media-oriented space in West LA and Culver City commands premium rents and low vacancy, while traditional CBD office towers in Downtown LA face elevated vacancy near 18.5%. Retail fundamentals are surprisingly strong, driven by tourism, entertainment-adjacent uses, and the metro's outdoor lifestyle that supports experiential retail concepts.",
+      "financing": "Lender appetite for LA commercial real estate remains robust across most property types. Agency lenders compete aggressively for stabilized multifamily, while life insurance companies and CMBS conduits are active in industrial and well-located retail. Bridge and construction lending has normalized, with debt funds providing transitional capital for the metro's significant pipeline of adaptive reuse and ground-up multifamily projects.",
+      "outlook": "Los Angeles is well-positioned for continued commercial real estate investment activity in 2026. The 2028 Olympics are already catalyzing infrastructure improvements and development across the metro, while the ongoing reshoring of entertainment production and tech sector growth provide durable demand drivers. Investors should focus on the metro's industrial backbone, workforce housing, and the emerging life sciences corridor in El Segundo and Torrance."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Los Angeles is driven by the metro's massive value-add multifamily opportunity — tens of thousands of vintage apartments ripe for renovation — and a steady pipeline of office-to-residential conversion projects in Downtown LA. Lenders are particularly active in the $2M-$25M bridge space for 20-80 unit apartment repositioning plays in neighborhoods like Koreatown, East Hollywood, and the San Fernando Valley.",
+      "permanent": "Permanent financing in Los Angeles benefits from intense lender competition. Agency execution for stabilized multifamily is among the most efficient in the nation, with life insurance companies aggressively pricing industrial assets in the South Bay and Inland Empire gateway. Borrowers with well-located, stabilized assets can expect spreads at the tight end of national ranges.",
+      "construction": "Construction lending in LA requires navigating some of the nation's most complex entitlement and environmental review processes, but lenders remain willing to finance well-sponsored ground-up multifamily and industrial projects. Typical construction loans require 35-40% equity and feature 24-36 month terms with extension options."
+    },
+    "property_context": {
+      "multifamily": "Los Angeles multifamily investing is defined by chronic undersupply. The metro has added far fewer housing units than population and job growth warrant, creating a structural imbalance that supports rents across nearly every submarket. Key investment strategies include value-add repositioning of 1960s-1980s garden-style apartments, ground-up workforce housing development leveraging density bonus incentives, and core-plus acquisitions in emerging neighborhoods along Metro transit lines.",
+      "industrial": "The Greater LA industrial market — encompassing the Inland Empire, South Bay, and Mid-Counties — is the nation's most important distribution hub. Proximity to the Ports of Los Angeles and Long Beach, which handle roughly 40% of all U.S. container imports, creates irreplaceable locational value. Investors target last-mile infill sites, modern big-box distribution centers, and cold storage facilities serving the region's massive consumer base.",
+      "retail": "Retail investing in LA benefits from the metro's massive consumer spending power, tourism traffic, and outdoor lifestyle. Grocery-anchored centers in high-density neighborhoods, experiential retail corridors in West Hollywood and Santa Monica, and necessity-based strip retail near transit hubs represent the strongest opportunities. Net lease assets with credit tenants command premium pricing given LA's irreplaceable demographics."
+    }
+  },
+  "new-york": {
+    "city": "New York",
+    "state": "NY",
+    "stats": {
+      "multifamily_vacancy": "3.5%",
+      "industrial_vacancy": "4.2%",
+      "office_vacancy": "17.8%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "4.50%-5.00%",
+      "industrial_cap_rate": "4.75%-5.25%",
+      "office_cap_rate": "6.00%-7.25%",
+      "retail_cap_rate": "5.25%-6.50%",
+      "rent_growth": "4.2%",
+      "job_growth": "1.7%",
+      "population_growth": "0.2%",
+      "median_asking_rent": "$3,200",
+      "major_employers": "finance, technology, media, healthcare, professional services",
+      "top_submarkets": "Brooklyn industrial, Manhattan multifamily, Bronx last-mile logistics, Queens mixed-use"
+    },
+    "market_report": {
+      "overview": "New York City is the largest and most liquid commercial real estate market in the world, with a total property value exceeding $1 trillion. The metro's $1.8 trillion economy supports extraordinary depth of demand across every property type, attracting global institutional capital and maintaining the deepest lender pool in the nation. Despite ongoing office market adjustments, NYC's diversified economy and irreplaceable urban infrastructure ensure its position as the nation's premier CRE market.",
+      "multifamily": "New York multifamily remains the most supply-constrained major market in the country, with vacancy at just 3.5% and rent growth accelerating to 4.2% year-over-year. The regulatory environment — including rent stabilization covering over one million units — creates a complex operating landscape but also limits new supply, supporting rents for market-rate product. Institutional capital continues to flow heavily into Brooklyn, Queens, and emerging Bronx submarkets.",
+      "industrial": "The NYC industrial market has undergone a dramatic transformation, with last-mile logistics facilities in the outer boroughs commanding premium rents that rival many office submarkets. Vacancy at 4.2% reflects intense competition for limited industrial land in Brooklyn, Queens, and the Bronx, driven by e-commerce delivery requirements in the nation's densest consumer market. Cold storage and vertical warehousing concepts are emerging to address the geographic constraints.",
+      "office_retail": "The Manhattan office market continues its structural adjustment, with vacancy at 17.8% as employers settle into hybrid work arrangements. However, trophy and Class A+ buildings in Midtown and Hudson Yards are outperforming, attracting tenants willing to pay premium rents for top-tier amenities. Retail vacancy at 6.8% masks significant variation — high-traffic corridors like SoHo and the Upper East Side have fully recovered, while secondary locations face ongoing challenges.",
+      "financing": "New York commands the broadest and deepest lending market in the nation. Every major capital source — banks, life companies, CMBS, agency, debt funds, and foreign capital — maintains active NYC lending programs. Multifamily financing benefits from Fannie Mae and Freddie Mac's aggressive pricing, while industrial assets attract life company and CMBS capital at tight spreads. The office lending market has become more selective, with lenders favoring newer vintage and well-located assets.",
+      "outlook": "New York's commercial real estate market in 2026 is defined by selective opportunity. The strongest fundamentals are in multifamily (chronic undersupply), industrial/logistics (irreplaceable last-mile), and best-in-class office (flight to quality). Investors should monitor the office-to-residential conversion pipeline, which is accelerating as city policy supports adaptive reuse, and the continued institutional interest in outer-borough multifamily and mixed-use development."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in New York is driven by the metro's enormous volume of transitional assets — multifamily renovations, office conversions, and ground-up development requiring interim capital. The market's deep pool of debt funds, private lenders, and bank bridge programs creates competitive pricing for well-structured deals, particularly in the $5M-$50M space where sponsor track record and asset location drive terms.",
+      "permanent": "Permanent financing in New York benefits from unmatched lender depth. Life insurance companies maintain dedicated NYC allocation strategies, agency lenders compete aggressively for stabilized multifamily, and CMBS conduits actively price larger commercial assets. Borrowers with institutional-quality assets in strong locations can access some of the tightest spreads available nationally.",
+      "construction": "Construction lending in New York reflects the metro's high development costs and complex regulatory environment. Typical ground-up multifamily projects require 40-50% equity, and lenders scrutinize entitlements, construction budgets, and sponsor experience rigorously. That said, the pipeline of permitted projects and strong end-market demand keep construction lenders engaged across residential, industrial, and mixed-use development."
+    },
+    "property_context": {
+      "multifamily": "New York multifamily investing spans an extraordinarily diverse range of strategies, from institutional core acquisitions in Manhattan to value-add repositioning of prewar walk-ups in the outer boroughs. The city's chronic housing shortage — estimated at over 500,000 units — supports fundamental demand that transcends economic cycles. Key opportunities include market-rate rentals in transit-oriented Brooklyn and Queens locations, workforce housing in the Bronx, and ground-up development leveraging city tax abatement programs.",
+      "industrial": "Industrial investing in the five boroughs and inner suburbs represents one of the most compelling CRE opportunities nationally. The combination of 8.3 million consumers within a 10-mile radius, severe land constraints, and exploding e-commerce delivery demand has created a supply-demand imbalance that supports double-digit rent growth in many submarkets. Last-mile distribution, cold storage, and truck-accessible infill sites command premium pricing.",
+      "retail": "Retail investing in New York reflects the city's status as the nation's largest consumer market with over $200 billion in annual retail spending. High-street retail in trophy corridors (Fifth Avenue, SoHo, Madison Avenue) has recovered to near pre-pandemic levels, while neighborhood retail anchored by grocery and essential services generates stable, recession-resistant cash flow. The key risk factor remains e-commerce substitution, which makes location selection and tenant quality paramount."
+    }
+  },
+  "dallas": {
+    "city": "Dallas",
+    "state": "TX",
+    "stats": {
+      "multifamily_vacancy": "6.2%",
+      "industrial_vacancy": "5.5%",
+      "office_vacancy": "19.2%",
+      "retail_vacancy": "4.8%",
+      "multifamily_cap_rate": "5.25%-5.75%",
+      "industrial_cap_rate": "5.50%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.00%-6.75%",
+      "rent_growth": "3.5%",
+      "job_growth": "3.2%",
+      "population_growth": "1.8%",
+      "median_asking_rent": "$1,475",
+      "major_employers": "technology, finance, logistics, telecommunications, healthcare",
+      "top_submarkets": "Frisco/Plano corporate corridor, South Dallas industrial, Uptown multifamily, Las Colinas mixed-use"
+    },
+    "market_report": {
+      "overview": "The Dallas-Fort Worth metroplex continues to be one of the nation's strongest commercial real estate markets, powered by extraordinary population growth, corporate relocations, and a diversified economy that has proven remarkably resilient through economic cycles. With over 150,000 jobs added annually and no signs of migration slowing, DFW offers a combination of scale, growth, and affordability that few markets can match.",
+      "multifamily": "DFW multifamily fundamentals have strengthened as the supply wave that concerned investors in 2024 is being absorbed faster than projected. Vacancy has ticked down to 6.2%, and rent growth has reaccelerated to 3.5% as new construction starts have slowed meaningfully. The strongest performance is in suburban workforce housing — Class B/C product in Richardson, Garland, and Irving — where rent-to-income ratios remain healthy and demand from relocating households is most acute.",
+      "industrial": "The DFW industrial market is the largest in Texas and among the most active nationally, with vacancy at 5.5% reflecting steady tenant demand from e-commerce, manufacturing, and third-party logistics operators. The Alliance/North Fort Worth corridor and South Dallas continue to attract major distribution center developments, while infill industrial in Garland and Grand Prairie benefits from last-mile delivery requirements. Rental rates have stabilized at levels that support new construction economics.",
+      "office_retail": "The DFW office market remains bifurcated, with Uptown Dallas, Legacy West in Plano, and the Frisco corporate corridor commanding strong rents and attracting corporate relocations from coastal markets, while suburban commodity office faces elevated vacancy near 19.2%. Retail fundamentals are among the strongest in the country at 4.8% vacancy, driven by population growth that continuously fills new shopping corridors.",
+      "financing": "DFW's deep and growing economy supports broad lender appetite. Agency multifamily lending is highly competitive, with both Fannie Mae and Freddie Mac maintaining large DFW allocations. Life companies and CMBS conduits actively pursue industrial and well-located retail, while Texas-based banks and credit unions provide a significant additional capital pool for deals under $25 million. Bridge lending is active for the metro's numerous value-add multifamily opportunities.",
+      "outlook": "Dallas-Fort Worth enters 2026 with momentum across nearly every metric that matters for CRE investment. Job growth above 3%, population growth near 2%, and moderating new supply set up well for rent growth acceleration in the second half of the year. The strongest opportunities are in suburban multifamily (supply absorption creating pricing power), infill industrial (last-mile delivery demand), and corporate office (selective flight to quality in the Frisco/Plano corridor)."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Dallas-Fort Worth is dominated by the metro's enormous multifamily value-add opportunity. With thousands of 1980s and 1990s vintage apartment communities ripe for interior renovation and amenity upgrades, bridge lenders are highly active in the $3M-$30M space. Typical bridge deals feature 12-24 month terms with extension options, interest-only payments, and rehab budgets of $8,000-$15,000 per unit.",
+      "permanent": "Permanent financing in DFW benefits from the metro's strong fundamentals and institutional recognition. Agency lenders price DFW multifamily competitively, with rates typically 10-25 basis points inside secondary markets. Life insurance companies target stabilized industrial in the Alliance corridor and Class A office with creditworthy tenants. CMBS execution is efficient for larger transactions across all property types.",
+      "construction": "Construction lending in DFW is supported by the metro's favorable development economics — lower land costs and a streamlined permitting process compared to coastal markets enable faster project timelines. Lenders are active for ground-up multifamily in high-growth submarkets (Frisco, McKinney, Celina) and build-to-suit industrial along major logistics corridors. Typical construction loans require 30-40% equity."
+    },
+    "property_context": {
+      "multifamily": "Dallas-Fort Worth multifamily investing offers one of the most compelling risk-reward profiles in the nation. The metro's population growth — adding roughly 300 people per day — creates persistent housing demand that supports both core and value-add strategies. Key opportunities include Class B/C value-add in inner-ring suburbs where post-renovation rents are 15-25% below new construction, workforce housing near major employment centers, and ground-up development in the rapidly expanding northern suburbs.",
+      "industrial": "Industrial investing in DFW leverages the metro's position as a national logistics crossroads, with four major interstate highways, two Class I railroads, and DFW International Airport creating a multimodal distribution hub. The Alliance corridor in North Fort Worth, South Dallas along I-20, and the I-35 corridor represent the primary investment targets. Rent growth has stabilized at attractive levels, and the development pipeline has moderated, setting up well for landlords.",
+      "retail": "Retail investing in DFW benefits from the metro's extraordinary population growth, which continuously fills new retail corridors and supports healthy occupancy across the existing base. Grocery-anchored centers in high-growth suburbs, pad sites along major arterials, and necessity-based strip retail near new residential developments represent the strongest opportunities. DFW retail vacancy at 4.8% is well below the national average."
+    }
+  },
+  "phoenix": {
+    "city": "Phoenix",
+    "state": "AZ",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "6.2%",
+      "office_vacancy": "16.5%",
+      "retail_vacancy": "5.3%",
+      "multifamily_cap_rate": "5.00%-5.50%",
+      "industrial_cap_rate": "5.25%-5.75%",
+      "office_cap_rate": "7.00%-7.75%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "rent_growth": "4.0%",
+      "job_growth": "2.8%",
+      "population_growth": "1.6%",
+      "median_asking_rent": "$1,550",
+      "major_employers": "semiconductor manufacturing, healthcare, financial services, technology, tourism",
+      "top_submarkets": "Southeast Valley (Gilbert/Chandler), Deer Valley industrial corridor, Tempe multifamily, Scottsdale office"
+    },
+    "market_report": {
+      "overview": "Phoenix has evolved from a pure growth-story market into a diversified, institutionally recognized metropolitan economy anchored by semiconductor manufacturing, healthcare, financial services, and technology. The TSMC fabrication facility investment in North Phoenix, combined with persistent migration from higher-cost California markets, has created a structural demand catalyst that is reshaping the commercial real estate landscape across the metro.",
+      "multifamily": "Phoenix multifamily fundamentals are among the strongest in the Sun Belt, with vacancy at 5.8% and rent growth running at 4.0% year-over-year. The Southeast Valley — Gilbert, Chandler, and Mesa — is experiencing outsized demand driven by TSMC and semiconductor supply chain employment. The supply pipeline has moderated from 2023-2024 peaks, setting up for tighter conditions and accelerating rent growth through the second half of 2026.",
+      "industrial": "The Phoenix industrial market has experienced rapid transformation, with vacancy at 6.2% as the market absorbs a significant wave of speculative development. Advanced manufacturing, semiconductor supply chain, and e-commerce distribution are the primary demand drivers. The West Valley (Buckeye, Goodyear) and Loop 303 corridor are emerging as major industrial nodes, while the Deer Valley and Sky Harbor adjacent submarkets serve last-mile and air cargo-adjacent logistics.",
+      "office_retail": "Phoenix office performance varies significantly by submarket. Tempe Town Lake, Old Town Scottsdale, and the Camelback Corridor attract technology and financial services tenants willing to pay premium rents, while suburban commodity office faces elevated vacancy at 16.5%. Retail fundamentals are healthy at 5.3% vacancy, supported by population growth that continuously fills new shopping corridors along the expanding metro periphery.",
+      "financing": "Lender appetite for Phoenix commercial real estate is strong and growing. The market's institutional maturation has attracted life insurance company allocations that would have been directed to gateway cities a decade ago. Agency multifamily lending is highly competitive, with both DUS and small balance programs active. Arizona-based community banks and credit unions provide additional capital for transactions under $15 million.",
+      "outlook": "Phoenix is positioned for continued outperformance in 2026, driven by the semiconductor manufacturing boom, sustained in-migration, and moderating new supply across most property types. The strongest investment themes are Southeast Valley multifamily (TSMC employment demand), last-mile industrial near Sky Harbor, and well-located retail in high-growth suburban corridors. Investors should monitor water policy developments, which remain a long-term consideration for the market."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Phoenix targets the metro's deep pipeline of value-add multifamily opportunities and an increasing number of adaptive reuse projects. The market's strong in-migration supports aggressive lease-up assumptions that give bridge lenders confidence in exit strategies. Typical bridge terms feature 18-24 month initial periods with 6-12 month extensions, priced at SOFR + 275-400 basis points.",
+      "permanent": "Permanent financing in Phoenix has become increasingly competitive as the market gains institutional recognition. Agency lenders price Phoenix multifamily favorably, with rates comparable to established Sun Belt markets like Dallas and Atlanta. Life insurance companies are actively quoting industrial and well-located retail at competitive spreads, reflecting growing confidence in the metro's economic diversification.",
+      "construction": "Construction lending in Phoenix benefits from the market's favorable development economics — lower land costs than coastal markets, a relatively streamlined entitlement process, and strong end-user demand. Ground-up multifamily in the Southeast Valley and build-to-suit industrial along the Loop 303 corridor are attracting construction capital from both regional and national lenders."
+    },
+    "property_context": {
+      "multifamily": "Phoenix multifamily investing is driven by the metro's exceptional population growth and economic diversification. The TSMC semiconductor investment has created a new employment anchor that is reshaping demand patterns in the Southeast Valley, with Gilbert, Chandler, and Mesa commanding premium rents. Value-add strategies targeting 1990s and 2000s vintage product offer strong returns as the market's rapid rent growth supports post-renovation pricing power.",
+      "industrial": "Industrial investing in Phoenix offers exposure to one of the nation's fastest-growing manufacturing and logistics hubs. The TSMC-anchored semiconductor ecosystem is driving demand for advanced manufacturing, cleanroom, and supply chain facilities that command premium rents and long-term lease commitments. More traditional e-commerce distribution and third-party logistics operations continue to expand along the I-10 and Loop 303 corridors.",
+      "retail": "Retail investing in Phoenix benefits from the metro's extraordinary population growth, which creates continuous demand for new retail services in expanding suburban corridors. Grocery-anchored centers, quick-service restaurant pad sites, and medical retail in high-growth areas like Gilbert, Queen Creek, and Buckeye represent compelling opportunities with strong demographics and limited competition from e-commerce."
+    }
+  },
+  "houston": {
+    "city": "Houston",
+    "state": "TX",
+    "stats": {
+      "multifamily_vacancy": "7.5%",
+      "industrial_vacancy": "6.8%",
+      "office_vacancy": "22.1%",
+      "retail_vacancy": "5.5%",
+      "multifamily_cap_rate": "5.50%-6.00%",
+      "industrial_cap_rate": "5.75%-6.25%",
+      "office_cap_rate": "7.50%-8.50%",
+      "retail_cap_rate": "6.25%-7.00%",
+      "rent_growth": "2.8%",
+      "job_growth": "2.4%",
+      "population_growth": "1.4%",
+      "median_asking_rent": "$1,325",
+      "major_employers": "energy, healthcare, aerospace, petrochemicals, international trade",
+      "top_submarkets": "Energy Corridor office, Katy/West Houston multifamily, Port Houston industrial, Medical Center healthcare"
+    },
+    "market_report": {
+      "overview": "Houston is the fourth-largest U.S. city and the undisputed energy capital of the world, but the metro's economy has diversified significantly beyond oil and gas into healthcare, aerospace, petrochemicals, and international trade. The Texas Medical Center — the world's largest — anchors a massive healthcare employment base, while the Port of Houston drives industrial and logistics demand as one of the nation's busiest ports by total tonnage.",
+      "multifamily": "Houston multifamily has historically been a developer-friendly market, and the current vacancy of 7.5% reflects this permissive supply environment. However, rent growth at 2.8% remains positive, supported by the metro's strong population growth of 1.4% annually. The best-performing submarkets include Katy, Sugar Land, and The Woodlands, where corporate employment concentrations drive renter demand and above-average income profiles.",
+      "industrial": "Houston's industrial market is one of the most diverse in the nation, encompassing port-adjacent logistics, petrochemical manufacturing, midstream energy facilities, and traditional e-commerce distribution. Vacancy at 6.8% reflects healthy absorption, with the strongest demand concentrated along the Ship Channel, the I-10 East corridor, and the growing Northwest submarket near Tomball. Manufacturing and energy-related industrial demand sets Houston apart from markets driven solely by e-commerce.",
+      "office_retail": "The Houston office market remains challenged at 22.1% vacancy, the legacy of both pandemic-era work-from-home shifts and energy sector retrenchment. Bright spots include the Texas Medical Center area, the Galleria/Post Oak corridor, and newer suburban office campuses in The Woodlands and Katy where corporate tenants are consolidating. Retail fundamentals are solid at 5.5% vacancy, driven by the metro's massive and growing consumer base.",
+      "financing": "Houston's lending market is deep, anchored by a large concentration of Texas-based banks and credit unions alongside national lenders. The energy sector's cyclicality makes some lenders cautious, but well-located, well-leased assets attract competitive financing across all capital sources. Agency multifamily lending is active, and the port-adjacent industrial market draws institutional debt capital.",
+      "outlook": "Houston offers value-oriented investors compelling opportunities in 2026. Cap rates remain wider than comparable Sun Belt markets, reflecting the energy sector discount, but the metro's economic diversification and population growth support a fundamentals-driven case for tightening. Industrial assets near the port, medical office near the Texas Medical Center, and workforce multifamily in high-growth suburbs represent the strongest risk-adjusted opportunities."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Houston serves a large pool of value-add multifamily investors targeting the metro's affordable Class B/C apartment stock. Houston's lower basis compared to other major Texas markets allows bridge borrowers to execute renovation strategies with attractive return profiles. Bridge lenders price Houston deals competitively, though they may require slightly higher reserves given the market's supply dynamics.",
+      "permanent": "Permanent financing in Houston is available from a broad lender pool, though underwriting standards reflect the market's unique characteristics. Agency lenders are active but may apply market-level adjustments for Houston's higher vacancy compared to DFW or Austin. Life companies and CMBS conduits target port-adjacent industrial and medical office assets where Houston's specialization creates differentiated demand profiles.",
+      "construction": "Construction lending in Houston benefits from Texas's favorable development environment — no zoning restrictions, fast permitting, and lower impact fees. However, lenders are selective about location and product type given the market's historical susceptibility to overbuilding. Ground-up multifamily in strong employment corridors and build-to-suit industrial near the port attract the most competitive construction financing."
+    },
+    "property_context": {
+      "multifamily": "Houston multifamily investing offers higher yields than most major Sun Belt markets, reflecting the metro's permissive supply environment and energy sector cyclicality. Sophisticated investors view this discount as opportunity, targeting Class B/C value-add plays in suburban employment corridors where operational improvements and light renovations drive meaningful rent premiums. The Katy/West Houston, Sugar Land, and Woodlands submarkets offer the strongest fundamentals.",
+      "industrial": "Houston industrial investing spans a uniquely diverse set of demand drivers including petrochemical manufacturing, port logistics, midstream energy infrastructure, and e-commerce distribution. The Ship Channel corridor, I-10 East, and the Northwest submarket represent primary investment targets. The market's energy and manufacturing orientation creates longer average lease terms and specialized tenant requirements that differentiate Houston from logistics-only markets.",
+      "retail": "Houston retail investing benefits from the metro's massive and growing consumer base — over 7 million people in the MSA — and a pro-development environment that keeps retail well-supplied but also well-absorbed. Grocery-anchored centers in high-income suburbs, restaurant and entertainment concepts in master-planned communities, and medical retail near the Texas Medical Center generate stable cash flows with growth potential."
+    }
+  },
+  "miami": {
+    "city": "Miami",
+    "state": "FL",
+    "stats": {
+      "multifamily_vacancy": "5.2%",
+      "industrial_vacancy": "3.5%",
+      "office_vacancy": "14.2%",
+      "retail_vacancy": "4.1%",
+      "multifamily_cap_rate": "4.75%-5.25%",
+      "industrial_cap_rate": "5.00%-5.50%",
+      "office_cap_rate": "6.50%-7.50%",
+      "retail_cap_rate": "5.50%-6.25%",
+      "rent_growth": "5.5%",
+      "job_growth": "2.5%",
+      "population_growth": "1.2%",
+      "median_asking_rent": "$2,450",
+      "major_employers": "finance, international trade, tourism, technology, healthcare",
+      "top_submarkets": "Brickell financial district, Wynwood creative corridor, Doral industrial, Fort Lauderdale mixed-use"
+    },
+    "market_report": {
+      "overview": "Miami has transformed from a tourism-dependent economy into a global financial and technology hub, attracting corporate relocations, hedge fund establishments, and international capital at an unprecedented pace. The metro's combination of no state income tax, international connectivity, and quality of life has made it one of the most sought-after commercial real estate markets in the world, with pricing that increasingly reflects gateway-city fundamentals.",
+      "multifamily": "Miami multifamily commands some of the highest rents in the Sun Belt, with median asking rents at $2,450 and rent growth running at an impressive 5.5% year-over-year. Vacancy at 5.2% reflects strong demand from both domestic migration (primarily from the Northeast) and the city's growing young professional workforce in finance and technology. The luxury rental segment in Brickell and Edgewater has performed particularly well as high-income renters opt for flexibility over ownership.",
+      "industrial": "Miami's industrial market is one of the tightest in the Southeast at 3.5% vacancy, driven by the metro's role as a gateway for Latin American trade, e-commerce distribution to South Florida's 6+ million consumers, and growing cold storage demand from the region's food service industry. Airport-adjacent logistics facilities and Doral warehouse space command premium rents with limited new supply available.",
+      "office_retail": "The Miami office market has outperformed most major metros, with financial services firms and technology companies driving absorption in Brickell and Coconut Grove. Vacancy at 14.2% is well below the national average. Retail fundamentals are exceptionally strong at 4.1% vacancy, supported by tourism spending, population growth, and the metro's outdoor lifestyle that drives foot traffic to open-air retail formats.",
+      "financing": "Miami attracts global capital, including significant cross-border lending from international banks and foreign debt funds alongside domestic lenders. The market's premium pricing and strong fundamentals support competitive financing across all property types. Agency multifamily lending is aggressive, while life companies and CMBS conduits actively pursue industrial and Class A office. Private wealth and family office capital provide an additional layer of debt and equity.",
+      "outlook": "Miami's trajectory as a global financial center appears durable, with ongoing corporate relocations, infrastructure investment (including Brightline rail expansion), and international capital flows supporting continued appreciation. Insurance costs remain a key risk factor that all investors must underwrite carefully. The strongest opportunities in 2026 are workforce multifamily outside the urban core, airport-adjacent industrial, and mixed-use development along the Brightline corridor."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Miami serves a dynamic market of value-add investors, condo conversion specialists, and ground-up developers. The metro's strong rent growth and appreciation trajectory give bridge lenders confidence in exit strategies, though they carefully underwrite insurance costs and wind mitigation requirements. Bridge terms typically range from 12-24 months at SOFR + 300-425 basis points for well-located assets.",
+      "permanent": "Permanent financing in Miami has become increasingly competitive as lenders recognize the market's institutional evolution. Agency execution for stabilized multifamily is efficient, with pricing comparable to other gateway markets. Foreign bank permanent lending adds a competitive dimension unique to Miami, with Latin American and European institutions actively pricing South Florida commercial assets.",
+      "construction": "Construction lending in Miami is active but selective, with lenders requiring significant pre-leasing or pre-sales for larger projects. The metro's development pipeline remains robust, particularly for multifamily and mixed-use projects along major corridors. Insurance and construction cost escalation are key underwriting considerations that have moderated but remain elevated relative to other Sun Belt markets."
+    },
+    "property_context": {
+      "multifamily": "Miami multifamily investing offers exposure to one of the nation's strongest rent growth markets, driven by domestic migration, international demand, and a severe housing shortage. Investment strategies range from luxury high-rise development in Brickell and Edgewater to workforce housing repositioning in Hialeah and North Miami Beach. The key underwriting consideration is insurance cost, which has stabilized but remains elevated and must be factored into cash flow projections.",
+      "industrial": "Miami industrial investing targets one of the most supply-constrained logistics markets in the Southeast. The metro's role as a gateway for Latin American trade, combined with 6+ million consumers requiring e-commerce fulfillment and cold chain logistics, creates persistent demand for warehouse space that far exceeds available supply. Airport-adjacent facilities, Doral logistics properties, and infill sites in Medley represent the primary investment targets.",
+      "retail": "Miami retail investing benefits from the metro's exceptional consumer spending power, driven by affluent residents, tourism traffic exceeding 25 million visitors annually, and a vibrant food and entertainment culture. Open-air lifestyle centers, grocery-anchored neighborhood centers in high-density areas, and mixed-use ground-floor retail in emerging corridors like Wynwood and the Design District generate strong returns."
+    }
+  },
+  "atlanta": {
+    "city": "Atlanta",
+    "state": "GA",
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "industrial_vacancy": "5.8%",
+      "office_vacancy": "20.5%",
+      "retail_vacancy": "4.9%",
+      "multifamily_cap_rate": "5.50%-6.00%",
+      "industrial_cap_rate": "5.50%-6.00%",
+      "office_cap_rate": "7.25%-8.25%",
+      "retail_cap_rate": "6.00%-6.75%",
+      "rent_growth": "3.0%",
+      "job_growth": "2.6%",
+      "population_growth": "1.5%",
+      "median_asking_rent": "$1,625",
+      "major_employers": "logistics, healthcare, technology, film production, financial services",
+      "top_submarkets": "Midtown tech corridor, South Atlanta industrial, Buckhead mixed-use, Alpharetta corporate"
+    },
+    "market_report": {
+      "overview": "Atlanta is the economic engine of the Southeast, anchored by the world's busiest airport, a growing technology sector, and one of the most diversified economies among major U.S. metros. The market's combination of strong job growth at 2.6%, relative affordability, and deep infrastructure supports institutional-quality investment opportunities across all commercial property types.",
+      "multifamily": "Atlanta multifamily offers a compelling balance of yield and growth, with vacancy at 6.5% and rent growth at 3.0% year-over-year. The market's deep renter pool — driven by a large Millennial and Gen-Z workforce, major universities, and steady corporate relocations — supports demand across price points. The Beltline corridor and intown neighborhoods continue to command premium rents, while suburban workforce housing generates the strongest risk-adjusted returns.",
+      "industrial": "Atlanta's industrial market benefits from the metro's position as the Southeast's premier distribution hub, with Hartsfield-Jackson Airport, multiple Class I railroads, and extensive interstate access creating a logistics network that serves the entire Eastern Seaboard. Vacancy at 5.8% reflects healthy absorption, with South Atlanta and the I-85 corridor anchoring the largest clusters of modern distribution space.",
+      "office_retail": "The Atlanta office market continues to evolve, with Midtown and Buckhead attracting technology and professional services tenants to newer, amenity-rich buildings, while suburban commodity office faces 20.5% vacancy. Retail fundamentals are solid at 4.9% vacancy, supported by population growth and the metro's role as a regional shopping destination for the broader Southeast.",
+      "financing": "Atlanta's lending market is deep and competitive, with a strong base of Southeast-focused banks and credit unions complementing national lenders. Agency multifamily execution is efficient and competitively priced. The metro's industrial assets attract life company and CMBS capital, while Georgia's pro-business regulatory environment supports construction lending activity for new development.",
+      "outlook": "Atlanta is well-positioned for continued CRE investment in 2026. The metro's economic diversification — spanning logistics, technology, healthcare, and film production — provides durable demand drivers that reduce reliance on any single sector. Investors should focus on suburban workforce multifamily (best risk-adjusted returns), South Atlanta industrial (logistics demand), and selective Midtown office (technology tenant absorption)."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Atlanta serves a large and active value-add multifamily investor community targeting the metro's substantial stock of 1980s-2000s vintage apartments. Atlanta's favorable rent dynamics and growing population give bridge lenders confidence in renovation-driven exit strategies. The $2M-$20M bridge space is particularly competitive, with regional debt funds and banks actively pricing deals.",
+      "permanent": "Permanent financing in Atlanta benefits from the metro's institutional recognition as a top-tier Sun Belt market. Agency multifamily pricing is competitive, with both DUS and small balance programs active. Life companies target stabilized industrial in the South Atlanta corridor and Class A office in Midtown, while CMBS conduits provide efficient execution for larger transactions.",
+      "construction": "Construction lending in Atlanta is supported by the metro's strong development economics — reasonable land costs, favorable permitting timelines, and strong end-user demand. Ground-up multifamily along the Beltline and in suburban growth corridors attracts competitive construction financing, as does build-to-suit industrial in the South Atlanta logistics cluster."
+    },
+    "property_context": {
+      "multifamily": "Atlanta multifamily investing offers exceptional depth of opportunity across the risk-return spectrum. The metro's 6+ million population, strong job creation, and relative affordability support demand for everything from luxury intown apartments to suburban workforce housing. The Beltline corridor has catalyzed transformative multifamily development, while suburban Class B/C value-add strategies generate attractive yields with meaningful rent growth potential.",
+      "industrial": "Atlanta industrial investing targets one of the Southeast's most important logistics hubs, with the world's busiest airport and a multimodal transportation network serving a growing regional consumer base. South Atlanta and the I-85 corridor represent the primary investment targets, with modern big-box distribution, last-mile infill, and cold storage facilities attracting institutional capital at competitive pricing.",
+      "retail": "Atlanta retail investing benefits from the metro's strong population growth, diverse consumer base, and role as a regional shopping destination. Grocery-anchored centers in high-growth suburban corridors, necessity retail in intown neighborhoods, and experiential retail concepts in Buckhead and Midtown represent compelling opportunities with solid demographic support."
+    }
+  },
+  "chicago": {
+    "city": "Chicago",
+    "state": "IL",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "21.8%",
+      "retail_vacancy": "5.8%",
+      "multifamily_cap_rate": "5.25%-5.75%",
+      "industrial_cap_rate": "5.50%-6.00%",
+      "office_cap_rate": "7.50%-8.75%",
+      "retail_cap_rate": "6.25%-7.00%",
+      "rent_growth": "2.5%",
+      "job_growth": "1.5%",
+      "population_growth": "0.1%",
+      "median_asking_rent": "$1,750",
+      "major_employers": "finance, manufacturing, logistics, healthcare, technology",
+      "top_submarkets": "I-80/I-55 industrial corridor, Loop/River North multifamily, Fulton Market office, O'Hare logistics"
+    },
+    "market_report": {
+      "overview": "Chicago is the Midwest's dominant commercial real estate market and the nation's third-largest metro economy, anchored by a massive financial services sector, critical logistics infrastructure, and a manufacturing base that has proven more resilient than many coastal observers expected. The metro's central geographic position, extensive freight rail network, and deep labor pool create structural advantages for industrial and logistics operations.",
+      "multifamily": "Chicago multifamily fundamentals are solid, with vacancy at 5.5% and rent growth at 2.5% reflecting steady demand from the metro's large professional workforce. The Loop, River North, and West Loop neighborhoods command the highest rents, while the suburban workforce housing segment generates the most consistent cash flow. Chicago's multifamily market offers significantly higher yields than comparable coastal markets, attracting value-oriented institutional capital.",
+      "industrial": "Chicago's industrial market is one of the nation's largest and most strategically important, with the I-80/I-55 corridor serving as a critical national distribution crossroads. Vacancy at 5.2% reflects strong demand from e-commerce operators, manufacturers, and third-party logistics firms leveraging Chicago's unmatched intermodal rail infrastructure. O'Hare-adjacent logistics facilities command premium rents for air cargo-adjacent tenants.",
+      "office_retail": "The Chicago office market faces significant challenges at 21.8% vacancy, with the CBD experiencing a fundamental reset in demand patterns. However, the Fulton Market district has emerged as a bright spot, attracting technology and creative tenants at premium rents. Retail fundamentals at 5.8% vacancy are supported by the metro's large consumer base, with Michigan Avenue and neighborhood retail corridors showing steady improvement.",
+      "financing": "Chicago's lending market is deep, anchored by a large concentration of Midwest-based banks and the presence of every major national lender. Agency multifamily execution is efficient, and the market's industrial assets attract competitive life company and CMBS pricing. Chicago's higher cap rates compared to coastal markets enable more conservative underwriting with comfortable debt service coverage.",
+      "outlook": "Chicago offers compelling value for investors seeking higher yields in a major market with institutional infrastructure. The strongest opportunities in 2026 are industrial assets along the I-80/I-55 corridor (critical national logistics), workforce multifamily in stable neighborhoods, and selective office in Fulton Market where tenant demand continues to outpace other CBD submarkets."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Chicago serves a mature investment market with a deep pool of value-add operators targeting the metro's substantial multifamily stock. Chicago's relatively stable rent dynamics and higher cap rates compared to coastal markets give bridge lenders comfortable cushion for debt service coverage during renovation periods. The $3M-$25M bridge space is competitive among regional and national debt funds.",
+      "permanent": "Permanent financing in Chicago benefits from the metro's deep lender pool and institutional infrastructure. Agency multifamily pricing reflects Chicago's stable but lower-growth profile — rates are competitive but may carry modest market-level adjustments compared to higher-growth Sun Belt metros. Life companies are active for industrial and well-located mixed-use assets, while CMBS conduits provide efficient execution for larger transactions.",
+      "construction": "Construction lending in Chicago requires navigating the city's zoning and permitting processes, which can be more complex than Sun Belt markets but are well-established. Lenders are most active for ground-up multifamily in transit-oriented locations and build-to-suit industrial along logistics corridors. Tax increment financing (TIF) districts and other city incentives can meaningfully improve project economics."
+    },
+    "property_context": {
+      "multifamily": "Chicago multifamily investing offers yields that are 75-150 basis points wider than coastal gateway markets, reflecting the metro's slower growth profile but also creating opportunities for investors seeking current cash flow. Key strategies include value-add repositioning of vintage courtyard buildings in Lakeview, Lincoln Park, and Logan Square, workforce housing acquisition in stable neighborhoods, and core-plus investment in River North and the West Loop.",
+      "industrial": "Chicago industrial investing targets the nation's most important intermodal logistics hub, where six Class I railroads converge and the I-80/I-55 corridor serves as a critical east-west and north-south distribution crossroads. The market's sheer scale — over 1.3 billion square feet of industrial space — provides extraordinary depth of opportunity across bulk distribution, last-mile logistics, cold storage, and manufacturing uses.",
+      "retail": "Chicago retail investing offers a diverse opportunity set spanning high-street retail on Michigan Avenue, neighborhood grocery-anchored centers in densely populated residential areas, and suburban power centers across the collar counties. The metro's large and stable consumer base, strong tourism traffic, and diverse cultural scene support healthy retail fundamentals across most submarkets."
+    }
+  },
+  "denver": {
+    "city": "Denver",
+    "state": "CO",
+    "stats": {
+      "multifamily_vacancy": "6.8%",
+      "industrial_vacancy": "5.5%",
+      "office_vacancy": "18.2%",
+      "retail_vacancy": "4.5%",
+      "multifamily_cap_rate": "5.00%-5.50%",
+      "industrial_cap_rate": "5.50%-6.00%",
+      "office_cap_rate": "7.00%-7.75%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "rent_growth": "3.2%",
+      "job_growth": "2.2%",
+      "population_growth": "1.1%",
+      "median_asking_rent": "$1,725",
+      "major_employers": "technology, aerospace, professional services, energy, healthcare",
+      "top_submarkets": "RiNo creative office, I-70/I-76 industrial corridor, LoDo multifamily, DIA logistics"
+    },
+    "market_report": {
+      "overview": "Denver's commercial real estate market is anchored by one of the nation's most highly educated workforces, a thriving technology and aerospace sector, and a quality of life that consistently ranks among the best in the country. The metro's economy has diversified beyond its energy roots into professional services, renewable energy, and biotechnology, creating a resilient employment base that supports commercial real estate demand across all property types.",
+      "multifamily": "Denver multifamily has experienced supply-related softening, with vacancy at 6.8% as a significant pipeline of new deliveries is absorbed. However, rent growth remains positive at 3.2%, and construction starts have slowed dramatically, setting up for tighter conditions in late 2026. The LoDo, RiNo, and Capitol Hill neighborhoods command premium rents, while suburban workforce housing in Aurora and Lakewood generates the most consistent demand.",
+      "industrial": "Denver's industrial market benefits from the metro's strategic position as the major distribution hub for the Mountain West region, serving a multi-state catchment area. Vacancy at 5.5% reflects steady demand from e-commerce operators, food and beverage distributors, and aerospace manufacturers. The I-70/I-76 corridor and Denver International Airport adjacent areas represent the primary industrial investment targets.",
+      "office_retail": "The Denver office market reflects national trends, with vacancy at 18.2% as employers adjust to hybrid work patterns. The RiNo and LoDo districts are outperforming as creative and technology tenants gravitate toward walkable, amenity-rich environments. Retail fundamentals are strong at 4.5% vacancy, supported by the metro's affluent consumer base and outdoor-oriented lifestyle.",
+      "financing": "Denver's lending market is competitive, with Colorado-based banks, credit unions, and national lenders all active. Agency multifamily execution is efficient, and the market's industrial assets attract growing institutional debt capital. The metro's strong economic fundamentals and educated workforce give lenders confidence in long-term demand trends across most property types.",
+      "outlook": "Denver offers attractive opportunities for investors who understand the market's supply dynamics. Multifamily fundamentals should improve materially in 2026 as new supply diminishes and demand remains strong. Industrial assets near DIA and along the I-70 corridor represent durable long-term investments. The RiNo creative office submarket continues to gain momentum as Denver's technology sector expands."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Denver serves a sophisticated investor community targeting value-add multifamily and office repositioning opportunities. The metro's strong demographic profile and educated renter base support confident exit strategies for bridge borrowers. Typical bridge deals in Denver feature 18-24 month terms, with lenders particularly active in the $2M-$15M space.",
+      "permanent": "Permanent financing in Denver benefits from the metro's reputation as a high-quality market with strong economic fundamentals. Agency lenders price Denver multifamily competitively, while life companies are increasingly active for industrial assets along logistics corridors. CMBS execution is available for larger transactions across all property types.",
+      "construction": "Construction lending in Denver has become more selective following the recent supply wave, with lenders requiring stronger pre-leasing and higher equity for new multifamily development. Ground-up industrial along logistics corridors and build-to-suit projects with credit tenants continue to attract competitive construction financing."
+    },
+    "property_context": {
+      "multifamily": "Denver multifamily investing offers an opportunity to buy into a high-quality market at more attractive pricing as supply-related softening creates temporary dislocation. The metro's young, educated workforce drives strong rental demand, particularly in walkable urban neighborhoods and transit-oriented suburban locations. Value-add strategies targeting 2000s-vintage product in Aurora, Westminster, and Thornton offer compelling returns as the market tightens.",
+      "industrial": "Denver industrial investing leverages the metro's role as the Mountain West's primary distribution hub, serving Colorado, Wyoming, Montana, and parts of Nebraska and Kansas. The I-70 and I-76 corridors represent the primary investment targets, with DIA-adjacent logistics facilities commanding premium rents for time-sensitive distribution. The aerospace and defense sector provides additional specialized industrial demand.",
+      "retail": "Denver retail investing benefits from the metro's affluent and outdoor-oriented consumer base, which drives strong performance for experiential retail concepts, fitness-oriented tenants, and grocery-anchored centers. Cherry Creek, The Highlands, and RiNo retail corridors command premium rents, while suburban centers in the growth corridors south and west of the city generate stable cash flows."
+    }
+  },
+  "seattle": {
+    "city": "Seattle",
+    "state": "WA",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "4.5%",
+      "office_vacancy": "19.5%",
+      "retail_vacancy": "4.2%",
+      "multifamily_cap_rate": "4.75%-5.25%",
+      "industrial_cap_rate": "4.75%-5.25%",
+      "office_cap_rate": "6.50%-7.50%",
+      "retail_cap_rate": "5.50%-6.25%",
+      "rent_growth": "3.5%",
+      "job_growth": "2.0%",
+      "population_growth": "0.8%",
+      "median_asking_rent": "$2,050",
+      "major_employers": "technology, aerospace, healthcare, e-commerce, cloud computing",
+      "top_submarkets": "South Lake Union tech campus, Bellevue East Side, Kent Valley industrial, Capitol Hill multifamily"
+    },
+    "market_report": {
+      "overview": "Seattle is one of the nation's premier technology-driven commercial real estate markets, home to Amazon, Microsoft, Boeing, and a deep ecosystem of cloud computing, AI, and software companies. The metro's constrained geography — bounded by water and mountains — creates natural supply limitations that support property values, while the concentration of high-income technology workers drives premium rents across multifamily, retail, and mixed-use assets.",
+      "multifamily": "Seattle multifamily fundamentals are strong, with vacancy at 5.8% and rent growth at 3.5%, driven by the metro's high-income renter base and constrained housing supply. South Lake Union, Capitol Hill, and First Hill command the highest rents, while Bellevue and the East Side have emerged as premium markets in their own right, fueled by technology company campuses and excellent transit access via the new light rail extension.",
+      "industrial": "Seattle's industrial market is one of the tightest on the West Coast at 4.5% vacancy, constrained by geographic limitations and intense demand from e-commerce (Amazon's home market), port-related logistics, and aerospace manufacturing. The Kent Valley, Fife/Tacoma, and South Seattle submarkets serve as the primary industrial nodes, with rents that have nearly doubled over the past five years.",
+      "office_retail": "The Seattle office market is in transition at 19.5% vacancy, as technology companies right-size their footprints post-pandemic. However, Bellevue's East Side office market has outperformed, attracting Amazon, Meta, and Google expansions that have absorbed significant space. Retail fundamentals are excellent at 4.2% vacancy, supported by the metro's affluent consumer base and strong tourism.",
+      "financing": "Seattle's lending market benefits from the presence of major Pacific Northwest-based banks and a strong national lender presence. The market's premium pricing and technology-driven economy attract institutional debt capital across all property types. Agency multifamily execution is efficient, while life companies and CMBS conduits target industrial and well-located mixed-use assets.",
+      "outlook": "Seattle remains a top-tier market for long-term CRE investment, supported by the technology sector's structural growth, constrained supply, and a high-income labor force. The strongest opportunities in 2026 include East Side multifamily (tech campus proximity), Kent Valley industrial (irreplaceable logistics infrastructure), and selective office in Bellevue where technology tenant demand continues to absorb space."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Seattle serves a market characterized by high property values and sophisticated borrowers executing value-add and repositioning strategies. The metro's strong rent growth and constrained supply give bridge lenders confidence in exit assumptions. Bridge pricing typically ranges from SOFR + 275-375 basis points, with terms of 18-24 months for well-located multifamily and mixed-use assets.",
+      "permanent": "Permanent financing in Seattle reflects the market's gateway-like characteristics — tight spreads, aggressive lender competition for quality assets, and institutional pricing that rivals New York and San Francisco for the best deals. Agency multifamily, life company industrial, and bank permanent loans all compete actively, particularly for assets in established submarkets with strong transit access.",
+      "construction": "Construction lending in Seattle requires navigating the city's rigorous entitlement and environmental review processes, which can extend project timelines. However, the market's constrained supply and strong end-market demand support development economics. Lenders are most active for transit-oriented multifamily and last-mile industrial where location advantages justify higher development costs."
+    },
+    "property_context": {
+      "multifamily": "Seattle multifamily investing offers exposure to one of the nation's highest-income renter pools, driven by the concentration of technology workers earning well above national averages. The metro's geographic constraints — Puget Sound, Lake Washington, and the Cascade Range — create natural supply barriers that support long-term appreciation. Key strategies include core acquisitions in South Lake Union and Capitol Hill, value-add in emerging neighborhoods along light rail lines, and East Side development near technology campuses.",
+      "industrial": "Seattle industrial investing targets one of the West Coast's most constrained markets, where geographic limitations and intense demand from e-commerce and port logistics create a structural supply-demand imbalance. The Kent Valley serves as the primary industrial hub, with Tacoma and South Seattle providing additional logistics capacity. Cold storage, last-mile delivery, and aerospace manufacturing create diversified demand beyond traditional distribution.",
+      "retail": "Seattle retail investing benefits from the metro's high-income consumer base, strong tourism traffic, and a walkable urban core that drives foot traffic to neighborhood retail corridors. Pike Place Market adjacency, Capitol Hill boutiques, and Bellevue luxury retail command premium rents, while suburban grocery-anchored centers in growing East Side communities generate stable, predictable returns."
+    }
+  },
+  "austin": {
+    "city": "Austin",
+    "state": "TX",
+    "stats": {
+      "multifamily_vacancy": "8.5%",
+      "industrial_vacancy": "7.2%",
+      "office_vacancy": "19.8%",
+      "retail_vacancy": "4.2%",
+      "multifamily_cap_rate": "5.00%-5.50%",
+      "industrial_cap_rate": "5.50%-6.00%",
+      "office_cap_rate": "6.75%-7.75%",
+      "retail_cap_rate": "5.50%-6.25%",
+      "rent_growth": "1.8%",
+      "job_growth": "2.8%",
+      "population_growth": "2.1%",
+      "median_asking_rent": "$1,575",
+      "major_employers": "technology, semiconductor manufacturing, government, healthcare, education",
+      "top_submarkets": "Domain/North Austin tech, East Austin creative, Round Rock suburban, Georgetown growth"
+    },
+    "market_report": {
+      "overview": "Austin's commercial real estate market is experiencing a recalibration after years of explosive growth that attracted massive new development. The metro remains one of the fastest-growing in the nation at 2.1% population growth, with a technology sector anchored by Tesla, Samsung, Apple, and a deep startup ecosystem. While near-term supply headwinds are real, Austin's structural demand drivers — job growth, migration, and economic diversification — remain compelling.",
+      "multifamily": "Austin multifamily faces the most significant supply challenge of any major Sun Belt market, with vacancy at 8.5% as an unprecedented wave of new deliveries competes for tenants. Rent growth has slowed to 1.8%, and concessions are common in newer Class A properties. However, construction starts have plummeted, indicating that the supply overhang is peaking and should moderate meaningfully by late 2026. Value-oriented investors view current conditions as a buying opportunity.",
+      "industrial": "Austin's industrial market has absorbed significant new supply, with vacancy at 7.2%. The market's primary demand drivers include semiconductor manufacturing (Samsung's $17 billion fabrication facility), technology hardware, and e-commerce distribution. The I-35 corridor and East Austin represent the primary industrial nodes, with growing demand from advanced manufacturing supporting tenant quality and lease terms.",
+      "office_retail": "The Austin office market reflects the national trend amplified by the metro's startup culture, with vacancy at 19.8% as technology companies adjust headcounts and space utilization. The Domain and Downtown corridors remain the most sought-after locations. Retail is the bright spot at 4.2% vacancy, driven by Austin's extraordinary population growth that creates continuous demand for neighborhood services and dining.",
+      "financing": "Austin's lending market has become more selective as lenders adjust to the supply environment, particularly for multifamily where underwriting assumptions require more conservative rent growth projections. Agency lenders remain active but have tightened market-level standards. Bridge lending is available for well-structured deals with experienced sponsors who can demonstrate clear value creation strategies.",
+      "outlook": "Austin's long-term investment thesis remains intact — the metro's technology economy, population growth, and quality of life continue to attract employers and residents at a pace that will absorb current supply overhangs. Near-term opportunities exist for contrarian investors willing to acquire at cyclically wide cap rates and benefit from the market's eventual tightening. The strongest sectors are industrial (semiconductor ecosystem), grocery-anchored retail, and discounted multifamily with basis protection."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Austin has become more selective as lenders account for the market's elevated supply environment. Well-structured deals with experienced sponsors, realistic renovation budgets, and conservative exit assumptions can still attract competitive bridge capital. Lenders are most active for value-add multifamily with a clear operational improvement thesis and for well-located industrial assets.",
+      "permanent": "Permanent financing in Austin is available but requires more careful underwriting than in years past. Agency lenders have implemented market-level adjustments that require higher debt service coverage ratios and more conservative rent growth assumptions. Life companies remain active for stabilized industrial and retail assets, where Austin's growth fundamentals support durable long-term demand.",
+      "construction": "Construction lending in Austin has tightened significantly, with most lenders requiring substantial pre-leasing for new office and industrial development, and higher equity (40-50%) for multifamily projects. The pullback in construction lending is actually a positive signal for investors in existing assets, as reduced future supply should support tighter fundamentals."
+    },
+    "property_context": {
+      "multifamily": "Austin multifamily investing currently offers a contrarian opportunity for investors with longer time horizons. The market's supply challenges have pushed vacancy above 8% and created concession-rich conditions for tenants, but the near-complete halt in new construction starts signals that fundamentals should improve materially by late 2026 into 2027. Value-add operators targeting recent-vintage Class A product at discounted pricing may find compelling entry points.",
+      "industrial": "Austin industrial investing offers exposure to one of the nation's most dynamic technology and manufacturing hubs. Samsung's semiconductor fabrication facility, Tesla's Gigafactory, and Apple's expanding campus create specialized demand for advanced manufacturing, cleanroom, and supply chain facilities. The I-35 corridor serves as the primary logistics spine, with growing demand from both technology-driven and traditional e-commerce distribution uses.",
+      "retail": "Austin retail investing benefits from the metro's extraordinary population growth, which creates continuous demand for neighborhood retail services. Grocery-anchored centers in high-growth suburbs like Round Rock, Cedar Park, and Georgetown command strong fundamentals, while experiential restaurant and entertainment concepts in East Austin and South Congress drive premium rents in urban locations."
+    }
+  },
+  "nashville": {
+    "city": "Nashville",
+    "state": "TN",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "industrial_vacancy": "4.8%",
+      "office_vacancy": "15.8%",
+      "retail_vacancy": "3.8%",
+      "multifamily_cap_rate": "5.25%-5.75%",
+      "industrial_cap_rate": "5.50%-6.00%",
+      "office_cap_rate": "6.75%-7.50%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "rent_growth": "3.5%",
+      "job_growth": "2.8%",
+      "population_growth": "1.5%",
+      "median_asking_rent": "$1,650",
+      "major_employers": "healthcare, entertainment, technology, automotive, tourism",
+      "top_submarkets": "The Gulch mixed-use, East Nashville creative, Franklin corporate, Murfreesboro growth"
+    },
+    "market_report": {
+      "overview": "Nashville has emerged as one of the nation's most dynamic commercial real estate markets, driven by healthcare industry dominance (HCA Healthcare, Community Health Systems, Vanderbilt Health), a thriving entertainment and tourism economy, and accelerating technology sector growth. The metro's no state income tax, pro-business environment, and exceptional quality of life continue to attract corporate relocations and young professionals at a pace that ranks among the fastest in the Southeast.",
+      "multifamily": "Nashville multifamily fundamentals are among the strongest in the Sun Belt, with vacancy at 5.5% and rent growth at 3.5% year-over-year. The Gulch, Germantown, and East Nashville command premium rents driven by walkability and proximity to entertainment and dining. The construction pipeline has moderated from 2023 peaks, and absorption has been strong as the metro continues to add approximately 100 residents per day.",
+      "industrial": "Nashville's industrial market benefits from the metro's central Southeast location and growing logistics infrastructure, with vacancy at just 4.8%. Healthcare supply chain and distribution operations are a unique demand driver, complementing traditional e-commerce and manufacturing tenants. The I-24 corridor and Wilson County represent the primary industrial investment nodes, with new interstate improvements expanding available development sites.",
+      "office_retail": "Nashville's office market has outperformed most major metros at 15.8% vacancy, driven by healthcare corporate headquarters and a growing technology and professional services sector that values the market's talent base and quality of life. Retail is Nashville's standout sector at just 3.8% vacancy, supported by extraordinary tourism traffic (over 14 million visitors annually) and the metro's booming restaurant and entertainment scene.",
+      "financing": "Nashville's lending market has matured significantly as the metro gains institutional recognition. Agency multifamily pricing is competitive, and life companies are increasingly allocating capital to Nashville industrial and office assets. Tennessee-based banks and credit unions provide additional depth, particularly for transactions under $15 million where local relationships and market knowledge create competitive advantages.",
+      "outlook": "Nashville is positioned for continued outperformance in 2026, driven by healthcare sector stability, entertainment tourism growth, and accelerating technology investment. The market's relatively moderate supply pipeline compared to Austin and Phoenix suggests tighter conditions ahead. Top opportunities include The Gulch and Germantown multifamily, I-24 corridor industrial, and retail assets in high-traffic entertainment and tourism corridors."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Nashville serves a growing market of value-add investors and developers attracted by the metro's strong fundamentals. Healthcare industry stability and tourism-driven demand give bridge lenders confidence in Nashville exits. The market's transition from secondary to institutional status means borrowers increasingly benefit from competitive bridge pricing that would have been reserved for larger markets.",
+      "permanent": "Permanent financing in Nashville has become increasingly competitive as lenders recognize the metro's institutional maturation. Agency multifamily rates are now comparable to established Sun Belt markets, and life companies are actively building Nashville allocations for industrial and healthcare-anchored office assets. The market's strong job growth and no state income tax support conservative underwriting assumptions.",
+      "construction": "Construction lending in Nashville benefits from Tennessee's business-friendly regulatory environment and reasonable permitting timelines. Lenders are active for ground-up multifamily in high-demand urban neighborhoods and suburban growth corridors, as well as build-to-suit industrial along logistics routes. The key underwriting consideration is the pace of absorption relative to the development pipeline."
+    },
+    "property_context": {
+      "multifamily": "Nashville multifamily investing offers exposure to one of the Southeast's strongest growth markets, with healthcare employment providing a uniquely stable demand anchor that most Sun Belt markets lack. The Gulch, Germantown, and East Nashville represent premium urban investment targets, while suburban growth in Murfreesboro, Franklin, and Mount Juliet offers value-oriented opportunities with strong demographic tailwinds.",
+      "industrial": "Nashville industrial investing targets a market that benefits from both traditional logistics demand and specialized healthcare supply chain operations. HCA Healthcare alone drives significant distribution center and medical supply chain activity across the metro. The I-24 corridor and Wilson County offer the primary development and investment opportunities, with growing tenant quality and longer lease terms as the market institutionalizes.",
+      "retail": "Nashville retail investing benefits from the metro's extraordinary tourism traffic and a dining and entertainment scene that has become a national destination. Mixed-use retail in The Gulch and Germantown, tourism-oriented properties in the Broadway corridor, and grocery-anchored centers in high-growth suburban communities generate strong returns supported by diverse demand sources."
+    }
+  },
+  "tampa": {
+    "city": "Tampa",
+    "state": "FL",
+    "stats": {
+      "multifamily_vacancy": "6.0%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "16.8%",
+      "retail_vacancy": "4.5%",
+      "multifamily_cap_rate": "5.50%-6.00%",
+      "industrial_cap_rate": "5.75%-6.25%",
+      "office_cap_rate": "7.00%-7.75%",
+      "retail_cap_rate": "6.00%-6.75%",
+      "rent_growth": "3.0%",
+      "job_growth": "2.4%",
+      "population_growth": "1.6%",
+      "median_asking_rent": "$1,725",
+      "major_employers": "financial services, healthcare, technology, tourism, defense",
+      "top_submarkets": "Downtown Tampa/Channelside, Westshore business district, I-4 corridor industrial, St. Petersburg waterfront"
+    },
+    "market_report": {
+      "overview": "Tampa Bay has emerged as one of the most compelling commercial real estate markets in Florida, combining strong population in-migration, a diversifying economy, and relative affordability compared to Miami and other coastal Florida markets. The metro's financial services sector, growing technology presence, and strategic Gulf Coast location support broad-based demand across all commercial property types.",
+      "multifamily": "Tampa Bay multifamily fundamentals are healthy, with vacancy at 6.0% and rent growth at 3.0% year-over-year. The market continues to absorb significant population growth — 1.6% annually — driven by domestic migration from the Northeast and Midwest. Downtown Tampa/Channelside and the South Tampa corridor command the highest rents, while suburban workforce housing in Brandon, Riverview, and Wesley Chapel generates steady demand from the metro's growing middle-income employment base.",
+      "industrial": "Tampa Bay's industrial market benefits from the port's growing container operations and the metro's expanding role as a regional distribution hub for the West Coast of Florida. Vacancy at 5.2% reflects solid demand from e-commerce operators, food and beverage distributors, and building materials suppliers. The I-4 corridor east of Tampa and the Port Tampa Bay adjacent areas represent the primary industrial investment nodes.",
+      "office_retail": "Tampa Bay's office market has recovered better than most Sun Belt metros at 16.8% vacancy, with the Westshore business district and Downtown Tampa attracting financial services and technology tenants. Retail fundamentals are strong at 4.5% vacancy, supported by the metro's growing population, robust tourism economy centered on the Gulf Coast beaches, and limited new retail construction.",
+      "financing": "Tampa Bay's lending market is deep, with Florida-based community banks and national lenders competing actively. Agency multifamily pricing is competitive, though lenders carefully underwrite insurance costs given the Gulf Coast hurricane exposure. Industrial and retail assets attract life company and CMBS capital, with lending terms that reflect the market's improved institutional standing.",
+      "outlook": "Tampa Bay offers attractive risk-adjusted returns in 2026, with fundamentals supported by strong in-migration and economic diversification. Insurance costs remain the key risk factor that investors must underwrite carefully. The strongest opportunities are in workforce multifamily in high-growth suburbs (population demand), I-4 corridor industrial (logistics growth), and retail in expanding suburban corridors where new residential development creates captive consumer demand."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Tampa Bay is active, with lenders attracted to the metro's strong population growth and rent fundamentals. The key underwriting consideration is property insurance, which has stabilized but remains elevated compared to inland markets. Bridge lenders typically require detailed insurance analyses and may require slightly higher reserves for Tampa properties. Terms range from 12-24 months at SOFR + 300-425 basis points.",
+      "permanent": "Permanent financing in Tampa Bay is competitive from a broad lender pool. Agency multifamily execution is efficient, though underwriters pay close attention to insurance costs in cash flow analysis. Life companies are active for industrial assets near Port Tampa Bay and well-located retail centers. Florida-based community banks and credit unions provide additional depth for transactions under $10 million.",
+      "construction": "Construction lending in Tampa Bay requires careful attention to hurricane-resistant building standards and associated costs. However, the metro's strong population growth and employment gains support development economics for well-located multifamily and industrial projects. Lenders are most competitive for transit-oriented and infill sites where land constraints limit future competitive supply."
+    },
+    "property_context": {
+      "multifamily": "Tampa Bay multifamily investing combines the strengths of Florida — no state income tax, persistent migration, and population growth — with more attractive pricing than South Florida markets. Key investment strategies include value-add repositioning of 1990s-2000s vintage suburban apartments, workforce housing acquisition in high-growth corridors like Wesley Chapel and Riverview, and urban core development in Downtown Tampa and St. Petersburg.",
+      "industrial": "Tampa Bay industrial investing targets a market with growing logistics infrastructure and expanding distribution demand. Port Tampa Bay's container operations, the I-4 corridor's connectivity to Central Florida, and the metro's 3+ million consumer base create diversified demand sources. Cold storage for the food service industry and e-commerce last-mile facilities represent specialized investment opportunities.",
+      "retail": "Tampa Bay retail investing benefits from the metro's strong population growth, tourism traffic, and limited new retail construction. Grocery-anchored centers in high-growth suburbs, waterfront and entertainment-oriented retail in St. Petersburg and Channelside, and medical retail near major hospital systems generate stable returns with growth potential."
+    }
+  },
+  "charlotte": {
+    "city": "Charlotte",
+    "state": "NC",
+    "stats": {
+      "multifamily_vacancy": "6.8%",
+      "industrial_vacancy": "5.5%",
+      "office_vacancy": "17.5%",
+      "retail_vacancy": "4.2%",
+      "multifamily_cap_rate": "5.25%-5.75%",
+      "industrial_cap_rate": "5.50%-6.00%",
+      "office_cap_rate": "7.00%-7.75%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "rent_growth": "3.2%",
+      "job_growth": "2.8%",
+      "population_growth": "2.0%",
+      "median_asking_rent": "$1,575",
+      "major_employers": "banking, financial services, technology, energy, healthcare",
+      "top_submarkets": "South End mixed-use, University City growth, Ballantyne corporate, Concord industrial"
+    },
+    "market_report": {
+      "overview": "Charlotte is the second-largest banking center in the United States behind New York, home to Bank of America and Truist Financial, and this financial services anchor has attracted a broader ecosystem of technology, energy, and professional services firms that are driving one of the nation's fastest rates of population and employment growth. The metro's business-friendly climate, educated workforce, and relatively affordable cost of living create compelling commercial real estate fundamentals.",
+      "multifamily": "Charlotte multifamily is absorbing a significant wave of new supply, with vacancy at 6.8% but rent growth still positive at 3.2%. The market's 2.0% population growth — among the fastest for a major U.S. metro — is progressively absorbing available units. South End has emerged as the metro's premier live-work-play neighborhood, commanding the highest multifamily rents, while suburban markets in University City, Ballantyne, and Concord generate strong workforce housing demand.",
+      "industrial": "Charlotte's industrial market benefits from the metro's growing logistics infrastructure and proximity to major East Coast population centers. Vacancy at 5.5% reflects steady absorption from e-commerce operators, manufacturing, and food distribution tenants. The I-85 corridor through Concord and Kannapolis, and the West Charlotte/Airport area represent the primary industrial nodes, with new intermodal facilities expanding the market's logistics capabilities.",
+      "office_retail": "Charlotte's office market reflects the metro's evolution from a pure banking center to a diversified corporate hub, with vacancy at 17.5%. Uptown and South End attract the most tenant activity, driven by financial technology firms and professional services companies that value the neighborhoods' walkability and amenities. Retail at 4.2% vacancy benefits from rapid population growth and strong consumer spending from the metro's high-income financial services workforce.",
+      "financing": "Charlotte's deep banking sector creates a uniquely competitive lending environment — the concentration of major and regional bank headquarters means borrowers have access to decision-makers and local market expertise that few metros can match. Agency multifamily execution is efficient, while the banking relationships facilitate competitive terms for all property types, particularly in the $1M-$25M transaction range.",
+      "outlook": "Charlotte's trajectory as a major business center and population growth magnet appears durable, with financial services stability, accelerating technology investment, and infrastructure improvements (including a major light rail expansion) supporting continued CRE demand. The strongest 2026 opportunities are in South End multifamily and mixed-use, I-85 corridor industrial, and retail in high-growth suburban corridors."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Charlotte benefits from the metro's deep banking community, where local and regional banks offer competitive bridge products alongside national debt funds. The market's strong population growth and rent trajectory give bridge lenders confidence in value-add exit strategies. Bridge terms are competitive, with pricing at SOFR + 275-400 basis points for well-located multifamily assets.",
+      "permanent": "Permanent financing in Charlotte is exceptionally competitive, reflecting the metro's deep banking sector and growing institutional recognition. Bank permanent loans are particularly competitive for transactions under $25 million where local relationships provide execution advantages. Agency multifamily, life company industrial, and CMBS all maintain active Charlotte lending programs.",
+      "construction": "Construction lending in Charlotte is supported by strong development economics and a regulatory environment that facilitates efficient permitting. Lenders are active for ground-up multifamily in South End and other transit-oriented locations, and for industrial development along logistics corridors. The metro's rapid population growth supports conservative underwriting for well-located residential and mixed-use projects."
+    },
+    "property_context": {
+      "multifamily": "Charlotte multifamily investing offers exposure to one of the nation's fastest-growing metros, with population growth at 2.0% annually creating persistent housing demand. South End has emerged as a nationally recognized live-work-play destination commanding premium rents, while University City, Ballantyne, and NoDa offer diverse investment strategies across the risk-return spectrum. The banking sector's stability provides a uniquely recession-resistant demand anchor.",
+      "industrial": "Charlotte industrial investing targets a growing logistics hub that benefits from proximity to major East Coast population centers and expanding intermodal infrastructure. The I-85 corridor serves as the primary investment target, with modern distribution centers serving the Southeast region. Charlotte's lower industrial land costs compared to gateway markets support development economics that attract both speculative and build-to-suit investment.",
+      "retail": "Charlotte retail investing benefits from the metro's rapid population growth, high-income financial services workforce, and expanding suburban development that continuously creates demand for neighborhood retail services. South End's walkable retail corridor, Ballantyne's corporate-adjacent retail, and grocery-anchored centers in high-growth suburbs represent the primary investment opportunities."
+    }
+  },
+  "boston": {
+    "city": "Boston",
+    "state": "MA",
+    "stats": {
+      "multifamily_vacancy": "4.0%",
+      "industrial_vacancy": "4.8%",
+      "office_vacancy": "16.2%",
+      "retail_vacancy": "3.8%",
+      "multifamily_cap_rate": "4.50%-5.00%",
+      "industrial_cap_rate": "5.00%-5.50%",
+      "office_cap_rate": "6.25%-7.25%",
+      "retail_cap_rate": "5.25%-6.00%",
+      "rent_growth": "4.5%",
+      "job_growth": "1.8%",
+      "population_growth": "0.5%",
+      "median_asking_rent": "$2,850",
+      "major_employers": "life sciences, biotechnology, education, healthcare, financial services",
+      "top_submarkets": "Seaport District innovation, Cambridge/Kendall Square life sciences, Back Bay premium, Route 128 suburban"
+    },
+    "market_report": {
+      "overview": "Boston is one of the nation's premier innovation-driven commercial real estate markets, anchored by a world-class university system (Harvard, MIT, Boston University, Northeastern), a dominant life sciences and biotechnology cluster, and a deep financial services sector. The metro's chronic housing undersupply, highly educated workforce, and concentration of venture capital and institutional research funding create exceptional commercial real estate fundamentals that command gateway-market pricing.",
+      "multifamily": "Boston multifamily is among the most supply-constrained major markets in the country, with vacancy at just 4.0% and rent growth at an impressive 4.5% year-over-year. Median asking rents of $2,850 reflect the metro's high-income professional and student population, and the chronic undersupply of housing units relative to demand. The Seaport District, South Boston, and Cambridge command the highest rents, while Somerville, Quincy, and Waltham are emerging as value alternatives for price-sensitive renters.",
+      "industrial": "Boston's industrial market is tight at 4.8% vacancy, constrained by limited available land and conversion pressure from residential and life sciences development. The remaining industrial inventory commands premium rents driven by last-mile e-commerce delivery, cold storage, and lab/flex conversions along the Route 128 corridor. Industrial land values have appreciated significantly as alternative uses compete for limited sites.",
+      "office_retail": "The Boston office market is navigating the national work-from-home adjustment at 16.2% vacancy, but life sciences and laboratory space in Cambridge and the Seaport District remain dramatically undersupplied, commanding $80-120+ per square foot for Class A lab product. Retail fundamentals are among the nation's best at 3.8% vacancy, supported by the metro's affluent consumer base, massive student population, and strong tourism traffic.",
+      "financing": "Boston's lending market is among the deepest and most competitive nationally, with major New England-based banks, life insurance companies, and every national lender maintaining active programs. Life sciences-specific lending has emerged as a specialized discipline, with dedicated lab conversion and development financing products. Agency multifamily execution is aggressive for the metro's supply-constrained housing market.",
+      "outlook": "Boston's long-term position as a premier CRE market is reinforced by its innovation economy, anchor institutions, and chronic housing undersupply. The life sciences sector continues to attract billions in venture capital and corporate R&D investment, supporting specialized real estate demand. The strongest 2026 opportunities are supply-constrained multifamily, lab/flex conversion along Route 128, and premium retail in Back Bay and the Seaport District."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Boston serves sophisticated borrowers executing value-add strategies in one of the nation's most expensive markets. Lab conversion projects — transforming traditional office or industrial space into life sciences research facilities — represent a significant bridge lending opportunity unique to Boston. Bridge terms reflect the market's premium pricing, with lenders comfortable at higher leverage for well-located assets with clear stabilization paths.",
+      "permanent": "Permanent financing in Boston commands gateway-market pricing, with the tightest spreads available nationally for stabilized multifamily and life sciences assets. Life insurance companies maintain dedicated Boston allocation strategies, agency lenders price aggressively for the metro's undersupplied multifamily market, and specialized life sciences lending products support lab and R&D facilities at competitive terms.",
+      "construction": "Construction lending in Boston is available for well-sponsored projects in high-demand locations, though navigating the city's permitting and community review processes adds time and complexity. Life sciences development along Route 128 and in Cambridge attracts the most competitive construction financing, while ground-up multifamily benefits from the metro's severe housing shortage that de-risks absorption assumptions."
+    },
+    "property_context": {
+      "multifamily": "Boston multifamily investing offers exposure to one of the most supply-constrained markets in the nation, where chronic housing undersupply, world-class universities, and a high-income workforce create exceptional demand fundamentals. Key investment strategies include core acquisitions in the Seaport and South Boston, value-add repositioning of older product in Somerville and Dorchester, and student-proximate housing near major university campuses.",
+      "industrial": "Boston industrial investing targets a unique market where traditional logistics demand intersects with rapidly growing life sciences and lab conversion opportunities. The limited supply of industrial land in the metro creates scarcity value that supports appreciation, while the conversion of obsolete industrial buildings into life sciences R&D facilities offers significant value creation potential. The Route 128 corridor and inner suburbs represent the primary investment targets.",
+      "retail": "Boston retail investing benefits from the metro's affluent consumer base, massive student population (over 250,000 college students), and strong tourism traffic that drives foot traffic to neighborhood retail corridors. Newbury Street and Boylston Street in Back Bay command among the highest retail rents outside Manhattan, while neighborhood centers in Cambridge, Brookline, and Wellesley generate stable, institutional-quality cash flows."
+    }
+  }
+}
