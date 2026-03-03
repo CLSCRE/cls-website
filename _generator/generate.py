@@ -293,7 +293,33 @@ def main():
         })
     print(f"  [OK] blog/*.html  ({len(articles)} article pages)")
 
-    # ── 7. Sitemap.xml ─────────────────────────────────────────────────
+    # ── 7. Locations Page ──────────────────────────────────────────────
+    print("\n=== Generating Locations Page ===")
+    tpl_locations = env.get_template("locations.html")
+    # Unique states, sorted
+    states_sorted = sorted(set(c["state"] for c in cities))
+    total_city_pages = len(cities) * (len(loan_types) + len(property_types))
+    html = tpl_locations.render(
+        **shared,
+        cities=cities,
+        states_sorted=states_sorted,
+        total_pages=total_city_pages,
+        seo={
+            "title": "Commercial Real Estate Financing Locations | CLS CRE",
+            "meta_description": f"CLS CRE provides commercial mortgage brokerage in {len(cities)} major U.S. metros. Browse financing programs and property types by city.",
+        },
+        canonical_path="locations.html",
+        depth="",
+    )
+    (WEBSITE_DIR / "locations.html").write_text(html, encoding="utf-8")
+    page_count += 1
+    sitemap_urls.append({
+        "loc": f"{BASE_URL}/locations.html",
+        "lastmod": TODAY, "changefreq": "weekly", "priority": "0.9",
+    })
+    print(f"  [OK] locations.html  ({len(cities)} cities)")
+
+    # ── 8. Sitemap.xml ─────────────────────────────────────────────────
     print("\n=== Generating sitemap.xml ===")
     tpl_sitemap = env.get_template("sitemap.xml.j2")
     sitemap_xml = tpl_sitemap.render(urls=sitemap_urls)

@@ -1,0 +1,181 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — Nationwide CRE Financing","url":"https://commerciallendingsolutions.ai/locations.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":{"@type":"Country","name":"United States"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"Locations","item":"https://commerciallendingsolutions.ai/locations.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><span>Locations</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Nationwide Coverage</div>
+  <h1 class="reveal">Commercial Real Estate Financing in {{ cities|length }} Markets</h1>
+  <p class="reveal">CLS CRE provides commercial mortgage brokerage services across the nation's top metropolitan areas. Select your market below to explore financing options for every property type.</p>
+  <a href="{{ depth }}contact.html" class="btn-primary reveal">Get a Free Quote &rarr;</a>
+</div>
+</section>
+
+<!-- STATS BAR -->
+<section class="content-section" style="padding:40px 0;border-bottom:1px solid var(--gray-200)">
+<div class="section-inner">
+  <div class="locations-stats">
+    <div class="loc-stat"><span class="loc-stat-num">{{ cities|length }}</span><span class="loc-stat-label">Metro Areas</span></div>
+    <div class="loc-stat"><span class="loc-stat-num">{{ all_loan_types|length }}</span><span class="loc-stat-label">Loan Programs</span></div>
+    <div class="loc-stat"><span class="loc-stat-num">{{ all_property_types|length }}</span><span class="loc-stat-label">Property Types</span></div>
+    <div class="loc-stat"><span class="loc-stat-num">{{ total_pages }}</span><span class="loc-stat-label">Local Pages</span></div>
+  </div>
+</div>
+</section>
+
+<!-- FILTER BAR -->
+<section class="content-section" style="padding:32px 0 0">
+<div class="section-inner">
+  <div class="locations-filter">
+    <input type="text" id="citySearch" class="loc-search" placeholder="Search cities..." autocomplete="off">
+    <div class="pill-links" id="stateFilter">
+      <button class="pill-link active" data-state="all">All States</button>
+      {% for state in states_sorted %}
+      <button class="pill-link" data-state="{{ state }}">{{ state }}</button>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CITY CARDS -->
+<section class="content-section" style="padding:40px 0 80px">
+<div class="section-inner">
+  <div class="locations-grid" id="locationsGrid">
+    {% for city in cities %}
+    <div class="location-card" data-state="{{ city.state }}" data-city="{{ city.city|lower }}">
+      <div class="loc-card-header">
+        <h2><a href="{{ depth }}financing/permanent-loans-{{ city.slug }}.html">{{ city.city }}, {{ city.state }}</a></h2>
+        <span class="loc-card-metro">{{ city.metro }}</span>
+      </div>
+      <p class="loc-card-context">{{ city.context[:160] }}...</p>
+      <div class="loc-card-links">
+        <div class="loc-card-section">
+          <h3>Financing Programs</h3>
+          <ul>
+            {% for lt in all_loan_types %}
+            <li><a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html">{{ lt.short_name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="loc-card-section">
+          <h3>Property Types</h3>
+          <ul>
+            {% for pt in all_property_types %}
+            <li><a href="{{ depth }}property/{{ pt.slug }}-{{ city.slug }}.html">{{ pt.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="loc-card-neighborhoods">
+        {% for n in city.neighborhoods %}
+        <span class="loc-neighborhood">{{ n }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <p class="locations-count" id="locationsCount">Showing {{ cities|length }} of {{ cities|length }} markets</p>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+<div class="section-inner">
+  <h2>Don't See Your Market?</h2>
+  <p>CLS CRE finances commercial properties nationwide. Contact us for a free quote on any deal, anywhere in the United States.</p>
+  <a href="{{ depth }}contact.html" class="btn-primary">Contact Us &rarr;</a>
+</div>
+</section>
+
+<style>
+.locations-stats{display:flex;justify-content:center;gap:60px;flex-wrap:wrap}
+.loc-stat{text-align:center}
+.loc-stat-num{display:block;font-family:var(--font-display);font-size:42px;color:var(--navy);line-height:1.1}
+.loc-stat-label{font-size:13px;font-weight:600;color:var(--gray-500);text-transform:uppercase;letter-spacing:.06em}
+.locations-filter{display:flex;flex-direction:column;gap:16px}
+.loc-search{width:100%;max-width:400px;padding:12px 20px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);color:var(--navy);transition:border-color .2s;outline:none}
+.loc-search:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(0,166,118,.1)}
+.locations-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:24px}
+.location-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:28px;transition:all .3s}
+.location-card:hover{border-color:var(--green);box-shadow:0 8px 28px rgba(0,0,0,.06)}
+.location-card.hidden{display:none}
+.loc-card-header h2{font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:4px}
+.loc-card-header h2 a{color:inherit;text-decoration:none;transition:color .2s}
+.loc-card-header h2 a:hover{color:var(--green)}
+.loc-card-metro{font-size:12px;font-weight:600;color:var(--gray-400);text-transform:uppercase;letter-spacing:.05em}
+.loc-card-context{font-size:13px;color:var(--gray-500);line-height:1.6;margin:12px 0 16px}
+.loc-card-links{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.loc-card-section h3{font-size:11px;font-weight:700;color:var(--gray-400);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.loc-card-section ul{list-style:none;padding:0;margin:0}
+.loc-card-section ul li{padding:3px 0}
+.loc-card-section ul li a{font-size:13px;color:var(--green-dark,var(--navy));text-decoration:none;font-weight:500;transition:color .2s}
+.loc-card-section ul li a:hover{color:var(--green)}
+.loc-card-neighborhoods{display:flex;flex-wrap:wrap;gap:6px;padding-top:12px;border-top:1px solid var(--gray-100)}
+.loc-neighborhood{font-size:11px;color:var(--gray-500);background:var(--gray-50);padding:3px 10px;border-radius:4px}
+.locations-count{text-align:center;font-size:13px;color:var(--gray-400);margin-top:24px}
+@media(max-width:768px){
+  .locations-stats{gap:30px}
+  .loc-stat-num{font-size:32px}
+  .locations-grid{grid-template-columns:1fr}
+  .loc-card-links{grid-template-columns:1fr}
+}
+</style>
+
+<script>
+(function(){
+  const search = document.getElementById('citySearch');
+  const grid = document.getElementById('locationsGrid');
+  const cards = grid.querySelectorAll('.location-card');
+  const countEl = document.getElementById('locationsCount');
+  const stateButtons = document.querySelectorAll('#stateFilter .pill-link');
+  let activeState = 'all';
+
+  function filterCards() {
+    const q = search.value.toLowerCase().trim();
+    let visible = 0;
+    cards.forEach(card => {
+      const city = card.dataset.city;
+      const state = card.dataset.state;
+      const matchState = activeState === 'all' || state === activeState;
+      const matchSearch = !q || city.includes(q) || state.toLowerCase().includes(q);
+      if (matchState && matchSearch) {
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+    countEl.textContent = 'Showing ' + visible + ' of ' + cards.length + ' markets';
+  }
+
+  search.addEventListener('input', filterCards);
+
+  stateButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      stateButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeState = btn.dataset.state;
+      filterCards();
+    });
+  });
+})();
+</script>
+{% endblock %}
