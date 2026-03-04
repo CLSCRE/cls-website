@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const WORKER_URL = 'https://cls-cre-chatbot.tdamyan.workers.dev';
+  const WORKER_URL = 'https://cls-cre-chatbot.clscre.workers.dev';
   const MAX_MSG = 20;
 
   // State
