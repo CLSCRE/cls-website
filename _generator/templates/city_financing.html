@@ -2,13 +2,13 @@
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"{{ loan.name }} in {{ city.city }}, {{ city.state }} | CLS CRE","url":"https://commerciallendingsolutions.ai/financing/{{ loan.slug }}-{{ city.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"{{ loan.name }} in {{ city.city }}, {{ city.state }} | CLS CRE","url":"https://clscre.com/financing/{{ loan.slug }}-{{ city.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"{{ loan.name }}","item":"https://commerciallendingsolutions.ai/financing/{{ loan.slug }}.html"},{"@type":"ListItem","position":3,"name":"{{ city.city }}","item":"https://commerciallendingsolutions.ai/financing/{{ loan.slug }}-{{ city.slug }}.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"{{ loan.name }}","item":"https://clscre.com/financing/{{ loan.slug }}.html"},{"@type":"ListItem","position":3,"name":"{{ city.city }}","item":"https://clscre.com/financing/{{ loan.slug }}-{{ city.slug }}.html"}]}
 </script>
 {% endblock %}
 
@@ -67,6 +67,22 @@
       <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
     </a>
     {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- PROPERTY TYPES IN THIS CITY -->
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Property Types in {{ city.city }}</h2>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore financing by property type in the {{ city.metro }} market.</p>
+  <div class="cross-link-grid">
+    {% for pt in all_property_types %}
+    <a href="{{ depth }}property/{{ pt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ pt.name }}</div>
+      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+    </a>
     {% endfor %}
   </div>
 </div>

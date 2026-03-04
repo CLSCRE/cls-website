@@ -2,13 +2,13 @@
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — {{ prop.name }} Financing","url":"https://commerciallendingsolutions.ai/property/{{ prop.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — {{ prop.name }} Financing","url":"https://clscre.com/property/{{ prop.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"Properties","item":"https://commerciallendingsolutions.ai/property/"},{"@type":"ListItem","position":3,"name":"{{ prop.name }}","item":"https://commerciallendingsolutions.ai/property/{{ prop.slug }}.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Properties","item":"https://clscre.com/property/"},{"@type":"ListItem","position":3,"name":"{{ prop.name }}","item":"https://clscre.com/property/{{ prop.slug }}.html"}]}
 </script>
 {% endblock %}
 
@@ -83,6 +83,41 @@
   </div>
 </div>
 </section>
+
+<!-- FINANCING PROGRAMS -->
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Financing Programs</h2>
+  <p class="section-desc reveal">{{ prop.name }} properties qualify for a variety of commercial loan programs. Explore your options.</p>
+  <div class="cross-link-grid">
+    {% for lt in all_loan_types %}
+    <a href="{{ depth }}financing/{{ lt.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ lt.name }}</div>
+      <div class="cl-sub">{{ lt.key_features.rates }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- RELATED ARTICLES -->
+{% if related_articles %}
+<section class="content-section alt">
+<div class="section-inner">
+  <h2 class="section-title reveal">Related Insights</h2>
+  <div class="blog-grid">
+    {% for rel in related_articles %}
+    <a href="{{ depth }}blog/{{ rel.slug }}.html" class="blog-card reveal" data-cat="{{ rel.category|lower|replace(' ','-') }}">
+      <div class="blog-card-category">{{ rel.category }}</div>
+      <h3 class="blog-card-title">{{ rel.title }}</h3>
+      <p class="blog-card-excerpt">{{ rel.excerpt }}</p>
+      <div class="blog-card-meta"><span>{{ rel.author }}</span><span>{{ rel.date_formatted }}</span></div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
 
 <!-- FAQ -->
 {% set faq_title = prop.name + ' Financing FAQ' %}

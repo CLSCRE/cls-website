@@ -5,16 +5,16 @@
 {% block extra_meta %}
 <meta property="article:author" content="Trevor Damyan">
 <meta property="article:published_time" content="{{ article.date }}">
-<meta property="og:image" content="https://commerciallendingsolutions.ai/images/trevor-damyan.jpg">
+<meta property="og:image" content="https://clscre.com/images/trevor-damyan.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ seo.title }}">
 <meta name="twitter:description" content="{{ seo.meta_description }}">
-<meta name="twitter:image" content="https://commerciallendingsolutions.ai/images/trevor-damyan.jpg">
+<meta name="twitter:image" content="https://clscre.com/images/trevor-damyan.jpg">
 {% endblock %}
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"{{ article.title }}","description":"{{ article.excerpt }}","author":{"@type":"Person","name":"{{ article.author }}","jobTitle":"Commercial Mortgage Broker","image":"https://commerciallendingsolutions.ai/images/trevor-damyan.jpg","worksFor":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai"}},"datePublished":"{{ article.date }}","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://commerciallendingsolutions.ai","logo":{"@type":"ImageObject","url":"https://commerciallendingsolutions.ai/images/cls-logo-emblem.png"}},"mainEntityOfPage":"https://commerciallendingsolutions.ai/blog/{{ article.slug }}.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"{{ article.title }}","description":"{{ article.excerpt }}","author":{"@type":"Person","name":"{{ article.author }}","jobTitle":"Commercial Mortgage Broker","image":"https://clscre.com/images/trevor-damyan.jpg","worksFor":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}},"datePublished":"{{ article.date }}","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-emblem.png"}},"mainEntityOfPage":"https://clscre.com/blog/{{ article.slug }}.html"}
 </script>
 {% if faqs %}
 <script type="application/ld+json">
@@ -22,7 +22,7 @@
 </script>
 {% endif %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://commerciallendingsolutions.ai"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://commerciallendingsolutions.ai/blog/"},{"@type":"ListItem","position":3,"name":"{{ article.title }}","item":"https://commerciallendingsolutions.ai/blog/{{ article.slug }}.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://clscre.com/blog/"},{"@type":"ListItem","position":3,"name":"{{ article.title }}","item":"https://clscre.com/blog/{{ article.slug }}.html"}]}
 </script>
 {% endblock %}
 
@@ -69,6 +69,14 @@
       <div class="sidebar-card reveal">
         <h4>Call Us</h4>
         <p style="margin:0"><a href="tel:+13107584042" style="color:var(--green);text-decoration:none;font-weight:600">310.758.4042</a></p>
+      </div>
+      <div class="sidebar-card reveal">
+        <h4>Useful Tools</h4>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="padding:4px 0;border-bottom:1px solid var(--gray-100)"><a href="{{ depth }}tools/dscr-calculator.html" style="font-size:13px;color:var(--navy);text-decoration:none;font-weight:500;transition:color .2s">DSCR Calculator</a></li>
+          <li style="padding:4px 0;border-bottom:1px solid var(--gray-100)"><a href="{{ depth }}tools/cap-rate-calculator.html" style="font-size:13px;color:var(--navy);text-decoration:none;font-weight:500;transition:color .2s">Cap Rate Calculator</a></li>
+          <li style="padding:4px 0"><a href="{{ depth }}tools/loan-calculator.html" style="font-size:13px;color:var(--navy);text-decoration:none;font-weight:500;transition:color .2s">Loan Payment Calculator</a></li>
+        </ul>
       </div>
       {% if article.tags %}
       <div class="sidebar-card reveal">

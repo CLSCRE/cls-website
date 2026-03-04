@@ -8,18 +8,17 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1S9151E1ZM');</script>
 <title>{{ seo.title }}</title>
 <meta name="description" content="{{ seo.meta_description }}">
-<link rel="canonical" href="https://commerciallendingsolutions.ai/{{ canonical_path }}">
+<link rel="canonical" href="https://clscre.com/{{ canonical_path }}">
 <meta property="og:title" content="{{ seo.title }}">
 <meta property="og:description" content="{{ seo.meta_description }}">
 <meta property="og:type" content="{% block og_type %}website{% endblock %}">
-<meta property="og:url" content="https://commerciallendingsolutions.ai/{{ canonical_path }}">
+<meta property="og:url" content="https://clscre.com/{{ canonical_path }}">
 {% block extra_meta %}{% endblock %}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="{{ depth }}fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ depth }}fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 {% block schema %}{% endblock %}
-<link rel="stylesheet" href="{{ depth }}css/global.css">
-<link rel="stylesheet" href="{{ depth }}css/pages.css">
+<link rel="stylesheet" href="{{ depth }}css/global.min.css">
+<link rel="stylesheet" href="{{ depth }}css/pages.min.css">
 </head>
 <body>
 

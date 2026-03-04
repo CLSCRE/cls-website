@@ -14,6 +14,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 import json
 import os
+import re
 from datetime import date, datetime
 from pathlib import Path
 
@@ -28,7 +29,7 @@ DATA_DIR = SCRIPT_DIR / "data"
 TEMPLATE_DIR = SCRIPT_DIR / "templates"
 WEBSITE_DIR = SCRIPT_DIR.parent  # website/
 
-BASE_URL = "https://commerciallendingsolutions.ai"
+BASE_URL = "https://clscre.com"
 TODAY = date.today().isoformat()
 
 
@@ -79,6 +80,40 @@ def build_city_faqs(templates, loan=None, prop=None, city=None):
     return faqs
 
 
+def minify_css(src_path: Path, dst_path: Path):
+    """Simple CSS minification: strip comments, collapse whitespace."""
+    css = src_path.read_text(encoding="utf-8")
+    # Remove comments
+    css = re.sub(r'/\*.*?\*/', '', css, flags=re.DOTALL)
+    # Collapse whitespace around symbols
+    css = re.sub(r'\s+', ' ', css)
+    css = re.sub(r'\s*([{}:;,>~+])\s*', r'\1', css)
+    css = re.sub(r';\s*}', '}', css)
+    dst_path.write_text(css.strip(), encoding="utf-8")
+    orig = src_path.stat().st_size
+    mini = dst_path.stat().st_size
+    print(f"  [OK] {dst_path.name}  ({orig} -> {mini} bytes, -{100-mini*100//orig}%)")
+
+
+def build_article_map(articles, tag_to_slug):
+    """Build reverse mapping from loan/property slug -> matching articles."""
+    slug_articles = {}
+    for article in articles:
+        tags = [t.lower() for t in article.get("tags", [])]
+        slug_title = article["slug"].lower()
+        matched_slugs = set()
+        for tag in tags:
+            if tag in tag_to_slug:
+                _, type_slug = tag_to_slug[tag]
+                matched_slugs.add(type_slug)
+        for key, (_, type_slug) in tag_to_slug.items():
+            if key.replace(" ", "-") in slug_title:
+                matched_slugs.add(type_slug)
+        for s in matched_slugs:
+            slug_articles.setdefault(s, []).append(article)
+    return slug_articles
+
+
 def main():
     # ── Pre-generate programmatic blog articles ───────────────────────
     generate_articles_main()
@@ -126,6 +161,27 @@ def main():
     (WEBSITE_DIR / "financing").mkdir(exist_ok=True)
     (WEBSITE_DIR / "property").mkdir(exist_ok=True)
     (WEBSITE_DIR / "blog").mkdir(exist_ok=True)
+    (WEBSITE_DIR / "tools").mkdir(exist_ok=True)
+
+    # ── Build article-to-slug map for hub cross-links ─────────────────
+    TAG_TO_SLUG = {
+        "bridge loans": ("financing", "bridge-loans"),
+        "permanent loans": ("financing", "permanent-loans"),
+        "construction loans": ("financing", "construction-loans"),
+        "construction": ("financing", "construction-loans"),
+        "sba": ("financing", "sba-loans"),
+        "sba 504": ("financing", "sba-loans"),
+        "mezzanine": ("financing", "mezzanine"),
+        "multifamily": ("property", "multifamily"),
+        "apartment investing": ("property", "multifamily"),
+        "industrial": ("property", "industrial"),
+        "retail": ("property", "retail"),
+        "office": ("property", "office"),
+        "mixed-use": ("property", "mixed-use"),
+        "hospitality": ("property", "hospitality"),
+        "hotel": ("property", "hospitality"),
+    }
+    article_map = build_article_map(articles, TAG_TO_SLUG)
 
     # ── 1. Loan Type Hub Pages ─────────────────────────────────────────
     print("\n=== Generating Loan Type Hub Pages ===")
@@ -133,6 +189,7 @@ def main():
     for loan in loan_types:
         txns = filter_transactions(transactions, loan_slug=loan["slug"])
         loan_faqs = faqs_data.get("loan_types", {}).get(loan["slug"], [])
+        rel_articles = article_map.get(loan["slug"], [])[:3]
         html = tpl_financing.render(
             **shared,
             loan=loan,
@@ -141,6 +198,7 @@ def main():
             depth="../",
             transactions=txns,
             faqs=loan_faqs,
+            related_articles=rel_articles,
         )
         out_path = WEBSITE_DIR / "financing" / f"{loan['slug']}.html"
         out_path.write_text(html, encoding="utf-8")
@@ -157,6 +215,7 @@ def main():
     for prop in property_types:
         txns = filter_transactions(transactions, prop_slug=prop["slug"])
         prop_faqs = faqs_data.get("property_types", {}).get(prop["slug"], [])
+        rel_articles = article_map.get(prop["slug"], [])[:3]
         html = tpl_property.render(
             **shared,
             prop=prop,
@@ -165,6 +224,7 @@ def main():
             depth="../",
             transactions=txns,
             faqs=prop_faqs,
+            related_articles=rel_articles,
         )
         out_path = WEBSITE_DIR / "property" / f"{prop['slug']}.html"
         out_path.write_text(html, encoding="utf-8")
@@ -270,24 +330,6 @@ def main():
     print(f"  [OK] blog/index.html  ({len(articles)} articles)")
 
     # ── 6. Blog Article Pages ─────────────────────────────────────────
-    # Mapping from article tags/slugs to loan/property type slugs for cross-linking
-    TAG_TO_SLUG = {
-        "bridge loans": ("financing", "bridge-loans"),
-        "permanent loans": ("financing", "permanent-loans"),
-        "construction loans": ("financing", "construction-loans"),
-        "construction": ("financing", "construction-loans"),
-        "sba": ("financing", "sba-loans"),
-        "sba 504": ("financing", "sba-loans"),
-        "mezzanine": ("financing", "mezzanine"),
-        "multifamily": ("property", "multifamily"),
-        "apartment investing": ("property", "multifamily"),
-        "industrial": ("property", "industrial"),
-        "retail": ("property", "retail"),
-        "office": ("property", "office"),
-        "mixed-use": ("property", "mixed-use"),
-        "hospitality": ("property", "hospitality"),
-        "hotel": ("property", "hospitality"),
-    }
     # Featured cities for cross-links (mix of large and emerging markets)
     FEATURED_CITIES = [c for c in cities if c["slug"] in (
         "los-angeles", "new-york", "dallas", "phoenix", "atlanta",
@@ -379,7 +421,44 @@ def main():
     })
     print(f"  [OK] locations.html  ({len(cities)} cities)")
 
-    # ── 8. Sitemap.xml ─────────────────────────────────────────────────
+    # ── 8. Calculator / Tool Pages ──────────────────────────────────────
+    print("\n=== Generating Calculator Pages ===")
+    tool_pages = [
+        ("tool_index.html", "tools/index.html", "Calculators & Tools | CLS CRE",
+         "Free commercial real estate calculators for DSCR, cap rate, and loan payments.", "0.8"),
+        ("tool_dscr.html", "tools/dscr-calculator.html", "DSCR Calculator | CLS CRE",
+         "Free Debt Service Coverage Ratio calculator for commercial real estate.", "0.8"),
+        ("tool_caprate.html", "tools/cap-rate-calculator.html", "Cap Rate Calculator | CLS CRE",
+         "Free capitalization rate calculator for commercial real estate.", "0.8"),
+        ("tool_loan.html", "tools/loan-calculator.html", "Commercial Loan Payment Calculator | CLS CRE",
+         "Free commercial mortgage payment calculator with I/O periods and amortization.", "0.8"),
+    ]
+    for tpl_name, out_rel, title, desc, priority in tool_pages:
+        tpl_tool = env.get_template(tpl_name)
+        html = tpl_tool.render(
+            **shared,
+            seo={"title": title, "meta_description": desc},
+            canonical_path=out_rel,
+            depth="../",
+        )
+        out_path = WEBSITE_DIR / out_rel
+        out_path.write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/{out_rel}",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": priority,
+        })
+        print(f"  [OK] {out_rel}")
+
+    # ── 9. CSS Minification ──────────────────────────────────────────
+    print("\n=== Minifying CSS ===")
+    css_dir = WEBSITE_DIR / "css"
+    for css_file in ["global.css", "pages.css"]:
+        src = css_dir / css_file
+        dst = css_dir / css_file.replace(".css", ".min.css")
+        minify_css(src, dst)
+
+    # ── 10. Sitemap.xml ─────────────────────────────────────────────────
     print("\n=== Generating sitemap.xml ===")
     tpl_sitemap = env.get_template("sitemap.xml.j2")
     sitemap_xml = tpl_sitemap.render(urls=sitemap_urls)

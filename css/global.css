@@ -1,4 +1,6 @@
 /* ===== GLOBAL CSS — Extracted from CLS CRE index.html ===== */
+@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/dm-serif-display-400.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url('../fonts/inter-latin.woff2') format('woff2')}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
 --navy:#153D63;

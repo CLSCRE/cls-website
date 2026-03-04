@@ -1,0 +1,154 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Commercial Loan Payment Calculator","description":"Free commercial mortgage payment calculator with support for interest-only periods, various amortization schedules, and balloon payments.","url":"https://clscre.com/tools/loan-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are commercial loan payments calculated?","acceptedAnswer":{"@type":"Answer","text":"Commercial mortgage payments are calculated using standard amortization formulas. The monthly payment equals the loan amount times the monthly rate times (1 + monthly rate) raised to the number of payments, divided by (1 + monthly rate) raised to the number of payments minus 1. Commercial loans often have shorter terms than their amortization, resulting in a balloon payment at maturity."}},{"@type":"Question","name":"What is the difference between loan term and amortization?","acceptedAnswer":{"@type":"Answer","text":"The loan term is how long the loan lasts before it must be repaid or refinanced. The amortization period determines the payment schedule — payments are calculated as if the loan will be paid off over the amortization period. For example, a 10-year term with 25-year amortization means lower monthly payments but a large balloon payment due after 10 years."}},{"@type":"Question","name":"What is an interest-only period on a commercial loan?","acceptedAnswer":{"@type":"Answer","text":"An interest-only (I/O) period allows the borrower to pay only interest — no principal — for a set period at the start of the loan. This reduces initial monthly payments and is common on bridge loans (full term I/O), construction loans, and some permanent loans (1-3 years I/O). After the I/O period ends, payments convert to fully amortizing."}},{"@type":"Question","name":"What are typical commercial mortgage rates in 2026?","acceptedAnswer":{"@type":"Answer","text":"As of early 2026, commercial mortgage rates typically range from 5.25% to 8.50% depending on loan type, property type, leverage, and borrower strength. Permanent loans from banks and life companies start around 5.25%-6.75%, while bridge loans range from 7.00%-12.00%. SBA 504 loans offer rates starting around 5.50%."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"Loan Payment Calculator","item":"https://clscre.com/tools/loan-calculator.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}tools/index.html">Calculators</a></li>
+  <li><span>Loan Payment Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Calculator</div>
+  <h1 class="reveal">Commercial Loan Payment Calculator</h1>
+  <p class="reveal">Estimate monthly payments for commercial mortgages with support for interest-only periods, various amortization schedules, and balloon payments.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Calculate Loan Payments</h2>
+      <div class="calc-form">
+        <div class="calc-field">
+          <label for="lnAmt">Loan Amount</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="lnAmt" inputmode="decimal" placeholder="2,000,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="lnRate">Interest Rate (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="lnRate" inputmode="decimal" placeholder="6.50"><span class="calc-suffix">%</span></div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-field">
+            <label for="lnTerm">Loan Term (Years)</label>
+            <div class="calc-input-wrap"><input type="text" id="lnTerm" inputmode="decimal" placeholder="10"></div>
+          </div>
+          <div class="calc-field">
+            <label for="lnAmort">Amortization (Years)</label>
+            <div class="calc-input-wrap"><input type="text" id="lnAmort" inputmode="decimal" placeholder="25"></div>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="lnIO">Interest-Only Period (Months)</label>
+          <div class="calc-input-wrap"><input type="text" id="lnIO" inputmode="decimal" placeholder="0" value="0"></div>
+        </div>
+        <button class="btn-primary" onclick="calcLoan()" style="width:100%;justify-content:center;margin-top:8px">Calculate Payment</button>
+      </div>
+    </div>
+    <div class="calc-result" id="loanResult" style="display:none">
+      <div class="calc-gauge gauge-green">
+        <div class="gauge-value" id="lnMonthly">--</div>
+        <div class="gauge-label">Monthly Payment (Amortizing)</div>
+      </div>
+      <div class="calc-detail-grid">
+        <div class="calc-detail"><span class="calc-detail-label">I/O Monthly Payment</span><span class="calc-detail-value" id="lnIOPmt">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Annual Debt Service</span><span class="calc-detail-value" id="lnAnnual">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Total Interest Paid</span><span class="calc-detail-value" id="lnTotalInt">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Balloon at Maturity</span><span class="calc-detail-value" id="lnBalloon">--</span></div>
+      </div>
+      <div class="calc-schedule" id="lnSchedule"></div>
+      <a href="{{ depth }}contact.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Get a Personalized Quote &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More Calculators</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}tools/dscr-calculator.html" class="cross-link-card reveal"><div class="cl-title">DSCR Calculator</div><div class="cl-sub">Debt service coverage</div></a>
+    <a href="{{ depth }}tools/cap-rate-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cap Rate Calculator</div><div class="cl-sub">Property valuation</div></a>
+  </div>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Related Financing Programs</h2>
+  <div class="cross-link-grid">
+    {% for lt in all_loan_types %}
+    <a href="{{ depth }}financing/{{ lt.slug }}.html" class="cross-link-card reveal"><div class="cl-title">{{ lt.name }}</div><div class="cl-sub">{{ lt.key_features.rates }}</div></a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+{% set faq_title = 'Loan Payment Calculator FAQ' %}
+{% set faq_alt = true %}
+{% set faqs = [
+  {"q": "How are commercial loan payments calculated?", "a": "Commercial mortgage payments are calculated using standard amortization formulas. The monthly payment equals the loan amount times the monthly rate times (1 + monthly rate) raised to the number of payments, divided by (1 + monthly rate) raised to the number of payments minus 1. Commercial loans often have shorter terms than their amortization, resulting in a balloon payment at maturity."},
+  {"q": "What is the difference between loan term and amortization?", "a": "The loan term is how long the loan lasts before it must be repaid or refinanced. The amortization period determines the payment schedule. For example, a 10-year term with 25-year amortization means lower monthly payments but a large balloon payment due after 10 years."},
+  {"q": "What is an interest-only period on a commercial loan?", "a": "An interest-only (I/O) period allows the borrower to pay only interest for a set period at the start of the loan. This reduces initial monthly payments and is common on bridge loans (full term I/O), construction loans, and some permanent loans (1-3 years I/O). After the I/O period ends, payments convert to fully amortizing."},
+  {"q": "What are typical commercial mortgage rates in 2026?", "a": "As of early 2026, commercial mortgage rates range from 5.25% to 8.50% depending on loan type, property type, leverage, and borrower strength. Permanent loans from banks and life companies start around 5.25%-6.75%, while bridge loans range from 7.00%-12.00%."}
+] %}
+{% include '_faq_section.html' %}
+
+{% set cta_title = 'Get Real Rate Quotes' %}
+{% set cta_description = 'These estimates use market averages. CLS CRE will get you actual quotes from 1,000+ lenders for your specific deal.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+function parseNum(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0}
+function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+function calcLoan(){
+  var P=parseNum('lnAmt'),r=parseNum('lnRate')/100/12,termY=parseNum('lnTerm'),amortY=parseNum('lnAmort'),ioMo=parseNum('lnIO');
+  if(!P||!r||!termY||!amortY)return;
+  var n=amortY*12,termMo=termY*12;
+  var monthly=P*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+  var ioPmt=P*r;
+  // Calculate balloon + total interest
+  var balance=P,totalInt=0;
+  var schedule=[];var yrBal=P,yrInt=0,yrPrin=0;
+  for(var m=1;m<=termMo;m++){
+    var intPmt=balance*r;
+    if(m<=ioMo){var prinPmt=0;var pmt=ioPmt;}
+    else{var pmt=monthly;var prinPmt=pmt-intPmt;}
+    balance-=prinPmt;totalInt+=intPmt;yrInt+=intPmt;yrPrin+=prinPmt;
+    if(m%12===0||m===termMo){
+      schedule.push({yr:Math.ceil(m/12),payment:fmt(pmt),interest:fmt(yrInt),principal:fmt(yrPrin),balance:fmt(Math.max(0,balance))});
+      yrInt=0;yrPrin=0;
+    }
+  }
+  document.getElementById('lnMonthly').textContent=fmt(monthly);
+  document.getElementById('lnIOPmt').textContent=ioMo>0?fmt(ioPmt):'N/A';
+  document.getElementById('lnAnnual').textContent=fmt(monthly*12);
+  document.getElementById('lnTotalInt').textContent=fmt(totalInt);
+  document.getElementById('lnBalloon').textContent=balance>100?fmt(balance):'$0 (Fully Amortized)';
+  // Build schedule table
+  var html='<h3>Amortization Summary</h3><table class="calc-table"><thead><tr><th>Year</th><th>Payment</th><th>Interest</th><th>Principal</th><th>Balance</th></tr></thead><tbody>';
+  for(var i=0;i<schedule.length;i++){
+    var s=schedule[i];
+    html+='<tr><td>'+s.yr+'</td><td>'+s.payment+'</td><td>'+s.interest+'</td><td>'+s.principal+'</td><td>'+s.balance+'</td></tr>';
+  }
+  html+='</tbody></table>';
+  document.getElementById('lnSchedule').innerHTML=html;
+  document.getElementById('loanResult').style.display='block';
+}
+</script>
+{% endblock %}

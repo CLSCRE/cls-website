@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1S9151E1ZM"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1S9151E1ZM');</script>
+<title>Cap Rate Calculator | CLS CRE</title>
+<meta name="description" content="Free capitalization rate calculator for commercial real estate.">
+<link rel="canonical" href="https://clscre.com/tools/cap-rate-calculator.html">
+<meta property="og:title" content="Cap Rate Calculator | CLS CRE">
+<meta property="og:description" content="Free capitalization rate calculator for commercial real estate.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://clscre.com/tools/cap-rate-calculator.html">
+<link rel="preload" href="../fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Cap Rate Calculator","description":"Free capitalization rate calculator for commercial real estate. Calculate cap rates and property values from NOI.","url":"https://clscre.com/tools/cap-rate-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a cap rate in commercial real estate?","acceptedAnswer":{"@type":"Answer","text":"A capitalization rate (cap rate) is the ratio of a property's Net Operating Income (NOI) to its current market value or purchase price. It represents the expected rate of return on a real estate investment, assuming an all-cash purchase. Cap rates are the most common metric for comparing CRE investment opportunities."}},{"@type":"Question","name":"What is a good cap rate for commercial property?","acceptedAnswer":{"@type":"Answer","text":"Cap rates vary significantly by property type, location, and market conditions. In 2025-2026, typical ranges are: Multifamily 4.5%–6.5%, Industrial 5.0%–7.0%, Retail 6.0%–8.5%, Office 6.5%–9.0%, and Hospitality 7.0%–10.0%. Lower cap rates indicate lower risk and higher prices, common in core markets like LA, NYC, and Miami."}},{"@type":"Question","name":"How do you calculate property value from cap rate?","acceptedAnswer":{"@type":"Answer","text":"Property Value = NOI / Cap Rate. For example, a property with $200,000 NOI at a 6% cap rate would be valued at $200,000 / 0.06 = $3,333,333. This formula is the inverse of the cap rate calculation and is widely used in CRE underwriting and appraisals."}},{"@type":"Question","name":"Does a lower cap rate mean a better investment?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. A lower cap rate means a higher price relative to income, which typically reflects lower risk (better location, credit tenants, newer construction). A higher cap rate may indicate higher risk but also higher potential returns. The 'right' cap rate depends on your investment strategy, risk tolerance, and the specific market."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"Cap Rate Calculator","item":"https://clscre.com/tools/cap-rate-calculator.html"}]}
+</script>
+<link rel="stylesheet" href="../css/global.min.css">
+<link rel="stylesheet" href="../css/pages.min.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+<div class="nav-inner">
+  <a href="../index.html" class="nav-logo"><img src="../images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="120" height="120"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
+  <div class="nav-links" id="navLinks">
+    <div class="nav-dropdown">
+      <a href="../index.html#programs">Financing</a>
+      <div class="nav-dropdown-menu">
+        <a href="../financing/permanent-loans.html">Permanent Loans</a>
+        <a href="../financing/construction-loans.html">Construction Loans</a>
+        <a href="../financing/bridge-loans.html">Bridge Loans</a>
+        <a href="../financing/sba-loans.html">SBA Loans</a>
+        <a href="../financing/mezzanine.html">Mezzanine & Preferred Equity</a>
+        <a href="../financing/specialty.html">Specialty Financing</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="../index.html#transactions">Properties</a>
+      <div class="nav-dropdown-menu">
+        <a href="../property/multifamily.html">Multifamily</a>
+        <a href="../property/industrial.html">Industrial</a>
+        <a href="../property/retail.html">Retail</a>
+        <a href="../property/office.html">Office</a>
+        <a href="../property/mixed-use.html">Mixed-Use</a>
+        <a href="../property/hospitality.html">Hospitality</a>
+      </div>
+    </div>
+    <a href="../index.html#transactions">Transactions</a>
+    <a href="../locations.html">Locations</a>
+    <a href="../about.html">About</a>
+    <a href="../blog/index.html">Insights</a>
+    <a href="../market-data.html">Market Data</a>
+    <a href="../tools/index.html">Calculators</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="../contact.html" class="nav-cta">Get a Quote</a>
+  </div>
+  <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</nav>
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="../tools/index.html">Calculators</a></li>
+  <li><span>Cap Rate Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Calculator</div>
+  <h1 class="reveal">Cap Rate Calculator</h1>
+  <p class="reveal">Calculate capitalization rates for commercial investment properties. Determine cap rate from NOI and value, or estimate property value from NOI and target cap rate.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Calculate Cap Rate</h2>
+      <div class="calc-tabs">
+        <button class="calc-tab active" onclick="switchCapTab('rate')">Cap Rate from Value</button>
+        <button class="calc-tab" onclick="switchCapTab('value')">Value from Cap Rate</button>
+      </div>
+      <div class="calc-form" id="capTabRate">
+        <div class="calc-field">
+          <label for="capNoi">Net Operating Income (Annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="capNoi" inputmode="decimal" placeholder="200,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="capValue">Property Value / Purchase Price</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="capValue" inputmode="decimal" placeholder="3,000,000"></div>
+        </div>
+        <button class="btn-primary" onclick="calcCapRate()" style="width:100%;justify-content:center;margin-top:8px">Calculate Cap Rate</button>
+      </div>
+      <div class="calc-form" id="capTabValue" style="display:none">
+        <div class="calc-field">
+          <label for="capNoi2">Net Operating Income (Annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="capNoi2" inputmode="decimal" placeholder="200,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="capTarget">Target Cap Rate (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="capTarget" inputmode="decimal" placeholder="6.00"><span class="calc-suffix">%</span></div>
+        </div>
+        <button class="btn-primary" onclick="calcCapValue()" style="width:100%;justify-content:center;margin-top:8px">Calculate Property Value</button>
+      </div>
+    </div>
+    <div class="calc-result" id="capResult" style="display:none">
+      <div class="calc-gauge gauge-green" id="capGauge">
+        <div class="gauge-value" id="capDisplay">--</div>
+        <div class="gauge-label" id="capDisplayLabel">Cap Rate</div>
+      </div>
+      <div class="calc-detail-grid" id="capDetails"></div>
+      <div class="calc-thresholds">
+        <h3>Market Cap Rate Benchmarks (2025&ndash;2026)</h3>
+        <div class="threshold-grid">
+          <div class="threshold-item"><span class="threshold-label">Multifamily</span><span class="threshold-val">4.5%&ndash;6.5%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Industrial</span><span class="threshold-val">5.0%&ndash;7.0%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Retail (Anchored)</span><span class="threshold-val">6.0%&ndash;8.0%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Office (Class A)</span><span class="threshold-val">6.5%&ndash;8.5%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Hospitality</span><span class="threshold-val">7.0%&ndash;10.0%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Mixed-Use</span><span class="threshold-val">5.5%&ndash;7.5%</span></div>
+        </div>
+      </div>
+      <a href="../contact.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Get a Personalized Quote &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More Calculators</h2>
+  <div class="cross-link-grid">
+    <a href="../tools/dscr-calculator.html" class="cross-link-card reveal"><div class="cl-title">DSCR Calculator</div><div class="cl-sub">Debt service coverage</div></a>
+    <a href="../tools/loan-calculator.html" class="cross-link-card reveal"><div class="cl-title">Loan Payment Calculator</div><div class="cl-sub">Monthly payment estimates</div></a>
+  </div>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Related Property Types</h2>
+  <div class="cross-link-grid">
+    <a href="../property/multifamily.html" class="cross-link-card reveal"><div class="cl-title">Multifamily</div><div class="cl-sub">Financing programs</div></a>
+    <a href="../property/industrial.html" class="cross-link-card reveal"><div class="cl-title">Industrial</div><div class="cl-sub">Financing programs</div></a>
+    <a href="../property/retail.html" class="cross-link-card reveal"><div class="cl-title">Retail</div><div class="cl-sub">Financing programs</div></a>
+    <a href="../property/office.html" class="cross-link-card reveal"><div class="cl-title">Office</div><div class="cl-sub">Financing programs</div></a>
+    <a href="../property/mixed-use.html" class="cross-link-card reveal"><div class="cl-title">Mixed-Use</div><div class="cl-sub">Financing programs</div></a>
+    <a href="../property/hospitality.html" class="cross-link-card reveal"><div class="cl-title">Hospitality</div><div class="cl-sub">Financing programs</div></a>
+  </div>
+</div>
+</section>
+
+<section class="faq-section alt" id="faq">
+<div class="section-inner">
+  <div class="section-label reveal">FAQ</div>
+  <h2 class="section-title reveal">Cap Rate Calculator FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-question">What is a cap rate in commercial real estate?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">A capitalization rate (cap rate) is the ratio of a property's Net Operating Income (NOI) to its current market value or purchase price. It represents the expected rate of return on a real estate investment, assuming an all-cash purchase. Cap rates are the most common metric for comparing CRE investment opportunities.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">What is a good cap rate for commercial property?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Cap rates vary significantly by property type, location, and market conditions. In 2025-2026, typical ranges are: Multifamily 4.5%-6.5%, Industrial 5.0%-7.0%, Retail 6.0%-8.5%, Office 6.5%-9.0%, and Hospitality 7.0%-10.0%. Lower cap rates indicate lower risk and higher prices, common in core markets like LA, NYC, and Miami.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">How do you calculate property value from cap rate?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Property Value = NOI / Cap Rate. For example, a property with $200,000 NOI at a 6% cap rate would be valued at $200,000 / 0.06 = $3,333,333. This formula is the inverse of the cap rate calculation and is widely used in CRE underwriting and appraisals.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">Does a lower cap rate mean a better investment?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Not necessarily. A lower cap rate means a higher price relative to income, which typically reflects lower risk (better location, credit tenants, newer construction). A higher cap rate may indicate higher risk but also higher potential returns. The right cap rate depends on your investment strategy, risk tolerance, and the specific market.</div></div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="cta-section">
+<div class="section-inner" style="position:relative;z-index:1">
+  <h2>Get Expert Deal Analysis</h2>
+  <p>Cap rates are just the starting point. CLS CRE can help you underwrite the full deal with real lender quotes and market comps.</p>
+  <a href="../contact.html" class="btn-primary">Request a Quote &rarr;</a>
+  <div style="margin-top:20px">
+    <a href="tel:+13107584042" style="color:rgba(255,255,255,.6);text-decoration:none;font-size:14px">Or call us: 310.758.4042</a>
+  </div>
+</div>
+</section>
+<script>
+function parseNum(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0}
+function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+function switchCapTab(tab){
+  document.getElementById('capTabRate').style.display=tab==='rate'?'block':'none';
+  document.getElementById('capTabValue').style.display=tab==='value'?'block':'none';
+  var tabs=document.querySelectorAll('.calc-tab');
+  tabs[0].className='calc-tab'+(tab==='rate'?' active':'');
+  tabs[1].className='calc-tab'+(tab==='value'?' active':'');
+}
+function calcCapRate(){
+  var noi=parseNum('capNoi'),val=parseNum('capValue');
+  if(!noi||!val)return;
+  var cap=(noi/val)*100;
+  document.getElementById('capDisplay').textContent=cap.toFixed(2)+'%';
+  document.getElementById('capDisplayLabel').textContent='Cap Rate';
+  document.getElementById('capDetails').innerHTML='<div class="calc-detail"><span class="calc-detail-label">NOI</span><span class="calc-detail-value">'+fmt(noi)+'</span></div><div class="calc-detail"><span class="calc-detail-label">Property Value</span><span class="calc-detail-value">'+fmt(val)+'</span></div><div class="calc-detail"><span class="calc-detail-label">Price per Dollar of NOI</span><span class="calc-detail-value">'+fmt(val/noi)+'</span></div>';
+  var g=document.getElementById('capGauge');g.className='calc-gauge gauge-green';
+  document.getElementById('capResult').style.display='block';
+}
+function calcCapValue(){
+  var noi=parseNum('capNoi2'),cap=parseNum('capTarget');
+  if(!noi||!cap)return;
+  var val=noi/(cap/100);
+  document.getElementById('capDisplay').textContent=fmt(val);
+  document.getElementById('capDisplayLabel').textContent='Estimated Value at '+cap.toFixed(2)+'% Cap';
+  document.getElementById('capDetails').innerHTML='<div class="calc-detail"><span class="calc-detail-label">NOI</span><span class="calc-detail-value">'+fmt(noi)+'</span></div><div class="calc-detail"><span class="calc-detail-label">Target Cap Rate</span><span class="calc-detail-value">'+cap.toFixed(2)+'%</span></div><div class="calc-detail"><span class="calc-detail-label">GRM (if NOI = 50% of Gross)</span><span class="calc-detail-value">'+(val/(noi*2)).toFixed(1)+'x</span></div>';
+  var g=document.getElementById('capGauge');g.className='calc-gauge gauge-green';
+  document.getElementById('capResult').style.display='block';
+}
+</script>
+
+<footer>
+<div class="footer-grid">
+  <div class="footer-brand">
+    <img src="../images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="90" height="90" loading="lazy">
+    <p>Over $1 billion in commercial loans closed. Institutional expertise. Personal service. Every deal, every time.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Financing</h4>
+    <a href="../financing/permanent-loans.html">Permanent Loans</a>
+    <a href="../financing/construction-loans.html">Construction Loans</a>
+    <a href="../financing/bridge-loans.html">Bridge Loans</a>
+    <a href="../financing/sba-loans.html">SBA Loans</a>
+    <a href="../financing/mezzanine.html">Mezzanine & Preferred Equity</a>
+    <a href="../financing/specialty.html">Specialty Financing</a>
+  </div>
+  <div class="footer-col">
+    <h4>Properties</h4>
+    <a href="../property/multifamily.html">Multifamily</a>
+    <a href="../property/industrial.html">Industrial</a>
+    <a href="../property/retail.html">Retail</a>
+    <a href="../property/office.html">Office</a>
+    <a href="../property/mixed-use.html">Mixed-Use</a>
+    <a href="../property/hospitality.html">Hospitality</a>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="../about.html">About Us</a>
+    <a href="../blog/index.html">Insights</a>
+    <a href="../index.html#transactions">Transactions</a>
+    <a href="../market-data.html">Market Data</a>
+    <a href="../tools/index.html">Calculators</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="../contact.html">Contact</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>&copy; 2026 Commercial Lending Solutions. All rights reserved. DRE #02244836</span>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/commercialloanbroker" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+</footer>
+<script>
+// Sticky nav
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+// Mobile nav
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
+navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); }); });
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-answer').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+</script>
+</body>
+</html>

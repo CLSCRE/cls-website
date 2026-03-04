@@ -1,0 +1,56 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"CRE Calculators & Tools","description":"Free commercial real estate calculators for DSCR, cap rate, and loan payments.","url":"https://clscre.com/tools/","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><span>Calculators</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Tools</div>
+  <h1 class="reveal">Commercial Real Estate Calculators</h1>
+  <p class="reveal">Analyze deals faster with our free CRE calculators. Estimate DSCR, cap rates, and loan payments instantly — no signup required.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="tool-grid">
+    <a href="{{ depth }}tools/dscr-calculator.html" class="tool-card reveal">
+      <div class="tool-icon">DSCR</div>
+      <h2>DSCR Calculator</h2>
+      <p>Calculate your Debt Service Coverage Ratio to see if your property qualifies for commercial financing. Lenders typically require 1.20x–1.25x minimum.</p>
+      <span class="btn-secondary">Calculate DSCR &rarr;</span>
+    </a>
+    <a href="{{ depth }}tools/cap-rate-calculator.html" class="tool-card reveal">
+      <div class="tool-icon">CAP</div>
+      <h2>Cap Rate Calculator</h2>
+      <p>Determine capitalization rates for investment properties. Compare your deal against market benchmarks by property type and location.</p>
+      <span class="btn-secondary">Calculate Cap Rate &rarr;</span>
+    </a>
+    <a href="{{ depth }}tools/loan-calculator.html" class="tool-card reveal">
+      <div class="tool-icon">PMT</div>
+      <h2>Loan Payment Calculator</h2>
+      <p>Estimate monthly payments for commercial mortgages with support for interest-only periods, various amortization schedules, and balloon payments.</p>
+      <span class="btn-secondary">Calculate Payments &rarr;</span>
+    </a>
+  </div>
+</div>
+</section>
+
+{% set cta_title = 'Need a Personalized Analysis?' %}
+{% set cta_description = 'Our calculators give you a starting point. Contact CLS CRE for a detailed analysis with real lender quotes tailored to your deal.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

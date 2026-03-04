@@ -1,0 +1,144 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"DSCR Calculator","description":"Free Debt Service Coverage Ratio calculator for commercial real estate. Determine if your property cash flow qualifies for financing.","url":"https://clscre.com/tools/dscr-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a good DSCR for commercial real estate?","acceptedAnswer":{"@type":"Answer","text":"Most lenders require a minimum DSCR of 1.20x to 1.25x for commercial real estate loans. A DSCR above 1.25x is considered strong, while 1.50x or higher gives borrowers the best rates and terms. SBA loans may accept 1.15x, while construction loans often require 1.30x or higher on projected stabilized income."}},{"@type":"Question","name":"How do you calculate DSCR?","acceptedAnswer":{"@type":"Answer","text":"DSCR is calculated by dividing the property's Net Operating Income (NOI) by its annual debt service (total loan payments including principal and interest). For example, if NOI is $150,000 and annual debt service is $120,000, the DSCR is 1.25x."}},{"@type":"Question","name":"What happens if my DSCR is below 1.0x?","acceptedAnswer":{"@type":"Answer","text":"A DSCR below 1.0x means the property's income does not cover its debt payments. Most conventional lenders will not approve a loan with a DSCR below 1.0x. Options include increasing NOI through higher rents or lower expenses, making a larger down payment to reduce the loan amount, or seeking alternative financing such as bridge loans."}},{"@type":"Question","name":"Does DSCR include reserves and capital expenditures?","acceptedAnswer":{"@type":"Answer","text":"Standard DSCR calculations use Net Operating Income (NOI), which does not include reserves or capital expenditures. However, some lenders — particularly life insurance companies and CMBS — may underwrite to a 'stressed' NOI that deducts replacement reserves, typically $250–$500 per unit for multifamily."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"DSCR Calculator","item":"https://clscre.com/tools/dscr-calculator.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}tools/index.html">Calculators</a></li>
+  <li><span>DSCR Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Calculator</div>
+  <h1 class="reveal">DSCR Calculator</h1>
+  <p class="reveal">Calculate your Debt Service Coverage Ratio to determine if your commercial property qualifies for financing. Most lenders require a minimum DSCR of 1.20x&ndash;1.25x.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Calculate Your DSCR</h2>
+      <div class="calc-form">
+        <div class="calc-field">
+          <label for="noi">Net Operating Income (Annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="noi" inputmode="decimal" placeholder="150,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="loanAmount">Loan Amount</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="loanAmount" inputmode="decimal" placeholder="1,000,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="rate">Interest Rate (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="rate" inputmode="decimal" placeholder="6.50"><span class="calc-suffix">%</span></div>
+        </div>
+        <div class="calc-field">
+          <label for="amort">Amortization (Years)</label>
+          <div class="calc-input-wrap"><input type="text" id="amort" inputmode="decimal" placeholder="25"></div>
+        </div>
+        <button class="btn-primary" onclick="calcDSCR()" style="width:100%;justify-content:center;margin-top:8px">Calculate DSCR</button>
+      </div>
+    </div>
+    <div class="calc-result" id="dscrResult" style="display:none">
+      <div class="calc-gauge" id="dscrGauge">
+        <div class="gauge-value" id="dscrValue">--</div>
+        <div class="gauge-label">DSCR</div>
+      </div>
+      <div class="calc-detail-grid">
+        <div class="calc-detail"><span class="calc-detail-label">Annual Debt Service</span><span class="calc-detail-value" id="annualDS">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Monthly Payment</span><span class="calc-detail-value" id="monthlyPmt">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">NOI After Debt</span><span class="calc-detail-value" id="noiAfter">--</span></div>
+      </div>
+      <div class="calc-verdict" id="dscrVerdict"></div>
+      <div class="calc-thresholds">
+        <h3>Typical Lender DSCR Requirements</h3>
+        <div class="threshold-grid">
+          <div class="threshold-item"><span class="threshold-label">Conventional / Bank</span><span class="threshold-val">1.20x&ndash;1.25x</span></div>
+          <div class="threshold-item"><span class="threshold-label">CMBS</span><span class="threshold-val">1.25x&ndash;1.30x</span></div>
+          <div class="threshold-item"><span class="threshold-label">SBA 504</span><span class="threshold-val">1.15x&ndash;1.20x</span></div>
+          <div class="threshold-item"><span class="threshold-label">Life Insurance</span><span class="threshold-val">1.30x&ndash;1.40x</span></div>
+          <div class="threshold-item"><span class="threshold-label">Bridge / Debt Fund</span><span class="threshold-val">1.00x&ndash;1.10x</span></div>
+          <div class="threshold-item"><span class="threshold-label">Agency (Fannie/Freddie)</span><span class="threshold-val">1.20x&ndash;1.25x</span></div>
+        </div>
+      </div>
+      <a href="{{ depth }}contact.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Get a Personalized Quote &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- RELATED TOOLS -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More Calculators</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}tools/cap-rate-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cap Rate Calculator</div><div class="cl-sub">Property valuation</div></a>
+    <a href="{{ depth }}tools/loan-calculator.html" class="cross-link-card reveal"><div class="cl-title">Loan Payment Calculator</div><div class="cl-sub">Monthly payment estimates</div></a>
+  </div>
+</div>
+</section>
+
+<!-- RELATED CONTENT -->
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Related Financing Programs</h2>
+  <div class="cross-link-grid">
+    {% for lt in all_loan_types %}
+    <a href="{{ depth }}financing/{{ lt.slug }}.html" class="cross-link-card reveal"><div class="cl-title">{{ lt.name }}</div><div class="cl-sub">{{ lt.key_features.rates }}</div></a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+{% set faq_title = 'DSCR Calculator FAQ' %}
+{% set faq_alt = true %}
+{% set faqs = [
+  {"q": "What is a good DSCR for commercial real estate?", "a": "Most lenders require a minimum DSCR of 1.20x to 1.25x for commercial real estate loans. A DSCR above 1.25x is considered strong, while 1.50x or higher gives borrowers the best rates and terms. SBA loans may accept 1.15x, while construction loans often require 1.30x or higher on projected stabilized income."},
+  {"q": "How do you calculate DSCR?", "a": "DSCR is calculated by dividing the property's Net Operating Income (NOI) by its annual debt service (total loan payments including principal and interest). For example, if NOI is $150,000 and annual debt service is $120,000, the DSCR is 1.25x."},
+  {"q": "What happens if my DSCR is below 1.0x?", "a": "A DSCR below 1.0x means the property's income does not cover its debt payments. Most conventional lenders will not approve a loan with a DSCR below 1.0x. Options include increasing NOI through higher rents or lower expenses, making a larger down payment to reduce the loan amount, or seeking alternative financing such as bridge loans."},
+  {"q": "Does DSCR include reserves and capital expenditures?", "a": "Standard DSCR calculations use Net Operating Income (NOI), which does not include reserves or capital expenditures. However, some lenders — particularly life insurance companies and CMBS — may underwrite to a 'stressed' NOI that deducts replacement reserves, typically $250–$500 per unit for multifamily."}
+] %}
+{% include '_faq_section.html' %}
+
+{% set cta_title = 'Get a Real Lender Quote' %}
+{% set cta_description = 'Calculators give you an estimate. CLS CRE gives you real quotes from 1,000+ lenders with rates and terms tailored to your deal.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+function parseNum(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0}
+function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+function calcDSCR(){
+  var noi=parseNum('noi'),loan=parseNum('loanAmount'),rate=parseNum('rate')/100/12,amort=parseNum('amort')*12;
+  if(!noi||!loan||!rate||!amort)return;
+  var monthly=loan*(rate*Math.pow(1+rate,amort))/(Math.pow(1+rate,amort)-1);
+  var annual=monthly*12;
+  var dscr=noi/annual;
+  document.getElementById('dscrValue').textContent=dscr.toFixed(2)+'x';
+  document.getElementById('annualDS').textContent=fmt(annual);
+  document.getElementById('monthlyPmt').textContent=fmt(monthly);
+  document.getElementById('noiAfter').textContent=fmt(noi-annual);
+  var g=document.getElementById('dscrGauge');
+  g.className='calc-gauge'+(dscr>=1.25?' gauge-green':dscr>=1.0?' gauge-yellow':' gauge-red');
+  var v=document.getElementById('dscrVerdict');
+  if(dscr>=1.25)v.innerHTML='<strong>Strong DSCR.</strong> Your property exceeds most lender minimums. You should qualify for competitive conventional, agency, or life company financing.';
+  else if(dscr>=1.0)v.innerHTML='<strong>Marginal DSCR.</strong> Some lenders may approve this, but expect higher rates or additional requirements. SBA or bridge financing may be better options.';
+  else v.innerHTML='<strong>Below breakeven.</strong> The property does not generate enough income to cover debt service. Consider a larger down payment, lower leverage, or value-add strategy to increase NOI before applying.';
+  document.getElementById('dscrResult').style.display='block';
+}
+</script>
+{% endblock %}
