@@ -391,7 +391,7 @@ def main():
         page_count += 1
         sitemap_urls.append({
             "loc": f"{BASE_URL}/blog/{article['slug']}.html",
-            "lastmod": article["date"], "changefreq": "monthly", "priority": "0.8",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8",
         })
     print(f"  [OK] blog/*.html  ({len(articles)} article pages)")
 
