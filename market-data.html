@@ -396,17 +396,66 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
 </section>
 
 <!-- RATE COMMENTARY -->
+<style>
+.commentary-history{margin-top:40px}
+.commentary-history h3{font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:20px}
+.commentary-accordion .commentary-hist-item{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;margin-bottom:12px;overflow:hidden}
+.commentary-accordion .commentary-hist-btn{width:100%;display:flex;align-items:center;justify-content:space-between;padding:18px 24px;background:none;border:none;cursor:pointer;font-family:var(--font-display);font-size:18px;color:var(--navy);text-align:left;transition:background .2s}
+.commentary-accordion .commentary-hist-btn:hover{background:rgba(0,106,78,.03)}
+.commentary-accordion .commentary-hist-btn::after{content:'+';font-size:22px;font-weight:300;color:var(--gray-500);transition:transform .3s}
+.commentary-accordion .commentary-hist-item.open .commentary-hist-btn::after{content:'\2212'}
+.commentary-accordion .commentary-hist-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.commentary-accordion .commentary-hist-body-inner{padding:0 24px 24px}
+.commentary-accordion .commentary-hist-body-inner p{font-size:15px;color:var(--gray-700);line-height:1.75;margin-bottom:12px}
+.commentary-accordion .commentary-hist-body-inner p:last-child{margin-bottom:0}
+</style>
 <section class="commentary">
 <div class="section-inner">
   <div class="section-label reveal">Rate Commentary</div>
   <div class="section-title reveal">CLS CRE Market Perspective</div>
   <div class="commentary-box reveal">
-    <h3>February 2026 Rate Environment</h3>
-    <p>The Fed held rates at 3.50&ndash;3.75% at the January meeting, and the March decision is widely expected to be another hold. Inflation continues to moderate — January CPI dropped to 2.4% — but the Fed wants sustained evidence before cutting further. Markets expect the next cut in mid-2026.</p>
-    <p>For CRE borrowers, this means the 10-Year Treasury remains range-bound between 3.9&ndash;4.3%, and permanent financing rates have stabilized. Life insurance company rates remain the most competitive at 5.50&ndash;6.25% for stabilized assets, while bank and CMBS spreads have tightened ~20bp since Q4 2025.</p>
-    <p>Construction and bridge rates continue to compress as debt fund competition intensifies. We're seeing bridge rates as low as S+275 for strong sponsors, and construction rates at S+325&ndash;375 depending on leverage and asset type. This is a meaningful improvement from the 2024 peak.</p>
-    <p>The yield curve has fully normalized after its historic 2022&ndash;2024 inversion. The positive slope supports the case for economic stability, though elevated long-end yields reflect fiscal deficit concerns and persistent term premium.</p>
+    <h3>March 2026 Rate Environment</h3>
+    <p>As expected, the Fed held rates at 3.50&ndash;3.75% at the March 18 meeting, the second consecutive hold following the January pause. Chair Powell's press conference struck a measured tone &mdash; acknowledging continued progress on inflation while emphasizing the Committee's data-dependent posture. The updated dot plot shifted marginally hawkish, with the median projection now implying one additional cut in 2026 rather than two, pushing consensus expectations for the next move to June or July.</p>
+    <p>The inflation picture continues to improve. February CPI came in at 2.3% annual, extending the downtrend from 2.9% in December and 2.4% in January. Core PCE &mdash; the Fed's preferred gauge &mdash; has edged down to approximately 2.6%, moving closer to but not yet at the 2% target. The labor market is cooperating: February nonfarm payrolls came in below 150K, and the unemployment rate ticked up to 4.1%, consistent with the gradual cooling the Fed has been looking for without signaling distress.</p>
+    <p>For CRE borrowers, the 10-Year Treasury at 4.09% is essentially unchanged from last month and well below the 4.31% level seen in January. This stability has been constructive for permanent financing &mdash; life company rates remain the most competitive at 5.40&ndash;6.15% for stabilized assets, and CMBS spreads have tightened another 10&ndash;15bp quarter-over-quarter. Bridge and construction rates continue to compress as debt fund capital deployment ramps into Q2. We are quoting bridge at S+250&ndash;300 for institutional sponsors and construction at S+300&ndash;350, both meaningfully tighter than year-ago levels.</p>
+    <p>The yield curve remains positively sloped with the 2s/10s spread at approximately 62bp, reinforcing the post-inversion normalization theme. However, the long end &mdash; the 30-Year at 4.71% &mdash; reflects persistent term premium driven by fiscal deficit concerns and Treasury supply dynamics. Borrowers with near-term financing needs should take advantage of the current rate stability; the consensus view is that the 10-Year trades in a 3.9&ndash;4.2% range through mid-year, but any upside inflation surprise could reprice that band quickly.</p>
   </div>
+
+  <div class="commentary-history reveal">
+    <h3>Previous Market Perspectives</h3>
+    <div class="commentary-accordion">
+
+      <div class="commentary-hist-item">
+        <button class="commentary-hist-btn">February 2026 Rate Environment</button>
+        <div class="commentary-hist-body"><div class="commentary-hist-body-inner">
+          <p>The Fed held rates at 3.50&ndash;3.75% at the January meeting, and the March decision was widely expected to be another hold. Inflation continued to moderate &mdash; January CPI dropped to 2.4% &mdash; but the Fed wanted sustained evidence before cutting further. Markets expected the next cut in mid-2026.</p>
+          <p>For CRE borrowers, the 10-Year Treasury remained range-bound between 3.9&ndash;4.3%, and permanent financing rates had stabilized. Life insurance company rates were the most competitive at 5.50&ndash;6.25% for stabilized assets, while bank and CMBS spreads tightened approximately 20bp since Q4 2025.</p>
+          <p>Construction and bridge rates continued to compress as debt fund competition intensified. Bridge rates were available as low as S+275 for strong sponsors, and construction rates at S+325&ndash;375 depending on leverage and asset type &mdash; a meaningful improvement from the 2024 peak.</p>
+          <p>The yield curve had fully normalized after its historic 2022&ndash;2024 inversion. The positive slope supported the case for economic stability, though elevated long-end yields reflected fiscal deficit concerns and persistent term premium.</p>
+        </div></div>
+      </div>
+
+      <div class="commentary-hist-item">
+        <button class="commentary-hist-btn">January 2026 Rate Environment</button>
+        <div class="commentary-hist-body"><div class="commentary-hist-body-inner">
+          <p>The Fed entered the new year with rates at 3.50&ndash;3.75% following the December 2025 hold, having delivered 175bp of cumulative cuts since September 2024. December CPI came in at 2.9% annual, a meaningful step down from the 3.0&ndash;3.4% range that persisted through most of 2025 but still above the 2% target. The January FOMC meeting was expected to be a straightforward hold as the Committee assessed the lagged impact of prior easing.</p>
+          <p>The 10-Year Treasury opened January near 4.31%, reflecting upward pressure from Q4 2025 fiscal concerns and heavy issuance. CRE lending markets were cautiously optimistic heading into the year &mdash; life company allocations for 2026 opened strong, and several CMBS conduits reported healthy pipelines. Bridge lenders were actively competing for market share, with spreads continuing to drift lower from 2024 highs.</p>
+          <p>Market consensus at the start of the year called for 50&ndash;75bp of additional cuts in 2026, contingent on inflation reaching and sustaining near 2%. The key question was timing: would the data support a June cut, or would the Fed wait until the second half?</p>
+        </div></div>
+      </div>
+
+      <div class="commentary-hist-item">
+        <button class="commentary-hist-btn">December 2025 Rate Environment</button>
+        <div class="commentary-hist-body"><div class="commentary-hist-body-inner">
+          <p>The Fed held rates at 3.50&ndash;3.75% at the December meeting after delivering a 25bp cut in November, bringing the cumulative easing to 175bp since the September 2024 pivot. The decision to pause reflected a Committee that had moved aggressively and wanted to let the data catch up. The updated Summary of Economic Projections showed a modestly higher terminal rate expectation for 2026, tempering market enthusiasm for rapid further cuts.</p>
+          <p>CRE markets closed 2025 on a positive note. Transaction volume had picked up meaningfully in Q4 as bid-ask spreads narrowed, particularly in multifamily and industrial. The 10-Year Treasury ended the year near 4.29%, with the 2s/10s spread firmly positive at roughly 50bp &mdash; the first sustained positive slope since mid-2022.</p>
+          <p>Bridge and construction lending markets saw the most competitive conditions since early 2022, with debt funds eager to deploy capital before year-end. The improving rate backdrop and normalizing yield curve set a constructive tone for the year ahead.</p>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 </section>
 
@@ -476,6 +525,23 @@ const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
 mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
 navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); }); });
+
+// Commentary accordion
+document.querySelectorAll('.commentary-hist-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const body = item.querySelector('.commentary-hist-body');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.commentary-hist-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.commentary-hist-body').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      body.style.maxHeight = body.scrollHeight + 'px';
+    }
+  });
+});
 
 // =============================================
 // INTERACTIVE YIELD CURVE
