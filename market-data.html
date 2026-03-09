@@ -281,14 +281,17 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
   <div class="yc-container reveal">
     <div class="yc-controls">
       <div class="yc-control">
-        <label><span class="yc-color-dot" style="background:#153D63"></span> Curve 1</label>
+        <label><svg width="24" height="4" style="flex-shrink:0"><line x1="0" y1="2" x2="24" y2="2" stroke="#153D63" stroke-width="3" stroke-linecap="round"/></svg> Today (Solid)</label>
         <select id="ycDate1"></select>
       </div>
       <div class="yc-control">
-        <label><span class="yc-color-dot" style="background:#006A4E"></span> Curve 2 (Compare)</label>
+        <label><svg width="24" height="4" style="flex-shrink:0"><line x1="0" y1="2" x2="24" y2="2" stroke="#006A4E" stroke-width="2.5" stroke-dasharray="5,3" stroke-linecap="round"/></svg> Compare (Dashed)</label>
         <select id="ycDate2"></select>
       </div>
       <div class="yc-quick-btns">
+        <button class="yc-quick-btn" data-preset="1m">1M Ago</button>
+        <button class="yc-quick-btn" data-preset="3m">3M Ago</button>
+        <button class="yc-quick-btn" data-preset="6m">6M Ago</button>
         <button class="yc-quick-btn active" data-preset="1y">1Y Ago</button>
         <button class="yc-quick-btn" data-preset="2y">2Y Ago</button>
         <button class="yc-quick-btn" data-preset="peak">Peak Inversion</button>
@@ -300,8 +303,8 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
       <div class="yc-tooltip" id="ycTooltip"></div>
     </div>
     <div class="yc-legend">
-      <div class="yc-legend-item"><div class="yc-legend-line" style="background:#153D63"></div><span id="ycLegend1">Feb 2026</span></div>
-      <div class="yc-legend-item"><div class="yc-legend-line" style="background:#006A4E;opacity:.7"></div><span id="ycLegend2">Feb 2025</span></div>
+      <div class="yc-legend-item"><svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#153D63" stroke-width="3" stroke-linecap="round"/></svg><span id="ycLegend1">Feb 2026</span></div>
+      <div class="yc-legend-item"><svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#006A4E" stroke-width="2.5" stroke-dasharray="5,3" stroke-linecap="round"/></svg><span id="ycLegend2">Feb 2025</span></div>
       <div class="yc-spread">2s/10s Spread: <strong id="ycSpread">+62bp</strong></div>
     </div>
   </div>
@@ -605,7 +608,7 @@ navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', 
     // Curve 2 (comparison, drawn first = behind)
     let pts2 = '';
     d2.forEach((v, i) => { pts2 += getX(i)+','+getY(v, yMin, yMax)+' '; });
-    html += '<polyline class="yc-line" fill="none" stroke="'+COLORS.c2+'" stroke-width="2.5" stroke-dasharray="6,4" opacity=".6" stroke-linecap="round" stroke-linejoin="round" points="'+pts2.trim()+'"/>';
+    html += '<polyline class="yc-line" fill="none" stroke="'+COLORS.c2+'" stroke-width="2.5" stroke-dasharray="8,5" opacity=".55" stroke-linecap="round" stroke-linejoin="round" points="'+pts2.trim()+'"/>';
 
     // Curve 2 area fill
     html += '<polygon fill="'+COLORS.c2+'" opacity=".04" points="'+getX(0)+','+(PAD.t+CH)+' '+pts2.trim()+' '+getX(10)+','+(PAD.t+CH)+'"/>';
@@ -618,16 +621,16 @@ navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', 
     // Curve 1 area fill
     html += '<polygon fill="'+COLORS.c1+'" opacity=".04" points="'+getX(0)+','+(PAD.t+CH)+' '+pts1.trim()+' '+getX(10)+','+(PAD.t+CH)+'"/>';
 
-    // Dots for curve 2
+    // Dots for curve 2 (hollow/ring style to distinguish from curve 1)
     d2.forEach((v, i) => {
       const x = getX(i), y = getY(v, yMin, yMax);
-      html += '<circle cx="'+x+'" cy="'+y+'" r="3.5" fill="'+COLORS.c2+'" stroke="white" stroke-width="2" opacity=".7"/>';
+      html += '<circle cx="'+x+'" cy="'+y+'" r="4" fill="white" stroke="'+COLORS.c2+'" stroke-width="2" opacity=".7"/>';
     });
 
-    // Dots for curve 1
+    // Dots for curve 1 (solid filled)
     d1.forEach((v, i) => {
       const x = getX(i), y = getY(v, yMin, yMax);
-      html += '<circle cx="'+x+'" cy="'+y+'" r="4" fill="'+COLORS.c1+'" stroke="white" stroke-width="2"/>';
+      html += '<circle cx="'+x+'" cy="'+y+'" r="4.5" fill="'+COLORS.c1+'" stroke="white" stroke-width="2"/>';
     });
 
     // Invisible hover targets (larger hit area)
@@ -689,20 +692,34 @@ navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', 
     document.querySelectorAll('.yc-quick-btn').forEach(b => b.classList.remove('active'));
   }
 
+  function closestDate(target) {
+    return DATES.includes(target) ? target : DATES.reduce((p, c) => Math.abs(new Date(c) - new Date(target)) < Math.abs(new Date(p) - new Date(target)) ? c : p);
+  }
+  function offsetMonths(dateStr, months) {
+    const [y, m] = dateStr.split('-').map(Number);
+    const d = new Date(y, m - 1 - months, 1);
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
+  }
   const PRESETS = {
+    '1m': function() {
+      sel1.value = DATES[DATES.length - 1];
+      sel2.value = closestDate(offsetMonths(sel1.value, 1));
+    },
+    '3m': function() {
+      sel1.value = DATES[DATES.length - 1];
+      sel2.value = closestDate(offsetMonths(sel1.value, 3));
+    },
+    '6m': function() {
+      sel1.value = DATES[DATES.length - 1];
+      sel2.value = closestDate(offsetMonths(sel1.value, 6));
+    },
     '1y': function() {
       sel1.value = DATES[DATES.length - 1];
-      const y = parseInt(sel1.value.split('-')[0]) - 1;
-      const m = sel1.value.split('-')[1];
-      const target = y + '-' + m;
-      sel2.value = DATES.includes(target) ? target : DATES.reduce((p, c) => Math.abs(new Date(c) - new Date(target)) < Math.abs(new Date(p) - new Date(target)) ? c : p);
+      sel2.value = closestDate(offsetMonths(sel1.value, 12));
     },
     '2y': function() {
       sel1.value = DATES[DATES.length - 1];
-      const y = parseInt(sel1.value.split('-')[0]) - 2;
-      const m = sel1.value.split('-')[1];
-      const target = y + '-' + m;
-      sel2.value = DATES.includes(target) ? target : DATES.reduce((p, c) => Math.abs(new Date(c) - new Date(target)) < Math.abs(new Date(p) - new Date(target)) ? c : p);
+      sel2.value = closestDate(offsetMonths(sel1.value, 24));
     },
     'peak': function() {
       sel1.value = DATES[DATES.length - 1];
