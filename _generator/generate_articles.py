@@ -204,7 +204,7 @@ def main():
 
     # ── Type A: City Market Reports (15) ─────────────────────────────
     print("\n  --- Type A: City Market Reports ---")
-    type_a_dates = stagger_dates("2025-10-01", 15, 4)
+    type_a_dates = stagger_dates("2026-01-05", 15, 4)
 
     for i, city_slug in enumerate(MARKET_REPORT_CITIES):
         city = city_by_slug[city_slug]
@@ -237,7 +237,7 @@ def main():
 
     # ── Type B: City × Loan Type Guides (90) ─────────────────────────
     print("\n  --- Type B: City × Loan Type Guides ---")
-    type_b_dates = stagger_dates("2025-10-15", len(LOAN_GUIDE_COMBOS), 1)
+    type_b_dates = stagger_dates("2026-01-10", len(LOAN_GUIDE_COMBOS), 1)
 
     for i, (loan_slug, loan_key, city_slug) in enumerate(LOAN_GUIDE_COMBOS):
         city = city_by_slug[city_slug]
@@ -270,7 +270,7 @@ def main():
 
     # ── Type C: City × Property Type Guides (90) ─────────────────────
     print("\n  --- Type C: City × Property Type Guides ---")
-    type_c_dates = stagger_dates("2025-11-01", len(PROPERTY_GUIDE_COMBOS), 1)
+    type_c_dates = stagger_dates("2026-01-15", len(PROPERTY_GUIDE_COMBOS), 1)
 
     for i, (prop_slug, city_slug) in enumerate(PROPERTY_GUIDE_COMBOS):
         city = city_by_slug[city_slug]
