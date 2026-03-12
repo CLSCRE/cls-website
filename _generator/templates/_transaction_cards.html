@@ -7,7 +7,7 @@
   <div class="txn-grid">
     {% for txn in transactions[:6] %}
     <div class="txn-card reveal">
-      <img src="{{ txn.image }}" alt="{{ txn.property_type }} - {{ txn.city }}, {{ txn.state }}" class="txn-photo" loading="lazy" width="400" height="200">
+      <img src="{{ depth }}{{ txn.image }}" alt="{{ txn.property_type }} - {{ txn.city }}, {{ txn.state }}" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge {{ txn.category }}">{{ txn.category|replace('perm','Permanent')|replace('constr','Construction')|replace('bridge','Bridge') }}</div>
         <div class="txn-amount">{{ txn.amount }}</div>
