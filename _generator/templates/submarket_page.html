@@ -1,0 +1,104 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Real Estate Financing in {{ neighborhood }}, {{ city.city }} | CLS CRE","url":"https://clscre.com/markets/{{ city.slug }}/{{ neighborhood_slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":{"@type":"Place","name":"{{ neighborhood }}","containedInPlace":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Locations","item":"https://clscre.com/locations.html"},{"@type":"ListItem","position":3,"name":"{{ city.city }}","item":"https://clscre.com/markets/{{ city.slug }}/"},{"@type":"ListItem","position":4,"name":"{{ neighborhood }}","item":"https://clscre.com/markets/{{ city.slug }}/{{ neighborhood_slug }}.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}locations.html">Locations</a></li>
+  <li><a href="{{ depth }}markets/{{ city.slug }}/">{{ city.city }}</a></li>
+  <li><span>{{ neighborhood }}</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">{{ neighborhood }} Commercial Loans</div>
+  <h1 class="reveal">Commercial Real Estate Financing in {{ neighborhood }}, {{ city.city }}</h1>
+  <p class="reveal">CLS CRE provides commercial mortgage brokerage for investors and owners in {{ neighborhood }}, {{ city.city }}, {{ city.state }}. Access competitive rates from 1,000+ lenders for acquisitions, refinances, and new construction.</p>
+  <a href="{{ depth }}contact.html" class="btn-primary reveal">Get a {{ neighborhood }} Quote &rarr;</a>
+</div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">{{ neighborhood }} Overview</div>
+  <h2 class="section-title reveal">Commercial Real Estate Financing in {{ neighborhood }}</h2>
+  <p class="reveal">{{ neighborhood }} is one of the key submarkets within the {{ city.metro }} metropolitan area. Whether you are acquiring, refinancing, or developing commercial property in {{ neighborhood }}, CLS CRE connects you with the most competitive financing available from banks, credit unions, life insurance companies, CMBS conduits, and private capital sources.</p>
+  <p class="reveal">As part of the broader {{ city.city }} market, {{ neighborhood }} benefits from the region's deep lender competition and strong investor demand. Our team structures loans from $500K to $100M+ for every property type and business plan in {{ neighborhood }} and surrounding areas.</p>
+</div>
+</section>
+
+<!-- FINANCING PROGRAMS -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Financing Programs in {{ city.city }}</h2>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore loan programs available for {{ neighborhood }} and the broader {{ city.city }} market.</p>
+  <div class="cross-link-grid">
+    {% for lt in all_loan_types %}
+    <a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ lt.name }}</div>
+      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- PROPERTY TYPES -->
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Property Types in {{ neighborhood }}</h2>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">CLS CRE finances every major commercial property type in the {{ city.metro }} market.</p>
+  <div class="cross-link-grid">
+    {% for pt in all_property_types %}
+    <a href="{{ depth }}property/{{ pt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ pt.name }}</div>
+      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- TRANSACTIONS -->
+{% set txn_title = 'Recent Deals Near ' + neighborhood + ', ' + city.city %}
+{% set txn_desc = 'Selected transactions in and around the ' + city.metro + ' market.' %}
+{% set txn_alt = true %}
+{% include '_transaction_cards.html' %}
+
+<!-- OTHER NEIGHBORHOODS -->
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Other Neighborhoods in {{ city.city }}</h2>
+  <div class="pill-links">
+    {% for n in other_neighborhoods %}
+    <a href="{{ depth }}markets/{{ city.slug }}/{{ n.slug }}.html" class="pill-link">{{ n.name }}</a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+{% set faq_title = 'Commercial Loans in ' + neighborhood + ', ' + city.city + ' FAQ' %}
+{% include '_faq_section.html' %}
+
+<!-- CTA -->
+{% set cta_title = 'Get Commercial Financing in ' + neighborhood %}
+{% set cta_description = 'Contact CLS CRE for a free, no-obligation quote on commercial real estate financing in ' + neighborhood + ', ' + city.city + '. We respond within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

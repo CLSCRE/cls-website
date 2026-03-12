@@ -85,6 +85,7 @@
         </div>
       </div>
       <div class="loc-card-neighborhoods">
+        <a href="{{ depth }}markets/{{ city.slug }}/" class="loc-neighborhood loc-neighborhood-link" style="font-weight:600;color:var(--green-dark,var(--navy))">All Neighborhoods &rarr;</a>
         {% for n in city.neighborhoods %}
         <span class="loc-neighborhood">{{ n }}</span>
         {% endfor %}

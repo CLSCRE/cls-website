@@ -2,11 +2,12 @@
 """
 CLS CRE — Programmatic SEO Static Site Generator
 
-Generates ~192 static HTML pages for commercial lending SEO:
+Generates ~560+ static HTML pages for commercial lending SEO:
   - 6 loan type hub pages
   - 6 property type hub pages
   - 90 city × loan type pages
   - 90 city × property type pages
+  - 366 submarket / neighborhood pages (61 cities × 6 neighborhoods)
   - sitemap.xml + robots.txt
 """
 import sys
@@ -80,6 +81,54 @@ def build_city_faqs(templates, loan=None, prop=None, city=None):
     return faqs
 
 
+def slugify_neighborhood(name: str) -> str:
+    """Convert a neighborhood name to a URL-safe slug."""
+    slug = name.lower()
+    # Replace & with "and", common in neighborhood names
+    slug = slug.replace("&", "and")
+    # Replace apostrophes, dots, and other special chars
+    slug = slug.replace("'", "").replace("'", "")
+    slug = re.sub(r'[^a-z0-9\s-]', '', slug)
+    slug = re.sub(r'[\s]+', '-', slug.strip())
+    slug = re.sub(r'-+', '-', slug)
+    return slug
+
+
+def build_neighborhood_faqs(city, neighborhood, city_data=None):
+    """Build neighborhood-specific FAQs with city stats where available."""
+    city_name = city["city"]
+    state = city["state"]
+    stats = city_data.get("stats", {}) if city_data else {}
+
+    rate_info = ""
+    if stats.get("multifamily_cap_rate"):
+        rate_info = f" Current cap rates for multifamily in the {city_name} metro range from {stats['multifamily_cap_rate']}, with industrial at {stats.get('industrial_cap_rate', 'competitive levels')}."
+
+    vacancy_info = ""
+    if stats.get("multifamily_vacancy"):
+        vacancy_info = f" The {city_name} metro currently has multifamily vacancy around {stats['multifamily_vacancy']} and industrial vacancy near {stats.get('industrial_vacancy', 'low levels')}."
+
+    faqs = [
+        {
+            "q": f"What commercial loan options are available in {neighborhood}?",
+            "a": f"CLS CRE provides a full range of commercial loan products for {neighborhood}, {city_name} properties, including permanent loans, bridge loans, construction financing, SBA 504/7(a) loans, mezzanine debt, and specialty financing. We source from 1,000+ lenders to find the most competitive terms for your specific property and business plan.{rate_info}",
+        },
+        {
+            "q": f"What types of commercial properties are in {neighborhood}?",
+            "a": f"{neighborhood} features a diverse mix of commercial real estate, including multifamily apartments, industrial and warehouse space, retail centers, office buildings, mixed-use developments, and hospitality properties. CLS CRE finances all major property types in {neighborhood} and the broader {city_name} market.{vacancy_info}",
+        },
+        {
+            "q": f"How do I get a commercial mortgage in {neighborhood}, {city_name}?",
+            "a": f"Contact CLS CRE for a free, no-obligation quote on commercial financing in {neighborhood}, {city_name}, {state}. Our team will analyze your property, business plan, and financial profile to identify the best lender match from our network of 1,000+ capital sources. Most borrowers receive term sheets within 48-72 hours of submitting a complete loan request.",
+        },
+        {
+            "q": f"What are commercial real estate rates in {neighborhood}?",
+            "a": f"Commercial real estate rates in {neighborhood} and the {city_name} metro vary by loan type, property type, leverage, and borrower profile. Permanent loan rates typically range from 5.34% to 8.25%, bridge loans from 7.5% to 12%, and construction loans from 8% to 13%. CLS CRE leverages lender competition to secure the most aggressive pricing available for your deal.",
+        },
+    ]
+    return faqs
+
+
 def minify_css(src_path: Path, dst_path: Path):
     """Simple CSS minification: strip comments, collapse whitespace."""
     css = src_path.read_text(encoding="utf-8")
@@ -124,6 +173,7 @@ def main():
     property_types = load_json("property_types.json")
     cities = load_json("cities.json")
     faqs_data = load_json("faqs.json")
+    article_city_data = load_json("article_city_data.json")
 
     # ── Setup Jinja2 ───────────────────────────────────────────────────
     env = Environment(
@@ -162,6 +212,7 @@ def main():
     (WEBSITE_DIR / "property").mkdir(exist_ok=True)
     (WEBSITE_DIR / "blog").mkdir(exist_ok=True)
     (WEBSITE_DIR / "tools").mkdir(exist_ok=True)
+    (WEBSITE_DIR / "markets").mkdir(exist_ok=True)
 
     # ── Build article-to-slug map for hub cross-links ─────────────────
     TAG_TO_SLUG = {
@@ -421,7 +472,85 @@ def main():
     })
     print(f"  [OK] locations.html  ({len(cities)} cities)")
 
-    # ── 8. Calculator / Tool Pages ──────────────────────────────────────
+    # ── 8. Submarket / Neighborhood Pages ───────────────────────────────
+    print("\n=== Generating Submarket / Neighborhood Pages ===")
+    tpl_submarket = env.get_template("submarket_page.html")
+    tpl_market_index = env.get_template("market_city_index.html")
+    submarket_count = 0
+    for city in cities:
+        neighborhoods = city.get("neighborhoods", [])
+        if not neighborhoods:
+            continue
+        # Build neighborhood slug list for cross-linking
+        neighborhood_list = []
+        for n in neighborhoods:
+            neighborhood_list.append({
+                "name": n,
+                "slug": slugify_neighborhood(n),
+            })
+        # Create city market directory
+        city_market_dir = WEBSITE_DIR / "markets" / city["slug"]
+        city_market_dir.mkdir(parents=True, exist_ok=True)
+        # Get city data for FAQ enrichment
+        city_data = article_city_data.get(city["slug"], {})
+        # Get transactions for the state
+        txns = filter_transactions(transactions, state=city["state"])
+        if not txns:
+            txns = transactions[:3]
+        # Generate each neighborhood page
+        for n_info in neighborhood_list:
+            n_name = n_info["name"]
+            n_slug = n_info["slug"]
+            # Other neighborhoods for cross-links (exclude current)
+            other_neighborhoods = [nb for nb in neighborhood_list if nb["slug"] != n_slug]
+            faqs = build_neighborhood_faqs(city, n_name, city_data)
+            seo = {
+                "title": f"{n_name} Commercial Loans | CLS CRE",
+                "meta_description": f"Commercial real estate financing in {n_name}, {city['city']}, {city['state']}. Bridge, permanent, construction, and SBA loans from 1,000+ lenders. Get a free quote.",
+            }
+            canonical = f"markets/{city['slug']}/{n_slug}.html"
+            html = tpl_submarket.render(
+                **shared,
+                city=city,
+                neighborhood=n_name,
+                neighborhood_slug=n_slug,
+                other_neighborhoods=other_neighborhoods,
+                seo=seo,
+                canonical_path=canonical,
+                depth="../../",
+                transactions=txns,
+                faqs=faqs,
+            )
+            out_path = city_market_dir / f"{n_slug}.html"
+            out_path.write_text(html, encoding="utf-8")
+            page_count += 1
+            submarket_count += 1
+            sitemap_urls.append({
+                "loc": f"{BASE_URL}/{canonical}",
+                "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6",
+            })
+        # Generate city market index page
+        seo_index = {
+            "title": f"Commercial Real Estate Financing in {city['city']}, {city['state']} | CLS CRE",
+            "meta_description": f"Explore commercial lending options by neighborhood in {city['city']}, {city['state']}. Browse {len(neighborhoods)} submarkets with financing for every property type.",
+        }
+        html = tpl_market_index.render(
+            **shared,
+            city=city,
+            neighborhoods=neighborhood_list,
+            seo=seo_index,
+            canonical_path=f"markets/{city['slug']}/",
+            depth="../../",
+        )
+        (city_market_dir / "index.html").write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/markets/{city['slug']}/",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+        })
+    print(f"  [OK] markets/*/*.html  ({submarket_count} neighborhood pages + {len(cities)} city index pages)")
+
+    # ── 9. Calculator / Tool Pages ──────────────────────────────────────
     print("\n=== Generating Calculator Pages ===")
     tool_pages = [
         ("tool_index.html", "tools/index.html", "tools/", "Calculators & Tools | CLS CRE",
@@ -450,7 +579,7 @@ def main():
         })
         print(f"  [OK] {out_rel}")
 
-    # ── 9. CSS Minification ──────────────────────────────────────────
+    # ── 10. CSS Minification ─────────────────────────────────────────
     print("\n=== Minifying CSS ===")
     css_dir = WEBSITE_DIR / "css"
     for css_file in ["global.css", "pages.css"]:
@@ -458,14 +587,14 @@ def main():
         dst = css_dir / css_file.replace(".css", ".min.css")
         minify_css(src, dst)
 
-    # ── 10. Sitemap.xml ─────────────────────────────────────────────────
+    # ── 11. Sitemap.xml ─────────────────────────────────────────────────
     print("\n=== Generating sitemap.xml ===")
     tpl_sitemap = env.get_template("sitemap.xml.j2")
     sitemap_xml = tpl_sitemap.render(urls=sitemap_urls)
     (WEBSITE_DIR / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
     print(f"  [OK] sitemap.xml  ({len(sitemap_urls)} URLs)")
 
-    # ── 6. Robots.txt ──────────────────────────────────────────────────
+    # ── 12. Robots.txt ─────────────────────────────────────────────────
     print("\n=== Generating robots.txt ===")
     robots = f"""User-agent: *
 Allow: /
