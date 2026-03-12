@@ -318,7 +318,7 @@ def main():
             "title": "CRE Insights & Market Analysis | CLS CRE Blog",
             "meta_description": "Expert insights on commercial real estate financing, interest rates, market trends, and investment strategies from CLS CRE.",
         },
-        canonical_path="blog/index.html",
+        canonical_path="blog/",
         depth="../",
     )
     (WEBSITE_DIR / "blog" / "index.html").write_text(html, encoding="utf-8")
@@ -424,28 +424,28 @@ def main():
     # ── 8. Calculator / Tool Pages ──────────────────────────────────────
     print("\n=== Generating Calculator Pages ===")
     tool_pages = [
-        ("tool_index.html", "tools/index.html", "Calculators & Tools | CLS CRE",
+        ("tool_index.html", "tools/index.html", "tools/", "Calculators & Tools | CLS CRE",
          "Free commercial real estate calculators for DSCR, cap rate, and loan payments.", "0.8"),
-        ("tool_dscr.html", "tools/dscr-calculator.html", "DSCR Calculator | CLS CRE",
+        ("tool_dscr.html", "tools/dscr-calculator.html", "tools/dscr-calculator.html", "DSCR Calculator | CLS CRE",
          "Free Debt Service Coverage Ratio calculator for commercial real estate.", "0.8"),
-        ("tool_caprate.html", "tools/cap-rate-calculator.html", "Cap Rate Calculator | CLS CRE",
+        ("tool_caprate.html", "tools/cap-rate-calculator.html", "tools/cap-rate-calculator.html", "Cap Rate Calculator | CLS CRE",
          "Free capitalization rate calculator for commercial real estate.", "0.8"),
-        ("tool_loan.html", "tools/loan-calculator.html", "Commercial Loan Payment Calculator | CLS CRE",
+        ("tool_loan.html", "tools/loan-calculator.html", "tools/loan-calculator.html", "Commercial Loan Payment Calculator | CLS CRE",
          "Free commercial mortgage payment calculator with I/O periods and amortization.", "0.8"),
     ]
-    for tpl_name, out_rel, title, desc, priority in tool_pages:
+    for tpl_name, out_rel, canonical, title, desc, priority in tool_pages:
         tpl_tool = env.get_template(tpl_name)
         html = tpl_tool.render(
             **shared,
             seo={"title": title, "meta_description": desc},
-            canonical_path=out_rel,
+            canonical_path=canonical,
             depth="../",
         )
         out_path = WEBSITE_DIR / out_rel
         out_path.write_text(html, encoding="utf-8")
         page_count += 1
         sitemap_urls.append({
-            "loc": f"{BASE_URL}/{out_rel}",
+            "loc": f"{BASE_URL}/{canonical}",
             "lastmod": TODAY, "changefreq": "monthly", "priority": priority,
         })
         print(f"  [OK] {out_rel}")
