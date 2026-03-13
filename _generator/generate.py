@@ -196,6 +196,7 @@ def main():
         {"loc": f"{BASE_URL}/market-data.html", "lastmod": TODAY, "changefreq": "daily", "priority": "0.8"},
         {"loc": f"{BASE_URL}/about.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6"},
         {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
+        {"loc": f"{BASE_URL}/submit-deal.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7"},
     ]
 
     page_count = 0
