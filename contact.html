@@ -234,7 +234,7 @@
           <div class="form-field full"><label>Tell Us About Your Deal *</label><textarea name="Deal Details" id="cf_details" rows="5" placeholder="Property details, timeline, goals, any specific requirements..." required></textarea></div>
         </div>
         <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px">Submit Quote Request &rarr;</button>
-        <p style="font-size:11px;color:var(--gray-500);text-align:center;margin-top:12px">Minimum loan amount: $250,000. For faster processing, try our <a href="apply.html" style="color:var(--green);font-weight:600">step-by-step application</a>.</p>
+        <p style="font-size:11px;color:var(--gray-500);text-align:center;margin-top:12px">Minimum loan amount: $1,000,000. For faster processing, try our <a href="apply.html" style="color:var(--green);font-weight:600">step-by-step application</a>.</p>
       </form>
     </div>
   </div>
@@ -344,8 +344,8 @@ function validateContactForm() {
   }
   // Loan amount: minimum $250,000
   var rawAmt = document.getElementById('cf_amount').value.replace(/[^0-9]/g, '');
-  if (!rawAmt || parseInt(rawAmt) < 250000) {
-    alert('Our minimum loan amount is $250,000. For smaller loans, please contact a local bank or credit union.');
+  if (!rawAmt || parseInt(rawAmt) < 1000000) {
+    alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
     document.getElementById('cf_amount').focus();
     return false;
   }

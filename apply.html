@@ -465,9 +465,9 @@
         <div class="amount-value" id="amountDisplay">$5,000,000</div>
         <div class="amount-label">Requested Loan Amount</div>
       </div>
-      <input type="range" class="amount-slider" id="amountSlider" min="250000" max="100000000" step="250000" value="5000000">
+      <input type="range" class="amount-slider" id="amountSlider" min="1000000" max="100000000" step="250000" value="5000000">
       <div class="amount-ticks">
-        <span>$250K</span>
+        <span>$1M</span>
         <span>$25M</span>
         <span>$50M</span>
         <span>$75M</span>
@@ -782,7 +782,7 @@ slider.addEventListener('input', function() {
   const val = parseInt(this.value);
   amountDisplay.textContent = formatFullCurrency(val);
   amountManual.value = formatFullCurrency(val);
-  const pct = ((val - 250000) / (100000000 - 250000)) * 100;
+  const pct = ((val - 1000000) / (100000000 - 1000000)) * 100;
   this.style.background = `linear-gradient(90deg, var(--green) ${pct}%, var(--gray-200) ${pct}%)`;
 });
 // Init slider bg
@@ -792,7 +792,7 @@ amountManual.addEventListener('input', function() {
   const raw = this.value.replace(/[^0-9]/g, '');
   if (raw) {
     const num = parseInt(raw);
-    if (num >= 250000 && num <= 100000000) {
+    if (num >= 1000000 && num <= 100000000) {
       slider.value = num;
       slider.dispatchEvent(new Event('input'));
     }
@@ -906,8 +906,8 @@ function validateStep(step) {
     else document.getElementById('f_timeline').classList.remove('error');
     // Minimum loan amount: $250,000
     const rawAmt = amountDisplay.textContent.replace(/[^0-9]/g, '');
-    if (rawAmt && parseInt(rawAmt) < 250000) {
-      alert('Our minimum loan amount is $250,000. For smaller loans, please contact a local bank or credit union.');
+    if (rawAmt && parseInt(rawAmt) < 1000000) {
+      alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
       valid = false;
     }
   }
