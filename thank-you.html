@@ -17,11 +17,28 @@
 <link rel="stylesheet" href="css/global.min.css">
 <link rel="stylesheet" href="css/pages.min.css">
 <style>
-.thank-you{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:180px 40px 80px}
+.thank-you{min-height:auto;display:flex;align-items:center;justify-content:center;text-align:center;padding:180px 40px 60px}
 .thank-you h1{font-family:var(--font-display);font-size:clamp(32px,4vw,48px);color:var(--navy);margin-bottom:20px}
 .thank-you p{font-size:17px;color:var(--gray-600);line-height:1.7;max-width:600px;margin:0 auto 24px}
 .thank-you .highlight{color:var(--green);font-weight:600}
 .thank-you-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.check-circle{width:72px;height:72px;border-radius:50%;background:rgba(0,106,78,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:36px}
+.next-steps{max-width:700px;margin:0 auto;padding:0 40px 80px}
+.next-steps h2{font-family:var(--font-display);font-size:28px;color:var(--navy);text-align:center;margin-bottom:32px}
+.step-timeline{position:relative;padding-left:48px}
+.step-timeline::before{content:'';position:absolute;left:18px;top:8px;bottom:8px;width:2px;background:var(--gray-200)}
+.timeline-item{position:relative;margin-bottom:28px}
+.timeline-item:last-child{margin-bottom:0}
+.timeline-dot{position:absolute;left:-48px;top:2px;width:36px;height:36px;border-radius:50%;background:var(--white);border:2px solid var(--green);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--green)}
+.timeline-item h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.timeline-item p{font-size:14px;color:var(--gray-500);line-height:1.6;margin:0}
+.book-call-card{background:var(--gray-50);border:2px solid var(--green);border-radius:14px;padding:40px;text-align:center;max-width:560px;margin:40px auto 0}
+.book-call-card h3{font-family:var(--font-display);font-size:24px;color:var(--navy);margin-bottom:8px}
+.book-call-card p{font-size:15px;color:var(--gray-500);margin-bottom:20px;line-height:1.6}
+.book-call-btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:var(--white);padding:16px 40px;border-radius:8px;font-size:16px;font-weight:700;text-decoration:none;transition:all .25s}
+.book-call-btn:hover{background:var(--navy);transform:translateY(-2px);box-shadow:0 8px 24px rgba(21,61,99,.2)}
+.book-call-or{margin-top:16px;font-size:14px;color:var(--gray-500)}
+.book-call-or a{color:var(--navy);font-weight:700;text-decoration:none}
 </style>
 </head>
 <body>
@@ -70,14 +87,48 @@
 <!-- THANK YOU -->
 <section class="thank-you">
 <div>
-  <h1>Thank You!</h1>
-  <p>Your application has been received. A Commercial Lending Solutions advisor will review your deal and respond within <span class="highlight">24 hours</span>.</p>
+  <div class="check-circle">&#10003;</div>
+  <h1>Application Received!</h1>
+  <p>A Commercial Lending Solutions advisor will review your deal and respond within <span class="highlight">24 hours</span>. Check your email for a confirmation.</p>
   <p>For urgent inquiries, call us directly at <strong style="color:var(--navy)">310.758.4042</strong>.</p>
-  <div class="thank-you-actions">
-    <a href="index.html" class="btn-primary">Back to Homepage &rarr;</a>
-    <a href="blog/index.html" class="btn-primary" style="background:transparent;border:2px solid var(--gray-200);color:var(--navy)">Read Our Insights &rarr;</a>
-  </div>
 </div>
+</section>
+
+<!-- WHAT HAPPENS NEXT -->
+<section class="next-steps">
+  <h2>What Happens Next</h2>
+  <div class="step-timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot">1</div>
+      <h3>We Review Your Deal (Within 24 Hours)</h3>
+      <p>An advisor reviews your property details, loan request, and financial profile to identify the best financing options from our network of 1,000+ lenders.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">2</div>
+      <h3>We Present Your Options</h3>
+      <p>You receive 3-5 competitive term sheets with rates, terms, and closing timelines tailored to your deal. We explain the pros and cons of each option.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">3</div>
+      <h3>You Pick the Best Fit</h3>
+      <p>Select the lender and terms that work best for you. We handle all negotiations, underwriting coordination, and closing logistics from here.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">4</div>
+      <h3>Close and Fund</h3>
+      <p>Average closing: 45-90 days for permanent loans, 2-4 weeks for bridge financing. We manage every step so you can focus on your investment.</p>
+    </div>
+  </div>
+
+  <!-- Book a Call CTA -->
+  <div class="book-call-card">
+    <h3>Want to Discuss Your Deal Now?</h3>
+    <p>Skip the wait. Schedule a 15-minute call with an advisor to discuss your financing needs directly.</p>
+    <a href="tel:+13107584042" class="book-call-btn">
+      Call 310.758.4042
+    </a>
+    <div class="book-call-or">Or email us at <a href="mailto:inquiries@clscre.com">inquiries@clscre.com</a></div>
+  </div>
 </section>
 
 <!-- FOOTER -->
