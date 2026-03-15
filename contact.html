@@ -182,28 +182,28 @@
     <div class="contact-right reveal">
       <h3>Request a Quote</h3>
       <p>Fill out the form below and we'll get back to you within 24 hours.</p>
-      <form action="https://formsubmit.co/inquiries@clscre.com" method="POST">
+      <form action="https://formsubmit.co/inquiries@clscre.com" method="POST" id="contactForm" onsubmit="return validateContactForm()">
         <!-- Formsubmit config -->
-        <input type="hidden" name="_subject" value="New Quote Request — CLS CRE Website">
+        <input type="hidden" name="_subject" value="New Quote Request — Commercial Lending Solutions">
         <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
         <input type="hidden" name="_captcha" value="true">
         <input type="hidden" name="_template" value="table">
         <input type="text" name="_honey" style="display:none">
         <div class="form-row">
-          <div class="form-field"><label>First Name *</label><input type="text" name="First Name" required></div>
-          <div class="form-field"><label>Last Name *</label><input type="text" name="Last Name" required></div>
+          <div class="form-field"><label>First Name *</label><input type="text" name="First Name" id="cf_first" required></div>
+          <div class="form-field"><label>Last Name *</label><input type="text" name="Last Name" id="cf_last" required></div>
         </div>
         <div class="form-row">
-          <div class="form-field"><label>Email *</label><input type="email" name="Email" required></div>
-          <div class="form-field"><label>Phone</label><input type="tel" name="Phone"></div>
+          <div class="form-field"><label>Email *</label><input type="email" name="Email" id="cf_email" required></div>
+          <div class="form-field"><label>Phone *</label><input type="tel" name="Phone" id="cf_phone" required placeholder="(310) 555-1234"></div>
         </div>
         <div class="form-row">
           <div class="form-field"><label>Company</label><input type="text" name="Company"></div>
-          <div class="form-field"><label>Loan Amount</label><input type="text" name="Loan Amount" placeholder="e.g. $5,000,000"></div>
+          <div class="form-field"><label>Loan Amount *</label><input type="text" name="Loan Amount" id="cf_amount" placeholder="e.g. $5,000,000" required></div>
         </div>
         <div class="form-row">
-          <div class="form-field"><label>Property Type</label>
-            <select name="Property Type">
+          <div class="form-field"><label>Property Type *</label>
+            <select name="Property Type" id="cf_proptype" required>
               <option value="">Select...</option>
               <option>Multi-Family</option>
               <option>Industrial</option>
@@ -215,8 +215,8 @@
               <option>Other</option>
             </select>
           </div>
-          <div class="form-field"><label>Loan Type</label>
-            <select name="Loan Type">
+          <div class="form-field"><label>Loan Type *</label>
+            <select name="Loan Type" id="cf_loantype" required>
               <option value="">Select...</option>
               <option>Permanent Financing</option>
               <option>Construction Financing</option>
@@ -228,12 +228,13 @@
           </div>
         </div>
         <div class="form-row">
-          <div class="form-field full"><label>Property City &amp; State *</label><input type="text" name="Property Location" placeholder="e.g. Los Angeles, CA" required></div>
+          <div class="form-field full"><label>Property City &amp; State *</label><input type="text" name="Property Location" id="cf_location" placeholder="e.g. Los Angeles, CA" required></div>
         </div>
         <div class="form-row">
-          <div class="form-field full"><label>Tell Us About Your Deal</label><textarea name="Deal Details" rows="5" placeholder="Property details, timeline, goals, any specific requirements..."></textarea></div>
+          <div class="form-field full"><label>Tell Us About Your Deal *</label><textarea name="Deal Details" id="cf_details" rows="5" placeholder="Property details, timeline, goals, any specific requirements..." required></textarea></div>
         </div>
         <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px">Submit Quote Request &rarr;</button>
+        <p style="font-size:11px;color:var(--gray-500);text-align:center;margin-top:12px">Minimum loan amount: $250,000. For faster processing, try our <a href="apply.html" style="color:var(--green);font-weight:600">step-by-step application</a>.</p>
       </form>
     </div>
   </div>
@@ -331,6 +332,58 @@
 const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
 const reveals=document.querySelectorAll('.reveal');const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});reveals.forEach(el=>observer.observe(el));
 const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
+
+// Form validation
+function validateContactForm() {
+  // Phone: at least 10 digits
+  var phone = document.getElementById('cf_phone').value.replace(/\D/g, '');
+  if (phone.length < 10) {
+    alert('Please enter a valid phone number with at least 10 digits.');
+    document.getElementById('cf_phone').focus();
+    return false;
+  }
+  // Loan amount: minimum $250,000
+  var rawAmt = document.getElementById('cf_amount').value.replace(/[^0-9]/g, '');
+  if (!rawAmt || parseInt(rawAmt) < 250000) {
+    alert('Our minimum loan amount is $250,000. For smaller loans, please contact a local bank or credit union.');
+    document.getElementById('cf_amount').focus();
+    return false;
+  }
+  // Location: must contain a comma (City, State pattern)
+  var loc = document.getElementById('cf_location').value.trim();
+  if (!/[a-zA-Z].*,\s*[a-zA-Z]/.test(loc)) {
+    alert('Please enter the property location as City, State (e.g. Los Angeles, CA).');
+    document.getElementById('cf_location').focus();
+    return false;
+  }
+  // Deal details: minimum 20 characters
+  var details = document.getElementById('cf_details').value.trim();
+  if (details.length < 20) {
+    alert('Please provide more details about your deal (at least a few sentences).');
+    document.getElementById('cf_details').focus();
+    return false;
+  }
+  // GA4 tracking
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'generate_lead', { event_category: 'form', event_label: 'contact_form' });
+  }
+  return true;
+}
+
+// Auto-format loan amount with commas
+document.getElementById('cf_amount').addEventListener('input', function() {
+  var raw = this.value.replace(/[^0-9]/g, '');
+  if (raw) this.value = '$' + parseInt(raw).toLocaleString();
+  else this.value = '';
+});
+
+// Auto-format phone
+document.getElementById('cf_phone').addEventListener('input', function() {
+  var v = this.value.replace(/\D/g, '');
+  if (v.length >= 6) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6,10);
+  else if (v.length >= 3) v = '(' + v.slice(0,3) + ') ' + v.slice(3);
+  this.value = v;
+});
 </script>
 <script src="js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>

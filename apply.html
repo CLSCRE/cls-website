@@ -887,6 +887,11 @@ function validateStep(step) {
     if (!loc) {
       document.getElementById('f_location').classList.add('error');
       valid = false;
+    } else if (!/[a-zA-Z].*,\s*[a-zA-Z]/.test(loc)) {
+      // Must contain "City, State" pattern
+      document.getElementById('f_location').classList.add('error');
+      document.getElementById('f_location').querySelector('.error-msg').textContent = 'Please enter City, State (e.g. Los Angeles, CA)';
+      valid = false;
     } else {
       document.getElementById('f_location').classList.remove('error');
     }
@@ -899,6 +904,12 @@ function validateStep(step) {
     else document.getElementById('f_loan_type').classList.remove('error');
     if (!tl) { document.getElementById('f_timeline').classList.add('error'); valid = false; }
     else document.getElementById('f_timeline').classList.remove('error');
+    // Minimum loan amount: $250,000
+    const rawAmt = amountDisplay.textContent.replace(/[^0-9]/g, '');
+    if (rawAmt && parseInt(rawAmt) < 250000) {
+      alert('Our minimum loan amount is $250,000. For smaller loans, please contact a local bank or credit union.');
+      valid = false;
+    }
   }
 
   if (step === 4) {
@@ -921,6 +932,12 @@ function validateStep(step) {
     const email = document.getElementById('email').value.trim();
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       document.getElementById('f_email').classList.add('error');
+      valid = false;
+    }
+    // Phone: minimum 10 digits
+    const phone = document.getElementById('phone').value.replace(/\D/g, '');
+    if (phone.length < 10) {
+      document.getElementById('f_phone').classList.add('error');
       valid = false;
     }
   }
