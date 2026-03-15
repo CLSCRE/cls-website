@@ -138,6 +138,20 @@
 .phone-cta a{font-size:16px;color:var(--navy);font-weight:700;text-decoration:none;font-family:var(--font-display);transition:color .2s}
 .phone-cta a:hover{color:var(--green)}
 
+/* ===== FILE UPLOAD ===== */
+.upload-zone{border:2px dashed var(--gray-300);border-radius:12px;padding:32px 20px;text-align:center;cursor:pointer;transition:all .25s;background:var(--gray-50)}
+.upload-zone:hover,.upload-zone.dragover{border-color:var(--green);background:rgba(0,106,78,.02)}
+.upload-icon{font-size:28px;margin-bottom:8px}
+.upload-text{font-size:14px;color:var(--gray-700);font-weight:500}
+.upload-browse{color:var(--green);font-weight:600;text-decoration:underline;cursor:pointer}
+.upload-hint{font-size:11px;color:var(--gray-500);margin-top:6px;line-height:1.4}
+.upload-list{margin-top:8px}
+.upload-file{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;margin-top:6px;font-size:13px}
+.upload-file .file-name{flex:1;color:var(--navy);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.upload-file .file-size{color:var(--gray-500);font-size:11px;flex-shrink:0}
+.upload-file .file-remove{width:20px;height:20px;border-radius:50%;border:none;background:var(--gray-200);color:var(--gray-700);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;transition:all .15s;flex-shrink:0}
+.upload-file .file-remove:hover{background:#dc2626;color:white}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px){
   .wizard-page{padding:140px 0 60px}
@@ -245,8 +259,8 @@
   <div class="wizard-card">
 
     <!-- Hidden FormSubmit form (actual submission target) -->
-    <form id="wizardForm" action="https://formsubmit.co/inquiries@clscre.com" method="POST" style="display:none">
-      <input type="hidden" name="_subject" value="New Loan Application — CLS CRE Website">
+    <form id="wizardForm" action="https://formsubmit.co/inquiries@clscre.com" method="POST" enctype="multipart/form-data" style="display:none">
+      <input type="hidden" name="_subject" value="New Loan Application — Commercial Lending Solutions">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="true">
       <input type="hidden" name="_template" value="table">
@@ -558,6 +572,21 @@
           <textarea id="details" rows="3" placeholder="Business plan, borrower experience, special requirements..."></textarea>
         </div>
       </div>
+
+      <!-- Document Upload -->
+      <div class="wiz-row single">
+        <div class="wiz-field">
+          <label>Upload Documents</label>
+          <div class="upload-zone" id="uploadZone">
+            <div class="upload-icon">&#128206;</div>
+            <div class="upload-text">Drag files here or <span class="upload-browse">browse</span></div>
+            <div class="upload-hint">Rent rolls, financials, term sheets, appraisals, photos (PDF, DOC, XLS, JPG, PNG &mdash; max 10MB each)</div>
+            <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.heic,.csv,.txt" style="display:none">
+          </div>
+          <div class="upload-list" id="uploadList"></div>
+        </div>
+      </div>
+
       <div class="wiz-row single">
         <div class="wiz-field">
           <label>How did you find us?</label>
@@ -776,6 +805,26 @@ amountManual.addEventListener('blur', function() {
   if (raw) this.value = formatFullCurrency(parseInt(raw));
 });
 
+/* --- Currency formatting for dollar fields --- */
+function formatDollarInput(el) {
+  el.addEventListener('input', function() {
+    const raw = this.value.replace(/[^0-9]/g, '');
+    if (raw) {
+      this.value = '$' + parseInt(raw).toLocaleString();
+    } else {
+      this.value = '';
+    }
+  });
+  el.addEventListener('focus', function() {
+    if (!this.value) this.value = '$';
+  });
+  el.addEventListener('blur', function() {
+    if (this.value === '$') this.value = '';
+  });
+}
+formatDollarInput(document.getElementById('property_value'));
+formatDollarInput(document.getElementById('noi'));
+
 /* --- Phone formatting --- */
 document.getElementById('phone').addEventListener('input', function() {
   let v = this.value.replace(/\D/g, '');
@@ -944,6 +993,21 @@ function submitApplication() {
   document.getElementById('h_details').value = document.getElementById('details').value;
   document.getElementById('h_referral').value = document.getElementById('referral').value;
 
+  // Attach uploaded files to hidden form
+  const existingFileInputs = document.querySelectorAll('#wizardForm input[type="file"]');
+  existingFileInputs.forEach(el => el.remove());
+  if (uploadedFiles.length > 0) {
+    const dt = new DataTransfer();
+    uploadedFiles.forEach(f => dt.items.add(f));
+    const fi = document.createElement('input');
+    fi.type = 'file';
+    fi.name = 'attachment';
+    fi.multiple = true;
+    fi.files = dt.files;
+    fi.style.display = 'none';
+    document.getElementById('wizardForm').appendChild(fi);
+  }
+
   // GA4 conversion event
   gtag('event', 'generate_lead', {
     event_category: 'form',
@@ -955,6 +1019,52 @@ function submitApplication() {
 
   // Submit the hidden form
   document.getElementById('wizardForm').submit();
+}
+
+/* --- File upload --- */
+const uploadZone = document.getElementById('uploadZone');
+const fileInput = document.getElementById('fileInput');
+const uploadList = document.getElementById('uploadList');
+let uploadedFiles = [];
+
+uploadZone.addEventListener('click', () => fileInput.click());
+uploadZone.addEventListener('dragover', (e) => { e.preventDefault(); uploadZone.classList.add('dragover'); });
+uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragover'));
+uploadZone.addEventListener('drop', (e) => {
+  e.preventDefault();
+  uploadZone.classList.remove('dragover');
+  handleFiles(e.dataTransfer.files);
+});
+fileInput.addEventListener('change', () => handleFiles(fileInput.files));
+
+function handleFiles(files) {
+  Array.from(files).forEach(file => {
+    if (file.size > 10 * 1024 * 1024) {
+      alert(file.name + ' is larger than 10MB. Please use a smaller file.');
+      return;
+    }
+    if (uploadedFiles.length >= 5) {
+      alert('Maximum 5 files allowed. Remove a file to add another.');
+      return;
+    }
+    uploadedFiles.push(file);
+    renderFileList();
+  });
+  fileInput.value = '';
+}
+
+function renderFileList() {
+  uploadList.innerHTML = uploadedFiles.map((f, i) => {
+    const size = f.size < 1024 * 1024
+      ? (f.size / 1024).toFixed(0) + ' KB'
+      : (f.size / (1024 * 1024)).toFixed(1) + ' MB';
+    return '<div class="upload-file"><span class="file-name">' + f.name + '</span><span class="file-size">' + size + '</span><button class="file-remove" onclick="removeFile(' + i + ')" type="button">&times;</button></div>';
+  }).join('');
+}
+
+function removeFile(idx) {
+  uploadedFiles.splice(idx, 1);
+  renderFileList();
 }
 
 /* --- Nav / scroll --- */
