@@ -393,6 +393,28 @@
   </div>
 </div>
 </footer>
+<!-- Sticky Bottom CTA Bar -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-inner">
+    <div class="sticky-cta-text">
+      <strong>Need financing?</strong> Apply in 2 minutes. Response within 24 hours.
+    </div>
+    <a href="../apply.html" class="sticky-cta-btn">Apply Now &rarr;</a>
+  </div>
+</div>
+
+<!-- Exit Intent Popup -->
+<div class="exit-overlay" id="exitOverlay">
+  <div class="exit-popup">
+    <button class="exit-close" id="exitClose">&times;</button>
+    <div class="exit-icon">&#128203;</div>
+    <h3 class="exit-title">Before You Go&hellip;</h3>
+    <p class="exit-desc">Get matched with the right lender from our network of 1,000+ capital sources. It takes 2 minutes and there's zero obligation.</p>
+    <a href="../apply.html" class="exit-btn">Apply for Financing &rarr;</a>
+    <div class="exit-phone">Or call us: <a href="tel:+13107584042">310.758.4042</a></div>
+  </div>
+</div>
+
 <script>
 // Sticky nav
 const nav = document.getElementById('nav');
@@ -424,6 +446,34 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     }
   });
 });
+</script>
+// Sticky CTA bar — show after scrolling 600px, hide on apply page
+(function(){
+  const bar = document.getElementById('stickyCta');
+  if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
+  let shown = false;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
+  });
+})();
+// Exit intent popup — fires once per session, not on apply/thank-you pages
+(function(){
+  const overlay = document.getElementById('exitOverlay');
+  if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
+  let fired = false;
+  function showPopup() {
+    if (fired || sessionStorage.getItem('exitShown')) return;
+    fired = true;
+    sessionStorage.setItem('exitShown', '1');
+    overlay.classList.add('visible');
+    gtag('event', 'exit_intent_shown', { event_category: 'engagement' });
+  }
+  document.addEventListener('mouseout', function(e) {
+    if (e.clientY < 5 && e.relatedTarget === null) showPopup();
+  });
+  document.getElementById('exitClose').addEventListener('click', function() { overlay.classList.remove('visible'); });
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('visible'); });
+})();
 </script>
 <script src="../js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
