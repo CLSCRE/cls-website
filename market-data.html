@@ -33,7 +33,7 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
---navy:#1a1a2e;--navy-deep:#111827;--green:#006A4E;--green-light:#008060;--green-bright:#00A676;
+--navy:#153D63;--navy-deep:#0D2B47;--green:#006A4E;--green-light:#008060;--green-bright:#00A676;
 --white:#FFFFFF;--gray-50:#F9FAFB;--gray-100:#F3F4F6;--gray-200:#E5E7EB;--gray-300:#D1D5DB;
 --gray-500:#6B7280;--gray-700:#374151;--gray-900:#111827;--gold:#C5A355;
 --font-display:'DM Serif Display',Georgia,serif;--font-body:'Inter',system-ui,-apple-system,sans-serif;
@@ -51,8 +51,8 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .nav-links>a,.nav-dropdown>a{color:var(--gray-700);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;padding:8px 0}
 .nav-links>a:hover,.nav-dropdown:hover>a{color:var(--green)}
 .nav-links>a.active{color:var(--green);font-weight:600}
-.nav-cta{background:var(--green);color:var(--white)!important;padding:10px 24px!important;border-radius:6px;font-weight:600!important;font-size:14px;text-decoration:none;transition:all .2s;display:inline-block}
-.nav-cta:hover{background:var(--green-light);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,106,78,.2)}
+.nav-cta{background:var(--navy);color:var(--white)!important;padding:10px 24px!important;border-radius:6px;font-weight:600!important;font-size:14px;text-decoration:none;transition:all .2s;display:inline-block}
+.nav-cta:hover{background:var(--green);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,106,78,.2)}
 .nav-mobile{display:none;background:none;border:none;cursor:pointer;padding:8px}
 .nav-mobile span{display:block;width:22px;height:2px;background:var(--gray-700);margin:5px 0;transition:.3s}
 .nav-dropdown{position:relative}
@@ -69,8 +69,8 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .section-label::before{content:'';width:24px;height:2px;background:var(--green)}
 .section-title{font-family:var(--font-display);font-size:clamp(28px,3vw,42px);color:var(--navy);margin-bottom:16px;letter-spacing:-.01em}
 .section-desc{font-size:16px;color:var(--gray-500);max-width:600px;line-height:1.65;margin-bottom:48px}
-.btn-primary{background:var(--green);color:var(--white);padding:14px 32px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
-.btn-primary:hover{background:var(--green-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,106,78,.18)}
+.btn-primary{background:var(--navy);color:var(--white);padding:14px 32px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--green);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,106,78,.18)}
 
 /* PAGE HERO */
 .page-hero{padding:160px 0 48px;background:linear-gradient(135deg,#f0f4f8 0%,#e8eef5 50%,#f0f4f8 100%);position:relative;overflow:hidden}
@@ -87,7 +87,7 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .indices{padding:64px 0;background:var(--white)}
 .idx-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .indices-table{width:100%;border-collapse:collapse;border:1px solid var(--gray-200);border-radius:12px;overflow:hidden;min-width:600px}
-.indices-table thead{background:var(--green)}
+.indices-table thead{background:var(--navy)}
 .indices-table th{padding:14px 20px;text-align:left;font-size:12px;font-weight:600;color:rgba(255,255,255,.9);letter-spacing:.04em;text-transform:uppercase}
 .indices-table th:not(:first-child){text-align:right}
 .indices-table td{padding:13px 20px;font-size:14px;border-bottom:1px solid var(--gray-100)}
@@ -116,7 +116,7 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .yc-quick-btns{display:flex;gap:6px;align-items:flex-end;margin-left:auto}
 .yc-quick-btn{padding:7px 14px;border:1px solid var(--gray-200);border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;background:var(--white);color:var(--gray-700);transition:all .2s;white-space:nowrap}
 .yc-quick-btn:hover{border-color:var(--green);color:var(--green)}
-.yc-quick-btn.active{background:var(--green);color:var(--white);border-color:var(--green)}
+.yc-quick-btn.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
 .yc-chart-wrap{position:relative;width:100%;padding-bottom:42%}
 .yc-svg{position:absolute;top:0;left:0;width:100%;height:100%}
 .yc-line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:d .4s ease}
@@ -346,7 +346,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
   <div class="yc-container reveal">
     <div class="yc-controls">
       <div class="yc-control">
-        <label><svg width="24" height="4" style="flex-shrink:0"><line x1="0" y1="2" x2="24" y2="2" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/></svg> Today (Solid)</label>
+        <label><svg width="24" height="4" style="flex-shrink:0"><line x1="0" y1="2" x2="24" y2="2" stroke="#153D63" stroke-width="3" stroke-linecap="round"/></svg> Today (Solid)</label>
         <select id="ycDate1"></select>
       </div>
       <div class="yc-control">
@@ -368,7 +368,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       <div class="yc-tooltip" id="ycTooltip"></div>
     </div>
     <div class="yc-legend">
-      <div class="yc-legend-item"><svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/></svg><span id="ycLegend1">Feb 2026</span></div>
+      <div class="yc-legend-item"><svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#153D63" stroke-width="3" stroke-linecap="round"/></svg><span id="ycLegend1">Feb 2026</span></div>
       <div class="yc-legend-item"><svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#006A4E" stroke-width="2.5" stroke-dasharray="5,3" stroke-linecap="round"/></svg><span id="ycLegend2">Feb 2025</span></div>
       <div class="yc-spread">2s/10s Spread: <strong id="ycSpread">+62bp</strong></div>
     </div>
@@ -958,7 +958,7 @@ document.querySelectorAll('.commentary-hist-btn').forEach(btn => {
 (function() {
   // Maturities on X-axis
   const MAT = ['1M','3M','6M','1Y','2Y','3Y','5Y','7Y','10Y','20Y','30Y'];
-  const COLORS = { c1: '#1a1a2e', c2: '#006A4E' };
+  const COLORS = { c1: '#153D63', c2: '#006A4E' };
 
   // Historical monthly yield curve data (end-of-month rates)
   // Format: [1M, 3M, 6M, 1Y, 2Y, 3Y, 5Y, 7Y, 10Y, 20Y, 30Y]

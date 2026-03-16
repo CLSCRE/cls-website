@@ -50,7 +50,7 @@
 .pill-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .pill-link{display:inline-block;padding:8px 20px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid var(--gray-200);background:var(--white);color:var(--gray-700);text-decoration:none;transition:all .2s}
 .pill-link:hover{border-color:var(--green);color:var(--green);transform:translateY(-1px)}
-.pill-link.active{background:var(--green);color:var(--white);border-color:var(--green)}
+.pill-link.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
 
 /* ===== FAQ ACCORDION ===== */
 .faq-section{padding:80px 0}
@@ -85,7 +85,7 @@
 .blog-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
 .blog-filter{padding:8px 20px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid var(--gray-200);background:var(--white);color:var(--gray-600);cursor:pointer;transition:all .2s;font-family:var(--font-body)}
 .blog-filter:hover{border-color:var(--green);color:var(--green)}
-.blog-filter.active{background:var(--green);color:var(--white);border-color:var(--green)}
+.blog-filter.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
 .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px}
 .blog-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:32px;text-decoration:none;display:flex;flex-direction:column;transition:all .3s}
 .blog-card:hover{border-color:var(--green);box-shadow:0 8px 28px rgba(0,0,0,.06);transform:translateY(-3px)}
@@ -99,14 +99,14 @@
 .blog-card-hero[data-category="market-insights"]{background:linear-gradient(135deg,#0a8f6a,#0cc5a0)}
 .blog-card-hero[data-category="educational"]{background:linear-gradient(135deg,#1a5fb4,#3a8fd8)}
 .blog-card-hero[data-category="rate-commentary"]{background:linear-gradient(135deg,#b8860b,#d4a833)}
-.blog-card-hero[data-category="industry-news"]{background:linear-gradient(135deg,#1a1a2e,#2a6ba5)}
+.blog-card-hero[data-category="industry-news"]{background:linear-gradient(135deg,#153D63,#2a6ba5)}
 
 /* ===== ARTICLE HERO ===== */
 .article-hero{padding:120px 0 32px;position:relative;overflow:hidden}
 .article-hero[data-category="market-insights"]{background:linear-gradient(135deg,#0a8f6a,#0cc5a0)}
 .article-hero[data-category="educational"]{background:linear-gradient(135deg,#1a5fb4,#3a8fd8)}
 .article-hero[data-category="rate-commentary"]{background:linear-gradient(135deg,#b8860b,#d4a833)}
-.article-hero[data-category="industry-news"]{background:linear-gradient(135deg,#1a1a2e,#2a6ba5)}
+.article-hero[data-category="industry-news"]{background:linear-gradient(135deg,#153D63,#2a6ba5)}
 .article-hero-label{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.9)}
 
 /* ===== BLOG ARTICLE ===== */
@@ -137,7 +137,7 @@
 .tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
 .tool-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:36px;text-decoration:none;display:flex;flex-direction:column;transition:all .3s}
 .tool-card:hover{border-color:var(--green);box-shadow:0 8px 28px rgba(0,0,0,.06);transform:translateY(-3px)}
-.tool-icon{width:56px;height:56px;border-radius:10px;background:var(--green);color:var(--white);font-family:var(--font-display);font-size:16px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-weight:700;letter-spacing:.02em}
+.tool-icon{width:56px;height:56px;border-radius:10px;background:var(--navy);color:var(--white);font-family:var(--font-display);font-size:16px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-weight:700;letter-spacing:.02em}
 .tool-card h2{font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:10px}
 .tool-card p{font-size:14px;color:var(--gray-600);line-height:1.65;flex:1;margin-bottom:16px}
 
@@ -154,7 +154,7 @@
 .calc-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .calc-tabs{display:flex;gap:8px;margin-bottom:20px}
 .calc-tab{flex:1;padding:10px;border:1px solid var(--gray-200);border-radius:6px;background:var(--white);font-size:13px;font-weight:600;font-family:var(--font-body);cursor:pointer;color:var(--gray-600);transition:all .2s}
-.calc-tab.active{background:var(--green);color:var(--white);border-color:var(--green)}
+.calc-tab.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
 
 /* ===== CALCULATOR RESULTS ===== */
 .calc-result{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:32px}
