@@ -33,7 +33,12 @@
       </div>
       <div id="cls-chat-messages">
         <div class="cls-msg cls-msg-bot">
-          <div class="cls-msg-bubble">Welcome to Commercial Lending Solutions. I can answer questions about commercial real estate financing, loan programs, and more. How can I help you today?</div>
+          <div class="cls-msg-bubble">Welcome to Commercial Lending Solutions! I can help with commercial real estate financing — rates, loan programs, qualification requirements, and more. What can I help you with?</div>
+        </div>
+        <div class="cls-quick-btns">
+          <button class="cls-quick-btn" data-msg="What are current commercial loan rates?">Current Rates</button>
+          <button class="cls-quick-btn" data-msg="How do I qualify for a commercial mortgage?">How to Qualify</button>
+          <button class="cls-quick-btn" data-msg="I have a deal I'd like to discuss">I Have a Deal</button>
         </div>
       </div>
       <div id="cls-chat-lead" style="display:none">
@@ -88,6 +93,11 @@
     #cls-lead-submit{width:100%;padding:10px;background:#C5A355;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
     #cls-lead-submit:hover{background:#b3923d}
     #cls-lead-skip{width:100%;padding:6px;background:none;border:none;color:#888;font-size:12px;cursor:pointer;margin-top:4px}
+    .cls-quick-btns{display:flex;gap:6px;padding:0 16px 12px;flex-wrap:wrap}
+    .cls-quick-btn{background:#f0f2f5;border:1px solid #ddd;border-radius:16px;padding:6px 14px;font-size:12px;color:#153D63;cursor:pointer;font-family:inherit;font-weight:600;transition:all .15s;white-space:nowrap}
+    .cls-quick-btn:hover{background:#153D63;color:#fff;border-color:#153D63}
+    .cls-chat-cta{display:block;margin:8px 0;padding:10px 16px;background:#006A4E;color:#fff;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;text-align:center;transition:background .2s}
+    .cls-chat-cta:hover{background:#153D63}
     @media(max-width:480px){
       #cls-chat-panel{width:calc(100vw - 32px);right:-8px;bottom:68px;max-height:70vh}
       #cls-chat-btn{width:52px;height:52px}
@@ -173,8 +183,11 @@
       addMessage('assistant', reply);
       messages.push({ role: 'assistant', content: reply });
 
-      // Show lead form after 4+ exchanges if not captured
-      if (!leadCaptured && messages.filter(m => m.role === 'user').length >= 4) {
+      // Show lead form based on engagement signals
+      const userMsgCount = messages.filter(m => m.role === 'user').length;
+      const allUserText = messages.filter(m => m.role === 'user').map(m => m.content.toLowerCase()).join(' ');
+      const hasDealIntent = /deal|property|loan|refinance|bridge|acquisition|purchase|million|\$|closing|lender|rate|quote|apply/i.test(allUserText);
+      if (!leadCaptured && (userMsgCount >= 4 || (userMsgCount >= 2 && hasDealIntent))) {
         showLeadForm();
       }
     } catch (err) {
@@ -192,6 +205,17 @@
     if (!text) return;
     textInput.value = '';
     sendMessage(text);
+  });
+
+  // Quick-reply buttons
+  document.querySelectorAll('.cls-quick-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const msg = this.getAttribute('data-msg');
+      // Hide quick buttons after first click
+      const container = document.querySelector('.cls-quick-btns');
+      if (container) container.style.display = 'none';
+      sendMessage(msg);
+    });
   });
 
   // --- Lead Capture ---
@@ -236,7 +260,7 @@
 
       leadCaptured = true;
       hideLeadForm();
-      addMessage('assistant', 'Thank you, ' + name + '. A CLS CRE advisor will reach out within 24 hours. Feel free to keep chatting or call us at 310.758.4042.');
+      addMessage('assistant', 'Thank you, ' + name + '! A Commercial Lending Solutions advisor will reach out within 24 hours. In the meantime, you can apply directly at clscre.com/apply.html or call us at 310.758.4042.');
 
       // GA4 event
       if (typeof gtag === 'function') {
