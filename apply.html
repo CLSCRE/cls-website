@@ -425,9 +425,9 @@
 
       <div class="wiz-row">
         <div class="wiz-field" id="f_location">
-          <label>Property Location <span class="req">*</span></label>
-          <input type="text" id="location" placeholder="City, State (e.g. Los Angeles, CA)" required>
-          <span class="error-msg">Please enter the property location</span>
+          <label>Property Address <span class="req">*</span></label>
+          <input type="text" id="location" placeholder="123 Main St, Los Angeles, CA 90012" required>
+          <span class="error-msg">Please enter the full property address</span>
         </div>
         <div class="wiz-field">
           <label>Estimated Property Value</label>
@@ -904,10 +904,10 @@ function validateStep(step) {
     if (!loc) {
       document.getElementById('f_location').classList.add('error');
       valid = false;
-    } else if (!/[a-zA-Z].*,\s*[a-zA-Z]/.test(loc)) {
-      // Must contain "City, State" pattern
+    } else if (loc.length < 10) {
+      // Must be a reasonable address length
       document.getElementById('f_location').classList.add('error');
-      document.getElementById('f_location').querySelector('.error-msg').textContent = 'Please enter City, State (e.g. Los Angeles, CA)';
+      document.getElementById('f_location').querySelector('.error-msg').textContent = 'Please enter the full property address';
       valid = false;
     } else {
       document.getElementById('f_location').classList.remove('error');
