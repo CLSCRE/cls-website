@@ -33,7 +33,7 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
---navy:#153D63;--navy-deep:#0D2B47;--green:#006A4E;--green-light:#008060;--green-bright:#00A676;
+--navy:#1a1a2e;--navy-deep:#111827;--green:#006A4E;--green-light:#008060;--green-bright:#00A676;
 --white:#FFFFFF;--gray-50:#F9FAFB;--gray-100:#F3F4F6;--gray-200:#E5E7EB;--gray-300:#D1D5DB;
 --gray-500:#6B7280;--gray-700:#374151;--gray-900:#111827;--gold:#C5A355;
 --font-display:'DM Serif Display',Georgia,serif;--font-body:'Inter',system-ui,-apple-system,sans-serif;
@@ -43,16 +43,16 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--white);box-shadow:0 1px 12px rgba(0,0,0,.06);border-bottom:1px solid var(--gray-200)}
-.nav-inner{max-width:1440px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:140px}
-.nav-logo{display:flex;align-items:center;gap:18px;text-decoration:none}
-.nav-logo img{height:120px}
+.nav-inner{max-width:1440px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:90px}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-logo img{height:70px}
 .nav-logo-text{font-family:var(--font-display);font-size:28px;color:var(--navy);line-height:1.15;letter-spacing:-.01em}
 .nav-links{display:flex;align-items:center;gap:28px}
 .nav-links>a,.nav-dropdown>a{color:var(--gray-700);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;padding:8px 0}
 .nav-links>a:hover,.nav-dropdown:hover>a{color:var(--green)}
 .nav-links>a.active{color:var(--green);font-weight:600}
-.nav-cta{background:var(--navy);color:var(--white)!important;padding:10px 24px!important;border-radius:6px;font-weight:600!important;font-size:14px;text-decoration:none;transition:all .2s;display:inline-block}
-.nav-cta:hover{background:var(--green);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,106,78,.2)}
+.nav-cta{background:var(--green);color:var(--white)!important;padding:10px 24px!important;border-radius:6px;font-weight:600!important;font-size:14px;text-decoration:none;transition:all .2s;display:inline-block}
+.nav-cta:hover{background:var(--green-light);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,106,78,.2)}
 .nav-mobile{display:none;background:none;border:none;cursor:pointer;padding:8px}
 .nav-mobile span{display:block;width:22px;height:2px;background:var(--gray-700);margin:5px 0;transition:.3s}
 .nav-dropdown{position:relative}
@@ -69,16 +69,16 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .section-label::before{content:'';width:24px;height:2px;background:var(--green)}
 .section-title{font-family:var(--font-display);font-size:clamp(28px,3vw,42px);color:var(--navy);margin-bottom:16px;letter-spacing:-.01em}
 .section-desc{font-size:16px;color:var(--gray-500);max-width:600px;line-height:1.65;margin-bottom:48px}
-.btn-primary{background:var(--navy);color:var(--white);padding:14px 32px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
-.btn-primary:hover{background:var(--green);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,106,78,.18)}
+.btn-primary{background:var(--green);color:var(--white);padding:14px 32px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--green-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,106,78,.18)}
 
 /* PAGE HERO */
-.page-hero{padding:180px 0 48px;background:var(--navy);position:relative;overflow:hidden}
-.page-hero::after{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,166,118,.12),transparent 70%);pointer-events:none}
-.page-hero .section-label{color:var(--green-bright)}
-.page-hero .section-label::before{background:var(--green-bright)}
-.page-hero .section-title{color:var(--white);font-size:clamp(32px,4vw,52px)}
-.page-hero .section-desc{color:rgba(255,255,255,.6);max-width:700px}
+.page-hero{padding:160px 0 48px;background:linear-gradient(135deg,#f0f4f8 0%,#e8eef5 50%,#f0f4f8 100%);position:relative;overflow:hidden}
+.page-hero::after{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,166,118,.08),transparent 70%);pointer-events:none}
+.page-hero .section-label{color:var(--green)}
+.page-hero .section-label::before{background:var(--green)}
+.page-hero .section-title{color:var(--navy);font-size:clamp(32px,4vw,52px)}
+.page-hero .section-desc{color:var(--gray-500);max-width:700px}
 .breadcrumb{font-size:13px;color:rgba(255,255,255,.45);margin-bottom:20px}
 .breadcrumb a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s}
 .breadcrumb a:hover{color:var(--green-bright)}
@@ -87,7 +87,7 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .indices{padding:64px 0;background:var(--white)}
 .idx-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .indices-table{width:100%;border-collapse:collapse;border:1px solid var(--gray-200);border-radius:12px;overflow:hidden;min-width:600px}
-.indices-table thead{background:var(--navy)}
+.indices-table thead{background:var(--green)}
 .indices-table th{padding:14px 20px;text-align:left;font-size:12px;font-weight:600;color:rgba(255,255,255,.9);letter-spacing:.04em;text-transform:uppercase}
 .indices-table th:not(:first-child){text-align:right}
 .indices-table td{padding:13px 20px;font-size:14px;border-bottom:1px solid var(--gray-100)}
@@ -96,6 +96,12 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .indices-table .idx-name{font-weight:600;color:var(--navy)}
 .indices-table .idx-val{font-family:var(--font-display);font-size:15px;color:var(--navy)}
 .indices-table tbody tr:hover{background:rgba(0,106,78,.02)}
+.indices-table tr.cre-critical{background:rgba(0,106,78,.04)}
+.indices-table tr.cre-critical:hover{background:rgba(0,106,78,.07)}
+.indices-table tr.cre-critical .idx-name{color:var(--green)}
+.indices-table tr.cre-critical .idx-val{color:var(--green);font-size:17px;font-weight:700}
+.indices-table tr.cre-critical .idx-name::after{content:'CRE Key Rate';display:inline-block;font-size:9px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:var(--green);color:var(--white);padding:2px 6px;border-radius:3px;margin-left:8px;vertical-align:middle}
+.indices-table tr.cre-critical td:not(:first-child):not(.idx-val){color:var(--green-light);font-weight:600}
 
 /* YIELD CURVE */
 .yield-curve{padding:64px 0;background:var(--gray-50)}
@@ -110,15 +116,15 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .yc-quick-btns{display:flex;gap:6px;align-items:flex-end;margin-left:auto}
 .yc-quick-btn{padding:7px 14px;border:1px solid var(--gray-200);border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;background:var(--white);color:var(--gray-700);transition:all .2s;white-space:nowrap}
 .yc-quick-btn:hover{border-color:var(--green);color:var(--green)}
-.yc-quick-btn.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.yc-quick-btn.active{background:var(--green);color:var(--white);border-color:var(--green)}
 .yc-chart-wrap{position:relative;width:100%;padding-bottom:42%}
 .yc-svg{position:absolute;top:0;left:0;width:100%;height:100%}
 .yc-line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:d .4s ease}
 .yc-dot-group{cursor:pointer}
 .yc-dot{stroke-width:2;transition:cx .4s ease,cy .4s ease}
 .yc-dot-hover{r:8;fill:transparent;stroke:none;cursor:pointer}
-.yc-tooltip{position:absolute;background:var(--navy);color:var(--white);padding:10px 14px;border-radius:8px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:10;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.15)}
-.yc-tooltip::after{content:'';position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid var(--navy)}
+.yc-tooltip{position:absolute;background:var(--gray-900);color:var(--white);padding:10px 14px;border-radius:8px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .15s;z-index:10;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.yc-tooltip::after{content:'';position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid var(--gray-900)}
 .yc-tooltip-label{font-weight:600;margin-bottom:4px;font-size:13px}
 .yc-tooltip-row{display:flex;justify-content:space-between;gap:16px;align-items:center}
 .yc-tooltip-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:4px}
@@ -138,8 +144,15 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 /* MACRO INDICATORS */
 .macro{padding:64px 0;background:var(--white)}
 .macro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
-.macro-card{background:var(--white);border-radius:10px;padding:24px;border:1px solid var(--gray-200);transition:all .3s}
+.macro-card{background:var(--white);border-radius:10px;padding:24px;border:1px solid var(--gray-200);transition:all .3s;cursor:pointer;position:relative}
 .macro-card:hover{border-color:var(--green);box-shadow:0 4px 16px rgba(0,0,0,.04);transform:translateY(-2px)}
+.macro-card.expanded{grid-column:1/-1;transform:none;border-color:var(--green)}
+.macro-card.expanded:hover{transform:none}
+.macro-header{display:flex;justify-content:space-between;align-items:flex-start}
+.macro-header-left{flex:1}
+.macro-expand-icon{width:28px;height:28px;border-radius:50%;background:var(--gray-50);display:flex;align-items:center;justify-content:center;transition:all .3s;flex-shrink:0;margin-top:4px;font-size:14px;color:var(--gray-500)}
+.macro-card:hover .macro-expand-icon{background:rgba(0,106,78,.08);color:var(--green)}
+.macro-card.expanded .macro-expand-icon{transform:rotate(180deg);background:var(--green);color:var(--white)}
 .macro-value{font-family:var(--font-display);font-size:28px;color:var(--navy);margin-bottom:4px}
 .macro-name{font-size:14px;font-weight:600;color:var(--gray-700);margin-bottom:6px}
 .macro-detail{font-size:12px;color:var(--gray-500);line-height:1.5}
@@ -147,18 +160,52 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .macro-trend.positive{color:#16a34a;background:rgba(22,163,74,.06)}
 .macro-trend.negative{color:#dc2626;background:rgba(220,38,38,.06)}
 .macro-trend.neutral{color:var(--gray-500);background:var(--gray-100)}
+.macro-expanded-body{display:none;margin-top:20px;padding-top:20px;border-top:1px solid var(--gray-100)}
+.macro-card.expanded .macro-expanded-body{display:block}
+.macro-hist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-bottom:20px}
+.macro-hist-item{background:var(--gray-50);border-radius:8px;padding:14px}
+.macro-hist-date{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gray-500);margin-bottom:4px}
+.macro-hist-val{font-family:var(--font-display);font-size:20px;color:var(--navy)}
+.macro-hist-change{font-size:11px;font-weight:600;margin-top:2px}
+.macro-hist-change.up{color:#dc2626}
+.macro-hist-change.down{color:#16a34a}
+.macro-hist-change.flat{color:var(--gray-500)}
+.macro-sparkline{display:flex;align-items:end;gap:3px;height:40px;margin:16px 0}
+.macro-sparkline-bar{flex:1;background:var(--green);border-radius:3px 3px 0 0;min-width:8px;transition:all .3s;opacity:.7}
+.macro-sparkline-bar:last-child{opacity:1;background:var(--green)}
+.macro-sparkline-bar:hover{opacity:1}
+.macro-projection{background:linear-gradient(135deg,rgba(0,106,78,.04),rgba(21,61,99,.04));border:1px solid rgba(0,106,78,.15);border-radius:8px;padding:14px;margin-top:12px}
+.macro-projection-label{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--green);margin-bottom:6px}
+.macro-projection-text{font-size:13px;color:var(--gray-700);line-height:1.5}
 
 /* ECONOMIC EVENTS */
 .events{padding:64px 0;background:var(--gray-50)}
 .events-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
-.event-card{background:var(--white);border-radius:10px;padding:24px;border:1px solid var(--gray-200);transition:all .3s;border-left:3px solid transparent}
+.event-card{background:var(--white);border-radius:10px;padding:24px;border:1px solid var(--gray-200);transition:all .3s;border-left:3px solid transparent;cursor:pointer}
 .event-card:hover{border-left-color:var(--green);box-shadow:0 4px 16px rgba(0,0,0,.04);transform:translateY(-2px)}
+.event-card.expanded{grid-column:1/-1;border-left-color:var(--green);transform:none}
+.event-card.expanded:hover{transform:none}
+.event-header{display:flex;justify-content:space-between;align-items:flex-start}
+.event-header-left{flex:1}
+.event-expand-icon{width:24px;height:24px;border-radius:50%;background:var(--gray-50);display:flex;align-items:center;justify-content:center;transition:all .3s;flex-shrink:0;font-size:12px;color:var(--gray-500)}
+.event-card:hover .event-expand-icon{background:rgba(0,106,78,.08);color:var(--green)}
+.event-card.expanded .event-expand-icon{transform:rotate(180deg);background:var(--green);color:var(--white)}
 .event-date{font-size:11px;font-weight:600;color:var(--green);letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
 .event-name{font-family:var(--font-display);font-size:18px;color:var(--navy);margin-bottom:8px}
 .event-desc{font-size:13px;color:var(--gray-500);line-height:1.6}
 .event-impact{display:inline-flex;align-items:center;font-size:11px;font-weight:600;margin-top:12px;padding:3px 10px;border-radius:20px}
 .impact-high{background:rgba(220,38,38,.05);color:#dc2626}
 .impact-med{background:rgba(234,179,8,.06);color:#b45309}
+.event-expanded-body{display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--gray-100)}
+.event-card.expanded .event-expanded-body{display:block}
+.event-hist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-bottom:12px}
+.event-hist-item{background:var(--gray-50);border-radius:8px;padding:12px}
+.event-hist-date{font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gray-500);margin-bottom:2px}
+.event-hist-val{font-family:var(--font-display);font-size:18px;color:var(--navy)}
+.event-hist-note{font-size:11px;color:var(--gray-500);margin-top:2px}
+.event-cre-impact{background:linear-gradient(135deg,rgba(0,106,78,.04),rgba(21,61,99,.04));border:1px solid rgba(0,106,78,.15);border-radius:8px;padding:14px;margin-top:8px}
+.event-cre-impact-label{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--green);margin-bottom:4px}
+.event-cre-impact-text{font-size:13px;color:var(--gray-700);line-height:1.5}
 
 /* RATE COMMENTARY */
 .commentary{padding:64px 0;background:var(--white)}
@@ -171,7 +218,7 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .page-cta{padding:64px 0 88px;background:var(--gray-50);text-align:center}
 
 /* FOOTER */
-footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
+footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55)}
 .footer-grid{max-width:1280px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:40px}
 .footer-brand img{height:90px;margin-bottom:16px;filter:brightness(0) invert(1);opacity:.85}
 .footer-brand p{font-size:13px;line-height:1.6;max-width:280px}
@@ -269,11 +316,12 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
   <table class="indices-table">
     <thead><tr><th>Index</th><th>Today</th><th>Yesterday</th><th>Last Month</th><th>Last Year</th></tr></thead>
     <tbody>
-      <tr><td class="idx-name">10-Yr Treasury</td><td class="idx-val">4.087%</td><td>4.054%</td><td>4.313%</td><td>4.290%</td></tr>
-      <tr><td class="idx-name">30-Yr Treasury</td><td class="idx-val">4.711%</td><td>4.689%</td><td>4.850%</td><td>4.530%</td></tr>
-      <tr><td class="idx-name">2-Yr Treasury</td><td class="idx-val">3.468%</td><td>3.435%</td><td>3.780%</td><td>4.610%</td></tr>
-      <tr><td class="idx-name">5-Yr Treasury</td><td class="idx-val">3.748%</td><td>3.719%</td><td>3.990%</td><td>4.280%</td></tr>
+      <tr class="cre-critical"><td class="idx-name">5-Yr Treasury</td><td class="idx-val">3.748%</td><td>3.719%</td><td>3.990%</td><td>4.280%</td></tr>
+      <tr class="cre-critical"><td class="idx-name">7-Yr Treasury</td><td class="idx-val">3.860%</td><td>3.830%</td><td>4.140%</td><td>4.290%</td></tr>
+      <tr class="cre-critical"><td class="idx-name">10-Yr Treasury</td><td class="idx-val">4.087%</td><td>4.054%</td><td>4.313%</td><td>4.290%</td></tr>
       <tr><td class="idx-name">1-Yr Treasury</td><td class="idx-val">3.610%</td><td>3.592%</td><td>3.840%</td><td>4.880%</td></tr>
+      <tr><td class="idx-name">2-Yr Treasury</td><td class="idx-val">3.468%</td><td>3.435%</td><td>3.780%</td><td>4.610%</td></tr>
+      <tr><td class="idx-name">30-Yr Treasury</td><td class="idx-val">4.711%</td><td>4.689%</td><td>4.850%</td><td>4.530%</td></tr>
       <tr><td class="idx-name">Fed Funds Rate</td><td class="idx-val">3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>3.50&ndash;3.75%</td><td>4.25&ndash;4.50%</td></tr>
       <tr><td class="idx-name">SOFR</td><td class="idx-val">3.56%</td><td>3.56%</td><td>3.56%</td><td>4.31%</td></tr>
       <tr><td class="idx-name">Prime Rate</td><td class="idx-val">7.00%</td><td>7.00%</td><td>7.00%</td><td>7.75%</td></tr>
@@ -298,7 +346,7 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
   <div class="yc-container reveal">
     <div class="yc-controls">
       <div class="yc-control">
-        <label><svg width="24" height="4" style="flex-shrink:0"><line x1="0" y1="2" x2="24" y2="2" stroke="#153D63" stroke-width="3" stroke-linecap="round"/></svg> Today (Solid)</label>
+        <label><svg width="24" height="4" style="flex-shrink:0"><line x1="0" y1="2" x2="24" y2="2" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/></svg> Today (Solid)</label>
         <select id="ycDate1"></select>
       </div>
       <div class="yc-control">
@@ -320,7 +368,7 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
       <div class="yc-tooltip" id="ycTooltip"></div>
     </div>
     <div class="yc-legend">
-      <div class="yc-legend-item"><svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#153D63" stroke-width="3" stroke-linecap="round"/></svg><span id="ycLegend1">Feb 2026</span></div>
+      <div class="yc-legend-item"><svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/></svg><span id="ycLegend1">Feb 2026</span></div>
       <div class="yc-legend-item"><svg width="24" height="4"><line x1="0" y1="2" x2="24" y2="2" stroke="#006A4E" stroke-width="2.5" stroke-dasharray="5,3" stroke-linecap="round"/></svg><span id="ycLegend2">Feb 2025</span></div>
       <div class="yc-spread">2s/10s Spread: <strong id="ycSpread">+62bp</strong></div>
     </div>
@@ -335,60 +383,268 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
   <div class="section-title reveal">Key Economic Indicators</div>
   <p class="section-desc reveal">The macro data that shapes Fed policy, investor sentiment, and commercial real estate lending conditions.</p>
   <div class="macro-grid">
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="cpi">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">2.4%</div>
       <div class="macro-name">CPI (Annual, January 2026)</div>
       <div class="macro-detail">Consumer Price Index — headline inflation measure. Down from 2.9% in December. Approaching the Fed's 2% target.</div>
       <div class="macro-trend positive">Trending Down</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-sparkline">
+          <div class="macro-sparkline-bar" style="height:100%" title="Jun 2025: 3.0%"></div>
+          <div class="macro-sparkline-bar" style="height:97%" title="Jul 2025: 2.9%"></div>
+          <div class="macro-sparkline-bar" style="height:93%" title="Aug 2025: 2.8%"></div>
+          <div class="macro-sparkline-bar" style="height:90%" title="Sep 2025: 2.7%"></div>
+          <div class="macro-sparkline-bar" style="height:93%" title="Oct 2025: 2.8%"></div>
+          <div class="macro-sparkline-bar" style="height:97%" title="Nov 2025: 2.9%"></div>
+          <div class="macro-sparkline-bar" style="height:97%" title="Dec 2025: 2.9%"></div>
+          <div class="macro-sparkline-bar" style="height:80%" title="Jan 2026: 2.4%"></div>
+        </div>
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Jan 2026</div><div class="macro-hist-val">2.4%</div><div class="macro-hist-change down">-0.5% from Dec</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Dec 2025</div><div class="macro-hist-val">2.9%</div><div class="macro-hist-change flat">unchanged</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Sep 2025</div><div class="macro-hist-val">2.7%</div><div class="macro-hist-change down">-0.1%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Jun 2025</div><div class="macro-hist-val">3.0%</div><div class="macro-hist-change down">-0.3%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Jan 2025</div><div class="macro-hist-val">3.3%</div><div class="macro-hist-change up">from 3.0%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Jan 2024</div><div class="macro-hist-val">3.1%</div><div class="macro-hist-change down">-0.3%</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">Consensus Forecast</div>
+          <div class="macro-projection-text">Fed target: 2.0%. Economists expect CPI to reach 2.1-2.3% by mid-2026 if tariff impacts remain contained. Feb reading (due Mar 12) consensus: 2.3%. A sustained move below 2.5% strengthens the case for rate cuts in H2 2026, directly benefiting CRE borrowers through lower permanent loan rates.</div>
+        </div>
+      </div>
     </div>
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="pce">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">2.8%</div>
       <div class="macro-name">Core PCE (Annual, December 2025)</div>
       <div class="macro-detail">The Fed's preferred inflation gauge excluding food and energy. January reading due Feb 21.</div>
       <div class="macro-trend neutral">Holding Steady</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-sparkline">
+          <div class="macro-sparkline-bar" style="height:87%" title="Jun 2025: 2.6%"></div>
+          <div class="macro-sparkline-bar" style="height:87%" title="Jul 2025: 2.6%"></div>
+          <div class="macro-sparkline-bar" style="height:90%" title="Aug 2025: 2.7%"></div>
+          <div class="macro-sparkline-bar" style="height:90%" title="Sep 2025: 2.7%"></div>
+          <div class="macro-sparkline-bar" style="height:93%" title="Oct 2025: 2.8%"></div>
+          <div class="macro-sparkline-bar" style="height:93%" title="Nov 2025: 2.8%"></div>
+          <div class="macro-sparkline-bar" style="height:93%" title="Dec 2025: 2.8%"></div>
+        </div>
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Dec 2025</div><div class="macro-hist-val">2.8%</div><div class="macro-hist-change flat">unchanged</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Sep 2025</div><div class="macro-hist-val">2.7%</div><div class="macro-hist-change down">-0.1%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Jun 2025</div><div class="macro-hist-val">2.6%</div><div class="macro-hist-change down">-0.2%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Dec 2024</div><div class="macro-hist-val">2.9%</div><div class="macro-hist-change flat">unchanged</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Jun 2024</div><div class="macro-hist-val">2.6%</div><div class="macro-hist-change down">from 2.8%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Dec 2023</div><div class="macro-hist-val">2.9%</div><div class="macro-hist-change down">from 3.2%</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">Consensus Forecast</div>
+          <div class="macro-projection-text">Fed target: 2.0%. The FOMC's December SEP projected core PCE at 2.5% by year-end 2026. Markets expect a gradual decline to 2.4-2.6% by mid-2026. This is the single most important metric for Fed rate decisions — and by extension, the cost of capital for every CRE loan.</div>
+        </div>
+      </div>
     </div>
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="gdp">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">2.3%</div>
       <div class="macro-name">GDP Growth (Q4 2025, 1st Est.)</div>
       <div class="macro-detail">Annualized real GDP growth. Economy remains resilient despite higher rates, supporting asset values.</div>
       <div class="macro-trend positive">Solid Growth</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-sparkline">
+          <div class="macro-sparkline-bar" style="height:60%" title="Q1 2025: 1.5%"></div>
+          <div class="macro-sparkline-bar" style="height:80%" title="Q2 2025: 2.0%"></div>
+          <div class="macro-sparkline-bar" style="height:92%" title="Q3 2025: 2.3%"></div>
+          <div class="macro-sparkline-bar" style="height:92%" title="Q4 2025: 2.3%"></div>
+        </div>
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Q4 2025 (1st)</div><div class="macro-hist-val">2.3%</div><div class="macro-hist-change flat">unchanged</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Q3 2025</div><div class="macro-hist-val">2.3%</div><div class="macro-hist-change up">+0.3%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Q2 2025</div><div class="macro-hist-val">2.0%</div><div class="macro-hist-change up">+0.5%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Q1 2025</div><div class="macro-hist-val">1.5%</div><div class="macro-hist-change down">-1.3%</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">Consensus Forecast</div>
+          <div class="macro-projection-text">2026 full-year consensus: 1.8-2.2%. The Atlanta Fed GDPNow Q1 2026 estimate is tracking ~1.9%. Moderate growth supports CRE asset values without overheating inflation. A soft landing continues to be the base case — positive for transaction volume and refinance activity.</div>
+        </div>
+      </div>
     </div>
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="unemployment">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">4.0%</div>
       <div class="macro-name">Unemployment Rate (January 2026)</div>
       <div class="macro-detail">Labor market remains tight but gradually cooling. Supports gradual rate normalization from the Fed.</div>
       <div class="macro-trend neutral">Stable</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-sparkline">
+          <div class="macro-sparkline-bar" style="height:88%" title="Jun 2025: 4.1%"></div>
+          <div class="macro-sparkline-bar" style="height:88%" title="Jul 2025: 4.1%"></div>
+          <div class="macro-sparkline-bar" style="height:85%" title="Aug 2025: 4.0%"></div>
+          <div class="macro-sparkline-bar" style="height:85%" title="Sep 2025: 4.0%"></div>
+          <div class="macro-sparkline-bar" style="height:85%" title="Oct 2025: 4.0%"></div>
+          <div class="macro-sparkline-bar" style="height:88%" title="Nov 2025: 4.1%"></div>
+          <div class="macro-sparkline-bar" style="height:85%" title="Dec 2025: 4.0%"></div>
+          <div class="macro-sparkline-bar" style="height:85%" title="Jan 2026: 4.0%"></div>
+        </div>
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Jan 2026</div><div class="macro-hist-val">4.0%</div><div class="macro-hist-change flat">unchanged</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Oct 2025</div><div class="macro-hist-val">4.0%</div><div class="macro-hist-change flat">unchanged</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Jun 2025</div><div class="macro-hist-val">4.1%</div><div class="macro-hist-change up">from 3.9%</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Jan 2025</div><div class="macro-hist-val">3.9%</div><div class="macro-hist-change up">from 3.7%</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">Consensus Forecast</div>
+          <div class="macro-projection-text">Fed FOMC median projection: 4.2% by year-end 2026. A gradual rise supports the case for rate cuts without signaling recession. For CRE: stable employment sustains office and retail occupancy; any spike above 4.5% would pressure suburban office and lower-tier retail.</div>
+        </div>
+      </div>
     </div>
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="payrolls">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">143K</div>
       <div class="macro-name">Nonfarm Payrolls (January 2026)</div>
       <div class="macro-detail">Monthly job gains. Below the 2024 average of 186K, signaling a gradual labor market cooldown.</div>
       <div class="macro-trend neutral">Moderating</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-sparkline">
+          <div class="macro-sparkline-bar" style="height:85%" title="Jun 2025: 172K"></div>
+          <div class="macro-sparkline-bar" style="height:80%" title="Jul 2025: 160K"></div>
+          <div class="macro-sparkline-bar" style="height:78%" title="Aug 2025: 158K"></div>
+          <div class="macro-sparkline-bar" style="height:75%" title="Sep 2025: 150K"></div>
+          <div class="macro-sparkline-bar" style="height:82%" title="Oct 2025: 165K"></div>
+          <div class="macro-sparkline-bar" style="height:77%" title="Nov 2025: 155K"></div>
+          <div class="macro-sparkline-bar" style="height:74%" title="Dec 2025: 148K"></div>
+          <div class="macro-sparkline-bar" style="height:71%" title="Jan 2026: 143K"></div>
+        </div>
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Jan 2026</div><div class="macro-hist-val">143K</div><div class="macro-hist-change down">-5K from Dec</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Dec 2025</div><div class="macro-hist-val">148K</div><div class="macro-hist-change down">-7K</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">2025 Avg</div><div class="macro-hist-val">158K</div><div class="macro-hist-change down">vs 186K in 2024</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">2024 Avg</div><div class="macro-hist-val">186K</div><div class="macro-hist-change down">vs 251K in 2023</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">Consensus Forecast</div>
+          <div class="macro-projection-text">Feb consensus: 155K. The trend of moderating job growth is consistent with a soft landing. For CRE: steady payroll gains support multifamily demand (renters) and logistics/warehouse absorption. A move below 100K/mo would signal recession risk.</div>
+        </div>
+      </div>
     </div>
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="fedwatch">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">95.3%</div>
       <div class="macro-name">Fed Hold Probability (March 2026)</div>
       <div class="macro-detail">CME FedWatch probability of no change at the March 18 FOMC meeting. Next cut expected mid-2026.</div>
       <div class="macro-trend neutral">Hold Expected</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Mar 2026 Meeting</div><div class="macro-hist-val">95.3% Hold</div><div class="macro-hist-change flat">4.7% cut</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">May 2026 Meeting</div><div class="macro-hist-val">72% Hold</div><div class="macro-hist-change flat">28% cut</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Jun 2026 Meeting</div><div class="macro-hist-val">45% Hold</div><div class="macro-hist-change down">55% cut</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Sep 2026 Meeting</div><div class="macro-hist-val">25% Hold</div><div class="macro-hist-change down">75% cut</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">Rate Path Projection</div>
+          <div class="macro-projection-text">Current rate: 3.50-3.75%. Markets are pricing 1-2 cuts by year-end 2026, likely starting June/July. The dot plot median implies a terminal rate of 3.25-3.50% for this cycle. Every 25bp cut translates to approximately 15-20bp lower on SOFR-indexed bridge loans and adjustable-rate CRE debt.</div>
+        </div>
+      </div>
     </div>
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="debt">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">$35.8T</div>
       <div class="macro-name">National Debt</div>
       <div class="macro-detail">Total U.S. federal debt. Continued fiscal expansion puts upward pressure on long-term Treasury yields.</div>
       <div class="macro-trend negative">Rising</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-sparkline">
+          <div class="macro-sparkline-bar" style="height:75%" title="2021: $28.4T"></div>
+          <div class="macro-sparkline-bar" style="height:82%" title="2022: $30.9T"></div>
+          <div class="macro-sparkline-bar" style="height:88%" title="2023: $33.1T"></div>
+          <div class="macro-sparkline-bar" style="height:94%" title="2024: $34.6T"></div>
+          <div class="macro-sparkline-bar" style="height:100%" title="2026: $35.8T"></div>
+        </div>
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Mar 2026</div><div class="macro-hist-val">$35.8T</div><div class="macro-hist-change up">+$1.2T YoY</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Dec 2024</div><div class="macro-hist-val">$34.6T</div><div class="macro-hist-change up">+$1.5T YoY</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Dec 2023</div><div class="macro-hist-val">$33.1T</div><div class="macro-hist-change up">+$2.2T YoY</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Dec 2020</div><div class="macro-hist-val">$27.7T</div><div class="macro-hist-change up">COVID surge</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">CRE Impact</div>
+          <div class="macro-projection-text">Rising debt drives heavier Treasury issuance, which pushes up the term premium on the 10-Year and 30-Year. This directly increases permanent loan rates and CMBS pricing. CBO projects debt-to-GDP at 120% by 2030. The structural upward pressure on long-term rates is arguably the biggest headwind for CRE valuations this decade.</div>
+        </div>
+      </div>
     </div>
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="pmi">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">49.2</div>
       <div class="macro-name">ISM Manufacturing PMI (Jan 2026)</div>
       <div class="macro-detail">Below 50 signals contraction in manufacturing. Industrial property demand remains bifurcated: logistics strong, traditional manufacturing soft.</div>
       <div class="macro-trend negative">Contraction</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-sparkline">
+          <div class="macro-sparkline-bar" style="height:92%" title="Jun 2025: 48.5"></div>
+          <div class="macro-sparkline-bar" style="height:93%" title="Jul 2025: 48.8"></div>
+          <div class="macro-sparkline-bar" style="height:94%" title="Aug 2025: 49.0"></div>
+          <div class="macro-sparkline-bar" style="height:95%" title="Sep 2025: 49.3"></div>
+          <div class="macro-sparkline-bar" style="height:94%" title="Oct 2025: 49.0"></div>
+          <div class="macro-sparkline-bar" style="height:93%" title="Nov 2025: 48.7"></div>
+          <div class="macro-sparkline-bar" style="height:95%" title="Dec 2025: 49.3"></div>
+          <div class="macro-sparkline-bar" style="height:94%" title="Jan 2026: 49.2"></div>
+        </div>
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Jan 2026</div><div class="macro-hist-val">49.2</div><div class="macro-hist-change down">-0.1 from Dec</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">2025 Avg</div><div class="macro-hist-val">48.9</div><div class="macro-hist-change down">below 50</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Last &gt;50</div><div class="macro-hist-val">50.3</div><div class="macro-hist-change flat">Oct 2024</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">CRE Impact</div>
+          <div class="macro-projection-text">Manufacturing PMI below 50 for 15+ months. However, the ISM Services PMI remains above 50, supporting office and mixed-use demand. For industrial CRE: modern logistics and cold storage remain strong; legacy manufacturing space faces headwinds. The bifurcation favors investors in Class A industrial.</div>
+        </div>
+      </div>
     </div>
-    <div class="macro-card reveal">
+
+    <div class="macro-card reveal" data-macro="caprate">
+      <div class="macro-header"><div class="macro-header-left">
       <div class="macro-value">5.2%</div>
       <div class="macro-name">National CRE Cap Rate (Avg)</div>
       <div class="macro-detail">Average all-property-type capitalization rate. Spread over 10-Yr Treasury remains healthy at ~110bp, supporting valuations.</div>
       <div class="macro-trend neutral">Stabilizing</div>
+      </div><div class="macro-expand-icon">&#9660;</div></div>
+      <div class="macro-expanded-body">
+        <div class="macro-sparkline">
+          <div class="macro-sparkline-bar" style="height:62%" title="2021: 4.8%"></div>
+          <div class="macro-sparkline-bar" style="height:62%" title="2022: 4.8%"></div>
+          <div class="macro-sparkline-bar" style="height:82%" title="2023: 5.3%"></div>
+          <div class="macro-sparkline-bar" style="height:85%" title="2024: 5.4%"></div>
+          <div class="macro-sparkline-bar" style="height:80%" title="Q1 2026: 5.2%"></div>
+        </div>
+        <div class="macro-hist-grid">
+          <div class="macro-hist-item"><div class="macro-hist-date">Q1 2026</div><div class="macro-hist-val">5.2%</div><div class="macro-hist-change down">-20bp from peak</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Q4 2024</div><div class="macro-hist-val">5.4%</div><div class="macro-hist-change up">cycle peak</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Q4 2022</div><div class="macro-hist-val">4.8%</div><div class="macro-hist-change up">expanding</div></div>
+          <div class="macro-hist-item"><div class="macro-hist-date">Q4 2021</div><div class="macro-hist-val">4.5%</div><div class="macro-hist-change down">cycle low</div></div>
+        </div>
+        <div class="macro-projection">
+          <div class="macro-projection-label">CRE Impact</div>
+          <div class="macro-projection-text">Cap rates have likely peaked. The 110bp spread over the 10-Year is historically healthy (long-term average: 150bp). As Treasury yields decline through 2026, cap rates should compress 25-50bp by year-end — translating to 5-10% valuation increases for stabilized assets. Multifamily and industrial leading the compression; office lagging.</div>
+        </div>
+      </div>
     </div>
+
   </div>
 </div>
 </section>
@@ -400,14 +656,150 @@ footer{background:var(--navy);padding:64px 0 32px;color:rgba(255,255,255,.55)}
   <div class="section-title reveal">Upcoming Macro Events</div>
   <p class="section-desc reveal">Key economic releases and Fed decisions that impact commercial real estate lending rates.</p>
   <div class="events-grid">
-    <div class="event-card reveal"><div class="event-date">Feb 21, 2026 &middot; 8:30 AM ET</div><div class="event-name">PCE Price Index (January)</div><div class="event-desc">The Fed's preferred inflation measure. Key for rate cut probability and commercial mortgage rate direction. December core PCE came in at 2.8% annual.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Feb 21, 2026 &middot; 8:30 AM ET</div><div class="event-name">Q4 2025 GDP (2nd Estimate)</div><div class="event-desc">Second estimate of Q4 GDP. The first estimate came in at 2.3% annualized. Strong GDP supports higher-for-longer rates.</div><div class="event-impact impact-med">Medium Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Mar 7, 2026 &middot; 8:30 AM ET</div><div class="event-name">February Jobs Report (Nonfarm Payrolls)</div><div class="event-desc">Labor market health directly affects Fed policy. January added 143K jobs. A cooling market strengthens the case for rate cuts.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Mar 12, 2026 &middot; 8:30 AM ET</div><div class="event-name">CPI Report (February)</div><div class="event-desc">Consumer Price Index for February. January CPI dropped to 2.4% annual — continued progress toward 2% target would support rate cut expectations.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Mar 18, 2026 &middot; 2:00 PM ET</div><div class="event-name">FOMC Rate Decision &amp; Projections</div><div class="event-desc">Next scheduled decision with updated economic projections and dot plot. Markets pricing 95.3% probability of a hold at 3.50&ndash;3.75%. Powell press conference at 2:30 PM.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Mar 26, 2026 &middot; 8:30 AM ET</div><div class="event-name">Durable Goods Orders (February)</div><div class="event-desc">Measures new orders for manufactured durable goods. Indicator of business investment and industrial demand.</div><div class="event-impact impact-med">Medium Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Apr 2, 2026 &middot; 8:30 AM ET</div><div class="event-name">March Jobs Report</div><div class="event-desc">First look at Q1 2026 labor market. Key indicator for May FOMC positioning and mid-year rate cut timing.</div><div class="event-impact impact-high">High Impact</div></div>
-    <div class="event-card reveal"><div class="event-date">Apr 10, 2026 &middot; 8:30 AM ET</div><div class="event-name">CPI Report (March)</div><div class="event-desc">March inflation data. Trend direction critical for determining if Fed achieves its 2% target by year-end.</div><div class="event-impact impact-high">High Impact</div></div>
+
+    <div class="event-card reveal">
+      <div class="event-header"><div class="event-header-left">
+      <div class="event-date">Feb 21, 2026 &middot; 8:30 AM ET</div><div class="event-name">PCE Price Index (January)</div><div class="event-desc">The Fed's preferred inflation measure. Key for rate cut probability and commercial mortgage rate direction. December core PCE came in at 2.8% annual.</div><div class="event-impact impact-high">High Impact</div>
+      </div><div class="event-expand-icon">&#9660;</div></div>
+      <div class="event-expanded-body">
+        <div class="event-hist-grid">
+          <div class="event-hist-item"><div class="event-hist-date">Dec 2025</div><div class="event-hist-val">2.8%</div><div class="event-hist-note">Core PCE annual</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Sep 2025</div><div class="event-hist-val">2.7%</div><div class="event-hist-note">Briefly dipped</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Jun 2025</div><div class="event-hist-val">2.6%</div><div class="event-hist-note">Cycle low</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Dec 2024</div><div class="event-hist-val">2.9%</div><div class="event-hist-note">Year-end</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Dec 2023</div><div class="event-hist-val">2.9%</div><div class="event-hist-note">Down from 3.2%</div></div>
+        </div>
+        <div class="event-cre-impact">
+          <div class="event-cre-impact-label">Why This Matters for CRE</div>
+          <div class="event-cre-impact-text">Core PCE is the single metric the Fed watches most closely. A reading below 2.6% would significantly boost rate cut odds for June, potentially lowering permanent loan rates 15-25bp by mid-year. Consensus estimate: 2.6-2.7%.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card reveal">
+      <div class="event-header"><div class="event-header-left">
+      <div class="event-date">Feb 21, 2026 &middot; 8:30 AM ET</div><div class="event-name">Q4 2025 GDP (2nd Estimate)</div><div class="event-desc">Second estimate of Q4 GDP. The first estimate came in at 2.3% annualized. Strong GDP supports higher-for-longer rates.</div><div class="event-impact impact-med">Medium Impact</div>
+      </div><div class="event-expand-icon">&#9660;</div></div>
+      <div class="event-expanded-body">
+        <div class="event-hist-grid">
+          <div class="event-hist-item"><div class="event-hist-date">Q4 2025 (1st)</div><div class="event-hist-val">2.3%</div><div class="event-hist-note">Advance estimate</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Q3 2025</div><div class="event-hist-val">2.3%</div><div class="event-hist-note">Final</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Q2 2025</div><div class="event-hist-val">2.0%</div><div class="event-hist-note">Final</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Q1 2025</div><div class="event-hist-val">1.5%</div><div class="event-hist-note">Slowdown</div></div>
+        </div>
+        <div class="event-cre-impact">
+          <div class="event-cre-impact-label">Why This Matters for CRE</div>
+          <div class="event-cre-impact-text">Revisions to GDP rarely move markets unless large (&gt;0.5%). A strong revision would support current rate levels; a downward revision would increase rate cut bets. The "Goldilocks" range for CRE is 1.5-2.5% — enough growth to support occupancy without overheating inflation.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card reveal">
+      <div class="event-header"><div class="event-header-left">
+      <div class="event-date">Mar 7, 2026 &middot; 8:30 AM ET</div><div class="event-name">February Jobs Report (Nonfarm Payrolls)</div><div class="event-desc">Labor market health directly affects Fed policy. January added 143K jobs. A cooling market strengthens the case for rate cuts.</div><div class="event-impact impact-high">High Impact</div>
+      </div><div class="event-expand-icon">&#9660;</div></div>
+      <div class="event-expanded-body">
+        <div class="event-hist-grid">
+          <div class="event-hist-item"><div class="event-hist-date">Jan 2026</div><div class="event-hist-val">143K</div><div class="event-hist-note">Below avg</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Dec 2025</div><div class="event-hist-val">148K</div><div class="event-hist-note">Revised down</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">2025 Avg</div><div class="event-hist-val">158K</div><div class="event-hist-note">vs 186K in '24</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">2024 Avg</div><div class="event-hist-val">186K</div><div class="event-hist-note">vs 251K in '23</div></div>
+        </div>
+        <div class="event-cre-impact">
+          <div class="event-cre-impact-label">Why This Matters for CRE</div>
+          <div class="event-cre-impact-text">Consensus estimate: 155K. A number below 130K would spike rate cut odds and likely push the 10-Year below 4.0% — a meaningful tailwind for CRE valuations and refi activity. Above 180K would push yields higher and delay rate cuts.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card reveal">
+      <div class="event-header"><div class="event-header-left">
+      <div class="event-date">Mar 12, 2026 &middot; 8:30 AM ET</div><div class="event-name">CPI Report (February)</div><div class="event-desc">Consumer Price Index for February. January CPI dropped to 2.4% annual — continued progress toward 2% target would support rate cut expectations.</div><div class="event-impact impact-high">High Impact</div>
+      </div><div class="event-expand-icon">&#9660;</div></div>
+      <div class="event-expanded-body">
+        <div class="event-hist-grid">
+          <div class="event-hist-item"><div class="event-hist-date">Jan 2026</div><div class="event-hist-val">2.4%</div><div class="event-hist-note">Sharp drop</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Dec 2025</div><div class="event-hist-val">2.9%</div><div class="event-hist-note">Annual</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Jun 2025</div><div class="event-hist-val">3.0%</div><div class="event-hist-note">Sticky</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Jan 2025</div><div class="event-hist-val">3.3%</div><div class="event-hist-note">Elevated</div></div>
+        </div>
+        <div class="event-cre-impact">
+          <div class="event-cre-impact-label">Why This Matters for CRE</div>
+          <div class="event-cre-impact-text">Consensus estimate: 2.3%. This is the last major CPI print before the March 18 FOMC meeting. A reading at or below 2.3% would cement expectations for a June cut. Every 10bp drop in inflation expectations can translate to 5-8bp compression in CRE permanent loan spreads.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card reveal">
+      <div class="event-header"><div class="event-header-left">
+      <div class="event-date">Mar 18, 2026 &middot; 2:00 PM ET</div><div class="event-name">FOMC Rate Decision &amp; Projections</div><div class="event-desc">Next scheduled decision with updated economic projections and dot plot. Markets pricing 95.3% probability of a hold at 3.50&ndash;3.75%. Powell press conference at 2:30 PM.</div><div class="event-impact impact-high">High Impact</div>
+      </div><div class="event-expand-icon">&#9660;</div></div>
+      <div class="event-expanded-body">
+        <div class="event-hist-grid">
+          <div class="event-hist-item"><div class="event-hist-date">Jan 2026</div><div class="event-hist-val">Hold</div><div class="event-hist-note">3.50-3.75%</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Dec 2025</div><div class="event-hist-val">Hold</div><div class="event-hist-note">Paused cuts</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Nov 2025</div><div class="event-hist-val">-25bp</div><div class="event-hist-note">to 3.50-3.75%</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Sep 2024</div><div class="event-hist-val">-50bp</div><div class="event-hist-note">Pivot began</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Cumulative</div><div class="event-hist-val">-175bp</div><div class="event-hist-note">Since Sep '24</div></div>
+        </div>
+        <div class="event-cre-impact">
+          <div class="event-cre-impact-label">Why This Matters for CRE</div>
+          <div class="event-cre-impact-text">The dot plot and Powell's press conference matter more than the decision itself (hold is priced in). Key question: does the median dot shift from 1 cut to 2 cuts for 2026? A dovish shift would immediately lower bridge loan rates (SOFR-indexed) and compress CMBS spreads. Watch for language on "balance of risks."</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card reveal">
+      <div class="event-header"><div class="event-header-left">
+      <div class="event-date">Mar 26, 2026 &middot; 8:30 AM ET</div><div class="event-name">Durable Goods Orders (February)</div><div class="event-desc">Measures new orders for manufactured durable goods. Indicator of business investment and industrial demand.</div><div class="event-impact impact-med">Medium Impact</div>
+      </div><div class="event-expand-icon">&#9660;</div></div>
+      <div class="event-expanded-body">
+        <div class="event-hist-grid">
+          <div class="event-hist-item"><div class="event-hist-date">Jan 2026</div><div class="event-hist-val">+0.8%</div><div class="event-hist-note">MoM change</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Dec 2025</div><div class="event-hist-val">-1.2%</div><div class="event-hist-note">Boeing drag</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">2025 Avg</div><div class="event-hist-val">+0.3%</div><div class="event-hist-note">Sluggish</div></div>
+        </div>
+        <div class="event-cre-impact">
+          <div class="event-cre-impact-label">Why This Matters for CRE</div>
+          <div class="event-cre-impact-text">Durable goods orders drive demand for industrial/warehouse space. Ex-transportation orders are the cleaner signal. Strong orders support industrial cap rate compression and logistics property absorption.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card reveal">
+      <div class="event-header"><div class="event-header-left">
+      <div class="event-date">Apr 2, 2026 &middot; 8:30 AM ET</div><div class="event-name">March Jobs Report</div><div class="event-desc">First look at Q1 2026 labor market. Key indicator for May FOMC positioning and mid-year rate cut timing.</div><div class="event-impact impact-high">High Impact</div>
+      </div><div class="event-expand-icon">&#9660;</div></div>
+      <div class="event-expanded-body">
+        <div class="event-hist-grid">
+          <div class="event-hist-item"><div class="event-hist-date">Feb Est.</div><div class="event-hist-val">~155K</div><div class="event-hist-note">Consensus</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Jan 2026</div><div class="event-hist-val">143K</div><div class="event-hist-note">Below trend</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Mar 2025</div><div class="event-hist-val">170K</div><div class="event-hist-note">Year ago</div></div>
+        </div>
+        <div class="event-cre-impact">
+          <div class="event-cre-impact-label">Why This Matters for CRE</div>
+          <div class="event-cre-impact-text">The March report is the first complete picture of Q1 2026 labor trends. It will set expectations for the May FOMC meeting. Weakening labor data = faster rate cuts = lower CRE borrowing costs. Strong data = higher-for-longer.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card reveal">
+      <div class="event-header"><div class="event-header-left">
+      <div class="event-date">Apr 10, 2026 &middot; 8:30 AM ET</div><div class="event-name">CPI Report (March)</div><div class="event-desc">March inflation data. Trend direction critical for determining if Fed achieves its 2% target by year-end.</div><div class="event-impact impact-high">High Impact</div>
+      </div><div class="event-expand-icon">&#9660;</div></div>
+      <div class="event-expanded-body">
+        <div class="event-hist-grid">
+          <div class="event-hist-item"><div class="event-hist-date">Feb Est.</div><div class="event-hist-val">~2.3%</div><div class="event-hist-note">Consensus</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Jan 2026</div><div class="event-hist-val">2.4%</div><div class="event-hist-note">Sharp drop</div></div>
+          <div class="event-hist-item"><div class="event-hist-date">Mar 2025</div><div class="event-hist-val">2.8%</div><div class="event-hist-note">Year ago</div></div>
+        </div>
+        <div class="event-cre-impact">
+          <div class="event-cre-impact-label">Why This Matters for CRE</div>
+          <div class="event-cre-impact-text">If the Jan-Feb-Mar CPI trend shows sustained sub-2.5% readings, it would be the strongest case for a June rate cut. This three-month window is critical for H2 2026 CRE financing costs. Life company and agency lenders would likely start lowering rate sheets in anticipation.</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 </section>
@@ -566,7 +958,7 @@ document.querySelectorAll('.commentary-hist-btn').forEach(btn => {
 (function() {
   // Maturities on X-axis
   const MAT = ['1M','3M','6M','1Y','2Y','3Y','5Y','7Y','10Y','20Y','30Y'];
-  const COLORS = { c1: '#153D63', c2: '#006A4E' };
+  const COLORS = { c1: '#1a1a2e', c2: '#006A4E' };
 
   // Historical monthly yield curve data (end-of-month rates)
   // Format: [1M, 3M, 6M, 1Y, 2Y, 3Y, 5Y, 7Y, 10Y, 20Y, 30Y]
@@ -830,6 +1222,28 @@ document.querySelectorAll('.commentary-hist-btn').forEach(btn => {
   PRESETS['1y']();
   buildSVG();
 })();
+
+// Expandable macro cards
+document.querySelectorAll('.macro-card').forEach(card => {
+  card.addEventListener('click', function(e) {
+    if (e.target.closest('a')) return;
+    const wasExpanded = this.classList.contains('expanded');
+    // Close all
+    document.querySelectorAll('.macro-card.expanded').forEach(c => c.classList.remove('expanded'));
+    // Toggle clicked
+    if (!wasExpanded) this.classList.add('expanded');
+  });
+});
+
+// Expandable event cards
+document.querySelectorAll('.event-card').forEach(card => {
+  card.addEventListener('click', function(e) {
+    if (e.target.closest('a')) return;
+    const wasExpanded = this.classList.contains('expanded');
+    document.querySelectorAll('.event-card.expanded').forEach(c => c.classList.remove('expanded'));
+    if (!wasExpanded) this.classList.add('expanded');
+  });
+});
 </script>
 <script src="js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
