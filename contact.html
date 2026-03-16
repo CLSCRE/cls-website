@@ -179,64 +179,19 @@
       </div>
     </div>
 
-    <div class="contact-right reveal">
-      <h3>Request a Quote</h3>
-      <p>Fill out the form below and we'll get back to you within 24 hours.</p>
-      <form action="https://formsubmit.co/inquiries@clscre.com" method="POST" id="contactForm" onsubmit="return validateContactForm()">
-        <!-- Formsubmit config -->
-        <input type="hidden" name="_subject" value="New Quote Request — Commercial Lending Solutions">
-        <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
-        <input type="hidden" name="_captcha" value="true">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_autoresponse" value="Thank you for your inquiry! A Commercial Lending Solutions advisor has received your information and will review your deal within 24 hours. For urgent inquiries, call us directly at 310.758.4042. — Trevor Damyan, Commercial Mortgage Broker, CLS CRE | clscre.com">
-        <input type="text" name="_honey" style="display:none">
-        <div class="form-row">
-          <div class="form-field"><label>First Name *</label><input type="text" name="First Name" id="cf_first" required></div>
-          <div class="form-field"><label>Last Name *</label><input type="text" name="Last Name" id="cf_last" required></div>
-        </div>
-        <div class="form-row">
-          <div class="form-field"><label>Email *</label><input type="email" name="Email" id="cf_email" required></div>
-          <div class="form-field"><label>Phone *</label><input type="tel" name="Phone" id="cf_phone" required placeholder="(310) 555-1234"></div>
-        </div>
-        <div class="form-row">
-          <div class="form-field"><label>Company</label><input type="text" name="Company"></div>
-          <div class="form-field"><label>Loan Amount *</label><input type="text" name="Loan Amount" id="cf_amount" placeholder="e.g. $5,000,000" required></div>
-        </div>
-        <div class="form-row">
-          <div class="form-field"><label>Property Type *</label>
-            <select name="Property Type" id="cf_proptype" required>
-              <option value="">Select...</option>
-              <option>Multi-Family</option>
-              <option>Industrial</option>
-              <option>Office</option>
-              <option>Retail</option>
-              <option>Hospitality</option>
-              <option>Mixed-Use</option>
-              <option>Self Storage</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-field"><label>Loan Type *</label>
-            <select name="Loan Type" id="cf_loantype" required>
-              <option value="">Select...</option>
-              <option>Permanent Financing</option>
-              <option>Construction Financing</option>
-              <option>Bridge Financing</option>
-              <option>SBA 504 / 7(a)</option>
-              <option>Mezzanine / Pref Equity</option>
-              <option>Not Sure</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field full"><label>Property City &amp; State *</label><input type="text" name="Property Location" id="cf_location" placeholder="e.g. Los Angeles, CA" required></div>
-        </div>
-        <div class="form-row">
-          <div class="form-field full"><label>Tell Us About Your Deal *</label><textarea name="Deal Details" id="cf_details" rows="5" placeholder="Property details, timeline, goals, any specific requirements..." required></textarea></div>
-        </div>
-        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px">Submit Quote Request &rarr;</button>
-        <p style="font-size:11px;color:var(--gray-500);text-align:center;margin-top:12px">Minimum loan amount: $1,000,000. For faster processing, try our <a href="apply.html" style="color:var(--green);font-weight:600">step-by-step application</a>.</p>
-      </form>
+    <div class="contact-right reveal" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 40px;background:var(--white);border-radius:12px;border:1px solid var(--gray-200);box-shadow:0 4px 16px rgba(0,0,0,.03)">
+      <div style="width:72px;height:72px;border-radius:50%;background:rgba(21,61,99,.07);display:flex;align-items:center;justify-content:center;font-size:32px;margin-bottom:20px">&#128203;</div>
+      <h3 style="font-family:var(--font-display);font-size:28px;color:var(--navy);margin-bottom:12px">Apply in 2 Minutes</h3>
+      <p style="font-size:15px;color:var(--gray-500);line-height:1.6;margin-bottom:8px;max-width:360px">Our step-by-step application walks you through everything we need to match you with the best lender.</p>
+      <ul style="list-style:none;padding:0;margin:20px 0 28px;text-align:left">
+        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> 5-step guided application</li>
+        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> 100% confidential</li>
+        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> Response within 24 hours</li>
+        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> 1,000+ lenders in our network</li>
+        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> Upload docs &amp; term sheets</li>
+      </ul>
+      <a href="apply.html" class="btn-primary" style="font-size:16px;padding:16px 40px;width:100%;justify-content:center">Start Your Application &rarr;</a>
+      <p style="font-size:12px;color:var(--gray-500);margin-top:16px">Are you a broker? <a href="broker-portal.html" style="color:var(--navy);font-weight:600;text-decoration:underline">Submit a deal through our Broker Portal</a></p>
     </div>
   </div>
 </div>

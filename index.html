@@ -80,11 +80,13 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 
 /* ===== HERO ===== */
 .hero{padding:180px 0 80px;background:var(--white);position:relative;overflow:hidden}
+.hero-video-bg{position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;transform:translate(-50%,-50%);object-fit:cover;z-index:0;filter:brightness(0.8) saturate(1.15)}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1) 0%,rgba(0,0,0,.35) 100%);z-index:1;pointer-events:none}
 .hero-inner{max-width:1440px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 620px;gap:48px;align-items:center;position:relative;z-index:2}
-.hero-label{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.hero-label::before{content:'';width:32px;height:2px;background:var(--green)}
-.hero h1{font-family:var(--font-display);font-size:clamp(36px,4.5vw,56px);color:var(--navy);line-height:1.12;letter-spacing:-.02em;margin-bottom:24px}
-.hero-sub{font-size:17px;line-height:1.7;color:var(--gray-500);margin-bottom:36px;max-width:540px}
+.hero-label{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.hero-label::before{content:'';width:32px;height:2px;background:var(--gold)}
+.hero h1{font-family:var(--font-display);font-size:clamp(36px,4.5vw,56px);color:var(--white);line-height:1.12;letter-spacing:-.02em;margin-bottom:24px;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.hero-sub{font-size:17px;line-height:1.7;color:rgba(255,255,255,.85);margin-bottom:36px;max-width:540px;text-shadow:0 1px 4px rgba(0,0,0,.2)}
 .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .btn-primary{background:var(--navy);color:var(--white);padding:14px 32px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
 .btn-primary:hover{background:var(--green);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,106,78,.18)}
@@ -330,6 +332,9 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 
 <!-- HERO -->
 <section class="hero" id="home">
+<video class="hero-video-bg" autoplay muted loop playsinline preload="auto">
+  <source src="videos/la-aerial-sora.mp4" type="video/mp4">
+</video>
 <div class="hero-inner">
   <div class="hero-content">
     <div class="hero-label reveal">Commercial Lending Solutions</div>
@@ -337,7 +342,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
     <p class="hero-sub reveal">Transparent, efficient access to the capital markets for commercial real estate investors. Over $1 billion financed through 1,000+ banks, debt funds, life insurance companies, and private equity firms.</p>
     <div class="hero-actions reveal">
       <a href="apply.html" class="btn-primary">Apply for Financing <span>&rarr;</span></a>
-      <a href="#transactions" class="btn-secondary">View Our Track Record &rarr;</a>
+      <a href="#transactions" class="btn-secondary" style="color:rgba(255,255,255,.85)">View Our Track Record &rarr;</a>
     </div>
   </div>
   <div class="rate-widget reveal">
