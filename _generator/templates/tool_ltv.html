@@ -1,0 +1,145 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"LTV Calculator","description":"Free Loan-to-Value ratio calculator for commercial real estate. Determine your leverage and see typical LTV limits by lender type.","url":"https://clscre.com/tools/ltv-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is LTV in commercial real estate?","acceptedAnswer":{"@type":"Answer","text":"Loan-to-Value (LTV) is the ratio of the loan amount to the appraised value or purchase price of a property. For example, a $750,000 loan on a $1,000,000 property is 75% LTV. LTV is one of the most important metrics lenders use to assess risk — lower LTV means more borrower equity and less lender risk."}},{"@type":"Question","name":"What is a good LTV for a commercial loan?","acceptedAnswer":{"@type":"Answer","text":"Most conventional commercial lenders cap LTV at 70-75%. Life insurance companies typically max at 60-65% but offer the best rates. SBA 504 loans allow up to 90% LTV. Bridge and debt fund lenders range from 65-80% depending on the business plan. Lower LTV generally means better rates and terms."}},{"@type":"Question","name":"How does LTV affect my interest rate?","acceptedAnswer":{"@type":"Answer","text":"LTV has a direct impact on pricing. Lower LTV (more equity) typically earns 25-75 basis points lower rates. For example, a 55% LTV permanent loan might price at 5.50% while the same loan at 75% LTV might be 6.25%. Lenders view lower leverage as lower risk and price accordingly."}},{"@type":"Question","name":"Can I get above 80% LTV on a commercial loan?","acceptedAnswer":{"@type":"Answer","text":"Yes, but options are limited. SBA 504 loans offer up to 90% LTV for owner-occupied properties. Some credit unions and community banks may go to 80-85% for strong borrowers. Mezzanine or preferred equity can be layered behind a senior loan to achieve 85-90% of total capitalization, though at higher blended cost."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"LTV Calculator","item":"https://clscre.com/tools/ltv-calculator.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}tools/index.html">Calculators</a></li>
+  <li><span>LTV Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Calculator</div>
+  <h1 class="reveal">LTV Calculator</h1>
+  <p class="reveal">Calculate your Loan-to-Value ratio and see how your leverage compares to typical lender maximums. Lower LTV means better rates and more financing options.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Calculate Your LTV</h2>
+      <div class="calc-form">
+        <div class="calc-field">
+          <label for="propValue">Property Value / Purchase Price</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="propValue" inputmode="decimal" placeholder="2,000,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="loanAmt">Loan Amount</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="loanAmt" inputmode="decimal" placeholder="1,500,000"></div>
+        </div>
+        <button class="btn-primary" onclick="calcLTV()" style="width:100%;justify-content:center;margin-top:8px">Calculate LTV</button>
+      </div>
+    </div>
+    <div class="calc-result" id="ltvResult" style="display:none">
+      <div class="calc-gauge" id="ltvGauge">
+        <div class="gauge-value" id="ltvValue">--</div>
+        <div class="gauge-label">Loan-to-Value</div>
+      </div>
+      <div class="calc-detail-grid">
+        <div class="calc-detail"><span class="calc-detail-label">Down Payment Required</span><span class="calc-detail-value" id="downPmt">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Down Payment %</span><span class="calc-detail-value" id="downPct">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Equity Position</span><span class="calc-detail-value" id="equity">--</span></div>
+      </div>
+      <div class="calc-verdict" id="ltvVerdict"></div>
+      <div class="calc-thresholds">
+        <h3>Typical Maximum LTV by Lender Type</h3>
+        <div class="threshold-grid">
+          <div class="threshold-item"><span class="threshold-label">Life Insurance Co.</span><span class="threshold-val">60%&ndash;65%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Bank / Credit Union</span><span class="threshold-val">70%&ndash;75%</span></div>
+          <div class="threshold-item"><span class="threshold-label">CMBS</span><span class="threshold-val">70%&ndash;75%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Agency (Fannie/Freddie)</span><span class="threshold-val">75%&ndash;80%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Bridge / Debt Fund</span><span class="threshold-val">65%&ndash;80%</span></div>
+          <div class="threshold-item"><span class="threshold-label">SBA 504</span><span class="threshold-val">85%&ndash;90%</span></div>
+        </div>
+      </div>
+      <div class="calc-email-capture" id="emailCapture" style="display:none">
+        <h3>Get Your Full Analysis</h3>
+        <p>We'll email your results plus a personalized financing recommendation from 1,000+ lenders.</p>
+        <div class="calc-field"><input type="email" id="captureEmail" placeholder="your@email.com" class="calc-email-input"></div>
+        <div class="calc-field"><input type="text" id="captureName" placeholder="Your name" class="calc-email-input"></div>
+        <button class="btn-primary" onclick="sendResults('ltv')" style="width:100%;justify-content:center">Email My Results</button>
+        <p style="font-size:12px;color:var(--gray-500);margin-top:8px">No spam. Just your results + how CLS CRE can help.</p>
+      </div>
+      <a href="{{ depth }}apply.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Apply for Financing &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More Calculators</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}tools/dscr-calculator.html" class="cross-link-card reveal"><div class="cl-title">DSCR Calculator</div><div class="cl-sub">Debt service coverage</div></a>
+    <a href="{{ depth }}tools/cap-rate-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cap Rate Calculator</div><div class="cl-sub">Property valuation</div></a>
+    <a href="{{ depth }}tools/loan-calculator.html" class="cross-link-card reveal"><div class="cl-title">Loan Payment Calculator</div><div class="cl-sub">Monthly payment estimates</div></a>
+    <a href="{{ depth }}tools/cashoncash-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cash-on-Cash Calculator</div><div class="cl-sub">Return on equity</div></a>
+    <a href="{{ depth }}tools/noi-calculator.html" class="cross-link-card reveal"><div class="cl-title">NOI Calculator</div><div class="cl-sub">Net operating income</div></a>
+  </div>
+</div>
+</section>
+
+{% set faq_title = 'LTV Calculator FAQ' %}
+{% set faq_alt = true %}
+{% set faqs = [
+  {"q": "What is LTV in commercial real estate?", "a": "Loan-to-Value (LTV) is the ratio of the loan amount to the appraised value or purchase price of a property. For example, a $750,000 loan on a $1,000,000 property is 75% LTV. LTV is one of the most important metrics lenders use to assess risk."},
+  {"q": "What is a good LTV for a commercial loan?", "a": "Most conventional commercial lenders cap LTV at 70-75%. Life insurance companies typically max at 60-65% but offer the best rates. SBA 504 loans allow up to 90% LTV. Lower LTV generally means better rates and terms."},
+  {"q": "How does LTV affect my interest rate?", "a": "LTV has a direct impact on pricing. Lower LTV (more equity) typically earns 25-75 basis points lower rates. Lenders view lower leverage as lower risk and price accordingly."},
+  {"q": "Can I get above 80% LTV on a commercial loan?", "a": "Yes, but options are limited. SBA 504 loans offer up to 90% LTV for owner-occupied properties. Mezzanine or preferred equity can be layered behind a senior loan to achieve 85-90% of total capitalization, though at higher blended cost."}
+] %}
+{% include '_faq_section.html' %}
+
+{% set cta_title = 'Find the Right Leverage for Your Deal' %}
+{% set cta_description = 'LTV is just one piece. CLS CRE will match your deal to the right lender — whether you need low-leverage life company pricing or high-leverage SBA terms.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+function parseNum(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0}
+function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+function calcLTV(){
+  var val=parseNum('propValue'),loan=parseNum('loanAmt');
+  if(!val||!loan)return;
+  var ltv=(loan/val)*100;
+  var down=val-loan;
+  document.getElementById('ltvValue').textContent=ltv.toFixed(1)+'%';
+  document.getElementById('downPmt').textContent=fmt(down);
+  document.getElementById('downPct').textContent=(100-ltv).toFixed(1)+'%';
+  document.getElementById('equity').textContent=fmt(down);
+  var g=document.getElementById('ltvGauge');
+  g.className='calc-gauge'+(ltv<=65?' gauge-green':ltv<=75?' gauge-yellow':' gauge-red');
+  var v=document.getElementById('ltvVerdict');
+  if(ltv<=65)v.innerHTML='<strong>Conservative leverage.</strong> You qualify for the best rates from life insurance companies, banks, and CMBS lenders. Expect the most competitive terms available.';
+  else if(ltv<=75)v.innerHTML='<strong>Standard leverage.</strong> Most conventional lenders, banks, and agency programs will accommodate this LTV. Good balance of leverage and pricing.';
+  else if(ltv<=80)v.innerHTML='<strong>Aggressive leverage.</strong> Limited to select banks, agency programs (multifamily), and bridge lenders. Consider SBA 504 for owner-occupied properties.';
+  else v.innerHTML='<strong>High leverage.</strong> Few conventional options above 80% LTV. SBA 504 (owner-occupied, up to 90%) or mezzanine/preferred equity layered behind a senior loan are your best paths.';
+  document.getElementById('ltvResult').style.display='block';
+  document.getElementById('emailCapture').style.display='block';
+}
+function sendResults(calc){
+  var email=document.getElementById('captureEmail').value;
+  var name=document.getElementById('captureName').value;
+  if(!email){alert('Please enter your email.');return;}
+  if(typeof gtag==='function')gtag('event','calculator_lead',{calculator:calc,page_url:window.location.href});
+  var leads=JSON.parse(localStorage.getItem('cls_calc_leads')||'[]');
+  leads.push({calculator:calc,email:email,name:name,url:window.location.href,timestamp:new Date().toISOString()});
+  localStorage.setItem('cls_calc_leads',JSON.stringify(leads));
+  document.getElementById('emailCapture').innerHTML='<div style="text-align:center;padding:20px"><div style="font-size:32px;margin-bottom:8px">&#10003;</div><h3 style="color:var(--green)">Thank You!</h3><p>We\'ll send your personalized analysis within 24 hours.</p></div>';
+}
+</script>
+{% endblock %}

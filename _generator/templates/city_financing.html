@@ -10,6 +10,9 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"{{ loan.name }}","item":"https://clscre.com/financing/{{ loan.slug }}.html"},{"@type":"ListItem","position":3,"name":"{{ city.city }}","item":"https://clscre.com/financing/{{ loan.slug }}-{{ city.slug }}.html"}]}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LoanOrCredit","name":"{{ loan.name }} in {{ city.city }}, {{ city.state }}","description":"{{ seo.meta_description }}","loanType":"{{ loan.short_name }}","provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com","telephone":"+13107584042","email":"inquiries@clscre.com"},"url":"https://clscre.com/financing/{{ loan.slug }}-{{ city.slug }}.html","interestRate":{"@type":"QuantitativeValue","value":"{{ loan.key_features.rates }}"},"loanTerm":{"@type":"QuantitativeValue","value":"{{ loan.key_features.term }}"},"amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"100000","value":"{{ loan.key_features.loan_amount }}"},"areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}}}
+</script>
 {% endblock %}
 
 {% block content %}

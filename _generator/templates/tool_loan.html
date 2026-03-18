@@ -72,6 +72,14 @@
         <div class="calc-detail"><span class="calc-detail-label">Balloon at Maturity</span><span class="calc-detail-value" id="lnBalloon">--</span></div>
       </div>
       <div class="calc-schedule" id="lnSchedule"></div>
+      <div class="calc-email-capture" id="emailCapture" style="display:none">
+        <h3>Get Your Full Analysis</h3>
+        <p>We'll email your results plus a personalized financing recommendation from 1,000+ lenders.</p>
+        <div class="calc-field"><input type="email" id="captureEmail" placeholder="your@email.com" class="calc-email-input"></div>
+        <div class="calc-field"><input type="text" id="captureName" placeholder="Your name" class="calc-email-input"></div>
+        <button class="btn-primary" onclick="sendResults('loan')" style="width:100%;justify-content:center">Email My Results</button>
+        <p style="font-size:12px;color:var(--gray-500);margin-top:8px">No spam. Just your results + how CLS CRE can help.</p>
+      </div>
       <a href="{{ depth }}apply.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Apply for Financing &rarr;</a>
     </div>
   </div>
@@ -84,6 +92,9 @@
   <div class="cross-link-grid">
     <a href="{{ depth }}tools/dscr-calculator.html" class="cross-link-card reveal"><div class="cl-title">DSCR Calculator</div><div class="cl-sub">Debt service coverage</div></a>
     <a href="{{ depth }}tools/cap-rate-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cap Rate Calculator</div><div class="cl-sub">Property valuation</div></a>
+    <a href="{{ depth }}tools/ltv-calculator.html" class="cross-link-card reveal"><div class="cl-title">LTV Calculator</div><div class="cl-sub">Leverage analysis</div></a>
+    <a href="{{ depth }}tools/cashoncash-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cash-on-Cash Calculator</div><div class="cl-sub">Return on equity</div></a>
+    <a href="{{ depth }}tools/noi-calculator.html" class="cross-link-card reveal"><div class="cl-title">NOI Calculator</div><div class="cl-sub">Net operating income</div></a>
   </div>
 </div>
 </section>
@@ -149,6 +160,17 @@ function calcLoan(){
   html+='</tbody></table>';
   document.getElementById('lnSchedule').innerHTML=html;
   document.getElementById('loanResult').style.display='block';
+  document.getElementById('emailCapture').style.display='block';
+}
+function sendResults(calc){
+  var email=document.getElementById('captureEmail').value;
+  var name=document.getElementById('captureName').value;
+  if(!email){alert('Please enter your email.');return;}
+  if(typeof gtag==='function')gtag('event','calculator_lead',{calculator:calc,page_url:window.location.href});
+  var leads=JSON.parse(localStorage.getItem('cls_calc_leads')||'[]');
+  leads.push({calculator:calc,email:email,name:name,url:window.location.href,timestamp:new Date().toISOString()});
+  localStorage.setItem('cls_calc_leads',JSON.stringify(leads));
+  document.getElementById('emailCapture').innerHTML='<div style="text-align:center;padding:20px"><div style="font-size:32px;margin-bottom:8px">&#10003;</div><h3 style="color:var(--green)">Thank You!</h3><p>We\'ll send your personalized analysis within 24 hours.</p></div>';
 }
 </script>
 {% endblock %}

@@ -224,7 +224,7 @@
       </div>
     </div>
     <div class="txn-card reveal">
-      <img src="../../images/deals/retail-center-1.jpg" alt="Retail Center - New York, NY" class="txn-photo" loading="lazy" width="400" height="200">
+      <img src="../../images/deals/new-york-retail-center-8.5m.jpg" alt="Retail Center - New York, NY" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge perm">Permanent</div>
         <div class="txn-amount">$8,500,000</div>
@@ -244,7 +244,7 @@
       </div>
     </div>
     <div class="txn-card reveal">
-      <img src="../../images/deals/mixed-use-1.jpg" alt="Mixed-Use Walk-Up - New York, NY" class="txn-photo" loading="lazy" width="400" height="200">
+      <img src="../../images/deals/new-york-mixed-use-walk-up-2.8m.jpg" alt="Mixed-Use Walk-Up - New York, NY" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge bridge">Bridge</div>
         <div class="txn-amount">$2,800,000</div>
@@ -267,6 +267,16 @@
     <a href="../../markets/new-york/queens.html" class="pill-link">Queens</a>
     <a href="../../markets/new-york/the-bronx.html" class="pill-link">The Bronx</a>
     <a href="../../markets/new-york/westchester.html" class="pill-link">Westchester</a>
+    <a href="../../markets/new-york/midtown-manhattan.html" class="pill-link">Midtown Manhattan</a>
+    <a href="../../markets/new-york/lower-manhattan.html" class="pill-link">Lower Manhattan</a>
+    <a href="../../markets/new-york/jersey-city.html" class="pill-link">Jersey City</a>
+    <a href="../../markets/new-york/hoboken.html" class="pill-link">Hoboken</a>
+    <a href="../../markets/new-york/long-island-city.html" class="pill-link">Long Island City</a>
+    <a href="../../markets/new-york/williamsburg.html" class="pill-link">Williamsburg</a>
+    <a href="../../markets/new-york/harlem.html" class="pill-link">Harlem</a>
+    <a href="../../markets/new-york/soho.html" class="pill-link">SoHo</a>
+    <a href="../../markets/new-york/chelsea.html" class="pill-link">Chelsea</a>
+    <a href="../../markets/new-york/bushwick.html" class="pill-link">Bushwick</a>
   </div>
 </div>
 </section>
@@ -310,7 +320,7 @@
 <footer>
 <div class="footer-grid">
   <div class="footer-brand">
-    <img src="../../images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="90" height="90" loading="lazy">
+    <img src="../../images/cls-logo-skyline.png" alt="Commercial Lending Solutions" style="height:60px" loading="lazy">
     <p>Over $1 billion in commercial loans closed. Institutional expertise. Personal service. Every deal, every time.</p>
   </div>
   <div class="footer-col">
@@ -341,6 +351,8 @@
     <a href="../../locations.html">Locations</a>
     <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
     <a href="../../contact.html">Contact</a>
+    <a href="../../privacy.html">Privacy Policy</a>
+    <a href="../../terms.html">Terms of Service</a>
   </div>
 </div>
 <div class="footer-bottom">
@@ -362,15 +374,25 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup -->
+<!-- Exit Intent Popup — page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
-    <div class="exit-icon">&#128203;</div>
-    <h3 class="exit-title">Before You Go&hellip;</h3>
-    <p class="exit-desc">Get matched with the right lender from our network of 1,000+ capital sources. It takes 2 minutes and there's zero obligation.</p>
-    <a href="../../apply.html" class="exit-btn">Apply for Financing &rarr;</a>
+    <div class="exit-icon" id="exitIcon">&#128200;</div>
+    <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
+    <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
+    <form class="exit-form" id="exitForm" onsubmit="return captureExitLead(event)">
+      <input type="email" id="exitEmail" placeholder="your@email.com" required style="width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:8px;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--gray-200)'">
+      <input type="text" id="exitName" placeholder="Your name" style="width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:8px;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--gray-200)'">
+      <button type="submit" class="exit-btn" id="exitBtn" style="width:100%;cursor:pointer">Get My Free Quote &rarr;</button>
+    </form>
+    <div class="exit-success" id="exitSuccess" style="display:none;text-align:center;padding:20px 0">
+      <div style="font-size:48px;margin-bottom:8px;color:var(--green)">&#10003;</div>
+      <h3 style="color:var(--green);margin:0 0 8px">Thank You!</h3>
+      <p style="color:var(--gray-500);margin:0">We'll be in touch within 24 hours.</p>
+    </div>
     <div class="exit-phone">Or call us: <a href="tel:+13107584042">310.758.4042</a></div>
+    <p style="font-size:11px;color:var(--gray-500);margin:8px 0 0;text-align:center">No spam. Unsubscribe anytime.</p>
   </div>
 </div>
 
@@ -406,6 +428,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 </script>
+<script>
 // Sticky CTA bar — show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
@@ -415,24 +438,64 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — fires once per session, not on apply/thank-you pages
+// Exit intent popup — page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
+  // Page-specific offers
+  var path = location.pathname;
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  if (path.includes('/financing/')) {
+    var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
+    offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};
+  } else if (path.includes('/property/')) {
+    var propName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' Financing')[0] : 'Property';
+    offer = {icon:'&#128203;', title:'Free Guide: '+propName+' Financing', desc:'Checklist of requirements, typical terms, and lender options for your property type.', btn:'Get My Free Guide'};
+  } else if (path.includes('/tools/')) {
+    offer = {icon:'&#128202;', title:'Get Your Personalized Analysis', desc:'We\'ll review your numbers and send quotes from lenders that match your deal.', btn:'Get My Analysis'};
+  } else if (path.includes('/blog/')) {
+    offer = {icon:'&#128232;', title:'Free Weekly Rate Alert', desc:'Stay ahead of commercial mortgage rate changes. One email per week, unsubscribe anytime.', btn:'Subscribe Free'};
+  } else if (path.includes('/markets/')) {
+    var cityName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' Commercial')[0] : 'Local';
+    offer = {icon:'&#127961;', title:'Free Market Report: '+cityName, desc:'Current cap rates, deal volume, and financing trends for your target market.', btn:'Get My Report'};
+  }
+  document.getElementById('exitIcon').innerHTML = offer.icon;
+  document.getElementById('exitTitle').textContent = offer.title;
+  document.getElementById('exitDesc').textContent = offer.desc;
+  document.getElementById('exitBtn').textContent = offer.btn + ' \u2192';
   let fired = false;
   function showPopup() {
     if (fired || sessionStorage.getItem('exitShown')) return;
-    fired = true;
-    sessionStorage.setItem('exitShown', '1');
+    fired = true; sessionStorage.setItem('exitShown', '1');
     overlay.classList.add('visible');
-    gtag('event', 'exit_intent_shown', { event_category: 'engagement' });
+    if(typeof gtag==='function') gtag('event', 'exit_intent_shown', {page_type: path.split('/')[1] || 'home'});
   }
-  document.addEventListener('mouseout', function(e) {
-    if (e.clientY < 5 && e.relatedTarget === null) showPopup();
+  document.addEventListener('mouseout', function(e) { if (e.clientY < 5 && e.relatedTarget === null) showPopup(); });
+  // Mobile: detect rapid scroll up
+  var lastY = 0, scrollUp = 0;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY < lastY) scrollUp++; else scrollUp = 0;
+    lastY = window.scrollY;
+    if (scrollUp > 15 && window.scrollY > 300) showPopup();
   });
   document.getElementById('exitClose').addEventListener('click', function() { overlay.classList.remove('visible'); });
   overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('visible'); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') overlay.classList.remove('visible'); });
 })();
+function captureExitLead(e) {
+  e.preventDefault();
+  var email = document.getElementById('exitEmail').value;
+  var name = document.getElementById('exitName').value;
+  if (!email) return false;
+  var pageType = location.pathname.split('/')[1] || 'home';
+  if(typeof gtag==='function') gtag('event', 'exit_lead_capture', {page_type: pageType, page_url: location.href});
+  var leads = JSON.parse(localStorage.getItem('cls_exit_leads') || '[]');
+  leads.push({email:email, name:name, page:location.href, type:pageType, timestamp:new Date().toISOString()});
+  localStorage.setItem('cls_exit_leads', JSON.stringify(leads));
+  document.getElementById('exitForm').style.display = 'none';
+  document.getElementById('exitSuccess').style.display = 'block';
+  return false;
+}
 </script>
 <script src="../../js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>

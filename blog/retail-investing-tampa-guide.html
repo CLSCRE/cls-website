@@ -37,7 +37,7 @@
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","logo":"https://clscre.com/images/cls-logo-skyline.png","image":"https://clscre.com/images/cls-og-image.png","telephone":"+13107584042","email":"inquiries@clscre.com","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"]}</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Retail Investing in Tampa: A Complete Guide","description":"A comprehensive guide to retail investing in Tampa, covering market metrics, property subtypes, financing options, top submarkets, and the investment thesis for 2026.","author":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","image":"https://clscre.com/images/trevor-damyan.jpg","worksFor":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}},"datePublished":"2026-02-26","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-emblem.png"}},"mainEntityOfPage":"https://clscre.com/blog/retail-investing-tampa-guide.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"Retail Investing in Tampa: A Complete Guide","description":"A comprehensive guide to retail investing in Tampa, covering market metrics, property subtypes, financing options, top submarkets, and the investment thesis for 2026.","image":"https://clscre.com/images/cls-og-image.png","author":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about.html","image":"https://clscre.com/images/trevor-damyan.jpg","worksFor":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}},"datePublished":"2026-02-26","dateModified":"2026-02-26","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"mainEntityOfPage":"https://clscre.com/blog/retail-investing-tampa-guide.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are retail cap rates in Tampa?","acceptedAnswer":{"@type":"Answer","text":"Retail cap rates in Tampa range from 6.00%-6.75% as of 2026, reflecting attractive yields relative to coastal gateway markets."}},{"@type":"Question","name":"How do I finance a retail property in Tampa?","acceptedAnswer":{"@type":"Answer","text":"Retail properties in Tampa can be financed through Life Insurance Company Loans, CMBS, Bank Permanent Loans, Bridge Loans. The optimal structure depends on your business plan, property condition, and target hold period."}},{"@type":"Question","name":"What is the retail vacancy rate in Tampa?","acceptedAnswer":{"@type":"Answer","text":"The Tampa retail vacancy rate is 4.5% as of 2026, with 3.0% rent growth across the metro. The market's 2.4% job growth supports continued demand."}},{"@type":"Question","name":"What are the best retail submarkets in Tampa?","acceptedAnswer":{"@type":"Answer","text":"Top retail investment submarkets in Tampa include Downtown Tampa/Channelside, Westshore business district, I-4 corridor industrial, St. Petersburg waterfront. Each offers distinct opportunities based on tenant mix, supply dynamics, and growth trajectory."}},{"@type":"Question","name":"Is Tampa a good market for retail investment?","acceptedAnswer":{"@type":"Answer","text":"Tampa offers compelling retail investment opportunities with 4.5% vacancy, 6.00%-6.75% cap rates, and demand driven by financial services, healthcare, technology, tourism, defense."}}]}
@@ -457,15 +457,25 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup -->
+<!-- Exit Intent Popup — page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
-    <div class="exit-icon">&#128203;</div>
-    <h3 class="exit-title">Before You Go&hellip;</h3>
-    <p class="exit-desc">Get matched with the right lender from our network of 1,000+ capital sources. It takes 2 minutes and there's zero obligation.</p>
-    <a href="../apply.html" class="exit-btn">Apply for Financing &rarr;</a>
+    <div class="exit-icon" id="exitIcon">&#128200;</div>
+    <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
+    <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
+    <form class="exit-form" id="exitForm" onsubmit="return captureExitLead(event)">
+      <input type="email" id="exitEmail" placeholder="your@email.com" required style="width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:8px;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--gray-200)'">
+      <input type="text" id="exitName" placeholder="Your name" style="width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:8px;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--gray-200)'">
+      <button type="submit" class="exit-btn" id="exitBtn" style="width:100%;cursor:pointer">Get My Free Quote &rarr;</button>
+    </form>
+    <div class="exit-success" id="exitSuccess" style="display:none;text-align:center;padding:20px 0">
+      <div style="font-size:48px;margin-bottom:8px;color:var(--green)">&#10003;</div>
+      <h3 style="color:var(--green);margin:0 0 8px">Thank You!</h3>
+      <p style="color:var(--gray-500);margin:0">We'll be in touch within 24 hours.</p>
+    </div>
     <div class="exit-phone">Or call us: <a href="tel:+13107584042">310.758.4042</a></div>
+    <p style="font-size:11px;color:var(--gray-500);margin:8px 0 0;text-align:center">No spam. Unsubscribe anytime.</p>
   </div>
 </div>
 
@@ -501,6 +511,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 </script>
+<script>
 // Sticky CTA bar — show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
@@ -510,24 +521,64 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — fires once per session, not on apply/thank-you pages
+// Exit intent popup — page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
+  // Page-specific offers
+  var path = location.pathname;
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  if (path.includes('/financing/')) {
+    var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
+    offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};
+  } else if (path.includes('/property/')) {
+    var propName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' Financing')[0] : 'Property';
+    offer = {icon:'&#128203;', title:'Free Guide: '+propName+' Financing', desc:'Checklist of requirements, typical terms, and lender options for your property type.', btn:'Get My Free Guide'};
+  } else if (path.includes('/tools/')) {
+    offer = {icon:'&#128202;', title:'Get Your Personalized Analysis', desc:'We\'ll review your numbers and send quotes from lenders that match your deal.', btn:'Get My Analysis'};
+  } else if (path.includes('/blog/')) {
+    offer = {icon:'&#128232;', title:'Free Weekly Rate Alert', desc:'Stay ahead of commercial mortgage rate changes. One email per week, unsubscribe anytime.', btn:'Subscribe Free'};
+  } else if (path.includes('/markets/')) {
+    var cityName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' Commercial')[0] : 'Local';
+    offer = {icon:'&#127961;', title:'Free Market Report: '+cityName, desc:'Current cap rates, deal volume, and financing trends for your target market.', btn:'Get My Report'};
+  }
+  document.getElementById('exitIcon').innerHTML = offer.icon;
+  document.getElementById('exitTitle').textContent = offer.title;
+  document.getElementById('exitDesc').textContent = offer.desc;
+  document.getElementById('exitBtn').textContent = offer.btn + ' \u2192';
   let fired = false;
   function showPopup() {
     if (fired || sessionStorage.getItem('exitShown')) return;
-    fired = true;
-    sessionStorage.setItem('exitShown', '1');
+    fired = true; sessionStorage.setItem('exitShown', '1');
     overlay.classList.add('visible');
-    gtag('event', 'exit_intent_shown', { event_category: 'engagement' });
+    if(typeof gtag==='function') gtag('event', 'exit_intent_shown', {page_type: path.split('/')[1] || 'home'});
   }
-  document.addEventListener('mouseout', function(e) {
-    if (e.clientY < 5 && e.relatedTarget === null) showPopup();
+  document.addEventListener('mouseout', function(e) { if (e.clientY < 5 && e.relatedTarget === null) showPopup(); });
+  // Mobile: detect rapid scroll up
+  var lastY = 0, scrollUp = 0;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY < lastY) scrollUp++; else scrollUp = 0;
+    lastY = window.scrollY;
+    if (scrollUp > 15 && window.scrollY > 300) showPopup();
   });
   document.getElementById('exitClose').addEventListener('click', function() { overlay.classList.remove('visible'); });
   overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('visible'); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') overlay.classList.remove('visible'); });
 })();
+function captureExitLead(e) {
+  e.preventDefault();
+  var email = document.getElementById('exitEmail').value;
+  var name = document.getElementById('exitName').value;
+  if (!email) return false;
+  var pageType = location.pathname.split('/')[1] || 'home';
+  if(typeof gtag==='function') gtag('event', 'exit_lead_capture', {page_type: pageType, page_url: location.href});
+  var leads = JSON.parse(localStorage.getItem('cls_exit_leads') || '[]');
+  leads.push({email:email, name:name, page:location.href, type:pageType, timestamp:new Date().toISOString()});
+  localStorage.setItem('cls_exit_leads', JSON.stringify(leads));
+  document.getElementById('exitForm').style.display = 'none';
+  document.getElementById('exitSuccess').style.display = 'block';
+  return false;
+}
 </script>
 <script src="../js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>

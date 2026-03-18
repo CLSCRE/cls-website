@@ -562,6 +562,12 @@ def main():
          "Free capitalization rate calculator for commercial real estate.", "0.8"),
         ("tool_loan.html", "tools/loan-calculator.html", "tools/loan-calculator.html", "Commercial Loan Payment Calculator | CLS CRE",
          "Free commercial mortgage payment calculator with I/O periods and amortization.", "0.8"),
+        ("tool_ltv.html", "tools/ltv-calculator.html", "tools/ltv-calculator.html", "LTV Calculator | CLS CRE",
+         "Free Loan-to-Value calculator for commercial real estate. See typical LTV limits by lender type.", "0.8"),
+        ("tool_cashoncash.html", "tools/cashoncash-calculator.html", "tools/cashoncash-calculator.html", "Cash-on-Cash Return Calculator | CLS CRE",
+         "Free cash-on-cash return calculator for commercial real estate investments.", "0.8"),
+        ("tool_noi.html", "tools/noi-calculator.html", "tools/noi-calculator.html", "NOI Calculator | CLS CRE",
+         "Free Net Operating Income calculator for commercial real estate. Calculate NOI from income and expenses.", "0.8"),
     ]
     for tpl_name, out_rel, canonical, title, desc, priority in tool_pages:
         tpl_tool = env.get_template(tpl_name)

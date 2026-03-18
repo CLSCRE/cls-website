@@ -11,7 +11,7 @@
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"{{ article.title }}","description":"{{ article.excerpt }}","author":{"@type":"Person","name":"{{ article.author }}","jobTitle":"Commercial Mortgage Broker","image":"https://clscre.com/images/trevor-damyan.jpg","worksFor":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}},"datePublished":"{{ article.date }}","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-emblem.png"}},"mainEntityOfPage":"https://clscre.com/blog/{{ article.slug }}.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"{{ article.title }}","description":"{{ article.excerpt }}","image":"https://clscre.com/images/cls-og-image.png","author":{"@type":"Person","name":"{{ article.author }}","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about.html","image":"https://clscre.com/images/trevor-damyan.jpg","worksFor":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}},"datePublished":"{{ article.date }}","dateModified":"{{ article.date_modified or article.date }}","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"mainEntityOfPage":"https://clscre.com/blog/{{ article.slug }}.html"}
 </script>
 {% if faqs %}
 <script type="application/ld+json">

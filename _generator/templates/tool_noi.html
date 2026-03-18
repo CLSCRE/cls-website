@@ -1,0 +1,179 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"NOI Calculator","description":"Free Net Operating Income calculator for commercial real estate. Calculate NOI from rental income and expenses to underwrite your deal.","url":"https://clscre.com/tools/noi-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Net Operating Income (NOI)?","acceptedAnswer":{"@type":"Answer","text":"NOI is the total income a property generates minus all operating expenses, before debt service and income taxes. It is the single most important metric in commercial real estate underwriting. NOI = Effective Gross Income - Operating Expenses. It does NOT include mortgage payments, depreciation, or capital expenditures."}},{"@type":"Question","name":"What expenses are included in NOI?","acceptedAnswer":{"@type":"Answer","text":"Operating expenses included in NOI: property taxes, insurance, property management fees, maintenance and repairs, utilities (if owner-paid), landscaping, pest control, and administrative costs. NOT included: mortgage payments (debt service), capital expenditures, depreciation, income taxes, and leasing commissions."}},{"@type":"Question","name":"How do I increase my property's NOI?","acceptedAnswer":{"@type":"Answer","text":"Two ways: increase income or reduce expenses. Income strategies: raise rents to market, reduce vacancy, add ancillary income (parking, laundry, storage, pet fees). Expense strategies: contest property tax assessments, shop insurance, implement energy efficiency, optimize management fees. Even small NOI improvements can significantly increase property value."}},{"@type":"Question","name":"What is a good expense ratio for commercial property?","acceptedAnswer":{"@type":"Answer","text":"Expense ratios vary by property type. Multifamily: 35-50%, NNN Retail: 5-15% (tenants pay most expenses), Office: 40-55%, Industrial: 20-35%. A lower expense ratio means more of gross income flows to NOI. If your ratio is significantly above these ranges, there may be opportunity to optimize operations."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"NOI Calculator","item":"https://clscre.com/tools/noi-calculator.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}tools/index.html">Calculators</a></li>
+  <li><span>NOI Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Calculator</div>
+  <h1 class="reveal">NOI Calculator</h1>
+  <p class="reveal">Calculate Net Operating Income for your commercial property. NOI is the foundation of CRE underwriting — it drives property value, DSCR, and cap rate.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Calculate NOI</h2>
+      <div class="calc-form">
+        <h3 style="font-size:14px;color:var(--navy);margin:0 0 8px;text-transform:uppercase;letter-spacing:1px">Income</h3>
+        <div class="calc-field">
+          <label for="grossRent">Gross Rental Income (Annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="grossRent" inputmode="decimal" placeholder="300,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="otherIncome">Other Income (Parking, Laundry, Fees)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="otherIncome" inputmode="decimal" placeholder="12,000" value="0"></div>
+        </div>
+        <div class="calc-field">
+          <label for="vacancyRate">Vacancy Rate (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="vacancyRate" inputmode="decimal" placeholder="5" value="5"><span class="calc-suffix">%</span></div>
+        </div>
+        <h3 style="font-size:14px;color:var(--navy);margin:16px 0 8px;text-transform:uppercase;letter-spacing:1px">Expenses</h3>
+        <div class="calc-field">
+          <label for="propTax">Property Taxes (Annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="propTax" inputmode="decimal" placeholder="30,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="insurance">Insurance (Annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="insurance" inputmode="decimal" placeholder="8,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="maintenance">Maintenance & Repairs (Annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="maintenance" inputmode="decimal" placeholder="15,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="mgmtPct">Management Fee (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="mgmtPct" inputmode="decimal" placeholder="5" value="5"><span class="calc-suffix">%</span></div>
+        </div>
+        <div class="calc-field">
+          <label for="otherExp">Other Expenses (Utilities, Admin, etc.)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="otherExp" inputmode="decimal" placeholder="5,000" value="0"></div>
+        </div>
+        <button class="btn-primary" onclick="calcNOI()" style="width:100%;justify-content:center;margin-top:8px">Calculate NOI</button>
+      </div>
+    </div>
+    <div class="calc-result" id="noiResult" style="display:none">
+      <div class="calc-gauge" id="noiGauge">
+        <div class="gauge-value" id="noiValue">--</div>
+        <div class="gauge-label">Net Operating Income</div>
+      </div>
+      <div class="calc-detail-grid">
+        <div class="calc-detail"><span class="calc-detail-label">Effective Gross Income</span><span class="calc-detail-value" id="egi">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Total Expenses</span><span class="calc-detail-value" id="totalExp">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Expense Ratio</span><span class="calc-detail-value" id="expRatio">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Monthly NOI</span><span class="calc-detail-value" id="monthlyNOI">--</span></div>
+      </div>
+      <div class="calc-verdict" id="noiVerdict"></div>
+      <div class="calc-thresholds">
+        <h3>Typical Expense Ratios by Property Type</h3>
+        <div class="threshold-grid">
+          <div class="threshold-item"><span class="threshold-label">NNN Retail</span><span class="threshold-val">5%&ndash;15%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Industrial</span><span class="threshold-val">20%&ndash;35%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Multifamily</span><span class="threshold-val">35%&ndash;50%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Office</span><span class="threshold-val">40%&ndash;55%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Hospitality</span><span class="threshold-val">55%&ndash;70%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Mixed-Use</span><span class="threshold-val">30%&ndash;45%</span></div>
+        </div>
+      </div>
+      <div class="calc-email-capture" id="emailCapture" style="display:none">
+        <h3>Get Your Full Analysis</h3>
+        <p>We'll email your results plus a personalized financing recommendation from 1,000+ lenders.</p>
+        <div class="calc-field"><input type="email" id="captureEmail" placeholder="your@email.com" class="calc-email-input"></div>
+        <div class="calc-field"><input type="text" id="captureName" placeholder="Your name" class="calc-email-input"></div>
+        <button class="btn-primary" onclick="sendResults('noi')" style="width:100%;justify-content:center">Email My Results</button>
+        <p style="font-size:12px;color:var(--gray-500);margin-top:8px">No spam. Just your results + how CLS CRE can help.</p>
+      </div>
+      <a href="{{ depth }}apply.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Apply for Financing &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More Calculators</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}tools/dscr-calculator.html" class="cross-link-card reveal"><div class="cl-title">DSCR Calculator</div><div class="cl-sub">Debt service coverage</div></a>
+    <a href="{{ depth }}tools/cap-rate-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cap Rate Calculator</div><div class="cl-sub">Property valuation</div></a>
+    <a href="{{ depth }}tools/loan-calculator.html" class="cross-link-card reveal"><div class="cl-title">Loan Payment Calculator</div><div class="cl-sub">Monthly payment estimates</div></a>
+    <a href="{{ depth }}tools/ltv-calculator.html" class="cross-link-card reveal"><div class="cl-title">LTV Calculator</div><div class="cl-sub">Leverage analysis</div></a>
+    <a href="{{ depth }}tools/cashoncash-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cash-on-Cash Calculator</div><div class="cl-sub">Return on equity</div></a>
+  </div>
+</div>
+</section>
+
+{% set faq_title = 'NOI Calculator FAQ' %}
+{% set faq_alt = true %}
+{% set faqs = [
+  {"q": "What is Net Operating Income (NOI)?", "a": "NOI is the total income a property generates minus operating expenses, before debt service and income taxes. NOI = Effective Gross Income - Operating Expenses. It does NOT include mortgage payments, depreciation, or capital expenditures."},
+  {"q": "What expenses are included in NOI?", "a": "Operating expenses: property taxes, insurance, management fees, maintenance, utilities (if owner-paid), landscaping, and admin costs. NOT included: mortgage payments, capital expenditures, depreciation, income taxes, and leasing commissions."},
+  {"q": "How do I increase my property's NOI?", "a": "Increase income (raise rents, reduce vacancy, add ancillary income) or reduce expenses (contest tax assessments, shop insurance, implement energy efficiency). Even small NOI improvements significantly increase property value."},
+  {"q": "What is a good expense ratio for commercial property?", "a": "Varies by type: NNN Retail 5-15%, Industrial 20-35%, Multifamily 35-50%, Office 40-55%. Lower expense ratio means more income flows to NOI."}
+] %}
+{% include '_faq_section.html' %}
+
+{% set cta_title = 'Let Us Underwrite Your Deal' %}
+{% set cta_description = 'NOI is the starting point. CLS CRE will help you optimize your underwriting and match your property to the best financing available.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+function parseNum(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0}
+function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+function calcNOI(){
+  var gross=parseNum('grossRent'),other=parseNum('otherIncome'),vac=parseNum('vacancyRate')/100;
+  var tax=parseNum('propTax'),ins=parseNum('insurance'),maint=parseNum('maintenance'),mgmt=parseNum('mgmtPct')/100,otherE=parseNum('otherExp');
+  if(!gross)return;
+  var egi=gross+other;
+  var vacLoss=egi*vac;
+  egi-=vacLoss;
+  var mgmtFee=egi*mgmt;
+  var totalExp=tax+ins+maint+mgmtFee+otherE;
+  var noi=egi-totalExp;
+  var expRatio=(totalExp/egi)*100;
+  document.getElementById('noiValue').textContent=fmt(noi);
+  document.getElementById('egi').textContent=fmt(egi);
+  document.getElementById('totalExp').textContent=fmt(totalExp);
+  document.getElementById('expRatio').textContent=expRatio.toFixed(1)+'%';
+  document.getElementById('monthlyNOI').textContent=fmt(noi/12);
+  var g=document.getElementById('noiGauge');
+  g.className='calc-gauge'+(expRatio<=35?' gauge-green':expRatio<=50?' gauge-yellow':' gauge-red');
+  var v=document.getElementById('noiVerdict');
+  if(expRatio<=30)v.innerHTML='<strong>Very efficient.</strong> Your expense ratio is well below average. Typical of NNN or industrial properties where tenants cover most expenses.';
+  else if(expRatio<=45)v.innerHTML='<strong>Typical expense ratio.</strong> In line with most well-managed commercial properties. Look for opportunities in property tax appeals and insurance shopping.';
+  else if(expRatio<=55)v.innerHTML='<strong>Above average expenses.</strong> Review each line item for savings opportunities. Management fee, maintenance, and utilities are common areas to optimize.';
+  else v.innerHTML='<strong>High expense ratio.</strong> This may indicate deferred maintenance, below-market rents, or inefficient operations. A value-add strategy to improve NOI could significantly increase property value.';
+  document.getElementById('noiResult').style.display='block';
+  document.getElementById('emailCapture').style.display='block';
+}
+function sendResults(calc){
+  var email=document.getElementById('captureEmail').value;
+  var name=document.getElementById('captureName').value;
+  if(!email){alert('Please enter your email.');return;}
+  if(typeof gtag==='function')gtag('event','calculator_lead',{calculator:calc,page_url:window.location.href});
+  var leads=JSON.parse(localStorage.getItem('cls_calc_leads')||'[]');
+  leads.push({calculator:calc,email:email,name:name,url:window.location.href,timestamp:new Date().toISOString()});
+  localStorage.setItem('cls_calc_leads',JSON.stringify(leads));
+  document.getElementById('emailCapture').innerHTML='<div style="text-align:center;padding:20px"><div style="font-size:32px;margin-bottom:8px">&#10003;</div><h3 style="color:var(--green)">Thank You!</h3><p>We\'ll send your personalized analysis within 24 hours.</p></div>';
+}
+</script>
+{% endblock %}

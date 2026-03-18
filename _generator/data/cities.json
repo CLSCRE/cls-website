@@ -1,62 +1,948 @@
 [
-  {"slug":"los-angeles","city":"Los Angeles","state":"CA","metro":"Los Angeles-Long Beach-Anaheim","context":"Los Angeles is one of the nation's largest and most diverse commercial real estate markets, anchored by entertainment, technology, logistics, and international trade. The metro area encompasses over 13 million residents with industrial vacancy rates among the lowest in the country and multifamily demand driven by a persistent housing shortage.","neighborhoods":["Downtown LA","Hollywood","West LA","South Bay","San Fernando Valley","Inland Empire Gateway"]},
-  {"slug":"new-york","city":"New York","state":"NY","metro":"New York-Newark-Jersey City","context":"New York City is the largest commercial real estate market in the United States, home to iconic office towers, massive multifamily portfolios, and premier retail corridors. The metro area's $1.8 trillion economy drives demand across every property type, with strong institutional capital flows and deep lender competition.","neighborhoods":["Manhattan","Brooklyn","Queens","The Bronx","Long Island","Westchester"]},
-  {"slug":"phoenix","city":"Phoenix","state":"AZ","metro":"Phoenix-Mesa-Chandler","context":"Phoenix ranks among the fastest-growing metros in the U.S., driven by migration from higher-cost markets, business-friendly policies, and a booming technology sector. The market has seen explosive industrial development, strong multifamily absorption, and growing institutional interest across all property types.","neighborhoods":["Scottsdale","Tempe","Chandler","Mesa","Gilbert","Glendale"]},
-  {"slug":"dallas","city":"Dallas","state":"TX","metro":"Dallas-Fort Worth-Arlington","context":"The Dallas-Fort Worth metroplex is one of the nation's strongest commercial real estate markets, fueled by corporate relocations, population growth, and a diversified economy spanning technology, finance, logistics, and energy. DFW leads the country in industrial development and multifamily starts.","neighborhoods":["Uptown","Deep Ellum","Las Colinas","Frisco","Plano","Fort Worth"]},
-  {"slug":"houston","city":"Houston","state":"TX","metro":"Houston-The Woodlands-Sugar Land","context":"Houston is the fourth-largest U.S. city and a major hub for energy, healthcare, manufacturing, and international trade. The metro's no-zoning environment and pro-business climate attract significant commercial development, with strong demand for industrial, medical office, and multifamily assets.","neighborhoods":["The Woodlands","Sugar Land","Katy","Energy Corridor","Galleria","Medical Center"]},
-  {"slug":"miami","city":"Miami","state":"FL","metro":"Miami-Fort Lauderdale-Pompano Beach","context":"Miami has emerged as a global gateway for commercial real estate investment, driven by international capital flows, population migration from the Northeast, and a thriving financial services sector. The market features strong luxury multifamily, industrial, and office demand, with no state income tax as a major draw.","neighborhoods":["Brickell","Wynwood","Doral","Coral Gables","Fort Lauderdale","West Palm Beach"]},
-  {"slug":"atlanta","city":"Atlanta","state":"GA","metro":"Atlanta-Sandy Springs-Alpharetta","context":"Atlanta is the economic engine of the Southeast, home to major corporate headquarters, a world-class airport, and a rapidly growing technology sector. The metro area's population growth and affordable cost of living drive strong demand for multifamily, industrial, and office space across a sprawling metropolitan footprint.","neighborhoods":["Midtown","Buckhead","Sandy Springs","Alpharetta","Marietta","Decatur"]},
-  {"slug":"chicago","city":"Chicago","state":"IL","metro":"Chicago-Naperville-Elgin","context":"Chicago is the Midwest's dominant commercial real estate market, featuring a massive industrial base, strong multifamily fundamentals, and a diversified economy spanning finance, technology, manufacturing, and logistics. The metro's central location and extensive transportation infrastructure make it a critical logistics hub.","neighborhoods":["The Loop","River North","Lincoln Park","Schaumburg","Oak Brook","Naperville"]},
-  {"slug":"denver","city":"Denver","state":"CO","metro":"Denver-Aurora-Lakewood","context":"Denver's commercial real estate market benefits from strong population growth, a highly educated workforce, and a quality of life that attracts employers across technology, aerospace, and professional services. The metro features competitive industrial, multifamily, and office markets with significant institutional investment.","neighborhoods":["LoDo","RiNo","Cherry Creek","Aurora","Lakewood","Boulder"]},
-  {"slug":"seattle","city":"Seattle","state":"WA","metro":"Seattle-Tacoma-Bellevue","context":"Seattle is one of the nation's premier technology hubs, home to Amazon, Microsoft, and a deep bench of tech companies driving demand for office, industrial, and multifamily space. The metro's constrained geography and strong job growth create persistent demand across all property types.","neighborhoods":["South Lake Union","Capitol Hill","Bellevue","Tacoma","Redmond","Shoreline"]},
-  {"slug":"san-diego","city":"San Diego","state":"CA","metro":"San Diego-Chula Vista-Carlsbad","context":"San Diego's commercial real estate market is driven by defense, biotechnology, tourism, and a growing technology sector. The metro features strong industrial and life sciences demand, limited development opportunities due to geographic constraints, and a highly desirable quality of life that supports multifamily fundamentals.","neighborhoods":["Downtown","North County","Carlsbad","Vista","Chula Vista","La Jolla"]},
-  {"slug":"san-francisco","city":"San Francisco","state":"CA","metro":"San Francisco-Oakland-Berkeley","context":"San Francisco and the broader Bay Area remain one of the world's most important technology and innovation centers. While the office market has faced pandemic-era headwinds, industrial, multifamily, and life sciences assets continue to attract strong capital flows, and the region's long-term fundamentals remain compelling.","neighborhoods":["SoMa","Financial District","Mission Bay","Oakland","San Mateo","Palo Alto"]},
-  {"slug":"austin","city":"Austin","state":"TX","metro":"Austin-Round Rock-Georgetown","context":"Austin has become one of the nation's fastest-growing metros, driven by technology company relocations and expansions from Silicon Valley. The market features explosive multifamily development, growing industrial demand, and a vibrant creative economy that supports strong commercial real estate fundamentals across all sectors.","neighborhoods":["Downtown","East Austin","The Domain","Cedar Park","Round Rock","Georgetown"]},
-  {"slug":"nashville","city":"Nashville","state":"TN","metro":"Nashville-Davidson-Murfreesboro-Franklin","context":"Nashville has emerged as a top-tier commercial real estate market, driven by healthcare industry dominance, entertainment tourism, and strong in-migration. The metro's pro-business environment, no state income tax, and quality of life attract both employers and residents, supporting robust demand across multifamily, industrial, and office sectors.","neighborhoods":["The Gulch","East Nashville","Germantown","Franklin","Murfreesboro","Brentwood"]},
-  {"slug":"tampa","city":"Tampa","state":"FL","metro":"Tampa-St. Petersburg-Clearwater","context":"Tampa Bay is one of Florida's fastest-growing metros, benefiting from strong population in-migration, a diversified economy, and relative affordability compared to Miami. The market features growing demand for industrial, multifamily, and medical office space, with significant institutional capital targeting the region.","neighborhoods":["Downtown Tampa","St. Petersburg","Clearwater","Brandon","Westshore","Ybor City"]},
-  {"slug":"charlotte","city":"Charlotte","state":"NC","metro":"Charlotte-Concord-Gastonia","context":"Charlotte is the second-largest banking center in the U.S. behind New York, home to Bank of America and Truist Financial. The metro's strong financial services sector, population growth exceeding 2% annually, and business-friendly climate drive robust demand for office, multifamily, and industrial space across the rapidly expanding metro.","neighborhoods":["Uptown","South End","NoDa","Ballantyne","University City","Concord"]},
-  {"slug":"minneapolis","city":"Minneapolis","state":"MN","metro":"Minneapolis-St. Paul-Bloomington","context":"The Twin Cities metro is the Midwest's second-largest commercial real estate market, anchored by 16 Fortune 500 company headquarters, a diversified economy spanning healthcare, finance, and technology, and a highly educated workforce. The market features strong industrial fundamentals and stable multifamily demand.","neighborhoods":["Downtown Minneapolis","North Loop","Uptown","St. Paul","Bloomington","Eden Prairie"]},
-  {"slug":"portland","city":"Portland","state":"OR","metro":"Portland-Vancouver-Hillsboro","context":"Portland's commercial real estate market is driven by a growing technology sector, sustainable development leadership, and a strategic Pacific Northwest location for logistics and trade. The metro features strong industrial demand near the Port of Portland, steady multifamily absorption, and a creative economy that supports diverse commercial uses.","neighborhoods":["Pearl District","Lloyd District","Lake Oswego","Beaverton","Hillsboro","Vancouver WA"]},
-  {"slug":"las-vegas","city":"Las Vegas","state":"NV","metro":"Las Vegas-Henderson-Paradise","context":"Las Vegas is one of the fastest-growing metros in the U.S., driven by tourism, entertainment, professional sports expansion, and significant in-migration from California. The market features explosive industrial growth, strong multifamily demand, no state income tax, and a diversifying economy beyond hospitality into technology and logistics.","neighborhoods":["The Strip Corridor","Henderson","Summerlin","North Las Vegas","Enterprise","Spring Valley"]},
-  {"slug":"orlando","city":"Orlando","state":"FL","metro":"Orlando-Kissimmee-Sanford","context":"Orlando is one of Florida's fastest-growing metros, powered by world-class tourism infrastructure, a booming technology sector, and strong population growth. The market features robust industrial and multifamily demand, growing medical and life sciences clusters, and no state income tax attracting both businesses and residents.","neighborhoods":["Downtown Orlando","Lake Nona","Winter Park","Kissimmee","Dr. Phillips","Altamonte Springs"]},
-  {"slug":"raleigh","city":"Raleigh","state":"NC","metro":"Raleigh-Cary-Durham","context":"The Research Triangle is one of the nation's premier knowledge economy markets, home to three major research universities, a deep technology and life sciences talent pool, and consistent top rankings for business climate and quality of life. The metro features strong demand across industrial, multifamily, and life sciences real estate.","neighborhoods":["Downtown Raleigh","Durham","Chapel Hill","Cary","Research Triangle Park","Morrisville"]},
-  {"slug":"salt-lake-city","city":"Salt Lake City","state":"UT","metro":"Salt Lake City-West Valley City-Provo","context":"Salt Lake City's commercial real estate market benefits from one of the youngest and fastest-growing workforces in the nation, a thriving technology sector known as the Silicon Slopes, and a pro-business regulatory environment. The metro features strong industrial growth, robust multifamily demand, and increasing institutional investor interest.","neighborhoods":["Downtown SLC","Sugar House","Sandy","Provo","Lehi","Park City"]},
-  {"slug":"san-antonio","city":"San Antonio","state":"TX","metro":"San Antonio-New Braunfels","context":"San Antonio is one of Texas's fastest-growing metros, driven by military installations, healthcare, tourism, and a growing cybersecurity sector. The market offers relative affordability compared to Austin and Dallas, strong population growth, and increasing demand for industrial, multifamily, and retail space across the expanding metro.","neighborhoods":["Downtown","The Pearl","Stone Oak","Alamo Heights","New Braunfels","Boerne"]},
-  {"slug":"kansas-city","city":"Kansas City","state":"MO","metro":"Kansas City-Overland Park-Olathe","context":"Kansas City is a central U.S. logistics powerhouse, strategically located at the intersection of major interstate highways and rail networks. The metro features one of the nation's strongest industrial markets, a growing technology and financial services sector, and affordable commercial real estate that attracts value-oriented investors.","neighborhoods":["Downtown KC","Country Club Plaza","Overland Park","Olathe","Lee's Summit","North Kansas City"]},
-  {"slug":"columbus","city":"Columbus","state":"OH","metro":"Columbus-Marion-Zanesville","context":"Columbus is Ohio's largest city and one of the Midwest's fastest-growing metros, driven by a diversified economy spanning education, healthcare, technology, and government. The market has attracted major data center and logistics investments, features strong multifamily fundamentals supported by Ohio State University, and offers attractive yields for investors.","neighborhoods":["Short North","German Village","Dublin","Westerville","New Albany","Grove City"]},
-  {"slug":"indianapolis","city":"Indianapolis","state":"IN","metro":"Indianapolis-Carmel-Anderson","context":"Indianapolis is a major logistics and distribution hub, strategically located within a day's drive of half the U.S. population. The metro's strong industrial fundamentals, affordable cost of doing business, growing life sciences sector, and a diversified economy drive steady demand for warehouse, multifamily, and office space.","neighborhoods":["Downtown","Carmel","Fishers","Noblesville","Greenwood","Mass Ave"]},
-  {"slug":"san-jose","city":"San Jose","state":"CA","metro":"San Jose-Sunnyvale-Santa Clara","context":"San Jose and Silicon Valley represent the world's most influential technology and venture capital ecosystem. The metro features premium office and R&D demand from global tech companies, constrained development opportunities, strong industrial fundamentals driven by advanced manufacturing, and some of the highest commercial rents in the nation.","neighborhoods":["Downtown San Jose","Sunnyvale","Santa Clara","Cupertino","Mountain View","Milpitas"]},
-  {"slug":"philadelphia","city":"Philadelphia","state":"PA","metro":"Philadelphia-Camden-Wilmington","context":"Philadelphia is the sixth-largest U.S. metro and a major hub for healthcare, education, financial services, and life sciences. The market features strong institutional demand, a growing innovation corridor along University City, expanding industrial development in the suburbs, and competitive pricing compared to New York and Washington.","neighborhoods":["Center City","University City","Old City","King of Prussia","Cherry Hill","Conshohocken"]},
-  {"slug":"washington-dc","city":"Washington DC","state":"DC","metro":"Washington-Arlington-Alexandria","context":"The Washington D.C. metro is one of the nation's most stable commercial real estate markets, anchored by the federal government, a massive defense and cybersecurity sector, and a growing technology presence. The market features some of the lowest vacancy rates nationally for industrial space, strong multifamily demand, and deep institutional capital.","neighborhoods":["Downtown DC","Georgetown","Arlington","Tysons Corner","Bethesda","Reston"]},
-  {"slug":"detroit","city":"Detroit","state":"MI","metro":"Detroit-Warren-Dearborn","context":"Detroit's commercial real estate market is experiencing a significant renaissance, driven by the automotive industry's EV transition, a growing technology sector, and billions in new investment across the metro. The market offers some of the most attractive cap rates in the nation, strong industrial fundamentals, and a revitalized downtown core attracting young professionals.","neighborhoods":["Downtown Detroit","Midtown","Corktown","Royal Oak","Ann Arbor","Dearborn"]},
-  {"slug":"boston","city":"Boston","state":"MA","metro":"Boston-Cambridge-Newton","context":"Boston is one of the nation's premier commercial real estate markets, anchored by world-class universities, a dominant life sciences and biotechnology cluster, and a deep financial services sector. The metro's chronic undersupply of housing drives persistent multifamily demand, while lab and R&D space along the Route 128 corridor commands some of the highest rents in the country. Institutional capital flows heavily into the market, supported by a highly educated workforce and a resilient, innovation-driven economy.","neighborhoods":["Back Bay","Seaport District","Cambridge","Somerville","Waltham","Quincy"]},
-  {"slug":"baltimore","city":"Baltimore","state":"MD","metro":"Baltimore-Columbia-Towson","context":"Baltimore's commercial real estate market is anchored by a large federal government and defense contractor presence, a major healthcare and life sciences cluster centered on Johns Hopkins, and the Port of Baltimore driving industrial demand. The metro's proximity to Washington D.C. and relatively affordable pricing attract value-oriented investors across multifamily, industrial, and office sectors. Ongoing redevelopment of the Inner Harbor and Westport waterfront areas is generating renewed investor interest in urban mixed-use assets.","neighborhoods":["Inner Harbor","Fells Point","Canton","Columbia","Towson","White Marsh"]},
-  {"slug":"sacramento","city":"Sacramento","state":"CA","metro":"Sacramento-Roseville-Folsom","context":"Sacramento has emerged as a primary beneficiary of California's internal migration trends, absorbing households and businesses relocating from the Bay Area in search of lower costs and more space. The metro features strong multifamily fundamentals, a growing industrial base supported by proximity to Central Valley distribution corridors, and a stable public sector employment base as the state capital. Healthcare, agriculture technology, and clean energy are driving diversified commercial demand across the expanding metro.","neighborhoods":["Downtown Sacramento","Midtown","Roseville","Folsom","Elk Grove","Rancho Cordova"]},
-  {"slug":"st-louis","city":"St. Louis","state":"MO","metro":"St. Louis-St. Charles-Farmington","context":"St. Louis offers some of the most attractive commercial real estate yields in the Midwest, with a diversified economy spanning healthcare, financial services, manufacturing, and a growing technology sector anchored by Washington University's innovation ecosystem. The metro's central U.S. location and extensive rail and highway infrastructure support a strong industrial and logistics market, while affordable multifamily assets attract value-add investors seeking cash flow. Corporate headquarters for several Fortune 500 companies provide a stable office demand base across Clayton and the Central Business District.","neighborhoods":["Downtown St. Louis","Clayton","Midtown","Chesterfield","Creve Coeur","O'Fallon"]},
-  {"slug":"pittsburgh","city":"Pittsburgh","state":"PA","metro":"Pittsburgh-New Castle-Weirton","context":"Pittsburgh has successfully transitioned from a legacy steel economy into a diversified hub for technology, robotics, healthcare, and higher education, with Carnegie Mellon University and the University of Pittsburgh anchoring a growing innovation district. The metro features attractive cap rates, strong multifamily demand from a large student and young professional population, and increasing data center and life sciences investment. Industrial assets along major freight corridors continue to attract regional and institutional capital seeking value-oriented returns.","neighborhoods":["Downtown Pittsburgh","East Liberty","Lawrenceville","Shadyside","Strip District","South Side"]},
-  {"slug":"cincinnati","city":"Cincinnati","state":"OH","metro":"Cincinnati-Wilmington-Maysville","context":"Cincinnati's commercial real estate market is driven by a diversified economy spanning consumer goods, financial services, healthcare, and logistics, with a strong Fortune 500 corporate presence that includes Procter and Gamble, Kroger, and Fifth Third Bank. The metro's position on the Ohio River and proximity to major interstate networks support robust industrial and distribution demand, while affordable multifamily assets generate attractive yields for investors. Ongoing revitalization of the Over-the-Rhine historic district has catalyzed broader urban investment and mixed-use development activity.","neighborhoods":["Downtown Cincinnati","Over-the-Rhine","Kenwood","Blue Ash","Mason","Florence KY"]},
-  {"slug":"cleveland","city":"Cleveland","state":"OH","metro":"Cleveland-Elyria-Mentor","context":"Cleveland's commercial real estate market offers compelling value across industrial, multifamily, and medical office sectors, underpinned by the renowned Cleveland Clinic and University Hospitals healthcare system, one of the nation's largest. The metro's significant manufacturing and logistics base benefits from Great Lakes shipping access and an extensive highway network, while affordable land costs attract industrial development that would be cost-prohibitive in larger markets. Cleveland's strong anchor institutions and ongoing downtown revitalization efforts continue to support steady investor interest in the market.","neighborhoods":["Downtown Cleveland","University Circle","Westlake","Beachwood","Independence","Strongsville"]},
-  {"slug":"jacksonville","city":"Jacksonville","state":"FL","metro":"Jacksonville-Ponte Vedra Beach-St. Marys","context":"Jacksonville is one of Florida's fastest-growing metros, benefiting from a booming logistics sector anchored by one of the Southeast's busiest ports, strong population in-migration, and no state income tax. The metro's geographic size — the largest by area of any contiguous U.S. city — supports sprawling industrial development, robust multifamily demand, and growing healthcare and financial services office requirements. Jacksonville's relative affordability compared to Miami, Tampa, and Orlando continues to attract institutional capital and corporate relocations across all property types.","neighborhoods":["Downtown Jacksonville","San Marco","Southside","Ponte Vedra","Fleming Island","Riverside"]},
-  {"slug":"milwaukee","city":"Milwaukee","state":"WI","metro":"Milwaukee-Waukesha","context":"Milwaukee's commercial real estate market is anchored by a strong manufacturing and industrial base, a growing healthcare and financial services sector, and a revitalized downtown core attracting young professionals and mixed-use development. The metro offers some of the most affordable commercial real estate pricing in the Great Lakes region, with cap rates that remain attractive to value-oriented investors seeking cash-flowing multifamily and industrial assets. Marquette University and the University of Wisconsin-Milwaukee contribute to steady multifamily demand, while the Port of Milwaukee supports regional logistics activity.","neighborhoods":["Downtown Milwaukee","Third Ward","Walker's Point","Wauwatosa","Brookfield","Oak Creek"]},
-  {"slug":"memphis","city":"Memphis","state":"TN","metro":"Memphis-Forrest City","context":"Memphis is one of the nation's most critical logistics hubs, home to the FedEx global headquarters, the second-busiest cargo airport in the world, and a massive concentration of distribution and fulfillment centers along the Mississippi River. The metro's industrial market consistently records some of the highest absorption rates nationally, attracting major e-commerce and third-party logistics tenants at competitive rental rates. Multifamily fundamentals are supported by steady population and employment growth, while the overall market offers attractive yields relative to coastal gateway markets.","neighborhoods":["Downtown Memphis","Midtown","East Memphis","Collierville","Germantown","Southaven MS"]},
-  {"slug":"oklahoma-city","city":"Oklahoma City","state":"OK","metro":"Oklahoma City-Shawnee","context":"Oklahoma City's commercial real estate market is driven by the energy sector, a large federal government and military presence, and a diversifying economy that increasingly includes aerospace, healthcare, and financial services. The metro offers some of the lowest commercial real estate costs in the nation, with strong industrial and multifamily fundamentals supported by consistent population growth and an affordable cost of living. Ongoing corporate investment and downtown revitalization have positioned Oklahoma City as an emerging market for value-oriented CRE investors seeking yield in a stable, business-friendly environment.","neighborhoods":["Downtown OKC","Midtown","Bricktown","Edmond","Moore","Yukon"]},
-  {"slug":"louisville","city":"Louisville","state":"KY","metro":"Louisville-Jefferson County-Elizabethtown-Madison","context":"Louisville is a major logistics and distribution hub, anchored by the UPS Worldport air cargo facility at Louisville International Airport — the third-busiest cargo airport globally — and a strategic location on the Ohio River at the intersection of three interstate highways. The metro's diversified economy spans healthcare, manufacturing, bourbon and food production, and financial services, supporting steady demand across industrial, multifamily, and office sectors. Louisville's affordable commercial real estate pricing and pro-business regulatory environment attract both regional operators and institutional investors seeking stable cash-flowing assets.","neighborhoods":["Downtown Louisville","NuLu","Bardstown Road","Jeffersonville IN","Shively","Shelbyville Road Corridor"]},
-  {"slug":"richmond","city":"Richmond","state":"VA","metro":"Richmond-Hopewell-Farmville","context":"Richmond is Virginia's capital city and an emerging commercial real estate market driven by a diversified economy spanning financial services, state government, healthcare, and a rapidly expanding technology sector. The metro's position between Washington D.C. and the Research Triangle, combined with below-average costs relative to Northern Virginia, attracts corporate relocations and growing data center investment along the I-95 corridor. Strong multifamily fundamentals are supported by the University of Richmond, Virginia Commonwealth University, and steady in-migration from more expensive Mid-Atlantic markets.","neighborhoods":["Downtown Richmond","Scott's Addition","Short Pump","Midlothian","Henrico","Chester"]},
-  {"slug":"virginia-beach","city":"Virginia Beach","state":"VA","metro":"Virginia Beach-Norfolk-Newport News","context":"The Hampton Roads metro is the largest military concentration in the world, anchoring a stable and diverse commercial real estate market that includes significant defense contractor office demand, growing industrial activity at the Port of Virginia, and strong multifamily fundamentals driven by a large and consistent military population base. Virginia Beach itself features a growing tourism and hospitality sector alongside expanding retail and mixed-use corridors, while the broader metro benefits from major private sector employers in healthcare, shipbuilding, and logistics. The region's relative affordability and economic stability make it an attractive destination for risk-adjusted commercial real estate investment.","neighborhoods":["Town Center","Norfolk","Chesapeake","Newport News","Hampton","Suffolk"]},
-  {"slug":"new-orleans","city":"New Orleans","state":"LA","metro":"New Orleans-Metairie-Hammond","context":"New Orleans is a unique commercial real estate market driven by tourism, port and logistics activity, energy, and a growing digital media and technology sector supported by aggressive state tax incentive programs. The Port of New Orleans is one of the nation's busiest by cargo tonnage, underpinning consistent industrial and warehouse demand throughout the metro. Multifamily assets in desirable neighborhoods command premium rents relative to the broader market, and ongoing post-pandemic recovery and infrastructure investment are drawing renewed institutional attention to the region.","neighborhoods":["Central Business District","Warehouse District","Mid-City","Metairie","Kenner","Westbank"]},
-  {"slug":"birmingham","city":"Birmingham","state":"AL","metro":"Birmingham-Hoover-Talladega","context":"Birmingham is the commercial and economic center of Alabama, anchored by the University of Alabama at Birmingham's large medical and research complex, a growing financial services sector, and a resurgent manufacturing base supported by automotive supply chain activity across the state. The metro offers highly attractive cap rates across multifamily, industrial, and retail sectors, with below-average vacancy rates and consistent population growth that have drawn increasing attention from regional and national investors. Ongoing downtown revitalization and a vibrant food and creative economy are catalyzing mixed-use development in the urban core.","neighborhoods":["Downtown Birmingham","Hoover","Vestavia Hills","Homewood","Trussville","Mountain Brook"]},
-  {"slug":"hartford","city":"Hartford","state":"CT","metro":"Hartford-East Hartford-Middletown","context":"Hartford's commercial real estate market is anchored by a dominant insurance and financial services sector — the city is known as the Insurance Capital of the World — alongside significant healthcare, defense, and advanced manufacturing employment. The metro's location between New York and Boston along the I-95 and I-91 corridors provides strong industrial and logistics demand, while multifamily fundamentals benefit from large healthcare and university employment anchors. Connecticut's economic recovery and continued corporate investment in the Hartford metro have stabilized fundamentals and created selective opportunities for value-oriented investors.","neighborhoods":["Downtown Hartford","West Hartford","Glastonbury","Farmington","Southington","Enfield"]},
-  {"slug":"tucson","city":"Tucson","state":"AZ","metro":"Tucson-Nogales","context":"Tucson's commercial real estate market is supported by the University of Arizona, Davis-Monthan Air Force Base, and a growing aerospace, defense, and advanced manufacturing sector that has attracted major employers including Raytheon and semiconductor manufacturers. The metro benefits from its border proximity to Mexico, driving steady industrial and trade-related logistics demand, while multifamily absorption remains strong given consistent student and military population anchors. Relative affordability compared to Phoenix and improving quality-of-life amenities are attracting in-migration and incremental corporate investment that support commercial real estate fundamentals across all sectors.","neighborhoods":["Downtown Tucson","Midtown","Marana","Oro Valley","Sahuarita","Rincon Valley"]},
-  {"slug":"boise","city":"Boise","state":"ID","metro":"Boise City-Mountain Home","context":"Boise is one of the nation's fastest-growing metros, driven by significant migration from California and the Pacific Northwest seeking lower costs, a business-friendly regulatory environment, and exceptional quality of life. The market has experienced explosive multifamily and industrial development, attracting major technology, semiconductor, and food processing employers including Micron Technology and Lamb Weston. Boise's strong population growth, below-average commercial real estate costs, and emerging institutional capital presence make it one of the most compelling secondary market investment destinations in the western United States.","neighborhoods":["Downtown Boise","North End","Meridian","Nampa","Eagle","Caldwell"]},
-  {"slug":"omaha","city":"Omaha","state":"NE","metro":"Omaha-Council Bluffs-Fremont","context":"Omaha is one of the Midwest's most stable and underappreciated commercial real estate markets, home to a remarkable concentration of Fortune 500 headquarters including Berkshire Hathaway, Union Pacific, and Mutual of Omaha, which anchor strong office and corporate service demand. The metro's centrally located logistics infrastructure, affordable land costs, and consistent employment base support robust industrial and multifamily fundamentals with low vacancy rates and steady rent growth. Omaha's financial services depth, investment-grade corporate tenant base, and attractive yields relative to coastal markets draw increasing attention from institutional investors.","neighborhoods":["Downtown Omaha","Midtown Crossing","West Omaha","Papillion","La Vista","Council Bluffs IA"]},
-  {"slug":"tulsa","city":"Tulsa","state":"OK","metro":"Tulsa-Muskogee-Bartlesville","context":"Tulsa's commercial real estate market is anchored by energy, aerospace, manufacturing, and a growing healthcare and financial services sector, with major employers including American Airlines MRO facilities and ONEOK providing a stable employment base. The metro offers compelling value across industrial, multifamily, and office sectors with cap rates among the most attractive of any U.S. market, while a business-friendly environment and low operating costs attract corporate tenants and investors seeking yield. Tulsa's downtown revitalization, significant philanthropic investment in arts and culture, and improving quality of life amenities are supporting broader urban real estate recovery and mixed-use development.","neighborhoods":["Downtown Tulsa","Brookside","Cherry Street","Owasso","Broken Arrow","Jenks"]},
-  {"slug":"honolulu","city":"Honolulu","state":"HI","metro":"Urban Honolulu","context":"Honolulu is a unique and supply-constrained commercial real estate market, with geographic limitations on the island of Oahu creating some of the highest land and property values in the nation across multifamily, retail, and industrial sectors. The market is driven by tourism and hospitality, a large military and federal government presence, and growing healthcare and technology sectors that support diverse office and medical office demand. Hawaii's status as a Pacific gateway and high barriers to new development make existing commercial assets particularly valuable, attracting investors seeking long-term appreciation and stable cash flow in an irreplaceable market.","neighborhoods":["Downtown Honolulu","Waikiki","Kapolei","Ala Moana","Kailua","Pearl City"]},
-  {"slug":"albuquerque","city":"Albuquerque","state":"NM","metro":"Albuquerque-Santa Fe-Las Vegas","context":"Albuquerque's commercial real estate market is supported by a large federal government and national laboratory presence, including Sandia National Laboratories and Kirtland Air Force Base, which anchor stable employment and drive demand for specialized office, R&D, and industrial space. The metro is experiencing growing attention from semiconductor and advanced manufacturing investors following recent federal investments in New Mexico's technology infrastructure, while multifamily fundamentals benefit from the University of New Mexico's large enrollment and consistent in-migration. Albuquerque's affordable cost structure, improving business climate, and strategic Southwest location offer attractive entry points for CRE investors seeking value-oriented opportunities.","neighborhoods":["Downtown Albuquerque","Nob Hill","Uptown","Rio Rancho","Northeast Heights","Westside"]},
-  {"slug":"el-paso","city":"El Paso","state":"TX","metro":"El Paso-Las Cruces","context":"El Paso occupies a strategically critical position on the U.S.-Mexico border, driving significant industrial, logistics, and manufacturing activity tied to cross-border trade flows and a large maquiladora manufacturing ecosystem in adjacent Ciudad Juarez. Fort Bliss, one of the largest U.S. Army installations in the world, anchors a massive and stable population base that supports consistent multifamily, retail, and healthcare real estate demand. The metro's affordability, growing technology and cybersecurity sector, and increasing nearshoring investment from manufacturers seeking border proximity make El Paso an increasingly compelling commercial real estate market.","neighborhoods":["Downtown El Paso","West El Paso","East El Paso","Northeast","Upper Valley","Horizon City"]},
-  {"slug":"riverside","city":"Riverside","state":"CA","metro":"Riverside-San Bernardino-Ontario","context":"The Inland Empire is the nation's single most important industrial and logistics market, featuring the largest concentration of warehouse and distribution space in the United States, driven by its position as the direct inland connection to the Ports of Los Angeles and Long Beach. Amazon, Walmart, and virtually every major e-commerce and third-party logistics operator maintain major distribution facilities across the metro, generating extraordinary industrial demand and some of the lowest vacancy rates nationally. Strong population growth and relative affordability compared to coastal Southern California drive robust multifamily demand, while the market continues to attract significant institutional capital across all commercial property types.","neighborhoods":["Downtown Riverside","Ontario","San Bernardino","Moreno Valley","Fontana","Rancho Cucamonga"]},
-  {"slug":"charleston","city":"Charleston","state":"SC","metro":"Charleston-North Charleston","context":"Charleston has emerged as one of the Southeast's most desirable commercial real estate markets, driven by a booming port expansion at the South Carolina Ports Authority, significant manufacturing investment anchored by Boeing and Volvo, and strong population and tourism growth. The metro's industrial market is among the fastest-growing in the region, while multifamily demand is fueled by one of the nation's highest rates of relocating households attracted by quality of life and relative affordability. Charleston's combination of economic growth momentum, infrastructure investment, and limited developable land creates compelling fundamentals across industrial, multifamily, and retail sectors.","neighborhoods":["Downtown Charleston","North Charleston","Mount Pleasant","Summerville","Goose Creek","Johns Island"]},
-  {"slug":"greenville","city":"Greenville","state":"SC","metro":"Greenville-Spartanburg-Anderson","context":"The Greenville-Spartanburg metro is one of the Southeast's premier manufacturing and industrial markets, home to the BMW U.S. manufacturing plant, Michelin's North American headquarters, and a deep automotive and advanced manufacturing supply chain that drives consistent industrial and logistics demand. The metro's rapidly growing population, excellent quality of life, and business-friendly environment have attracted significant corporate relocations and investment, fueling multifamily development and retail expansion across the Upstate region. Greenville's revitalized downtown, growing technology sector, and proximity to Charlotte and Atlanta position it as a high-conviction secondary market for CRE investors targeting emerging Southeast growth corridors.","neighborhoods":["Downtown Greenville","Spartanburg","Simpsonville","Greer","Mauldin","Easley"]},
-  {"slug":"knoxville","city":"Knoxville","state":"TN","metro":"Knoxville-Morristown-Jefferson City","context":"Knoxville's commercial real estate market is anchored by the University of Tennessee, Oak Ridge National Laboratory, and a growing advanced manufacturing and logistics sector that benefits from Tennessee's pro-business environment and no state income tax. The metro features strong multifamily demand from a large student population and consistent in-migration, with industrial absorption driven by proximity to major interstate corridors connecting the Southeast. Knoxville's relative affordability, quality of life amenities, and accelerating corporate investment make it an increasingly attractive secondary market for investors seeking value-oriented multifamily and industrial opportunities in the Southeast.","neighborhoods":["Downtown Knoxville","West Knoxville","Maryville","Oak Ridge","Farragut","Powell"]},
-  {"slug":"fort-worth","city":"Fort Worth","state":"TX","metro":"Dallas-Fort Worth-Arlington","context":"Fort Worth is the fastest-growing large city in the United States by percentage, anchored by a diversified economy spanning defense, aerospace, manufacturing, healthcare, and financial services, with major employers including Lockheed Martin, American Airlines, and BNSF Railway. The city's robust industrial market benefits from DFW Airport proximity and extensive rail infrastructure, while multifamily demand is driven by extraordinary population growth that consistently outpaces housing supply. Fort Worth's lower land costs relative to Dallas proper, strong corporate investment pipeline, and business-friendly environment make it a high-conviction destination for commercial real estate developers and investors across all asset classes.","neighborhoods":["Downtown Fort Worth","TCU Area","Alliance Corridor","Southlake","Keller","Arlington"]},
-  {"slug":"savannah","city":"Savannah","state":"GA","metro":"Savannah-Hinesville-Statesboro","context":"Savannah has become one of the nation's most strategically important industrial and logistics markets, anchored by the Port of Savannah — the fastest-growing and third-busiest container port in the United States — which drives extraordinary warehouse and distribution demand across a rapidly expanding logistics corridor. Major occupiers including Amazon, Gulfstream Aerospace, and Hyundai's first U.S. EV manufacturing plant have transformed the metro into a premier Southeast industrial investment destination with vacancy rates at historic lows. Multifamily demand is supported by strong job creation and in-migration, while Savannah's historic district and growing tourism economy add retail and hospitality dimensions to a market increasingly attracting institutional capital.","neighborhoods":["Downtown Savannah","Pooler","Garden City","Richmond Hill","Hinesville","Port Wentworth"]}
+  {
+    "slug": "los-angeles",
+    "city": "Los Angeles",
+    "state": "CA",
+    "metro": "Los Angeles-Long Beach-Anaheim",
+    "context": "Los Angeles is one of the nation's largest and most diverse commercial real estate markets, anchored by entertainment, technology, logistics, and international trade. The metro area encompasses over 13 million residents with industrial vacancy rates among the lowest in the country and multifamily demand driven by a persistent housing shortage.",
+    "neighborhoods": [
+      "Downtown LA",
+      "Hollywood",
+      "West LA",
+      "South Bay",
+      "San Fernando Valley",
+      "Inland Empire Gateway",
+      "Santa Monica",
+      "Beverly Hills",
+      "Koreatown",
+      "Mid-Wilshire",
+      "Arts District",
+      "Silver Lake",
+      "Culver City",
+      "Playa Vista",
+      "Pasadena",
+      "Glendale",
+      "Long Beach",
+      "Brentwood",
+      "Century City",
+      "El Segundo",
+      "South Park DTLA",
+      "Highland Park"
+    ]
+  },
+  {
+    "slug": "new-york",
+    "city": "New York",
+    "state": "NY",
+    "metro": "New York-Newark-Jersey City",
+    "context": "New York City is the largest commercial real estate market in the United States, home to iconic office towers, massive multifamily portfolios, and premier retail corridors. The metro area's $1.8 trillion economy drives demand across every property type, with strong institutional capital flows and deep lender competition.",
+    "neighborhoods": [
+      "Manhattan",
+      "Brooklyn",
+      "Queens",
+      "The Bronx",
+      "Long Island",
+      "Westchester",
+      "Midtown Manhattan",
+      "Lower Manhattan",
+      "Jersey City",
+      "Hoboken",
+      "Long Island City",
+      "Williamsburg",
+      "Harlem",
+      "SoHo",
+      "Chelsea",
+      "Bushwick"
+    ]
+  },
+  {
+    "slug": "phoenix",
+    "city": "Phoenix",
+    "state": "AZ",
+    "metro": "Phoenix-Mesa-Chandler",
+    "context": "Phoenix ranks among the fastest-growing metros in the U.S., driven by migration from higher-cost markets, business-friendly policies, and a booming technology sector. The market has seen explosive industrial development, strong multifamily absorption, and growing institutional interest across all property types.",
+    "neighborhoods": [
+      "Scottsdale",
+      "Tempe",
+      "Chandler",
+      "Mesa",
+      "Gilbert",
+      "Glendale"
+    ]
+  },
+  {
+    "slug": "dallas",
+    "city": "Dallas",
+    "state": "TX",
+    "metro": "Dallas-Fort Worth-Arlington",
+    "context": "The Dallas-Fort Worth metroplex is one of the nation's strongest commercial real estate markets, fueled by corporate relocations, population growth, and a diversified economy spanning technology, finance, logistics, and energy. DFW leads the country in industrial development and multifamily starts.",
+    "neighborhoods": [
+      "Uptown",
+      "Deep Ellum",
+      "Las Colinas",
+      "Frisco",
+      "Plano",
+      "Fort Worth",
+      "Bishop Arts",
+      "Design District",
+      "Preston Hollow",
+      "Oak Lawn",
+      "Richardson",
+      "Arlington",
+      "McKinney",
+      "Allen",
+      "Addison",
+      "Garland"
+    ]
+  },
+  {
+    "slug": "houston",
+    "city": "Houston",
+    "state": "TX",
+    "metro": "Houston-The Woodlands-Sugar Land",
+    "context": "Houston is the fourth-largest U.S. city and a major hub for energy, healthcare, manufacturing, and international trade. The metro's no-zoning environment and pro-business climate attract significant commercial development, with strong demand for industrial, medical office, and multifamily assets.",
+    "neighborhoods": [
+      "The Woodlands",
+      "Sugar Land",
+      "Katy",
+      "Energy Corridor",
+      "Galleria",
+      "Medical Center"
+    ]
+  },
+  {
+    "slug": "miami",
+    "city": "Miami",
+    "state": "FL",
+    "metro": "Miami-Fort Lauderdale-Pompano Beach",
+    "context": "Miami has emerged as a global gateway for commercial real estate investment, driven by international capital flows, population migration from the Northeast, and a thriving financial services sector. The market features strong luxury multifamily, industrial, and office demand, with no state income tax as a major draw.",
+    "neighborhoods": [
+      "Brickell",
+      "Wynwood",
+      "Doral",
+      "Coral Gables",
+      "Fort Lauderdale",
+      "West Palm Beach",
+      "Miami Beach",
+      "Aventura",
+      "Little Havana",
+      "Edgewater",
+      "Coconut Grove",
+      "Hialeah",
+      "Kendall",
+      "North Miami",
+      "Overtown",
+      "Little Haiti"
+    ]
+  },
+  {
+    "slug": "atlanta",
+    "city": "Atlanta",
+    "state": "GA",
+    "metro": "Atlanta-Sandy Springs-Alpharetta",
+    "context": "Atlanta is the economic engine of the Southeast, home to major corporate headquarters, a world-class airport, and a rapidly growing technology sector. The metro area's population growth and affordable cost of living drive strong demand for multifamily, industrial, and office space across a sprawling metropolitan footprint.",
+    "neighborhoods": [
+      "Midtown",
+      "Buckhead",
+      "Sandy Springs",
+      "Alpharetta",
+      "Marietta",
+      "Decatur"
+    ]
+  },
+  {
+    "slug": "chicago",
+    "city": "Chicago",
+    "state": "IL",
+    "metro": "Chicago-Naperville-Elgin",
+    "context": "Chicago is the Midwest's dominant commercial real estate market, featuring a massive industrial base, strong multifamily fundamentals, and a diversified economy spanning finance, technology, manufacturing, and logistics. The metro's central location and extensive transportation infrastructure make it a critical logistics hub.",
+    "neighborhoods": [
+      "The Loop",
+      "River North",
+      "Lincoln Park",
+      "Schaumburg",
+      "Oak Brook",
+      "Naperville"
+    ]
+  },
+  {
+    "slug": "denver",
+    "city": "Denver",
+    "state": "CO",
+    "metro": "Denver-Aurora-Lakewood",
+    "context": "Denver's commercial real estate market benefits from strong population growth, a highly educated workforce, and a quality of life that attracts employers across technology, aerospace, and professional services. The metro features competitive industrial, multifamily, and office markets with significant institutional investment.",
+    "neighborhoods": [
+      "LoDo",
+      "RiNo",
+      "Cherry Creek",
+      "Aurora",
+      "Lakewood",
+      "Boulder"
+    ]
+  },
+  {
+    "slug": "seattle",
+    "city": "Seattle",
+    "state": "WA",
+    "metro": "Seattle-Tacoma-Bellevue",
+    "context": "Seattle is one of the nation's premier technology hubs, home to Amazon, Microsoft, and a deep bench of tech companies driving demand for office, industrial, and multifamily space. The metro's constrained geography and strong job growth create persistent demand across all property types.",
+    "neighborhoods": [
+      "South Lake Union",
+      "Capitol Hill",
+      "Bellevue",
+      "Tacoma",
+      "Redmond",
+      "Shoreline"
+    ]
+  },
+  {
+    "slug": "san-diego",
+    "city": "San Diego",
+    "state": "CA",
+    "metro": "San Diego-Chula Vista-Carlsbad",
+    "context": "San Diego's commercial real estate market is driven by defense, biotechnology, tourism, and a growing technology sector. The metro features strong industrial and life sciences demand, limited development opportunities due to geographic constraints, and a highly desirable quality of life that supports multifamily fundamentals.",
+    "neighborhoods": [
+      "Downtown",
+      "North County",
+      "Carlsbad",
+      "Vista",
+      "Chula Vista",
+      "La Jolla"
+    ]
+  },
+  {
+    "slug": "san-francisco",
+    "city": "San Francisco",
+    "state": "CA",
+    "metro": "San Francisco-Oakland-Berkeley",
+    "context": "San Francisco and the broader Bay Area remain one of the world's most important technology and innovation centers. While the office market has faced pandemic-era headwinds, industrial, multifamily, and life sciences assets continue to attract strong capital flows, and the region's long-term fundamentals remain compelling.",
+    "neighborhoods": [
+      "SoMa",
+      "Financial District",
+      "Mission Bay",
+      "Oakland",
+      "San Mateo",
+      "Palo Alto"
+    ]
+  },
+  {
+    "slug": "austin",
+    "city": "Austin",
+    "state": "TX",
+    "metro": "Austin-Round Rock-Georgetown",
+    "context": "Austin has become one of the nation's fastest-growing metros, driven by technology company relocations and expansions from Silicon Valley. The market features explosive multifamily development, growing industrial demand, and a vibrant creative economy that supports strong commercial real estate fundamentals across all sectors.",
+    "neighborhoods": [
+      "Downtown",
+      "East Austin",
+      "The Domain",
+      "Cedar Park",
+      "Round Rock",
+      "Georgetown"
+    ]
+  },
+  {
+    "slug": "nashville",
+    "city": "Nashville",
+    "state": "TN",
+    "metro": "Nashville-Davidson-Murfreesboro-Franklin",
+    "context": "Nashville has emerged as a top-tier commercial real estate market, driven by healthcare industry dominance, entertainment tourism, and strong in-migration. The metro's pro-business environment, no state income tax, and quality of life attract both employers and residents, supporting robust demand across multifamily, industrial, and office sectors.",
+    "neighborhoods": [
+      "The Gulch",
+      "East Nashville",
+      "Germantown",
+      "Franklin",
+      "Murfreesboro",
+      "Brentwood"
+    ]
+  },
+  {
+    "slug": "tampa",
+    "city": "Tampa",
+    "state": "FL",
+    "metro": "Tampa-St. Petersburg-Clearwater",
+    "context": "Tampa Bay is one of Florida's fastest-growing metros, benefiting from strong population in-migration, a diversified economy, and relative affordability compared to Miami. The market features growing demand for industrial, multifamily, and medical office space, with significant institutional capital targeting the region.",
+    "neighborhoods": [
+      "Downtown Tampa",
+      "St. Petersburg",
+      "Clearwater",
+      "Brandon",
+      "Westshore",
+      "Ybor City"
+    ]
+  },
+  {
+    "slug": "charlotte",
+    "city": "Charlotte",
+    "state": "NC",
+    "metro": "Charlotte-Concord-Gastonia",
+    "context": "Charlotte is the second-largest banking center in the U.S. behind New York, home to Bank of America and Truist Financial. The metro's strong financial services sector, population growth exceeding 2% annually, and business-friendly climate drive robust demand for office, multifamily, and industrial space across the rapidly expanding metro.",
+    "neighborhoods": [
+      "Uptown",
+      "South End",
+      "NoDa",
+      "Ballantyne",
+      "University City",
+      "Concord"
+    ]
+  },
+  {
+    "slug": "minneapolis",
+    "city": "Minneapolis",
+    "state": "MN",
+    "metro": "Minneapolis-St. Paul-Bloomington",
+    "context": "The Twin Cities metro is the Midwest's second-largest commercial real estate market, anchored by 16 Fortune 500 company headquarters, a diversified economy spanning healthcare, finance, and technology, and a highly educated workforce. The market features strong industrial fundamentals and stable multifamily demand.",
+    "neighborhoods": [
+      "Downtown Minneapolis",
+      "North Loop",
+      "Uptown",
+      "St. Paul",
+      "Bloomington",
+      "Eden Prairie"
+    ]
+  },
+  {
+    "slug": "portland",
+    "city": "Portland",
+    "state": "OR",
+    "metro": "Portland-Vancouver-Hillsboro",
+    "context": "Portland's commercial real estate market is driven by a growing technology sector, sustainable development leadership, and a strategic Pacific Northwest location for logistics and trade. The metro features strong industrial demand near the Port of Portland, steady multifamily absorption, and a creative economy that supports diverse commercial uses.",
+    "neighborhoods": [
+      "Pearl District",
+      "Lloyd District",
+      "Lake Oswego",
+      "Beaverton",
+      "Hillsboro",
+      "Vancouver WA"
+    ]
+  },
+  {
+    "slug": "las-vegas",
+    "city": "Las Vegas",
+    "state": "NV",
+    "metro": "Las Vegas-Henderson-Paradise",
+    "context": "Las Vegas is one of the fastest-growing metros in the U.S., driven by tourism, entertainment, professional sports expansion, and significant in-migration from California. The market features explosive industrial growth, strong multifamily demand, no state income tax, and a diversifying economy beyond hospitality into technology and logistics.",
+    "neighborhoods": [
+      "The Strip Corridor",
+      "Henderson",
+      "Summerlin",
+      "North Las Vegas",
+      "Enterprise",
+      "Spring Valley"
+    ]
+  },
+  {
+    "slug": "orlando",
+    "city": "Orlando",
+    "state": "FL",
+    "metro": "Orlando-Kissimmee-Sanford",
+    "context": "Orlando is one of Florida's fastest-growing metros, powered by world-class tourism infrastructure, a booming technology sector, and strong population growth. The market features robust industrial and multifamily demand, growing medical and life sciences clusters, and no state income tax attracting both businesses and residents.",
+    "neighborhoods": [
+      "Downtown Orlando",
+      "Lake Nona",
+      "Winter Park",
+      "Kissimmee",
+      "Dr. Phillips",
+      "Altamonte Springs"
+    ]
+  },
+  {
+    "slug": "raleigh",
+    "city": "Raleigh",
+    "state": "NC",
+    "metro": "Raleigh-Cary-Durham",
+    "context": "The Research Triangle is one of the nation's premier knowledge economy markets, home to three major research universities, a deep technology and life sciences talent pool, and consistent top rankings for business climate and quality of life. The metro features strong demand across industrial, multifamily, and life sciences real estate.",
+    "neighborhoods": [
+      "Downtown Raleigh",
+      "Durham",
+      "Chapel Hill",
+      "Cary",
+      "Research Triangle Park",
+      "Morrisville"
+    ]
+  },
+  {
+    "slug": "salt-lake-city",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "metro": "Salt Lake City-West Valley City-Provo",
+    "context": "Salt Lake City's commercial real estate market benefits from one of the youngest and fastest-growing workforces in the nation, a thriving technology sector known as the Silicon Slopes, and a pro-business regulatory environment. The metro features strong industrial growth, robust multifamily demand, and increasing institutional investor interest.",
+    "neighborhoods": [
+      "Downtown SLC",
+      "Sugar House",
+      "Sandy",
+      "Provo",
+      "Lehi",
+      "Park City"
+    ]
+  },
+  {
+    "slug": "san-antonio",
+    "city": "San Antonio",
+    "state": "TX",
+    "metro": "San Antonio-New Braunfels",
+    "context": "San Antonio is one of Texas's fastest-growing metros, driven by military installations, healthcare, tourism, and a growing cybersecurity sector. The market offers relative affordability compared to Austin and Dallas, strong population growth, and increasing demand for industrial, multifamily, and retail space across the expanding metro.",
+    "neighborhoods": [
+      "Downtown",
+      "The Pearl",
+      "Stone Oak",
+      "Alamo Heights",
+      "New Braunfels",
+      "Boerne"
+    ]
+  },
+  {
+    "slug": "kansas-city",
+    "city": "Kansas City",
+    "state": "MO",
+    "metro": "Kansas City-Overland Park-Olathe",
+    "context": "Kansas City is a central U.S. logistics powerhouse, strategically located at the intersection of major interstate highways and rail networks. The metro features one of the nation's strongest industrial markets, a growing technology and financial services sector, and affordable commercial real estate that attracts value-oriented investors.",
+    "neighborhoods": [
+      "Downtown KC",
+      "Country Club Plaza",
+      "Overland Park",
+      "Olathe",
+      "Lee's Summit",
+      "North Kansas City"
+    ]
+  },
+  {
+    "slug": "columbus",
+    "city": "Columbus",
+    "state": "OH",
+    "metro": "Columbus-Marion-Zanesville",
+    "context": "Columbus is Ohio's largest city and one of the Midwest's fastest-growing metros, driven by a diversified economy spanning education, healthcare, technology, and government. The market has attracted major data center and logistics investments, features strong multifamily fundamentals supported by Ohio State University, and offers attractive yields for investors.",
+    "neighborhoods": [
+      "Short North",
+      "German Village",
+      "Dublin",
+      "Westerville",
+      "New Albany",
+      "Grove City"
+    ]
+  },
+  {
+    "slug": "indianapolis",
+    "city": "Indianapolis",
+    "state": "IN",
+    "metro": "Indianapolis-Carmel-Anderson",
+    "context": "Indianapolis is a major logistics and distribution hub, strategically located within a day's drive of half the U.S. population. The metro's strong industrial fundamentals, affordable cost of doing business, growing life sciences sector, and a diversified economy drive steady demand for warehouse, multifamily, and office space.",
+    "neighborhoods": [
+      "Downtown",
+      "Carmel",
+      "Fishers",
+      "Noblesville",
+      "Greenwood",
+      "Mass Ave"
+    ]
+  },
+  {
+    "slug": "san-jose",
+    "city": "San Jose",
+    "state": "CA",
+    "metro": "San Jose-Sunnyvale-Santa Clara",
+    "context": "San Jose and Silicon Valley represent the world's most influential technology and venture capital ecosystem. The metro features premium office and R&D demand from global tech companies, constrained development opportunities, strong industrial fundamentals driven by advanced manufacturing, and some of the highest commercial rents in the nation.",
+    "neighborhoods": [
+      "Downtown San Jose",
+      "Sunnyvale",
+      "Santa Clara",
+      "Cupertino",
+      "Mountain View",
+      "Milpitas"
+    ]
+  },
+  {
+    "slug": "philadelphia",
+    "city": "Philadelphia",
+    "state": "PA",
+    "metro": "Philadelphia-Camden-Wilmington",
+    "context": "Philadelphia is the sixth-largest U.S. metro and a major hub for healthcare, education, financial services, and life sciences. The market features strong institutional demand, a growing innovation corridor along University City, expanding industrial development in the suburbs, and competitive pricing compared to New York and Washington.",
+    "neighborhoods": [
+      "Center City",
+      "University City",
+      "Old City",
+      "King of Prussia",
+      "Cherry Hill",
+      "Conshohocken"
+    ]
+  },
+  {
+    "slug": "washington-dc",
+    "city": "Washington DC",
+    "state": "DC",
+    "metro": "Washington-Arlington-Alexandria",
+    "context": "The Washington D.C. metro is one of the nation's most stable commercial real estate markets, anchored by the federal government, a massive defense and cybersecurity sector, and a growing technology presence. The market features some of the lowest vacancy rates nationally for industrial space, strong multifamily demand, and deep institutional capital.",
+    "neighborhoods": [
+      "Downtown DC",
+      "Georgetown",
+      "Arlington",
+      "Tysons Corner",
+      "Bethesda",
+      "Reston"
+    ]
+  },
+  {
+    "slug": "detroit",
+    "city": "Detroit",
+    "state": "MI",
+    "metro": "Detroit-Warren-Dearborn",
+    "context": "Detroit's commercial real estate market is experiencing a significant renaissance, driven by the automotive industry's EV transition, a growing technology sector, and billions in new investment across the metro. The market offers some of the most attractive cap rates in the nation, strong industrial fundamentals, and a revitalized downtown core attracting young professionals.",
+    "neighborhoods": [
+      "Downtown Detroit",
+      "Midtown",
+      "Corktown",
+      "Royal Oak",
+      "Ann Arbor",
+      "Dearborn"
+    ]
+  },
+  {
+    "slug": "boston",
+    "city": "Boston",
+    "state": "MA",
+    "metro": "Boston-Cambridge-Newton",
+    "context": "Boston is one of the nation's premier commercial real estate markets, anchored by world-class universities, a dominant life sciences and biotechnology cluster, and a deep financial services sector. The metro's chronic undersupply of housing drives persistent multifamily demand, while lab and R&D space along the Route 128 corridor commands some of the highest rents in the country. Institutional capital flows heavily into the market, supported by a highly educated workforce and a resilient, innovation-driven economy.",
+    "neighborhoods": [
+      "Back Bay",
+      "Seaport District",
+      "Cambridge",
+      "Somerville",
+      "Waltham",
+      "Quincy"
+    ]
+  },
+  {
+    "slug": "baltimore",
+    "city": "Baltimore",
+    "state": "MD",
+    "metro": "Baltimore-Columbia-Towson",
+    "context": "Baltimore's commercial real estate market is anchored by a large federal government and defense contractor presence, a major healthcare and life sciences cluster centered on Johns Hopkins, and the Port of Baltimore driving industrial demand. The metro's proximity to Washington D.C. and relatively affordable pricing attract value-oriented investors across multifamily, industrial, and office sectors. Ongoing redevelopment of the Inner Harbor and Westport waterfront areas is generating renewed investor interest in urban mixed-use assets.",
+    "neighborhoods": [
+      "Inner Harbor",
+      "Fells Point",
+      "Canton",
+      "Columbia",
+      "Towson",
+      "White Marsh"
+    ]
+  },
+  {
+    "slug": "sacramento",
+    "city": "Sacramento",
+    "state": "CA",
+    "metro": "Sacramento-Roseville-Folsom",
+    "context": "Sacramento has emerged as a primary beneficiary of California's internal migration trends, absorbing households and businesses relocating from the Bay Area in search of lower costs and more space. The metro features strong multifamily fundamentals, a growing industrial base supported by proximity to Central Valley distribution corridors, and a stable public sector employment base as the state capital. Healthcare, agriculture technology, and clean energy are driving diversified commercial demand across the expanding metro.",
+    "neighborhoods": [
+      "Downtown Sacramento",
+      "Midtown",
+      "Roseville",
+      "Folsom",
+      "Elk Grove",
+      "Rancho Cordova"
+    ]
+  },
+  {
+    "slug": "st-louis",
+    "city": "St. Louis",
+    "state": "MO",
+    "metro": "St. Louis-St. Charles-Farmington",
+    "context": "St. Louis offers some of the most attractive commercial real estate yields in the Midwest, with a diversified economy spanning healthcare, financial services, manufacturing, and a growing technology sector anchored by Washington University's innovation ecosystem. The metro's central U.S. location and extensive rail and highway infrastructure support a strong industrial and logistics market, while affordable multifamily assets attract value-add investors seeking cash flow. Corporate headquarters for several Fortune 500 companies provide a stable office demand base across Clayton and the Central Business District.",
+    "neighborhoods": [
+      "Downtown St. Louis",
+      "Clayton",
+      "Midtown",
+      "Chesterfield",
+      "Creve Coeur",
+      "O'Fallon"
+    ]
+  },
+  {
+    "slug": "pittsburgh",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "metro": "Pittsburgh-New Castle-Weirton",
+    "context": "Pittsburgh has successfully transitioned from a legacy steel economy into a diversified hub for technology, robotics, healthcare, and higher education, with Carnegie Mellon University and the University of Pittsburgh anchoring a growing innovation district. The metro features attractive cap rates, strong multifamily demand from a large student and young professional population, and increasing data center and life sciences investment. Industrial assets along major freight corridors continue to attract regional and institutional capital seeking value-oriented returns.",
+    "neighborhoods": [
+      "Downtown Pittsburgh",
+      "East Liberty",
+      "Lawrenceville",
+      "Shadyside",
+      "Strip District",
+      "South Side"
+    ]
+  },
+  {
+    "slug": "cincinnati",
+    "city": "Cincinnati",
+    "state": "OH",
+    "metro": "Cincinnati-Wilmington-Maysville",
+    "context": "Cincinnati's commercial real estate market is driven by a diversified economy spanning consumer goods, financial services, healthcare, and logistics, with a strong Fortune 500 corporate presence that includes Procter and Gamble, Kroger, and Fifth Third Bank. The metro's position on the Ohio River and proximity to major interstate networks support robust industrial and distribution demand, while affordable multifamily assets generate attractive yields for investors. Ongoing revitalization of the Over-the-Rhine historic district has catalyzed broader urban investment and mixed-use development activity.",
+    "neighborhoods": [
+      "Downtown Cincinnati",
+      "Over-the-Rhine",
+      "Kenwood",
+      "Blue Ash",
+      "Mason",
+      "Florence KY"
+    ]
+  },
+  {
+    "slug": "cleveland",
+    "city": "Cleveland",
+    "state": "OH",
+    "metro": "Cleveland-Elyria-Mentor",
+    "context": "Cleveland's commercial real estate market offers compelling value across industrial, multifamily, and medical office sectors, underpinned by the renowned Cleveland Clinic and University Hospitals healthcare system, one of the nation's largest. The metro's significant manufacturing and logistics base benefits from Great Lakes shipping access and an extensive highway network, while affordable land costs attract industrial development that would be cost-prohibitive in larger markets. Cleveland's strong anchor institutions and ongoing downtown revitalization efforts continue to support steady investor interest in the market.",
+    "neighborhoods": [
+      "Downtown Cleveland",
+      "University Circle",
+      "Westlake",
+      "Beachwood",
+      "Independence",
+      "Strongsville"
+    ]
+  },
+  {
+    "slug": "jacksonville",
+    "city": "Jacksonville",
+    "state": "FL",
+    "metro": "Jacksonville-Ponte Vedra Beach-St. Marys",
+    "context": "Jacksonville is one of Florida's fastest-growing metros, benefiting from a booming logistics sector anchored by one of the Southeast's busiest ports, strong population in-migration, and no state income tax. The metro's geographic size \u00e2\u20ac\u201d the largest by area of any contiguous U.S. city \u00e2\u20ac\u201d supports sprawling industrial development, robust multifamily demand, and growing healthcare and financial services office requirements. Jacksonville's relative affordability compared to Miami, Tampa, and Orlando continues to attract institutional capital and corporate relocations across all property types.",
+    "neighborhoods": [
+      "Downtown Jacksonville",
+      "San Marco",
+      "Southside",
+      "Ponte Vedra",
+      "Fleming Island",
+      "Riverside"
+    ]
+  },
+  {
+    "slug": "milwaukee",
+    "city": "Milwaukee",
+    "state": "WI",
+    "metro": "Milwaukee-Waukesha",
+    "context": "Milwaukee's commercial real estate market is anchored by a strong manufacturing and industrial base, a growing healthcare and financial services sector, and a revitalized downtown core attracting young professionals and mixed-use development. The metro offers some of the most affordable commercial real estate pricing in the Great Lakes region, with cap rates that remain attractive to value-oriented investors seeking cash-flowing multifamily and industrial assets. Marquette University and the University of Wisconsin-Milwaukee contribute to steady multifamily demand, while the Port of Milwaukee supports regional logistics activity.",
+    "neighborhoods": [
+      "Downtown Milwaukee",
+      "Third Ward",
+      "Walker's Point",
+      "Wauwatosa",
+      "Brookfield",
+      "Oak Creek"
+    ]
+  },
+  {
+    "slug": "memphis",
+    "city": "Memphis",
+    "state": "TN",
+    "metro": "Memphis-Forrest City",
+    "context": "Memphis is one of the nation's most critical logistics hubs, home to the FedEx global headquarters, the second-busiest cargo airport in the world, and a massive concentration of distribution and fulfillment centers along the Mississippi River. The metro's industrial market consistently records some of the highest absorption rates nationally, attracting major e-commerce and third-party logistics tenants at competitive rental rates. Multifamily fundamentals are supported by steady population and employment growth, while the overall market offers attractive yields relative to coastal gateway markets.",
+    "neighborhoods": [
+      "Downtown Memphis",
+      "Midtown",
+      "East Memphis",
+      "Collierville",
+      "Germantown",
+      "Southaven MS"
+    ]
+  },
+  {
+    "slug": "oklahoma-city",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "metro": "Oklahoma City-Shawnee",
+    "context": "Oklahoma City's commercial real estate market is driven by the energy sector, a large federal government and military presence, and a diversifying economy that increasingly includes aerospace, healthcare, and financial services. The metro offers some of the lowest commercial real estate costs in the nation, with strong industrial and multifamily fundamentals supported by consistent population growth and an affordable cost of living. Ongoing corporate investment and downtown revitalization have positioned Oklahoma City as an emerging market for value-oriented CRE investors seeking yield in a stable, business-friendly environment.",
+    "neighborhoods": [
+      "Downtown OKC",
+      "Midtown",
+      "Bricktown",
+      "Edmond",
+      "Moore",
+      "Yukon"
+    ]
+  },
+  {
+    "slug": "louisville",
+    "city": "Louisville",
+    "state": "KY",
+    "metro": "Louisville-Jefferson County-Elizabethtown-Madison",
+    "context": "Louisville is a major logistics and distribution hub, anchored by the UPS Worldport air cargo facility at Louisville International Airport \u00e2\u20ac\u201d the third-busiest cargo airport globally \u00e2\u20ac\u201d and a strategic location on the Ohio River at the intersection of three interstate highways. The metro's diversified economy spans healthcare, manufacturing, bourbon and food production, and financial services, supporting steady demand across industrial, multifamily, and office sectors. Louisville's affordable commercial real estate pricing and pro-business regulatory environment attract both regional operators and institutional investors seeking stable cash-flowing assets.",
+    "neighborhoods": [
+      "Downtown Louisville",
+      "NuLu",
+      "Bardstown Road",
+      "Jeffersonville IN",
+      "Shively",
+      "Shelbyville Road Corridor"
+    ]
+  },
+  {
+    "slug": "richmond",
+    "city": "Richmond",
+    "state": "VA",
+    "metro": "Richmond-Hopewell-Farmville",
+    "context": "Richmond is Virginia's capital city and an emerging commercial real estate market driven by a diversified economy spanning financial services, state government, healthcare, and a rapidly expanding technology sector. The metro's position between Washington D.C. and the Research Triangle, combined with below-average costs relative to Northern Virginia, attracts corporate relocations and growing data center investment along the I-95 corridor. Strong multifamily fundamentals are supported by the University of Richmond, Virginia Commonwealth University, and steady in-migration from more expensive Mid-Atlantic markets.",
+    "neighborhoods": [
+      "Downtown Richmond",
+      "Scott's Addition",
+      "Short Pump",
+      "Midlothian",
+      "Henrico",
+      "Chester"
+    ]
+  },
+  {
+    "slug": "virginia-beach",
+    "city": "Virginia Beach",
+    "state": "VA",
+    "metro": "Virginia Beach-Norfolk-Newport News",
+    "context": "The Hampton Roads metro is the largest military concentration in the world, anchoring a stable and diverse commercial real estate market that includes significant defense contractor office demand, growing industrial activity at the Port of Virginia, and strong multifamily fundamentals driven by a large and consistent military population base. Virginia Beach itself features a growing tourism and hospitality sector alongside expanding retail and mixed-use corridors, while the broader metro benefits from major private sector employers in healthcare, shipbuilding, and logistics. The region's relative affordability and economic stability make it an attractive destination for risk-adjusted commercial real estate investment.",
+    "neighborhoods": [
+      "Town Center",
+      "Norfolk",
+      "Chesapeake",
+      "Newport News",
+      "Hampton",
+      "Suffolk"
+    ]
+  },
+  {
+    "slug": "new-orleans",
+    "city": "New Orleans",
+    "state": "LA",
+    "metro": "New Orleans-Metairie-Hammond",
+    "context": "New Orleans is a unique commercial real estate market driven by tourism, port and logistics activity, energy, and a growing digital media and technology sector supported by aggressive state tax incentive programs. The Port of New Orleans is one of the nation's busiest by cargo tonnage, underpinning consistent industrial and warehouse demand throughout the metro. Multifamily assets in desirable neighborhoods command premium rents relative to the broader market, and ongoing post-pandemic recovery and infrastructure investment are drawing renewed institutional attention to the region.",
+    "neighborhoods": [
+      "Central Business District",
+      "Warehouse District",
+      "Mid-City",
+      "Metairie",
+      "Kenner",
+      "Westbank"
+    ]
+  },
+  {
+    "slug": "birmingham",
+    "city": "Birmingham",
+    "state": "AL",
+    "metro": "Birmingham-Hoover-Talladega",
+    "context": "Birmingham is the commercial and economic center of Alabama, anchored by the University of Alabama at Birmingham's large medical and research complex, a growing financial services sector, and a resurgent manufacturing base supported by automotive supply chain activity across the state. The metro offers highly attractive cap rates across multifamily, industrial, and retail sectors, with below-average vacancy rates and consistent population growth that have drawn increasing attention from regional and national investors. Ongoing downtown revitalization and a vibrant food and creative economy are catalyzing mixed-use development in the urban core.",
+    "neighborhoods": [
+      "Downtown Birmingham",
+      "Hoover",
+      "Vestavia Hills",
+      "Homewood",
+      "Trussville",
+      "Mountain Brook"
+    ]
+  },
+  {
+    "slug": "hartford",
+    "city": "Hartford",
+    "state": "CT",
+    "metro": "Hartford-East Hartford-Middletown",
+    "context": "Hartford's commercial real estate market is anchored by a dominant insurance and financial services sector \u00e2\u20ac\u201d the city is known as the Insurance Capital of the World \u00e2\u20ac\u201d alongside significant healthcare, defense, and advanced manufacturing employment. The metro's location between New York and Boston along the I-95 and I-91 corridors provides strong industrial and logistics demand, while multifamily fundamentals benefit from large healthcare and university employment anchors. Connecticut's economic recovery and continued corporate investment in the Hartford metro have stabilized fundamentals and created selective opportunities for value-oriented investors.",
+    "neighborhoods": [
+      "Downtown Hartford",
+      "West Hartford",
+      "Glastonbury",
+      "Farmington",
+      "Southington",
+      "Enfield"
+    ]
+  },
+  {
+    "slug": "tucson",
+    "city": "Tucson",
+    "state": "AZ",
+    "metro": "Tucson-Nogales",
+    "context": "Tucson's commercial real estate market is supported by the University of Arizona, Davis-Monthan Air Force Base, and a growing aerospace, defense, and advanced manufacturing sector that has attracted major employers including Raytheon and semiconductor manufacturers. The metro benefits from its border proximity to Mexico, driving steady industrial and trade-related logistics demand, while multifamily absorption remains strong given consistent student and military population anchors. Relative affordability compared to Phoenix and improving quality-of-life amenities are attracting in-migration and incremental corporate investment that support commercial real estate fundamentals across all sectors.",
+    "neighborhoods": [
+      "Downtown Tucson",
+      "Midtown",
+      "Marana",
+      "Oro Valley",
+      "Sahuarita",
+      "Rincon Valley"
+    ]
+  },
+  {
+    "slug": "boise",
+    "city": "Boise",
+    "state": "ID",
+    "metro": "Boise City-Mountain Home",
+    "context": "Boise is one of the nation's fastest-growing metros, driven by significant migration from California and the Pacific Northwest seeking lower costs, a business-friendly regulatory environment, and exceptional quality of life. The market has experienced explosive multifamily and industrial development, attracting major technology, semiconductor, and food processing employers including Micron Technology and Lamb Weston. Boise's strong population growth, below-average commercial real estate costs, and emerging institutional capital presence make it one of the most compelling secondary market investment destinations in the western United States.",
+    "neighborhoods": [
+      "Downtown Boise",
+      "North End",
+      "Meridian",
+      "Nampa",
+      "Eagle",
+      "Caldwell"
+    ]
+  },
+  {
+    "slug": "omaha",
+    "city": "Omaha",
+    "state": "NE",
+    "metro": "Omaha-Council Bluffs-Fremont",
+    "context": "Omaha is one of the Midwest's most stable and underappreciated commercial real estate markets, home to a remarkable concentration of Fortune 500 headquarters including Berkshire Hathaway, Union Pacific, and Mutual of Omaha, which anchor strong office and corporate service demand. The metro's centrally located logistics infrastructure, affordable land costs, and consistent employment base support robust industrial and multifamily fundamentals with low vacancy rates and steady rent growth. Omaha's financial services depth, investment-grade corporate tenant base, and attractive yields relative to coastal markets draw increasing attention from institutional investors.",
+    "neighborhoods": [
+      "Downtown Omaha",
+      "Midtown Crossing",
+      "West Omaha",
+      "Papillion",
+      "La Vista",
+      "Council Bluffs IA"
+    ]
+  },
+  {
+    "slug": "tulsa",
+    "city": "Tulsa",
+    "state": "OK",
+    "metro": "Tulsa-Muskogee-Bartlesville",
+    "context": "Tulsa's commercial real estate market is anchored by energy, aerospace, manufacturing, and a growing healthcare and financial services sector, with major employers including American Airlines MRO facilities and ONEOK providing a stable employment base. The metro offers compelling value across industrial, multifamily, and office sectors with cap rates among the most attractive of any U.S. market, while a business-friendly environment and low operating costs attract corporate tenants and investors seeking yield. Tulsa's downtown revitalization, significant philanthropic investment in arts and culture, and improving quality of life amenities are supporting broader urban real estate recovery and mixed-use development.",
+    "neighborhoods": [
+      "Downtown Tulsa",
+      "Brookside",
+      "Cherry Street",
+      "Owasso",
+      "Broken Arrow",
+      "Jenks"
+    ]
+  },
+  {
+    "slug": "honolulu",
+    "city": "Honolulu",
+    "state": "HI",
+    "metro": "Urban Honolulu",
+    "context": "Honolulu is a unique and supply-constrained commercial real estate market, with geographic limitations on the island of Oahu creating some of the highest land and property values in the nation across multifamily, retail, and industrial sectors. The market is driven by tourism and hospitality, a large military and federal government presence, and growing healthcare and technology sectors that support diverse office and medical office demand. Hawaii's status as a Pacific gateway and high barriers to new development make existing commercial assets particularly valuable, attracting investors seeking long-term appreciation and stable cash flow in an irreplaceable market.",
+    "neighborhoods": [
+      "Downtown Honolulu",
+      "Waikiki",
+      "Kapolei",
+      "Ala Moana",
+      "Kailua",
+      "Pearl City"
+    ]
+  },
+  {
+    "slug": "albuquerque",
+    "city": "Albuquerque",
+    "state": "NM",
+    "metro": "Albuquerque-Santa Fe-Las Vegas",
+    "context": "Albuquerque's commercial real estate market is supported by a large federal government and national laboratory presence, including Sandia National Laboratories and Kirtland Air Force Base, which anchor stable employment and drive demand for specialized office, R&D, and industrial space. The metro is experiencing growing attention from semiconductor and advanced manufacturing investors following recent federal investments in New Mexico's technology infrastructure, while multifamily fundamentals benefit from the University of New Mexico's large enrollment and consistent in-migration. Albuquerque's affordable cost structure, improving business climate, and strategic Southwest location offer attractive entry points for CRE investors seeking value-oriented opportunities.",
+    "neighborhoods": [
+      "Downtown Albuquerque",
+      "Nob Hill",
+      "Uptown",
+      "Rio Rancho",
+      "Northeast Heights",
+      "Westside"
+    ]
+  },
+  {
+    "slug": "el-paso",
+    "city": "El Paso",
+    "state": "TX",
+    "metro": "El Paso-Las Cruces",
+    "context": "El Paso occupies a strategically critical position on the U.S.-Mexico border, driving significant industrial, logistics, and manufacturing activity tied to cross-border trade flows and a large maquiladora manufacturing ecosystem in adjacent Ciudad Juarez. Fort Bliss, one of the largest U.S. Army installations in the world, anchors a massive and stable population base that supports consistent multifamily, retail, and healthcare real estate demand. The metro's affordability, growing technology and cybersecurity sector, and increasing nearshoring investment from manufacturers seeking border proximity make El Paso an increasingly compelling commercial real estate market.",
+    "neighborhoods": [
+      "Downtown El Paso",
+      "West El Paso",
+      "East El Paso",
+      "Northeast",
+      "Upper Valley",
+      "Horizon City"
+    ]
+  },
+  {
+    "slug": "riverside",
+    "city": "Riverside",
+    "state": "CA",
+    "metro": "Riverside-San Bernardino-Ontario",
+    "context": "The Inland Empire is the nation's single most important industrial and logistics market, featuring the largest concentration of warehouse and distribution space in the United States, driven by its position as the direct inland connection to the Ports of Los Angeles and Long Beach. Amazon, Walmart, and virtually every major e-commerce and third-party logistics operator maintain major distribution facilities across the metro, generating extraordinary industrial demand and some of the lowest vacancy rates nationally. Strong population growth and relative affordability compared to coastal Southern California drive robust multifamily demand, while the market continues to attract significant institutional capital across all commercial property types.",
+    "neighborhoods": [
+      "Downtown Riverside",
+      "Ontario",
+      "San Bernardino",
+      "Moreno Valley",
+      "Fontana",
+      "Rancho Cucamonga"
+    ]
+  },
+  {
+    "slug": "charleston",
+    "city": "Charleston",
+    "state": "SC",
+    "metro": "Charleston-North Charleston",
+    "context": "Charleston has emerged as one of the Southeast's most desirable commercial real estate markets, driven by a booming port expansion at the South Carolina Ports Authority, significant manufacturing investment anchored by Boeing and Volvo, and strong population and tourism growth. The metro's industrial market is among the fastest-growing in the region, while multifamily demand is fueled by one of the nation's highest rates of relocating households attracted by quality of life and relative affordability. Charleston's combination of economic growth momentum, infrastructure investment, and limited developable land creates compelling fundamentals across industrial, multifamily, and retail sectors.",
+    "neighborhoods": [
+      "Downtown Charleston",
+      "North Charleston",
+      "Mount Pleasant",
+      "Summerville",
+      "Goose Creek",
+      "Johns Island"
+    ]
+  },
+  {
+    "slug": "greenville",
+    "city": "Greenville",
+    "state": "SC",
+    "metro": "Greenville-Spartanburg-Anderson",
+    "context": "The Greenville-Spartanburg metro is one of the Southeast's premier manufacturing and industrial markets, home to the BMW U.S. manufacturing plant, Michelin's North American headquarters, and a deep automotive and advanced manufacturing supply chain that drives consistent industrial and logistics demand. The metro's rapidly growing population, excellent quality of life, and business-friendly environment have attracted significant corporate relocations and investment, fueling multifamily development and retail expansion across the Upstate region. Greenville's revitalized downtown, growing technology sector, and proximity to Charlotte and Atlanta position it as a high-conviction secondary market for CRE investors targeting emerging Southeast growth corridors.",
+    "neighborhoods": [
+      "Downtown Greenville",
+      "Spartanburg",
+      "Simpsonville",
+      "Greer",
+      "Mauldin",
+      "Easley"
+    ]
+  },
+  {
+    "slug": "knoxville",
+    "city": "Knoxville",
+    "state": "TN",
+    "metro": "Knoxville-Morristown-Jefferson City",
+    "context": "Knoxville's commercial real estate market is anchored by the University of Tennessee, Oak Ridge National Laboratory, and a growing advanced manufacturing and logistics sector that benefits from Tennessee's pro-business environment and no state income tax. The metro features strong multifamily demand from a large student population and consistent in-migration, with industrial absorption driven by proximity to major interstate corridors connecting the Southeast. Knoxville's relative affordability, quality of life amenities, and accelerating corporate investment make it an increasingly attractive secondary market for investors seeking value-oriented multifamily and industrial opportunities in the Southeast.",
+    "neighborhoods": [
+      "Downtown Knoxville",
+      "West Knoxville",
+      "Maryville",
+      "Oak Ridge",
+      "Farragut",
+      "Powell"
+    ]
+  },
+  {
+    "slug": "fort-worth",
+    "city": "Fort Worth",
+    "state": "TX",
+    "metro": "Dallas-Fort Worth-Arlington",
+    "context": "Fort Worth is the fastest-growing large city in the United States by percentage, anchored by a diversified economy spanning defense, aerospace, manufacturing, healthcare, and financial services, with major employers including Lockheed Martin, American Airlines, and BNSF Railway. The city's robust industrial market benefits from DFW Airport proximity and extensive rail infrastructure, while multifamily demand is driven by extraordinary population growth that consistently outpaces housing supply. Fort Worth's lower land costs relative to Dallas proper, strong corporate investment pipeline, and business-friendly environment make it a high-conviction destination for commercial real estate developers and investors across all asset classes.",
+    "neighborhoods": [
+      "Downtown Fort Worth",
+      "TCU Area",
+      "Alliance Corridor",
+      "Southlake",
+      "Keller",
+      "Arlington"
+    ]
+  },
+  {
+    "slug": "savannah",
+    "city": "Savannah",
+    "state": "GA",
+    "metro": "Savannah-Hinesville-Statesboro",
+    "context": "Savannah has become one of the nation's most strategically important industrial and logistics markets, anchored by the Port of Savannah \u00e2\u20ac\u201d the fastest-growing and third-busiest container port in the United States \u00e2\u20ac\u201d which drives extraordinary warehouse and distribution demand across a rapidly expanding logistics corridor. Major occupiers including Amazon, Gulfstream Aerospace, and Hyundai's first U.S. EV manufacturing plant have transformed the metro into a premier Southeast industrial investment destination with vacancy rates at historic lows. Multifamily demand is supported by strong job creation and in-migration, while Savannah's historic district and growing tourism economy add retail and hospitality dimensions to a market increasingly attracting institutional capital.",
+    "neighborhoods": [
+      "Downtown Savannah",
+      "Pooler",
+      "Garden City",
+      "Richmond Hill",
+      "Hinesville",
+      "Port Wentworth"
+    ]
+  }
 ]

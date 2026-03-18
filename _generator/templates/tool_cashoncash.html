@@ -1,0 +1,146 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Cash-on-Cash Return Calculator","description":"Free cash-on-cash return calculator for commercial real estate investments. Measure your actual return on invested capital.","url":"https://clscre.com/tools/cashoncash-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is cash-on-cash return?","acceptedAnswer":{"@type":"Answer","text":"Cash-on-cash (CoC) return measures the annual pre-tax cash flow relative to the total cash invested in a property. It is calculated as Annual Cash Flow (after debt service) divided by Total Cash Invested (down payment + closing costs + rehab). Unlike cap rate, CoC accounts for financing and shows your actual return on equity."}},{"@type":"Question","name":"How is cash-on-cash different from cap rate?","acceptedAnswer":{"@type":"Answer","text":"Cap rate measures the property's unleveraged return (NOI / Property Value) — it ignores financing. Cash-on-cash measures your leveraged return on actual cash invested. With favorable financing, CoC return can be significantly higher than cap rate due to the power of leverage."}},{"@type":"Question","name":"What is a good cash-on-cash return for CRE?","acceptedAnswer":{"@type":"Answer","text":"For stabilized commercial properties, 6-10% cash-on-cash is considered solid. Multifamily typically yields 6-10%, industrial 7-10%, retail 8-12%, and value-add strategies can target 12-20%+ once stabilized. Returns below 5% may not justify the illiquidity and risk of real estate."}},{"@type":"Question","name":"Does cash-on-cash include appreciation?","acceptedAnswer":{"@type":"Answer","text":"No. Cash-on-cash return only measures annual cash flow yield on invested capital. It does not account for appreciation, principal paydown, tax benefits, or depreciation. For a total return picture, investors use Internal Rate of Return (IRR) which captures all sources of return over the holding period."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"Cash-on-Cash Calculator","item":"https://clscre.com/tools/cashoncash-calculator.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}tools/index.html">Calculators</a></li>
+  <li><span>Cash-on-Cash Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Calculator</div>
+  <h1 class="reveal">Cash-on-Cash Return Calculator</h1>
+  <p class="reveal">Measure your actual return on invested capital. Cash-on-cash return accounts for financing and shows what your equity is truly earning.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Calculate Cash-on-Cash Return</h2>
+      <div class="calc-form">
+        <div class="calc-field">
+          <label for="annualCF">Annual Cash Flow (After Debt Service)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="annualCF" inputmode="decimal" placeholder="60,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="totalInvested">Total Cash Invested</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="totalInvested" inputmode="decimal" placeholder="500,000"></div>
+          <span style="font-size:12px;color:var(--gray-500)">Down payment + closing costs + rehab/capex</span>
+        </div>
+        <button class="btn-primary" onclick="calcCoC()" style="width:100%;justify-content:center;margin-top:8px">Calculate Return</button>
+      </div>
+    </div>
+    <div class="calc-result" id="cocResult" style="display:none">
+      <div class="calc-gauge" id="cocGauge">
+        <div class="gauge-value" id="cocValue">--</div>
+        <div class="gauge-label">Cash-on-Cash Return</div>
+      </div>
+      <div class="calc-detail-grid">
+        <div class="calc-detail"><span class="calc-detail-label">Monthly Cash Flow</span><span class="calc-detail-value" id="monthlyCF">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Payback Period</span><span class="calc-detail-value" id="payback">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">5-Year Cash Return</span><span class="calc-detail-value" id="fiveYr">--</span></div>
+      </div>
+      <div class="calc-verdict" id="cocVerdict"></div>
+      <div class="calc-thresholds">
+        <h3>Typical Cash-on-Cash Returns by Property Type</h3>
+        <div class="threshold-grid">
+          <div class="threshold-item"><span class="threshold-label">Multifamily</span><span class="threshold-val">6%&ndash;10%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Industrial</span><span class="threshold-val">7%&ndash;10%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Retail (NNN)</span><span class="threshold-val">8%&ndash;12%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Office</span><span class="threshold-val">6%&ndash;9%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Value-Add</span><span class="threshold-val">12%&ndash;20%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Core / Trophy</span><span class="threshold-val">3%&ndash;6%</span></div>
+        </div>
+      </div>
+      <div class="calc-email-capture" id="emailCapture" style="display:none">
+        <h3>Get Your Full Analysis</h3>
+        <p>We'll email your results plus a personalized financing recommendation from 1,000+ lenders.</p>
+        <div class="calc-field"><input type="email" id="captureEmail" placeholder="your@email.com" class="calc-email-input"></div>
+        <div class="calc-field"><input type="text" id="captureName" placeholder="Your name" class="calc-email-input"></div>
+        <button class="btn-primary" onclick="sendResults('cashoncash')" style="width:100%;justify-content:center">Email My Results</button>
+        <p style="font-size:12px;color:var(--gray-500);margin-top:8px">No spam. Just your results + how CLS CRE can help.</p>
+      </div>
+      <a href="{{ depth }}apply.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Apply for Financing &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More Calculators</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}tools/dscr-calculator.html" class="cross-link-card reveal"><div class="cl-title">DSCR Calculator</div><div class="cl-sub">Debt service coverage</div></a>
+    <a href="{{ depth }}tools/cap-rate-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cap Rate Calculator</div><div class="cl-sub">Property valuation</div></a>
+    <a href="{{ depth }}tools/loan-calculator.html" class="cross-link-card reveal"><div class="cl-title">Loan Payment Calculator</div><div class="cl-sub">Monthly payment estimates</div></a>
+    <a href="{{ depth }}tools/ltv-calculator.html" class="cross-link-card reveal"><div class="cl-title">LTV Calculator</div><div class="cl-sub">Leverage analysis</div></a>
+    <a href="{{ depth }}tools/noi-calculator.html" class="cross-link-card reveal"><div class="cl-title">NOI Calculator</div><div class="cl-sub">Net operating income</div></a>
+  </div>
+</div>
+</section>
+
+{% set faq_title = 'Cash-on-Cash Return FAQ' %}
+{% set faq_alt = true %}
+{% set faqs = [
+  {"q": "What is cash-on-cash return?", "a": "Cash-on-cash return measures the annual pre-tax cash flow relative to the total cash invested. It is calculated as Annual Cash Flow (after debt service) divided by Total Cash Invested. Unlike cap rate, it accounts for financing and shows your actual return on equity."},
+  {"q": "How is cash-on-cash different from cap rate?", "a": "Cap rate measures the unleveraged return (NOI / Value) and ignores financing. Cash-on-cash measures your leveraged return on actual cash invested. With favorable financing, CoC return can be significantly higher than cap rate."},
+  {"q": "What is a good cash-on-cash return for CRE?", "a": "For stabilized properties, 6-10% is solid. Multifamily typically yields 6-10%, industrial 7-10%, retail 8-12%, and value-add strategies can target 12-20%+. Returns below 5% may not justify the risk."},
+  {"q": "Does cash-on-cash include appreciation?", "a": "No. It only measures annual cash flow yield. For a total return picture including appreciation, principal paydown, and tax benefits, investors use Internal Rate of Return (IRR)."}
+] %}
+{% include '_faq_section.html' %}
+
+{% set cta_title = 'Maximize Your Returns' %}
+{% set cta_description = 'The right financing structure can dramatically improve cash-on-cash returns. CLS CRE will find the optimal leverage for your deal.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+function parseNum(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0}
+function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+function calcCoC(){
+  var cf=parseNum('annualCF'),invested=parseNum('totalInvested');
+  if(!cf||!invested)return;
+  var coc=(cf/invested)*100;
+  var paybackYrs=invested/cf;
+  document.getElementById('cocValue').textContent=coc.toFixed(1)+'%';
+  document.getElementById('monthlyCF').textContent=fmt(cf/12);
+  document.getElementById('payback').textContent=paybackYrs.toFixed(1)+' years';
+  document.getElementById('fiveYr').textContent=fmt(cf*5)+' ('+((cf*5/invested)*100).toFixed(0)+'%)';
+  var g=document.getElementById('cocGauge');
+  g.className='calc-gauge'+(coc>=8?' gauge-green':coc>=5?' gauge-yellow':' gauge-red');
+  var v=document.getElementById('cocVerdict');
+  if(coc>=12)v.innerHTML='<strong>Exceptional return.</strong> This exceeds most stabilized CRE benchmarks. Typical of value-add or opportunistic deals. Verify the cash flow projections are realistic and sustainable.';
+  else if(coc>=8)v.innerHTML='<strong>Strong return.</strong> Above average for stabilized commercial real estate. Your equity is working hard. This is a solid risk-adjusted yield.';
+  else if(coc>=5)v.innerHTML='<strong>Average return.</strong> Acceptable for core/core-plus assets in strong markets. Consider whether the appreciation potential and tax benefits make up for the modest yield.';
+  else v.innerHTML='<strong>Below average.</strong> Returns under 5% may not justify the illiquidity and management burden of CRE. Consider optimizing the capital structure with better financing terms or reducing acquisition price.';
+  document.getElementById('cocResult').style.display='block';
+  document.getElementById('emailCapture').style.display='block';
+}
+function sendResults(calc){
+  var email=document.getElementById('captureEmail').value;
+  var name=document.getElementById('captureName').value;
+  if(!email){alert('Please enter your email.');return;}
+  if(typeof gtag==='function')gtag('event','calculator_lead',{calculator:calc,page_url:window.location.href});
+  var leads=JSON.parse(localStorage.getItem('cls_calc_leads')||'[]');
+  leads.push({calculator:calc,email:email,name:name,url:window.location.href,timestamp:new Date().toISOString()});
+  localStorage.setItem('cls_calc_leads',JSON.stringify(leads));
+  document.getElementById('emailCapture').innerHTML='<div style="text-align:center;padding:20px"><div style="font-size:32px;margin-bottom:8px">&#10003;</div><h3 style="color:var(--green)">Thank You!</h3><p>We\'ll send your personalized analysis within 24 hours.</p></div>';
+}
+</script>
+{% endblock %}
