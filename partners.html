@@ -242,7 +242,10 @@
       <input type="hidden" name="_captcha" value="true">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_autoresponse" value="Thank you for your interest in the CLS CRE referral partner program! We will reach out within one business day to discuss the program and answer any questions. — Trevor Damyan, Commercial Mortgage Broker, CLS CRE | clscre.com">
-      <input type="text" name="_honey" style="display:none">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website_url" tabindex="-1" autocomplete="off" id="hp2_partner"></div>
+      <input type="hidden" name="_cls_token" id="partnerToken" value="">
+      <input type="hidden" name="Form Loaded At" id="partnerTimestamp" value="">
 
       <div class="form-row">
         <div class="form-field">
@@ -421,6 +424,12 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     }
   });
 });
+// Bot protection: set JS token + timestamp
+(function(){
+  var token='cls_'+Math.random().toString(36).substr(2,9)+'_'+Date.now().toString(36);
+  var el=document.getElementById('partnerToken');if(el)el.value=token;
+  var ts=document.getElementById('partnerTimestamp');if(ts)ts.value=new Date().toISOString();
+})();
 </script>
 <script src="js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>

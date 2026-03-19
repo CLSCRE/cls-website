@@ -271,7 +271,12 @@
       <input type="hidden" name="_captcha" value="true">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_autoresponse" value="Thank you for your application! A Commercial Lending Solutions advisor has received your information and will review your deal within 24 hours. For urgent inquiries, call us directly at 310.758.4042. — Trevor Damyan, Commercial Mortgage Broker, CLS CRE | clscre.com">
-      <input type="text" name="_honey" style="display:none">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <!-- Bot protection: second honeypot -->
+      <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="company_website" tabindex="-1" autocomplete="off" id="hp2_apply"></div>
+      <!-- Bot protection: JS token + timestamp -->
+      <input type="hidden" name="_cls_token" id="applyToken" value="">
+      <input type="hidden" name="Form Loaded At" id="applyTimestamp" value="">
       <input type="hidden" name="Loan Purpose" id="h_purpose">
       <input type="hidden" name="Property Type" id="h_property_type">
       <input type="hidden" name="Property Location" id="h_location">
@@ -1002,8 +1007,28 @@ function populateReview() {
   });
 }
 
+/* --- Bot protection setup --- */
+var _applyLoadTime = Date.now();
+(function(){
+  var token = 'cls_' + Math.random().toString(36).substr(2,9) + '_' + Date.now().toString(36);
+  var el = document.getElementById('applyToken');
+  if(el) el.value = token;
+  var ts = document.getElementById('applyTimestamp');
+  if(ts) ts.value = new Date().toISOString();
+})();
+
 /* --- Submit --- */
 function submitApplication() {
+  // Bot check 1: second honeypot
+  var hp2 = document.getElementById('hp2_apply');
+  if (hp2 && hp2.value) { window.location.href = 'thank-you.html'; return; }
+  // Bot check 2: time trap (5-step wizard in under 10 seconds = bot)
+  var elapsed = (Date.now() - _applyLoadTime) / 1000;
+  if (elapsed < 10) { window.location.href = 'thank-you.html'; return; }
+  // Bot check 3: JS token
+  var token = document.getElementById('applyToken');
+  if (!token || !token.value || !token.value.startsWith('cls_')) { window.location.href = 'thank-you.html'; return; }
+
   // Copy values to hidden form
   const purpose = document.querySelector('input[name="purpose"]:checked');
   const propType = document.querySelector('input[name="property_type"]:checked');
