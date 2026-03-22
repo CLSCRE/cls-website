@@ -269,12 +269,17 @@
     <div class="lp-form-card" id="quote-form">
       <h3>Get Your SBA Loan Quote</h3>
       <p>Fill out the form below. We respond within 24 hours.</p>
-      <form action="https://formsubmit.co/inquiries@clscre.com" method="POST">
+      <form action="https://formsubmit.co/inquiries@clscre.com" method="POST" onsubmit="return validateLPForm(this)">
         <input type="hidden" name="_subject" value="SBA Loan Quote — Landing Page">
         <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
         <input type="hidden" name="_captcha" value="true">
         <input type="hidden" name="_template" value="table">
-        <input type="text" name="_honey" style="display:none">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <!-- Bot protection: second honeypot -->
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="company_website" tabindex="-1" autocomplete="off"></div>
+        <!-- Bot protection: JS token + timestamp -->
+        <input type="hidden" name="_cls_token" value="">
+        <input type="hidden" name="Form Loaded At" value="">
         <input type="hidden" name="Lead Source" value="Google Ads — SBA Loans Landing Page">
         <div class="form-row">
           <div class="form-field"><label>First Name *</label><input type="text" name="First Name" required></div>
@@ -284,7 +289,7 @@
         <div class="form-field"><label>Phone *</label><input type="tel" name="Phone" required></div>
         <div class="form-field"><label>Business Name</label><input type="text" name="Business Name"></div>
         <div class="form-row">
-          <div class="form-field"><label>Loan Amount</label><select name="Loan Amount" required><option value="" disabled selected>Select loan amount</option><option value="$1,000,000 - $3,000,000">$1M - $3M</option><option value="$3,000,000 - $5,000,000">$3M - $5M</option><option value="$5,000,000 - $10,000,000">$5M - $10M</option><option value="$10,000,000 - $25,000,000">$10M - $25M</option><option value="$25,000,000 - $50,000,000">$25M - $50M</option><option value="$50,000,000 - $100,000,000">$50M - $100M</option><option value="$100,000,000+">$100M+</option></select></div>
+          <div class="form-field"><label>Loan Amount</label><input type="text" name="Loan Amount" placeholder="e.g. $5,000,000" required></div>
           <div class="form-field"><label>SBA Program</label>
             <select name="SBA Program">
               <option value="">Select...</option>
@@ -307,7 +312,7 @@
             <option>Other</option>
           </select>
         </div>
-        <div class="form-field"><label>Property City &amp; State *</label><input type="text" name="Property Location" placeholder="e.g. Los Angeles, CA" required></div>
+        <div class="form-field"><label>Property Address *</label><input type="text" name="Property Address" placeholder="e.g. 123 Main St, Los Angeles, CA 90012" required></div>
         <div class="form-field"><label>Purpose</label>
           <select name="Loan Purpose">
             <option value="">Select...</option>
@@ -449,5 +454,75 @@ document.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('c
 </script>
 <script src="../js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
+
+<script>
+// Landing page form: bot protection, validation, formatting
+(function(){
+  var loadTime = Date.now();
+  // Set JS token + timestamp on all landing page forms
+  document.querySelectorAll('form[action*="formsubmit.co"]').forEach(function(form){
+    var token = 'cls_' + Math.random().toString(36).substr(2,9) + '_' + Date.now().toString(36);
+    var tokenEl = form.querySelector('[name="_cls_token"]');
+    if(tokenEl) tokenEl.value = token;
+    var tsEl = form.querySelector('[name="Form Loaded At"]');
+    if(tsEl) tsEl.value = new Date().toISOString();
+  });
+  // Auto-format phone fields
+  document.querySelectorAll('input[type="tel"]').forEach(function(el){
+    el.addEventListener('input', function(){
+      var v = this.value.replace(/\D/g, '');
+      if(v.length >= 6) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6,10);
+      else if(v.length >= 3) v = '(' + v.slice(0,3) + ') ' + v.slice(3);
+      this.value = v;
+    });
+  });
+  // Auto-format dollar amount fields
+  document.querySelectorAll('input[name="Loan Amount"], input[name="Current Loan Balance"], input[name="Total Project Cost"], input[name="Estimated Property Value"]').forEach(function(el){
+    el.addEventListener('input', function(){
+      var raw = this.value.replace(/[^0-9]/g, '');
+      if(raw) this.value = '$' + parseInt(raw).toLocaleString();
+      else this.value = '';
+    });
+    el.addEventListener('focus', function(){ if(!this.value) this.value = '$'; });
+    el.addEventListener('blur', function(){ if(this.value === '$') this.value = ''; });
+  });
+  // Validation + bot protection
+  window.validateLPForm = function(form){
+    // Bot check 1: second honeypot
+    var hp = form.querySelector('[name="company_website"]');
+    if(hp && hp.value){ window.location.href = 'https://clscre.com/thank-you.html'; return false; }
+    // Bot check 2: time trap (form filled in under 3 seconds = bot)
+    var elapsed = (Date.now() - loadTime) / 1000;
+    if(elapsed < 3){ window.location.href = 'https://clscre.com/thank-you.html'; return false; }
+    // Bot check 3: JS token
+    var token = form.querySelector('[name="_cls_token"]');
+    if(!token || !token.value || !token.value.startsWith('cls_')){ window.location.href = 'https://clscre.com/thank-you.html'; return false; }
+    // Phone validation: at least 10 digits
+    var phoneEl = form.querySelector('input[type="tel"]');
+    if(phoneEl){
+      var digits = phoneEl.value.replace(/\D/g, '');
+      if(digits.length < 10){ alert('Please enter a valid phone number with at least 10 digits.'); phoneEl.focus(); return false; }
+    }
+    // Loan amount validation: minimum $1,000,000
+    var amtEl = form.querySelector('input[name="Loan Amount"]') || form.querySelector('input[name="Current Loan Balance"]');
+    if(amtEl){
+      var rawAmt = amtEl.value.replace(/[^0-9]/g, '');
+      if(!rawAmt || parseInt(rawAmt) < 1000000){
+        alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
+        amtEl.focus(); return false;
+      }
+    }
+    // Property address validation
+    var addrEl = form.querySelector('input[name="Property Address"]') || form.querySelector('input[name="Property Location"]');
+    if(addrEl && addrEl.hasAttribute('required')){
+      var addr = addrEl.value.trim();
+      if(addr.length < 10){ alert('Please enter the full property address (e.g. 123 Main St, Los Angeles, CA 90012).'); addrEl.focus(); return false; }
+    }
+    // GA4 event
+    if(typeof gtag !== 'undefined'){ gtag('event','generate_lead',{event_category:'form',event_label:'landing_page'}); }
+    return true;
+  };
+})();
+</script>
 </body>
 </html>

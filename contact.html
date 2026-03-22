@@ -299,57 +299,6 @@ const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{n
 const reveals=document.querySelectorAll('.reveal');const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});reveals.forEach(el=>observer.observe(el));
 const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
 
-// Form validation
-function validateContactForm() {
-  // Phone: at least 10 digits
-  var phone = document.getElementById('cf_phone').value.replace(/\D/g, '');
-  if (phone.length < 10) {
-    alert('Please enter a valid phone number with at least 10 digits.');
-    document.getElementById('cf_phone').focus();
-    return false;
-  }
-  // Loan amount: minimum $250,000
-  var rawAmt = document.getElementById('cf_amount').value.replace(/[^0-9]/g, '');
-  if (!rawAmt || parseInt(rawAmt) < 1000000) {
-    alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
-    document.getElementById('cf_amount').focus();
-    return false;
-  }
-  // Location: must contain a comma (City, State pattern)
-  var loc = document.getElementById('cf_location').value.trim();
-  if (!/[a-zA-Z].*,\s*[a-zA-Z]/.test(loc)) {
-    alert('Please enter the property location as City, State (e.g. Los Angeles, CA).');
-    document.getElementById('cf_location').focus();
-    return false;
-  }
-  // Deal details: minimum 20 characters
-  var details = document.getElementById('cf_details').value.trim();
-  if (details.length < 20) {
-    alert('Please provide more details about your deal (at least a few sentences).');
-    document.getElementById('cf_details').focus();
-    return false;
-  }
-  // GA4 tracking
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'generate_lead', { event_category: 'form', event_label: 'contact_form' });
-  }
-  return true;
-}
-
-// Auto-format loan amount with commas
-document.getElementById('cf_amount').addEventListener('input', function() {
-  var raw = this.value.replace(/[^0-9]/g, '');
-  if (raw) this.value = '$' + parseInt(raw).toLocaleString();
-  else this.value = '';
-});
-
-// Auto-format phone
-document.getElementById('cf_phone').addEventListener('input', function() {
-  var v = this.value.replace(/\D/g, '');
-  if (v.length >= 6) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6,10);
-  else if (v.length >= 3) v = '(' + v.slice(0,3) + ') ' + v.slice(3);
-  this.value = v;
-});
 </script>
 <script src="js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
