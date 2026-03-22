@@ -106,7 +106,7 @@
       {"q": "What are current {property_type} loan rates in {city}?", "a": "Current {property_type} loan rates in {city} range based on the financing type: permanent loans from 5.34% to 8.25%, bridge loans from 6.79% to 13.04%, and construction loans from 6.79% to 13.04%. Contact CLS CRE for rate quotes specific to your property."},
       {"q": "How is the {property_type} market in {city}?", "a": "The {property_type} market in the {metro} area benefits from {context_snippet}. Contact CLS CRE for a detailed market assessment and financing options for your {city} {property_type} property."},
       {"q": "Can I get non-recourse financing for {property_type} in {city}?", "a": "Non-recourse financing is available for qualifying {property_type} properties in {city} from life insurance companies, CMBS conduits, and select debt funds. Requirements include sufficient property value, strong cash flow, and experienced borrower sponsorship."},
-      {"q": "What is the minimum loan amount for {property_type} in {city}?", "a": "Commercial loans for {property_type} properties in {city} typically start at $1,000,000 for bank financing and $1,000,000 for agency programs. SBA loans start at $500,000 for qualifying owner-occupied properties. Contact CLS CRE for options specific to your deal size."}
+      {"q": "What is the minimum loan amount for {property_type} in {city}?", "a": "Commercial loans for {property_type} properties in {city} typically start at $1,000,000 for bank financing and $1,000,000 for agency programs. SBA loans start at $1,000,000 for qualifying owner-occupied properties. Contact CLS CRE for options specific to your deal size."}
     ]
   }
 }
