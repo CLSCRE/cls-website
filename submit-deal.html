@@ -70,11 +70,40 @@
 
 .step-number{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--green);color:var(--white);font-size:12px;font-weight:700;flex-shrink:0;margin-top:1px}
 
+/* Auth Gate */
+.auth-gate{position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;background:rgba(21,61,99,.85);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:20px}
+.auth-gate.hidden{display:none}
+.auth-card{background:var(--white);border-radius:16px;padding:48px 40px;max-width:460px;width:100%;box-shadow:0 24px 64px rgba(0,0,0,.2)}
+.auth-card h2{font-family:var(--font-display);font-size:28px;color:var(--navy);margin-bottom:8px;text-align:center}
+.auth-card>p{font-size:14px;color:var(--gray-500);text-align:center;margin-bottom:28px;line-height:1.6}
+.auth-card .form-field{margin-bottom:14px}
+.auth-card .form-field label{font-size:12px;font-weight:600;color:var(--gray-700);margin-bottom:4px;display:block}
+.auth-card .form-field input{width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:var(--font-body);transition:border-color .2s;outline:none}
+.auth-card .form-field input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(0,106,78,.08)}
+.auth-tabs{display:flex;margin-bottom:24px;border-bottom:2px solid var(--gray-200)}
+.auth-tab{flex:1;padding:12px;text-align:center;font-size:14px;font-weight:600;color:var(--gray-500);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s}
+.auth-tab.active{color:var(--green);border-bottom-color:var(--green)}
+.auth-tab:hover{color:var(--navy)}
+.auth-form{display:none}
+.auth-form.active{display:block}
+.auth-btn{width:100%;padding:14px;background:var(--green);color:var(--white);border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;transition:background .2s;margin-top:8px;font-family:var(--font-body)}
+.auth-btn:hover{background:var(--navy)}
+.auth-error{color:#dc2626;font-size:13px;margin-top:8px;display:none}
+.auth-success{color:var(--green);font-size:13px;margin-top:8px;display:none}
+.auth-divider{text-align:center;font-size:12px;color:var(--gray-500);margin:16px 0}
+.auth-logo{text-align:center;margin-bottom:20px}
+.auth-logo img{height:80px}
+.logged-in-bar{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:14px 20px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between}
+.logged-in-bar span{font-size:14px;color:var(--navy);font-weight:500}
+.logged-in-bar button{background:none;border:1px solid var(--gray-200);border-radius:6px;padding:6px 14px;font-size:12px;color:var(--gray-500);cursor:pointer;font-family:var(--font-body);transition:all .2s}
+.logged-in-bar button:hover{border-color:var(--navy);color:var(--navy)}
+
 @media(max-width:1024px){
 .contact-page-grid{grid-template-columns:1fr}
 }
 @media(max-width:768px){
 .form-row{grid-template-columns:1fr}
+.auth-card{padding:32px 24px}
 }
 </style>
 </head>
@@ -130,6 +159,41 @@
   <li><span>Submit a Deal</span></li>
 </ol>
 </nav>
+
+<!-- AUTH GATE -->
+<div class="auth-gate" id="authGate">
+  <div class="auth-card">
+    <div class="auth-logo"><img src="images/cls-logo-emblem.png" alt="CLS CRE"></div>
+    <h2>Broker Portal</h2>
+    <p>Log in or register to submit deals. Access is limited to verified brokers and referral partners.</p>
+    <div class="auth-tabs">
+      <div class="auth-tab active" data-tab="login">Log In</div>
+      <div class="auth-tab" data-tab="register">Register</div>
+    </div>
+    <!-- Login Form -->
+    <form class="auth-form active" id="loginForm">
+      <div class="form-field"><label>Email</label><input type="email" id="loginEmail" required placeholder="you@company.com"></div>
+      <div class="form-field"><label>Password</label><input type="password" id="loginPassword" required placeholder="Your password"></div>
+      <div class="auth-error" id="loginError"></div>
+      <button type="submit" class="auth-btn">Log In</button>
+    </form>
+    <!-- Register Form -->
+    <form class="auth-form" id="registerForm">
+      <div class="form-field"><label>First Name *</label><input type="text" id="regFirst" required></div>
+      <div class="form-field"><label>Last Name *</label><input type="text" id="regLast" required></div>
+      <div class="form-field"><label>Company *</label><input type="text" id="regCompany" required></div>
+      <div class="form-field"><label>Email *</label><input type="email" id="regEmail" required placeholder="you@company.com"></div>
+      <div class="form-field"><label>Phone *</label><input type="tel" id="regPhone" required placeholder="310-555-1234"></div>
+      <div class="form-field"><label>License # (Optional)</label><input type="text" id="regLicense" placeholder="DRE or NMLS"></div>
+      <div class="form-field"><label>Create Password *</label><input type="password" id="regPassword" required placeholder="Min 6 characters" minlength="6"></div>
+      <div class="form-field"><label>Confirm Password *</label><input type="password" id="regConfirm" required placeholder="Confirm password"></div>
+      <div class="auth-error" id="regError"></div>
+      <div class="auth-success" id="regSuccess"></div>
+      <button type="submit" class="auth-btn">Create Account</button>
+    </form>
+    <div class="auth-divider">Questions? Call <a href="tel:+13107584042" style="color:var(--green);font-weight:600">310.758.4042</a></div>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="page-hero">
@@ -187,6 +251,10 @@
     </div>
 
     <div class="contact-right reveal">
+      <div class="logged-in-bar" id="loggedInBar" style="display:none">
+        <span id="loggedInName"></span>
+        <button onclick="brokerLogout()">Log Out</button>
+      </div>
       <h3>Deal Submission Form</h3>
       <p>Complete the form below and our team will review your deal within 48 hours.</p>
       <form action="https://formsubmit.co/inquiries@clscre.com" method="POST">
@@ -341,10 +409,10 @@
 <section class="cta-section">
 <div class="section-inner" style="position:relative;z-index:1">
   <h2>Ready to Get Started?</h2>
-  <p>Call us directly at <strong style="color:var(--white)">310.758.4042</strong> or email <strong style="color:var(--white)">inquiries@clscre.com</strong>. We're here to help.</p>
+  <p>Call us directly at <strong style="color:var(--navy)">310.758.4042</strong> or email <strong style="color:var(--navy)">inquiries@clscre.com</strong>. We're here to help.</p>
   <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-    <a href="tel:+13107584042" class="btn-primary" style="background:var(--green)">Call Now &rarr;</a>
-    <a href="mailto:inquiries@clscre.com" class="btn-primary" style="background:transparent;border:2px solid rgba(255,255,255,.3)">Email Us &rarr;</a>
+    <a href="tel:+13107584042" class="btn-primary" style="background:var(--green);color:var(--white)">Call Now &rarr;</a>
+    <a href="mailto:inquiries@clscre.com" class="btn-primary" style="background:var(--navy);color:var(--white)">Email Us &rarr;</a>
   </div>
 </div>
 </section>
@@ -405,6 +473,95 @@ const mobileToggle=document.getElementById('mobileToggle');const navLinks=docume
   var el=document.getElementById('sdToken');if(el)el.value=token;
   var ts=document.getElementById('sdTimestamp');if(ts)ts.value=new Date().toISOString();
 })();
+</script>
+<script>
+// Broker Portal Auth Gate
+(function(){
+  var gate=document.getElementById('authGate');
+  var bar=document.getElementById('loggedInBar');
+  var nameEl=document.getElementById('loggedInName');
+
+  // Simple hash for localStorage (not security-critical, just a gate)
+  function simpleHash(str){var h=0;for(var i=0;i<str.length;i++){h=((h<<5)-h)+str.charCodeAt(i);h|=0}return h.toString(36)}
+
+  function getBrokers(){try{return JSON.parse(localStorage.getItem('cls_brokers')||'{}');}catch(e){return {};}}
+  function saveBrokers(b){localStorage.setItem('cls_brokers',JSON.stringify(b));}
+  function getSession(){try{return JSON.parse(localStorage.getItem('cls_broker_session'));}catch(e){return null;}}
+  function setSession(s){localStorage.setItem('cls_broker_session',JSON.stringify(s));}
+  function clearSession(){localStorage.removeItem('cls_broker_session');}
+
+  // Check existing session
+  var session=getSession();
+  if(session&&session.email){
+    gate.classList.add('hidden');
+    bar.style.display='flex';
+    nameEl.textContent='Logged in as '+session.name+' ('+session.company+')';
+    // Pre-fill broker info in the deal form
+    var fn=document.querySelector('[name="First Name"]');
+    var ln=document.querySelector('[name="Last Name"]');
+    var co=document.querySelector('[name="Company"]');
+    var em=document.querySelector('[name="Email"]');
+    var ph=document.querySelector('[name="Phone"]');
+    var lic=document.querySelector('[name="License Number"]');
+    if(fn)fn.value=session.firstName||'';
+    if(ln)ln.value=session.lastName||'';
+    if(co)co.value=session.company||'';
+    if(em)em.value=session.email||'';
+    if(ph)ph.value=session.phone||'';
+    if(lic)lic.value=session.license||'';
+  }
+
+  // Tab switching
+  document.querySelectorAll('.auth-tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      document.querySelectorAll('.auth-tab').forEach(function(t){t.classList.remove('active')});
+      document.querySelectorAll('.auth-form').forEach(function(f){f.classList.remove('active')});
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab==='login'?'loginForm':'registerForm').classList.add('active');
+    });
+  });
+
+  // Login
+  document.getElementById('loginForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=document.getElementById('loginEmail').value.trim().toLowerCase();
+    var pass=document.getElementById('loginPassword').value;
+    var err=document.getElementById('loginError');
+    var brokers=getBrokers();
+    var hash=simpleHash(pass);
+    if(!brokers[email]){err.textContent='No account found. Please register first.';err.style.display='block';return;}
+    if(brokers[email].hash!==hash){err.textContent='Incorrect password. Please try again.';err.style.display='block';return;}
+    var b=brokers[email];
+    setSession({email:email,name:b.firstName+' '+b.lastName,firstName:b.firstName,lastName:b.lastName,company:b.company,phone:b.phone,license:b.license||''});
+    location.reload();
+  });
+
+  // Register
+  document.getElementById('registerForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var first=document.getElementById('regFirst').value.trim();
+    var last=document.getElementById('regLast').value.trim();
+    var company=document.getElementById('regCompany').value.trim();
+    var email=document.getElementById('regEmail').value.trim().toLowerCase();
+    var phone=document.getElementById('regPhone').value.trim();
+    var license=document.getElementById('regLicense').value.trim();
+    var pass=document.getElementById('regPassword').value;
+    var confirm=document.getElementById('regConfirm').value;
+    var err=document.getElementById('regError');
+    var succ=document.getElementById('regSuccess');
+    err.style.display='none';succ.style.display='none';
+    if(pass!==confirm){err.textContent='Passwords do not match.';err.style.display='block';return;}
+    if(pass.length<6){err.textContent='Password must be at least 6 characters.';err.style.display='block';return;}
+    var brokers=getBrokers();
+    if(brokers[email]){err.textContent='An account with this email already exists. Please log in.';err.style.display='block';return;}
+    brokers[email]={firstName:first,lastName:last,company:company,phone:phone,license:license,hash:simpleHash(pass),registered:new Date().toISOString()};
+    saveBrokers(brokers);
+    setSession({email:email,name:first+' '+last,firstName:first,lastName:last,company:company,phone:phone,license:license});
+    location.reload();
+  });
+})();
+
+function brokerLogout(){localStorage.removeItem('cls_broker_session');location.reload();}
 </script>
 <script src="js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
