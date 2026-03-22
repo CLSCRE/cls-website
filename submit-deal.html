@@ -70,10 +70,11 @@
 
 .step-number{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--green);color:var(--white);font-size:12px;font-weight:700;flex-shrink:0;margin-top:1px}
 
-/* Auth Gate */
-.auth-gate{position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;background:rgba(21,61,99,.85);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:20px}
-.auth-gate.hidden{display:none}
-.auth-card{background:var(--white);border-radius:16px;padding:48px 40px;max-width:460px;width:100%;box-shadow:0 24px 64px rgba(0,0,0,.2)}
+/* Auth Gate — inline page section */
+.auth-page{padding:120px 0 80px;min-height:80vh;display:flex;align-items:center;justify-content:center;background:var(--gray-50)}
+.auth-page.hidden{display:none}
+.portal-content.hidden{display:none}
+.auth-card{background:var(--white);border-radius:16px;padding:48px 40px;max-width:460px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,.08)}
 .auth-card h2{font-family:var(--font-display);font-size:28px;color:var(--navy);margin-bottom:8px;text-align:center}
 .auth-card>p{font-size:14px;color:var(--gray-500);text-align:center;margin-bottom:28px;line-height:1.6}
 .auth-card .form-field{margin-bottom:14px}
@@ -160,15 +161,15 @@
 </ol>
 </nav>
 
-<!-- AUTH GATE -->
-<div class="auth-gate" id="authGate">
+<!-- AUTH PAGE (shown when not logged in) -->
+<section class="auth-page" id="authPage">
   <div class="auth-card">
     <div class="auth-logo"><img src="images/cls-logo-emblem.png" alt="CLS CRE"></div>
     <h2>Broker Portal</h2>
-    <p>Log in or register to submit deals. Access is limited to verified brokers and referral partners.</p>
+    <p>Log in or register to access the deal submission portal. Membership is limited to verified brokers and referral partners.</p>
     <div class="auth-tabs">
       <div class="auth-tab active" data-tab="login">Log In</div>
-      <div class="auth-tab" data-tab="register">Register</div>
+      <div class="auth-tab" data-tab="register">Sign Up</div>
     </div>
     <!-- Login Form -->
     <form class="auth-form active" id="loginForm">
@@ -193,7 +194,10 @@
     </form>
     <div class="auth-divider">Questions? Call <a href="tel:+13107584042" style="color:var(--green);font-weight:600">310.758.4042</a></div>
   </div>
-</div>
+</section>
+
+<!-- PORTAL CONTENT (hidden until logged in) -->
+<div class="portal-content hidden" id="portalContent">
 
 <!-- HERO -->
 <section class="page-hero">
@@ -411,6 +415,8 @@
 </div>
 </section>
 
+</div><!-- end portal-content -->
+
 <!-- FOOTER -->
 <footer>
 <div class="footer-grid">
@@ -504,26 +510,25 @@ function submitDeal(e) {
 <script>
 // Broker Portal Auth Gate
 (function(){
-  var gate=document.getElementById('authGate');
+  var authPage=document.getElementById('authPage');
+  var portal=document.getElementById('portalContent');
   var bar=document.getElementById('loggedInBar');
   var nameEl=document.getElementById('loggedInName');
 
-  // Simple hash for localStorage (not security-critical, just a gate)
   function simpleHash(str){var h=0;for(var i=0;i<str.length;i++){h=((h<<5)-h)+str.charCodeAt(i);h|=0}return h.toString(36)}
 
   function getBrokers(){try{return JSON.parse(localStorage.getItem('cls_brokers')||'{}');}catch(e){return {};}}
   function saveBrokers(b){localStorage.setItem('cls_brokers',JSON.stringify(b));}
   function getSession(){try{return JSON.parse(localStorage.getItem('cls_broker_session'));}catch(e){return null;}}
   function setSession(s){localStorage.setItem('cls_broker_session',JSON.stringify(s));}
-  function clearSession(){localStorage.removeItem('cls_broker_session');}
 
-  // Check existing session
+  // Check existing session — show portal or auth page
   var session=getSession();
   if(session&&session.email){
-    gate.classList.add('hidden');
+    authPage.classList.add('hidden');
+    portal.classList.remove('hidden');
     bar.style.display='flex';
     nameEl.textContent='Logged in as '+session.name+' ('+session.company+')';
-    // Pre-fill broker info in the deal form
     var fn=document.querySelector('[name="First Name"]');
     var ln=document.querySelector('[name="Last Name"]');
     var co=document.querySelector('[name="Company"]');
