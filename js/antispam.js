@@ -1,9 +1,21 @@
 /**
  * CLS CRE Anti-Spam Protection
  * Blocks bots with multiple layered checks that real users pass automatically.
+ * Includes Google reCAPTCHA v3 (invisible, score-based).
  */
 (function() {
   'use strict';
+
+  var RECAPTCHA_SITE_KEY = '6LeB3JMsAAAAAKwoYS1jZKGPfsqVcl3IjVidDWZw';
+  var recaptchaReady = false;
+
+  // Load reCAPTCHA v3 script
+  var rcScript = document.createElement('script');
+  rcScript.src = 'https://www.google.com/recaptcha/api.js?render=' + RECAPTCHA_SITE_KEY;
+  rcScript.async = true;
+  rcScript.defer = true;
+  rcScript.onload = function() { recaptchaReady = true; };
+  document.head.appendChild(rcScript);
 
   var HUMAN_SIGNALS = {
     mouseMoved: false,
@@ -167,11 +179,52 @@
         form.appendChild(powInput);
       }
 
+      // Add reCAPTCHA token field
+      if (!form.querySelector('[name="g-recaptcha-response"]')) {
+        var rcInput = document.createElement('input');
+        rcInput.type = 'hidden';
+        rcInput.name = 'g-recaptcha-response';
+        form.appendChild(rcInput);
+      }
+
       // Add anti-spam check to form submission
       form.addEventListener('submit', function(e) {
+        // Run local checks first
         if (!window.clsAntiSpam(form)) {
           e.preventDefault();
           return false;
+        }
+
+        // Get reCAPTCHA v3 token (invisible, no user interaction)
+        if (recaptchaReady && window.grecaptcha) {
+          e.preventDefault();
+          var submitBtn = form.querySelector('[type="submit"]');
+          if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Verifying...'; }
+
+          grecaptcha.ready(function() {
+            grecaptcha.execute(RECAPTCHA_SITE_KEY, {action: 'submit'}).then(function(token) {
+              var rcField = form.querySelector('[name="g-recaptcha-response"]');
+              if (rcField) rcField.value = token;
+
+              // For forms using JS submission (like Google Sheets), dispatch custom event
+              if (form.getAttribute('onsubmit') || form.id === 'dealForm') {
+                if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitBtn.getAttribute('data-original-text') || 'Submit'; }
+                form.dispatchEvent(new Event('recaptcha-ready'));
+                // Re-submit via the form's own handler
+                if (typeof form._jsSubmit === 'function') {
+                  form._jsSubmit();
+                } else {
+                  form.submit();
+                }
+              } else {
+                // Standard form submission
+                form.submit();
+              }
+            }).catch(function() {
+              // reCAPTCHA failed — submit anyway (don't block real users)
+              form.submit();
+            });
+          });
         }
       });
     });
