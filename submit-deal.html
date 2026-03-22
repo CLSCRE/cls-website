@@ -491,6 +491,9 @@ function submitDeal(e) {
     var el = form.querySelector('[name="'+name+'"]');
     if (el) data[name] = el.value;
   });
+  // Include reCAPTCHA token for server-side verification
+  var rcToken = form.querySelector('[name="g-recaptcha-response"]');
+  if (rcToken && rcToken.value) data['g-recaptcha-response'] = rcToken.value;
 
   fetch(GOOGLE_SHEETS_URL, {
     method: 'POST',
