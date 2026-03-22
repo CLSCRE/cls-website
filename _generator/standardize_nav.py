@@ -32,6 +32,11 @@ def get_nav_html(prefix: str) -> str:
         <a href="{p}financing/sba-loans.html">SBA Loans</a>
         <a href="{p}financing/mezzanine.html">Mezzanine &amp; Pref Equity</a>
         <a href="{p}financing/specialty.html">Specialty Financing</a>
+        <div style="border-top:1px solid var(--gray-200);margin:4px 0;padding-top:4px"><span style="font-size:10px;color:var(--gray-400);text-transform:uppercase;letter-spacing:.06em;padding:0 20px">Capital Sources</span></div>
+        <a href="{p}financing/cmbs-loans.html">CMBS Loans</a>
+        <a href="{p}financing/life-company-loans.html">Life Company Loans</a>
+        <a href="{p}financing/debt-fund-loans.html">Debt Fund &amp; Private Credit</a>
+        <a href="{p}financing/middle-market-loans.html">Middle-Market $10M+</a>
       </div>
     </div>
     <div class="nav-dropdown">
