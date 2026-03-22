@@ -257,16 +257,10 @@
       </div>
       <h3>Deal Submission Form</h3>
       <p>Complete the form below and our team will review your deal within 48 hours.</p>
-      <form action="https://formsubmit.co/inquiries@clscre.com" method="POST">
-        <!-- Formsubmit config -->
-        <input type="hidden" name="_subject" value="New Deal Submission — Broker Portal">
-        <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
-        <input type="hidden" name="_captcha" value="true">
-        <input type="hidden" name="_template" value="table">
+      <form id="dealForm" onsubmit="return submitDeal(event)">
+        <!-- Bot protection -->
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website_url" tabindex="-1" autocomplete="off"></div>
-        <input type="hidden" name="_cls_token" id="sdToken" value="">
-        <input type="hidden" name="Form Loaded At" id="sdTimestamp" value="">
 
         <!-- Section 1: Broker Information -->
         <div class="form-row">
@@ -467,12 +461,45 @@ const reveals=document.querySelectorAll('.reveal');const observer=new Intersecti
 const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
 </script>
 <script>
-// Bot protection: set JS token + timestamp
-(function(){
-  var token='cls_'+Math.random().toString(36).substr(2,9)+'_'+Date.now().toString(36);
-  var el=document.getElementById('sdToken');if(el)el.value=token;
-  var ts=document.getElementById('sdTimestamp');if(ts)ts.value=new Date().toISOString();
-})();
+// REPLACE THIS URL with your Google Apps Script deployment URL
+var GOOGLE_SHEETS_URL = 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+function submitDeal(e) {
+  e.preventDefault();
+  var form = document.getElementById('dealForm');
+  var btn = form.querySelector('button[type="submit"]');
+  var honey = form.querySelector('[name="_honey"]').value;
+  var bot = form.querySelector('[name="website_url"]').value;
+  if (honey || bot) return false; // bot detected
+
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  // Collect form data
+  var data = {};
+  var fields = ['First Name','Last Name','Company','Email','Phone','License Number',
+    'Property Type','City and State','Property Address','Units or SF','Year Built',
+    'Occupancy','Loan Amount','Loan Type','Loan Purpose','Timeline',
+    'Property Value','NOI','Deal Summary','Referral Source'];
+  fields.forEach(function(name) {
+    var el = form.querySelector('[name="'+name+'"]');
+    if (el) data[name] = el.value;
+  });
+
+  fetch(GOOGLE_SHEETS_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data)
+  }).then(function() {
+    window.location.href = 'thank-you.html';
+  }).catch(function(err) {
+    btn.disabled = false;
+    btn.textContent = 'Submit Deal for Review \u2192';
+    alert('There was an error submitting. Please try again or call 310.758.4042.');
+  });
+  return false;
+}
 </script>
 <script>
 // Broker Portal Auth Gate
