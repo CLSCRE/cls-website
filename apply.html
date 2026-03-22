@@ -427,28 +427,28 @@
 
       <div class="wiz-row">
         <div class="wiz-field" id="f_location">
-          <label>Property Address <span class="req">*</span></label>
+          <label for="location">Property Address <span class="req">*</span></label>
           <input type="text" id="location" placeholder="123 Main St, Los Angeles, CA 90012" required>
           <span class="error-msg">Please enter the full property address</span>
         </div>
         <div class="wiz-field">
-          <label>Estimated Property Value</label>
+          <label for="property_value">Estimated Property Value</label>
           <input type="text" id="property_value" placeholder="$8,000,000">
         </div>
       </div>
       <div class="wiz-row">
         <div class="wiz-field">
-          <label>Units or Square Footage</label>
+          <label for="units">Units or Square Footage</label>
           <input type="text" id="units" placeholder="e.g. 24 units or 15,000 SF">
         </div>
         <div class="wiz-field">
-          <label>Year Built</label>
+          <label for="year_built">Year Built</label>
           <input type="text" id="year_built" placeholder="e.g. 1985">
         </div>
       </div>
       <div class="wiz-row single">
         <div class="wiz-field">
-          <label>Current Occupancy</label>
+          <label for="occupancy">Current Occupancy</label>
           <input type="text" id="occupancy" placeholder="e.g. 95%">
         </div>
       </div>
@@ -484,7 +484,7 @@
       </div>
       <div class="wiz-row single" style="margin-top:12px">
         <div class="wiz-field">
-          <label>Or type an exact amount</label>
+          <label for="amountManual">Or type an exact amount</label>
           <input type="text" id="amountManual" placeholder="$5,000,000" style="text-align:center;font-weight:600;font-size:16px">
         </div>
       </div>
@@ -493,7 +493,7 @@
 
       <div class="wiz-row">
         <div class="wiz-field" id="f_loan_type">
-          <label>Loan Type <span class="req">*</span></label>
+          <label for="loan_type">Loan Type <span class="req">*</span></label>
           <select id="loan_type" required>
             <option value="">Select loan type...</option>
             <option value="Permanent">Permanent</option>
@@ -508,7 +508,7 @@
           <span class="error-msg">Please select a loan type</span>
         </div>
         <div class="wiz-field" id="f_timeline">
-          <label>Timeline <span class="req">*</span></label>
+          <label for="timeline">Timeline <span class="req">*</span></label>
           <select id="timeline" required>
             <option value="">How soon do you need funding?</option>
             <option value="ASAP (under 30 days)">ASAP (under 30 days)</option>
@@ -522,7 +522,7 @@
       </div>
       <div class="wiz-row single">
         <div class="wiz-field">
-          <label>Net Operating Income (NOI)</label>
+          <label for="noi">Net Operating Income (NOI)</label>
           <input type="text" id="noi" placeholder="$500,000">
           <span class="field-hint">Annual NOI, if known. Helps us match you with the best lender.</span>
         </div>
@@ -547,37 +547,37 @@
 
       <div class="wiz-row">
         <div class="wiz-field" id="f_first">
-          <label>First Name <span class="req">*</span></label>
+          <label for="first_name">First Name <span class="req">*</span></label>
           <input type="text" id="first_name" required autocomplete="given-name">
           <span class="error-msg">Please enter your first name</span>
         </div>
         <div class="wiz-field" id="f_last">
-          <label>Last Name <span class="req">*</span></label>
+          <label for="last_name">Last Name <span class="req">*</span></label>
           <input type="text" id="last_name" required autocomplete="family-name">
           <span class="error-msg">Please enter your last name</span>
         </div>
       </div>
       <div class="wiz-row">
         <div class="wiz-field" id="f_email">
-          <label>Email <span class="req">*</span></label>
+          <label for="email">Email <span class="req">*</span></label>
           <input type="email" id="email" required autocomplete="email" placeholder="you@company.com">
           <span class="error-msg">Please enter a valid email</span>
         </div>
         <div class="wiz-field" id="f_phone">
-          <label>Phone <span class="req">*</span></label>
+          <label for="phone">Phone <span class="req">*</span></label>
           <input type="tel" id="phone" required autocomplete="tel" placeholder="(310) 555-1234">
           <span class="error-msg">Please enter your phone number</span>
         </div>
       </div>
       <div class="wiz-row single">
         <div class="wiz-field">
-          <label>Company</label>
+          <label for="company">Company</label>
           <input type="text" id="company" autocomplete="organization" placeholder="Optional">
         </div>
       </div>
       <div class="wiz-row single">
         <div class="wiz-field">
-          <label>Anything else we should know?</label>
+          <label for="details">Anything else we should know?</label>
           <textarea id="details" rows="3" placeholder="Business plan, borrower experience, special requirements..."></textarea>
         </div>
       </div>
@@ -585,7 +585,7 @@
       <!-- Document Upload -->
       <div class="wiz-row single">
         <div class="wiz-field">
-          <label>Upload Documents</label>
+          <label for="fileInput">Upload Documents</label>
           <div class="upload-zone" id="uploadZone">
             <div class="upload-icon">&#128206;</div>
             <div class="upload-text">Drag files here or <span class="upload-browse">browse</span></div>
@@ -598,7 +598,7 @@
 
       <div class="wiz-row single">
         <div class="wiz-field">
-          <label>How did you find us?</label>
+          <label for="referral">How did you find us?</label>
           <select id="referral">
             <option value="">Select...</option>
             <option value="Google Search">Google Search</option>

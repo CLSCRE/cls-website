@@ -182,19 +182,42 @@
       </div>
     </div>
 
-    <div class="contact-right reveal" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 40px;background:var(--white);border-radius:12px;border:1px solid var(--gray-200);box-shadow:0 4px 16px rgba(0,0,0,.03)">
-      <div style="width:72px;height:72px;border-radius:50%;background:rgba(21,61,99,.07);display:flex;align-items:center;justify-content:center;font-size:32px;margin-bottom:20px">&#128203;</div>
-      <h3 style="font-family:var(--font-display);font-size:28px;color:var(--navy);margin-bottom:12px">Apply in 2 Minutes</h3>
-      <p style="font-size:15px;color:var(--gray-500);line-height:1.6;margin-bottom:8px;max-width:360px">Our step-by-step application walks you through everything we need to match you with the best lender.</p>
-      <ul style="list-style:none;padding:0;margin:20px 0 28px;text-align:left">
-        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> 5-step guided application</li>
-        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> 100% confidential</li>
-        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> Response within 24 hours</li>
-        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> 1,000+ lenders in our network</li>
-        <li style="display:flex;align-items:center;gap:10px;padding:6px 0;font-size:14px;color:var(--gray-700)"><span style="color:var(--green);font-weight:700">&#10003;</span> Upload docs &amp; term sheets</li>
-      </ul>
-      <a href="apply.html" class="btn-primary" style="font-size:16px;padding:16px 40px;width:100%;justify-content:center">Start Your Application &rarr;</a>
-      <p style="font-size:12px;color:var(--gray-500);margin-top:16px">Are you a broker? <a href="broker-portal.html" style="color:var(--navy);font-weight:600;text-decoration:underline">Submit a deal through our Broker Portal</a></p>
+    <div class="contact-right reveal">
+      <h3>Quick Inquiry</h3>
+      <p>Tell us a little about your needs and we'll get back to you within 24 hours.</p>
+      <form action="https://formsubmit.co/inquiries@clscre.com" method="POST">
+        <input type="hidden" name="_subject" value="New Inquiry — CLS CRE Website">
+        <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf_first">First Name</label>
+            <input type="text" id="cf_first" name="First Name" required placeholder="First name">
+          </div>
+          <div class="form-field">
+            <label for="cf_last">Last Name</label>
+            <input type="text" id="cf_last" name="Last Name" required placeholder="Last name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf_email">Email</label>
+            <input type="email" id="cf_email" name="Email" required placeholder="you@company.com">
+          </div>
+          <div class="form-field">
+            <label for="cf_phone">Phone</label>
+            <input type="tel" id="cf_phone" name="Phone" required placeholder="(310) 555-1234">
+          </div>
+        </div>
+        <div class="form-field full" style="margin-bottom:20px">
+          <label for="cf_message">How can we help?</label>
+          <textarea id="cf_message" name="Message" rows="4" required placeholder="Briefly describe your financing needs, property type, timeline, etc."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;font-size:15px;padding:14px 32px;border:none;cursor:pointer">Send Inquiry &rarr;</button>
+      </form>
+      <p style="font-size:12px;color:var(--gray-500);margin-top:16px;text-align:center">Need a detailed application? <a href="apply.html" style="color:var(--navy);font-weight:600;text-decoration:underline">Start your full application</a></p>
     </div>
   </div>
 </div>
@@ -302,57 +325,6 @@ const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{n
 const reveals=document.querySelectorAll('.reveal');const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});reveals.forEach(el=>observer.observe(el));
 const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
 
-// Form validation
-function validateContactForm() {
-  // Phone: at least 10 digits
-  var phone = document.getElementById('cf_phone').value.replace(/\D/g, '');
-  if (phone.length < 10) {
-    alert('Please enter a valid phone number with at least 10 digits.');
-    document.getElementById('cf_phone').focus();
-    return false;
-  }
-  // Loan amount: minimum $250,000
-  var rawAmt = document.getElementById('cf_amount').value.replace(/[^0-9]/g, '');
-  if (!rawAmt || parseInt(rawAmt) < 1000000) {
-    alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
-    document.getElementById('cf_amount').focus();
-    return false;
-  }
-  // Location: must contain a comma (City, State pattern)
-  var loc = document.getElementById('cf_location').value.trim();
-  if (!/[a-zA-Z].*,\s*[a-zA-Z]/.test(loc)) {
-    alert('Please enter the property location as City, State (e.g. Los Angeles, CA).');
-    document.getElementById('cf_location').focus();
-    return false;
-  }
-  // Deal details: minimum 20 characters
-  var details = document.getElementById('cf_details').value.trim();
-  if (details.length < 20) {
-    alert('Please provide more details about your deal (at least a few sentences).');
-    document.getElementById('cf_details').focus();
-    return false;
-  }
-  // GA4 tracking
-  if (typeof gtag !== 'undefined') {
-    if(typeof gtag==='function')gtag('event', 'generate_lead', { event_category: 'form', event_label: 'contact_form' });
-  }
-  return true;
-}
-
-// Auto-format loan amount with commas
-document.getElementById('cf_amount').addEventListener('input', function() {
-  var raw = this.value.replace(/[^0-9]/g, '');
-  if (raw) this.value = '$' + parseInt(raw).toLocaleString();
-  else this.value = '';
-});
-
-// Auto-format phone
-document.getElementById('cf_phone').addEventListener('input', function() {
-  var v = this.value.replace(/\D/g, '');
-  if (v.length >= 6) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6,10);
-  else if (v.length >= 3) v = '(' + v.slice(0,3) + ') ' + v.slice(3);
-  this.value = v;
-});
 </script>
 <script src="js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
