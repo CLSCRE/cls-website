@@ -232,6 +232,41 @@
           submitBtn.textContent = 'Verifying...';
         }
 
+        // Exit intent form: fetch submission + success message (no page redirect)
+        if (form.id === 'exitForm') {
+          var pageType = location.pathname.split('/')[1] || 'home';
+          if (typeof gtag === 'function') gtag('event', 'exit_lead_capture', {page_type: pageType, page_url: location.href});
+          // localStorage backup
+          var exitEmail = (form.querySelector('[name="Email"]') || {}).value || '';
+          var exitName = (form.querySelector('[name="Name"]') || {}).value || '';
+          try {
+            var leads = JSON.parse(localStorage.getItem('cls_exit_leads') || '[]');
+            leads.push({email: exitEmail, name: exitName, page: location.href, type: pageType, timestamp: new Date().toISOString()});
+            localStorage.setItem('cls_exit_leads', JSON.stringify(leads));
+          } catch(ex) {}
+
+          // Get reCAPTCHA token, then submit via fetch
+          function doExitSubmit() {
+            var formData = new FormData(form);
+            fetch(form._realAction, { method: 'POST', body: formData, mode: 'no-cors' }).catch(function(){});
+            form.style.display = 'none';
+            var success = document.getElementById('exitSuccess');
+            if (success) success.style.display = 'block';
+          }
+          if (recaptchaReady && window.grecaptcha) {
+            grecaptcha.ready(function() {
+              grecaptcha.execute(RECAPTCHA_SITE_KEY, {action: 'exit_lead'}).then(function(token) {
+                var rcField = form.querySelector('[name="g-recaptcha-response"]');
+                if (rcField) rcField.value = token;
+                doExitSubmit();
+              }).catch(function() { doExitSubmit(); });
+            });
+          } else {
+            doExitSubmit();
+          }
+          return false;
+        }
+
         // Function to actually submit the form
         function doSubmit() {
           // Restore the real action URL right before submission

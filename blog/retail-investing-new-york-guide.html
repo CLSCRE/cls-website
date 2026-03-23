@@ -475,7 +475,7 @@
     <div class="exit-icon" id="exitIcon">&#128200;</div>
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
-    <form class="exit-form" id="exitForm" action="https://formsubmit.co/inquiries@clscre.com" method="POST" onsubmit="return captureExitLead(event)">
+    <form class="exit-form" id="exitForm" action="https://formsubmit.co/inquiries@clscre.com" method="POST">
       <input type="hidden" name="_subject" value="Exit Intent Lead — Commercial Lending Solutions Website">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
@@ -591,59 +591,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('visible'); });
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape') overlay.classList.remove('visible'); });
 })();
-// --- Bot protection setup ---
-var _exitLoadTime = Date.now();
+// --- Exit form metadata setup (antispam.js handles all validation) ---
 (function(){
-  // Set JS token (bots that don't execute JS won't have this)
-  var token = 'cls_' + Math.random().toString(36).substr(2,9) + '_' + Date.now().toString(36);
-  var el = document.getElementById('exitToken');
-  if(el) el.value = token;
-  // Set timestamp
-  var ts = document.getElementById('exitTimestamp');
-  if(ts) ts.value = new Date().toISOString();
-  // Set source page
   var sp = document.getElementById('exitSourcePage');
   if(sp) sp.value = location.href;
   var pt = document.getElementById('exitPageType');
   if(pt) pt.value = location.pathname.split('/')[1] || 'home';
 })();
-
-function captureExitLead(e) {
-  e.preventDefault();
-  var form = document.getElementById('exitForm');
-  var email = document.getElementById('exitEmail').value;
-  var name = document.getElementById('exitName').value;
-  if (!email) return false;
-
-  // Bot check 1: second honeypot (if filled, it's a bot)
-  var hp = form.querySelector('[name="website_url"]');
-  if (hp && hp.value) { document.getElementById('exitForm').style.display='none'; document.getElementById('exitSuccess').style.display='block'; return false; }
-
-  // Bot check 2: time trap (form filled in under 3 seconds = bot)
-  var elapsed = (Date.now() - _exitLoadTime) / 1000;
-  if (elapsed < 3) { document.getElementById('exitForm').style.display='none'; document.getElementById('exitSuccess').style.display='block'; return false; }
-
-  // Bot check 3: JS token must be present
-  var token = document.getElementById('exitToken');
-  if (!token || !token.value || !token.value.startsWith('cls_')) { document.getElementById('exitForm').style.display='none'; document.getElementById('exitSuccess').style.display='block'; return false; }
-
-  var pageType = location.pathname.split('/')[1] || 'home';
-  if(typeof gtag==='function') gtag('event', 'exit_lead_capture', {page_type: pageType, page_url: location.href});
-
-  // Also keep localStorage backup
-  var leads = JSON.parse(localStorage.getItem('cls_exit_leads') || '[]');
-  leads.push({email:email, name:name, page:location.href, type:pageType, timestamp:new Date().toISOString()});
-  localStorage.setItem('cls_exit_leads', JSON.stringify(leads));
-
-  // Submit to FormSubmit via fetch (no page redirect)
-  var formData = new FormData(form);
-  fetch(form.action, { method:'POST', body:formData, mode:'no-cors' }).catch(function(){});
-
-  // Show success immediately
-  document.getElementById('exitForm').style.display = 'none';
-  document.getElementById('exitSuccess').style.display = 'block';
-  return false;
-}
 </script>
 <script src="../js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
