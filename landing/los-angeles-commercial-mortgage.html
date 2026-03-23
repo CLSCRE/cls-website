@@ -491,7 +491,7 @@ document.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('c
 // Landing page form: bot protection, validation, formatting
 (function(){
   var loadTime = Date.now();
-  document.querySelectorAll('form[action*="formsubmit.co"]').forEach(function(form){
+  document.querySelectorAll('form[method="POST"]').forEach(function(form){
     var token = 'cls_' + Math.random().toString(36).substr(2,9) + '_' + Date.now().toString(36);
     var tokenEl = form.querySelector('[name="_cls_token"]');
     if(tokenEl) tokenEl.value = token;
