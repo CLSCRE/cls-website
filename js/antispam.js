@@ -276,7 +276,7 @@
       }
     }
 
-    // ─ Check 7: Bot template detection (expanded patterns) ─
+    // ─ Check 7: Message validation (bot template + CRE relevance) ─
     var detailsEl = form.querySelector('[name="Deal_Details"]') ||
                     form.querySelector('[name="Deal Details"]') ||
                     form.querySelector('[name="Deal Summary"]') ||
@@ -295,9 +295,22 @@
       'kindly reply', 'revert back', 'do the needful',
       'i need a loan', 'need money', 'give me loan',
       'click here', 'visit my', 'check out my', 'www.',
-      'http://', 'https://', '.ru/', '.cn/', 'bit.ly', 'tinyurl'
+      'http://', 'https://', '.ru/', '.cn/', 'bit.ly', 'tinyurl',
+      // Generic bot spam that has nothing to do with CRE
+      'project is', 'just completed', 'finally completed', 'is completed',
+      'great work', 'nice website', 'good website', 'love your site',
+      'amazing work', 'wonderful job', 'nice post', 'great post',
+      'well done', 'good job', 'thanks for sharing', 'very helpful',
+      'just wanted to say', 'just checking', 'testing',
+      'seo services', 'web design', 'web development', 'marketing services',
+      'link building', 'social media', 'grow your business',
+      'rank your website', 'boost your', 'increase your traffic',
+      'i can help', 'we can help your', 'our team can',
+      'schedule a call', 'free consultation', 'free audit',
+      'discount', 'limited time', 'special offer', 'act now'
     ];
-    if (details.length > 0 && details.length < 30) {
+    // Check bot phrases — expanded to 50 chars (bots write short generic messages)
+    if (details.length > 0 && details.length < 50) {
       for (var j = 0; j < botPhrases.length; j++) {
         if (details === botPhrases[j] || details.indexOf(botPhrases[j]) > -1) {
           errors.push('template');
@@ -308,6 +321,43 @@
     // Any message with URLs is suspicious
     if (details.length > 0 && (/https?:\/\//.test(details) || /\[url/i.test(details))) {
       errors.push('template');
+    }
+
+    // ─ Check 7b: CRE relevance — real borrowers mention real estate terms ─
+    // Short messages (< 60 chars) that don't mention ANY CRE term are likely spam
+    if (details.length > 0 && details.length < 60 && errors.indexOf('template') === -1) {
+      var creTerms = [
+        'loan', 'financ', 'mortgage', 'refinanc', 'bridge', 'construct',
+        'property', 'building', 'apartment', 'multifamily', 'industrial',
+        'retail', 'office', 'warehouse', 'hotel', 'motel', 'mixed use',
+        'commercial', 'real estate', 'cre', 'acquisition', 'purchase',
+        'rate', 'term', 'lender', 'bank', 'capital', 'equity',
+        'debt', 'mezzanine', 'sba', 'hud', 'fha', 'fannie', 'freddie',
+        'cmbs', 'conduit', 'life co', 'life insurance', 'credit union',
+        'unit', 'sq ft', 'square', 'acre', 'noi', 'cap rate', 'dscr',
+        'ltv', 'deal', 'close', 'closing', 'underw', 'apprais',
+        'tenant', 'lease', 'occupy', 'vacant', 'value', 'price',
+        'invest', 'develop', 'renovation', 'rehab', 'fix', 'flip',
+        'ground up', 'stabiliz', 'cash out', 'refi', 'perm',
+        'interest', 'amortiz', 'balloon', 'prepay', 'recourse',
+        'non-recourse', 'nonrecourse', '$', 'million', 'mm'
+      ];
+      var hasCRETerm = false;
+      for (var c = 0; c < creTerms.length; c++) {
+        if (details.indexOf(creTerms[c]) > -1) {
+          hasCRETerm = true;
+          break;
+        }
+      }
+      if (!hasCRETerm) {
+        errors.push('irrelevant');
+      }
+    }
+
+    // ─ Check 7c: Minimum message length for contact/deal forms ─
+    // Exit form (email only) is exempt; contact/apply forms need substance
+    if (detailsEl && details.length > 0 && details.length < 15 && form.id !== 'exitForm') {
+      errors.push('too_short');
     }
 
     // ─ Check 8: Proof of work ─
@@ -388,6 +438,18 @@
 
     // Block: template phrase detected
     if (errors.indexOf('template') > -1) {
+      _silentBlock();
+      return false;
+    }
+
+    // Block: irrelevant message (short + no CRE terms) — high-confidence spam
+    if (errors.indexOf('irrelevant') > -1) {
+      _silentBlock();
+      return false;
+    }
+
+    // Block: message too short for a real deal inquiry
+    if (errors.indexOf('too_short') > -1) {
       _silentBlock();
       return false;
     }
