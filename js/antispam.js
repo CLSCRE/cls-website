@@ -136,13 +136,21 @@
       }
     }
 
-    // Check 9: Round loan amount + generic details = bot
-    var loanEl = form.querySelector('[name="Loan_Amount"]') || form.querySelector('[name="Loan Amount"]');
-    if (loanEl && loanEl.value && errors.indexOf('template') > -1) {
+    // Check 9: Loan amount minimum — $1,000,000 minimum for all forms
+    var loanEl = form.querySelector('[name="Loan_Amount"]') || form.querySelector('[name="Loan Amount"]') || form.querySelector('[name="Current Loan Balance"]');
+    if (loanEl && loanEl.value) {
       var amt = loanEl.value.replace(/[^0-9]/g, '');
       var num = parseInt(amt);
-      if (num === 1000000 || num === 5000000 || num === 10000000 || num === 50000000 || num === 500000000) {
-        errors.push('round_amount');
+      if (amt && num > 0 && num < 1000000) {
+        alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
+        loanEl.focus();
+        return false;
+      }
+      // Round loan amount + generic details = bot
+      if (errors.indexOf('template') > -1) {
+        if (num === 1000000 || num === 5000000 || num === 10000000 || num === 50000000 || num === 500000000) {
+          errors.push('round_amount');
+        }
       }
     }
 
@@ -171,13 +179,17 @@
   function initForms() {
     var forms = document.querySelectorAll('form');
     forms.forEach(function(form) {
-      // CRITICAL: Strip the FormSubmit URL from HTML and store it
-      // Bots scraping HTML will find action="#" — nowhere to submit
+      // CRITICAL: Form endpoint only exists in JavaScript.
+      // HTML has action="#" — bots scraping HTML have nowhere to submit.
       var originalAction = form.getAttribute('action') || '';
       if (originalAction.indexOf('formsubmit') > -1) {
+        // Legacy: some pages still have the URL in HTML — strip it
         form._realAction = originalAction;
         form.setAttribute('action', '#');
         form.removeAttribute('method');
+      } else if (originalAction === '#' || originalAction === '') {
+        // New default: action="#" in HTML, construct real URL from obfuscated parts
+        form._realAction = _d(_fs) + _d(_ep).replace('mailto:', '');
       }
 
       // Set JS token
