@@ -17,7 +17,12 @@
   // Cloudflare Turnstile (free, replaces reCAPTCHA v3)
   // Get your site key at https://dash.cloudflare.com/?to=/:account/turnstile
   // Set to '' to disable Turnstile and fall back to other checks
-  var TURNSTILE_SITE_KEY = '';
+  var TURNSTILE_SITE_KEY = '0x4AAAAAACvIWn2HnrQ8LjS8';
+
+  // Cloudflare Worker form proxy — server-side validation
+  // Set to your Worker URL after deploying (e.g., 'https://cls-form-proxy.xxx.workers.dev')
+  // When set, forms submit to the Worker instead of directly to FormSubmit
+  var WORKER_ENDPOINT = 'https://cls-form-proxy.clscre.workers.dev';
 
   // Legacy reCAPTCHA v3 — kept as fallback if Turnstile is not configured
   var RECAPTCHA_SITE_KEY = '6LeB3JMsAAAAAKwoYS1jZKGPfsqVcl3IjVidDWZw';
@@ -474,9 +479,15 @@
     var endpoint = _buildEndpoint();
 
     forms.forEach(function(form) {
-      // Set real endpoint (HTML has action="#")
+      // Set real endpoint — prefer Worker proxy, fallback to FormSubmit direct
       var originalAction = form.getAttribute('action') || '';
-      if (originalAction.indexOf('formsubmit') > -1) {
+      if (WORKER_ENDPOINT) {
+        // Worker mode: all forms submit to the Cloudflare Worker
+        form._realAction = WORKER_ENDPOINT;
+        form._useWorker = true;
+        form.setAttribute('action', '#');
+        form.removeAttribute('method');
+      } else if (originalAction.indexOf('formsubmit') > -1) {
         form._realAction = originalAction;
         form.setAttribute('action', '#');
         form.removeAttribute('method');
@@ -631,14 +642,38 @@
       } catch(ex) {}
 
       var formData = new FormData(form);
-      fetch(form._realAction, { method: 'POST', body: formData, mode: 'no-cors' }).catch(function(){});
+      // Tag as exit form so Worker knows not to redirect
+      if (form._useWorker) formData.append('_exit_form', 'true');
+      var fetchMode = form._useWorker ? 'cors' : 'no-cors';
+      fetch(form._realAction, { method: 'POST', body: formData, mode: fetchMode }).catch(function(){});
       form.style.display = 'none';
       var success = document.getElementById('exitSuccess');
       if (success) success.style.display = 'block';
       return;
     }
 
-    // ── Standard form: restore action + native submit ───────────────
+    // ── Worker mode: submit via fetch, then redirect on success ────
+    if (form._useWorker) {
+      var formData = new FormData(form);
+      fetch(form._realAction, { method: 'POST', body: formData, mode: 'cors', redirect: 'follow' })
+        .then(function(resp) {
+          // Worker returns 303 redirect to thank-you on success
+          if (resp.redirected) {
+            window.location.href = resp.url;
+          } else {
+            var redirectUrl = form.querySelector('[name="_next"]');
+            window.location.href = (redirectUrl && redirectUrl.value) || 'thank-you.html';
+          }
+        })
+        .catch(function() {
+          // Fallback: redirect to thank-you anyway
+          var redirectUrl = form.querySelector('[name="_next"]');
+          window.location.href = (redirectUrl && redirectUrl.value) || 'thank-you.html';
+        });
+      return;
+    }
+
+    // ── Direct FormSubmit mode: restore action + native submit ─────
     form.setAttribute('action', form._realAction);
     form.setAttribute('method', 'POST');
     HTMLFormElement.prototype.submit.call(form);
