@@ -166,7 +166,7 @@
 
 <h2>Exit Strategy Considerations</h2>
 <p>SBA loans in Phoenix are long-term financing designed for owner-occupied properties, so the primary exit is continued business operation and eventual loan payoff. The SBA 504 program features below-market fixed rates that make early repayment unnecessary for most borrowers. The 7(a) program offers more flexibility for business transitions.</p>
-<p>If you plan to sell the property before loan maturity, review your prepayment terms carefully — SBA 504 loans have declining prepayment penalties over the first 10 years, while 7(a) terms vary by lender.</p>
+<p>If you plan to sell the property before loan maturity, review your prepayment terms carefully, SBA 504 loans have declining prepayment penalties over the first 10 years, while 7(a) terms vary by lender.</p>
 
 <h2>Phoenix Market Context</h2>
 <p>Phoenix ranks among the fastest-growing metros in the U.S., driven by migration from higher-cost markets, business-friendly policies, and a booming technology sector. The market has seen explosive industrial development, strong multifamily absorption, and growing institutional interest across all property types.</p>
@@ -176,7 +176,7 @@
 <p>Commercial Lending Solutions provides sba loans throughout the Phoenix-Mesa-Chandler metro area, with access to 1,000+ lenders competing for your deal. Our market expertise in Phoenix commercial real estate helps you navigate the lending landscape and secure the most competitive terms available.</p>
 <p>Related resources:</p>
 <ul>
-<li><a href="../financing/sba-loans.html">SBA Loans — National Overview</a></li>
+<li><a href="../financing/sba-loans.html">SBA Loans, National Overview</a></li>
 <li><a href="../financing/sba-loans-phoenix.html">SBA Loans in Phoenix</a></li>
 <li><a href="multifamily-investing-phoenix-guide.html">Multifamily Investing in Phoenix</a></li>
 <li><a href="industrial-investing-phoenix-guide.html">Industrial Investing in Phoenix</a></li>
@@ -435,7 +435,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup — page-specific lead magnet offers -->
+<!-- Exit Intent Popup, page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
@@ -443,11 +443,11 @@
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
     <form class="exit-form" id="exitForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="Exit Intent Lead — Commercial Lending Solutions Website">
+      <input type="hidden" name="_subject" value="Exit Intent Lead, Commercial Lending Solutions Website">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A Commercial Lending Solutions advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042. — Trevor Damyan, Commercial Lending Solutions | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A Commercial Lending Solutions advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042., Trevor Damyan, Commercial Lending Solutions | clscre.com">
       <!-- Bot protection: honeypot (hidden from humans) -->
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Bot protection: hidden field bots love to fill -->
@@ -505,7 +505,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 });
 </script>
 <script>
-// Sticky CTA bar — show after scrolling 600px, hide on apply page
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
   if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
@@ -514,13 +514,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — page-specific offers, fires once per session
+// Exit intent popup, page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
   // Page-specific offers
   var path = location.pathname;
-  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders, no obligation.', btn:'Get My Free Quote'};
   if (path.includes('/financing/')) {
     var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
     offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};

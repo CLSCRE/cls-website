@@ -120,7 +120,7 @@
 
   <div class="article-layout">
     <div class="article-body reveal">
-      <p>Bridge lending in Los Angeles is driven by the metro's massive value-add multifamily opportunity — tens of thousands of vintage apartments ripe for renovation — and a steady pipeline of office-to-residential conversion projects in Downtown LA. Lenders are particularly active in the $2M-$25M bridge space for 20-80 unit apartment repositioning plays in neighborhoods like Koreatown, East Hollywood, and the San Fernando Valley.</p>
+      <p>Bridge lending in Los Angeles is driven by the metro's massive value-add multifamily opportunity, tens of thousands of vintage apartments ripe for renovation, and a steady pipeline of office-to-residential conversion projects in Downtown LA. Lenders are particularly active in the $2M-$25M bridge space for 20-80 unit apartment repositioning plays in neighborhoods like Koreatown, East Hollywood, and the San Fernando Valley.</p>
 
 <h2>When to Use Bridge Loans in Los Angeles</h2>
 <p>Los Angeles's commercial real estate market, driven by entertainment, technology, logistics, aerospace, healthcare, creates specific scenarios where bridge loans are the optimal financing choice:</p>
@@ -165,7 +165,7 @@
 <p>Each capital source has distinct appetites for property types, leverage levels, and borrower profiles. Working with a commercial mortgage broker who maintains relationships across all these capital sources ensures you're seeing the most competitive terms available in Los Angeles.</p>
 
 <h2>Exit Strategy Considerations</h2>
-<p>Every bridge loan in Los Angeles requires a clear exit strategy — typically either a permanent loan refinance or a property sale. Given the market's 3.8% rent growth and 4.75%-5.25% multifamily cap rates, well-executed value-add business plans can create significant equity value that supports attractive permanent refinancing terms or profitable dispositions.</p>
+<p>Every bridge loan in Los Angeles requires a clear exit strategy, typically either a permanent loan refinance or a property sale. Given the market's 3.8% rent growth and 4.75%-5.25% multifamily cap rates, well-executed value-add business plans can create significant equity value that supports attractive permanent refinancing terms or profitable dispositions.</p>
 <p>The key risk factors for bridge loan exits in Los Angeles include renovation timeline delays, market rent assumptions, and the pace of lease-up. Budget conservatively and build in a 6-month cushion on your bridge term to account for unforeseen circumstances.</p>
 
 <h2>Los Angeles Market Context</h2>
@@ -176,7 +176,7 @@
 <p>Commercial Lending Solutions provides bridge loans throughout the Los Angeles-Long Beach-Anaheim metro area, with access to 1,000+ lenders competing for your deal. Our market expertise in Los Angeles commercial real estate helps you navigate the lending landscape and secure the most competitive terms available.</p>
 <p>Related resources:</p>
 <ul>
-<li><a href="../financing/bridge-loans.html">Bridge Loans — National Overview</a></li>
+<li><a href="../financing/bridge-loans.html">Bridge Loans, National Overview</a></li>
 <li><a href="../financing/bridge-loans-los-angeles.html">Bridge Loans in Los Angeles</a></li>
 <li><a href="multifamily-investing-los-angeles-guide.html">Multifamily Investing in Los Angeles</a></li>
 <li><a href="industrial-investing-los-angeles-guide.html">Industrial Investing in Los Angeles</a></li>
@@ -435,7 +435,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup — page-specific lead magnet offers -->
+<!-- Exit Intent Popup, page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
@@ -443,11 +443,11 @@
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
     <form class="exit-form" id="exitForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="Exit Intent Lead — Commercial Lending Solutions Website">
+      <input type="hidden" name="_subject" value="Exit Intent Lead, Commercial Lending Solutions Website">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A Commercial Lending Solutions advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042. — Trevor Damyan, Commercial Lending Solutions | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A Commercial Lending Solutions advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042., Trevor Damyan, Commercial Lending Solutions | clscre.com">
       <!-- Bot protection: honeypot (hidden from humans) -->
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Bot protection: hidden field bots love to fill -->
@@ -505,7 +505,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 });
 </script>
 <script>
-// Sticky CTA bar — show after scrolling 600px, hide on apply page
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
   if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
@@ -514,13 +514,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — page-specific offers, fires once per session
+// Exit intent popup, page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
   // Page-specific offers
   var path = location.pathname;
-  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders, no obligation.', btn:'Get My Free Quote'};
   if (path.includes('/financing/')) {
     var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
     offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};

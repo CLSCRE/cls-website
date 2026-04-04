@@ -167,7 +167,7 @@
 <p>Each capital source has distinct appetites for property types, leverage levels, and borrower profiles. Working with a commercial mortgage broker who maintains relationships across all these capital sources ensures you're seeing the most competitive terms available in Seattle.</p>
 
 <h2>Exit Strategy Considerations</h2>
-<p>Specialty financing exits in Seattle vary significantly by asset type and business plan. Some specialty properties — like self-storage and data centers — can transition to permanent agency or CMBS financing once stabilized. Others may require continued specialty lending or a sale to a specialized operator.</p>
+<p>Specialty financing exits in Seattle vary significantly by asset type and business plan. Some specialty properties, like self-storage and data centers, can transition to permanent agency or CMBS financing once stabilized. Others may require continued specialty lending or a sale to a specialized operator.</p>
 <p>The key is structuring the initial financing with a realistic exit timeline and identifying permanent capital sources early in the process. The Seattle market's 2.0% job growth supports demand across specialty property types.</p>
 
 <h2>Seattle Market Context</h2>
@@ -178,7 +178,7 @@
 <p>Commercial Lending Solutions provides specialty financing throughout the Seattle-Tacoma-Bellevue metro area, with access to 1,000+ lenders competing for your deal. Our market expertise in Seattle commercial real estate helps you navigate the lending landscape and secure the most competitive terms available.</p>
 <p>Related resources:</p>
 <ul>
-<li><a href="../financing/specialty.html">Specialty Financing — National Overview</a></li>
+<li><a href="../financing/specialty.html">Specialty Financing, National Overview</a></li>
 <li><a href="../financing/specialty-seattle.html">Specialty Financing in Seattle</a></li>
 <li><a href="multifamily-investing-seattle-guide.html">Multifamily Investing in Seattle</a></li>
 <li><a href="industrial-investing-seattle-guide.html">Industrial Investing in Seattle</a></li>
@@ -437,7 +437,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup — page-specific lead magnet offers -->
+<!-- Exit Intent Popup, page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
@@ -445,11 +445,11 @@
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
     <form class="exit-form" id="exitForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="Exit Intent Lead — Commercial Lending Solutions Website">
+      <input type="hidden" name="_subject" value="Exit Intent Lead, Commercial Lending Solutions Website">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A Commercial Lending Solutions advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042. — Trevor Damyan, Commercial Lending Solutions | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A Commercial Lending Solutions advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042., Trevor Damyan, Commercial Lending Solutions | clscre.com">
       <!-- Bot protection: honeypot (hidden from humans) -->
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Bot protection: hidden field bots love to fill -->
@@ -507,7 +507,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 });
 </script>
 <script>
-// Sticky CTA bar — show after scrolling 600px, hide on apply page
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
   if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
@@ -516,13 +516,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — page-specific offers, fires once per session
+// Exit intent popup, page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
   // Page-specific offers
   var path = location.pathname;
-  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders, no obligation.', btn:'Get My Free Quote'};
   if (path.includes('/financing/')) {
     var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
     offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};

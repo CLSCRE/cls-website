@@ -28,7 +28,7 @@
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","logo":"https://clscre.com/images/cls-logo-skyline.png","image":"https://clscre.com/images/cls-og-image.png","telephone":"+13107584042","email":"inquiries@clscre.com","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"]}</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — Specialty Financing","url":"https://clscre.com/financing/specialty.html","description":"Financing for specialty commercial properties: self-storage, data centers, marinas, entertainment venues, and more. Creative structuring with 1,000+ lender relationships.","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions, Specialty Financing","url":"https://clscre.com/financing/specialty.html","description":"Financing for specialty commercial properties: self-storage, data centers, marinas, entertainment venues, and more. Creative structuring with 1,000+ lender relationships.","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What qualifies as a specialty commercial property?","acceptedAnswer":{"@type":"Answer","text":"Specialty properties include asset types outside the traditional multifamily, industrial, retail, office, and hospitality categories. Examples include self-storage, data centers, marinas, religious facilities, entertainment venues, car washes, funeral homes, and other niche property types with specialized operations."}},{"@type":"Question","name":"Is it harder to finance specialty properties?","acceptedAnswer":{"@type":"Answer","text":"Specialty properties can be more challenging to finance because fewer lenders have experience underwriting them. However, with the right broker relationships and deal structuring, competitive financing is available. Commercial Lending Solutions' network of 1,000+ lenders includes specialists in virtually every niche property type."}},{"@type":"Question","name":"What rates can I expect for specialty property financing?","acceptedAnswer":{"@type":"Answer","text":"Rates for specialty properties vary widely depending on the asset class, ranging from 5.54% for well-established assets like self-storage to 13%+ for more niche or transitional specialty properties. Strong operating history and creditworthy tenants help achieve better terms."}},{"@type":"Question","name":"Can I get non-recourse financing for specialty properties?","acceptedAnswer":{"@type":"Answer","text":"Non-recourse financing is available for select specialty property types, particularly self-storage, data centers, and properties with credit-tenant net leases. More niche assets may require recourse or partial recourse guarantees."}},{"@type":"Question","name":"What documentation do specialty property lenders require?","acceptedAnswer":{"@type":"Answer","text":"In addition to standard commercial loan documentation, specialty property lenders typically require detailed operating statements showing business performance, management agreements, franchise or license documentation, and industry-specific underwriting metrics relevant to the asset class."}}]}
@@ -591,7 +591,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup — page-specific lead magnet offers -->
+<!-- Exit Intent Popup, page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
@@ -599,11 +599,11 @@
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
     <form class="exit-form" id="exitForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="Exit Intent Lead — Commercial Lending Solutions Website">
+      <input type="hidden" name="_subject" value="Exit Intent Lead, Commercial Lending Solutions Website">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042. — Trevor Damyan, CLS CRE | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042., Trevor Damyan, CLS CRE | clscre.com">
       <!-- Bot protection: honeypot (hidden from humans) -->
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Bot protection: hidden field bots love to fill -->
@@ -661,7 +661,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 });
 </script>
 <script>
-// Sticky CTA bar — show after scrolling 600px, hide on apply page
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
   if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
@@ -670,13 +670,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — page-specific offers, fires once per session
+// Exit intent popup, page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
   // Page-specific offers
   var path = location.pathname;
-  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders, no obligation.', btn:'Get My Free Quote'};
   if (path.includes('/financing/')) {
     var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
     offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};

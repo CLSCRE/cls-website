@@ -62,7 +62,7 @@
 .progress-line .progress-line-fill{position:absolute;top:0;left:0;height:100%;background:var(--navy);width:0;transition:width .4s cubic-bezier(.4,0,.2,1)}
 .progress-line.filled .progress-line-fill{width:100%}
 
-/* ===== FORM CARD — navy left border ===== */
+/* ===== FORM CARD, navy left border ===== */
 .wizard-card{background:var(--white);border:1px solid var(--gray-200);border-radius:16px;padding:48px;box-shadow:0 8px 40px rgba(0,0,0,.04);position:relative;overflow:hidden}
 .wizard-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--navy),#1e5a8a);border-radius:16px 0 0 16px}
 
@@ -287,11 +287,11 @@
 
     <!-- Hidden FormSubmit form (actual submission target) -->
     <form id="wizardForm" action="#" method="POST" style="display:none">
-      <input type="hidden" name="_subject" value="New Broker Deal Submission — CLS CRE Broker Portal">
+      <input type="hidden" name="_subject" value="New Broker Deal Submission, CLS CRE Broker Portal">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="true">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for submitting your deal through the CLS CRE Broker Portal. We have received your co-broker submission and will review it within 24 hours. Your deal and your client relationship are fully protected. For urgent inquiries, call us directly at 310.758.4042. — Trevor Damyan, Commercial Mortgage Broker, CLS CRE | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for submitting your deal through the CLS CRE Broker Portal. We have received your co-broker submission and will review it within 24 hours. Your deal and your client relationship are fully protected. For urgent inquiries, call us directly at 310.758.4042., Trevor Damyan, Commercial Mortgage Broker, CLS CRE | clscre.com">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website_url" tabindex="-1" autocomplete="off" id="hp2_broker"></div>
       <input type="hidden" name="_cls_token" id="brokerToken" value="">
@@ -317,7 +317,7 @@
       <input type="hidden" name="Commission Split" id="h_commission">
       <input type="hidden" name="Deal Notes" id="h_notes">
       <input type="hidden" name="Referral Source" id="h_referral">
-      <input type="hidden" name="Source Page" value="Broker Portal — Co-Broker Wizard">
+      <input type="hidden" name="Source Page" value="Broker Portal, Co-Broker Wizard">
     </form>
 
     <!-- ===== STEP 1: Deal Type ===== -->
@@ -528,7 +528,7 @@
             <option value="SBA 7(a)">SBA 7(a)</option>
             <option value="Mezzanine">Mezzanine</option>
             <option value="Preferred Equity">Preferred Equity</option>
-            <option value="Not Sure">Not Sure &mdash; Help Me Decide</option>
+            <option value="Not Sure">Not Sure, Help Me Decide</option>
           </select>
           <span class="error-msg">Please select a loan type</span>
         </div>
@@ -1034,7 +1034,7 @@ function populateReview() {
   // Borrower aware
   document.getElementById('r_borrower_aware').textContent = document.getElementById('borrower_aware').checked ? 'Yes' : 'No';
 
-  // Optional fields — hide row if empty
+  // Optional fields, hide row if empty
   const optionals = [
     ['property_value', 'r_property_value', 'r_value_row'],
     ['units', 'r_units', 'r_units_row'],

@@ -28,7 +28,7 @@
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","logo":"https://clscre.com/images/cls-logo-skyline.png","image":"https://clscre.com/images/cls-og-image.png","telephone":"+13107584042","email":"inquiries@clscre.com","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"]}</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — Mixed-Use Financing","url":"https://clscre.com/property/mixed-use.html","description":"Mixed-use property financing for retail + residential, live-work, TOD, and adaptive reuse projects. Bank, bridge, construction, and CMBS loans. Get a quote.","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions, Mixed-Use Financing","url":"https://clscre.com/property/mixed-use.html","description":"Mixed-use property financing for retail + residential, live-work, TOD, and adaptive reuse projects. Bank, bridge, construction, and CMBS loans. Get a quote.","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do lenders underwrite mixed-use properties?","acceptedAnswer":{"@type":"Answer","text":"Lenders evaluate each component of a mixed-use property separately (residential, retail, office) and then blend the analysis. Properties with 80%+ residential may qualify for agency financing. The commercial component is underwritten based on in-place leases and market rent comparisons."}},{"@type":"Question","name":"What are the financing challenges for mixed-use properties?","acceptedAnswer":{"@type":"Answer","text":"Mixed-use properties can be challenging because they straddle multiple underwriting frameworks. Lenders need to be comfortable with each use type, and the blended analysis may result in more conservative terms than a single-use property. Finding the right lender is key."}},{"@type":"Question","name":"Can mixed-use properties qualify for agency financing?","acceptedAnswer":{"@type":"Answer","text":"Mixed-use properties with at least 80% residential use (by income or square footage) may qualify for Fannie Mae or Freddie Mac financing, benefiting from agency rates and non-recourse terms. The commercial component must comply with agency guidelines."}},{"@type":"Question","name":"What are current mixed-use property loan rates?","acceptedAnswer":{"@type":"Answer","text":"Mixed-use property loan rates range from 5.50% to 8.50% depending on the lender, property composition, and market. Agency-eligible mixed-use (80%+ residential) can access rates in the 5.50% to 6.75% range."}},{"@type":"Question","name":"Is construction financing available for mixed-use development?","acceptedAnswer":{"@type":"Answer","text":"Yes. Mixed-use construction loans are available from banks, debt funds, and private lenders. These projects typically require 20-35% borrower equity (65-80% loan-to-cost), strong development experience, and a clear permanent financing or sale exit strategy."}}]}
@@ -626,7 +626,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup — page-specific lead magnet offers -->
+<!-- Exit Intent Popup, page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
@@ -634,11 +634,11 @@
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
     <form class="exit-form" id="exitForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="Exit Intent Lead — Commercial Lending Solutions Website">
+      <input type="hidden" name="_subject" value="Exit Intent Lead, Commercial Lending Solutions Website">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042. — Trevor Damyan, CLS CRE | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042., Trevor Damyan, CLS CRE | clscre.com">
       <!-- Bot protection: honeypot (hidden from humans) -->
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Bot protection: hidden field bots love to fill -->
@@ -696,7 +696,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 });
 </script>
 <script>
-// Sticky CTA bar — show after scrolling 600px, hide on apply page
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
   if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
@@ -705,13 +705,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — page-specific offers, fires once per session
+// Exit intent popup, page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
   // Page-specific offers
   var path = location.pathname;
-  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders, no obligation.', btn:'Get My Free Quote'};
   if (path.includes('/financing/')) {
     var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
     offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};

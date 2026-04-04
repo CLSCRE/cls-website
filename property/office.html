@@ -28,7 +28,7 @@
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","logo":"https://clscre.com/images/cls-logo-skyline.png","image":"https://clscre.com/images/cls-og-image.png","telephone":"+13107584042","email":"inquiries@clscre.com","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"]}</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — Office Financing","url":"https://clscre.com/property/office.html","description":"Office building financing for Class A, B, and C properties. Banks, life companies, CMBS, bridge, and SBA loans. Nationwide coverage from $1M to $100M+. Get a quote.","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions, Office Financing","url":"https://clscre.com/property/office.html","description":"Office building financing for Class A, B, and C properties. Banks, life companies, CMBS, bridge, and SBA loans. Nationwide coverage from $1M to $100M+. Get a quote.","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I still get financing for office buildings?","acceptedAnswer":{"@type":"Answer","text":"Yes. While office lending has tightened since the pandemic, well-located office properties with strong tenancy, long-term leases, and low vacancy continue to attract financing from banks, life companies, and CMBS lenders. The key is demonstrating stable cash flow and tenant quality."}},{"@type":"Question","name":"What are current office building loan rates?","acceptedAnswer":{"@type":"Answer","text":"Office building loan rates range from 5.75% to 8.50% for permanent financing, depending on property quality, tenancy, and market. Class A office in strong submarkets commands better terms than Class B/C in weaker markets."}},{"@type":"Question","name":"What are the challenges of financing office in the current market?","acceptedAnswer":{"@type":"Answer","text":"Key challenges include remote work uncertainty, higher vacancy rates in many markets, tenant downsizing trends, and increased lender scrutiny of lease rollover risk. Properties with long-term leases to creditworthy tenants in strong submarkets remain financeable."}},{"@type":"Question","name":"Can I get SBA financing for an owner-occupied office?","acceptedAnswer":{"@type":"Answer","text":"Yes. SBA 504 and 7(a) loans are excellent options for businesses purchasing their own office space. With up to 90% financing and below-market rates, SBA programs are ideal for professional service firms, medical practices, and other owner-occupiers."}},{"@type":"Question","name":"How do lenders evaluate medical office properties?","acceptedAnswer":{"@type":"Answer","text":"Medical office is underwritten more favorably than general office due to higher tenant stickiness (practices invest heavily in buildout), longer lease terms, and recession-resistant demand. Lenders may offer higher LTV and lower rates for medical office compared to general office."}}]}
@@ -626,7 +626,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup — page-specific lead magnet offers -->
+<!-- Exit Intent Popup, page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
@@ -634,11 +634,11 @@
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
     <form class="exit-form" id="exitForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="Exit Intent Lead — Commercial Lending Solutions Website">
+      <input type="hidden" name="_subject" value="Exit Intent Lead, Commercial Lending Solutions Website">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042. — Trevor Damyan, CLS CRE | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042., Trevor Damyan, CLS CRE | clscre.com">
       <!-- Bot protection: honeypot (hidden from humans) -->
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Bot protection: hidden field bots love to fill -->
@@ -696,7 +696,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 });
 </script>
 <script>
-// Sticky CTA bar — show after scrolling 600px, hide on apply page
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
   if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
@@ -705,13 +705,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — page-specific offers, fires once per session
+// Exit intent popup, page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
   // Page-specific offers
   var path = location.pathname;
-  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders, no obligation.', btn:'Get My Free Quote'};
   if (path.includes('/financing/')) {
     var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
     offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};

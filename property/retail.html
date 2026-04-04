@@ -28,7 +28,7 @@
 <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","logo":"https://clscre.com/images/cls-logo-skyline.png","image":"https://clscre.com/images/cls-og-image.png","telephone":"+13107584042","email":"inquiries@clscre.com","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"]}</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions — Retail Financing","url":"https://clscre.com/property/retail.html","description":"Retail property financing for net lease, shopping centers, grocery-anchored, and multi-tenant assets. Life company, CMBS, bank, and bridge loans. Get a quote.","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions, Retail Financing","url":"https://clscre.com/property/retail.html","description":"Retail property financing for net lease, shopping centers, grocery-anchored, and multi-tenant assets. Life company, CMBS, bank, and bridge loans. Get a quote.","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is retail property still financeable?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. While the retail sector has evolved, well-located properties with strong tenancy continue to attract competitive financing. Grocery-anchored centers, net lease properties with credit tenants, and experiential retail all remain highly financeable asset classes."}},{"@type":"Question","name":"What are the best financing sources for net lease retail?","acceptedAnswer":{"@type":"Answer","text":"Single-tenant net lease retail with investment-grade tenants is highly attractive to life insurance companies and CMBS lenders, offering the most competitive long-term fixed rates. Banks also compete aggressively for net lease deals with strong tenancy."}},{"@type":"Question","name":"What are current retail property loan rates?","acceptedAnswer":{"@type":"Answer","text":"Retail property loan rates range from 5.34% to 8.25% for permanent financing, with credit-tenant net lease assets at the lower end. Multi-tenant shopping centers may see rates at the higher end depending on tenancy strength and market location."}},{"@type":"Question","name":"Can I finance a restaurant with a commercial loan?","acceptedAnswer":{"@type":"Answer","text":"Restaurants can be financed through SBA 504/7(a) programs if owner-occupied, or through conventional commercial loans if the property is leased to a restaurant operator. Stand-alone restaurant properties are considered higher risk and may require specialized lenders."}},{"@type":"Question","name":"What do lenders look for in retail property underwriting?","acceptedAnswer":{"@type":"Answer","text":"Lenders evaluate tenant credit quality, lease terms and rollover schedule, in-place rent vs. market rent, anchor tenant presence, location and traffic counts, competitive landscape, and the property's physical condition and deferred maintenance."}}]}
@@ -626,7 +626,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup — page-specific lead magnet offers -->
+<!-- Exit Intent Popup, page-specific lead magnet offers -->
 <div class="exit-overlay" id="exitOverlay">
   <div class="exit-popup">
     <button class="exit-close" id="exitClose">&times;</button>
@@ -634,11 +634,11 @@
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
     <form class="exit-form" id="exitForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="Exit Intent Lead — Commercial Lending Solutions Website">
+      <input type="hidden" name="_subject" value="Exit Intent Lead, Commercial Lending Solutions Website">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042. — Trevor Damyan, CLS CRE | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.758.4042., Trevor Damyan, CLS CRE | clscre.com">
       <!-- Bot protection: honeypot (hidden from humans) -->
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Bot protection: hidden field bots love to fill -->
@@ -696,7 +696,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 });
 </script>
 <script>
-// Sticky CTA bar — show after scrolling 600px, hide on apply page
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
 (function(){
   const bar = document.getElementById('stickyCta');
   if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
@@ -705,13 +705,13 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup — page-specific offers, fires once per session
+// Exit intent popup, page-specific offers, fires once per session
 (function(){
   const overlay = document.getElementById('exitOverlay');
   if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
   // Page-specific offers
   var path = location.pathname;
-  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders — no obligation.', btn:'Get My Free Quote'};
+  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders, no obligation.', btn:'Get My Free Quote'};
   if (path.includes('/financing/')) {
     var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
     offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};

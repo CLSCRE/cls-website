@@ -270,11 +270,11 @@
 
     <!-- Hidden FormSubmit form (actual submission target) -->
     <form id="wizardForm" action="#" method="POST" enctype="multipart/form-data" style="display:none">
-      <input type="hidden" name="_subject" value="New Loan Application — Commercial Lending Solutions">
+      <input type="hidden" name="_subject" value="New Loan Application, Commercial Lending Solutions">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
       <input type="hidden" name="_captcha" value="true">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your application! A Commercial Lending Solutions advisor has received your information and will review your deal within 24 hours. For urgent inquiries, call us directly at 310.758.4042. — Trevor Damyan, Commercial Mortgage Broker, CLS CRE | clscre.com">
+      <input type="hidden" name="_autoresponse" value="Thank you for your application! A Commercial Lending Solutions advisor has received your information and will review your deal within 24 hours. For urgent inquiries, call us directly at 310.758.4042., Trevor Damyan, Commercial Mortgage Broker, CLS CRE | clscre.com">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Bot protection: second honeypot -->
       <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="company_website" tabindex="-1" autocomplete="off" id="hp2_apply"></div>
@@ -510,7 +510,7 @@
             <option value="SBA 7(a)">SBA 7(a)</option>
             <option value="Mezzanine">Mezzanine</option>
             <option value="Preferred Equity">Preferred Equity</option>
-            <option value="Not Sure">Not Sure &mdash; Help Me Decide</option>
+            <option value="Not Sure">Not Sure, Help Me Decide</option>
           </select>
           <span class="error-msg">Please select a loan type</span>
         </div>
@@ -596,7 +596,7 @@
           <div class="upload-zone" id="uploadZone">
             <div class="upload-icon">&#128206;</div>
             <div class="upload-text">Drag files here or <span class="upload-browse">browse</span></div>
-            <div class="upload-hint">Rent rolls, financials, term sheets, appraisals, photos (PDF, DOC, XLS, JPG, PNG &mdash; max 10MB each)</div>
+            <div class="upload-hint">Rent rolls, financials, term sheets, appraisals, photos (PDF, DOC, XLS, JPG, PNG, max 10MB each)</div>
             <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.heic,.csv,.txt" style="display:none">
           </div>
           <div class="upload-list" id="uploadList"></div>
@@ -994,7 +994,7 @@ function populateReview() {
   document.getElementById('r_email').textContent = document.getElementById('email').value || '--';
   document.getElementById('r_phone').textContent = document.getElementById('phone').value || '--';
 
-  // Optional fields — hide row if empty
+  // Optional fields, hide row if empty
   const optionals = [
     ['property_value', 'r_property_value', 'r_value_row'],
     ['units', 'r_units', 'r_units_row'],
