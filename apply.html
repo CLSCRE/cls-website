@@ -1082,7 +1082,12 @@ function submitApplication() {
   });
 
   // Submit the hidden form
-  document.getElementById('wizardForm').submit();
+  // Apply page uses its own anti-bot (5-step wizard, 10s minimum, honeypot, token)
+  // so it submits directly to FormSubmit, not through the Worker proxy
+  var wf = document.getElementById('wizardForm');
+  wf.setAttribute('action', wf._realAction || wf._directAction);
+  wf.setAttribute('method', 'POST');
+  HTMLFormElement.prototype.submit.call(wf);
 }
 
 /* --- File upload --- */

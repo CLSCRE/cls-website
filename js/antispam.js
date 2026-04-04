@@ -479,16 +479,23 @@
     var endpoint = _buildEndpoint();
 
     forms.forEach(function(form) {
-      // Set real endpoint — prefer Worker proxy, fallback to FormSubmit direct
+      // Set real endpoint, prefer Worker proxy, fallback to FormSubmit direct
+      // Apply wizard has its own anti-bot (5-step, 10s min) so it goes direct to FormSubmit
       var originalAction = form.getAttribute('action') || '';
-      if (WORKER_ENDPOINT) {
-        // Worker mode: all forms submit to the Cloudflare Worker
+      var isApplyWizard = (form.id === 'wizardForm');
+      if (WORKER_ENDPOINT && !isApplyWizard) {
+        // Worker mode: forms submit to the Cloudflare Worker for Turnstile validation
         form._realAction = WORKER_ENDPOINT;
         form._useWorker = true;
         form.setAttribute('action', '#');
         form.removeAttribute('method');
       } else if (originalAction.indexOf('formsubmit') > -1) {
         form._realAction = originalAction;
+        form.setAttribute('action', '#');
+        form.removeAttribute('method');
+      } else if (isApplyWizard) {
+        // Apply wizard goes direct to FormSubmit (not Worker)
+        form._realAction = endpoint;
         form.setAttribute('action', '#');
         form.removeAttribute('method');
       } else if (originalAction === '#' || originalAction === '') {
