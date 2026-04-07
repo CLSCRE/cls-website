@@ -66,23 +66,28 @@
     var btn = form.querySelector('button');
     btn.textContent = 'Subscribing...';
     btn.disabled = true;
-    fetch('https://californialoanservicing.api-us1.com/api/3/contacts', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Api-Token': 'dcf9e6636aea6cbd0f38e0fc51e65f9e2874c6ca7cc4b7d0503819f9dfd7796310f2f78e' },
-      body: JSON.stringify({ contact: { email: email } })
+    var API = 'https://californialoanservicing.api-us1.com/api/3';
+    var TOKEN = 'dcf9e6636aea6cbd0f38e0fc51e65f9e2874c6ca7cc4b7d0503819f9dfd7796310f2f78e';
+    var headers = {'Content-Type':'application/json','Api-Token':TOKEN};
+    fetch(API + '/contact/sync', { method:'POST', headers:headers, body:JSON.stringify({contact:{email:email}}) })
+    .then(function(r){return r.json();})
+    .then(function(d){
+      var cid = d.contact && d.contact.id;
+      if(!cid) throw new Error('no id');
+      return fetch(API + '/contactLists', { method:'POST', headers:headers, body:JSON.stringify({contactList:{list:42,contact:cid,status:1}}) });
     })
-    .then(function(resp) {
-      if (resp.ok || resp.status === 422) {
-        form.style.display = 'none';
-        document.getElementById('nlSuccess').style.display = 'block';
-        if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
+    .then(function(r){
+      if(r.ok){
+        form.style.display='none';
+        document.getElementById('nlSuccess').style.display='block';
+        if(typeof gtag==='function') gtag('event','newsletter_subscribe',{method:'footer'});
       } else { throw new Error('fail'); }
     })
-    .catch(function() {
-      document.getElementById('nlError').textContent = 'Something went wrong. Please try again or email inquiries@clscre.com.';
-      document.getElementById('nlError').style.display = 'block';
-      btn.textContent = 'Subscribe';
-      btn.disabled = false;
+    .catch(function(){
+      document.getElementById('nlError').textContent='Something went wrong. Please try again or email inquiries@clscre.com.';
+      document.getElementById('nlError').style.display='block';
+      btn.textContent='Subscribe';
+      btn.disabled=false;
     });
   });
 })();
