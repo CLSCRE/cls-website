@@ -1055,11 +1055,6 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 (function(){
   var form = document.getElementById('newsletterForm');
   if (!form) return;
-  var API = 'https://californialoanservicing.api-us1.com/api/3';
-  var TOKEN = 'dcf9e6636aea6cbd0f38e0fc51e65f9e2874c6ca7cc4b7d0503819f9dfd7796310f2f78e';
-  var LIST_ID = 42;
-  var headers = {'Content-Type':'application/json','Api-Token':TOKEN};
-
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     var email = document.getElementById('nlEmail').value.trim();
@@ -1067,28 +1062,17 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
     var btn = form.querySelector('button');
     btn.textContent = 'Subscribing...';
     btn.disabled = true;
-
-    // Step 1: Create or sync contact
-    fetch(API + '/contact/sync', {
-      method: 'POST', headers: headers,
-      body: JSON.stringify({ contact: { email: email } })
-    })
-    .then(function(resp) { return resp.json(); })
-    .then(function(data) {
-      var contactId = data.contact && data.contact.id;
-      if (!contactId) throw new Error('No contact ID');
-      // Step 2: Add contact to list 42
-      return fetch(API + '/contactLists', {
-        method: 'POST', headers: headers,
-        body: JSON.stringify({ contactList: { list: LIST_ID, contact: contactId, status: 1 } })
-      });
+    fetch('https://cls-form-proxy.clscre.workers.dev/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email })
     })
     .then(function(resp) {
       if (resp.ok) {
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-      } else { throw new Error('List add failed'); }
+      } else { throw new Error('fail'); }
     })
     .catch(function() {
       document.getElementById('nlError').textContent = 'Something went wrong. Please try again or email inquiries@clscre.com.';
