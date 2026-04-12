@@ -82,5 +82,61 @@
       "meta_description": "Hotel and hospitality financing for full-service, boutique, limited-service, and specialty venues. Bank, CMBS, SBA, bridge, and construction loans. Get a quote.",
       "h1": "Hotel & Hospitality Financing"
     }
+  },
+  {
+    "slug": "self-storage",
+    "name": "Self-Storage",
+    "headline": "Self-Storage Facility Financing",
+    "description": "Self-storage has become one of the most resilient asset classes in commercial real estate, driven by demographic mobility, downsizing trends, and the growth of e-commerce businesses needing inventory space. Financing is widely available from banks, life insurance companies, CMBS lenders, and specialty self-storage lenders for stabilized facilities, conversions, and ground-up development.",
+    "description_extended": "Self-storage properties offer predictable cash flows, low operating complexity, and strong performance across economic cycles. Lenders view storage favorably due to diversified tenant bases (often 200-500+ tenants per facility), low turnover costs, and minimal capital expenditure requirements. Modern climate-controlled facilities with digital access systems and professional management command premium valuations and the most competitive financing terms. Commercial Lending Solutions finances self-storage facilities ranging from single-story drive-up units to multi-story climate-controlled facilities across all major markets.",
+    "subtypes": ["Climate-Controlled Storage", "Standard Drive-Up Storage", "Multi-Story Urban Storage", "Vehicle & RV Storage", "Boat & Marine Storage", "Portable / Container Storage", "Records & Document Storage", "Mixed-Use Storage (Retail + Storage)"],
+    "financing_options": ["Bank Permanent Loans", "Life Insurance Company Loans", "CMBS", "Bridge Loans", "Construction Loans", "SBA 504 (Owner-Occupied)", "Specialty Self-Storage Lenders"],
+    "seo": {
+      "title": "Self-Storage Facility Financing | Commercial Lending Solutions",
+      "meta_description": "Self-storage facility financing from $1M to $50M+. Banks, life companies, CMBS, bridge, and construction loans for climate-controlled and drive-up facilities. Get a quote.",
+      "h1": "Self-Storage Facility Financing"
+    }
+  },
+  {
+    "slug": "data-centers",
+    "name": "Data Centers",
+    "headline": "Data Center Financing",
+    "description": "Data centers are among the fastest-growing commercial real estate asset classes, driven by cloud computing, artificial intelligence, and the exponential growth of digital infrastructure. Financing for data centers requires lenders who understand the unique power, cooling, and connectivity requirements that differentiate these specialized facilities from conventional industrial assets.",
+    "description_extended": "Data center financing underwriting focuses on power capacity (measured in megawatts), redundancy levels (Tier I through IV), tenant credit quality, lease terms, and the cost of power in the local market. Single-tenant, build-to-suit data centers leased to hyperscalers or enterprise tenants attract the most competitive financing terms, while colocation and edge facilities offer diversified revenue streams. Commercial Lending Solutions works with lenders who specialize in mission-critical infrastructure, including life insurance companies, CMBS conduits, and debt funds focused on technology real estate.",
+    "subtypes": ["Hyperscale Data Centers", "Colocation Facilities", "Enterprise / Single-Tenant", "Edge Data Centers", "Powered Shell / Build-to-Suit", "Carrier Hotels & Network Hubs", "Modular / Prefabricated Data Centers", "AI / GPU-Optimized Facilities"],
+    "financing_options": ["Life Insurance Company Loans", "Bank Permanent Loans", "CMBS", "Bridge Loans", "Construction Loans", "Mezzanine & Preferred Equity", "Infrastructure Debt Funds"],
+    "seo": {
+      "title": "Data Center Financing | Commercial Lending Solutions",
+      "meta_description": "Data center financing for hyperscale, colocation, edge, and enterprise facilities. Life company, bank, CMBS, bridge, and construction loans from $5M to $100M+. Get a quote.",
+      "h1": "Data Center Financing"
+    }
+  },
+  {
+    "slug": "senior-living",
+    "name": "Senior Living",
+    "headline": "Senior Living & Assisted Living Financing",
+    "description": "Senior living financing covers the full continuum of care from independent living and assisted living to memory care and skilled nursing facilities. As the U.S. population ages rapidly, senior housing demand is projected to grow significantly, creating strong long-term investment fundamentals. Lenders with healthcare real estate expertise provide acquisition, refinance, construction, and bridge capital for operators and investors.",
+    "description_extended": "Senior living underwriting is more complex than conventional multifamily because lenders evaluate operating metrics (occupancy, revenue per occupied unit, staffing ratios, regulatory compliance) in addition to traditional real estate fundamentals. Properties with strong operators, proven track records, and favorable demographic profiles in their trade areas attract the most competitive financing. HUD/FHA 232 programs offer the most aggressive permanent financing terms for stabilized facilities. Commercial Lending Solutions works with banks, HUD lenders, bridge lenders, and debt funds that specialize in healthcare and senior housing, helping owners navigate the unique requirements of this asset class.",
+    "subtypes": ["Independent Living", "Assisted Living", "Memory Care", "Continuing Care Retirement Communities (CCRC)", "Skilled Nursing Facilities (SNF)", "Active Adult / 55+ Communities", "Combination IL/AL/MC Campuses", "Senior Affordable Housing"],
+    "financing_options": ["HUD / FHA 232 Loans", "Bank Permanent Loans", "Bridge Loans", "CMBS", "Construction Loans", "Mezzanine & Preferred Equity", "SBA 504 (Owner-Operated)"],
+    "seo": {
+      "title": "Senior Living & Assisted Living Financing | Commercial Lending Solutions",
+      "meta_description": "Senior living financing for independent living, assisted living, memory care, and skilled nursing. HUD 232, bank, bridge, and construction loans from $2M to $50M+. Get a quote.",
+      "h1": "Senior Living & Assisted Living Financing"
+    }
+  },
+  {
+    "slug": "medical-office",
+    "name": "Medical Office",
+    "headline": "Medical Office Building Financing",
+    "description": "Medical office buildings (MOBs) represent one of the most stable segments of commercial real estate, driven by the essential nature of healthcare services and the aging U.S. population. Lenders favor medical office properties for their creditworthy tenants (health systems, physician groups, insurance companies), long lease terms, and high tenant retention rates due to the cost of relocating specialized build-outs.",
+    "description_extended": "Medical office financing benefits from the non-discretionary nature of healthcare demand, making these assets more recession-resistant than general office. Properties located on or near hospital campuses, with long-term leases to credit-rated health systems, attract the most competitive terms from life insurance companies and CMBS lenders. Outpatient surgery centers, dialysis clinics, dental practices, and specialty medical facilities each have unique underwriting considerations. Commercial Lending Solutions structures financing for the full range of healthcare real estate, from single-tenant physician offices to large medical campus developments.",
+    "subtypes": ["On-Campus Medical Office", "Off-Campus Medical Office", "Outpatient Surgery Centers (ASC)", "Dental & Orthodontic Offices", "Dialysis Centers", "Urgent Care & Walk-In Clinics", "Veterinary Hospitals", "Medical / Biotech Lab Space"],
+    "financing_options": ["Life Insurance Company Loans", "Bank Permanent Loans", "CMBS", "Bridge Loans", "Construction Loans", "SBA 504 / 7(a) (Owner-Occupied)", "HUD / FHA Programs"],
+    "seo": {
+      "title": "Medical Office Building Financing | Commercial Lending Solutions",
+      "meta_description": "Medical office financing for MOBs, surgery centers, dental offices, and healthcare facilities. Life company, bank, CMBS, bridge, and SBA loans from $1M to $50M+. Get a quote.",
+      "h1": "Medical Office Building Financing"
+    }
   }
 ]
