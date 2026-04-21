@@ -10345,4 +10345,10 @@
   <url><loc>https://clscre.com/commercial/markets/miami-medical-office.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://clscre.com/commercial/markets/miami-retail.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://clscre.com/commercial/markets/miami-net-lease.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://clscre.com/tools/edi-eligibility-check.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

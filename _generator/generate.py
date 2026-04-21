@@ -197,6 +197,7 @@ def main():
         {"loc": f"{BASE_URL}/about.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6"},
         {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
         {"loc": f"{BASE_URL}/submit-deal.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7"},
+        {"loc": f"{BASE_URL}/tools/edi-eligibility-check.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
     ]
 
     # Vertical hubs + city x program programmatic pages (generated via
