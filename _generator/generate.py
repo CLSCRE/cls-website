@@ -197,24 +197,38 @@ def main():
         {"loc": f"{BASE_URL}/about.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6"},
         {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
         {"loc": f"{BASE_URL}/submit-deal.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7"},
-        {"loc": f"{BASE_URL}/affordable-housing/index.html", "lastmod": TODAY, "changefreq": "weekly", "priority": "0.9"},
     ]
 
-    # Affordable Housing city x program programmatic pages (generated via
-    # scripts/generate_city_affordable_pages.py; listed here so full regens
-    # preserve them in the sitemap)
-    affordable_data_path = DATA_DIR / "affordable_programs.json"
-    if affordable_data_path.exists():
-        _affordable_data = json.loads(affordable_data_path.read_text(encoding="utf-8"))
-        for _c in _affordable_data.get("cities", []):
-            for _p in _affordable_data.get("programs", []):
-                _slug = f"{_c['slug']}-{_p['slug']}"
-                sitemap_urls.append({
-                    "loc": f"{BASE_URL}/affordable-housing/markets/{_slug}.html",
-                    "lastmod": TODAY,
-                    "changefreq": "monthly",
-                    "priority": "0.8",
-                })
+    # Vertical hubs + city x program programmatic pages (generated via
+    # scripts/generate_city_{vertical}_pages.py; listed here so full regens
+    # preserve them in the sitemap).
+    _vertical_hubs = [
+        ("affordable-housing", "affordable_programs.json", "0.9"),
+        ("industrial", "industrial_programs.json", "0.9"),
+        ("multifamily", "multifamily_programs.json", "0.9"),
+        ("commercial", "commercial_programs.json", "0.9"),
+    ]
+    for _vslug, _vfile, _vpriority in _vertical_hubs:
+        # Hub page
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/{_vslug}/index.html",
+            "lastmod": TODAY,
+            "changefreq": "weekly",
+            "priority": _vpriority,
+        })
+        # City x program pages
+        _vdata_path = DATA_DIR / _vfile
+        if _vdata_path.exists():
+            _vdata = json.loads(_vdata_path.read_text(encoding="utf-8"))
+            for _c in _vdata.get("cities", []):
+                for _p in _vdata.get("programs", []):
+                    _slug = f"{_c['slug']}-{_p['slug']}"
+                    sitemap_urls.append({
+                        "loc": f"{BASE_URL}/{_vslug}/markets/{_slug}.html",
+                        "lastmod": TODAY,
+                        "changefreq": "monthly",
+                        "priority": "0.8",
+                    })
 
     page_count = 0
 

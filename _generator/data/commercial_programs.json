@@ -1,0 +1,150 @@
+{
+  "programs": [
+    {
+      "slug": "office",
+      "name": "Office CRE Financing",
+      "short_name": "Office",
+      "description": "Office commercial real estate financing in 2026. Bifurcated market with life companies and CMBS selective on traditional office, while medical office, life science, and Class A suburban still fund competitively.",
+      "typical_deal_range": "$3M to $100M+ total capitalization",
+      "typical_stack": [
+        "Life insurance company permanent for investment-grade credit and Class A suburban",
+        "CMBS for stabilized credit-tenant office",
+        "Banks for owner-user and select stabilized",
+        "Debt funds for transitional or adaptive reuse plays"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Life co 200 to 300 over 10-year, CMBS 275 to 400 over, debt fund SOFR + 450 to 700",
+        "typical_ltv": "50 to 65 percent (tightened vs pre-2022)",
+        "underwriting_trend": "Higher equity requirements, shorter terms, stronger guarantees",
+        "most_financeable": "Investment-grade single-tenant with long WALT, Class A suburban with strong occupancy, medical office",
+        "least_financeable": "Class B CBD, multi-tenant with short WALT, suburban legacy"
+      },
+      "seo": {
+        "title_suffix": "Office CRE Financing",
+        "meta_template": "Office commercial real estate financing in {city}. Which office deals still fund, lender appetite by sub-type, and the structural adjustments of 2026 office underwriting."
+      }
+    },
+    {
+      "slug": "medical-office",
+      "name": "Medical Office Building (MOB) Financing",
+      "short_name": "Medical Office",
+      "description": "Medical office building financing. Healthcare tenancy strong, strong lender appetite. On-campus, off-campus, hospital-anchored, and freestanding ambulatory surgery center financing.",
+      "typical_deal_range": "$5M to $100M+ for MOB transactions",
+      "typical_stack": [
+        "Life insurance companies with healthcare specialty desks (most competitive)",
+        "CMBS for stabilized with credit tenancy",
+        "Specialty healthcare REITs (also direct lenders)",
+        "Banks for construction and owner-user physician groups"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Life co 175 to 250 over 10-year for quality MOB",
+        "typical_ltv": "65 to 75 percent",
+        "tenant_profile": "Health systems, physician groups, ambulatory surgery, outpatient care",
+        "lease_structure": "Triple-net common, with TI amortization",
+        "key_underwriting": "Tenant credit, hospital affiliation, lease term, rent escalators"
+      },
+      "seo": {
+        "title_suffix": "Medical Office Building (MOB) Financing",
+        "meta_template": "Medical office building financing in {city}. Healthcare real estate lender ecosystem, tenant credit underwriting, and MOB capital stack."
+      }
+    },
+    {
+      "slug": "retail",
+      "name": "Retail CRE Financing",
+      "short_name": "Retail",
+      "description": "Retail commercial real estate financing across grocery-anchored shopping centers, neighborhood retail, power centers, lifestyle centers, and net-lease retail. Bifurcated lender appetite based on retail sub-type and tenant mix.",
+      "typical_deal_range": "$3M to $75M+ for retail transactions",
+      "typical_stack": [
+        "Life insurance companies for premium retail with credit tenancy",
+        "CMBS for stabilized retail $10M+ with credit tenancy",
+        "Banks for stabilized smaller retail and owner-user",
+        "Debt funds for transitional or repositioning"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Life co 200 to 275 over 10-year for grocery-anchored and premium retail",
+        "typical_ltv": "60 to 70 percent",
+        "most_financeable": "Grocery-anchored shopping centers, service-oriented neighborhood retail, power centers with strong anchors, lifestyle centers in growth markets",
+        "least_financeable": "Traditional regional malls, big-box without anchors, inline small-shop with short WALT",
+        "key_underwriting": "Anchor credit, co-tenancy clauses, WALT, tenant mix, trade area demographics"
+      },
+      "seo": {
+        "title_suffix": "Retail CRE Financing",
+        "meta_template": "Retail commercial real estate financing in {city}. Grocery-anchored, power center, and neighborhood retail lender appetite, and the financing sub-types that still fund."
+      }
+    },
+    {
+      "slug": "net-lease",
+      "name": "Net Lease (NNN) Single-Tenant Financing",
+      "short_name": "Net Lease (NNN)",
+      "description": "Single-tenant triple-net net lease CRE financing. Highly financeable asset class when tenant credit is strong. Life companies, CMBS, banks, and specialty NNN debt funds actively compete.",
+      "typical_deal_range": "$3M to $50M+ for single-asset NNN",
+      "typical_stack": [
+        "Life insurance companies (most competitive for investment grade)",
+        "CMBS for portfolios and $5M+ individual deals",
+        "Specialty NNN debt funds",
+        "Banks for $3M to $15M smaller NNN"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Life co 150 to 225 over 10-year for investment-grade NNN",
+        "typical_ltv": "65 to 75 percent depending on tenant credit",
+        "amortization": "25 to 30 years",
+        "tenant_credit_tiers": "Investment grade corporate (tightest), national non-rated operators, franchisee with guarantees",
+        "key_underwriting": "Tenant credit, lease term (10+ years preferred), rent escalators, landlord obligations"
+      },
+      "seo": {
+        "title_suffix": "Net Lease (NNN) Single-Tenant Financing",
+        "meta_template": "Net lease single-tenant NNN financing in {city}. Tenant credit underwriting, life company and CMBS execution for investment-grade NNN, and portfolio financing strategies."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "market_notes": "LA commercial markets are diverse: Century City and Westside are premium office submarkets while DTLA has faced post-pandemic challenges. Medical office strong throughout metro. Retail dominated by grocery-anchored and lifestyle centers. Net lease demand strong for QSR and pharmacy corridors.",
+      "active_lender_commentary": "Life companies selective on LA office favoring Class A credit-tenant; very competitive on MOB and NNN. CMBS active for quality stabilized. Banks cautious on office. Debt funds active for office adaptive reuse.",
+      "submarkets": "Century City, Beverly Hills, West LA, DTLA, Mid-Wilshire, Pasadena, Glendale, Long Beach, Santa Monica"
+    },
+    {
+      "slug": "new-york",
+      "name": "New York",
+      "state": "NY",
+      "market_notes": "NYC commercial market dominated by Manhattan office (in transition), Brooklyn and Queens mixed-use, and retail on primary corridors. Life science demand strong in Brooklyn and Long Island City. Regional CBDs (Westchester, New Jersey) have their own dynamics.",
+      "active_lender_commentary": "Life companies very selective on NYC office. CMBS executes for quality stabilized. Specialty lenders active for adaptive reuse. MOB lender appetite strong. NNN portfolios in NYC metro command strong execution.",
+      "submarkets": "Midtown, Downtown Manhattan, Brooklyn, Long Island City, Westchester, Nassau County, Northern NJ"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "market_notes": "DFW commercial market strong across all sub-types driven by corporate relocations and population growth. Class A suburban office particularly strong in Plano, Frisco, and Las Colinas. Medical office, retail, and net lease all competitive.",
+      "active_lender_commentary": "Agencies not relevant here but life companies very active on Dallas commercial. CMBS competitive. Regional Texas banks strong across all sub-types. Very financeable market across office, MOB, retail, NNN.",
+      "submarkets": "Uptown, Downtown Dallas, Las Colinas, Plano, Frisco, North Dallas, Galleria, Preston Center, Richardson"
+    },
+    {
+      "slug": "houston",
+      "name": "Houston",
+      "state": "TX",
+      "market_notes": "Houston commercial market features Energy Corridor office (volatile with energy markets), Medical Center (one of the world's largest medical complexes), retail across sprawling metro, and net lease opportunities along major corridors.",
+      "active_lender_commentary": "Life companies selective on Energy Corridor office; very competitive on Medical Center MOB. Texas regional banks strong across sub-types. Specialty lenders for energy-adjacent commercial. NNN market strong given population growth.",
+      "submarkets": "Downtown Houston, Energy Corridor, Medical Center, Galleria, Westchase, Sugar Land, The Woodlands, Katy"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "state": "GA",
+      "market_notes": "Atlanta commercial market characterized by Buckhead and Midtown office, Perimeter Center, Cumberland/Galleria submarkets. Strong suburban retail corridors, healthcare/MOB growth, and net lease activity driven by Southeast population growth.",
+      "active_lender_commentary": "Life companies active on Atlanta commercial favoring Class A suburban. CMBS competitive. Regional Southeast banks strong. MOB and NNN both well-financed.",
+      "submarkets": "Buckhead, Midtown, Downtown Atlanta, Perimeter Center, Cumberland, Galleria, Alpharetta, Marietta, Sandy Springs"
+    },
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "state": "FL",
+      "market_notes": "Miami commercial market benefiting from post-pandemic migration, financial services relocations, Latin American gateway dynamics, and tourism recovery. Brickell and Downtown office strong; Doral industrial-adjacent retail active; Aventura and Coral Gables all have their own dynamics.",
+      "active_lender_commentary": "Life companies very active in Miami commercial. CMBS competitive. Regional banks strong. Specialty lenders for hospitality-adjacent commercial. MOB growing with healthcare system expansion.",
+      "submarkets": "Brickell, Downtown Miami, Coral Gables, Aventura, Doral, Coconut Grove, Miami Beach, Fort Lauderdale"
+    }
+  ]
+}

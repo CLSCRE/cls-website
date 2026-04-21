@@ -1,0 +1,149 @@
+{
+  "programs": [
+    {
+      "slug": "distribution-logistics",
+      "name": "Distribution and Logistics Warehouse Financing",
+      "short_name": "Distribution and Logistics",
+      "description": "Class A and Class B distribution warehouses, logistics facilities, and e-commerce fulfillment centers. The largest industrial sub-class by deal volume and the most competitively financed.",
+      "typical_deal_range": "$10M to $100M+ total capitalization",
+      "typical_stack": [
+        "Permanent loan: life insurance company, CMBS, or bank",
+        "Construction loan: bank or debt fund for ground-up distribution",
+        "Bridge: debt fund for transitional or repositioning plays",
+        "Agency overlay on flex industrial or MF-adjacent"
+      ],
+      "key_features": {
+        "tenant_profile": "Logistics operators, 3PLs, e-commerce fulfillment, distributors",
+        "typical_lease_term": "5 to 15 years NNN",
+        "building_specs": "Clear heights 32+ ft, ESFR sprinklers, dock doors, trailer parking, truck courts",
+        "most_competitive_lender": "Life insurance companies for stabilized with credit tenancy",
+        "ltv_ranges": "65 to 70 percent life co, 70 to 75 percent CMBS, 75 to 80 percent bank owner-user",
+        "rate_environment_2026": "Life co 150 to 200 over 10-year, CMBS 200 to 300 over, bank 175 to 275 over"
+      },
+      "seo": {
+        "title_suffix": "Distribution and Logistics Warehouse Financing",
+        "meta_template": "Distribution and logistics warehouse financing in {city}. Lender ecosystem, underwriting criteria, and capital stack for Class A and Class B distribution assets."
+      }
+    },
+    {
+      "slug": "cold-storage",
+      "name": "Cold Storage and Refrigerated Warehouse Financing",
+      "short_name": "Cold Storage",
+      "description": "Refrigerated and frozen warehouse facilities serving food distribution, 3PL cold chain, grocery wholesalers, and pharmaceutical cold storage. Specialty sub-class requiring lenders who understand refrigeration CapEx.",
+      "typical_deal_range": "$15M to $80M total capitalization",
+      "typical_stack": [
+        "Permanent loan: life insurance company with specialty industrial desk, CMBS for large stabilized portfolios",
+        "Construction loan: specialty bank or debt fund with cold chain experience",
+        "Bridge: debt funds for value-add cold storage repositioning"
+      ],
+      "key_features": {
+        "development_cost_premium": "Refrigerated buildings cost $250 to $400/sf vs $100 to $150/sf for dry warehouse",
+        "tenant_profile": "National cold chain operators (3PLs), food distributors, grocery wholesalers",
+        "infrastructure": "Refrigeration systems, insulation, backup power, temperature-controlled receiving, ammonia or synthetic refrigerants",
+        "cap_rate_premium_vs_dry": "Typically 50 to 100 bps wider than Class A dry warehouse",
+        "environmental_considerations": "Ammonia refrigeration triggers specific environmental disclosures"
+      },
+      "seo": {
+        "title_suffix": "Cold Storage and Refrigerated Warehouse Financing",
+        "meta_template": "Cold storage and refrigerated warehouse financing in {city}. Specialty industrial lenders, refrigeration CapEx underwriting, and capital stack for cold chain facilities."
+      }
+    },
+    {
+      "slug": "data-centers",
+      "name": "Data Center Financing",
+      "short_name": "Data Centers",
+      "description": "Hyperscale, colocation, and enterprise data center facilities. Specialty sub-class with strong institutional demand, backed by credit-tenant lease structures and hardened power and connectivity infrastructure.",
+      "typical_deal_range": "$15M to $500M+ depending on facility tier and capacity",
+      "typical_stack": [
+        "Permanent loan: life insurance company with data center specialty desk, CMBS for stabilized hyperscale-leased assets",
+        "Construction loan: specialty data center debt fund or bank with expertise",
+        "Specialty REIT lending for portfolio and credit-tenant structures"
+      ],
+      "key_features": {
+        "tenant_structures": "Hyperscale (build-to-suit, investment grade credit, 10-15 year NNN), colocation operator credit, enterprise self-operated",
+        "development_cost": "Shell $250 to $400/sf plus power and cooling infrastructure $500 to $1,500/sf depending on tier and density",
+        "key_underwriting": "Tenant credit, power commitment agreements, fiber connectivity, cooling redundancy, tier classification",
+        "top_markets": "Northern Virginia, Dallas, Silicon Valley, Phoenix, Atlanta, Chicago",
+        "2026_tailwind": "AI and hyperscale demand driving unprecedented capital deployment"
+      },
+      "seo": {
+        "title_suffix": "Data Center Financing",
+        "meta_template": "Data center financing in {city}. Hyperscale and colocation lender appetite, tenant credit underwriting, and capital stack for data center real estate."
+      }
+    },
+    {
+      "slug": "manufacturing-heavy-industrial",
+      "name": "Manufacturing and Heavy Industrial Financing",
+      "short_name": "Manufacturing and Heavy Industrial",
+      "description": "Single-purpose manufacturing facilities, heavy industrial campuses, food processing, specialty production. Lenders decline most of these deals because they can't underwrite single-purpose buildings, specialty equipment, or environmental overlays.",
+      "typical_deal_range": "$5M to $75M total capitalization",
+      "typical_stack": [
+        "Permanent loan: life insurance company with industrial specialty desk for stabilized with credit tenancy",
+        "SBA 504 or 7(a) for qualifying owner-user manufacturing (up to 90 percent LTC)",
+        "Regional banks in heavy industrial markets with local expertise",
+        "Debt funds for value-add or transitional plays"
+      ],
+      "key_features": {
+        "lender_filter": "Most mainstream banks decline; specialty lenders understand single-purpose buildings",
+        "environmental_overlay": "Phase I always, Phase II common, potential remediation considerations",
+        "equipment_vs_real_property": "Equipment allocation affects SBA eligibility and LTV basis",
+        "operator_credit_weight": "Operator credit is more important than for standard industrial",
+        "top_markets": "Vernon and City of Commerce in LA, Inland Empire, Detroit, Cleveland, Houston, Nashville"
+      },
+      "seo": {
+        "title_suffix": "Manufacturing and Heavy Industrial Financing",
+        "meta_template": "Manufacturing and heavy industrial financing in {city}. Specialty lender ecosystem, environmental and equipment underwriting, and why banks decline most of these deals."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "market_notes": "Vernon, City of Commerce, Carson, and the LA industrial core represent some of the most valuable per-square-foot industrial real estate in the country. Supply is effectively capped by zoning and the Port of LA/Long Beach complex drives distribution demand.",
+      "active_lender_commentary": "Life insurance companies are extremely competitive for stabilized LA industrial with credit tenancy. CMBS active for $15M+ stabilized assets. Regional banks compete for owner-user and construction. Specialty lenders active in cold storage and manufacturing given Vernon's heavy industrial concentration.",
+      "submarkets": "Vernon, City of Commerce, Carson, San Pedro, Wilmington, Gardena, South Gate, Cudahy, Pico Rivera, Industry"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "market_notes": "One of the fastest-growing industrial markets in the country. Strong institutional demand for Class A distribution in the Southwest Valley (Goodyear, Buckeye, Tolleson) and Southeast Valley. Massive e-commerce fulfillment buildout over the past 5 years.",
+      "active_lender_commentary": "Life insurance companies very active for stabilized Class A distribution. CMBS quoting tight spreads. National banks aggressive on construction. Data centers have become a major focus with significant capital deployment.",
+      "submarkets": "Southwest Valley (Goodyear, Buckeye, Tolleson), Southeast Valley (Chandler, Mesa), Sky Harbor, Deer Valley, North Phoenix"
+    },
+    {
+      "slug": "inland-empire",
+      "name": "Inland Empire",
+      "state": "CA",
+      "market_notes": "The largest industrial market in North America by square footage. Ontario, Rancho Cucamonga, Fontana, Moreno Valley, and Riverside are core distribution markets. Eastern IE (Moreno Valley, Beaumont) has seen massive big-box buildout tied to LA port distribution.",
+      "active_lender_commentary": "Life insurance companies compete aggressively for stabilized IE distribution. CMBS very active for $15M+ stabilized credit-tenant deals. Regional and national banks strong on construction. Specialty lenders active in IOS given the truck yard and container storage demand.",
+      "submarkets": "Ontario, Rancho Cucamonga, Fontana, Riverside, Moreno Valley, Perris, Jurupa Valley, Mira Loma, Eastvale, Beaumont"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "market_notes": "DFW is a top-three industrial market nationally. Strong institutional demand for Class A distribution in Alliance, Great Southwest, South Dallas, and DFW Airport submarkets. Texas tax environment and population growth driving continued demand.",
+      "active_lender_commentary": "Life insurance companies very competitive for Dallas industrial. CMBS active for stabilized. Regional Texas banks strong on construction and owner-user manufacturing. Data centers booming with North Texas hyperscale buildout.",
+      "submarkets": "Alliance, DFW Airport, Great Southwest, South Dallas, Stemmons, Northeast Dallas, East Dallas, Mesquite, Garland"
+    },
+    {
+      "slug": "houston",
+      "name": "Houston",
+      "state": "TX",
+      "market_notes": "Houston industrial tied to energy, petrochemical, Port of Houston distribution, and food processing. Unique mix of Class A distribution alongside heavy industrial and manufacturing facilities serving the energy sector.",
+      "active_lender_commentary": "Life insurance companies active for distribution. Specialty lenders critical for energy-adjacent and petrochemical facilities. Regional banks strong in manufacturing and food processing. Cold storage has seen major buildout given Gulf Coast food distribution demand.",
+      "submarkets": "North Belt, Northwest Houston, Southwest Houston, North Houston, Sugar Land, Katy, Stafford, Pasadena, East Houston"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "state": "GA",
+      "market_notes": "Southeast logistics hub serving the growing Southeast consumer market. Hartsfield-Jackson cargo volume, strong rail infrastructure, and interstate access drive distribution demand. South Atlanta and the I-20 West corridor are major Class A distribution submarkets.",
+      "active_lender_commentary": "Life insurance companies and CMBS very competitive for Atlanta distribution. Data centers have been major growth area. Regional Southeast banks competitive on construction. Cold storage and food processing active given the Southeast food distribution network.",
+      "submarkets": "South Atlanta, I-20 West, North Atlanta, Airport West, Stone Mountain, I-85 South, Henry County, Northwest Atlanta"
+    }
+  ]
+}

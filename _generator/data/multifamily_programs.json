@@ -1,0 +1,154 @@
+{
+  "programs": [
+    {
+      "slug": "agency-multifamily",
+      "name": "Agency Multifamily (Fannie Mae DUS and Freddie Mac Optigo)",
+      "short_name": "Agency Multifamily",
+      "description": "Fannie Mae DUS and Freddie Mac Optigo programs for stabilized market-rate, workforce, and LIHTC multifamily. The most competitive execution for stabilized multifamily in most markets.",
+      "typical_deal_range": "$1M to $100M+ (SBL below $7.5M, standard above)",
+      "typical_stack": [
+        "Fannie Mae DUS (delegated underwriting and servicing) 10-year fixed permanent",
+        "Freddie Mac Optigo (Target, SBL, Green Advantage, TAH) permanent",
+        "Agency green bond programs for energy-efficient properties",
+        "Fannie MAH and Freddie TAH for LIHTC and workforce affordable"
+      ],
+      "key_features": {
+        "rate_environment_2026": "10-year fixed 5.5 to 6.5 percent depending on leverage and asset profile",
+        "typical_ltv": "70 to 80 percent for market-rate, higher for workforce and affordable",
+        "amortization": "25 to 30 years",
+        "prepayment": "Yield maintenance or step-down depending on program",
+        "recourse_structure": "Non-recourse standard",
+        "minimum_deal_size": "$1M for SBL, no maximum for standard DUS/Optigo"
+      },
+      "seo": {
+        "title_suffix": "Agency Multifamily Financing (Fannie Mae DUS, Freddie Mac Optigo)",
+        "meta_template": "Agency multifamily financing in {city}. Fannie Mae DUS and Freddie Mac Optigo programs, competitive pricing, and deal profile fit for stabilized market-rate multifamily."
+      }
+    },
+    {
+      "slug": "cmbs-multifamily",
+      "name": "CMBS Multifamily Financing",
+      "short_name": "CMBS Multifamily",
+      "description": "Commercial mortgage-backed securities conduit financing for stabilized multifamily. Most competitive when sponsor wants higher proceeds, non-recourse, and is willing to live within CMBS structure.",
+      "typical_deal_range": "$5M to $100M+ for stabilized multifamily",
+      "typical_stack": [
+        "CMBS conduit permanent loan (10-year fixed)",
+        "Single-asset single-borrower (SASB) for larger transactions",
+        "Fixed-rate IO-only periods for strong deals",
+        "Mezzanine overlay occasionally for aggressive leverage"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Spreads 200 to 300 over 10-year Treasury depending on deal quality",
+        "typical_ltv": "Up to 75 percent",
+        "amortization": "30 years with 10-year term",
+        "prepayment": "Yield maintenance for first 8 years, open after",
+        "recourse_structure": "Non-recourse standard with bad-boy carve-outs",
+        "minimum_deal_size": "$5M practical floor"
+      },
+      "seo": {
+        "title_suffix": "CMBS Multifamily Financing",
+        "meta_template": "CMBS multifamily financing in {city}. Conduit execution for stabilized apartments, when CMBS beats agency, and how proceeds and non-recourse structure drive deal fit."
+      }
+    },
+    {
+      "slug": "value-add-bridge-multifamily",
+      "name": "Multifamily Value-Add Bridge Financing",
+      "short_name": "Value-Add Bridge",
+      "description": "Bridge financing for multifamily value-add business plans: acquire underperforming property, renovate units and common areas, raise rents at turnover, stabilize, refinance into permanent.",
+      "typical_deal_range": "$5M to $50M for single-asset value-add",
+      "typical_stack": [
+        "Bridge loan from debt fund, mortgage REIT, or specialty bank",
+        "Interest reserve sized to carry property during renovation and lease-up",
+        "Renovation budget (unit interiors, common areas, exterior)",
+        "Exit to agency or CMBS at stabilization"
+      ],
+      "key_features": {
+        "rate_environment_2026": "SOFR + 400 to 650 bps, floor rates common",
+        "typical_ltv_ltc": "75 to 80 percent LTC, 70 to 75 percent of stabilized value",
+        "term": "2 to 3 years with 1 to 2 year extension options",
+        "prepayment": "Open after lockout period (typically 12 to 18 months)",
+        "recourse_structure": "Typically non-recourse with bad-boy carve-outs; some deals require partial recourse",
+        "primary_lender_type": "Debt funds and mortgage REITs"
+      },
+      "seo": {
+        "title_suffix": "Multifamily Value-Add Bridge Financing",
+        "meta_template": "Multifamily value-add bridge financing in {city}. Debt fund lender ecosystem, interest reserve sizing, renovation timeline, and permanent take-out sequencing."
+      }
+    },
+    {
+      "slug": "ground-up-multifamily-construction",
+      "name": "Ground-Up Multifamily Construction Financing",
+      "short_name": "Ground-Up Construction",
+      "description": "Ground-up market-rate multifamily construction financing. Bank construction lenders, debt fund non-bank construction, and life company forward commitments for the permanent take-out.",
+      "typical_deal_range": "$15M to $200M+ total development cost",
+      "typical_stack": [
+        "Construction loan (bank, debt fund, or specialty construction lender)",
+        "Life company forward commitment for permanent take-out (when available)",
+        "Mezzanine debt or preferred equity for leverage",
+        "Sponsor equity and limited partner equity"
+      ],
+      "key_features": {
+        "rate_environment_2026": "SOFR + 275 to 400 bps construction, life co forward 5.25 to 6.25 fixed",
+        "typical_ltc": "60 to 70 percent",
+        "term": "2 to 3 years construction with 1 to 2 year stabilization extension",
+        "prepayment": "Open after lockout",
+        "recourse_structure": "Completion guarantee and recourse common; non-recourse rarer in current market",
+        "primary_lender_type": "Banks and debt funds"
+      },
+      "seo": {
+        "title_suffix": "Ground-Up Multifamily Construction Financing",
+        "meta_template": "Ground-up multifamily construction financing in {city}. Bank construction lender appetite, debt fund alternatives, life company forward commitments, and current development economics."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "market_notes": "LA multifamily features rent stabilization (RSO) on pre-1978 properties, AB 1482 statewide rent control, and high barriers to entry. Market dominated by value-add opportunity on older rent-stabilized stock and ground-up development in growth submarkets.",
+      "active_lender_commentary": "Agencies very competitive for stabilized; life companies selectively for top-quality. CMBS active for $10M+ stabilized. Debt funds are dominant for value-add bridge given LA's value-add heavy deal flow. Construction lending has tightened but debt fund alternatives available.",
+      "submarkets": "Koreatown, Hollywood, Silver Lake, Echo Park, DTLA, Culver City, West LA, Sherman Oaks, Van Nuys, Long Beach"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "market_notes": "One of the hottest multifamily markets nationally through 2022, moderated in 2023-2024, now stabilizing. Strong in-migration, limited rent control, pro-development regulatory environment. Substantial ground-up supply in recent years has been digested.",
+      "active_lender_commentary": "Agencies very active and competitive. CMBS strong. Life companies competitive for Class A. Debt funds active for value-add and ground-up. BTR has seen massive capital deployment in Phoenix metro with specialty lenders competing.",
+      "submarkets": "Downtown Phoenix, Tempe, Scottsdale, Chandler, Gilbert, Mesa, Goodyear, Glendale"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "market_notes": "DFW is one of the top multifamily markets in the country driven by corporate relocations, population growth, and a pro-development regulatory environment. Both urban core and suburban submarkets have strong deal flow.",
+      "active_lender_commentary": "Agencies very competitive. CMBS active for $10M+. Life companies aggressive for Class A. Regional Texas banks strong on construction. Debt funds for value-add. BTR lending universe particularly active in DFW.",
+      "submarkets": "Uptown, Downtown Dallas, Oak Lawn, Deep Ellum, Plano, Frisco, McKinney, Richardson, Addison, Las Colinas"
+    },
+    {
+      "slug": "austin",
+      "name": "Austin",
+      "state": "TX",
+      "market_notes": "Austin experienced dramatic rent growth through 2022 followed by sharp moderation in 2023-2024 due to supply surge. Now finding equilibrium with strong fundamentals and tech-driven demand, though submarket dispersion is significant.",
+      "active_lender_commentary": "Agencies competitive with some caution on supply-heavy submarkets. CMBS active. Life companies selective. Debt funds for value-add and bridge. Construction lending cautious on supply-constrained underwriting. Ground-up market-rate has moderated.",
+      "submarkets": "Downtown, East Austin, South Congress, North Loop, Mueller, Cedar Park, Round Rock, Pflugerville"
+    },
+    {
+      "slug": "nashville",
+      "name": "Nashville",
+      "state": "TN",
+      "market_notes": "Nashville has been one of the strongest secondary multifamily markets for the past decade. Healthcare, music, and tourism-driven economy with sustained in-migration. Moderating from peak but still growing.",
+      "active_lender_commentary": "Agencies very competitive. CMBS active. Life companies interested. Regional banks strong on construction. BTR active. Overall a very financeable market with good lender depth.",
+      "submarkets": "Germantown, The Gulch, East Nashville, Midtown, Green Hills, Brentwood, Franklin, Murfreesboro"
+    },
+    {
+      "slug": "denver",
+      "name": "Denver",
+      "state": "CO",
+      "market_notes": "Denver multifamily has stabilized after strong growth 2018-2022. Mature market with solid fundamentals, though new supply in certain submarkets has pressured rents. Ground-up activity has moderated but selectively active.",
+      "active_lender_commentary": "Agencies competitive. CMBS active. Life companies selective. Debt funds for value-add. Construction lending cautious on supply-heavy submarkets but available for strong sponsors.",
+      "submarkets": "LoDo, RiNo, Capitol Hill, Cherry Creek, Highland, Washington Park, Lakewood, Aurora, Boulder"
+    }
+  ]
+}
