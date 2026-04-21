@@ -1,0 +1,168 @@
+{
+  "programs": [
+    {
+      "slug": "edi-streamlined",
+      "name": "EDI, SB 35, and AB 2011 Streamlined Affordable Financing",
+      "short_name": "Streamlined Affordable (EDI / SB 35 / AB 2011)",
+      "description": "Ministerial approval pathways for 100% affordable and qualifying mixed-income projects. LA Executive Directive 1 (ED1) is the city-specific layer; SB 35 and AB 2011 are statewide pathways that apply in every California jurisdiction.",
+      "typical_deal_range": "$8M to $40M total development cost",
+      "typical_stack": [
+        "Construction loan (bank, CDFI, or mission-focused lender)",
+        "4% or 9% LIHTC equity",
+        "Tax-exempt bond financing (for 4% deals)",
+        "State soft debt: HHAP, NPLH, AHSC, or MHP depending on project profile",
+        "City / county soft debt (trust funds, linkage fees, HOME, CDBG)",
+        "Sponsor equity and deferred developer fee"
+      ],
+      "key_features": {
+        "approval_path": "Ministerial (by-right) for qualifying projects",
+        "ceqa_treatment": "Exempt or streamlined for qualifying projects",
+        "density_bonus": "Available above base zoning",
+        "parking_requirements": "Reduced or waived in most cases",
+        "prevailing_wage": "Required for most paths (SB 35, AB 2011, all LIHTC)",
+        "affordability_covenant": "55 years (LIHTC baseline) or longer depending on program"
+      },
+      "seo": {
+        "title_suffix": "EDI, SB 35 & AB 2011 Streamlined Affordable Financing",
+        "meta_template": "How EDI, SB 35, and AB 2011 streamlined affordable housing financing works in {city}. Capital stack, ministerial approval pathway, and the lenders who close these deals."
+      }
+    },
+    {
+      "slug": "4pct-lihtc",
+      "name": "4% LIHTC and Tax-Exempt Bond Financing",
+      "short_name": "4% LIHTC + Bonds",
+      "description": "The non-competitive 4% Low-Income Housing Tax Credit, available with tax-exempt private activity bond financing. Fixed 4% floor since the 2021 federal legislation made the credit mathematically favorable for larger affordable developments.",
+      "typical_deal_range": "$20M to $80M+ total development cost",
+      "typical_stack": [
+        "Construction loan (often the same lender as bond issuer on single-close structures)",
+        "Tax-exempt private activity bond issuance (bond-financed deal qualifies for 4% credit)",
+        "4% LIHTC investor equity (~30% of TDC)",
+        "State soft debt: MHP, AHSC, NPLH where applicable",
+        "Local soft debt: city trust funds, linkage fees, HOME",
+        "Sponsor equity and deferred developer fee"
+      ],
+      "key_features": {
+        "credit_equity": "Approximately 30% of total development cost",
+        "allocation": "Non-competitive, automatic with qualifying bond financing",
+        "scoring": "No competitive scoring round; CDLAC bond allocation is gating",
+        "minimum_deal_size": "Practical floor around $15M TDC due to bond issuance overhead",
+        "affordability_covenant": "55 years",
+        "compliance_monitoring": "TCAC and bond issuer compliance"
+      },
+      "seo": {
+        "title_suffix": "4% LIHTC and Tax-Exempt Bond Financing",
+        "meta_template": "How 4% Low-Income Housing Tax Credit and tax-exempt bond financing works in {city}. Capital stack mechanics, bond allocation, and the lenders who close these deals."
+      }
+    },
+    {
+      "slug": "9pct-lihtc",
+      "name": "9% Competitive LIHTC Financing",
+      "short_name": "9% LIHTC",
+      "description": "The competitive 9% Low-Income Housing Tax Credit, allocated through the California Tax Credit Allocation Committee (TCAC) via scoring rounds. Delivers roughly 70% of development cost as equity, but requires a winning scoring profile in an increasingly competitive field.",
+      "typical_deal_range": "$8M to $25M total development cost",
+      "typical_stack": [
+        "Construction loan (bank, CDFI, or mission-focused lender)",
+        "9% LIHTC investor equity (~70% of TDC)",
+        "Permanent loan (smaller than 4% deals because credit equity is larger)",
+        "State soft debt: MHP, AHSC, HHAP, NPLH for qualifying profiles",
+        "Local soft debt where needed to close the gap",
+        "Sponsor equity and deferred developer fee"
+      ],
+      "key_features": {
+        "credit_equity": "Approximately 70% of total development cost",
+        "allocation": "Competitive scoring through TCAC rounds",
+        "scoring_dynamics": "Multiple rounds per year; winning threshold varies by set-aside and region",
+        "tcac_region_matters": "Region-specific scoring and set-asides create different competitive dynamics",
+        "affordability_covenant": "55 years",
+        "timing_risk": "Multiple application rounds may be needed before allocation"
+      },
+      "seo": {
+        "title_suffix": "9% Competitive LIHTC Financing",
+        "meta_template": "How 9% competitive Low-Income Housing Tax Credit allocation and financing works in {city}. TCAC scoring, capital stack, and the lenders who close these deals."
+      }
+    },
+    {
+      "slug": "tax-exempt-bonds",
+      "name": "Tax-Exempt Bond Financing for Affordable Multifamily",
+      "short_name": "Tax-Exempt Bonds",
+      "description": "Private activity bonds issued by qualifying local, state, or regional bond issuers to finance affordable multifamily. Bond financing automatically qualifies the project for 4% LIHTC and can serve as both construction and permanent financing.",
+      "typical_deal_range": "$15M to $100M+ total development cost",
+      "typical_stack": [
+        "Tax-exempt bond issuance (construction phase)",
+        "4% LIHTC investor equity",
+        "Permanent bond issuance or conversion to permanent debt at stabilization",
+        "State soft debt layering",
+        "Local soft debt layering",
+        "Sponsor equity and deferred developer fee"
+      ],
+      "key_features": {
+        "issuer_types": "Local agencies (CMFA, CHFA), regional authorities, housing authorities",
+        "allocation": "State CDLAC allocates private activity bond cap annually",
+        "bond_structure": "Often issued as variable-rate demand obligations or fixed-rate bonds, with credit enhancement from letter of credit or bond insurance",
+        "lihtc_coupling": "Bond-financed deals automatically qualify for 4% LIHTC",
+        "minimum_deal_size": "Practical floor around $15M TDC due to issuance costs",
+        "affordability_covenant": "55 years, often longer depending on issuer"
+      },
+      "seo": {
+        "title_suffix": "Tax-Exempt Bond Financing for Affordable Multifamily",
+        "meta_template": "How tax-exempt bond financing for affordable multifamily works in {city}. CDLAC allocation, bond issuer types, capital stack, and the lenders who close these deals."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "tcac_region": "TCAC Region 4 (Los Angeles County)",
+      "jurisdictional_notes": "City of Los Angeles has the most aggressive ministerial approval regime in California via Executive Directive 1. LA Housing Department (LAHD) administers the Affordable Housing Trust Fund, Linkage Fee revenue, Measure H and HHH proceeds. LA County administers HHAP-LA. Inclusionary Zoning is effectively through the Transit-Oriented Communities program and density bonus overlays.",
+      "active_programs_local": "Executive Directive 1 (ED1), Transit-Oriented Communities (TOC), SB 8 replacement housing requirements, LA Housing Trust Fund, Linkage Fee, Proposition HHH (permanent supportive housing, winding down)",
+      "typical_submarkets_for_affordable": "Koreatown, Boyle Heights, South LA, San Fernando Valley (Van Nuys, Panorama City, Pacoima), Westlake, Mid-City, Inglewood-adjacent"
+    },
+    {
+      "slug": "san-francisco",
+      "name": "San Francisco",
+      "state": "CA",
+      "tcac_region": "TCAC Region 1 (Bay Area)",
+      "jurisdictional_notes": "City and County of San Francisco has the Mayor's Office of Housing and Community Development (MOHCD) administering Jobs-Housing Linkage Program (JHLP), Inclusionary Housing Fund, and other local sources. The city's Density Bonus and Affordable Housing Bonus Program provide entitlement pathways. SB 35 approvals have been increasingly utilized.",
+      "active_programs_local": "Inclusionary Housing Program, Jobs-Housing Linkage Program, MOHCD Notice of Funding Availability (NOFA), Educator Housing Fund, Housing Accelerator Fund",
+      "typical_submarkets_for_affordable": "Mission, Bayview-Hunters Point, SoMa, Tenderloin, Outer Mission, Visitacion Valley, Treasure Island"
+    },
+    {
+      "slug": "oakland",
+      "name": "Oakland",
+      "state": "CA",
+      "tcac_region": "TCAC Region 1 (Bay Area)",
+      "jurisdictional_notes": "City of Oakland Department of Housing and Community Development administers Affordable Housing Trust Fund, inclusionary housing program, and Measure KK / U / W bond proceeds. Alameda County administers regional HHAP distribution. Oakland has been one of the most active adopters of SB 35 and AB 2011.",
+      "active_programs_local": "Affordable Housing Trust Fund, Measure KK / U / W bond proceeds, inclusionary zoning in-lieu fee, Oakland Housing Authority project-based vouchers",
+      "typical_submarkets_for_affordable": "Fruitvale, East Oakland, West Oakland, North Oakland, San Antonio, Eastlake"
+    },
+    {
+      "slug": "san-diego",
+      "name": "San Diego",
+      "state": "CA",
+      "tcac_region": "TCAC Region 5 (San Diego County)",
+      "jurisdictional_notes": "San Diego Housing Commission administers Affordable Housing Fund, rental assistance, and local gap financing. City of San Diego inclusionary housing ordinance, Complete Communities program providing density and incentive bonuses. San Diego County administers HHAP-SD. CDLAC bond allocation through CMFA or local issuers.",
+      "active_programs_local": "Affordable Housing Fund, Complete Communities Housing Solutions, inclusionary housing, San Diego Housing Commission project-based vouchers, regional HHAP",
+      "typical_submarkets_for_affordable": "Barrio Logan, City Heights, Southeast San Diego, Linda Vista, Mid-City, Escondido, Chula Vista, National City"
+    },
+    {
+      "slug": "san-jose",
+      "name": "San Jose",
+      "state": "CA",
+      "tcac_region": "TCAC Region 1 (Bay Area)",
+      "jurisdictional_notes": "San Jose Housing Department administers Affordable Housing Investment Plan, Measure E real property transfer tax proceeds, and inclusionary housing. Santa Clara County Measure A housing bond proceeds distributed to qualifying projects. SB 35 has been heavily utilized in San Jose.",
+      "active_programs_local": "Measure E transfer tax proceeds, Measure A county housing bond, Affordable Housing Investment Plan, inclusionary housing program, Notice of Funding Availability cycles",
+      "typical_submarkets_for_affordable": "East San Jose, Alum Rock, Downtown San Jose, Berryessa, Japantown-adjacent, West San Jose near VTA corridors"
+    },
+    {
+      "slug": "sacramento",
+      "name": "Sacramento",
+      "state": "CA",
+      "tcac_region": "TCAC Region 3 (Sacramento / Central Valley)",
+      "jurisdictional_notes": "Sacramento Housing and Redevelopment Agency (SHRA) administers Affordable Housing Fund, HOME, CDBG, and project-based voucher programs for both City and County. Sacramento County administers HHAP-SAC. Sacramento is a priority market for state HCD due to Central Valley housing needs and capital city status.",
+      "active_programs_local": "SHRA Affordable Housing Fund, SHRA Multifamily Lending Program, inclusionary housing, Sacramento Housing Authority project-based vouchers, regional HHAP",
+      "typical_submarkets_for_affordable": "Oak Park, Del Paso Heights, Meadowview, North Sacramento, Florin, Arden-Arcade, South Sacramento, Downtown / Midtown infill"
+    }
+  ]
+}

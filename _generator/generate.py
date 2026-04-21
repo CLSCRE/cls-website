@@ -200,6 +200,22 @@ def main():
         {"loc": f"{BASE_URL}/affordable-housing/index.html", "lastmod": TODAY, "changefreq": "weekly", "priority": "0.9"},
     ]
 
+    # Affordable Housing city x program programmatic pages (generated via
+    # scripts/generate_city_affordable_pages.py; listed here so full regens
+    # preserve them in the sitemap)
+    affordable_data_path = DATA_DIR / "affordable_programs.json"
+    if affordable_data_path.exists():
+        _affordable_data = json.loads(affordable_data_path.read_text(encoding="utf-8"))
+        for _c in _affordable_data.get("cities", []):
+            for _p in _affordable_data.get("programs", []):
+                _slug = f"{_c['slug']}-{_p['slug']}"
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/affordable-housing/markets/{_slug}.html",
+                    "lastmod": TODAY,
+                    "changefreq": "monthly",
+                    "priority": "0.8",
+                })
+
     page_count = 0
 
     # ── Load articles ─────────────────────────────────────────────────
