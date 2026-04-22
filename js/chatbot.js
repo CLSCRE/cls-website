@@ -274,3 +274,154 @@
     }
   });
 })();
+
+/* ============================================================================
+ * CLS CRE Contact Enhancements (Phase 5B)
+ * Runs on every page that loads chatbot.js (i.e. every page).
+ * Adds:
+ *   1. Sticky mobile contact bar (phone + book call) below 768px
+ *   2. URL-param prefill for contact forms (?name=X&email=Y&phone=Z&message=M)
+ *   3. Exit-intent fallback popup pointing users to call/book/email
+ *   4. Inline "Text Trevor" SMS link next to existing phone links on mobile
+ * Privacy: no tracking beyond existing GTM; no third-party requests.
+ * ========================================================================== */
+(function () {
+  'use strict';
+  try {
+    var PHONE = '+13107584042';
+    var PHONE_DISPLAY = '310.758.4042';
+    var EMAIL = 'trevor@clscre.com';
+    var BOOKING = 'https://outlook.office.com/bookwithme/user/c760895536d64481bd17039efdcead26@clscre.com?anonymous&ismsaljsauthenabled&ep=plink';
+
+    // ── 1) Sticky mobile contact bar ──────────────────────────────────────
+    function injectMobileBar() {
+      if (document.getElementById('cls-mcb')) return;
+      var bar = document.createElement('div');
+      bar.id = 'cls-mcb';
+      bar.innerHTML = ''
+        + '<a href="tel:' + PHONE + '" class="cls-mcb-btn cls-mcb-primary" aria-label="Call Trevor at ' + PHONE_DISPLAY + '">'
+        +   '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'
+        +   '<span>Call</span>'
+        + '</a>'
+        + '<a href="sms:' + PHONE + '" class="cls-mcb-btn cls-mcb-secondary" aria-label="Text Trevor at ' + PHONE_DISPLAY + '">'
+        +   '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>'
+        +   '<span>Text</span>'
+        + '</a>'
+        + '<a href="' + BOOKING + '" target="_blank" rel="noopener" class="cls-mcb-btn cls-mcb-secondary" aria-label="Book a 15-min call with Trevor">'
+        +   '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>'
+        +   '<span>Book</span>'
+        + '</a>';
+
+      var style = document.createElement('style');
+      style.textContent = ''
+        + '#cls-mcb{position:fixed;left:0;right:0;bottom:0;display:none;grid-template-columns:2fr 1fr 1fr;gap:8px;padding:10px 12px 14px;background:#153D63;box-shadow:0 -4px 24px rgba(0,0,0,.18);z-index:998}'
+        + '@media (max-width:768px){#cls-mcb{display:grid}body{padding-bottom:72px !important}}'
+        + '#cls-mcb .cls-mcb-btn{display:flex;align-items:center;justify-content:center;gap:6px;height:44px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;letter-spacing:.2px}'
+        + '#cls-mcb .cls-mcb-primary{background:#00A676;color:#fff}'
+        + '#cls-mcb .cls-mcb-secondary{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25)}'
+        + '#cls-mcb .cls-mcb-btn:active{opacity:.85}'
+        // Nudge the floating chatbot button up so it doesn't collide with the bar
+        + '@media (max-width:768px){#cls-chat-btn{bottom:88px !important}}';
+      document.head.appendChild(style);
+      document.body.appendChild(bar);
+    }
+
+    // ── 2) URL-param prefill for contact forms ────────────────────────────
+    // Supports: ?name=X&email=Y&phone=Z&message=M&inquiry=Affordable%2FEDI
+    function prefillFromParams() {
+      var params = new URLSearchParams(location.search);
+      if (!params.toString()) return;
+      var mapping = {
+        'name': ['Name', 'name', 'first_name', 'c_name'],
+        'email': ['Email', 'email', 'c_email'],
+        'phone': ['Phone', 'phone', 'c_phone'],
+        'message': ['Message', 'message', 'details', 'c_message'],
+        'inquiry': ['Inquiry Type', 'c_deal_type']
+      };
+      Object.keys(mapping).forEach(function (paramKey) {
+        var val = params.get(paramKey);
+        if (!val) return;
+        mapping[paramKey].forEach(function (fieldName) {
+          // Try by name=, then by id=
+          var el = document.querySelector('[name="' + fieldName + '"]') ||
+                   document.getElementById(fieldName);
+          if (el && !el.value) {
+            el.value = val;
+            try { el.dispatchEvent(new Event('input', {bubbles: true})); } catch (e) {}
+          }
+        });
+      });
+    }
+
+    // ── 3) Exit-intent fallback popup (desktop-only, once per session) ────
+    function setupExitIntent() {
+      if (sessionStorage.getItem('cls-exit-shown')) return;
+      if (location.pathname.indexOf('thank-you') > -1) return; // don't show on thank-you
+      var shown = false;
+      document.addEventListener('mouseleave', function (e) {
+        if (shown || e.clientY > 10) return;
+        if (window.innerWidth < 768) return; // skip mobile
+        shown = true;
+        sessionStorage.setItem('cls-exit-shown', '1');
+        showExitPopup();
+      });
+    }
+
+    function showExitPopup() {
+      var overlay = document.createElement('div');
+      overlay.id = 'cls-exit-overlay';
+      overlay.innerHTML = ''
+        + '<div class="cls-exit-card" role="dialog" aria-labelledby="cls-exit-title">'
+        +   '<button class="cls-exit-close" aria-label="Close">&times;</button>'
+        +   '<div class="cls-exit-label">Before you go</div>'
+        +   '<h3 id="cls-exit-title">Questions about your deal?</h3>'
+        +   '<p>Trevor personally reviews every inquiry. Call, text, book a time, or email, whichever is easiest.</p>'
+        +   '<div class="cls-exit-actions">'
+        +     '<a href="tel:' + PHONE + '">Call ' + PHONE_DISPLAY + '</a>'
+        +     '<a href="' + BOOKING + '" target="_blank" rel="noopener">Book 15 min</a>'
+        +     '<a href="mailto:' + EMAIL + '">Email Trevor</a>'
+        +   '</div>'
+        + '</div>';
+      var style = document.createElement('style');
+      style.textContent = ''
+        + '#cls-exit-overlay{position:fixed;inset:0;background:rgba(21,61,99,.55);display:flex;align-items:center;justify-content:center;z-index:9999;padding:20px;animation:clsFade .22s ease}'
+        + '@keyframes clsFade{from{opacity:0}to{opacity:1}}'
+        + '#cls-exit-overlay .cls-exit-card{background:#fff;border-radius:14px;padding:36px 40px 32px;max-width:480px;width:100%;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.25);font-family:inherit}'
+        + '#cls-exit-overlay .cls-exit-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:28px;color:#888;cursor:pointer;line-height:1}'
+        + '#cls-exit-overlay .cls-exit-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#006A4E;font-weight:700;margin-bottom:8px}'
+        + '#cls-exit-overlay .cls-exit-card h3{font-family:DM Serif Display,serif;font-size:26px;color:#153D63;margin:0 0 10px;line-height:1.2}'
+        + '#cls-exit-overlay .cls-exit-card p{font-size:14px;color:#555;line-height:1.6;margin:0 0 22px}'
+        + '#cls-exit-overlay .cls-exit-actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}'
+        + '#cls-exit-overlay .cls-exit-actions a{display:flex;align-items:center;justify-content:center;padding:12px 10px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none}'
+        + '#cls-exit-overlay .cls-exit-actions a:nth-child(1){background:#006A4E;color:#fff}'
+        + '#cls-exit-overlay .cls-exit-actions a:nth-child(2){background:#153D63;color:#fff}'
+        + '#cls-exit-overlay .cls-exit-actions a:nth-child(3){background:#f3f4f6;color:#153D63}'
+        + '@media (max-width:480px){#cls-exit-overlay .cls-exit-actions{grid-template-columns:1fr}}';
+      document.head.appendChild(style);
+      document.body.appendChild(overlay);
+      overlay.querySelector('.cls-exit-close').addEventListener('click', function () {
+        overlay.remove();
+      });
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) overlay.remove();
+      });
+      if (typeof gtag === 'function') {
+        try { gtag('event', 'exit_popup_shown', {page_url: location.href}); } catch (e) {}
+      }
+    }
+
+    // ── Run on DOM ready ─────────────────────────────────────────────────
+    function ready() {
+      injectMobileBar();
+      prefillFromParams();
+      setupExitIntent();
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', ready);
+    } else {
+      ready();
+    }
+  } catch (err) {
+    try { console.warn('CLS contact enhancements failed:', err); } catch (e) {}
+  }
+})();
