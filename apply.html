@@ -552,6 +552,15 @@
       <div class="step-title">Your Information</div>
       <div class="step-subtitle">We'll use this to send your financing options. No spam, ever.</div>
 
+      <div class="wiz-row single">
+        <div class="wiz-field" id="f_details">
+          <label for="details">Tell us about the deal <span class="req">*</span></label>
+          <textarea id="details" rows="5" required placeholder="Briefly describe the deal. What's the property (address or sub-market), what's the business plan (acquisition, refi, value-add, ground-up construction), the sponsor background, any timing pressure, and anything unique about the loan. The more you share, the faster we can match you with the right capital source."></textarea>
+          <div style="font-size:12px;color:var(--gray-500);margin-top:6px"><span id="details_count">0</span> characters (minimum 60 recommended for a usable response)</div>
+          <span class="error-msg">Please describe the deal in at least 60 characters so we can match you with the right capital source</span>
+        </div>
+      </div>
+
       <div class="wiz-row">
         <div class="wiz-field" id="f_first">
           <label for="first_name">First Name <span class="req">*</span></label>
@@ -580,12 +589,6 @@
         <div class="wiz-field">
           <label for="company">Company</label>
           <input type="text" id="company" autocomplete="organization" placeholder="Optional">
-        </div>
-      </div>
-      <div class="wiz-row single">
-        <div class="wiz-field">
-          <label for="details">Anything else we should know?</label>
-          <textarea id="details" rows="3" placeholder="Business plan, borrower experience, special requirements..."></textarea>
         </div>
       </div>
 
@@ -670,6 +673,10 @@
           <div class="review-item"><div class="review-label">Email</div><div class="review-value" id="r_email">--</div></div>
           <div class="review-item"><div class="review-label">Phone</div><div class="review-value" id="r_phone">--</div></div>
           <div class="review-item" id="r_company_row"><div class="review-label">Company</div><div class="review-value" id="r_company">--</div></div>
+        </div>
+        <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--gray-200)">
+          <div class="review-label">Deal Details</div>
+          <div class="review-value" id="r_details" style="white-space:pre-wrap;line-height:1.55">--</div>
         </div>
       </div>
 
@@ -940,6 +947,16 @@ function validateStep(step) {
   }
 
   if (step === 4) {
+    // Deal Details: must be at least 60 chars so the Worker's CRE relevance check
+    // either skips (>=60) or passes (because sponsors naturally use CRE vocabulary)
+    const details = document.getElementById('details').value.trim();
+    if (details.length < 60) {
+      document.getElementById('f_details').classList.add('error');
+      valid = false;
+    } else {
+      document.getElementById('f_details').classList.remove('error');
+    }
+
     const fields = [
       ['first_name', 'f_first'],
       ['last_name', 'f_last'],
@@ -979,6 +996,21 @@ document.querySelectorAll('.wiz-field input, .wiz-field select, .wiz-field texta
   });
 });
 
+// Live character counter on deal details
+(function(){
+  var detailsEl = document.getElementById('details');
+  var countEl = document.getElementById('details_count');
+  if (!detailsEl || !countEl) return;
+  function update(){
+    var n = detailsEl.value.trim().length;
+    countEl.textContent = n;
+    countEl.style.color = n >= 60 ? 'var(--green,#006A4E)' : 'var(--gray-500)';
+    countEl.style.fontWeight = n >= 60 ? '600' : '400';
+  }
+  detailsEl.addEventListener('input', update);
+  update();
+})();
+
 /* --- Populate review --- */
 function populateReview() {
   const purpose = document.querySelector('input[name="purpose"]:checked');
@@ -993,6 +1025,7 @@ function populateReview() {
   document.getElementById('r_name').textContent = (document.getElementById('first_name').value + ' ' + document.getElementById('last_name').value).trim() || '--';
   document.getElementById('r_email').textContent = document.getElementById('email').value || '--';
   document.getElementById('r_phone').textContent = document.getElementById('phone').value || '--';
+  document.getElementById('r_details').textContent = document.getElementById('details').value.trim() || '--';
 
   // Optional fields, hide row if empty
   const optionals = [

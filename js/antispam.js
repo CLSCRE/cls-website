@@ -50,8 +50,23 @@
     tsScript.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_clsTurnstileReady';
     tsScript.async = true;
     tsScript.defer = true;
+    // If Turnstile fails to load (ad blocker, network, etc.), fall back so forms
+    // still submit via FormSubmit direct path instead of getting silently stuck.
+    tsScript.onerror = function() {
+      try { console.warn('Turnstile failed to load; falling back to direct submission.'); } catch (e) {}
+      captchaType = 'none';
+      captchaReady = true; // unblock waiters
+    };
     document.head.appendChild(tsScript);
     window._clsTurnstileReady = function() { captchaReady = true; };
+    // Watchdog: if Turnstile hasn't marked ready in 8 seconds, assume failure
+    setTimeout(function() {
+      if (!captchaReady) {
+        try { console.warn('Turnstile did not load within 8s; falling back.'); } catch (e) {}
+        captchaType = 'none';
+        captchaReady = true;
+      }
+    }, 8000);
   } else if (RECAPTCHA_SITE_KEY) {
     captchaType = 'recaptcha';
     var rcScript = document.createElement('script');
@@ -186,8 +201,8 @@
     // ─ Check 0: Headless browser detection ─
     var headlessScore = detectHeadless();
     if (headlessScore >= 4) {
-      // Very likely headless — silent block
-      _silentBlock();
+      // Very likely headless — silent block (genuine bot signature)
+      _silentBlock('headless_combo');
       return false;
     }
     if (headlessScore >= 2) {
@@ -199,7 +214,7 @@
     var honey2 = form.querySelector('[name="website_url"]');
     var honey3 = form.querySelector('[name="_company_fax"]');
     if ((honey1 && honey1.value) || (honey2 && honey2.value) || (honey3 && honey3.value)) {
-      _silentBlock();
+      _silentBlock('honeypot');
       return false;
     }
 
@@ -429,48 +444,136 @@
 
     // ── Decision logic ──────────────────────────────────────────────
 
-    // Hard block: speed + no interaction = definitely bot
+    // Hard block: speed + no interaction = definitely bot (legit users mouse/scroll)
     if (errors.indexOf('speed') > -1 && errors.indexOf('interaction') > -1) {
-      _silentBlock();
+      _silentBlock('speed_no_interaction');
       return false;
     }
 
-    // Hard block: headless + any other signal
+    // Hard block: headless + any other signal = likely bot
     if (errors.indexOf('headless') > -1 && errors.length >= 2) {
-      _silentBlock();
+      _silentBlock('headless_combo');
       return false;
     }
 
-    // Block: template phrase detected
+    // Soft block with visible error: template phrase (could be lazy human, tell them)
     if (errors.indexOf('template') > -1) {
-      _silentBlock();
+      _silentBlock('template');
       return false;
     }
 
-    // Block: irrelevant message (short + no CRE terms) — high-confidence spam
+    // Soft block: short + no CRE terms. Could be a legit user who wrote too little.
     if (errors.indexOf('irrelevant') > -1) {
-      _silentBlock();
+      _silentBlock('irrelevant');
       return false;
     }
 
-    // Block: message too short for a real deal inquiry
+    // Soft block: message too short for a real deal inquiry
     if (errors.indexOf('too_short') > -1) {
-      _silentBlock();
+      _silentBlock('too_short');
       return false;
     }
 
-    // Block: 2+ other failures
+    // Soft block: phone number obviously bogus
+    if (errors.indexOf('phone') > -1) {
+      _silentBlock('phone');
+      return false;
+    }
+
+    // Soft block: bot name
+    if (errors.indexOf('name') > -1) {
+      _silentBlock('name');
+      return false;
+    }
+
+    // Soft block: proof-of-work missing (refresh usually fixes this)
+    if (errors.indexOf('pow') > -1) {
+      _silentBlock('pow');
+      return false;
+    }
+
+    // Catch-all: 2+ other failures — default message guiding them to call/email
     if (errors.length >= 2) {
-      _silentBlock();
+      _silentBlock('default');
       return false;
     }
 
     return true;
   };
 
-  function _silentBlock() {
-    // Redirect to thank-you so bot thinks it succeeded
-    window.location.href = (window._clsThankYouPath || '') + 'thank-you.html';
+  // Global handle to the active form (set per-form in _doFormSubmit). Used by
+  // _silentBlock so we can surface a visible error on the correct form.
+  var _activeForm = null;
+  var _activeSubmitBtn = null;
+
+  function _silentBlock(reason) {
+    // Previously this redirected silently to thank-you.html, which made EVERY
+    // validation failure look like success to the user. That cost real leads.
+    // Now we show a visible, actionable error and keep the user on the page so
+    // they can fix the issue and retry. Bots that fail validation still get
+    // the redirect path below, but only for bot-specific signals.
+    var form = _activeForm;
+    var btn = _activeSubmitBtn;
+    // Reset the submit button state if it was disabled/loading
+    if (btn) {
+      try {
+        btn.disabled = false;
+        btn.classList && btn.classList.remove('loading');
+        if (btn._originalText) btn.textContent = btn._originalText;
+      } catch (e) {}
+    }
+
+    // Decide whether to redirect (known bot signatures) vs show inline error.
+    // Only the highest-confidence bot signals still silently redirect.
+    var botOnlyReasons = {
+      'honeypot': 1, 'headless_combo': 1, 'speed_no_interaction': 1
+    };
+    if (botOnlyReasons[reason]) {
+      // Still silently redirect actual bots so they don't learn our defenses.
+      window.location.href = (window._clsThankYouPath || '') + 'thank-you.html';
+      return;
+    }
+
+    // Legitimate-user-probable failures: show an error message in-place.
+    var messages = {
+      'too_short': 'Please include more detail about your deal. Tell us about the property, the business plan, and any timing considerations — at least 60 characters helps us match you with the right capital source.',
+      'irrelevant': 'Please describe the financing you need. Include terms like "loan", "property", "financing", etc. so we know how to help.',
+      'template': 'Your message looks like a template. Please describe the deal in your own words.',
+      'pow': 'Security check did not complete. Please refresh the page and try again.',
+      'turnstile': 'Please complete the "I am human" challenge above and try again.',
+      'phone': 'Please enter a valid phone number (10 digits).',
+      'name': 'Please enter your real name.',
+      'default': 'We could not submit your form. Please review your information and try again, or call Trevor directly at 310.758.4042 or email trevor@clscre.com.'
+    };
+    var msg = messages[reason] || messages['default'];
+    _showInlineError(form, msg);
+
+    // Still report to GA so Trevor can see attempts and failure reasons
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', 'form_submission_blocked', {
+          form_id: form ? form.id : 'unknown',
+          reason: reason || 'default',
+          page_url: location.href
+        });
+      }
+    } catch (e) {}
+  }
+
+  function _showInlineError(form, message) {
+    if (!form) { alert(message); return; }
+    // Find or create an error banner at the top of the form
+    var banner = form.querySelector('.cls-form-error');
+    if (!banner) {
+      banner = document.createElement('div');
+      banner.className = 'cls-form-error';
+      banner.setAttribute('role', 'alert');
+      banner.style.cssText = 'background:#fff6f6;border:1px solid #e8b4b4;color:#932a2a;padding:14px 16px;border-radius:8px;margin:0 0 16px;font-size:14px;line-height:1.55';
+      form.insertBefore(banner, form.firstChild);
+    }
+    banner.innerHTML = message + ' <br><br><strong>Urgent? Call Trevor at <a href="tel:+13107584042" style="color:#932a2a;text-decoration:underline">310.758.4042</a> or email <a href="mailto:trevor@clscre.com" style="color:#932a2a;text-decoration:underline">trevor@clscre.com</a> directly.</strong>';
+    // Scroll into view
+    try { banner.scrollIntoView({behavior: 'smooth', block: 'center'}); } catch (e) {}
   }
 
   // ── Initialize all forms ────────────────────────────────────────────
@@ -630,6 +733,25 @@
   }
 
   function _doFormSubmit(form, submitBtn) {
+    // Track active form for _silentBlock's inline error messaging
+    _activeForm = form;
+    _activeSubmitBtn = submitBtn;
+    // Preserve submit button text so we can restore it on error
+    if (submitBtn && !submitBtn._originalText) {
+      submitBtn._originalText = submitBtn.textContent;
+    }
+
+    // Fire form_submission event to GA so Trevor can see attempt volume
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', 'form_submission', {
+          form_id: form.id || 'unknown',
+          form_type: form._useWorker ? 'worker' : 'formsubmit',
+          page_url: location.href
+        });
+      }
+    } catch (e) {}
+
     // ── Exit intent form: fetch + success message (no redirect) ─────
     if (form.id === 'exitForm') {
       var pageType = location.pathname.split('/')[1] || 'home';

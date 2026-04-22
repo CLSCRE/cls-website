@@ -198,19 +198,65 @@
     </div>
 
     <div class="contact-right reveal">
-      <h3>Start Your Application</h3>
-      <p>Walk through a few quick questions about your deal and we'll match you with the right lender from our network of 1,000+ capital sources. Response within 24 hours.</p>
-      <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:32px;text-align:center">
-        <div style="font-size:48px;margin-bottom:16px">&#128196;</div>
-        <h4 style="font-family:var(--font-display);font-size:20px;color:var(--navy);margin:0 0 8px">2-Minute Application</h4>
-        <p style="font-size:14px;color:var(--gray-500);margin:0 0 24px;line-height:1.6">Tell us about your property, loan amount, and timeline. We'll present 3-5 financing options tailored to your deal.</p>
-        <a href="apply.html" class="btn-primary" style="display:inline-flex;justify-content:center;font-size:15px;padding:14px 40px;border:none;cursor:pointer;text-decoration:none">Start Application &rarr;</a>
-        <div style="margin-top:20px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap">
-          <div style="font-size:12px;color:var(--gray-500)"><strong style="color:var(--navy)">&#10003;</strong> No obligation</div>
-          <div style="font-size:12px;color:var(--gray-500)"><strong style="color:var(--navy)">&#10003;</strong> No credit check</div>
-          <div style="font-size:12px;color:var(--gray-500)"><strong style="color:var(--navy)">&#10003;</strong> 24-hour response</div>
+      <h3>Send Trevor a Message</h3>
+      <p>Quick note, question, or deal summary. Trevor personally reviews every submission and responds within 24 hours.</p>
+      <form id="contactForm" action="#" method="POST" style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:28px">
+        <input type="hidden" name="_subject" value="New Contact, Commercial Lending Solutions">
+        <input type="hidden" name="_next" value="https://clscre.com/thank-you.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_autoresponse" value="Thanks for reaching out. Trevor will review your message and respond within 24 hours. For anything urgent, call 310.758.4042 or email trevor@clscre.com directly.">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="company_website" tabindex="-1" autocomplete="off"></div>
+        <input type="hidden" name="_cls_token" value="">
+        <input type="hidden" name="Form Loaded At" value="">
+        <input type="hidden" name="Source Page" value="Contact Page Form">
+
+        <div style="margin-bottom:14px">
+          <label for="c_name" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.3px">Name <span style="color:#c0392b">*</span></label>
+          <input type="text" id="c_name" name="Name" required style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
         </div>
-      </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+          <div>
+            <label for="c_email" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.3px">Email <span style="color:#c0392b">*</span></label>
+            <input type="email" id="c_email" name="Email" required style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
+          </div>
+          <div>
+            <label for="c_phone" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.3px">Phone</label>
+            <input type="tel" id="c_phone" name="Phone" style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
+          </div>
+        </div>
+        <div style="margin-bottom:14px">
+          <label for="c_deal_type" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.3px">What's this about?</label>
+          <select id="c_deal_type" name="Inquiry Type" style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
+            <option value="">Select...</option>
+            <option value="New Deal">New Deal (Acquisition or Refinance)</option>
+            <option value="Affordable/EDI">Affordable Housing or EDI / ED1</option>
+            <option value="Construction">Ground-Up Construction</option>
+            <option value="Industrial">Industrial (Warehouse, Cold Storage, Data Center, Manufacturing)</option>
+            <option value="Multifamily">Multifamily</option>
+            <option value="Commercial">Commercial (Office, Retail, MOB, NNN, Hotel, Self-Storage)</option>
+            <option value="Broker Network">Broker / Lender Relationship</option>
+            <option value="General">General Question</option>
+          </select>
+        </div>
+        <div style="margin-bottom:16px">
+          <label for="c_message" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.3px">Message <span style="color:#c0392b">*</span></label>
+          <textarea id="c_message" name="Message" rows="5" required minlength="60" placeholder="Tell Trevor about the deal or question. The more detail you share (property type, sub-market, loan amount, business plan, timing), the faster we can get you a useful answer. Minimum 60 characters so the spam filter doesn't catch you." style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff;resize:vertical;min-height:120px"></textarea>
+          <div style="font-size:12px;color:var(--gray-500);margin-top:6px"><span id="c_message_count">0</span> characters (minimum 60)</div>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;font-size:15px;padding:14px;border:none;cursor:pointer">Send Message &rarr;</button>
+        <div style="margin-top:16px;text-align:center;font-size:12px;color:var(--gray-500)">
+          Prefer a full loan application? <a href="apply.html" style="color:var(--green);text-decoration:none;font-weight:600">Start the 2-minute wizard &rarr;</a>
+        </div>
+      </form>
+      <script>
+      (function(){
+        var t=document.getElementById('c_message'),c=document.getElementById('c_message_count');
+        if(!t||!c)return;
+        function u(){var n=t.value.trim().length;c.textContent=n;c.style.color=n>=60?'var(--green,#006A4E)':'var(--gray-500)';c.style.fontWeight=n>=60?'600':'400';}
+        t.addEventListener('input',u);u();
+      })();
+      </script>
     </div>
   </div>
 </div>
