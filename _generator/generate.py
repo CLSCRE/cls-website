@@ -200,6 +200,28 @@ def main():
         {"loc": f"{BASE_URL}/tools/edi-eligibility-check.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
     ]
 
+    # Geo landing pages (Tier 1) + LA submarket pages (Tier 2) — generated
+    # via scripts/generate_geo_landing_pages.py; listed here so full regens
+    # preserve them in the sitemap.
+    geo_data_path = DATA_DIR / "geo_landing.json"
+    if geo_data_path.exists():
+        _geo = json.loads(geo_data_path.read_text(encoding="utf-8"))
+        for _m in _geo.get("tier1_metros", []):
+            for _l in _geo.get("tier1_loan_types", []):
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/landing/{_m['slug']}-{_l['slug']}.html",
+                    "lastmod": TODAY,
+                    "changefreq": "weekly",
+                    "priority": "0.9",
+                })
+        for _s in _geo.get("tier2_la_submarkets", []):
+            sitemap_urls.append({
+                "loc": f"{BASE_URL}/markets/la/{_s['slug']}.html",
+                "lastmod": TODAY,
+                "changefreq": "monthly",
+                "priority": "0.8",
+            })
+
     # Vertical hubs + city x program programmatic pages (generated via
     # scripts/generate_city_{vertical}_pages.py; listed here so full regens
     # preserve them in the sitemap).

@@ -1,0 +1,128 @@
+{
+  "tier1_metros": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "is_hq": true,
+      "meet_in_person": "Our office is in LA. Meet Trevor in person at 7951 Blackburn Ave, or we can come to your property or office anywhere in the LA metro.",
+      "market_notes": "LA is the backyard for Commercial Lending Solutions. We close deals across LA County every month: Westside (Beverly Hills, Santa Monica, Culver City), DTLA and Arts District, Hollywood and Mid-Wilshire, the Valley (Burbank, Glendale, Sherman Oaks, Van Nuys), Long Beach, and the port-adjacent industrial corridor (Vernon, Commerce, Carson).",
+      "ads_priority": 1,
+      "typical_submarkets": "Beverly Hills, Santa Monica, Culver City, Downtown LA, Arts District, Koreatown, Hollywood, Mid-Wilshire, West LA, Sherman Oaks, Burbank, Pasadena, Long Beach, Vernon, Commerce"
+    },
+    {
+      "slug": "san-francisco",
+      "name": "San Francisco",
+      "state": "CA",
+      "is_hq": false,
+      "meet_in_person": "We travel to the Bay Area regularly to meet with sponsors, lenders, and developers in San Francisco, Oakland, Berkeley, and the Peninsula.",
+      "market_notes": "San Francisco CRE is dominated by tech-office bifurcation (Class A credit-tenant still funds, Class B CBD struggles), ground-up multifamily with local affordability overlays, mission-district and SOMA mixed-income LIHTC deals, and Peninsula biotech / life sciences.",
+      "ads_priority": 2,
+      "typical_submarkets": "Mission, SOMA, Downtown / Financial District, Nob Hill, Marina, Bayview / Hunters Point, Tenderloin, Outer Mission, Visitacion Valley"
+    },
+    {
+      "slug": "san-diego",
+      "name": "San Diego",
+      "state": "CA",
+      "is_hq": false,
+      "meet_in_person": "Our LA office is 2 hours from San Diego and we meet with SD sponsors regularly, either on-site or at Trevor's LA office.",
+      "market_notes": "San Diego CRE features strong multifamily fundamentals (military and biotech demand), active industrial along the I-15 and Otay Mesa corridors, biotech life sciences in Torrey Pines and Sorrento Valley, and hospitality in downtown, La Jolla, and coastal markets.",
+      "ads_priority": 3,
+      "typical_submarkets": "Downtown San Diego, La Jolla, Torrey Pines, Sorrento Valley, Carlsbad, Escondido, Chula Vista, National City, Barrio Logan, Mid-City"
+    },
+    {
+      "slug": "san-jose",
+      "name": "San Jose",
+      "state": "CA",
+      "is_hq": false,
+      "meet_in_person": "We meet with San Jose and greater Silicon Valley sponsors in person for deals meaningful enough to justify the trip from LA.",
+      "market_notes": "San Jose CRE is driven by Silicon Valley tech demand, aggressive multifamily ground-up under Measure E, SB 35 ministerial approval utilization, and strong deal flow in Sunnyvale / Santa Clara / Mountain View industrial-flex.",
+      "ads_priority": 4,
+      "typical_submarkets": "Downtown San Jose, Alum Rock, East San Jose, Berryessa, Sunnyvale, Santa Clara, Mountain View, Campbell, Willow Glen"
+    },
+    {
+      "slug": "sacramento",
+      "name": "Sacramento",
+      "state": "CA",
+      "is_hq": false,
+      "meet_in_person": "We travel to Sacramento for significant deals and coordinate with SHRA, HCD, and state programs on-site when needed.",
+      "market_notes": "Sacramento is a strategic market as California's capital and a priority metro for state HCD funding programs (HHAP, NPLH, AHSC, MHP). Strong affordable housing pipeline, active mixed-use development along the Blue Line, and ground-up market-rate in Midtown and Oak Park.",
+      "ads_priority": 5,
+      "typical_submarkets": "Downtown Sacramento, Midtown, Oak Park, Del Paso Heights, Meadowview, North Sacramento, Arden-Arcade, Florin, South Sacramento"
+    }
+  ],
+  "tier1_loan_types": [
+    {
+      "slug": "commercial-real-estate-loans",
+      "name": "Commercial Real Estate Loans",
+      "short_name": "Commercial Real Estate Financing",
+      "intent": "broadest search. Sponsor looking for a broker to source commercial real estate financing across any asset class and loan type.",
+      "typical_deal_range": "$5M to $200M+ across all CRE asset classes",
+      "typical_products": "Permanent (life company, CMBS, agency multifamily), bridge and transitional debt, construction and ground-up, SBA 504 / 7(a) owner-user, mezzanine and preferred equity, specialty (data center, cold storage, self-storage, hospitality)",
+      "primary_cta": "Get Your Free Quote",
+      "secondary_cta": "Call 310.758.4042"
+    },
+    {
+      "slug": "multifamily-loans",
+      "name": "Multifamily Loans",
+      "short_name": "Multifamily Financing",
+      "intent": "multifamily-specific search. Apartment sponsor, syndicator, or developer.",
+      "typical_deal_range": "$5M to $150M multifamily",
+      "typical_products": "Fannie Mae DUS (Small Balance, Target, Green Advantage), Freddie Mac Optigo (Target, SBL, Optigo Green), CMBS conduit, life insurance company permanent, value-add bridge (debt funds and mortgage REITs), ground-up construction, HUD 221(d)(4) and 223(f), workforce multifamily, affordable / LIHTC",
+      "primary_cta": "Get Multifamily Quote",
+      "secondary_cta": "Call 310.758.4042"
+    },
+    {
+      "slug": "bridge-loans",
+      "name": "Bridge Loans",
+      "short_name": "Bridge Financing",
+      "intent": "bridge-specific search. Transitional, value-add, acquisition, or repositioning.",
+      "typical_deal_range": "$5M to $100M bridge / transitional debt",
+      "typical_products": "Debt fund senior bridge, mortgage REIT bridge, construction bridge, acquisition bridge, value-add renovation bridge, predevelopment bridge, note purchase bridge, DIP financing",
+      "primary_cta": "Get Bridge Quote",
+      "secondary_cta": "Call 310.758.4042"
+    },
+    {
+      "slug": "construction-loans",
+      "name": "Construction Loans",
+      "short_name": "Construction Financing",
+      "intent": "construction-specific search. Ground-up developer.",
+      "typical_deal_range": "$10M to $200M ground-up construction",
+      "typical_products": "Bank construction (regional + national), debt fund non-bank construction, life company construction-to-permanent, HUD 221(d)(4), build-to-suit with credit tenant forward commitment, SBA 504 owner-user construction",
+      "primary_cta": "Get Construction Quote",
+      "secondary_cta": "Call 310.758.4042"
+    },
+    {
+      "slug": "sba-commercial-loans",
+      "name": "SBA Commercial Loans",
+      "short_name": "SBA 504 and 7(a) Financing",
+      "intent": "SBA-specific search. Owner-user buying or building their own commercial property.",
+      "typical_deal_range": "$1M to $15M owner-user SBA",
+      "typical_products": "SBA 504 first mortgage + CDC debenture (up to 90% LTC), SBA 7(a) working capital + real estate, SBA express, owner-user manufacturing, owner-user medical / dental, owner-user restaurant and retail, owner-user warehouse",
+      "primary_cta": "Get SBA Quote",
+      "secondary_cta": "Call 310.758.4042"
+    }
+  ],
+  "tier2_la_submarkets": [
+    {"slug": "beverly-hills", "name": "Beverly Hills", "region": "Westside", "property_focus": "Luxury multifamily, Class A office, premium retail (Rodeo Drive), net lease, boutique hospitality", "deal_size": "$10M to $100M+"},
+    {"slug": "santa-monica", "name": "Santa Monica", "region": "Westside / Coastal", "property_focus": "Multifamily (RSO), mixed-use, boutique office, hospitality, Main Street retail", "deal_size": "$8M to $75M"},
+    {"slug": "culver-city", "name": "Culver City", "region": "Westside", "property_focus": "Creative office (tech / studio), multifamily, mixed-use, flex industrial", "deal_size": "$10M to $80M"},
+    {"slug": "downtown-la", "name": "Downtown Los Angeles (DTLA)", "region": "Central LA", "property_focus": "Adaptive reuse (office-to-residential), ground-up multifamily, mixed-use, boutique hospitality, Arts District industrial-flex", "deal_size": "$10M to $150M"},
+    {"slug": "arts-district", "name": "Arts District", "region": "Central LA", "property_focus": "Creative office, adaptive reuse residential, boutique hospitality, mixed-use, specialty retail", "deal_size": "$8M to $50M"},
+    {"slug": "koreatown", "name": "Koreatown", "region": "Central LA", "property_focus": "Rent-stabilized multifamily value-add, ED1 ground-up affordable, mixed-use, hospitality, retail", "deal_size": "$5M to $50M"},
+    {"slug": "silver-lake", "name": "Silver Lake", "region": "Central / East LA", "property_focus": "Small-balance multifamily, ADU infill, mixed-use, neighborhood retail, creative office", "deal_size": "$3M to $30M"},
+    {"slug": "echo-park", "name": "Echo Park", "region": "Central / East LA", "property_focus": "Small-balance multifamily value-add, owner-operator residential, mixed-use, neighborhood retail", "deal_size": "$3M to $25M"},
+    {"slug": "hollywood", "name": "Hollywood", "region": "Central LA", "property_focus": "Multifamily, mixed-use, boutique hospitality, studio / creative office, retail", "deal_size": "$5M to $80M"},
+    {"slug": "mid-wilshire", "name": "Mid-Wilshire", "region": "Central LA", "property_focus": "Rent-stabilized multifamily, Class B office (some AB 2011 candidates), mixed-use, retail", "deal_size": "$5M to $40M"},
+    {"slug": "west-la", "name": "West LA", "region": "Westside", "property_focus": "Class A office, Expo Line TOD multifamily, medical office, creative office, retail", "deal_size": "$10M to $80M"},
+    {"slug": "brentwood", "name": "Brentwood", "region": "Westside", "property_focus": "Luxury multifamily, medical office, premium retail, creative office", "deal_size": "$10M to $75M"},
+    {"slug": "sherman-oaks", "name": "Sherman Oaks", "region": "San Fernando Valley", "property_focus": "Multifamily, mixed-use, retail strip centers, medical office", "deal_size": "$5M to $40M"},
+    {"slug": "burbank", "name": "Burbank", "region": "San Fernando Valley", "property_focus": "Studio / creative office, multifamily, mixed-use, retail, industrial near Burbank Airport", "deal_size": "$5M to $60M"},
+    {"slug": "pasadena", "name": "Pasadena", "region": "San Gabriel Valley", "property_focus": "Multifamily, Class A office (Old Town, Playhouse), medical office, retail, historic mixed-use", "deal_size": "$5M to $70M"},
+    {"slug": "glendale", "name": "Glendale", "region": "San Fernando Valley", "property_focus": "Multifamily, Class A / B office, self-storage, mixed-use, retail", "deal_size": "$5M to $50M"},
+    {"slug": "long-beach", "name": "Long Beach", "region": "South Bay", "property_focus": "Multifamily (RSO), Port-adjacent industrial, hospitality, downtown mixed-use, net lease retail", "deal_size": "$5M to $75M"},
+    {"slug": "el-segundo", "name": "El Segundo", "region": "South Bay / LAX Corridor", "property_focus": "Class A office (LAX corridor), industrial / flex, aerospace / defense owner-user, hospitality", "deal_size": "$10M to $80M"},
+    {"slug": "vernon-commerce", "name": "Vernon and Commerce", "region": "Central LA Industrial Corridor", "property_focus": "Heavy manufacturing, distribution warehouse, cold storage, food processing, specialty industrial", "deal_size": "$5M to $75M"},
+    {"slug": "playa-vista", "name": "Playa Vista", "region": "Westside / Silicon Beach", "property_focus": "Creative office (tech), multifamily, mixed-use, wellness / fitness amenity, retail", "deal_size": "$10M to $100M"}
+  ]
+}
