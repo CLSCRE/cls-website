@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Conversion event: push generate_lead before GTM loads so the event is in the dataLayer queue when tags fire -->
+<script>
+window.dataLayer = window.dataLayer || [];
+(function(){
+  var raw = '';
+  try { raw = (new URLSearchParams(location.search).get('form') || '').toLowerCase(); } catch(e) {}
+  var allowed = {contact:1, apply:1, 'submit-deal':1, 'broker-portal':1, exit:1, newsletter:1, generic:1};
+  var formType = allowed[raw] ? raw : 'contact';
+  window.dataLayer.push({
+    event: 'generate_lead',
+    form_type: formType,
+    page_referrer: document.referrer || ''
+  });
+})();
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PH6TD3TC');</script>
 <!-- End Google Tag Manager -->
@@ -193,6 +208,7 @@
 const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
 const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
 </script>
+<script src="js/tracking.js" defer></script>
 <script src="js/chatbot.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
 </body>

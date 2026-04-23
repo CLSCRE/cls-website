@@ -758,6 +758,8 @@
       if (typeof gtag === 'function') {
         gtag('event', 'exit_lead_capture', {page_type: pageType, page_url: location.href});
       }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event: 'generate_lead', form_type: 'exit', page_type: pageType, page_referrer: location.href});
       // localStorage backup
       var exitEmail = (form.querySelector('[name="Email"]') || {}).value || '';
       var exitName = (form.querySelector('[name="Name"]') || {}).value || '';
