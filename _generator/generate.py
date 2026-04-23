@@ -111,19 +111,19 @@ def build_neighborhood_faqs(city, neighborhood, city_data=None):
     faqs = [
         {
             "q": f"What commercial loan options are available in {neighborhood}?",
-            "a": f"CLS CRE provides a full range of commercial loan products for {neighborhood}, {city_name} properties, including permanent loans, bridge loans, construction financing, SBA 504/7(a) loans, mezzanine debt, and specialty financing. We source from 1,000+ lenders to find the most competitive terms for your specific property and business plan.{rate_info}",
+            "a": f"Commercial Lending Solutions provides a full range of commercial loan products for {neighborhood}, {city_name} properties, including permanent loans, bridge loans, construction financing, SBA 504/7(a) loans, mezzanine debt, and specialty financing. We source from 1,000+ lenders to find the most competitive terms for your specific property and business plan.{rate_info}",
         },
         {
             "q": f"What types of commercial properties are in {neighborhood}?",
-            "a": f"{neighborhood} features a diverse mix of commercial real estate, including multifamily apartments, industrial and warehouse space, retail centers, office buildings, mixed-use developments, and hospitality properties. CLS CRE finances all major property types in {neighborhood} and the broader {city_name} market.{vacancy_info}",
+            "a": f"{neighborhood} features a diverse mix of commercial real estate, including multifamily apartments, industrial and warehouse space, retail centers, office buildings, mixed-use developments, and hospitality properties. Commercial Lending Solutions finances all major property types in {neighborhood} and the broader {city_name} market.{vacancy_info}",
         },
         {
             "q": f"How do I get a commercial mortgage in {neighborhood}, {city_name}?",
-            "a": f"Contact CLS CRE for a free, no-obligation quote on commercial financing in {neighborhood}, {city_name}, {state}. Our team will analyze your property, business plan, and financial profile to identify the best lender match from our network of 1,000+ capital sources. Most borrowers receive term sheets within 48-72 hours of submitting a complete loan request.",
+            "a": f"Contact Commercial Lending Solutions for a free, no-obligation quote on commercial financing in {neighborhood}, {city_name}, {state}. Our team will analyze your property, business plan, and financial profile to identify the best lender match from our network of 1,000+ capital sources. Most borrowers receive term sheets within 48-72 hours of submitting a complete loan request.",
         },
         {
             "q": f"What are commercial real estate rates in {neighborhood}?",
-            "a": f"Commercial real estate rates in {neighborhood} and the {city_name} metro vary by loan type, property type, leverage, and borrower profile. Permanent loan rates typically range from 5.34% to 8.25%, bridge loans from 7.5% to 12%, and construction loans from 8% to 13%. CLS CRE leverages lender competition to secure the most aggressive pricing available for your deal.",
+            "a": f"Commercial real estate rates in {neighborhood} and the {city_name} metro vary by loan type, property type, leverage, and borrower profile. Permanent loan rates typically range from 5.34% to 8.25%, bridge loans from 7.5% to 12%, and construction loans from 8% to 13%. Commercial Lending Solutions leverages lender competition to secure the most aggressive pricing available for your deal.",
         },
     ]
     return faqs
@@ -354,8 +354,8 @@ def main():
                 faqs_data.get("city_templates", {}), loan=loan, city=city
             )
             seo = {
-                "title": f"{loan['name']} in {city['city']}, {city['state']} | CLS CRE",
-                "meta_description": f"{loan['name']} for commercial real estate in {city['city']}, {city['state']}. Competitive rates from 1,000+ lenders. Get a free quote from CLS CRE.",
+                "title": f"{loan['name']} in {city['city']}, {city['state']} | Commercial Lending Solutions",
+                "meta_description": f"{loan['name']} for commercial real estate in {city['city']}, {city['state']}. Competitive rates from 1,000+ lenders. Get a free quote from Commercial Lending Solutions.",
             }
             slug = f"{loan['slug']}-{city['slug']}"
             html = tpl_city_fin.render(
@@ -389,8 +389,8 @@ def main():
                 faqs_data.get("city_templates", {}), prop=prop, city=city
             )
             seo = {
-                "title": f"{prop['name']} Financing in {city['city']}, {city['state']} | CLS CRE",
-                "meta_description": f"{prop['name']} financing in {city['city']}, {city['state']}. Banks, life companies, CMBS, bridge & construction loans. Free quote from CLS CRE.",
+                "title": f"{prop['name']} Financing in {city['city']}, {city['state']} | Commercial Lending Solutions",
+                "meta_description": f"{prop['name']} financing in {city['city']}, {city['state']}. Banks, life companies, CMBS, bridge & construction loans. Free quote from Commercial Lending Solutions.",
             }
             slug = f"{prop['slug']}-{city['slug']}"
             html = tpl_city_prop.render(
@@ -421,8 +421,8 @@ def main():
         articles=articles,
         categories=categories,
         seo={
-            "title": "CRE Insights & Market Analysis | CLS CRE Blog",
-            "meta_description": "Expert insights on commercial real estate financing, interest rates, market trends, and investment strategies from CLS CRE.",
+            "title": "CRE Insights & Market Analysis | Commercial Lending Solutions",
+            "meta_description": "Expert insights on commercial real estate financing, interest rates, market trends, and investment strategies from Commercial Lending Solutions.",
         },
         canonical_path="blog/",
         depth="../",
@@ -486,7 +486,7 @@ def main():
             related_articles=related,
             related_cities=related_cities,
             seo={
-                "title": f"{article['title']} | CLS CRE",
+                "title": f"{article['title']} | Commercial Lending Solutions",
                 "meta_description": article["excerpt"],
             },
             canonical_path=f"blog/{article['slug']}.html",
@@ -513,8 +513,8 @@ def main():
         states_sorted=states_sorted,
         total_pages=total_city_pages,
         seo={
-            "title": "Commercial Real Estate Financing Locations | CLS CRE",
-            "meta_description": f"CLS CRE provides commercial mortgage brokerage in {len(cities)} major U.S. metros. Browse financing programs and property types by city.",
+            "title": "Commercial Real Estate Financing Locations | Commercial Lending Solutions",
+            "meta_description": f"Commercial Lending Solutions provides commercial mortgage brokerage in {len(cities)} major U.S. metros. Browse financing programs and property types by city.",
         },
         canonical_path="locations.html",
         depth="",
@@ -560,7 +560,7 @@ def main():
             other_neighborhoods = [nb for nb in neighborhood_list if nb["slug"] != n_slug]
             faqs = build_neighborhood_faqs(city, n_name, city_data)
             seo = {
-                "title": f"{n_name} Commercial Loans | CLS CRE",
+                "title": f"{n_name} Commercial Loans | Commercial Lending Solutions",
                 "meta_description": f"Commercial real estate financing in {n_name}, {city['city']}, {city['state']}. Bridge, permanent, construction, and SBA loans from 1,000+ lenders. Get a free quote.",
             }
             canonical = f"markets/{city['slug']}/{n_slug}.html"
@@ -586,7 +586,7 @@ def main():
             })
         # Generate city market index page
         seo_index = {
-            "title": f"Commercial Real Estate Financing in {city['city']}, {city['state']} | CLS CRE",
+            "title": f"Commercial Real Estate Financing in {city['city']}, {city['state']} | Commercial Lending Solutions",
             "meta_description": f"Explore commercial lending options by neighborhood in {city['city']}, {city['state']}. Browse {len(neighborhoods)} submarkets with financing for every property type.",
         }
         html = tpl_market_index.render(
@@ -608,19 +608,19 @@ def main():
     # ── 9. Calculator / Tool Pages ──────────────────────────────────────
     print("\n=== Generating Calculator Pages ===")
     tool_pages = [
-        ("tool_index.html", "tools/index.html", "tools/", "Calculators & Tools | CLS CRE",
+        ("tool_index.html", "tools/index.html", "tools/", "Calculators & Tools | Commercial Lending Solutions",
          "Free commercial real estate calculators for DSCR, cap rate, and loan payments.", "0.8"),
-        ("tool_dscr.html", "tools/dscr-calculator.html", "tools/dscr-calculator.html", "DSCR Calculator | CLS CRE",
+        ("tool_dscr.html", "tools/dscr-calculator.html", "tools/dscr-calculator.html", "DSCR Calculator | Commercial Lending Solutions",
          "Free Debt Service Coverage Ratio calculator for commercial real estate.", "0.8"),
-        ("tool_caprate.html", "tools/cap-rate-calculator.html", "tools/cap-rate-calculator.html", "Cap Rate Calculator | CLS CRE",
+        ("tool_caprate.html", "tools/cap-rate-calculator.html", "tools/cap-rate-calculator.html", "Cap Rate Calculator | Commercial Lending Solutions",
          "Free capitalization rate calculator for commercial real estate.", "0.8"),
-        ("tool_loan.html", "tools/loan-calculator.html", "tools/loan-calculator.html", "Commercial Loan Payment Calculator | CLS CRE",
+        ("tool_loan.html", "tools/loan-calculator.html", "tools/loan-calculator.html", "Commercial Loan Payment Calculator | Commercial Lending Solutions",
          "Free commercial mortgage payment calculator with I/O periods and amortization.", "0.8"),
-        ("tool_ltv.html", "tools/ltv-calculator.html", "tools/ltv-calculator.html", "LTV Calculator | CLS CRE",
+        ("tool_ltv.html", "tools/ltv-calculator.html", "tools/ltv-calculator.html", "LTV Calculator | Commercial Lending Solutions",
          "Free Loan-to-Value calculator for commercial real estate. See typical LTV limits by lender type.", "0.8"),
-        ("tool_cashoncash.html", "tools/cashoncash-calculator.html", "tools/cashoncash-calculator.html", "Cash-on-Cash Return Calculator | CLS CRE",
+        ("tool_cashoncash.html", "tools/cashoncash-calculator.html", "tools/cashoncash-calculator.html", "Cash-on-Cash Return Calculator | Commercial Lending Solutions",
          "Free cash-on-cash return calculator for commercial real estate investments.", "0.8"),
-        ("tool_noi.html", "tools/noi-calculator.html", "tools/noi-calculator.html", "NOI Calculator | CLS CRE",
+        ("tool_noi.html", "tools/noi-calculator.html", "tools/noi-calculator.html", "NOI Calculator | Commercial Lending Solutions",
          "Free Net Operating Income calculator for commercial real estate. Calculate NOI from income and expenses.", "0.8"),
     ]
     for tpl_name, out_rel, canonical, title, desc, priority in tool_pages:

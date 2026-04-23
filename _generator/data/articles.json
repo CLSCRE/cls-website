@@ -1,5 +1,82 @@
 [
   {
+    "slug": "market-perspective-april-2026",
+    "title": "Commercial Lending Solutions Market Perspective: April 2026",
+    "excerpt": "April 2026 capital markets show surprising life insurance company activity in industrial and stabilized multifamily, while CMBS execution continues to improve on spread compression and renewed investor appetite for BBB tranches.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-01",
+    "date_formatted": "April 2026",
+    "category": "Market Perspective",
+    "tags": [
+      "market perspective",
+      "CRE capital markets",
+      "commercial mortgage rates",
+      "lender appetite",
+      "april 2026"
+    ],
+    "type": "monthly_perspective"
+  },
+  {
+    "slug": "lihtc-investor-pricing-commentary-2026-04-20",
+    "title": "LIHTC Investor Pricing Commentary (Week of April 20, 2026)",
+    "excerpt": "Commentary on LIHTC investor pricing trends (4 percent and 9 percent), appetite for different deal profiles, and how pricing affects sponsor economics. Use ranges not specific figures.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-20",
+    "date_formatted": "April 20, 2026",
+    "category": "Affordable Housing Commentary",
+    "tags": [
+      "affordable",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_affordable"
+  },
+  {
+    "slug": "flex-shallow-bay-infill-trend-2026-04-20",
+    "title": "Flex and Shallow-Bay Industrial Infill Trend (Week of April 20, 2026)",
+    "excerpt": "Commentary on shallow-bay industrial infill market dynamics in supply-constrained metros, rent growth, and tenant stickiness for the multi-tenant industrial segment.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-20",
+    "date_formatted": "April 20, 2026",
+    "category": "Industrial Commentary",
+    "tags": [
+      "industrial",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_industrial"
+  },
+  {
+    "slug": "workforce-multifamily-agency-appetite-2026-04-20",
+    "title": "Workforce Multifamily Agency Appetite (Week of April 20, 2026)",
+    "excerpt": "Commentary on Fannie MAH and Freddie TAH workforce program activity, pricing advantages over market-rate execution, and deal profile fit.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-20",
+    "date_formatted": "April 20, 2026",
+    "category": "Multifamily Commentary",
+    "tags": [
+      "multifamily",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_multifamily"
+  },
+  {
+    "slug": "hospitality-revpar-recovery-lender-2026-04-20",
+    "title": "Hospitality RevPAR Recovery and Lender Commentary (Week of April 20, 2026)",
+    "excerpt": "Commentary on hospitality RevPAR recovery dynamics by segment (luxury, upscale, select-service, limited-service) and how specialty hospitality lenders are pricing deals.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-20",
+    "date_formatted": "April 20, 2026",
+    "category": "Commercial Commentary",
+    "tags": [
+      "commercial",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_commercial"
+  },
+  {
     "slug": "commercial-mortgage-rates-week-2026-03-30",
     "title": "Commercial Mortgage Rates: Week of March 30, 2026",
     "excerpt": "Commercial mortgage rates edge higher as Treasury yields climb above key technical levels, while multifamily lending shows renewed strength heading into Q2 2026.",
