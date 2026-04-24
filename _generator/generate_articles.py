@@ -26,18 +26,24 @@ CONTENT_TEMPLATE_DIR = SCRIPT_DIR / "content_templates"
 
 # ── Article definitions ────────────────────────────────────────────────
 
-# Type A: 15 City Market Reports
+# Type A: City Market Reports (Tier 1 cities with full blog coverage)
 MARKET_REPORT_CITIES = [
     "los-angeles", "new-york", "dallas", "phoenix", "houston",
     "miami", "atlanta", "chicago", "denver", "seattle",
     "austin", "nashville", "tampa", "charlotte", "boston",
+    "fort-lauderdale", "west-palm-beach", "durham", "colorado-springs",
+    "huntsville", "provo", "boulder", "reno", "ann-arbor", "madison",
+    "des-moines", "lexington",
 ]
 
-# All 15 cities used across all guide types
+# All Tier 1 cities used across all guide types
 ALL_CITIES = [
     "los-angeles", "new-york", "dallas", "phoenix", "houston",
     "miami", "atlanta", "chicago", "denver", "seattle",
     "austin", "nashville", "tampa", "charlotte", "boston",
+    "fort-lauderdale", "west-palm-beach", "durham", "colorado-springs",
+    "huntsville", "provo", "boulder", "reno", "ann-arbor", "madison",
+    "des-moines", "lexington",
 ]
 
 # Loan slug → context key mapping
@@ -222,7 +228,7 @@ def main():
 
     # ── Type A: City Market Reports (15) ─────────────────────────────
     print("\n  --- Type A: City Market Reports ---")
-    type_a_dates = stagger_dates("2026-01-05", 15, 4)
+    type_a_dates = stagger_dates("2026-01-05", len(MARKET_REPORT_CITIES), 4)
 
     for i, city_slug in enumerate(MARKET_REPORT_CITIES):
         city = city_by_slug[city_slug]
