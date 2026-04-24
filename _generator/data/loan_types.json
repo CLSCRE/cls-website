@@ -136,5 +136,97 @@
       "meta_description": "Financing for specialty commercial properties: self-storage, data centers, marinas, entertainment venues, and more. Creative structuring with 1,000+ lender relationships.",
       "h1": "Specialty Commercial Real Estate Financing"
     }
+  },
+  {
+    "slug": "agency-loans",
+    "name": "Agency Loans",
+    "short_name": "Agency",
+    "headline": "Fannie Mae & Freddie Mac Multifamily Financing",
+    "description": "Agency loans from Fannie Mae and Freddie Mac are the most competitive financing option for stabilized multifamily properties. These government-sponsored enterprise programs offer the lowest rates, highest leverage, and longest terms available for conventional, affordable, and manufactured housing communities nationwide.",
+    "description_extended": "Agency financing dominates the multifamily capital markets because Fannie Mae and Freddie Mac are purpose-built to provide liquidity for rental housing. Program options include Fannie Mae DUS and Small Balance Loans, Freddie Mac Optigo Conventional and Small Balance Loans, and specialized executions for affordable, seniors, student, and green-certified properties. Commercial Lending Solutions has direct relationships with every major agency DUS and Optigo lender, ensuring borrowers see the full menu of rate, term, and structure options before locking a quote.",
+    "key_features": {
+      "loan_amount": "$1M to $100M+",
+      "term": "5 to 30 Years",
+      "rates": "5.34% to 6.75%",
+      "ltv": "Up to 80% LTV",
+      "amortization": "30 Years",
+      "recourse": "Non-Recourse Standard"
+    },
+    "lender_sources": ["Fannie Mae DUS Lenders", "Freddie Mac Optigo Lenders", "Fannie Mae Small Balance Loan Lenders", "Freddie Mac Small Balance Loan Lenders"],
+    "ideal_for": ["Stabilized conventional apartments", "Affordable and workforce housing", "Manufactured housing communities", "Student housing properties", "Senior independent and assisted living", "Green-certified and energy-efficient multifamily"],
+    "seo": {
+      "title": "Fannie Mae & Freddie Mac Agency Loans | CLS CRE",
+      "meta_description": "Agency multifamily financing from Fannie Mae and Freddie Mac. Lowest rates, up to 80% LTV, non-recourse, 30-year amortization. $1M to $100M+. Get a free quote.",
+      "h1": "Fannie Mae & Freddie Mac Agency Loans"
+    }
+  },
+  {
+    "slug": "hud-fha-loans",
+    "name": "HUD/FHA Multifamily Loans",
+    "short_name": "HUD/FHA",
+    "headline": "HUD & FHA Insured Multifamily and Healthcare Financing",
+    "description": "HUD and FHA multifamily loans offer the longest terms and highest leverage available in commercial real estate. Programs like 223(f) for refinance and acquisition, 221(d)(4) for new construction and substantial rehab, 223(a)(7) for streamlined refinance, and 232 for seniors housing and healthcare deliver 35 to 40 year fully amortizing non-recourse debt at below-market rates.",
+    "description_extended": "FHA insurance, administered by HUD, allows lenders to provide loan terms that no other capital source can match. The tradeoff is a longer, more prescriptive closing process, typically 6 to 9 months, with detailed physical and financial underwriting. For borrowers who plan to hold assets long term, HUD/FHA is often the most accretive execution available. Commercial Lending Solutions works with a deep bench of HUD MAP-approved lenders to structure applications that move efficiently through FHA review.",
+    "key_features": {
+      "loan_amount": "$5M to $100M+",
+      "term": "35 to 40 Years",
+      "rates": "5.25% to 6.75%",
+      "ltv": "Up to 85% LTV (90% for affordable)",
+      "amortization": "Fully Amortizing",
+      "recourse": "Non-Recourse"
+    },
+    "lender_sources": ["HUD MAP-Approved Lenders", "FHA LEAN-Approved Lenders (Healthcare)", "Specialty Affordable Housing Lenders"],
+    "ideal_for": ["Market-rate multifamily refinance and acquisition (223(f))", "New construction and substantial rehab (221(d)(4))", "Streamlined rate-and-term refinance (223(a)(7))", "Seniors housing, assisted living, and skilled nursing (232)", "LIHTC and affordable preservation", "Workforce housing with long hold strategies"],
+    "seo": {
+      "title": "HUD & FHA Multifamily Loans | CLS CRE",
+      "meta_description": "HUD and FHA multifamily financing with 35 to 40 year terms, non-recourse, up to 85% LTV. 223(f), 221(d)(4), 223(a)(7), 232 programs. $5M+. Get a free quote.",
+      "h1": "HUD & FHA Multifamily Loans"
+    }
+  },
+  {
+    "slug": "cmbs-loans",
+    "name": "CMBS Loans",
+    "short_name": "CMBS",
+    "headline": "Commercial Mortgage-Backed Securities Financing",
+    "description": "CMBS (commercial mortgage-backed securities) loans provide non-recourse fixed-rate financing for stabilized commercial real estate by pooling individual loans into securities sold to institutional investors. CMBS is the most liquid source of capital for secondary-market assets and properties with complex stories, offering leverage and proceeds that banks and life companies often cannot match.",
+    "description_extended": "CMBS lenders (also called conduits) typically offer 5, 7, and 10 year fixed-rate loans with 25 to 30 year amortization and non-recourse terms subject to standard carve-outs. The securitization process means the lender cares less about relationship and more about credit metrics, which works in favor of borrowers with strong properties but limited banking relationships, or for properties in markets where local bank appetite is thin. Commercial Lending Solutions runs every eligible deal through multiple CMBS desks simultaneously to capture the tightest spread.",
+    "key_features": {
+      "loan_amount": "$5M to $100M+",
+      "term": "5, 7, or 10 Years",
+      "rates": "5.50% to 7.50%",
+      "ltv": "Up to 75% LTV",
+      "amortization": "25 to 30 Years",
+      "recourse": "Non-Recourse Standard"
+    },
+    "lender_sources": ["Conduit Lenders (Wall Street and Major Banks)", "Investment Banks", "Specialty CMBS Platforms"],
+    "ideal_for": ["Stabilized multifamily, industrial, retail, office, hospitality, and self-storage", "Class B and Class C properties in secondary markets", "Portfolio refinance across multiple states", "Cash-out refinance scenarios", "Properties with strong metrics but weak banking relationships", "Deals requiring maximum proceeds and non-recourse terms"],
+    "seo": {
+      "title": "CMBS Commercial Loans | CLS CRE",
+      "meta_description": "CMBS conduit financing for stabilized commercial real estate. Non-recourse, 10-year fixed rates, up to 75% LTV, $5M to $100M+. All property types. Get a quote.",
+      "h1": "CMBS Commercial Mortgage Loans"
+    }
+  },
+  {
+    "slug": "life-company-loans",
+    "name": "Life Company Loans",
+    "short_name": "Life Company",
+    "headline": "Life Insurance Company Commercial Real Estate Financing",
+    "description": "Life insurance company loans deliver the most competitive rates available in commercial real estate for institutional-quality stabilized assets. Life companies prioritize long-term matched-asset investments, so they reward borrowers with premium properties, strong sponsors, and conservative leverage by offering the tightest spreads over treasuries in the market.",
+    "description_extended": "Life insurance companies fund commercial mortgages directly from their general accounts, which means they can offer fixed-rate terms up to 25 years (and occasionally 30 years), prepayment flexibility other capital sources cannot, and non-recourse structures with minimal carve-outs. The tradeoff is more conservative underwriting: life companies typically cap leverage at 60 to 70% and focus on institutional-quality assets in primary and strong secondary markets. Commercial Lending Solutions has direct allocation relationships with the largest life company lenders and knows which desks have open appetite at any given moment.",
+    "key_features": {
+      "loan_amount": "$3M to $100M+",
+      "term": "7 to 25 Years",
+      "rates": "5.00% to 6.50%",
+      "ltv": "Up to 65% LTV",
+      "amortization": "25 to 30 Years",
+      "recourse": "Non-Recourse Standard"
+    },
+    "lender_sources": ["Top-Tier Life Insurance Companies", "Mutual Life Companies", "Mid-Sized Life Insurance Lenders", "Correspondent Life Company Programs"],
+    "ideal_for": ["Class A office and industrial in primary markets", "Institutional-quality multifamily portfolios", "Anchored retail with credit tenants", "Net lease properties with investment-grade guarantors", "Long-term hold strategies", "Borrowers prioritizing rate over leverage"],
+    "seo": {
+      "title": "Life Insurance Company Commercial Loans | CLS CRE",
+      "meta_description": "Life insurance company commercial real estate loans. Lowest fixed rates, 25-year terms, non-recourse, $3M to $100M+. Direct life company relationships. Get a quote.",
+      "h1": "Life Insurance Company Commercial Real Estate Loans"
+    }
   }
 ]

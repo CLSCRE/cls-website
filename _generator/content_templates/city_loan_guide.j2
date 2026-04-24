@@ -1,4 +1,8 @@
+{% if loan_key in data.loan_context %}
 <p>{{ data.loan_context[loan_key] }}</p>
+{% else %}
+<p>In the {{ city.city }} market, {{ loan.name.lower() }} give sophisticated commercial real estate borrowers access to {{ loan.headline.lower() }}. {{ loan.description }}</p>
+{% endif %}
 
 <h2>When to Use {{ loan.name }} in {{ city.city }}</h2>
 <p>{{ city.city }}'s commercial real estate market, driven by {{ data.stats.major_employers }}, creates specific scenarios where {{ loan.name.lower() }} are the optimal financing choice:</p>

@@ -48,7 +48,25 @@ LOAN_TYPES_MAP = [
     ("sba-loans", "sba"),
     ("mezzanine", "mezzanine"),
     ("specialty", "specialty"),
+    ("agency-loans", "agency"),
+    ("hud-fha-loans", "hud"),
+    ("cmbs-loans", "cmbs"),
+    ("life-company-loans", "life-company"),
 ]
+
+# Close-time phrasing per loan_key (used in blog-article FAQ builder)
+CLOSE_TIME_PHRASES = {
+    "bridge": "Bridge loans can close in as little as 2-4 weeks",
+    "permanent": "Permanent loans typically close in 60-90 days",
+    "construction": "Construction loans typically close in 45-90 days",
+    "sba": "SBA loans typically close in 60-120 days",
+    "mezzanine": "Mezzanine and preferred equity can close in 30-60 days",
+    "specialty": "Specialty financing timelines vary widely, typically 30-90 days",
+    "agency": "Agency loans (Fannie Mae and Freddie Mac) typically close in 45-90 days",
+    "hud": "HUD/FHA loans have the longest timeline of any commercial program, typically closing in 6 to 9 months",
+    "cmbs": "CMBS loans typically close in 60-90 days once the rate is locked",
+    "life-company": "Life insurance company loans typically close in 45-90 days",
+}
 
 # Type B: 90 City × Loan Type Guides (6 loan types × 15 cities each)
 LOAN_GUIDE_COMBOS = [
@@ -134,7 +152,7 @@ def build_loan_guide_faqs(city, loan, data, loan_key):
         },
         {
             "q": f"How long does it take to close a {loan['short_name'].lower()} loan in {city['city']}?",
-            "a": f"{'Bridge loans can close in as little as 2-4 weeks' if loan_key == 'bridge' else 'Permanent loans typically close in 60-90 days' if loan_key == 'permanent' else 'Construction loans typically close in 45-90 days' if loan_key == 'construction' else 'SBA loans typically close in 60-120 days' if loan_key == 'sba' else 'Mezzanine and preferred equity can close in 30-60 days' if loan_key == 'mezzanine' else 'Specialty financing timelines vary widely, typically 30-90 days'} in the {city['city']} market, depending on deal complexity, lender requirements, and property condition."
+            "a": f"{CLOSE_TIME_PHRASES.get(loan_key, 'Commercial loans typically close in 45-90 days')} in the {city['city']} market, depending on deal complexity, lender requirements, and property condition."
         },
     ]
 
