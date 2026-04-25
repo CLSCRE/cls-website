@@ -1608,5 +1608,767 @@
         "sub": "Structural decision"
       }
     ]
+  },
+  {
+    "slug": "sba-504-vs-bank-conventional-owner-user",
+    "short_title": "SBA 504 vs Bank Conventional for Owner-User",
+    "h1": "SBA 504 vs Bank Conventional Financing for Owner-User CRE: How to Choose",
+    "name_a": "SBA 504",
+    "name_b": "Bank Conventional",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "SBA 504 vs Bank Conventional for Owner-User CRE | CLS CRE",
+      "meta_description": "Side-by-side comparison of SBA 504 and conventional bank financing for owner-user commercial real estate. Down payment, rate, term, and structure differences."
+    },
+    "lead": "Owner-user commercial real estate buyers face a foundational financing decision: SBA 504 at 90 percent leverage with a fixed-rate CDC second lien, or conventional bank balance sheet at 70 to 80 percent leverage with a more flexible structure. SBA 504 wins on leverage and long-term fixed-rate cost of capital. Bank conventional wins on speed, simplicity, and prepayment flexibility. The decision affects down payment by 15 to 25 percentage points and locked-in cost of capital by hundreds of thousands of dollars over the hold period.",
+    "table": [
+      {
+        "feature": "Maximum LTV",
+        "side_a": "90 percent (10 percent down)",
+        "side_b": "70 to 80 percent (20 to 30 percent down)"
+      },
+      {
+        "feature": "Rate structure",
+        "side_a": "Fixed (CDC second lien) + bank first (often fixed 5 to 10 yr balloon)",
+        "side_b": "Fixed 5 to 10 year balloon, or floating"
+      },
+      {
+        "feature": "Rate range (Apr 2026)",
+        "side_a": "Bank 1st 6.75 to 7.75% / CDC 5.50 to 6.00% fixed",
+        "side_b": "6.75 to 8.50%"
+      },
+      {
+        "feature": "Term",
+        "side_a": "10, 20, or 25 years (CDC); 5 to 10 years bank first",
+        "side_b": "5 to 10 years (typical)"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "20 or 25 year (CDC); 25 year (bank first)",
+        "side_b": "20 to 25 year typical"
+      },
+      {
+        "feature": "Prepayment penalty",
+        "side_a": "10-year declining (10,9,8,7,6,5,4,3,2,1) on CDC; bank first varies",
+        "side_b": "5,4,3,2,1 typical"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Personal guarantee required (federal SBA rule)",
+        "side_b": "Recourse typical; sometimes partial recourse on stronger sponsors"
+      },
+      {
+        "feature": "Close timeline",
+        "side_a": "60 to 90 days",
+        "side_b": "45 to 75 days"
+      },
+      {
+        "feature": "Special-purpose adjustment",
+        "side_a": "20 percent down for special-purpose property",
+        "side_b": "Varies; sometimes proceeds reduction"
+      },
+      {
+        "feature": "Documentation depth",
+        "side_a": "SBA + CDC + bank (heavy)",
+        "side_b": "Bank only (moderate)"
+      },
+      {
+        "feature": "Fee load",
+        "side_a": "CDC fees ~3.5% (financed into loan)",
+        "side_b": "Bank fees 0.5 to 1.5% (paid out of pocket or financed)"
+      },
+      {
+        "feature": "Refinance flexibility",
+        "side_a": "10-year prepay schedule constrains early exit",
+        "side_b": "Standard bank prepay (typically clears at year 5)"
+      }
+    ],
+    "when_a_intro": "SBA 504 wins when the borrower wants 90 percent leverage and long-term fixed-rate cost of capital lock. The structure is purpose-built for owner-operators who plan multi-decade hold horizons.",
+    "when_a_bullets": [
+      "Owner-user wants 90 percent LTC at low down payment",
+      "Fixed-rate CDC second lien locks in cost of capital for 20 or 25 years",
+      "Multi-decade hold horizon supports the 10-year prepayment schedule",
+      "Bank balance sheet alone would not lend at the leverage SBA 504 provides",
+      "Manufacturing or energy-efficient project qualifying for $5.5M elevated SBA exposure",
+      "Borrower wants no balloon on the CDC second lien"
+    ],
+    "when_b_intro": "Bank conventional wins when the borrower has the down payment, prefers prepayment flexibility, or wants speed and simplicity over leverage. Established sponsors with depository relationships often access tighter pricing through bank balance sheet.",
+    "when_b_bullets": [
+      "Borrower has 25 to 35 percent down available and prefers a single loan",
+      "Sponsor relationship with depository bank delivers competitive pricing",
+      "Prepayment flexibility (5 year clear) is more important than the SBA leverage",
+      "Speed-to-close (45 to 75 days versus 60 to 90 for SBA) matters for a competing transaction",
+      "Property does not qualify for SBA (e.g., over the size cap, or borrower exceeds SBA size limits)",
+      "Borrower wants the operational simplicity of a single bank lender relationship"
+    ],
+    "decision_framework": [
+      "Calculate the down payment dollar value. The difference between SBA 504 (10 percent) and bank conventional (25 to 35 percent) on a $5M project is $750K to $1.25M of equity. For most owner-operators, that equity differential is meaningful. SBA 504 typically wins on leverage by a wide margin.",
+      "Run after-tax cost of capital. The SBA 504 blended rate (50 percent bank first plus 40 percent CDC second plus 10 percent down) is typically 50 to 150 basis points inside bank conventional on the financed portion. Over a 10-year hold, that 50 to 150 basis point spread on a $5M project is $50K to $300K of saved interest.",
+      "Evaluate prepayment exposure. The SBA 504 CDC piece has a 10-year declining prepayment penalty that can be a meaningful constraint if the sponsor sells the business or refinances early. Bank conventional typically has 5,4,3,2,1 prepayment that clears at year 5. Sponsors planning early exit favor bank conventional.",
+      "Consider the relationship value. Bank conventional financing through a depository relationship can be paired with operating account, treasury management, business credit cards, payroll, and other banking services that have value beyond the loan. SBA 504 is typically separate from the depository relationship."
+    ],
+    "real_deal_example": "On a $4.2M owner-user industrial purchase in Long Beach, the buyer evaluated two competing structures. SBA 504 at 90 percent LTC with a 50 percent bank first at 6.95 percent fixed and a 40 percent CDC second at 5.85 percent fixed (blended ~6.46 percent on the financed portion) versus a bank conventional 5-year fixed at 7.45 percent at 70 percent LTV (30 percent down). SBA 504 won on $1.05M less down payment and approximately $480K of interest savings over a 10-year hold. The borrower took SBA 504 despite the longer 75-day close versus 45-day bank conventional close. The seller agreed to a 90-day close window to accommodate.",
+    "expert_quote": "On most owner-user real estate purchases, SBA 504 wins on leverage and long-term fixed-rate cost of capital. The 10-year declining prepay schedule is the only meaningful trade-off, and most owner-operators with multi-decade business plans do not need the early-exit flexibility.",
+    "faqs": [
+      {
+        "q": "What is the maximum total project size on SBA 504?",
+        "a": "The CDC second lien is capped at $5M ($5.5M for manufacturing or energy-efficient). With a 50 percent bank first mortgage, total project size can extend to $20M+ depending on bank lender appetite."
+      },
+      {
+        "q": "Why does SBA 504 cost more in fees than bank conventional?",
+        "a": "CDC fees of approximately 3.5 percent are added to the CDC second lien at origination. The fees are financed into the loan rather than paid out of pocket, so the cash impact on the borrower at close is similar to bank conventional, but the principal balance is higher."
+      },
+      {
+        "q": "Does the SBA 504 prepayment penalty apply to the bank first lien?",
+        "a": "The 10-year declining prepayment schedule applies to the CDC second lien only. The bank first lien typically follows the bank's standard prepayment terms, which are usually 5,4,3,2,1 percent or no penalty depending on the bank."
+      },
+      {
+        "q": "Can a sponsor refinance from SBA 504 to bank conventional later?",
+        "a": "Yes, typically through a refinance that pays off both the bank first lien and the CDC second lien. The CDC prepayment penalty applies if refinanced before year 11. Sponsors planning refinance flexibility often prefer to start with bank conventional."
+      },
+      {
+        "q": "Does SBA 504 require the borrower to occupy 100 percent of the property?",
+        "a": "No. SBA 504 requires the borrower's operating business to occupy at least 51 percent of the property. The remaining 49 percent can be leased to third parties at market rents."
+      },
+      {
+        "q": "What is the typical close timeline difference?",
+        "a": "SBA 504 typically closes in 60 to 90 days. Bank conventional typically closes in 45 to 75 days. The 15 to 30 day difference reflects SBA approval, CDC underwriting, and bank coordination."
+      },
+      {
+        "q": "Can equipment be bundled with SBA 504 real estate?",
+        "a": "Yes. Long-life equipment (machinery, manufacturing equipment) can be bundled into SBA 504 alongside real estate, financed at the same 90 percent LTC. Short-life equipment and FF&E typically goes into SBA 7(a)."
+      },
+      {
+        "q": "Are bank conventional rates negotiable in the same way as SBA 504 rates?",
+        "a": "Bank conventional pricing is more negotiable based on borrower relationship, depository balances, and overall banking relationship. The SBA 504 CDC piece is set at the SBA debenture rate and is not negotiable; the bank first lien on SBA 504 is negotiable similar to bank conventional."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/sba-504-vs-sba-7a.html",
+        "title": "SBA 504 vs 7(a)",
+        "sub": "SBA program comparison"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans (Hub)",
+        "sub": "504 and 7(a)"
+      },
+      {
+        "href": "loan-size/10-million-sba-504-industrial-owner-user.html",
+        "title": "$10M SBA 504 Example",
+        "sub": "Real deal example"
+      },
+      {
+        "href": "comparisons/recourse-vs-non-recourse.html",
+        "title": "Recourse vs Non-Recourse",
+        "sub": "Both are recourse"
+      }
+    ]
+  },
+  {
+    "slug": "bridge-to-perm-vs-direct-permanent",
+    "short_title": "Bridge to Perm vs Direct Permanent",
+    "h1": "Bridge to Perm vs Direct Permanent Financing: How to Choose",
+    "name_a": "Bridge to Perm",
+    "name_b": "Direct Permanent",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Bridge to Perm vs Direct Permanent Financing | CLS CRE",
+      "meta_description": "Side-by-side comparison of bridge-to-permanent and direct permanent financing strategies for commercial real estate. When each strategy wins, capital costs, and execution differences."
+    },
+    "lead": "Two-step bridge-to-permanent and direct permanent represent the two foundational approaches to financing transitional commercial real estate. Bridge to perm acquires the property with bridge debt (90 to 365 day to 36 month term, 70 to 80 percent LTC, floating rate at SOFR + 350 to 700) and refinances into permanent debt (agency, life co, CMBS) at stabilization. Direct permanent skips the bridge step and underwrites the deal as a single permanent loan at acquisition. The choice depends on property condition, occupancy, sponsor profile, and how much value-add the deal contemplates.",
+    "table": [
+      {
+        "feature": "Number of loans",
+        "side_a": "Two (bridge then perm)",
+        "side_b": "One (perm)"
+      },
+      {
+        "feature": "Total capital cost (10-year hold)",
+        "side_a": "Higher; bridge premium for 12 to 36 months",
+        "side_b": "Lower; perm pricing throughout"
+      },
+      {
+        "feature": "Leverage at acquisition",
+        "side_a": "70 to 80 percent LTC",
+        "side_b": "65 to 75 percent LTV (stabilized only)"
+      },
+      {
+        "feature": "Property condition required",
+        "side_a": "Transitional or value-add OK",
+        "side_b": "Stabilized only"
+      },
+      {
+        "feature": "Sponsor profile",
+        "side_a": "Wide; bridge debt funds underwrite various profiles",
+        "side_b": "Strong only (agency / life co / CMBS standards)"
+      },
+      {
+        "feature": "Bridge cost (transition period)",
+        "side_a": "SOFR + 350 to 700 (8.85 to 11.85 percent all-in)",
+        "side_b": "N/A"
+      },
+      {
+        "feature": "Permanent cost",
+        "side_a": "Agency 5.55 to 6.10% / life co 5.40 to 5.95% / CMBS 6.05 to 6.85%",
+        "side_b": "Same"
+      },
+      {
+        "feature": "Execution risk",
+        "side_a": "Bridge to perm refinance risk; agency forward commitment can mitigate",
+        "side_b": "None (single execution)"
+      },
+      {
+        "feature": "CapEx and improvements",
+        "side_a": "Bridge often funds CapEx into the loan",
+        "side_b": "Sponsor funds CapEx out of equity"
+      },
+      {
+        "feature": "Timeline to stabilization",
+        "side_a": "12 to 36 months under bridge",
+        "side_b": "Property must be stabilized at acquisition"
+      },
+      {
+        "feature": "Total transaction cost",
+        "side_a": "Bridge fees + perm fees",
+        "side_b": "Perm fees only"
+      },
+      {
+        "feature": "Recourse profile",
+        "side_a": "Bridge often non-recourse; perm non-recourse",
+        "side_b": "Perm non-recourse"
+      }
+    ],
+    "when_a_intro": "Bridge to perm wins on transitional and value-add deals where the property is not yet stabilized at acquisition. The bridge financing provides the runway and CapEx capital to execute the value-add plan, with permanent financing taking out the bridge at stabilization.",
+    "when_a_bullets": [
+      "Property below 80 percent occupancy at acquisition (lease-up required)",
+      "Value-add or repositioning plan (renovation, rebrand, operational improvements)",
+      "Sponsor needs CapEx capital embedded in the loan structure",
+      "Sponsor profile or property characteristics fall outside agency / life co / CMBS standards at acquisition",
+      "Sponsor wants 70 to 80 percent LTC leverage at acquisition; perm caps at 75 percent LTV stabilized",
+      "Acquisition with a tight close timeline (bridge debt funds close in 30 to 45 days; agency takes 55 to 75)"
+    ],
+    "when_b_intro": "Direct permanent wins on stabilized properties where the bridge step would add unnecessary cost and execution risk. Sponsors with stabilized acquisitions and strong profiles save 200 to 400 basis points of bridge premium by going straight to permanent financing.",
+    "when_b_bullets": [
+      "Property stabilized at acquisition (typically 90 percent occupancy with stable NOI)",
+      "Sponsor profile fits agency, life co, or CMBS standards at acquisition",
+      "No meaningful CapEx required at acquisition (or sponsor funds CapEx from equity)",
+      "Sponsor wants single-execution simplicity and lower total transaction cost",
+      "Long hold horizon (5+ years) where the perm rate locks in cost of capital",
+      "Acquisition where direct permanent execution can close within the contract timeline"
+    ],
+    "decision_framework": [
+      "Start with property condition and occupancy. Below 85 percent occupancy or with meaningful value-add planned, bridge to perm is generally the right structure. Above 90 percent occupancy with stable NOI and modest CapEx, direct permanent is the right structure.",
+      "Calculate the bridge premium dollar cost. A typical $20M bridge at SOFR + 475 (9.35 percent all-in) versus a $20M perm at 5.85 percent over a 24-month bridge period costs approximately $1.4M of additional interest. For value-add deals where the bridge enables 25 to 30 percent rental rate uplift, the bridge premium pays for itself many times over. For stabilized deals, the premium is wasted.",
+      "Evaluate refinance risk. Bridge to perm carries refinance risk: rates could rise during the bridge period, agency programs could tighten, sponsor profile could change. Forward commitment programs (Fannie Mae and Freddie Mac) can lock in the perm rate at construction or bridge start, eliminating refinance rate risk.",
+      "Consider sponsor profile. Direct permanent requires agency-, life-co-, or CMBS-grade sponsor profile at acquisition. Sponsors with limited track records, complex structures, or transitional needs often have to start with bridge regardless of property condition."
+    ],
+    "real_deal_example": "On a $32M 188-unit Class C multifamily acquisition in a Sun Belt market with 71 percent occupancy and a 24-month value-add plan, the sponsor financed acquisition with a $24M bridge debt fund loan at SOFR + 475 (9.35 percent all-in), 75 percent LTC, with $4M of future funding for the renovation. After 23 months of value-add execution, the property reached stabilization at 92 percent occupancy with rental rates 27 percent above acquisition. The sponsor refinanced into Freddie Mac Optigo Conventional at 5.85 percent fixed 10-year, 73 percent LTV, $25M loan amount, returning approximately $4M of capital. Total bridge cost was approximately $4.2M of interest over the 23 months. Total deal value created (NOI uplift capitalized at exit cap rate) was approximately $14M, yielding a 3.3x return on the bridge premium investment.",
+    "expert_quote": "Bridge to perm is the right structure when the property needs work. Direct perm is the right structure when it does not. The mistake sponsors make is using bridge to perm on stabilized properties (wasting 200 to 400 basis points) or trying to use direct perm on transitional properties (which lenders simply will not fund).",
+    "faqs": [
+      {
+        "q": "What is bridge to perm financing?",
+        "a": "Bridge to perm is a two-step financing strategy where the borrower acquires the property with short-term bridge debt and later refinances into long-term permanent debt at stabilization. The bridge typically runs 12 to 36 months, with permanent financing taking out the bridge at completion of value-add and stabilization."
+      },
+      {
+        "q": "How much does bridge financing cost compared to permanent?",
+        "a": "Bridge financing typically prices 200 to 400 basis points wide of permanent agency, life co, or CMBS pricing. The premium reflects bridge debt fund cost of capital, shorter loan tenor, and the underwriting risk on transitional properties."
+      },
+      {
+        "q": "What is an agency forward commitment?",
+        "a": "An agency forward commitment locks in the permanent take-out rate at construction or bridge start, with the perm loan funding at certificate of occupancy or stabilization. Both Fannie Mae and Freddie Mac offer forward commitment programs that eliminate refinance rate risk."
+      },
+      {
+        "q": "Can a stabilized property be financed with bridge to perm?",
+        "a": "It can be, but it usually does not make sense. Stabilized properties qualify for direct permanent financing at materially lower cost. Bridge to perm on stabilized properties wastes 200 to 400 basis points of unnecessary capital cost."
+      },
+      {
+        "q": "What is the typical timeline from bridge to perm refinance?",
+        "a": "Most bridge loans run 24 to 36 months initial term with one or two 12-month extension options. Sponsors typically refinance into permanent within the initial term, with extensions available if stabilization takes longer than expected."
+      },
+      {
+        "q": "Do sponsors lock in the permanent rate at bridge close?",
+        "a": "Sometimes, through agency forward commitments. Without a forward commitment, the permanent rate is determined by market conditions at the time of permanent close, exposing the sponsor to refinance rate risk."
+      },
+      {
+        "q": "Can the same lender provide both bridge and permanent financing?",
+        "a": "Yes, sometimes. Some agency Seller-Servicers and life cos offer bridge-to-perm products where they originate the bridge and convert to perm at stabilization. The structure simplifies execution and locks in the permanent lender at the front end."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/bridge-debt-fund-vs-bank-balance-sheet.html",
+        "title": "Bridge Fund vs Bank",
+        "sub": "Bridge debt comparison"
+      },
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans (Hub)",
+        "sub": "Bridge debt"
+      },
+      {
+        "href": "financing/permanent-loans.html",
+        "title": "Permanent Loans (Hub)",
+        "sub": "Long-term financing"
+      },
+      {
+        "href": "blog/multifamily-value-add-bridge-strategy.html",
+        "title": "Value-Add Bridge Strategy",
+        "sub": "Cornerstone playbook"
+      }
+    ]
+  },
+  {
+    "slug": "hud-221d4-vs-bank-construction",
+    "short_title": "HUD 221(d)(4) vs Bank Construction",
+    "h1": "HUD 221(d)(4) vs Bank Construction Financing for Multifamily: How to Choose",
+    "name_a": "HUD 221(d)(4)",
+    "name_b": "Bank Construction",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "HUD 221(d)(4) vs Bank Construction for Multifamily | CLS CRE",
+      "meta_description": "Side-by-side comparison of HUD/FHA 221(d)(4) and bank construction financing for multifamily ground-up. Leverage, term, MAP underwriting, and execution differences."
+    },
+    "lead": "HUD/FHA 221(d)(4) and bank construction are the two foundational approaches to financing ground-up multifamily construction. HUD 221(d)(4) provides 40-year fully amortizing fixed-rate construction-to-permanent financing at up to 85 percent LTC, with the trade-off of an 18 to 24 month underwriting and approval timeline. Bank construction provides 18 to 36 month floating-rate construction debt at 60 to 75 percent LTC, with faster execution but a separate permanent take-out at stabilization. The decision depends on capital structure preferences, sponsor patience, and exit strategy.",
+    "table": [
+      {
+        "feature": "Loan structure",
+        "side_a": "Construction-to-permanent (single loan)",
+        "side_b": "Construction loan (separate perm refi)"
+      },
+      {
+        "feature": "Maximum LTC (construction)",
+        "side_a": "85 percent (workforce / affordable); 80 percent (market-rate)",
+        "side_b": "60 to 75 percent"
+      },
+      {
+        "feature": "Term (combined)",
+        "side_a": "40 years from construction completion",
+        "side_b": "18 to 36 months construction; 5 to 10 year perm separately"
+      },
+      {
+        "feature": "Rate (Apr 2026)",
+        "side_a": "5.85 to 6.35% fixed (construction + perm)",
+        "side_b": "SOFR + 250 to 400 (7.10 to 8.60%) construction; perm separately"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "Fully amortizing 40 years",
+        "side_b": "Interest-only construction; perm amortization separate"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Non-recourse with carve-outs",
+        "side_b": "Recourse during construction; perm recourse varies"
+      },
+      {
+        "feature": "Underwriting / approval timeline",
+        "side_a": "12 to 24 months from start to close",
+        "side_b": "60 to 90 days from term sheet to close"
+      },
+      {
+        "feature": "MAP lender required",
+        "side_a": "Yes (Multifamily Accelerated Processing lender)",
+        "side_b": "No"
+      },
+      {
+        "feature": "Davis-Bacon prevailing wage",
+        "side_a": "Required (federal Davis-Bacon)",
+        "side_b": "Not required"
+      },
+      {
+        "feature": "Permanent take-out",
+        "side_a": "Built into 221(d)(4) structure",
+        "side_b": "Separate (agency, life co, CMBS at stabilization)"
+      },
+      {
+        "feature": "Best fit",
+        "side_a": "Long-term hold sponsors; affordable / workforce; stabilized cost lock",
+        "side_b": "Faster execution; market-rate; flexibility"
+      },
+      {
+        "feature": "Refinance flexibility",
+        "side_a": "Constrained by HUD prepay schedule",
+        "side_b": "Refinance permanent typical at 5 to 7 year window"
+      }
+    ],
+    "when_a_intro": "HUD 221(d)(4) wins on long-term hold strategies, workforce and affordable executions, and sponsors willing to invest 12 to 24 months in HUD underwriting in exchange for the lowest cost of capital fully amortizing structure available in CRE.",
+    "when_a_bullets": [
+      "Long-term hold horizon (15 to 40 years) where 40-year fixed-rate amortization is meaningful",
+      "Workforce or affordable execution where HUD prefers and prices accordingly",
+      "Sponsor wants a single execution combining construction and permanent",
+      "Sponsor has 18 to 24 months of patience for the HUD underwriting timeline",
+      "Project size $20M+ where the HUD execution scales efficiently",
+      "Davis-Bacon prevailing wage compatible (workforce, public-private partnership, affordable)"
+    ],
+    "when_b_intro": "Bank construction wins when speed-to-close matters, the sponsor wants flexibility on the permanent take-out, or the project does not benefit from HUD's affordable / workforce focus. Bank construction is the standard execution for market-rate multifamily construction.",
+    "when_b_bullets": [
+      "Sponsor needs to break ground in 60 to 90 days versus 12 to 24 months",
+      "Market-rate multifamily without affordability commitment",
+      "Sponsor wants flexibility to refinance into agency, life co, or CMBS at stabilization based on market conditions",
+      "Project size $5M to $20M where bank balance sheet appetite is strongest",
+      "Davis-Bacon prevailing wage incompatible with project structure",
+      "Sponsor with bank depository relationship that delivers competitive pricing"
+    ],
+    "decision_framework": [
+      "Start with timeline. HUD 221(d)(4) requires 12 to 24 months from initial application to close. Bank construction closes in 60 to 90 days. If the deal needs to break ground quickly, HUD is structurally infeasible regardless of other considerations.",
+      "Evaluate hold horizon. HUD's 40-year fixed-rate amortization locks in cost of capital across multiple economic cycles, with the prepay schedule and HUD covenants constraining early sale. Sponsors planning 5 to 7 year holds get less benefit from HUD. Sponsors planning 20 to 40 year family ownership get the most benefit.",
+      "Run the cost-of-capital math. HUD 221(d)(4) provides 40-year fully amortizing fixed at 5.85 to 6.35 percent. Bank construction at SOFR + 275 (7.60 percent all-in) plus refinance into agency at year 3 at 5.85 percent fixed totals a higher blended cost over the first 5 years but lower cost over a 20 year horizon. The crossover depends on rate environment.",
+      "Consider Davis-Bacon. HUD 221(d)(4) requires Davis-Bacon prevailing wage on construction. Davis-Bacon adds 8 to 18 percent to construction labor costs depending on market and trade mix. Sponsors who can absorb Davis-Bacon (workforce, affordable, public-private partnerships) accept it; sponsors who cannot have to use bank construction."
+    ],
+    "real_deal_example": "On a $48M 168-unit workforce multifamily ground-up in a Sun Belt market with a 30-year affordability commitment at 80 percent AMI, the sponsor evaluated HUD 221(d)(4) versus bank construction with agency forward commitment. HUD 221(d)(4) quoted at 6.05 percent fixed 40-year fully amortizing at 85 percent LTC, with Davis-Bacon prevailing wage required. Bank construction quoted at SOFR + 285 (7.90 percent all-in), 70 percent LTC, with sponsor recourse during construction and a Fannie Mae forward commitment at 5.78 percent fixed 10-year for permanent take-out. The sponsor took HUD 221(d)(4) because the 30-year affordability commitment was structurally aligned with HUD, the Davis-Bacon labor cost was budgeted from the start, the 85 percent leverage versus 70 percent translated to $7.2M less equity, and the 40-year fully amortizing structure matched the long-term family ownership intent. The HUD process took 19 months from initial application to close; construction broke ground at month 22.",
+    "expert_quote": "HUD 221(d)(4) is one of the most powerful tools in commercial real estate when the deal aligns with the program. It is also one of the most punishing when sponsors try to force a deal through that does not fit. The 12 to 24 month timeline is the gating factor.",
+    "faqs": [
+      {
+        "q": "What is HUD 221(d)(4)?",
+        "a": "HUD/FHA 221(d)(4) is a federal multifamily mortgage insurance program providing construction-to-permanent financing for new construction or substantial rehabilitation of multifamily properties. The program offers 40-year fully amortizing fixed-rate financing at up to 85 percent LTC for workforce / affordable and 80 percent for market-rate."
+      },
+      {
+        "q": "What is the maximum loan size on HUD 221(d)(4)?",
+        "a": "There is no formal cap. HUD 221(d)(4) regularly finances $20M to $200M+ multifamily construction projects. Practical limits are driven by MAP lender capacity and project sizing."
+      },
+      {
+        "q": "What is a MAP lender?",
+        "a": "MAP (Multifamily Accelerated Processing) lenders are HUD-approved direct underwriters for FHA multifamily loan programs. MAP lenders perform initial underwriting, submit applications to HUD, and service the loans. MAP lender selection significantly affects the timeline and outcome of HUD financing."
+      },
+      {
+        "q": "What is Davis-Bacon prevailing wage?",
+        "a": "Davis-Bacon is the federal prevailing wage law that applies to federally-financed construction (including HUD 221(d)(4) projects). Davis-Bacon requires payment of locally-prevailing union-equivalent wages to construction labor, typically adding 8 to 18 percent to construction labor costs versus market-rate non-union labor."
+      },
+      {
+        "q": "How long does HUD 221(d)(4) take to close?",
+        "a": "12 to 24 months from initial MAP lender engagement to construction loan close. The timeline includes preliminary feasibility, application preparation, MAP lender underwriting, HUD review, environmental review, and final approval."
+      },
+      {
+        "q": "Is HUD 221(d)(4) only for affordable housing?",
+        "a": "No. HUD 221(d)(4) finances both market-rate and affordable / workforce multifamily. Affordable and workforce executions get the higher 85 percent LTC; market-rate caps at 80 percent LTC."
+      },
+      {
+        "q": "Can the borrower refinance out of HUD 221(d)(4) early?",
+        "a": "Yes, but with prepayment penalties. HUD 221(d)(4) typically has a 10-year prepayment lockout or substantial penalty schedule. Sponsors planning early refinance should consider the prepay constraints carefully."
+      },
+      {
+        "q": "What is the typical bank construction term?",
+        "a": "Bank construction loans typically run 18 to 36 months initial term with 12-month extensions, structured as floating-rate at SOFR + 250 to 400. The construction loan is paid off at stabilization through refinance into agency, life co, or CMBS perm."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/hud-fha-loans.html",
+        "title": "HUD/FHA Loans (Hub)",
+        "sub": "Government-backed financing"
+      },
+      {
+        "href": "financing/construction-loans.html",
+        "title": "Construction Loans (Hub)",
+        "sub": "Ground-up financing"
+      },
+      {
+        "href": "comparisons/bridge-to-perm-vs-direct-permanent.html",
+        "title": "Bridge to Perm vs Direct Perm",
+        "sub": "Strategy comparison"
+      }
+    ]
+  },
+  {
+    "slug": "construction-to-perm-vs-separate-take-out",
+    "short_title": "Construction-to-Perm vs Separate Take-Out",
+    "h1": "Construction-to-Perm vs Separate Construction and Take-Out: How to Choose",
+    "name_a": "Construction-to-Perm",
+    "name_b": "Separate Construction + Take-Out",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Construction-to-Perm vs Separate Take-Out Financing | CLS CRE",
+      "meta_description": "Side-by-side comparison of single-close construction-to-permanent versus separate construction loan and permanent take-out for commercial real estate. When each strategy wins."
+    },
+    "lead": "Construction-to-permanent and separate construction-plus-take-out represent the two foundational structures for financing ground-up commercial real estate construction. Construction-to-perm is a single loan that converts from construction to permanent at certificate of occupancy or stabilization, eliminating refinance risk. Separate construction-plus-take-out involves a short-term construction loan that is paid off at stabilization through refinance into a separate permanent loan. Each structure has trade-offs in execution risk, capital cost, and flexibility.",
+    "table": [
+      {
+        "feature": "Number of loans",
+        "side_a": "One (single close)",
+        "side_b": "Two (construction then perm)"
+      },
+      {
+        "feature": "Permanent rate locked at",
+        "side_a": "Construction start",
+        "side_b": "Stabilization (subject to market rates)"
+      },
+      {
+        "feature": "Refinance rate risk",
+        "side_a": "None (locked at start)",
+        "side_b": "Yes (rates may move during construction)"
+      },
+      {
+        "feature": "Total fees",
+        "side_a": "Single loan fees",
+        "side_b": "Two sets of fees (construction + perm origination)"
+      },
+      {
+        "feature": "Construction lender flexibility",
+        "side_a": "Tied to perm lender (limited shopping)",
+        "side_b": "Free to shop perm lender at stabilization"
+      },
+      {
+        "feature": "Prepayment flexibility (during construction)",
+        "side_a": "Constrained by structure",
+        "side_b": "Construction loan typically open"
+      },
+      {
+        "feature": "Common products",
+        "side_a": "HUD 221(d)(4), agency forward commitment, life co",
+        "side_b": "Bank construction + agency/CMBS/life co perm"
+      },
+      {
+        "feature": "Sponsor preference",
+        "side_a": "Long-term hold; risk-averse",
+        "side_b": "Flexibility-seeking; opportunistic"
+      },
+      {
+        "feature": "Approval complexity",
+        "side_a": "Higher (perm lender underwrites at start)",
+        "side_b": "Lower (construction underwriting only)"
+      },
+      {
+        "feature": "Best market environment",
+        "side_a": "Rising rate environment (lock the lower rate)",
+        "side_b": "Falling rate environment (capture lower perm rate)"
+      },
+      {
+        "feature": "Sponsor cash needed",
+        "side_a": "Lower (single transaction)",
+        "side_b": "Higher (refinance closing costs)"
+      },
+      {
+        "feature": "Typical execution",
+        "side_a": "HUD 221(d)(4); agency forward; life co construction-perm",
+        "side_b": "Bank construction + agency/CMBS/life co perm"
+      }
+    ],
+    "when_a_intro": "Construction-to-perm wins when the sponsor wants rate certainty, simpler execution, and is comfortable with the lender lock-in for the permanent term. The structure is most powerful in rising rate environments when locking the perm rate at construction start protects against rate increases over the construction period.",
+    "when_a_bullets": [
+      "Sponsor wants permanent rate locked at construction start (eliminate refinance rate risk)",
+      "Long-term hold horizon (10+ years) where the rate lock is meaningful",
+      "Risk-averse sponsor or institutional capital partner with mandate against refinance risk",
+      "HUD 221(d)(4) execution which is structurally construction-to-perm",
+      "Agency forward commitment available (Fannie or Freddie locks perm at construction start)",
+      "Workforce / affordable execution where HUD or agency mission-driven programs win"
+    ],
+    "when_b_intro": "Separate construction-plus-take-out wins when sponsors value flexibility, want to shop the permanent lender at stabilization, or anticipate a falling rate environment where waiting to lock perm captures lower rates.",
+    "when_b_bullets": [
+      "Sponsor wants flexibility to shop multiple permanent lenders at stabilization",
+      "Falling rate environment where waiting captures lower perm pricing",
+      "Bank construction execution (most banks do not offer construction-to-perm)",
+      "Sponsor wants opportunistic exit (sale before permanent take-out)",
+      "Project profile that may attract different lender appetite at stabilization than at construction start",
+      "Sponsor with strong ongoing depository relationship that can deliver competitive bank construction"
+    ],
+    "decision_framework": [
+      "Start with rate environment view. Rising-rate environments favor construction-to-perm because locking the perm rate at construction start protects against rate increases. Falling-rate environments favor separate take-out because waiting to lock the perm captures lower rates.",
+      "Evaluate execution complexity. Construction-to-perm requires the permanent lender to underwrite the deal at construction start, which extends approval timelines and requires the sponsor to commit to the perm lender at the start. Separate take-out simplifies construction underwriting (only the construction lender needs to underwrite) but requires a second underwriting at stabilization.",
+      "Calculate the dollar value of rate certainty. On a $30M perm at a 50 basis point higher rate (5.85% vs 6.35%) over a 10-year term, the dollar cost of giving up the rate lock is approximately $1.5M of additional interest. Sponsors with mandate against refinance risk may pay a premium of 25 to 50 basis points to lock at construction.",
+      "Consider sponsor flexibility needs. Some sponsors discover after construction that they want a different permanent execution (life co instead of agency, or CMBS instead of life co) than what would have been available at the construction start. Separate take-out preserves that flexibility."
+    ],
+    "real_deal_example": "On a $42M Class B multifamily ground-up in a Sun Belt market, the sponsor evaluated construction-to-perm via Fannie Mae forward commitment versus separate bank construction plus agency permanent at stabilization. Forward commitment locked the permanent rate at 5.95 percent fixed 10-year. Bank construction at SOFR + 285 (7.90 percent all-in) provided faster construction close timelines. Given the institutional capital partner's mandate against refinance risk and the sponsor's projected 24-month construction timeline in a market where forward rate curves projected modest rate increases, the sponsor took the agency forward commitment. The construction-to-perm structure also simplified the closing experience for the institutional equity partner.",
+    "expert_quote": "Construction-to-perm is the right structure when you want certainty. Separate take-out is the right structure when you want flexibility. The decision is genuinely about the sponsor's risk preference and the sponsor's view on forward rates.",
+    "faqs": [
+      {
+        "q": "What is construction-to-permanent financing?",
+        "a": "Construction-to-perm is a single loan that converts from construction (interest-only floating rate) to permanent (fixed rate amortizing) at certificate of occupancy or stabilization. The permanent rate is typically locked at construction start, eliminating refinance rate risk."
+      },
+      {
+        "q": "What is an agency forward commitment?",
+        "a": "An agency forward commitment is a Fannie Mae or Freddie Mac product that locks the permanent take-out rate at construction start, with the perm loan funding at stabilization. The structure provides rate certainty without requiring the construction lender and permanent lender to be the same entity."
+      },
+      {
+        "q": "Can a separate construction-plus-take-out structure use agency forward?",
+        "a": "Yes. The forward commitment is from the agency, not from the construction lender. The sponsor can use a bank or debt fund construction loan and still secure an agency forward commitment for permanent take-out."
+      },
+      {
+        "q": "Why do most banks not offer construction-to-perm?",
+        "a": "Most banks specialize in either construction lending (bank balance sheet, 18 to 36 month floating rate) or permanent lending (5 to 10 year fixed) but not both in a single product. Banks that do offer construction-to-perm are typically community banks, credit unions, and a few regional banks with specialized programs."
+      },
+      {
+        "q": "How does HUD 221(d)(4) compare to bank construction-to-perm?",
+        "a": "HUD 221(d)(4) is structurally construction-to-perm with 40-year fully amortizing fixed-rate financing. Bank construction-to-perm products are shorter-term (5 to 10 year fixed perm) and cap leverage lower. HUD takes 12 to 24 months to close versus bank construction-to-perm which closes in 90 to 120 days."
+      },
+      {
+        "q": "Are there fees for both construction and permanent in a separate structure?",
+        "a": "Yes. Sponsors pay construction loan origination fees (0.5 to 1.0 percent typical) at construction close and permanent loan origination fees (0.5 to 1.0 percent typical) at the permanent refinance. Combined fees are higher than a single construction-to-perm execution."
+      },
+      {
+        "q": "Does construction-to-perm require Davis-Bacon?",
+        "a": "Only if the construction-to-perm uses HUD or other federal financing that requires Davis-Bacon prevailing wage. Agency forward commitments and life co construction-to-perm products do not require Davis-Bacon."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/hud-221d4-vs-bank-construction.html",
+        "title": "HUD vs Bank Construction",
+        "sub": "Construction comparison"
+      },
+      {
+        "href": "comparisons/bridge-to-perm-vs-direct-permanent.html",
+        "title": "Bridge to Perm vs Direct Perm",
+        "sub": "Strategy comparison"
+      },
+      {
+        "href": "financing/construction-loans.html",
+        "title": "Construction Loans (Hub)",
+        "sub": "Ground-up financing"
+      }
+    ]
+  },
+  {
+    "slug": "loan-assumption-vs-new-loan",
+    "short_title": "Loan Assumption vs New Loan",
+    "h1": "Loan Assumption vs New Loan at Sale: How to Choose",
+    "name_a": "Loan Assumption",
+    "name_b": "New Loan",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Loan Assumption vs New Loan at CRE Sale | CLS CRE",
+      "meta_description": "Side-by-side comparison of loan assumption versus new permanent loan at sale of commercial real estate. When assumption wins, prepayment penalty avoidance, and execution differences."
+    },
+    "lead": "When a commercial real estate property sells with existing debt in place, the buyer faces a choice: assume the seller's existing loan or pay it off and originate a new loan. Loan assumption preserves the existing loan terms (rate, amortization, prepayment, recourse profile) and eliminates the seller's prepayment penalty exposure. New loan originations restart the loan structure at current market rates and terms. The decision depends on the existing loan's rate relative to current market, the seller's prepayment exposure, the buyer's financing preferences, and the lender's assumption policies.",
+    "table": [
+      {
+        "feature": "Existing rate captured",
+        "side_a": "Yes (preserved at original coupon)",
+        "side_b": "No (refinanced at current market)"
+      },
+      {
+        "feature": "Seller prepayment penalty",
+        "side_a": "Avoided",
+        "side_b": "Triggered (seller pays YM or defeasance)"
+      },
+      {
+        "feature": "Assumption fee",
+        "side_a": "0.5 to 1.0 percent of loan balance typical",
+        "side_b": "N/A"
+      },
+      {
+        "feature": "Buyer underwriting",
+        "side_a": "Yes (lender approves new sponsor)",
+        "side_b": "Yes (full new loan underwriting)"
+      },
+      {
+        "feature": "Loan term remaining",
+        "side_a": "Existing remaining term (often partial)",
+        "side_b": "Full new term"
+      },
+      {
+        "feature": "Loan rate",
+        "side_a": "Original coupon (often below current market)",
+        "side_b": "Current market rate"
+      },
+      {
+        "feature": "Loan structure",
+        "side_a": "Existing structure (recourse, prepay, covenants)",
+        "side_b": "New structure (negotiable)"
+      },
+      {
+        "feature": "Lender approval timeline",
+        "side_a": "30 to 60 days for assumption review",
+        "side_b": "60 to 90 days for new loan close"
+      },
+      {
+        "feature": "Best execution",
+        "side_a": "Existing rate below current market by 50+ bps",
+        "side_b": "Existing rate at or above current market"
+      },
+      {
+        "feature": "Loan size flexibility",
+        "side_a": "Limited (existing balance, supplement available)",
+        "side_b": "Full (size to deal)"
+      },
+      {
+        "feature": "Loan products that allow",
+        "side_a": "Agency, CMBS, life co (most non-recourse perm)",
+        "side_b": "All"
+      },
+      {
+        "feature": "Buyer cash to close",
+        "side_a": "Lower (assumption fee + equity)",
+        "side_b": "Higher (new loan fees + equity)"
+      }
+    ],
+    "when_a_intro": "Loan assumption wins when the existing loan has a coupon meaningfully below current market rates, when the seller faces material prepayment penalty exposure, or when the buyer values preserving the existing loan structure. In rising rate environments, assumption can deliver hundreds of basis points of rate savings to the buyer.",
+    "when_a_bullets": [
+      "Existing loan rate is 75 to 200+ basis points below current market new loan rates",
+      "Seller faces material yield maintenance or defeasance prepayment penalty (often $500K to $5M+ on larger loans)",
+      "Loan structure (interest-only, amortization, recourse profile) is preferred to current market structures",
+      "Buyer wants to preserve loan term remaining without restarting the prepay schedule",
+      "Both buyer and seller benefit (seller avoids prepay; buyer gets below-market rate)",
+      "Property and loan structure are stable and the buyer plans long-term hold"
+    ],
+    "when_b_intro": "New loan origination wins when the existing loan has unfavorable terms, when the buyer wants to size the loan differently, or when the lender's assumption process is too slow or expensive relative to a new origination.",
+    "when_b_bullets": [
+      "Existing loan rate is at or above current market rates (no rate advantage)",
+      "Buyer wants to size the loan differently (higher leverage, different amortization, supplemental)",
+      "Existing loan structure (recourse, covenants) is unfavorable to the buyer",
+      "Existing loan is short on remaining term (less than 5 years remaining)",
+      "Buyer wants to extract cash through cash-out refinance",
+      "Lender assumption process is materially slower than new loan close"
+    ],
+    "decision_framework": [
+      "Calculate the rate spread dollar value. The dollar value of assuming a below-market loan is the rate spread times the loan balance times the remaining term. A $20M loan at a 5.50 percent existing coupon versus a 6.25 percent new market rate over 6 remaining years saves approximately $900K of interest. That savings is shared between buyer and seller in negotiation.",
+      "Calculate the seller's prepayment penalty. Yield maintenance and defeasance penalties on agency and CMBS loans can run 5 to 15 percent of unpaid principal balance in falling rate environments. A $20M loan with 7 percent YM exposure represents $1.4M of seller cost that is avoided through assumption. The savings is shared in transaction pricing.",
+      "Evaluate loan size and structure preferences. If the buyer wants to lever higher, take cash out, or change recourse, assumption may not deliver the structure the buyer needs. New origination provides full structural flexibility at the cost of starting fresh on the rate and prepay schedule.",
+      "Consider the lender assumption process. Some lenders streamline assumption with established processes; others treat assumption as effectively equivalent to a new loan underwriting. Lender assumption policies affect timeline, fees, and feasibility."
+    ],
+    "real_deal_example": "On a $14M sale of a stabilized Class B multifamily in a Tier 2 market, the seller's existing Fannie Mae DUS loan had a 4.85 percent fixed coupon with 6 years remaining and a 5 percent yield maintenance prepayment exposure (approximately $700K in the current rate environment). New loan origination would have priced at 5.85 percent fixed 10-year, 100 basis points wide of the existing coupon. The buyer assumed the loan at a 1.0 percent assumption fee ($140K) and the seller credited approximately $400K of the avoided YM into the purchase price. The buyer captured the below-market 4.85 percent rate for 6 remaining years, saving approximately $840K of interest versus a new origination over the remaining term. Total deal value preserved by the assumption was approximately $1.2M shared between buyer and seller.",
+    "expert_quote": "Loan assumption is one of the most underused transaction structures in commercial real estate. In rising rate environments where existing loans are 75 to 200 basis points below current market, assumption captures real value for both buyer and seller. The lender approval process is straightforward and the structural benefits are real.",
+    "faqs": [
+      {
+        "q": "Can all CRE loans be assumed?",
+        "a": "Most non-recourse permanent CRE loans (agency, CMBS, life co) allow assumption subject to lender approval, typically with a 0.5 to 1.0 percent assumption fee. Bank balance sheet loans sometimes allow assumption but more often require refinance. Bridge debt fund loans typically do not allow assumption."
+      },
+      {
+        "q": "What is the typical assumption fee?",
+        "a": "0.5 to 1.0 percent of the unpaid principal balance is typical, paid by the buyer at closing. Some lenders cap the fee at $50K to $100K maximum. Specific fees are detailed in the loan documents."
+      },
+      {
+        "q": "Does assumption restart the loan term?",
+        "a": "No. Assumption preserves the existing loan including remaining term, amortization, rate, and prepayment schedule. The buyer assumes the loan in its existing state."
+      },
+      {
+        "q": "Can the buyer size the assumed loan up?",
+        "a": "Sometimes through supplemental loans. Agency loans (Fannie and Freddie) often have supplemental loan programs that allow the buyer to add additional debt to an assumed loan as the property's NOI grows. CMBS loans typically do not allow supplemental layering."
+      },
+      {
+        "q": "How does the lender approve the buyer for assumption?",
+        "a": "Lenders run buyer underwriting equivalent to a new loan sponsor approval. Buyer net worth, liquidity, operating experience, and credit are reviewed. Buyer must meet the lender's standard sponsor profile for the loan product."
+      },
+      {
+        "q": "What happens to the seller after the assumption?",
+        "a": "The seller is released from the loan and any related personal guarantees on assumption. The buyer takes over all obligations under the loan documents."
+      },
+      {
+        "q": "How long does loan assumption take to close?",
+        "a": "30 to 60 days from buyer engagement to assumption close, depending on lender process and assumption complexity. Lender approval is typically the gating timeline item."
+      },
+      {
+        "q": "Can the buyer modify any loan terms during assumption?",
+        "a": "Generally no. Assumption preserves existing terms. Buyer-requested modifications (rate, amortization, structure) effectively convert assumption into a refinance or new loan origination."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/permanent-loans.html",
+        "title": "Permanent Loans (Hub)",
+        "sub": "Long-term financing"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS",
+        "sub": "Permanent comparison"
+      },
+      {
+        "href": "comparisons/recourse-vs-non-recourse.html",
+        "title": "Recourse vs Non-Recourse",
+        "sub": "Structural comparison"
+      }
+    ]
   }
 ]

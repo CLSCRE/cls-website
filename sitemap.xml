@@ -1321,7 +1321,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/bridge-to-perm-vs-direct-permanent.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/cmbs-vs-life-company-office-retail.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/construction-to-perm-vs-separate-take-out.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1345,10 +1357,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/hud-221d4-vs-bank-construction.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/index.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/loan-assumption-vs-new-loan.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://clscre.com/comparisons/mezzanine-vs-preferred-equity.html</loc>
@@ -1358,6 +1382,12 @@
   </url>
   <url>
     <loc>https://clscre.com/comparisons/recourse-vs-non-recourse.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/sba-504-vs-bank-conventional-owner-user.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
