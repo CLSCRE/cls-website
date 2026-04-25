@@ -1,0 +1,187 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"{{ cmp.h1 }}","description":"{{ cmp.seo.meta_description }}","author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"datePublished":"{{ cmp.published }}","dateModified":"{{ today }}","mainEntityOfPage":{"@type":"WebPage","@id":"https://clscre.com/comparisons/{{ cmp.slug }}.html"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in cmp.faqs %}{"@type":"Question","name":"{{ faq.q|e }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a|e }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://clscre.com/comparisons/index.html"},{"@type":"ListItem","position":3,"name":"{{ cmp.short_title }}","item":"https://clscre.com/comparisons/{{ cmp.slug }}.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".faq-section",".comparison-lead"]}}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}comparisons/index.html">Comparisons</a></li>
+  <li><span>{{ cmp.short_title }}</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">CRE Capital Source Comparison</div>
+  <h1 class="reveal">{{ cmp.h1 }}</h1>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:16px">By Trevor Damyan, Commercial Mortgage Broker at Commercial Lending Solutions</p>
+  <p class="reveal comparison-lead" style="font-size:18px;line-height:1.6;color:var(--gray-700);max-width:880px">{{ cmp.lead }}</p>
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Get Quotes from Both &rarr;</a>
+</div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Side-by-Side</div>
+  <h2 class="section-title reveal">{{ cmp.name_a }} vs {{ cmp.name_b }}</h2>
+  <div style="overflow-x:auto;margin-top:24px">
+    <table class="comparison-table reveal" style="width:100%;border-collapse:collapse;font-size:15px;border:1px solid var(--gray-200);border-radius:8px;overflow:hidden">
+      <thead>
+        <tr style="background:var(--navy);color:var(--white)">
+          <th style="padding:14px 16px;text-align:left;font-weight:600;width:28%">Feature</th>
+          <th style="padding:14px 16px;text-align:left;font-weight:600">{{ cmp.name_a }}</th>
+          <th style="padding:14px 16px;text-align:left;font-weight:600">{{ cmp.name_b }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in cmp.table %}
+        <tr style="border-bottom:1px solid var(--gray-200);{% if loop.index is even %}background:var(--gray-50){% endif %}">
+          <td style="padding:14px 16px;font-weight:600;color:var(--navy)">{{ row.feature }}</td>
+          <td style="padding:14px 16px;color:var(--gray-700)">{{ row.side_a }}</td>
+          <td style="padding:14px 16px;color:var(--gray-700)">{{ row.side_b }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">Rate ranges reflect indicative pricing as of {{ today_pretty }}, sourced from active CLS CRE quote pipeline. Pricing is property, sponsor, and structure dependent.</p>
+</div>
+</section>
+
+<!-- WHEN A WINS -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">{{ cmp.name_a }} Wins When</div>
+  <h2 class="section-title reveal">When {{ cmp.name_a }} Is the Right Call</h2>
+  <p class="reveal" style="line-height:1.7;color:var(--gray-700)">{{ cmp.when_a_intro }}</p>
+  <ul class="reveal" style="line-height:1.9;color:var(--gray-700);margin-top:16px;padding-left:20px">
+    {% for item in cmp.when_a_bullets %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+
+<!-- WHEN B WINS -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">{{ cmp.name_b }} Wins When</div>
+  <h2 class="section-title reveal">When {{ cmp.name_b }} Is the Right Call</h2>
+  <p class="reveal" style="line-height:1.7;color:var(--gray-700)">{{ cmp.when_b_intro }}</p>
+  <ul class="reveal" style="line-height:1.9;color:var(--gray-700);margin-top:16px;padding-left:20px">
+    {% for item in cmp.when_b_bullets %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+
+<!-- DECISION FRAMEWORK -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">Decision Framework</div>
+  <h2 class="section-title reveal">How to Choose Between {{ cmp.name_a }} and {{ cmp.name_b }}</h2>
+  {% for para in cmp.decision_framework %}
+  <p class="reveal" style="line-height:1.8;color:var(--gray-700);margin-top:16px;max-width:880px">{{ para }}</p>
+  {% endfor %}
+</div>
+</section>
+
+<!-- REAL DEAL EXAMPLE -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">From the CLS CRE Pipeline</div>
+  <h2 class="section-title reveal">A Real Decision in Action</h2>
+  <div class="reveal" style="background:var(--gray-50);border-left:4px solid var(--green);padding:24px 28px;border-radius:8px;margin-top:16px;max-width:880px">
+    <p style="line-height:1.8;color:var(--gray-700);margin:0">{{ cmp.real_deal_example }}</p>
+  </div>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">All deal references anonymize borrower and lender identities and use city-level geography only.</p>
+</div>
+</section>
+
+<!-- EXPERT QUOTE -->
+{% if cmp.expert_quote %}
+<section class="content-section alt">
+<div class="section-inner">
+  <blockquote class="reveal" style="font-family:var(--font-display);font-size:clamp(20px,2.5vw,26px);line-height:1.5;color:var(--navy);max-width:880px;margin:0 auto;padding:0 24px;border-left:4px solid var(--green);font-style:italic">
+    {{ cmp.expert_quote }}
+    <footer style="font-family:var(--font-body);font-size:14px;color:var(--gray-500);font-style:normal;margin-top:16px">Trevor Damyan, Commercial Lending Solutions</footer>
+  </blockquote>
+</div>
+</section>
+{% endif %}
+
+<!-- RELATED COMPARISONS -->
+{% if all_comparisons|length > 1 %}
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Related Comparisons</h2>
+  <div class="cross-link-grid">
+    {% for other in all_comparisons %}
+    {% if other.slug != cmp.slug %}
+    <a href="{{ depth }}comparisons/{{ other.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ other.short_title }}</div>
+      <div class="cl-sub">Compare capital sources</div>
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- RELATED CITY/PROGRAM PAGES -->
+{% if cmp.related_links %}
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Explore By Market and Program</h2>
+  <div class="cross-link-grid">
+    {% for link in cmp.related_links %}
+    <a href="{{ depth }}{{ link.href }}" class="cross-link-card reveal">
+      <div class="cl-title">{{ link.title }}</div>
+      <div class="cl-sub">{{ link.sub }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- FAQ -->
+<section class="faq-section alt" id="faq">
+<div class="section-inner">
+  <div class="section-label reveal">FAQ</div>
+  <h2 class="section-title reveal">{{ cmp.short_title }} FAQ</h2>
+  <div class="faq-list">
+    {% for faq in cmp.faqs %}
+    <div class="faq-item reveal">
+      <button class="faq-question">{{ faq.q }}</button>
+      <div class="faq-answer"><div class="faq-answer-inner">{{ faq.a }}</div></div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+{% set cta_title = 'Get Quotes from Both ' + cmp.name_a + ' and ' + cmp.name_b %}
+{% set cta_description = 'Tell us about your deal. We will run it past lenders on both sides and send you side-by-side terms within 48 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

@@ -1,0 +1,353 @@
+[
+  {
+    "slug": "fannie-mae-dus-vs-freddie-mac-optigo",
+    "short_title": "Fannie Mae DUS vs Freddie Mac Optigo",
+    "h1": "Fannie Mae DUS vs Freddie Mac Optigo: How to Choose for Multifamily Financing",
+    "name_a": "Fannie Mae DUS",
+    "name_b": "Freddie Mac Optigo",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Fannie Mae DUS vs Freddie Mac Optigo: How to Choose | CLS CRE",
+      "meta_description": "Side-by-side comparison of Fannie Mae DUS and Freddie Mac Optigo multifamily lending programs. Rate differences, prepay structures, small-balance vs conventional, and when each agency wins."
+    },
+    "lead": "Fannie Mae DUS and Freddie Mac Optigo are the two government-sponsored enterprise (GSE) multifamily programs that finance roughly 40 to 60 percent of all U.S. apartment debt in any given year. Both deliver non-recourse, long-term fixed-rate financing for stabilized multifamily, typically at 65 to 80 percent LTV with 10-year terms. The difference between them shows up in pricing on a deal-by-deal basis, prepayment structure flexibility, small-balance execution speed, and how each program treats workforce and affordable rent commitments. Choosing correctly can shift your all-in rate by 15 to 30 basis points and your prepayment penalty by hundreds of thousands of dollars over the life of the loan.",
+    "table": [
+      {"feature": "Rate range (Apr 2026)", "side_a": "5.65 to 6.10 percent (10-year fixed)", "side_b": "5.55 to 6.05 percent (10-year fixed)"},
+      {"feature": "Loan size band", "side_a": "$1M to $100M+ (DUS), $1M to $9M (DUS Small)", "side_b": "$1M to $100M+ (Conventional), $1M to $7.5M (SBL)"},
+      {"feature": "Maximum LTV", "side_a": "80 percent (market-rate stabilized)", "side_b": "80 percent (market-rate stabilized)"},
+      {"feature": "Minimum DSCR", "side_a": "1.25x (market-rate, Tier 2 markets)", "side_b": "1.25x (market-rate, Top markets)"},
+      {"feature": "Recourse", "side_a": "Non-recourse with standard carve-outs", "side_b": "Non-recourse with standard carve-outs"},
+      {"feature": "Term options", "side_a": "5, 7, 10, 12, 15, 18, 30 years", "side_b": "5, 7, 10, 12, 15, 20 years"},
+      {"feature": "Amortization", "side_a": "Up to 30 years (interest-only available)", "side_b": "Up to 30 years (interest-only available)"},
+      {"feature": "Prepayment", "side_a": "Yield maintenance or declining schedule", "side_b": "Yield maintenance or defeasance"},
+      {"feature": "Small balance program", "side_a": "DUS Small Loans ($1M to $9M, expedited UW)", "side_b": "Optigo SBL ($1M to $7.5M, faster close)"},
+      {"feature": "Affordable / mission cap relief", "side_a": "Mission-Driven loans excluded from cap; LIHTC-friendly", "side_b": "Targeted Affordable Housing (TAH) execution; bond credit enhancement"},
+      {"feature": "Typical close timeline", "side_a": "55 to 75 days (Conventional), 35 to 50 (Small)", "side_b": "50 to 70 days (Conventional), 30 to 45 (SBL)"},
+      {"feature": "Lender ecosystem", "side_a": "~25 DUS lenders nationwide", "side_b": "~25 Optigo Seller-Servicers nationwide"}
+    ],
+    "when_a_intro": "Fannie Mae DUS tends to be the right choice when you have a lender relationship that maps to a DUS shop and your deal benefits from DUS-specific structuring options. The DUS program has a deeper bench of life-of-loan supplemental capacity, a slightly more flexible interest-only window in many quotes, and a more straightforward path on tertiary markets and on certain large MHC and student housing assets.",
+    "when_a_bullets": [
+      "Tertiary market or smaller MSA where DUS lenders are more aggressive on size adjustments",
+      "Manufactured housing community or independent senior multifamily where Fannie has historically been more competitive",
+      "Sponsor with an existing DUS relationship and an active supplemental loan strategy as the deal seasons",
+      "Mission-Driven affordable execution where the loan is excluded from the production cap, freeing up pricing",
+      "Very large transactions ($50M+) where DUS lender appetite for size and structuring may run deeper",
+      "Borrower wants a longer-term ARM (7/6 hybrid or 30-year ARM) where DUS structures are more standardized"
+    ],
+    "when_b_intro": "Freddie Mac Optigo often wins on small-balance multifamily under $7.5M and on Targeted Affordable Housing executions with bond credit enhancement. Optigo SBL has been a faster-to-close program for years, with a streamlined underwriting box that benefits sponsors who need certainty of execution under 45 days.",
+    "when_b_bullets": [
+      "Small balance multifamily loan ($1M to $7.5M) where SBL is a few weeks faster than DUS Small",
+      "Workforce or LIHTC affordable deal benefiting from TAH credit enhancement on tax-exempt bonds",
+      "Sponsor wants defeasance optionality at exit instead of yield maintenance, particularly for shorter terms",
+      "Top market with deep Seller-Servicer competition where Optigo wins by 10 to 20 basis points on the day",
+      "Floating-rate execution where Optigo's index pricing maps more cleanly to the sponsor's hedge",
+      "Acquisition with a tight close where SBL's templated documentation shaves cycle time"
+    ],
+    "decision_framework": [
+      "Run both programs on every conventional multifamily refinance or acquisition above $5M. There is no premium for asking, and the spread between agencies on any given day is unpredictable. The lender that wins is rarely obvious before quotes come in. The single biggest mistake we see borrowers make is loyalty to one DUS lender or one Optigo Seller-Servicer based on a prior relationship. The agencies are competing for production every quarter; the spread shifts.",
+      "On small balance ($1M to $9M), the speed difference matters more than the rate difference for most acquisitions. Optigo SBL closes 30 to 45 days from application, DUS Small closes 35 to 50. If your purchase contract has a 45-day financing contingency, that 1 to 2 week buffer is the difference between a clean close and an extension fee.",
+      "On affordable and mission-driven deals, the answer is structural, not pricing. Fannie's Mission-Driven cap exclusion versus Freddie's TAH bond credit enhancement framework lead to materially different capital stacks. A 4 percent LIHTC bond deal generally goes Optigo TAH; a workforce 80 to 120 percent AMI without LIHTC often goes Fannie Mission-Driven.",
+      "On structure and prepayment, the right answer depends on your hold horizon. If you plan to refinance or sell at year 5 of a 10-year fixed, the yield maintenance penalty under either agency can be punishing in a falling-rate environment. Defeasance under Optigo lets you sell the loan to a third-party defeasance buyer without writing the full prepay check. If you are positioning for a sale at year 5, ask the broker to model both YM and defeasance side by side."
+    ],
+    "real_deal_example": "On a 124-unit Class B multifamily refinance in a Tier 2 Sun Belt MSA with an institutional sponsor and a 1.32x as-is DSCR, we ran both DUS and Optigo simultaneously through three lenders on each side. The winning DUS quote came back at a 5.78 percent fixed 10-year with two years of interest-only, full term yield maintenance. The winning Optigo SBL quote came back at 5.71 percent with one year of interest-only and a defeasance prepayment option. The 7 basis point coupon advantage on Optigo translated to roughly $42K of interest savings over the term, but the sponsor planned to sell at year 6 and ultimately took DUS because the YM exit math under projected forward rates was more favorable than defeasance economics. The takeaway: rate is one input, prepay structure is another, and you do not know until you run both.",
+    "expert_quote": "If you are not running Fannie and Freddie simultaneously on every conventional multifamily deal, you are leaving money on the table. The agencies are competing every week for production, and the lender that wins on Tuesday may not be the lender that wins on Friday.",
+    "faqs": [
+      {"q": "Can a borrower run Fannie Mae DUS and Freddie Mac Optigo at the same time?", "a": "Yes. Most experienced multifamily brokers run both agencies on every deal above $5M and select the better execution at term sheet. There is no exclusivity restriction at the application stage, and competing the agencies generally produces tighter pricing than going to one and accepting the first quote."},
+      {"q": "Is Fannie Mae DUS or Freddie Mac Optigo better for small balance multifamily?", "a": "Optigo SBL typically closes faster (30 to 45 days versus DUS Small Loans at 35 to 50) and has a more streamlined underwriting box for $1M to $7.5M loans. DUS Small Loans extend to $9M and have a deeper supplemental loan path. For acquisitions with tight financing contingencies, Optigo SBL often wins on speed; for $7.5M to $9M loans or sponsors anticipating supplemental draws, DUS Small is the better fit."},
+      {"q": "What is the difference between DUS Mission-Driven and Optigo Targeted Affordable Housing?", "a": "Fannie Mae's Mission-Driven category includes workforce, manufactured housing, small balance, and other deals that meet specific affordability criteria, and Mission-Driven volume is excluded from Fannie's annual production cap. Freddie Mac's Targeted Affordable Housing (TAH) program focuses primarily on LIHTC and bond-financed affordable deals with credit enhancement. The right program depends on whether your deal is LIHTC and bond-financed (TAH), workforce naturally occurring affordable (Mission-Driven), or somewhere in between."},
+      {"q": "What is the typical interest-only period under DUS versus Optigo?", "a": "Both agencies offer interest-only periods that scale with loan term, leverage, and DSCR. On a 10-year loan at 65 percent LTV with 1.30x DSCR, a typical IO window is 2 to 3 years on DUS and 1 to 2 years on Optigo, though both programs will quote full-term IO on lower leverage and higher DSCR deals. IO is typically priced with a small spread premium over fully amortizing pricing."},
+      {"q": "How does prepayment work on Fannie Mae DUS versus Freddie Mac Optigo?", "a": "DUS quotes are typically yield maintenance or a declining percentage schedule (5,4,3,2,1). Optigo also offers yield maintenance but allows defeasance as an exit option, where the borrower buys Treasury securities sufficient to defease the loan and sells the defeased loan to a third party. Defeasance preserves loan terms when a buyer assumes the loan and can be more economical than YM in a rising rate environment."},
+      {"q": "Are DUS lenders and Optigo Seller-Servicers the same companies?", "a": "Many of the largest multifamily lenders are both DUS lenders and Optigo Seller-Servicers (Walker and Dunlop, Berkadia, JLL, Greystone, NewPoint, Capital One, M&T Realty Capital, Arbor, and others). When you go to one of these firms, the loan officer can quote both agencies and recommend the better execution."},
+      {"q": "Will running both agencies hurt my pricing?", "a": "No. Asking for quotes from multiple lenders, including from both agencies, is standard practice. Lenders price every quote on their own merits and do not penalize sponsors for shopping. The opposite is true: sponsors who ask one lender for one quote almost always pay 10 to 30 basis points more than sponsors who run a competitive process."},
+      {"q": "Which agency has better rates today?", "a": "Pricing changes daily and varies by deal. As of April 2026, Optigo Conventional has been pricing 5 to 15 basis points inside DUS Conventional on Top markets, while DUS has been more aggressive on tertiary markets and on size adjustments above $50M. The only way to know on a specific deal is to run quotes."}
+    ],
+    "related_links": [
+      {"href": "financing/agency-loans.html", "title": "Agency Loans (Hub)", "sub": "Fannie Mae and Freddie Mac multifamily programs"},
+      {"href": "property/multifamily.html", "title": "Multifamily Financing", "sub": "All capital sources for apartment loans"},
+      {"href": "financing/agency-loans-los-angeles.html", "title": "Agency Loans in Los Angeles", "sub": "LA market specifics"},
+      {"href": "financing/agency-loans-new-york.html", "title": "Agency Loans in New York", "sub": "NYC market specifics"},
+      {"href": "financing/agency-loans-dallas.html", "title": "Agency Loans in Dallas", "sub": "DFW market specifics"},
+      {"href": "blog/agency-multifamily-financing-fannie-freddie-2026.html", "title": "Agency Multifamily 2026 Guide", "sub": "Cornerstone playbook"}
+    ]
+  },
+  {
+    "slug": "agency-vs-cmbs-stabilized-multifamily",
+    "short_title": "Agency vs CMBS for Stabilized Multifamily",
+    "h1": "Agency vs CMBS for Stabilized Multifamily: How to Choose",
+    "name_a": "Agency (Fannie / Freddie)",
+    "name_b": "CMBS Conduit",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Agency vs CMBS for Stabilized Multifamily: How to Choose | CLS CRE",
+      "meta_description": "Side-by-side comparison of agency (Fannie Mae and Freddie Mac) versus CMBS conduit financing for stabilized multifamily. Rate, leverage, prepay, and execution differences."
+    },
+    "lead": "Agency multifamily debt and CMBS conduit debt both target stabilized rental housing at 60 to 75 percent LTV on 10-year non-recourse terms. They are not interchangeable. Agency wins on coupon for most market-rate deals because the GSEs have a regulatory mandate to lend on multifamily and price accordingly. CMBS wins on a narrower band of deals where deal characteristics fall outside the agency box, where the sponsor needs a structure the agencies will not write, or where the loan is part of a larger pooled execution. Picking the wrong program can cost 30 to 75 basis points in rate or eliminate optionality at exit.",
+    "table": [
+      {"feature": "Rate range (Apr 2026)", "side_a": "5.55 to 6.10 percent (10-year fixed)", "side_b": "6.05 to 6.85 percent (10-year fixed)"},
+      {"feature": "Loan size band", "side_a": "$1M to $100M+", "side_b": "$5M to $100M+ (typical $10M+)"},
+      {"feature": "Maximum LTV", "side_a": "80 percent (market-rate stabilized)", "side_b": "70 to 75 percent (multifamily)"},
+      {"feature": "Minimum DSCR", "side_a": "1.25x", "side_b": "1.25x to 1.30x (multifamily)"},
+      {"feature": "Recourse", "side_a": "Non-recourse with standard carve-outs", "side_b": "Non-recourse with standard carve-outs"},
+      {"feature": "Term", "side_a": "5 to 30 years (10 most common)", "side_b": "5, 7, 10 years (10 most common)"},
+      {"feature": "Amortization", "side_a": "Up to 30 years (IO available)", "side_b": "Typically 30 years (full-term IO available on lower lev)"},
+      {"feature": "Prepayment", "side_a": "Yield maintenance or declining schedule (Fannie); YM or defeasance (Freddie)", "side_b": "Defeasance (almost always)"},
+      {"feature": "Pricing index", "side_a": "10-year UST + spread", "side_b": "10-year SOFR Swap or UST + conduit spread"},
+      {"feature": "Servicing", "side_a": "Seller-Servicer relationship retained", "side_b": "Master servicer (rigid, pool servicing)"},
+      {"feature": "Special situations", "side_a": "Limited; conforming box only", "side_b": "Will fund harder stories: shadow anchored, non-conforming MF, etc."},
+      {"feature": "Typical close timeline", "side_a": "55 to 75 days", "side_b": "60 to 90 days"}
+    ],
+    "when_a_intro": "Agency wins on the bulk of stabilized market-rate multifamily because the GSEs price competitively, lever to 80 percent, and have a deep ecosystem of DUS and Optigo lenders competing on every deal. For sponsors planning to hold 7 to 10 years and willing to play in the conforming box, agency is the default choice on price.",
+    "when_a_bullets": [
+      "Stabilized market-rate multifamily with 90 percent or higher economic occupancy",
+      "Sponsor wants 75 to 80 percent leverage and traditional 30-year amortization",
+      "Loan size $5M to $50M where DUS or Optigo lenders are aggressive",
+      "LIHTC, Mission-Driven, or workforce affordable execution where GSE programs offer better terms and cap exclusion",
+      "Property in a primary or secondary MSA where agency Seller-Servicers compete actively",
+      "Sponsor anticipates supplemental loan additions over the hold period"
+    ],
+    "when_b_intro": "CMBS wins on stabilized multifamily when the deal cannot fit cleanly inside the agency box. The CMBS execution layer is more flexible on property condition, sponsor resume, occupancy ramps, and structural quirks, at the cost of a higher coupon and less servicing flexibility post-close.",
+    "when_b_bullets": [
+      "Multifamily property with retail or commercial ground-floor income exceeding 25 to 30 percent of total NOI",
+      "Sponsor with limited multifamily resume that disqualifies them from agency net worth and liquidity tests",
+      "Property in a tertiary market or with concentration issues that agency lenders are uncomfortable with",
+      "Loan size above $50M where CMBS pool sizing and sub-debt may produce better proceeds",
+      "Sponsor wants full-term interest-only at moderate leverage, which CMBS will sometimes underwrite where agencies will not",
+      "Specialized structures: cross-collateralized portfolios, mezzanine integration, or structured affordable that the agencies will not touch"
+    ],
+    "decision_framework": [
+      "Start with the agency. If the deal fits inside DUS or Optigo, the agencies will out-price CMBS by 30 to 75 basis points nine times out of ten. The exception is when the property has too much commercial NOI, the sponsor has insufficient liquidity, or the market is too thin for agency Seller-Servicers to compete aggressively. In those cases, CMBS may be the only execution.",
+      "Evaluate prepay flexibility. Yield maintenance under Fannie or YM under Freddie can be punishing in a falling-rate environment, but defeasance under Freddie or under CMBS allows the loan to be sold to a defeasance buyer at exit. If the sponsor has a high probability of selling before maturity, defeasance optionality matters more than the headline rate.",
+      "Run the math on full-term interest-only. CMBS will sometimes write full-term IO at 60 to 65 percent LTV on stabilized multifamily where the agencies will only quote 3 to 5 years of IO. The IO benefit is meaningful for sponsors looking to maximize cash distributions during the hold period.",
+      "On loans above $50M, both agencies and CMBS conduits will compete, but CMBS pool dynamics can sometimes price tighter than the GSEs because the loan becomes a meaningful pool asset. On these large deals, you should run both and let the lenders fight for it."
+    ],
+    "real_deal_example": "On a $28M Class B suburban multifamily refinance with a 22 percent ground-floor retail component (a stabilized neighborhood center attached to the apartments), Fannie and Freddie both passed because the commercial NOI exceeded the multifamily cutoff. CMBS quoted at 6.42 percent on a 10-year fixed, 30-year amortization, with 5 years of interest-only, 65 percent LTV, full defeasance prepay. The sponsor took the CMBS execution because no agency lender would quote, and the CMBS structure preserved the optionality of a sale at year 5 through defeasance. Two years later the sponsor sold and defeased the loan in 30 days at a defeasance cost roughly equal to 18 months of yield maintenance, validating the prepay choice.",
+    "expert_quote": "Agency wins on stabilized market-rate multifamily nine times out of ten. The other one is the CMBS deal, and it is almost always because the property has too much commercial NOI, a thin market, or a sponsor story the agencies will not underwrite.",
+    "faqs": [
+      {"q": "Why is agency multifamily debt cheaper than CMBS?", "a": "Fannie Mae and Freddie Mac have a regulatory mandate to provide liquidity to multifamily housing and price accordingly. Their cost of capital is lower because of implicit and explicit government support, and that pricing advantage flows through to borrowers as 30 to 75 basis points of rate savings versus CMBS conduit on most stabilized multifamily."},
+      {"q": "When does CMBS make sense for multifamily?", "a": "CMBS is the right call when the deal cannot fit inside the agency box. Common triggers: ground-floor commercial NOI exceeding 25 to 30 percent of total NOI, sponsor resume issues that fail agency net worth and liquidity tests, properties in markets too thin for agency Seller-Servicer competition, or specialized structures the agencies will not write."},
+      {"q": "Can CMBS lend at higher leverage than agency?", "a": "No, the opposite. Agency programs lever to 75 or 80 percent LTV on stabilized market-rate multifamily, while CMBS conduit typically caps at 70 to 75 percent. On the leverage axis, agency wins."},
+      {"q": "What is the difference between agency yield maintenance and CMBS defeasance?", "a": "Yield maintenance requires the borrower to make the lender whole on lost interest if the loan is paid off early, calculated against the spread between the loan coupon and current Treasury rates. Defeasance requires the borrower to purchase Treasury securities sufficient to replicate the remaining loan payments and sell the defeased loan to a third party. Defeasance preserves the loan as a tradeable asset and is typically more economical than YM in a falling-rate environment."},
+      {"q": "Will CMBS allow full-term interest-only on stabilized multifamily?", "a": "Yes, on lower leverage. CMBS conduits will often quote full-term IO at 60 to 65 percent LTV with strong DSCR coverage. Agencies will typically cap interest-only at 3 to 5 years even on lower leverage."},
+      {"q": "How does servicing differ between agency and CMBS?", "a": "Agency loans are serviced by the Seller-Servicer who originated the loan, who maintains a relationship with the borrower and can be flexible on certain post-close requests. CMBS loans are sold into trusts and serviced by a Master Servicer under a Pooling and Servicing Agreement, which provides far less flexibility on consents, replacements of guarantors, lease modifications, and similar post-close requests."},
+      {"q": "Are CMBS rates ever lower than agency?", "a": "Occasionally on large loans ($50M+) when CMBS pool dynamics are favorable, or on niche multifamily that the agencies will not touch and where CMBS has limited competition. In a typical month for typical stabilized multifamily, agency wins on price."}
+    ],
+    "related_links": [
+      {"href": "financing/agency-loans.html", "title": "Agency Loans (Hub)", "sub": "Fannie Mae and Freddie Mac"},
+      {"href": "financing/cmbs-loans.html", "title": "CMBS Loans (Hub)", "sub": "Conduit financing"},
+      {"href": "property/multifamily.html", "title": "Multifamily Financing", "sub": "All capital sources"},
+      {"href": "comparisons/fannie-mae-dus-vs-freddie-mac-optigo.html", "title": "Fannie vs Freddie", "sub": "GSE program comparison"},
+      {"href": "blog/agency-multifamily-financing-fannie-freddie-2026.html", "title": "Agency Multifamily 2026", "sub": "Cornerstone playbook"},
+      {"href": "blog/cmbs-multifamily-stabilized-2026.html", "title": "CMBS Multifamily 2026", "sub": "When CMBS wins"}
+    ]
+  },
+  {
+    "slug": "sba-504-vs-sba-7a",
+    "short_title": "SBA 504 vs SBA 7(a)",
+    "h1": "SBA 504 vs SBA 7(a) for Owner-User Commercial Real Estate: How to Choose",
+    "name_a": "SBA 504",
+    "name_b": "SBA 7(a)",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "SBA 504 vs SBA 7(a): How to Choose for Owner-User CRE | CLS CRE",
+      "meta_description": "Side-by-side comparison of SBA 504 and SBA 7(a) loans for owner-user commercial real estate. Down payment, rate, term, fees, and use-of-proceeds differences."
+    },
+    "lead": "SBA 504 and SBA 7(a) are the two principal Small Business Administration commercial real estate loan programs, both designed for businesses occupying their own real estate. They look superficially similar (both extend SBA-guaranteed financing for owner-user CRE up to $5M of SBA exposure) but they have different structures, different fees, different rate dynamics, and different sweet spots. SBA 504 is a 90 percent LTV fixed-rate loan with a Certified Development Company second lien. SBA 7(a) is a partially guaranteed bank loan with up to 90 percent LTV and a floating rate. Choosing wrong typically costs the borrower 50 to 150 basis points in coupon or 5 to 10 percent in down payment.",
+    "table": [
+      {"feature": "Maximum loan size (SBA portion)", "side_a": "$5M (most), $5.5M energy, $5.5M manufacturing", "side_b": "$5M total"},
+      {"feature": "Maximum total project size", "side_a": "Up to $20M+ (with bank first mortgage)", "side_b": "$5M total"},
+      {"feature": "Rate structure", "side_a": "Fixed (10, 20, or 25 year debenture rate)", "side_b": "Variable, indexed to Prime + spread"},
+      {"feature": "Rate range (Apr 2026)", "side_a": "Bank 1st: 6.50 to 7.50%; CDC 2nd: 5.50 to 6.00% fixed", "side_b": "Prime + 2.25 to 2.75% (currently 9.75 to 10.25%)"},
+      {"feature": "Down payment (real estate)", "side_a": "10 percent (20 percent for special-purpose or new business)", "side_b": "10 percent"},
+      {"feature": "Term", "side_a": "10, 20, or 25 years (real estate)", "side_b": "Up to 25 years (real estate)"},
+      {"feature": "Amortization", "side_a": "Matches term (no balloon on CDC piece)", "side_b": "Matches term"},
+      {"feature": "Prepayment", "side_a": "10-year declining schedule on CDC piece", "side_b": "No prepayment penalty after 3 years (5/3/1 typical)"},
+      {"feature": "Use of proceeds", "side_a": "Real estate, equipment, refinance limited", "side_b": "Real estate, equipment, working capital, business acquisition, refinance"},
+      {"feature": "Owner occupancy required", "side_a": "Minimum 51% occupancy by borrower's business", "side_b": "Minimum 51% occupancy by borrower's business"},
+      {"feature": "Fees (one-time)", "side_a": "CDC fees ~3.5%, financed into loan", "side_b": "SBA guarantee fee 2.77 to 3.5% on SBA portion"},
+      {"feature": "Typical close timeline", "side_a": "60 to 90 days (CDC + bank coordination)", "side_b": "45 to 75 days"}
+    ],
+    "when_a_intro": "SBA 504 wins when the borrower wants a fixed rate locked in for 10, 20, or 25 years on a real estate purchase or refinance. The CDC second lien at the SBA debenture rate is one of the lowest fixed-rate options available to small business owners, and it locks in cost of capital for the long term. For most owner-user CRE acquisitions and refinances above $1.5M, 504 is the default choice on rate and structure.",
+    "when_a_bullets": [
+      "Owner-user real estate acquisition or construction at 90 percent LTV with long-term fixed rate certainty",
+      "Total project size $1.5M to $20M+ where 504's tiered structure (50 percent bank first, 40 percent CDC, 10 percent down) makes sense",
+      "Manufacturing or energy-efficient project qualifying for the elevated $5.5M SBA exposure cap",
+      "Borrower wants no balloon payment and full amortization to maturity",
+      "Property is a special-purpose asset (medical, gas station, car wash, hospitality) where banks need the SBA wrap to lend at 90 percent",
+      "Refinance of existing SBA 504 or other CRE debt where rate-and-term refinance qualifies"
+    ],
+    "when_b_intro": "SBA 7(a) wins when the borrower needs flexibility on use of proceeds beyond just real estate, when the deal size is $1M to $5M total and 504's tiered structure is overkill, or when the borrower prioritizes prepayment flexibility over locked-in fixed rate. 7(a) is the right tool when real estate is one piece of a broader business financing need.",
+    "when_b_bullets": [
+      "Total project size $500K to $5M where the simplicity of one loan beats the layered 504 structure",
+      "Deal includes working capital, inventory, FF&E, or business acquisition alongside the real estate",
+      "Borrower wants prepayment flexibility (no penalty after 3 years versus 504's 10-year declining schedule)",
+      "Real estate is a smaller portion of the total business financing need (50 percent or less)",
+      "Borrower is comfortable with floating-rate exposure indexed to Prime",
+      "Speed-to-close matters more than rate certainty (7(a) closes 2 to 4 weeks faster than 504 on most deals)"
+    ],
+    "decision_framework": [
+      "On most owner-user real estate purchases and refinances above $1.5M, 504 is the right call. The fixed-rate CDC second lien is the cheapest long-term fixed money available to a small business owner, and the structure preserves bank balance sheet (the bank only commits 50 percent of the project on the first mortgage, freeing up capacity for additional borrower lines).",
+      "On deals where real estate is bundled with working capital, inventory, FF&E, or business acquisition, 7(a) is the right tool. 504 cannot fund anything beyond real estate, equipment, and limited refinance, so a borrower needing $3M for a building plus $1.5M for working capital and inventory is forced into 7(a) for the full $4.5M.",
+      "On floating versus fixed rate, the calculus depends on the borrower's view of forward rates. With Prime at 7.50 percent in April 2026, a 7(a) loan at Prime + 2.50 percent is 10.00 percent, versus a 504 CDC piece at 5.75 percent fixed. The blended 504 rate (50 percent bank first at 7.00 percent + 40 percent CDC at 5.75 percent + 10 percent down) is roughly 6.50 percent on the financed portion, materially below 7(a). For long-term holds, 504 typically wins on cost of capital.",
+      "On prepayment flexibility, 7(a) is far more flexible. The 504 CDC piece has a 10-year declining prepayment penalty (10,9,8,7,6,5,4,3,2,1 percent of unpaid principal) versus 7(a)'s 5,3,1 percent first three years and zero after. Borrowers who anticipate selling the business or refinancing within 5 to 10 years should weight this heavily."
+    ],
+    "real_deal_example": "On a $4.2M owner-user industrial purchase in Long Beach (manufacturing tenant, 100 percent owner-occupied) the borrower had two competing structures: 504 with a 50 percent bank first at 6.95 percent fixed plus a 40 percent CDC second at 5.85 percent fixed (blended ~6.46 percent), or 7(a) at Prime + 2.25 percent floating (10.00 percent at the time, with a 25-year term). The borrower's banker initially pushed 7(a) for simplicity. We ran both side by side. Over a 10-year hold, the 504 structure projected to save approximately $480K in interest expense, even after CDC fees and the additional close timeline. The borrower took the 504. Eight months later, when Prime cut by 50 basis points, the borrower's friend who had taken the 7(a) pathway emailed asking whether to refinance; our 504 borrower had already locked in the lower rate with no prepayment exposure on the bank first lien.",
+    "expert_quote": "If the deal is mostly real estate and the borrower is going to hold the business for at least five years, 504 is almost always the right answer. The fixed CDC piece is the cheapest long-term fixed money small business owners can access.",
+    "faqs": [
+      {"q": "What is the maximum SBA exposure on 504 versus 7(a)?", "a": "Both programs cap SBA exposure at $5M (with $5.5M available on 504 for manufacturing or energy-efficient projects). On 504, this is the CDC second lien only; the bank first mortgage on top can extend the total project well beyond $5M of SBA exposure. On 7(a), the $5M is the total loan amount."},
+      {"q": "Can SBA 504 be used for working capital or inventory?", "a": "No. SBA 504 is restricted to real estate, equipment, and limited refinance. Working capital, inventory, FF&E, and business acquisition must be financed through 7(a) or conventional bank financing."},
+      {"q": "Is the 504 CDC second lien always fixed rate?", "a": "Yes. The CDC piece is funded by the sale of debentures with a fixed coupon set monthly (10, 20, or 25 year debenture rate). The bank first lien is typically also fixed for 5 to 10 years with a balloon, though some banks offer fully amortizing fixed structures."},
+      {"q": "What is the down payment on SBA 504 versus 7(a)?", "a": "Both programs typically require 10 percent down on owner-user real estate, with 20 percent down required on 504 for special-purpose properties (hotels, restaurants, gas stations, car washes, single-purpose manufacturing) and on new businesses (defined as less than 2 years of operating history)."},
+      {"q": "How does the prepayment penalty work on SBA 504?", "a": "The CDC second lien has a 10-year declining prepayment penalty starting at 10 percent in year 1 and reducing 1 percent per year (10, 9, 8, 7, 6, 5, 4, 3, 2, 1) before reaching zero in year 11. The bank first mortgage typically follows the bank's standard prepayment terms, which are usually 5,4,3,2,1 percent or no penalty depending on the bank."},
+      {"q": "Can SBA 504 finance ground-up construction?", "a": "Yes. SBA 504 can finance owner-user construction at 90 percent LTV with the same tiered structure (50 percent bank first, 40 percent CDC second, 10 percent down). Construction is structured as a bank construction loan that converts to permanent at certificate of occupancy, with the CDC piece funding at conversion."},
+      {"q": "Does SBA 504 require a personal guarantee?", "a": "Yes. All owners of 20 percent or more of the operating company must personally guarantee the loan, both the bank first lien and the CDC second lien. This is a federal SBA requirement and applies equally to 7(a)."},
+      {"q": "What is the typical fee load on SBA 504?", "a": "CDC fees are approximately 3.5 percent of the CDC second lien amount and are financed into the loan, so the borrower does not pay them out of pocket. Bank fees on the first lien are typical bank fees (origination 0.5 to 1.0 percent, plus appraisal, environmental, and legal)."}
+    ],
+    "related_links": [
+      {"href": "financing/sba-loans.html", "title": "SBA Loans (Hub)", "sub": "504 and 7(a) overview"},
+      {"href": "financing/sba-loans-los-angeles.html", "title": "SBA Loans in Los Angeles", "sub": "LA market specifics"},
+      {"href": "financing/sba-loans-houston.html", "title": "SBA Loans in Houston", "sub": "Houston market specifics"},
+      {"href": "property/industrial.html", "title": "Industrial Financing", "sub": "Owner-user industrial"}
+    ]
+  },
+  {
+    "slug": "bridge-debt-fund-vs-bank-balance-sheet",
+    "short_title": "Bridge Debt Fund vs Bank Balance Sheet",
+    "h1": "Bridge Debt Fund vs Bank Balance Sheet for Value-Add CRE: How to Choose",
+    "name_a": "Bridge Debt Fund",
+    "name_b": "Bank Balance Sheet",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Bridge Debt Fund vs Bank Balance Sheet for Value-Add: How to Choose | CLS CRE",
+      "meta_description": "When private bridge debt funds beat bank balance sheet on value-add commercial real estate. Rate, leverage, speed, recourse, and execution differences."
+    },
+    "lead": "Value-add commercial real estate financing comes from two main private capital pools: bridge debt funds (private credit, mortgage REITs, and dedicated bridge lenders) and bank balance sheet (regional and national banks underwriting on their own books). Bridge debt funds price 150 to 400 basis points wide of bank balance sheet but deliver leverage, speed, and structural flexibility that banks will not match. Bank balance sheet prices tighter but caps out at lower leverage, requires more sponsor seasoning, and moves on bank credit timelines. The right answer depends on the deal profile and the sponsor's tolerance for cost of capital versus execution certainty.",
+    "table": [
+      {"feature": "Rate range (Apr 2026)", "side_a": "SOFR + 350 to 700 bps (8.85 to 12.35% all-in)", "side_b": "SOFR + 200 to 350 bps (7.35 to 8.85% all-in)"},
+      {"feature": "Loan size", "side_a": "$2M to $200M+", "side_b": "$1M to $50M+ (depends on bank)"},
+      {"feature": "Maximum LTV", "side_a": "75 to 80 percent LTC, up to 85 percent on lower leverage", "side_b": "65 to 75 percent LTC"},
+      {"feature": "Maximum LTV (stabilized)", "side_a": "70 to 75 percent (LTV at exit)", "side_b": "65 to 70 percent (LTV at exit)"},
+      {"feature": "Recourse", "side_a": "Non-recourse with carve-outs (most funds)", "side_b": "Recourse or partial recourse (most banks)"},
+      {"feature": "Term", "side_a": "12 to 36 months + extensions", "side_b": "12 to 36 months + extensions"},
+      {"feature": "Interest reserve and CapEx", "side_a": "Typically funded into loan", "side_b": "Sometimes funded, sometimes sponsor-funded"},
+      {"feature": "Origination fee", "side_a": "1.0 to 2.0 percent", "side_b": "0.5 to 1.0 percent"},
+      {"feature": "Exit / extension fee", "side_a": "0.25 to 1.0 percent", "side_b": "Varies, sometimes none"},
+      {"feature": "Personal guarantee", "side_a": "Bad-boy carve-outs only", "side_b": "Full or partial recourse"},
+      {"feature": "Decision speed", "side_a": "Term sheet in 5 to 10 days, close in 30 to 45", "side_b": "Term sheet in 10 to 20 days, close in 45 to 75"},
+      {"feature": "Property condition tolerance", "side_a": "High (will fund vacant, lease-up, repositioning, transitional)", "side_b": "Moderate (banks prefer stabilized or near-stabilized)"}
+    ],
+    "when_a_intro": "Bridge debt funds win when the deal needs leverage, speed, structural flexibility, or non-recourse execution that banks will not provide. The cost of capital is materially higher (150 to 400 basis points), but the execution profile is what makes value-add deals close.",
+    "when_a_bullets": [
+      "Heavy value-add or repositioning where occupancy is below 75 percent and bank UW will not stretch",
+      "Lease-up financing where the sponsor needs the leverage and the runway to execute the business plan",
+      "Transitional asset (recently completed construction, just acquired, just renovated) where stabilization is 12 to 24 months out",
+      "Non-recourse execution required for institutional or syndicate sponsors who cannot or will not personally guarantee",
+      "Deal size or sponsor profile too large or too aggressive for the bank's credit box",
+      "Fast close required (30 to 45 days from term sheet) where bank credit committee timelines will not deliver",
+      "Future funding for CapEx, leasing commissions, or interest reserve embedded in the loan structure"
+    ],
+    "when_b_intro": "Bank balance sheet wins on the price-driven side of value-add when the deal is closer to stabilized, the sponsor has bank relationships, and recourse is not a deal-killer. Banks will price 150 to 400 basis points inside debt funds when the deal fits their credit box, and the savings flow straight to project IRR.",
+    "when_b_bullets": [
+      "Light value-add or near-stabilized asset where occupancy is 75 to 90 percent and stabilization risk is modest",
+      "Sponsor has an existing depository or operating relationship with a regional or national bank",
+      "Sponsor is comfortable with recourse or partial recourse and the personal balance sheet supports it",
+      "Loan size $5M to $30M which is the sweet spot of regional bank balance sheet",
+      "Property type the bank knows well (multifamily, industrial, suburban office) where credit committee is comfortable",
+      "Deal where 65 to 70 percent LTC is sufficient and the sponsor does not need the higher debt fund leverage",
+      "Sponsor has 12+ months to plan and execute and bank credit committee timelines do not threaten the close"
+    ],
+    "decision_framework": [
+      "Solve for cost of capital adjusted for execution certainty. Bridge debt funds cost 150 to 400 basis points more than bank balance sheet, but they will close on transitional deals that banks decline. The question is not which is cheaper at a coupon level, but which actually closes on your deal at the leverage you need.",
+      "Recourse versus non-recourse is a structural decision. Most institutional sponsors and syndicates require non-recourse execution as a fund mandate. For these sponsors, bank balance sheet is generally off the table because most banks require some form of recourse on transitional assets. Sponsors with personal balance sheets willing to provide recourse can access the cheaper bank execution.",
+      "Leverage matters disproportionately on value-add. A 5 percent difference in LTC ($1M of equity savings on a $20M deal) at the front end can mean the difference between making the deal pencil and walking away. Bridge debt funds will quote 75 to 80 percent LTC on heavy value-add where banks cap at 65 to 70 percent.",
+      "Speed-to-close matters when the seller has a competing bid or when the loan is a 1031 takedown with a hard deadline. Debt funds routinely close in 30 to 45 days from signed application; banks routinely take 60 to 75 days through credit committee. On a tight timeline, the bank pricing advantage may not survive the execution risk."
+    ],
+    "real_deal_example": "On a 188-unit Class C multifamily acquisition in a Sun Belt MSA at 71 percent occupancy with a $4M renovation budget and a 12-month stabilization plan, two competing executions emerged. A regional bank quoted at SOFR + 285 (8.20 percent all-in at the time), 65 percent LTC, with full recourse and a slow 75-day close timeline. A national bridge debt fund quoted at SOFR + 425 (9.60 percent all-in), 75 percent LTC, non-recourse, with future funding for the renovation and a 35-day close. The sponsor was a private equity syndicate with a non-recourse mandate, so the bank execution was disqualified at the structural level. The debt fund quote closed on time and delivered the additional 10 percent of LTC, which freed up $1.4M of equity for the next acquisition. The 140 basis point cost-of-capital premium was viewed as the cost of execution and structure, not a comparable rate to the bank quote.",
+    "expert_quote": "On heavy value-add or transitional, the question is rarely which is cheaper. It is which actually closes on your deal at the leverage you need. The bridge debt fund premium is the cost of certainty.",
+    "faqs": [
+      {"q": "Why are bridge debt funds more expensive than banks?", "a": "Bridge debt funds raise capital from institutional investors at higher cost than banks raise deposits, and they provide more flexibility on leverage, recourse, and credit profile. The wider spread compensates for higher capital cost and higher loss expectations on the riskier slice of the value-add market that banks will not finance."},
+      {"q": "Can bridge debt funds lend non-recourse?", "a": "Yes, the majority of institutional bridge debt funds quote non-recourse with bad-boy carve-outs only. This is a primary reason institutional sponsors and private equity syndicates use debt fund execution despite the cost premium."},
+      {"q": "How fast can a bridge debt fund close?", "a": "Most institutional bridge debt funds quote 30 to 45 days from signed application to close, with the fastest funds closing in 21 to 30 days on simple transactions with cooperative sponsors. Banks routinely require 60 to 75 days on transitional deals through credit committee."},
+      {"q": "Will banks lend on lease-up multifamily?", "a": "Some banks will, at lower leverage and with significant sponsor seasoning required. Most banks prefer occupancy of 80 percent or higher before they will quote on transitional multifamily. Below that threshold, bridge debt fund execution is typically the path."},
+      {"q": "What is the typical extension structure on a bridge debt fund loan?", "a": "Most bridge debt fund loans are 24 to 36 months initial term with one or two 12-month extension options at lender discretion or upon meeting performance milestones. Extensions typically carry a fee of 0.25 to 0.50 percent of the unpaid principal balance."},
+      {"q": "Can a borrower refinance a bridge debt fund loan with agency at exit?", "a": "Yes, this is the standard exit path for value-add multifamily. The bridge debt fund finances the acquisition and renovation; once the property reaches stabilization (typically 90 percent occupancy for 90 days), the sponsor refinances into Fannie Mae DUS or Freddie Mac Optigo at a much lower rate."},
+      {"q": "Are there bank bridge programs that compete with debt funds?", "a": "Some banks have dedicated bridge programs that compete on certain deal profiles, particularly for sponsors with deep deposit relationships. These programs typically offer 65 to 70 percent LTC with limited recourse and price 100 to 200 basis points wide of bank balance sheet permanent. They are a middle ground but rarely match the leverage and structural flexibility of dedicated debt funds."}
+    ],
+    "related_links": [
+      {"href": "financing/bridge-loans.html", "title": "Bridge Loans (Hub)", "sub": "Private capital bridge debt"},
+      {"href": "financing/permanent-loans.html", "title": "Permanent Loans (Hub)", "sub": "Bank, agency, life co"},
+      {"href": "blog/multifamily-value-add-bridge-strategy.html", "title": "Value-Add Bridge Strategy", "sub": "Cornerstone playbook"},
+      {"href": "financing/bridge-loans-los-angeles.html", "title": "Bridge Loans in Los Angeles", "sub": "LA market specifics"},
+      {"href": "financing/bridge-loans-dallas.html", "title": "Bridge Loans in Dallas", "sub": "DFW market specifics"}
+    ]
+  },
+  {
+    "slug": "recourse-vs-non-recourse",
+    "short_title": "Recourse vs Non-Recourse",
+    "h1": "Recourse vs Non-Recourse Commercial Real Estate Loans: How to Choose",
+    "name_a": "Recourse",
+    "name_b": "Non-Recourse",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Recourse vs Non-Recourse CRE Loans: How to Choose | CLS CRE",
+      "meta_description": "Side-by-side comparison of recourse and non-recourse commercial real estate loans. Pricing differences, sponsor liability, lender preferences, and when each is the right call."
+    },
+    "lead": "Recourse and non-recourse describe whether a commercial real estate lender can pursue the borrower's personal balance sheet beyond the property in the event of a default. Recourse loans are typically priced 50 to 150 basis points inside non-recourse loans of the same leverage and term, because the lender has a second source of repayment. Non-recourse loans cost more but cap the borrower's exposure at the equity invested. The choice depends on the lender's preference, the borrower's personal balance sheet and risk tolerance, and the structural mandates of the sponsor's investors. Most institutional sponsors are required to use non-recourse, while smaller and individual sponsors often face the tradeoff explicitly.",
+    "table": [
+      {"feature": "Rate premium", "side_a": "Base rate (no premium)", "side_b": "+ 50 to 150 basis points over comparable recourse"},
+      {"feature": "Maximum LTV", "side_a": "Often 75 to 80 percent (banks lever higher with recourse)", "side_b": "Typically 65 to 75 percent (lender protection through equity buffer)"},
+      {"feature": "Borrower liability", "side_a": "Full personal liability for unpaid balance", "side_b": "Limited to property value with bad-boy carve-outs"},
+      {"feature": "Bad-boy carve-outs", "side_a": "Already covered under full recourse", "side_b": "Triggered by fraud, waste, voluntary bankruptcy, environmental, transfer violation, etc."},
+      {"feature": "Standard lenders", "side_a": "Banks, credit unions, SBA, hard money", "side_b": "Agencies, CMBS, life co, debt funds (most), HUD"},
+      {"feature": "Personal guarantee scope", "side_a": "Full corporate and personal guarantee", "side_b": "Carve-out guarantee only"},
+      {"feature": "Typical product types", "side_a": "Owner-user, transitional bank, construction (full recourse during construction)", "side_b": "Stabilized agency multifamily, CMBS, life co perm, institutional bridge"},
+      {"feature": "Net worth requirement", "side_a": "Bank-driven, often 1.0x to 2.0x loan amount", "side_b": "Often 1.0x loan amount + 10 percent liquidity"},
+      {"feature": "Construction phase", "side_a": "Typically full recourse during construction", "side_b": "Full recourse during construction; converts at C of O"},
+      {"feature": "Typical sponsor profile", "side_a": "Private capital, owner-user, smaller GPs", "side_b": "Institutional GPs, syndicates, REITs, family offices with non-recourse mandates"},
+      {"feature": "Bankruptcy exposure", "side_a": "Lender can pursue all sponsor assets", "side_b": "Lender's recovery limited to property unless carve-out trigger"},
+      {"feature": "Burn-off provisions", "side_a": "Sometimes included (recourse converts to non-recourse at performance milestones)", "side_b": "Not applicable (already non-recourse)"}
+    ],
+    "when_a_intro": "Recourse wins when the borrower's personal balance sheet supports it, the lender pricing advantage is meaningful, and the sponsor's investor structure does not prohibit personal guarantees. Recourse loans typically come from banks and SBA programs and price materially tighter than the non-recourse alternatives.",
+    "when_a_bullets": [
+      "Owner-user real estate where the operator's business is the primary source of repayment",
+      "Bank balance sheet permanent or bridge where the rate savings of 50 to 150 basis points is meaningful",
+      "Construction loan where the lender requires recourse during construction regardless of permanent execution",
+      "SBA 504 and SBA 7(a) where personal guarantees are mandatory under SBA rules",
+      "Single-asset entity owned by an individual sponsor with a strong personal balance sheet",
+      "Smaller deals ($1M to $5M) where non-recourse execution carries minimum loan size constraints"
+    ],
+    "when_b_intro": "Non-recourse is the default for institutional CRE financing. The pricing premium is the cost of capping personal liability, and for sponsors managing third-party capital it is structurally required. Agencies, CMBS, life co, and most institutional debt funds quote non-recourse as the standard structure.",
+    "when_b_bullets": [
+      "Institutional sponsor or syndicate with a non-recourse fund mandate that prohibits personal guarantees",
+      "Stabilized multifamily where agency, CMBS, or life co execution is non-recourse by default",
+      "Bridge debt fund execution on transitional or value-add where most institutional debt funds are non-recourse",
+      "Sponsor with a complex personal balance sheet or significant other guarantees who cannot stretch on additional recourse",
+      "Family office or REIT where the structure of the entity precludes individual personal guarantees",
+      "Larger transaction ($20M+) where non-recourse loan products price competitively against recourse alternatives"
+    ],
+    "decision_framework": [
+      "Start with the sponsor's investor structure. Institutional GPs and syndicates managing third-party capital almost always have a non-recourse mandate in their fund documents. For those sponsors, recourse is structurally off the table regardless of pricing. For private capital sponsors and individual borrowers, the choice is genuine and worth modeling.",
+      "Calculate the dollar value of the rate spread over the hold period. A 100 basis point premium on a $10M loan is $100K per year of additional interest, or roughly $1M over a 10-year hold. The non-recourse decision is essentially buying $1M of personal liability protection. For sponsors with $5M of net worth, that is meaningful insurance. For sponsors with $50M of net worth, the math may favor recourse and the rate savings.",
+      "On construction loans, the choice is usually structural. Most lenders require full recourse during the construction phase regardless of whether the permanent execution is non-recourse. The recourse burns off at certificate of occupancy or at stabilization, depending on the loan documents. Sponsors should expect to provide some form of completion guarantee even on otherwise non-recourse permanent debt.",
+      "Bad-boy carve-outs are the joker in the deck. Non-recourse does not mean no liability; it means liability is limited to property value except in cases of fraud, waste, environmental issues, voluntary bankruptcy, or unauthorized transfers. Carve-out language varies materially by lender and is one of the most negotiated points in non-recourse loan documents. The rate premium is real, but so are the carve-outs, and a sponsor who triggers a carve-out trigger ends up with full recourse exposure on a loan that priced as non-recourse."
+    ],
+    "real_deal_example": "On a $14M Class B multifamily refinance with a private capital sponsor and a strong personal balance sheet ($22M net worth, $4M liquidity), two executions were available: a regional bank balance sheet permanent at 6.85 percent fixed 10-year with full recourse, or a CMBS conduit non-recourse at 7.65 percent fixed 10-year. The 80 basis point premium translated to approximately $112K per year of additional interest, or $1.12M over the term. The sponsor evaluated the recourse exposure: in a downside scenario, the property could lose 30 to 35 percent of value before triggering deficit liability, which the personal balance sheet could absorb without distress. The sponsor took the bank recourse execution, viewing the $1.12M of saved interest as significant relative to a downside scenario the personal balance sheet could already cover. A different sponsor with the same deal but a $5M net worth and $1M liquidity might have sized the recourse exposure as catastrophic and paid the CMBS premium for the non-recourse cap.",
+    "expert_quote": "Recourse versus non-recourse is rarely a question of pricing alone. It is a question of whether the sponsor's balance sheet and investor structure can accept personal liability, and what that personal liability is worth at the deal level over the hold period.",
+    "faqs": [
+      {"q": "How much more does a non-recourse loan cost than a recourse loan?", "a": "On comparable products and structures, non-recourse loans typically price 50 to 150 basis points wide of recourse alternatives. The premium reflects the lender's loss of the personal balance sheet as a backstop and the higher loss-given-default expected on non-recourse paper."},
+      {"q": "Are agency multifamily loans always non-recourse?", "a": "Yes. Fannie Mae DUS, Freddie Mac Optigo, and HUD/FHA multifamily programs are all structurally non-recourse with bad-boy carve-outs. Personal guarantees on these products are limited to the carve-out triggers (fraud, waste, environmental, voluntary bankruptcy, unauthorized transfer) and do not include general loan repayment."},
+      {"q": "Are CMBS loans always non-recourse?", "a": "Yes. CMBS conduit financing is structurally non-recourse with carve-out guarantees. The conduit servicer cannot pursue the sponsor's personal balance sheet for unpaid loan balances except in cases of carve-out trigger events."},
+      {"q": "Can a recourse loan convert to non-recourse?", "a": "Some bank construction loans include burn-off provisions that convert recourse to non-recourse upon meeting performance milestones (typically stabilization, debt service coverage ratio thresholds, or LTV reduction). These are negotiated provisions and are most common on construction-to-permanent structures with strong sponsors."},
+      {"q": "What is a bad-boy carve-out?", "a": "Bad-boy carve-outs are specific borrower behaviors that, if triggered, expose the borrower to personal liability under an otherwise non-recourse loan. Standard carve-outs include fraud, intentional misrepresentation, voluntary bankruptcy, unauthorized property transfer, environmental contamination, waste of the property, and failure to pay property taxes or insurance. The full list and triggering language vary by lender and are heavily negotiated."},
+      {"q": "Are SBA loans recourse?", "a": "Yes. Both SBA 504 and SBA 7(a) require personal guarantees from all owners of 20 percent or more of the operating company. This is a federal SBA requirement, not a lender requirement, and applies regardless of which CDC or bank is funding the loan."},
+      {"q": "Can a borrower negotiate recourse out of a bank loan?", "a": "On larger transactions ($20M+) with strong sponsors, banks will sometimes quote partial recourse (limited to a percentage of the loan, typically 25 to 50 percent) or non-recourse with a higher pricing premium. On smaller bank balance sheet loans (under $10M), most banks require full recourse and will not negotiate to non-recourse without a significant pricing premium that erodes the bank's pricing advantage."},
+      {"q": "What is the difference between full recourse and partial recourse?", "a": "Full recourse exposes the borrower to the entire unpaid loan balance plus interest, fees, and collection costs. Partial recourse caps the borrower's personal liability at a specified percentage of the loan amount or a fixed dollar amount. Partial recourse is sometimes used on bank balance sheet loans for stronger sponsors as a middle ground between full recourse and non-recourse."}
+    ],
+    "related_links": [
+      {"href": "financing/permanent-loans.html", "title": "Permanent Loans (Hub)", "sub": "Bank, agency, life co, CMBS"},
+      {"href": "financing/bridge-loans.html", "title": "Bridge Loans (Hub)", "sub": "Private capital bridge"},
+      {"href": "financing/sba-loans.html", "title": "SBA Loans (Hub)", "sub": "504 and 7(a)"},
+      {"href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html", "title": "Agency vs CMBS", "sub": "Stabilized multifamily comparison"},
+      {"href": "comparisons/bridge-debt-fund-vs-bank-balance-sheet.html", "title": "Debt Fund vs Bank Balance Sheet", "sub": "Value-add comparison"}
+    ]
+  }
+]

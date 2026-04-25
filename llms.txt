@@ -133,7 +133,11 @@ Programmatic city-specific commercial CRE financing guides available at /commerc
 - [Construction Loans](https://clscre.com/financing/construction-loans.html)
 - [Bridge Loans](https://clscre.com/financing/bridge-loans.html)
 - [SBA Loans](https://clscre.com/financing/sba-loans.html)
-- [Mezzanine & Preferred Equity](https://clscre.com/financing/mezzanine.html)
+- [Agency Loans (Fannie Mae DUS, Freddie Mac Optigo)](https://clscre.com/financing/agency-loans.html)
+- [HUD/FHA Loans (221(d)(4), 223(f), 232)](https://clscre.com/financing/hud-fha-loans.html)
+- [CMBS Loans](https://clscre.com/financing/cmbs-loans.html)
+- [Life Company Loans](https://clscre.com/financing/life-company-loans.html)
+- [Mezzanine and Preferred Equity](https://clscre.com/financing/mezzanine.html)
 - [Specialty Financing](https://clscre.com/financing/specialty.html)
 
 ## Core property type pages
@@ -176,7 +180,7 @@ Long-tail LA submarket pages covering the 20 most active LA metro markets for CR
 ## Data and tooling
 
 - [Market Data](https://clscre.com/market-data.html): Live treasury yields, SOFR, prime rate, index tracking
-- [Locations](https://clscre.com/locations.html): 60+ U.S. metros with market-specific financing and property pages
+- [Locations](https://clscre.com/locations.html): 108 U.S. metros with market-specific financing and property pages, covering all 100 priority MSAs in the CLS CRE national coverage map
 - [Insights / Blog](https://clscre.com/blog/index.html): Weekly rate commentary, market reports, educational guides, anonymized case studies
 - [Calculators](https://clscre.com/tools/index.html): DSCR, cap rate, LTV, loan payment, cash-on-cash, NOI tools
 - [EDI Eligibility Pre-Check](https://clscre.com/tools/edi-eligibility-check.html): Free tool for LA developers to submit a site for ED1 eligibility review. Trevor returns a capital stack report within 24 hours.
