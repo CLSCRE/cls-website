@@ -1,0 +1,209 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"{{ sp.h1 }}","description":"{{ sp.seo.meta_description }}","author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"datePublished":"{{ sp.published }}","dateModified":"{{ today }}","mainEntityOfPage":{"@type":"WebPage","@id":"https://clscre.com/property/{{ sp.slug }}.html"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in sp.faqs %}{"@type":"Question","name":"{{ faq.q|e }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a|e }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Property Types","item":"https://clscre.com/property/"},{"@type":"ListItem","position":3,"name":"{{ sp.name }}","item":"https://clscre.com/property/{{ sp.slug }}.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":"{{ sp.name }} Financing | CLS CRE","url":"https://clscre.com/property/{{ sp.slug }}.html","description":"{{ sp.seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":"United States","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".faq-section",".specialty-lead"]}}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}property/">Property Types</a></li>
+  <li><span>{{ sp.name }}</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">{{ sp.category_label }}</div>
+  <h1 class="reveal">{{ sp.h1 }}</h1>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:16px">By Trevor Damyan, Commercial Mortgage Broker at Commercial Lending Solutions</p>
+  <p class="reveal specialty-lead" style="font-size:18px;line-height:1.6;color:var(--gray-700);max-width:880px">{{ sp.lead }}</p>
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Get a {{ sp.short_name }} Quote &rarr;</a>
+</div>
+</section>
+
+<!-- AT A GLANCE / KEY FACTS -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">At a Glance</div>
+  <h2 class="section-title reveal">{{ sp.name }} Financing Snapshot</h2>
+  <div class="feature-grid">
+    {% for fact in sp.snapshot %}
+    <div class="feature-card reveal">
+      <div class="label">{{ fact.label }}</div>
+      <div class="value">{{ fact.value }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- CAPITAL SOURCES TABLE -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">Capital Source Map</div>
+  <h2 class="section-title reveal">Where {{ sp.name }} Loans Come From</h2>
+  <p class="reveal" style="line-height:1.7;color:var(--gray-700);max-width:880px">{{ sp.capital_intro }}</p>
+  <div style="overflow-x:auto;margin-top:24px">
+    <table class="comparison-table reveal" style="width:100%;border-collapse:collapse;font-size:15px;border:1px solid var(--gray-200);border-radius:8px;overflow:hidden">
+      <thead>
+        <tr style="background:var(--navy);color:var(--white)">
+          <th style="padding:14px 16px;text-align:left;font-weight:600;width:22%">Capital Source</th>
+          <th style="padding:14px 16px;text-align:left;font-weight:600">Rate Range (Apr 2026)</th>
+          <th style="padding:14px 16px;text-align:left;font-weight:600">LTV / Down</th>
+          <th style="padding:14px 16px;text-align:left;font-weight:600">Best Fit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in sp.capital_table %}
+        <tr style="border-bottom:1px solid var(--gray-200);{% if loop.index is even %}background:var(--gray-50){% endif %}">
+          <td style="padding:14px 16px;font-weight:600;color:var(--navy)">{{ row.source }}</td>
+          <td style="padding:14px 16px;color:var(--gray-700)">{{ row.rate }}</td>
+          <td style="padding:14px 16px;color:var(--gray-700)">{{ row.ltv }}</td>
+          <td style="padding:14px 16px;color:var(--gray-700)">{{ row.best_fit }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">Pricing is indicative and reflects active CLS CRE quote pipeline as of {{ today_pretty }}. Actual pricing depends on property condition, sponsor profile, deal size, and market dynamics.</p>
+</div>
+</section>
+
+<!-- TYPICAL DEAL PROFILE -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Deal Profile</div>
+  <h2 class="section-title reveal">Typical {{ sp.name }} Deal</h2>
+  {% for para in sp.deal_profile %}
+  <p class="reveal" style="line-height:1.8;color:var(--gray-700);margin-top:16px;max-width:880px">{{ para }}</p>
+  {% endfor %}
+</div>
+</section>
+
+<!-- UNDERWRITING CONSIDERATIONS -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">What Lenders Look For</div>
+  <h2 class="section-title reveal">{{ sp.name }} Underwriting Considerations</h2>
+  <p class="reveal" style="line-height:1.7;color:var(--gray-700);max-width:880px">{{ sp.underwriting_intro }}</p>
+  <ul class="reveal" style="line-height:1.9;color:var(--gray-700);margin-top:16px;padding-left:20px;max-width:880px">
+    {% for item in sp.underwriting_bullets %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+
+<!-- COMMON PITFALLS -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Pitfalls We See</div>
+  <h2 class="section-title reveal">Common {{ sp.name }} Financing Pitfalls</h2>
+  <p class="reveal" style="line-height:1.7;color:var(--gray-700);max-width:880px">{{ sp.pitfalls_intro }}</p>
+  <ul class="reveal" style="line-height:1.9;color:var(--gray-700);margin-top:16px;padding-left:20px;max-width:880px">
+    {% for item in sp.pitfalls_bullets %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+
+<!-- REAL DEAL EXAMPLE -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">From the CLS CRE Pipeline</div>
+  <h2 class="section-title reveal">A Real {{ sp.name }} Deal</h2>
+  <div class="reveal" style="background:var(--white);border-left:4px solid var(--green);padding:24px 28px;border-radius:8px;margin-top:16px;max-width:880px;box-shadow:0 1px 3px rgba(0,0,0,0.04)">
+    <p style="line-height:1.8;color:var(--gray-700);margin:0">{{ sp.real_deal_example }}</p>
+  </div>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">All deal references anonymize borrower and lender identities and use city-level geography only.</p>
+</div>
+</section>
+
+<!-- EXPERT QUOTE -->
+{% if sp.expert_quote %}
+<section class="content-section">
+<div class="section-inner">
+  <blockquote class="reveal" style="font-family:var(--font-display);font-size:clamp(20px,2.5vw,26px);line-height:1.5;color:var(--navy);max-width:880px;margin:0 auto;padding:0 24px;border-left:4px solid var(--green);font-style:italic">
+    {{ sp.expert_quote }}
+    <footer style="font-family:var(--font-body);font-size:14px;color:var(--gray-500);font-style:normal;margin-top:16px">Trevor Damyan, Commercial Lending Solutions</footer>
+  </blockquote>
+</div>
+</section>
+{% endif %}
+
+<!-- RELATED LINKS -->
+{% if sp.related_links %}
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Related Financing</h2>
+  <div class="cross-link-grid">
+    {% for link in sp.related_links %}
+    <a href="{{ depth }}{{ link.href }}" class="cross-link-card reveal">
+      <div class="cl-title">{{ link.title }}</div>
+      <div class="cl-sub">{{ link.sub }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- OTHER SPECIALTY PROPERTY TYPES -->
+{% if all_specialty|length > 1 %}
+<section class="content-section alt">
+<div class="section-inner">
+  <h2 class="section-title reveal">Other Specialty Property Financing</h2>
+  <div class="cross-link-grid">
+    {% for other in all_specialty %}
+    {% if other.slug != sp.slug %}
+    <a href="{{ depth }}property/{{ other.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ other.name }}</div>
+      <div class="cl-sub">{{ other.short_tagline }}</div>
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+<div class="section-inner">
+  <div class="section-label reveal">FAQ</div>
+  <h2 class="section-title reveal">{{ sp.name }} Financing FAQ</h2>
+  <div class="faq-list">
+    {% for faq in sp.faqs %}
+    <div class="faq-item reveal">
+      <button class="faq-question">{{ faq.q }}</button>
+      <div class="faq-answer"><div class="faq-answer-inner">{{ faq.a }}</div></div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+{% set cta_title = 'Get a ' + sp.short_name + ' Loan Quote' %}
+{% set cta_description = 'Tell us about your ' + sp.short_name|lower + ' deal. We will run it past lenders that actively fund this property type and send back terms within 48 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}
