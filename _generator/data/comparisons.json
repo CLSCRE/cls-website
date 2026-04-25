@@ -2370,5 +2370,603 @@
         "sub": "Structural comparison"
       }
     ]
+  },
+  {
+    "slug": "bank-vs-credit-union-permanent",
+    "short_title": "Bank vs Credit Union for $5M to $15M Permanent",
+    "h1": "Bank vs Credit Union for $5M to $15M CRE Permanent: How to Choose",
+    "name_a": "Bank Balance Sheet",
+    "name_b": "Credit Union",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Bank vs Credit Union for CRE Permanent | CLS CRE",
+      "meta_description": "Side-by-side comparison of bank balance sheet and credit union financing for $5M to $15M commercial real estate permanent loans."
+    },
+    "lead": "For middle-market commercial real estate borrowers seeking $5M to $15M permanent financing, two competitive bank-style options exist: traditional commercial banks and credit unions. Both fund balance sheet and offer 5 to 10 year fixed-rate or floating structures. The differences show up in pricing on smaller loans (where credit unions often beat banks by 25 to 75 basis points), member-only access requirements, geographic restrictions, and underwriting flexibility. The decision depends on member eligibility, deal size, and existing relationships.",
+    "table": [
+      {
+        "feature": "Pricing range (Apr 2026)",
+        "side_a": "6.85 to 8.50% (5-10 yr fixed)",
+        "side_b": "6.50 to 8.00% (5-10 yr fixed)"
+      },
+      {
+        "feature": "Loan size sweet spot",
+        "side_a": "$5M to $50M+",
+        "side_b": "$1M to $20M"
+      },
+      {
+        "feature": "Maximum LTV",
+        "side_a": "65 to 75 percent",
+        "side_b": "65 to 75 percent"
+      },
+      {
+        "feature": "Minimum DSCR",
+        "side_a": "1.20x to 1.30x",
+        "side_b": "1.20x to 1.30x"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Recourse typical",
+        "side_b": "Recourse typical"
+      },
+      {
+        "feature": "Term",
+        "side_a": "5 to 10 years (typical)",
+        "side_b": "5 to 10 years (typical)"
+      },
+      {
+        "feature": "Membership eligibility",
+        "side_a": "None (any borrower)",
+        "side_b": "Required (geographic, occupational, or association-based)"
+      },
+      {
+        "feature": "Geographic footprint",
+        "side_a": "National or regional",
+        "side_b": "Often state or regional"
+      },
+      {
+        "feature": "Pricing on smaller loans",
+        "side_a": "Standard bank rates",
+        "side_b": "Often 25 to 75 bps inside bank"
+      },
+      {
+        "feature": "Underwriting flexibility",
+        "side_a": "Standardized",
+        "side_b": "Sometimes more flexible on member relationships"
+      },
+      {
+        "feature": "Service model",
+        "side_a": "Relationship banking",
+        "side_b": "Member-focused"
+      },
+      {
+        "feature": "Depository relationship",
+        "side_a": "Often required for pricing tier",
+        "side_b": "Membership establishes relationship"
+      }
+    ],
+    "when_a_intro": "Banks win when the borrower needs scale, prefers a national or regional banking platform, or has no path to credit union membership. Banks have deeper balance sheet capacity for $20M+ deals and broader product menus.",
+    "when_a_bullets": [
+      "Loan size $20M+ where credit union balance sheet capacity may be constrained",
+      "Borrower wants national bank platform with multiple service relationships",
+      "Borrower not eligible for any credit union (no qualifying geographic, occupational, or association membership)",
+      "Borrower needs treasury management, capital markets, or other complex banking services beyond the loan",
+      "Multi-state or multi-region property portfolio benefiting from national lender footprint"
+    ],
+    "when_b_intro": "Credit unions win on the smaller end of the middle market when the borrower qualifies for membership and the credit union has appetite for the deal. Credit unions often beat banks by 25 to 75 basis points on $5M to $15M deals due to their cooperative ownership structure and lower cost of funds.",
+    "when_b_bullets": [
+      "Loan size $5M to $15M where credit union pricing is most competitive",
+      "Borrower qualifies for credit union membership (geographic, occupational, association)",
+      "Borrower wants the cooperative member-focused service model",
+      "Local or single-state property where the credit union's footprint matches",
+      "Borrower has flexibility on lender selection and shops competitively"
+    ],
+    "decision_framework": [
+      "Start with membership eligibility. If the borrower qualifies for a strong credit union (often through state of residence, employer affiliation, or trade association membership), credit union pricing becomes available. If not, banks are the only path.",
+      "Run the rate spread math. Credit unions on $5M to $15M deals frequently price 25 to 75 basis points inside comparable bank balance sheet quotes. On a $10M loan over 7 years, that 50 basis point spread is approximately $250K of saved interest. The savings is meaningful for relationship-eligible borrowers.",
+      "Evaluate balance sheet capacity. Credit unions are smaller institutions and typically prefer loans under $20M. Larger deals push toward banks where balance sheet capacity is deeper. Some larger credit unions handle $20M to $50M but the bench narrows quickly.",
+      "Consider service breadth. Banks offer broader products: capital markets, treasury management, international banking, complex syndications. Credit unions excel at member-focused depository, simple commercial loans, and personal banking integration. Match the lender to the borrower's broader banking needs."
+    ],
+    "real_deal_example": "On an $8.4M industrial property refinance in a Pacific Northwest market, the sponsor (a local family business with depository relationships at both a regional bank and a state-chartered credit union) ran competing quotes. The regional bank quoted at 7.45 percent fixed 5-year with 25-year amortization at 70 percent LTV with full recourse. The credit union quoted at 7.05 percent fixed 5-year with 25-year amortization at 70 percent LTV with full recourse, plus an existing depository relationship that delivered a 0.05 percent rate buy-down. The 45 basis point spread translated to approximately $190K of saved interest over the 5-year fixed term. The sponsor took the credit union execution.",
+    "expert_quote": "On $5M to $15M middle-market deals, credit unions are systematically underpriced versus banks. The membership requirement is real, but for borrowers who qualify, the rate compression is meaningful and worth running through the competitive process every time.",
+    "faqs": [
+      {
+        "q": "Are credit unions cheaper than banks on commercial real estate?",
+        "a": "Often, on $5M to $15M deals where the credit union qualifies. Credit unions price 25 to 75 basis points inside comparable bank balance sheet on most middle-market commercial mortgages due to their cooperative ownership and lower cost of funds. Above $15M to $20M, credit union balance sheet capacity is sometimes constrained."
+      },
+      {
+        "q": "How does credit union membership work for commercial borrowers?",
+        "a": "Credit union membership is required for the borrowing entity or principal owners. Eligibility is based on geographic location, employer affiliation, association membership, or family relationship to existing members. Many credit unions accept membership through state-of-residence rules or trade association affiliation."
+      },
+      {
+        "q": "Can a credit union finance non-recourse?",
+        "a": "Most credit union commercial real estate loans are recourse with personal guarantees. Some larger credit unions offer partial recourse or non-recourse on stronger transactions, but the default credit union product is recourse."
+      },
+      {
+        "q": "Do credit unions offer agency multifamily loans?",
+        "a": "Generally no. Fannie Mae DUS and Freddie Mac Optigo programs require designated Seller-Servicer status, which most credit unions do not hold. Credit unions compete with banks on balance sheet financing, not agency-conduit programs."
+      },
+      {
+        "q": "What loan size do credit unions prefer?",
+        "a": "Most state-chartered credit unions prefer $1M to $15M commercial real estate. The largest credit unions (Navy Federal, State Employees, Pentagon Federal, others) extend up to $30M to $50M. Above that, banks dominate the middle and large deal markets."
+      },
+      {
+        "q": "Are credit union prepayment penalties different from banks?",
+        "a": "Credit union prepayment penalties are generally similar to bank balance sheet structures (5,4,3,2,1 percent typical), though some credit unions offer more flexible prepay terms for members. Specific terms are negotiated deal by deal."
+      },
+      {
+        "q": "Can a credit union balance sheet loan refinance into agency?",
+        "a": "Yes. Most credit union loans are written without features that prevent refinance into agency at maturity. Sponsors planning to refinance a credit union balance sheet loan into Fannie Mae or Freddie Mac at maturity should confirm prepayment terms allow it."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/permanent-loans.html",
+        "title": "Permanent Loans (Hub)",
+        "sub": "Bank, agency, life co, CMBS"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS",
+        "sub": "Conduit comparison"
+      },
+      {
+        "href": "comparisons/recourse-vs-non-recourse.html",
+        "title": "Recourse vs Non-Recourse",
+        "sub": "Both typically recourse"
+      }
+    ]
+  },
+  {
+    "slug": "hud-232-vs-bank-senior-care",
+    "short_title": "HUD 232 vs Bank for Senior Care",
+    "h1": "HUD 232 vs Bank Financing for Senior Care: How to Choose",
+    "name_a": "HUD 232",
+    "name_b": "Bank Balance Sheet",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "HUD 232 vs Bank Financing for Senior Care | CLS CRE",
+      "meta_description": "Side-by-side comparison of HUD 232 and bank balance sheet financing for senior care, assisted living, memory care, and skilled nursing facilities."
+    },
+    "lead": "Senior care financing (independent living, assisted living, memory care, skilled nursing facilities) operates in a specialized capital market dominated by HUD 232 and a narrow bench of healthcare-focused banks. HUD 232 provides 35-year fully amortizing fixed-rate financing at up to 80 percent LTV (acquisition) or 90 percent LTV (substantial rehab and new construction), with the trade-off of an 18 to 24 month underwriting timeline. Bank balance sheet provides faster execution at lower leverage. The decision depends on hold horizon, project type, and sponsor patience.",
+    "table": [
+      {
+        "feature": "Maximum LTV (acquisition)",
+        "side_a": "80 percent",
+        "side_b": "65 to 75 percent"
+      },
+      {
+        "feature": "Maximum LTV (new construction)",
+        "side_a": "90 percent (substantial rehab and new)",
+        "side_b": "60 to 70 percent LTC"
+      },
+      {
+        "feature": "Term",
+        "side_a": "35 years (fully amortizing)",
+        "side_b": "5 to 10 years"
+      },
+      {
+        "feature": "Rate (Apr 2026)",
+        "side_a": "5.95 to 6.45% fixed (35-year)",
+        "side_b": "7.50 to 9.50% (5-10 yr fixed)"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "Fully amortizing 35 years",
+        "side_b": "20 to 25 year typical"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Non-recourse with carve-outs",
+        "side_b": "Recourse typical"
+      },
+      {
+        "feature": "Underwriting timeline",
+        "side_a": "12 to 24 months",
+        "side_b": "60 to 90 days"
+      },
+      {
+        "feature": "Property types",
+        "side_a": "Skilled nursing, assisted living, memory care, board and care",
+        "side_b": "All senior care types"
+      },
+      {
+        "feature": "Davis-Bacon prevailing wage",
+        "side_a": "Required on new construction",
+        "side_b": "Not required"
+      },
+      {
+        "feature": "Best fit",
+        "side_a": "Long-term hold; institutional sponsor",
+        "side_b": "Faster execution; flexibility"
+      },
+      {
+        "feature": "Refinance flexibility",
+        "side_a": "Constrained by HUD prepay schedule",
+        "side_b": "Standard bank prepay"
+      },
+      {
+        "feature": "Sponsor profile",
+        "side_a": "Strong operator with senior care experience required",
+        "side_b": "Strong operator with depository relationship preferred"
+      }
+    ],
+    "when_a_intro": "HUD 232 wins on long-term hold strategies for stabilized senior care, on substantial rehab and ground-up construction where 90 percent LTC is meaningful, and on sponsors willing to invest 12 to 24 months in HUD underwriting in exchange for the lowest cost of capital fully amortizing structure available in senior care.",
+    "when_a_bullets": [
+      "Long-term hold horizon (15 to 35 years) where 35-year fully amortizing is meaningful",
+      "Stabilized senior care acquisition or refinance where 80 percent LTV is helpful",
+      "Substantial rehabilitation or new construction where 90 percent LTC is meaningful",
+      "Sponsor has 18 to 24 months patience for HUD timeline",
+      "Project size $5M to $50M+ where HUD 232 execution scales efficiently",
+      "Davis-Bacon prevailing wage compatible (or not applicable for non-construction)"
+    ],
+    "when_b_intro": "Bank balance sheet wins on speed-to-close, on smaller transactions, and on situations where the HUD timeline is impractical. Bank execution is the standard for opportunistic acquisitions, distressed senior care turnarounds, and sponsors needing financing within 90 days.",
+    "when_b_bullets": [
+      "Acquisition with a 60 to 90 day close requirement",
+      "Smaller deal size $3M to $10M where bank balance sheet is competitive",
+      "Sponsor wants flexibility to refinance to HUD or other permanent at stabilization",
+      "Distressed or transitional senior care turnaround where HUD process is incompatible",
+      "Sponsor with strong depository relationship that delivers competitive bank pricing",
+      "Davis-Bacon prevailing wage not feasible for new construction"
+    ],
+    "decision_framework": [
+      "Start with timeline. HUD 232 requires 12 to 24 months from initial application to close. Bank balance sheet closes in 60 to 90 days. If the deal needs financing in 90 days, HUD is structurally infeasible regardless of other considerations.",
+      "Run the cost-of-capital math. HUD 232 provides 35-year fully amortizing fixed at 5.95 to 6.45 percent. Bank balance sheet at 7.75 to 9.00 percent over 5-year term plus refinance at year 5 totals materially higher capital cost over a 20-year horizon. The crossover favors HUD on long holds.",
+      "Evaluate hold horizon. HUD 232's 35-year amortization locks in cost of capital across multiple economic cycles. Sponsors planning 5 to 7 year holds get less benefit. Sponsors planning multi-decade family or institutional ownership get the most benefit.",
+      "Consider Davis-Bacon (new construction). HUD 232 ground-up requires Davis-Bacon prevailing wage adding 8 to 18 percent to construction labor cost. Bank construction does not. Sponsors who can absorb Davis-Bacon (mission-aligned, public-private partnership) accept it; sponsors who cannot use bank construction."
+    ],
+    "real_deal_example": "On a $24M assisted living facility refinance with the sponsor as a mid-market senior care operator with 8 facilities under management, the existing 7-year bank balance sheet loan was maturing with $1.4M of yield maintenance exposure. HUD 232 quoted at 6.15 percent fixed 35-year fully amortizing at 80 percent LTV ($19.2M loan), with a 14-month underwriting timeline. The bank quoted a refinance at 7.85 percent fixed 7-year at 65 percent LTV ($15.6M loan) with full sponsor recourse. The sponsor selected HUD 232 because the 35-year fully amortizing structure aligned with the family's multi-decade ownership intent, the 80 percent LTV versus 65 percent freed up $3.6M of capital, and the rate was 170 basis points inside bank. The 14-month HUD timeline was acceptable because the maturing bank loan had extension flexibility through HUD close.",
+    "expert_quote": "HUD 232 is one of the most powerful long-term financing tools in senior care. The trade-off is the 12 to 24 month timeline, which makes it impractical for opportunistic deals. For sponsors with patient capital and long hold horizons, HUD 232 is hard to beat on cost.",
+    "faqs": [
+      {
+        "q": "What is HUD 232?",
+        "a": "HUD/FHA Section 232 is a federal mortgage insurance program for senior care facilities including skilled nursing, assisted living, memory care, and intermediate care. The program offers 35-year fully amortizing fixed-rate financing at up to 80 percent LTV for acquisition and 90 percent LTC for substantial rehabilitation and new construction."
+      },
+      {
+        "q": "What property types are eligible for HUD 232?",
+        "a": "Skilled nursing facilities, assisted living, memory care, board and care, and intermediate care facilities are all eligible. Independent living typically does not qualify under 232 (it falls under 221 multifamily programs). Adult day care may qualify under specific HUD programs."
+      },
+      {
+        "q": "How long does HUD 232 take to close?",
+        "a": "12 to 24 months from initial MAP lender engagement to close. The timeline includes preliminary feasibility, application preparation, MAP lender underwriting, HUD review, environmental assessment, and final approval."
+      },
+      {
+        "q": "What is a MAP lender for HUD 232?",
+        "a": "MAP (Multifamily Accelerated Processing) lenders are HUD-approved direct underwriters for FHA programs including 232. MAP lender selection significantly affects timeline and outcome."
+      },
+      {
+        "q": "Does HUD 232 require sponsor experience?",
+        "a": "Yes. HUD 232 requires sponsors with demonstrated senior care operating experience. First-time senior care operators face higher scrutiny and may need to retain experienced operating partners or third-party managers."
+      },
+      {
+        "q": "Can HUD 232 finance new senior care construction?",
+        "a": "Yes. HUD 232 finances new construction at up to 90 percent LTC under the 232 New Construction or Substantial Rehabilitation program, with Davis-Bacon prevailing wage requirements applying."
+      },
+      {
+        "q": "Is HUD 232 only for non-profit senior care operators?",
+        "a": "No. HUD 232 finances both for-profit and non-profit senior care. Most HUD 232 loans are made to for-profit operators."
+      },
+      {
+        "q": "Can a HUD 232 loan be refinanced or assumed?",
+        "a": "Yes. HUD 232 loans can be refinanced subject to HUD prepayment penalty schedules, and can be assumed at sale subject to HUD approval and assumption fees."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/hud-fha-loans.html",
+        "title": "HUD/FHA Loans (Hub)",
+        "sub": "Government-backed financing"
+      },
+      {
+        "href": "property/senior-living.html",
+        "title": "Senior Living Financing",
+        "sub": "All senior care types"
+      },
+      {
+        "href": "comparisons/hud-221d4-vs-bank-construction.html",
+        "title": "HUD 221(d)(4) vs Bank Construction",
+        "sub": "Multifamily construction"
+      }
+    ]
+  },
+  {
+    "slug": "cross-collateralization-vs-individual-loans",
+    "short_title": "Cross-Collateralization vs Individual Loans",
+    "h1": "Cross-Collateralization vs Individual Loans: How to Choose for Multi-Property Financing",
+    "name_a": "Cross-Collateralized Portfolio",
+    "name_b": "Individual Property Loans",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Cross-Collateralization vs Individual Loans for CRE Portfolios | CLS CRE",
+      "meta_description": "Side-by-side comparison of cross-collateralized portfolio loans and individual property loans for multi-property commercial real estate financing."
+    },
+    "lead": "Sponsors with multi-property portfolios face a foundational financing decision: combine multiple properties under a single cross-collateralized loan, or finance each property with its own individual loan. Cross-collateralization typically delivers 10 to 25 basis points of pricing advantage and operational efficiency, at the cost of cross-default exposure and structural complexity. Individual loans preserve flexibility on each property at the cost of higher per-loan administrative burden. The decision depends on portfolio composition, sponsor strategy, and the lender's program flexibility.",
+    "table": [
+      {
+        "feature": "Pricing advantage",
+        "side_a": "10 to 25 bps inside individual blended",
+        "side_b": "Standard pricing per property"
+      },
+      {
+        "feature": "Operational complexity",
+        "side_a": "One loan, simplified servicing",
+        "side_b": "Multiple loans, separate servicing"
+      },
+      {
+        "feature": "Cross-default risk",
+        "side_a": "Yes (default on one triggers all)",
+        "side_b": "No (each loan independent)"
+      },
+      {
+        "feature": "Property release",
+        "side_a": "Subject to release provisions (typically 110-120% of allocated loan)",
+        "side_b": "Free to sell individually"
+      },
+      {
+        "feature": "Refinance flexibility",
+        "side_a": "Single refinance event for all",
+        "side_b": "Each loan refinances separately"
+      },
+      {
+        "feature": "Loan size threshold",
+        "side_a": "Most efficient $20M+",
+        "side_b": "Any size"
+      },
+      {
+        "feature": "Diversification benefit (lender)",
+        "side_a": "Higher (multiple properties as collateral)",
+        "side_b": "None"
+      },
+      {
+        "feature": "Underwriting",
+        "side_a": "Portfolio-level metrics + individual asset review",
+        "side_b": "Individual asset only"
+      },
+      {
+        "feature": "Closing complexity",
+        "side_a": "Single coordinated close",
+        "side_b": "Independent closes possible"
+      },
+      {
+        "feature": "Best fit",
+        "side_a": "Stable portfolio, long hold, sponsor wants efficiency",
+        "side_b": "Active portfolio management, individual property dispositions, varying lender preferences"
+      },
+      {
+        "feature": "Common products",
+        "side_a": "Agency portfolio, CMBS single-borrower, life co portfolio",
+        "side_b": "All standard CRE products"
+      },
+      {
+        "feature": "Lender preference",
+        "side_a": "Lenders prefer cross-collateral on weaker properties",
+        "side_b": "Lenders comfortable on stand-alone basis"
+      }
+    ],
+    "when_a_intro": "Cross-collateralization wins when the sponsor values pricing efficiency, operational simplicity, and stable long-term portfolio hold over flexibility on individual property dispositions. The pricing benefit is real and the operational efficiency is meaningful for sponsors managing multiple properties.",
+    "when_a_bullets": [
+      "Stable portfolio of 4 to 30 properties with similar profiles",
+      "Long-term hold horizon (10+ years) where loan flexibility matters less",
+      "Sponsor values pricing compression (10 to 25 bps) on aggregate loan",
+      "Properties have varying individual strengths that benefit from collective collateralization",
+      "Sponsor wants single refinance event across portfolio",
+      "Loan size $20M+ where portfolio efficiency is meaningful"
+    ],
+    "when_b_intro": "Individual loans win when the sponsor wants flexibility to manage each property independently, when properties have materially different profiles requiring different lender execution, or when the sponsor anticipates active portfolio management with individual dispositions or refinances.",
+    "when_b_bullets": [
+      "Sponsor anticipates selling individual properties without restriction",
+      "Properties have materially different profiles (some agency-eligible, some CMBS-only, some bank)",
+      "Active portfolio management with varying hold horizons by property",
+      "Sponsor wants flexibility to refinance individual properties as conditions change",
+      "Smaller portfolio (2 to 3 properties) where cross-collateral efficiency is limited",
+      "Properties in different geographies or product types where lender appetite varies"
+    ],
+    "decision_framework": [
+      "Calculate the pricing benefit. A typical 15 basis point compression on a $30M cross-collateralized loan over a 10-year term is approximately $450K of saved interest. The benefit grows with portfolio size and is most pronounced on $25M+ portfolios.",
+      "Evaluate flexibility needs. Cross-collateral release provisions typically require paying down 110 to 120 percent of the allocated loan amount to free a property for sale or refinance. Sponsors with active portfolio management strategies and frequent dispositions face friction with cross-collateral.",
+      "Consider portfolio composition. Mixed portfolios (some Class A multifamily, some Class B retail, some industrial) are harder to cross-collateralize because lender appetite varies by property type. Homogeneous portfolios cross-collateralize cleanly.",
+      "Evaluate cross-default exposure. Cross-collateralized loans carry shared default risk: a payment default on one property triggers default across all. Sponsors with operating concerns on individual properties may prefer individual loans to insulate the portfolio."
+    ],
+    "real_deal_example": "On a 14-property Sun Belt multifamily portfolio refinance totaling $52M, the sponsor considered cross-collateralized agency portfolio versus 14 individual agency loans. Freddie Mac Optigo Conventional Portfolio quoted at 5.78 percent fixed 10-year, 73 percent LTV, with individual property release provisions at 110 percent of allocated loan. Individual loans across the same 14 properties would have totaled approximately $51.5M in aggregate at a blended 5.95 percent (17 basis points wider than the portfolio). The portfolio loan saved approximately $87,000 per year of interest expense plus the operational efficiency of one loan instead of 14. The sponsor took the portfolio loan with negotiated release provisions allowing flexibility on individual property sales.",
+    "expert_quote": "Cross-collateralization is one of the most underused efficiency plays for multi-property sponsors. The 10 to 25 basis point pricing benefit and operational simplification are real. The trade-off is structural complexity and cross-default exposure, which sophisticated sponsors manage through carefully negotiated release provisions.",
+    "faqs": [
+      {
+        "q": "What is cross-collateralization?",
+        "a": "Cross-collateralization is a financing structure where a single loan is secured by multiple properties. Each property in the portfolio is collateral for the entire loan, providing the lender with stronger collateral coverage and the sponsor with operational efficiency and pricing benefits."
+      },
+      {
+        "q": "How do property releases work in a cross-collateralized loan?",
+        "a": "Release provisions allow the sponsor to remove a property from the cross-collateral structure typically by paying down 110 to 120 percent of the property's allocated loan amount. The exact terms are negotiated at origination and included in the loan documents."
+      },
+      {
+        "q": "What is cross-default risk?",
+        "a": "Cross-default means a payment default or covenant breach on one property in the cross-collateralized portfolio triggers default across all properties. The lender can foreclose on any or all properties to satisfy the unpaid loan balance."
+      },
+      {
+        "q": "How much does cross-collateralization save in pricing?",
+        "a": "Typically 10 to 25 basis points inside the blended pricing of equivalent individual loans, reflecting the lender's stronger collateral coverage and reduced administrative cost."
+      },
+      {
+        "q": "Can mixed-use portfolios be cross-collateralized?",
+        "a": "Yes, but with constraints. Lenders prefer homogeneous portfolios (e.g., all multifamily or all industrial). Mixed portfolios across multiple property types may face proceeds reductions or be declined."
+      },
+      {
+        "q": "What is single-borrower CMBS?",
+        "a": "Single-borrower CMBS is a CMBS execution where one sponsor's portfolio is placed into a dedicated CMBS pool. The structure provides large loan capacity at competitive pricing and preserves CMBS structural features."
+      },
+      {
+        "q": "Can cross-collateralized loans be assumed at sale?",
+        "a": "Sale of the entire portfolio with assumption of the cross-collateralized loan is generally permissible subject to lender approval. Sale of individual properties typically requires release."
+      },
+      {
+        "q": "Do agency portfolio loans allow supplemental loans?",
+        "a": "Yes. Both Fannie Mae and Freddie Mac portfolio loans allow supplemental loan additions on individual properties as the property's NOI grows, typically through standard agency supplemental programs."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/20-million-multifamily-portfolio-refinance.html",
+        "title": "$20M Portfolio Refinance Example",
+        "sub": "Real deal example"
+      },
+      {
+        "href": "loan-size/50-million-multifamily-portfolio-acquisition.html",
+        "title": "$50M Portfolio Acquisition Example",
+        "sub": "Real deal example"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS",
+        "sub": "Permanent comparison"
+      }
+    ]
+  },
+  {
+    "slug": "interest-only-vs-amortizing",
+    "short_title": "Interest-Only vs Amortizing",
+    "h1": "Interest-Only vs Amortizing: How to Choose for CRE Loans",
+    "name_a": "Interest-Only",
+    "name_b": "Amortizing",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Interest-Only vs Amortizing CRE Loans | CLS CRE",
+      "meta_description": "Side-by-side comparison of interest-only and amortizing commercial real estate loan structures. Cash flow, total cost, refinance risk, and sponsor strategy considerations."
+    },
+    "lead": "Commercial real estate sponsors face a structural choice on most permanent loans: interest-only (no principal pay-down during the IO period, lower debt service) or amortizing (principal pay-down on a 25 or 30 year schedule, higher debt service). Most agency and life co loans offer a partial IO window (1 to 5 years typical) with amortization for the remaining term; some loans run full-term IO at lower leverage. The decision affects cash flow, total interest cost, refinance risk, and the sponsor's distribution capability over the hold period.",
+    "table": [
+      {
+        "feature": "Monthly debt service",
+        "side_a": "Lower (interest only)",
+        "side_b": "Higher (interest + principal)"
+      },
+      {
+        "feature": "Total interest cost (10-year hold)",
+        "side_a": "Higher (full balance accrues interest)",
+        "side_b": "Lower (declining balance)"
+      },
+      {
+        "feature": "Equity build at maturity",
+        "side_a": "None during IO",
+        "side_b": "Principal pay-down builds equity"
+      },
+      {
+        "feature": "Cash distributions to investors",
+        "side_a": "Higher (more cash flow available)",
+        "side_b": "Lower (more cash to debt service)"
+      },
+      {
+        "feature": "Refinance risk at maturity",
+        "side_a": "Higher (full balance to refinance)",
+        "side_b": "Lower (declining balance)"
+      },
+      {
+        "feature": "Pricing premium",
+        "side_a": "+ 5 to 25 bps over amortizing typical",
+        "side_b": "Standard (no premium)"
+      },
+      {
+        "feature": "Maximum IO period (agency, 75% LTV)",
+        "side_a": "1 to 3 years typical",
+        "side_b": "N/A"
+      },
+      {
+        "feature": "Maximum IO period (CMBS, lower leverage)",
+        "side_a": "Up to full term",
+        "side_b": "N/A"
+      },
+      {
+        "feature": "Best fit",
+        "side_a": "Cash flow optimization, distributions, value-add hold",
+        "side_b": "Long-term hold, equity build, family office strategies"
+      },
+      {
+        "feature": "Common products",
+        "side_a": "Agency partial IO, CMBS full-term IO at lower lev",
+        "side_b": "All standard amortizing structures"
+      },
+      {
+        "feature": "Lender appetite",
+        "side_a": "Wider IO at lower leverage",
+        "side_b": "Standard at any leverage"
+      },
+      {
+        "feature": "Sponsor strategy fit",
+        "side_a": "Active management, syndication, distribution",
+        "side_b": "Buy-and-hold, family office, generational"
+      }
+    ],
+    "when_a_intro": "Interest-only wins when sponsors prioritize cash flow during the hold period, when the deal is part of an active syndication strategy with quarterly distribution requirements, or when value-add returns are projected to drive equity gains rather than principal pay-down.",
+    "when_a_bullets": [
+      "Active syndication with investor distribution requirements during hold",
+      "Value-add or repositioning where return is projected through equity appreciation, not principal pay-down",
+      "Lower leverage (60 to 65 percent LTV) where lender will quote full-term IO",
+      "Sponsor wants maximum cash flow during the hold for capital deployment elsewhere",
+      "Sponsor has alternative principal pay-down strategy (cash from refinance, sale, or syndication)",
+      "Cash flow stress in the operating model where IO supports DSCR through value-add period"
+    ],
+    "when_b_intro": "Amortizing wins on long-term hold strategies where principal pay-down builds equity, on family office and generational ownership where the cumulative interest savings is meaningful, and on lender programs where amortizing pricing is materially tighter than IO.",
+    "when_b_bullets": [
+      "Long-term hold horizon (10+ years) where principal pay-down builds meaningful equity",
+      "Family office or generational ownership prioritizing equity build over distributions",
+      "Sponsor wants reduced refinance risk at maturity through declining balance",
+      "Lender pricing premium on IO is meaningful (sometimes 25+ bps)",
+      "Conservative sponsor profile prioritizing balance sheet strength over cash flow",
+      "Property cash flow supports the higher amortizing debt service comfortably"
+    ],
+    "decision_framework": [
+      "Calculate the cash flow trade-off. On a $20M loan at 5.85 percent over a 10-year term, full-term interest-only generates approximately $1.17M of annual debt service. The same loan amortizing on a 30-year schedule generates approximately $1.42M of annual debt service. The $250K per year of cash flow difference is meaningful for syndication distributions or sponsor cash needs.",
+      "Calculate the total interest cost difference. Over the 10-year term, full-term interest-only costs approximately $11.7M of interest. Amortizing on a 30-year schedule costs approximately $13.3M of interest including principal pay-down. The $1.6M difference reflects faster equity build under amortizing.",
+      "Evaluate the maturity profile. At maturity, full-term IO leaves $20M to refinance. Amortizing leaves approximately $16.3M to refinance after 10 years (about $3.7M of principal paid down). The lower refinance balance reduces refinance risk if rates have moved.",
+      "Consider lender pricing. Some lenders price IO at the same coupon as amortizing on lower leverage; others charge 5 to 25 basis points premium for IO. Run both quotes and evaluate the dollar value of the IO trade-off."
+    ],
+    "real_deal_example": "On a $24M multifamily acquisition with a 5-year planned hold and a value-add strategy targeting 25 percent rent growth, the sponsor evaluated full-term IO versus 2-year IO with 28 years amortization remaining. Full-term IO at 65 percent LTV quoted at 5.95 percent fixed 5-year. 2-year IO with amortization quoted at 5.85 percent fixed 5-year (10 basis points inside on the amortizing structure). Full-term IO produced approximately $192K per year of additional cash flow over the 5-year hold ($960K total), supporting investor distributions and sponsor reserves. The 10 basis point pricing premium translated to approximately $24K per year ($120K over 5 years). The sponsor took full-term IO because the cash flow advantage materially exceeded the pricing premium and the value-add strategy targeted equity appreciation rather than principal pay-down.",
+    "expert_quote": "Interest-only versus amortizing is genuinely a question of strategy, not pricing. Active syndications with distribution mandates pick IO every time. Generational family office holders pick amortizing. The middle ground requires running the cash flow math against the sponsor's actual capital needs.",
+    "faqs": [
+      {
+        "q": "What is the difference between interest-only and amortizing CRE loans?",
+        "a": "Interest-only loans have no principal pay-down during the IO period; the borrower pays only interest on the full loan balance. Amortizing loans have scheduled principal pay-down (typically 25 or 30 year amortization) in addition to interest, building equity over the loan term."
+      },
+      {
+        "q": "What is the typical interest-only period on agency multifamily?",
+        "a": "Agency programs typically offer 1 to 3 years of interest-only at 75 percent LTV, 3 to 5 years at 65 to 70 percent LTV, and full-term IO at 55 to 60 percent LTV. CMBS conduits will quote full-term IO at lower leverage (60 to 65 percent LTV)."
+      },
+      {
+        "q": "Is interest-only more expensive than amortizing?",
+        "a": "Sometimes. Some lenders price IO at the same coupon as amortizing on lower leverage transactions. Other lenders charge 5 to 25 basis points premium for IO. Pricing varies by program and deal."
+      },
+      {
+        "q": "Why would a sponsor choose amortizing over interest-only?",
+        "a": "Sponsors prioritizing equity build, generational hold strategies, or reduced refinance risk at maturity often choose amortizing. The principal pay-down builds equity and reduces the loan balance to refinance at maturity, mitigating refinance rate risk."
+      },
+      {
+        "q": "Can a partially amortizing loan be paid off early at par?",
+        "a": "Yes, subject to prepayment penalty. Loans typically have yield maintenance, defeasance, or declining schedule prepay structures that apply equally to IO and amortizing executions."
+      },
+      {
+        "q": "Does interest-only affect DSCR calculation?",
+        "a": "Yes. Lender DSCR is calculated on actual debt service. IO loans have lower debt service, producing higher DSCR ratios than amortizing loans on the same property NOI. Lenders often have separate DSCR thresholds for IO versus amortizing transactions."
+      },
+      {
+        "q": "Can the IO period be extended at refinance?",
+        "a": "Generally yes, through a new loan origination at refinance. The new loan can include a fresh IO period subject to lender appetite. The original loan's IO period typically cannot be extended within the existing loan structure."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/fixed-vs-floating-rate.html",
+        "title": "Fixed vs Floating",
+        "sub": "Rate structure comparison"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS",
+        "sub": "Permanent comparison"
+      },
+      {
+        "href": "financing/permanent-loans.html",
+        "title": "Permanent Loans (Hub)",
+        "sub": "Long-term financing"
+      }
+    ]
   }
 ]

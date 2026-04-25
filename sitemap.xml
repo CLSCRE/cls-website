@@ -1315,6 +1315,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/bank-vs-credit-union-permanent.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/bridge-debt-fund-vs-bank-balance-sheet.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -1334,6 +1340,12 @@
   </url>
   <url>
     <loc>https://clscre.com/comparisons/construction-to-perm-vs-separate-take-out.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/cross-collateralization-vs-individual-loans.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1363,10 +1375,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/hud-232-vs-bank-senior-care.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/index.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/interest-only-vs-amortizing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://clscre.com/comparisons/loan-assumption-vs-new-loan.html</loc>
@@ -1519,6 +1543,36 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://clscre.com/property/cold-storage-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/property/industrial-outdoor-storage-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/property/charter-school-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/property/religious-church-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/property/truck-stop-travel-center-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/loan-size/10-million-agency-multifamily-refinance-brooklyn.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -1526,6 +1580,12 @@
   </url>
   <url>
     <loc>https://clscre.com/loan-size/10-million-sba-504-industrial-owner-user.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/loan-size/12-million-ground-up-multifamily-construction-brooklyn.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1549,13 +1609,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/loan-size/25-million-ground-up-affordable-housing-los-angeles.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/loan-size/25-million-trophy-multifamily-acquisition-los-angeles.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/loan-size/3-million-multifamily-refinance-brooklyn.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/loan-size/5-million-bridge-loan-los-angeles-multifamily.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/loan-size/5-million-cold-storage-construction-phoenix.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1574,6 +1652,12 @@
   </url>
   <url>
     <loc>https://clscre.com/loan-size/50-million-multifamily-portfolio-acquisition.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/loan-size/7-5-million-fannie-mae-sbl-multifamily.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

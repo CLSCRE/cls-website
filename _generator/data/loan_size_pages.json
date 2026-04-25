@@ -16,24 +16,71 @@
     "lead": "A $5 million multifamily refinance in Los Angeles is one of the most common deal sizes in the LA capital markets. Most $5M LA multifamily refis fund through Freddie Mac Optigo SBL or Fannie Mae DUS Small Loans at 65 to 75 percent LTV with a 10-year fixed-rate non-recourse execution. Below the SBL minimum ($1M to $7.5M for Freddie SBL and $1M to $9M for Fannie Small), the loan competes with bank balance sheet, life co relationship lenders, and the limited bench of CMBS conduits that play down to $5M.",
     "stack_intro": "Most $5M Los Angeles multifamily refinances fund as a single senior loan from an agency Seller-Servicer at 65 to 75 percent LTV. Mezz and preferred equity are typically not part of the stack at this size. The decision is which agency and which Seller-Servicer.",
     "stack_table": [
-        {"source": "Freddie Mac Optigo SBL", "cost": "5.65 to 6.05% (10-year fixed)", "size": "$5M / 70 to 75% LTV", "notes": "Streamlined SBL, faster close than DUS Small"},
-        {"source": "Fannie Mae DUS Small", "cost": "5.75 to 6.10% (10-year fixed)", "size": "$5M / 75 to 80% LTV", "notes": "Slightly higher leverage than SBL on some deals"},
-        {"source": "Bank balance sheet", "cost": "6.85 to 7.85% (5 to 7 year fixed)", "size": "$5M / 65 to 70% LTV", "notes": "Recourse typical; rate buy-down with depository"},
-        {"source": "Life company (relationship)", "cost": "5.55 to 5.95% (10 to 15 year fixed)", "size": "$5M / 55 to 60% LTV", "notes": "Trophy properties only; relationship-tier pricing"}
+      {
+        "source": "Freddie Mac Optigo SBL",
+        "cost": "5.65 to 6.05% (10-year fixed)",
+        "size": "$5M / 70 to 75% LTV",
+        "notes": "Streamlined SBL, faster close than DUS Small"
+      },
+      {
+        "source": "Fannie Mae DUS Small",
+        "cost": "5.75 to 6.10% (10-year fixed)",
+        "size": "$5M / 75 to 80% LTV",
+        "notes": "Slightly higher leverage than SBL on some deals"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "6.85 to 7.85% (5 to 7 year fixed)",
+        "size": "$5M / 65 to 70% LTV",
+        "notes": "Recourse typical; rate buy-down with depository"
+      },
+      {
+        "source": "Life company (relationship)",
+        "cost": "5.55 to 5.95% (10 to 15 year fixed)",
+        "size": "$5M / 55 to 60% LTV",
+        "notes": "Trophy properties only; relationship-tier pricing"
+      }
     ],
     "sponsor_profile": "Typical $5M LA multifamily refinance sponsors are private capital owners with 1 to 10 LA-area multifamily properties. Sponsor net worth typically $3M to $15M; liquidity $500K to $3M. The deal often replaces a maturing bank loan or an older agency loan with a fresh 10-year fixed at lower coupon and modest cash-out (typically 5 to 15 percent of property value). LA-specific compliance items including AB 1482 rent caps, RSO compliance, soft story retrofit, SB 326 / SB 721 balcony inspections, and Measure ULA transfer tax are addressed in the agency Seller-Servicer's standard underwriting package.",
     "real_deal_example": "On a 24-unit Class B 1960s vintage stabilized multifamily in West LA, the sponsor refinanced an expiring 5-year bank loan at 6.95 percent into Freddie Mac Optigo SBL at 5.78 percent fixed 10-year, 72 percent LTV, $5.2M loan amount, with 1 year of interest-only and standard yield maintenance. The new coupon saved approximately $61,000 per year of interest expense and locked in cost of capital through 2036. Soft story retrofit was complete and AB 1482 compliance was confirmed in the SBL underwriting.",
     "faqs": [
-        {"q": "Can $5M Los Angeles multifamily go through Freddie Mac SBL?", "a": "Yes. Freddie Mac Optigo SBL targets the $1M to $7.5M loan size. $5M LA multifamily is squarely in the sweet spot, with streamlined underwriting and 30 to 45 day close timelines."},
-        {"q": "Will Fannie Mae or Freddie Mac price tighter on $5M LA multifamily?", "a": "It depends on the day. Pricing moves daily and varies with each Seller-Servicer's pipeline. Most experienced LA brokers run both agencies on every refinance and select the better quote at term sheet."},
-        {"q": "Does a $5M LA multifamily need to address Measure ULA?", "a": "Measure ULA is a transfer tax on sales, not a refinance issue. Refinances do not trigger ULA. However, sponsors planning to sell within the loan term should plan for ULA exposure (4 to 5.5 percent of sale price above $5M)."},
-        {"q": "What is the typical close timeline?", "a": "Freddie Mac SBL typically closes in 30 to 45 days. Fannie Mae DUS Small typically closes in 35 to 50 days. Bank balance sheet refinances run 45 to 75 days through credit committee."},
-        {"q": "Can $5M LA multifamily be cashed out at agency leverage?", "a": "Yes, modestly. Agency programs typically allow cash-out refinance at 70 to 75 percent LTV. Sponsors looking for higher cash-out (above 75 percent) typically move to bridge debt or supplemental loans."}
+      {
+        "q": "Can $5M Los Angeles multifamily go through Freddie Mac SBL?",
+        "a": "Yes. Freddie Mac Optigo SBL targets the $1M to $7.5M loan size. $5M LA multifamily is squarely in the sweet spot, with streamlined underwriting and 30 to 45 day close timelines."
+      },
+      {
+        "q": "Will Fannie Mae or Freddie Mac price tighter on $5M LA multifamily?",
+        "a": "It depends on the day. Pricing moves daily and varies with each Seller-Servicer's pipeline. Most experienced LA brokers run both agencies on every refinance and select the better quote at term sheet."
+      },
+      {
+        "q": "Does a $5M LA multifamily need to address Measure ULA?",
+        "a": "Measure ULA is a transfer tax on sales, not a refinance issue. Refinances do not trigger ULA. However, sponsors planning to sell within the loan term should plan for ULA exposure (4 to 5.5 percent of sale price above $5M)."
+      },
+      {
+        "q": "What is the typical close timeline?",
+        "a": "Freddie Mac SBL typically closes in 30 to 45 days. Fannie Mae DUS Small typically closes in 35 to 50 days. Bank balance sheet refinances run 45 to 75 days through credit committee."
+      },
+      {
+        "q": "Can $5M LA multifamily be cashed out at agency leverage?",
+        "a": "Yes, modestly. Agency programs typically allow cash-out refinance at 70 to 75 percent LTV. Sponsors looking for higher cash-out (above 75 percent) typically move to bridge debt or supplemental loans."
+      }
     ],
     "related_links": [
-        {"href": "financing/agency-loans-los-angeles.html", "title": "Agency Loans in LA", "sub": "Fannie / Freddie LA market"},
-        {"href": "comparisons/fannie-mae-dus-vs-freddie-mac-optigo.html", "title": "Fannie vs Freddie", "sub": "GSE comparison"},
-        {"href": "property/multifamily-los-angeles.html", "title": "LA Multifamily Financing", "sub": "All capital sources"}
+      {
+        "href": "financing/agency-loans-los-angeles.html",
+        "title": "Agency Loans in LA",
+        "sub": "Fannie / Freddie LA market"
+      },
+      {
+        "href": "comparisons/fannie-mae-dus-vs-freddie-mac-optigo.html",
+        "title": "Fannie vs Freddie",
+        "sub": "GSE comparison"
+      },
+      {
+        "href": "property/multifamily-los-angeles.html",
+        "title": "LA Multifamily Financing",
+        "sub": "All capital sources"
+      }
     ]
   },
   {
@@ -53,23 +100,65 @@
     "lead": "A $5 million bridge loan for Los Angeles multifamily typically funds an acquisition with planned value-add and refinance into agency at stabilization. Most $5M LA multifamily bridge deals fund through specialty bridge debt funds at 70 to 75 percent LTC, priced at SOFR + 425 to 600 basis points (approximately 9.0 to 11.0 percent all-in at current SOFR). Bank balance sheet bridge competes at lower leverage (60 to 65 percent LTC) with sponsor recourse and tighter coupon.",
     "stack_intro": "Most $5M LA multifamily bridge deals fund as a single senior loan from a debt fund. Mezz layered above bridge is rare at this size. The decision is between debt fund non-recourse execution at 70 to 75 percent LTC and bank balance sheet at 60 to 65 percent LTC with recourse.",
     "stack_table": [
-        {"source": "Specialty bridge debt fund", "cost": "SOFR + 425 to 600 (8.85 to 10.60% all-in)", "size": "$5M / 70 to 75% LTC", "notes": "Non-recourse, future funding for CapEx, 24 to 36 month term"},
-        {"source": "Bank balance sheet bridge", "cost": "SOFR + 250 to 400 (7.10 to 8.60% all-in)", "size": "$5M / 60 to 65% LTC", "notes": "Recourse, depository relationship typical"},
-        {"source": "Hard money / private capital", "cost": "10.50 to 13.00% (mostly current pay)", "size": "$5M / 60 to 70% LTV", "notes": "Fast close, recourse, smaller deal sizes"}
+      {
+        "source": "Specialty bridge debt fund",
+        "cost": "SOFR + 425 to 600 (8.85 to 10.60% all-in)",
+        "size": "$5M / 70 to 75% LTC",
+        "notes": "Non-recourse, future funding for CapEx, 24 to 36 month term"
+      },
+      {
+        "source": "Bank balance sheet bridge",
+        "cost": "SOFR + 250 to 400 (7.10 to 8.60% all-in)",
+        "size": "$5M / 60 to 65% LTC",
+        "notes": "Recourse, depository relationship typical"
+      },
+      {
+        "source": "Hard money / private capital",
+        "cost": "10.50 to 13.00% (mostly current pay)",
+        "size": "$5M / 60 to 70% LTV",
+        "notes": "Fast close, recourse, smaller deal sizes"
+      }
     ],
     "sponsor_profile": "Typical $5M LA multifamily bridge sponsors are mid-market private capital syndicates and private equity sponsors with 5 to 20 LA-area or California multifamily properties. Sponsor net worth typically $5M to $25M; liquidity $1M to $5M. The bridge loan funds acquisition and 12 to 24 month value-add (renovation, rent-up, occupancy stabilization) before refinance into Fannie Mae DUS or Freddie Mac Optigo. Most $5M LA value-add deals target 10 to 25 percent rental rate uplift through unit renovation and operational improvements.",
     "real_deal_example": "On a 32-unit Class C 1970s vintage multifamily in South LA, the sponsor financed acquisition with a $5.5M bridge debt fund loan at SOFR + 475 (9.35 percent all-in at the time) at 73 percent LTC, with $1.2M of future funding for unit renovation. The 24-month bridge term carried a 12-month interest reserve. Renovation completed at month 14; lease-up reached 92 percent stabilized at month 22. Refinance into Freddie Mac Optigo Conventional at 5.85 percent fixed 10-year, 72 percent LTV closed at month 23, returning approximately $1.3M of capital to the sponsor.",
     "faqs": [
-        {"q": "Why is bridge financing more expensive than agency permanent?", "a": "Bridge debt is short-term private credit that takes underwriting risk on transitional properties (lease-up, value-add, repositioning) that agency programs will not finance. The 300 to 500 basis point spread over agency reflects the higher risk profile and higher capital cost of debt fund lenders."},
-        {"q": "Can $5M LA multifamily bridge go non-recourse?", "a": "Yes. Most institutional bridge debt funds quote non-recourse with bad-boy carve-outs at $5M loan size. Bank balance sheet bridge is typically recourse."},
-        {"q": "What is the typical bridge term?", "a": "Most $5M LA multifamily bridge loans run 24 to 36 months initial term plus one or two 12-month extension options. The structure provides 36 to 60 months total to complete value-add and refinance."},
-        {"q": "How quickly can a bridge debt fund close?", "a": "Most institutional bridge debt funds quote 30 to 45 days from signed application to close. Some lenders close in 21 to 30 days on simple acquisitions."},
-        {"q": "Does a bridge loan require a rate cap?", "a": "Yes, almost universally on floating-rate bridge debt. Lenders require a SOFR rate cap with a strike near current SOFR plus a margin. Cap cost on a $5M loan is typically $25K to $80K depending on strike and term."}
+      {
+        "q": "Why is bridge financing more expensive than agency permanent?",
+        "a": "Bridge debt is short-term private credit that takes underwriting risk on transitional properties (lease-up, value-add, repositioning) that agency programs will not finance. The 300 to 500 basis point spread over agency reflects the higher risk profile and higher capital cost of debt fund lenders."
+      },
+      {
+        "q": "Can $5M LA multifamily bridge go non-recourse?",
+        "a": "Yes. Most institutional bridge debt funds quote non-recourse with bad-boy carve-outs at $5M loan size. Bank balance sheet bridge is typically recourse."
+      },
+      {
+        "q": "What is the typical bridge term?",
+        "a": "Most $5M LA multifamily bridge loans run 24 to 36 months initial term plus one or two 12-month extension options. The structure provides 36 to 60 months total to complete value-add and refinance."
+      },
+      {
+        "q": "How quickly can a bridge debt fund close?",
+        "a": "Most institutional bridge debt funds quote 30 to 45 days from signed application to close. Some lenders close in 21 to 30 days on simple acquisitions."
+      },
+      {
+        "q": "Does a bridge loan require a rate cap?",
+        "a": "Yes, almost universally on floating-rate bridge debt. Lenders require a SOFR rate cap with a strike near current SOFR plus a margin. Cap cost on a $5M loan is typically $25K to $80K depending on strike and term."
+      }
     ],
     "related_links": [
-        {"href": "financing/bridge-loans-los-angeles.html", "title": "LA Bridge Loans", "sub": "Local bridge financing"},
-        {"href": "comparisons/bridge-debt-fund-vs-bank-balance-sheet.html", "title": "Bridge Fund vs Bank", "sub": "Value-add comparison"},
-        {"href": "blog/multifamily-value-add-bridge-strategy.html", "title": "Value-Add Bridge Strategy", "sub": "Cornerstone playbook"}
+      {
+        "href": "financing/bridge-loans-los-angeles.html",
+        "title": "LA Bridge Loans",
+        "sub": "Local bridge financing"
+      },
+      {
+        "href": "comparisons/bridge-debt-fund-vs-bank-balance-sheet.html",
+        "title": "Bridge Fund vs Bank",
+        "sub": "Value-add comparison"
+      },
+      {
+        "href": "blog/multifamily-value-add-bridge-strategy.html",
+        "title": "Value-Add Bridge Strategy",
+        "sub": "Cornerstone playbook"
+      }
     ]
   },
   {
@@ -89,24 +178,71 @@
     "lead": "A $10 million agency multifamily refinance in Brooklyn is the canonical NYC-area institutional multifamily refinance. The deal size sits squarely in the Fannie Mae DUS Conventional and Freddie Mac Optigo Conventional sweet spot, with deep Seller-Servicer competition and meaningfully tighter pricing than CMBS or life co alternatives at the same leverage. Most $10M Brooklyn multifamily refis fund at 70 to 75 percent LTV on 10-year fixed-rate non-recourse terms with full agency standard structure.",
     "stack_intro": "$10M Brooklyn multifamily refinances are typically funded as a single senior agency loan with no mezz or preferred equity layered above. The decision is which agency, which Seller-Servicer, and what term length. Brooklyn-specific underwriting items include rent stabilization (HSTPA framework, RGB rent guidelines), Local Law 97 carbon caps, Local Law 11 facade exposure, and 421-a / 485-x tax abatement status.",
     "stack_table": [
-        {"source": "Freddie Mac Optigo Conventional", "cost": "5.55 to 6.00% (10-year fixed)", "size": "$10M / 70 to 75% LTV", "notes": "Conventional Optigo execution"},
-        {"source": "Fannie Mae DUS Conventional", "cost": "5.65 to 6.10% (10-year fixed)", "size": "$10M / 70 to 75% LTV", "notes": "DUS Conventional execution"},
-        {"source": "CMBS conduit", "cost": "6.25 to 7.10% (10-year fixed)", "size": "$10M / 65 to 70% LTV", "notes": "Higher coupon than agency; defeasance prepay"},
-        {"source": "Life company", "cost": "5.40 to 5.85% (10-year fixed)", "size": "$10M / 55 to 60% LTV", "notes": "Lower leverage trade-off for tighter coupon"}
+      {
+        "source": "Freddie Mac Optigo Conventional",
+        "cost": "5.55 to 6.00% (10-year fixed)",
+        "size": "$10M / 70 to 75% LTV",
+        "notes": "Conventional Optigo execution"
+      },
+      {
+        "source": "Fannie Mae DUS Conventional",
+        "cost": "5.65 to 6.10% (10-year fixed)",
+        "size": "$10M / 70 to 75% LTV",
+        "notes": "DUS Conventional execution"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.25 to 7.10% (10-year fixed)",
+        "size": "$10M / 65 to 70% LTV",
+        "notes": "Higher coupon than agency; defeasance prepay"
+      },
+      {
+        "source": "Life company",
+        "cost": "5.40 to 5.85% (10-year fixed)",
+        "size": "$10M / 55 to 60% LTV",
+        "notes": "Lower leverage trade-off for tighter coupon"
+      }
     ],
     "sponsor_profile": "Typical $10M Brooklyn agency refinance sponsors are NYC-focused multifamily investors with 5 to 50 properties across the five boroughs. Sponsor net worth typically $8M to $50M; liquidity $1M to $8M. The deal often replaces a maturing 5 to 7 year bank balance sheet loan with a 10-year agency at lower coupon. Most Brooklyn refinances address the property's rent stabilization status, recent DHCR registration, Local Law 97 carbon compliance pathway, Local Law 11 facade cycle status, and any 421-a or 485-x abatement timing.",
     "real_deal_example": "On an 18-unit walk-up rent-stabilized multifamily in Williamsburg with 75 percent stabilized units and a 25 percent free-market mix, the sponsor refinanced an expiring bank balance sheet 5-year loan at 7.45 percent into Freddie Mac Optigo Conventional at 5.78 percent fixed 10-year, 72 percent LTV, $9.8M loan amount, with 2 years of interest-only and full yield maintenance. The new coupon saved approximately $164,000 per year of interest. DHCR registrations were current; Local Law 11 cycle 9 facade work was complete; Local Law 97 emissions compliance pathway was documented for the operating cap period through 2030.",
     "faqs": [
-        {"q": "Can a Brooklyn rent-stabilized property be financed by Fannie Mae or Freddie Mac?", "a": "Yes. Both agencies actively finance rent-stabilized multifamily in Brooklyn under their conventional multifamily programs. The agencies have well-developed underwriting frameworks for HSTPA rent stabilization and apply standardized treatment of regulated rent rolls."},
-        {"q": "How does Local Law 97 affect agency underwriting?", "a": "Local Law 97 imposes carbon emission caps on NYC multifamily that phase from 2024 through 2050. Lenders evaluate the property's emission profile, compliance pathway, and projected penalty exposure. Properties with clear compliance pathways face minimal underwriting impact; properties facing material penalty exposure see proceeds reductions."},
-        {"q": "What is the typical close timeline for $10M Brooklyn agency?", "a": "Fannie Mae DUS Conventional typically closes in 55 to 75 days. Freddie Mac Optigo Conventional similar. CMBS typically 60 to 90 days. Life co 60 to 90 days for established sponsors."},
-        {"q": "Are 421-a abatements financeable?", "a": "Yes, but lenders evaluate remaining abatement term carefully. Properties with 5+ years of remaining 421-a benefit from underwritten tax savings; properties approaching abatement expiration face stress-tested cash flow at full property tax."},
-        {"q": "Can a $10M Brooklyn multifamily go higher LTV than 75 percent?", "a": "Agency programs cap most stabilized multifamily at 75 to 80 percent LTV depending on DSCR and property profile. Above 75 percent, supplemental agency loans are sometimes available; above 80 percent typically requires bridge debt or mezzanine."}
+      {
+        "q": "Can a Brooklyn rent-stabilized property be financed by Fannie Mae or Freddie Mac?",
+        "a": "Yes. Both agencies actively finance rent-stabilized multifamily in Brooklyn under their conventional multifamily programs. The agencies have well-developed underwriting frameworks for HSTPA rent stabilization and apply standardized treatment of regulated rent rolls."
+      },
+      {
+        "q": "How does Local Law 97 affect agency underwriting?",
+        "a": "Local Law 97 imposes carbon emission caps on NYC multifamily that phase from 2024 through 2050. Lenders evaluate the property's emission profile, compliance pathway, and projected penalty exposure. Properties with clear compliance pathways face minimal underwriting impact; properties facing material penalty exposure see proceeds reductions."
+      },
+      {
+        "q": "What is the typical close timeline for $10M Brooklyn agency?",
+        "a": "Fannie Mae DUS Conventional typically closes in 55 to 75 days. Freddie Mac Optigo Conventional similar. CMBS typically 60 to 90 days. Life co 60 to 90 days for established sponsors."
+      },
+      {
+        "q": "Are 421-a abatements financeable?",
+        "a": "Yes, but lenders evaluate remaining abatement term carefully. Properties with 5+ years of remaining 421-a benefit from underwritten tax savings; properties approaching abatement expiration face stress-tested cash flow at full property tax."
+      },
+      {
+        "q": "Can a $10M Brooklyn multifamily go higher LTV than 75 percent?",
+        "a": "Agency programs cap most stabilized multifamily at 75 to 80 percent LTV depending on DSCR and property profile. Above 75 percent, supplemental agency loans are sometimes available; above 80 percent typically requires bridge debt or mezzanine."
+      }
     ],
     "related_links": [
-        {"href": "financing/agency-loans-new-york.html", "title": "Agency Loans in NYC", "sub": "NYC market specifics"},
-        {"href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html", "title": "Agency vs CMBS", "sub": "Stabilized comparison"},
-        {"href": "comparisons/fannie-mae-dus-vs-freddie-mac-optigo.html", "title": "Fannie vs Freddie", "sub": "GSE comparison"}
+      {
+        "href": "financing/agency-loans-new-york.html",
+        "title": "Agency Loans in NYC",
+        "sub": "NYC market specifics"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS",
+        "sub": "Stabilized comparison"
+      },
+      {
+        "href": "comparisons/fannie-mae-dus-vs-freddie-mac-optigo.html",
+        "title": "Fannie vs Freddie",
+        "sub": "GSE comparison"
+      }
     ]
   },
   {
@@ -126,24 +262,71 @@
     "lead": "A $5 million industrial acquisition in the Inland Empire (Riverside-San Bernardino) is one of the highest-velocity industrial deal sizes in the country. The Inland Empire is one of the largest logistics and distribution markets in the United States, with sub-3 percent vacancy on stabilized industrial and active acquisition flow from owner-operators, investor syndicates, and institutional capital. Most $5M IE industrial acquisitions fund through bank balance sheet, life co relationship lenders, CMBS conduits at the smaller end of their pool sizing, or SBA 504 for owner-occupants.",
     "stack_intro": "$5M Inland Empire industrial acquisitions typically fund as a single senior loan. The choice depends on whether the buyer is an owner-occupant (SBA 504 favored at 90 percent LTC) or an investor (bank, life co, or CMBS at 65 to 75 percent LTV).",
     "stack_table": [
-        {"source": "Bank balance sheet (investor)", "cost": "6.85 to 7.85% (5 to 7 year fixed)", "size": "$5M / 65 to 70% LTV", "notes": "Recourse typical; depository relationship pricing"},
-        {"source": "Life company (relationship)", "cost": "5.95 to 6.65% (10 to 15 year fixed)", "size": "$5M / 55 to 65% LTV", "notes": "Trophy stabilized assets only"},
-        {"source": "CMBS conduit", "cost": "6.45 to 7.35% (10-year fixed)", "size": "$5M / 65 to 70% LTV", "notes": "Defeasance prepay; non-recourse"},
-        {"source": "SBA 504 (owner-occupant)", "cost": "Bank 1st 6.95% / CDC 5.85% fixed", "size": "$5M / 90% LTC (10% down)", "notes": "Owner-user financing only; 51% occupancy minimum"}
+      {
+        "source": "Bank balance sheet (investor)",
+        "cost": "6.85 to 7.85% (5 to 7 year fixed)",
+        "size": "$5M / 65 to 70% LTV",
+        "notes": "Recourse typical; depository relationship pricing"
+      },
+      {
+        "source": "Life company (relationship)",
+        "cost": "5.95 to 6.65% (10 to 15 year fixed)",
+        "size": "$5M / 55 to 65% LTV",
+        "notes": "Trophy stabilized assets only"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.45 to 7.35% (10-year fixed)",
+        "size": "$5M / 65 to 70% LTV",
+        "notes": "Defeasance prepay; non-recourse"
+      },
+      {
+        "source": "SBA 504 (owner-occupant)",
+        "cost": "Bank 1st 6.95% / CDC 5.85% fixed",
+        "size": "$5M / 90% LTC (10% down)",
+        "notes": "Owner-user financing only; 51% occupancy minimum"
+      }
     ],
     "sponsor_profile": "Typical $5M IE industrial acquisitions split between owner-occupants (small to mid-market manufacturers, distributors, contractors expanding from leased facilities) and investors (private capital and family office syndicates with 5 to 50 industrial properties). Investor sponsor profiles typically have $5M to $25M net worth and target stabilized 1.20x to 1.30x DSCR with 65 to 75 percent leverage. Owner-occupants typically use SBA 504 at 90 percent LTC to acquire facilities for their own operating business.",
     "real_deal_example": "On a $5.4M acquisition of a stabilized 38,000 square foot industrial flex building in Ontario, CA, leased to two industrial tenants on long-term triple-net leases with 8 years of weighted average remaining lease term, the investor sponsor financed through CMBS at 6.85 percent fixed 10-year, 68 percent LTV, $3.7M loan amount, with full defeasance prepayment and standard CMBS pool servicing. Tenant credit was strong (one investment-grade national tenant on a long lease), the building was Class B mid-1990s vintage with stabilized occupancy at 100 percent, and the sponsor's institutional capital partner required non-recourse execution.",
     "faqs": [
-        {"q": "Can SBA 504 finance industrial acquisitions in the Inland Empire?", "a": "Yes, for owner-occupants. SBA 504 finances owner-user industrial acquisition at 90 percent LTC. The owner's operating business must occupy at least 51 percent of the facility and meet SBA size and use eligibility criteria."},
-        {"q": "How are Inland Empire industrial cap rates today?", "a": "Stabilized Inland Empire industrial trades at 5.50 to 6.50 percent cap rates depending on building quality, tenant credit, and lease term. Cap rates expanded from the 4.0 to 4.5 percent peak in 2021 to 2022 with the broader CRE rate move."},
-        {"q": "What is the typical sponsor profile for $5M IE industrial?", "a": "Investor sponsors are typically private capital syndicates with $5M to $25M net worth and existing IE industrial holdings. Owner-occupants are typically mid-market manufacturers and distributors with 5 to 50 employees seeking to convert from lease to ownership."},
-        {"q": "Will life cos compete on $5M IE industrial?", "a": "Some will for relationship borrowers with strong sponsor profiles. Most life cos focus on $10M+ industrial; $5M is below the standard sweet spot but not disqualifying for relationship pricing."},
-        {"q": "Are Inland Empire industrial loans typically recourse or non-recourse?", "a": "Bank balance sheet loans are typically recourse. CMBS and life co are non-recourse with bad-boy carve-outs. SBA 504 requires personal guarantees from owners of 20 percent or more."}
+      {
+        "q": "Can SBA 504 finance industrial acquisitions in the Inland Empire?",
+        "a": "Yes, for owner-occupants. SBA 504 finances owner-user industrial acquisition at 90 percent LTC. The owner's operating business must occupy at least 51 percent of the facility and meet SBA size and use eligibility criteria."
+      },
+      {
+        "q": "How are Inland Empire industrial cap rates today?",
+        "a": "Stabilized Inland Empire industrial trades at 5.50 to 6.50 percent cap rates depending on building quality, tenant credit, and lease term. Cap rates expanded from the 4.0 to 4.5 percent peak in 2021 to 2022 with the broader CRE rate move."
+      },
+      {
+        "q": "What is the typical sponsor profile for $5M IE industrial?",
+        "a": "Investor sponsors are typically private capital syndicates with $5M to $25M net worth and existing IE industrial holdings. Owner-occupants are typically mid-market manufacturers and distributors with 5 to 50 employees seeking to convert from lease to ownership."
+      },
+      {
+        "q": "Will life cos compete on $5M IE industrial?",
+        "a": "Some will for relationship borrowers with strong sponsor profiles. Most life cos focus on $10M+ industrial; $5M is below the standard sweet spot but not disqualifying for relationship pricing."
+      },
+      {
+        "q": "Are Inland Empire industrial loans typically recourse or non-recourse?",
+        "a": "Bank balance sheet loans are typically recourse. CMBS and life co are non-recourse with bad-boy carve-outs. SBA 504 requires personal guarantees from owners of 20 percent or more."
+      }
     ],
     "related_links": [
-        {"href": "property/industrial.html", "title": "Industrial Financing", "sub": "All capital sources"},
-        {"href": "financing/sba-loans.html", "title": "SBA Loans (Hub)", "sub": "504 and 7(a)"},
-        {"href": "comparisons/sba-504-vs-sba-7a.html", "title": "SBA 504 vs 7(a)", "sub": "Owner-user comparison"}
+      {
+        "href": "property/industrial.html",
+        "title": "Industrial Financing",
+        "sub": "All capital sources"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans (Hub)",
+        "sub": "504 and 7(a)"
+      },
+      {
+        "href": "comparisons/sba-504-vs-sba-7a.html",
+        "title": "SBA 504 vs 7(a)",
+        "sub": "Owner-user comparison"
+      }
     ]
   },
   {
@@ -163,25 +346,75 @@
     "lead": "A $10 million SBA 504 industrial owner-user acquisition is one of the most leveraged executions available to small and mid-market business owners in commercial real estate. The 504 structure layers a 50 percent bank first mortgage with a 40 percent CDC second lien at the SBA debenture rate (one of the lowest fixed-rate options small business owners can access) with a 10 percent down payment from the borrower. The result is 90 percent LTC at a blended fixed-rate cost of capital below most conventional alternatives.",
     "stack_intro": "A typical $10M SBA 504 industrial owner-user capital stack consists of a $5M bank first mortgage at conventional bank pricing (typically 5 to 10 year fixed), a $4M CDC second lien at the SBA debenture rate (10, 20, or 25 year fixed), and $1M of borrower down payment. The blended cost of capital on the bank-financed portion is materially below standalone bank conventional financing.",
     "stack_table": [
-        {"source": "Bank first mortgage (SBA 504 1st)", "cost": "6.85 to 7.85% (5 to 10 year fixed)", "size": "$5M / 50% of project", "notes": "Bank balance sheet underwritten with SBA 504 wrap"},
-        {"source": "CDC second lien (SBA debenture)", "cost": "5.50 to 6.00% fixed (20 or 25 year)", "size": "$4M / 40% of project", "notes": "Long-term fixed rate; no balloon"},
-        {"source": "Borrower equity", "cost": "Equity contribution", "size": "$1M / 10% of project", "notes": "20% required if special-purpose or new business"},
-        {"source": "Total project", "cost": "Blended ~6.45% fixed", "size": "$10M total", "notes": "Equipment can be bundled into SBA 504 with real estate"}
+      {
+        "source": "Bank first mortgage (SBA 504 1st)",
+        "cost": "6.85 to 7.85% (5 to 10 year fixed)",
+        "size": "$5M / 50% of project",
+        "notes": "Bank balance sheet underwritten with SBA 504 wrap"
+      },
+      {
+        "source": "CDC second lien (SBA debenture)",
+        "cost": "5.50 to 6.00% fixed (20 or 25 year)",
+        "size": "$4M / 40% of project",
+        "notes": "Long-term fixed rate; no balloon"
+      },
+      {
+        "source": "Borrower equity",
+        "cost": "Equity contribution",
+        "size": "$1M / 10% of project",
+        "notes": "20% required if special-purpose or new business"
+      },
+      {
+        "source": "Total project",
+        "cost": "Blended ~6.45% fixed",
+        "size": "$10M total",
+        "notes": "Equipment can be bundled into SBA 504 with real estate"
+      }
     ],
     "sponsor_profile": "Typical $10M SBA 504 industrial owner-user sponsors are mid-market manufacturers, distributors, food processors, and service businesses with $3M to $30M of trailing 12-month revenue and 10 to 200 employees. The owner is typically the operating CEO or family principal. Net worth $1M to $10M; liquidity $200K to $2M. The acquisition typically replaces a leased facility with owner-occupied real estate, providing 90 percent LTC financing, long-term fixed-rate cost certainty, and operating equity build-up.",
     "real_deal_example": "On a $10.2M industrial acquisition in Long Beach, California, the buyer was a 25-employee specialty manufacturing operator with 18 years of operating history, transitioning from a leased 32,000 square foot facility to ownership of a 38,000 square foot purpose-built industrial building. The deal allocated $9.8M to real estate (the building, land, and site improvements) and $400K to equipment. SBA 504 financed at 90 percent LTC with a $5M bank first mortgage at 6.95 percent fixed 10-year and a $4M CDC second lien at 5.85 percent fixed 25-year. The borrower equity of $1M was funded through retained earnings. Total project cost $10.2M; blended monthly debt service approximately $52K versus prior monthly lease cost of $48K, with the additional $4K per month creating principal pay-down and equity build-up rather than rent expense.",
     "faqs": [
-        {"q": "Is SBA 504 only for small businesses?", "a": "No. SBA 504 is available to most operating businesses with tangible net worth under $20 million and average net income under $6.5 million for the prior two years. The 'small business' definition under SBA is broader than most assume and includes most middle-market private operators."},
-        {"q": "What is the maximum SBA 504 loan size?", "a": "The CDC second lien is capped at $5M for most projects, $5.5M for manufacturing or energy-efficient projects. With a 50 percent bank first mortgage, total project size can extend to $20M+ depending on bank lender appetite."},
-        {"q": "Is the CDC second lien fixed-rate?", "a": "Yes. The CDC piece is funded by debentures with a fixed coupon set monthly and matches one of three terms (10, 20, or 25 years). The borrower locks in long-term fixed-rate cost of capital on 40 percent of the project at origination."},
-        {"q": "Does SBA 504 require personal guarantees?", "a": "Yes. All owners of 20 percent or more of the operating company must personally guarantee both the bank first mortgage and the CDC second lien. This is a federal SBA requirement."},
-        {"q": "How long does $10M SBA 504 take to close?", "a": "Typical close timeline is 60 to 90 days from term sheet, including bank underwriting, CDC underwriting, environmental Phase I, equipment appraisal (if applicable), and SBA approval."},
-        {"q": "Can equipment be bundled with the SBA 504 real estate financing?", "a": "Yes. Long-life equipment (machinery, manufacturing equipment, refrigeration) can be bundled into SBA 504 alongside real estate, financed at the same 90 percent LTC. Short-life equipment and FF&E typically goes into SBA 7(a) or standalone equipment financing."}
+      {
+        "q": "Is SBA 504 only for small businesses?",
+        "a": "No. SBA 504 is available to most operating businesses with tangible net worth under $20 million and average net income under $6.5 million for the prior two years. The 'small business' definition under SBA is broader than most assume and includes most middle-market private operators."
+      },
+      {
+        "q": "What is the maximum SBA 504 loan size?",
+        "a": "The CDC second lien is capped at $5M for most projects, $5.5M for manufacturing or energy-efficient projects. With a 50 percent bank first mortgage, total project size can extend to $20M+ depending on bank lender appetite."
+      },
+      {
+        "q": "Is the CDC second lien fixed-rate?",
+        "a": "Yes. The CDC piece is funded by debentures with a fixed coupon set monthly and matches one of three terms (10, 20, or 25 years). The borrower locks in long-term fixed-rate cost of capital on 40 percent of the project at origination."
+      },
+      {
+        "q": "Does SBA 504 require personal guarantees?",
+        "a": "Yes. All owners of 20 percent or more of the operating company must personally guarantee both the bank first mortgage and the CDC second lien. This is a federal SBA requirement."
+      },
+      {
+        "q": "How long does $10M SBA 504 take to close?",
+        "a": "Typical close timeline is 60 to 90 days from term sheet, including bank underwriting, CDC underwriting, environmental Phase I, equipment appraisal (if applicable), and SBA approval."
+      },
+      {
+        "q": "Can equipment be bundled with the SBA 504 real estate financing?",
+        "a": "Yes. Long-life equipment (machinery, manufacturing equipment, refrigeration) can be bundled into SBA 504 alongside real estate, financed at the same 90 percent LTC. Short-life equipment and FF&E typically goes into SBA 7(a) or standalone equipment financing."
+      }
     ],
     "related_links": [
-        {"href": "financing/sba-loans.html", "title": "SBA Loans (Hub)", "sub": "504 and 7(a)"},
-        {"href": "comparisons/sba-504-vs-sba-7a.html", "title": "SBA 504 vs 7(a)", "sub": "Program comparison"},
-        {"href": "property/industrial.html", "title": "Industrial Financing", "sub": "All capital sources"}
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans (Hub)",
+        "sub": "504 and 7(a)"
+      },
+      {
+        "href": "comparisons/sba-504-vs-sba-7a.html",
+        "title": "SBA 504 vs 7(a)",
+        "sub": "Program comparison"
+      },
+      {
+        "href": "property/industrial.html",
+        "title": "Industrial Financing",
+        "sub": "All capital sources"
+      }
     ]
   },
   {
@@ -201,25 +434,75 @@
     "lead": "A $15 million life insurance company multifamily permanent loan represents one of the most competitive long-term cost of capital options available to institutional and trophy multifamily sponsors. Life co allocators concentrate on stabilized Class A and trophy multifamily at 55 to 65 percent LTV in primary markets with strong sponsors. The pricing trade-off is 5 to 25 basis points inside agency at meaningfully lower leverage and 15 to 25 year fixed-rate term certainty that agency programs rarely match.",
     "stack_intro": "$15M life co multifamily perm loans are funded as a single senior loan from a life insurance company. The decision is between competing life cos based on existing sponsor relationships, pricing tier, term length, and structural flexibility.",
     "stack_table": [
-        {"source": "Life company (relationship tier)", "cost": "5.40 to 5.85% (10-year fixed)", "size": "$15M / 55 to 60% LTV", "notes": "Tightest pricing for established sponsor relationships"},
-        {"source": "Life company (15-year)", "cost": "5.55 to 6.00% (15-year fixed)", "size": "$15M / 55 to 60% LTV", "notes": "Long-term term lock at modest spread over 10-year"},
-        {"source": "Life company (20-year)", "cost": "5.75 to 6.20% (20-year fixed)", "size": "$15M / 55 to 60% LTV", "notes": "Multi-decade hold cost of capital lock"},
-        {"source": "Fannie / Freddie (comparison)", "cost": "5.55 to 6.05% (10-year fixed)", "size": "$15M / 70 to 75% LTV", "notes": "Higher leverage trade-off; agency cap and program structure"}
+      {
+        "source": "Life company (relationship tier)",
+        "cost": "5.40 to 5.85% (10-year fixed)",
+        "size": "$15M / 55 to 60% LTV",
+        "notes": "Tightest pricing for established sponsor relationships"
+      },
+      {
+        "source": "Life company (15-year)",
+        "cost": "5.55 to 6.00% (15-year fixed)",
+        "size": "$15M / 55 to 60% LTV",
+        "notes": "Long-term term lock at modest spread over 10-year"
+      },
+      {
+        "source": "Life company (20-year)",
+        "cost": "5.75 to 6.20% (20-year fixed)",
+        "size": "$15M / 55 to 60% LTV",
+        "notes": "Multi-decade hold cost of capital lock"
+      },
+      {
+        "source": "Fannie / Freddie (comparison)",
+        "cost": "5.55 to 6.05% (10-year fixed)",
+        "size": "$15M / 70 to 75% LTV",
+        "notes": "Higher leverage trade-off; agency cap and program structure"
+      }
     ],
     "sponsor_profile": "Typical $15M life co multifamily perm sponsors are institutional and family office multifamily owners with deep CRE track records and existing life co relationships. Sponsor net worth typically $25M to $250M; liquidity $5M to $50M. The deal is usually a refinance of a maturing life co loan, an acquisition with planned long-term hold, or a recapitalization. Sponsors targeting life co perm typically have multi-decade hold horizons (10 to 30 years) and value the rate compression and term certainty over agency leverage.",
     "real_deal_example": "On a 132-unit Class A trophy multifamily in Beverly Hills, the sponsor refinanced a maturing life co loan into a new 15-year fixed life co perm at 5.78 percent, 60 percent LTV, $14.4M loan amount, with 5 years of interest-only and yield maintenance prepayment. The loan was placed with a top-15 life co with whom the sponsor had three prior loans dating back 14 years. Pricing reflected the relationship tier (15 basis points inside the lender's standard quote for a new sponsor), and the 15-year term locked in cost of capital through 2041 across what the sponsor anticipated as a multi-decade family ownership hold.",
     "faqs": [
-        {"q": "Why are life company multifamily loans cheaper than agency on low-leverage trophy deals?", "a": "Life cos have long-duration liabilities (life policies, annuities) that match well to long-duration multifamily mortgages. Their cost of capital on 50 to 65 percent LTV trophy multifamily is below the agency programs, and they pass that pricing through to relationship borrowers."},
-        {"q": "Can a sponsor without a life company relationship get life co pricing?", "a": "Yes, but typically not at the relationship tier. New life co borrowers get the lender's standard quote based on the deal and the sponsor's broader CRE track record, but the lowest pricing tier requires multiple prior loans with clean payment histories."},
-        {"q": "What term lengths are available on life co multifamily?", "a": "Most life cos quote 10, 15, 20, and 25 year fixed-rate terms. Some go to 30 years for established sponsors. The 15 and 20 year terms are most differentiated from agency, which typically caps at 10 to 12 year fixed for most lenders."},
-        {"q": "Will life cos lever to 70 percent on multifamily?", "a": "Almost never. Life co allocator discipline typically caps multifamily at 60 to 65 percent LTV with a 1.30x to 1.40x DSCR floor. Sponsors needing higher leverage move to agency."},
-        {"q": "What is the typical close timeline for $15M life co multifamily perm?", "a": "60 to 90 days from application for established sponsor relationships. 90 to 120 days for new relationships."},
-        {"q": "Is life co multifamily non-recourse?", "a": "Yes. Life co multifamily perm is non-recourse with bad-boy carve-outs, identical to agency on the recourse axis."}
+      {
+        "q": "Why are life company multifamily loans cheaper than agency on low-leverage trophy deals?",
+        "a": "Life cos have long-duration liabilities (life policies, annuities) that match well to long-duration multifamily mortgages. Their cost of capital on 50 to 65 percent LTV trophy multifamily is below the agency programs, and they pass that pricing through to relationship borrowers."
+      },
+      {
+        "q": "Can a sponsor without a life company relationship get life co pricing?",
+        "a": "Yes, but typically not at the relationship tier. New life co borrowers get the lender's standard quote based on the deal and the sponsor's broader CRE track record, but the lowest pricing tier requires multiple prior loans with clean payment histories."
+      },
+      {
+        "q": "What term lengths are available on life co multifamily?",
+        "a": "Most life cos quote 10, 15, 20, and 25 year fixed-rate terms. Some go to 30 years for established sponsors. The 15 and 20 year terms are most differentiated from agency, which typically caps at 10 to 12 year fixed for most lenders."
+      },
+      {
+        "q": "Will life cos lever to 70 percent on multifamily?",
+        "a": "Almost never. Life co allocator discipline typically caps multifamily at 60 to 65 percent LTV with a 1.30x to 1.40x DSCR floor. Sponsors needing higher leverage move to agency."
+      },
+      {
+        "q": "What is the typical close timeline for $15M life co multifamily perm?",
+        "a": "60 to 90 days from application for established sponsor relationships. 90 to 120 days for new relationships."
+      },
+      {
+        "q": "Is life co multifamily non-recourse?",
+        "a": "Yes. Life co multifamily perm is non-recourse with bad-boy carve-outs, identical to agency on the recourse axis."
+      }
     ],
     "related_links": [
-        {"href": "financing/life-company-loans.html", "title": "Life Company Loans (Hub)", "sub": "Direct life co correspondent"},
-        {"href": "comparisons/agency-vs-life-company-stabilized-multifamily.html", "title": "Agency vs Life Co", "sub": "Multifamily comparison"},
-        {"href": "property/multifamily.html", "title": "Multifamily Financing", "sub": "All capital sources"}
+      {
+        "href": "financing/life-company-loans.html",
+        "title": "Life Company Loans (Hub)",
+        "sub": "Direct life co correspondent"
+      },
+      {
+        "href": "comparisons/agency-vs-life-company-stabilized-multifamily.html",
+        "title": "Agency vs Life Co",
+        "sub": "Multifamily comparison"
+      },
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "All capital sources"
+      }
     ]
   },
   {
@@ -239,24 +522,71 @@
     "lead": "A $20 million multifamily portfolio refinance typically combines 4 to 12 properties under a single cross-collateralized loan structure, allowing the sponsor to consolidate multiple individual property loans into one efficient financing. Portfolio loans deliver pricing inside individual property loans (typically 10 to 25 basis points), simplified servicing, and cross-collateralization that supports leverage on weaker individual assets. Most $20M multifamily portfolio refinances fund through Fannie Mae DUS, Freddie Mac Optigo, life co, or CMBS depending on sponsor preference and leverage requirements.",
     "stack_intro": "$20M multifamily portfolio refinances are funded as a single senior loan secured by 4 to 12 properties on a cross-collateralized basis. The decision is which agency or capital source delivers the best blended pricing across the portfolio.",
     "stack_table": [
-        {"source": "Fannie Mae DUS Portfolio", "cost": "5.65 to 6.10% (10-year fixed)", "size": "$20M / 70 to 75% LTV", "notes": "Cross-collateralized; release provisions"},
-        {"source": "Freddie Mac Optigo Portfolio", "cost": "5.55 to 6.00% (10-year fixed)", "size": "$20M / 70 to 75% LTV", "notes": "Cross-collateralized; release provisions"},
-        {"source": "Life company portfolio", "cost": "5.40 to 5.90% (10 to 15 year fixed)", "size": "$20M / 55 to 65% LTV", "notes": "Trophy portfolio; deep sponsor relationship"},
-        {"source": "CMBS portfolio", "cost": "6.05 to 6.85% (10-year fixed)", "size": "$20M / 65 to 70% LTV", "notes": "Single-borrower CMBS deal; defeasance prepay"}
+      {
+        "source": "Fannie Mae DUS Portfolio",
+        "cost": "5.65 to 6.10% (10-year fixed)",
+        "size": "$20M / 70 to 75% LTV",
+        "notes": "Cross-collateralized; release provisions"
+      },
+      {
+        "source": "Freddie Mac Optigo Portfolio",
+        "cost": "5.55 to 6.00% (10-year fixed)",
+        "size": "$20M / 70 to 75% LTV",
+        "notes": "Cross-collateralized; release provisions"
+      },
+      {
+        "source": "Life company portfolio",
+        "cost": "5.40 to 5.90% (10 to 15 year fixed)",
+        "size": "$20M / 55 to 65% LTV",
+        "notes": "Trophy portfolio; deep sponsor relationship"
+      },
+      {
+        "source": "CMBS portfolio",
+        "cost": "6.05 to 6.85% (10-year fixed)",
+        "size": "$20M / 65 to 70% LTV",
+        "notes": "Single-borrower CMBS deal; defeasance prepay"
+      }
     ],
     "sponsor_profile": "Typical $20M multifamily portfolio refinance sponsors are mid-market multifamily investors with 8 to 30 properties under management. Sponsor net worth $10M to $75M; liquidity $2M to $15M. The portfolio is typically concentrated in 1 to 3 markets and reflects a multi-year acquisition strategy. The portfolio refinance consolidates expiring loans, captures cross-collateralization benefits, and locks in 10-year fixed-rate cost of capital across the entire portfolio.",
     "real_deal_example": "On a $20.5M Sun Belt multifamily portfolio refinance covering 8 properties (188 units total) across two metros, the sponsor consolidated 6 individual property loans (5 expiring within 18 months, 1 maturing immediately) into a single Freddie Mac Optigo Conventional Portfolio at 5.85 percent fixed 10-year, 73 percent LTV, with 3 years of interest-only, standard yield maintenance, and individual property release provisions allowing sale of any single property at 110 percent of allocated loan amount. Pricing came in 22 basis points inside the blended pricing of the individual loans the portfolio replaced, saving approximately $40K per year of interest expense plus the ongoing operational efficiency of one loan instead of 6.",
     "faqs": [
-        {"q": "What is a cross-collateralized portfolio loan?", "a": "A cross-collateralized portfolio loan secures one loan with multiple properties. Each property in the portfolio is collateral for the entire loan, providing the lender with stronger collateral coverage and the sponsor with operational efficiency and pricing benefits."},
-        {"q": "Can individual properties be released from a portfolio loan?", "a": "Yes, through release provisions negotiated at origination. Typical release provisions allow the sponsor to sell or refinance an individual property by paying down the loan by 110 to 120 percent of the property's allocated loan amount, freeing the property from the cross-collateral structure."},
-        {"q": "Are portfolio loans typically priced tighter than individual property loans?", "a": "Yes. Portfolio loans typically price 10 to 25 basis points inside the blended pricing of the equivalent individual property loans, reflecting the lender's stronger collateral coverage, simplified servicing, and reduced administrative cost."},
-        {"q": "Can a multifamily portfolio span multiple markets?", "a": "Yes. Most lenders allow portfolio loans across multiple markets, particularly when the portfolio reflects a coherent investment strategy. Multi-market portfolios typically face minor concentration limits on any single market."},
-        {"q": "What is the typical close timeline for $20M portfolio refinance?", "a": "60 to 90 days for agency or life co. 75 to 105 days for CMBS. Multi-property closings require coordinated environmental Phase I assessments, individual property appraisals, and individual property title work, which can extend timelines."}
+      {
+        "q": "What is a cross-collateralized portfolio loan?",
+        "a": "A cross-collateralized portfolio loan secures one loan with multiple properties. Each property in the portfolio is collateral for the entire loan, providing the lender with stronger collateral coverage and the sponsor with operational efficiency and pricing benefits."
+      },
+      {
+        "q": "Can individual properties be released from a portfolio loan?",
+        "a": "Yes, through release provisions negotiated at origination. Typical release provisions allow the sponsor to sell or refinance an individual property by paying down the loan by 110 to 120 percent of the property's allocated loan amount, freeing the property from the cross-collateral structure."
+      },
+      {
+        "q": "Are portfolio loans typically priced tighter than individual property loans?",
+        "a": "Yes. Portfolio loans typically price 10 to 25 basis points inside the blended pricing of the equivalent individual property loans, reflecting the lender's stronger collateral coverage, simplified servicing, and reduced administrative cost."
+      },
+      {
+        "q": "Can a multifamily portfolio span multiple markets?",
+        "a": "Yes. Most lenders allow portfolio loans across multiple markets, particularly when the portfolio reflects a coherent investment strategy. Multi-market portfolios typically face minor concentration limits on any single market."
+      },
+      {
+        "q": "What is the typical close timeline for $20M portfolio refinance?",
+        "a": "60 to 90 days for agency or life co. 75 to 105 days for CMBS. Multi-property closings require coordinated environmental Phase I assessments, individual property appraisals, and individual property title work, which can extend timelines."
+      }
     ],
     "related_links": [
-        {"href": "financing/agency-loans.html", "title": "Agency Loans (Hub)", "sub": "Fannie / Freddie portfolio programs"},
-        {"href": "comparisons/agency-vs-life-company-stabilized-multifamily.html", "title": "Agency vs Life Co", "sub": "Multifamily comparison"},
-        {"href": "property/multifamily.html", "title": "Multifamily Financing", "sub": "All capital sources"}
+      {
+        "href": "financing/agency-loans.html",
+        "title": "Agency Loans (Hub)",
+        "sub": "Fannie / Freddie portfolio programs"
+      },
+      {
+        "href": "comparisons/agency-vs-life-company-stabilized-multifamily.html",
+        "title": "Agency vs Life Co",
+        "sub": "Multifamily comparison"
+      },
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "All capital sources"
+      }
     ]
   },
   {
@@ -276,24 +606,71 @@
     "lead": "A $25 million trophy multifamily acquisition in Los Angeles is squarely in the institutional multifamily sweet spot, with deep agency, life co, and CMBS competition on every deal. Sponsors typically target Class A or trophy properties in Beverly Hills, Santa Monica, West LA, Brentwood, Culver City, Pasadena, or other premium submarkets. The decision is leverage versus rate compression versus term length, with each capital source presenting distinct trade-offs.",
     "stack_intro": "$25M LA trophy multifamily acquisitions are typically funded as a single senior loan with optional preferred equity layered above. The decision is which capital source delivers the best execution given sponsor profile, leverage need, and hold horizon.",
     "stack_table": [
-        {"source": "Freddie Mac Optigo Conventional", "cost": "5.55 to 6.00% (10-year fixed)", "size": "$25M / 70 to 75% LTV", "notes": "Highest leverage; non-recourse; standard agency"},
-        {"source": "Fannie Mae DUS Conventional", "cost": "5.65 to 6.10% (10-year fixed)", "size": "$25M / 70 to 75% LTV", "notes": "Highest leverage; non-recourse; standard agency"},
-        {"source": "Life company (relationship)", "cost": "5.40 to 5.85% (10 to 15 year fixed)", "size": "$25M / 55 to 60% LTV", "notes": "Tightest pricing; lowest leverage trade-off"},
-        {"source": "CMBS conduit", "cost": "6.05 to 6.85% (10-year fixed)", "size": "$25M / 65 to 70% LTV", "notes": "Higher coupon than agency; non-recourse; defeasance"}
+      {
+        "source": "Freddie Mac Optigo Conventional",
+        "cost": "5.55 to 6.00% (10-year fixed)",
+        "size": "$25M / 70 to 75% LTV",
+        "notes": "Highest leverage; non-recourse; standard agency"
+      },
+      {
+        "source": "Fannie Mae DUS Conventional",
+        "cost": "5.65 to 6.10% (10-year fixed)",
+        "size": "$25M / 70 to 75% LTV",
+        "notes": "Highest leverage; non-recourse; standard agency"
+      },
+      {
+        "source": "Life company (relationship)",
+        "cost": "5.40 to 5.85% (10 to 15 year fixed)",
+        "size": "$25M / 55 to 60% LTV",
+        "notes": "Tightest pricing; lowest leverage trade-off"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.05 to 6.85% (10-year fixed)",
+        "size": "$25M / 65 to 70% LTV",
+        "notes": "Higher coupon than agency; non-recourse; defeasance"
+      }
     ],
     "sponsor_profile": "Typical $25M LA trophy multifamily acquisition sponsors are institutional buyers and high-net-worth family offices with $50M to $500M+ of net worth, deep multifamily operating histories, and existing relationships with top Seller-Servicers, life cos, and CMBS originators. The deal is typically a long-hold acquisition with a planned 10 to 30 year ownership horizon. LA-specific underwriting items include AB 1482 rent caps, Costa-Hawkins rent control framework, RSO compliance, soft story retrofit, SB 326 / SB 721 balcony inspections, and Measure ULA exposure on planned exit.",
     "real_deal_example": "On a 78-unit Class A trophy multifamily acquisition in Beverly Hills, the sponsor was an institutional multifamily operator with 12 LA-area properties. The acquisition was financed through Freddie Mac Optigo Conventional at 5.85 percent fixed 10-year, 70 percent LTV, $17.5M loan amount, with 3 years of interest-only and standard yield maintenance. A complementary preferred equity layer of $4M from an institutional capital partner brought the total capital stack to 86 percent LTC, with the sponsor's $3.5M of common equity at the bottom. The Freddie Mac Optigo execution was selected over a competing Fannie Mae DUS quote because of an 8 basis point coupon advantage on the day and a stronger relationship with the Seller-Servicer.",
     "faqs": [
-        {"q": "Will life cos lever to 70 percent on $25M LA multifamily?", "a": "Almost never. Life co allocator discipline caps multifamily at 60 to 65 percent LTV. Sponsors needing higher leverage on $25M LA multifamily move to agency or CMBS."},
-        {"q": "What is the typical hold horizon for $25M LA trophy multifamily?", "a": "Most institutional sponsors of LA trophy multifamily plan 10 to 30 year hold horizons reflecting the difficulty of replacing the acquisition. The long hold horizon often supports life co fixed-rate term length over agency."},
-        {"q": "How does Measure ULA affect $25M LA trophy multifamily?", "a": "Measure ULA imposes a 4 to 5.5 percent transfer tax on LA city sales above $5M. On a $25M property, ULA exposure is approximately $1M to $1.4M of transfer tax payable by the seller at exit. Sponsors model ULA into exit assumptions."},
-        {"q": "Can preferred equity be layered onto $25M LA multifamily?", "a": "Yes. Institutional capital partners frequently layer 10 to 20 percent of preferred equity above senior agency or CMBS senior debt on trophy multifamily acquisitions, bringing total capital stack leverage to 85 to 90 percent."},
-        {"q": "What is the typical close timeline for $25M LA acquisition?", "a": "60 to 90 days for agency. 75 to 105 days for CMBS. 60 to 90 days for life co with established sponsor relationship."}
+      {
+        "q": "Will life cos lever to 70 percent on $25M LA multifamily?",
+        "a": "Almost never. Life co allocator discipline caps multifamily at 60 to 65 percent LTV. Sponsors needing higher leverage on $25M LA multifamily move to agency or CMBS."
+      },
+      {
+        "q": "What is the typical hold horizon for $25M LA trophy multifamily?",
+        "a": "Most institutional sponsors of LA trophy multifamily plan 10 to 30 year hold horizons reflecting the difficulty of replacing the acquisition. The long hold horizon often supports life co fixed-rate term length over agency."
+      },
+      {
+        "q": "How does Measure ULA affect $25M LA trophy multifamily?",
+        "a": "Measure ULA imposes a 4 to 5.5 percent transfer tax on LA city sales above $5M. On a $25M property, ULA exposure is approximately $1M to $1.4M of transfer tax payable by the seller at exit. Sponsors model ULA into exit assumptions."
+      },
+      {
+        "q": "Can preferred equity be layered onto $25M LA multifamily?",
+        "a": "Yes. Institutional capital partners frequently layer 10 to 20 percent of preferred equity above senior agency or CMBS senior debt on trophy multifamily acquisitions, bringing total capital stack leverage to 85 to 90 percent."
+      },
+      {
+        "q": "What is the typical close timeline for $25M LA acquisition?",
+        "a": "60 to 90 days for agency. 75 to 105 days for CMBS. 60 to 90 days for life co with established sponsor relationship."
+      }
     ],
     "related_links": [
-        {"href": "financing/agency-loans-los-angeles.html", "title": "Agency Loans in LA", "sub": "Fannie / Freddie LA"},
-        {"href": "financing/life-company-loans.html", "title": "Life Company Loans (Hub)", "sub": "Direct life co correspondent"},
-        {"href": "comparisons/agency-vs-life-company-stabilized-multifamily.html", "title": "Agency vs Life Co", "sub": "Comparison"}
+      {
+        "href": "financing/agency-loans-los-angeles.html",
+        "title": "Agency Loans in LA",
+        "sub": "Fannie / Freddie LA"
+      },
+      {
+        "href": "financing/life-company-loans.html",
+        "title": "Life Company Loans (Hub)",
+        "sub": "Direct life co correspondent"
+      },
+      {
+        "href": "comparisons/agency-vs-life-company-stabilized-multifamily.html",
+        "title": "Agency vs Life Co",
+        "sub": "Comparison"
+      }
     ]
   },
   {
@@ -313,24 +690,71 @@
     "lead": "A $25 million build-to-rent (BTR) construction loan in Texas is the canonical institutional BTR transaction, financing 100 to 200 units of horizontal multifamily across Sun Belt growth markets including Austin, San Antonio, Dallas-Fort Worth, Houston, and the broader Texas Triangle. Most $25M BTR construction loans fund through specialty bridge debt funds at 70 to 75 percent LTC, often paired with an agency forward commitment that locks in permanent take-out at construction start.",
     "stack_intro": "$25M Texas BTR construction stacks combine senior construction debt at 70 to 75 percent LTC with institutional equity. Many sponsors layer in an agency forward commitment to eliminate refinance rate risk on the permanent take-out at stabilization.",
     "stack_table": [
-        {"source": "Specialty BTR bridge debt fund", "cost": "SOFR + 425 to 600 (8.85 to 10.60% all-in)", "size": "$25M / 70 to 75% LTC", "notes": "Construction + lease-up; non-recourse; future funding for vertical construction"},
-        {"source": "Bank construction balance sheet", "cost": "SOFR + 275 to 400 (7.10 to 8.60% all-in)", "size": "$25M / 60 to 65% LTC", "notes": "Lower leverage; sponsor recourse; depository relationship"},
-        {"source": "Agency forward commitment (Fannie / Freddie)", "cost": "Locked at construction start", "size": "$25M / 70 to 75% LTV stabilized", "notes": "Permanent take-out rate locked at construction start"},
-        {"source": "Institutional equity", "cost": "Equity (target IRR 15 to 22%)", "size": "$10M to $14M / 25 to 30% of project", "notes": "Common equity from BTR equity partner"}
+      {
+        "source": "Specialty BTR bridge debt fund",
+        "cost": "SOFR + 425 to 600 (8.85 to 10.60% all-in)",
+        "size": "$25M / 70 to 75% LTC",
+        "notes": "Construction + lease-up; non-recourse; future funding for vertical construction"
+      },
+      {
+        "source": "Bank construction balance sheet",
+        "cost": "SOFR + 275 to 400 (7.10 to 8.60% all-in)",
+        "size": "$25M / 60 to 65% LTC",
+        "notes": "Lower leverage; sponsor recourse; depository relationship"
+      },
+      {
+        "source": "Agency forward commitment (Fannie / Freddie)",
+        "cost": "Locked at construction start",
+        "size": "$25M / 70 to 75% LTV stabilized",
+        "notes": "Permanent take-out rate locked at construction start"
+      },
+      {
+        "source": "Institutional equity",
+        "cost": "Equity (target IRR 15 to 22%)",
+        "size": "$10M to $14M / 25 to 30% of project",
+        "notes": "Common equity from BTR equity partner"
+      }
     ],
     "sponsor_profile": "Typical $25M Texas BTR construction sponsors are vertically integrated BTR operators with 2 to 10 completed BTR communities under management. Sponsor net worth $15M to $200M. The capital structure typically includes $25M of construction debt at 70 to 75 percent LTC, $10M to $14M of common equity from an institutional BTR equity partner (Pretium, BlackRock, AHV, others), and $1M to $3M of sponsor co-invest. Construction takes 18 to 24 months; lease-up to stabilization takes another 12 to 24 months.",
     "real_deal_example": "On a 168-unit BTR townhome construction in a Texas Sun Belt suburb, the sponsor was a vertically integrated BTR operator with 4 completed communities. The capital structure included $32M of construction debt at SOFR + 475 (9.35 percent all-in at the time), $14M of common equity from an institutional BTR equity partner, and $2M of sponsor co-invest. The construction lender required a Fannie Mae forward commitment locking the permanent take-out at 5.85 percent fixed 10-year for delivery at month 24. Construction completed in 22 months. Lease-up reached 90 percent occupancy at month 39. The Fannie permanent funded at month 41, refinancing the construction debt and returning approximately $8M of capital to the equity partners.",
     "faqs": [
-        {"q": "What is build-to-rent (BTR)?", "a": "Build-to-rent refers to multifamily communities of detached, townhome, or duplex units developed and operated as long-term rentals (rather than for-sale single-family). BTR has emerged as the fastest-growing institutional multifamily product type since 2020."},
-        {"q": "Can $25M Texas BTR construction lock in permanent rate at construction start?", "a": "Yes. Both Fannie Mae and Freddie Mac offer agency forward commitment programs that lock the permanent take-out rate at construction start, with the perm loan funding at certificate of occupancy or stabilization. The structure eliminates refinance rate risk."},
-        {"q": "What is the typical BTR construction timeline?", "a": "BTR construction typically runs 18 to 30 months from groundbreaking to certificate of occupancy on the final phase. Phased delivery is common, with the first units delivering and beginning lease-up while later phases continue construction."},
-        {"q": "Can BTR be financed at agency leverage during construction?", "a": "Agency programs do not directly finance BTR construction. Construction is typically financed through debt funds or specialty banks at 65 to 75 percent LTC, with permanent take-out via agency at stabilization."},
-        {"q": "What are the major Texas BTR markets?", "a": "Austin, San Antonio, Dallas-Fort Worth, Houston, and El Paso are the major Texas BTR markets. The Texas Triangle (Austin, Dallas, Houston, San Antonio) has been one of the most active BTR development markets in the country since 2020."}
+      {
+        "q": "What is build-to-rent (BTR)?",
+        "a": "Build-to-rent refers to multifamily communities of detached, townhome, or duplex units developed and operated as long-term rentals (rather than for-sale single-family). BTR has emerged as the fastest-growing institutional multifamily product type since 2020."
+      },
+      {
+        "q": "Can $25M Texas BTR construction lock in permanent rate at construction start?",
+        "a": "Yes. Both Fannie Mae and Freddie Mac offer agency forward commitment programs that lock the permanent take-out rate at construction start, with the perm loan funding at certificate of occupancy or stabilization. The structure eliminates refinance rate risk."
+      },
+      {
+        "q": "What is the typical BTR construction timeline?",
+        "a": "BTR construction typically runs 18 to 30 months from groundbreaking to certificate of occupancy on the final phase. Phased delivery is common, with the first units delivering and beginning lease-up while later phases continue construction."
+      },
+      {
+        "q": "Can BTR be financed at agency leverage during construction?",
+        "a": "Agency programs do not directly finance BTR construction. Construction is typically financed through debt funds or specialty banks at 65 to 75 percent LTC, with permanent take-out via agency at stabilization."
+      },
+      {
+        "q": "What are the major Texas BTR markets?",
+        "a": "Austin, San Antonio, Dallas-Fort Worth, Houston, and El Paso are the major Texas BTR markets. The Texas Triangle (Austin, Dallas, Houston, San Antonio) has been one of the most active BTR development markets in the country since 2020."
+      }
     ],
     "related_links": [
-        {"href": "property/build-to-rent-financing.html", "title": "Build-to-Rent Financing", "sub": "BTR hub page"},
-        {"href": "financing/construction-loans.html", "title": "Construction Loans (Hub)", "sub": "Ground-up financing"},
-        {"href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html", "title": "Agency vs CMBS", "sub": "Permanent comparison"}
+      {
+        "href": "property/build-to-rent-financing.html",
+        "title": "Build-to-Rent Financing",
+        "sub": "BTR hub page"
+      },
+      {
+        "href": "financing/construction-loans.html",
+        "title": "Construction Loans (Hub)",
+        "sub": "Ground-up financing"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS",
+        "sub": "Permanent comparison"
+      }
     ]
   },
   {
@@ -350,24 +774,480 @@
     "lead": "A $50 million multifamily portfolio acquisition typically combines 8 to 30 properties under a single cross-collateralized senior loan. At this size, agency, CMBS single-borrower, and life co portfolio executions all compete actively. The decision often comes down to leverage requirement (agency for higher leverage, life co for tighter pricing), term length preference (life co for 15+ year fixed), and prepayment flexibility (CMBS for defeasance, agency for yield maintenance).",
     "stack_intro": "$50M multifamily portfolio acquisitions typically fund as a single cross-collateralized senior loan, occasionally with mezzanine or preferred equity layered above. Sponsor preference and leverage need drive the capital source decision.",
     "stack_table": [
-        {"source": "Freddie Mac Optigo Portfolio", "cost": "5.55 to 6.00% (10-year fixed)", "size": "$50M / 70 to 75% LTV", "notes": "Highest leverage; non-recourse; release provisions"},
-        {"source": "Fannie Mae DUS Portfolio", "cost": "5.65 to 6.10% (10-year fixed)", "size": "$50M / 70 to 75% LTV", "notes": "Same as Optigo; pick best price on the day"},
-        {"source": "CMBS single-borrower", "cost": "5.95 to 6.85% (10-year fixed)", "size": "$50M / 65 to 70% LTV", "notes": "Single-borrower CMBS pool; defeasance prepay"},
-        {"source": "Life company portfolio", "cost": "5.40 to 5.90% (10 to 15 year fixed)", "size": "$50M / 55 to 65% LTV", "notes": "Tighter pricing; lower leverage; long-term fixed"}
+      {
+        "source": "Freddie Mac Optigo Portfolio",
+        "cost": "5.55 to 6.00% (10-year fixed)",
+        "size": "$50M / 70 to 75% LTV",
+        "notes": "Highest leverage; non-recourse; release provisions"
+      },
+      {
+        "source": "Fannie Mae DUS Portfolio",
+        "cost": "5.65 to 6.10% (10-year fixed)",
+        "size": "$50M / 70 to 75% LTV",
+        "notes": "Same as Optigo; pick best price on the day"
+      },
+      {
+        "source": "CMBS single-borrower",
+        "cost": "5.95 to 6.85% (10-year fixed)",
+        "size": "$50M / 65 to 70% LTV",
+        "notes": "Single-borrower CMBS pool; defeasance prepay"
+      },
+      {
+        "source": "Life company portfolio",
+        "cost": "5.40 to 5.90% (10 to 15 year fixed)",
+        "size": "$50M / 55 to 65% LTV",
+        "notes": "Tighter pricing; lower leverage; long-term fixed"
+      }
     ],
     "sponsor_profile": "Typical $50M multifamily portfolio acquisition sponsors are institutional buyers and large family offices with $100M to $1B+ of net worth, deep multifamily operating histories, and significant capital relationships. The acquisition is often part of a broader portfolio strategy or platform expansion. Sponsor dilligence at this size includes financial statement review, prior loan payment history, key person risk, and concentration analysis across the existing portfolio.",
     "real_deal_example": "On a $52M Sun Belt multifamily portfolio acquisition covering 14 properties (412 units total) across three metros, the institutional sponsor financed through Freddie Mac Optigo Conventional Portfolio at 5.78 percent fixed 10-year, 72 percent LTV, $37.4M loan amount, with 5 years of interest-only and individual property release provisions at 110 percent of allocated loan amount. The sponsor's $14.6M of common equity included $4M of co-invest from the GP and $10.6M from an institutional capital partner. The deal closed in 95 days from term sheet, including coordinated environmental Phase I assessments, individual property appraisals, and full closing on all 14 properties simultaneously.",
     "faqs": [
-        {"q": "What is single-borrower CMBS?", "a": "Single-borrower CMBS is a CMBS execution where a single sponsor borrows a single loan secured by a portfolio of properties, with the loan placed into a dedicated CMBS pool. The structure provides large loan capacity at competitive pricing and preserves CMBS structural features (non-recourse, defeasance prepayment, master servicer)."},
-        {"q": "Can $50M multifamily portfolios be financed by life cos?", "a": "Yes. Life cos compete actively on $50M portfolios at 55 to 65 percent LTV, particularly trophy portfolios with strong sponsors and existing relationships. Pricing is often tightest of any capital source at this leverage."},
-        {"q": "How does agency portfolio compare to individual property loans on a $50M portfolio?", "a": "Agency portfolio loans typically price 10 to 25 basis points inside the blended pricing of equivalent individual property loans, plus the operational efficiency of one loan instead of 8 to 30. Sponsors with larger portfolios typically prefer portfolio loans."},
-        {"q": "Can mezzanine be layered onto a $50M portfolio loan?", "a": "Yes. Approved Fannie Mae and Freddie Mac mezz lenders can provide $5M to $15M of mezzanine debt above the senior portfolio loan, bringing total capital stack to 80 to 90 percent. Mezz pricing typically runs 10 to 14 percent current pay."},
-        {"q": "What is the typical close timeline for $50M portfolio acquisition?", "a": "75 to 105 days from term sheet, including coordinated environmental Phase I assessments, individual property appraisals, individual property title work, and lender coordination. Multi-property closings can occasionally extend if specific property issues arise."}
+      {
+        "q": "What is single-borrower CMBS?",
+        "a": "Single-borrower CMBS is a CMBS execution where a single sponsor borrows a single loan secured by a portfolio of properties, with the loan placed into a dedicated CMBS pool. The structure provides large loan capacity at competitive pricing and preserves CMBS structural features (non-recourse, defeasance prepayment, master servicer)."
+      },
+      {
+        "q": "Can $50M multifamily portfolios be financed by life cos?",
+        "a": "Yes. Life cos compete actively on $50M portfolios at 55 to 65 percent LTV, particularly trophy portfolios with strong sponsors and existing relationships. Pricing is often tightest of any capital source at this leverage."
+      },
+      {
+        "q": "How does agency portfolio compare to individual property loans on a $50M portfolio?",
+        "a": "Agency portfolio loans typically price 10 to 25 basis points inside the blended pricing of equivalent individual property loans, plus the operational efficiency of one loan instead of 8 to 30. Sponsors with larger portfolios typically prefer portfolio loans."
+      },
+      {
+        "q": "Can mezzanine be layered onto a $50M portfolio loan?",
+        "a": "Yes. Approved Fannie Mae and Freddie Mac mezz lenders can provide $5M to $15M of mezzanine debt above the senior portfolio loan, bringing total capital stack to 80 to 90 percent. Mezz pricing typically runs 10 to 14 percent current pay."
+      },
+      {
+        "q": "What is the typical close timeline for $50M portfolio acquisition?",
+        "a": "75 to 105 days from term sheet, including coordinated environmental Phase I assessments, individual property appraisals, individual property title work, and lender coordination. Multi-property closings can occasionally extend if specific property issues arise."
+      }
     ],
     "related_links": [
-        {"href": "financing/agency-loans.html", "title": "Agency Loans (Hub)", "sub": "Fannie / Freddie portfolio"},
-        {"href": "financing/cmbs-loans.html", "title": "CMBS Loans (Hub)", "sub": "Conduit and single-borrower"},
-        {"href": "comparisons/mezzanine-vs-preferred-equity.html", "title": "Mezz vs Pref", "sub": "Capital stack comparison"}
+      {
+        "href": "financing/agency-loans.html",
+        "title": "Agency Loans (Hub)",
+        "sub": "Fannie / Freddie portfolio"
+      },
+      {
+        "href": "financing/cmbs-loans.html",
+        "title": "CMBS Loans (Hub)",
+        "sub": "Conduit and single-borrower"
+      },
+      {
+        "href": "comparisons/mezzanine-vs-preferred-equity.html",
+        "title": "Mezz vs Pref",
+        "sub": "Capital stack comparison"
+      }
+    ]
+  },
+  {
+    "slug": "3-million-multifamily-refinance-brooklyn",
+    "short_title": "$3M Multifamily Refinance Brooklyn",
+    "h1": "$3 Million Multifamily Refinance in Brooklyn",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "Multifamily Refinance",
+    "loan_type_label": "Permanent Multifamily Refinance",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$3M Multifamily Refinance Brooklyn | CLS CRE",
+      "meta_description": "What a $3 million multifamily refinance in Brooklyn looks like in 2026. Capital stack, sponsor profile, and Freddie Mac SBL execution from CLS CRE."
+    },
+    "lead": "A $3 million multifamily refinance in Brooklyn is firmly in the Freddie Mac Optigo SBL and Fannie Mae DUS Small sweet spot. SBL programs are streamlined, close in 30 to 45 days, and price competitively against bank balance sheet alternatives. Most $3M Brooklyn multifamily refis fund as Freddie SBL or DUS Small at 65 to 75 percent LTV with 10-year fixed-rate non-recourse execution.",
+    "stack_intro": "$3M Brooklyn multifamily refis fund as a single agency loan. The decision is typically Freddie SBL versus Fannie Small Loans, with both running both quotes the standard practice.",
+    "stack_table": [
+      {
+        "source": "Freddie Mac Optigo SBL",
+        "cost": "5.65 to 6.05% (10-year fixed)",
+        "size": "$3M / 70 to 75% LTV",
+        "notes": "Streamlined SBL, fast 30 to 45 day close"
+      },
+      {
+        "source": "Fannie Mae DUS Small",
+        "cost": "5.75 to 6.10% (10-year fixed)",
+        "size": "$3M / 75 to 80% LTV",
+        "notes": "Slightly higher leverage on some deals"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "6.95 to 7.95% (5 to 7 year fixed)",
+        "size": "$3M / 65 to 70% LTV",
+        "notes": "Recourse typical; depository relationship"
+      },
+      {
+        "source": "Local NY-area bank",
+        "cost": "6.85 to 7.85%",
+        "size": "$3M / 65 to 75% LTV",
+        "notes": "Some local banks have specialty Brooklyn appetite"
+      }
+    ],
+    "sponsor_profile": "Typical $3M Brooklyn multifamily refinance sponsors are NYC-area private capital owners with 1 to 5 multifamily properties. Sponsor net worth $1.5M to $8M; liquidity $250K to $1.5M. The deal typically replaces a maturing bank loan or older agency loan. Brooklyn-specific underwriting items include rent stabilization status, recent DHCR registrations, Local Law 97 carbon compliance pathway, Local Law 11 facade cycle, and 421-a or 485-x tax abatement timing.",
+    "real_deal_example": "On a 9-unit walk-up rent-stabilized multifamily in Bushwick with 100 percent stabilized units, the sponsor refinanced an expiring bank balance sheet 7-year loan at 7.65 percent into Freddie Mac Optigo SBL at 5.78 percent fixed 10-year, 72 percent LTV, $3.1M loan amount. The new coupon saved approximately $58K per year of interest. DHCR registrations were current; Local Law 11 cycle 9 facade work was complete. The deal closed in 38 days from application.",
+    "faqs": [
+      {
+        "q": "Can $3M Brooklyn multifamily go through Freddie SBL?",
+        "a": "Yes. Freddie Mac Optigo SBL targets the $1M to $7.5M loan size. $3M Brooklyn multifamily is squarely in the sweet spot."
+      },
+      {
+        "q": "Is rent stabilization an issue for Freddie SBL?",
+        "a": "No. Freddie Mac actively finances rent-stabilized Brooklyn multifamily under SBL with standardized treatment of regulated rent rolls."
+      },
+      {
+        "q": "What is the typical close timeline?",
+        "a": "Freddie SBL closes in 30 to 45 days. Fannie Small in 35 to 50 days. Bank refinances run 45 to 75 days."
+      },
+      {
+        "q": "Can $3M Brooklyn multifamily be cashed out?",
+        "a": "Yes, modestly. Agency programs allow cash-out refinance at 70 to 75 percent LTV typical for SBL. Higher cash-out requires bridge debt."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/agency-loans-new-york.html",
+        "title": "Agency Loans NYC",
+        "sub": "NYC market"
+      },
+      {
+        "href": "loan-size/10-million-agency-multifamily-refinance-brooklyn.html",
+        "title": "$10M BK Agency Refi",
+        "sub": "Larger deal example"
+      }
+    ]
+  },
+  {
+    "slug": "7-5-million-fannie-mae-sbl-multifamily",
+    "short_title": "$7.5M Fannie Mae SBL Multifamily",
+    "h1": "$7.5 Million Fannie Mae Small Balance Multifamily Loan",
+    "amount_label": "$7.5M",
+    "amount_dollars": "7500000",
+    "product_label": "Fannie Mae SBL Multifamily",
+    "loan_type_label": "Fannie Mae Small Balance Multifamily",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$7.5M Fannie Mae SBL Multifamily | CLS CRE",
+      "meta_description": "What a $7.5 million Fannie Mae Small Balance multifamily loan looks like in 2026. Pricing, leverage, structure, and execution from CLS CRE."
+    },
+    "lead": "A $7.5 million Fannie Mae DUS Small Loans (sometimes called SBL) multifamily transaction is at the upper end of the Fannie Small program (which extends to $9M). The program offers streamlined underwriting, faster close than DUS Conventional, and competitive pricing against both Freddie Mac Optigo SBL and bank balance sheet alternatives. Most $7.5M Fannie Small transactions are stabilized refinances or acquisitions of Class B garden multifamily in Tier 1 and Tier 2 markets.",
+    "stack_intro": "$7.5M Fannie Mae DUS Small transactions fund as a single senior loan. The competing executions are Freddie Mac Optigo SBL (which caps at $7.5M, putting this size at the upper boundary of both programs) and bank balance sheet.",
+    "stack_table": [
+      {
+        "source": "Fannie Mae DUS Small",
+        "cost": "5.75 to 6.10% (10-year fixed)",
+        "size": "$7.5M / 75 to 80% LTV",
+        "notes": "Streamlined Small Loans program"
+      },
+      {
+        "source": "Freddie Mac Optigo SBL",
+        "cost": "5.65 to 6.05% (10-year fixed)",
+        "size": "$7.5M / 70 to 75% LTV",
+        "notes": "Upper end of SBL program ($7.5M cap)"
+      },
+      {
+        "source": "Fannie / Freddie Conventional",
+        "cost": "5.65 to 6.05%",
+        "size": "$7.5M / 70 to 80% LTV",
+        "notes": "Conventional programs accept this size with longer timelines"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "6.85 to 8.50%",
+        "size": "$7.5M / 65 to 70% LTV",
+        "notes": "Recourse typical; faster close in some cases"
+      }
+    ],
+    "sponsor_profile": "Typical $7.5M Fannie Small sponsors are private capital multifamily owners with 3 to 15 properties, net worth $5M to $25M, liquidity $1M to $5M. The deal is typically a stabilized refinance or acquisition with planned long-term hold. The Fannie Small program suits sponsors who want streamlined execution at slightly higher leverage than Freddie SBL provides at this size.",
+    "real_deal_example": "On a 38-unit Class B garden multifamily refinance in a Sun Belt Tier 2 market, the sponsor was a regional multifamily investor with 14 properties under management. Fannie Mae DUS Small quoted at 5.85 percent fixed 10-year, 78 percent LTV, $7.4M loan amount, with 1 year of interest-only and full yield maintenance. Freddie Mac Optigo SBL quoted at 5.78 percent at 73 percent LTV ($6.9M). The sponsor took Fannie because the 5 percentage point higher LTV freed up $500K of capital that exceeded the value of the 7 basis point coupon savings on Freddie.",
+    "faqs": [
+      {
+        "q": "What is the difference between Fannie Mae DUS Small and Freddie Mac Optigo SBL?",
+        "a": "Fannie Small extends to $9M loan size and typically offers higher leverage (75 to 80 percent LTV) on stabilized multifamily. Freddie SBL caps at $7.5M and typically offers 70 to 75 percent leverage. Pricing varies daily; running both is standard practice."
+      },
+      {
+        "q": "Is $7.5M at the cap of both small programs?",
+        "a": "Yes for Freddie SBL ($7.5M cap). Fannie Small extends to $9M, so $7.5M is below the Fannie cap. Sponsors at exactly $7.5M typically get more competitive Fannie quotes given the program headroom."
+      },
+      {
+        "q": "What is the typical close timeline?",
+        "a": "Fannie Small typically closes in 35 to 50 days. Freddie SBL typically closes in 30 to 45 days. Conventional execution at this size runs 55 to 75 days."
+      },
+      {
+        "q": "Can Fannie Small finance acquisition?",
+        "a": "Yes. Fannie Small finances both refinance and acquisition transactions at the same program terms."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/agency-loans.html",
+        "title": "Agency Loans (Hub)",
+        "sub": "Fannie / Freddie"
+      },
+      {
+        "href": "comparisons/fannie-mae-dus-vs-freddie-mac-optigo.html",
+        "title": "Fannie vs Freddie",
+        "sub": "GSE comparison"
+      }
+    ]
+  },
+  {
+    "slug": "5-million-cold-storage-construction-phoenix",
+    "short_title": "$5M Cold Storage Construction Phoenix",
+    "h1": "$5 Million Cold Storage Construction Loan in Phoenix",
+    "amount_label": "$5M",
+    "amount_dollars": "5000000",
+    "product_label": "Cold Storage Construction",
+    "loan_type_label": "Cold Storage Construction",
+    "indicative_rate": "8.50%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$5M Cold Storage Construction Phoenix | CLS CRE",
+      "meta_description": "What a $5 million cold storage construction loan in Phoenix looks like in 2026. Capital stack, sponsor profile, and execution from CLS CRE."
+    },
+    "lead": "A $5 million cold storage construction loan in Phoenix typically finances a small to mid-size refrigerated warehouse facility (15,000 to 30,000 square feet) at construction cost of $200 to $400 per square foot. Phoenix has emerged as a top cold storage development market driven by Sun Belt food production growth, distribution to California through the I-10 corridor, and a chronic shortage of refrigerated capacity in the Southwest. Most $5M cold storage construction projects fund through SBA 504 for owner-users or specialty industrial banks for investors.",
+    "stack_intro": "$5M cold storage construction loans typically combine SBA 504 for owner-users (90 percent LTC at fixed rate) or specialty bank construction for investors (65 to 75 percent LTC floating rate).",
+    "stack_table": [
+      {
+        "source": "SBA 504 (owner-user)",
+        "cost": "Bank 1st 6.95% / CDC 5.85% fixed",
+        "size": "$5M / 80% LTC (special-purpose 20% down)",
+        "notes": "Owner-user only; long-term fixed"
+      },
+      {
+        "source": "Specialty industrial bank construction",
+        "cost": "SOFR + 350 to 500 (8.10 to 9.60% all-in)",
+        "size": "$5M / 65 to 75% LTC",
+        "notes": "Investor execution; recourse typical"
+      },
+      {
+        "source": "Bridge debt fund (cold storage)",
+        "cost": "SOFR + 425 to 700 (8.85 to 11.35%)",
+        "size": "$5M / 75 to 80% LTC",
+        "notes": "Higher leverage; non-recourse; lease-up reserve"
+      },
+      {
+        "source": "Sale-leaseback (cold storage REIT)",
+        "cost": "Initial cap rate 7.00 to 9.00%",
+        "size": "100 percent capital",
+        "notes": "Operator builds and sells to REIT at completion"
+      }
+    ],
+    "sponsor_profile": "Typical $5M Phoenix cold storage construction sponsors are mid-market food distributors and processors using SBA 504 for owner-user, or institutional cold storage developers using specialty bank construction. Sponsor experience with cold-chain operations is important. Owner-user sponsors typically have $1M to $5M of net worth supported by their operating business cash flow.",
+    "real_deal_example": "On a $5.4M ground-up cold storage construction in suburban Phoenix, the sponsor was a regional food distributor with 14 years of operating history seeking to vertically integrate cold storage capacity. The 22,000 square foot facility included 18,000 square feet of refrigerated space (35 to 38 degrees F) and 4,000 square feet of dry storage. SBA 504 financed at 80 percent LTC (special-purpose 20 percent down) structured as a 50 percent bank first mortgage at 7.15 percent fixed and a 30 percent CDC second lien at 5.85 percent fixed 25-year. The borrower equity of $1.1M was funded from retained earnings of the operating business. Construction completed in 11 months.",
+    "faqs": [
+      {
+        "q": "Can SBA finance cold storage construction?",
+        "a": "Yes. SBA 504 finances owner-user cold storage construction at 80 percent LTC (special-purpose 20 percent down). The structure provides long-term fixed-rate cost certainty."
+      },
+      {
+        "q": "Are cold storage facilities special-purpose for SBA?",
+        "a": "Yes typically. Cold storage with significant refrigeration infrastructure is special-purpose, requiring 20 percent down on SBA 504."
+      },
+      {
+        "q": "What is the typical cold storage construction cost?",
+        "a": "Cold storage construction runs $200 to $400 per square foot versus $80 to $150 for standard industrial. The premium reflects refrigeration infrastructure, insulation, electrical capacity, and food safety compliance."
+      },
+      {
+        "q": "Why is Phoenix a strong cold storage development market?",
+        "a": "Sun Belt food production growth, distribution corridor to California, growing cold-chain logistics demand, and a chronic shortage of refrigerated capacity in the Southwest all drive Phoenix cold storage demand."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/cold-storage-financing.html",
+        "title": "Cold Storage Hub",
+        "sub": "Specialty industrial"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans (Hub)",
+        "sub": "504 and 7(a)"
+      }
+    ]
+  },
+  {
+    "slug": "12-million-ground-up-multifamily-construction-brooklyn",
+    "short_title": "$12M Ground-Up Multifamily Construction Brooklyn",
+    "h1": "$12 Million Ground-Up Multifamily Construction Loan in Brooklyn",
+    "amount_label": "$12M",
+    "amount_dollars": "12000000",
+    "product_label": "Ground-Up Multifamily Construction",
+    "loan_type_label": "Multifamily Construction",
+    "indicative_rate": "8.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$12M Ground-Up Multifamily Construction Brooklyn | CLS CRE",
+      "meta_description": "What a $12 million ground-up multifamily construction loan in Brooklyn looks like in 2026. Capital stack, sponsor profile, and execution from CLS CRE."
+    },
+    "lead": "A $12 million ground-up multifamily construction loan in Brooklyn typically finances a 30 to 60 unit boutique multifamily project at total project cost of $20M to $30M including land, hard costs, soft costs, and reserves. Brooklyn ground-up faces specific regulatory and structural challenges including Local Law 97 carbon caps, 421-a / 485-x abatement structuring, Local Law 11 facade requirements, and HSTPA rent stabilization considerations. Most $12M Brooklyn ground-up loans fund through specialty bridge debt funds at 65 to 75 percent LTC, with permanent take-out via Fannie Mae or Freddie Mac at stabilization.",
+    "stack_intro": "$12M Brooklyn ground-up multifamily construction stacks combine senior construction debt with institutional equity. Sponsors typically pursue agency forward commitment to lock the permanent take-out rate at construction start.",
+    "stack_table": [
+      {
+        "source": "Specialty bridge debt fund construction",
+        "cost": "SOFR + 450 to 650 (9.10 to 11.10% all-in)",
+        "size": "$12M / 65 to 75% LTC",
+        "notes": "Construction + lease-up; non-recourse"
+      },
+      {
+        "source": "Bank balance sheet construction",
+        "cost": "SOFR + 300 to 425 (7.60 to 8.85% all-in)",
+        "size": "$12M / 60 to 65% LTC",
+        "notes": "Sponsor recourse; lower leverage"
+      },
+      {
+        "source": "Agency forward commitment (permanent)",
+        "cost": "5.85 to 6.30% fixed (locked)",
+        "size": "$12M / 70 to 75% LTV stabilized",
+        "notes": "Take-out locked at construction start"
+      },
+      {
+        "source": "Institutional equity",
+        "cost": "Equity (target IRR 18 to 25%)",
+        "size": "$8M to $12M / 30 to 35% of project",
+        "notes": "Brooklyn multifamily institutional equity"
+      }
+    ],
+    "sponsor_profile": "Typical $12M Brooklyn ground-up sponsors are NYC-focused multifamily developer-operators with completed Brooklyn or NYC-area construction projects. Sponsor net worth typically $10M to $50M; liquidity $2M to $10M. The capital structure typically includes $12M to $14M of construction debt at 65 to 75 percent LTC, $6M to $9M of common equity from an institutional or family office partner, and $1M to $3M of sponsor co-invest. Construction takes 18 to 24 months in Brooklyn given regulatory complexity.",
+    "real_deal_example": "On a $14M ground-up 38-unit market-rate multifamily construction in Bushwick, the sponsor was a Brooklyn-focused developer with 4 completed multifamily projects. The capital structure included $13M of construction debt at SOFR + 525 (9.85 percent all-in), $10M of common equity from a NYC family office, and $2M of sponsor co-invest. The construction lender required a Fannie Mae forward commitment for the permanent take-out, locking the perm rate at 5.95 percent fixed 10-year for delivery at month 26. Local Law 97 carbon compliance pathway was documented at construction start. Construction completed in 24 months. Lease-up reached stabilization at month 38.",
+    "faqs": [
+      {
+        "q": "Why is Brooklyn ground-up construction more expensive than other markets?",
+        "a": "Brooklyn faces Local Law 97 carbon caps, 421-a / 485-x abatement structuring, Local Law 11 facade compliance, HSTPA rent considerations, and union construction labor costs in many submarkets. These add 10 to 20 percent to typical ground-up multifamily cost basis."
+      },
+      {
+        "q": "Can Brooklyn ground-up access agency forward commitments?",
+        "a": "Yes. Both Fannie Mae and Freddie Mac offer forward commitment programs for stabilized take-out on Brooklyn ground-up multifamily, locking the permanent rate at construction start."
+      },
+      {
+        "q": "How does 485-x affect Brooklyn ground-up?",
+        "a": "485-x replaced the expired 421-a tax abatement program in 2024 to 2025 and provides property tax abatement for new market-rate multifamily in NYC subject to specific affordability commitments. Sponsors structure 485-x compliance into ground-up financial models."
+      },
+      {
+        "q": "What is Local Law 97 and how does it affect financing?",
+        "a": "Local Law 97 imposes carbon emission caps on NYC multifamily that phase from 2024 through 2050. Lenders evaluate the property's emission profile, compliance pathway, and projected penalty exposure during construction underwriting."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/construction-loans.html",
+        "title": "Construction Loans (Hub)",
+        "sub": "Ground-up financing"
+      },
+      {
+        "href": "financing/agency-loans-new-york.html",
+        "title": "NYC Agency Loans",
+        "sub": "Permanent take-out"
+      },
+      {
+        "href": "loan-size/10-million-agency-multifamily-refinance-brooklyn.html",
+        "title": "$10M BK Agency Refi",
+        "sub": "Permanent example"
+      }
+    ]
+  },
+  {
+    "slug": "25-million-ground-up-affordable-housing-los-angeles",
+    "short_title": "$25M Ground-Up Affordable Housing LA",
+    "h1": "$25 Million Ground-Up Affordable Housing Construction Loan in Los Angeles",
+    "amount_label": "$25M",
+    "amount_dollars": "25000000",
+    "product_label": "Affordable Housing Construction",
+    "loan_type_label": "Affordable Multifamily Construction",
+    "indicative_rate": "5.95%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$25M Ground-Up Affordable Housing Construction LA | CLS CRE",
+      "meta_description": "What a $25 million ground-up affordable housing construction loan in Los Angeles looks like in 2026. Capital stack with 4% LIHTC, tax-exempt bonds, and city soft debt from CLS CRE."
+    },
+    "lead": "A $25 million ground-up affordable housing construction loan in Los Angeles is one of the most capital-stack-complex financings in commercial real estate. Most $25M LA affordable housing projects combine 4 percent LIHTC equity, tax-exempt bonds (CDLAC allocation), state HFA soft debt (HHAP, NPLH, AHSC, MHP), city of LA soft debt (HHH, LACAHC), city ED1 streamlining, and senior debt from a permanent lender at construction conversion. The structuring complexity is significant but the capital availability for properly-structured affordable housing in LA is meaningful.",
+    "stack_intro": "$25M LA ground-up affordable housing capital stacks combine 6 to 10 capital sources. The senior debt typically funds 40 to 60 percent of total cost; LIHTC equity, soft debt, and tax-exempt bond layers fill the balance.",
+    "stack_table": [
+      {
+        "source": "Senior construction debt (HUD 221(d)(4) or bank)",
+        "cost": "5.85 to 6.45% (HUD 35-yr) or SOFR + 275 (bank)",
+        "size": "$15M to $22M / 40 to 65% of total cost",
+        "notes": "Permanent perm at conversion or bank construction + agency take-out"
+      },
+      {
+        "source": "4 percent LIHTC equity",
+        "cost": "Equity ($0.85 to $0.95 per credit dollar)",
+        "size": "$6M to $10M of equity",
+        "notes": "Tax credit equity from syndicator"
+      },
+      {
+        "source": "Tax-exempt bonds (CDLAC)",
+        "cost": "Variable rate or fixed 5.50%",
+        "size": "$8M to $14M of bond proceeds",
+        "notes": "Required for 4% LIHTC eligibility"
+      },
+      {
+        "source": "State HFA soft debt (HHAP / NPLH / AHSC)",
+        "cost": "1 to 4% subordinate",
+        "size": "$3M to $8M soft debt",
+        "notes": "Layered subordinate to senior"
+      },
+      {
+        "source": "City of LA soft debt (HHH / LACAHC)",
+        "cost": "1 to 3% subordinate",
+        "size": "$2M to $5M soft debt",
+        "notes": "City-specific affordable housing financing"
+      },
+      {
+        "source": "Sponsor / GP equity",
+        "cost": "Equity contribution",
+        "size": "$1M to $3M",
+        "notes": "Sponsor and developer fee deferral"
+      }
+    ],
+    "sponsor_profile": "Typical $25M LA affordable housing sponsors are mission-aligned non-profit and for-profit developers with multiple completed LIHTC projects. Sponsors include mission-aligned housing developers (Eden Housing, BRIDGE Housing, Mercy Housing, Abode Communities, A Community of Friends, others), for-profit affordable specialists, and structured capital funds. Sponsor experience with LIHTC, tax-exempt bonds, and California-specific soft debt programs is essential.",
+    "real_deal_example": "On a $26M ground-up 78-unit 100 percent affordable multifamily project in South LA serving 30 to 60 percent AMI residents, the sponsor was a non-profit affordable housing developer with 14 completed LIHTC projects. The capital stack included $14M of senior construction debt from a tax-exempt bond-funded construction lender (converting to permanent at completion), $7.2M of 4 percent LIHTC equity, $11M of tax-exempt bonds (CDLAC allocation), $4.2M of HHAP state soft debt, $2.5M of HHH city of LA soft debt, $800K of MHP state soft debt, and $400K of deferred developer fee. The deal closed after a 22-month structuring and approval process. Construction took 22 months. The deal placed in service at month 26 with full LIHTC compliance and 30-year affordability commitment.",
+    "faqs": [
+      {
+        "q": "What is 4 percent LIHTC?",
+        "a": "4 percent Low-Income Housing Tax Credit is a federal tax credit program for affordable housing development. 4 percent credits are non-competitive (every qualifying project receives them) and require pairing with tax-exempt bond financing. Properties typically restrict 100 percent of units to households at 60 percent AMI or below."
+      },
+      {
+        "q": "What is HHAP?",
+        "a": "HHAP (Homeless Housing, Assistance, and Prevention) is a California state soft debt program providing subordinate financing for affordable housing serving people experiencing or at risk of homelessness."
+      },
+      {
+        "q": "What is HHH city of LA soft debt?",
+        "a": "HHH (Proposition HHH) is a Los Angeles city affordable housing bond program providing subordinate financing for affordable housing developments serving very low and extremely low income households."
+      },
+      {
+        "q": "What is CDLAC?",
+        "a": "California Debt Limit Allocation Committee allocates the state's annual federal volume cap for tax-exempt bonds. Affordable housing developers compete for CDLAC allocation, which is required for 4 percent LIHTC eligibility."
+      },
+      {
+        "q": "How long does $25M LA affordable housing take to structure?",
+        "a": "Typical structuring and approval timeline is 18 to 30 months from initial site control through construction loan close. The timeline includes CDLAC allocation, LIHTC application, state and local soft debt applications, syndicator negotiation, and construction loan underwriting."
+      },
+      {
+        "q": "Are mission-aligned developers required for LA affordable housing?",
+        "a": "No, but they are advantageous. For-profit affordable specialists also access the same programs. Mission-aligned non-profit developers often have stronger relationships with state and local agencies and may receive preference in some funding allocations."
+      },
+      {
+        "q": "What is ED1 streamlining?",
+        "a": "ED1 (Executive Directive 1) is a Los Angeles city executive order streamlining ministerial approvals for 100 percent affordable housing projects. ED1 eliminates discretionary review and accelerates entitlement timelines for qualifying projects."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/workforce-noah-multifamily-financing.html",
+        "title": "Workforce / NOAH Hub",
+        "sub": "Multifamily sub-type"
+      },
+      {
+        "href": "blog/edi-ed1-ground-up-affordable-financing-los-angeles-2026.html",
+        "title": "EDI / ED1 Cornerstone",
+        "sub": "LA affordable playbook"
+      },
+      {
+        "href": "comparisons/hud-221d4-vs-bank-construction.html",
+        "title": "HUD vs Bank Construction",
+        "sub": "Construction comparison"
+      }
     ]
   }
 ]
