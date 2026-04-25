@@ -1,0 +1,121 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"{{ ls.h1 }}","description":"{{ ls.seo.meta_description }}","author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"datePublished":"{{ ls.published }}","dateModified":"{{ today }}","mainEntityOfPage":{"@type":"WebPage","@id":"https://clscre.com/loan-size/{{ ls.slug }}.html"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in ls.faqs %}{"@type":"Question","name":"{{ faq.q|e }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a|e }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Loan Size Examples","item":"https://clscre.com/loan-size/index.html"},{"@type":"ListItem","position":3,"name":"{{ ls.short_title }}","item":"https://clscre.com/loan-size/{{ ls.slug }}.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LoanOrCredit","name":"{{ ls.h1 }}","loanType":"{{ ls.loan_type_label }}","provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com","telephone":"+13107584042"},"amount":{"@type":"MonetaryAmount","currency":"USD","value":"{{ ls.amount_dollars }}"},"interestRate":{"@type":"QuantitativeValue","value":"{{ ls.indicative_rate }}"}}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}loan-size/index.html">Loan Size Examples</a></li>
+  <li><span>{{ ls.short_title }}</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Loan Size Example</div>
+  <h1 class="reveal">{{ ls.h1 }}</h1>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:16px">By Trevor Damyan, Commercial Mortgage Broker at Commercial Lending Solutions</p>
+  <p class="reveal" style="font-size:18px;line-height:1.6;color:var(--gray-700);max-width:880px">{{ ls.lead }}</p>
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Get a Quote on Your {{ ls.amount_label }} Deal &rarr;</a>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Capital Stack</div>
+  <h2 class="section-title reveal">What a {{ ls.amount_label }} {{ ls.product_label }} Capital Stack Looks Like</h2>
+  <p class="reveal" style="line-height:1.7;color:var(--gray-700);max-width:880px">{{ ls.stack_intro }}</p>
+  <div style="overflow-x:auto;margin-top:24px">
+    <table class="comparison-table reveal" style="width:100%;border-collapse:collapse;font-size:15px;border:1px solid var(--gray-200);border-radius:8px;overflow:hidden">
+      <thead>
+        <tr style="background:var(--navy);color:var(--white)">
+          <th style="padding:14px 16px;text-align:left;font-weight:600;width:24%">Capital Source</th>
+          <th style="padding:14px 16px;text-align:left;font-weight:600">Rate / Cost</th>
+          <th style="padding:14px 16px;text-align:left;font-weight:600">Size / LTV</th>
+          <th style="padding:14px 16px;text-align:left;font-weight:600">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in ls.stack_table %}
+        <tr style="border-bottom:1px solid var(--gray-200);{% if loop.index is even %}background:var(--gray-50){% endif %}">
+          <td style="padding:14px 16px;font-weight:600;color:var(--navy)">{{ row.source }}</td>
+          <td style="padding:14px 16px;color:var(--gray-700)">{{ row.cost }}</td>
+          <td style="padding:14px 16px;color:var(--gray-700)">{{ row.size }}</td>
+          <td style="padding:14px 16px;color:var(--gray-700)">{{ row.notes }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">Pricing reflects active CLS CRE quote pipeline as of {{ today_pretty }}. Specific deal pricing depends on sponsor, property, and structure.</p>
+</div>
+</section>
+
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">Sponsor Profile</div>
+  <h2 class="section-title reveal">Who Closes a {{ ls.amount_label }} {{ ls.product_label }} Deal</h2>
+  <p class="reveal" style="line-height:1.8;color:var(--gray-700);max-width:880px">{{ ls.sponsor_profile }}</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">From the CLS CRE Pipeline</div>
+  <h2 class="section-title reveal">A Real {{ ls.amount_label }} Example</h2>
+  <div class="reveal" style="background:var(--gray-50);border-left:4px solid var(--green);padding:24px 28px;border-radius:8px;margin-top:16px;max-width:880px">
+    <p style="line-height:1.8;color:var(--gray-700);margin:0">{{ ls.real_deal_example }}</p>
+  </div>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">Anonymized. All deal references protect borrower and lender identity.</p>
+</div>
+</section>
+
+<section class="faq-section alt" id="faq">
+<div class="section-inner">
+  <div class="section-label reveal">FAQ</div>
+  <h2 class="section-title reveal">{{ ls.short_title }} FAQ</h2>
+  <div class="faq-list">
+    {% for faq in ls.faqs %}
+    <div class="faq-item reveal">
+      <button class="faq-question">{{ faq.q }}</button>
+      <div class="faq-answer"><div class="faq-answer-inner">{{ faq.a }}</div></div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+{% if ls.related_links %}
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Related</h2>
+  <div class="cross-link-grid">
+    {% for link in ls.related_links %}
+    <a href="{{ depth }}{{ link.href }}" class="cross-link-card reveal">
+      <div class="cl-title">{{ link.title }}</div>
+      <div class="cl-sub">{{ link.sub }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+{% set cta_title = 'Get a Quote on Your ' + ls.amount_label + ' Deal' %}
+{% set cta_description = 'Tell us about your transaction. We will run it past lenders that actively fund this size and product type and send back terms within 48 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}
