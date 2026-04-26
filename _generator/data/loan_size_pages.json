@@ -1639,5 +1639,360 @@
         "sub": "Owner-user comparison"
       }
     ]
+  },
+  {
+    "slug": "3-million-auto-repair-shop-sba-long-beach",
+    "short_title": "$3M Auto Repair Shop SBA Long Beach",
+    "h1": "$3 Million Auto Repair Shop SBA Acquisition in Long Beach",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "Auto Repair SBA",
+    "loan_type_label": "SBA Owner-User Auto Repair",
+    "indicative_rate": "6.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$3M Auto Repair Shop SBA Long Beach | CLS CRE",
+      "meta_description": "What a $3 million auto repair shop SBA acquisition in Long Beach looks like in 2026. Capital stack and execution from CLS CRE."
+    },
+    "lead": "A $3 million auto repair shop SBA acquisition in Long Beach is the canonical small-balance owner-operator transaction. Most $3M Long Beach auto repair acquisitions combine SBA 504 for real estate (at 80 percent LTC, special-purpose 20 percent down) with SBA 7(a) for equipment, working capital, and goodwill. The deal closes in 75 to 90 days at a blended cost of capital materially below conventional bank alternatives.",
+    "stack_intro": "$3M Long Beach auto repair acquisitions typically allocate ~$2M to real estate and ~$1M to equipment, working capital, and goodwill. SBA 504 finances real estate; SBA 7(a) finances the operating business pieces.",
+    "stack_table": [
+      {
+        "source": "SBA 504 real estate",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "size": "$2M / 80% LTC (20% down)",
+        "notes": "Real estate financing only"
+      },
+      {
+        "source": "SBA 7(a) operating",
+        "cost": "Prime + 2.50%",
+        "size": "$1M / 90% LTC",
+        "notes": "Equipment, working capital, goodwill"
+      },
+      {
+        "source": "Total SBA",
+        "cost": "Blended ~6.95%",
+        "size": "$2.7M / 90% LTC",
+        "notes": "$300K borrower equity"
+      },
+      {
+        "source": "Conventional bank alternative",
+        "cost": "7.85%",
+        "size": "$2.1M / 70% LTV",
+        "notes": "$900K down, recourse"
+      }
+    ],
+    "sponsor_profile": "Typical $3M Long Beach auto repair sponsors are first-time SBA buyers transitioning from senior mechanic or general manager roles to ownership, or experienced operators expanding to a second location. Long Beach favors auto repair given dense population, automotive culture, and Port of Long Beach commercial vehicle traffic.",
+    "real_deal_example": "On a $3.4M acquisition of an independent auto repair shop in Long Beach with 12 service bays, 28 years of operating history, and strong DRP relationships with major insurance carriers, the buyer was a senior mechanic at the shop transitioning to ownership. SBA 504 at 80 percent LTC financed real estate at $2.2M. SBA 7(a) at $1M financed equipment, working capital, and goodwill. The seller stayed on as part-time advisor for 12 months supporting customer transition.",
+    "faqs": [
+      {
+        "q": "Can SBA finance auto repair in California?",
+        "a": "Yes. California is one of the most active SBA markets for auto repair given high vehicle ownership and demand for automotive services."
+      },
+      {
+        "q": "Are CA gas station environmental rules an issue?",
+        "a": "Auto repair (without fuel sales) faces less environmental exposure than gas stations. Phase I ESA still mandatory; Phase II sometimes required if fuel was historically dispensed."
+      },
+      {
+        "q": "What is the typical close timeline?",
+        "a": "SBA 504 + 7(a): 75 to 105 days combined."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/auto-repair-service-financing.html",
+        "title": "Auto Repair Hub",
+        "sub": "Specialty owner-user"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans",
+        "sub": "504 and 7(a)"
+      }
+    ]
+  },
+  {
+    "slug": "5-million-multifamily-acquisition-manhattan",
+    "short_title": "$5M Multifamily Acquisition Manhattan",
+    "h1": "$5 Million Multifamily Acquisition in Manhattan",
+    "amount_label": "$5M",
+    "amount_dollars": "5000000",
+    "product_label": "Multifamily Acquisition",
+    "loan_type_label": "Multifamily Acquisition Permanent",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$5M Multifamily Acquisition Manhattan | CLS CRE",
+      "meta_description": "What a $5 million multifamily acquisition in Manhattan looks like in 2026. Freddie Mac SBL, Fannie Small, and bank financing from CLS CRE."
+    },
+    "lead": "A $5 million multifamily acquisition in Manhattan is at the boundary between Freddie Mac Optigo SBL ($1M to $7.5M cap) and Fannie Mae DUS Small ($1M to $9M cap). Manhattan multifamily at this size is typically a 6 to 12 unit walk-up or small elevator building in lower-tier Manhattan submarkets, occasionally with rent stabilization. Most $5M Manhattan acquisitions fund through agency SBL/Small at 70 to 75 percent LTV.",
+    "stack_intro": "$5M Manhattan multifamily acquisitions fund as a single agency loan. The decision is Freddie SBL versus Fannie Small, with both highly competitive at this size.",
+    "stack_table": [
+      {
+        "source": "Freddie Mac Optigo SBL",
+        "cost": "5.65 to 6.05%",
+        "size": "$5M / 70 to 75% LTV",
+        "notes": "Streamlined SBL"
+      },
+      {
+        "source": "Fannie Mae DUS Small",
+        "cost": "5.75 to 6.10%",
+        "size": "$5M / 75 to 80% LTV",
+        "notes": "Slightly higher leverage"
+      },
+      {
+        "source": "NY-area specialty bank",
+        "cost": "6.85 to 7.85%",
+        "size": "$5M / 65 to 70% LTV",
+        "notes": "Some specialty NYC banks compete on price"
+      },
+      {
+        "source": "Local NY-area bank",
+        "cost": "6.95 to 8.00%",
+        "size": "$5M / 65 to 70% LTV",
+        "notes": "Recourse typical"
+      }
+    ],
+    "sponsor_profile": "Typical $5M Manhattan multifamily acquisition sponsors are NYC-focused private capital owners with 1 to 5 properties or first-time NYC investors with strong sponsor profiles. Sponsor net worth $3M to $15M. Manhattan-specific underwriting items include rent stabilization status, Local Law 97 carbon caps, Local Law 11 facade compliance, and 421-a / 485-x abatement timing.",
+    "real_deal_example": "On a 9-unit walk-up multifamily in Lower Manhattan with 80 percent rent-stabilized units and 20 percent free-market mix, the buyer was a NYC-area sponsor with 4 properties. Freddie Mac Optigo SBL at 5.78 percent fixed 10-year, 72 percent LTV, $4.9M loan amount. The deal closed in 35 days from application.",
+    "faqs": [
+      {
+        "q": "Are Manhattan walk-up multifamily acquisitions financeable through Freddie SBL?",
+        "a": "Yes. Freddie SBL widely finances Manhattan walk-up multifamily including rent-stabilized properties."
+      },
+      {
+        "q": "How does rent stabilization affect $5M Manhattan acquisition financing?",
+        "a": "Lender underwriting accounts for stabilization with standardized treatment. Stabilized rents support cash flow durability but constrain rent growth."
+      },
+      {
+        "q": "What is the typical close timeline?",
+        "a": "Freddie SBL: 30 to 45 days. Fannie Small: 35 to 50 days."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/agency-loans-new-york.html",
+        "title": "Agency Loans NYC",
+        "sub": "NYC market"
+      },
+      {
+        "href": "loan-size/3-million-multifamily-refinance-brooklyn.html",
+        "title": "$3M BK Refi",
+        "sub": "Sister loan size"
+      }
+    ]
+  },
+  {
+    "slug": "7-million-boutique-hotel-acquisition-california",
+    "short_title": "$7M Boutique Hotel Acquisition California",
+    "h1": "$7 Million Boutique Hotel Acquisition in California",
+    "amount_label": "$7M",
+    "amount_dollars": "7000000",
+    "product_label": "Boutique Hotel Acquisition",
+    "loan_type_label": "Hospitality Acquisition",
+    "indicative_rate": "8.45%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$7M Boutique Hotel Acquisition California | CLS CRE",
+      "meta_description": "What a $7 million boutique hotel acquisition in California looks like in 2026. SBA 504, conventional bank, and specialty hospitality lender programs."
+    },
+    "lead": "A $7 million boutique hotel acquisition in California is the sweet spot for SBA-funded owner-operator hospitality and specialty bank balance sheet financing. California hospitality benefits from strong tourism, business travel, and tech-driven business meetings, while facing operating cost pressures from CA labor costs and regulatory environment. Most $7M CA boutique hotel acquisitions fund through SBA 504 for owner-operators or specialty hospitality lenders.",
+    "stack_intro": "$7M CA boutique hotel acquisitions typically fund as SBA 504 for owner-operators (with the special-purpose 20 percent down requirement) or specialty hospitality lender execution at 65 to 75 percent LTV.",
+    "stack_table": [
+      {
+        "source": "SBA 504",
+        "cost": "Bank 1st 7.25% / CDC 5.95% fixed",
+        "size": "$7M / 80% LTC (special-purpose 20% down)",
+        "notes": "Owner-operator only"
+      },
+      {
+        "source": "SBA 7(a)",
+        "cost": "Prime + 2.50%",
+        "size": "Working capital + FF&E up to $5M",
+        "notes": "Combined with SBA 504"
+      },
+      {
+        "source": "Specialty hospitality bank",
+        "cost": "7.95 to 9.50%",
+        "size": "$7M / 65 to 75% LTV",
+        "notes": "Multi-property operators"
+      },
+      {
+        "source": "Bridge debt fund (hotel)",
+        "cost": "9.50 to 13.00%",
+        "size": "$7M / 70 to 80% LTC",
+        "notes": "Acquisition + value-add"
+      }
+    ],
+    "sponsor_profile": "Typical $7M CA boutique hotel acquisition sponsors are first-time SBA-financed hotel operators (often experienced hospitality professionals transitioning to ownership) or established multi-property operators. Hotel operating experience is essential.",
+    "real_deal_example": "On a $7.4M acquisition of a 38-room boutique hotel in coastal California, the buyer was a former hospitality executive with 14 years of hotel management experience transitioning to ownership. SBA 504 at 80 percent LTC (special-purpose 20 percent down) financed real estate at $5.2M. SBA 7(a) at $1.5M financed FF&E, working capital, and brand transition. The seller stayed on as advisor for 6 months. Year-one ADR and occupancy hit 102 percent of pro forma.",
+    "faqs": [
+      {
+        "q": "Can SBA finance hotel acquisitions in California?",
+        "a": "Yes. SBA 504 widely finances owner-operator hotel acquisitions including in California. The special-purpose classification (20 percent down) reflects the limited adaptive reuse of hotel facilities."
+      },
+      {
+        "q": "What is the typical SBA close timeline for hotels?",
+        "a": "75 to 105 days for combined SBA 504 + 7(a). Hotel acquisitions sometimes face additional environmental due diligence given pool and HVAC systems."
+      },
+      {
+        "q": "Can boutique hotels access HUD financing?",
+        "a": "Limited. HUD programs are primarily for multifamily and senior care, not hotels."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/hospitality.html",
+        "title": "Hospitality Hub",
+        "sub": "Hotel financing"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans",
+        "sub": "504 and 7(a)"
+      }
+    ]
+  },
+  {
+    "slug": "20-million-senior-care-construction",
+    "short_title": "$20M Senior Care Construction",
+    "h1": "$20 Million Senior Care Construction Loan",
+    "amount_label": "$20M",
+    "amount_dollars": "20000000",
+    "product_label": "Senior Care Construction",
+    "loan_type_label": "Senior Care Construction",
+    "indicative_rate": "6.45%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$20M Senior Care Construction Loan | CLS CRE",
+      "meta_description": "What a $20 million senior care construction loan looks like in 2026. HUD 232 new construction, bank construction, and specialty senior care lender programs."
+    },
+    "lead": "A $20 million senior care construction loan typically finances a 60 to 100 unit assisted living, memory care, or independent living development. Most $20M senior care construction projects fund through HUD 232 New Construction (90 percent LTC fully amortizing) or specialty bank/debt fund construction with separate permanent take-out.",
+    "stack_intro": "$20M senior care construction stacks combine senior construction debt with institutional equity. HUD 232 New Construction is the gold standard for long-term hold; bank construction with separate take-out provides more flexibility.",
+    "stack_table": [
+      {
+        "source": "HUD 232 New Construction",
+        "cost": "5.95 to 6.45% (35-year fully amortizing)",
+        "size": "$20M / 90% LTC",
+        "notes": "Davis-Bacon prevailing wage; long-term hold"
+      },
+      {
+        "source": "Specialty senior care construction",
+        "cost": "SOFR + 425 to 600 (8.85 to 10.60%)",
+        "size": "$20M / 70 to 75% LTC",
+        "notes": "Faster timeline; non-recourse possible"
+      },
+      {
+        "source": "Bank balance sheet construction",
+        "cost": "SOFR + 300 to 425 (7.60 to 8.85%)",
+        "size": "$20M / 60 to 70% LTC",
+        "notes": "Recourse; depository relationship"
+      },
+      {
+        "source": "Institutional equity",
+        "cost": "Equity (target IRR 16 to 22%)",
+        "size": "$8M to $12M",
+        "notes": "Senior housing equity partners"
+      }
+    ],
+    "sponsor_profile": "Typical $20M senior care construction sponsors are institutional senior care developer-operators with completed projects. Sponsor net worth $25M to $200M. Senior care operating experience is essential.",
+    "real_deal_example": "On a $22M construction of an 84-unit assisted living and memory care community in a Sun Belt market, the sponsor was an institutional senior care operator with 12 communities. HUD 232 New Construction at 6.15 percent fixed 40-year fully amortizing at 88 percent LTC ($19.4M loan amount), with Davis-Bacon prevailing wage. The HUD process took 22 months from initial application to construction loan close.",
+    "faqs": [
+      {
+        "q": "Can HUD 232 finance senior care construction?",
+        "a": "Yes. HUD 232 New Construction finances assisted living, memory care, and skilled nursing construction at 90 percent LTC fully amortizing 40-year fixed."
+      },
+      {
+        "q": "Why is the HUD timeline so long?",
+        "a": "HUD 232 New Construction takes 18 to 24 months from initial application to close due to MAP lender underwriting, HUD review, environmental assessment, and Davis-Bacon prevailing wage analysis."
+      },
+      {
+        "q": "What is Davis-Bacon prevailing wage?",
+        "a": "Davis-Bacon is the federal prevailing wage law applying to HUD-financed construction. Davis-Bacon adds 8 to 18 percent to construction labor costs."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/senior-living.html",
+        "title": "Senior Living",
+        "sub": "All senior care"
+      },
+      {
+        "href": "comparisons/hud-232-vs-bank-senior-care.html",
+        "title": "HUD 232 vs Bank",
+        "sub": "Senior care comparison"
+      }
+    ]
+  },
+  {
+    "slug": "50-million-build-to-rent-community-texas",
+    "short_title": "$50M Build-to-Rent Community Texas",
+    "h1": "$50 Million Build-to-Rent (BTR) Community Construction in Texas",
+    "amount_label": "$50M",
+    "amount_dollars": "50000000",
+    "product_label": "BTR Construction",
+    "loan_type_label": "BTR Construction",
+    "indicative_rate": "9.45%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$50M Build-to-Rent Community Texas | CLS CRE",
+      "meta_description": "What a $50 million build-to-rent (BTR) community construction loan in Texas looks like in 2026. Capital stack and execution from CLS CRE."
+    },
+    "lead": "A $50 million build-to-rent (BTR) community construction loan in Texas finances a major institutional BTR project of typically 250 to 400 units across a master-planned community. Most $50M Texas BTR projects fund through specialty BTR debt funds at 70 to 75 percent LTC paired with institutional equity, with agency forward commitment locking permanent take-out.",
+    "stack_intro": "$50M Texas BTR construction stacks combine senior construction debt with institutional equity. Most projects layer in agency forward commitment for permanent take-out rate certainty.",
+    "stack_table": [
+      {
+        "source": "Specialty BTR debt fund",
+        "cost": "SOFR + 425 to 600 (8.85 to 10.60%)",
+        "size": "$50M / 70 to 75% LTC",
+        "notes": "Construction + lease-up; non-recourse"
+      },
+      {
+        "source": "Bank balance sheet construction",
+        "cost": "SOFR + 300 to 425",
+        "size": "$50M / 60 to 65% LTC",
+        "notes": "Lower leverage; sponsor recourse"
+      },
+      {
+        "source": "Agency forward commitment",
+        "cost": "5.85 to 6.30% fixed (locked)",
+        "size": "$50M / 70 to 75% LTV stabilized",
+        "notes": "Permanent take-out locked at construction"
+      },
+      {
+        "source": "Institutional equity",
+        "cost": "Equity (target IRR 18 to 25%)",
+        "size": "$20M to $25M",
+        "notes": "BTR specialty equity partners"
+      }
+    ],
+    "sponsor_profile": "Typical $50M Texas BTR sponsors are vertically integrated BTR operators with multiple completed communities. Sponsor net worth $50M to $500M+. Texas Triangle markets (Austin, Dallas, Houston, San Antonio) lead BTR construction volume.",
+    "real_deal_example": "On a $58M BTR townhome community construction in a Sun Belt Texas suburb (288 units), the sponsor was a vertically integrated BTR operator with 6 completed communities. Construction debt at $42M from specialty BTR debt fund at SOFR + 475 (9.85 percent all-in), 72 percent LTC. Common equity at $14M from institutional BTR equity partner. Sponsor co-invest at $2M. Fannie Mae forward commitment locked permanent at 5.95 percent fixed 10-year for delivery at month 28. Construction took 26 months.",
+    "faqs": [
+      {
+        "q": "Why is Texas a major BTR construction market?",
+        "a": "Strong demographic growth, Sun Belt migration, no state income tax, and large BTR-friendly suburban land availability make Texas the leading state for BTR construction."
+      },
+      {
+        "q": "Are agency forward commitments standard on BTR construction?",
+        "a": "Yes. Most institutional BTR projects use agency forward commitments to lock permanent take-out rate at construction start."
+      },
+      {
+        "q": "What is the typical BTR construction timeline?",
+        "a": "24 to 30 months from groundbreaking to certificate of occupancy on the final phase. Phased delivery with simultaneous lease-up of completed phases."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/build-to-rent-financing.html",
+        "title": "BTR Hub",
+        "sub": "Multifamily sub-type"
+      },
+      {
+        "href": "loan-size/25-million-build-to-rent-construction-texas.html",
+        "title": "$25M BTR Texas",
+        "sub": "Sister deal example"
+      }
+    ]
   }
 ]
