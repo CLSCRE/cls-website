@@ -1,0 +1,139 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Report","headline":"{{ rp.h1 }}","description":"{{ rp.seo.meta_description }}","author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"datePublished":"{{ rp.published }}","dateModified":"{{ today }}","mainEntityOfPage":{"@type":"WebPage","@id":"https://clscre.com/research/{{ rp.slug }}.html"},"reportNumber":"{{ rp.report_number }}"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"{{ rp.h1 }}","description":"{{ rp.seo.meta_description }}","creator":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"},"datePublished":"{{ rp.published }}","license":"https://clscre.com/research/methodology.html","temporalCoverage":"{{ rp.coverage_period }}","keywords":"{{ rp.keywords }}"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://clscre.com/research/index.html"},{"@type":"ListItem","position":3,"name":"{{ rp.short_title }}","item":"https://clscre.com/research/{{ rp.slug }}.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in rp.faqs %}{"@type":"Question","name":"{{ faq.q|e }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a|e }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}research/index.html">Research</a></li>
+  <li><span>{{ rp.short_title }}</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">{{ rp.report_label }}</div>
+  <h1 class="reveal">{{ rp.h1 }}</h1>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:8px">By Trevor Damyan, Commercial Mortgage Broker at Commercial Lending Solutions</p>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:16px"><strong>Report number:</strong> {{ rp.report_number }} | <strong>Coverage period:</strong> {{ rp.coverage_period }} | <strong>Published:</strong> {{ rp.date_pretty }}</p>
+  <p class="reveal" style="font-size:18px;line-height:1.6;color:var(--gray-700);max-width:880px">{{ rp.executive_summary }}</p>
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Get a Quote on Your Deal &rarr;</a>
+</div>
+</section>
+
+{% for section in rp.sections %}
+<section class="content-section{% if loop.index is even %} alt{% endif %}">
+<div class="section-inner">
+  <div class="section-label reveal">{{ section.label }}</div>
+  <h2 class="section-title reveal">{{ section.title }}</h2>
+  {% if section.intro %}
+  <p class="reveal" style="line-height:1.8;color:var(--gray-700);max-width:880px">{{ section.intro }}</p>
+  {% endif %}
+  {% if section.table %}
+  <div style="overflow-x:auto;margin-top:24px">
+    <table class="comparison-table reveal" style="width:100%;border-collapse:collapse;font-size:14px;border:1px solid var(--gray-200);border-radius:8px;overflow:hidden">
+      <thead>
+        <tr style="background:var(--navy);color:var(--white)">
+          {% for header in section.table.headers %}
+          <th style="padding:14px 16px;text-align:left;font-weight:600">{{ header }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in section.table.rows %}
+        <tr style="border-bottom:1px solid var(--gray-200);{% if loop.index is even %}background:var(--gray-50){% endif %}">
+          {% for cell in row %}
+          <td style="padding:14px 16px;color:var(--gray-700){% if loop.index == 1 %};font-weight:600;color:var(--navy){% endif %}">{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+  {% if section.takeaways %}
+  <div style="margin-top:24px">
+    <h3 class="reveal" style="font-family:var(--font-display);font-size:20px;color:var(--navy);margin-bottom:12px">Key takeaways</h3>
+    <ul class="reveal" style="line-height:1.9;color:var(--gray-700);padding-left:20px;max-width:880px">
+      {% for item in section.takeaways %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  {% if section.commentary %}
+  <p class="reveal" style="line-height:1.8;color:var(--gray-700);margin-top:20px;max-width:880px">{{ section.commentary }}</p>
+  {% endif %}
+</div>
+</section>
+{% endfor %}
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Methodology</div>
+  <h2 class="section-title reveal">How This Report Was Produced</h2>
+  <p class="reveal" style="line-height:1.8;color:var(--gray-700);max-width:880px">{{ rp.methodology }}</p>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:16px;font-style:italic;max-width:880px">Detailed methodology, data definitions, and sample composition are documented at <a href="{{ depth }}research/methodology.html" style="color:var(--green)">/research/methodology.html</a>.</p>
+</div>
+</section>
+
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">From Trevor</div>
+  <h2 class="section-title reveal">Brokers Notes on This Quarter</h2>
+  <blockquote class="reveal" style="font-family:var(--font-display);font-size:clamp(18px,2.2vw,22px);line-height:1.6;color:var(--navy);max-width:880px;margin:0 auto;padding:0 24px;border-left:4px solid var(--green);font-style:italic">
+    {{ rp.broker_quote }}
+    <footer style="font-family:var(--font-body);font-size:14px;color:var(--gray-500);font-style:normal;margin-top:16px">Trevor Damyan, Commercial Lending Solutions</footer>
+  </blockquote>
+</div>
+</section>
+
+<section class="faq-section" id="faq">
+<div class="section-inner">
+  <div class="section-label reveal">FAQ</div>
+  <h2 class="section-title reveal">{{ rp.short_title }} FAQ</h2>
+  <div class="faq-list">
+    {% for faq in rp.faqs %}
+    <div class="faq-item reveal">
+      <button class="faq-question">{{ faq.q }}</button>
+      <div class="faq-answer"><div class="faq-answer-inner">{{ faq.a }}</div></div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+{% if rp.related_reports %}
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Other Research Reports</h2>
+  <div class="cross-link-grid">
+    {% for link in rp.related_reports %}
+    <a href="{{ depth }}{{ link.href }}" class="cross-link-card reveal">
+      <div class="cl-title">{{ link.title }}</div>
+      <div class="cl-sub">{{ link.sub }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
+{% set cta_title = 'Get Pricing on Your Deal' %}
+{% set cta_description = 'Tell us about your transaction. We will run it past lenders that match your deal profile and send back current market terms within 48 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}
