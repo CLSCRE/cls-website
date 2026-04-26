@@ -2968,5 +2968,461 @@
         "sub": "Long-term financing"
       }
     ]
+  },
+  {
+    "slug": "acquisition-vs-cashout-refinance",
+    "short_title": "Acquisition vs Cash-out Refinance",
+    "h1": "Acquisition vs Cash-out Refinance: How to Choose Your CRE Strategy",
+    "name_a": "Acquisition",
+    "name_b": "Cash-out Refinance",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Acquisition vs Cash-out Refinance for CRE | CLS CRE",
+      "meta_description": "Side-by-side comparison of acquisition versus cash-out refinance strategies for commercial real estate sponsors. Returns, leverage, tax treatment, and execution differences."
+    },
+    "lead": "Commercial real estate sponsors with capital to deploy face a foundational strategic choice: acquire a new property or recapitalize an existing portfolio property through cash-out refinance. Acquisition deploys new capital into a new asset, generating fresh appreciation and cash flow exposure. Cash-out refinance extracts equity from an existing property at potentially lower transaction friction, preserving the original asset for continued ownership. Each strategy has distinct return profiles, tax treatment, and execution considerations.",
+    "table": [
+      {
+        "feature": "Capital deployed",
+        "side_a": "New equity into new asset",
+        "side_b": "Extracted equity from existing asset"
+      },
+      {
+        "feature": "Asset count",
+        "side_a": "Increases (one more property)",
+        "side_b": "Same (extracted capital from existing)"
+      },
+      {
+        "feature": "Transaction friction",
+        "side_a": "Higher (full acquisition due diligence, closing costs)",
+        "side_b": "Lower (refinance only)"
+      },
+      {
+        "feature": "Tax treatment of cash",
+        "side_a": "Acquisition typically not a taxable event",
+        "side_b": "Refinance proceeds typically not taxable (debt is not income)"
+      },
+      {
+        "feature": "Total leverage",
+        "side_a": "New leverage on new property (typically 65 to 75%)",
+        "side_b": "New higher leverage on existing property (often 70 to 80% if appreciated)"
+      },
+      {
+        "feature": "Returns profile",
+        "side_a": "Full upside on new asset",
+        "side_b": "Higher leverage returns on existing asset"
+      },
+      {
+        "feature": "Diversification",
+        "side_a": "Increases (geographic, asset, sponsor risk)",
+        "side_b": "Concentrates (more leverage on same asset)"
+      },
+      {
+        "feature": "Execution timeline",
+        "side_a": "60 to 90 days from contract",
+        "side_b": "45 to 75 days from application"
+      },
+      {
+        "feature": "Closing costs",
+        "side_a": "3 to 5% of purchase price",
+        "side_b": "1 to 3% of new loan amount"
+      },
+      {
+        "feature": "Property tax reassessment risk",
+        "side_a": "Yes (acquisition typically triggers reassessment)",
+        "side_b": "No (refinance does not trigger reassessment)"
+      },
+      {
+        "feature": "Lender preference",
+        "side_a": "All lenders",
+        "side_b": "All lenders"
+      },
+      {
+        "feature": "Best fit",
+        "side_a": "Sponsor wants asset growth, geographic diversification",
+        "side_b": "Sponsor wants leverage on appreciated asset, lower friction"
+      }
+    ],
+    "when_a_intro": "Acquisition wins when the sponsor has a target property with strong projected returns, wants to diversify the portfolio across more assets, or has identified a market opportunity that justifies new capital deployment.",
+    "when_a_bullets": [
+      "Sponsor identifies a property with strong projected returns above existing portfolio",
+      "Geographic or product diversification is strategically valuable",
+      "Sponsor portfolio is concentrated and additional asset spreads risk",
+      "Market timing favors acquiring at a specific property profile or vintage",
+      "Sponsor has institutional capital partner expecting deployment",
+      "Existing property has limited remaining cash-out capacity (already at 75 to 80% leverage)"
+    ],
+    "when_b_intro": "Cash-out refinance wins when the existing property has appreciated meaningfully and the sponsor wants to extract equity at lower transaction friction than a full acquisition would require, while preserving ownership of an asset they understand and operate well.",
+    "when_b_bullets": [
+      "Existing property has appreciated 25 to 50%+ since acquisition",
+      "Sponsor wants to extract equity for next deal or other capital deployment",
+      "Lower transaction friction (no purchase contract negotiation, no acquisition due diligence) is valuable",
+      "Property tax reassessment exposure on acquisition is meaningful (CA Prop 13, similar)",
+      "Sponsor knows the property well and can underwrite NOI growth confidently",
+      "Refinance into a longer-term lower coupon loan delivers cost-of-capital benefits beyond the cash-out"
+    ],
+    "decision_framework": [
+      "Calculate the equity extraction dollar value. Cash-out refinance on an appreciated property at 75 percent LTV against the higher current value extracts the difference between the new loan and the current loan balance. On a property that appreciated from $20M to $32M with a current $13M loan, refinancing at 75 percent LTV extracts $24M loan minus $13M existing equals $11M of capital with no acquisition friction.",
+      "Compare projected returns. Acquisition deploys capital into a new asset with full upside; cash-out refinance applies higher leverage to an existing asset with potentially diminishing return upside. Run side-by-side IRR projections on the realistic alternatives.",
+      "Evaluate property tax reassessment exposure. In California (Prop 13) and other reassessment-on-sale jurisdictions, acquisition triggers property tax reassessment that can materially compress NOI. Refinance does not trigger reassessment. The dollar value of avoided reassessment can be 20 to 40 percent of property tax savings annually.",
+      "Consider sponsor portfolio concentration. Sponsors heavily concentrated in a single market or product type benefit from acquisition diversification. Sponsors already diversified can extract via cash-out without further dilution of focus."
+    ],
+    "real_deal_example": "On a $35M LA Class B multifamily that the sponsor acquired in 2018 for $22M with $14M of senior debt, the property had appreciated to $35M by 2026 with NOI growth of approximately 35 percent. The sponsor evaluated cash-out refinance versus selling and acquiring a new property. Cash-out refinance into Freddie Mac Optigo Conventional at 5.85 percent fixed 10-year, 75 percent LTV ($26.25M new loan), extracted approximately $12M of capital (new $26.25M minus $14M existing). Selling and acquiring would have triggered approximately $1.2M of CA Measure ULA transfer tax, $2.1M of capital gains tax (deferred 1031 only partially possible at this price point), and approximately $1.4M of acquisition closing costs. The sponsor took the cash-out refinance, deploying the $12M into a new acquisition through a separate entity, preserving the original property and avoiding the tax friction.",
+    "expert_quote": "Cash-out refinance versus acquisition is fundamentally a question of friction versus diversification. In appreciation-heavy markets like California, the friction (transfer tax, reassessment, capital gains) often makes cash-out refinance the higher-return path even when the borrower wants to redeploy capital.",
+    "faqs": [
+      {
+        "q": "Is cash-out refinance taxable?",
+        "a": "No, generally. Cash-out refinance proceeds are debt, not income, and are not taxable at receipt. The interest on the additional debt may or may not be deductible depending on use and tax structure."
+      },
+      {
+        "q": "What is the typical cash-out LTV?",
+        "a": "Most agency multifamily programs allow cash-out refinance at 70 to 75 percent LTV. CMBS conduits typically cap cash-out at 65 to 70 percent. Life cos typically cap cash-out at 55 to 65 percent."
+      },
+      {
+        "q": "Does cash-out refinance trigger property tax reassessment?",
+        "a": "No. In California (Prop 13) and similar jurisdictions, refinance is not a 'change of ownership' that triggers property tax reassessment. Acquisition does trigger reassessment in these jurisdictions."
+      },
+      {
+        "q": "Can the cash-out be used for any purpose?",
+        "a": "Generally yes. Most CRE lenders do not restrict use of cash-out proceeds. Common uses include acquisition of additional properties, capital improvements on the subject or other properties, distributions to partners, and other capital deployment."
+      },
+      {
+        "q": "What is the typical close timeline for cash-out refinance?",
+        "a": "45 to 75 days from application, similar to standard rate-and-term refinance. Cash-out refinance typically does not extend close timeline materially versus rate-and-term."
+      },
+      {
+        "q": "How does cash-out compare to a 1031 exchange?",
+        "a": "Cash-out refinance preserves the original asset; 1031 exchange replaces the original asset with a new asset at deferred tax. Sponsors who want to maintain ownership choose cash-out; sponsors who want to redeploy into a different asset choose 1031."
+      },
+      {
+        "q": "Are there limits on how much cash-out can be extracted?",
+        "a": "Yes. The new loan amount is capped by lender LTV maximums (typically 70 to 75 percent on agency multifamily). The cash-out is the difference between the new loan amount and the existing loan balance plus closing costs."
+      },
+      {
+        "q": "Can cash-out refinance be done on a property with an existing assumed loan?",
+        "a": "Yes. Cash-out refinance pays off the existing loan (assumed or original) and replaces it with a new loan at higher principal balance. The existing assumption is terminated as part of the refinance."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/permanent-loans.html",
+        "title": "Permanent Loans (Hub)",
+        "sub": "Refinance options"
+      },
+      {
+        "href": "comparisons/loan-assumption-vs-new-loan.html",
+        "title": "Loan Assumption vs New Loan",
+        "sub": "Transaction strategy"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS",
+        "sub": "Refinance comparison"
+      }
+    ]
+  },
+  {
+    "slug": "5-year-fixed-vs-10-year-fixed",
+    "short_title": "5-Year Fixed vs 10-Year Fixed",
+    "h1": "5-Year Fixed vs 10-Year Fixed CRE Loans: How to Choose",
+    "name_a": "5-Year Fixed",
+    "name_b": "10-Year Fixed",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "5-Year Fixed vs 10-Year Fixed CRE Loans | CLS CRE",
+      "meta_description": "Side-by-side comparison of 5-year and 10-year fixed-rate commercial real estate loan terms. Pricing, refinance risk, prepayment, and hold horizon considerations."
+    },
+    "lead": "Commercial real estate sponsors face a foundational term length choice on fixed-rate loans: 5-year or 10-year. The 10-year is the most common term in CRE financing and is the standard agency, life co, and CMBS execution. The 5-year is more common on bank balance sheet, sometimes priced 10 to 30 basis points inside 10-year, and is favored by sponsors with shorter hold horizons or rate views. The decision affects coupon, refinance risk, prepayment exposure, and hold flexibility.",
+    "table": [
+      {
+        "feature": "Coupon (Apr 2026, agency multifamily)",
+        "side_a": "5.65 to 5.95% (5-year fixed)",
+        "side_b": "5.85 to 6.10% (10-year fixed)"
+      },
+      {
+        "feature": "Coupon spread vs 10-year",
+        "side_a": "10 to 30 bps inside 10-year typical",
+        "side_b": "Standard"
+      },
+      {
+        "feature": "Refinance risk",
+        "side_a": "Higher (refinance at year 5 in unknown rate environment)",
+        "side_b": "Lower (locked through year 10)"
+      },
+      {
+        "feature": "Total interest cost (10-year hold)",
+        "side_a": "5-year + refi at year 5; depends on year 5 rates",
+        "side_b": "Locked at known rate for full 10 years"
+      },
+      {
+        "feature": "Prepayment penalty",
+        "side_a": "5,4,3,2,1 typical or YM",
+        "side_b": "YM, defeasance, or declining schedule typical"
+      },
+      {
+        "feature": "Lender appetite",
+        "side_a": "Bank balance sheet primarily",
+        "side_b": "All major CRE lenders"
+      },
+      {
+        "feature": "Common products",
+        "side_a": "Bank balance sheet, some life co",
+        "side_b": "Agency, CMBS, life co, HUD"
+      },
+      {
+        "feature": "Best fit",
+        "side_a": "5 to 7 year planned hold; rate cut view",
+        "side_b": "7 to 12 year planned hold; rate certainty"
+      },
+      {
+        "feature": "Sponsor cash flow",
+        "side_a": "Lower coupon = better near-term DSCR",
+        "side_b": "Higher coupon, full-term locked"
+      },
+      {
+        "feature": "Refinance flexibility",
+        "side_a": "Mandatory at year 5 (forced refinance event)",
+        "side_b": "Optional at year 10"
+      },
+      {
+        "feature": "Rate environment fit",
+        "side_a": "Falling rate environment (refi at lower rate)",
+        "side_b": "Rising rate environment (lock current rate)"
+      },
+      {
+        "feature": "Sponsor risk preference",
+        "side_a": "More tolerant of refinance risk",
+        "side_b": "Risk-averse on rate"
+      }
+    ],
+    "when_a_intro": "5-year fixed wins when the sponsor expects falling rates over the next 5 years, when bank balance sheet pricing on 5-year is meaningfully tighter than 10-year, or when the sponsor's planned hold matches the 5-year term naturally.",
+    "when_a_bullets": [
+      "Sponsor view is that rates will fall over the next 5 years (refi captures lower rate)",
+      "Bank balance sheet 5-year fixed prices 10 to 30 bps inside 10-year",
+      "Sponsor planned hold horizon is 5 to 7 years",
+      "Sponsor depository relationship delivers strong 5-year terms",
+      "Property cash flow needs the lower coupon during the early hold",
+      "Sponsor anticipates significant value-add or refinance event at year 5"
+    ],
+    "when_b_intro": "10-year fixed wins on long-term hold strategies, in rising or stable rate environments, or when the sponsor wants the certainty of locked cost of capital through a full economic cycle.",
+    "when_b_bullets": [
+      "Sponsor planned hold horizon is 7 to 12 years",
+      "Rising or stable rate environment where waiting to refinance carries risk",
+      "Sponsor wants cash flow predictability for institutional investor distributions",
+      "Conservative sponsor profile prioritizing rate certainty",
+      "Agency, CMBS, or life co execution where 10-year is the standard",
+      "Sponsor anticipates property appreciation and wants to capture it through a full cycle"
+    ],
+    "decision_framework": [
+      "Start with hold horizon. 5-year hold favors 5-year term. 10-year hold favors 10-year term. Mismatched terms force unnecessary refinances or carry forward longer-term risk than needed.",
+      "Calculate the rate spread dollar value. On a $20M loan, 20 basis points (typical 5-year vs 10-year spread) over the 5-year fixed period is approximately $200K of saved interest. Over a 10-year horizon refinancing into a similar 5-year at year 5 in an unknown rate environment, the savings depends on year-5 market rates.",
+      "Run forward rate scenarios. Stress-test the 5-year refinance at year 5 against multiple rate scenarios (rates flat, rates up 100 bps, rates up 200 bps). The dollar exposure to a year-5 refinance event in a high-rate scenario can exceed the early-year coupon savings.",
+      "Consider lender ecosystem. 10-year fixed is the standard execution for agency, CMBS, life co, and HUD. 5-year fixed is more common on bank balance sheet. The sponsor's preferred lender ecosystem may dictate term length."
+    ],
+    "real_deal_example": "On a $24M multifamily refinance with the sponsor planning a 6 to 7 year hold and exit, the sponsor evaluated 5-year fixed bank balance sheet at 6.45 percent versus 10-year fixed Freddie Mac Optigo at 5.85 percent. The 5-year was 60 basis points wide of the 10-year on this specific deal (atypical reverse spread driven by bank balance sheet capacity dynamics). The sponsor took the 10-year Freddie Mac because the spread relationship was reversed from typical and the longer term provided full coverage of the planned 6 to 7 year hold without forcing an early refinance.",
+    "expert_quote": "5-year versus 10-year fixed is rarely a question of pricing alone. Match the term to the hold horizon, evaluate the refinance risk at year 5, and stress-test the rate environment. Most institutional sponsors default to 10-year because it covers most realistic hold horizons.",
+    "faqs": [
+      {
+        "q": "Are 5-year fixed CRE loans cheaper than 10-year fixed?",
+        "a": "Sometimes. 5-year fixed typically prices 10 to 30 basis points inside 10-year on bank balance sheet. On agency, life co, and CMBS, the spread between 5 and 10 year is often smaller or sometimes reversed depending on yield curve shape."
+      },
+      {
+        "q": "Why do most CRE loans have 10-year terms?",
+        "a": "10-year matches the typical institutional hold horizon for stabilized CRE, aligns with agency and life co underwriting frameworks, and provides full economic cycle exposure for the lender. 10-year is the standard non-recourse fixed term in CRE."
+      },
+      {
+        "q": "What is the typical prepayment on 5-year fixed?",
+        "a": "5-year fixed bank loans typically have 5,4,3,2,1 percent declining prepayment penalty or shorter step-down. Some bank loans are open after the first 12 to 24 months."
+      },
+      {
+        "q": "Can a 5-year fixed loan be extended?",
+        "a": "Generally no. 5-year fixed loans typically have hard maturity at year 5 with no extension. The sponsor must refinance, sell, or pay off at maturity."
+      },
+      {
+        "q": "Are agency loans available with 5-year terms?",
+        "a": "Yes. Both Fannie Mae DUS and Freddie Mac Optigo offer 5-year fixed terms, though 10-year is the standard. 5-year agency typically prices 5 to 15 basis points inside 10-year."
+      },
+      {
+        "q": "How does 5-year vs 10-year affect DSCR?",
+        "a": "Both terms typically size to the same minimum DSCR (1.25x for agency multifamily). The 5-year may have a slightly tighter DSCR floor on some lender programs reflecting the refinance risk."
+      },
+      {
+        "q": "What is the typical 5-year IO window?",
+        "a": "On 5-year fixed loans, interest-only is typically 1 to 2 years on agency and life co. Some bank balance sheet 5-year loans offer full-term IO at lower leverage."
+      },
+      {
+        "q": "Is 5-year fixed common for life co loans?",
+        "a": "Less common. Life co allocators tend to favor longer-term (10, 15, 20, 25 year) fixed-rate executions. 5-year life co loans are available but less differentiated from bank balance sheet at that term."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/fixed-vs-floating-rate.html",
+        "title": "Fixed vs Floating",
+        "sub": "Rate structure comparison"
+      },
+      {
+        "href": "comparisons/interest-only-vs-amortizing.html",
+        "title": "IO vs Amortizing",
+        "sub": "Structure comparison"
+      },
+      {
+        "href": "financing/permanent-loans.html",
+        "title": "Permanent Loans (Hub)",
+        "sub": "Long-term financing"
+      }
+    ]
+  },
+  {
+    "slug": "preferred-equity-vs-common-equity-jv",
+    "short_title": "Preferred Equity vs Common Equity JV",
+    "h1": "Preferred Equity vs Common Equity Joint Venture: How to Choose",
+    "name_a": "Preferred Equity",
+    "name_b": "Common Equity JV",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "Preferred Equity vs Common Equity JV for CRE | CLS CRE",
+      "meta_description": "Side-by-side comparison of preferred equity and common equity joint venture structures for commercial real estate capital stacks."
+    },
+    "lead": "Commercial real estate sponsors raising third-party capital face a foundational structuring choice: preferred equity (a junior equity instrument with a fixed preferred return) or common equity joint venture (shared common equity with split economics on the upside). Preferred equity provides cheaper capital with defined return and limited upside; common equity JV provides more expensive capital with shared upside in proportion to ownership. The decision shapes investor returns, sponsor promote economics, governance, and exit dynamics.",
+    "table": [
+      {
+        "feature": "Position in stack",
+        "side_a": "Junior equity (between debt and common)",
+        "side_b": "Common equity (most subordinate)"
+      },
+      {
+        "feature": "Return structure",
+        "side_a": "Preferred return (typically 11 to 18% total)",
+        "side_b": "Pari passu pro rata; full upside participation"
+      },
+      {
+        "feature": "Cost to sponsor",
+        "side_a": "Lower than common (capped return)",
+        "side_b": "Higher than preferred (full upside share)"
+      },
+      {
+        "feature": "Sponsor promote",
+        "side_a": "Promotes typically below the preferred return",
+        "side_b": "Promotes above pari passu hurdle"
+      },
+      {
+        "feature": "Investor return",
+        "side_a": "Capped at preferred return",
+        "side_b": "Full upside (proportional)"
+      },
+      {
+        "feature": "Investor downside",
+        "side_a": "More protected (priority over common)",
+        "side_b": "Less protected (last to be paid)"
+      },
+      {
+        "feature": "Governance / control",
+        "side_a": "Limited (consent rights, force-sale rights)",
+        "side_b": "Co-management or pari passu governance"
+      },
+      {
+        "feature": "Exit timing",
+        "side_a": "Force-sale rights at milestone date typical",
+        "side_b": "Mutual decision typical"
+      },
+      {
+        "feature": "Tax treatment",
+        "side_a": "Distributions; not interest deductible",
+        "side_b": "Distributions; not interest deductible"
+      },
+      {
+        "feature": "Best fit",
+        "side_a": "Capital provider wants defined return; sponsor wants capital efficiency",
+        "side_b": "Capital provider wants full upside; sponsor wants institutional partnership"
+      },
+      {
+        "feature": "Typical investor",
+        "side_a": "Specialty pref equity funds, mezz funds with equity",
+        "side_b": "Institutional capital partners, family offices"
+      },
+      {
+        "feature": "Capital stack typical",
+        "side_a": "10 to 25% of stack",
+        "side_b": "30 to 65% of stack"
+      }
+    ],
+    "when_a_intro": "Preferred equity wins when the sponsor wants to maximize promote economics on the upside, when the capital provider has a defined return target rather than full upside participation, or when the sponsor wants more control over governance and exit timing.",
+    "when_a_bullets": [
+      "Sponsor wants to maximize sponsor promote on the upside",
+      "Capital provider has defined return target (e.g., specialty pref equity fund)",
+      "Sponsor wants control over governance and decision-making",
+      "Capital stack at the gap between senior debt and common (10 to 25% of project)",
+      "Senior lender prohibits or restricts mezz, making pref equity the alternative",
+      "Preferred return cost is acceptable to sponsor (typically 11 to 18% total)"
+    ],
+    "when_b_intro": "Common equity JV wins when the sponsor wants institutional capital partnership with shared upside, when the deal benefits from operational and capital partnership beyond just funding, or when the deal size and complexity require a true joint venture structure.",
+    "when_b_bullets": [
+      "Larger institutional partnership ($10M to $50M+ of equity)",
+      "Sponsor wants operational partner beyond just capital",
+      "Capital partner provides specific operational expertise (development, property management, leasing)",
+      "Pari passu return structure aligns sponsor and capital partner interests",
+      "Sponsor wants stable long-term partner relationship across multiple projects",
+      "Deal complexity requires shared decision-making"
+    ],
+    "decision_framework": [
+      "Calculate the after-promote economics. Pref equity at 14 percent total return on 20 percent of the stack costs less than common equity JV at 18 percent IRR on 30 percent of the stack with the GP promote layered on top. Run side-by-side waterfall scenarios under realistic deal returns.",
+      "Evaluate the sponsor promote structure. Pref equity preserves promote on the upside above the preferred return. Common equity JV typically has a sponsor promote layered above a hurdle (often 8 to 10 percent) and the sponsor promote can exceed the pref equity equivalent on strong deals.",
+      "Consider governance preference. Pref equity provides limited control rights (consent on major decisions, force-sale at milestone). Common equity JV provides full pari passu governance with co-management. Sponsors who want operational control prefer pref equity; sponsors who want institutional partnership prefer common JV.",
+      "Evaluate capital provider profile. Specialty pref equity funds and mezz-with-equity providers offer pref equity. Institutional capital partners (REIT, family office, pension fund partners) typically offer common equity JV. The capital partner's typical structure shapes the available product."
+    ],
+    "real_deal_example": "On a $40M multifamily acquisition with $26M of senior debt at 70 percent LTV and a $14M equity gap, the sponsor evaluated $14M of preferred equity at 14 percent total return versus $14M of common equity JV at projected 19 percent IRR with a 90/10 sponsor promote above an 8 percent hurdle. Under base case projections (16 percent total project IRR), the pref equity structure delivered the sponsor approximately $2.4M of promote economics and the capital partner received exactly 14 percent. The common equity JV delivered the sponsor approximately $1.6M of promote (smaller because the capital partner participated pari passu). On the upside scenario (20 percent project IRR), the pref equity structure preserved more upside for the sponsor; the common equity JV captured more upside for the capital partner. The sponsor took preferred equity because the deal economics under realistic scenarios favored pref equity for sponsor returns.",
+    "expert_quote": "Preferred equity versus common equity JV is fundamentally a question of who captures the upside. Pref equity caps the capital provider's return; common JV shares it. Sponsors with confidence in deal returns favor pref equity; sponsors who want stable institutional partnerships favor common JV.",
+    "faqs": [
+      {
+        "q": "What is preferred equity?",
+        "a": "Preferred equity is a junior equity instrument that sits between senior debt and common equity in the capital stack. It receives a fixed preferred return (typically 11 to 18% total, often a mix of current pay and accrual) before common equity receives any distributions."
+      },
+      {
+        "q": "Is preferred equity debt or equity?",
+        "a": "Preferred equity is structured as equity for tax purposes, with the preferred return treated as a partnership distribution rather than interest expense. This means the preferred return is not deductible at the partnership level."
+      },
+      {
+        "q": "What is a common equity joint venture?",
+        "a": "Common equity JV is a partnership where the sponsor and capital partner contribute common equity pro rata and share returns based on the partnership agreement. Sponsor promote is typically layered above a hurdle return."
+      },
+      {
+        "q": "How does preferred equity compare to mezzanine debt?",
+        "a": "Mezzanine debt is junior debt secured by a pledge of equity in the borrower; preferred equity is an equity instrument without a lien. Mezz interest is tax deductible at the partnership level; pref equity returns are not. Senior lender intercreditor requirements typically apply to mezz; pref equity is more flexible."
+      },
+      {
+        "q": "What are common preferred equity providers?",
+        "a": "Specialty preferred equity funds, mezzanine debt funds with equity components (some operate as either depending on senior lender requirements), and family offices with structured capital strategies."
+      },
+      {
+        "q": "What governance rights does preferred equity have?",
+        "a": "Limited governance compared to common JV. Typical pref equity rights include consent on major decisions (sale, refinance, major leases, capital calls), force-sale rights at a milestone date if exit has not occurred, and capital call rights to cure cash flow shortfalls."
+      },
+      {
+        "q": "Can preferred equity be combined with mezzanine debt?",
+        "a": "Yes. Some larger or more complex capital stacks include senior debt, mezzanine, preferred equity, and common equity. Each layer has different risk-return characteristics and the structuring requires careful intercreditor and partnership agreement coordination."
+      },
+      {
+        "q": "What is the typical preferred return level?",
+        "a": "Total preferred returns typically range from 11 to 18 percent depending on deal risk profile, capital provider, and structure. Higher-risk transitional deals price at the wider end; stabilized lower-risk deals at the tighter end. Returns are typically split between current pay (cash) and accrual (deferred)."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/mezzanine-vs-preferred-equity.html",
+        "title": "Mezz vs Pref Equity",
+        "sub": "Capital stack comparison"
+      },
+      {
+        "href": "financing/mezzanine.html",
+        "title": "Mezzanine and Preferred Equity (Hub)",
+        "sub": "Capital stack gap financing"
+      },
+      {
+        "href": "comparisons/recourse-vs-non-recourse.html",
+        "title": "Recourse vs Non-Recourse",
+        "sub": "Structural comparison"
+      }
+    ]
   }
 ]

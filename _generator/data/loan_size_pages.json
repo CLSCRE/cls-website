@@ -1249,5 +1249,395 @@
         "sub": "Construction comparison"
       }
     ]
+  },
+  {
+    "slug": "10-million-cmbs-multifamily-refinance",
+    "short_title": "$10M CMBS Multifamily Refinance",
+    "h1": "$10 Million CMBS Multifamily Refinance",
+    "amount_label": "$10M",
+    "amount_dollars": "10000000",
+    "product_label": "CMBS Multifamily Refinance",
+    "loan_type_label": "CMBS Multifamily Refinance",
+    "indicative_rate": "6.45%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$10M CMBS Multifamily Refinance | CLS CRE",
+      "meta_description": "What a $10 million CMBS multifamily refinance looks like in 2026. Capital stack, sponsor profile, and execution from CLS CRE."
+    },
+    "lead": "A $10 million CMBS multifamily refinance is a non-recourse fixed-rate execution placed into a multi-property CMBS pool by a CMBS conduit lender. CMBS multifamily competes with agency on properties that fall outside the agency box (commercial NOI exposure, sponsor profile issues, tertiary markets) and on properties where defeasance prepay flexibility is preferred over yield maintenance. Most $10M CMBS multifamily transactions are at 65 to 70 percent LTV with 10-year fixed-rate terms.",
+    "stack_intro": "$10M CMBS multifamily refinances fund as a single senior CMBS loan placed into a conduit pool. The decision is typically CMBS versus agency, with agency winning on most stabilized market-rate multifamily.",
+    "stack_table": [
+      {
+        "source": "CMBS conduit",
+        "cost": "6.05 to 6.85% (10-year fixed)",
+        "size": "$10M / 65 to 70% LTV",
+        "notes": "Defeasance prepay; non-recourse"
+      },
+      {
+        "source": "Fannie / Freddie",
+        "cost": "5.55 to 6.10% (10-year fixed)",
+        "size": "$10M / 70 to 75% LTV",
+        "notes": "Tighter pricing for stabilized market-rate"
+      },
+      {
+        "source": "Life company",
+        "cost": "5.40 to 5.90% (10 to 15 year fixed)",
+        "size": "$10M / 55 to 65% LTV",
+        "notes": "Trophy properties only"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "6.85 to 7.85%",
+        "size": "$10M / 65 to 70% LTV",
+        "notes": "5 to 7 year fixed; recourse"
+      }
+    ],
+    "sponsor_profile": "Typical $10M CMBS multifamily sponsors are private capital and family office multifamily owners with 5 to 30 properties. The CMBS execution is typically chosen when the property has commercial NOI exposure (ground-floor retail), the sponsor profile does not fit agency standards, the market is tertiary, or the sponsor wants defeasance prepayment optionality.",
+    "real_deal_example": "On a $10.4M Class B mixed-use multifamily refinance in a Sun Belt market with 78 percent multifamily NOI and 22 percent ground-floor commercial NOI (a small neighborhood retail center), Fannie and Freddie both passed because the commercial component exceeded the multifamily cutoff. CMBS quoted at 6.55 percent fixed 10-year, 67 percent LTV, $7M loan amount, with 5 years of interest-only and full defeasance prepayment. The sponsor took the CMBS execution because no agency lender would quote, and the CMBS structure preserved exit optionality through defeasance.",
+    "faqs": [
+      {
+        "q": "When does CMBS make sense for multifamily?",
+        "a": "When the deal cannot fit inside the agency box. Common triggers: ground-floor commercial NOI exceeding 25 to 30 percent of total, sponsor resume issues, tertiary market without agency Seller-Servicer competition, or specialized structures."
+      },
+      {
+        "q": "How does CMBS prepayment work?",
+        "a": "CMBS uses defeasance prepayment, which requires the borrower to purchase Treasury securities sufficient to defease the loan and sell the defeased loan to a third party. Defeasance preserves the loan as a tradeable asset."
+      },
+      {
+        "q": "Can CMBS lever to 75 percent on multifamily?",
+        "a": "No. CMBS conduits cap multifamily at 65 to 75 percent LTV typically. Agency programs lever to 75 to 80 percent."
+      },
+      {
+        "q": "What is the typical close timeline?",
+        "a": "60 to 90 days from term sheet to close on CMBS multifamily."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/cmbs-loans.html",
+        "title": "CMBS Loans (Hub)",
+        "sub": "Conduit financing"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS",
+        "sub": "Decision framework"
+      }
+    ]
+  },
+  {
+    "slug": "7-million-assisted-living-acquisition-texas",
+    "short_title": "$7M Assisted Living Acquisition Texas",
+    "h1": "$7 Million Assisted Living Acquisition in Texas",
+    "amount_label": "$7M",
+    "amount_dollars": "7000000",
+    "product_label": "Assisted Living Acquisition",
+    "loan_type_label": "Senior Care Acquisition",
+    "indicative_rate": "7.95%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$7M Assisted Living Acquisition Texas | CLS CRE",
+      "meta_description": "What a $7 million assisted living acquisition loan in Texas looks like in 2026. Capital sources, sponsor profile, and execution from CLS CRE."
+    },
+    "lead": "A $7 million assisted living acquisition in Texas is in the sweet spot of specialty senior care lenders, HUD 232 (with longer timeline), and SBA 504 for owner-operators. Texas senior care benefits from favorable demographics, a growing retiree population, and a relatively favorable regulatory environment. Most $7M Texas assisted living acquisitions fund through specialty healthcare lenders or HUD 232 depending on hold horizon and timeline.",
+    "stack_intro": "$7M Texas assisted living acquisitions fund as a single senior loan. The decision is between specialty healthcare lender (faster but shorter term) and HUD 232 (slower but 35-year fully amortizing).",
+    "stack_table": [
+      {
+        "source": "Specialty healthcare lender",
+        "cost": "7.95 to 9.50% (5 to 10 yr)",
+        "size": "$7M / 70 to 75% LTV",
+        "notes": "Faster close (60 to 90 days)"
+      },
+      {
+        "source": "HUD 232 (acquisition)",
+        "cost": "5.95 to 6.45% (35-year fully amortizing)",
+        "size": "$7M / 80% LTV",
+        "notes": "Long-term hold; 12 to 24 month timeline"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.85 to 9.50%",
+        "size": "$7M / 65 to 70% LTV",
+        "notes": "Recourse typical; depository relationship"
+      },
+      {
+        "source": "Bridge debt fund (senior care)",
+        "cost": "9.50 to 13.00%",
+        "size": "$7M / 70 to 80% LTC",
+        "notes": "Acquisition + turnaround or value-add"
+      }
+    ],
+    "sponsor_profile": "Typical $7M Texas assisted living acquisition sponsors are mid-market senior care operators with 3 to 20 facilities under management. Sponsor net worth $5M to $30M; liquidity $1M to $5M. Senior care operating experience is essential.",
+    "real_deal_example": "On a $7.4M acquisition of a 78-unit assisted living facility in a Texas suburban market, the buyer was a regional senior care operator with 12 facilities. The acquisition was financed through specialty healthcare lender at 8.45 percent fixed 7-year, 70 percent LTV ($5.2M loan), with sponsor recourse. After 18 months, the sponsor refinanced into HUD 232 at 6.15 percent fixed 35-year fully amortizing at 78 percent LTV ($5.8M), returning $600K and locking in long-term cost of capital.",
+    "faqs": [
+      {
+        "q": "Why are senior care acquisition loans expensive?",
+        "a": "Specialty healthcare lenders price senior care at 200 to 400 basis points wide of HUD 232 reflecting operating risk, regulatory exposure, and shorter loan terms."
+      },
+      {
+        "q": "Can SBA finance assisted living?",
+        "a": "Generally no. Assisted living is typically not SBA-eligible due to the active medical/care component. Senior care typically uses HUD 232, specialty healthcare, or conventional financing."
+      },
+      {
+        "q": "What is the typical close timeline?",
+        "a": "Specialty healthcare lender: 60 to 90 days. HUD 232: 12 to 24 months. Conventional bank: 60 to 90 days."
+      },
+      {
+        "q": "Why is Texas a strong assisted living market?",
+        "a": "Favorable demographics with growing retiree population, no state income tax attracting in-migration, relatively favorable regulatory environment, and lower operating cost basis."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/senior-living.html",
+        "title": "Senior Living Hub",
+        "sub": "All senior care types"
+      },
+      {
+        "href": "property/skilled-nursing-facility-financing.html",
+        "title": "SNF Financing",
+        "sub": "Skilled nursing"
+      },
+      {
+        "href": "comparisons/hud-232-vs-bank-senior-care.html",
+        "title": "HUD 232 vs Bank",
+        "sub": "Senior care comparison"
+      }
+    ]
+  },
+  {
+    "slug": "20-million-data-center-construction",
+    "short_title": "$20M Data Center Construction",
+    "h1": "$20 Million Data Center Construction Loan",
+    "amount_label": "$20M",
+    "amount_dollars": "20000000",
+    "product_label": "Data Center Construction",
+    "loan_type_label": "Data Center Construction",
+    "indicative_rate": "8.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$20M Data Center Construction Loan | CLS CRE",
+      "meta_description": "What a $20 million data center construction loan looks like in 2026. Capital stack, sponsor profile, and execution from CLS CRE."
+    },
+    "lead": "A $20 million data center construction loan finances a small to mid-size enterprise or colocation data center, typically 5 to 15 megawatts of IT load. Data center construction is among the most capital-intensive CRE asset classes at $1,200 to $2,500 per square foot reflecting power infrastructure, cooling, redundancy, and security. Most $20M data center construction loans fund through specialty data center lenders, life co construction-to-perm with credit-tenant pre-leases, or bridge debt funds for speculative development.",
+    "stack_intro": "$20M data center construction stacks combine senior construction debt with institutional equity. Pre-leases to credit tenants (hyperscalers, enterprise) materially affect financing terms and pricing.",
+    "stack_table": [
+      {
+        "source": "Specialty data center lender",
+        "cost": "SOFR + 350 to 525 (8.10 to 9.85%)",
+        "size": "$20M / 65 to 75% LTC",
+        "notes": "With pre-lease to credit tenant"
+      },
+      {
+        "source": "Life company construction-to-perm",
+        "cost": "6.50 to 7.50% (10 to 15 year fixed)",
+        "size": "$20M / 60 to 65% LTV stabilized",
+        "notes": "Credit-tenant pre-lease required"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "SOFR + 425 to 700 (8.85 to 11.85%)",
+        "size": "$20M / 65 to 75% LTC",
+        "notes": "Speculative or value-add"
+      },
+      {
+        "source": "Bank construction balance sheet",
+        "cost": "SOFR + 275 to 425 (7.10 to 8.85%)",
+        "size": "$20M / 55 to 65% LTC",
+        "notes": "Sponsor recourse; depository"
+      }
+    ],
+    "sponsor_profile": "Typical $20M data center construction sponsors are specialized data center developer-operators with completed projects and credit-tenant relationships. Sponsor net worth $20M to $200M+. Capital structure typically includes $13M to $15M of construction debt at 65 to 75 percent LTC, $7M to $9M of common equity, and $1M to $3M of sponsor co-invest.",
+    "real_deal_example": "On a $22M ground-up 8 megawatt enterprise data center construction in a Sun Belt market with a 12-year pre-lease to a Fortune 100 enterprise tenant covering 6 megawatts at full lease-up, the sponsor financed through a specialty data center lender at SOFR + 425 (8.85 percent all-in), 70 percent LTC ($15.4M loan), with the pre-lease providing credit support for the take-out at stabilization. Construction took 22 months. Permanent take-out via life co at 6.85 percent fixed 10-year at month 25.",
+    "faqs": [
+      {
+        "q": "Why is data center construction so expensive per square foot?",
+        "a": "Power infrastructure, cooling systems, redundancy (N+1 or 2N), security, and specialized building systems drive cost to $1,200 to $2,500 per square foot. Power capacity (5 to 15 megawatts typical for $20M scale) is the primary cost driver."
+      },
+      {
+        "q": "Are pre-leases required for data center financing?",
+        "a": "For favorable pricing, yes. Credit-tenant pre-leases (hyperscalers, Fortune 500 enterprises) materially affect lender appetite and pricing. Speculative data center construction is more expensive and has narrower lender bench."
+      },
+      {
+        "q": "Can life cos finance data center construction?",
+        "a": "Yes for credit-tenant pre-leased deals. Life cos quote construction-to-perm on data centers with strong tenant credit and long-term pre-leases."
+      },
+      {
+        "q": "Who are the major data center operators and lenders?",
+        "a": "Hyperscalers (Microsoft, Google, AWS, Meta) and major operators (Equinix, Digital Realty, Iron Mountain, Cyrus One) lead the market. Specialty lenders and life cos with data center expertise lead financing."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/data-centers.html",
+        "title": "Data Centers Hub",
+        "sub": "All capital sources"
+      },
+      {
+        "href": "financing/construction-loans.html",
+        "title": "Construction Loans (Hub)",
+        "sub": "Ground-up financing"
+      }
+    ]
+  },
+  {
+    "slug": "35-million-trophy-multifamily-new-york",
+    "short_title": "$35M Trophy Multifamily NYC",
+    "h1": "$35 Million Trophy Multifamily Acquisition in New York",
+    "amount_label": "$35M",
+    "amount_dollars": "35000000",
+    "product_label": "Trophy Multifamily Acquisition",
+    "loan_type_label": "Multifamily Acquisition Permanent",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$35M Trophy Multifamily NYC | CLS CRE",
+      "meta_description": "What a $35 million trophy multifamily acquisition in New York City looks like in 2026. Capital stack, sponsor profile, and execution from CLS CRE."
+    },
+    "lead": "A $35 million trophy multifamily acquisition in New York City sits in the heart of institutional NYC multifamily. Manhattan and trophy Brooklyn locations command premium values reflecting NYC market dynamics, scarcity of trophy supply, and the depth of institutional capital seeking NYC exposure. Most $35M NYC trophy acquisitions fund through agency, life co, CMBS, or specialty NYC bank financing depending on capital structure preferences.",
+    "stack_intro": "$35M NYC trophy acquisitions are typically funded as a single senior loan, sometimes with mezz or pref equity layered above for institutional sponsors maximizing leverage.",
+    "stack_table": [
+      {
+        "source": "Freddie Mac Optigo Conventional",
+        "cost": "5.55 to 6.00%",
+        "size": "$35M / 70 to 75% LTV",
+        "notes": "Highest leverage; non-recourse"
+      },
+      {
+        "source": "Fannie Mae DUS Conventional",
+        "cost": "5.65 to 6.10%",
+        "size": "$35M / 70 to 75% LTV",
+        "notes": "Same as Optigo; daily pricing variation"
+      },
+      {
+        "source": "Life company (relationship)",
+        "cost": "5.40 to 5.85% (10 to 15 year fixed)",
+        "size": "$35M / 55 to 60% LTV",
+        "notes": "Tightest pricing; lower leverage"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.05 to 6.85%",
+        "size": "$35M / 65 to 70% LTV",
+        "notes": "Higher coupon than agency; defeasance"
+      }
+    ],
+    "sponsor_profile": "Typical $35M NYC trophy multifamily sponsors are institutional buyers and large family offices with $100M to $1B+ of net worth. The deal is usually a long-hold acquisition with 10 to 30 year ownership horizon. NYC-specific underwriting items include rent stabilization, Local Law 97 carbon caps, Local Law 11 facade compliance, 421-a / 485-x tax abatement structuring.",
+    "real_deal_example": "On a 64-unit Class A trophy multifamily acquisition in Manhattan, the institutional sponsor financed through Freddie Mac Optigo Conventional at 5.85 percent fixed 10-year, 70 percent LTV, $24.5M loan amount, with 3 years of interest-only and standard yield maintenance. A complementary $5M of preferred equity from an institutional capital partner brought total capital stack to 84 percent LTC. The sponsor's $5.5M of common equity sat at the bottom.",
+    "faqs": [
+      {
+        "q": "What capital stack supports $35M NYC trophy multifamily?",
+        "a": "Senior debt at 70 to 75 percent LTV (agency or CMBS) plus optional mezz or preferred equity at 10 to 20 percent of LTC, with the sponsor's common equity at 10 to 20 percent."
+      },
+      {
+        "q": "Will life cos lever to 70 percent on $35M NYC?",
+        "a": "Almost never. Life co allocator discipline caps NYC multifamily at 55 to 60 percent LTV. Sponsors needing higher leverage use agency or CMBS."
+      },
+      {
+        "q": "How does Local Law 97 affect $35M NYC trophy?",
+        "a": "Local Law 97 imposes carbon emission caps on NYC multifamily phasing through 2050. Lenders evaluate emission profile, compliance pathway, and projected penalty exposure."
+      },
+      {
+        "q": "What is 485-x?",
+        "a": "485-x is the NYC tax abatement program that replaced 421-a in 2024. It provides property tax abatement for new market-rate multifamily subject to specific affordability commitments."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/agency-loans-new-york.html",
+        "title": "Agency Loans NYC",
+        "sub": "NYC market"
+      },
+      {
+        "href": "comparisons/agency-vs-life-company-stabilized-multifamily.html",
+        "title": "Agency vs Life Co",
+        "sub": "Multifamily comparison"
+      },
+      {
+        "href": "loan-size/25-million-trophy-multifamily-acquisition-los-angeles.html",
+        "title": "$25M LA Trophy",
+        "sub": "Sister deal example"
+      }
+    ]
+  },
+  {
+    "slug": "9-million-auto-dealership-acquisition",
+    "short_title": "$9M Auto Dealership Acquisition",
+    "h1": "$9 Million Auto Dealership Acquisition",
+    "amount_label": "$9M",
+    "amount_dollars": "9000000",
+    "product_label": "Auto Dealership Acquisition",
+    "loan_type_label": "Auto Dealership Acquisition",
+    "indicative_rate": "7.45%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$9M Auto Dealership Acquisition | CLS CRE",
+      "meta_description": "What a $9 million auto dealership acquisition loan looks like in 2026. Capital stack with SBA 504, specialty dealer real estate bank, and OEM-affiliated programs from CLS CRE."
+    },
+    "lead": "A $9 million auto dealership acquisition is in the sweet spot of SBA 504 owner-operator financing combined with specialty dealer real estate bank execution. Most $9M dealership acquisitions are franchised single-rooftop transactions with established operating histories. The capital stack typically combines SBA 504 for real estate, SBA 7(a) or specialty dealer bank for operating business, and dealer floor plan financing (separate from real estate) for inventory.",
+    "stack_intro": "$9M auto dealership acquisitions typically combine multiple financing sources: SBA for real estate and equipment, specialty dealer bank for operating financing, and dealer floor plan for vehicle inventory.",
+    "stack_table": [
+      {
+        "source": "SBA 504 (real estate)",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "size": "$6M / 80% LTC (special-purpose 20% down)",
+        "notes": "Real estate financing only"
+      },
+      {
+        "source": "SBA 7(a) (operating)",
+        "cost": "Prime + 2.50 to 3.00% (10.00 to 10.50%)",
+        "size": "$2M to $3M",
+        "notes": "FF&E, working capital, inventory, brand transition"
+      },
+      {
+        "source": "Specialty dealer real estate bank",
+        "cost": "7.50 to 9.00%",
+        "size": "$9M / 70 to 80% LTV",
+        "notes": "Alternative to SBA on real estate"
+      },
+      {
+        "source": "Dealer floor plan",
+        "cost": "Prime + 1.50 to 2.50%",
+        "size": "Inventory-secured (separate)",
+        "notes": "Vehicle inventory financing"
+      }
+    ],
+    "sponsor_profile": "Typical $9M dealership acquisition sponsors are existing dealers expanding to a second or third rooftop, or experienced general managers transitioning to ownership. Sponsor industry experience is essential. Personal balance sheet and relationship with the OEM brand drive lender appetite.",
+    "real_deal_example": "On a $9.4M acquisition of a single-rooftop Honda dealership in a Sun Belt secondary market, the buyer was an existing dealer with one Toyota rooftop expanding to a second franchise. SBA 504 at 80 percent LTC financed real estate at $6.8M structured as a 50 percent bank first at 7.15 percent fixed and a 30 percent CDC second at 5.85 percent fixed 25-year. SBA 7(a) at $1.8M financed equipment, working capital, and Honda brand transition. Floor plan financing for inventory was provided separately by Honda Motor Credit. The deal closed in 95 days. Year-one dealership performance hit 105 percent of pro forma.",
+    "faqs": [
+      {
+        "q": "Can SBA finance auto dealership acquisitions?",
+        "a": "Yes. SBA 504 for real estate at 80 percent LTC (special-purpose 20 percent down). SBA 7(a) for FF&E, working capital, and goodwill up to $5M. Most dealership acquisitions combine both programs."
+      },
+      {
+        "q": "What is dealer floor plan financing?",
+        "a": "Dealer floor plan is separate inventory-secured financing for new and used vehicle inventory. Floor plan lenders include OEM-affiliated lenders (Honda Motor Credit, Toyota Motor Credit, Ford Credit, GM Financial), specialty dealer floor plan lenders, and bank floor plan programs."
+      },
+      {
+        "q": "Are dealerships special-purpose for SBA?",
+        "a": "Yes. Auto dealerships are classified as special-purpose under SBA 504 rules due to OEM brand-specific facility requirements and limited adaptive reuse value. The classification requires 20 percent down."
+      },
+      {
+        "q": "What OEM image program costs apply?",
+        "a": "OEM image programs require periodic renovations every 5 to 10 years at $1M to $10M+ per cycle depending on brand. Sponsors plan image program timing into financial models."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/auto-dealership-financing.html",
+        "title": "Auto Dealership Hub",
+        "sub": "Specialty owner-user"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans (Hub)",
+        "sub": "504 and 7(a)"
+      },
+      {
+        "href": "comparisons/sba-504-vs-bank-conventional-owner-user.html",
+        "title": "SBA vs Bank Conventional",
+        "sub": "Owner-user comparison"
+      }
+    ]
   }
 ]

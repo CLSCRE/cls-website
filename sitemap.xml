@@ -1303,6 +1303,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/5-year-fixed-vs-10-year-fixed.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/acquisition-vs-cashout-refinance.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/agency-vs-cmbs-stabilized-multifamily.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -1400,6 +1412,12 @@
   </url>
   <url>
     <loc>https://clscre.com/comparisons/mezzanine-vs-preferred-equity.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/preferred-equity-vs-common-equity-jv.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1573,7 +1591,43 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://clscre.com/property/auto-dealership-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/property/office-to-residential-conversion-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/property/skilled-nursing-facility-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/property/land-entitled-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/property/fitness-gym-financing.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/loan-size/10-million-agency-multifamily-refinance-brooklyn.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/loan-size/10-million-cmbs-multifamily-refinance.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1592,6 +1646,12 @@
   </url>
   <url>
     <loc>https://clscre.com/loan-size/15-million-life-company-multifamily-permanent.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/loan-size/20-million-data-center-construction.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1622,6 +1682,12 @@
   </url>
   <url>
     <loc>https://clscre.com/loan-size/3-million-multifamily-refinance-brooklyn.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/loan-size/35-million-trophy-multifamily-new-york.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1658,6 +1724,18 @@
   </url>
   <url>
     <loc>https://clscre.com/loan-size/7-5-million-fannie-mae-sbl-multifamily.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/loan-size/7-million-assisted-living-acquisition-texas.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/loan-size/9-million-auto-dealership-acquisition.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

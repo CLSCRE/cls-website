@@ -4245,5 +4245,828 @@
         "sub": "Owner-user comparison"
       }
     ]
+  },
+  {
+    "slug": "auto-dealership-financing",
+    "name": "Auto Dealership",
+    "short_name": "Auto Dealership",
+    "short_tagline": "Franchised auto dealership real estate",
+    "category_label": "Specialty Owner-User Property Financing",
+    "published": "2026-04-25",
+    "h1": "Auto Dealership Real Estate Financing",
+    "seo": {
+      "title": "Auto Dealership Real Estate Financing | CLS CRE",
+      "meta_description": "Financing for franchised auto dealership real estate. Specialty dealer floorplan lenders, SBA, conventional bank, and OEM-affiliated programs from CLS CRE."
+    },
+    "lead": "Auto dealership financing operates in a specialized commercial real estate market dominated by specialty dealer real estate banks (Bank of America Dealer Financial Services, Wells Fargo Dealer Services, Ally Financial, Chase Dealer Services), OEM-affiliated lender programs, conventional bank balance sheet, and SBA programs for owner-operators. The asset class includes franchised new car dealerships (typically representing one or more brands like Ford, GM, Toyota, Honda, BMW, Tesla service-only), used car dealerships, RV and powersports dealerships, and dealer service centers. The financing market reflects the operational complexity of dealership operations and the OEM brand requirements that affect facility design, image, and operating standards.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$5M to $50M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "75 to 80 percent (specialty dealer); 65 to 75 percent (conventional)"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.50x"
+      },
+      {
+        "label": "Term",
+        "value": "10 to 25 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse with personal guarantees typical"
+      },
+      {
+        "label": "OEM image programs",
+        "value": "Major investment requirements every 5 to 10 years"
+      },
+      {
+        "label": "Floor plan financing",
+        "value": "Separate from real estate (dealer floor plan lenders)"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 15 to 25 specialty dealer lenders"
+      }
+    ],
+    "capital_intro": "Auto dealership real estate financing is dominated by specialty dealer real estate banks that understand the operating model, OEM image program requirements, and floor plan integration. Major specialty banks include Bank of America Dealer Financial Services, Wells Fargo Dealer Services, Ally Financial, Chase Dealer Services, and several regional dealer specialty banks. SBA 504 finances owner-operator dealerships at 80 percent LTC (special-purpose 20 percent down).",
+    "capital_table": [
+      {
+        "source": "Specialty dealer real estate bank",
+        "cost": "7.00 to 8.50% (10 to 20 yr fixed)",
+        "ltv": "70 to 80 percent",
+        "best_fit": "Established franchised dealers with strong operating history"
+      },
+      {
+        "source": "OEM-affiliated lender program",
+        "cost": "Varies by brand",
+        "ltv": "Varies",
+        "best_fit": "Branded operators with strong OEM relationships"
+      },
+      {
+        "source": "SBA 504 (owner-operator)",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "ltv": "80 percent (special-purpose 20% down)",
+        "best_fit": "Owner-operator $5M to $20M total project"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.50 to 9.00%",
+        "ltv": "65 to 70 percent",
+        "best_fit": "Established multi-rooftop dealers with depository relationship"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "9.00 to 12.00%",
+        "ltv": "70 to 80 percent LTC",
+        "best_fit": "Acquisition + image program upgrade or relocation"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "7.50 to 8.50%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Stabilized larger dealership real estate $15M+"
+      }
+    ],
+    "deal_profile": [
+      "Franchised new car dealership transactions typically run $5M to $30M for single-rooftop dealerships, $20M to $100M+ for multi-rooftop dealer groups, and $50M+ for major metro auto malls. Per-square-foot pricing typically runs $200 to $500 depending on market and brand image program standards. Major brand dealerships (BMW, Mercedes, Lexus, Tesla service) command premium per-square-foot pricing reflecting brand image requirements.",
+      "Sponsor profiles span single-rooftop owner-operators (typically family-owned dealerships with multi-decade operating history), multi-rooftop dealer groups (often family-owned with 3 to 50+ rooftops across multiple brands and geographies), and institutional consolidators (Lithia Motors, Penske, Sonic, AutoNation in the public market plus private consolidators). The auto dealership consolidation cycle has accelerated significantly with Lithia and AutoNation acquiring smaller dealer groups.",
+      "Operating revenue blends new vehicle sales (typically 50 to 70 percent of revenue, 3 to 6 percent gross margin), used vehicle sales (15 to 25 percent of revenue, higher margin), service and parts (10 to 20 percent of revenue, 50 to 60 percent gross margin), and finance and insurance (5 to 10 percent of revenue, very high margin). Service and parts is the most stable and highest-margin revenue stream, materially affecting dealership real estate value."
+    ],
+    "underwriting_intro": "Auto dealership underwriting is operating-business-intensive with significant focus on OEM brand requirements and image programs. Lenders evaluate the property, the operating dealership, the brand relationships, and the management team carefully.",
+    "underwriting_bullets": [
+      "OEM brand and franchise: brand strength, market territory exclusivity, dealer agreement terms, and brand requirements drive valuation",
+      "Image program compliance: OEM image programs require periodic facility renovations (every 5 to 10 years) at $1M to $10M+ per renovation cycle",
+      "Operating performance: total dealership revenue, gross profit margin, operating margin, customer pay percentage of total service",
+      "Service department: service bay count, fixed coverage ratio (gross profit from service covers operating expenses), and absorbed cost percentage",
+      "Sales velocity and turn: vehicle inventory turn rate, days supply of inventory, and units sold per year per rooftop",
+      "Sponsor experience: dealership operating experience and OEM relationship quality drive lender appetite",
+      "Real estate: purpose-built dealership facilities versus adaptive reuse retail. Brand image requirements drive significant capital expenditure",
+      "Floor plan integration: dealer floor plan financing (separate from real estate) requires coordination with the real estate lender on intercreditor and inventory financing"
+    ],
+    "pitfalls_intro": "Auto dealership transactions have specific failure modes around OEM image program timing, EV transition risk, and operating margin volatility.",
+    "pitfalls_bullets": [
+      "OEM image program shock: image program renovations every 5 to 10 years cost $1M to $10M+ and often exceed initial budgets",
+      "EV transition risk: traditional ICE dealership business model faces structural transition pressure as EV adoption grows",
+      "OEM franchise relationship: poor performance vs OEM benchmarks can result in franchise termination, eliminating dealership value",
+      "Used car market volatility: used car wholesale prices can move 30 to 50% in a year, affecting dealership working capital and used car department profitability",
+      "Floor plan exposure: dealer floor plan financing creates significant working capital exposure tied to inventory levels",
+      "Service department aging: aging service equipment and limited service bay capacity affect operating performance",
+      "Brand consolidation: OEM brand consolidation (e.g., Stellantis brands) and brand discontinuations affect specific dealerships",
+      "Special-purpose SBA: dealerships are typically special-purpose for SBA 504 (20 percent down)"
+    ],
+    "real_deal_example": "On a $14M acquisition of a Toyota dealership in a Sun Belt secondary market, the buyer was an existing Toyota dealer with one other rooftop, expanding to a second franchise. The deal allocated $11M to real estate (a 4.2 acre site with new and used vehicle display, indoor showroom, and 22-bay service department), $1.8M to FF&E and equipment, $400K to working capital, and $800K for OEM image program updates required at acquisition. SBA 504 at 80 percent LTC (special-purpose 20 percent down) financed the real estate. SBA 7(a) at $2M financed equipment, working capital, and image program updates. Toyota's OEM image program required $1.2M of renovation within 24 months of acquisition. The deal closed in 95 days. Year-one dealership performance hit 102 percent of pro forma; the OEM image program completed at month 18 supporting subsequent service department performance gains.",
+    "expert_quote": "Auto dealership real estate financing is one of the most specialized owner-user CRE niches. The lender bench is narrow but well-developed, and the OEM brand requirements add complexity that mainstream commercial lenders rarely understand.",
+    "faqs": [
+      {
+        "q": "Can SBA finance auto dealership acquisitions?",
+        "a": "Yes. SBA 504 finances real estate at 80 percent LTC (special-purpose 20 percent down). SBA 7(a) finances FF&E, working capital, and goodwill up to $5M total. Most SBA-eligible dealership acquisitions combine both programs."
+      },
+      {
+        "q": "Are auto dealerships special-purpose for SBA?",
+        "a": "Yes. Dealerships are classified as special-purpose under SBA 504 rules due to limited adaptive reuse value and OEM brand-specific facility requirements. The classification requires 20 percent down."
+      },
+      {
+        "q": "Who are the major specialty dealer real estate lenders?",
+        "a": "Bank of America Dealer Financial Services, Wells Fargo Dealer Services, Ally Financial, Chase Dealer Services, M&T Bank, and several regional dealer specialty banks lead the market."
+      },
+      {
+        "q": "How does dealer floor plan financing differ from real estate?",
+        "a": "Floor plan financing is separate inventory-secured financing that funds new and used vehicle inventory. Floor plan lenders include OEM-affiliated lenders (GM Financial, Toyota Motor Credit, Ford Credit), specialty dealer floor plan lenders, and bank balance sheet floor plan programs."
+      },
+      {
+        "q": "What is an OEM image program?",
+        "a": "OEM image programs are brand-mandated facility standards that dealers must maintain. Programs require periodic renovations (every 5 to 10 years), specific architectural elements, dedicated brand showroom areas, and operational standards. Cost ranges from $1M for small brand updates to $10M+ for major luxury brand renovations."
+      },
+      {
+        "q": "How does EV transition affect dealership financing?",
+        "a": "EV transition affects dealership operating models through reduced service revenue (EVs require less service), changes in F&I dynamics, and OEM franchise model changes (Tesla and some EV-only brands operate factory direct). Lenders increasingly evaluate long-term transition exposure in stress tests."
+      },
+      {
+        "q": "Can dealer groups be financed at higher leverage?",
+        "a": "Yes through specialty dealer real estate banks. Multi-rooftop established dealer groups with strong operating performance often access 75 to 80 percent LTV through specialty dealer banks at competitive pricing."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Property and casualty, general liability, products liability (auto sales), garage liability (service department), business interruption, and umbrella coverage. Insurance can run 1 to 2 percent of revenue."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans (Hub)",
+        "sub": "504 and 7(a)"
+      },
+      {
+        "href": "property/auto-body-shop-financing.html",
+        "title": "Auto Body Shop",
+        "sub": "Sister auto specialty"
+      },
+      {
+        "href": "financing/specialty.html",
+        "title": "Specialty Financing",
+        "sub": "Niche property types"
+      }
+    ]
+  },
+  {
+    "slug": "office-to-residential-conversion-financing",
+    "name": "Office-to-Residential Conversion",
+    "short_name": "Office Conversion",
+    "short_tagline": "Office building conversion to multifamily residential",
+    "category_label": "Specialty Conversion / Adaptive Reuse Financing",
+    "published": "2026-04-25",
+    "h1": "Office-to-Residential Conversion Financing",
+    "seo": {
+      "title": "Office-to-Residential Conversion Financing | CLS CRE",
+      "meta_description": "Financing for office-to-residential adaptive reuse projects. Specialty conversion lenders, agency forward commitments, AB 2011 (CA), and tax-incentive programs from CLS CRE."
+    },
+    "lead": "Office-to-residential conversion has emerged as one of the most consequential CRE strategies in commercial real estate as office vacancy persists post-COVID and housing shortage continues. State and federal policy increasingly supports adaptive reuse: California's AB 2011 streamlines office conversion to housing on commercially-zoned parcels statewide, NYC's 467-m provides tax abatement for office-to-residential conversions, and federal tax incentives support adaptive reuse historically. The financing market is rapidly developing with specialty conversion lenders, agency forward commitments for stabilized take-out, debt funds funding the construction phase, and creative tax-incentive layering.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$10M to $200M+"
+      },
+      {
+        "label": "Maximum LTV (construction)",
+        "value": "60 to 75 percent LTC"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.20x to 1.30x stabilized"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 30 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse during construction; non-recourse stabilized"
+      },
+      {
+        "label": "AB 2011 streamlining (California)",
+        "value": "Available for qualifying projects on commercially-zoned parcels"
+      },
+      {
+        "label": "NYC 467-m abatement",
+        "value": "Available for qualifying NYC office conversions"
+      },
+      {
+        "label": "Construction cost premium",
+        "value": "$150 to $400 per square foot above shell repurposing"
+      }
+    ],
+    "capital_intro": "Office-to-residential conversion financing operates as specialty multifamily construction with adaptive reuse considerations. Most conversions fund through bridge debt funds at 65 to 75 percent LTC during construction, with permanent take-out via Fannie Mae or Freddie Mac at stabilization. Agency forward commitments lock the perm rate at construction start. Tax-credit and abatement layers (AB 2011 in California, 467-m in NYC, federal historic if applicable) enhance returns.",
+    "capital_table": [
+      {
+        "source": "Bridge debt fund (conversion)",
+        "cost": "SOFR + 425 to 700 (8.85 to 11.85%)",
+        "ltv": "65 to 75 percent LTC",
+        "best_fit": "Construction phase financing for conversion projects"
+      },
+      {
+        "source": "Bank balance sheet construction",
+        "cost": "SOFR + 275 to 425 (7.10 to 8.85%)",
+        "ltv": "55 to 65 percent LTC",
+        "best_fit": "Conversion construction with sponsor recourse and depository"
+      },
+      {
+        "source": "Agency forward commitment",
+        "cost": "5.85 to 6.30% fixed (locked at construction)",
+        "ltv": "70 to 75 percent LTV stabilized",
+        "best_fit": "Permanent take-out for stabilized conversion"
+      },
+      {
+        "source": "HUD 221(d)(4)",
+        "cost": "5.95 to 6.45% (35-year fully amortizing)",
+        "ltv": "85 to 90 percent (workforce / affordable conversions)",
+        "best_fit": "Long-term hold; affordable / workforce conversion"
+      },
+      {
+        "source": "Tax-credit equity (federal historic)",
+        "cost": "Equity contribution",
+        "ltv": "Up to 20 percent of qualified rehab costs",
+        "best_fit": "Historic-eligible buildings"
+      },
+      {
+        "source": "Local abatement programs",
+        "cost": "Tax savings",
+        "ltv": "NYC 467-m, similar",
+        "best_fit": "Conversions in jurisdictions with active abatement programs"
+      }
+    ],
+    "deal_profile": [
+      "Office-to-residential conversions span small infill projects (50 to 100 units) to major institutional conversions of large CBD office towers (500 to 1,000+ units). Project sizes range from $20M for smaller conversions to $300M+ for major NYC, LA, SF, or Chicago tower conversions. Per-unit conversion cost typically runs $250K to $500K depending on building characteristics, market, and code compliance requirements.",
+      "Sponsor profiles include institutional multifamily developers with adaptive reuse experience (Brookfield, Related, Hines, Tishman Speyer, others), private capital developers with conversion specialization, and family office and high-net-worth investors targeting opportunistic office distress. Conversion experience matters substantially given the regulatory and structural complexity.",
+      "Operating revenue post-conversion is standard multifamily rental income with the property operating as conventional or affordable apartment housing. Pre-stabilization NOI from any retained office tenants creates transitional cash flow during the conversion period."
+    ],
+    "underwriting_intro": "Office-to-residential conversion underwriting is multifamily ground-up construction underwriting with adaptive reuse considerations. Lenders evaluate the property, the conversion design, the regulatory pathway, and the take-out plan carefully.",
+    "underwriting_bullets": [
+      "Building characteristics: floor plate depth, ceiling heights, window patterns, and structural systems determine conversion feasibility. Floor plates over 80 to 100 feet deep face conversion challenges",
+      "Code compliance: building code, fire and life safety, accessibility, and historic preservation requirements affect cost and timeline",
+      "Regulatory streamlining: AB 2011 (California), NYC 467-m, and similar programs accelerate approval and reduce risk",
+      "Conversion cost: $150 to $400 per square foot above shell repurposing depending on existing building condition and target finish level",
+      "Stabilization timeline: typically 24 to 36 months from construction start to stabilization",
+      "Sponsor experience: conversion-experienced sponsors get materially better terms",
+      "Take-out plan: agency forward commitment, HUD 221(d)(4), or other permanent execution must be planned at the front end",
+      "Tax-credit and abatement structure: federal historic credits, state credits, NYC 467-m, AB 2011 streamlining, and similar programs require careful structuring"
+    ],
+    "pitfalls_intro": "Office-to-residential conversion has specific failure modes around building feasibility, regulatory complexity, and cost overruns.",
+    "pitfalls_bullets": [
+      "Floor plate impracticality: deep floor plates (over 100 feet) often cannot achieve sufficient natural light for residential conversion",
+      "Mechanical and structural overruns: existing building mechanical, electrical, plumbing, and structural systems often require complete replacement rather than retrofit",
+      "Cost overruns: conversion projects frequently exceed budget by 10 to 25 percent due to discovery of conditions during demolition",
+      "Regulatory complexity: zoning approvals, code variances, historic preservation, ADA compliance, and approval timelines can extend pre-construction by 12 to 24 months",
+      "Tax-credit qualification: federal historic credits require extensive documentation and approval (Part 1, Part 2, Part 3); failure to qualify costs equity returns",
+      "Tenant displacement: existing office tenants must be relocated, with lease buyouts and relocation costs adding to project cost",
+      "Permanent take-out risk: rental rate underwriting at stabilization may not support construction loan take-out if market rates compress",
+      "Construction labor and materials: specialized adaptive reuse construction labor and materials can be difficult to procure"
+    ],
+    "real_deal_example": "On a $48M conversion of a 198,000 square foot Class B office tower in Downtown LA to a 168-unit market-rate multifamily property, the sponsor leveraged AB 2011 streamlined ministerial approval, eliminating discretionary review and accelerating entitlement by an estimated 12 to 18 months. The capital structure included $34M of bridge debt fund construction financing at SOFR + 525 (9.85 percent all-in), $14M of common equity from a conversion-specialized institutional capital partner, and $2M of sponsor co-invest. A Fannie Mae forward commitment locked the permanent take-out at 5.95 percent fixed 10-year for delivery at month 30. AB 2011 streamlining significantly reduced regulatory risk and accelerated the construction start. Construction took 28 months. Lease-up reached stabilization at month 42.",
+    "expert_quote": "Office-to-residential conversion went from impossible to mainstream in roughly two years. AB 2011 in California and 467-m in NYC have made conversions financeable at scale where they were not before. The hard part is the building itself; the financing exists for buildings that can be feasibly converted.",
+    "faqs": [
+      {
+        "q": "What buildings are good candidates for office-to-residential conversion?",
+        "a": "Buildings with relatively shallow floor plates (under 80 feet deep), strong natural light access, manageable mechanical and structural systems, and reasonable code compliance pathways are the best candidates. Pre-1980s vintage buildings often work better than open-floor-plate 1980s and 1990s towers."
+      },
+      {
+        "q": "What is California AB 2011?",
+        "a": "AB 2011 is a California state law (effective 2023) that provides streamlined ministerial approval for housing development on commercially-zoned parcels statewide. The law dramatically accelerates approvals for office-to-residential conversions by eliminating discretionary review."
+      },
+      {
+        "q": "What is NYC 467-m?",
+        "a": "NYC 467-m is a tax abatement program providing property tax abatement for office-to-residential conversions in New York City, designed to incentivize adaptive reuse of underutilized office space."
+      },
+      {
+        "q": "How much does office-to-residential conversion cost per unit?",
+        "a": "Conversion cost typically runs $250K to $500K per unit depending on building characteristics, market, and finish level. Cost is materially higher than ground-up construction in many markets due to demolition, code upgrades, and existing condition unknowns."
+      },
+      {
+        "q": "Can conversion projects access agency forward commitments?",
+        "a": "Yes. Both Fannie Mae and Freddie Mac offer forward commitment programs for stabilized take-out on multifamily conversions, locking the permanent rate at construction start."
+      },
+      {
+        "q": "What is the typical conversion timeline?",
+        "a": "Office-to-residential conversion typically runs 24 to 36 months from construction start to stabilization, plus 6 to 18 months of pre-construction approvals and design (less with AB 2011 or 467-m streamlining)."
+      },
+      {
+        "q": "Are federal historic tax credits available for conversions?",
+        "a": "Yes for qualifying historic buildings. Federal Historic Preservation Tax Incentives provide a 20 percent tax credit for qualified rehabilitation expenditures on certified historic buildings. Eligibility requires Part 1 (significance), Part 2 (rehabilitation plans), and Part 3 (final completion) approvals from the National Park Service."
+      },
+      {
+        "q": "Is HUD 221(d)(4) available for office-to-residential conversion?",
+        "a": "Yes for qualifying conversions, particularly workforce or affordable executions. HUD 221(d)(4) finances substantial rehabilitation including office-to-residential conversion at up to 90 percent LTC for affordable / workforce."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "All capital sources"
+      },
+      {
+        "href": "property/office.html",
+        "title": "Office Financing",
+        "sub": "Office hub"
+      },
+      {
+        "href": "comparisons/hud-221d4-vs-bank-construction.html",
+        "title": "HUD vs Bank Construction",
+        "sub": "Construction comparison"
+      }
+    ]
+  },
+  {
+    "slug": "skilled-nursing-facility-financing",
+    "name": "Skilled Nursing Facility (SNF)",
+    "short_name": "SNF",
+    "short_tagline": "Medicare/Medicaid skilled nursing financing",
+    "category_label": "Specialty Healthcare Property Financing",
+    "published": "2026-04-25",
+    "h1": "Skilled Nursing Facility (SNF) Financing",
+    "seo": {
+      "title": "Skilled Nursing Facility (SNF) Financing | CLS CRE",
+      "meta_description": "Financing for skilled nursing facilities (SNFs). HUD 232, life company, specialty healthcare lenders, and acquisition financing for SNF operators from CLS CRE."
+    },
+    "lead": "Skilled nursing facility (SNF) financing operates in a specialized healthcare CRE niche dominated by HUD 232 long-term financing, a small bench of specialty healthcare lenders, and growing private credit interest. SNFs serve residents requiring skilled nursing care, typically funded by Medicare (short-stay) and Medicaid (long-stay), with operations subject to extensive federal and state regulatory oversight. The financing market reflects the regulatory complexity, reimbursement risk, and operational sophistication required for SNF operations.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$3M to $50M+"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "80 percent (HUD 232 acquisition); 65 to 75 percent (conventional)"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.45x"
+      },
+      {
+        "label": "Term",
+        "value": "35 years (HUD 232); 5 to 10 years (conventional)"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse (HUD 232); recourse (bank)"
+      },
+      {
+        "label": "Regulatory environment",
+        "value": "Heavy (CMS, state DOH, OIG)"
+      },
+      {
+        "label": "Reimbursement",
+        "value": "Medicare 30 to 50% / Medicaid 35 to 55% / private pay 5 to 25%"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 15 to 25 specialty + HUD MAP lenders"
+      }
+    ],
+    "capital_intro": "SNF financing leans heavily on HUD 232 for long-term hold strategies, supplemented by specialty healthcare lenders, conventional bank balance sheet for shorter-term opportunistic transactions, and private credit for value-add and turnaround scenarios.",
+    "capital_table": [
+      {
+        "source": "HUD 232 (acquisition)",
+        "cost": "5.95 to 6.45% (35-year fully amortizing)",
+        "ltv": "80 percent",
+        "best_fit": "Stabilized SNF acquisition with experienced operator"
+      },
+      {
+        "source": "HUD 232 (refinance)",
+        "cost": "5.95 to 6.45% (35-year fully amortizing)",
+        "ltv": "Up to 85% on refinance with prior HUD",
+        "best_fit": "Existing HUD-financed SNF refinance"
+      },
+      {
+        "source": "Specialty healthcare lender",
+        "cost": "7.50 to 9.50% (5 to 10 yr)",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Mid-market SNF $5M to $25M with operator experience"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.85 to 9.50%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Established multi-facility operators with depository"
+      },
+      {
+        "source": "Bridge debt fund (SNF)",
+        "cost": "9.50 to 13.00%",
+        "ltv": "70 to 80 percent LTC",
+        "best_fit": "Acquisition + turnaround or value-add"
+      },
+      {
+        "source": "Private REIT / sale-leaseback",
+        "cost": "Initial cap rate 10.00 to 13.00%",
+        "ltv": "100 percent",
+        "best_fit": "Vertically integrated operators freeing up capital"
+      }
+    ],
+    "deal_profile": [
+      "SNF transactions range from $3M for small rural facilities to $50M+ for trophy multi-facility metro portfolios. Per-bed pricing varies enormously: rural SNF at $30,000 to $60,000 per bed, suburban SNF at $60,000 to $150,000 per bed, urban Class A SNF at $150,000 to $300,000 per bed.",
+      "Sponsor profiles include institutional SNF operators (Genesis Healthcare, Ensign Group, Brookdale, others), regional SNF chains, family-owned operators (often multi-generational), and SNF REITs (Sabra Health Care REIT, CareTrust REIT, Omega Healthcare). The asset class consolidates steadily but remains substantially fragmented at the operator level.",
+      "Operating revenue is dominated by Medicare reimbursement for short-stay rehabilitation patients (typically 30 to 50% of revenue, higher per-day rates), Medicaid for long-stay residents (35 to 55% of revenue, lower per-day rates), and private pay (5 to 25% of revenue, highest per-day rates). Reimbursement mix materially affects operating economics."
+    ],
+    "underwriting_intro": "SNF underwriting evaluates the property, the operator, the regulatory environment, and the reimbursement profile. The asset class requires specialized lender expertise.",
+    "underwriting_bullets": [
+      "Operator experience: SNF operating expertise is essential. First-time SNF operators face material proceeds reductions or are declined",
+      "Regulatory standing: CMS five-star ratings, state survey results, and any recent enforcement actions affect lender appetite",
+      "Census and occupancy: average daily census, occupancy percentage, and census trajectory drive cash flow",
+      "Reimbursement mix: Medicare percentage (higher per-day) versus Medicaid (lower) drives operating margin",
+      "Property: building age, condition, room mix, ADA compliance, and capital improvement requirements",
+      "Quality measures: CMS quality measures, deficiency-free survey history, and clinical outcomes",
+      "Sponsor / operator separation: SNF financing often separates real estate ownership from operations through OpCo / PropCo structure with master lease",
+      "State Medicaid rate environment: Medicaid rate stability and trajectory by state varies substantially"
+    ],
+    "pitfalls_intro": "SNF transactions have specific failure modes around regulatory enforcement, reimbursement changes, and operator quality issues.",
+    "pitfalls_bullets": [
+      "Regulatory enforcement: serious deficiencies in CMS surveys can trigger civil monetary penalties, denial of payment for new admissions, or facility termination",
+      "Medicaid rate compression: state Medicaid rate changes can compress operating margins materially",
+      "Operator turnover: management transitions affect quality measures, census, and reimbursement",
+      "Capital expenditure requirements: aging SNFs face material capital expenditure for ADA compliance, infection control upgrades, and quality improvements",
+      "Litigation exposure: SNF litigation including elder abuse, neglect, and quality of care claims is meaningful",
+      "Insurance: SNF malpractice and general liability insurance is expensive and increasingly hard to obtain in some markets",
+      "COVID-19 legacy: pandemic-era operating disruption has affected some SNFs durably",
+      "CMS five-star rating: properties with one or two stars face lender appetite reductions"
+    ],
+    "real_deal_example": "On a $14M acquisition of a 132-bed skilled nursing facility in a Sun Belt suburban market, the buyer was an institutional SNF operator with 18 facilities and a four-star CMS rating average. The acquisition was financed through specialty healthcare lender at 8.45 percent fixed 7-year, 70 percent LTV ($9.8M loan amount), with sponsor recourse and full performance covenants tied to census, CMS rating, and DSCR. The deal closed in 110 days. After 14 months of operating, the sponsor refinanced into HUD 232 at 6.15 percent fixed 35-year fully amortizing at 78 percent LTV ($11M loan amount), returning $1.2M of capital and locking in long-term cost of capital.",
+    "expert_quote": "SNF financing is one of the most regulated corners of healthcare CRE. The HUD 232 program is the gold standard for long-term holds, but the 12 to 24 month underwriting timeline makes it incompatible with opportunistic acquisitions. Specialty healthcare lenders bridge the gap.",
+    "faqs": [
+      {
+        "q": "Is HUD 232 the standard for SNF financing?",
+        "a": "Yes for long-term hold strategies. HUD 232 provides 35-year fully amortizing fixed-rate financing at up to 80 percent LTV for acquisition. The 12 to 24 month underwriting timeline limits HUD 232 use for opportunistic acquisitions, where specialty healthcare lenders or bridge debt funds finance the initial acquisition and refinance into HUD later."
+      },
+      {
+        "q": "What are CMS five-star ratings?",
+        "a": "CMS Five-Star Quality Rating System rates SNFs on overall quality, health inspections, staffing, and quality measures. Higher-rated facilities (4 or 5 stars) command better lender terms and typically have stronger operating performance. Lower-rated facilities (1 or 2 stars) face lender appetite reductions."
+      },
+      {
+        "q": "What is OpCo / PropCo separation?",
+        "a": "OpCo / PropCo structure separates the operating company (license-holder, employer, biller) from the real estate ownership entity. The OpCo leases the property from the PropCo under a master lease. The structure isolates real estate and operating risks and is standard in SNF financing."
+      },
+      {
+        "q": "Are SNFs financeable through CMBS?",
+        "a": "Limited. CMBS conduits will finance some net-leased stabilized SNF real estate (where the operator is institutional and the lease is long-term triple-net), but most SNFs are not CMBS-eligible due to operating risk and regulatory volatility."
+      },
+      {
+        "q": "How does Medicare versus Medicaid mix affect financing?",
+        "a": "Higher Medicare mix (typically 30 to 50% of revenue) supports better operating margins than higher Medicaid mix. Lenders evaluate the durability of the Medicare census and any planned mix shifts."
+      },
+      {
+        "q": "What insurance is required for SNF financing?",
+        "a": "Property and casualty, general liability, professional liability (clinical malpractice), umbrella coverage, business interruption, and cyber liability are all required. Professional liability limits typically $1M to $5M per occurrence."
+      },
+      {
+        "q": "Are SNFs eligible for SBA financing?",
+        "a": "Generally no. SBA financing is restricted to most healthcare facilities with active medical practice. SNFs typically use HUD 232, specialty healthcare lenders, or conventional bank financing."
+      },
+      {
+        "q": "How does sale-leaseback work for SNFs?",
+        "a": "Vertically integrated SNF operators sell the real estate to SNF REITs (Sabra, CareTrust, Omega) at initial cap rates of 10 to 13 percent and lease back under long-term triple-net master leases. The structure frees up capital for operating expansion."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/senior-living.html",
+        "title": "Senior Living Financing",
+        "sub": "All senior care types"
+      },
+      {
+        "href": "financing/hud-fha-loans.html",
+        "title": "HUD/FHA Loans (Hub)",
+        "sub": "232 program"
+      },
+      {
+        "href": "comparisons/hud-232-vs-bank-senior-care.html",
+        "title": "HUD 232 vs Bank",
+        "sub": "Senior care comparison"
+      }
+    ]
+  },
+  {
+    "slug": "land-entitled-financing",
+    "name": "Entitled Land",
+    "short_name": "Entitled Land",
+    "short_tagline": "Ready-to-build entitled land financing",
+    "category_label": "Specialty Land Property Financing",
+    "published": "2026-04-25",
+    "h1": "Entitled Land Financing",
+    "seo": {
+      "title": "Entitled Land Financing | CLS CRE",
+      "meta_description": "Financing for entitled land ready for development. Specialty land lenders, bank balance sheet, and bridge debt for ready-to-build commercial real estate."
+    },
+    "lead": "Entitled land financing is a specialized commercial real estate niche serving developers and land bankers who acquire ready-to-build entitled property for near-term construction or short-term hold. Entitled land carries development entitlements (zoning, conditional use permits, environmental clearances, utility commitments) reducing development risk relative to unentitled land. The financing market is narrow because most institutional lenders prefer to finance the construction phase rather than the land hold, but specialty land lenders, bank balance sheet, and bridge debt funds all participate.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$1M to $50M+"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "50 to 65 percent typical"
+      },
+      {
+        "label": "Typical hold period",
+        "value": "12 to 36 months pre-construction"
+      },
+      {
+        "label": "Term",
+        "value": "12 to 36 months"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse typical"
+      },
+      {
+        "label": "Pricing",
+        "value": "SOFR + 350 to 700 (bridge); 7.50 to 10.00% (bank)"
+      },
+      {
+        "label": "Property tax during hold",
+        "value": "Carrying cost typically 1.5 to 4% of value annually"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 10 to 20 specialty + bank"
+      }
+    ],
+    "capital_intro": "Entitled land financing draws from a narrow lender bench. Most major commercial real estate lenders avoid land financing due to the lack of cash flow. Specialty land lenders, regional banks with development relationships, bridge debt funds, and private capital lenders fill the gap.",
+    "capital_table": [
+      {
+        "source": "Specialty land bank",
+        "cost": "7.50 to 9.50%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Sponsor with development plan and depository relationship"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.50 to 9.00%",
+        "ltv": "50 to 60 percent",
+        "best_fit": "Strong sponsor with depository and clear construction plan"
+      },
+      {
+        "source": "Bridge debt fund (land)",
+        "cost": "SOFR + 425 to 700 (8.85 to 11.85%)",
+        "ltv": "50 to 65 percent",
+        "best_fit": "Land hold with construction loan refinance planned"
+      },
+      {
+        "source": "Private capital / hard money",
+        "cost": "10.00 to 14.00%",
+        "ltv": "50 to 60 percent",
+        "best_fit": "Fast-close acquisition or sponsor cure"
+      },
+      {
+        "source": "Seller financing",
+        "cost": "Negotiated (typically 5 to 8%)",
+        "ltv": "50 to 90 percent",
+        "best_fit": "Negotiated structures with motivated seller"
+      }
+    ],
+    "deal_profile": [
+      "Entitled land transactions range from $1M for small infill development sites to $50M+ for major master-planned development sites. Per-acre pricing varies dramatically by market, entitlement profile, and development potential.",
+      "Sponsor profiles include active developers planning near-term construction (typically 12 to 24 month hold before construction loan), land bankers acquiring strategic positions for longer-term development, and sophisticated investors capitalizing on entitlement value creation.",
+      "There is no operating revenue from land. Cash flow during the hold period is typically negative reflecting property taxes, insurance, monitoring, and any debt service. Sponsors plan land holds with sufficient liquidity to cover carrying costs."
+    ],
+    "underwriting_intro": "Entitled land underwriting evaluates the entitlements, the development plan, the sponsor's track record, and the exit strategy carefully.",
+    "underwriting_bullets": [
+      "Entitlement status: zoning approvals, conditional use permits, environmental clearances, utility commitments, and any pending appeals",
+      "Title and survey: clear title with marketable title insurance; comprehensive survey identifying all easements, encumbrances, and constraints",
+      "Environmental: Phase I ESA mandatory, Phase II often required",
+      "Sponsor experience: development track record and capacity to execute the planned project",
+      "Construction plan: realistic construction budget, timeline, and capital structure for the planned project",
+      "Take-out plan: construction loan availability, agency forward commitment for multifamily, or sale to another developer",
+      "Market conditions: current and projected market conditions for the planned product type",
+      "Carrying cost: ability to cover property taxes, insurance, monitoring, and debt service during the hold"
+    ],
+    "pitfalls_intro": "Entitled land transactions have specific failure modes around entitlement durability, market shifts, and sponsor execution.",
+    "pitfalls_bullets": [
+      "Entitlement reversal: zoning appeals or political shifts can reverse approvals (rare but devastating)",
+      "Market shifts: market conditions for the planned product type can shift during the land hold",
+      "Construction cost increases: construction cost increases during the land hold compress development returns",
+      "Carrying cost overrun: extended land hold beyond original plan compounds carrying costs",
+      "Environmental discovery: Phase II ESA findings can require remediation or kill the deal",
+      "Title issues: title problems discovered during diligence can delay or prevent close",
+      "Sponsor execution risk: sponsor inability to execute the planned construction means land must be sold or held longer",
+      "Refinance risk on land debt: refinancing land debt at maturity if construction has not started can be challenging"
+    ],
+    "real_deal_example": "On a $14M acquisition of an entitled 4.2 acre infill development site in a Sun Belt suburban market with full multifamily entitlements for 220 units, the sponsor was an established multifamily developer planning construction start within 18 months. A specialty land bank quoted at 8.45 percent fixed 24-month term, 60 percent LTV ($8.4M loan), with sponsor recourse and a 12-month interest reserve. The borrower equity of $5.6M was funded from a development equity partner. Construction loan was secured 14 months post-acquisition, with the construction lender refinancing the land loan at construction close.",
+    "expert_quote": "Entitled land financing is one of the narrowest lender benches in commercial real estate. The lenders that do this work understand that land has no cash flow and underwrite the development plan and sponsor execution as the path to repayment.",
+    "faqs": [
+      {
+        "q": "Why is entitled land harder to finance than developed property?",
+        "a": "Entitled land has no cash flow, which most CRE lenders consider essential to underwriting. Lenders that finance land must underwrite the development plan and sponsor execution as the path to loan repayment, which requires specialized expertise."
+      },
+      {
+        "q": "What is the typical loan-to-value on entitled land?",
+        "a": "50 to 65 percent LTV is typical. Lenders are conservative on land valuation reflecting market uncertainty and lack of cash flow."
+      },
+      {
+        "q": "What is the typical hold period on land financing?",
+        "a": "12 to 36 months. Most land loans are structured as bridges with planned refinance into construction debt at construction start."
+      },
+      {
+        "q": "What is unentitled land?",
+        "a": "Unentitled land lacks development entitlements (zoning approvals, conditional use permits, environmental clearances). Unentitled land is materially harder to finance than entitled land due to entitlement risk."
+      },
+      {
+        "q": "Can SBA finance land?",
+        "a": "Generally no. SBA programs are restricted to operating real estate or projects with planned construction tied to operating business use. Pure land speculation is not SBA-eligible."
+      },
+      {
+        "q": "What carrying costs apply to land?",
+        "a": "Property taxes (typically 1 to 4 percent of value annually), insurance, monitoring and security, debt service if leveraged, and ongoing entitlement maintenance fees. Total carrying costs typically run 4 to 8 percent of value annually."
+      },
+      {
+        "q": "Can land be cross-collateralized with other property?",
+        "a": "Yes. Sponsors with established CRE portfolios sometimes pledge other properties as additional collateral on land loans, supporting higher leverage or better terms."
+      },
+      {
+        "q": "What environmental due diligence is required?",
+        "a": "Phase I ESA is mandatory on every land acquisition. Phase II ESA is often required for sites with prior industrial, agricultural, or commercial use history. Environmental findings can require remediation or kill the deal."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/construction-loans.html",
+        "title": "Construction Loans (Hub)",
+        "sub": "Ground-up financing"
+      },
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans (Hub)",
+        "sub": "Short-term financing"
+      },
+      {
+        "href": "financing/specialty.html",
+        "title": "Specialty Financing",
+        "sub": "Niche property types"
+      }
+    ]
+  },
+  {
+    "slug": "fitness-gym-financing",
+    "name": "Fitness Center and Gym",
+    "short_name": "Fitness / Gym",
+    "short_tagline": "Health clubs, gyms, fitness studios, and yoga",
+    "category_label": "Specialty Owner-User Property Financing",
+    "published": "2026-04-25",
+    "h1": "Fitness Center and Gym Financing",
+    "seo": {
+      "title": "Fitness Center and Gym Financing | CLS CRE",
+      "meta_description": "Financing for fitness centers, health clubs, gyms, and fitness studios. SBA, conventional bank, and specialty fitness lender programs from CLS CRE."
+    },
+    "lead": "Fitness center, health club, and gym financing is one of the more active SBA-driven owner-user CRE niches in the country. The asset class spans large multi-purpose health clubs (Equinox, Lifetime, 24 Hour Fitness type properties), mid-size franchise gyms (Anytime Fitness, Planet Fitness, Snap Fitness), boutique fitness studios (yoga, pilates, barre, spin, CrossFit, Orangetheory, Pure Barre), and independent gym operators. The lender ecosystem is dominated by SBA 504 and 7(a), specialty health club banks, conventional bank balance sheet for established operators, and equipment financing for gym equipment.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$500K to $15M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "80 to 90 percent (SBA); 60 to 70 percent (conventional)"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.25x to 1.40x"
+      },
+      {
+        "label": "Term",
+        "value": "10, 20, or 25 years (SBA)"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse with personal guarantees"
+      },
+      {
+        "label": "Special-purpose classification",
+        "value": "Yes (20 percent down on SBA 504)"
+      },
+      {
+        "label": "Equipment financing",
+        "value": "Often bundled or separate"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 30 to 50 SBA + specialty fitness"
+      }
+    ],
+    "capital_intro": "Fitness center financing operates primarily through SBA 504 and 7(a). Specialty fitness lenders (Live Oak Bank dominantly, plus several regional banks) offer SBA-wrapped and conventional execution. Equipment financing handles gym equipment, cardio machines, weights, and FF&E.",
+    "capital_table": [
+      {
+        "source": "SBA 504",
+        "cost": "Bank 1st 7.00 to 8.00% / CDC 5.50 to 6.00% fixed",
+        "ltv": "80 percent (special-purpose, 20 percent down)",
+        "best_fit": "Owner-operator gym real estate $500K to $10M total"
+      },
+      {
+        "source": "SBA 7(a)",
+        "cost": "Prime + 2.50 to 3.00% (10.00 to 10.50%)",
+        "ltv": "85 to 90 percent",
+        "best_fit": "Acquisition + equipment + working capital + franchise fees"
+      },
+      {
+        "source": "Specialty fitness bank",
+        "cost": "Prime + 2.00 to 2.75% (SBA wrap)",
+        "ltv": "85 to 90 percent",
+        "best_fit": "Multi-unit franchisees and established gym operators"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.50 to 9.00 percent",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Established multi-location operators"
+      },
+      {
+        "source": "Equipment financing",
+        "cost": "9.00 to 12.00 percent",
+        "ltv": "100 percent of equipment",
+        "best_fit": "Cardio, strength, free weights, FF&E refresh"
+      }
+    ],
+    "deal_profile": [
+      "Single-unit franchise gym acquisitions (Anytime Fitness, Planet Fitness, Snap Fitness) typically run $500K to $2M. Boutique studio acquisitions (yoga, CrossFit, spin) run $250K to $1.5M. Mid-size health club acquisitions run $1.5M to $5M. Large multi-purpose health clubs (Lifetime, Equinox, 24 Hour Fitness type) run $5M to $25M+. Multi-unit franchisee territories and brand consolidation run $5M to $50M+.",
+      "Sponsor profiles span first-time franchisee owner-operators (often executives transitioning to entrepreneurship), multi-unit franchisees with 5 to 50+ locations, and institutional consolidators of franchise gym networks. Industry experience matters but is less specialized than other operating businesses.",
+      "Operating revenue is dominated by membership fees with secondary income from personal training, retail (apparel, supplements), and ancillary services. Member retention and acquisition cost (CAC) are core metrics. Member churn typically runs 4 to 8 percent monthly across the industry."
+    ],
+    "underwriting_intro": "Fitness center underwriting is operating-business intensive. Lenders evaluate the property, the operating business, brand strength (for franchises), and management capability.",
+    "underwriting_bullets": [
+      "Membership: active member count, member retention, average revenue per member",
+      "Member acquisition cost: CAC and the marketing budget required to grow membership",
+      "Concept and brand: franchise brand strength versus independent concept risk",
+      "Demographics: local population density and demographics for membership pool",
+      "Personal training revenue: trainer count, hours, and revenue mix",
+      "Equipment: cardio, strength, free weight, and specialty equipment age and condition",
+      "Real estate: club square footage, parking, locker rooms, group fitness studios, and showers",
+      "Sponsor experience: gym operating experience or relevant management background"
+    ],
+    "pitfalls_intro": "Fitness center transactions have specific failure modes around membership churn, equipment costs, and concept obsolescence.",
+    "pitfalls_bullets": [
+      "High member churn: industry average churn of 4 to 8 percent monthly creates ongoing acquisition pressure",
+      "Concept obsolescence: fitness concepts evolve rapidly (boutique studios, functional training, recovery, etc.)",
+      "Equipment refresh: cardio and strength equipment requires replacement every 5 to 8 years",
+      "Special-purpose SBA: gyms are special-purpose for SBA 504 (20 percent down)",
+      "Insurance: liability exposure from member injuries drives insurance costs",
+      "Lease versus own: many gyms lease space; SBA-financed owner-occupied real estate is a smaller subset",
+      "Pandemic legacy: COVID-19 pandemic devastated the industry; durability of recovery is still being assessed",
+      "Personal training quality: trainer turnover and quality affect member retention"
+    ],
+    "real_deal_example": "On a $1.2M acquisition of a Planet Fitness franchise in a suburban Midwest market, the buyer was a first-time franchisee with 12 years of corporate management experience and a strong personal balance sheet. The deal allocated $700K to real estate (an 8,500 square foot facility leased on a 15-year ground lease), $300K to equipment (cardio, strength, locker room build-out), $150K to franchise fees, and $50K to working capital. SBA 504 financed the leasehold build-out and equipment as the franchise was a leased model rather than owned real estate. SBA 7(a) financed equipment, franchise fees, and working capital at $500K. The deal closed in 75 days. Year-one membership reached 2,800 members at month 14, slightly above pro forma.",
+    "expert_quote": "Fitness centers are one of the more active SBA niches but also one with higher operating volatility. The financing exists, the franchise programs streamline execution, and operators with management experience can succeed. The underlying business is durable but requires constant member acquisition.",
+    "faqs": [
+      {
+        "q": "Can SBA finance gym acquisitions?",
+        "a": "Yes. SBA 504 and 7(a) widely finance owner-operator gym acquisitions. SBA 504 for real estate at 80 percent LTC (special-purpose 20 percent down). SBA 7(a) for equipment, franchise fees, working capital, and goodwill up to $5M total."
+      },
+      {
+        "q": "Are gyms special-purpose for SBA?",
+        "a": "Yes typically. Gyms and fitness facilities are classified as special-purpose under SBA 504 rules due to limited adaptive reuse value and specialized facility build-out. The classification requires 20 percent down."
+      },
+      {
+        "q": "What franchise brands are SBA-eligible?",
+        "a": "Most major franchise brands are on the SBA Franchise Directory including Anytime Fitness, Planet Fitness, Snap Fitness, Orangetheory, Pure Barre, F45, OneLife Fitness, and many others. Eligibility provides streamlined SBA financing through preferred lender relationships."
+      },
+      {
+        "q": "What is the typical down payment?",
+        "a": "On owner-user SBA 504, 20 percent down (special-purpose). On SBA 7(a), 10 percent down. On conventional bank, 25 to 35 percent down."
+      },
+      {
+        "q": "How does fitness equipment financing work?",
+        "a": "Equipment financing handles cardio, strength, free weights, and FF&E at 100 percent of equipment cost on 5 to 7 year terms. Some operators bundle equipment with SBA real estate financing; others use standalone equipment financing."
+      },
+      {
+        "q": "What is the typical fitness club operating margin?",
+        "a": "Single-unit franchise gyms typically run 12 to 18 percent operating margins. Boutique studios run 15 to 25 percent. Large health clubs (Equinox, Lifetime) run higher with personal training and retail components."
+      },
+      {
+        "q": "How are member-based fitness businesses underwritten?",
+        "a": "Lenders evaluate active member count, member retention rates, member acquisition cost, and ancillary revenue (personal training, retail). Stabilized fitness centers typically have 800 to 3,500 members per location depending on size and concept."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Property and casualty, general liability, professional liability (personal training), products liability (retail), umbrella coverage, and worker's compensation. Liability limits typically $1M to $3M per occurrence."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans (Hub)",
+        "sub": "504 and 7(a)"
+      },
+      {
+        "href": "comparisons/sba-504-vs-sba-7a.html",
+        "title": "SBA 504 vs 7(a)",
+        "sub": "Owner-user comparison"
+      },
+      {
+        "href": "financing/specialty.html",
+        "title": "Specialty Financing",
+        "sub": "Niche property types"
+      }
+    ]
   }
 ]
