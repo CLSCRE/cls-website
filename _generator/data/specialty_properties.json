@@ -5891,5 +5891,786 @@
         "sub": "Owner-user comparison"
       }
     ]
+  },
+  {
+    "slug": "funeral-home-cemetery-financing",
+    "name": "Funeral Home and Cemetery",
+    "short_name": "Funeral Home",
+    "short_tagline": "Funeral homes, mortuaries, and cemetery operations",
+    "category_label": "Specialty Owner-User Property Financing",
+    "published": "2026-04-25",
+    "h1": "Funeral Home and Cemetery Financing",
+    "seo": {
+      "title": "Funeral Home and Cemetery Financing | CLS CRE",
+      "meta_description": "Financing for funeral homes, mortuaries, and cemetery operations. SBA, conventional bank, and specialty death-care lender programs."
+    },
+    "lead": "Funeral home and cemetery financing is a specialized owner-user CRE niche dominated by SBA programs, specialty death-care banks, conventional bank balance sheet, and the institutional consolidator activity led by Service Corporation International (SCI), Carriage Services, and several regional consolidators. The asset class includes traditional funeral homes, mortuaries with on-site preparation, crematoriums, cemetery operations with maintained grounds, and combination funeral-cemetery operations. Death-care is one of the most enduringly stable industries in commercial real estate.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$1M to $15M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "80 to 90 percent (SBA); 65 to 75 percent (conventional)"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.25x to 1.40x"
+      },
+      {
+        "label": "Term",
+        "value": "10 to 25 years (SBA)"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse with personal guarantees"
+      },
+      {
+        "label": "Special-purpose classification",
+        "value": "Yes (20 percent down on SBA 504)"
+      },
+      {
+        "label": "Regulatory environment",
+        "value": "State funeral board licensing required"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 25 to 40 SBA + specialty"
+      }
+    ],
+    "capital_intro": "Funeral home and cemetery financing leans heavily on SBA 504 and 7(a). Specialty death-care lenders (Live Oak Bank dominantly, plus several regional banks active in the program) compete actively. Conventional bank balance sheet plays at the multi-location operator level. Institutional death-care consolidators (SCI, Carriage Services, Park Lawn Memorial Group) drive larger transaction volume.",
+    "capital_table": [
+      {
+        "source": "SBA 504",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "ltv": "80 percent (special-purpose 20% down)",
+        "best_fit": "Owner-operator funeral home real estate $1M to $10M"
+      },
+      {
+        "source": "SBA 7(a)",
+        "cost": "Prime + 2.50%",
+        "ltv": "85 to 90 percent",
+        "best_fit": "Acquisition + equipment + working capital + goodwill"
+      },
+      {
+        "source": "Specialty death-care bank",
+        "cost": "Prime + 2.00 to 2.75% (SBA wrap)",
+        "ltv": "85 to 90 percent",
+        "best_fit": "Multi-location operators and death-care specialists"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.50 to 9.00%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Established multi-location operators"
+      },
+      {
+        "source": "Institutional consolidator",
+        "cost": "Strategic acquisition pricing",
+        "ltv": "100% (full acquisition)",
+        "best_fit": "Family-owned funeral home exit to SCI, Carriage, Park Lawn"
+      }
+    ],
+    "deal_profile": [
+      "Single-location funeral home acquisitions typically run $1M to $5M including real estate, equipment (preparation room, casket display, caskets, vehicles), and goodwill. Combination funeral-cemetery operations run $3M to $15M+. Multi-location regional operators run $5M to $30M for portfolio acquisitions.",
+      "Sponsor profiles include owner-operator licensed funeral directors transitioning from employee to owner, multi-generational family death-care operators expanding to second or third location, and institutional consolidators (SCI, Carriage Services, Park Lawn Memorial Group, NorthStar Memorial Group) acquiring family-owned operations.",
+      "Operating revenue is dominated by funeral service fees (immediate need and pre-need contracts), casket and merchandise sales, cremation services, cemetery and mausoleum sales, and ancillary services. Pre-need contracts (sold in advance of need) provide cash flow stability and customer pipeline."
+    ],
+    "underwriting_intro": "Funeral home and cemetery underwriting evaluates the property, the operating business, the regulatory licensing, and the management capability. State funeral board licensing requirements affect transferability.",
+    "underwriting_bullets": [
+      "State licensing: state funeral board licensing for the operator and the funeral director-in-charge",
+      "Pre-need contract obligations: pre-paid funeral contracts create future delivery obligations affecting balance sheet",
+      "Property condition: chapel space, preparation room, casket display, parking, and outdoor cemetery grounds",
+      "Equipment: preparation equipment, refrigeration, hearse and limousine fleet, casket inventory",
+      "Sponsor experience: licensed funeral director credential preferred for owner-operator transactions",
+      "Cremation rate: increasing cremation rates affect traditional funeral revenue mix",
+      "Cemetery operations: maintenance reserves, perpetual care funds, plot inventory",
+      "Adjacent locations: combination funeral-cemetery operations have stronger durability than standalone"
+    ],
+    "pitfalls_intro": "Funeral home transactions have specific failure modes around licensing transferability, family relationship transitions, and cremation-driven revenue compression.",
+    "pitfalls_bullets": [
+      "License transferability: state funeral board licensing requires the funeral director-in-charge to be licensed; transitions affect operations",
+      "Family relationship loss: long-tenured family operators have established community relationships that may not transfer",
+      "Cremation rate compression: increasing cremation (national rate now exceeds 60%) compresses traditional funeral revenue mix",
+      "Pre-need contract liabilities: pre-paid contracts create future delivery obligations that must be funded",
+      "Special-purpose SBA: funeral homes are special-purpose for SBA 504 (20 percent down)",
+      "Cemetery perpetual care: cemetery operations require perpetual care fund maintenance",
+      "Insurance: liability and embalming-related insurance requirements",
+      "Consolidator competition: institutional consolidators (SCI, Carriage) compete actively for family-owned acquisitions"
+    ],
+    "real_deal_example": "On a $2.4M acquisition of a single-location funeral home in a Midwest secondary market, the buyer was a licensed funeral director with 12 years at the firm transitioning to ownership. The deal allocated $1.5M to real estate (a 6,000 square foot purpose-built funeral home with chapel, preparation room, and parking), $400K to equipment and casket inventory, $300K to working capital, and $200K to goodwill. SBA 504 at 80 percent LTC (special-purpose 20 percent down) financed real estate. SBA 7(a) at $700K financed equipment, working capital, and goodwill. The seller stayed on as part-time advisor for 18 months supporting the family relationship transition. Year-one operations hit 95 percent of pro forma.",
+    "expert_quote": "Funeral home and cemetery is one of the most enduringly stable owner-user CRE niches in the country. The SBA programs work well, the operating model is well-understood, and the demographic demand drivers are remarkably durable.",
+    "faqs": [
+      {
+        "q": "Can SBA finance funeral home acquisitions?",
+        "a": "Yes. SBA 504 for real estate at 80 percent LTC (special-purpose 20 percent down). SBA 7(a) for equipment, working capital, and goodwill up to $5M total."
+      },
+      {
+        "q": "Are funeral homes special-purpose for SBA?",
+        "a": "Yes. Funeral homes are classified as special-purpose under SBA 504 due to chapel space, preparation rooms, and limited adaptive reuse value. The classification requires 20 percent down."
+      },
+      {
+        "q": "Is a state license required to operate?",
+        "a": "Yes. Every state requires funeral board licensing for both the funeral home as a business and the funeral director-in-charge. Licensing transferability at sale is a closing item."
+      },
+      {
+        "q": "How are pre-need contracts treated?",
+        "a": "Pre-need contracts (pre-paid funeral arrangements) are typically funded through trust accounts or insurance products and create future delivery obligations. State regulations vary; lenders verify proper trust funding."
+      },
+      {
+        "q": "What is the typical cremation rate impact?",
+        "a": "National cremation rate exceeds 60 percent (up from approximately 30 percent in 2000). Cremation revenue is materially lower per service than traditional burial, compressing traditional funeral revenue mix."
+      },
+      {
+        "q": "Who are the institutional consolidators?",
+        "a": "Service Corporation International (SCI, largest), Carriage Services, Park Lawn Memorial Group, NorthStar Memorial Group, and several regional consolidators acquire family-owned death-care operations actively."
+      },
+      {
+        "q": "Is cemetery operation different from funeral home?",
+        "a": "Yes. Cemetery operations involve plot sales, mausoleum sales, perpetual care fund maintenance, and outdoor grounds maintenance. Combination funeral-cemetery operations are more durable than standalone funeral home operations."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "General liability with professional liability components, products liability (caskets, services), property and casualty, business interruption, and umbrella coverage. Embalming and preparation liability coverage is specific."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans",
+        "sub": "504 and 7(a)"
+      },
+      {
+        "href": "comparisons/sba-504-vs-sba-7a.html",
+        "title": "SBA 504 vs 7(a)",
+        "sub": "Owner-user comparison"
+      }
+    ]
+  },
+  {
+    "slug": "movie-theater-financing",
+    "name": "Movie Theater",
+    "short_name": "Movie Theater",
+    "short_tagline": "Cinema operations and entertainment retail",
+    "category_label": "Specialty Entertainment Property Financing",
+    "published": "2026-04-25",
+    "h1": "Movie Theater Financing",
+    "seo": {
+      "title": "Movie Theater Financing | CLS CRE",
+      "meta_description": "Financing for movie theaters, cinemas, and entertainment retail. SBA, conventional bank, and specialty entertainment lender programs."
+    },
+    "lead": "Movie theater financing is a specialty entertainment CRE niche serving cinema operators ranging from independent single-screen theaters to multi-screen complexes affiliated with major exhibitors (AMC, Regal, Cinemark) and growing premium concepts (Alamo Drafthouse, iPic, ArcLight). The asset class faces structural headwinds from streaming and shifting consumer entertainment patterns but retains durable demand for premium experiences and event programming. Financing comes from SBA programs, specialty entertainment lenders, conventional bank balance sheet, and equipment financing for projection and audio systems.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$2M to $25M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "75 to 90 percent (SBA); 60 to 70 percent (conventional)"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.50x"
+      },
+      {
+        "label": "Term",
+        "value": "10 to 25 years (SBA)"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse with personal guarantees"
+      },
+      {
+        "label": "Special-purpose classification",
+        "value": "Yes (20 percent down on SBA 504)"
+      },
+      {
+        "label": "Streaming pressure",
+        "value": "Significant; affects revenue durability assumptions"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 15 to 25 SBA + specialty"
+      }
+    ],
+    "capital_intro": "Movie theater financing operates through SBA programs for owner-operators, specialty entertainment lenders, and conventional bank balance sheet for established multi-screen operators. Equipment financing handles digital projection, audio systems, and FF&E.",
+    "capital_table": [
+      {
+        "source": "SBA 504",
+        "cost": "Bank 1st 7.25% / CDC 5.95% fixed",
+        "ltv": "80 percent (special-purpose 20% down)",
+        "best_fit": "Owner-operator theater real estate"
+      },
+      {
+        "source": "SBA 7(a)",
+        "cost": "Prime + 2.75 to 3.25%",
+        "ltv": "85 to 90 percent",
+        "best_fit": "Acquisition + equipment + working capital"
+      },
+      {
+        "source": "Specialty entertainment lender",
+        "cost": "8.00 to 11.00%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Boutique cinema and premium concepts"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.85 to 9.50%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Established multi-location exhibitors"
+      },
+      {
+        "source": "Private credit / specialty MA",
+        "cost": "9.50 to 13.00%",
+        "ltv": "65 to 75% LTC",
+        "best_fit": "Multi-location operator portfolio acquisitions"
+      }
+    ],
+    "deal_profile": [
+      "Single-screen and small multi-screen theater acquisitions run $2M to $5M. Mid-size multi-screen complexes (8 to 16 screens) run $5M to $15M. Premium concept theaters (Alamo Drafthouse, iPic, ArcLight) run $8M to $25M reflecting elevated build-out costs.",
+      "Sponsor profiles include independent cinema operators expanding to additional locations, regional multi-screen operators, and the major exhibitors (AMC, Regal, Cinemark, Marcus, Cinépolis) at the institutional scale.",
+      "Operating revenue blends ticket sales (typically 50 to 70 percent of revenue), concessions (25 to 40 percent at higher gross margin), screen advertising, and event programming. Concession and beverage profits drive operating margin meaningfully."
+    ],
+    "underwriting_intro": "Movie theater underwriting is operating-business intensive with focus on attendance trends, programming, and demographic fit.",
+    "underwriting_bullets": [
+      "Location: traffic count, demographics, parking, accessibility, retail anchor relationships",
+      "Screen count and configuration: number of screens, premium format mix (IMAX, Dolby, recliner seating)",
+      "Attendance trends: trailing attendance trajectory, market saturation, streaming impact",
+      "Concessions: per-cap revenue, concession margin",
+      "Equipment age: digital projection (15+ year cycles), audio systems",
+      "Sponsor experience: cinema operating experience strongly preferred",
+      "Real estate: purpose-built theater versus adaptive reuse retail",
+      "Studio relationships: blockbuster booking and distributor relationships"
+    ],
+    "pitfalls_intro": "Movie theater transactions have specific failure modes around streaming pressure, equipment lifecycle, and consolidator competition.",
+    "pitfalls_bullets": [
+      "Streaming pressure: structural shift toward streaming reduces theatrical attendance over time",
+      "Blockbuster volatility: dependence on major studio releases creates volatile attendance patterns",
+      "Equipment refresh: digital projection, audio, and seating require periodic refresh",
+      "Special-purpose SBA: theaters are special-purpose for SBA 504 (20 percent down)",
+      "Major exhibitor distress: AMC, Regal (Cineworld), and other major exhibitors have faced financial stress affecting industry dynamics",
+      "Premium concept differentiation: differentiation from Netflix and major exhibitors requires ongoing investment",
+      "Insurance and ADA: ADA accessibility requirements and venue insurance"
+    ],
+    "real_deal_example": "On a $4.6M acquisition of a 6-screen independent theater in a Sun Belt suburban market, the buyer was an existing independent theater operator with one other location. The deal allocated $3.2M to real estate, $800K to equipment refresh (digital projection upgrade, recliner seating retrofit), $400K to working capital, and $200K to goodwill. SBA 504 at 80 percent LTC financed real estate. SBA 7(a) at $1.4M financed equipment and working capital. The seller stayed on as advisor for 12 months. Year-one attendance hit 92 percent of pro forma; concession margins exceeded base case driven by recliner seating premium pricing.",
+    "expert_quote": "Movie theater financing is one of the more challenging specialty CRE niches given streaming pressure, but premium concepts and well-located multiplexes continue to support owner-operator success. The SBA programs work; the operating thesis requires conviction.",
+    "faqs": [
+      {
+        "q": "Can SBA finance movie theater acquisitions?",
+        "a": "Yes. SBA 504 finances theater real estate at 80 percent LTC (special-purpose 20 percent down). SBA 7(a) finances equipment, working capital, and goodwill up to $5M."
+      },
+      {
+        "q": "Are theaters special-purpose for SBA?",
+        "a": "Yes. Movie theaters are classified as special-purpose under SBA 504 due to specialized build-out and limited adaptive reuse value."
+      },
+      {
+        "q": "How does streaming affect theater financing?",
+        "a": "Streaming reduces theatrical attendance structurally. Lenders evaluate streaming impact in stress tests and may apply attendance haircuts in cash flow underwriting."
+      },
+      {
+        "q": "What is digital projection?",
+        "a": "Digital cinema projection (DCP) replaced 35mm film. Modern digital projectors cost $50,000 to $150,000 per screen and require periodic upgrades for laser systems and 4K resolution."
+      },
+      {
+        "q": "Who are the major theater operators?",
+        "a": "AMC Theatres (largest), Regal (Cineworld), Cinemark, Marcus Theatres, Cinépolis, and a long list of independent and regional exhibitors."
+      },
+      {
+        "q": "What is the typical theater operating margin?",
+        "a": "Single-screen and small multi-screen operations typically run 8 to 15 percent operating margins. Premium concept theaters with elevated concession revenue run 12 to 20 percent."
+      },
+      {
+        "q": "Are premium concept theaters financed differently?",
+        "a": "Premium concepts (Alamo Drafthouse, iPic, ArcLight) typically have higher build-out costs ($300 to $500 per square foot) and access broader specialty entertainment lender pool."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "General liability, ADA-related coverage, products liability (concessions), business interruption, and umbrella coverage."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/bowling-alley-financing.html",
+        "title": "Bowling / FEC",
+        "sub": "Sister entertainment"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans",
+        "sub": "504 and 7(a)"
+      }
+    ]
+  },
+  {
+    "slug": "tire-shop-financing",
+    "name": "Tire Shop",
+    "short_name": "Tire Shop",
+    "short_tagline": "Tire installation and automotive service",
+    "category_label": "Specialty Owner-User Property Financing",
+    "published": "2026-04-25",
+    "h1": "Tire Shop and Tire Installation Center Financing",
+    "seo": {
+      "title": "Tire Shop Financing | CLS CRE",
+      "meta_description": "Financing for tire shops, tire installation centers, and automotive service operations. SBA 504, 7(a), and specialty automotive lender programs."
+    },
+    "lead": "Tire shop and tire installation center financing is an active SBA-driven owner-operator CRE niche covering franchise operations (Discount Tire, Big O Tires, Belle Tire, Tire Kingdom, Goodyear Auto Service Centers) and independent tire shops. The lender ecosystem mirrors broader auto repair financing with SBA programs, specialty automotive lenders, and equipment financing for tire equipment and lifts.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$1M to $5M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "80 to 90 percent (SBA)"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.25x to 1.40x"
+      },
+      {
+        "label": "Term",
+        "value": "10 to 25 years (SBA)"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse with personal guarantees"
+      },
+      {
+        "label": "Special-purpose classification",
+        "value": "Yes (20 percent down on SBA 504)"
+      },
+      {
+        "label": "Inventory financing",
+        "value": "Often substantial (tire inventory)"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 30 to 50 SBA + specialty"
+      }
+    ],
+    "capital_intro": "Tire shop financing flows primarily through SBA 504 and 7(a). Specialty automotive lenders compete actively. Conventional bank plays at the multi-location operator level. Inventory financing handles tire inventory which can be substantial.",
+    "capital_table": [
+      {
+        "source": "SBA 504",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "ltv": "80 percent (special-purpose 20% down)",
+        "best_fit": "Owner-operator tire shop real estate"
+      },
+      {
+        "source": "SBA 7(a)",
+        "cost": "Prime + 2.50%",
+        "ltv": "85 to 90 percent",
+        "best_fit": "Acquisition + equipment + tire inventory + working capital"
+      },
+      {
+        "source": "Specialty automotive lender",
+        "cost": "Prime + 2.00 to 2.75% (SBA wrap)",
+        "ltv": "85 to 90 percent",
+        "best_fit": "Multi-unit franchisees"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.50 to 9.00%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Established multi-location operators"
+      },
+      {
+        "source": "Tire inventory financing",
+        "cost": "Prime + 2.00 to 3.00%",
+        "ltv": "Inventory-secured",
+        "best_fit": "Inventory revolving facility"
+      }
+    ],
+    "deal_profile": [
+      "Single-location tire shop acquisitions typically run $1M to $3M. Multi-location franchise acquisitions (Discount Tire, Big O Tires, Belle Tire) run $3M to $15M. Multi-unit territory acquisitions run $5M to $25M+.",
+      "Sponsor profiles span owner-operator first-time franchisees, multi-unit franchisees, and independent tire shop operators. Industry experience matters but is less specialized than full auto repair.",
+      "Operating revenue blends tire installation labor (typically 30 to 40 percent), tire and accessory sales (45 to 55 percent), wheel alignment and balancing (10 to 15 percent), and ancillary services. Tire inventory is a substantial working capital item."
+    ],
+    "underwriting_intro": "Tire shop underwriting is similar to auto repair with specific tire-industry considerations.",
+    "underwriting_bullets": [
+      "Location: traffic count, visibility, parking, accessibility",
+      "Bay count: number of installation bays",
+      "Equipment: tire mounting machines, balancing machines, alignment racks",
+      "Inventory: tire inventory levels and turnover",
+      "Sales history: trailing 12 to 36 months",
+      "Operating margin: tire margins are tighter than auto repair labor margins",
+      "Sponsor experience: tire industry or automotive service experience preferred",
+      "Franchise relationship: franchise concepts get streamlined SBA"
+    ],
+    "pitfalls_intro": "Tire shop transactions have specific failure modes around inventory management, EV transition risk, and seasonality.",
+    "pitfalls_bullets": [
+      "Inventory management: tire inventory carrying costs can be substantial",
+      "EV transition: electric vehicles have lower tire wear (regenerative braking) reducing replacement frequency",
+      "Seasonal demand: snow tire markets and seasonal wear patterns",
+      "Special-purpose SBA: tire shops are special-purpose for SBA 504 (20 percent down)",
+      "Franchise compliance: franchise operating standards",
+      "Online tire sales competition: Tire Rack, SimpleTire, Discount Tire Direct affect retail margin",
+      "Insurance: garage liability, customer property coverage",
+      "Consolidator activity: Discount Tire and other consolidators acquire independent shops"
+    ],
+    "real_deal_example": "On a $1.4M acquisition of a Big O Tires franchise in a suburban Mountain West market, the buyer was a first-time Big O franchisee with 8 years of automotive service management experience. SBA 504 at 80 percent LTC financed real estate at $850K. SBA 7(a) at $700K financed equipment, tire inventory, working capital, and franchise transition. Year-one operations hit 98 percent of pro forma.",
+    "expert_quote": "Tire shops are one of the cleaner SBA niches in automotive service. The financing exists, the franchise programs streamline the path, and the operating model is well-understood. EV transition is a long-term consideration but near-term financing remains active.",
+    "faqs": [
+      {
+        "q": "Can SBA finance tire shop acquisitions?",
+        "a": "Yes. SBA 504 for real estate at 80 percent LTC (special-purpose 20 percent down). SBA 7(a) for equipment, tire inventory, working capital, and goodwill."
+      },
+      {
+        "q": "What franchise tire brands are SBA-eligible?",
+        "a": "Discount Tire, Big O Tires, Belle Tire, Tire Kingdom, NTB, Goodyear Auto Service, Pep Boys, and many others are on the SBA Franchise Directory."
+      },
+      {
+        "q": "How does EV transition affect tire shops?",
+        "a": "EVs have higher tire wear initially (heavier vehicles) but lower wear over time (regenerative braking). Net long-term EV impact on tire replacement is uncertain."
+      },
+      {
+        "q": "What is the typical operating margin?",
+        "a": "Independent tire shops typically run 10 to 18 percent operating margins. Franchise tire concepts run 12 to 20 percent. Multi-unit operators benefit from operating leverage."
+      },
+      {
+        "q": "How does tire inventory financing work?",
+        "a": "Tire inventory revolves through dedicated inventory financing facilities. Tires are sold and replaced continuously; financing is structured as a revolver against inventory levels."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Garage liability, customer property coverage, products liability, business interruption, worker's compensation, and umbrella coverage."
+      },
+      {
+        "q": "Can multi-unit tire territories be financed?",
+        "a": "Yes. Multi-unit franchisees access SBA programs and specialty automotive lender financing."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/auto-repair-service-financing.html",
+        "title": "Auto Repair",
+        "sub": "Sister automotive"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans",
+        "sub": "504 and 7(a)"
+      }
+    ]
+  },
+  {
+    "slug": "casino-hotel-financing",
+    "name": "Casino Hotel",
+    "short_name": "Casino Hotel",
+    "short_tagline": "Casino-anchored hospitality and gaming properties",
+    "category_label": "Specialty Hospitality / Gaming Property Financing",
+    "published": "2026-04-25",
+    "h1": "Casino Hotel Financing",
+    "seo": {
+      "title": "Casino Hotel Financing | CLS CRE",
+      "meta_description": "Financing for casino hotels and gaming-anchored hospitality properties. Specialty gaming lenders, conventional bank, and CMBS programs."
+    },
+    "lead": "Casino hotel financing is a highly specialized hospitality CRE niche serving gaming-anchored hotel properties. The asset class is dominated by institutional gaming operators (MGM, Caesars, Wynn, Boyd, Penn Entertainment, Las Vegas Sands, and several regional gaming operators) and faces specialized regulatory, operational, and financing considerations distinct from non-gaming hotels. The lender ecosystem includes specialty gaming lenders, conventional bank balance sheet for established operators, CMBS conduits with gaming expertise, and growing private credit appetite.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$25M to $500M+"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "55 to 65 percent (CMBS / specialty)"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.40x to 1.60x"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 10 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse for institutional"
+      },
+      {
+        "label": "Regulatory licensing",
+        "value": "State gaming commission required"
+      },
+      {
+        "label": "Construction cost",
+        "value": "$400 to $1,500+ per room (with casino)"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 10 to 20 specialty gaming"
+      }
+    ],
+    "capital_intro": "Casino hotel financing operates through specialty gaming lenders, conventional bank balance sheet for established operators, CMBS for stabilized properties, and private credit for development and value-add. The asset class requires lender expertise in gaming regulations, operating dynamics, and capital structure.",
+    "capital_table": [
+      {
+        "source": "Specialty gaming lender",
+        "cost": "6.50 to 9.00%",
+        "ltv": "60 to 65 percent",
+        "best_fit": "Established gaming operators with strong credit"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "7.00 to 8.50%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Stabilized casino hotels $50M+"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.50 to 9.50%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Established multi-property gaming operators"
+      },
+      {
+        "source": "Private credit",
+        "cost": "9.00 to 13.00%",
+        "ltv": "65 to 75% LTC",
+        "best_fit": "Development and value-add"
+      },
+      {
+        "source": "Sale-leaseback (gaming REIT)",
+        "cost": "Initial cap rate 6.50 to 8.00%",
+        "ltv": "100% capital",
+        "best_fit": "Vertically integrated operators (VICI, MGM Growth, Gaming and Leisure Properties)"
+      }
+    ],
+    "deal_profile": [
+      "Casino hotel transactions range from $25M for small regional operations to $500M+ for major Las Vegas Strip and trophy regional properties. Per-room pricing varies enormously by market and casino size: regional casino hotels at $200K to $400K per room (with allocated casino value), Las Vegas Strip at $400K to $1.5M+ per room.",
+      "Sponsor profiles include institutional gaming operators (MGM Resorts, Caesars Entertainment, Wynn Resorts, Las Vegas Sands, Boyd Gaming, Penn Entertainment), regional gaming operators (Eldorado, Bally's, Affinity Gaming), and gaming REITs (VICI Properties, Gaming and Leisure Properties, MGM Growth Properties).",
+      "Operating revenue blends gaming revenue (typically 40 to 60 percent of total), hotel rooms (15 to 25 percent), food and beverage (15 to 25 percent), and entertainment/retail/parking (5 to 15 percent). Gaming revenue carries higher margins; hotel components may operate at lower or break-even margins to drive gaming traffic."
+    ],
+    "underwriting_intro": "Casino hotel underwriting evaluates the property, the gaming operations, the regulatory environment, and the management capability with specialized gaming expertise.",
+    "underwriting_bullets": [
+      "State gaming commission licensing: licensing for property and operator",
+      "Gaming revenue trends: drop, hold, slot count, table count",
+      "Hotel performance: ADR, occupancy, RevPAR",
+      "Regional gaming competition: competitive supply in the gaming market",
+      "Sponsor gaming experience: gaming operating experience essential",
+      "Capital structure: institutional gaming operators have access to broader capital markets",
+      "Sale-leaseback consideration: gaming REIT acquisition versus traditional debt",
+      "Compliance: AML, KYC, and gaming regulatory compliance"
+    ],
+    "pitfalls_intro": "Casino hotel transactions have specific failure modes around regulatory exposure, gaming revenue volatility, and competitive supply.",
+    "pitfalls_bullets": [
+      "Gaming license risk: license suspension or non-renewal can shut operations",
+      "Competitive supply expansion: new casino openings affect existing properties",
+      "Regional gaming saturation: Macau, Atlantic City, and regional markets have faced supply pressure",
+      "Sponsor licensing: state gaming commission scrutinizes individual ownership",
+      "Capital expenditure intensity: gaming floor refresh, hotel renovations",
+      "Insurance: gaming-specific liability and crime coverage",
+      "Consolidator dynamics: gaming consolidation drives strategic acquisition activity",
+      "Federal compliance: AML and Bank Secrecy Act compliance requirements"
+    ],
+    "real_deal_example": "On a $145M acquisition of a regional casino hotel in a Sun Belt gaming market, the buyer was a regional gaming operator with 4 other properties. CMBS conduit at 7.45 percent fixed 10-year, 60 percent LTV, $87M loan amount, with full defeasance. Equity from operating company at $58M with corporate guaranty. Year-one gaming revenue hit 96 percent of pro forma; hotel performance hit 102 percent driven by midweek group business.",
+    "expert_quote": "Casino hotel financing is one of the most specialized hospitality CRE corners. The lender bench is narrow but well-developed. Gaming experience and regulatory standing matter materially.",
+    "faqs": [
+      {
+        "q": "Are casino hotels financed differently from non-gaming hotels?",
+        "a": "Yes. Casino hotels require lender expertise in gaming regulations, operating dynamics, and capital structure. The lender bench is narrower than for non-gaming hospitality."
+      },
+      {
+        "q": "Can SBA finance casino hotels?",
+        "a": "Generally no. SBA programs typically exclude gaming operations. Casino hotels finance through specialty gaming lenders, CMBS, conventional banks, and private credit."
+      },
+      {
+        "q": "Who are the gaming REITs?",
+        "a": "VICI Properties (largest), Gaming and Leisure Properties, MGM Growth Properties (now MGM Resorts), and several specialty gaming-focused real estate vehicles."
+      },
+      {
+        "q": "What regulatory licensing is required?",
+        "a": "State gaming commission licensing for both the property and the operator. Federal AML and Bank Secrecy Act compliance. Individual ownership scrutinized by state regulators."
+      },
+      {
+        "q": "How does sale-leaseback work for casino hotels?",
+        "a": "Vertically integrated gaming operators sell real estate to gaming REITs (VICI, Gaming and Leisure Properties) at initial cap rates of 6.5 to 8.0 percent and lease back under long-term triple-net leases."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Property and casualty, general liability, gaming-specific liability, crime coverage, business interruption, and umbrella coverage. Gaming-specific insurance limits typically high."
+      },
+      {
+        "q": "How do gaming revenue dynamics differ from hotel?",
+        "a": "Gaming revenue is more volatile and weather-sensitive than hotel revenue but carries higher operating margins. Hotel components often operate at lower margins to drive gaming traffic."
+      },
+      {
+        "q": "Can ground-up casino hotel construction be financed?",
+        "a": "Yes for established operators with state gaming licensing. Construction financing typically combines bank or specialty gaming construction debt with substantial sponsor equity."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/hospitality.html",
+        "title": "Hospitality Hub",
+        "sub": "Hotel financing"
+      },
+      {
+        "href": "financing/cmbs-loans.html",
+        "title": "CMBS Loans",
+        "sub": "Conduit financing"
+      }
+    ]
+  },
+  {
+    "slug": "dialysis-center-financing",
+    "name": "Dialysis Center",
+    "short_name": "Dialysis Center",
+    "short_tagline": "Outpatient dialysis facilities",
+    "category_label": "Specialty Healthcare Property Financing",
+    "published": "2026-04-25",
+    "h1": "Dialysis Center Financing",
+    "seo": {
+      "title": "Dialysis Center Financing | CLS CRE",
+      "meta_description": "Financing for dialysis centers and outpatient renal care facilities. NNN STNL with credit tenants (DaVita, Fresenius), specialty healthcare, and CMBS programs."
+    },
+    "lead": "Dialysis center financing serves a specialized healthcare CRE niche dominated by net-leased single-tenant transactions to two major credit tenants: DaVita and Fresenius Medical Care. Together these two operators control approximately 80 percent of the U.S. dialysis market, providing exceptional tenant credit profile for net-leased dialysis center real estate. The asset class trades as STNL credit retail with healthcare characteristics, financed primarily through CMBS, life co, and 1031 exchange buyer pools.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$2M to $15M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "65 to 75 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.25x to 1.35x"
+      },
+      {
+        "label": "Term",
+        "value": "10 to 25 years (matched to lease)"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse with carve-outs"
+      },
+      {
+        "label": "Tenant credit",
+        "side": "Investment grade (DaVita BB+, Fresenius Baa3)",
+        "value": "DaVita BB+ / Fresenius Baa3"
+      },
+      {
+        "label": "Lease term",
+        "value": "15 to 25 years initial"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "Approximately 30 to 50 STNL specialty"
+      }
+    ],
+    "capital_intro": "Dialysis center financing flows through CMBS conduits, life cos, specialty STNL lenders, 1031 exchange buyer pools, and conventional banks comfortable with credit-tenant net-leased real estate. The strong tenant credit (DaVita and Fresenius) supports tight pricing and broad lender appetite.",
+    "capital_table": [
+      {
+        "source": "Life insurance company",
+        "cost": "6.45 to 7.25%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Trophy long-WALT credit-tenant dialysis"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.85 to 7.85%",
+        "ltv": "65 to 70 percent",
+        "best_fit": "Stabilized credit-tenant dialysis $5M+"
+      },
+      {
+        "source": "Specialty STNL lender",
+        "cost": "7.50 to 8.85%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Standard credit-tenant net-leased dialysis"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "cost": "7.50 to 9.00%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "1031 exchange buyer with depository"
+      },
+      {
+        "source": "1031 exchange buyer pool",
+        "cost": "Equity-driven",
+        "ltv": "100 percent",
+        "best_fit": "1031 exchange acquisition with subsequent financing"
+      }
+    ],
+    "deal_profile": [
+      "Dialysis center transactions typically range from $2M for smaller suburban facilities to $15M for larger metro facilities. Per-square-foot pricing typically runs $400 to $700 reflecting credit-tenant net-leased characteristics. The asset class is concentrated in single-tenant build-to-suit facilities leased to DaVita or Fresenius.",
+      "Sponsor profiles include 1031 exchange buyers seeking credit-tenant net-leased real estate, institutional STNL investors, and specialty healthcare REITs. Owner-operator dialysis is uncommon at the institutional level given the DaVita and Fresenius market dominance.",
+      "Operating revenue is the triple-net rent paid by the tenant. Dialysis center NNN leases typically include CPI escalations or fixed annual escalations of 1 to 2.5 percent. The tenant pays all property expenses (taxes, insurance, maintenance, utilities)."
+    ],
+    "underwriting_intro": "Dialysis center underwriting evaluates the property, the tenant lease, the credit profile, and the location.",
+    "underwriting_bullets": [
+      "Tenant credit: DaVita BB+ (S&P) or Fresenius Baa3 (Moody's)",
+      "Lease term: 15 to 25 year initial term typical, with multiple 5-year renewal options",
+      "Lease structure: triple-net with CPI or fixed escalations",
+      "Location: medical office park or freestanding building, parking access, demographic alignment",
+      "Property condition: dialysis-specific build-out (water purification, treatment chairs, mechanical, plumbing)",
+      "WALT: weighted average lease term affects pricing",
+      "Renewal probability: tenant has invested significantly in the build-out, supporting renewal",
+      "Geographic concentration: portfolio concentration limits"
+    ],
+    "pitfalls_intro": "Dialysis center transactions have specific failure modes around tenant credit changes, regulatory environment, and renewal timing.",
+    "pitfalls_bullets": [
+      "Tenant credit downgrade: DaVita or Fresenius credit changes affect cap rates",
+      "Regulatory environment: Medicare reimbursement changes affect tenant operations",
+      "Lease expiration risk: lease expirations within 5 years compress cap rates",
+      "Specialized build-out: dialysis-specific facilities have limited adaptive reuse",
+      "Insurance: standard NNN insurance applies",
+      "Concentration risk: 80 percent of market in two tenants creates concentration risk",
+      "Adaptive reuse limited: dialysis facilities have limited reuse value to non-dialysis tenants",
+      "Build-to-suit dynamics: most dialysis centers are tenant-driven build-to-suit"
+    ],
+    "real_deal_example": "On a $5.4M acquisition of a 6,400 square foot freestanding dialysis center in a Sun Belt suburban market, leased to DaVita on a 15-year triple-net lease with 1.5 percent annual escalations and 12 years of remaining initial term, the buyer was a 1031 exchange investor. Specialty STNL lender at 7.85 percent fixed 10-year, 65 percent LTV ($3.5M loan), with full defeasance. The buyer redeployed proceeds from a sold multifamily property under 1031 within the 180-day window. Year-one cash-on-cash return tracked underwritten 7 percent.",
+    "expert_quote": "Dialysis center NNN is one of the cleanest credit-tenant net-leased plays in healthcare CRE. The DaVita and Fresenius credit profiles, long initial lease terms, and triple-net structures support consistent investor demand and competitive financing.",
+    "faqs": [
+      {
+        "q": "Who are the major dialysis tenants?",
+        "a": "DaVita Inc. and Fresenius Medical Care control approximately 80 percent of the U.S. dialysis market between them. Together they are the dominant tenants in dialysis center NNN real estate."
+      },
+      {
+        "q": "Are dialysis centers considered medical office or net lease?",
+        "a": "Both. Dialysis centers operate as freestanding net-leased credit-tenant retail with healthcare characteristics. Most institutional investors classify dialysis as STNL credit retail rather than medical office."
+      },
+      {
+        "q": "What is the typical lease term?",
+        "a": "15 to 25 year initial term is typical, with multiple 5-year renewal options. The long initial term reflects tenant build-out investment in the specialized facility."
+      },
+      {
+        "q": "What credit ratings do DaVita and Fresenius carry?",
+        "a": "DaVita is rated BB+ by S&P (high yield, just below investment grade). Fresenius Medical Care is rated Baa3 by Moody's (investment grade)."
+      },
+      {
+        "q": "Are dialysis centers financeable through 1031 exchange?",
+        "a": "Yes. Dialysis centers are commonly acquired by 1031 exchange buyers seeking credit-tenant net-leased income. The asset class fits well within the 45-day identification and 180-day closing windows."
+      },
+      {
+        "q": "What is the typical cap rate?",
+        "a": "Stabilized DaVita and Fresenius dialysis NNN typically trades at 6.50 to 7.50 percent cap rates depending on lease term remaining, location, and market dynamics."
+      },
+      {
+        "q": "How does Medicare reimbursement affect dialysis financing?",
+        "a": "Medicare is a primary payor for dialysis services (covers 80 percent of dialysis patients). Medicare reimbursement changes affect tenant operating economics and lender appetite."
+      },
+      {
+        "q": "Can dialysis centers be financed at high leverage?",
+        "a": "Yes. Strong tenant credit and long initial lease terms support 65 to 75 percent LTV through specialty STNL lenders, with conservative 55 to 65 percent through life co."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/medical-office.html",
+        "title": "Medical Office",
+        "sub": "Healthcare CRE"
+      },
+      {
+        "href": "comparisons/stnl-vs-multi-tenant-retail.html",
+        "title": "STNL vs Multi-Tenant",
+        "sub": "Net lease comparison"
+      },
+      {
+        "href": "property/ambulatory-surgery-center-financing.html",
+        "title": "ASC",
+        "sub": "Sister specialty"
+      }
+    ]
   }
 ]

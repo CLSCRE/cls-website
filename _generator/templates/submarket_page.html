@@ -1,8 +1,8 @@
-{% extends '_base.html' %}
+﻿{% extends '_base.html' %}
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Real Estate Financing in {{ neighborhood }}, {{ city.city }} | CLS CRE","url":"https://clscre.com/markets/{{ city.slug }}/{{ neighborhood_slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107584042","email":"inquiries@clscre.com","areaServed":{"@type":"Place","name":"{{ neighborhood }}","containedInPlace":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Real Estate Financing in {{ neighborhood }}, {{ city.city }} | CLS CRE","url":"https://clscre.com/markets/{{ city.slug }}/{{ neighborhood_slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107583576","email":"loans@clscre.com","areaServed":{"@type":"Place","name":"{{ neighborhood }}","containedInPlace":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}

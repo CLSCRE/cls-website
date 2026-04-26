@@ -1994,5 +1994,362 @@
         "sub": "Sister deal example"
       }
     ]
+  },
+  {
+    "slug": "15-million-industrial-class-a-acquisition",
+    "short_title": "$15M Industrial Class A Acquisition",
+    "h1": "$15 Million Class A Industrial Acquisition",
+    "amount_label": "$15M",
+    "amount_dollars": "15000000",
+    "product_label": "Class A Industrial Acquisition",
+    "loan_type_label": "Industrial Acquisition Permanent",
+    "indicative_rate": "5.95%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$15M Class A Industrial Acquisition | CLS CRE",
+      "meta_description": "What a $15 million Class A industrial acquisition looks like in 2026. Capital stack, sponsor profile, and execution from CLS CRE."
+    },
+    "lead": "A $15 million Class A industrial acquisition is in the institutional sweet spot of life co, CMBS, and bank balance sheet competition. Class A industrial benefits from continued e-commerce and supply chain demand drivers and competitive lender appetite across all major capital sources.",
+    "stack_intro": "$15M Class A industrial acquisitions fund as a single senior loan. Life co, CMBS, and bank all compete actively.",
+    "stack_table": [
+      {
+        "source": "Life insurance company",
+        "cost": "5.85 to 6.45% (10 to 15 yr fixed)",
+        "size": "$15M / 55 to 65% LTV",
+        "notes": "Tightest pricing for trophy industrial"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.45 to 7.05% (10-year fixed)",
+        "size": "$15M / 65 to 70% LTV",
+        "notes": "Higher leverage, defeasance prepay"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.05 to 8.05% (5 to 7 yr fixed)",
+        "size": "$15M / 65 to 70% LTV",
+        "notes": "Recourse typical"
+      },
+      {
+        "source": "Private credit",
+        "cost": "8.50 to 11.00%",
+        "size": "$15M / 70 to 75% LTC",
+        "notes": "Value-add or transitional"
+      }
+    ],
+    "sponsor_profile": "Typical $15M industrial acquisition sponsors are institutional industrial operators with multi-property portfolios, family offices, and 1031 exchange buyers. Sponsor net worth typically $15M to $100M+.",
+    "real_deal_example": "On a $15.6M acquisition of a 110,000 square foot Class A distribution facility in a Sun Belt logistics market, leased to a credit-tenant 3PL operator on a 12-year triple-net lease, the sponsor was an institutional industrial operator. Life co at 6.05 percent fixed 10-year, 60 percent LTV ($9.4M), with full yield maintenance. Year-one cash-on-cash return tracked underwritten 6.5 percent.",
+    "faqs": [
+      {
+        "q": "Why is industrial cap rate compressed?",
+        "a": "E-commerce, supply chain expansion, and last-mile distribution demand have driven institutional capital concentration in industrial, compressing cap rates."
+      },
+      {
+        "q": "Will life cos lever to 70 percent on industrial?",
+        "a": "Rarely. Life co allocator discipline caps stabilized industrial at 60 to 65 percent LTV typically."
+      },
+      {
+        "q": "Are tenant credit and WALT important?",
+        "a": "Yes. Lender appetite scales with tenant credit and weighted average lease term. Investment-grade tenants with 10+ year WALT command tightest pricing."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/industrial.html",
+        "title": "Industrial Hub",
+        "sub": "All capital sources"
+      },
+      {
+        "href": "comparisons/office-vs-industrial-cap-rate.html",
+        "title": "Office vs Industrial",
+        "sub": "Asset class comparison"
+      }
+    ]
+  },
+  {
+    "slug": "30-million-middle-market-industrial-portfolio",
+    "short_title": "$30M Middle-Market Industrial Portfolio",
+    "h1": "$30 Million Middle-Market Industrial Portfolio Acquisition",
+    "amount_label": "$30M",
+    "amount_dollars": "30000000",
+    "product_label": "Industrial Portfolio Acquisition",
+    "loan_type_label": "Industrial Portfolio Acquisition",
+    "indicative_rate": "6.05%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$30M Industrial Portfolio Acquisition | CLS CRE",
+      "meta_description": "What a $30 million middle-market industrial portfolio acquisition looks like in 2026. Cross-collateralized capital stack from CLS CRE."
+    },
+    "lead": "A $30 million middle-market industrial portfolio acquisition typically combines 4 to 12 properties under cross-collateralized financing. Most $30M industrial portfolios fund through life co or CMBS portfolio structures.",
+    "stack_intro": "$30M industrial portfolios fund as cross-collateralized senior loans. Life co and CMBS portfolio compete actively.",
+    "stack_table": [
+      {
+        "source": "Life company portfolio",
+        "cost": "5.85 to 6.55%",
+        "size": "$30M / 55 to 65% LTV",
+        "notes": "Cross-collateral; release provisions"
+      },
+      {
+        "source": "CMBS single-borrower",
+        "cost": "6.45 to 7.25%",
+        "size": "$30M / 65 to 70% LTV",
+        "notes": "Single-borrower CMBS pool"
+      },
+      {
+        "source": "Specialty industrial bank",
+        "cost": "7.25 to 8.45%",
+        "size": "$30M / 65 to 70% LTV",
+        "notes": "5 to 7 year term"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "SOFR + 425 to 600",
+        "size": "$30M / 70 to 75% LTC",
+        "notes": "Value-add portfolio"
+      }
+    ],
+    "sponsor_profile": "Typical $30M industrial portfolio sponsors are institutional industrial operators with multi-property portfolios. Cross-collateralization captures pricing efficiency.",
+    "real_deal_example": "On a $32M acquisition of an 8-property industrial portfolio (450,000 square feet aggregate) in Sun Belt logistics markets, the sponsor financed through CMBS single-borrower at 6.65 percent fixed 10-year, 67 percent LTV ($21M), with cross-collateral release provisions at 110 percent of allocated loan amount.",
+    "faqs": [
+      {
+        "q": "What is single-borrower CMBS?",
+        "a": "Single-borrower CMBS pools the entire loan from one sponsor's portfolio into a dedicated CMBS pool, providing competitive pricing and CMBS structural benefits."
+      },
+      {
+        "q": "Can industrial portfolios cross-collateralize?",
+        "a": "Yes. Cross-collateralization typically delivers 10 to 25 basis points pricing efficiency versus individual property loans."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/cross-collateralization-vs-individual-loans.html",
+        "title": "Cross-Collat vs Individual",
+        "sub": "Portfolio strategy"
+      },
+      {
+        "href": "loan-size/15-million-industrial-class-a-acquisition.html",
+        "title": "$15M Industrial",
+        "sub": "Sister deal example"
+      }
+    ]
+  },
+  {
+    "slug": "40-million-ground-up-multifamily-construction-los-angeles",
+    "short_title": "$40M Ground-Up Multifamily LA",
+    "h1": "$40 Million Ground-Up Multifamily Construction in Los Angeles",
+    "amount_label": "$40M",
+    "amount_dollars": "40000000",
+    "product_label": "Ground-Up Multifamily Construction",
+    "loan_type_label": "Multifamily Construction",
+    "indicative_rate": "8.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$40M Ground-Up Multifamily Construction LA | CLS CRE",
+      "meta_description": "What a $40 million ground-up multifamily construction loan in Los Angeles looks like in 2026. Capital stack from CLS CRE."
+    },
+    "lead": "A $40 million ground-up multifamily construction loan in Los Angeles typically finances a 100 to 180 unit market-rate multifamily project at total project cost of $60M to $80M+. LA ground-up faces specific regulatory and structural challenges including Measure ULA exposure, Local Law equivalents, and entitlement timelines. Most $40M LA ground-up loans fund through specialty bridge debt funds at 65 to 75 percent LTC with agency forward commitment.",
+    "stack_intro": "$40M LA ground-up multifamily construction stacks combine senior construction debt with institutional equity and agency forward commitment.",
+    "stack_table": [
+      {
+        "source": "Specialty bridge debt fund",
+        "cost": "SOFR + 450 to 650 (9.10 to 11.10%)",
+        "size": "$40M / 65 to 75% LTC",
+        "notes": "Construction + lease-up; non-recourse"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "SOFR + 300 to 425 (7.60 to 8.85%)",
+        "size": "$40M / 60 to 65% LTC",
+        "notes": "Sponsor recourse"
+      },
+      {
+        "source": "Agency forward commitment",
+        "cost": "5.85 to 6.30% fixed (locked)",
+        "size": "$40M / 70 to 75% LTV stabilized",
+        "notes": "Take-out locked at construction"
+      },
+      {
+        "source": "Institutional equity",
+        "cost": "Equity (target IRR 18 to 25%)",
+        "size": "$15M to $20M",
+        "notes": "LA-focused multifamily equity"
+      }
+    ],
+    "sponsor_profile": "Typical $40M LA ground-up sponsors are LA-focused multifamily developer-operators with completed LA projects. Sponsor net worth $25M to $150M+. LA-specific underwriting items include AB 2011 streamlining, soft story retrofit, AB 1482 rent caps, and Measure ULA on planned exit.",
+    "real_deal_example": "On a $42M ground-up 142-unit market-rate multifamily construction in West LA, the sponsor was an LA-focused developer with 6 completed multifamily projects. Capital stack: $32M of construction debt at SOFR + 525 (9.85 percent all-in), $14M of common equity from LA family office, $2M sponsor co-invest. Fannie Mae forward commitment at 5.95 percent fixed 10-year for delivery at month 26. Construction took 24 months.",
+    "faqs": [
+      {
+        "q": "What is Measure ULA?",
+        "a": "Measure ULA is a 4 to 5.5 percent transfer tax on LA city sales above $5M, paid by seller at exit. ULA does not apply to refinance."
+      },
+      {
+        "q": "What is AB 2011?",
+        "a": "AB 2011 is a California state law providing streamlined ministerial approval for housing development on commercially-zoned parcels statewide."
+      },
+      {
+        "q": "How does soft story retrofit affect LA construction?",
+        "a": "Soft story retrofit applies to existing pre-1978 buildings, not new construction. New ground-up multifamily complies with current LA building code."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/12-million-ground-up-multifamily-construction-brooklyn.html",
+        "title": "$12M Brooklyn Ground-Up",
+        "sub": "NYC counterpart"
+      },
+      {
+        "href": "loan-size/25-million-ground-up-affordable-housing-los-angeles.html",
+        "title": "$25M Affordable LA",
+        "sub": "Affordable housing"
+      }
+    ]
+  },
+  {
+    "slug": "75-million-life-company-multifamily-permanent",
+    "short_title": "$75M Life Company Multifamily Permanent",
+    "h1": "$75 Million Life Company Multifamily Permanent Loan",
+    "amount_label": "$75M",
+    "amount_dollars": "75000000",
+    "product_label": "Life Co Multifamily Permanent",
+    "loan_type_label": "Life Company Multifamily Permanent",
+    "indicative_rate": "5.55%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$75M Life Company Multifamily Permanent | CLS CRE",
+      "meta_description": "What a $75 million life insurance company multifamily permanent loan looks like in 2026. Capital stack and execution from CLS CRE."
+    },
+    "lead": "A $75 million life insurance company multifamily permanent loan represents trophy institutional multifamily financing. Life co allocators concentrate at this scale on Class A and trophy multifamily at 55 to 65 percent LTV with 15 to 25 year fixed-rate term certainty unmatched by other capital sources.",
+    "stack_intro": "$75M life co multifamily perm loans fund as a single senior loan from a top-tier life co. Pricing reflects relationship tier and portfolio quality.",
+    "stack_table": [
+      {
+        "source": "Life company (relationship tier)",
+        "cost": "5.40 to 5.85% (10-year fixed)",
+        "size": "$75M / 55 to 60% LTV",
+        "notes": "Tightest pricing for established sponsors"
+      },
+      {
+        "source": "Life company (15-year)",
+        "cost": "5.55 to 6.00%",
+        "size": "$75M / 55 to 60% LTV",
+        "notes": "Long-term term lock"
+      },
+      {
+        "source": "Life company (20-year)",
+        "cost": "5.75 to 6.20%",
+        "size": "$75M / 55 to 60% LTV",
+        "notes": "Multi-decade lock"
+      },
+      {
+        "source": "Fannie / Freddie",
+        "cost": "5.55 to 6.05%",
+        "size": "$75M / 70 to 75% LTV",
+        "notes": "Higher leverage trade-off"
+      }
+    ],
+    "sponsor_profile": "Typical $75M life co multifamily perm sponsors are institutional and large family office multifamily owners with $250M to $5B+ of net worth. The deal is typically a refinance, acquisition, or recapitalization with multi-decade ownership horizon.",
+    "real_deal_example": "On a 285-unit Class A trophy multifamily refinance in West LA, the sponsor refinanced a maturing life co loan into a new 20-year fixed life co perm at 5.85 percent, 60 percent LTV, $73M loan amount, with 5 years of interest-only and yield maintenance. Pricing reflected relationship tier (15 basis points inside lender's standard quote) given multi-decade lender relationship.",
+    "faqs": [
+      {
+        "q": "Why are life co loans cheaper than agency on trophy multifamily?",
+        "a": "Life co cost of capital on 50 to 65 percent LTV trophy multifamily is below agency, and they pass that pricing through to relationship borrowers."
+      },
+      {
+        "q": "Are 20+ year fixed terms standard for life co multifamily?",
+        "a": "15 and 20 year fixed are common. Some life cos quote 25 year fixed. Agency caps at 10 to 18 year fixed for most lenders."
+      },
+      {
+        "q": "Will life cos lever to 70 percent?",
+        "a": "Almost never. Life co allocator discipline caps multifamily at 55 to 65 percent LTV."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/15-million-life-company-multifamily-permanent.html",
+        "title": "$15M Life Co MF",
+        "sub": "Smaller deal example"
+      },
+      {
+        "href": "financing/life-company-loans.html",
+        "title": "Life Company Loans",
+        "sub": "Hub"
+      }
+    ]
+  },
+  {
+    "slug": "100-million-institutional-multifamily-portfolio",
+    "short_title": "$100M Institutional Multifamily Portfolio",
+    "h1": "$100 Million Institutional Multifamily Portfolio Financing",
+    "amount_label": "$100M",
+    "amount_dollars": "100000000",
+    "product_label": "Institutional Multifamily Portfolio",
+    "loan_type_label": "Institutional Multifamily Portfolio",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-25",
+    "seo": {
+      "title": "$100M Institutional Multifamily Portfolio | CLS CRE",
+      "meta_description": "What a $100 million institutional multifamily portfolio acquisition or refinance looks like in 2026. Capital stack from CLS CRE."
+    },
+    "lead": "A $100 million institutional multifamily portfolio acquisition or refinance is at the institutional CRE financing scale where agency, CMBS single-borrower, life co portfolio, and private credit all compete actively.",
+    "stack_intro": "$100M institutional multifamily portfolios fund as cross-collateralized senior loans, sometimes with mezz or pref equity layered above.",
+    "stack_table": [
+      {
+        "source": "Freddie Mac Optigo Portfolio",
+        "cost": "5.65 to 6.10%",
+        "size": "$100M / 70 to 75% LTV",
+        "notes": "Highest leverage; release provisions"
+      },
+      {
+        "source": "Fannie Mae DUS Portfolio",
+        "cost": "5.75 to 6.20%",
+        "size": "$100M / 70 to 75% LTV",
+        "notes": "Same as Optigo; pricing variation"
+      },
+      {
+        "source": "CMBS single-borrower",
+        "cost": "5.95 to 6.85%",
+        "size": "$100M / 65 to 70% LTV",
+        "notes": "Single-borrower pool"
+      },
+      {
+        "source": "Life company portfolio",
+        "cost": "5.40 to 5.95%",
+        "size": "$100M / 55 to 65% LTV",
+        "notes": "Tightest pricing; lower leverage"
+      },
+      {
+        "source": "Mezzanine",
+        "cost": "10 to 14%",
+        "size": "$10M to $20M",
+        "notes": "Junior to senior"
+      }
+    ],
+    "sponsor_profile": "Typical $100M institutional multifamily portfolio sponsors are institutional buyers and large family offices with $500M to $5B+ of net worth. Cross-collateralization captures meaningful pricing efficiency.",
+    "real_deal_example": "On a $105M Sun Belt multifamily portfolio acquisition (28 properties, 875 units), the institutional sponsor financed through Freddie Mac Optigo Conventional Portfolio at 5.78 percent fixed 10-year, 73 percent LTV ($76.6M), with 5 years interest-only. The sponsor's $28M of common equity included $8M co-invest and $20M from institutional capital partner. Closed in 110 days.",
+    "faqs": [
+      {
+        "q": "What capital stack supports $100M institutional multifamily?",
+        "a": "Senior debt at 70 to 75 percent LTV (agency or CMBS) plus optional mezz or preferred equity at 10 to 20 percent of LTC, with sponsor common equity at 10 to 20 percent."
+      },
+      {
+        "q": "Are agency portfolios available at $100M?",
+        "a": "Yes. Both Fannie Mae and Freddie Mac actively finance $100M+ multifamily portfolios with cross-collateralized structures and release provisions."
+      },
+      {
+        "q": "How long does $100M institutional close take?",
+        "a": "75 to 120 days from term sheet. Multi-property closings require coordinated environmental, appraisals, and title work."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/50-million-multifamily-portfolio-acquisition.html",
+        "title": "$50M Portfolio",
+        "sub": "Smaller portfolio example"
+      },
+      {
+        "href": "loan-size/35-million-trophy-multifamily-new-york.html",
+        "title": "$35M Trophy NYC",
+        "sub": "Single-property institutional"
+      }
+    ]
   }
 ]
