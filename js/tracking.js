@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Commercial Lending Solutions - clscre.com tracking
  *
  * Fires events on:
@@ -30,7 +30,7 @@
   // Website-only channel identifiers. Any contact click matching these
   // values is provably web-sourced and triggers the web_sourced_lead
   // conversion event in addition to the generic contact_click.
-  var WEBSITE_ONLY_PHONES = ['3107583576', '+13107583576', '310-758-3576', '310.758.3576'];
+  var WEBSITE_ONLY_PHONES = ['3107583576', '+13107583576', '310-758-3576', '310.708.0690'];
   var WEBSITE_ONLY_EMAILS = ['loans@clscre.com'];
 
   function normalizePhone(value) {

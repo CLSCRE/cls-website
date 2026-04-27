@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CLS CRE Anti-Spam Protection v3
  * Multi-layered bot defense for static site forms.
  * - Cloudflare Turnstile (visible challenge, replaces reCAPTCHA v3)
@@ -543,7 +543,7 @@
       'turnstile': 'Please complete the "I am human" challenge above and try again.',
       'phone': 'Please enter a valid phone number (10 digits).',
       'name': 'Please enter your real name.',
-      'default': 'We could not submit your form. Please review your information and try again, or call Trevor directly at 310.758.3576 or email loans@clscre.com.'
+      'default': 'We could not submit your form. Please review your information and try again, or call Trevor directly at 310.708.0690 or email loans@clscre.com.'
     };
     var msg = messages[reason] || messages['default'];
     _showInlineError(form, msg);
@@ -571,7 +571,7 @@
       banner.style.cssText = 'background:#fff6f6;border:1px solid #e8b4b4;color:#932a2a;padding:14px 16px;border-radius:8px;margin:0 0 16px;font-size:14px;line-height:1.55';
       form.insertBefore(banner, form.firstChild);
     }
-    banner.innerHTML = message + ' <br><br><strong>Urgent? Call Trevor at <a href="tel:+13107583576" style="color:#932a2a;text-decoration:underline">310.758.3576</a> or email <a href="mailto:loans@clscre.com" style="color:#932a2a;text-decoration:underline">loans@clscre.com</a> directly.</strong>';
+    banner.innerHTML = message + ' <br><br><strong>Urgent? Call Trevor at <a href="tel:+13107080690" style="color:#932a2a;text-decoration:underline">310.708.0690</a> or email <a href="mailto:loans@clscre.com" style="color:#932a2a;text-decoration:underline">loans@clscre.com</a> directly.</strong>';
     // Scroll into view
     try { banner.scrollIntoView({behavior: 'smooth', block: 'center'}); } catch (e) {}
   }
