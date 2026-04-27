@@ -2351,5 +2351,1399 @@
         "sub": "Single-property institutional"
       }
     ]
+  },
+  {
+    "slug": "3-million-small-bay-industrial-riverside",
+    "short_title": "$3M Small Bay Industrial Riverside",
+    "h1": "$3 Million Small Bay Industrial Acquisition in Riverside",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "Small Bay Industrial",
+    "loan_type_label": "Industrial Acquisition",
+    "indicative_rate": "7.45%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$3M Small Bay Industrial Riverside | CLS CRE",
+      "meta_description": "What a $3 million small bay industrial acquisition in Riverside-San Bernardino looks like in 2026."
+    },
+    "lead": "A $3 million small bay industrial acquisition in the Inland Empire (Riverside-San Bernardino) typically finances a 15,000 to 30,000 square foot multi-tenant industrial flex building with 4 to 8 small-bay tenants. Most $3M IE small bay industrial acquisitions fund through bank balance sheet, SBA 504 for owner-users, or specialty industrial banks.",
+    "stack_intro": "$3M IE small bay industrial acquisitions typically fund as a single senior loan. Owner-user SBA 504 versus investor bank balance sheet are the primary alternatives.",
+    "stack_table": [
+      {
+        "source": "SBA 504 (owner-user)",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "size": "$3M / 90% LTC",
+        "notes": "Owner-occupant minimum 51% occupancy"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.25 to 8.50%",
+        "size": "$3M / 65 to 70% LTV",
+        "notes": "Recourse typical; depository relationship"
+      },
+      {
+        "source": "Specialty industrial bank",
+        "cost": "7.45 to 8.85%",
+        "size": "$3M / 65 to 70% LTV",
+        "notes": "Stabilized small bay"
+      },
+      {
+        "source": "DSCR loan",
+        "cost": "7.85 to 9.50%",
+        "size": "$3M / 70 to 80% LTV",
+        "notes": "Single-asset DSCR program"
+      }
+    ],
+    "sponsor_profile": "Typical $3M IE small bay industrial sponsors are private capital industrial investors with 5 to 30 properties or owner-operator small businesses expanding to ownership. Inland Empire is one of the most active small bay industrial markets in the country.",
+    "real_deal_example": "On a $3.2M acquisition of a 22,000 sq ft small bay industrial flex building in Ontario, CA, leased to 6 small-bay tenants on staggered 3 to 5 year leases, the investor sponsor financed through bank balance sheet at 7.65 percent fixed 5-year, 67 percent LTV ($2.1M), with full recourse.",
+    "faqs": [
+      {
+        "q": "What is small bay industrial?",
+        "a": "Small bay industrial refers to multi-tenant industrial flex buildings with smaller tenant suites (typically 1,000 to 5,000 sq ft per tenant) serving local contractors, light manufacturing, distribution, and service businesses."
+      },
+      {
+        "q": "Why is the Inland Empire a strong industrial market?",
+        "a": "The Inland Empire is one of the largest logistics markets in the country with sub-3 percent vacancy on stabilized industrial. Demand drivers include LA port logistics, e-commerce distribution, and Southern California population growth."
+      },
+      {
+        "q": "Can SBA finance small bay industrial?",
+        "a": "Yes for owner-occupants. SBA 504 finances owner-user small bay at 90 percent LTC where the borrower's business occupies at least 51 percent of the building."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/5-million-industrial-acquisition-inland-empire.html",
+        "title": "$5M IE Industrial",
+        "sub": "Larger deal example"
+      },
+      {
+        "href": "property/industrial-outdoor-storage-financing.html",
+        "title": "IOS",
+        "sub": "Sister industrial"
+      }
+    ]
+  },
+  {
+    "slug": "3-million-strip-center-refinance-phoenix",
+    "short_title": "$3M Strip Center Refinance Phoenix",
+    "h1": "$3 Million Strip Center Refinance in Phoenix",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "Strip Center Refinance",
+    "loan_type_label": "Retail Refinance",
+    "indicative_rate": "7.95%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$3M Strip Center Refinance Phoenix | CLS CRE",
+      "meta_description": "What a $3 million strip center refinance in Phoenix looks like in 2026."
+    },
+    "lead": "A $3 million strip center refinance in Phoenix typically fits a small unanchored or weakly-anchored multi-tenant retail property of 10,000 to 25,000 square feet. Most $3M Phoenix strip center refis fund through bank balance sheet or specialty retail lenders given the unanchored retail lender contraction since 2020.",
+    "stack_intro": "$3M Phoenix strip center refinances typically fund as bank balance sheet or specialty retail debt at 60 to 70 percent LTV.",
+    "stack_table": [
+      {
+        "source": "Specialty retail bank",
+        "cost": "7.95 to 9.25%",
+        "size": "$3M / 60 to 70% LTV",
+        "notes": "Stabilized strip center"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.85 to 9.45%",
+        "size": "$3M / 60 to 70% LTV",
+        "notes": "Recourse typical"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "7.85 to 8.85%",
+        "size": "$3M / 60 to 70% LTV",
+        "notes": "Some conduits at $3M minimum"
+      },
+      {
+        "source": "DSCR / private",
+        "cost": "8.50 to 10.50%",
+        "size": "$3M / 65 to 75% LTV",
+        "notes": "Smaller deals"
+      }
+    ],
+    "sponsor_profile": "Typical $3M Phoenix strip center refinance sponsors are private capital retail investors with 2 to 8 properties. Sponsor active leasing capability matters substantially given small tenant turnover.",
+    "real_deal_example": "On a $3.4M strip center refinance in suburban Phoenix (16,000 sq ft, 12 tenants), the sponsor refinanced an expiring bank loan into a specialty retail bank at 8.45 percent fixed 5-year, 65 percent LTV ($2.2M), with active lease-up plan for two vacant suites.",
+    "faqs": [
+      {
+        "q": "Why are strip center cap rates expanding?",
+        "a": "Unanchored retail cap rates expanded post-2020 reflecting life co retreat, e-commerce pressure, and lender selectivity. Strip centers in growing Sun Belt markets remain financeable but with tighter underwriting."
+      },
+      {
+        "q": "Why is Phoenix a strong retail market?",
+        "a": "Phoenix has one of the strongest population growth profiles in the country, supporting retail demand. Market demographics and traffic count support stabilized retail."
+      },
+      {
+        "q": "Can SBA finance strip centers?",
+        "a": "For owner-occupied retail (where the borrower's business is one of the tenants), SBA 504 finances at 90 percent LTC. Pure investor strip centers are not SBA-eligible."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/strip-center-unanchored-retail-financing.html",
+        "title": "Strip Center Hub",
+        "sub": "Specialty retail"
+      },
+      {
+        "href": "property/retail.html",
+        "title": "Retail",
+        "sub": "All retail"
+      }
+    ]
+  },
+  {
+    "slug": "3-million-self-storage-acquisition-florida",
+    "short_title": "$3M Self-Storage Acquisition Florida",
+    "h1": "$3 Million Self-Storage Acquisition in Florida",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "Self-Storage Acquisition",
+    "loan_type_label": "Self-Storage Acquisition",
+    "indicative_rate": "7.45%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$3M Self-Storage Acquisition Florida | CLS CRE",
+      "meta_description": "What a $3 million self-storage acquisition in Florida looks like in 2026."
+    },
+    "lead": "A $3 million self-storage acquisition in Florida typically fits a smaller stabilized self-storage facility of 30,000 to 60,000 net rentable square feet. Most $3M Florida self-storage acquisitions fund through specialty self-storage banks, SBA 504 for owner-users, or DSCR loan programs.",
+    "stack_intro": "$3M Florida self-storage acquisitions fund as bank balance sheet, SBA 504, or specialty self-storage lender financing.",
+    "stack_table": [
+      {
+        "source": "Specialty self-storage bank",
+        "cost": "7.45 to 8.65%",
+        "size": "$3M / 65 to 75% LTV",
+        "notes": "Stabilized self-storage"
+      },
+      {
+        "source": "SBA 504 (owner-user)",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "size": "$3M / 90% LTC",
+        "notes": "Owner-operator only"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.25 to 8.50%",
+        "size": "$3M / 65 to 70% LTV",
+        "notes": "Depository relationship"
+      },
+      {
+        "source": "DSCR loan",
+        "cost": "7.85 to 9.50%",
+        "size": "$3M / 70 to 80% LTV",
+        "notes": "Single-asset DSCR"
+      }
+    ],
+    "sponsor_profile": "Typical $3M Florida self-storage sponsors are first-time storage operators or expanding operators. Florida self-storage benefits from strong demographic in-migration and Sun Belt demand drivers.",
+    "real_deal_example": "On a $3.2M acquisition of a 42,000 sq ft self-storage facility in suburban Tampa, the sponsor was a second-time storage operator with one stabilized facility. Specialty self-storage bank at 7.85 percent fixed 5-year, 70 percent LTV ($2.2M), with partial recourse.",
+    "faqs": [
+      {
+        "q": "Why is Florida a strong self-storage market?",
+        "a": "Florida demographics including population in-migration, retiree demand, and limited household storage capacity support strong self-storage demand. Florida is one of the most active self-storage markets in the country."
+      },
+      {
+        "q": "Can SBA finance self-storage acquisitions?",
+        "a": "Yes for owner-operators. SBA 504 finances owner-operator self-storage at 90 percent LTC subject to standard SBA size and use eligibility."
+      },
+      {
+        "q": "What is the typical Florida self-storage cap rate?",
+        "a": "Stabilized Florida self-storage typically trades at 5.75 to 7.00 percent cap rates depending on market, climate-control mix, and operator."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/self-storage.html",
+        "title": "Self-Storage",
+        "sub": "All self-storage"
+      },
+      {
+        "href": "property/boat-and-rv-storage.html",
+        "title": "Boat and RV Storage",
+        "sub": "Sister storage"
+      }
+    ]
+  },
+  {
+    "slug": "3-million-boat-rv-storage-florida",
+    "short_title": "$3M Boat and RV Storage Florida",
+    "h1": "$3 Million Boat and RV Storage Acquisition in Florida",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "Boat and RV Storage",
+    "loan_type_label": "Specialty Storage",
+    "indicative_rate": "7.65%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$3M Boat and RV Storage Florida | CLS CRE",
+      "meta_description": "What a $3 million boat and RV storage acquisition in Florida looks like in 2026."
+    },
+    "lead": "A $3 million boat and RV storage acquisition in Florida typically fits a smaller mixed outdoor and covered storage facility on 3 to 8 acres serving Gulf Coast and recreational markets. Most $3M Florida boat and RV storage acquisitions fund through SBA 504, specialty self-storage banks, or DSCR programs.",
+    "stack_intro": "$3M Florida boat and RV storage acquisitions fund as SBA 504 for owner-operators or specialty self-storage debt.",
+    "stack_table": [
+      {
+        "source": "SBA 504 (owner-user)",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "size": "$3M / 90% LTC",
+        "notes": "Owner-operator only"
+      },
+      {
+        "source": "Specialty self-storage bank",
+        "cost": "7.65 to 8.85%",
+        "size": "$3M / 65 to 75% LTV",
+        "notes": "Stabilized boat/RV storage"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.45 to 8.65%",
+        "size": "$3M / 65 to 70% LTV",
+        "notes": "Depository relationship"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "9.00 to 11.50%",
+        "size": "$3M / 70 to 80% LTC",
+        "notes": "Lease-up or value-add"
+      }
+    ],
+    "sponsor_profile": "Typical $3M Florida boat and RV storage sponsors are first-time owner-operators or established storage operators expanding into specialty storage. Gulf Coast and Florida lake markets benefit from RV ownership growth and boat storage demand.",
+    "real_deal_example": "On a $3.4M acquisition of a 220-unit boat and RV storage facility on 5.5 acres in a Gulf Coast Florida market, the sponsor was a first-time storage operator with prior small business operating experience. SBA 504 at 90 percent LTC financed real estate plus modest equipment additions.",
+    "faqs": [
+      {
+        "q": "Why is Florida boat and RV storage growing?",
+        "a": "Florida benefits from coastal recreation demand, RV ownership growth post-2020, retiree demographic concentration, and limited household storage capacity for boats and RVs."
+      },
+      {
+        "q": "Can SBA finance boat and RV storage?",
+        "a": "Yes for owner-operators at 90 percent LTC. SBA 504 is widely used for boat and RV storage acquisitions and ground-up construction."
+      },
+      {
+        "q": "How does Florida insurance affect boat and RV storage?",
+        "a": "Coastal Florida insurance pricing has risen materially post-2022. Sponsors model elevated insurance costs into operating economics."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/boat-and-rv-storage.html",
+        "title": "Boat and RV Storage Hub",
+        "sub": "Specialty storage"
+      },
+      {
+        "href": "property/self-storage.html",
+        "title": "Self-Storage",
+        "sub": "All self-storage"
+      }
+    ]
+  },
+  {
+    "slug": "3-million-restaurant-sba-owner-user",
+    "short_title": "$3M Restaurant SBA Owner-User",
+    "h1": "$3 Million Restaurant SBA Owner-User Acquisition",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "Restaurant Owner-User",
+    "loan_type_label": "SBA Restaurant",
+    "indicative_rate": "6.95%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$3M Restaurant SBA Owner-User | CLS CRE",
+      "meta_description": "What a $3 million restaurant SBA owner-user acquisition looks like in 2026."
+    },
+    "lead": "A $3 million restaurant SBA owner-user acquisition typically combines real estate, FF&E, working capital, franchise fees, and goodwill for a single-unit franchise restaurant or independent concept. Most $3M restaurant SBA acquisitions allocate $1.5M to $2M to real estate (SBA 504) and $1M to $1.5M to operating business (SBA 7(a)).",
+    "stack_intro": "$3M restaurant SBA owner-user acquisitions typically combine SBA 504 for real estate and SBA 7(a) for operating business pieces.",
+    "stack_table": [
+      {
+        "source": "SBA 504 real estate",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "size": "$1.8M / 80 to 90% LTC",
+        "notes": "Special-purpose 20% down for drive-through QSR"
+      },
+      {
+        "source": "SBA 7(a) operating",
+        "cost": "Prime + 2.50%",
+        "size": "$1.2M / 90% LTC",
+        "notes": "FF&E + franchise fees + working capital + goodwill"
+      },
+      {
+        "source": "Total SBA",
+        "cost": "Blended ~7.05%",
+        "size": "$3M / 88% LTC",
+        "notes": "$360K borrower equity"
+      },
+      {
+        "source": "Specialty restaurant bank",
+        "cost": "Prime + 2.00 to 2.75% (SBA wrap)",
+        "size": "$3M / 85 to 90% LTC",
+        "notes": "Live Oak Bank dominant"
+      }
+    ],
+    "sponsor_profile": "Typical $3M restaurant SBA sponsors are first-time franchisee owner-operators or experienced multi-unit franchisees. Restaurant industry experience is heavily weighted in SBA underwriting.",
+    "real_deal_example": "On a $3.2M acquisition of a single-unit franchise restaurant in a Sun Belt suburban market, the buyer was an experienced restaurant manager transitioning to ownership. Combined SBA 504 + 7(a) financed at 88 percent LTC blended.",
+    "faqs": [
+      {
+        "q": "What restaurant brands are SBA-eligible?",
+        "a": "Most major QSR, fast-casual, and full-service restaurant brands are on the SBA Franchise Directory. Independent concepts also qualify subject to SBA underwriting standards."
+      },
+      {
+        "q": "Are restaurants special-purpose for SBA?",
+        "a": "Drive-through QSR is typically special-purpose (20 percent down). Full-service and fast-casual in adaptive reuse retail are sometimes standard 10 percent down."
+      },
+      {
+        "q": "Can SBA finance franchise fees?",
+        "a": "Yes. SBA 7(a) finances franchise fees for franchise concepts on the SBA Franchise Directory."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/restaurant-owner-user-financing.html",
+        "title": "Restaurant Hub",
+        "sub": "Specialty owner-user"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans",
+        "sub": "504 and 7(a)"
+      }
+    ]
+  },
+  {
+    "slug": "3-million-daycare-sba-7a",
+    "short_title": "$3M Daycare SBA 7(a)",
+    "h1": "$3 Million Daycare SBA 7(a) Acquisition",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "Daycare SBA",
+    "loan_type_label": "SBA Daycare",
+    "indicative_rate": "6.95%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$3M Daycare SBA 7(a) | CLS CRE",
+      "meta_description": "What a $3 million daycare SBA 7(a) acquisition looks like in 2026."
+    },
+    "lead": "A $3 million daycare SBA acquisition typically combines real estate, FF&E (classroom furniture, playground equipment, kitchen equipment), franchise fees, and goodwill for a single-location franchise (Primrose, Goddard, KinderCare, Children's Lighthouse) or independent daycare. Most $3M daycare SBA acquisitions allocate $1.5M to $2M to real estate and $1M to $1.5M to operating business.",
+    "stack_intro": "$3M daycare SBA acquisitions typically combine SBA 504 for real estate and SBA 7(a) for operating business including franchise fees and FF&E.",
+    "stack_table": [
+      {
+        "source": "SBA 504 real estate",
+        "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
+        "size": "$1.8M / 80 to 90% LTC",
+        "notes": "Special-purpose adjustment varies"
+      },
+      {
+        "source": "SBA 7(a) operating",
+        "cost": "Prime + 2.50%",
+        "size": "$1.2M / 90% LTC",
+        "notes": "FF&E + franchise fees + working capital + goodwill"
+      },
+      {
+        "source": "Specialty childcare bank (Live Oak)",
+        "cost": "Prime + 2.00 to 2.75% (SBA wrap)",
+        "size": "$3M / 85 to 90% LTC",
+        "notes": "Live Oak dominant in childcare"
+      },
+      {
+        "source": "Total SBA",
+        "cost": "Blended ~6.95%",
+        "size": "$3M / 88% LTC",
+        "notes": "$360K borrower equity"
+      }
+    ],
+    "sponsor_profile": "Typical $3M daycare SBA sponsors are first-time franchisee owner-operators (often with education, healthcare, or childcare industry experience) or experienced multi-location daycare operators. National franchise brands streamline SBA underwriting.",
+    "real_deal_example": "On a $3.0M acquisition of a Primrose Schools franchise in a Texas Sun Belt suburb, the buyer was a first-time childcare operator with prior elementary school administrative experience. Combined SBA 504 + 7(a) at 88 percent LTC.",
+    "faqs": [
+      {
+        "q": "What daycare franchise brands are SBA-eligible?",
+        "a": "Primrose Schools, The Goddard School, KinderCare, Children's Lighthouse, Kiddie Academy, Tutor Time, and most major childcare franchises are on the SBA Franchise Directory."
+      },
+      {
+        "q": "Are daycare facilities special-purpose for SBA?",
+        "a": "Sometimes. Purpose-built daycare facilities can be classified as special-purpose (20 percent down). Adaptive reuse retail or office space sometimes qualifies as standard 10 percent down."
+      },
+      {
+        "q": "What licensing is required?",
+        "a": "State Department of Family Services or Department of Early Childhood licensing for both the facility and the operator. Licensing transferability at sale is a closing item."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/daycare-center-financing.html",
+        "title": "Daycare Hub",
+        "sub": "Specialty owner-user"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans",
+        "sub": "504 and 7(a)"
+      }
+    ]
+  },
+  {
+    "slug": "3-million-sba-504-owner-user-california",
+    "short_title": "$3M SBA 504 Owner-User California",
+    "h1": "$3 Million SBA 504 Owner-User Real Estate Acquisition in California",
+    "amount_label": "$3M",
+    "amount_dollars": "3000000",
+    "product_label": "SBA 504 Owner-User",
+    "loan_type_label": "SBA 504 Real Estate",
+    "indicative_rate": "6.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$3M SBA 504 Owner-User California | CLS CRE",
+      "meta_description": "What a $3 million SBA 504 owner-user real estate acquisition in California looks like in 2026."
+    },
+    "lead": "A $3 million SBA 504 owner-user real estate acquisition in California is one of the most leveraged executions available to small business owners purchasing their own commercial real estate. The 504 structure layers a 50 percent bank first mortgage with a 40 percent CDC second lien at the SBA debenture rate plus 10 percent borrower down payment.",
+    "stack_intro": "$3M SBA 504 owner-user acquisitions consist of bank first mortgage, CDC second lien, and borrower equity.",
+    "stack_table": [
+      {
+        "source": "Bank first mortgage (SBA 504 1st)",
+        "cost": "6.85 to 7.85% (5-year fixed)",
+        "size": "$1.5M / 50% LTC",
+        "notes": "Bank balance sheet underwritten"
+      },
+      {
+        "source": "CDC second lien",
+        "cost": "5.85% fixed (25-year)",
+        "size": "$1.2M / 40% LTC",
+        "notes": "Long-term fixed; no balloon"
+      },
+      {
+        "source": "Borrower equity",
+        "cost": "Equity contribution",
+        "size": "$300K / 10% LTC",
+        "notes": "20% required if special-purpose"
+      },
+      {
+        "source": "Total SBA 504",
+        "cost": "Blended ~6.65%",
+        "size": "$3M / 90% LTC",
+        "notes": "Equipment can be bundled"
+      }
+    ],
+    "sponsor_profile": "Typical $3M California SBA 504 sponsors are mid-market California operators (manufacturing, distribution, professional services, healthcare) transitioning from leased to owned facilities. California SBA volume is among the highest in the country.",
+    "real_deal_example": "On a $3.2M owner-user industrial acquisition in a Los Angeles County market, the buyer was a 14-employee specialty manufacturer transitioning from a leased facility to ownership. SBA 504 at 90 percent LTC with $300K borrower equity from retained earnings.",
+    "faqs": [
+      {
+        "q": "What is the maximum SBA 504 loan size?",
+        "a": "The CDC second lien is capped at $5M ($5.5M for manufacturing or energy-efficient projects). With a 50 percent bank first mortgage, total project size can extend to $20M+ depending on bank lender appetite."
+      },
+      {
+        "q": "Is California a strong SBA 504 market?",
+        "a": "Yes. California is one of the most active SBA 504 markets in the country given the size of the small business economy and the value of owner-user real estate ownership."
+      },
+      {
+        "q": "Does CDC second lien require a personal guarantee?",
+        "a": "Yes. All owners of 20 percent or more of the operating company must personally guarantee both the bank first lien and the CDC second lien."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA Loans",
+        "sub": "504 and 7(a)"
+      },
+      {
+        "href": "comparisons/sba-504-vs-bank-conventional-owner-user.html",
+        "title": "SBA vs Bank",
+        "sub": "Owner-user comparison"
+      }
+    ]
+  },
+  {
+    "slug": "5-million-multifamily-acquisition-brooklyn",
+    "short_title": "$5M Multifamily Acquisition Brooklyn",
+    "h1": "$5 Million Multifamily Acquisition in Brooklyn",
+    "amount_label": "$5M",
+    "amount_dollars": "5000000",
+    "product_label": "Multifamily Acquisition",
+    "loan_type_label": "Multifamily Acquisition",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$5M Multifamily Acquisition Brooklyn | CLS CRE",
+      "meta_description": "What a $5 million multifamily acquisition in Brooklyn looks like in 2026."
+    },
+    "lead": "A $5 million multifamily acquisition in Brooklyn is in the Freddie Mac Optigo SBL and Fannie Mae DUS Small sweet spot. Most $5M Brooklyn acquisitions are 6 to 18 unit walk-ups or small elevator buildings, often with rent stabilization. Most fund through agency programs at 70 to 75 percent LTV.",
+    "stack_intro": "$5M Brooklyn multifamily acquisitions fund as a single agency loan. Freddie SBL versus Fannie Small are the primary alternatives.",
+    "stack_table": [
+      {
+        "source": "Freddie Mac Optigo SBL",
+        "cost": "5.65 to 6.05%",
+        "size": "$5M / 70 to 75% LTV",
+        "notes": "Streamlined SBL"
+      },
+      {
+        "source": "Fannie Mae DUS Small",
+        "cost": "5.75 to 6.10%",
+        "size": "$5M / 75 to 80% LTV",
+        "notes": "Slightly higher leverage"
+      },
+      {
+        "source": "NY-area specialty bank",
+        "cost": "6.85 to 7.85%",
+        "size": "$5M / 65 to 70% LTV",
+        "notes": "Some specialty NYC banks"
+      },
+      {
+        "source": "Local NY-area bank",
+        "cost": "6.95 to 8.00%",
+        "size": "$5M / 65 to 70% LTV",
+        "notes": "Recourse typical"
+      }
+    ],
+    "sponsor_profile": "Typical $5M Brooklyn multifamily acquisition sponsors are NYC-area private capital owners with 1 to 5 properties. Brooklyn-specific underwriting items include rent stabilization, Local Law 97, Local Law 11, and 421-a / 485-x.",
+    "real_deal_example": "On a 12-unit walk-up rent-stabilized multifamily in Bushwick, the buyer was a NYC sponsor with 3 prior Brooklyn properties. Freddie Mac Optigo SBL at 5.78 percent fixed 10-year, 72 percent LTV, $4.9M loan amount. Closed in 38 days.",
+    "faqs": [
+      {
+        "q": "Can $5M Brooklyn multifamily access SBL?",
+        "a": "Yes. Freddie Mac Optigo SBL targets $1M to $7.5M loan size; $5M Brooklyn multifamily is squarely in the sweet spot."
+      },
+      {
+        "q": "Is rent stabilization an issue?",
+        "a": "No. Both agencies actively finance rent-stabilized Brooklyn multifamily under SBL with standardized treatment."
+      },
+      {
+        "q": "What is 485-x?",
+        "a": "485-x is the NYC tax abatement program that replaced 421-a in 2024-2025 for new market-rate multifamily development with affordability commitments."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/3-million-multifamily-refinance-brooklyn.html",
+        "title": "$3M BK Refi",
+        "sub": "Smaller deal example"
+      },
+      {
+        "href": "loan-size/10-million-agency-multifamily-refinance-brooklyn.html",
+        "title": "$10M BK Refi",
+        "sub": "Larger deal example"
+      }
+    ]
+  },
+  {
+    "slug": "7-5-million-freddie-mac-sbl-multifamily",
+    "short_title": "$7.5M Freddie Mac SBL Multifamily",
+    "h1": "$7.5 Million Freddie Mac Optigo SBL Multifamily Loan",
+    "amount_label": "$7.5M",
+    "amount_dollars": "7500000",
+    "product_label": "Freddie SBL Multifamily",
+    "loan_type_label": "Freddie Mac SBL",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$7.5M Freddie Mac SBL Multifamily | CLS CRE",
+      "meta_description": "What a $7.5 million Freddie Mac Optigo SBL multifamily loan looks like in 2026."
+    },
+    "lead": "A $7.5 million Freddie Mac Optigo Small Balance Loan (SBL) multifamily transaction is at the upper end of the Freddie SBL program ($1M to $7.5M cap). The SBL program offers streamlined underwriting and faster close than Freddie Conventional. Most $7.5M Freddie SBL transactions are stabilized refinances or acquisitions of Class B garden multifamily.",
+    "stack_intro": "$7.5M Freddie SBL transactions fund as a single senior agency loan with streamlined underwriting.",
+    "stack_table": [
+      {
+        "source": "Freddie Mac Optigo SBL",
+        "cost": "5.65 to 6.05%",
+        "size": "$7.5M / 70 to 75% LTV",
+        "notes": "Cap of SBL program"
+      },
+      {
+        "source": "Fannie Mae DUS Small",
+        "cost": "5.75 to 6.10%",
+        "size": "$7.5M / 75 to 80% LTV",
+        "notes": "Higher leverage option"
+      },
+      {
+        "source": "Freddie Conventional",
+        "cost": "5.65 to 6.05%",
+        "size": "$7.5M / 70 to 80% LTV",
+        "notes": "Longer timeline; full UW"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "6.95 to 8.50%",
+        "size": "$7.5M / 65 to 70% LTV",
+        "notes": "Recourse typical"
+      }
+    ],
+    "sponsor_profile": "Typical $7.5M Freddie SBL sponsors are private capital multifamily owners with 3 to 15 properties. The SBL program suits sponsors who want streamlined execution at the upper boundary of the small balance program.",
+    "real_deal_example": "On a 38-unit Class B garden multifamily refinance in a Sun Belt market, the sponsor refinanced into Freddie Mac Optigo SBL at 5.78 percent fixed 10-year, 73 percent LTV ($7.3M).",
+    "faqs": [
+      {
+        "q": "What is the difference between Freddie SBL and Fannie Small?",
+        "a": "Freddie SBL caps at $7.5M; Fannie Small extends to $9M. Both offer streamlined underwriting versus Conventional execution."
+      },
+      {
+        "q": "How fast is Freddie SBL close?",
+        "a": "30 to 45 days from application to close on most transactions."
+      },
+      {
+        "q": "Can $7.5M go through Freddie Conventional?",
+        "a": "Yes, but with longer timeline (55 to 75 days) and full Conventional underwriting versus streamlined SBL."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/7-5-million-fannie-mae-sbl-multifamily.html",
+        "title": "$7.5M Fannie Small",
+        "sub": "Sister program"
+      },
+      {
+        "href": "comparisons/fannie-mae-dus-vs-freddie-mac-optigo.html",
+        "title": "Fannie vs Freddie",
+        "sub": "GSE comparison"
+      }
+    ]
+  },
+  {
+    "slug": "8-million-industrial-portfolio-refinance",
+    "short_title": "$8M Industrial Portfolio Refinance",
+    "h1": "$8 Million Industrial Portfolio Refinance",
+    "amount_label": "$8M",
+    "amount_dollars": "8000000",
+    "product_label": "Industrial Portfolio Refinance",
+    "loan_type_label": "Industrial Portfolio",
+    "indicative_rate": "6.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$8M Industrial Portfolio Refinance | CLS CRE",
+      "meta_description": "What an $8 million industrial portfolio refinance looks like in 2026."
+    },
+    "lead": "An $8 million industrial portfolio refinance typically combines 3 to 6 stabilized industrial properties under cross-collateralized financing. Most $8M industrial portfolios fund through life co, CMBS, or specialty industrial bank programs.",
+    "stack_intro": "$8M industrial portfolio refinances fund as cross-collateralized senior loans with release provisions.",
+    "stack_table": [
+      {
+        "source": "Life insurance company",
+        "cost": "6.45 to 7.05%",
+        "size": "$8M / 55 to 65% LTV",
+        "notes": "Trophy stabilized portfolio"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.85 to 7.65%",
+        "size": "$8M / 65 to 70% LTV",
+        "notes": "Stabilized credit-tenant"
+      },
+      {
+        "source": "Specialty industrial bank",
+        "cost": "7.25 to 8.45%",
+        "size": "$8M / 65 to 70% LTV",
+        "notes": "Mid-market portfolios"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.25 to 8.45%",
+        "size": "$8M / 60 to 70% LTV",
+        "notes": "Depository relationship"
+      }
+    ],
+    "sponsor_profile": "Typical $8M industrial portfolio sponsors are private capital industrial investors with 5 to 20 properties. Cross-collateralization captures pricing efficiency.",
+    "real_deal_example": "On an $8.4M refinance of a 4-property industrial portfolio (180,000 sq ft aggregate) in Sun Belt logistics markets, the sponsor financed through specialty industrial bank at 7.45 percent fixed 5-year, 65 percent LTV ($5.5M).",
+    "faqs": [
+      {
+        "q": "What is the typical industrial portfolio cap rate?",
+        "a": "Stabilized industrial portfolios trade at 5.50 to 6.75 percent cap rates depending on tenant credit, lease term, and market."
+      },
+      {
+        "q": "Can $8M industrial be financed at agency rates?",
+        "a": "Industrial is not agency-eligible. Industrial portfolios access bank, life co, CMBS, and specialty industrial lender programs."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/30-million-middle-market-industrial-portfolio.html",
+        "title": "$30M Industrial Portfolio",
+        "sub": "Larger deal example"
+      },
+      {
+        "href": "property/industrial.html",
+        "title": "Industrial",
+        "sub": "All industrial"
+      }
+    ]
+  },
+  {
+    "slug": "8-million-shopping-center-refinance",
+    "short_title": "$8M Shopping Center Refinance",
+    "h1": "$8 Million Shopping Center Refinance",
+    "amount_label": "$8M",
+    "amount_dollars": "8000000",
+    "product_label": "Shopping Center Refinance",
+    "loan_type_label": "Retail Shopping Center",
+    "indicative_rate": "7.45%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$8M Shopping Center Refinance | CLS CRE",
+      "meta_description": "What an $8 million shopping center refinance looks like in 2026."
+    },
+    "lead": "An $8 million shopping center refinance typically fits a mid-market grocery-anchored or credit-tenanted retail center of 40,000 to 80,000 square feet. Most $8M shopping center refis fund through CMBS, life co, or specialty retail lenders depending on anchor mix.",
+    "stack_intro": "$8M shopping center refinances fund as a single senior loan with structure depending on anchor tenant credit.",
+    "stack_table": [
+      {
+        "source": "CMBS conduit",
+        "cost": "6.85 to 7.65%",
+        "size": "$8M / 65 to 70% LTV",
+        "notes": "Grocery-anchored or credit-tenanted"
+      },
+      {
+        "source": "Life insurance company",
+        "cost": "6.25 to 7.05%",
+        "size": "$8M / 55 to 65% LTV",
+        "notes": "Trophy grocery-anchored"
+      },
+      {
+        "source": "Specialty retail bank",
+        "cost": "7.45 to 8.65%",
+        "size": "$8M / 60 to 70% LTV",
+        "notes": "Mid-market retail"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "SOFR + 425 to 600",
+        "size": "$8M / 65 to 75% LTC",
+        "notes": "Value-add or repositioning"
+      }
+    ],
+    "sponsor_profile": "Typical $8M shopping center sponsors are private capital retail investors with 3 to 10 properties. Anchor tenant credit drives lender appetite.",
+    "real_deal_example": "On an $8.4M refinance of a 56,000 sq ft grocery-anchored shopping center in a Sun Belt suburban market with 12 years remaining on the anchor lease, the sponsor financed through CMBS at 7.05 percent fixed 10-year, 67 percent LTV ($5.6M).",
+    "faqs": [
+      {
+        "q": "What is the typical shopping center cap rate?",
+        "a": "Stabilized grocery-anchored shopping centers typically trade at 6.50 to 7.50 percent cap rates. Power centers and credit-tenanted retail trade at tighter cap rates; unanchored retail at wider."
+      },
+      {
+        "q": "How does anchor tenant credit affect financing?",
+        "a": "Investment-grade anchor tenants on long-term leases support tighter pricing and broader lender appetite. Weaker anchors face proceeds reductions and limited lender pool."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/retail.html",
+        "title": "Retail",
+        "sub": "All retail"
+      },
+      {
+        "href": "property/power-center-retail-financing.html",
+        "title": "Power Center",
+        "sub": "Sister retail"
+      }
+    ]
+  },
+  {
+    "slug": "9-million-ground-up-multifamily-construction-los-angeles",
+    "short_title": "$9M Ground-Up Multifamily LA",
+    "h1": "$9 Million Ground-Up Multifamily Construction in Los Angeles",
+    "amount_label": "$9M",
+    "amount_dollars": "9000000",
+    "product_label": "Ground-Up Multifamily Construction",
+    "loan_type_label": "Multifamily Construction",
+    "indicative_rate": "8.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$9M Ground-Up Multifamily Construction LA | CLS CRE",
+      "meta_description": "What a $9 million ground-up multifamily construction loan in Los Angeles looks like in 2026."
+    },
+    "lead": "A $9 million ground-up multifamily construction loan in Los Angeles typically finances a 25 to 45 unit small-to-mid market-rate multifamily project at total project cost of $14M to $20M. LA ground-up faces specific regulatory constraints (AB 2011, Measure ULA, soft story, AB 1482) that affect entitlement and financing.",
+    "stack_intro": "$9M LA ground-up multifamily construction stacks combine senior construction debt with institutional or family office equity.",
+    "stack_table": [
+      {
+        "source": "Specialty bridge debt fund",
+        "cost": "SOFR + 450 to 650",
+        "size": "$9M / 65 to 75% LTC",
+        "notes": "Construction + lease-up; non-recourse"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "SOFR + 300 to 425",
+        "size": "$9M / 60 to 65% LTC",
+        "notes": "Sponsor recourse"
+      },
+      {
+        "source": "Agency forward commitment",
+        "cost": "5.85 to 6.30% fixed (locked)",
+        "size": "$9M / 70 to 75% LTV stab",
+        "notes": "Permanent take-out lock"
+      },
+      {
+        "source": "Institutional equity",
+        "cost": "Equity (target IRR 18 to 25%)",
+        "size": "$3M to $5M",
+        "notes": "LA-focused multifamily equity"
+      }
+    ],
+    "sponsor_profile": "Typical $9M LA ground-up sponsors are LA-focused multifamily developers with prior completed projects. Sponsor net worth typically $5M to $20M.",
+    "real_deal_example": "On a $9.5M ground-up 32-unit market-rate multifamily construction in a Mid-Wilshire LA submarket, the sponsor was an LA developer with 3 prior projects. Construction debt at SOFR + 525 (10 percent all-in), 70 percent LTC ($6.7M), with Fannie Mae forward commitment at 5.95 percent for permanent.",
+    "faqs": [
+      {
+        "q": "What is AB 2011?",
+        "a": "AB 2011 is California state law providing streamlined ministerial approval for housing development on commercially-zoned parcels statewide."
+      },
+      {
+        "q": "How does Measure ULA affect LA construction?",
+        "a": "Measure ULA is a 4 to 5.5 percent transfer tax on LA city sales above $5M, paid by seller at exit. ULA does not apply to construction or refinance."
+      },
+      {
+        "q": "What is soft story retrofit?",
+        "a": "Soft story retrofit applies to existing pre-1978 buildings with vulnerable first floors, not new construction. New ground-up complies with current LA building code."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/12-million-ground-up-multifamily-construction-brooklyn.html",
+        "title": "$12M Brooklyn Ground-Up",
+        "sub": "NYC counterpart"
+      },
+      {
+        "href": "loan-size/40-million-ground-up-multifamily-construction-los-angeles.html",
+        "title": "$40M LA Ground-Up",
+        "sub": "Larger LA example"
+      }
+    ]
+  },
+  {
+    "slug": "10-million-multifamily-acquisition-manhattan",
+    "short_title": "$10M Multifamily Acquisition Manhattan",
+    "h1": "$10 Million Multifamily Acquisition in Manhattan",
+    "amount_label": "$10M",
+    "amount_dollars": "10000000",
+    "product_label": "Multifamily Acquisition",
+    "loan_type_label": "Multifamily Acquisition",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$10M Multifamily Acquisition Manhattan | CLS CRE",
+      "meta_description": "What a $10 million multifamily acquisition in Manhattan looks like in 2026."
+    },
+    "lead": "A $10 million multifamily acquisition in Manhattan typically fits a 12 to 30 unit walk-up or small elevator building, often with rent stabilization. Most $10M Manhattan multifamily acquisitions fund through Fannie DUS Conventional or Freddie Optigo Conventional at 70 to 75 percent LTV.",
+    "stack_intro": "$10M Manhattan multifamily acquisitions fund as a single senior agency loan.",
+    "stack_table": [
+      {
+        "source": "Fannie Mae DUS Conventional",
+        "cost": "5.85 to 6.30%",
+        "size": "$10M / 70 to 75% LTV",
+        "notes": "Standard agency execution"
+      },
+      {
+        "source": "Freddie Mac Optigo Conventional",
+        "cost": "5.78 to 6.20%",
+        "size": "$10M / 70 to 75% LTV",
+        "notes": "Standard agency execution"
+      },
+      {
+        "source": "NY-area specialty bank",
+        "cost": "6.85 to 7.85%",
+        "size": "$10M / 65 to 70% LTV",
+        "notes": "Some specialty NYC banks"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.45 to 7.05%",
+        "size": "$10M / 65 to 70% LTV",
+        "notes": "Defeasance prepay"
+      }
+    ],
+    "sponsor_profile": "Typical $10M Manhattan multifamily acquisition sponsors are NYC-area institutional and private capital owners with multi-property portfolios. Manhattan-specific underwriting items include rent stabilization, Local Law 97, Local Law 11, and 485-x.",
+    "real_deal_example": "On a 22-unit walk-up multifamily in Lower Manhattan with 70% rent stabilized and 30% free market mix, the sponsor was a NYC-area sponsor with 6 properties. Freddie Mac Optigo Conventional at 5.85 percent fixed 10-year, 73 percent LTV, $9.8M.",
+    "faqs": [
+      {
+        "q": "Are Manhattan multifamily acquisitions financeable through agency?",
+        "a": "Yes. Both Fannie Mae and Freddie Mac actively finance Manhattan multifamily including rent-stabilized properties."
+      },
+      {
+        "q": "How does Local Law 97 affect Manhattan multifamily?",
+        "a": "Local Law 97 imposes carbon emission caps on NYC multifamily that phase from 2024 through 2050. Lender underwriting evaluates the property's compliance pathway."
+      },
+      {
+        "q": "What is 485-x?",
+        "a": "485-x is the NYC tax abatement program that replaced 421-a in 2024-2025 for new market-rate multifamily development with affordability commitments."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/5-million-multifamily-acquisition-manhattan.html",
+        "title": "$5M Manhattan",
+        "sub": "Smaller deal example"
+      },
+      {
+        "href": "loan-size/35-million-trophy-multifamily-new-york.html",
+        "title": "$35M Trophy NYC",
+        "sub": "Larger deal example"
+      }
+    ]
+  },
+  {
+    "slug": "15-million-cold-storage-refinance",
+    "short_title": "$15M Cold Storage Refinance",
+    "h1": "$15 Million Cold Storage Refinance",
+    "amount_label": "$15M",
+    "amount_dollars": "15000000",
+    "product_label": "Cold Storage Refinance",
+    "loan_type_label": "Cold Storage Permanent",
+    "indicative_rate": "6.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$15M Cold Storage Refinance | CLS CRE",
+      "meta_description": "What a $15 million cold storage refinance looks like in 2026."
+    },
+    "lead": "A $15 million cold storage refinance typically fits a stabilized 80,000 to 150,000 square foot refrigerated warehouse leased to an institutional cold-chain operator. Most $15M cold storage refis fund through life co, CMBS, or specialty industrial banks.",
+    "stack_intro": "$15M cold storage refinances fund as a single senior loan from a life co, CMBS, or specialty industrial bank.",
+    "stack_table": [
+      {
+        "source": "Life insurance company",
+        "cost": "6.05 to 6.85%",
+        "size": "$15M / 55 to 65% LTV",
+        "notes": "Trophy long-WALT credit-tenant"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.65 to 7.45%",
+        "size": "$15M / 65 to 70% LTV",
+        "notes": "Stabilized cold storage"
+      },
+      {
+        "source": "Specialty industrial bank",
+        "cost": "7.25 to 8.45%",
+        "size": "$15M / 65 to 75% LTV",
+        "notes": "Multi-location operators"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "SOFR + 425 to 600",
+        "size": "$15M / 65 to 75% LTC",
+        "notes": "Value-add or transitional"
+      }
+    ],
+    "sponsor_profile": "Typical $15M cold storage refinance sponsors are institutional industrial owners with cold storage allocations or vertically integrated cold-chain operators. Lineage Logistics and Americold Realty Trust dominate the institutional cold storage market.",
+    "real_deal_example": "On a $15.6M refinance of a 110,000 sq ft refrigerated warehouse leased to a regional food distributor on 11 years remaining triple-net, the sponsor financed through life co at 6.55 percent fixed 15-year, 60 percent LTV ($9.4M).",
+    "faqs": [
+      {
+        "q": "What is the typical cold storage cap rate?",
+        "a": "Stabilized cold storage typically trades at 6.00 to 7.00 percent cap rates with trophy properties at the tighter end."
+      },
+      {
+        "q": "Are cold storage facilities easier or harder to refinance than standard industrial?",
+        "a": "Cold storage refinances are typically 50 to 100 basis points wider than standard industrial reflecting narrower lender bench. The asset class has matured significantly since 2018."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/cold-storage-financing.html",
+        "title": "Cold Storage Hub",
+        "sub": "Specialty industrial"
+      },
+      {
+        "href": "comparisons/cold-storage-vs-standard-industrial.html",
+        "title": "Cold Storage vs Standard",
+        "sub": "Industrial comparison"
+      }
+    ]
+  },
+  {
+    "slug": "15-million-select-service-hotel-refinance",
+    "short_title": "$15M Select-Service Hotel Refinance",
+    "h1": "$15 Million Select-Service Hotel Refinance",
+    "amount_label": "$15M",
+    "amount_dollars": "15000000",
+    "product_label": "Select-Service Hotel",
+    "loan_type_label": "Hospitality Refinance",
+    "indicative_rate": "7.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$15M Select-Service Hotel Refinance | CLS CRE",
+      "meta_description": "What a $15 million select-service hotel refinance looks like in 2026."
+    },
+    "lead": "A $15 million select-service hotel refinance typically fits a stabilized 100 to 150 room limited-service or select-service hotel (Hampton Inn, Hilton Garden Inn, Courtyard, Holiday Inn Express, Fairfield) operated by a flag franchisee. Most $15M select-service hotel refis fund through CMBS, specialty hospitality lenders, or bank balance sheet.",
+    "stack_intro": "$15M select-service hotel refinances typically fund as a single senior loan with structure based on operating performance.",
+    "stack_table": [
+      {
+        "source": "CMBS conduit",
+        "cost": "7.45 to 8.45%",
+        "size": "$15M / 65 to 70% LTV",
+        "notes": "Stabilized select-service"
+      },
+      {
+        "source": "Specialty hospitality bank",
+        "cost": "7.85 to 9.25%",
+        "size": "$15M / 60 to 70% LTV",
+        "notes": "Multi-property operators"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.85 to 9.45%",
+        "size": "$15M / 55 to 65% LTV",
+        "notes": "Established hotel operators"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "SOFR + 475 to 700",
+        "size": "$15M / 65 to 75% LTC",
+        "notes": "Value-add, PIP, repositioning"
+      }
+    ],
+    "sponsor_profile": "Typical $15M select-service hotel refinance sponsors are mid-market hotel operators with 3 to 20 properties. Flag affiliation (Hilton, Marriott, IHG, Hyatt) drives lender appetite.",
+    "real_deal_example": "On a $15.4M refinance of a 124-room Hampton Inn in a Sun Belt suburban market, the sponsor was a multi-property select-service operator. CMBS at 7.85 percent fixed 10-year, 67 percent LTV ($10.3M), with full defeasance.",
+    "faqs": [
+      {
+        "q": "What is select-service hotel?",
+        "a": "Select-service hotels are mid-tier limited-service hotels (Hampton Inn, Hilton Garden Inn, Courtyard, Holiday Inn Express) offering core lodging plus moderate amenities (pool, fitness, breakfast) without full-service food and beverage."
+      },
+      {
+        "q": "What is the typical select-service cap rate?",
+        "a": "Stabilized select-service hotels typically trade at 8.00 to 9.50 percent cap rates depending on flag, market, and operating performance."
+      },
+      {
+        "q": "Are select-service hotels SBA-financeable?",
+        "a": "For owner-operator hotels at $5M and below SBA exposure cap, SBA 504 finances at 80 percent LTC (special-purpose 20 percent down). Above SBA limits, conventional or specialty hospitality lender programs."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/hospitality.html",
+        "title": "Hospitality",
+        "sub": "All hotel financing"
+      },
+      {
+        "href": "loan-size/7-million-boutique-hotel-acquisition-california.html",
+        "title": "$7M Boutique Hotel CA",
+        "sub": "Smaller deal example"
+      }
+    ]
+  },
+  {
+    "slug": "20-million-industrial-portfolio-acquisition",
+    "short_title": "$20M Industrial Portfolio Acquisition",
+    "h1": "$20 Million Industrial Portfolio Acquisition",
+    "amount_label": "$20M",
+    "amount_dollars": "20000000",
+    "product_label": "Industrial Portfolio Acquisition",
+    "loan_type_label": "Industrial Portfolio",
+    "indicative_rate": "6.45%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$20M Industrial Portfolio Acquisition | CLS CRE",
+      "meta_description": "What a $20 million industrial portfolio acquisition looks like in 2026."
+    },
+    "lead": "A $20 million industrial portfolio acquisition typically combines 5 to 10 stabilized industrial properties under cross-collateralized financing. Most $20M industrial portfolios fund through life co, CMBS, or specialty industrial bank programs at 60 to 70 percent LTV.",
+    "stack_intro": "$20M industrial portfolio acquisitions fund as cross-collateralized senior loans.",
+    "stack_table": [
+      {
+        "source": "Life insurance company",
+        "cost": "5.95 to 6.65%",
+        "size": "$20M / 55 to 65% LTV",
+        "notes": "Trophy stabilized portfolio"
+      },
+      {
+        "source": "CMBS conduit",
+        "cost": "6.45 to 7.25%",
+        "size": "$20M / 65 to 70% LTV",
+        "notes": "Stabilized credit-tenant"
+      },
+      {
+        "source": "Specialty industrial bank",
+        "cost": "7.05 to 8.25%",
+        "size": "$20M / 65 to 70% LTV",
+        "notes": "Mid-market portfolios"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "SOFR + 425 to 600",
+        "size": "$20M / 70 to 75% LTC",
+        "notes": "Value-add"
+      }
+    ],
+    "sponsor_profile": "Typical $20M industrial portfolio sponsors are institutional industrial operators with 10 to 30 properties. Cross-collateralization captures pricing efficiency.",
+    "real_deal_example": "On a $21M acquisition of a 6-property industrial portfolio (320,000 sq ft aggregate) in Sun Belt logistics markets, the sponsor financed through life co at 6.45 percent fixed 10-year, 60 percent LTV ($12.6M).",
+    "faqs": [
+      {
+        "q": "How does $20M compare to $30M industrial portfolio?",
+        "a": "$20M typically combines 5 to 10 properties; $30M combines 6 to 12 properties. Pricing efficiency from cross-collateralization scales with portfolio size."
+      },
+      {
+        "q": "Can life cos lever to 70 percent on industrial portfolios?",
+        "a": "Rarely. Life co allocator discipline caps stabilized industrial at 60 to 65 percent LTV typically."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/30-million-middle-market-industrial-portfolio.html",
+        "title": "$30M Industrial Portfolio",
+        "sub": "Larger deal example"
+      },
+      {
+        "href": "loan-size/8-million-industrial-portfolio-refinance.html",
+        "title": "$8M Industrial Portfolio",
+        "sub": "Smaller deal example"
+      }
+    ]
+  },
+  {
+    "slug": "50-million-industrial-development",
+    "short_title": "$50M Industrial Development",
+    "h1": "$50 Million Industrial Development Loan",
+    "amount_label": "$50M",
+    "amount_dollars": "50000000",
+    "product_label": "Industrial Development",
+    "loan_type_label": "Industrial Construction",
+    "indicative_rate": "7.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$50M Industrial Development | CLS CRE",
+      "meta_description": "What a $50 million industrial development construction loan looks like in 2026."
+    },
+    "lead": "A $50 million industrial development construction loan typically finances a 400,000 to 800,000 square foot Class A distribution warehouse or logistics facility. Most $50M industrial construction loans fund through bank balance sheet, debt funds, or specialty industrial construction lenders with build-to-suit or speculative leasing strategies.",
+    "stack_intro": "$50M industrial development construction stacks combine senior construction debt with institutional equity.",
+    "stack_table": [
+      {
+        "source": "Bank construction balance sheet",
+        "cost": "SOFR + 275 to 425",
+        "size": "$50M / 60 to 65% LTC",
+        "notes": "Sponsor recourse; depository"
+      },
+      {
+        "source": "Specialty industrial construction lender",
+        "cost": "SOFR + 325 to 475",
+        "size": "$50M / 60 to 70% LTC",
+        "notes": "Trophy industrial construction"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "SOFR + 425 to 600",
+        "size": "$50M / 65 to 75% LTC",
+        "notes": "Higher leverage; non-recourse"
+      },
+      {
+        "source": "Institutional equity",
+        "cost": "Equity (target IRR 14 to 22%)",
+        "size": "$15M to $25M",
+        "notes": "Industrial-focused equity"
+      }
+    ],
+    "sponsor_profile": "Typical $50M industrial development sponsors are institutional industrial developer-operators with completed industrial projects. Sponsor net worth typically $50M to $500M+.",
+    "real_deal_example": "On a $54M ground-up 580,000 sq ft Class A distribution warehouse construction in a Sun Belt logistics submarket, the sponsor was an institutional industrial developer with 8 completed projects. Bank balance sheet construction at SOFR + 350, 62 percent LTC ($33.5M), with build-to-suit pre-leasing to a credit-tenant 3PL operator.",
+    "faqs": [
+      {
+        "q": "What is build-to-suit industrial?",
+        "a": "Build-to-suit is industrial construction with a tenant lease in place at construction start. The structure provides pre-construction tenant commitment and supports stronger lender appetite."
+      },
+      {
+        "q": "Can speculative industrial be financed at $50M?",
+        "a": "Yes for Tier 1 markets and institutional sponsors. Speculative industrial construction without pre-leasing typically prices 25 to 75 basis points wider than build-to-suit."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/industrial.html",
+        "title": "Industrial",
+        "sub": "All industrial"
+      },
+      {
+        "href": "financing/construction-loans.html",
+        "title": "Construction Loans",
+        "sub": "Ground-up financing"
+      }
+    ]
+  },
+  {
+    "slug": "60-million-hotel-portfolio-refinance",
+    "short_title": "$60M Hotel Portfolio Refinance",
+    "h1": "$60 Million Hotel Portfolio Refinance",
+    "amount_label": "$60M",
+    "amount_dollars": "60000000",
+    "product_label": "Hotel Portfolio Refinance",
+    "loan_type_label": "Hospitality Portfolio",
+    "indicative_rate": "7.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$60M Hotel Portfolio Refinance | CLS CRE",
+      "meta_description": "What a $60 million hotel portfolio refinance looks like in 2026."
+    },
+    "lead": "A $60 million hotel portfolio refinance typically combines 4 to 10 stabilized hotels under cross-collateralized financing. Most $60M hotel portfolios fund through CMBS single-borrower, specialty hospitality lenders, or bank balance sheet.",
+    "stack_intro": "$60M hotel portfolio refinances fund as cross-collateralized senior loans, often single-borrower CMBS.",
+    "stack_table": [
+      {
+        "source": "CMBS single-borrower",
+        "cost": "7.45 to 8.45%",
+        "size": "$60M / 60 to 70% LTV",
+        "notes": "Single-borrower CMBS pool"
+      },
+      {
+        "source": "Specialty hospitality bank",
+        "cost": "7.85 to 9.25%",
+        "size": "$60M / 55 to 65% LTV",
+        "notes": "Multi-property operators"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "7.85 to 9.45%",
+        "size": "$60M / 55 to 65% LTV",
+        "notes": "Established hotel operators"
+      },
+      {
+        "source": "Bridge debt fund",
+        "cost": "SOFR + 475 to 700",
+        "size": "$60M / 65 to 75% LTC",
+        "notes": "Value-add or transitional"
+      }
+    ],
+    "sponsor_profile": "Typical $60M hotel portfolio sponsors are institutional hospitality operators with multi-property portfolios. Flag affiliation drives lender appetite.",
+    "real_deal_example": "On a $62M refinance of a 6-hotel portfolio (1,150 rooms aggregate) of select-service properties in Sun Belt suburban markets, the sponsor financed through CMBS single-borrower at 8.05 percent fixed 7-year, 65 percent LTV ($40.3M).",
+    "faqs": [
+      {
+        "q": "What is single-borrower CMBS?",
+        "a": "Single-borrower CMBS pools the entire loan from one sponsor's portfolio into a dedicated CMBS pool, providing competitive pricing and CMBS structural benefits."
+      },
+      {
+        "q": "Can hotel portfolios be cross-collateralized?",
+        "a": "Yes. Cross-collateralization typically delivers 10 to 25 basis points pricing efficiency. Release provisions allow individual property sales subject to allocated loan paydown."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/hospitality.html",
+        "title": "Hospitality",
+        "sub": "All hotel financing"
+      },
+      {
+        "href": "loan-size/15-million-select-service-hotel-refinance.html",
+        "title": "$15M Hotel Refi",
+        "sub": "Smaller deal example"
+      }
+    ]
+  },
+  {
+    "slug": "75-million-cold-storage-development",
+    "short_title": "$75M Cold Storage Development",
+    "h1": "$75 Million Cold Storage Development Construction",
+    "amount_label": "$75M",
+    "amount_dollars": "75000000",
+    "product_label": "Cold Storage Development",
+    "loan_type_label": "Cold Storage Construction",
+    "indicative_rate": "8.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$75M Cold Storage Development | CLS CRE",
+      "meta_description": "What a $75 million cold storage development construction loan looks like in 2026."
+    },
+    "lead": "A $75 million cold storage development construction loan typically finances a 250,000 to 400,000 square foot trophy refrigerated warehouse facility. Most $75M cold storage developments fund through specialty industrial debt funds, build-to-suit lender programs, or institutional construction debt.",
+    "stack_intro": "$75M cold storage development stacks combine senior construction debt with institutional equity, often with built-to-suit anchor tenant.",
+    "stack_table": [
+      {
+        "source": "Specialty industrial debt fund",
+        "cost": "SOFR + 425 to 600",
+        "size": "$75M / 65 to 75% LTC",
+        "notes": "Construction; non-recourse"
+      },
+      {
+        "source": "Bank balance sheet",
+        "cost": "SOFR + 325 to 475",
+        "size": "$75M / 55 to 65% LTC",
+        "notes": "Sponsor recourse"
+      },
+      {
+        "source": "Build-to-suit institutional",
+        "cost": "Long-term lease structure",
+        "size": "100 percent capital",
+        "notes": "Tenant-funded build-to-suit"
+      },
+      {
+        "source": "Institutional equity",
+        "cost": "Equity (target IRR 16 to 25%)",
+        "size": "$25M to $35M",
+        "notes": "Cold storage / industrial equity"
+      }
+    ],
+    "sponsor_profile": "Typical $75M cold storage development sponsors are institutional cold storage operators (Lineage Logistics, Americold) or vertically integrated cold-chain food distributors with operating expertise.",
+    "real_deal_example": "On an $82M ground-up 320,000 sq ft Class A refrigerated warehouse with build-to-suit lease to a credit-tenant food distribution operator, the sponsor was an institutional cold storage developer. Construction debt at SOFR + 475 (10 percent all-in), 70 percent LTC ($57.4M), with 15-year triple-net lease at delivery.",
+    "faqs": [
+      {
+        "q": "What is the typical cold storage construction cost?",
+        "a": "Cold storage construction runs $200 to $400 per square foot versus $80 to $150 for standard industrial. Trophy Class A cold storage in Sun Belt markets at the upper end."
+      },
+      {
+        "q": "Are build-to-suit cold storage projects easier to finance?",
+        "a": "Yes substantially. Build-to-suit with credit-tenant pre-lease supports tighter pricing and broader lender appetite versus speculative cold storage construction."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/cold-storage-financing.html",
+        "title": "Cold Storage Hub",
+        "sub": "Specialty industrial"
+      },
+      {
+        "href": "loan-size/5-million-cold-storage-construction-phoenix.html",
+        "title": "$5M Cold Storage",
+        "sub": "Smaller deal example"
+      }
+    ]
+  },
+  {
+    "slug": "100-million-middle-market-multifamily-portfolio",
+    "short_title": "$100M Middle-Market Multifamily Portfolio",
+    "h1": "$100 Million Middle-Market Multifamily Portfolio Financing",
+    "amount_label": "$100M",
+    "amount_dollars": "100000000",
+    "product_label": "Middle-Market Multifamily Portfolio",
+    "loan_type_label": "Multifamily Portfolio",
+    "indicative_rate": "5.85%",
+    "published": "2026-04-26",
+    "seo": {
+      "title": "$100M Middle-Market Multifamily Portfolio | CLS CRE",
+      "meta_description": "What a $100 million middle-market multifamily portfolio refinance or acquisition looks like in 2026."
+    },
+    "lead": "A $100 million middle-market multifamily portfolio combines 8 to 25 properties under cross-collateralized financing. Middle-market portfolios distinguish from purely institutional in sponsor profile (mid-market versus top-tier institutional) but represent substantial scale where agency portfolio, CMBS single-borrower, and life co portfolio compete actively.",
+    "stack_intro": "$100M middle-market multifamily portfolios fund as cross-collateralized senior loans, sometimes with mezz layered above.",
+    "stack_table": [
+      {
+        "source": "Freddie Mac Optigo Portfolio",
+        "cost": "5.65 to 6.10%",
+        "size": "$100M / 70 to 75% LTV",
+        "notes": "Highest leverage"
+      },
+      {
+        "source": "Fannie Mae DUS Portfolio",
+        "cost": "5.75 to 6.20%",
+        "size": "$100M / 70 to 75% LTV",
+        "notes": "Same as Optigo; pricing variation"
+      },
+      {
+        "source": "CMBS single-borrower",
+        "cost": "5.95 to 6.85%",
+        "size": "$100M / 65 to 70% LTV",
+        "notes": "Single-borrower pool"
+      },
+      {
+        "source": "Life company portfolio",
+        "cost": "5.40 to 5.95%",
+        "size": "$100M / 55 to 65% LTV",
+        "notes": "Tightest pricing"
+      },
+      {
+        "source": "Mezzanine",
+        "cost": "10 to 14%",
+        "size": "$10M to $20M",
+        "notes": "Junior to senior"
+      }
+    ],
+    "sponsor_profile": "Typical $100M middle-market multifamily portfolio sponsors are mid-market multifamily operators with $250M to $1B+ of portfolio AUM and sophisticated capital partner relationships. Cross-collateralization captures meaningful pricing efficiency.",
+    "real_deal_example": "On a $108M Sun Belt multifamily portfolio acquisition (32 properties, 920 units), the sponsor financed through Freddie Mac Optigo Conventional Portfolio at 5.85 percent fixed 10-year, 73 percent LTV ($78.8M), with 5 years interest-only. The sponsor's $29M of common equity included $9M co-invest and $20M from institutional capital partner.",
+    "faqs": [
+      {
+        "q": "What distinguishes middle-market from institutional portfolio?",
+        "a": "Sponsor profile and scale. Middle-market sponsors typically have $250M to $1B+ of portfolio AUM with sophisticated capital partner relationships. Institutional sponsors have $1B+ portfolios with REIT, pension fund, or sovereign wealth backing."
+      },
+      {
+        "q": "Can mezz be layered onto $100M middle-market portfolios?",
+        "a": "Yes. Approved Fannie and Freddie mezz lenders provide $10M to $20M of mezzanine debt above the senior portfolio loan, bringing total capital stack to 80 to 90 percent."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "loan-size/100-million-institutional-multifamily-portfolio.html",
+        "title": "$100M Institutional MF",
+        "sub": "Sister deal example"
+      },
+      {
+        "href": "loan-size/50-million-multifamily-portfolio-acquisition.html",
+        "title": "$50M MF Portfolio",
+        "sub": "Smaller deal example"
+      }
+    ]
   }
 ]

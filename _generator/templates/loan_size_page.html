@@ -13,6 +13,9 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LoanOrCredit","name":"{{ ls.h1 }}","loanType":"{{ ls.loan_type_label }}","provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com","telephone":"+13107583576"},"amount":{"@type":"MonetaryAmount","currency":"USD","value":"{{ ls.amount_dollars }}"},"interestRate":{"@type":"QuantitativeValue","value":"{{ ls.indicative_rate }}"}}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".faq-section",".page-hero p"]}}
+</script>
 {% endblock %}
 
 {% block content %}

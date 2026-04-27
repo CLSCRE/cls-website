@@ -6672,5 +6672,1586 @@
         "sub": "Sister specialty"
       }
     ]
+  },
+  {
+    "slug": "aerospace-defense-industrial-financing",
+    "name": "Aerospace and Defense Industrial",
+    "short_name": "Aerospace / Defense",
+    "short_tagline": "Aerospace, defense, and government-aligned industrial",
+    "category_label": "Specialty Industrial Property Financing",
+    "published": "2026-04-26",
+    "h1": "Aerospace and Defense Industrial Financing",
+    "seo": {
+      "title": "Aerospace and Defense Industrial Financing | CLS CRE",
+      "meta_description": "Financing for aerospace and defense industrial real estate including manufacturing, MRO, R&D, and government-leased facilities."
+    },
+    "lead": "Aerospace and defense industrial real estate covers a specialized institutional sub-asset class spanning manufacturing facilities, maintenance repair and overhaul (MRO) operations, research and development buildings, and government-leased space serving prime contractors and the U.S. military. The asset class benefits from durable defense spending and aerospace supply chain demand drivers, with concentrated tenant credit profiles among prime contractors (Boeing, Lockheed Martin, Northrop Grumman, Raytheon Technologies, General Dynamics, L3Harris, BAE Systems) and government leases.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$10M to $200M+"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "55 to 70 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.45x"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 25 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse with carve-outs (institutional)"
+      },
+      {
+        "label": "Tenant credit",
+        "value": "Investment grade (prime contractors, GSA leases)"
+      },
+      {
+        "label": "Lease term",
+        "value": "10 to 25+ years typical"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~15 to 25 specialty + life co"
+      }
+    ],
+    "capital_intro": "Aerospace and defense industrial financing leans heavily on life co and CMBS for stabilized credit-tenant properties. Specialty industrial lenders fund mid-market transactions. Government-leased properties (GSA leases) access additional dedicated lender programs. The asset class requires lender expertise in tenant credit analysis, lease structure, and security clearance considerations.",
+    "capital_table": [
+      {
+        "source": "Life insurance company",
+        "rate": "5.85 to 6.65% (10 to 15 yr fixed)",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Stabilized credit-tenant aerospace and defense $20M+"
+      },
+      {
+        "source": "CMBS conduit",
+        "rate": "6.45 to 7.35%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Stabilized credit-tenant aerospace and defense $10M+"
+      },
+      {
+        "source": "GSA-specialty lender",
+        "rate": "6.25 to 7.25%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Government-leased aerospace and defense properties"
+      },
+      {
+        "source": "Specialty industrial bank",
+        "rate": "7.25 to 8.50%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Mid-market aerospace and defense $10M to $30M"
+      },
+      {
+        "source": "Bridge debt fund",
+        "rate": "SOFR + 425 to 600",
+        "ltv": "65 to 75% LTC",
+        "best_fit": "Acquisition + value-add aerospace and defense"
+      }
+    ],
+    "deal_profile": [
+      "Aerospace and defense industrial transactions span $10M for smaller MRO and R&D facilities to $200M+ for major aerospace manufacturing campuses. Per-square-foot pricing varies materially: standard aerospace warehouse and assembly at $150 to $300, MRO with specialized infrastructure at $250 to $500, R&D and clean room at $400 to $1,000+.",
+      "Sponsor profiles include institutional industrial owners with aerospace and defense allocations, GSA-leased property specialists, and family offices with sector concentration. Tenant credit (prime contractors, federal government leases via GSA) drives lender appetite.",
+      "Operating revenue is triple-net rent from aerospace, defense, or government tenants. Lease terms typically 10 to 25 years with CPI escalations. Long-WALT and tenant credit profile support tight pricing and broad lender appetite."
+    ],
+    "underwriting_intro": "Aerospace and defense underwriting evaluates the property, the tenant, the lease structure, and the regulatory environment. Specialized infrastructure and security considerations distinguish the asset class.",
+    "underwriting_bullets": [
+      "Tenant credit: prime contractors typically investment grade",
+      "Lease structure: triple-net long-term with CPI escalations",
+      "Property type: warehouse, manufacturing, MRO, R&D, GSA-leased, security-clearance facilities",
+      "Regulatory: ITAR, security clearance, federal contracting requirements",
+      "Adaptive reuse: specialized facilities have limited reuse value",
+      "Sponsor experience: aerospace and defense lender appetite scales with sponsor expertise",
+      "Lease term remaining: WALT drives pricing; 10+ years preferred",
+      "Government lease structure: GSA leases have specific termination and renewal provisions"
+    ],
+    "pitfalls_intro": "Aerospace and defense transactions have specific failure modes around tenant concentration, defense spending volatility, and specialized facility adaptive reuse.",
+    "pitfalls_bullets": [
+      "Tenant concentration risk: single-tenant aerospace properties depend on tenant credit",
+      "Defense spending cycles: budget volatility affects program-specific facilities",
+      "Specialized facility adaptive reuse: clean rooms, secure spaces, and specialty manufacturing have limited reuse",
+      "Security clearance requirements: facility access restrictions affect property management",
+      "ITAR compliance: International Traffic in Arms Regulations affect ownership and tenant changes",
+      "Government lease termination: GSA leases can include unilateral termination provisions",
+      "Insurance: defense and aerospace insurance requirements",
+      "Capital expenditure: specialized infrastructure refresh"
+    ],
+    "real_deal_example": "On an $86M acquisition of a 480,000 square foot aerospace MRO facility leased to a prime contractor on a 14-year remaining triple-net lease at a Sun Belt aerospace cluster, the institutional sponsor financed through life co at 5.95 percent fixed 15-year, 60 percent LTV ($51.6M), with full yield maintenance. Long WALT and investment-grade tenant credit supported the relationship-tier life co pricing.",
+    "expert_quote": "Aerospace and defense industrial is one of the more specialized institutional industrial sub-types in the country. Long-WALT credit-tenant leases support tight pricing, but the specialized facility profiles and regulatory considerations narrow the active lender bench.",
+    "faqs": [
+      {
+        "q": "Who are the major aerospace and defense tenants?",
+        "a": "Prime contractors (Boeing, Lockheed Martin, Northrop Grumman, Raytheon Technologies, General Dynamics, L3Harris, BAE Systems) plus tier-1 suppliers and U.S. government via GSA leases."
+      },
+      {
+        "q": "Can SBA finance aerospace and defense industrial?",
+        "a": "For owner-occupied small to mid-market aerospace suppliers using their own real estate, SBA 504 finances at 90 percent LTC subject to standard SBA size and use eligibility. Most institutional aerospace and defense is investor-owned and financed institutionally."
+      },
+      {
+        "q": "What is ITAR and how does it affect financing?",
+        "a": "International Traffic in Arms Regulations (ITAR) controls access to defense articles and technical data. ITAR-controlled facilities have ownership and tenant change requirements that lenders verify."
+      },
+      {
+        "q": "Are GSA leases financeable?",
+        "a": "Yes, with specialty GSA-lender programs. GSA leases have specific structures (typically 15 to 20 year initial terms with renewals) and lender appetite is concentrated among programs that understand the federal lease framework."
+      },
+      {
+        "q": "What is MRO?",
+        "a": "Maintenance, Repair, and Overhaul. Aerospace MRO facilities service commercial and military aircraft, requiring specialized hangars, tooling, and infrastructure."
+      },
+      {
+        "q": "What is the typical cap rate?",
+        "a": "Stabilized aerospace and defense industrial typically trades at 5.50 to 7.00 percent cap rates depending on tenant credit, lease term, and facility specialization."
+      },
+      {
+        "q": "Is non-recourse standard?",
+        "a": "Yes for institutional aerospace and defense industrial. Life co, CMBS, and most institutional debt fund executions are non-recourse with carve-outs."
+      },
+      {
+        "q": "Can ground-up aerospace facilities be financed?",
+        "a": "Yes for build-to-suit projects with strong tenant credit and pre-leasing. Speculative aerospace facility construction is rare given the specialized infrastructure cost and narrower tenant pool."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/industrial.html",
+        "title": "Industrial Hub",
+        "sub": "All capital sources"
+      },
+      {
+        "href": "property/manufacturing-financing.html",
+        "title": "Manufacturing",
+        "sub": "Sister industrial"
+      },
+      {
+        "href": "property/cold-storage-financing.html",
+        "title": "Cold Storage",
+        "sub": "Specialty industrial"
+      }
+    ]
+  },
+  {
+    "slug": "hospital-health-system-financing",
+    "name": "Hospital and Health System",
+    "short_name": "Hospital",
+    "short_tagline": "Acute-care hospitals and health system facilities",
+    "category_label": "Specialty Healthcare Property Financing",
+    "published": "2026-04-26",
+    "h1": "Hospital and Health System Financing",
+    "seo": {
+      "title": "Hospital and Health System Financing | CLS CRE",
+      "meta_description": "Financing for hospitals, health systems, and acute-care medical facilities. Tax-exempt bond, HUD, specialty healthcare, and conventional bank programs."
+    },
+    "lead": "Hospital and health system financing is a highly specialized healthcare CRE niche serving acute-care hospitals, regional health systems, and large medical campuses. The asset class is dominated by tax-exempt bond financing (for non-profit health systems), HUD 242 (for FHA-insured hospital financing), specialty healthcare lenders, and conventional bank balance sheet for established systems. Hospital financing requires deep healthcare and regulatory expertise distinct from other CRE sub-types.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$25M to $1B+"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "60 to 80 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.50x"
+      },
+      {
+        "label": "Term",
+        "value": "10 to 35 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse for institutional"
+      },
+      {
+        "label": "Tax-exempt bond financing",
+        "value": "Standard for non-profit hospitals"
+      },
+      {
+        "label": "HUD 242",
+        "value": "FHA-insured hospital financing"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~15 to 25 specialty healthcare"
+      }
+    ],
+    "capital_intro": "Hospital financing operates through tax-exempt bond financing for non-profit hospitals (the dominant capital source for the non-profit sector), HUD 242 for FHA-insured hospital financing, specialty healthcare lenders for for-profit and complex transactions, and conventional bank balance sheet for established health systems. The asset class requires lender expertise in healthcare regulations, reimbursement, and operating dynamics.",
+    "capital_table": [
+      {
+        "source": "Tax-exempt bond financing",
+        "rate": "4.50 to 6.00% (20 to 35 yr fixed)",
+        "ltv": "75 to 90 percent",
+        "best_fit": "Non-profit hospitals through state issuers"
+      },
+      {
+        "source": "HUD 242",
+        "rate": "5.85 to 6.45% (25-year fully amortizing)",
+        "ltv": "90 percent",
+        "best_fit": "FHA-insured hospital financing"
+      },
+      {
+        "source": "Specialty healthcare lender",
+        "rate": "6.50 to 8.50%",
+        "ltv": "60 to 75 percent",
+        "best_fit": "For-profit hospitals and complex transactions"
+      },
+      {
+        "source": "Conventional bank balance sheet",
+        "rate": "7.25 to 9.00%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Established health systems with depository"
+      },
+      {
+        "source": "USDA Rural",
+        "rate": "Treasury + spread",
+        "ltv": "Up to 100 percent",
+        "best_fit": "Critical-access hospitals in rural markets"
+      }
+    ],
+    "deal_profile": [
+      "Hospital transactions range from $25M for smaller community hospitals to $1B+ for major academic medical centers and health system portfolios. Per-bed pricing varies enormously: critical-access rural hospitals at $300K to $700K per bed, community hospitals at $500K to $1.5M per bed, academic medical centers at $1.5M to $5M+ per bed.",
+      "Sponsor profiles include non-profit health systems (typically the largest segment by volume), for-profit hospital operators (HCA Healthcare, Tenet Healthcare, Community Health Systems, Universal Health Services), academic medical centers, and regional health system consolidators.",
+      "Operating revenue is hospital operations (patient services, surgery, diagnostics, ambulatory). Hospital financing evaluates the operating business as the primary source of debt service, with the real estate as collateral. The financing is closer to operating-business lending than pure CRE."
+    ],
+    "underwriting_intro": "Hospital underwriting evaluates the property, the operating business, the regulatory environment, and the credit profile. Specialized healthcare expertise is essential.",
+    "underwriting_bullets": [
+      "Operating performance: patient days, case mix, payor mix, operating margin",
+      "Reimbursement: Medicare, Medicaid, commercial, self-pay payor mix",
+      "Regulatory environment: state Certificate of Need, licensing",
+      "Real estate: building condition, replacement cost, adaptive reuse",
+      "Sponsor: non-profit versus for-profit operating model",
+      "System affiliation: stand-alone versus health system membership",
+      "Credit profile: bond ratings, financial covenants",
+      "Capital expenditure: hospitals are capital-intensive"
+    ],
+    "pitfalls_intro": "Hospital transactions have specific failure modes around reimbursement changes, capital intensity, and operating volatility.",
+    "pitfalls_bullets": [
+      "Medicare reimbursement changes affect operating economics",
+      "Medicaid expansion and policy changes",
+      "Capital expenditure intensity for technology and facility refresh",
+      "Specialized facility adaptive reuse is limited",
+      "Regulatory environment: Certificate of Need, licensing",
+      "Insurance: medical malpractice, products liability",
+      "Operating margin pressure: labor costs, supply chain",
+      "Bond covenant compliance for non-profit operators"
+    ],
+    "real_deal_example": "On a $185M tax-exempt bond financing for a non-profit community hospital expansion, the borrower was a 250-bed regional non-profit health system with Aa3/AA- bond ratings. Tax-exempt bonds at 5.25 percent fixed 30-year fully amortizing financed an addition expanding emergency department, surgery, and patient rooms. The financing structure included credit enhancement from a major insurer.",
+    "expert_quote": "Hospital financing is the most specialized healthcare CRE corner. Tax-exempt bonds dominate non-profit hospital financing; HUD 242 serves FHA-insured needs; specialty healthcare lenders handle complex for-profit transactions. Generic CRE lenders are not in this market.",
+    "faqs": [
+      {
+        "q": "What is HUD 242?",
+        "a": "HUD 242 is the FHA mortgage insurance program for hospitals. It provides 25-year fully amortizing fixed-rate mortgage insurance for hospital construction, refinance, and substantial rehabilitation."
+      },
+      {
+        "q": "Are non-profit hospitals financed through tax-exempt bonds?",
+        "a": "Yes, predominantly. Non-profit hospitals issue tax-exempt bonds through state issuers, with the tax-exempt status providing materially lower cost of capital than taxable financing."
+      },
+      {
+        "q": "What is Certificate of Need?",
+        "a": "Certificate of Need (CON) is a state regulatory program in approximately 35 states that requires regulatory approval before establishing or expanding healthcare facilities. CON requirements affect competitive supply and project feasibility."
+      },
+      {
+        "q": "Can SBA finance hospitals?",
+        "a": "Generally no. Hospitals exceed SBA size eligibility for almost all program executions. SBA serves smaller medical practices and clinics, not hospitals."
+      },
+      {
+        "q": "Who are the major for-profit hospital operators?",
+        "a": "HCA Healthcare (largest, publicly traded), Tenet Healthcare, Community Health Systems, Universal Health Services, and Steward Health Care are the major publicly-traded or large for-profit hospital operators."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Property and casualty, medical malpractice (substantial limits), professional liability, products liability, business interruption, environmental, and umbrella coverage."
+      },
+      {
+        "q": "What is the typical hospital cap rate?",
+        "a": "Stabilized hospital real estate financing reflects rates rather than traditional cap rates because most hospital real estate is owner-occupied by the operating health system. Net-leased medical office (separate from hospital) trades at different rates."
+      },
+      {
+        "q": "How do health system credit ratings affect financing?",
+        "a": "Bond ratings (Moody's, S&P, Fitch) materially affect hospital tax-exempt bond pricing. Aa-rated systems access pricing 100+ basis points inside Baa-rated systems on similar deals."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/medical-office.html",
+        "title": "Medical Office",
+        "sub": "Healthcare CRE"
+      },
+      {
+        "href": "property/ambulatory-surgery-center-financing.html",
+        "title": "ASC",
+        "sub": "Sister specialty"
+      },
+      {
+        "href": "property/senior-living.html",
+        "title": "Senior Living",
+        "sub": "Sister specialty"
+      }
+    ]
+  },
+  {
+    "slug": "coliving-microunit-multifamily-financing",
+    "name": "Co-living and Micro-Unit Multifamily",
+    "short_name": "Co-living / Micro-Unit",
+    "short_tagline": "Co-living and micro-unit multifamily",
+    "category_label": "Multifamily Sub-Type Financing",
+    "published": "2026-04-26",
+    "h1": "Co-living and Micro-Unit Multifamily Financing",
+    "seo": {
+      "title": "Co-living and Micro-Unit Multifamily Financing | CLS CRE",
+      "meta_description": "Financing for co-living and micro-unit multifamily properties. Specialty multifamily lenders, agency, and bridge programs for high-density urban housing."
+    },
+    "lead": "Co-living and micro-unit multifamily are emerging multifamily sub-types serving urban renters seeking affordability through density and shared common amenities. Co-living typically combines private bedrooms with shared kitchens, living areas, and amenities; micro-units are very small (200 to 450 square feet) self-contained apartments. Both formats target Gen Z and millennial urban professionals priced out of conventional studios. Major operators include Common, Ollie, Quarters, and an expanding institutional ecosystem.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$15M to $200M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "65 to 75 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.25x to 1.35x"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 30 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse with carve-outs (stabilized)"
+      },
+      {
+        "label": "Unit size",
+        "value": "200 to 450 sq ft (micro-unit); 100 to 250 sq ft bedrooms (co-living)"
+      },
+      {
+        "label": "Operating model",
+        "value": "Specialized resident management"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~20 to 30 multifamily + specialty"
+      }
+    ],
+    "capital_intro": "Co-living and micro-unit financing flows through agency multifamily programs (when classified as conventional multifamily), specialty multifamily lenders, debt funds, and CMBS for stabilized properties. The asset class requires lender expertise in the operating model and resident demographic.",
+    "capital_table": [
+      {
+        "source": "Fannie Mae DUS",
+        "rate": "5.85 to 6.30%",
+        "ltv": "70 to 75 percent",
+        "best_fit": "Stabilized co-living / micro-unit treated as multifamily"
+      },
+      {
+        "source": "Freddie Mac Optigo",
+        "rate": "5.75 to 6.25%",
+        "ltv": "70 to 75 percent",
+        "best_fit": "Stabilized co-living / micro-unit"
+      },
+      {
+        "source": "Specialty multifamily lender",
+        "rate": "7.00 to 8.50%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Co-living and micro-unit specialists"
+      },
+      {
+        "source": "Bridge debt fund",
+        "rate": "SOFR + 425 to 600",
+        "ltv": "65 to 75% LTC",
+        "best_fit": "Construction, lease-up, value-add"
+      },
+      {
+        "source": "CMBS conduit",
+        "rate": "6.45 to 7.25%",
+        "ltv": "65 to 70 percent",
+        "best_fit": "Stabilized $20M+ co-living / micro-unit"
+      }
+    ],
+    "deal_profile": [
+      "Co-living and micro-unit transactions range from $15M for smaller infill projects to $200M+ for trophy urban properties. Per-unit pricing varies by market and amenity package: micro-unit at $250K to $500K per unit, co-living at $200K to $400K per bedroom.",
+      "Sponsor profiles include institutional co-living operators (Common, Ollie, Quarters, Starcity), urban multifamily developers expanding into the format, and ground-up developers specializing in micro-unit construction.",
+      "Operating revenue is rental income with specialized resident management (shorter average tenancy, more intensive turnover, included utilities and amenities). Operating economics favor density and amenity-driven premium rents per square foot."
+    ],
+    "underwriting_intro": "Co-living and micro-unit underwriting evaluates the property, the operating model, and the urban demographic alignment. The asset class is institutional but requires specialized lender knowledge.",
+    "underwriting_bullets": [
+      "Unit size and configuration: micro-unit 200 to 450 sq ft self-contained; co-living shared common areas",
+      "Operating model: short-term tenancy, intensive turnover, included utilities",
+      "Resident demographic: Gen Z and millennial urban professionals",
+      "Property amenities: shared kitchens, living areas, fitness, work spaces",
+      "Stabilized occupancy: 90 percent+ typical",
+      "Sponsor experience: co-living and micro-unit operating expertise",
+      "Local zoning: urban density and parking requirements",
+      "Adaptive reuse potential: many co-living properties are converted from prior office or hotel use"
+    ],
+    "pitfalls_intro": "Co-living and micro-unit transactions have specific failure modes around operating model novelty, regulatory environment, and resident demographic shifts.",
+    "pitfalls_bullets": [
+      "Operating model is newer; less historical data",
+      "Local zoning: some jurisdictions restrict co-living density",
+      "Resident demographic shifts: pandemic-era WFH changed urban demand",
+      "Operating margin pressure: intensive turnover and amenities",
+      "Sponsor experience: limited bench of experienced operators",
+      "Insurance: co-living shared spaces require specific liability coverage",
+      "Conversion considerations: hotel-to-co-living and office-to-residential",
+      "Regulatory: short-term rental restrictions in some jurisdictions"
+    ],
+    "real_deal_example": "On a $42M ground-up co-living development in a major Sun Belt urban market (224 bedrooms across 56 units with shared kitchens and amenities), the sponsor was a co-living specialty operator with 4 completed properties. Capital stack: $30M construction debt at SOFR + 525, $10M institutional equity, $2M sponsor co-invest. Fannie Mae forward commitment locked permanent at 5.95 percent fixed 10-year for delivery at month 24.",
+    "expert_quote": "Co-living and micro-unit are emerging multifamily sub-types with growing institutional acceptance. The financing market treats them as multifamily for stabilized properties, but the operating model is specialized and the lender bench narrower than conventional multifamily.",
+    "faqs": [
+      {
+        "q": "Are co-living and micro-unit eligible for Fannie Mae and Freddie Mac?",
+        "a": "Yes when classified as multifamily with shared common areas. Both agencies finance stabilized co-living and micro-unit properties under their conventional multifamily programs."
+      },
+      {
+        "q": "What is the difference between co-living and micro-unit?",
+        "a": "Co-living combines private bedrooms with shared kitchens, living areas, and amenities. Micro-units are very small self-contained apartments (typically 200 to 450 square feet) with private kitchens. Co-living density is higher; micro-unit privacy is greater."
+      },
+      {
+        "q": "Who are the major co-living operators?",
+        "a": "Common (largest), Ollie, Quarters, Starcity, X Social Communities, and a growing list of regional and specialty co-living developer-operators."
+      },
+      {
+        "q": "Are co-living rents per square foot higher than conventional?",
+        "a": "Yes typically. Co-living and micro-unit rents per square foot are 20 to 60 percent higher than conventional studios in the same submarket, reflecting the density and amenity premium."
+      },
+      {
+        "q": "What is the typical resident tenure?",
+        "a": "Co-living typically sees 6 to 12 month average tenant tenure (shorter than conventional multifamily). Micro-unit tenure is similar to conventional studios at 12 to 18 months."
+      },
+      {
+        "q": "Can co-living be converted to conventional multifamily?",
+        "a": "Often yes through unit configuration changes. The convertibility supports lender comfort on co-living adaptive reuse value."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Multifamily insurance plus specific liability coverage for shared common areas, common amenities, and resident-shared spaces."
+      },
+      {
+        "q": "Are co-living developments financed through HUD?",
+        "a": "HUD 221(d)(4) can finance co-living when classified as multifamily and meeting workforce or affordable criteria. Most institutional co-living goes through agency or specialty multifamily lenders rather than HUD."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily",
+        "sub": "All capital sources"
+      },
+      {
+        "href": "property/student-housing-financing.html",
+        "title": "Student Housing",
+        "sub": "Sister sub-type"
+      },
+      {
+        "href": "property/build-to-rent-financing.html",
+        "title": "BTR",
+        "sub": "Sister sub-type"
+      }
+    ]
+  },
+  {
+    "slug": "short-term-rental-portfolio-financing",
+    "name": "Short-Term Rental (STR) Portfolio",
+    "short_name": "STR Portfolio",
+    "short_tagline": "Vacation rental and Airbnb portfolio financing",
+    "category_label": "Multifamily Sub-Type Financing",
+    "published": "2026-04-26",
+    "h1": "Short-Term Rental (STR) Portfolio Financing",
+    "seo": {
+      "title": "Short-Term Rental (STR) Portfolio Financing | CLS CRE",
+      "meta_description": "Financing for short-term rental and vacation rental portfolios including Airbnb, Vrbo, and institutional STR operators."
+    },
+    "lead": "Short-term rental (STR) portfolio financing serves a growing institutional asset class as Airbnb, Vrbo, and STR operators have professionalized vacation and short-stay rental into a real estate sub-type. STR portfolios range from individual investor portfolios of 5 to 50 units to institutional STR operator portfolios of 500 to 5,000+ units. The financing market is more constrained than conventional rental given the operating volatility, regulatory environment, and lender hesitance with non-traditional rental income.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$2M to $100M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "60 to 75 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.50x"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 10 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse typical at smaller scale; non-recourse possible at institutional"
+      },
+      {
+        "label": "Property mix",
+        "value": "Single-family, condo, multifamily, vacation rental specific"
+      },
+      {
+        "label": "Regulatory environment",
+        "value": "Highly variable by jurisdiction"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~15 to 25 specialty STR + DSCR"
+      }
+    ],
+    "capital_intro": "STR financing has emerged through specialty STR debt funds, DSCR loan programs (treating STR income as qualified rental income), conventional banks comfortable with the asset class, and bridge debt funds for portfolio aggregation. Agency programs do not typically finance STR.",
+    "capital_table": [
+      {
+        "source": "Specialty STR debt fund",
+        "rate": "7.50 to 9.50%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Mid-market STR portfolios 50 to 500 units"
+      },
+      {
+        "source": "DSCR loan (single property)",
+        "rate": "7.85 to 9.50%",
+        "ltv": "75 to 80 percent",
+        "best_fit": "Individual STR or small bundle"
+      },
+      {
+        "source": "Bank balance sheet",
+        "rate": "7.50 to 9.00%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Smaller STR portfolios with depository"
+      },
+      {
+        "source": "Bridge debt fund (STR aggregation)",
+        "rate": "9.50 to 12.00%",
+        "ltv": "70 to 80% LTC",
+        "best_fit": "STR portfolio aggregation strategies"
+      },
+      {
+        "source": "Hard money / private capital",
+        "rate": "10.00 to 14.00%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Fast-close acquisitions"
+      }
+    ],
+    "deal_profile": [
+      "STR portfolio transactions range from $2M for smaller individual investor portfolios to $100M+ for institutional STR operator portfolios. Per-property pricing varies by market: vacation destination at $400K to $1.5M+ per unit, urban STR at $300K to $800K per unit.",
+      "Sponsor profiles include individual STR investors (typically 5 to 50 units), regional STR operators, and institutional STR platforms (Sonder, Vacasa, Evolve, Avantstay). The asset class has consolidated significantly since 2020.",
+      "Operating revenue is short-term rental income through Airbnb, Vrbo, direct booking, and institutional channels. Revenue per property is typically 1.5x to 3x conventional long-term rental income but with materially higher operating costs (cleaning, supplies, management, channel fees)."
+    ],
+    "underwriting_intro": "STR underwriting evaluates the property, the operating performance, the regulatory environment, and the management capability. The asset class requires specialized lender knowledge.",
+    "underwriting_bullets": [
+      "Property mix: single-family, condo, multifamily, vacation rental specific",
+      "Local STR regulations: licensing, occupancy taxes, registration",
+      "Operating performance: ADR, occupancy, RevPAR",
+      "Channel mix: Airbnb, Vrbo, direct, institutional",
+      "Management: owner-operated versus professional management",
+      "Sponsor experience: STR operating expertise",
+      "Geographic concentration: portfolio diversification",
+      "Seasonality: vacation markets have material seasonal variation"
+    ],
+    "pitfalls_intro": "STR portfolio transactions have specific failure modes around regulatory shifts, demand volatility, and operating cost pressure.",
+    "pitfalls_bullets": [
+      "Regulatory environment: many cities have restricted or banned STR",
+      "Demand volatility: vacation and travel demand cyclical",
+      "HOA restrictions: condo HOAs may prohibit STR",
+      "Operating cost pressure: cleaning, supplies, management",
+      "Channel concentration: Airbnb dominance creates platform risk",
+      "Insurance: STR-specific coverage required",
+      "Local zoning: STR-permitted zones often constrained",
+      "Property tax classification: STR may trigger commercial classification"
+    ],
+    "real_deal_example": "On a $24M acquisition of a 65-property STR portfolio in a Sun Belt vacation destination market, the sponsor was an institutional STR operator with 200 properties under management. Specialty STR debt fund at 8.45 percent fixed 5-year, 70 percent LTV ($16.8M), with partial recourse capped at 25 percent of UPB and concentration limits.",
+    "expert_quote": "STR portfolio financing is one of the more specialized real estate financing corners because of regulatory variability and operating model novelty. Specialty STR debt funds and DSCR programs have made the asset class financeable; agency and conventional CRE financing largely treat STR as outside their boxes.",
+    "faqs": [
+      {
+        "q": "Can STR portfolios be financed through Fannie Mae or Freddie Mac?",
+        "a": "Generally no. Agency programs treat short-term rental as outside conventional multifamily underwriting. STR portfolios access specialty STR debt funds, DSCR programs, and conventional banks comfortable with the asset class."
+      },
+      {
+        "q": "What is a DSCR loan for STR?",
+        "a": "DSCR loans use the property's debt service coverage ratio (income / debt service) rather than borrower personal income. STR DSCR programs accept short-term rental income as qualified rental income."
+      },
+      {
+        "q": "Who are the major institutional STR operators?",
+        "a": "Sonder, Vacasa, Evolve, Avantstay, Mint House, and a growing list of regional and specialty STR operators."
+      },
+      {
+        "q": "How do local regulations affect STR financing?",
+        "a": "Lender underwriting evaluates local STR regulations including licensing, occupancy taxes, and zoning. Cities with restrictive or evolving STR regulations face proceeds reductions or limited lender appetite."
+      },
+      {
+        "q": "What is the typical STR operating margin?",
+        "a": "Institutional STR operating margins typically run 30 to 50 percent of gross revenue, materially lower than conventional long-term rental due to cleaning, supplies, management, and channel fees."
+      },
+      {
+        "q": "Are STR portfolios more recession resilient or less?",
+        "a": "STR demand is more cyclical than long-term rental. Travel and vacation demand drops in recessions. Some operators pivoted to long-term rental during 2020 to maintain occupancy."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "STR-specific liability and property insurance is required (standard homeowner's insurance typically excludes STR use). Specialty STR insurers (Proper, CBIZ, Slice) provide the bench."
+      },
+      {
+        "q": "Can STR be converted to long-term rental at exit?",
+        "a": "Yes. Most STR properties can convert to long-term rental, providing exit flexibility. Lender stress tests sometimes evaluate long-term rental DSCR as a downside scenario."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/single-family-rental-portfolio-financing.html",
+        "title": "SFR Portfolio",
+        "sub": "Long-term rental"
+      },
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily",
+        "sub": "All capital sources"
+      }
+    ]
+  },
+  {
+    "slug": "strip-center-unanchored-retail-financing",
+    "name": "Strip Center / Unanchored Retail",
+    "short_name": "Strip Center",
+    "short_tagline": "Unanchored neighborhood and strip retail",
+    "category_label": "Specialty Retail Property Financing",
+    "published": "2026-04-26",
+    "h1": "Strip Center and Unanchored Retail Financing",
+    "seo": {
+      "title": "Strip Center / Unanchored Retail Financing | CLS CRE",
+      "meta_description": "Financing for strip centers and unanchored neighborhood retail. CMBS, specialty retail lenders, and bank balance sheet programs."
+    },
+    "lead": "Strip center and unanchored retail financing serves smaller multi-tenant retail properties without grocery, big-box, or major brand anchor tenants. The asset class includes neighborhood strip centers, small bay retail, and tenant-mixed convenience retail. Financing has narrowed materially post-2020 as life cos and many CMBS conduits retreated from non-anchored retail. The active lender bench includes specialty retail lenders, bank balance sheet, debt funds, and a small life co bench on trophy unanchored.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$2M to $25M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "55 to 70 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.45x"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 10 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Recourse typical (bank); non-recourse possible (CMBS)"
+      },
+      {
+        "label": "Cap rate (Apr 2026)",
+        "value": "7.50 to 9.50 percent"
+      },
+      {
+        "label": "Tenant mix",
+        "value": "5 to 30 small tenants typical"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~15 to 25 specialty retail + bank"
+      }
+    ],
+    "capital_intro": "Unanchored retail financing has narrowed since 2020 with life co retreat and CMBS selectivity. The active bench includes specialty retail lenders comfortable with non-credit retail, bank balance sheet for established operators, debt funds for value-add, and a limited CMBS pool with non-anchored expertise.",
+    "capital_table": [
+      {
+        "source": "Specialty retail bank",
+        "rate": "7.85 to 9.25%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Stabilized strip center $5M to $15M"
+      },
+      {
+        "source": "CMBS conduit",
+        "rate": "7.45 to 8.50%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Stabilized $5M+ unanchored retail"
+      },
+      {
+        "source": "Bank balance sheet",
+        "rate": "7.85 to 9.50%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Mid-market with depository relationship"
+      },
+      {
+        "source": "Bridge debt fund",
+        "rate": "SOFR + 475 to 700",
+        "ltv": "65 to 75% LTC",
+        "best_fit": "Value-add and lease-up"
+      },
+      {
+        "source": "Life insurance company",
+        "rate": "7.25 to 8.25%",
+        "ltv": "55 to 60 percent",
+        "best_fit": "Trophy unanchored with strong tenant mix"
+      }
+    ],
+    "deal_profile": [
+      "Unanchored retail transactions typically range from $2M for small neighborhood strip centers to $25M for larger trophy unanchored properties. Per-square-foot pricing typically runs $150 to $400 depending on tenant mix, market, and condition.",
+      "Sponsor profiles include private capital retail investors, family offices, and 1031 exchange buyers. Sponsor expertise in active retail leasing matters substantially.",
+      "Operating revenue is rent from 5 to 30 small tenants under varied lease structures (NNN, NN, gross). Tenant mix diversification mitigates concentration risk; smaller individual tenants drive operating intensity for landlord."
+    ],
+    "underwriting_intro": "Unanchored retail underwriting evaluates the property, the tenant mix, the lease structure, and the operating capability. The asset class requires active management capability.",
+    "underwriting_bullets": [
+      "Tenant mix: 5 to 30 tenants typical; diversification mitigates concentration",
+      "Lease structure: NNN, NN, or gross; reimbursable expense recovery",
+      "Tenant credit: typically smaller local and regional tenants",
+      "Vacancy and turnover: higher than anchored retail",
+      "Capital expenditure: landlord-funded leasing commissions and TIs",
+      "Operating capability: active leasing required",
+      "Location: traffic count, demographics, parking, accessibility",
+      "Property condition: roof, HVAC, parking, signage refresh"
+    ],
+    "pitfalls_intro": "Unanchored retail transactions have specific failure modes around vacancy, e-commerce pressure, and lender retreat.",
+    "pitfalls_bullets": [
+      "Vacancy and turnover: 5 to 15 percent typical vacancy",
+      "E-commerce pressure: small retailers face online competition",
+      "Anchor tenant loss: anchor departure disrupts tenant mix",
+      "Lender retreat: post-2020 life co retreat narrowed lender pool",
+      "Capital expenditure: leasing commissions and TIs intensive",
+      "Operating margin: smaller tenants often gross or NN lease structure",
+      "Insurance: liability and natural disaster coverage",
+      "Property tax: assessment volatility in some markets"
+    ],
+    "real_deal_example": "On a $7.4M refinance of an 18-tenant 32,000 square foot strip center in a Sun Belt suburban market, the sponsor was a private capital retail investor with 4 properties. Specialty retail bank at 8.45 percent fixed 5-year, 65 percent LTV ($4.8M), with partial recourse and active lease-up plan for two vacant suites.",
+    "expert_quote": "Unanchored retail is one of the more challenging retail sub-types post-2020. The financing exists, but the lender bench narrowed and pricing widened. Active operating capability and well-located properties continue to find financing.",
+    "faqs": [
+      {
+        "q": "Why has unanchored retail financing narrowed since 2020?",
+        "a": "Life insurance companies largely retreated from non-anchored retail post-2020 reflecting tenant credit and operational complexity concerns. CMBS selectively continues but with tighter underwriting. Active lender bench is narrower than pre-2020."
+      },
+      {
+        "q": "What is the difference between strip center and shopping center?",
+        "a": "Strip center typically refers to smaller unanchored or weakly-anchored retail (5 to 30 tenants). Shopping center typically refers to larger anchored retail (grocery, big-box, or major brand anchor)."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Property and casualty, general liability, business interruption, and umbrella coverage. Specialty coverage for natural disasters in exposed markets."
+      },
+      {
+        "q": "Can SBA finance strip centers?",
+        "a": "For owner-occupied retail (where the borrower's business is one of the tenants), SBA 504 finances at 90 percent LTC subject to standard SBA size and use eligibility. Investor-owned strip centers are not SBA-eligible."
+      },
+      {
+        "q": "What is the typical strip center cap rate?",
+        "a": "Stabilized unanchored strip centers typically trade at 7.50 to 9.50 percent cap rates depending on market, tenant mix, and condition."
+      },
+      {
+        "q": "Are 1031 exchange buyers active in strip centers?",
+        "a": "Yes. 1031 buyers are an active demand source for stabilized strip centers, particularly with credit-tenant mix and triple-net leases."
+      },
+      {
+        "q": "Can strip centers be converted to mixed-use?",
+        "a": "Yes in markets supporting density and mixed-use zoning. Conversion typically requires entitlement, demolition, and ground-up redevelopment financing."
+      },
+      {
+        "q": "What is the typical operating margin?",
+        "a": "Unanchored retail operating margins typically run 50 to 65 percent NOI margin reflecting active leasing, smaller tenant operating intensity, and capital expenditure cycles."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/retail.html",
+        "title": "Retail Hub",
+        "sub": "All retail strategies"
+      },
+      {
+        "href": "comparisons/stnl-vs-multi-tenant-retail.html",
+        "title": "STNL vs Multi-Tenant",
+        "sub": "Net lease comparison"
+      }
+    ]
+  },
+  {
+    "slug": "power-center-retail-financing",
+    "name": "Power Center Retail",
+    "short_name": "Power Center",
+    "short_tagline": "Big-box anchored power centers",
+    "category_label": "Specialty Retail Property Financing",
+    "published": "2026-04-26",
+    "h1": "Power Center Retail Financing",
+    "seo": {
+      "title": "Power Center Retail Financing | CLS CRE",
+      "meta_description": "Financing for power centers and big-box anchored retail. CMBS, life co, specialty retail, and bank balance sheet programs."
+    },
+    "lead": "Power center retail financing serves big-box anchored shopping centers featuring multiple major brand anchors (typically 75,000+ square feet each) such as Home Depot, Walmart, Costco, Best Buy, Target, Kohl's, T.J. Maxx, Burlington, and Dick's Sporting Goods. The asset class benefits from durable big-box demand drivers and strong anchor tenant credit profiles, financed through CMBS, life co, specialty retail lenders, and bank balance sheet for established sponsors.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$25M to $300M+"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "60 to 70 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.45x"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 15 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse with carve-outs"
+      },
+      {
+        "label": "Anchor tenant credit",
+        "value": "Investment grade typically"
+      },
+      {
+        "label": "Center size",
+        "value": "250,000 to 750,000+ sq ft typical"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~25 to 40 institutional retail"
+      }
+    ],
+    "capital_intro": "Power center financing leans heavily on CMBS for stabilized credit-tenant power centers, life co for trophy assets, specialty retail lenders, and bank balance sheet for established power center operators (Brixmor, Kimco, Regency Centers, RPT Realty).",
+    "capital_table": [
+      {
+        "source": "CMBS conduit",
+        "rate": "6.45 to 7.35%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Stabilized power centers $25M+"
+      },
+      {
+        "source": "Life insurance company",
+        "rate": "5.95 to 6.85%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Trophy power centers $50M+ with credit anchors"
+      },
+      {
+        "source": "Specialty retail bank",
+        "rate": "7.45 to 8.85%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Mid-market power centers"
+      },
+      {
+        "source": "Bridge debt fund",
+        "rate": "SOFR + 425 to 600",
+        "ltv": "65 to 75% LTC",
+        "best_fit": "Value-add and repositioning"
+      },
+      {
+        "source": "Bank balance sheet",
+        "rate": "7.45 to 8.85%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Established power center operators"
+      }
+    ],
+    "deal_profile": [
+      "Power center transactions range from $25M for smaller centers (250,000 sq ft, 4 to 6 anchors) to $300M+ for major regional power centers (500,000+ sq ft, 8 to 12+ anchors). Per-square-foot pricing typically runs $150 to $400 depending on market, anchor mix, and shop space performance.",
+      "Sponsor profiles include institutional retail REITs (Brixmor Property Group, Kimco Realty, Regency Centers, RPT Realty, Site Centers, RPAI), institutional capital, and family offices. The asset class has consolidated significantly since 2010.",
+      "Operating revenue blends anchor tenant rent (typically 35 to 55 percent of total NOI), shop space rent (40 to 55 percent), and ancillary revenue (parking, signage). Anchor leases are typically long-term (15 to 25 years) with extension options."
+    ],
+    "underwriting_intro": "Power center underwriting evaluates anchor tenant credit, lease structure, shop space performance, and market dynamics. Institutional retail expertise is essential.",
+    "underwriting_bullets": [
+      "Anchor tenant credit: Home Depot, Walmart, Costco, Target, etc. typically investment grade",
+      "Anchor lease structure: 15 to 25 year initial term with renewal options",
+      "Shop space performance: smaller in-line tenant mix and turnover",
+      "WALT: weighted average lease term across portfolio",
+      "Market dynamics: regional power center supply and competitive pressure",
+      "Sponsor experience: institutional power center operating expertise",
+      "Capital expenditure: shop space TIs and leasing commissions",
+      "Property condition: parking, lighting, signage, common areas"
+    ],
+    "pitfalls_intro": "Power center transactions have specific failure modes around anchor tenant departures, e-commerce pressure on shop space, and big-box bankruptcy risk.",
+    "pitfalls_bullets": [
+      "Anchor tenant departure: anchor loss disrupts shop space leasing",
+      "Big-box bankruptcy: Sears, Toys R Us, Bed Bath & Beyond, others",
+      "E-commerce pressure on shop space: small retailers face online competition",
+      "Anchor co-tenancy clauses: anchor departures can trigger tenant rights",
+      "Capital expenditure for repositioning",
+      "Insurance: large property values",
+      "Operating margin: management intensity",
+      "Cap rate compression and expansion cycles"
+    ],
+    "real_deal_example": "On a $128M acquisition of a 485,000 square foot power center anchored by Home Depot, Costco, T.J. Maxx, and Burlington in a Sun Belt growth market, the sponsor was an institutional retail REIT. CMBS conduit at 6.95 percent fixed 10-year, 65 percent LTV ($83M), with full defeasance prepayment. Anchor leases averaged 14 years remaining; shop space at 95 percent occupancy.",
+    "expert_quote": "Power center retail with strong investment-grade anchors and well-located shop space remains an institutional retail core asset class. The financing market is robust for credit-anchored properties; weakly-anchored or single-anchor centers face tighter underwriting.",
+    "faqs": [
+      {
+        "q": "Who are the major power center owners?",
+        "a": "Brixmor Property Group, Kimco Realty, Regency Centers, RPT Realty, Site Centers, RPAI, and other institutional shopping center REITs are the major power center owners and operators."
+      },
+      {
+        "q": "What is co-tenancy?",
+        "a": "Co-tenancy clauses in shop space leases provide tenant rights (rent reduction, lease termination) if anchor tenants depart or vacate. Co-tenancy provisions affect cash flow risk during anchor transitions."
+      },
+      {
+        "q": "How does e-commerce affect power center financing?",
+        "a": "E-commerce affects shop space tenant mix more than big-box anchors. Lender underwriting evaluates shop space tenant mix and online competition exposure carefully."
+      },
+      {
+        "q": "What is the typical power center cap rate?",
+        "a": "Stabilized power centers with strong investment-grade anchors typically trade at 6.50 to 7.50 percent cap rates. Weaker anchor mix expands cap rates to 8.00 to 9.00 percent."
+      },
+      {
+        "q": "Can SBA finance power centers?",
+        "a": "Generally no. Power centers exceed SBA size eligibility for almost all program executions and are primarily investor-owned rather than owner-operator."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Property and casualty (substantial limits), general liability, business interruption, and umbrella coverage. Catastrophic coverage in exposed markets."
+      },
+      {
+        "q": "Are power centers financed at higher leverage than unanchored retail?",
+        "a": "Yes. Strong anchor tenant credit and longer WALT support 60 to 70 percent LTV at power centers versus 55 to 65 percent at unanchored retail."
+      },
+      {
+        "q": "What is the typical anchor lease term?",
+        "a": "15 to 25 year initial term is typical for power center anchor leases, with multiple 5-year renewal options. The long initial term supports cash flow predictability."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/retail.html",
+        "title": "Retail Hub",
+        "sub": "All retail strategies"
+      },
+      {
+        "href": "property/strip-center-unanchored-retail-financing.html",
+        "title": "Strip Center",
+        "sub": "Sister retail"
+      }
+    ]
+  },
+  {
+    "slug": "lifestyle-center-retail-financing",
+    "name": "Lifestyle Center Retail",
+    "short_name": "Lifestyle Center",
+    "short_tagline": "Mixed-use lifestyle and entertainment retail",
+    "category_label": "Specialty Retail Property Financing",
+    "published": "2026-04-26",
+    "h1": "Lifestyle Center Retail Financing",
+    "seo": {
+      "title": "Lifestyle Center Retail Financing | CLS CRE",
+      "meta_description": "Financing for lifestyle centers and mixed-use entertainment retail. CMBS, life co, specialty retail, and bank programs."
+    },
+    "lead": "Lifestyle center retail financing serves outdoor mixed-use shopping centers combining apparel and specialty retail, restaurants, entertainment, and often residential or office components. The asset class targets affluent demographics and provides experiential retail beyond commodity shopping. Major operators include Simon Property Group, Macerich, Tanger, Federal Realty, and increasingly mixed-use developers building lifestyle-center-anchored projects.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$30M to $300M+"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "60 to 70 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.30x to 1.45x"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 15 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse with carve-outs"
+      },
+      {
+        "label": "Tenant mix",
+        "value": "Apparel, dining, entertainment, services"
+      },
+      {
+        "label": "Center size",
+        "value": "300,000 to 1,000,000+ sq ft typical"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~20 to 35 institutional retail"
+      }
+    ],
+    "capital_intro": "Lifestyle center financing operates through CMBS, life co for trophy assets, specialty retail lenders, and bank balance sheet for established operators. The asset class requires lender expertise in experiential retail and mixed-use dynamics.",
+    "capital_table": [
+      {
+        "source": "CMBS conduit",
+        "rate": "6.45 to 7.35%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Stabilized lifestyle centers $30M+"
+      },
+      {
+        "source": "Life insurance company",
+        "rate": "5.95 to 6.95%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Trophy lifestyle centers $50M+"
+      },
+      {
+        "source": "Specialty retail bank",
+        "rate": "7.45 to 8.85%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Mid-market lifestyle centers"
+      },
+      {
+        "source": "Bridge debt fund",
+        "rate": "SOFR + 425 to 600",
+        "ltv": "65 to 75% LTC",
+        "best_fit": "Value-add and repositioning"
+      },
+      {
+        "source": "Bank balance sheet",
+        "rate": "7.45 to 8.85%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Established mixed-use operators"
+      }
+    ],
+    "deal_profile": [
+      "Lifestyle center transactions range from $30M for smaller boutique lifestyle centers to $300M+ for major mixed-use lifestyle anchored projects. Per-square-foot pricing typically runs $250 to $700 reflecting affluent market positioning and mixed-use components.",
+      "Sponsor profiles include institutional retail REITs (Simon, Macerich, Tanger, Federal Realty, Brookfield), mixed-use developers, and institutional capital partners. Mixed-use lifestyle-anchored projects increasingly include residential and office components.",
+      "Operating revenue blends apparel and specialty retail rent, restaurant rent (typically premium per-square-foot), entertainment venues, services, and ancillary revenue. Tenant mix diversification and experiential positioning drive cash flow durability."
+    ],
+    "underwriting_intro": "Lifestyle center underwriting evaluates the property, the tenant mix, the demographic positioning, and the experiential elements that drive traffic.",
+    "underwriting_bullets": [
+      "Tenant mix: apparel, dining, entertainment, services",
+      "Demographic positioning: affluent market alignment",
+      "Experiential elements: events, entertainment, dining concentration",
+      "Tenant performance: sales per square foot benchmarks",
+      "Lease structure: typically NNN with percentage rent options",
+      "Mixed-use components: residential or office integration",
+      "Sponsor experience: lifestyle and mixed-use operating expertise",
+      "Capital expenditure: refresh cycles support competitive positioning"
+    ],
+    "pitfalls_intro": "Lifestyle center transactions have specific failure modes around demographic shifts, retailer bankruptcies, and competitive supply.",
+    "pitfalls_bullets": [
+      "Demographic shifts: affluent demographic concentration",
+      "Retailer bankruptcies: apparel sector disruption",
+      "E-commerce pressure on apparel",
+      "Restaurant sector volatility",
+      "Competitive supply expansion",
+      "Capital expenditure for refresh",
+      "Insurance and security",
+      "Mixed-use operating complexity"
+    ],
+    "real_deal_example": "On a $145M acquisition of a 425,000 square foot lifestyle center anchored by Apple, Lululemon, Anthropologie, and several premium restaurants in an affluent Sun Belt suburb, the sponsor was an institutional retail REIT. CMBS at 6.85 percent fixed 10-year, 65 percent LTV ($94M).",
+    "expert_quote": "Lifestyle centers in well-positioned affluent markets continue to perform as institutional retail core assets. The financing market is robust for trophy lifestyle centers with credit tenants and experiential positioning.",
+    "faqs": [
+      {
+        "q": "What distinguishes lifestyle centers from power centers?",
+        "a": "Lifestyle centers feature outdoor mixed-use design, apparel and specialty retail concentration, dining and entertainment integration, and affluent demographic targeting. Power centers feature big-box anchors and commodity shopping focus."
+      },
+      {
+        "q": "Who are the major lifestyle center operators?",
+        "a": "Simon Property Group, Macerich, Tanger, Federal Realty Investment Trust, and Brookfield are major lifestyle center operators along with mixed-use developers."
+      },
+      {
+        "q": "What is the typical lifestyle center cap rate?",
+        "a": "Trophy lifestyle centers in affluent markets typically trade at 5.50 to 6.50 percent cap rates. Mid-market lifestyle centers trade at 6.50 to 7.50 percent."
+      },
+      {
+        "q": "How do mixed-use components affect financing?",
+        "a": "Mixed-use lifestyle centers with residential and office components access broader lender pool but face more complex underwriting. Lender legal counsel reviews mixed-use structures carefully."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Property and casualty (substantial limits), general liability, business interruption, and umbrella coverage. Outdoor mall coverage and event-related liability."
+      },
+      {
+        "q": "Are lifestyle centers more recession resilient?",
+        "a": "Affluent demographic positioning provides modest recession resilience versus commodity retail, but apparel and discretionary spending sectors remain cyclical."
+      },
+      {
+        "q": "Can lifestyle centers be converted?",
+        "a": "Yes through repositioning, mixed-use conversion, or partial residential/office conversion. Conversion typically requires substantial capital expenditure and entitlement."
+      },
+      {
+        "q": "What is the typical operating margin?",
+        "a": "Lifestyle centers typically operate at 60 to 70 percent NOI margin reflecting active leasing, common area maintenance, and event programming."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/retail.html",
+        "title": "Retail Hub",
+        "sub": "All retail strategies"
+      },
+      {
+        "href": "property/power-center-retail-financing.html",
+        "title": "Power Center",
+        "sub": "Sister retail"
+      },
+      {
+        "href": "property/mixed-use.html",
+        "title": "Mixed-Use",
+        "sub": "Mixed-use hub"
+      }
+    ]
+  },
+  {
+    "slug": "mixed-use-apartments-over-retail-financing",
+    "name": "Mixed-Use (Apartments Over Retail)",
+    "short_name": "Mixed-Use",
+    "short_tagline": "Apartments over retail and live-work mixed-use",
+    "category_label": "Specialty Mixed-Use Property Financing",
+    "published": "2026-04-26",
+    "h1": "Mixed-Use Apartments Over Retail Financing",
+    "seo": {
+      "title": "Mixed-Use Apartments Over Retail Financing | CLS CRE",
+      "meta_description": "Financing for mixed-use apartments-over-retail properties. Agency multifamily, life co, CMBS, and specialty mixed-use programs."
+    },
+    "lead": "Mixed-use apartments-over-retail financing serves urban infill and main-street properties combining ground-floor retail with multifamily residential above. The asset class fits between conventional multifamily and conventional retail in financing terms, with lender appetite varying based on the multifamily-to-retail revenue mix. When residential dominates (75%+ of NOI), agency multifamily programs apply; when retail dominates, retail financing programs apply.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$5M to $100M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "65 to 75 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.25x to 1.40x"
+      },
+      {
+        "label": "Term",
+        "value": "5 to 30 years"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse with carve-outs"
+      },
+      {
+        "label": "Multifamily-to-retail mix",
+        "value": "75/25 typical for agency"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~25 to 40 multifamily + mixed-use"
+      }
+    ],
+    "capital_intro": "Mixed-use apartments-over-retail financing operates across multifamily and retail capital channels depending on revenue mix. Properties with 75 percent or more NOI from multifamily access agency programs; properties with greater retail mix access CMBS, life co, or specialty retail lenders.",
+    "capital_table": [
+      {
+        "source": "Fannie Mae DUS (multifamily-dominant)",
+        "rate": "5.85 to 6.30%",
+        "ltv": "70 to 75 percent",
+        "best_fit": "75%+ multifamily NOI; ground-floor retail acceptable"
+      },
+      {
+        "source": "Freddie Mac Optigo (multifamily-dominant)",
+        "rate": "5.75 to 6.25%",
+        "ltv": "70 to 75 percent",
+        "best_fit": "75%+ multifamily NOI; ground-floor retail acceptable"
+      },
+      {
+        "source": "CMBS conduit",
+        "rate": "6.45 to 7.35%",
+        "ltv": "65 to 70 percent",
+        "best_fit": "Mixed-use $10M+ with substantial retail component"
+      },
+      {
+        "source": "Life insurance company",
+        "rate": "5.85 to 6.65%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Trophy mixed-use with strong tenant mix"
+      },
+      {
+        "source": "Bank balance sheet",
+        "rate": "7.25 to 8.85%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Mid-market mixed-use with depository"
+      }
+    ],
+    "deal_profile": [
+      "Mixed-use transactions range from $5M for smaller infill properties (10 to 30 units over ground-floor retail) to $100M+ for major mixed-use developments. Per-unit pricing reflects the multifamily component plus retail value contribution.",
+      "Sponsor profiles include urban multifamily developers, mixed-use specialists, and institutional capital. Major US cities (NYC, LA, Chicago, Boston, San Francisco, DC) feature dense mixed-use development.",
+      "Operating revenue blends multifamily rent (typically 60 to 80 percent of NOI) and retail rent (20 to 40 percent of NOI). Multifamily provides cash flow durability; retail provides higher per-square-foot revenue but with operating volatility."
+    ],
+    "underwriting_intro": "Mixed-use underwriting evaluates the multifamily and retail components separately and the integrated property dynamics.",
+    "underwriting_bullets": [
+      "Multifamily-to-retail mix: 75/25 typical for agency",
+      "Ground-floor retail tenant credit and lease structure",
+      "Multifamily occupancy and rent growth",
+      "Retail occupancy and tenant performance",
+      "Property condition: separate multifamily and retail components",
+      "Sponsor experience: mixed-use operating expertise",
+      "Local zoning: mixed-use zoning supports the format",
+      "Operating complexity: dual-product management"
+    ],
+    "pitfalls_intro": "Mixed-use transactions have specific failure modes around retail tenant turnover, agency NOI mix thresholds, and operating complexity.",
+    "pitfalls_bullets": [
+      "Retail tenant turnover affects total NOI",
+      "Agency NOI mix thresholds: 75/25 boundary affects financing access",
+      "Operating complexity: dual-product management",
+      "Capital expenditure: separate multifamily and retail cycles",
+      "Insurance: combined coverage required",
+      "Local zoning shifts",
+      "E-commerce pressure on retail component",
+      "Mixed-use lender appetite varies by market"
+    ],
+    "real_deal_example": "On a $24M ground-up 8-story mixed-use development in a major urban market (84 multifamily units over 12,000 sq ft of ground-floor retail), the sponsor was a mixed-use developer. Construction debt at SOFR + 525 (10 percent all-in), 70 percent LTC ($16.8M), with Fannie Mae forward commitment at 5.95 percent fixed 10-year for permanent take-out at stabilization (multifamily NOI projected at 76 percent of total).",
+    "expert_quote": "Mixed-use apartments-over-retail is a fundamentally different financing product than pure multifamily or pure retail. The 75/25 NOI mix threshold for agency access is critical. Sponsors plan capital structure around that boundary deliberately.",
+    "faqs": [
+      {
+        "q": "Are mixed-use properties eligible for Fannie Mae and Freddie Mac?",
+        "a": "Yes when multifamily NOI represents 75 percent or more of total property NOI. Both agencies finance qualifying mixed-use properties under conventional multifamily programs."
+      },
+      {
+        "q": "What is the 75/25 NOI rule?",
+        "a": "Agency multifamily programs typically require multifamily to represent at least 75 percent of total property NOI. Properties exceeding 25 percent retail NOI fall outside agency conventional programs and access CMBS or other capital sources."
+      },
+      {
+        "q": "Can ground-floor retail be financed at agency rates?",
+        "a": "Yes when the multifamily NOI represents 75 percent or more of total property NOI. The agency loan covers the entire mixed-use property at agency multifamily rates."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Combined multifamily and retail insurance covering both components, plus appropriate liability and umbrella coverage."
+      },
+      {
+        "q": "Are mixed-use properties more or less recession resilient?",
+        "a": "Multifamily component provides recession resilience; retail component carries more cyclical exposure. Mixed-use total cash flow is typically more stable than pure retail but less stable than pure multifamily."
+      },
+      {
+        "q": "What is the typical operating margin?",
+        "a": "Mixed-use operating margins typically run 55 to 65 percent NOI margin reflecting active retail leasing, multifamily operations, and integrated property management."
+      },
+      {
+        "q": "Can SBA finance mixed-use?",
+        "a": "For owner-occupied mixed-use (where the borrower's business occupies a portion of the retail), SBA 504 can finance subject to standard SBA size and use eligibility. Investor-owned mixed-use is not SBA-eligible."
+      },
+      {
+        "q": "What is the typical mixed-use cap rate?",
+        "a": "Stabilized mixed-use trades at cap rates between multifamily and retail comps for the same market, typically 5.50 to 7.00 percent depending on mix and market."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily",
+        "sub": "All capital sources"
+      },
+      {
+        "href": "property/retail.html",
+        "title": "Retail",
+        "sub": "All retail strategies"
+      },
+      {
+        "href": "property/mixed-use.html",
+        "title": "Mixed-Use Hub",
+        "sub": "Mixed-use hub"
+      }
+    ]
+  },
+  {
+    "slug": "big-box-single-tenant-nnn-financing",
+    "name": "Big Box Single-Tenant NNN",
+    "short_name": "Big Box NNN",
+    "short_tagline": "Walmart, Home Depot, Target, Costco, big box retail NNN",
+    "category_label": "Specialty Net Lease Property Financing",
+    "published": "2026-04-26",
+    "h1": "Big Box Single-Tenant NNN Financing",
+    "seo": {
+      "title": "Big Box Single-Tenant NNN Financing | CLS CRE",
+      "meta_description": "Financing for big box single-tenant net lease properties: Walmart, Home Depot, Target, Costco, and similar. CMBS, life co, and specialty STNL programs."
+    },
+    "lead": "Big box single-tenant net lease (STNL) financing serves freestanding retail buildings leased to major brand tenants on long-term triple-net leases. The asset class includes Walmart, Home Depot, Target, Costco, Lowe's, Best Buy, Kohl's, and similar national big box retailers. Strong investment-grade tenant credit and long initial lease terms support tight pricing and broad lender appetite from CMBS, life co, and specialty STNL programs.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$10M to $50M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "60 to 70 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.25x to 1.35x"
+      },
+      {
+        "label": "Term",
+        "value": "10 to 25 years (matched to lease)"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse with carve-outs"
+      },
+      {
+        "label": "Tenant credit",
+        "value": "Investment grade typically"
+      },
+      {
+        "label": "Lease term",
+        "value": "15 to 25 years initial"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~30 to 50 STNL specialty"
+      }
+    ],
+    "capital_intro": "Big box NNN financing flows through CMBS conduits, life cos, specialty STNL lenders, 1031 exchange buyer pools, and conventional banks. The strong tenant credit and long initial lease terms support broad lender competition and tight pricing.",
+    "capital_table": [
+      {
+        "source": "Life insurance company",
+        "rate": "5.95 to 6.65%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Trophy big box NNN with long WALT"
+      },
+      {
+        "source": "CMBS conduit",
+        "rate": "6.45 to 7.35%",
+        "ltv": "65 to 70 percent",
+        "best_fit": "Stabilized big box NNN $10M+"
+      },
+      {
+        "source": "Specialty STNL lender",
+        "rate": "7.25 to 8.45%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Standard big box NNN financing"
+      },
+      {
+        "source": "1031 exchange buyer",
+        "rate": "Equity-driven",
+        "ltv": "100 percent",
+        "best_fit": "1031 acquisition with subsequent financing"
+      },
+      {
+        "source": "Conventional bank",
+        "rate": "7.25 to 8.85%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Established STNL investors"
+      }
+    ],
+    "deal_profile": [
+      "Big box NNN transactions typically range from $10M for smaller properties to $50M for trophy big box facilities. Per-square-foot pricing typically runs $150 to $350 reflecting credit-tenant net-leased characteristics.",
+      "Sponsor profiles include 1031 exchange buyers, institutional STNL investors (Realty Income, Agree Realty, Spirit Realty, NETSTREIT, STORE Capital, National Retail Properties), and family offices.",
+      "Operating revenue is the triple-net rent paid by the big box tenant. NNN leases typically include CPI escalations or fixed annual escalations of 1 to 2.5 percent. The tenant pays all property expenses."
+    ],
+    "underwriting_intro": "Big box NNN underwriting evaluates the property, the tenant lease, the credit profile, and the location.",
+    "underwriting_bullets": [
+      "Tenant credit: Walmart AA, Home Depot A, Target A, Costco AA-, etc.",
+      "Lease term: 15 to 25 year initial term typical",
+      "Lease structure: triple-net with CPI or fixed escalations",
+      "Renewal options: multiple 5-year renewals typical",
+      "Location: traffic count, demographics, accessibility",
+      "Property condition: building condition, parking, signage",
+      "WALT: weighted average lease term remaining",
+      "Adaptive reuse: limited but possible (other big box)"
+    ],
+    "pitfalls_intro": "Big box NNN transactions have specific failure modes around tenant credit changes, retail e-commerce pressure, and renewal timing.",
+    "pitfalls_bullets": [
+      "Tenant credit downgrade: investment-grade ratings can shift",
+      "Retail e-commerce pressure on tenant viability",
+      "Lease expiration risk: short remaining term compresses cap rates",
+      "Specialized big box build-out: limited adaptive reuse",
+      "Insurance: large building values",
+      "Concentration risk: single-tenant dependency",
+      "Bankruptcy precedent: Sears, Kmart, Toys R Us, Bed Bath & Beyond",
+      "Big box closure pressure: Walmart, Target, Home Depot generally stable; weaker brands face closure risk"
+    ],
+    "real_deal_example": "On a $14M acquisition of a 105,000 square foot Walmart Supercenter in a Midwest suburban market, leased on a 22-year remaining triple-net lease with CPI escalations, the buyer was a 1031 exchange investor. Specialty STNL lender at 6.95 percent fixed 10-year, 65 percent LTV ($9.1M).",
+    "expert_quote": "Big box single-tenant NNN with strong investment-grade anchors remains an institutional STNL core asset class. Walmart, Home Depot, Costco, Target, and similar credit-tenant net-leased properties trade reliably at competitive cap rates and access broad lender appetite.",
+    "faqs": [
+      {
+        "q": "Who are the major big box net-leased tenants?",
+        "a": "Walmart, Home Depot, Target, Costco, Lowe's, Best Buy, Kohl's, T.J. Maxx, Burlington, and Dick's Sporting Goods are common big box NNN tenants."
+      },
+      {
+        "q": "What is the typical big box NNN cap rate?",
+        "a": "Stabilized big box NNN with strong investment-grade tenants typically trades at 5.50 to 6.75 percent cap rates depending on tenant credit, lease term remaining, and market."
+      },
+      {
+        "q": "What credit ratings do major big box tenants carry?",
+        "a": "Walmart AA, Home Depot A, Target A, Costco AA-, Lowe's A, Best Buy BBB, Kohl's BBB-. Most big box anchors are investment grade."
+      },
+      {
+        "q": "How does e-commerce affect big box NNN financing?",
+        "a": "Lender underwriting evaluates each tenant's e-commerce competitive positioning. Walmart, Home Depot, Costco, Target are generally seen as e-commerce-resilient. Weaker brands face tighter underwriting."
+      },
+      {
+        "q": "Are big box NNN financeable through 1031 exchange?",
+        "a": "Yes. Big box NNN is one of the most active 1031 exchange property categories given credit-tenant cash flow and standard financing availability."
+      },
+      {
+        "q": "What insurance is required?",
+        "a": "Property and casualty (substantial limits), general liability, business interruption, and umbrella coverage. Tenant typically maintains coverage on its operations under NNN structure."
+      },
+      {
+        "q": "What is the typical lease structure?",
+        "a": "15 to 25 year initial term with multiple 5-year renewal options. Triple-net structure with CPI or fixed annual escalations of 1 to 2.5 percent."
+      },
+      {
+        "q": "Can big box facilities be converted?",
+        "a": "Limited but possible. Big box buildings can sometimes be converted to other big box tenants, multi-tenant retail, or specialty uses (climbing gym, indoor entertainment, dollar store) at significant capital expenditure."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/stnl-vs-multi-tenant-retail.html",
+        "title": "STNL vs Multi-Tenant",
+        "sub": "Net lease comparison"
+      },
+      {
+        "href": "property/retail.html",
+        "title": "Retail Hub",
+        "sub": "All retail strategies"
+      }
+    ]
+  },
+  {
+    "slug": "drug-store-pharmacy-nnn-financing",
+    "name": "Drug Store / Pharmacy NNN",
+    "short_name": "Drug Store NNN",
+    "short_tagline": "CVS, Walgreens, Rite Aid pharmacy NNN",
+    "category_label": "Specialty Net Lease Property Financing",
+    "published": "2026-04-26",
+    "h1": "Drug Store and Pharmacy NNN Financing",
+    "seo": {
+      "title": "Drug Store / Pharmacy NNN Financing | CLS CRE",
+      "meta_description": "Financing for drug store and pharmacy single-tenant NNN properties: CVS, Walgreens, Rite Aid. CMBS, life co, and specialty STNL programs."
+    },
+    "lead": "Drug store and pharmacy single-tenant NNN financing serves freestanding pharmacy retail properties leased to CVS, Walgreens, and Rite Aid. The asset class is one of the most active and well-served STNL categories in the country, with concentrated tenant credit (CVS BBB, Walgreens BBB), long initial lease terms (typically 15 to 25 years), and triple-net structures providing predictable cash flow with minimal landlord responsibility.",
+    "snapshot": [
+      {
+        "label": "Typical loan size",
+        "value": "$2M to $10M"
+      },
+      {
+        "label": "Maximum LTV",
+        "value": "65 to 75 percent"
+      },
+      {
+        "label": "Typical DSCR floor",
+        "value": "1.25x to 1.35x"
+      },
+      {
+        "label": "Term",
+        "value": "10 to 25 years (matched to lease)"
+      },
+      {
+        "label": "Recourse",
+        "value": "Non-recourse with carve-outs"
+      },
+      {
+        "label": "Tenant credit",
+        "value": "Investment grade (CVS BBB, Walgreens BBB)"
+      },
+      {
+        "label": "Lease term",
+        "value": "15 to 25 years initial"
+      },
+      {
+        "label": "Lender count actively quoting",
+        "value": "~40 to 60 STNL specialty"
+      }
+    ],
+    "capital_intro": "Drug store NNN financing flows through CMBS conduits, life cos, specialty STNL lenders, 1031 exchange buyer pools, and conventional banks. The strong tenant credit and standard lease structure support broad lender competition and tight pricing.",
+    "capital_table": [
+      {
+        "source": "Life insurance company",
+        "rate": "5.95 to 6.65%",
+        "ltv": "55 to 65 percent",
+        "best_fit": "Trophy long-WALT credit-tenant drug store"
+      },
+      {
+        "source": "CMBS conduit",
+        "rate": "6.45 to 7.35%",
+        "ltv": "65 to 70 percent",
+        "best_fit": "Stabilized drug store NNN"
+      },
+      {
+        "source": "Specialty STNL lender",
+        "rate": "7.25 to 8.45%",
+        "ltv": "65 to 75 percent",
+        "best_fit": "Standard drug store NNN"
+      },
+      {
+        "source": "1031 exchange buyer",
+        "rate": "Equity-driven",
+        "ltv": "100 percent",
+        "best_fit": "1031 acquisition with subsequent financing"
+      },
+      {
+        "source": "Conventional bank",
+        "rate": "7.25 to 8.85%",
+        "ltv": "60 to 70 percent",
+        "best_fit": "Established 1031 buyers"
+      }
+    ],
+    "deal_profile": [
+      "Drug store NNN transactions typically range from $2M for smaller properties to $10M for larger trophy locations. Per-square-foot pricing typically runs $300 to $700.",
+      "Sponsor profiles are dominated by 1031 exchange buyers seeking credit-tenant net-leased income, institutional STNL investors (Realty Income, Agree Realty, Spirit Realty, NETSTREIT, STORE Capital), and family offices. Drug store NNN is one of the most active 1031 categories.",
+      "Operating revenue is the triple-net rent paid by the pharmacy tenant. NNN leases include CPI escalations or fixed annual escalations of 1 to 2.5 percent. The tenant pays all property expenses including taxes, insurance, and maintenance."
+    ],
+    "underwriting_intro": "Drug store NNN underwriting evaluates the property, the tenant lease, the credit profile, and the location.",
+    "underwriting_bullets": [
+      "Tenant credit: CVS BBB, Walgreens BBB, Rite Aid post-bankruptcy",
+      "Lease term: 15 to 25 year initial term typical",
+      "Lease structure: triple-net with CPI or fixed escalations",
+      "Renewal options: multiple 5-year renewals typical",
+      "Location: traffic count, drive-through, demographics",
+      "Property condition: building condition, signage, parking",
+      "WALT: weighted average lease term remaining",
+      "Adaptive reuse: medical office, retail, urgent care potential"
+    ],
+    "pitfalls_intro": "Drug store NNN transactions have specific failure modes around tenant consolidation, e-commerce pressure on retail pharmacy, and Rite Aid bankruptcy precedent.",
+    "pitfalls_bullets": [
+      "Tenant credit changes: pharmacy sector consolidation",
+      "Rite Aid bankruptcy: Rite Aid filed Chapter 11 in October 2023; affecting older Rite Aid leases",
+      "E-commerce pressure: online prescription delivery (Amazon Pharmacy, GoodRx)",
+      "Closure pressure: Walgreens announced significant store closures 2024-2025",
+      "Lease expiration risk",
+      "Adaptive reuse: medical office, urgent care, dollar store, child care",
+      "Insurance: standard NNN insurance applies",
+      "Concentration risk: limited tenant universe (3 major pharmacies)"
+    ],
+    "real_deal_example": "On a $4.6M acquisition of a 14,500 square foot CVS in a Sun Belt suburban market, leased on a 18-year remaining triple-net lease with 1.25 percent annual escalations, the buyer was a 1031 exchange investor. Specialty STNL lender at 7.05 percent fixed 10-year, 70 percent LTV ($3.2M), with full defeasance.",
+    "expert_quote": "Drug store and pharmacy NNN remains one of the most active credit-tenant net-leased categories in the country. Despite pharmacy sector consolidation pressure, CVS and Walgreens credit-tenant properties continue to trade reliably at competitive cap rates with broad lender appetite.",
+    "faqs": [
+      {
+        "q": "Who are the major drug store NNN tenants?",
+        "a": "CVS Health (largest), Walgreens Boots Alliance, Rite Aid (post-bankruptcy reorganization). The pharmacy sector has consolidated to these three major chains plus regional and independent operators."
+      },
+      {
+        "q": "What credit ratings do drug store tenants carry?",
+        "a": "CVS Health BBB, Walgreens Boots Alliance BBB. Rite Aid lost investment-grade rating in 2023 reflecting its Chapter 11 reorganization."
+      },
+      {
+        "q": "How does the Rite Aid bankruptcy affect financing?",
+        "a": "Existing Rite Aid leases face elevated risk depending on store performance and post-bankruptcy lease assumption. Lender underwriting on Rite Aid properties has tightened materially."
+      },
+      {
+        "q": "What is the typical drug store NNN cap rate?",
+        "a": "Stabilized CVS and Walgreens NNN typically trades at 5.50 to 6.75 percent cap rates depending on lease term remaining and location. Rite Aid post-bankruptcy trades wider."
+      },
+      {
+        "q": "How does e-commerce affect drug store financing?",
+        "a": "Online prescription delivery (Amazon Pharmacy, GoodRx, Mark Cuban Cost Plus Drug Company) creates competitive pressure. Drive-through and convenience-driven physical pharmacy locations remain durable."
+      },
+      {
+        "q": "Are drug stores 1031-exchange-friendly?",
+        "a": "Yes. Drug store NNN is one of the most active 1031 exchange categories given credit-tenant cash flow, standard lease structures, and broad financing availability."
+      },
+      {
+        "q": "What is the typical lease term?",
+        "a": "15 to 25 year initial term with multiple 5-year renewal options. Triple-net structure with CPI or fixed annual escalations of 1 to 2.5 percent."
+      },
+      {
+        "q": "Can drug store buildings be converted?",
+        "a": "Yes. Drug store buildings (typically 13,000 to 15,000 sq ft with drive-through) can be converted to medical office, urgent care, dollar store, child care, or smaller multi-tenant retail at moderate capital expenditure."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "comparisons/stnl-vs-multi-tenant-retail.html",
+        "title": "STNL vs Multi-Tenant",
+        "sub": "Net lease comparison"
+      },
+      {
+        "href": "property/big-box-single-tenant-nnn-financing.html",
+        "title": "Big Box NNN",
+        "sub": "Sister net lease"
+      }
+    ]
   }
 ]

@@ -738,18 +738,69 @@ def main():
         dst = css_dir / css_file.replace(".css", ".min.css")
         minify_css(src, dst)
 
-    # ── 11. Sitemap.xml ─────────────────────────────────────────────────
-    print("\n=== Generating sitemap.xml ===")
+    # ── 11. Sitemap.xml + segmented sitemaps ──────────────────────────
+    print("\n=== Generating sitemaps (segmented) ===")
     tpl_sitemap = env.get_template("sitemap.xml.j2")
+
+    # Categorize each URL into a segmented sitemap. Categorization is
+    # path-based: the first path segment after the domain determines bucket.
+    def _categorize(url):
+        path = url["loc"].replace(BASE_URL, "").lstrip("/")
+        if path.startswith("financing/"):
+            return "financing"
+        if path.startswith("property/"):
+            return "property"
+        if path.startswith("markets/"):
+            return "markets"
+        if path.startswith("blog/"):
+            return "blog"
+        if path.startswith("comparisons/"):
+            return "comparisons"
+        if path.startswith("loan-size/"):
+            return "loan-size"
+        if path.startswith("research/"):
+            return "research"
+        if path.startswith("landing/"):
+            return "landing"
+        if (path.startswith("affordable-housing/") or path.startswith("multifamily/markets/")
+                or path.startswith("commercial/markets/") or path.startswith("industrial/markets/")):
+            return "vertical"
+        # Anything else (homepage, about, apply, tools, locations, etc.)
+        return "pages"
+
+    segmented = {}
+    for url in sitemap_urls:
+        segmented.setdefault(_categorize(url), []).append(url)
+
+    # Write each category sitemap
+    category_files = []
+    for category, urls in sorted(segmented.items()):
+        filename = f"sitemap-{category}.xml"
+        xml = tpl_sitemap.render(urls=urls)
+        (WEBSITE_DIR / filename).write_text(xml, encoding="utf-8")
+        category_files.append((filename, len(urls)))
+        print(f"  [OK] {filename}  ({len(urls)} URLs)")
+
+    # Build sitemap-index.xml
+    index_lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+                   '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for filename, _ in category_files:
+        index_lines.append(f'  <sitemap><loc>{BASE_URL}/{filename}</loc><lastmod>{TODAY}</lastmod></sitemap>')
+    index_lines.append('</sitemapindex>')
+    (WEBSITE_DIR / "sitemap-index.xml").write_text("\n".join(index_lines) + "\n", encoding="utf-8")
+    print(f"  [OK] sitemap-index.xml  ({len(category_files)} category sitemaps)")
+
+    # Keep monolithic sitemap.xml for backwards compatibility (existing IndexNow scripts read it)
     sitemap_xml = tpl_sitemap.render(urls=sitemap_urls)
     (WEBSITE_DIR / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
-    print(f"  [OK] sitemap.xml  ({len(sitemap_urls)} URLs)")
+    print(f"  [OK] sitemap.xml  ({len(sitemap_urls)} URLs, backwards-compat)")
 
     # ── 12. Robots.txt ─────────────────────────────────────────────────
     print("\n=== Generating robots.txt ===")
     robots = f"""User-agent: *
 Allow: /
 
+Sitemap: {BASE_URL}/sitemap-index.xml
 Sitemap: {BASE_URL}/sitemap.xml
 """
     (WEBSITE_DIR / "robots.txt").write_text(robots, encoding="utf-8")
