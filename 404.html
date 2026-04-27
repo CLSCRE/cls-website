@@ -16,6 +16,13 @@
 <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/global.min.css">
 <style>
+.skip-link{position:absolute;top:-40px;left:0;background:#153D63;color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
+.skip-link:focus{top:0;outline:3px solid #00A676;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.nav-dropdown:focus-within .nav-dropdown-menu{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+</style>
+<style>
 .error-section{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 24px 80px}
 .error-inner{max-width:600px}
 .error-code{font-family:var(--font-display);font-size:120px;color:var(--navy);line-height:1;margin-bottom:8px}
@@ -30,6 +37,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH6TD3TC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -39,7 +47,7 @@
   <a href="index.html" class="nav-logo"><img src="images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="140" height="140"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
   <div class="nav-links" id="navLinks">
     <div class="nav-dropdown">
-      <a href="index.html#programs">Financing</a>
+      <a href="index.html#programs" aria-haspopup="true" aria-expanded="false">Financing</a>
       <div class="nav-dropdown-menu">
         <a href="financing/permanent-loans.html">Permanent Loans</a>
         <a href="financing/construction-loans.html">Construction Loans</a>
@@ -55,7 +63,7 @@
       </div>
     </div>
     <div class="nav-dropdown">
-      <a href="index.html#transactions">Properties</a>
+      <a href="index.html#transactions" aria-haspopup="true" aria-expanded="false">Properties</a>
       <div class="nav-dropdown-menu">
         <a href="property/multifamily.html">Multifamily</a>
         <a href="property/industrial.html">Industrial</a>
@@ -78,6 +86,7 @@
 </div>
 </nav>
 
+<main id="main-content">
 <section class="error-section">
   <div class="error-inner">
     <div class="error-code">404</div>
@@ -93,6 +102,7 @@
     <p style="font-size:13px;color:var(--gray-500);margin-top:24px">Or email <a href="mailto:trevor@clscre.com" style="color:var(--navy)">trevor@clscre.com</a> &mdash; Trevor Damyan, Commercial Mortgage Broker.</p>
   </div>
 </section>
+</main>
 
 <footer>
 <div class="footer-grid">
@@ -141,7 +151,7 @@
 
 <script>
 const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
-const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
+const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open');const open=navLinks.classList.contains('open');mobileToggle.setAttribute('aria-expanded',open)});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
 </script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
 <script src="js/tracking.js" defer></script>

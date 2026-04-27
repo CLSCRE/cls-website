@@ -1,0 +1,129 @@
+{
+  "programs": [
+    {
+      "slug": "climate-controlled",
+      "name": "Climate-Controlled Self-Storage Financing",
+      "short_name": "Climate-Controlled Self-Storage",
+      "description": "Indoor, temperature-regulated self-storage facilities serving urban and suburban markets where renters store sensitive goods: furniture, electronics, wine, documents, and business inventory. Higher-revenue-per-square-foot than drive-up and favored by institutional lenders due to superior NOI stability and lower vacancy sensitivity.",
+      "typical_deal_range": "$5M to $50M total capitalization",
+      "typical_stack": [
+        "Permanent loan: life insurance company or CMBS for stabilized with 85 percent or better occupancy",
+        "Bridge: debt fund or regional bank for lease-up or value-add repositioning",
+        "Construction loan: regional bank or specialty CRE lender for ground-up",
+        "SBA 7(a) for owner-operator facilities under $5M with strong operating history"
+      ],
+      "key_features": {
+        "tenant_profile": "Residential renters storing household goods, small business owners, wine collectors, document storage users",
+        "typical_lease_term": "Month-to-month with strong renewal rates and low move-out friction",
+        "building_specs": "Multi-story preferred in dense urban markets, HVAC throughout, individually secured units, keypad access, security cameras",
+        "most_competitive_lender": "Life insurance companies for stabilized Class A facilities in primary markets at 85 percent or better occupancy",
+        "ltv_ranges": "60 to 65 percent life co, 70 to 75 percent CMBS, 75 to 80 percent regional bank or debt fund bridge",
+        "rate_environment_2026": "Life co 150 to 200 over 10-year, CMBS 200 to 275 over, bridge debt fund SOFR plus 300 to 500"
+      },
+      "seo": {
+        "title_suffix": "Climate-Controlled Self-Storage Financing",
+        "meta_template": "Climate-controlled self-storage financing in {city}. Lender appetite, underwriting criteria, and capital stack for temperature-regulated storage assets."
+      }
+    },
+    {
+      "slug": "drive-up-standard",
+      "name": "Drive-Up and Standard Self-Storage Financing",
+      "short_name": "Drive-Up Self-Storage",
+      "description": "Single-story and low-rise drive-up self-storage facilities in suburban and exurban markets. The dominant self-storage format nationally. Lower construction cost than climate-controlled but also lower rents per square foot. Most attractive financing when stabilized above 88 percent occupancy with demonstrated operating history.",
+      "typical_deal_range": "$3M to $30M total capitalization",
+      "typical_stack": [
+        "Permanent loan: CMBS conduit or community bank for stabilized drive-up",
+        "Bridge: regional bank or debt fund for lease-up or renovation",
+        "Construction loan: community bank or regional bank for ground-up suburban development",
+        "SBA 7(a) or 504 for owner-operator drive-up acquisitions"
+      ],
+      "key_features": {
+        "tenant_profile": "Residential renters in transition (moving, downsizing), contractors, small business operators, seasonal storage users",
+        "typical_lease_term": "Month-to-month with strong suburban retention dynamics",
+        "building_specs": "Single-story drive-up units, roll-up doors, exterior access, perimeter fencing, basic camera coverage",
+        "most_competitive_lender": "CMBS conduits and community banks for well-stabilized suburban drive-up properties",
+        "ltv_ranges": "65 to 70 percent CMBS, 70 to 75 percent community bank, 75 to 80 percent SBA 504 owner-operator",
+        "rate_environment_2026": "CMBS 225 to 325 over 10-year, community bank floating or fixed at prime-based, SBA fixed rates for owner-operators"
+      },
+      "seo": {
+        "title_suffix": "Drive-Up Self-Storage Financing",
+        "meta_template": "Drive-up self-storage financing in {city}. CMBS, bank, and debt fund lender appetite for suburban and standard self-storage facilities."
+      }
+    },
+    {
+      "slug": "multi-story-urban",
+      "name": "Multi-Story Urban Self-Storage Financing",
+      "short_name": "Multi-Story Urban Self-Storage",
+      "description": "High-density multi-story self-storage developments in infill urban markets where land cost prohibits low-rise solutions. Typically 4 to 8 stories, mixed climate-controlled and drive-up, and higher per-unit revenues that justify the construction premium. Favored by institutional operators and institutional lenders given land scarcity and stable urban demand.",
+      "typical_deal_range": "$15M to $100M+ total capitalization for ground-up urban",
+      "typical_stack": [
+        "Permanent loan: life insurance company or CMBS for stabilized urban assets with institutional operator",
+        "Construction loan: national bank or specialty CRE construction lender for ground-up multi-story",
+        "Bridge: debt fund for lease-up phase after construction completion",
+        "Preferred equity or mezzanine for ground-up developments with institutional equity partners"
+      ],
+      "key_features": {
+        "tenant_profile": "Dense urban renters in small apartments, small businesses, creative professionals, college students",
+        "building_specs": "4 to 8 stories, elevator access, climate-controlled throughout, rooftop solar common, active ground-floor retail possible",
+        "construction_premium": "Multi-story urban self-storage costs $80 to $150/sf versus $35 to $60/sf for suburban drive-up",
+        "most_competitive_lender": "Life insurance companies for urban stabilized with institutional operator branding (Extra Space, Public Storage, CubeSmart)",
+        "ltv_ranges": "55 to 65 percent life co on stabilized urban, 70 percent CMBS, 65 to 75 percent construction with national bank",
+        "rate_environment_2026": "Construction floating SOFR plus 200 to 350, permanent life co 150 to 200 over 10-year for stabilized"
+      },
+      "seo": {
+        "title_suffix": "Multi-Story Urban Self-Storage Financing",
+        "meta_template": "Multi-story urban self-storage financing in {city}. Construction lending, lease-up bridge, and permanent capital for high-density infill storage developments."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "market_notes": "Los Angeles is one of the strongest self-storage markets in the country due to chronic housing undersupply, apartment density, and a mobile population of renters who rely on storage as de facto square footage. Infill land scarcity makes multi-story urban storage the dominant development format, and per-unit revenues in West LA, Hollywood, and the Eastside rank among the highest in the nation.",
+      "active_lender_commentary": "Life insurance companies are competitive for stabilized Class A climate-controlled and urban multi-story facilities with institutional operators. CMBS conduits active for stabilized assets at $10M and above. Regional banks (including California-based community banks) are the primary construction lenders for ground-up projects. Debt funds active on lease-up bridge in the $5M to $30M range.",
+      "submarkets": "West LA and Culver City, Hollywood and Silver Lake, Downtown LA and Arts District, San Fernando Valley, South Bay, East LA and Montebello"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "market_notes": "Phoenix is among the fastest-growing self-storage markets in the Sun Belt, driven by rapid household formation, population migration from California and the Midwest, and a suburban sprawl pattern that creates consistent move-related storage demand. The Southwest Valley, East Valley, and North Phoenix corridors have seen aggressive new supply but demand absorption has remained strong through 2026.",
+      "active_lender_commentary": "CMBS is the dominant permanent lender for stabilized Phoenix self-storage, with life companies participating selectively on Class A multi-story urban assets in Scottsdale and central Phoenix. Regional Arizona banks and community lenders active on construction and drive-up acquisitions. Debt funds quoting bridge loans on lease-up suburban projects across the Valley.",
+      "submarkets": "Scottsdale and North Scottsdale, Chandler and Gilbert, Tempe and Mesa, Peoria and Glendale, Central Phoenix, Goodyear and Buckeye"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "market_notes": "DFW is one of the largest and most active self-storage markets in the country. Texas has no state income tax and strong in-migration from other states, creating consistent household formation and storage demand. The suburban sprawl of DFW means drive-up facilities dominate outside the urban core, while multi-story climate-controlled storage is gaining ground in Uptown, Oak Lawn, and the Lakewood-East Dallas corridor.",
+      "active_lender_commentary": "CMBS and regional Texas banks are the primary lenders for drive-up stabilized Dallas self-storage. Life insurance companies selectively compete for Class A multi-story in Uptown and Frisco. National banks active on construction for institutional operators. Community banks in the DFW market are highly active for acquisitions in the $3M to $15M range.",
+      "submarkets": "Uptown and Oak Lawn, Plano and Frisco, Garland and Mesquite, Fort Worth and Arlington, Irving and Las Colinas, McKinney and Allen"
+    },
+    {
+      "slug": "tampa",
+      "name": "Tampa",
+      "state": "FL",
+      "market_notes": "Tampa is one of the top Sun Belt self-storage markets, fueled by Florida in-migration, a large retiree population moving from larger homes, and seasonal demand tied to snowbirds and second-home owners. The I-4 corridor between Tampa and Orlando has among the highest self-storage penetration rates in the country. Climate-controlled demand is elevated because Florida heat and humidity make uncontrolled storage unsuitable for most goods.",
+      "active_lender_commentary": "CMBS conduits are the dominant permanent lender for Tampa self-storage. Life companies selectively quote stabilized multi-story climate-controlled assets in Carrollwood, Westchase, and South Tampa. Florida-based community and regional banks competitive on construction and owner-operator acquisitions. Debt funds active on lease-up bridge for newly opened facilities across Hillsborough and Pasco counties.",
+      "submarkets": "South Tampa and Hyde Park, Westchase and Carrollwood, Brandon and Valrico, Wesley Chapel and New Tampa, St. Petersburg and Clearwater, Riverview and Apollo Beach"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "state": "GA",
+      "market_notes": "Atlanta's sprawling metro geography and steady in-migration from across the Southeast make it a structurally strong self-storage market. ITP (inside the perimeter) submarkets favor multi-story climate-controlled development due to land costs, while OTP (outside the perimeter) corridors like Alpharetta, Kennesaw, and Stockbridge absorb large drive-up supply. Demand is underpinned by Atlanta's role as the commercial and population hub of the Southeast.",
+      "active_lender_commentary": "CMBS conduits active across the Atlanta metro for stabilized drive-up and climate-controlled assets. Life insurance companies competing selectively for ITP urban multi-story with institutional operators. Southeast regional banks and Atlanta-based community banks are major construction lenders. Debt funds active for lease-up bridge, particularly on new OTP suburban development.",
+      "submarkets": "Midtown and Buckhead, Decatur and Druid Hills, Alpharetta and Roswell, Kennesaw and Marietta, Peachtree City and Fayette County, Stockbridge and Henry County"
+    },
+    {
+      "slug": "las-vegas",
+      "name": "Las Vegas",
+      "state": "NV",
+      "market_notes": "Las Vegas is one of the most self-storage-saturated markets in the country per capita, yet demand remains stable due to a transient population, small apartment footprints on the Strip and downtown, and a large seasonal tourism and hospitality workforce that creates consistent storage demand. The Henderson and Summerlin submarkets are the core suburban growth corridors for new supply.",
+      "active_lender_commentary": "CMBS conduits dominate Las Vegas self-storage lending for stabilized assets. Life companies rarely compete here given market saturation concerns. Nevada-based regional banks and Western regional lenders active on construction in Henderson, Summerlin, and North Las Vegas. Debt funds provide lease-up bridge on newly opened facilities across the metro.",
+      "submarkets": "Henderson and Green Valley, Summerlin and Spring Valley, North Las Vegas, Downtown Las Vegas, Enterprise and Southwest Las Vegas, Boulder City adjacent"
+    }
+  ]
+}

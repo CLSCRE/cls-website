@@ -1,0 +1,130 @@
+{
+  "programs": [
+    {
+      "slug": "colocation",
+      "name": "Colocation Data Center Financing",
+      "short_name": "Colocation Data Center",
+      "description": "Multi-tenant data centers where operators lease compute, networking, and power capacity to enterprise and cloud tenants under retail and wholesale colocation agreements. Equinix, Digital Realty, CyrusOne, and regional colocation operators dominate this segment. Lenders underwrite operator credit, tenant diversification, power capacity, and market supply-demand dynamics.",
+      "typical_deal_range": "$20M to $500M+ for larger stabilized colocation campuses",
+      "typical_stack": [
+        "Permanent loan: life insurance company with data center specialty desk for stabilized with institutional operator",
+        "CMBS: active for stabilized colocation with investment-grade operator or strong diversified tenant base",
+        "Specialty data center REIT lending for portfolio and credit-tenant structures",
+        "Construction loan: specialty data center debt fund or bank for ground-up colocation development"
+      ],
+      "key_features": {
+        "tenant_profile": "Enterprise companies, cloud providers, government agencies, managed service providers, content delivery networks",
+        "typical_lease_term": "3 to 10 years for retail colo, 5 to 15 years for wholesale/hyperscale MRR or lease agreements",
+        "building_specs": "Tier II to Tier IV classification, power density 150 to 500 watts per square foot, N+1 or 2N redundancy, fiber diversity, raised floor or hot aisle containment",
+        "most_competitive_lender": "Life insurance companies with data center specialty desks for institutional operators, specialty data center REITs",
+        "ltv_ranges": "55 to 65 percent life co for stabilized, 65 to 70 percent CMBS, 60 to 75 percent specialty construction financing",
+        "rate_environment_2026": "Life co 175 to 250 over 10-year for institutional operator, CMBS 200 to 300 over, construction SOFR plus 250 to 400"
+      },
+      "seo": {
+        "title_suffix": "Colocation Data Center Financing",
+        "meta_template": "Colocation data center financing in {city}. Life company, CMBS, and specialty data center lenders for stabilized and ground-up colocation campus acquisitions."
+      }
+    },
+    {
+      "slug": "hyperscale-powered-shell",
+      "name": "Hyperscale and Powered Shell Data Center Financing",
+      "short_name": "Hyperscale and Powered Shell",
+      "description": "Build-to-suit and powered-shell data center facilities developed for hyperscale cloud tenants including Amazon Web Services, Microsoft Azure, Google Cloud, and Meta. Long-term NNN leases to investment-grade tenants with massive power commitments make these among the most creditworthy real estate assets in any property class. The most active segment of the data center investment market in 2025 and 2026 due to AI-driven infrastructure demand.",
+      "typical_deal_range": "$100M to $2B+ for hyperscale campus developments",
+      "typical_stack": [
+        "Permanent loan: life insurance company with investment-grade credit tenant underwriting for stabilized leased facilities",
+        "Construction loan: national bank syndicate or specialty data center construction fund for ground-up hyperscale",
+        "CMBS: active for stabilized hyperscale leased to single investment-grade tenant",
+        "Mezzanine and preferred equity: for high-leverage construction stacks on larger hyperscale developments"
+      ],
+      "key_features": {
+        "tenant_profile": "Amazon Web Services, Microsoft Azure, Google Cloud, Meta, Apple, Oracle, and other hyperscale cloud and enterprise operators",
+        "typical_lease_term": "10 to 20 years NNN, often with power purchase commitments ranging from 50 to 500 megawatts",
+        "infrastructure_requirements": "Utility-grade substation access, 100 to 500+ megawatt power commitments, fiber dark fiber diversity, water cooling access",
+        "construction_cost": "Shell structure $150 to $300/sf plus power and mechanical infrastructure $500 to $1,500/sf depending on power density",
+        "most_competitive_lender": "Life insurance companies are dominant for stabilized NNN hyperscale with investment-grade tenant; national bank syndicates for construction",
+        "ltv_ranges": "55 to 65 percent life co for stabilized, 60 to 70 percent CMBS, 55 to 65 percent national bank construction with presale lease",
+        "rate_environment_2026": "Life co 125 to 175 over 10-year for investment-grade AWS or Azure lease, construction SOFR plus 200 to 350 for pre-leased hyperscale"
+      },
+      "seo": {
+        "title_suffix": "Hyperscale Data Center Financing",
+        "meta_template": "Hyperscale and powered shell data center financing in {city}. Life company, CMBS, and construction capital for hyperscale cloud tenant build-to-suit data centers."
+      }
+    },
+    {
+      "slug": "enterprise-single-tenant",
+      "name": "Enterprise Single-Tenant Data Center Financing",
+      "short_name": "Enterprise Single-Tenant Data Center",
+      "description": "Purpose-built or owner-operated data centers serving a single enterprise, government, or financial institution. Smaller power footprints than hyperscale (1 to 20 megawatts), higher security requirements, and often mission-critical to the tenant's core business. Lenders underwrite tenant credit, lease structure, power redundancy, and alternative-use considerations for single-purpose assets.",
+      "typical_deal_range": "$10M to $150M for enterprise data center real estate",
+      "typical_stack": [
+        "Sale-leaseback: enterprise monetizes owned data center with long-term NNN leaseback",
+        "Permanent loan: life insurance company or bank for stabilized NNN with investment-grade enterprise tenant",
+        "CMBS: active for stabilized enterprise data center with credit tenant",
+        "Bridge: specialty data center debt fund for transitional or lease-up enterprise facilities"
+      ],
+      "key_features": {
+        "tenant_profile": "Financial institutions, government agencies, healthcare systems, insurance companies, Fortune 500 enterprise IT departments",
+        "typical_lease_term": "10 to 15 years NNN, often tied to enterprise's core IT infrastructure lifecycle",
+        "security_requirements": "SSAE 18 SOC 2 compliance typical, FISMA for government, HIPAA for healthcare, PCI DSS for financial services",
+        "most_competitive_lender": "Life insurance companies for credit-tenant NNN leaseback, CMBS for larger stabilized facilities",
+        "ltv_ranges": "60 to 70 percent life co for credit tenant NNN, 65 to 75 percent CMBS, 65 to 70 percent bank for strong credit",
+        "rate_environment_2026": "Life co 150 to 225 over 10-year for credit tenant, CMBS 200 to 300 over, bridge SOFR plus 300 to 500 for transitional"
+      },
+      "seo": {
+        "title_suffix": "Enterprise Single-Tenant Data Center Financing",
+        "meta_template": "Enterprise single-tenant data center financing in {city}. Life company, CMBS, and sale-leaseback capital for corporate, government, and financial institution data center assets."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "market_notes": "Dallas-Fort Worth is the second-largest data center market in the country, trailing only Northern Virginia. The Allen-Richardson-Plano corridor hosts major hyperscale campuses for AWS, Microsoft, Google, and Meta. Texas offers no income tax, access to large power grids (ERCOT), strong fiber connectivity, and a deep construction labor pool. The North Texas market has added hundreds of megawatts of new capacity annually and remains one of the most active markets globally for hyperscale development.",
+      "active_lender_commentary": "Life insurance companies with data center specialty desks are highly active for stabilized Dallas hyperscale and colocation assets with investment-grade tenants. CMBS conduits pricing competitively for $50M+ stabilized colocation. National bank syndicates active on construction financing for hyperscale developers. Specialty data center debt funds providing bridge for transitional assets and enterprise sale-leaseback.",
+      "submarkets": "Allen and Richardson data center corridor, Garland and Carrollton, Irving and Las Colinas, Fort Worth and Aledo, Lewisville and Denton, South Dallas megawatt corridor"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "market_notes": "Phoenix is one of the fastest-growing data center markets in the country, driven by land availability, desert climate suited to evaporative cooling, Arizona Public Service and SRP power access, and proximity to California as a disaster recovery and latency alternative. The Chandler and Mesa corridors are the core of Phoenix data center activity, with significant hyperscale campuses for AWS, Microsoft, and Google. Water access has become a headline issue, pushing some developers toward air-cooled designs.",
+      "active_lender_commentary": "Life companies selectively active for stabilized hyperscale and colocation assets with institutional operators in the Chandler corridor. CMBS quoting on stabilized mid-market colocation. National banks and regional Arizona lenders active on construction. Specialty data center debt funds providing bridge capital for transitional and development-stage assets. Water risk is increasingly factored into underwriting.",
+      "submarkets": "Chandler data center corridor, Mesa and Tempe, Goodyear and Tolleson, Scottsdale and north Phoenix, Avondale and West Valley, East Mesa and Gilbert"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "state": "GA",
+      "market_notes": "Atlanta is the dominant data center market in the Southeast, anchored by a massive fiber interconnection ecosystem centered on the 55 Marietta and Suwanee Road exchanges. Colocation operators including Equinix, Digital Realty, and CyrusOne have significant Atlanta campuses. Georgia Power provides relatively affordable and reliable electricity, and the market benefits from lower land costs than the primary East Coast markets. Hyperscale demand has accelerated significantly in 2025 and 2026.",
+      "active_lender_commentary": "Life insurance companies actively competing for stabilized Atlanta colocation with institutional operators. CMBS conduits pricing aggressively for $20M+ stabilized assets. Southeast regional banks and national bank construction desks active for ground-up development. Specialty data center debt funds active for lease-up bridge and transitional assets throughout the metro.",
+      "submarkets": "55 Marietta Street exchange Downtown, Suwanee and Buford fiber corridor, Lithia Springs and Douglas County, Norcross and Peachtree Corners, Alpharetta and Roswell, McDonough and South Atlanta"
+    },
+    {
+      "slug": "chicago",
+      "name": "Chicago",
+      "state": "IL",
+      "market_notes": "Chicago is a tier-one data center market, anchored by the 350 East Cermak colocation exchange in the Loop, one of the most connected buildings in North America. The Chicago metro serves as the latency midpoint for financial services, insurance, and enterprise IT serving the Midwest. Suburban growth corridors in Elk Grove Village, Carol Stream, and Lisle have seen significant new data center construction. Illinois ComEd power infrastructure is reliable, though Illinois data center tax incentives have been inconsistently applied.",
+      "active_lender_commentary": "Life companies actively compete for stabilized Chicago data center assets with institutional operators, particularly for assets in the 350 E Cermak ecosystem. CMBS active for mid-market stabilized colocation. Midwest regional banks and Chicago-based lenders active on construction and enterprise facilities. National bank syndicates handle larger hyperscale construction across the market.",
+      "submarkets": "350 E Cermak and Lakeside data campus, Elk Grove Village and O'Hare corridor, Carol Stream and West DuPage County, Lisle and Naperville, Northbrook and Skokie, Bolingbrook and Romeoville"
+    },
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "market_notes": "Los Angeles is a major data center market for the Pacific Rim, serving as the primary interconnection point for transpacific subsea cable landings and the gateway for California enterprise and cloud infrastructure. The One Wilshire exchange in Downtown LA is one of the most connected carrier hotels in the world. Colocation demand is strong and constrained by land costs, power permitting timelines, and California's complex environmental review requirements for new development.",
+      "active_lender_commentary": "Life insurance companies compete for stabilized LA colocation assets with institutional operators, particularly near One Wilshire. CMBS active for mid-market stabilized facilities. California-based regional banks and national bank construction desks handle ground-up permitting-heavy development. Specialty data center debt funds provide bridge for lease-up and transitional assets. Power procurement timelines are a major underwriting consideration.",
+      "submarkets": "One Wilshire exchange in Downtown LA, El Segundo and Hawthorne near LAX, Chatsworth and West San Fernando Valley, Vernon and Commerce industrial district, Culver City, Long Beach and South Bay"
+    },
+    {
+      "slug": "denver",
+      "name": "Denver",
+      "state": "CO",
+      "market_notes": "Denver is an emerging data center market benefiting from a dry high-altitude climate that enables free-air cooling, Xcel Energy power access, and proximity to fiber routes connecting the West Coast to Chicago and Dallas. The Aurora and Centennial corridors are the primary data center growth submarkets. Denver serves as a disaster recovery market for California enterprise clients and is seeing growing hyperscale interest from AWS and Google for Mountain West edge capacity.",
+      "active_lender_commentary": "Life companies selectively quoting stabilized Denver colocation and hyperscale assets with institutional operators. CMBS active for stabilized mid-market facilities. Colorado-based regional banks and Western regional lenders active on construction. Specialty data center debt funds providing bridge and transitional capital. The market is earlier in maturity than Dallas and Phoenix, offering higher risk-adjusted spreads.",
+      "submarkets": "Aurora and Centennial data center corridor, Brighton and Adams County, Lakewood and Jefferson County, Longmont and Boulder County, Broomfield and Westminster, Fort Collins and I-25 corridor"
+    }
+  ]
+}

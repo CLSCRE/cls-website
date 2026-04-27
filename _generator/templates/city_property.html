@@ -2,7 +2,7 @@
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"{{ prop.name }} Financing in {{ city.city }}, {{ city.state }} | CLS CRE","url":"https://clscre.com/property/{{ prop.slug }}-{{ city.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107583576","email":"loans@clscre.com","areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":"{{ prop.name }} Financing in {{ city.city }}, {{ city.state }} | CLS CRE","url":"https://clscre.com/property/{{ prop.slug }}-{{ city.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107080690","email":"loans@clscre.com","areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}

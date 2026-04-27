@@ -25,7 +25,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ContactPage","mainEntity":{"@type":["FinancialService","LocalBusiness"],"name":"Commercial Lending Solutions","alternateName":"CLS CRE","telephone":"+13107583576","email":"loans@clscre.com","url":"https://clscre.com","image":"https://clscre.com/images/cls-og-image.png","logo":"https://clscre.com/images/cls-logo-skyline.png","priceRange":"$$$","openingHours":"Mo-Fr 09:00-17:00","geo":{"@type":"GeoCoordinates","latitude":"34.0736","longitude":"-118.3695"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"],"address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"}}}
+{"@context":"https://schema.org","@type":"ContactPage","mainEntity":{"@type":["FinancialService","LocalBusiness"],"name":"Commercial Lending Solutions","alternateName":"CLS CRE","telephone":"+13107080690","email":"loans@clscre.com","url":"https://clscre.com","image":"https://clscre.com/images/cls-og-image.png","logo":"https://clscre.com/images/cls-logo-skyline.png","priceRange":"$$$","openingHours":"Mo-Fr 09:00-17:00","geo":{"@type":"GeoCoordinates","latitude":"34.0736","longitude":"-118.3695"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"],"address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"}}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://clscre.com/contact.html"}]}
@@ -34,6 +34,13 @@
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/global.min.css">
 <link rel="stylesheet" href="css/pages.min.css">
+<style>
+.skip-link{position:absolute;top:-40px;left:0;background:#153D63;color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
+.skip-link:focus{top:0;outline:3px solid #00A676;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.nav-dropdown:focus-within .nav-dropdown-menu{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+</style>
 <style>
 .contact-page{padding:80px 0}
 .contact-page-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
@@ -81,6 +88,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH6TD3TC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -91,7 +99,7 @@
   <a href="index.html" class="nav-logo"><img src="images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="140" height="140"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
   <div class="nav-links" id="navLinks">
     <div class="nav-dropdown">
-      <a href="index.html#programs">Financing</a>
+      <a href="index.html#programs" aria-haspopup="true" aria-expanded="false">Financing</a>
       <div class="nav-dropdown-menu">
         <a href="financing/permanent-loans.html">Permanent Loans</a>
         <a href="financing/construction-loans.html">Construction Loans</a>
@@ -107,7 +115,7 @@
       </div>
     </div>
     <div class="nav-dropdown">
-      <a href="index.html#transactions">Properties</a>
+      <a href="index.html#transactions" aria-haspopup="true" aria-expanded="false">Properties</a>
       <div class="nav-dropdown-menu">
         <a href="property/multifamily.html">Multifamily</a>
         <a href="property/industrial.html">Industrial</a>
@@ -139,6 +147,7 @@
 </ol>
 </nav>
 
+<main id="main-content">
 <!-- HERO -->
 <section class="page-hero">
 <div class="section-inner">
@@ -157,7 +166,7 @@
       <p>Whether you're acquiring, refinancing, or developing commercial property, we'll find the best financing available from our network of 1,000+ lenders.</p>
 
       <div class="contact-card">
-        <div class="contact-card-icon">&#128222;</div>
+        <div class="contact-card-icon" aria-hidden="true">&#128222;</div>
         <div class="contact-card-text">
           <strong>Phone</strong>
           <a href="tel:+13107080690">310.708.0690</a>
@@ -165,7 +174,7 @@
       </div>
 
       <div class="contact-card">
-        <div class="contact-card-icon">&#9993;&#65039;</div>
+        <div class="contact-card-icon" aria-hidden="true">&#9993;&#65039;</div>
         <div class="contact-card-text">
           <strong>Email</strong>
           <a href="mailto:loans@clscre.com">loans@clscre.com</a>
@@ -173,7 +182,7 @@
       </div>
 
       <div class="contact-card">
-        <div class="contact-card-icon">&#128205;</div>
+        <div class="contact-card-icon" aria-hidden="true">&#128205;</div>
         <div class="contact-card-text">
           <strong>Office</strong>
           <span>7951 Blackburn Avenue<br>Los Angeles, CA 90048</span>
@@ -181,7 +190,7 @@
       </div>
 
       <div class="contact-card">
-        <div class="contact-card-icon">&#128336;</div>
+        <div class="contact-card-icon" aria-hidden="true">&#128336;</div>
         <div class="contact-card-text">
           <strong>Hours</strong>
           <span>Mon-Fri: 9:00 AM - 5:00 PM PT<br>Saturday: By Appointment</span>
@@ -189,7 +198,7 @@
       </div>
 
       <div class="contact-card" style="border-color:var(--green);background:rgba(0,106,78,.03)">
-        <div class="contact-card-icon" style="background:rgba(0,106,78,.12)">&#128197;</div>
+        <div class="contact-card-icon" style="background:rgba(0,106,78,.12)" aria-hidden="true">&#128197;</div>
         <div class="contact-card-text">
           <strong>Schedule a Meeting</strong>
           <span>Book a time that works for you, video call or phone.</span>
@@ -214,16 +223,16 @@
 
         <div style="margin-bottom:14px">
           <label for="c_name" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.3px">Name <span style="color:#c0392b">*</span></label>
-          <input type="text" id="c_name" name="Name" required style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
+          <input type="text" id="c_name" name="Name" required autocomplete="name" style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
           <div>
             <label for="c_email" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.3px">Email <span style="color:#c0392b">*</span></label>
-            <input type="email" id="c_email" name="Email" required style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
+            <input type="email" id="c_email" name="Email" required autocomplete="email" style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
           </div>
           <div>
             <label for="c_phone" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.3px">Phone</label>
-            <input type="tel" id="c_phone" name="Phone" style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
+            <input type="tel" id="c_phone" name="Phone" autocomplete="tel" style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff">
           </div>
         </div>
         <div style="margin-bottom:14px">
@@ -316,6 +325,7 @@
   </div>
 </div>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -366,7 +376,7 @@
 <script>
 const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
 const reveals=document.querySelectorAll('.reveal');const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});reveals.forEach(el=>observer.observe(el));
-const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
+const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open');const open=navLinks.classList.contains('open');mobileToggle.setAttribute('aria-expanded',open)});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
 
 </script>
 <script src="js/chatbot.js" defer></script>

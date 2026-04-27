@@ -1,0 +1,130 @@
+{
+  "programs": [
+    {
+      "slug": "on-campus-mob",
+      "name": "On-Campus Medical Office Building Financing",
+      "short_name": "On-Campus MOB",
+      "description": "Medical office buildings located on or immediately adjacent to a hospital campus, anchored by health system tenants under long-term net leases. The most creditworthy segment of the medical office market. Health system credit (often investment grade) and mission-critical location drive the tightest cap rates and the most competitive lender pricing in the healthcare real estate sector.",
+      "typical_deal_range": "$15M to $200M+ for portfolio or campus transactions",
+      "typical_stack": [
+        "Permanent loan: life insurance company (most competitive) for stabilized with health system anchor",
+        "CMBS: active for $10M and above with investment-grade or near-investment-grade health system credit",
+        "Bridge: debt fund or bank for transitional or lease-up situations ahead of permanent takeout",
+        "Sale-leaseback: health system monetization of owned campus assets"
+      ],
+      "key_features": {
+        "tenant_profile": "Hospital-affiliated physician groups, health system employed physicians, imaging and diagnostic services, surgery centers co-located with hospital",
+        "typical_lease_term": "10 to 20 years NNN, often with health system guaranty",
+        "building_specs": "Medical-grade HVAC, reinforced floors for imaging equipment, exam room layouts, ADA accessibility throughout, hospital-level electrical capacity",
+        "most_competitive_lender": "Life insurance companies: lowest spreads in the capital markets for on-campus with health system credit",
+        "ltv_ranges": "60 to 70 percent life co, 65 to 75 percent CMBS, pricing tightens significantly with investment-grade health system anchor",
+        "rate_environment_2026": "Life co 125 to 175 over 10-year for investment-grade anchor, CMBS 175 to 250 over, bank 150 to 250 over"
+      },
+      "seo": {
+        "title_suffix": "On-Campus Medical Office Building Financing",
+        "meta_template": "On-campus medical office building financing in {city}. Life company, CMBS, and health system sale-leaseback capital for hospital-affiliated MOB acquisitions and refinances."
+      }
+    },
+    {
+      "slug": "off-campus-mob",
+      "name": "Off-Campus Medical Office Financing",
+      "short_name": "Off-Campus MOB",
+      "description": "Medical office buildings in suburban locations away from hospital campuses, typically serving specialty physician groups, multi-specialty clinics, urgent care, dental, physical therapy, and outpatient diagnostic services. More diverse tenant mix than on-campus, with higher rollover risk and greater underwriting scrutiny on lease term remaining and tenant credit.",
+      "typical_deal_range": "$5M to $60M total capitalization",
+      "typical_stack": [
+        "Permanent loan: community bank or regional bank for stabilized suburban MOB with diverse tenant roster",
+        "CMBS: active for $10M and above with strong occupancy and credit tenant anchors",
+        "Life insurance company: selective for larger off-campus assets with credit-tenant anchor",
+        "SBA 504 for owner-occupant physician group or small clinic acquisition",
+        "Bridge: debt fund for value-add or lease-up suburban medical office"
+      ],
+      "key_features": {
+        "tenant_profile": "Specialty physician groups (orthopedics, cardiology, oncology), multi-specialty clinics, urgent care, dental groups, physical therapy, lab and diagnostic services",
+        "typical_lease_term": "5 to 10 years NNN or modified gross, shorter than on-campus with personal guaranty from physician owners",
+        "building_specs": "Medical-grade HVAC, higher-than-standard electrical capacity, plumbing for clinical sinks, ADA-compliant, sometimes with imaging equipment rooms",
+        "most_competitive_lender": "Community and regional banks for stabilized off-campus with diverse physician tenancy, SBA for owner-occupant",
+        "ltv_ranges": "65 to 75 percent community bank, 70 to 75 percent CMBS for stabilized, up to 90 percent SBA 504 owner-occupant",
+        "rate_environment_2026": "Community bank 200 to 325 over 10-year or floating, CMBS 225 to 325 over, SBA fixed for owner-occupant"
+      },
+      "seo": {
+        "title_suffix": "Off-Campus Medical Office Financing",
+        "meta_template": "Off-campus medical office financing in {city}. Bank, CMBS, and SBA lenders for suburban medical office acquisitions, refinances, and owner-occupant physician practices."
+      }
+    },
+    {
+      "slug": "outpatient-surgery-center",
+      "name": "Outpatient Surgery Center Financing",
+      "short_name": "Outpatient Surgery Center",
+      "description": "Ambulatory surgery centers (ASCs) and outpatient surgery facilities performing same-day surgical procedures outside of hospital settings. Medicare and state licensing are critical underwriting variables. High revenue-per-square-foot and strong cash flow from insurance reimbursements underpin asset values. Lenders who understand ASC licensing, reimbursement structures, and physician ownership requirements are a narrow set.",
+      "typical_deal_range": "$5M to $40M total capitalization for real estate component",
+      "typical_stack": [
+        "SBA 7(a) or 504 for physician-owned ASC acquisition with owner-occupant structure",
+        "Bridge: specialty healthcare debt fund for acquisition and stabilization",
+        "Permanent loan: community bank or regional bank with healthcare lending desk",
+        "Life company or CMBS: selective for large multi-specialty ASC with institutional operator (USPI, Surgery Partners, Envision)"
+      ],
+      "key_features": {
+        "tenant_profile": "Physician-owned ASC partnerships, institutional ASC operators, hospital health system joint ventures",
+        "building_specs": "OR suites with medical gas, dedicated HVAC, specialized electrical, sterile processing, recovery rooms, procedure rooms, Class B or Class C shell space can be converted",
+        "licensing_complexity": "State ASC license required, Medicare certification required for reimbursement, AAAHC or JCAHO accreditation typical",
+        "most_competitive_lender": "SBA 7(a) or 504 for physician owner-users, specialty healthcare debt funds for institutional operators",
+        "ltv_ranges": "Up to 90 percent SBA for owner-occupant, 65 to 75 percent community bank, 65 to 70 percent specialty healthcare debt fund",
+        "rate_environment_2026": "SBA fixed for owner-operator, community bank SOFR plus 250 to 375, specialty healthcare fund SOFR plus 400 to 600"
+      },
+      "seo": {
+        "title_suffix": "Outpatient Surgery Center Financing",
+        "meta_template": "Outpatient surgery center financing in {city}. SBA, specialty healthcare lenders, and bank capital for ambulatory surgery center acquisitions, construction, and physician owner-users."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "market_notes": "Los Angeles is one of the deepest medical office markets in the country, anchored by Cedars-Sinai, UCLA Health, USC Keck, Kaiser Permanente, and Providence. On-campus MOBs adjacent to Cedars-Sinai in Beverly Grove and UCLA Medical Center in Westwood command the tightest cap rates in the Western US. Suburban medical office is dense in the San Fernando Valley, South Bay, and San Gabriel Valley, serving a population of 10 million.",
+      "active_lender_commentary": "Life insurance companies are highly competitive for on-campus MOBs anchored by Cedars-Sinai and UCLA-affiliated tenants. CMBS active for mid-market stabilized assets across LA County. California-based regional banks are the dominant off-campus and outpatient surgery center lenders. SBA 504 is the primary financing vehicle for physician-owned practices and ASC owner-users.",
+      "submarkets": "Beverly Grove and West Hollywood near Cedars-Sinai, Westwood and Brentwood near UCLA, Torrance and South Bay, Pasadena and San Gabriel Valley, Sherman Oaks and Encino, Burbank and Glendale"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "market_notes": "Dallas is one of the most active medical office markets in the country, with major health systems including UT Southwestern, Baylor Scott and White, Parkland Health, Texas Health Resources, and HCA Healthcare driving on-campus and affiliated off-campus demand. The Medical District near downtown Dallas and the growing suburban corridors of Frisco, Plano, and Southlake are among the most active medical office development submarkets in Texas.",
+      "active_lender_commentary": "Life companies highly competitive for on-campus and affiliated MOBs with UT Southwestern and Baylor Scott and White credit. CMBS active for mid-market stabilized MOBs across the DFW metro. Regional Texas banks and community lenders dominant for off-campus physician practice buildings and ASC owner-users. SBA 504 active for physician groups acquiring their own space.",
+      "submarkets": "Dallas Medical District and Uptown, Frisco and The Colony, Plano and Allen, Southlake and Colleyville, North Dallas and Addison, Fort Worth Medical District"
+    },
+    {
+      "slug": "houston",
+      "name": "Houston",
+      "state": "TX",
+      "market_notes": "Houston's Texas Medical Center is the world's largest medical complex, anchoring an enormous on-campus and adjacent medical office market. Beyond the TMC, suburban medical office is active in Sugar Land, The Woodlands, Katy, and Pearland as health systems extend outpatient networks to serve Houston's sprawling suburban population. ASC development has been particularly active in high-income suburban markets like Tanglewood and West University Place.",
+      "active_lender_commentary": "Life insurance companies aggressively compete for on-campus MOBs adjacent to Texas Medical Center and major health system affiliates. CMBS active for suburban stabilized assets. Regional Texas banks and national bank healthcare desks active on construction and suburban MOB lending. SBA 504 used for physician owner-operators and ASC acquisitions across the market.",
+      "submarkets": "Texas Medical Center and Museum District, Sugar Land and Missouri City, The Woodlands and Conroe, Katy and Cinco Ranch, Pearland and Friendswood, Tanglewood and West University Place"
+    },
+    {
+      "slug": "chicago",
+      "name": "Chicago",
+      "state": "IL",
+      "market_notes": "Chicago has one of the largest and most sophisticated medical office markets in the country, anchored by Northwestern Medicine, Rush University Medical Center, University of Chicago Medicine, Advocate Aurora Health, and NorthShore University Health. On-campus MOBs along the Magnificent Mile medical corridor and in the Oak Park-Evanston suburban ring are highly sought by institutional investors. Suburban medical office is active in the North Shore, western suburbs, and south suburban Cook County.",
+      "active_lender_commentary": "Life insurance companies are the most competitive for on-campus Northwestern and Rush-affiliated MOBs. CMBS conduits active for suburban stabilized assets in the $10M to $50M range. Midwest regional banks and Chicago-based community lenders dominant for off-campus physician practice buildings. Specialty healthcare debt funds active for ASC acquisitions and operator-driven deals.",
+      "submarkets": "Streeterville and Gold Coast near Northwestern, Oak Park and River Forest, Evanston and Wilmette North Shore, Naperville and Downers Grove, Schaumburg and Hoffman Estates, Orland Park and Tinley Park"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "state": "GA",
+      "market_notes": "Atlanta is a major Southeast healthcare hub anchored by Emory Healthcare, Piedmont Healthcare, Wellstar Health System, Northside Hospital, and Children's Healthcare of Atlanta. On-campus and affiliated MOBs in Midtown (Emory-adjacent) and North Atlanta (Northside and Piedmont corridors) command institutional pricing. Suburban medical office development is active in Cherokee, Forsyth, and Paulding counties as health systems extend outpatient networks into the growing northern suburbs.",
+      "active_lender_commentary": "Life companies actively quote on-campus and Emory-affiliated MOBs in Midtown and Buckhead. CMBS conduits active for mid-market suburban stabilized medical office. Southeast regional banks and Atlanta-based community lenders the primary off-campus and physician-practice lenders. Specialty healthcare debt funds provide ASC acquisition and bridge capital across the metro.",
+      "submarkets": "Midtown Atlanta and Emory Point, Buckhead and Sandy Springs, Alpharetta and Roswell, Marietta and Kennesaw, Johns Creek and Duluth, Peachtree City and Henry County"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "market_notes": "Phoenix is one of the fastest-growing medical office markets in the country, supported by the Mayo Clinic Arizona campus in Scottsdale, Banner Health, Dignity Health, Valleywise Health, and HonorHealth. On-campus MOBs adjacent to the Mayo Clinic and Banner University Medical Center are the premier assets in the market. The East Valley (Gilbert, Chandler, Mesa) is seeing strong suburban medical office development tied to population growth.",
+      "active_lender_commentary": "Life companies selectively compete for on-campus assets adjacent to Mayo Clinic and Banner campuses. CMBS active for mid-market stabilized suburban MOBs. Arizona-based regional banks and Western regional lenders active on construction and off-campus acquisitions. SBA 504 widely used by Arizona physician groups acquiring suburban practice buildings.",
+      "submarkets": "Scottsdale Healthcare Corridor near Mayo Clinic, Gilbert and Queen Creek, Chandler and Ahwatukee, Mesa and Tempe, North Phoenix and Anthem, Surprise and Buckeye"
+    }
+  ]
+}

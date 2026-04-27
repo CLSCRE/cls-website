@@ -1,0 +1,130 @@
+{
+  "programs": [
+    {
+      "slug": "assisted-living",
+      "name": "Assisted Living Facility Financing",
+      "short_name": "Assisted Living",
+      "description": "Licensed residential care facilities providing personal care services, medication management, and daily living assistance to seniors who cannot live independently but do not require skilled nursing care. The largest segment of the seniors housing market by deal volume. Lenders underwrite operator credit, state licensing risk, occupancy ramp, and staffing cost structures.",
+      "typical_deal_range": "$8M to $75M total capitalization",
+      "typical_stack": [
+        "HUD 232/223(f) permanent loan for stabilized facilities with 90 percent or better occupancy",
+        "Permanent loan: life insurance company or CMBS for institutional-quality stabilized facilities",
+        "Bridge: specialty seniors housing debt fund or regional bank for lease-up and value-add",
+        "Construction loan: HUD 232 new construction or specialty seniors housing bank"
+      ],
+      "key_features": {
+        "tenant_profile": "Seniors requiring assistance with activities of daily living (ADLs), private pay and limited Medicaid mix",
+        "typical_lease_term": "Month-to-month residency agreements with strong retention for residents who can afford quality care",
+        "building_specs": "Residential-style construction, 40 to 150 units typical, common dining, activity spaces, secured memory care wings",
+        "most_competitive_lender": "HUD 232 for stabilized fully licensed facilities, life companies for institutional operators in primary markets",
+        "ltv_ranges": "80 to 85 percent HUD, 65 to 70 percent life co, 70 to 75 percent CMBS, 75 to 80 percent bridge",
+        "rate_environment_2026": "HUD 232 fixed 40-year at 5.5 to 6.5 percent all-in, life co 175 to 250 over 10-year, bridge SOFR plus 350 to 550"
+      },
+      "seo": {
+        "title_suffix": "Assisted Living Facility Financing",
+        "meta_template": "Assisted living facility financing in {city}. HUD 232, life company, CMBS, and bridge lenders for licensed assisted living acquisitions, construction, and refinance."
+      }
+    },
+    {
+      "slug": "memory-care",
+      "name": "Memory Care Facility Financing",
+      "short_name": "Memory Care",
+      "description": "Specialized secured residential care facilities serving seniors with Alzheimer's disease, dementia, and related cognitive impairments. Highest-acuity seniors housing segment outside skilled nursing. Higher staffing ratios, secured perimeters, and purpose-built layouts command premium rates and attract lenders who understand operator quality and state licensure. Demand is structural given aging demographics.",
+      "typical_deal_range": "$10M to $60M total capitalization",
+      "typical_stack": [
+        "Bridge: specialty seniors housing debt fund for acquisition and lease-up of stand-alone memory care",
+        "HUD 232/223(f) for stabilized memory care with strong operator history",
+        "Permanent loan: life company or CMBS for institutional operators in primary markets",
+        "Construction: specialty seniors housing bank or HUD 232 new construction for purpose-built facilities"
+      ],
+      "key_features": {
+        "tenant_profile": "Residents with Alzheimer's, dementia, and other cognitive conditions requiring 24-hour supervised care",
+        "building_specs": "Fully secured perimeter, wayfinding design, sensory spaces, secured courtyard, 40 to 80 units typical, clustered unit neighborhoods",
+        "staffing_cost_weight": "Staffing is 55 to 70 percent of operating expenses, making operator quality the dominant underwriting variable",
+        "most_competitive_lender": "Specialty seniors housing debt funds for lease-up, HUD 232 for stabilized with licensed operator",
+        "ltv_ranges": "70 to 80 percent HUD 232 on stabilized, 60 to 70 percent life co, 75 to 85 percent bridge with recourse",
+        "rate_environment_2026": "Bridge SOFR plus 400 to 600 reflecting operator risk premium, permanent HUD or life co 175 to 275 over for stabilized"
+      },
+      "seo": {
+        "title_suffix": "Memory Care Facility Financing",
+        "meta_template": "Memory care facility financing in {city}. Specialty seniors housing lenders, HUD 232, and bridge capital for Alzheimer's and dementia care acquisitions and development."
+      }
+    },
+    {
+      "slug": "independent-living",
+      "name": "Independent Living Community Financing",
+      "short_name": "Independent Living",
+      "description": "Age-restricted communities (55+ or 62+) providing lifestyle amenities, social programming, and optional dining for active seniors who do not require personal care services. The most real-estate-like seniors housing segment. Underwriting resembles multifamily more than healthcare, and lenders underwrite location, amenity quality, competitive positioning, and management quality rather than healthcare acuity.",
+      "typical_deal_range": "$10M to $150M total capitalization",
+      "typical_stack": [
+        "Permanent loan: Fannie Mae or Freddie Mac for qualifying 55-plus communities meeting agency criteria",
+        "Life insurance company for institutional-quality stabilized campuses",
+        "CMBS for stabilized assets in primary and secondary markets",
+        "Bridge: debt fund or regional bank for value-add repositioning and lease-up",
+        "Construction loan: national bank or regional bank for ground-up development"
+      ],
+      "key_features": {
+        "tenant_profile": "Active seniors aged 55 to 75, typically homeowners transitioning to maintenance-free lifestyle living",
+        "typical_lease_term": "Annual leases with strong 80 to 90 percent renewal rates among established communities",
+        "building_specs": "Apartment-style or cottage configurations, resort-style amenities, clubhouse, fitness, pools, dining optional",
+        "most_competitive_lender": "Fannie Mae and Freddie Mac for qualifying 55-plus with proper income and age restrictions",
+        "ltv_ranges": "65 to 75 percent agency, 60 to 70 percent life co, 70 to 75 percent CMBS, up to 80 percent bridge",
+        "rate_environment_2026": "Agency IL 175 to 225 over 10-year, life co 150 to 200 over 10-year for Class A stabilized"
+      },
+      "seo": {
+        "title_suffix": "Independent Living Community Financing",
+        "meta_template": "Independent living community financing in {city}. Agency, life company, CMBS, and construction lenders for 55-plus and active senior communities."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "market_notes": "Los Angeles is one of the nation's top seniors housing markets, driven by a large and affluent aging population, high median household wealth, and strong private-pay demand in the West Side, San Fernando Valley, and Conejo Valley. Land and construction costs are among the highest in the country, making new supply constrained and underwriting premiums on existing stabilized assets sustainable.",
+      "active_lender_commentary": "Life insurance companies actively compete for Class A stabilized assisted living and independent living in primary LA submarkets. HUD 232 is the preferred long-term takeout for stabilized assisted living and memory care with strong operators. Specialty seniors housing debt funds and some regional banks provide bridge financing for lease-up and value-add. CMBS is active for mid-market stabilized assets in the $10M to $40M range.",
+      "submarkets": "West LA and Bel Air, Calabasas and Agoura Hills, Pasadena and San Marino, Torrance and Redondo Beach, Sherman Oaks and Encino, Santa Clarita"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "market_notes": "Phoenix is one of the largest and fastest-growing seniors housing markets in the country, fueled by Arizona's status as a retirement destination for Midwestern and Californian seniors seeking warm climate, lower cost of living, and resort-style amenities. Scottsdale, Paradise Valley, and East Valley have among the highest concentrations of Class A independent living and assisted living in the Sun Belt.",
+      "active_lender_commentary": "HUD 232 is heavily used in Phoenix for stabilized assisted living and memory care with qualified operators. Life companies compete for Class A facilities in Scottsdale and the East Valley. CMBS is active across the metro for mid-market stabilized assets. Specialty seniors housing debt funds provide bridge on lease-up communities throughout the Valley. Regional Arizona banks active on construction for regional operators.",
+      "submarkets": "Scottsdale and Paradise Valley, Chandler and Gilbert, Peoria and Sun City, Mesa and Tempe, North Phoenix and Anthem, Surprise and Sun City West"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "market_notes": "DFW is a top-five seniors housing market nationally with strong private-pay demand across Plano, Colleyville, Southlake, and Frisco. Texas has no income tax, a favorable regulatory environment for seniors housing operators, and strong household formation and in-migration that drives long-term demand for age-restricted communities. Memory care is an active sub-segment tied to the suburban growth of North Dallas.",
+      "active_lender_commentary": "Life insurance companies and CMBS conduits are the primary permanent lenders for stabilized Dallas seniors housing. HUD 232 actively used by operators seeking long-term fixed-rate debt. Regional Texas banks and national bank construction desks active for ground-up development in North Dallas growth corridors. Specialty seniors housing debt funds provide bridge for lease-up communities in suburban submarkets.",
+      "submarkets": "Plano and Frisco, Southlake and Colleyville, Allen and McKinney, Far North Dallas and Carrollton, Flower Mound and Lewisville, Fort Worth and Keller"
+    },
+    {
+      "slug": "tampa",
+      "name": "Tampa",
+      "state": "FL",
+      "market_notes": "Tampa and the broader Tampa Bay area are core Florida seniors housing markets, supported by strong retiree in-migration, Florida's tax-friendly environment, and the area's appeal to active Baby Boomers. Pinellas County (St. Petersburg and Clearwater) has among the highest senior population concentrations in Florida, making independent living and assisted living demand structurally strong across the market.",
+      "active_lender_commentary": "HUD 232 is widely used across the Tampa Bay market for stabilized assisted living and memory care facilities. Life companies and CMBS compete for Class A independent living and assisted living in Hillsborough and Pinellas. Florida-focused regional banks active on construction and acquisitions. Specialty seniors housing debt funds provide bridge financing for lease-up and value-add throughout the metro.",
+      "submarkets": "Carrollwood and Northdale, Westchase and Town 'n' Country, New Tampa and Wesley Chapel, St. Petersburg and Pinellas Park, Clearwater and Dunedin, Brandon and Riverview"
+    },
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "state": "FL",
+      "market_notes": "Miami has a uniquely affluent and international aging population that drives premium private-pay demand for high-end seniors housing. Coral Gables, Pinecrest, and Aventura have concentrations of Class A independent living and assisted living serving Latin American and domestic retirees. Memory care demand is strong given the demographics of South Florida's older Cuban, Venezuelan, and domestic retiree communities.",
+      "active_lender_commentary": "Life insurance companies compete for Class A stabilized seniors housing in Coral Gables and Aventura. HUD 232 used for qualifying licensed assisted living and memory care facilities. CMBS active for mid-market stabilized assets across Miami-Dade and Broward. Florida-based regional banks provide construction financing. Specialty seniors housing debt funds active for lease-up and repositioning.",
+      "submarkets": "Coral Gables and South Miami, Pinecrest and Palmetto Bay, Aventura and Hallandale Beach, Boca Raton and Delray Beach, Doral and West Miami, Fort Lauderdale and Pompano Beach"
+    },
+    {
+      "slug": "denver",
+      "name": "Denver",
+      "state": "CO",
+      "market_notes": "Denver's outdoor-lifestyle appeal and quality of life attract early retirees seeking active seniors communities, making it one of the stronger Mountain West seniors housing markets. The aging population in Jefferson County, Douglas County, and the northern I-25 corridor drives demand for assisted living and memory care. Colorado's regulatory environment for seniors housing is manageable compared to California, making development viable.",
+      "active_lender_commentary": "Life companies and CMBS compete for stabilized Class A seniors housing in Douglas County, south Denver, and the northern suburbs. HUD 232 is used selectively for qualifying assisted living with strong operators. Colorado-based regional banks active on construction and bridge financing. Specialty seniors housing debt funds provide lease-up bridge across the metro.",
+      "submarkets": "Greenwood Village and Centennial, Parker and Castle Rock, Highlands Ranch and Lone Tree, Lakewood and Golden, Westminster and Broomfield, Fort Collins adjacent"
+    }
+  ]
+}

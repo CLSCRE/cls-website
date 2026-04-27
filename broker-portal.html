@@ -23,7 +23,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"Broker Portal","description":"Submit commercial real estate deals through the CLS CRE Broker Portal.","mainEntity":{"@type":"FinancialService","name":"Commercial Lending Solutions","alternateName":"CLS CRE","telephone":"+13107583576","email":"deals@clscre.com","url":"https://clscre.com","image":"https://clscre.com/images/cls-og-image.png","logo":"https://clscre.com/images/cls-logo-skyline.png","priceRange":"$$$","openingHours":"Mo-Fr 09:00-17:00","geo":{"@type":"GeoCoordinates","latitude":"34.0736","longitude":"-118.3695"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"],"address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"}}}
+{"@context":"https://schema.org","@type":"WebPage","name":"Broker Portal","description":"Submit commercial real estate deals through the CLS CRE Broker Portal.","mainEntity":{"@type":"FinancialService","name":"Commercial Lending Solutions","alternateName":"CLS CRE","telephone":"+13107080690","email":"deals@clscre.com","url":"https://clscre.com","image":"https://clscre.com/images/cls-og-image.png","logo":"https://clscre.com/images/cls-logo-skyline.png","priceRange":"$$$","openingHours":"Mo-Fr 09:00-17:00","geo":{"@type":"GeoCoordinates","latitude":"34.0736","longitude":"-118.3695"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"],"address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"}}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Broker Portal","item":"https://clscre.com/broker-portal.html"}]}
@@ -32,6 +32,13 @@
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/global.min.css">
 <link rel="stylesheet" href="css/pages.min.css">
+<style>
+.skip-link{position:absolute;top:-40px;left:0;background:#153D63;color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
+.skip-link:focus{top:0;outline:3px solid #00A676;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.nav-dropdown:focus-within .nav-dropdown-menu{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+</style>
 <style>
 /* ===== WIZARD LAYOUT ===== */
 .wizard-page{padding:180px 0 80px;min-height:100vh;background:linear-gradient(180deg,var(--gray-50) 0%,var(--white) 40%)}
@@ -179,6 +186,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH6TD3TC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -189,7 +197,7 @@
   <a href="index.html" class="nav-logo"><img src="images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="140" height="140"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
   <div class="nav-links" id="navLinks">
     <div class="nav-dropdown">
-      <a href="index.html#programs">Financing</a>
+      <a href="index.html#programs" aria-haspopup="true" aria-expanded="false">Financing</a>
       <div class="nav-dropdown-menu">
         <a href="financing/permanent-loans.html">Permanent Loans</a>
         <a href="financing/construction-loans.html">Construction Loans</a>
@@ -205,7 +213,7 @@
       </div>
     </div>
     <div class="nav-dropdown">
-      <a href="index.html#transactions">Properties</a>
+      <a href="index.html#transactions" aria-haspopup="true" aria-expanded="false">Properties</a>
       <div class="nav-dropdown-menu">
         <a href="property/multifamily.html">Multifamily</a>
         <a href="property/industrial.html">Industrial</a>
@@ -237,6 +245,7 @@
 </ol>
 </nav>
 
+<main id="main-content">
 <!-- WIZARD -->
 <section class="wizard-page">
 <div class="wizard-container">
@@ -582,31 +591,31 @@
 
       <div class="wiz-row">
         <div class="wiz-field" id="f_first">
-          <label>First Name <span class="req">*</span></label>
+          <label for="first_name">First Name <span class="req">*</span></label>
           <input type="text" id="first_name" required autocomplete="given-name">
           <span class="error-msg">Please enter your first name</span>
         </div>
         <div class="wiz-field" id="f_last">
-          <label>Last Name <span class="req">*</span></label>
+          <label for="last_name">Last Name <span class="req">*</span></label>
           <input type="text" id="last_name" required autocomplete="family-name">
           <span class="error-msg">Please enter your last name</span>
         </div>
       </div>
       <div class="wiz-row">
         <div class="wiz-field" id="f_email">
-          <label>Email <span class="req">*</span></label>
+          <label for="email">Email <span class="req">*</span></label>
           <input type="email" id="email" required autocomplete="email" placeholder="you@brokerage.com">
           <span class="error-msg">Please enter a valid email</span>
         </div>
         <div class="wiz-field" id="f_phone">
-          <label>Phone <span class="req">*</span></label>
+          <label for="phone">Phone <span class="req">*</span></label>
           <input type="tel" id="phone" required autocomplete="tel" placeholder="(310) 555-1234">
           <span class="error-msg">Please enter your phone number</span>
         </div>
       </div>
       <div class="wiz-row">
         <div class="wiz-field" id="f_company">
-          <label>Company / Brokerage <span class="req">*</span></label>
+          <label for="company">Company / Brokerage <span class="req">*</span></label>
           <input type="text" id="company" required autocomplete="organization" placeholder="Your brokerage name">
           <span class="error-msg">Please enter your company or brokerage</span>
         </div>
@@ -763,6 +772,7 @@
   </div>
 </div>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -1117,7 +1127,7 @@ const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
-mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
+mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); const open = navLinks.classList.contains('open'); mobileToggle.setAttribute('aria-expanded', open); });
 navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); }); });
 </script>
 <script src="js/chatbot.js" defer></script>
