@@ -251,9 +251,15 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 .footer-grid{grid-template-columns:1fr;gap:32px}
 .footer-bottom{flex-direction:column;gap:12px;text-align:center}
 }
+.skip-link{position:absolute;top:-40px;left:0;background:#153D63;color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
+.skip-link:focus{top:0;outline:3px solid #00A676;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.nav-dropdown:focus-within .nav-dropdown-menu{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH6TD3TC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -264,7 +270,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
   <a href="index.html" class="nav-logo"><img src="images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="140" height="140"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
   <div class="nav-links" id="navLinks">
     <div class="nav-dropdown">
-      <a href="index.html#programs">Financing</a>
+      <a href="index.html#programs" aria-haspopup="true" aria-expanded="false">Financing</a>
       <div class="nav-dropdown-menu">
         <a href="financing/permanent-loans.html">Permanent Loans</a>
         <a href="financing/construction-loans.html">Construction Loans</a>
@@ -280,7 +286,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       </div>
     </div>
     <div class="nav-dropdown">
-      <a href="index.html#transactions">Properties</a>
+      <a href="index.html#transactions" aria-haspopup="true" aria-expanded="false">Properties</a>
       <div class="nav-dropdown-menu">
         <a href="property/multifamily.html">Multifamily</a>
         <a href="property/industrial.html">Industrial</a>
@@ -304,6 +310,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 </div>
 </nav>
 
+<main id="main-content">
 <!-- PAGE HERO -->
 <section class="page-hero">
 <div class="section-inner">
@@ -336,10 +343,10 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       <tr><td class="idx-name">S&amp;P 500</td><td class="idx-val">7,165</td><td>7,108</td><td>6,556</td><td>5,525</td></tr>
       <tr><td class="idx-name">Dow Jones</td><td class="idx-val">49,231</td><td>49,310</td><td>46,124</td><td>40,114</td></tr>
       <tr><td class="idx-name">NASDAQ</td><td class="idx-val">24,837</td><td>24,438</td><td>21,762</td><td>17,383</td></tr>
-      <tr><td class="idx-name">Gold ($/oz)</td><td class="idx-val">$4,715</td><td>$4,722</td><td>$4,550</td><td>$3,332</td></tr>
+      <tr><td class="idx-name">Gold ($/oz)</td><td class="idx-val">$4,735</td><td>$4,722</td><td>$4,550</td><td>$3,332</td></tr>
       <tr><td class="idx-name">Silver ($/oz)</td><td class="idx-val">$76</td><td>$76</td><td>$72</td><td>$33</td></tr>
-      <tr><td class="idx-name">Bitcoin</td><td class="idx-val">$79,120</td><td>$77,612</td><td>$67,291</td><td>$93,755</td></tr>
-      <tr><td class="idx-name">Oil (WTI/bbl)</td><td class="idx-val">$96</td><td>$94</td><td>$90</td><td>$62</td></tr>
+      <tr><td class="idx-name">Bitcoin</td><td class="idx-val">$79,235</td><td>$77,612</td><td>$67,291</td><td>$93,755</td></tr>
+      <tr><td class="idx-name">Oil (WTI/bbl)</td><td class="idx-val">$95</td><td>$94</td><td>$90</td><td>$62</td></tr>
     </tbody>
   </table>
   </div>
@@ -885,6 +892,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
   <a href="index.html#contact" class="btn-primary reveal">Get a Quote <span>&rarr;</span></a>
 </div>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -943,7 +951,7 @@ reveals.forEach(el => observer.observe(el));
 // Mobile nav
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
-mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
+mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); const open = navLinks.classList.contains('open'); mobileToggle.setAttribute('aria-expanded', open); });
 navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); }); });
 
 // Commentary accordion
