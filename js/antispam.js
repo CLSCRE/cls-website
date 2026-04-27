@@ -733,6 +733,14 @@
   }
 
   function _doFormSubmit(form, submitBtn) {
+    // If Turnstile failed to load and fell back to 'none', the Worker will silently
+    // drop the submission (no token = fake success, no email delivered). Fall back
+    // to submitting directly to FormSubmit so legitimate leads still reach Trevor.
+    if (form._useWorker && captchaType === 'none') {
+      form._useWorker = false;
+      form._realAction = _buildEndpoint();
+    }
+
     // Track active form for _silentBlock's inline error messaging
     _activeForm = form;
     _activeSubmitBtn = submitBtn;
