@@ -124,6 +124,118 @@
       "market_notes": "Las Vegas is one of the most self-storage-saturated markets in the country per capita, yet demand remains stable due to a transient population, small apartment footprints on the Strip and downtown, and a large seasonal tourism and hospitality workforce that creates consistent storage demand. The Henderson and Summerlin submarkets are the core suburban growth corridors for new supply.",
       "active_lender_commentary": "CMBS conduits dominate Las Vegas self-storage lending for stabilized assets. Life companies rarely compete here given market saturation concerns. Nevada-based regional banks and Western regional lenders active on construction in Henderson, Summerlin, and North Las Vegas. Debt funds provide lease-up bridge on newly opened facilities across the metro.",
       "submarkets": "Henderson and Green Valley, Summerlin and Spring Valley, North Las Vegas, Downtown Las Vegas, Enterprise and Southwest Las Vegas, Boulder City adjacent"
+    },
+    {
+      "slug": "new-york",
+      "name": "New York",
+      "state": "NY",
+      "market_notes": "New York City's self-storage market remains one of the most supply-constrained in the nation, driven by the city's extreme residential density, small apartment footprints, and high household turnover across all five boroughs. Occupancy rates consistently run above 90% in core urban locations, with Manhattan and Brooklyn commanding some of the highest per-square-foot rental rates in the country. The development pipeline faces significant barriers including land scarcity, prohibitive construction costs, and complex zoning requirements, which keeps existing stabilized assets highly attractive to lenders while limiting new competitive supply.",
+      "active_lender_commentary": "Debt funds are the most aggressive capital source for New York self-storage financing right now, particularly for value-add acquisitions, ground-up construction in outer boroughs, and multi-story urban conversions where conventional lenders remain cautious due to higher construction risk and elevated basis. CMBS lenders and regional banks including New York Community Bank and Signature-successor institutions have also been active on stabilized assets with strong trailing occupancy, drawn by the market's proven rent durability and low vacancy fundamentals.",
+      "submarkets": "Brooklyn, Queens, The Bronx, Manhattan, Long Island City, Westchester, Staten Island, Newark"
+    },
+    {
+      "slug": "houston",
+      "name": "Houston",
+      "state": "TX",
+      "market_notes": "Houston's self-storage market benefits from persistent demand drivers including a rapidly growing population, frequent hurricane-related displacement events that push temporary storage needs, and high rates of apartment living across the metro that correlate with strong self-storage utilization. Occupancy across stabilized facilities has remained in the mid-to-high 80s percent range, though new supply pressures in suburban corridors like Katy and The Woodlands have introduced some softening at the submarket level. Lenders remain broadly constructive on Houston self-storage given the metro's job growth and lack of zoning restrictions, though they are applying closer scrutiny to deals in oversupplied suburban pockets and requiring stronger sponsorship experience for ground-up construction requests.",
+      "active_lender_commentary": "Debt funds and regional banks headquartered in Texas, including those with strong Houston branch presences, are the most active capital sources for self-storage financing in the metro right now, offering flexible bridge and construction loan structures suited to the active development pipeline. CMBS execution is also competitive for stabilized, cash-flowing facilities above $5 million, particularly for multi-story urban assets in the Galleria and Medical Center corridors where institutional interest is strongest.",
+      "submarkets": "Katy, The Woodlands, Sugar Land, Energy Corridor, Galleria, Medical Center, Pearland, Cypress"
+    },
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "state": "FL",
+      "market_notes": "Miami's self-storage market benefits from powerful structural demand drivers including rapid population inflows from the Northeast and Latin America, a high concentration of apartment and condo dwellers with limited storage space, and a hurricane-prone environment that pushes residents to store valuables off-site. Occupancy rates across the metro have remained elevated in the high 80s to low 90s percent range, supported by Brickell and Miami Beach urban infill sites where climate-controlled multi-story facilities command premium rental rates. Lenders remain broadly interested given Miami's rent growth trajectory, though some are monitoring new supply deliveries in suburban corridors like Doral and West Palm Beach where development pipelines have expanded meaningfully in recent years.",
+      "active_lender_commentary": "Debt funds and CMBS lenders are the most active capital sources for self-storage facility financing in Miami right now, attracted by the market's strong cash flow performance and the ability to price deals at competitive spreads relative to other Sun Belt metros. Regional banks with Florida footprints, including those headquartered in the Southeast, are also selectively financing stabilized assets with demonstrated occupancy histories, particularly for repeat borrowers with proven operational track records.",
+      "submarkets": "Doral, Brickell, Fort Lauderdale, West Palm Beach, Aventura, Coral Gables, Wynwood, Miami Beach"
+    },
+    {
+      "slug": "chicago",
+      "name": "Chicago",
+      "state": "IL",
+      "market_notes": "Chicago's self-storage market benefits from persistent urban densification, a large renter population across Cook County, and ongoing multifamily construction that consistently drives ancillary storage demand in transit-oriented neighborhoods. Occupancy rates across stabilized facilities in the metro have held in the low-to-mid 90s, though suburban submarkets like Naperville and Schaumburg have absorbed new supply more slowly, prompting lender scrutiny of lease-up timelines in those corridors. Lenders remain selectively interested in Chicago given its economic diversification and population base, but are closely monitoring new deliveries on the city's North Side and inner-ring suburbs where oversupply risk has emerged in the past 24 months.",
+      "active_lender_commentary": "Debt funds and regional banks headquartered in the Midwest, including Illinois-chartered institutions with strong familiarity with Cook and DuPage County assets, are the most active capital sources for Chicago self-storage deals right now, particularly for value-add acquisitions and climate-controlled urban conversions. CMBS execution remains viable for stabilized, multi-story facilities in high-density submarkets like River North and The Loop where cash flow predictability supports conduit underwriting standards.",
+      "submarkets": "The Loop, River North, Lincoln Park, Schaumburg, Naperville, Oak Brook, Evanston, Wicker Park"
+    },
+    {
+      "slug": "denver",
+      "name": "Denver",
+      "state": "CO",
+      "market_notes": "Denver's self-storage market is supported by persistent population inflows from California and other high-cost states, with the metro adding tens of thousands of new residents annually who require transitional storage during relocations and home purchases. Occupancy rates across the Denver-Aurora-Lakewood metro have remained in the low-to-mid 90s for stabilized facilities, though a meaningful development pipeline in urban infill corridors like RiNo and LoDo has introduced some lease-up risk that lenders are actively underwriting with caution. Lenders remain broadly constructive on Denver self-storage given the diversified employment base across aerospace, technology, and professional services, but are stress-testing new construction loans more carefully given elevated construction costs and some softening in asking rental rates in oversupplied suburban corridors.",
+      "active_lender_commentary": "Debt funds and regional banks headquartered in the Mountain West, including those with Colorado-specific CRE portfolios, are the most active capital sources for Denver self-storage financing right now, with debt funds willing to bridge lease-up risk on new urban multi-story projects and regional banks offering competitive permanent financing on stabilized drive-up and climate-controlled assets. CMBS conduit lenders are also quoting stabilized Denver self-storage deals above $5 million given the market's strong historical cash flow performance and liquid secondary market demand for Colorado-backed paper.",
+      "submarkets": "Aurora, Lakewood, RiNo, Cherry Creek, Thornton, Englewood, Littleton, Westminster"
+    },
+    {
+      "slug": "seattle",
+      "name": "Seattle",
+      "state": "WA",
+      "market_notes": "Seattle's self-storage market benefits from persistently high demand driven by dense urban living in small apartments, frequent relocations among the tech workforce, and limited residential square footage across core neighborhoods. Occupancy rates in established facilities have remained above 90% in many submarkets, though a modest wave of new multi-story urban product in South Lake Union and Capitol Hill has introduced some near-term lease-up risk. Lenders remain broadly interested in stabilized Seattle assets given the metro's strong income demographics and constrained land supply, but are scrutinizing new construction deals more carefully given elevated construction costs and permitting timelines.",
+      "active_lender_commentary": "Debt funds and regional banks such as those headquartered in the Pacific Northwest are the most active capital sources for self-storage facility financing in Seattle right now, with debt funds willing to bridge lease-up risk on new multi-story urban assets and regional banks offering competitive permanent financing for stabilized drive-up and climate-controlled facilities in suburban nodes like Bellevue, Redmond, and Tacoma. CMBS execution is available for larger stabilized portfolios, while life companies are selectively financing best-in-class climate-controlled assets with strong trailing occupancy in supply-constrained locations.",
+      "submarkets": "South Lake Union, Capitol Hill, Bellevue, Tacoma, Redmond, Shoreline, Renton, Lynnwood"
+    },
+    {
+      "slug": "san-diego",
+      "name": "San Diego",
+      "state": "CA",
+      "market_notes": "San Diego's self-storage market benefits from persistent demand driven by a large military population with frequent relocations, a dense urban core with space-constrained housing, and steady in-migration supported by the defense, biotech, and tech sectors. Occupancy rates across the metro have held above 90% in core submarkets, with climate-controlled and multi-story urban formats commanding premium rents in infill locations where new development is significantly restricted by geography and zoning. Lenders remain generally constructive on San Diego self-storage assets given the market's demonstrated rent resilience, though they are applying careful scrutiny to new construction deals in suburban North County where a modest supply pipeline has created pockets of elevated competition.",
+      "active_lender_commentary": "Debt funds and regional banks such as Western Alliance and Pacific Premier Bank are the most active capital sources for self-storage facility financing in San Diego right now, drawn by the market's strong occupancy fundamentals and limited land availability that constrains future supply. CMBS execution is also viable for stabilized assets with clean rent rolls, particularly for multi-story urban facilities in infill neighborhoods where replacement cost barriers support long-term valuation.",
+      "submarkets": "Downtown San Diego, Chula Vista, Carlsbad, Vista, North County Inland, Mission Valley, Kearny Mesa, National City"
+    },
+    {
+      "slug": "san-francisco",
+      "name": "San Francisco",
+      "state": "CA",
+      "market_notes": "San Francisco's self-storage market benefits from persistently high residential density, frequent tenant turnover driven by tech-sector mobility, and a chronic shortage of developable land that keeps new supply constrained. Occupancy rates across the metro have remained elevated, typically ranging from 88 to 94 percent, as urban dwellers in space-limited apartments and downsizing households generate consistent demand. Lenders remain selectively interested given strong fundamentals, but elevated construction costs, complex entitlement processes, and softness in certain urban corridors tied to post-pandemic population shifts have prompted more rigorous underwriting of new development deals versus stabilized acquisitions.",
+      "active_lender_commentary": "Debt funds and regional banks such as Western Alliance and Pacific Premier Bank are the most active lenders for self-storage facility financing in the San Francisco metro, drawn by the market's high barriers to entry and strong cash flow stability on stabilized assets. CMBS conduit lenders are also participating on larger, well-occupied facilities, particularly multi-story urban properties in infill locations, while life companies remain cautious and highly selective given land scarcity and operational complexity.",
+      "submarkets": "SoMa, Mission Bay, Oakland, San Mateo, Palo Alto, Daly City, South San Francisco, Fremont"
+    },
+    {
+      "slug": "austin",
+      "name": "Austin",
+      "state": "TX",
+      "market_notes": "Austin's rapid population growth fueled by major tech relocations from companies like Tesla, Apple, and Oracle has created sustained demand for self-storage facilities, particularly climate-controlled units catering to residents in transition from high-density multifamily housing. Occupancy rates across the metro have remained strong in established submarkets, though the significant new development pipeline in outer growth corridors like Georgetown and Cedar Park has introduced some lease-up risk that lenders are actively underwriting. Lenders remain broadly interested in Austin self-storage opportunities given the demographic tailwinds, but are applying more conservative underwriting to deals in oversupplied suburban corridors and requiring stronger sponsorship and reserves on new construction requests.",
+      "active_lender_commentary": "Regional banks with Texas footprints such as Frost Bank and Veritex Community Bank remain the most active lenders for stabilized and value-add self-storage facilities in Austin, offering competitive terms for sponsors with demonstrated operating track records. Debt funds have stepped in aggressively for ground-up construction and transitional assets where conventional lenders have pulled back, and CMBS execution is viable for larger stabilized portfolios seeking higher leverage.",
+      "submarkets": "Cedar Park, Round Rock, Georgetown, The Domain, East Austin, South Congress, Pflugerville, Leander"
+    },
+    {
+      "slug": "nashville",
+      "name": "Nashville",
+      "state": "TN",
+      "market_notes": "Nashville's self-storage market benefits from sustained population growth driven by corporate relocations, healthcare sector expansion, and strong in-migration from higher-cost states, keeping occupancy rates above 90% in core submarkets like Brentwood and Franklin. The metro's rapid apartment construction and lifestyle transition among new residents creates consistent demand for both climate-controlled and drive-up storage units across Davidson and Williamson counties. Lenders remain broadly constructive on Nashville self-storage but are monitoring a growing development pipeline in suburban corridors like Murfreesboro and Smyrna, where new supply could pressure rents and stabilization timelines over the next 24 to 36 months.",
+      "active_lender_commentary": "Debt funds and regional banks dominate self-storage financing activity in Nashville, drawn by the market's strong demographic fundamentals and proven rent growth, with regional institutions like Pinnacle Financial Partners and Avenue Bank actively competing on bridge and construction loans for value-add and ground-up projects. CMBS executions are gaining traction for stabilized, larger-format facilities in Franklin and Brentwood, while life companies selectively engage on class-A climate-controlled assets with institutional sponsorship and demonstrated occupancy seasoning.",
+      "submarkets": "Franklin, Brentwood, Murfreesboro, Antioch, Smyrna, East Nashville, Nolensville, Hendersonville"
+    },
+    {
+      "slug": "charlotte",
+      "name": "Charlotte",
+      "state": "NC",
+      "market_notes": "Charlotte's self-storage financing market remains strong, supported by annual population growth exceeding 2% and significant in-migration from higher-cost metros driving demand for both climate-controlled and drive-up units across the metro. Occupancy rates in established submarkets like Ballantyne and University City have held above 90%, though new supply deliveries in South End and Uptown-adjacent corridors are prompting lenders to underwrite stabilization periods more conservatively. The broader Charlotte-Concord-Gastonia metro's ongoing residential and industrial expansion continues to attract lender interest, particularly for purpose-built multi-story facilities serving densely populated urban infill locations.",
+      "active_lender_commentary": "Regional banks headquartered or with strong Charlotte presences, including those in the shadow of Bank of America and Truist, are among the most active lenders for self-storage facilities here, offering competitive construction-to-perm programs for stabilized and value-add assets. Debt funds are also active for transitional and lease-up deals where conventional lenders require seasoned occupancy, while CMBS execution has gained traction for larger multi-property portfolios seeking non-recourse permanent financing.",
+      "submarkets": "Ballantyne, University City, Concord, South End, Steele Creek, Huntersville, Matthews, Mooresville"
+    },
+    {
+      "slug": "minneapolis",
+      "name": "Minneapolis",
+      "state": "MN",
+      "market_notes": "Minneapolis-St. Paul ranks among the most stable self-storage markets in the Midwest, supported by a diversified economy anchored by 16 Fortune 500 headquarters, a highly educated and mobile workforce, and consistent household formation across the metro. Climate-controlled facilities command premium rents and strong occupancy rates above 90% in core submarkets, driven by Minnesota's harsh winters and dense urban renters in areas like Uptown and the North Loop. The development pipeline has moderated after a wave of urban multi-story deliveries, which lenders view favorably as supply-demand balance tightens and rent growth stabilizes.",
+      "active_lender_commentary": "Regional banks including TCF-heritage institutions and Midwest-based community banks remain the most active lenders for self-storage facility financing in Minneapolis, offering competitive fixed and floating rate structures for stabilized assets, while debt funds are stepping in aggressively for value-add and lease-up scenarios where conventional lenders require seasoned occupancy. CMBS executions are gaining traction on larger portfolio deals exceeding $5 million, particularly for climate-controlled assets in Eden Prairie and Bloomington where institutional-quality sponsorship and strong historical NOI support bond execution.",
+      "submarkets": "Downtown Minneapolis, North Loop, Uptown, St. Paul, Bloomington, Eden Prairie, Plymouth, Minnetonka"
+    },
+    {
+      "slug": "portland",
+      "name": "Portland",
+      "state": "OR",
+      "market_notes": "Portland's self-storage market benefits from consistent demand driven by a transient tech workforce, steady apartment absorption compressing per-unit living space, and ongoing urban-to-suburban migration patterns across the metro. Occupancy rates in established submarkets like Beaverton and Hillsboro remain above 90%, supported by population growth tied to Intel and Nike campuses, while downtown-adjacent multi-story facilities face slightly softer performance due to elevated construction costs and lingering retail foot traffic concerns. Lenders are selectively active, favoring stabilized assets with proven cash flow over ground-up development given Portland's permitting complexity and construction cost environment.",
+      "active_lender_commentary": "Regional banks including Pacific Premier Bank and Banner Bank are among the most active lenders for stabilized self-storage facilities in the Portland metro, offering competitive terms for borrowers with strong operating histories, while debt funds are stepping in to fill the gap on value-add and lease-up deals where conventional lenders require higher occupancy thresholds. CMBS execution remains available for larger institutional-quality assets in core submarkets, though life companies have been selective and tend to favor climate-controlled multi-story assets with demonstrated stabilized NOI.",
+      "submarkets": "Beaverton, Hillsboro, Vancouver WA, Lake Oswego, Lloyd District, Gresham, Tigard, Tualatin"
+    },
+    {
+      "slug": "orlando",
+      "name": "Orlando",
+      "state": "FL",
+      "market_notes": "Orlando's self-storage financing market remains highly competitive driven by sustained population inflows from domestic migration, a thriving tourism corridor anchoring Kissimmee and the I-4 spine, and a tech and medical workforce expanding rapidly in Lake Nona and surrounding innovation districts. Occupancy rates across the metro have held in the low-to-mid 90s for stabilized assets, though a meaningful development pipeline in suburban corridors is prompting lenders to apply closer scrutiny to lease-up projections and competitive supply analysis. Climate-controlled facilities catering to the high volume of multifamily renters and seasonal residents continue to attract the strongest lender interest, while drive-up product in outer suburbs is drawing attention from value-add investors seeking bridge financing.",
+      "active_lender_commentary": "Debt funds and regional banks headquartered in the Southeast are the most active capital sources for Orlando self-storage right now, with debt funds favoring bridge-to-stabilization plays on newer climate-controlled assets and regional banks providing competitive construction and permanent financing for operators with established local track records. CMBS execution remains a strong option for stabilized, multi-tenant facilities above $5 million as loan-to-value compression has made fixed-rate CMBS spreads attractive relative to floating alternatives.",
+      "submarkets": "Lake Nona, Kissimmee, Dr. Phillips, Altamonte Springs, Winter Park, Sanford, Horizon West, East Orlando"
     }
   ]
 }

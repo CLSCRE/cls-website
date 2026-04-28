@@ -1,5 +1,65 @@
 [
   {
+    "slug": "mixed-use-residential-retail-stack-2026-04-27",
+    "title": "Mixed-Use Residential-over-Retail Capital Stack (Week of April 27, 2026)",
+    "excerpt": "Commentary on mixed-use capital stack dynamics, agency eligibility thresholds for commercial component, and life company fit for urban infill mixed-use.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-27",
+    "date_formatted": "April 27, 2026",
+    "category": "Commercial Commentary",
+    "tags": [
+      "commercial",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_commercial"
+  },
+  {
+    "slug": "multifamily-refi-wave-2026-2026-04-27",
+    "title": "Multifamily Refi Wave 2026 (Week of April 27, 2026)",
+    "excerpt": "Commentary on the 2026 multifamily refinancing wave, agency vs CMBS vs life company execution decisions, and cash-out mechanics for mature deals.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-27",
+    "date_formatted": "April 27, 2026",
+    "category": "Multifamily Commentary",
+    "tags": [
+      "multifamily",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_multifamily"
+  },
+  {
+    "slug": "manufacturing-sba-504-commentary-2026-04-27",
+    "title": "Owner-User Manufacturing SBA 504 Commentary (Week of April 27, 2026)",
+    "excerpt": "Commentary on SBA 504 owner-user manufacturing activity, CDC processing times, and the profile of first-time sponsors entering owner-occupied industrial.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-27",
+    "date_formatted": "April 27, 2026",
+    "category": "Industrial Commentary",
+    "tags": [
+      "industrial",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_industrial"
+  },
+  {
+    "slug": "welfare-exemption-deal-trend-2026-04-27",
+    "title": "Welfare Exemption Deal Structuring Trends (Week of April 27, 2026)",
+    "excerpt": "Commentary on non-profit GP partnerships and welfare exemption utilization trends, lender adoption of exemption-adjusted DSCR analysis, and developer partnership structures.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-27",
+    "date_formatted": "April 27, 2026",
+    "category": "Affordable Housing Commentary",
+    "tags": [
+      "affordable",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_affordable"
+  },
+  {
     "slug": "market-perspective-april-2026",
     "title": "Commercial Lending Solutions Market Perspective: April 2026",
     "excerpt": "April 2026 capital markets show surprising life insurance company activity in industrial and stabilized multifamily, while CMBS execution continues to improve on spread compression and renewed investor appetite for BBB tranches.",

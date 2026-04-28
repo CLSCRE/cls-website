@@ -125,6 +125,118 @@
       "market_notes": "Phoenix is one of the fastest-growing medical office markets in the country, supported by the Mayo Clinic Arizona campus in Scottsdale, Banner Health, Dignity Health, Valleywise Health, and HonorHealth. On-campus MOBs adjacent to the Mayo Clinic and Banner University Medical Center are the premier assets in the market. The East Valley (Gilbert, Chandler, Mesa) is seeing strong suburban medical office development tied to population growth.",
       "active_lender_commentary": "Life companies selectively compete for on-campus assets adjacent to Mayo Clinic and Banner campuses. CMBS active for mid-market stabilized suburban MOBs. Arizona-based regional banks and Western regional lenders active on construction and off-campus acquisitions. SBA 504 widely used by Arizona physician groups acquiring suburban practice buildings.",
       "submarkets": "Scottsdale Healthcare Corridor near Mayo Clinic, Gilbert and Queen Creek, Chandler and Ahwatukee, Mesa and Tempe, North Phoenix and Anthem, Surprise and Buckeye"
+    },
+    {
+      "slug": "new-york",
+      "name": "New York",
+      "state": "NY",
+      "market_notes": "New York City's medical office building market is supported by one of the largest and most dense patient populations in the country, with major health systems including NYU Langone, NewYork-Presbyterian, Mount Sinai, and Northwell Health continuously expanding their ambulatory care footprints across all five boroughs and into suburban submarkets like Westchester and Long Island. Off-campus MOB demand is particularly strong as health systems push outpatient volume to lower-cost settings, with Class A medical office space in Manhattan and Brooklyn commanding premium rents and maintaining occupancy above 90% in well-located buildings. Lenders are generally constructive on stabilized, health-system-anchored assets but remain cautious on speculative development given elevated construction costs, high land values, and the complexity of navigating New York's regulatory environment.",
+      "active_lender_commentary": "Debt funds and regional banks including Signature successor institutions, Valley National, and New York Private Bank are among the most active lenders for medical office deals in the New York metro, attracted by strong credit tenancy and recession-resistant cash flows. Life companies are selectively providing long-term fixed-rate financing on larger, institutional-quality on-campus and health-system-anchored MOBs in Manhattan and the surrounding suburbs.",
+      "submarkets": "Midtown Manhattan, Upper East Side, Brooklyn Heights, Flushing (Queens), The Bronx (Mott Haven/Fordham), White Plains (Westchester), Garden City (Long Island), Jersey City"
+    },
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "state": "FL",
+      "market_notes": "Miami's medical office building market benefits from strong population growth fueled by Northeast migration and a large, expanding Latino population with robust healthcare utilization rates, driving consistent demand for outpatient and specialty care facilities. Occupancy across established medical corridors in Coral Gables, Doral, and the Brickell health district remains tight, with vacancy rates for institutional-quality MOBs generally below 8 percent. Development activity is picking up with several off-campus outpatient facilities in planning or construction phases, though rising construction costs and high land prices are constraining new supply and keeping lender interest focused on stabilized assets.",
+      "active_lender_commentary": "Regional banks such as City National Bank of Florida and BankUnited are among the most active lenders for stabilized medical office deals in Miami, attracted by the strong tenant credit profiles and low vacancy in key submarkets. Debt funds have also been competitive on value-add and transitional MOB assets where conventional lenders pull back, particularly for deals in the 5 to 20 million dollar range tied to growing outpatient surgery center and specialty clinic operators.",
+      "submarkets": "Coral Gables, Doral, Brickell, Aventura, Fort Lauderdale, West Palm Beach, Miami Beach, Kendall"
+    },
+    {
+      "slug": "denver",
+      "name": "Denver",
+      "state": "CO",
+      "market_notes": "Denver's medical office building market is supported by robust population growth across the metro, an aging demographic base, and the continued expansion of major health systems including UCHealth, SCL Health, and HCA HealthOne driving consistent demand for outpatient facilities. Occupancy rates for well-located medical office buildings have remained strong in the low-to-mid 90% range, particularly for on-campus and affiliated off-campus assets, while the development pipeline has moderated following a wave of construction completions that added outpatient inventory along key suburban corridors. Lenders are generally constructive on Denver medical office, though they are applying more scrutiny to speculative development deals and single-tenant assets with near-term lease expirations given broader office market softness creating some risk-off sentiment.",
+      "active_lender_commentary": "Regional banks including Vectra Bank, BOK Financial, and Colorado-based community lenders remain the most consistent capital source for Denver medical office acquisitions and refinances in the $5M to $30M range, offering competitive terms for creditworthy tenants and experienced healthcare operators. Life insurance companies and debt funds are selectively active on larger, multi-tenant assets anchored by health system credit tenants, particularly stabilized on-campus facilities where long-term lease structures support the underwriting.",
+      "submarkets": "Cherry Creek, Aurora, Lone Tree, Centennial, Lakewood, Highlands Ranch, Westminster, Broomfield"
+    },
+    {
+      "slug": "seattle",
+      "name": "Seattle",
+      "state": "WA",
+      "market_notes": "Seattle's medical office building market benefits from a rapidly growing and well-insured population base, with major health systems including UW Medicine, Swedish Health Services, and Providence expanding their ambulatory care footprints across the metro. Occupancy rates for Class A medical office buildings remain strong in the 90 to 95 percent range, particularly for off-campus facilities near dense residential corridors, as health systems push outpatient volume away from higher-cost hospital settings. The development pipeline is active but disciplined, concentrated around transit-accessible nodes and affluent suburbs, which keeps lender interest elevated for well-leased assets anchored by investment-grade health system tenants.",
+      "active_lender_commentary": "Life insurance companies and regional banks such as Banner Bank and Columbia Banking Group are the most competitive lenders for stabilized, credit-tenanted medical office buildings in Seattle, offering the tightest spreads for assets with long-term health system leases. Debt funds are stepping in for value-add acquisitions and construction bridge scenarios, particularly for off-campus outpatient surgery center developments where conventional lenders require higher stabilization before funding.",
+      "submarkets": "South Lake Union, Capitol Hill, Bellevue, Redmond, Tacoma, Shoreline, Renton, Kirkland"
+    },
+    {
+      "slug": "san-diego",
+      "name": "San Diego",
+      "state": "CA",
+      "market_notes": "San Diego's medical office building market benefits from a large active-duty military and veteran population, a rapidly expanding life sciences corridor, and strong population growth in North County and South Bay submarkets that continues to drive outpatient care demand. Occupancy rates for medical office buildings in the metro have remained above 92% in core healthcare corridors, supported by UC San Diego Health, Scripps Health, Sharp HealthCare, and Kaiser Permanente anchoring tenant demand across multiple campuses. Geographic constraints limiting new supply, combined with high barriers to entry for development, have kept lenders constructive on well-leased medical office assets despite broader office sector headwinds.",
+      "active_lender_commentary": "Regional banks including Pacific Premier Bank and Banner Bank remain highly active for San Diego medical office building financing, particularly for credit-tenanted or health system-affiliated assets, while debt funds have stepped in aggressively for bridge and value-add opportunities in submarkets like Kearny Mesa and Rancho Bernardo where lease-up risk is manageable. Life companies are selectively placing long-term fixed-rate debt on stabilized, on-campus or adjacent MOBs with strong health system guarantees, drawn by the metro's income stability and limited new supply pipeline.",
+      "submarkets": "La Jolla, Kearny Mesa, Rancho Bernardo, Mission Valley, Chula Vista, Carlsbad, North County Inland, Downtown San Diego"
+    },
+    {
+      "slug": "san-francisco",
+      "name": "San Francisco",
+      "state": "CA",
+      "market_notes": "San Francisco's medical office building market benefits from a highly educated, affluent patient base and the presence of major health systems including UCSF Health, Sutter Health, and Kaiser Permanente, which anchor demand for both on-campus and off-campus MOB space. Mission Bay has emerged as a focal point for healthcare real estate activity given UCSF's expanding campus presence, while suburban nodes in San Mateo and Palo Alto continue to draw outpatient facility investment as providers follow population shifts away from the urban core. Lenders remain selectively cautious given elevated San Francisco construction costs, seismic compliance requirements, and broader urban office market headwinds, but strong credit tenancy from institutional health systems and historically low MOB vacancy rates continue to attract capital to well-located assets.",
+      "active_lender_commentary": "Life insurance companies and regional banks such as Bank of the West and Pacific Premier Bank are among the most active lenders for stabilized, credit-tenanted medical office buildings in the San Francisco metro, drawn by the strength of UCSF and Sutter Health-anchored deals. Debt funds are stepping in for value-add acquisitions and transitional assets where conventional lenders have pulled back, particularly for off-campus MOBs in suburban submarkets like San Mateo and Palo Alto where cash flow metrics are more compelling.",
+      "submarkets": "Mission Bay, SoMa, Palo Alto, San Mateo, Oakland, Walnut Creek, Marin County, Daly City"
+    },
+    {
+      "slug": "austin",
+      "name": "Austin",
+      "state": "TX",
+      "market_notes": "Austin's rapid population growth, driven by major tech relocations and a surge in high-income residents, has created strong demand for outpatient medical services and specialist care, pushing medical office occupancy rates above 92% in many core submarkets. Health systems including Ascension Seton, St. David's HealthCare, and Baylor Scott and White have been aggressively expanding their outpatient footprints, supporting both on-campus and off-campus MOB development across the metro. The development pipeline remains active but is increasingly concentrated in suburban growth corridors like Cedar Park, Round Rock, and Georgetown, where population density is catching up with healthcare infrastructure needs.",
+      "active_lender_commentary": "Regional banks such as Frost Bank, Comerica, and Texas Capital Bank are among the most active lenders for medical office financing in Austin, drawn by strong occupancy fundamentals and creditworthy health system tenants. Debt funds and life companies are increasingly competing for larger single-tenant net lease MOBs anchored by investment-grade healthcare systems, offering aggressive terms on assets with long-term leases in place.",
+      "submarkets": "Round Rock, Cedar Park, Georgetown, The Domain, South Congress Corridor, North Austin, Pflugerville, Downtown Austin"
+    },
+    {
+      "slug": "nashville",
+      "name": "Nashville",
+      "state": "TN",
+      "market_notes": "Nashville stands as one of the most active medical office building markets in the Southeast, anchored by a dense concentration of major health systems including HCA Healthcare, Vanderbilt University Medical Center, and Ascension Saint Thomas, all of which drive consistent demand for both on-campus and off-campus MOB space. Occupancy rates across the metro have remained above 92% in core submarkets, with particular strength in Brentwood and Franklin where physician group consolidation and suburban population growth are fueling absorption of new product. The development pipeline remains elevated but disciplined, with most new deliveries pre-leased to health system-affiliated tenants, a factor that continues to attract institutional lender interest despite broader commercial real estate headwinds.",
+      "active_lender_commentary": "Regional banks including Pinnacle Financial Partners and Avenue Bank affiliates remain highly active for stabilized MOB loans in Nashville given their familiarity with local health system credit and strong deposit relationships with physician groups. Life companies such as Nationwide and Principal have also shown increased appetite for Class A, long-term net-leased MOBs in Brentwood and Franklin, drawn by the market's investment-grade tenant profiles and low vacancy fundamentals.",
+      "submarkets": "Brentwood, Franklin, Murfreesboro, Green Hills, Midtown Nashville, Cool Springs, Berry Hill, Germantown"
+    },
+    {
+      "slug": "tampa",
+      "name": "Tampa",
+      "state": "FL",
+      "market_notes": "Tampa's medical office building market benefits from one of the fastest-growing population bases in the Southeast, with consistent in-migration from the Northeast and Midwest driving strong demand for outpatient healthcare services across the metro. Occupancy rates for well-located MOBs in Tampa remain above 92%, with tenants such as BayCare Health System, AdventHealth, and HCA Florida anchoring both on-campus and off-campus assets and providing lenders with confidence in rent stability. Development activity is concentrated in suburban growth corridors like Brandon, Wesley Chapel, and the Westshore medical district, though construction costs and insurance premiums have moderated new starts and kept competitive supply in check.",
+      "active_lender_commentary": "Regional banks including Regions Bank, Truist, and Florida-based community lenders are the most active financing sources for Tampa MOBs, drawn by strong credit tenants and the metro's population growth fundamentals, while debt funds are stepping in aggressively for value-add acquisitions and construction bridge situations where traditional banks have pulled back on leverage. Life companies are selectively pursuing stabilized, credit-tenanted on-campus MOBs at conservative loan-to-value ratios, particularly for assets affiliated with BayCare or AdventHealth systems.",
+      "submarkets": "Westshore, Brandon, Wesley Chapel, New Tampa, St. Petersburg, Clearwater, Downtown Tampa, South Tampa"
+    },
+    {
+      "slug": "charlotte",
+      "name": "Charlotte",
+      "state": "NC",
+      "market_notes": "Charlotte's medical office building market is supported by rapid population growth exceeding 2% annually, a young and expanding workforce, and the ongoing buildout of Atrium Health and Novant Health ambulatory networks across the metro. Off-campus MOB occupancy remains above 93% in key suburban corridors as both health systems aggressively push outpatient care to lower-cost settings, with notable development activity in Ballantyne, University City, and the broader I-485 loop. Lenders are broadly constructive on Charlotte MOB given the metro's strong demographic tailwinds, though construction cost pressures and a meaningful new supply pipeline in certain submarkets are prompting more conservative underwriting on speculative development deals.",
+      "active_lender_commentary": "Regional banks headquartered or with strong Charlotte presences, including Bank of America and Truist Financial, are among the most active lenders on stabilized and pre-leased medical office deals given their deep local market knowledge and appetite for healthcare-credit tenants. Debt funds and life companies are also competitive on larger, credit-anchored MOBs and outpatient surgery centers, particularly assets with long-term Atrium Health or Novant Health leases that justify lower cap rate assumptions.",
+      "submarkets": "Ballantyne, University City, South Charlotte, Concord, Huntersville, Pineville, Uptown, Midtown"
+    },
+    {
+      "slug": "minneapolis",
+      "name": "Minneapolis",
+      "state": "MN",
+      "market_notes": "Minneapolis-St. Paul is one of the strongest medical office building markets in the Midwest, anchored by a dense concentration of major health systems including Mayo Clinic, Allina Health, M Health Fairview, and HealthPartners, which collectively drive consistent demand for both on-campus and off-campus outpatient facilities. Occupancy rates for medical office buildings across the metro have remained above 90% in core submarkets, supported by a highly educated and insured population base and strong per-capita healthcare spending. The development pipeline has been active particularly along suburban corridors in Eden Prairie, Bloomington, and Maple Grove, though rising construction costs have moderated speculative starts and kept lender appetite focused on credit-tenanted or health-system-affiliated assets.",
+      "active_lender_commentary": "Regional banks including U.S. Bank, Associated Bank, and Bremer Bank are among the most active lenders for medical office building financing in Minneapolis, benefiting from deep local market knowledge and strong existing relationships with Twin Cities health systems. Life companies such as Principal Financial and Securian Financial, both headquartered in the metro, are also competitive on long-term fixed-rate financing for stabilized, credit-tenanted medical office assets, offering favorable terms that reflect their comfort with the market's strong healthcare sector fundamentals.",
+      "submarkets": "Bloomington, Eden Prairie, St. Paul, Downtown Minneapolis, Plymouth, Maple Grove, Minnetonka, Edina"
+    },
+    {
+      "slug": "portland",
+      "name": "Portland",
+      "state": "OR",
+      "market_notes": "Portland's medical office building market benefits from a large and growing healthcare system anchored by OHSU, Providence Health, and Legacy Health, which continue to expand outpatient care networks across the metro to serve a population that has grown significantly over the past decade. Off-campus MOB demand remains strong as health systems push care closer to patients in suburban corridors like Beaverton and Hillsboro, keeping overall medical office occupancy in the low-to-mid 90s percent range for well-located assets. Lenders remain constructive on stabilized, health-system-affiliated assets but are exercising caution on speculative development and standalone single-tenant facilities given broader Pacific Northwest office market softness and lingering concerns about Portland's urban core economic recovery.",
+      "active_lender_commentary": "Regional banks including Banner Bank and Umpqua Bank remain among the most active lenders for Portland medical office deals, particularly for community health and outpatient surgery center financing where local market knowledge supports underwriting, while debt funds have stepped in to fill gaps on value-add and lease-up deals that life companies and CMBS lenders are currently bypassing due to elevated credit standards. Life companies remain selectively active for larger, long-term net-leased assets with strong health system credit tenancy in suburban submarkets.",
+      "submarkets": "Beaverton, Hillsboro, Lake Oswego, Lloyd District, Tualatin, Vancouver WA, Southwest Portland, Oregon City"
+    },
+    {
+      "slug": "las-vegas",
+      "name": "Las Vegas",
+      "state": "NV",
+      "market_notes": "Las Vegas is experiencing strong demand for medical office space driven by rapid population growth, significant in-migration from California, and a historically underserved healthcare infrastructure relative to its metro size. Occupancy rates for well-located MOBs remain tight, particularly in master-planned communities like Summerlin and Henderson, where suburban growth is generating new patient volumes for primary care, orthopedics, and outpatient surgery. Lenders are cautiously optimistic, attracted by demographic tailwinds and limited legacy supply, though some scrutinize the market's historical economic volatility tied to tourism and gaming cycles.",
+      "active_lender_commentary": "Debt funds and regional banks are the most active lenders for medical office building financing in Las Vegas right now, with debt funds offering flexible structures for value-add and newly constructed MOBs and regional banks like Western Alliance and Nevada State Bank providing competitive terms for established healthcare operators with strong occupancy. Life companies are selectively active on larger, credit-tenanted on-campus or health-system-anchored assets in Summerlin and Henderson where long-term lease structures meet their underwriting criteria.",
+      "submarkets": "Henderson, Summerlin, Spring Valley, Enterprise, North Las Vegas, Southwest Las Vegas, Green Valley"
+    },
+    {
+      "slug": "orlando",
+      "name": "Orlando",
+      "state": "FL",
+      "market_notes": "Orlando's medical office building market benefits from one of the fastest-growing populations in the Sun Belt, with the metro adding roughly 60,000 new residents annually and driving sustained demand for outpatient and specialty care facilities. Lake Nona's Medical City anchors a significant development pipeline, attracting health systems like UCF Health, Nemours, and AdventHealth, while off-campus MOB occupancy across the metro remains tight in the low-to-mid 90% range. Lenders are drawn to Orlando's favorable demographics and healthcare employment growth, though they are monitoring new supply concentrations around Lake Nona and underwriting rent growth conservatively given rising construction costs.",
+      "active_lender_commentary": "Regional banks and debt funds are the most active lenders for medical office building financing in Orlando right now, with institutions like Truist, Regions Bank, and TD Bank competing aggressively on stabilized on-campus and off-campus assets tied to credit health system tenants. Life companies are selectively active on larger, long-term net-leased MOBs above $10 million anchored by investment-grade healthcare operators, drawn by Florida's landlord-friendly legal environment and strong rent fundamentals.",
+      "submarkets": "Lake Nona, Winter Park, Altamonte Springs, Dr. Phillips, Kissimmee, Sand Lake Road Corridor, Downtown Orlando, Oviedo"
     }
   ]
 }
