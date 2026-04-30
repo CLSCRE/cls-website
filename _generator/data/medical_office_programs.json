@@ -237,6 +237,86 @@
       "market_notes": "Orlando's medical office building market benefits from one of the fastest-growing populations in the Sun Belt, with the metro adding roughly 60,000 new residents annually and driving sustained demand for outpatient and specialty care facilities. Lake Nona's Medical City anchors a significant development pipeline, attracting health systems like UCF Health, Nemours, and AdventHealth, while off-campus MOB occupancy across the metro remains tight in the low-to-mid 90% range. Lenders are drawn to Orlando's favorable demographics and healthcare employment growth, though they are monitoring new supply concentrations around Lake Nona and underwriting rent growth conservatively given rising construction costs.",
       "active_lender_commentary": "Regional banks and debt funds are the most active lenders for medical office building financing in Orlando right now, with institutions like Truist, Regions Bank, and TD Bank competing aggressively on stabilized on-campus and off-campus assets tied to credit health system tenants. Life companies are selectively active on larger, long-term net-leased MOBs above $10 million anchored by investment-grade healthcare operators, drawn by Florida's landlord-friendly legal environment and strong rent fundamentals.",
       "submarkets": "Lake Nona, Winter Park, Altamonte Springs, Dr. Phillips, Kissimmee, Sand Lake Road Corridor, Downtown Orlando, Oviedo"
+    },
+    {
+      "slug": "philadelphia",
+      "name": "Philadelphia",
+      "state": "PA",
+      "market_notes": "Philadelphia's medical office building market benefits from a dense concentration of major health systems including Jefferson Health, Penn Medicine, Temple Health, and Main Line Health, which anchor both on-campus and off-campus MOB demand across the metro. Occupancy rates for institutional-quality medical office product remain strong in the high 80s to low 90s percent range, particularly in University City and suburban nodes like King of Prussia where health system expansion continues. Lenders are drawn to Philadelphia's stable healthcare employment base and academic medical center activity, though some caution exists around older suburban stock and value-add deals lacking long-term health system tenancy.",
+      "active_lender_commentary": "Regional banks including TD Bank, Fulton Bank, and Customers Bank are actively quoting medical office building loans in the Philadelphia metro, particularly for well-leased off-campus product with creditworthy health system tenants. Life companies and debt funds are competing aggressively for Class A on-campus MOBs tied to Penn Medicine or Jefferson Health, offering longer fixed-rate terms that appeal to institutional buyers and healthcare REITs active in the market.",
+      "submarkets": "University City, Center City, King of Prussia, Conshohocken, Cherry Hill, Plymouth Meeting, Bala Cynwyd, Langhorne"
+    },
+    {
+      "slug": "washington-dc",
+      "name": "Washington DC",
+      "state": "DC",
+      "market_notes": "The Washington DC metro medical office building market benefits from one of the most educated and insured populations in the country, with high concentrations of federal employees, defense contractors, and technology workers driving consistent demand for outpatient healthcare services. Occupancy rates for medical office buildings in the region remain above 90% in core submarkets like Bethesda, Tysons Corner, and Northern Virginia, supported by major health systems including MedStar, Inova, and Kaiser Permanente expanding their ambulatory care footprints. Development activity is focused on off-campus outpatient facilities and freestanding surgery centers, as health systems reposition care delivery away from acute settings, making the pipeline competitive but disciplined enough to keep fundamentals attractive to lenders.",
+      "active_lender_commentary": "Life insurance companies and regional banks such as Sandy Spring Bank, EagleBank, and National Cooperative Bank are among the most active lenders for medical office building financing in the DC metro, drawn by the market's strong credit tenancy, stable occupancy, and the presence of investment-grade health system guarantors. Debt funds are also competing aggressively for bridge loan opportunities tied to value-add MOB acquisitions and pre-stabilized outpatient surgery center projects in Northern Virginia and Maryland suburbs.",
+      "submarkets": "Bethesda, Tysons Corner, Arlington, Reston, Silver Spring, Rockville, Alexandria, Downtown DC"
+    },
+    {
+      "slug": "boston",
+      "name": "Boston",
+      "state": "MA",
+      "market_notes": "Boston remains one of the strongest medical office building markets in the country, driven by the concentration of world-class academic medical centers including Mass General Brigham, Beth Israel Deaconess, and Dana-Farber, which anchor robust demand for outpatient and specialty care facilities across the metro. Occupancy rates for on-campus and affiliated MOBs consistently exceed 95%, while off-campus facilities in suburban nodes like Waltham and Quincy benefit from strong population density and limited competing supply. Development activity is constrained by high construction costs and land scarcity in core Boston neighborhoods, which supports valuations on stabilized assets and keeps lender sentiment broadly positive on well-leased product.",
+      "active_lender_commentary": "Life insurance companies and regional banks such as Eastern Bank and Rockland Trust are among the most active lenders for stabilized, credit-tenanted MOBs in Boston, attracted by the market's institutional healthcare presence and low vacancy risk. Debt funds are also competitive on value-add and lease-up scenarios, particularly for off-campus facilities in suburban submarkets where conventional lenders require higher occupancy thresholds.",
+      "submarkets": "Back Bay, Longwood Medical Area, Cambridge, Waltham, Quincy, Braintree, Burlington, Peabody"
+    },
+    {
+      "slug": "san-antonio",
+      "name": "San Antonio",
+      "state": "TX",
+      "market_notes": "San Antonio's medical office building market benefits from strong population growth across the San Antonio-New Braunfels metro, a large military and veteran population driving consistent healthcare utilization, and the expanding footprints of major health systems including University Health, Baptist Health System, and Methodist Healthcare. Occupancy in stabilized MOBs across key suburban corridors remains in the low-to-mid 90% range, with particular demand for outpatient facilities serving the rapidly growing North Side and New Braunfels submarkets. The development pipeline remains measured relative to demand, giving lenders confidence in the market's fundamentals, though rising construction costs have moderated some speculative development activity.",
+      "active_lender_commentary": "Regional and community banks including Frost Bank and Cullen/Frost affiliates remain highly active for MOB financing in San Antonio given their strong local market knowledge and relationship-driven approach to healthcare borrowers. Debt funds are stepping in for value-add acquisitions and bridge scenarios, particularly for off-campus MOBs being repositioned for multi-specialty use, while life companies are selectively targeting larger, health-system-anchored assets on stabilized terms.",
+      "submarkets": "Stone Oak, North Central San Antonio, Medical Center, New Braunfels, Boerne, Alamo Heights, Far North Side, South Texas Medical Center"
+    },
+    {
+      "slug": "raleigh",
+      "name": "Raleigh",
+      "state": "NC",
+      "market_notes": "Raleigh-Durham's medical office building market benefits from a rapidly growing population, a concentration of major health systems including Duke Health, UNC Health, and WakeMed, and one of the strongest physician recruitment pipelines in the Southeast tied to the Research Triangle's life sciences and academic ecosystem. Occupancy rates for institutional-quality MOBs in the metro have remained consistently above 92%, with particular strength in off-campus facilities serving suburban population growth corridors in Cary, Morrisville, and Holly Springs. Development activity remains elevated with several health system-anchored projects underway near the I-540 expansion corridor, though lenders are closely monitoring construction cost pressures and lease-up timelines for speculative product.",
+      "active_lender_commentary": "Regional banks such as Truist, First Citizens Bank, and Live Oak Bank are among the most active lenders for medical office building financing in the Raleigh metro, drawn by the market's strong occupancy fundamentals and creditworthy health system tenants. Life insurance companies and debt funds are also competitive on stabilized, long-term net leased product anchored by investment-grade operators, particularly for deals in the 5 to 20 million dollar range near major hospital campuses.",
+      "submarkets": "Cary, Morrisville, Research Triangle Park, North Raleigh, Durham Medical Center, Chapel Hill, Downtown Raleigh, Holly Springs"
+    },
+    {
+      "slug": "salt-lake-city",
+      "name": "Salt Lake City",
+      "state": "UT",
+      "market_notes": "Salt Lake City's medical office building market is supported by one of the fastest-growing populations in the United States, with Intermountain Health and University of Utah Health driving significant outpatient expansion across the metro. Off-campus MOB occupancy remains strong in the 92-95% range as health systems push care closer to rapidly growing suburban corridors in Sandy, Lehi, and the broader Utah Valley. The development pipeline remains active but disciplined, with lenders generally optimistic given the metro's demographic tailwinds, though rising construction costs and interest rate sensitivity on new development deals have prompted more conservative underwriting on speculative projects.",
+      "active_lender_commentary": "Regional banks including Zions Bancorporation and local Utah-chartered institutions are among the most active lenders for stabilized and credit-tenanted medical office buildings in Salt Lake City, benefiting from strong local market knowledge and relationship-driven lending culture. Life companies are selectively competing for larger on-campus and health-system-anchored MOBs in the $10 million and above range, while debt funds have stepped in to fill construction and transitional loan demand where traditional banks have pulled back.",
+      "submarkets": "Downtown SLC, Sugar House, Sandy, South Jordan, Lehi, Provo, Murray, Cottonwood Heights"
+    },
+    {
+      "slug": "columbus",
+      "name": "Columbus",
+      "state": "OH",
+      "market_notes": "Columbus is one of the Midwest's most active medical office building markets, supported by a rapidly growing population base, the dominant presence of OhioHealth and Ohio State University Wexner Medical Center, and strong demand for outpatient care delivery outside of traditional hospital campuses. Off-campus MOB occupancy in the metro has remained consistently above 92%, driven by tenant demand from large health systems expanding ambulatory footprints in high-growth suburban corridors like Dublin, New Albany, and Westerville. Development activity remains measured, with most new supply tied to health system anchored or pre-leased projects, which keeps lender risk appetite constructive across the metro.",
+      "active_lender_commentary": "Regional banks including Huntington National Bank and Fifth Third Bank are among the most consistently active lenders for medical office building financing in Columbus, given their deep Ohio market relationships and appetite for health system anchored or credit-tenant deals. Debt funds and life companies are also competing aggressively for stabilized, multi-tenant MOBs in the suburban growth corridors, particularly where OhioHealth or Wexner Medical Center tenancy provides credit support.",
+      "submarkets": "Dublin, New Albany, Westerville, Gahanna, Grove City, Hilliard, Easton, Short North"
+    },
+    {
+      "slug": "kansas-city",
+      "name": "Kansas City",
+      "state": "MO",
+      "market_notes": "Kansas City's medical office building market benefits from a strong base of anchor health systems including the University of Kansas Health System, Saint Luke's Health System, and HCA Midwest Health, all of which have been expanding outpatient footprints across the metro and driving consistent demand for both on-campus and off-campus MOB product. Occupancy across stabilized medical office assets in the metro has held in the low-to-mid 90% range, supported by population growth in Johnson County suburbs like Overland Park and Olathe where healthcare demand is outpacing supply. The development pipeline remains measured rather than speculative, with most new construction tied to health system pre-leasing commitments, which gives lenders confidence in underwriting new deals alongside strong absorption of existing product.",
+      "active_lender_commentary": "Regional banks including Commerce Bank, UMB Bank, and Heartland Financial affiliates have been the most consistent lenders for medical office deals in Kansas City, particularly for stabilized assets with credit health system tenants, while debt funds have stepped in to fill gaps on lease-up situations and value-add acquisitions where conventional banks require higher occupancy thresholds. Life companies have shown selective interest in larger, long-term net-leased MOBs anchored by investment-grade healthcare tenants, especially in the Overland Park and Lee's Summit submarkets.",
+      "submarkets": "Overland Park, Olathe, Lee's Summit, North Kansas City, Country Club Plaza, Downtown KC, Lenexa, Prairie Village"
+    },
+    {
+      "slug": "indianapolis",
+      "name": "Indianapolis",
+      "state": "IN",
+      "market_notes": "Indianapolis has emerged as a strong medical office building market anchored by major health systems including Indiana University Health, Ascension St. Vincent, Franciscan Health, and Community Health Network, which are actively expanding their ambulatory and outpatient footprints across the metro. Off-campus MOB demand is particularly robust in the northern suburbs of Carmel and Fishers, where population growth and favorable demographics are attracting both health system-affiliated and multi-tenant medical office development. Occupancy rates across stabilized Indianapolis MOBs remain in the low-to-mid 90 percent range, and lenders are generally constructive on the market given the presence of investment-grade health system tenants and the metro's affordable cost basis relative to coastal markets.",
+      "active_lender_commentary": "Regional banks including First Internet Bank, Old National Bank, and Horizon Bank are among the most active lenders for medical office building financing in Indianapolis, drawn by strong borrower relationships and familiarity with local health system credit. Life companies and debt funds are selectively active on larger, stabilized assets with long-term health system leases, particularly in Carmel and Fishers where credit quality and asset fundamentals support competitive fixed-rate execution.",
+      "submarkets": "Carmel, Fishers, Noblesville, Greenwood, North Meridian Corridor, Downtown Indianapolis, Castleton, Zionsville"
+    },
+    {
+      "slug": "san-jose",
+      "name": "San Jose",
+      "state": "CA",
+      "market_notes": "San Jose and the broader Silicon Valley metro represent one of the most supply-constrained medical office markets in the nation, with occupancy rates for well-located MOBs consistently above 95% driven by a dense, high-income population and a rapidly growing health system presence from Dignity Health, Stanford Health Care, and Kaiser Permanente. Demand for outpatient care facilities is amplified by the region's tech-driven population growth and employer-sponsored health plan utilization, creating strong rent growth fundamentals for on-campus and off-campus MOB assets alike. The development pipeline remains extremely limited due to high construction costs, land scarcity, and entitlement challenges, which preserves existing asset values and keeps lender interest competitive for quality healthcare real estate.",
+      "active_lender_commentary": "Life insurance companies and regional banks such as First Republic successors, Western Alliance, and Pacific Premier are among the most active lenders for stabilized, credit-tenanted MOBs in San Jose, attracted by the market's strong occupancy fundamentals and institutional-quality tenant covenants. Debt funds are increasingly active on value-add MOB acquisitions and ground-up outpatient surgery center construction in Silicon Valley where conventional lenders remain cautious about lease-up risk given elevated basis and construction costs.",
+      "submarkets": "Downtown San Jose, Santa Clara, Sunnyvale, Mountain View, Cupertino, Milpitas, Palo Alto, Campbell"
     }
   ]
 }
