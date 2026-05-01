@@ -68,8 +68,17 @@
 .lp-cta-final p{font-size:16px;color:rgba(255,255,255,.8);max-width:620px;margin:0 auto 24px}
 .lp-cta-final a{background:var(--green-bright,#00A676);color:#fff;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:700;margin:6px}
 </style>
+<style>
+.skip-link{position:absolute;top:-40px;left:0;background:#153D63;color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
+.skip-link:focus{top:0;outline:3px solid #00A676;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.nav-dropdown:focus-within .nav-dropdown-menu{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+</style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH6TD3TC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav class="nav" id="nav">
 <div class="nav-inner">
@@ -89,6 +98,7 @@
   <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
 </div>
 </nav>
+<main id="main-content">
 
 <section class="lp-hero">
 <div class="lp-hero-inner">
@@ -215,6 +225,7 @@
 <a href="https://outlook.office.com/bookwithme/user/c760895536d64481bd17039efdcead26@clscre.com?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener">Book 15 min</a>
 </section>
 
+</main>
 <footer style="background:var(--navy);color:rgba(255,255,255,.75);padding:48px 40px 32px;text-align:center">
 <div style="max-width:1280px;margin:0 auto">
   <div style="font-family:var(--font-display);font-size:20px;color:#fff;margin-bottom:10px">Commercial Lending Solutions</div>
