@@ -591,6 +591,29 @@ def main():
         })
     print(f"  [OK] blog/*.html  ({len(articles)} article pages)")
 
+    # ── 6b. Blog articles generated outside articles.json ─────────────
+    # Scripts like generate_weekly_rates.py, generate_weekly_affordable.py,
+    # and NNN/case-study batch scripts write HTML directly to website/blog/
+    # without updating articles.json. Scan the directory and add any files
+    # not already in the sitemap so they are never orphaned.
+    _blog_in_sitemap = {u["loc"] for u in sitemap_urls if "/blog/" in u["loc"]}
+    _extra_blog = 0
+    for _blog_html in sorted((WEBSITE_DIR / "blog").glob("*.html")):
+        if _blog_html.name == "index.html":
+            continue
+        _blog_url = f"{BASE_URL}/blog/{_blog_html.name}"
+        if _blog_url not in _blog_in_sitemap:
+            sitemap_urls.append({
+                "loc": _blog_url,
+                "lastmod": TODAY,
+                "changefreq": "monthly",
+                "priority": "0.7",
+            })
+            _blog_in_sitemap.add(_blog_url)
+            _extra_blog += 1
+    if _extra_blog:
+        print(f"  [OK] blog/*.html  (+{_extra_blog} extra articles found on disk, added to sitemap)")
+
     # ── 7. Locations Page ──────────────────────────────────────────────
     print("\n=== Generating Locations Page ===")
     tpl_locations = env.get_template("locations.html")
@@ -741,6 +764,22 @@ def main():
     # ── 11. Sitemap.xml + segmented sitemaps ──────────────────────────
     print("\n=== Generating sitemaps (segmented) ===")
     tpl_sitemap = env.get_template("sitemap.xml.j2")
+
+    # Deduplicate sitemap URLs. The geo_landing.json block and the landing/
+    # filesystem scan can both emit the same URL (e.g. los-angeles-bridge-loans).
+    # Preserve first-seen order so high-priority entries win.
+    _seen_locs = set()
+    _deduped = []
+    _dup_count = 0
+    for _u in sitemap_urls:
+        if _u["loc"] not in _seen_locs:
+            _seen_locs.add(_u["loc"])
+            _deduped.append(_u)
+        else:
+            _dup_count += 1
+    if _dup_count:
+        print(f"  [dedup] Removed {_dup_count} duplicate sitemap entries")
+    sitemap_urls = _deduped
 
     # Categorize each URL into a segmented sitemap. Categorization is
     # path-based: the first path segment after the domain determines bucket.

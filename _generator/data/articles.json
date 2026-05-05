@@ -1,5 +1,65 @@
 [
   {
+    "slug": "sba-owner-user-commercial-2026-05-04",
+    "title": "SBA Owner-User Commercial Deal Activity (Week of May 04, 2026)",
+    "excerpt": "Commentary on SBA 504 and 7(a) activity for owner-user commercial (office, medical office, specialty retail, small hospitality), CDC processing times, and lender appetite.",
+    "author": "Trevor Damyan",
+    "date": "2026-05-04",
+    "date_formatted": "May 04, 2026",
+    "category": "Commercial Commentary",
+    "tags": [
+      "commercial",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_commercial"
+  },
+  {
+    "slug": "rent-stabilization-impact-underwriting-2026-05-04",
+    "title": "Rent Stabilization Impact on Underwriting (Week of May 04, 2026)",
+    "excerpt": "Commentary on how LA RSO, statewide AB 1482, and similar rent control policies affect lender underwriting, value-add pro formas, and exit pricing.",
+    "author": "Trevor Damyan",
+    "date": "2026-05-04",
+    "date_formatted": "May 04, 2026",
+    "category": "Multifamily Commentary",
+    "tags": [
+      "multifamily",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_multifamily"
+  },
+  {
+    "slug": "industrial-portfolio-sale-market-2026-05-04",
+    "title": "Industrial Portfolio Sale Market Commentary (Week of May 04, 2026)",
+    "excerpt": "Commentary on institutional industrial portfolio sale activity, pricing trends across Class A and Class B distribution, and debt assumption dynamics.",
+    "author": "Trevor Damyan",
+    "date": "2026-05-04",
+    "date_formatted": "May 04, 2026",
+    "category": "Industrial Commentary",
+    "tags": [
+      "industrial",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_industrial"
+  },
+  {
+    "slug": "ab-2011-early-deal-observations-2026-05-04",
+    "title": "AB 2011 Early Deal Observations (Week of May 04, 2026)",
+    "excerpt": "Observations on AB 2011 project types coming through entitlement, capital stack configurations, and the evolving specialty lender ecosystem for office-to-housing and commercial-to-housing conversions.",
+    "author": "Trevor Damyan",
+    "date": "2026-05-04",
+    "date_formatted": "May 04, 2026",
+    "category": "Affordable Housing Commentary",
+    "tags": [
+      "affordable",
+      "market commentary",
+      "capital markets"
+    ],
+    "type": "weekly_affordable"
+  },
+  {
     "slug": "commercial-mortgage-rates-week-2026-04-27",
     "title": "Commercial Mortgage Rates: Week of April 27, 2026",
     "excerpt": "Commercial mortgage rates held in a cautious range during the week of April 27–May 1, 2026, as markets digested mixed economic signals, a resilient labor market, and ongoing uncertainty around Federal Reserve policy timing—creating both headwinds and selective opportunities for CRE borrowers.\n\n---",
