@@ -297,5 +297,74 @@
       "meta_description": "Fast hard money loans for commercial real estate. Close in 1 to 2 weeks. $1M to $20M, up to 70% LTV. Distressed, auction, and value-add acquisitions. Get a quote.",
       "h1": "Commercial Hard Money Loans"
     }
+  },
+  {
+    "slug": "portfolio-loans",
+    "name": "Portfolio Loans",
+    "short_name": "Portfolio",
+    "headline": "Blanket Portfolio Loans for Real Estate Investors",
+    "description": "Portfolio loans allow real estate investors to finance multiple properties under a single loan facility, replacing individual property mortgages with one streamlined structure. Commercial Lending Solutions sources portfolio financing from balance-sheet lenders, debt funds, and specialty platforms that underwrite on the performance of the full portfolio rather than each asset individually, simplifying management and often unlocking better terms than property-by-property financing.",
+    "description_extended": "As investors scale their holdings, managing individual loans across dozens of properties becomes operationally complex and expensive. A blanket portfolio loan consolidates these into one facility with a single lender, one payment, and unified loan covenants. Underwriting focuses on overall portfolio DSCR, blended occupancy, and total equity rather than the specific characteristics of each property. This structure is especially powerful for investors who hold a mix of asset types, have properties in multiple states, or own properties that individually would not qualify for agency or bank financing. Commercial Lending Solutions has relationships with portfolio lenders that specialize in this product and understand how to structure cross-collateralized facilities for maximum flexibility and borrower leverage.",
+    "key_features": {
+      "loan_amount": "$5M - $100M+",
+      "term": "3 - 10 Years",
+      "rates": "6.50% - 10.00%",
+      "ltv": "Up to 75% LTV",
+      "structure": "Cross-Collateralized Blanket Lien",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": ["Institutional Balance-Sheet Lenders", "Debt Funds", "Private Banks", "Family Offices", "Insurance Company Portfolio Programs"],
+    "ideal_for": ["Institutional investors with 10 to 100+ properties seeking one facility", "Mixed-asset portfolios spanning multifamily, industrial, and retail", "Sponsors retiring multiple individual loans at maturity into one execution", "Private equity and family office real estate portfolios", "Out-of-state investors with geographically diversified holdings", "Operators seeking to recapitalize and extract equity across a portfolio"],
+    "seo": {
+      "title": "Portfolio Loans for Real Estate Investors | CLS CRE",
+      "meta_description": "Blanket portfolio loans for institutional real estate investors. Finance multiple properties under one facility. $5M to $100M+, cross-collateralized. Get a quote.",
+      "h1": "Blanket Portfolio Loans for Real Estate Investors"
+    }
+  },
+  {
+    "slug": "fix-and-flip-loans",
+    "name": "Fix and Flip Loans",
+    "short_name": "Fix & Flip",
+    "headline": "Fix and Flip Loans for Commercial Value-Add Projects",
+    "description": "Fix and flip loans provide short-term acquisition and renovation financing for investors purchasing distressed or underimproved commercial properties with the intent to renovate and resell. Commercial Lending Solutions works with private lenders and debt funds that specialize in value-add execution, offering fast closings, draws tied to construction progress, and loan sizing based on the after-repair value (ARV) of the finished asset.",
+    "description_extended": "Fix and flip financing in commercial real estate covers a broad range of project sizes and asset types, from small mixed-use buildings and retail strips to larger apartment repositionings and warehouse conversions. The defining feature is a short hold period and a clear exit through sale or refinance once the value-add work is complete. Lenders evaluate these deals primarily on the quality of the business plan, the borrower's execution track record, and the spread between purchase-plus-renovation cost and projected ARV. Commercial Lending Solutions structures fix and flip facilities to cover acquisition, carry costs, and renovation draws, minimizing out-of-pocket capital while preserving enough spread to deliver target returns at exit.",
+    "key_features": {
+      "loan_amount": "$5M - $50M+",
+      "term": "12 - 24 Months",
+      "rates": "9.00% - 13.50%",
+      "ltv": "Up to 85% of Cost / 75% of ARV",
+      "structure": "Interest-Only with Construction Draws",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": ["Institutional Debt Funds", "Private Bridge Lenders with Renovation Programs", "Family Offices", "Specialty Value-Add Platforms", "Balance-Sheet Bridge Lenders"],
+    "ideal_for": ["Distressed multifamily acquisition and full gut renovation", "Anchored retail and mixed-use repositioning for institutional resale", "Warehouse-to-residential or office-to-multifamily adaptive reuse", "Mid-size and large apartment building value-add and condo conversion", "Distressed commercial property acquisitions requiring significant capital infusion", "Sponsors targeting a 12 to 24 month repositioning and exit"],
+    "seo": {
+      "title": "Fix and Flip Loans for Commercial Real Estate | CLS CRE",
+      "meta_description": "Fix and flip loans for commercial value-add projects. Fast close, up to 85% of cost, draws tied to renovation progress. $5M to $50M+. Get a quote from CLS CRE.",
+      "h1": "Commercial Fix and Flip Loans"
+    }
+  },
+  {
+    "slug": "stated-income-loans",
+    "name": "Stated Income Loans",
+    "short_name": "Stated Income",
+    "headline": "Stated Income and No-Doc Commercial Real Estate Loans",
+    "description": "Stated income and no-doc commercial loans qualify sponsors without full tax return verification, using bank statements, asset documentation, or property income alone to support the loan. Commercial Lending Solutions sources these institutional programs from private lenders and non-QM platforms for self-employed investors, high-net-worth principals, and sponsors whose reported income does not reflect their true financial capacity.",
+    "description_extended": "Traditional commercial lenders require two years of tax returns, profit and loss statements, and detailed income documentation. For self-employed sponsors, business owners, and investors with significant depreciation or write-offs, this process often results in a decline despite strong actual cash flow and net worth. Stated income and lite-doc commercial programs solve this by qualifying on bank statement deposits, asset depletion schedules, or property-level income rather than adjusted gross income. These are institutional programs offered by balance-sheet lenders and non-QM platforms designed for sophisticated borrowers with complex financial profiles. Commercial Lending Solutions matches each sponsor with the right documentation program to maximize loan proceeds and minimize friction at the institutional level.",
+    "key_features": {
+      "loan_amount": "$5M - $50M+",
+      "term": "5 - 30 Years",
+      "rates": "7.00% - 11.00%",
+      "ltv": "Up to 70% LTV",
+      "qualification": "Bank Statements, Asset Depletion, or Property Income",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": ["Institutional Non-QM Lenders", "Private Balance-Sheet Lenders", "Debt Funds", "Private Banks with Lite-Doc Programs", "Family Offices"],
+    "ideal_for": ["Self-employed sponsors with significant depreciation and write-offs", "Business owners whose tax returns materially understate income", "High-net-worth principals qualifying on assets rather than W-2 income", "Foreign national investors and family offices without U.S. tax history", "Sponsors with complex entity structures across multiple investment vehicles", "Institutional investors seeking confidential, discreet financing without full income disclosure"],
+    "seo": {
+      "title": "Stated Income Commercial Real Estate Loans | CLS CRE",
+      "meta_description": "Stated income and no-doc commercial loans for self-employed sponsors and high-net-worth investors. Bank statement and asset-depletion qualification. $5M to $50M+. Get a quote.",
+      "h1": "Stated Income Commercial Real Estate Loans"
+    }
   }
 ]
