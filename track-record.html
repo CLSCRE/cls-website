@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PH6TD3TC');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Track Record: 82 Closed Deals | Commercial Lending Solutions</title>
-<meta name="description" content="Browse 82 closed commercial real estate transactions from Commercial Lending Solutions. Case studies across multifamily, industrial, retail, office, construction, bridge, and permanent loans in Los Angeles and nationwide.">
+<meta name="description" content="Browse 82 closed commercial real estate transactions from Commercial Lending Solutions. 22 ground-up development and affordable housing projects. Case studies across multifamily, industrial, retail, office, and more.">
 <link rel="canonical" href="https://clscre.com/track-record.html">
 <meta property="og:title" content="Track Record: 82 Closed Deals | Commercial Lending Solutions">
-<meta property="og:description" content="Browse 82 closed CRE transactions. Multifamily, industrial, retail, office, construction, bridge, permanent loans.">
+<meta property="og:description" content="82 closed CRE transactions including 22 development and affordable housing projects. Multifamily, industrial, retail, office, construction, bridge, permanent loans.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clscre.com/track-record.html">
 <meta property="og:image" content="https://clscre.com/images/cls-og-image.png">
@@ -17,7 +17,7 @@
 <link rel="preload" href="fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","logo":"https://clscre.com/images/cls-logo-skyline.png","telephone":"+13107583576","email":"loans@clscre.com"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Track Record | Commercial Lending Solutions", "description": "Browse 82 closed commercial real estate transactions. Case studies across multifamily, industrial, retail, office, and more.", "url": "https://clscre.com/track-record.html", "publisher": {"@type": "Organization", "name": "Commercial Lending Solutions", "url": "https://clscre.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Track Record | Commercial Lending Solutions","description":"Browse 82 closed commercial real estate transactions including 22 ground-up development and affordable housing projects.","url":"https://clscre.com/track-record.html","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}</script>
 <link rel="stylesheet" href="css/global.min.css">
 <link rel="stylesheet" href="css/pages.min.css">
 <style>
@@ -33,9 +33,26 @@
 .tr-filter,.tr-filter-loan{padding:6px 14px;border:1px solid var(--gray-200);border-radius:6px;background:var(--white);font-size:12px;font-weight:600;color:var(--gray-500);cursor:pointer;transition:all .15s}
 .tr-filter:hover,.tr-filter-loan:hover{border-color:var(--green);color:var(--green)}
 .tr-filter.active,.tr-filter-loan.active{background:var(--green);color:var(--white);border-color:var(--green)}
-.tr-grid{max-width:1200px;margin:0 auto;padding:32px 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-.tr-card:hover{border-color:var(--green);box-shadow:0 4px 12px rgba(0,0,0,.05);transform:translateY(-2px)}
+.tr-grid{max-width:1200px;margin:0 auto;padding:32px 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
 .tr-count{font-size:13px;color:var(--gray-500);max-width:1200px;margin:0 auto;padding:0 24px 8px}
+/* Card redesign */
+.tr-card{display:block;background:var(--white);border:1px solid #E5E7EB;border-radius:12px;overflow:hidden;text-decoration:none;transition:all .22s;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.tr-card:hover{border-color:var(--green);box-shadow:0 8px 28px rgba(0,0,0,.11);transform:translateY(-3px)}
+.tr-card-top{height:56px}
+.tr-card[data-cat="development"] .tr-card-top{background:linear-gradient(135deg,#0A1F35 0%,#153D63 100%)}
+.tr-card[data-cat="multifamily"] .tr-card-top{background:linear-gradient(135deg,#153D63 0%,#1e5080 100%)}
+.tr-card[data-cat="industrial"] .tr-card-top{background:linear-gradient(135deg,#1c2836 0%,#2e4057 100%)}
+.tr-card[data-cat="retail"] .tr-card-top{background:linear-gradient(135deg,#0d3320 0%,#006A4E 100%)}
+.tr-card[data-cat="office"] .tr-card-top{background:linear-gradient(135deg,#2a1245 0%,#4e2d78 100%)}
+.tr-card[data-cat="hospitality"] .tr-card-top{background:linear-gradient(135deg,#5c1a00 0%,#9a3200 100%)}
+.tr-card[data-cat="net-lease"] .tr-card-top{background:linear-gradient(135deg,#003b22 0%,#005c3a 100%)}
+.tr-card[data-cat="other"] .tr-card-top{background:linear-gradient(135deg,#1f1f2e 0%,#3d3d5c 100%)}
+.tr-card-body{padding:18px 20px 20px}
+.tr-card-loan-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--white);background:var(--green);border-radius:4px;padding:3px 9px;margin-bottom:12px}
+.tr-card-amount{font-family:var(--font-display);font-size:30px;color:var(--navy);line-height:1;margin-bottom:8px;letter-spacing:-.01em}
+.tr-card-desc{font-size:13px;font-weight:500;color:#374151;line-height:1.5;margin-bottom:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tr-card-loc{font-size:11px;color:#9CA3AF;margin-bottom:14px}
+.tr-card-link{font-size:12px;font-weight:600;color:var(--green)}
 @media(max-width:768px){.tr-grid{grid-template-columns:1fr}.tr-stats{gap:20px}}
 </style>
 <style>
@@ -71,443 +88,936 @@
 <section class="tr-hero">
   <div class="section-inner">
     <h1>Our Track Record</h1>
-    <p>82 closed transactions across every major property type, loan structure, and market. Each one has a story.</p>
+    <p>82 closed transactions including 22 ground-up development and affordable housing projects. Each deal tells a story.</p>
     <div class="tr-stats">
-      <div class="tr-stat"><div class="tr-stat-val">82</div><div class="tr-stat-label">Case Studies</div></div>
-      <div class="tr-stat"><div class="tr-stat-val">36</div><div class="tr-stat-label">Permanent</div></div>
-      <div class="tr-stat"><div class="tr-stat-val">35</div><div class="tr-stat-label">Construction</div></div>
-      <div class="tr-stat"><div class="tr-stat-val">11</div><div class="tr-stat-label">Bridge</div></div>
+      <div class="tr-stat"><div class="tr-stat-val">82</div><div class="tr-stat-label">Closed Deals</div></div>
+      <div class="tr-stat"><div class="tr-stat-val">22</div><div class="tr-stat-label">Development Projects</div></div>
+      <div class="tr-stat"><div class="tr-stat-val">35</div><div class="tr-stat-label">Construction Loans</div></div>
+      <div class="tr-stat"><div class="tr-stat-val">50</div><div class="tr-stat-label">States</div></div>
     </div>
   </div>
 </section>
 
 <div class="tr-filters">
   <div class="tr-filters-inner">
-    <button class="tr-filter active" data-filter="all">All</button>
-    <button class="tr-filter" data-filter="development">Development (1)</button>
+    <button class="tr-filter active" data-filter="all">All (82)</button>
+    <button class="tr-filter" data-filter="development">Development (22)</button>
     <button class="tr-filter" data-filter="hospitality">Hospitality (3)</button>
     <button class="tr-filter" data-filter="industrial">Industrial (15)</button>
-    <button class="tr-filter" data-filter="multifamily">Multifamily (42)</button>
+    <button class="tr-filter" data-filter="multifamily">Multifamily (20)</button>
     <button class="tr-filter" data-filter="net-lease">Net Lease (4)</button>
-    <button class="tr-filter" data-filter="office">Office (6)</button>
-    <button class="tr-filter" data-filter="other">Other (1)</button>
-    <button class="tr-filter" data-filter="retail">Retail (10)</button>
+    <button class="tr-filter" data-filter="office">Office (5)</button>
+    <button class="tr-filter" data-filter="other">Other (2)</button>
+    <button class="tr-filter" data-filter="retail">Retail (11)</button>
   </div>
 </div>
 
 <div class="tr-count" id="trCount">Showing all 82 deals</div>
 
 <div class="tr-grid" id="trGrid">
-<a href="blog/case-study-10m-adu-portfolio-construction-la-county.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$10,000,000 ADU Portfolio Construction (40 Units) in Los Angeles County, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-10m-bridge-retail-westwood.html" class="tr-card" data-cat="retail" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$10M Retail Repositioning in Westwood, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-10m-net-lease-drug-store-woodland-hills.html" class="tr-card" data-cat="retail" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$10,500,000 Net Lease Drug Store in Woodland Hills, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-11m-creative-office-culver-city.html" class="tr-card" data-cat="office" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$11,000,000 Creative Office Campus in Culver City, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-12m-ed1-small-lot-affordable-boyle-heights.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$12,000,000 ED1 Small-Lot Affordable (32 Units) in Boyle Heights, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-12m-multifamily-silver-lake.html" class="tr-card" data-cat="multifamily" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$12,500,000 Multifamily Apartments (28 Units) in Silver Lake, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-12m-net-lease-auto-service-van-nuys.html" class="tr-card" data-cat="net-lease" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$12,000,000 Net Lease Auto Service Center in Van Nuys, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-13m-medical-office-encino.html" class="tr-card" data-cat="office" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$13,000,000 Medical Office Building in Encino, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-14m-bridge-value-add-multifamily-la.html" class="tr-card" data-cat="multifamily" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$14,250,000 Value-Add Multifamily, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-14m-multifamily-value-add-echo-park.html" class="tr-card" data-cat="multifamily" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$14,000,000 Value-Add Multifamily (38 Units) in Echo Park, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-14m-townhome-construction-la-mesa-sd.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$14,000,000 For-Sale Townhome Construction (18 Units) in La Mesa, San Diego, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-15m-construction-industrial-compton.html" class="tr-card" data-cat="industrial" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$15M Spec Industrial (80,000 SF) in Compton, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-15m-ed1-family-housing-san-fernando-valley.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$15,000,000 ED1 Family Affordable Housing (42 Units) in San Fernando Valley, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-15m-net-lease-portfolio-san-gabriel-valley.html" class="tr-card" data-cat="retail" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$15,500,000 Net Lease Retail Portfolio in San Gabriel Valley, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-15m-perm-industrial-chatsworth.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$15M Multi-Tenant Industrial in Chatsworth, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-15m-retail-center-sherman-oaks.html" class="tr-card" data-cat="retail" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$15,000,000 Neighborhood Retail Center in Sherman Oaks, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-16m-88-unit-apartments-san-mateo.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$16,160,000 88-Unit Apartment Community, San Mateo, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-16m-net-lease-restaurant-portfolio-la.html" class="tr-card" data-cat="retail" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$16,000,000 Net Lease Restaurant Portfolio in Los Angeles County, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-16m-sb423-townhomes-oakland.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$16,000,000 SB 423 For-Sale Townhomes (24 Units) in Oakland, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-17m-industrial-flex-pomona.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$17,000,000 Industrial Flex Space in Pomona, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-18m-bridge-multifamily-highland-park.html" class="tr-card" data-cat="multifamily" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$18M Value-Add Multifamily (52 Units) in Highland Park, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-18m-data-center-san-diego.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$18,200,000 Industrial Data Center, San Diego, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-18m-ed1-senior-housing-east-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$18,000,000 ED1 Senior Affordable Housing (55 Units) in East Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-18m-mixed-use-construction-north-park-sd.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$18,000,000 Mixed-Use Construction (45 Units + Retail) in North Park, San Diego, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-18m-multifamily-koreatown-la.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$18,500,000 Multifamily Apartments (62 Units) in Koreatown, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-18m-perm-net-lease-auto-west-la.html" class="tr-card" data-cat="net-lease" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$18M Net Lease Auto Dealership in West Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-19m-multifamily-pasadena.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$19,000,000 Multifamily Apartments (72 Units) in Pasadena, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-19m-net-lease-pharmacy-portfolio.html" class="tr-card" data-cat="net-lease" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$19,124,000 Net Lease Pharmacy Portfolio, Sylvania, OH</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-20m-density-bonus-multifamily-san-diego.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$20,000,000 Density Bonus Multifamily (65 Units) in North Park, San Diego, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-20m-multifamily-mid-wilshire.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$20,000,000 Multifamily Apartments (55 Units) in Mid-Wilshire, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-20m-perm-retail-eagle-rock.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$20M Community Retail Center in Eagle Rock, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-21m-hotel-renovation-hollywood.html" class="tr-card" data-cat="hospitality" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$21,000,000 Boutique Hotel Renovation in Hollywood, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-22m-construction-senior-living-west-hills.html" class="tr-card" data-cat="other" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$22M Assisted Living (85 Beds) in West Hills, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-22m-ed1-permanent-supportive-downtown-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$22,000,000 ED1 Permanent Supportive Housing (68 Units) in Downtown Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-22m-grocery-anchored-shopping-center-west-la.html" class="tr-card" data-cat="retail" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$22,000,000 Grocery-Anchored Shopping Center in West Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-22m-hotel-ground-up-gaslamp-san-diego.html" class="tr-card" data-cat="hospitality" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$22,000,000 Boutique Hotel Ground-Up (95 Rooms) in Gaslamp Quarter, San Diego, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-25m-bridge-office-conversion-mid-wilshire.html" class="tr-card" data-cat="office" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$25M Office-to-Residential Conversion in Mid-Wilshire, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-25m-ed1-adaptive-reuse-mid-city-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$25,000,000 ED1 Adaptive Reuse to Affordable (58 Units) in Mid-City, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-25m-industrial-ground-up-otay-mesa-san-diego.html" class="tr-card" data-cat="industrial" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$25,000,000 Ground-Up Industrial (175,000 SF) in Otay Mesa, San Diego, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-25m-self-storage-glendale.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$25,000,000 Self-Storage Facility (800+ Units) in Glendale, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-26m-industrial-cold-storage-vernon.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$26,000,000 Cold Storage Facility in Vernon, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-27m-heavy-industrial-vernon.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$27,500,000 Heavy Industrial Campus, Vernon, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-28m-construction-mixed-use-dtla.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$28M Mixed-Use (68 Units + Retail) in Downtown Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-28m-ed1-affordable-multifamily-south-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$28,000,000 ED1 Affordable Multifamily (72 Units) in South Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-28m-industrial-portfolio-south-bay-la.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$28,000,000 Industrial Portfolio (3 Buildings) in Hawthorne/Gardena, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-28m-perm-1031-multifamily-noho.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$28M 1031 Exchange Multifamily (78 Units) in North Hollywood, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-29m-sb423-multifamily-san-francisco.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$29,000,000 SB 423 Streamlined Multifamily (78 Units) in San Francisco, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-30m-adaptive-reuse-downtown-la.html" class="tr-card" data-cat="office" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$30,000,000 Adaptive Reuse (Office to Residential) in Downtown Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-30m-bridge-entitled-land-mar-vista.html" class="tr-card" data-cat="development" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$30M Entitled Land in Mar Vista, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-32m-ground-up-multifamily-mission-bay-sf.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$32,000,000 Ground-Up Multifamily (85 Units) in Mission Bay, San Francisco, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-32m-perm-multifamily-portfolio-la.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$32M Multifamily Portfolio (95 Units) in Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-33m-ed1-workforce-housing-west-adams.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$33,000,000 ED1 Workforce Housing (88 Units) in West Adams, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-34m-industrial-distribution-commerce-la.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$34,000,000 Industrial Distribution Center in Commerce, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-35m-affordable-housing-south-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$35,000,000 Affordable Housing (LIHTC) in South Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-35m-construction-multifamily-arts-district-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$35M Ground-Up Multifamily (92 Units) in Arts District, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-35m-ed1-mixed-income-hollywood.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$35,000,000 ED1 Mixed-Income Development (95 Units) in Hollywood, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-35m-perm-grocery-panorama-city.html" class="tr-card" data-cat="retail" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$35M Grocery-Anchored Shopping Center in Panorama City, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-36m-student-housing-construction-usc-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$36,000,000 Purpose-Built Student Housing (200 Beds) in University Park, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-38m-ab2011-mixed-use-glendale.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$38,000,000 AB 2011 Mixed-Use Development (105 Units) in Glendale, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-38m-industrial-warehouse-long-beach.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$38,000,000 Industrial Warehouse Complex in Long Beach, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-40m-construction-luxury-playa-vista.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$40M Luxury Apartments (110 Units) in Playa Vista, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-40m-ground-up-multifamily-san-diego-east-village.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$40,000,000 Ground-Up Multifamily (120 Units) in East Village, San Diego, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-42m-ed1-transit-oriented-koreatown.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$42,000,000 ED1 Transit-Oriented Development (110 Units) in Koreatown, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-42m-multifamily-new-construction-san-fernando-valley.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$42,000,000 New Construction Multifamily (85 Units) in San Fernando Valley, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-43m-build-to-suit-inglewood.html" class="tr-card" data-cat="net-lease" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$43,400,000 Build-to-Suit Net Lease, Inglewood, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-45m-ed1-ab2011-hybrid-exposition-park-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$45,000,000 ED1 Affordable + AB 2011 Market-Rate (125 Units) in Exposition Park, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-45m-multifamily-burbank.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$45,000,000 Multifamily Community (148 Units) in Burbank, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-48m-build-to-suit-industrial-city-of-industry.html" class="tr-card" data-cat="industrial" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$48,000,000 Build-to-Suit Industrial (350,000 SF) in City of Industry, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-48m-perm-industrial-gateway-cities.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$48M Industrial Distribution Campus in Gateway Cities, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-5-6m-bridge-beverly-hills-retail.html" class="tr-card" data-cat="retail" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$5,600,000 High-End Retail, Beverly Hills, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-50m-ed1-large-scale-south-la.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$50,000,000 ED1 Large-Scale Affordable (140 Units) in South Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-60m-ground-up-multifamily-seattle.html" class="tr-card" data-cat="multifamily" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$60,000,000 125-Unit Ground-Up Multifamily, Seattle, WA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-6m-industrial-owner-user-el-segundo.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$6,200,000 Industrial Owner-User in El Segundo, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-75m-industrial-warehouse-phoenix.html" class="tr-card" data-cat="industrial" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$75,000,000 Industrial Warehouse, Phoenix, AZ</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-7m-net-lease-medical-office-beverly-hills.html" class="tr-card" data-cat="office" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$7,500,000 Net Lease Medical Office in Beverly Hills, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-8m-bridge-industrial-sun-valley.html" class="tr-card" data-cat="industrial" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$8M Industrial Acquisition in Sun Valley, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-8m-hotel-rehab-santa-barbara.html" class="tr-card" data-cat="hospitality" data-loan="construction" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Construction Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$8,000,000 Boutique Hotel Rehabilitation, Santa Barbara, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-8m-mixed-use-santa-monica.html" class="tr-card" data-cat="multifamily" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$8,500,000 Mixed-Use (Retail + Apartments) in Santa Monica, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-8m-retail-pad-sites-inglewood.html" class="tr-card" data-cat="retail" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$8,000,000 Net Lease Retail Pad Sites in Inglewood, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-9m-bridge-to-perm-palms.html" class="tr-card" data-cat="multifamily" data-loan="bridge" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Bridge Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$9M Bridge-to-Perm Multifamily (24 Units) in Palms, Los Angeles, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-9m-office-condo-century-city.html" class="tr-card" data-cat="office" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$9,800,000 Office Condominium in Century City, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
-<a href="blog/case-study-9m-retail-strip-center-torrance.html" class="tr-card" data-cat="retail" data-loan="permanent" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;text-decoration:none;transition:all .2s">
-  <div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:6px">Permanent Loan</div>
-  <div style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:4px">$9,200,000 Multi-Tenant Retail Strip Center in Torrance, CA</div>
-  <div style="font-size:12px;color:var(--green);margin-top:8px">Read case study &rarr;</div>
-</a>
+
+<a href="blog/case-study-10m-adu-portfolio-construction-la-county.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$10M</div>
+    <div class="tr-card-desc">ADU Portfolio Construction (40 Units)</div>
+    <div class="tr-card-loc">Los Angeles County, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-10m-bridge-retail-westwood.html" class="tr-card" data-cat="retail" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$10M</div>
+    <div class="tr-card-desc">Retail Repositioning</div>
+    <div class="tr-card-loc">Westwood, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-10m-net-lease-drug-store-woodland-hills.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$10.5M</div>
+    <div class="tr-card-desc">Net Lease Drug Store</div>
+    <div class="tr-card-loc">Woodland Hills, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-11m-creative-office-culver-city.html" class="tr-card" data-cat="office" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$11M</div>
+    <div class="tr-card-desc">Creative Office Campus</div>
+    <div class="tr-card-loc">Culver City, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-12m-ed1-small-lot-affordable-boyle-heights.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$12M</div>
+    <div class="tr-card-desc">ED1 Small-Lot Affordable (32 Units)</div>
+    <div class="tr-card-loc">Boyle Heights, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-12m-multifamily-silver-lake.html" class="tr-card" data-cat="multifamily" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$12.5M</div>
+    <div class="tr-card-desc">Multifamily Apartments (28 Units)</div>
+    <div class="tr-card-loc">Silver Lake, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-12m-net-lease-auto-service-van-nuys.html" class="tr-card" data-cat="net-lease" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$12M</div>
+    <div class="tr-card-desc">Net Lease Auto Service Center</div>
+    <div class="tr-card-loc">Van Nuys, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-13m-medical-office-encino.html" class="tr-card" data-cat="office" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$13M</div>
+    <div class="tr-card-desc">Medical Office Building</div>
+    <div class="tr-card-loc">Encino, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-14m-bridge-value-add-multifamily-la.html" class="tr-card" data-cat="multifamily" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$14.25M</div>
+    <div class="tr-card-desc">Value-Add Multifamily</div>
+    <div class="tr-card-loc">Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-14m-multifamily-value-add-echo-park.html" class="tr-card" data-cat="multifamily" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$14M</div>
+    <div class="tr-card-desc">Value-Add Multifamily (38 Units)</div>
+    <div class="tr-card-loc">Echo Park, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-14m-townhome-construction-la-mesa-sd.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$14M</div>
+    <div class="tr-card-desc">For-Sale Townhome Construction (18 Units)</div>
+    <div class="tr-card-loc">La Mesa, San Diego, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-15m-construction-industrial-compton.html" class="tr-card" data-cat="industrial" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$15M</div>
+    <div class="tr-card-desc">Spec Industrial (80,000 SF)</div>
+    <div class="tr-card-loc">Compton, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-15m-ed1-family-housing-san-fernando-valley.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$15M</div>
+    <div class="tr-card-desc">ED1 Family Affordable Housing (42 Units)</div>
+    <div class="tr-card-loc">San Fernando Valley, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-15m-net-lease-portfolio-san-gabriel-valley.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$15.5M</div>
+    <div class="tr-card-desc">Net Lease Retail Portfolio</div>
+    <div class="tr-card-loc">San Gabriel Valley, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-15m-perm-industrial-chatsworth.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$15M</div>
+    <div class="tr-card-desc">Multi-Tenant Industrial</div>
+    <div class="tr-card-loc">Chatsworth, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-15m-retail-center-sherman-oaks.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$15M</div>
+    <div class="tr-card-desc">Neighborhood Retail Center</div>
+    <div class="tr-card-loc">Sherman Oaks, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-16m-88-unit-apartments-san-mateo.html" class="tr-card" data-cat="multifamily" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$16.2M</div>
+    <div class="tr-card-desc">88-Unit Apartment Community</div>
+    <div class="tr-card-loc">San Mateo, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-16m-net-lease-restaurant-portfolio-la.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$16M</div>
+    <div class="tr-card-desc">Net Lease Restaurant Portfolio</div>
+    <div class="tr-card-loc">Los Angeles County, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-16m-sb423-townhomes-oakland.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$16M</div>
+    <div class="tr-card-desc">SB 423 For-Sale Townhomes (24 Units)</div>
+    <div class="tr-card-loc">Oakland, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-17m-industrial-flex-pomona.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$17M</div>
+    <div class="tr-card-desc">Industrial Flex Space</div>
+    <div class="tr-card-loc">Pomona, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-18m-bridge-multifamily-highland-park.html" class="tr-card" data-cat="multifamily" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$18M</div>
+    <div class="tr-card-desc">Value-Add Multifamily (52 Units)</div>
+    <div class="tr-card-loc">Highland Park, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-18m-data-center-san-diego.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$18.2M</div>
+    <div class="tr-card-desc">Industrial Data Center</div>
+    <div class="tr-card-loc">San Diego, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-18m-ed1-senior-housing-east-la.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$18M</div>
+    <div class="tr-card-desc">ED1 Senior Affordable Housing (55 Units)</div>
+    <div class="tr-card-loc">East Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-18m-mixed-use-construction-north-park-sd.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$18M</div>
+    <div class="tr-card-desc">Mixed-Use Construction (45 Units + Retail)</div>
+    <div class="tr-card-loc">North Park, San Diego, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-18m-multifamily-koreatown-la.html" class="tr-card" data-cat="multifamily" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$18.5M</div>
+    <div class="tr-card-desc">Multifamily Apartments (62 Units)</div>
+    <div class="tr-card-loc">Koreatown, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-18m-perm-net-lease-auto-west-la.html" class="tr-card" data-cat="net-lease" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$18M</div>
+    <div class="tr-card-desc">Net Lease Auto Dealership</div>
+    <div class="tr-card-loc">West Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-19m-multifamily-pasadena.html" class="tr-card" data-cat="multifamily" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$19M</div>
+    <div class="tr-card-desc">Multifamily Apartments (72 Units)</div>
+    <div class="tr-card-loc">Pasadena, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-19m-net-lease-pharmacy-portfolio.html" class="tr-card" data-cat="net-lease" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$19.1M</div>
+    <div class="tr-card-desc">Net Lease Pharmacy Portfolio</div>
+    <div class="tr-card-loc">Sylvania, OH</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-20m-density-bonus-multifamily-san-diego.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$20M</div>
+    <div class="tr-card-desc">Density Bonus Multifamily (65 Units)</div>
+    <div class="tr-card-loc">North Park, San Diego, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-20m-multifamily-mid-wilshire.html" class="tr-card" data-cat="multifamily" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$20M</div>
+    <div class="tr-card-desc">Multifamily Apartments (55 Units)</div>
+    <div class="tr-card-loc">Mid-Wilshire, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-20m-perm-retail-eagle-rock.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$20M</div>
+    <div class="tr-card-desc">Community Retail Center</div>
+    <div class="tr-card-loc">Eagle Rock, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-21m-hotel-renovation-hollywood.html" class="tr-card" data-cat="hospitality" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$21M</div>
+    <div class="tr-card-desc">Boutique Hotel Renovation</div>
+    <div class="tr-card-loc">Hollywood, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-22m-construction-senior-living-west-hills.html" class="tr-card" data-cat="other" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$22M</div>
+    <div class="tr-card-desc">Assisted Living (85 Beds)</div>
+    <div class="tr-card-loc">West Hills, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-22m-ed1-permanent-supportive-downtown-la.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$22M</div>
+    <div class="tr-card-desc">ED1 Permanent Supportive Housing (68 Units)</div>
+    <div class="tr-card-loc">Downtown Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-22m-grocery-anchored-shopping-center-west-la.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$22M</div>
+    <div class="tr-card-desc">Grocery-Anchored Shopping Center</div>
+    <div class="tr-card-loc">West Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-22m-hotel-ground-up-gaslamp-san-diego.html" class="tr-card" data-cat="hospitality" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$22M</div>
+    <div class="tr-card-desc">Boutique Hotel Ground-Up (95 Rooms)</div>
+    <div class="tr-card-loc">Gaslamp Quarter, San Diego, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-25m-bridge-office-conversion-mid-wilshire.html" class="tr-card" data-cat="office" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$25M</div>
+    <div class="tr-card-desc">Office-to-Residential Conversion</div>
+    <div class="tr-card-loc">Mid-Wilshire, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-25m-ed1-adaptive-reuse-mid-city-la.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$25M</div>
+    <div class="tr-card-desc">ED1 Adaptive Reuse to Affordable (58 Units)</div>
+    <div class="tr-card-loc">Mid-City, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-25m-industrial-ground-up-otay-mesa-san-diego.html" class="tr-card" data-cat="industrial" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$25M</div>
+    <div class="tr-card-desc">Ground-Up Industrial (175,000 SF)</div>
+    <div class="tr-card-loc">Otay Mesa, San Diego, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-25m-self-storage-glendale.html" class="tr-card" data-cat="other" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$25M</div>
+    <div class="tr-card-desc">Self-Storage Facility (800+ Units)</div>
+    <div class="tr-card-loc">Glendale, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-26m-industrial-cold-storage-vernon.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$26M</div>
+    <div class="tr-card-desc">Cold Storage Facility</div>
+    <div class="tr-card-loc">Vernon, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-27m-heavy-industrial-vernon.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$27.5M</div>
+    <div class="tr-card-desc">Heavy Industrial Campus</div>
+    <div class="tr-card-loc">Vernon, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-28m-construction-mixed-use-dtla.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$28M</div>
+    <div class="tr-card-desc">Mixed-Use Construction (68 Units + Retail)</div>
+    <div class="tr-card-loc">Downtown Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-28m-ed1-affordable-multifamily-south-la.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$28M</div>
+    <div class="tr-card-desc">ED1 Affordable Multifamily (72 Units)</div>
+    <div class="tr-card-loc">South Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-28m-industrial-portfolio-south-bay-la.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$28M</div>
+    <div class="tr-card-desc">Industrial Portfolio (3 Buildings)</div>
+    <div class="tr-card-loc">Hawthorne/Gardena, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-28m-perm-1031-multifamily-noho.html" class="tr-card" data-cat="multifamily" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$28M</div>
+    <div class="tr-card-desc">1031 Exchange Multifamily (78 Units)</div>
+    <div class="tr-card-loc">North Hollywood, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-29m-sb423-multifamily-san-francisco.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$29M</div>
+    <div class="tr-card-desc">SB 423 Streamlined Multifamily (78 Units)</div>
+    <div class="tr-card-loc">San Francisco, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-30m-adaptive-reuse-downtown-la.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$30M</div>
+    <div class="tr-card-desc">Adaptive Reuse (Office to Residential)</div>
+    <div class="tr-card-loc">Downtown Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-30m-bridge-entitled-land-mar-vista.html" class="tr-card" data-cat="development" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$30M</div>
+    <div class="tr-card-desc">Entitled Land</div>
+    <div class="tr-card-loc">Mar Vista, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-32m-ground-up-multifamily-mission-bay-sf.html" class="tr-card" data-cat="multifamily" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$32M</div>
+    <div class="tr-card-desc">Ground-Up Multifamily (85 Units)</div>
+    <div class="tr-card-loc">Mission Bay, San Francisco, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-32m-perm-multifamily-portfolio-la.html" class="tr-card" data-cat="multifamily" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$32M</div>
+    <div class="tr-card-desc">Multifamily Portfolio (95 Units)</div>
+    <div class="tr-card-loc">Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-33m-ed1-workforce-housing-west-adams.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$33M</div>
+    <div class="tr-card-desc">ED1 Workforce Housing (88 Units)</div>
+    <div class="tr-card-loc">West Adams, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-34m-industrial-distribution-commerce-la.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$34M</div>
+    <div class="tr-card-desc">Industrial Distribution Center</div>
+    <div class="tr-card-loc">Commerce, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-35m-affordable-housing-south-la.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$35M</div>
+    <div class="tr-card-desc">Affordable Housing (LIHTC)</div>
+    <div class="tr-card-loc">South Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-35m-construction-multifamily-arts-district-la.html" class="tr-card" data-cat="multifamily" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$35M</div>
+    <div class="tr-card-desc">Ground-Up Multifamily (92 Units)</div>
+    <div class="tr-card-loc">Arts District, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-35m-ed1-mixed-income-hollywood.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$35M</div>
+    <div class="tr-card-desc">ED1 Mixed-Income Development (95 Units)</div>
+    <div class="tr-card-loc">Hollywood, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-35m-perm-grocery-panorama-city.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$35M</div>
+    <div class="tr-card-desc">Grocery-Anchored Shopping Center</div>
+    <div class="tr-card-loc">Panorama City, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-36m-student-housing-construction-usc-la.html" class="tr-card" data-cat="multifamily" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$36M</div>
+    <div class="tr-card-desc">Purpose-Built Student Housing (200 Beds)</div>
+    <div class="tr-card-loc">University Park, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-38m-ab2011-mixed-use-glendale.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$38M</div>
+    <div class="tr-card-desc">AB 2011 Mixed-Use Development (105 Units)</div>
+    <div class="tr-card-loc">Glendale, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-38m-industrial-warehouse-long-beach.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$38M</div>
+    <div class="tr-card-desc">Industrial Warehouse Complex</div>
+    <div class="tr-card-loc">Long Beach, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-40m-construction-luxury-playa-vista.html" class="tr-card" data-cat="multifamily" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$40M</div>
+    <div class="tr-card-desc">Luxury Apartments (110 Units)</div>
+    <div class="tr-card-loc">Playa Vista, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-40m-ground-up-multifamily-san-diego-east-village.html" class="tr-card" data-cat="multifamily" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$40M</div>
+    <div class="tr-card-desc">Ground-Up Multifamily (120 Units)</div>
+    <div class="tr-card-loc">East Village, San Diego, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-42m-ed1-transit-oriented-koreatown.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$42M</div>
+    <div class="tr-card-desc">ED1 Transit-Oriented Development (110 Units)</div>
+    <div class="tr-card-loc">Koreatown, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-42m-multifamily-new-construction-san-fernando-valley.html" class="tr-card" data-cat="multifamily" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$42M</div>
+    <div class="tr-card-desc">New Construction Multifamily (85 Units)</div>
+    <div class="tr-card-loc">San Fernando Valley, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-43m-build-to-suit-inglewood.html" class="tr-card" data-cat="net-lease" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$43.4M</div>
+    <div class="tr-card-desc">Build-to-Suit Net Lease</div>
+    <div class="tr-card-loc">Inglewood, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-45m-ed1-ab2011-hybrid-exposition-park-la.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$45M</div>
+    <div class="tr-card-desc">ED1 Affordable + AB 2011 Market-Rate (125 Units)</div>
+    <div class="tr-card-loc">Exposition Park, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-45m-multifamily-burbank.html" class="tr-card" data-cat="multifamily" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$45M</div>
+    <div class="tr-card-desc">Multifamily Community (148 Units)</div>
+    <div class="tr-card-loc">Burbank, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-48m-build-to-suit-industrial-city-of-industry.html" class="tr-card" data-cat="industrial" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$48M</div>
+    <div class="tr-card-desc">Build-to-Suit Industrial (350,000 SF)</div>
+    <div class="tr-card-loc">City of Industry, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-48m-perm-industrial-gateway-cities.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$48M</div>
+    <div class="tr-card-desc">Industrial Distribution Campus</div>
+    <div class="tr-card-loc">Gateway Cities, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-5-6m-bridge-beverly-hills-retail.html" class="tr-card" data-cat="retail" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$5.6M</div>
+    <div class="tr-card-desc">High-End Retail</div>
+    <div class="tr-card-loc">Beverly Hills, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-50m-ed1-large-scale-south-la.html" class="tr-card" data-cat="development" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$50M</div>
+    <div class="tr-card-desc">ED1 Large-Scale Affordable (140 Units)</div>
+    <div class="tr-card-loc">South Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-60m-ground-up-multifamily-seattle.html" class="tr-card" data-cat="multifamily" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$60M</div>
+    <div class="tr-card-desc">125-Unit Ground-Up Multifamily</div>
+    <div class="tr-card-loc">Seattle, WA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-6m-industrial-owner-user-el-segundo.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$6.2M</div>
+    <div class="tr-card-desc">Industrial Owner-User</div>
+    <div class="tr-card-loc">El Segundo, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-75m-industrial-warehouse-phoenix.html" class="tr-card" data-cat="industrial" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$75M</div>
+    <div class="tr-card-desc">Industrial Warehouse</div>
+    <div class="tr-card-loc">Phoenix, AZ</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-7m-net-lease-medical-office-beverly-hills.html" class="tr-card" data-cat="office" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$7.5M</div>
+    <div class="tr-card-desc">Net Lease Medical Office</div>
+    <div class="tr-card-loc">Beverly Hills, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-8m-bridge-industrial-sun-valley.html" class="tr-card" data-cat="industrial" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$8M</div>
+    <div class="tr-card-desc">Industrial Acquisition</div>
+    <div class="tr-card-loc">Sun Valley, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-8m-hotel-rehab-santa-barbara.html" class="tr-card" data-cat="hospitality" data-loan="construction">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Construction Loan</span>
+    <div class="tr-card-amount">$8M</div>
+    <div class="tr-card-desc">Boutique Hotel Rehabilitation</div>
+    <div class="tr-card-loc">Santa Barbara, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-8m-mixed-use-santa-monica.html" class="tr-card" data-cat="multifamily" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$8.5M</div>
+    <div class="tr-card-desc">Mixed-Use (Retail + Apartments)</div>
+    <div class="tr-card-loc">Santa Monica, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-8m-retail-pad-sites-inglewood.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$8M</div>
+    <div class="tr-card-desc">Net Lease Retail Pad Sites</div>
+    <div class="tr-card-loc">Inglewood, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-9m-bridge-to-perm-palms.html" class="tr-card" data-cat="multifamily" data-loan="bridge">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Bridge Loan</span>
+    <div class="tr-card-amount">$9M</div>
+    <div class="tr-card-desc">Bridge-to-Perm Multifamily (24 Units)</div>
+    <div class="tr-card-loc">Palms, Los Angeles, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-9m-office-condo-century-city.html" class="tr-card" data-cat="office" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$9.8M</div>
+    <div class="tr-card-desc">Office Condominium</div>
+    <div class="tr-card-loc">Century City, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
+<a href="blog/case-study-9m-retail-strip-center-torrance.html" class="tr-card" data-cat="retail" data-loan="permanent">
+  <div class="tr-card-top"></div>
+  <div class="tr-card-body">
+    <span class="tr-card-loan-tag">Permanent Loan</span>
+    <div class="tr-card-amount">$9.2M</div>
+    <div class="tr-card-desc">Multi-Tenant Retail Strip Center</div>
+    <div class="tr-card-loc">Torrance, CA</div>
+    <div class="tr-card-link">View case study &rarr;</div>
+  </div>
+</a>
+
 </div>
 
 <section class="cta-section" style="margin-top:32px">
