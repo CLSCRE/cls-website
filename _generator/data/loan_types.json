@@ -251,5 +251,51 @@
       "meta_description": "Life insurance company commercial real estate loans. Lowest fixed rates, 25-year terms, non-recourse, $3M to $100M+. Direct life company relationships. Get a quote.",
       "h1": "Life Insurance Company Commercial Real Estate Loans"
     }
+  },
+  {
+    "slug": "dscr-loans",
+    "name": "DSCR Loans",
+    "short_name": "DSCR",
+    "headline": "DSCR Loans for Real Estate Investors",
+    "description": "DSCR loans qualify borrowers based on property cash flow rather than personal income, making them ideal for real estate investors who own multiple properties, operate through LLCs, or whose tax returns do not reflect their true investment income. Commercial Lending Solutions sources DSCR financing from a national network of non-QM lenders, debt funds, and private capital sources for multifamily, mixed-use, and commercial investor portfolios.",
+    "description_extended": "Debt Service Coverage Ratio (DSCR) lending evaluates a property on one simple question: does the gross rental income cover the debt service? If the property cash flows, the loan qualifies. This structure eliminates the need for tax returns, W-2s, pay stubs, or traditional income documentation, making DSCR a powerful tool for high-net-worth investors, self-employed borrowers, and portfolio landlords scaling their holdings. Typical DSCR thresholds range from 1.10 to 1.25, meaning the property generates 10 to 25 percent more income than the loan payment. Lenders include dedicated non-QM platforms, balance-sheet debt funds, and select private lenders with appetite for investor residential and small commercial assets.",
+    "key_features": {
+      "loan_amount": "$1M - $10M",
+      "term": "5 - 30 Years",
+      "rates": "6.75% - 10.50%",
+      "ltv": "Up to 80% LTV",
+      "qualification": "Property Cash Flow Only",
+      "recourse": "Varies by Lender"
+    },
+    "lender_sources": ["Non-QM Lenders", "Debt Funds", "Private Lenders", "Balance-Sheet Portfolio Lenders", "Family Offices"],
+    "ideal_for": ["Small multifamily investor portfolios (5 to 20 units)", "Mixed-use buildings with residential and commercial tenants", "Investors with complex tax returns or multiple LLCs", "Self-employed borrowers with significant write-offs", "Portfolio landlords consolidating scattered properties", "1031 exchange acquisitions needing fast income qualification"],
+    "seo": {
+      "title": "DSCR Loans for Real Estate Investors | CLS CRE",
+      "meta_description": "DSCR loans that qualify on property cash flow, not personal income. No tax returns required. $1M to $10M for multifamily and commercial investor portfolios. Get a quote.",
+      "h1": "DSCR Loans for Commercial Real Estate Investors"
+    }
+  },
+  {
+    "slug": "hard-money-loans",
+    "name": "Hard Money Loans",
+    "short_name": "Hard Money",
+    "headline": "Fast Hard Money Loans for Commercial Real Estate",
+    "description": "Hard money loans provide asset-based, short-term financing for commercial real estate acquisitions, repositionings, and distressed property purchases where speed and flexibility matter more than rate. Commercial Lending Solutions works with a vetted network of private hard money lenders who can close in as little as one to two weeks, with underwriting driven by property value rather than borrower financials.",
+    "description_extended": "Hard money lending is the fastest capital available in commercial real estate. Unlike bank or agency financing, hard money lenders focus almost entirely on the asset: the current value, the after-repair value (ARV), and the exit strategy. Borrower credit and income documentation requirements are minimal by design. This makes hard money ideal for auction purchases, foreclosure acquisitions, time-sensitive off-market deals, and properties that need work before qualifying for conventional financing. The tradeoff is higher rates and fees relative to institutional capital, which is why hard money is almost always used as a bridge to a permanent loan or sale. Commercial Lending Solutions matches each deal with the right private lender based on asset type, market, loan size, and timeline to ensure competitive terms even in this space.",
+    "key_features": {
+      "loan_amount": "$1M - $20M",
+      "term": "6 - 24 Months",
+      "rates": "9.00% - 14.00%",
+      "ltv": "Up to 70% LTV (75% ARV)",
+      "close_time": "1 to 2 Weeks",
+      "recourse": "Recourse Typical"
+    },
+    "lender_sources": ["Private Hard Money Lenders", "Family Offices", "High-Net-Worth Individual Lenders", "Specialty Debt Funds", "Asset-Based Lending Platforms"],
+    "ideal_for": ["Auction and foreclosure property acquisitions", "Distressed assets requiring rehab before permanent financing", "Time-sensitive off-market acquisitions", "Properties that do not yet qualify for bank or agency financing", "Fix-and-flip commercial and mixed-use projects", "Bridge to construction or permanent loan on value-add assets"],
+    "seo": {
+      "title": "Hard Money Loans for Commercial Real Estate | CLS CRE",
+      "meta_description": "Fast hard money loans for commercial real estate. Close in 1 to 2 weeks. $1M to $20M, up to 70% LTV. Distressed, auction, and value-add acquisitions. Get a quote.",
+      "h1": "Commercial Hard Money Loans"
+    }
   }
 ]
