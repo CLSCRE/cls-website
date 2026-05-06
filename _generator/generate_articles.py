@@ -35,6 +35,8 @@ MARKET_REPORT_CITIES = [
     "huntsville", "provo", "boulder", "reno", "ann-arbor", "madison",
     "des-moines", "lexington",
     "greenville-sc",
+    "myrtle-beach",
+    "wilmington-nc",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -46,6 +48,8 @@ ALL_CITIES = [
     "huntsville", "provo", "boulder", "reno", "ann-arbor", "madison",
     "des-moines", "lexington",
     "greenville-sc",
+    "myrtle-beach",
+    "wilmington-nc",
 ]
 
 # Loan slug → context key mapping

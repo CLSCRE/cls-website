@@ -2167,5 +2167,68 @@
       "Gaffney",
       "Anderson"
     ]
+  },
+  {
+    "slug": "fayetteville-nc",
+    "city": "Fayetteville",
+    "state": "NC",
+    "metro": "Fayetteville",
+    "context": "Fayetteville is a stable commercial market anchored by Fort Bragg, one of the world's largest military installations, providing consistent demand for multifamily, retail, and self-storage. The metro's defense industry and medical center create reliable occupancy for commercial real estate investors.",
+    "neighborhoods": [
+      "Downtown Fayetteville",
+      "Haymount",
+      "Cross Creek",
+      "Hope Mills",
+      "Spring Lake",
+      "Raeford",
+      "Lumberton",
+      "Southern Pines",
+      "Pinehurst",
+      "Sanford",
+      "Clinton",
+      "Fort Bragg Corridor"
+    ]
+  },
+  {
+    "slug": "myrtle-beach",
+    "city": "Myrtle Beach",
+    "state": "SC",
+    "metro": "Myrtle Beach",
+    "context": "Myrtle Beach is one of the fastest-growing metros on the Eastern Seaboard, driven by retiree migration, tourism infrastructure, and an expanding year-round residential base. The market offers compelling retail and hospitality investment opportunities alongside strong multifamily demand from new permanent residents.",
+    "neighborhoods": [
+      "Downtown Myrtle Beach",
+      "Surfside Beach",
+      "Murrells Inlet",
+      "Pawleys Island",
+      "Conway",
+      "Socastee",
+      "North Myrtle Beach",
+      "Loris",
+      "Horry County",
+      "Carolina Forest",
+      "Market Common",
+      "Grand Strand"
+    ]
+  },
+  {
+    "slug": "wilmington-nc",
+    "city": "Wilmington",
+    "state": "NC",
+    "metro": "Wilmington",
+    "context": "Wilmington is a rapidly growing coastal market in southeastern North Carolina, attracting film production, biotech investment, and significant retiree migration. The metro's UNC Wilmington campus and port of Wilmington drive diverse commercial demand across industrial, multifamily, and mixed-use property types.",
+    "neighborhoods": [
+      "Downtown Wilmington",
+      "Wrightsville Beach",
+      "Carolina Beach",
+      "Leland",
+      "Hampstead",
+      "Ogden",
+      "Porters Neck",
+      "Scotts Hill",
+      "Castle Hayne",
+      "Navassa",
+      "Bolivia",
+      "Bolivia"
+    ]
   }
 ]
