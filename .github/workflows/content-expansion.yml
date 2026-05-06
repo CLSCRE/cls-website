@@ -1,0 +1,41 @@
+name: Auto Content Expansion
+on:
+  schedule:
+    - cron: '17 */8 * * *'
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Cities to add per run (default 3)'
+        default: '3'
+        required: false
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install jinja2 anthropic requests python-dotenv
+
+      - name: Run content expansion
+        run: python _generator/auto_expand.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '3' }}
+
+      - name: Commit and push generated content
+        run: |
+          git config user.email "bot@clscre.com"
+          git config user.name "CLS CRE Content Bot"
+          git add .
+          git diff --cached --quiet || (git commit -m "auto: content expansion $(date +'%Y-%m-%d %H:%M UTC') [skip actions]" && git push)
