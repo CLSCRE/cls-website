@@ -183,28 +183,6 @@
       ]
     },
     {
-      "slug": "jackson",
-      "city": "Jackson",
-      "state": "MS",
-      "metro": "Jackson",
-      "tier1": false,
-      "context": "Jackson is Mississippi's capital and primary commercial market, with activity concentrated around government, healthcare, and distribution. The metro offers some of the most affordable commercial real estate in the South with consistent demand from necessity-based retail and industrial tenants.",
-      "neighborhoods": [
-        "Downtown Jackson",
-        "Fondren",
-        "Ridgeland",
-        "Madison",
-        "Brandon",
-        "Flowood",
-        "Pearl",
-        "Byram",
-        "Clinton",
-        "Raymond",
-        "Rankin County",
-        "Metro Jackson"
-      ]
-    },
-    {
       "slug": "baton-rouge",
       "city": "Baton Rouge",
       "state": "LA",
@@ -224,28 +202,6 @@
         "Central",
         "Baker",
         "Zachary"
-      ]
-    },
-    {
-      "slug": "shreveport",
-      "city": "Shreveport",
-      "state": "LA",
-      "metro": "Shreveport-Bossier City",
-      "tier1": false,
-      "context": "Shreveport-Bossier City is a regional commercial hub in northwestern Louisiana with activity in healthcare, gaming, logistics, and military operations at Barksdale Air Force Base. The market offers highly affordable industrial and retail inventory with steady occupancy from regional tenants.",
-      "neighborhoods": [
-        "Downtown Shreveport",
-        "Broadmoor",
-        "Highland",
-        "Bossier City",
-        "Bossier",
-        "Airline Drive",
-        "I-20 Corridor",
-        "South Shreveport",
-        "Blanchard",
-        "Haughton",
-        "Minden",
-        "Natchitoches"
       ]
     },
     {
@@ -312,28 +268,6 @@
         "Spring Valley",
         "Richland Northeast",
         "Blythewood"
-      ]
-    },
-    {
-      "slug": "greenville-sc",
-      "city": "Greenville",
-      "state": "SC",
-      "metro": "Greenville-Spartanburg",
-      "tier1": true,
-      "context": "Greenville-Spartanburg is one of the Southeast's premier manufacturing corridors, home to BMW's largest US production facility, Michelin's North American headquarters, and a dense network of automotive suppliers. Downtown Greenville's acclaimed revitalization has driven boutique hotel, mixed-use, and luxury multifamily investment at some of the strongest rent growth rates in the Carolinas.",
-      "neighborhoods": [
-        "Downtown Greenville",
-        "West End",
-        "Augusta Road",
-        "Travelers Rest",
-        "Simpsonville",
-        "Mauldin",
-        "Greer",
-        "Spartanburg",
-        "Duncan",
-        "Boiling Springs",
-        "Gaffney",
-        "Anderson"
       ]
     },
     {
@@ -3791,8 +3725,24 @@
       ]
     }
   ],
-  "cities_done": [],
-  "last_run": null,
-  "total_pages_added": 0,
-  "runs_completed": 0
+  "cities_done": [
+    {
+      "slug": "jackson",
+      "city": "Jackson",
+      "added": "2026-05-06"
+    },
+    {
+      "slug": "shreveport",
+      "city": "Shreveport",
+      "added": "2026-05-06"
+    },
+    {
+      "slug": "greenville-sc",
+      "city": "Greenville",
+      "added": "2026-05-06"
+    }
+  ],
+  "last_run": "2026-05-06T15:19:05.468227Z",
+  "total_pages_added": 36,
+  "runs_completed": 1
 }

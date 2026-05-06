@@ -34,6 +34,7 @@ MARKET_REPORT_CITIES = [
     "fort-lauderdale", "west-palm-beach", "durham", "colorado-springs",
     "huntsville", "provo", "boulder", "reno", "ann-arbor", "madison",
     "des-moines", "lexington",
+    "greenville-sc",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -44,6 +45,7 @@ ALL_CITIES = [
     "fort-lauderdale", "west-palm-beach", "durham", "colorado-springs",
     "huntsville", "provo", "boulder", "reno", "ann-arbor", "madison",
     "des-moines", "lexington",
+    "greenville-sc",
 ]
 
 # Loan slug → context key mapping
