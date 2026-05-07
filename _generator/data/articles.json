@@ -1,5 +1,39 @@
 [
   {
+    "slug": "quarterly-lender-landscape-2026-q2",
+    "title": "Quarterly Lender Landscape: Q2 2026",
+    "excerpt": "Q2 2026 marked a decisive pivot in lender behavior as life companies tightened industrial allocations while debt funds re-priced transitional risk upward, compressing execution windows for sponsors carrying near-term maturities. Commercial Lending Solutions tracked meaningful spread compression in CMBS conduit and renewed agency volume appetite as the GSEs entered the back half of their fiscal caps with room to deploy.",
+    "author": "Trevor Damyan",
+    "date": "2026-04-01",
+    "date_formatted": "Q2 2026",
+    "category": "Lender Landscape",
+    "tags": [
+      "lender landscape",
+      "CRE capital markets",
+      "commercial mortgage",
+      "Q2 2026",
+      "lender appetite"
+    ],
+    "type": "quarterly_lender_landscape"
+  },
+  {
+    "slug": "market-perspective-may-2026",
+    "title": "Commercial Lending Solutions Market Perspective: May 2026",
+    "excerpt": "The May 2026 CRE capital markets landscape is defined by a flattening curve, selectively improving lender appetite, and a bifurcated property market where execution quality separates sponsors who close from those who stall. Commercial Lending Solutions breaks down what is moving, what is stalling, and where the best risk-adjusted financing sits right now.",
+    "author": "Trevor Damyan",
+    "date": "2026-05-01",
+    "date_formatted": "May 2026",
+    "category": "Market Perspective",
+    "tags": [
+      "market perspective",
+      "CRE capital markets",
+      "commercial mortgage rates",
+      "lender appetite",
+      "may 2026"
+    ],
+    "type": "monthly_perspective"
+  },
+  {
     "slug": "commercial-mortgage-rates-week-2026-05-04",
     "title": "Commercial Mortgage Rates: Week of May 04, 2026",
     "excerpt": "Commercial mortgage rates held in a tight range during the week of May 4–8, 2026, as Treasury yields responded to mixed labor market data and renewed trade policy uncertainty — creating both challenges and selective opportunity for CRE borrowers.",
