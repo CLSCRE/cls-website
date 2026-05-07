@@ -1870,5 +1870,101 @@
       "mixed_use": "Mixed-use development in Lincoln is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
       "hospitality": "The hospitality market in Lincoln serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
     }
+  },
+  "cedar-rapids": {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "14.5%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "rent_growth": "3.2%",
+      "job_growth": "1.6%",
+      "population_growth": "0.9%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "government, healthcare, education, manufacturing, logistics",
+      "top_submarkets": "Downtown Cedar Rapids, New Bohemia, Southwest Cedar Rapids, Marion",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "8.00%-9.50%"
+    },
+    "market_report": {
+      "overview": "Cedar Rapids is Iowa's second-largest city and a manufacturing powerhouse anchored by Collins Aerospace, Quaker Oats, and a major agricultural processing base. The metro offers compelling industrial and retail investment fundamentals driven by a skilled manufacturing workforce and consistent regional economic growth.",
+      "multifamily": "Cedar Rapids's multifamily market reflects the metro's growth trajectory, with demand driven by in-migration and a limited housing supply pipeline. Investors are active across value-add Class B/C product and new Class A development.",
+      "industrial": "Industrial fundamentals in Cedar Rapids are supported by regional distribution demand, proximity to major transportation corridors, and steady e-commerce growth. Vacancy has remained below the national average with rental rate increases year-over-year.",
+      "office_retail": "The Cedar Rapids office market shows bifurcated performance between suburban flex product and downtown Class A towers. Retail remains resilient in dense neighborhood corridors with strong foot traffic and limited new supply.",
+      "financing": "Lender appetite in Cedar Rapids is healthy across multifamily and industrial asset classes. Agency execution is competitive for stabilized apartments, while regional banks and credit unions are active in smaller commercial transactions.",
+      "outlook": "Cedar Rapids offers a compelling risk-adjusted opportunity for commercial real estate investors in 2026. The market's diversified economic base and steady population growth provide durable demand drivers across property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Cedar Rapids is most active for value-add multifamily and transitional office repositioning. Debt funds and regional lenders compete for deals in the $2M-$20M range with 12-36 month terms.",
+      "permanent": "Permanent financing in Cedar Rapids benefits from strong agency execution on multifamily and competitive life company pricing on industrial. Stabilized assets with strong cash flow command spreads near the tight end of national ranges.",
+      "construction": "Construction lending in Cedar Rapids is driven by multifamily ground-up and industrial build-to-suit activity. Regional banks are active for projects under $15M while national debt funds and CMBS lenders cover larger deals.",
+      "sba": "SBA lending is highly active in Cedar Rapids for owner-occupied commercial properties, particularly medical offices, manufacturing facilities, and retail buildings where the 90% LTV financing gives owner-users a significant advantage.",
+      "mezzanine": "Mezzanine and preferred equity in Cedar Rapids bridge the gap for sponsors acquiring larger value-add assets where senior debt falls short of required proceeds. The market sees regular activity in the $3M-$25M subordinate capital range.",
+      "specialty": "Specialty financing in Cedar Rapids covers the market's niche asset classes including self-storage, mobile home parks, hospitality, and mixed-use projects. Specialized lenders with local market knowledge are essential for these transactions."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Cedar Rapids spans garden-style suburban complexes and urban infill apartment communities. Value-add operators find strong opportunity in the market's aging Class B/C stock with room for rent growth.",
+      "industrial": "Industrial properties in Cedar Rapids benefit from the market's position as a regional distribution hub. Warehouse, flex industrial, and last-mile fulfillment facilities attract strong tenant demand and investor interest.",
+      "office": "The office market in Cedar Rapids is navigating post-pandemic normalization with suburban Class B flex product outperforming downtown Class A towers. Medical office and government-leased buildings offer stable cash flow.",
+      "retail": "Retail in Cedar Rapids is led by grocery-anchored neighborhood centers and essential service corridors with high traffic and strong tenant retention. Regional malls face headwinds but power centers remain resilient.",
+      "mixed_use": "Mixed-use development in Cedar Rapids is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
+      "hospitality": "The hospitality market in Cedar Rapids serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
+    }
+  },
+  "fort-wayne": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "14.5%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "rent_growth": "3.2%",
+      "job_growth": "1.6%",
+      "population_growth": "0.9%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "government, healthcare, education, manufacturing, logistics",
+      "top_submarkets": "Downtown Fort Wayne, Northeast Fort Wayne, Southwest Fort Wayne, Aboite",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "8.00%-9.50%"
+    },
+    "market_report": {
+      "overview": "Fort Wayne is Indiana's second-largest city and a major manufacturing and distribution hub with significant automotive supplier activity, healthcare expansion, and a revitalizing downtown. The metro offers affordable industrial inventory, tight vacancy rates, and compelling cap rates across all commercial property types.",
+      "multifamily": "Fort Wayne's multifamily market reflects the metro's growth trajectory, with demand driven by in-migration and a limited housing supply pipeline. Investors are active across value-add Class B/C product and new Class A development.",
+      "industrial": "Industrial fundamentals in Fort Wayne are supported by regional distribution demand, proximity to major transportation corridors, and steady e-commerce growth. Vacancy has remained below the national average with rental rate increases year-over-year.",
+      "office_retail": "The Fort Wayne office market shows bifurcated performance between suburban flex product and downtown Class A towers. Retail remains resilient in dense neighborhood corridors with strong foot traffic and limited new supply.",
+      "financing": "Lender appetite in Fort Wayne is healthy across multifamily and industrial asset classes. Agency execution is competitive for stabilized apartments, while regional banks and credit unions are active in smaller commercial transactions.",
+      "outlook": "Fort Wayne offers a compelling risk-adjusted opportunity for commercial real estate investors in 2026. The market's diversified economic base and steady population growth provide durable demand drivers across property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Fort Wayne is most active for value-add multifamily and transitional office repositioning. Debt funds and regional lenders compete for deals in the $2M-$20M range with 12-36 month terms.",
+      "permanent": "Permanent financing in Fort Wayne benefits from strong agency execution on multifamily and competitive life company pricing on industrial. Stabilized assets with strong cash flow command spreads near the tight end of national ranges.",
+      "construction": "Construction lending in Fort Wayne is driven by multifamily ground-up and industrial build-to-suit activity. Regional banks are active for projects under $15M while national debt funds and CMBS lenders cover larger deals.",
+      "sba": "SBA lending is highly active in Fort Wayne for owner-occupied commercial properties, particularly medical offices, manufacturing facilities, and retail buildings where the 90% LTV financing gives owner-users a significant advantage.",
+      "mezzanine": "Mezzanine and preferred equity in Fort Wayne bridge the gap for sponsors acquiring larger value-add assets where senior debt falls short of required proceeds. The market sees regular activity in the $3M-$25M subordinate capital range.",
+      "specialty": "Specialty financing in Fort Wayne covers the market's niche asset classes including self-storage, mobile home parks, hospitality, and mixed-use projects. Specialized lenders with local market knowledge are essential for these transactions."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Fort Wayne spans garden-style suburban complexes and urban infill apartment communities. Value-add operators find strong opportunity in the market's aging Class B/C stock with room for rent growth.",
+      "industrial": "Industrial properties in Fort Wayne benefit from the market's position as a regional distribution hub. Warehouse, flex industrial, and last-mile fulfillment facilities attract strong tenant demand and investor interest.",
+      "office": "The office market in Fort Wayne is navigating post-pandemic normalization with suburban Class B flex product outperforming downtown Class A towers. Medical office and government-leased buildings offer stable cash flow.",
+      "retail": "Retail in Fort Wayne is led by grocery-anchored neighborhood centers and essential service corridors with high traffic and strong tenant retention. Regional malls face headwinds but power centers remain resilient.",
+      "mixed_use": "Mixed-use development in Fort Wayne is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
+      "hospitality": "The hospitality market in Fort Wayne serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
+    }
   }
 }

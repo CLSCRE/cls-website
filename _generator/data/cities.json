@@ -2734,5 +2734,68 @@
       "Ashland",
       "Gretna"
     ]
+  },
+  {
+    "slug": "cedar-rapids",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "metro": "Cedar Rapids",
+    "context": "Cedar Rapids is Iowa's second-largest city and a manufacturing powerhouse anchored by Collins Aerospace, Quaker Oats, and a major agricultural processing base. The metro offers compelling industrial and retail investment fundamentals driven by a skilled manufacturing workforce and consistent regional economic growth.",
+    "neighborhoods": [
+      "Downtown Cedar Rapids",
+      "New Bohemia",
+      "Southwest Cedar Rapids",
+      "Marion",
+      "Hiawatha",
+      "Robins",
+      "Ely",
+      "Mount Vernon",
+      "Vinton",
+      "Lisbon",
+      "North Liberty",
+      "Iowa City"
+    ]
+  },
+  {
+    "slug": "peoria",
+    "city": "Peoria",
+    "state": "IL",
+    "metro": "Peoria",
+    "context": "Peoria is central Illinois's largest commercial market, home to Caterpillar Inc.'s global headquarters and a major agricultural and manufacturing base along the Illinois River. The metro offers attractively priced commercial real estate with stable industrial occupancy from manufacturing and logistics tenants.",
+    "neighborhoods": [
+      "Downtown Peoria",
+      "East Peoria",
+      "Peoria Heights",
+      "Morton",
+      "Washington IL",
+      "Germantown Hills",
+      "Chillicothe",
+      "Pekin",
+      "Canton",
+      "Bloomington-Normal",
+      "Galesburg",
+      "Kewanee"
+    ]
+  },
+  {
+    "slug": "fort-wayne",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "metro": "Fort Wayne",
+    "context": "Fort Wayne is Indiana's second-largest city and a major manufacturing and distribution hub with significant automotive supplier activity, healthcare expansion, and a revitalizing downtown. The metro offers affordable industrial inventory, tight vacancy rates, and compelling cap rates across all commercial property types.",
+    "neighborhoods": [
+      "Downtown Fort Wayne",
+      "Northeast Fort Wayne",
+      "Southwest Fort Wayne",
+      "Aboite",
+      "New Haven",
+      "Huntertown",
+      "Leo-Cedarville",
+      "Auburn",
+      "Angola",
+      "Bluffton",
+      "Decatur IN",
+      "Warsaw"
+    ]
   }
 ]

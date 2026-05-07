@@ -45,6 +45,8 @@ MARKET_REPORT_CITIES = [
     "sioux-falls",
     "fargo",
     "lincoln",
+    "cedar-rapids",
+    "fort-wayne",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -66,6 +68,8 @@ ALL_CITIES = [
     "sioux-falls",
     "fargo",
     "lincoln",
+    "cedar-rapids",
+    "fort-wayne",
 ]
 
 # Loan slug → context key mapping

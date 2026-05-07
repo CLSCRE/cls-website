@@ -535,72 +535,6 @@
       ]
     },
     {
-      "slug": "cedar-rapids",
-      "city": "Cedar Rapids",
-      "state": "IA",
-      "metro": "Cedar Rapids",
-      "tier1": true,
-      "context": "Cedar Rapids is Iowa's second-largest city and a manufacturing powerhouse anchored by Collins Aerospace, Quaker Oats, and a major agricultural processing base. The metro offers compelling industrial and retail investment fundamentals driven by a skilled manufacturing workforce and consistent regional economic growth.",
-      "neighborhoods": [
-        "Downtown Cedar Rapids",
-        "New Bohemia",
-        "Southwest Cedar Rapids",
-        "Marion",
-        "Hiawatha",
-        "Robins",
-        "Ely",
-        "Mount Vernon",
-        "Vinton",
-        "Lisbon",
-        "North Liberty",
-        "Iowa City"
-      ]
-    },
-    {
-      "slug": "peoria",
-      "city": "Peoria",
-      "state": "IL",
-      "metro": "Peoria",
-      "tier1": false,
-      "context": "Peoria is central Illinois's largest commercial market, home to Caterpillar Inc.'s global headquarters and a major agricultural and manufacturing base along the Illinois River. The metro offers attractively priced commercial real estate with stable industrial occupancy from manufacturing and logistics tenants.",
-      "neighborhoods": [
-        "Downtown Peoria",
-        "East Peoria",
-        "Peoria Heights",
-        "Morton",
-        "Washington IL",
-        "Germantown Hills",
-        "Chillicothe",
-        "Pekin",
-        "Canton",
-        "Bloomington-Normal",
-        "Galesburg",
-        "Kewanee"
-      ]
-    },
-    {
-      "slug": "fort-wayne",
-      "city": "Fort Wayne",
-      "state": "IN",
-      "metro": "Fort Wayne",
-      "tier1": true,
-      "context": "Fort Wayne is Indiana's second-largest city and a major manufacturing and distribution hub with significant automotive supplier activity, healthcare expansion, and a revitalizing downtown. The metro offers affordable industrial inventory, tight vacancy rates, and compelling cap rates across all commercial property types.",
-      "neighborhoods": [
-        "Downtown Fort Wayne",
-        "Northeast Fort Wayne",
-        "Southwest Fort Wayne",
-        "Aboite",
-        "New Haven",
-        "Huntertown",
-        "Leo-Cedarville",
-        "Auburn",
-        "Angola",
-        "Bluffton",
-        "Decatur IN",
-        "Warsaw"
-      ]
-    },
-    {
       "slug": "south-bend",
       "city": "South Bend",
       "state": "IN",
@@ -3434,9 +3368,24 @@
       "slug": "lincoln",
       "city": "Lincoln",
       "added": "2026-05-07"
+    },
+    {
+      "slug": "cedar-rapids",
+      "city": "Cedar Rapids",
+      "added": "2026-05-07"
+    },
+    {
+      "slug": "peoria",
+      "city": "Peoria",
+      "added": "2026-05-07"
+    },
+    {
+      "slug": "fort-wayne",
+      "city": "Fort Wayne",
+      "added": "2026-05-07"
     }
   ],
-  "last_run": "2026-05-07T10:35:19.979521Z",
-  "total_pages_added": 252,
-  "runs_completed": 7
+  "last_run": "2026-05-07T17:58:25.159637Z",
+  "total_pages_added": 288,
+  "runs_completed": 8
 }
