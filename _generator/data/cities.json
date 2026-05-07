@@ -2356,5 +2356,68 @@
       "Biddeford",
       "Kennebunkport"
     ]
+  },
+  {
+    "slug": "burlington-vt",
+    "city": "Burlington",
+    "state": "VT",
+    "metro": "Burlington-South Burlington",
+    "context": "Burlington is Vermont's commercial hub and home to the University of Vermont, a growing healthcare corridor, and one of New England's strongest downtown retail districts. The market's extremely limited housing supply and high barriers to entry create strong rent growth for multifamily investors.",
+    "neighborhoods": [
+      "Downtown Burlington",
+      "South End",
+      "Old North End",
+      "New North End",
+      "South Burlington",
+      "Williston",
+      "Essex Junction",
+      "Colchester",
+      "Milton",
+      "Winooski",
+      "St. Albans",
+      "Shelburne"
+    ]
+  },
+  {
+    "slug": "springfield-ma",
+    "city": "Springfield",
+    "state": "MA",
+    "metro": "Springfield",
+    "context": "Springfield is Western Massachusetts's commercial center with a diverse economy spanning healthcare, education, and manufacturing, anchored by Baystate Health and the Big Y and MassMutual corporate presence. The metro offers highly affordable commercial inventory and consistent demand from necessity-based retailers and industrial users.",
+    "neighborhoods": [
+      "Downtown Springfield",
+      "Forest Park",
+      "East Springfield",
+      "Sixteen Acres",
+      "West Springfield",
+      "Chicopee",
+      "Holyoke",
+      "Ludlow",
+      "Agawam",
+      "Westfield",
+      "Longmeadow",
+      "East Longmeadow"
+    ]
+  },
+  {
+    "slug": "cape-coral",
+    "city": "Cape Coral",
+    "state": "FL",
+    "metro": "Cape Coral-Fort Myers",
+    "context": "Cape Coral-Fort Myers is one of Florida's fastest-growing metros, with population growth consistently ranking among the nation's highest and a construction boom in single-family, multifamily, and commercial space. The metro's waterfront location, retiree demographic, and absence of state income tax drive robust retail and hospitality investment.",
+    "neighborhoods": [
+      "Downtown Cape Coral",
+      "NE Cape Coral",
+      "SE Cape Coral",
+      "NW Cape Coral",
+      "Fort Myers",
+      "Fort Myers Beach",
+      "Estero",
+      "Bonita Springs",
+      "Naples",
+      "Marco Island",
+      "Lehigh Acres",
+      "Pine Island"
+    ]
   }
 ]

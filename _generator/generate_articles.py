@@ -39,6 +39,7 @@ MARKET_REPORT_CITIES = [
     "wilmington-nc",
     "manchester-nh",
     "portland-me",
+    "cape-coral",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -54,6 +55,7 @@ ALL_CITIES = [
     "wilmington-nc",
     "manchester-nh",
     "portland-me",
+    "cape-coral",
 ]
 
 # Loan slug → context key mapping

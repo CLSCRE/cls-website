@@ -1582,5 +1582,53 @@
       "mixed_use": "Mixed-use development in Portland is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
       "hospitality": "The hospitality market in Portland serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
     }
+  },
+  "cape-coral": {
+    "city": "Cape Coral",
+    "state": "FL",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "14.5%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "rent_growth": "3.2%",
+      "job_growth": "1.6%",
+      "population_growth": "0.9%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "government, healthcare, education, manufacturing, logistics",
+      "top_submarkets": "Downtown Cape Coral, NE Cape Coral, SE Cape Coral, NW Cape Coral",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "8.00%-9.50%"
+    },
+    "market_report": {
+      "overview": "Cape Coral-Fort Myers is one of Florida's fastest-growing metros, with population growth consistently ranking among the nation's highest and a construction boom in single-family, multifamily, and commercial space. The metro's waterfront location, retiree demographic, and absence of state income tax drive robust retail and hospitality investment.",
+      "multifamily": "Cape Coral's multifamily market reflects the metro's growth trajectory, with demand driven by in-migration and a limited housing supply pipeline. Investors are active across value-add Class B/C product and new Class A development.",
+      "industrial": "Industrial fundamentals in Cape Coral are supported by regional distribution demand, proximity to major transportation corridors, and steady e-commerce growth. Vacancy has remained below the national average with rental rate increases year-over-year.",
+      "office_retail": "The Cape Coral office market shows bifurcated performance between suburban flex product and downtown Class A towers. Retail remains resilient in dense neighborhood corridors with strong foot traffic and limited new supply.",
+      "financing": "Lender appetite in Cape Coral is healthy across multifamily and industrial asset classes. Agency execution is competitive for stabilized apartments, while regional banks and credit unions are active in smaller commercial transactions.",
+      "outlook": "Cape Coral offers a compelling risk-adjusted opportunity for commercial real estate investors in 2026. The market's diversified economic base and steady population growth provide durable demand drivers across property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Cape Coral is most active for value-add multifamily and transitional office repositioning. Debt funds and regional lenders compete for deals in the $2M-$20M range with 12-36 month terms.",
+      "permanent": "Permanent financing in Cape Coral benefits from strong agency execution on multifamily and competitive life company pricing on industrial. Stabilized assets with strong cash flow command spreads near the tight end of national ranges.",
+      "construction": "Construction lending in Cape Coral is driven by multifamily ground-up and industrial build-to-suit activity. Regional banks are active for projects under $15M while national debt funds and CMBS lenders cover larger deals.",
+      "sba": "SBA lending is highly active in Cape Coral for owner-occupied commercial properties, particularly medical offices, manufacturing facilities, and retail buildings where the 90% LTV financing gives owner-users a significant advantage.",
+      "mezzanine": "Mezzanine and preferred equity in Cape Coral bridge the gap for sponsors acquiring larger value-add assets where senior debt falls short of required proceeds. The market sees regular activity in the $3M-$25M subordinate capital range.",
+      "specialty": "Specialty financing in Cape Coral covers the market's niche asset classes including self-storage, mobile home parks, hospitality, and mixed-use projects. Specialized lenders with local market knowledge are essential for these transactions."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Cape Coral spans garden-style suburban complexes and urban infill apartment communities. Value-add operators find strong opportunity in the market's aging Class B/C stock with room for rent growth.",
+      "industrial": "Industrial properties in Cape Coral benefit from the market's position as a regional distribution hub. Warehouse, flex industrial, and last-mile fulfillment facilities attract strong tenant demand and investor interest.",
+      "office": "The office market in Cape Coral is navigating post-pandemic normalization with suburban Class B flex product outperforming downtown Class A towers. Medical office and government-leased buildings offer stable cash flow.",
+      "retail": "Retail in Cape Coral is led by grocery-anchored neighborhood centers and essential service corridors with high traffic and strong tenant retention. Regional malls face headwinds but power centers remain resilient.",
+      "mixed_use": "Mixed-use development in Cape Coral is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
+      "hospitality": "The hospitality market in Cape Coral serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
+    }
   }
 }
