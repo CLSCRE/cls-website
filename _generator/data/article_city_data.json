@@ -1726,5 +1726,149 @@
       "mixed_use": "Mixed-use development in Springfield is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
       "hospitality": "The hospitality market in Springfield serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
     }
+  },
+  "sioux-falls": {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "14.5%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "rent_growth": "3.2%",
+      "job_growth": "1.6%",
+      "population_growth": "0.9%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "government, healthcare, education, manufacturing, logistics",
+      "top_submarkets": "Downtown Sioux Falls, East Side, West Side, North Side",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "8.00%-9.50%"
+    },
+    "market_report": {
+      "overview": "Sioux Falls is the commercial capital of South Dakota and one of the Northern Plains' most dynamic markets, benefiting from no state income tax, a growing financial services sector, and consistent population inflows. Industrial vacancy rates are among the lowest in the region with strong speculative development activity along the I-90 corridor.",
+      "multifamily": "Sioux Falls's multifamily market reflects the metro's growth trajectory, with demand driven by in-migration and a limited housing supply pipeline. Investors are active across value-add Class B/C product and new Class A development.",
+      "industrial": "Industrial fundamentals in Sioux Falls are supported by regional distribution demand, proximity to major transportation corridors, and steady e-commerce growth. Vacancy has remained below the national average with rental rate increases year-over-year.",
+      "office_retail": "The Sioux Falls office market shows bifurcated performance between suburban flex product and downtown Class A towers. Retail remains resilient in dense neighborhood corridors with strong foot traffic and limited new supply.",
+      "financing": "Lender appetite in Sioux Falls is healthy across multifamily and industrial asset classes. Agency execution is competitive for stabilized apartments, while regional banks and credit unions are active in smaller commercial transactions.",
+      "outlook": "Sioux Falls offers a compelling risk-adjusted opportunity for commercial real estate investors in 2026. The market's diversified economic base and steady population growth provide durable demand drivers across property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Sioux Falls is most active for value-add multifamily and transitional office repositioning. Debt funds and regional lenders compete for deals in the $2M-$20M range with 12-36 month terms.",
+      "permanent": "Permanent financing in Sioux Falls benefits from strong agency execution on multifamily and competitive life company pricing on industrial. Stabilized assets with strong cash flow command spreads near the tight end of national ranges.",
+      "construction": "Construction lending in Sioux Falls is driven by multifamily ground-up and industrial build-to-suit activity. Regional banks are active for projects under $15M while national debt funds and CMBS lenders cover larger deals.",
+      "sba": "SBA lending is highly active in Sioux Falls for owner-occupied commercial properties, particularly medical offices, manufacturing facilities, and retail buildings where the 90% LTV financing gives owner-users a significant advantage.",
+      "mezzanine": "Mezzanine and preferred equity in Sioux Falls bridge the gap for sponsors acquiring larger value-add assets where senior debt falls short of required proceeds. The market sees regular activity in the $3M-$25M subordinate capital range.",
+      "specialty": "Specialty financing in Sioux Falls covers the market's niche asset classes including self-storage, mobile home parks, hospitality, and mixed-use projects. Specialized lenders with local market knowledge are essential for these transactions."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Sioux Falls spans garden-style suburban complexes and urban infill apartment communities. Value-add operators find strong opportunity in the market's aging Class B/C stock with room for rent growth.",
+      "industrial": "Industrial properties in Sioux Falls benefit from the market's position as a regional distribution hub. Warehouse, flex industrial, and last-mile fulfillment facilities attract strong tenant demand and investor interest.",
+      "office": "The office market in Sioux Falls is navigating post-pandemic normalization with suburban Class B flex product outperforming downtown Class A towers. Medical office and government-leased buildings offer stable cash flow.",
+      "retail": "Retail in Sioux Falls is led by grocery-anchored neighborhood centers and essential service corridors with high traffic and strong tenant retention. Regional malls face headwinds but power centers remain resilient.",
+      "mixed_use": "Mixed-use development in Sioux Falls is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
+      "hospitality": "The hospitality market in Sioux Falls serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
+    }
+  },
+  "fargo": {
+    "city": "Fargo",
+    "state": "ND",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "14.5%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "rent_growth": "3.2%",
+      "job_growth": "1.6%",
+      "population_growth": "0.9%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "government, healthcare, education, manufacturing, logistics",
+      "top_submarkets": "Downtown Fargo, South Fargo, West Fargo, North Fargo",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "8.00%-9.50%"
+    },
+    "market_report": {
+      "overview": "Fargo is the economic hub of the Northern Plains, home to North Dakota State University and a growing technology and financial services sector that has diversified well beyond its agricultural roots. The metro's stable economy, low unemployment, and proximity to the I-94 corridor make it attractive for industrial, retail, and multifamily investment.",
+      "multifamily": "Fargo's multifamily market reflects the metro's growth trajectory, with demand driven by in-migration and a limited housing supply pipeline. Investors are active across value-add Class B/C product and new Class A development.",
+      "industrial": "Industrial fundamentals in Fargo are supported by regional distribution demand, proximity to major transportation corridors, and steady e-commerce growth. Vacancy has remained below the national average with rental rate increases year-over-year.",
+      "office_retail": "The Fargo office market shows bifurcated performance between suburban flex product and downtown Class A towers. Retail remains resilient in dense neighborhood corridors with strong foot traffic and limited new supply.",
+      "financing": "Lender appetite in Fargo is healthy across multifamily and industrial asset classes. Agency execution is competitive for stabilized apartments, while regional banks and credit unions are active in smaller commercial transactions.",
+      "outlook": "Fargo offers a compelling risk-adjusted opportunity for commercial real estate investors in 2026. The market's diversified economic base and steady population growth provide durable demand drivers across property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Fargo is most active for value-add multifamily and transitional office repositioning. Debt funds and regional lenders compete for deals in the $2M-$20M range with 12-36 month terms.",
+      "permanent": "Permanent financing in Fargo benefits from strong agency execution on multifamily and competitive life company pricing on industrial. Stabilized assets with strong cash flow command spreads near the tight end of national ranges.",
+      "construction": "Construction lending in Fargo is driven by multifamily ground-up and industrial build-to-suit activity. Regional banks are active for projects under $15M while national debt funds and CMBS lenders cover larger deals.",
+      "sba": "SBA lending is highly active in Fargo for owner-occupied commercial properties, particularly medical offices, manufacturing facilities, and retail buildings where the 90% LTV financing gives owner-users a significant advantage.",
+      "mezzanine": "Mezzanine and preferred equity in Fargo bridge the gap for sponsors acquiring larger value-add assets where senior debt falls short of required proceeds. The market sees regular activity in the $3M-$25M subordinate capital range.",
+      "specialty": "Specialty financing in Fargo covers the market's niche asset classes including self-storage, mobile home parks, hospitality, and mixed-use projects. Specialized lenders with local market knowledge are essential for these transactions."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Fargo spans garden-style suburban complexes and urban infill apartment communities. Value-add operators find strong opportunity in the market's aging Class B/C stock with room for rent growth.",
+      "industrial": "Industrial properties in Fargo benefit from the market's position as a regional distribution hub. Warehouse, flex industrial, and last-mile fulfillment facilities attract strong tenant demand and investor interest.",
+      "office": "The office market in Fargo is navigating post-pandemic normalization with suburban Class B flex product outperforming downtown Class A towers. Medical office and government-leased buildings offer stable cash flow.",
+      "retail": "Retail in Fargo is led by grocery-anchored neighborhood centers and essential service corridors with high traffic and strong tenant retention. Regional malls face headwinds but power centers remain resilient.",
+      "mixed_use": "Mixed-use development in Fargo is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
+      "hospitality": "The hospitality market in Fargo serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
+    }
+  },
+  "lincoln": {
+    "city": "Lincoln",
+    "state": "NE",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "14.5%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "rent_growth": "3.2%",
+      "job_growth": "1.6%",
+      "population_growth": "0.9%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "government, healthcare, education, manufacturing, logistics",
+      "top_submarkets": "Downtown Lincoln, University Place, East Lincoln, South Lincoln",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "8.00%-9.50%"
+    },
+    "market_report": {
+      "overview": "Lincoln is Nebraska's capital and home to the University of Nebraska, providing stable employment and consistent demand for student housing, medical office, and retail across its growing population. The metro's strong fundamentals, affordable land costs, and position as a regional center for agriculture and healthcare make it a defensive investment market.",
+      "multifamily": "Lincoln's multifamily market reflects the metro's growth trajectory, with demand driven by in-migration and a limited housing supply pipeline. Investors are active across value-add Class B/C product and new Class A development.",
+      "industrial": "Industrial fundamentals in Lincoln are supported by regional distribution demand, proximity to major transportation corridors, and steady e-commerce growth. Vacancy has remained below the national average with rental rate increases year-over-year.",
+      "office_retail": "The Lincoln office market shows bifurcated performance between suburban flex product and downtown Class A towers. Retail remains resilient in dense neighborhood corridors with strong foot traffic and limited new supply.",
+      "financing": "Lender appetite in Lincoln is healthy across multifamily and industrial asset classes. Agency execution is competitive for stabilized apartments, while regional banks and credit unions are active in smaller commercial transactions.",
+      "outlook": "Lincoln offers a compelling risk-adjusted opportunity for commercial real estate investors in 2026. The market's diversified economic base and steady population growth provide durable demand drivers across property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Lincoln is most active for value-add multifamily and transitional office repositioning. Debt funds and regional lenders compete for deals in the $2M-$20M range with 12-36 month terms.",
+      "permanent": "Permanent financing in Lincoln benefits from strong agency execution on multifamily and competitive life company pricing on industrial. Stabilized assets with strong cash flow command spreads near the tight end of national ranges.",
+      "construction": "Construction lending in Lincoln is driven by multifamily ground-up and industrial build-to-suit activity. Regional banks are active for projects under $15M while national debt funds and CMBS lenders cover larger deals.",
+      "sba": "SBA lending is highly active in Lincoln for owner-occupied commercial properties, particularly medical offices, manufacturing facilities, and retail buildings where the 90% LTV financing gives owner-users a significant advantage.",
+      "mezzanine": "Mezzanine and preferred equity in Lincoln bridge the gap for sponsors acquiring larger value-add assets where senior debt falls short of required proceeds. The market sees regular activity in the $3M-$25M subordinate capital range.",
+      "specialty": "Specialty financing in Lincoln covers the market's niche asset classes including self-storage, mobile home parks, hospitality, and mixed-use projects. Specialized lenders with local market knowledge are essential for these transactions."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Lincoln spans garden-style suburban complexes and urban infill apartment communities. Value-add operators find strong opportunity in the market's aging Class B/C stock with room for rent growth.",
+      "industrial": "Industrial properties in Lincoln benefit from the market's position as a regional distribution hub. Warehouse, flex industrial, and last-mile fulfillment facilities attract strong tenant demand and investor interest.",
+      "office": "The office market in Lincoln is navigating post-pandemic normalization with suburban Class B flex product outperforming downtown Class A towers. Medical office and government-leased buildings offer stable cash flow.",
+      "retail": "Retail in Lincoln is led by grocery-anchored neighborhood centers and essential service corridors with high traffic and strong tenant retention. Regional malls face headwinds but power centers remain resilient.",
+      "mixed_use": "Mixed-use development in Lincoln is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
+      "hospitality": "The hospitality market in Lincoln serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
+    }
   }
 }

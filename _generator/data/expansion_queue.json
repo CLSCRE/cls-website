@@ -469,50 +469,6 @@
       ]
     },
     {
-      "slug": "sioux-falls",
-      "city": "Sioux Falls",
-      "state": "SD",
-      "metro": "Sioux Falls",
-      "tier1": true,
-      "context": "Sioux Falls is the commercial capital of South Dakota and one of the Northern Plains' most dynamic markets, benefiting from no state income tax, a growing financial services sector, and consistent population inflows. Industrial vacancy rates are among the lowest in the region with strong speculative development activity along the I-90 corridor.",
-      "neighborhoods": [
-        "Downtown Sioux Falls",
-        "East Side",
-        "West Side",
-        "North Side",
-        "Brandon",
-        "Tea",
-        "Harrisburg",
-        "Renner",
-        "Crooks",
-        "Baltic",
-        "Dell Rapids",
-        "Worthington MN"
-      ]
-    },
-    {
-      "slug": "fargo",
-      "city": "Fargo",
-      "state": "ND",
-      "metro": "Fargo",
-      "tier1": true,
-      "context": "Fargo is the economic hub of the Northern Plains, home to North Dakota State University and a growing technology and financial services sector that has diversified well beyond its agricultural roots. The metro's stable economy, low unemployment, and proximity to the I-94 corridor make it attractive for industrial, retail, and multifamily investment.",
-      "neighborhoods": [
-        "Downtown Fargo",
-        "South Fargo",
-        "West Fargo",
-        "North Fargo",
-        "Moorhead MN",
-        "Dilworth",
-        "Horace",
-        "Harwood",
-        "Casselton",
-        "West Acres",
-        "Osgood",
-        "Mapleton"
-      ]
-    },
-    {
       "slug": "grand-rapids",
       "city": "Grand Rapids",
       "state": "MI",
@@ -576,28 +532,6 @@
         "Cottage Grove",
         "DeForest",
         "McFarland"
-      ]
-    },
-    {
-      "slug": "lincoln",
-      "city": "Lincoln",
-      "state": "NE",
-      "metro": "Lincoln",
-      "tier1": true,
-      "context": "Lincoln is Nebraska's capital and home to the University of Nebraska, providing stable employment and consistent demand for student housing, medical office, and retail across its growing population. The metro's strong fundamentals, affordable land costs, and position as a regional center for agriculture and healthcare make it a defensive investment market.",
-      "neighborhoods": [
-        "Downtown Lincoln",
-        "University Place",
-        "East Lincoln",
-        "South Lincoln",
-        "Waverly",
-        "Seward",
-        "Beatrice",
-        "York",
-        "Nebraska City",
-        "Plattsmouth",
-        "Ashland",
-        "Gretna"
       ]
     },
     {
@@ -3485,9 +3419,24 @@
       "slug": "springfield-mo",
       "city": "Springfield",
       "added": "2026-05-07"
+    },
+    {
+      "slug": "sioux-falls",
+      "city": "Sioux Falls",
+      "added": "2026-05-07"
+    },
+    {
+      "slug": "fargo",
+      "city": "Fargo",
+      "added": "2026-05-07"
+    },
+    {
+      "slug": "lincoln",
+      "city": "Lincoln",
+      "added": "2026-05-07"
     }
   ],
-  "last_run": "2026-05-07T04:05:32.546642Z",
-  "total_pages_added": 216,
-  "runs_completed": 6
+  "last_run": "2026-05-07T10:35:19.979521Z",
+  "total_pages_added": 252,
+  "runs_completed": 7
 }

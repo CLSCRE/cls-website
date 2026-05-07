@@ -42,6 +42,9 @@ MARKET_REPORT_CITIES = [
     "cape-coral",
     "columbia-mo",
     "springfield-mo",
+    "sioux-falls",
+    "fargo",
+    "lincoln",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -60,6 +63,9 @@ ALL_CITIES = [
     "cape-coral",
     "columbia-mo",
     "springfield-mo",
+    "sioux-falls",
+    "fargo",
+    "lincoln",
 ]
 
 # Loan slug → context key mapping
