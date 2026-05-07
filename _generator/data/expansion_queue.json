@@ -359,72 +359,6 @@
       ]
     },
     {
-      "slug": "fredericksburg",
-      "city": "Fredericksburg",
-      "state": "VA",
-      "metro": "Fredericksburg",
-      "tier1": false,
-      "context": "Fredericksburg serves as a major DC exurb and logistics corridor between Richmond and Washington DC, with significant residential growth driving retail and service-sector commercial demand. The market benefits from its position on the I-95 corridor and strong demographics of high-income commuters.",
-      "neighborhoods": [
-        "Downtown Fredericksburg",
-        "Stafford",
-        "Spotsylvania",
-        "Woodbridge",
-        "Dumfries",
-        "Manassas",
-        "Dale City",
-        "Woodbridge",
-        "Culpeper",
-        "Warrenton",
-        "Gainesville",
-        "Lake Ridge"
-      ]
-    },
-    {
-      "slug": "manchester-nh",
-      "city": "Manchester",
-      "state": "NH",
-      "metro": "Manchester-Nashua",
-      "tier1": true,
-      "context": "Manchester-Nashua is New England's second-largest metro and a major beneficiary of Boston overspill, with no state income or sales tax attracting corporate relocations and high-income residents to its industrial parks and Class A office properties. The market's proximity to Boston creates strong multifamily demand from workers priced out of Suffolk County.",
-      "neighborhoods": [
-        "Downtown Manchester",
-        "West Side Manchester",
-        "South Manchester",
-        "Nashua",
-        "Merrimack",
-        "Bedford",
-        "Goffstown",
-        "Hooksett",
-        "Londonderry",
-        "Derry",
-        "Salem NH",
-        "Milford"
-      ]
-    },
-    {
-      "slug": "portland-me",
-      "city": "Portland",
-      "state": "ME",
-      "metro": "Portland-South Portland",
-      "tier1": true,
-      "context": "Portland Maine is a thriving coastal market known for its vibrant food and tourism economy, with strong demand for boutique hotel, restaurant, and mixed-use assets in the Old Port district. The metro's growing remote worker population and limited new housing supply drive multifamily rent growth well above regional averages.",
-      "neighborhoods": [
-        "Old Port",
-        "Munjoy Hill",
-        "Bayside",
-        "East Bayside",
-        "Parkside",
-        "Deering",
-        "Cape Elizabeth",
-        "South Portland",
-        "Scarborough",
-        "Westbrook",
-        "Biddeford",
-        "Kennebunkport"
-      ]
-    },
-    {
       "slug": "burlington-vt",
       "city": "Burlington",
       "state": "VT",
@@ -3638,9 +3572,24 @@
       "slug": "charlottesville",
       "city": "Charlottesville",
       "added": "2026-05-06"
+    },
+    {
+      "slug": "fredericksburg",
+      "city": "Fredericksburg",
+      "added": "2026-05-07"
+    },
+    {
+      "slug": "manchester-nh",
+      "city": "Manchester",
+      "added": "2026-05-07"
+    },
+    {
+      "slug": "portland-me",
+      "city": "Portland",
+      "added": "2026-05-07"
     }
   ],
-  "last_run": "2026-05-06T17:52:24.477192Z",
-  "total_pages_added": 108,
-  "runs_completed": 3
+  "last_run": "2026-05-07T00:53:45.168426Z",
+  "total_pages_added": 144,
+  "runs_completed": 4
 }

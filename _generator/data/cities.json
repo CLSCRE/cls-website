@@ -2293,5 +2293,68 @@
       "Gordonsville",
       "Scottsville"
     ]
+  },
+  {
+    "slug": "fredericksburg",
+    "city": "Fredericksburg",
+    "state": "VA",
+    "metro": "Fredericksburg",
+    "context": "Fredericksburg serves as a major DC exurb and logistics corridor between Richmond and Washington DC, with significant residential growth driving retail and service-sector commercial demand. The market benefits from its position on the I-95 corridor and strong demographics of high-income commuters.",
+    "neighborhoods": [
+      "Downtown Fredericksburg",
+      "Stafford",
+      "Spotsylvania",
+      "Woodbridge",
+      "Dumfries",
+      "Manassas",
+      "Dale City",
+      "Woodbridge",
+      "Culpeper",
+      "Warrenton",
+      "Gainesville",
+      "Lake Ridge"
+    ]
+  },
+  {
+    "slug": "manchester-nh",
+    "city": "Manchester",
+    "state": "NH",
+    "metro": "Manchester-Nashua",
+    "context": "Manchester-Nashua is New England's second-largest metro and a major beneficiary of Boston overspill, with no state income or sales tax attracting corporate relocations and high-income residents to its industrial parks and Class A office properties. The market's proximity to Boston creates strong multifamily demand from workers priced out of Suffolk County.",
+    "neighborhoods": [
+      "Downtown Manchester",
+      "West Side Manchester",
+      "South Manchester",
+      "Nashua",
+      "Merrimack",
+      "Bedford",
+      "Goffstown",
+      "Hooksett",
+      "Londonderry",
+      "Derry",
+      "Salem NH",
+      "Milford"
+    ]
+  },
+  {
+    "slug": "portland-me",
+    "city": "Portland",
+    "state": "ME",
+    "metro": "Portland-South Portland",
+    "context": "Portland Maine is a thriving coastal market known for its vibrant food and tourism economy, with strong demand for boutique hotel, restaurant, and mixed-use assets in the Old Port district. The metro's growing remote worker population and limited new housing supply drive multifamily rent growth well above regional averages.",
+    "neighborhoods": [
+      "Old Port",
+      "Munjoy Hill",
+      "Bayside",
+      "East Bayside",
+      "Parkside",
+      "Deering",
+      "Cape Elizabeth",
+      "South Portland",
+      "Scarborough",
+      "Westbrook",
+      "Biddeford",
+      "Kennebunkport"
+    ]
   }
 ]

@@ -1486,5 +1486,101 @@
       "mixed_use": "Mixed-use development in Wilmington is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
       "hospitality": "The hospitality market in Wilmington serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
     }
+  },
+  "manchester-nh": {
+    "city": "Manchester",
+    "state": "NH",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "14.5%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "rent_growth": "3.2%",
+      "job_growth": "1.6%",
+      "population_growth": "0.9%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "government, healthcare, education, manufacturing, logistics",
+      "top_submarkets": "Downtown Manchester, West Side Manchester, South Manchester, Nashua",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "8.00%-9.50%"
+    },
+    "market_report": {
+      "overview": "Manchester-Nashua is New England's second-largest metro and a major beneficiary of Boston overspill, with no state income or sales tax attracting corporate relocations and high-income residents to its industrial parks and Class A office properties. The market's proximity to Boston creates strong multifamily demand from workers priced out of Suffolk County.",
+      "multifamily": "Manchester's multifamily market reflects the metro's growth trajectory, with demand driven by in-migration and a limited housing supply pipeline. Investors are active across value-add Class B/C product and new Class A development.",
+      "industrial": "Industrial fundamentals in Manchester are supported by regional distribution demand, proximity to major transportation corridors, and steady e-commerce growth. Vacancy has remained below the national average with rental rate increases year-over-year.",
+      "office_retail": "The Manchester office market shows bifurcated performance between suburban flex product and downtown Class A towers. Retail remains resilient in dense neighborhood corridors with strong foot traffic and limited new supply.",
+      "financing": "Lender appetite in Manchester is healthy across multifamily and industrial asset classes. Agency execution is competitive for stabilized apartments, while regional banks and credit unions are active in smaller commercial transactions.",
+      "outlook": "Manchester offers a compelling risk-adjusted opportunity for commercial real estate investors in 2026. The market's diversified economic base and steady population growth provide durable demand drivers across property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Manchester is most active for value-add multifamily and transitional office repositioning. Debt funds and regional lenders compete for deals in the $2M-$20M range with 12-36 month terms.",
+      "permanent": "Permanent financing in Manchester benefits from strong agency execution on multifamily and competitive life company pricing on industrial. Stabilized assets with strong cash flow command spreads near the tight end of national ranges.",
+      "construction": "Construction lending in Manchester is driven by multifamily ground-up and industrial build-to-suit activity. Regional banks are active for projects under $15M while national debt funds and CMBS lenders cover larger deals.",
+      "sba": "SBA lending is highly active in Manchester for owner-occupied commercial properties, particularly medical offices, manufacturing facilities, and retail buildings where the 90% LTV financing gives owner-users a significant advantage.",
+      "mezzanine": "Mezzanine and preferred equity in Manchester bridge the gap for sponsors acquiring larger value-add assets where senior debt falls short of required proceeds. The market sees regular activity in the $3M-$25M subordinate capital range.",
+      "specialty": "Specialty financing in Manchester covers the market's niche asset classes including self-storage, mobile home parks, hospitality, and mixed-use projects. Specialized lenders with local market knowledge are essential for these transactions."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Manchester spans garden-style suburban complexes and urban infill apartment communities. Value-add operators find strong opportunity in the market's aging Class B/C stock with room for rent growth.",
+      "industrial": "Industrial properties in Manchester benefit from the market's position as a regional distribution hub. Warehouse, flex industrial, and last-mile fulfillment facilities attract strong tenant demand and investor interest.",
+      "office": "The office market in Manchester is navigating post-pandemic normalization with suburban Class B flex product outperforming downtown Class A towers. Medical office and government-leased buildings offer stable cash flow.",
+      "retail": "Retail in Manchester is led by grocery-anchored neighborhood centers and essential service corridors with high traffic and strong tenant retention. Regional malls face headwinds but power centers remain resilient.",
+      "mixed_use": "Mixed-use development in Manchester is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
+      "hospitality": "The hospitality market in Manchester serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
+    }
+  },
+  "portland-me": {
+    "city": "Portland",
+    "state": "ME",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "industrial_vacancy": "5.2%",
+      "office_vacancy": "14.5%",
+      "retail_vacancy": "6.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "rent_growth": "3.2%",
+      "job_growth": "1.6%",
+      "population_growth": "0.9%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "government, healthcare, education, manufacturing, logistics",
+      "top_submarkets": "Old Port, Munjoy Hill, Bayside, East Bayside",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "8.00%-9.50%"
+    },
+    "market_report": {
+      "overview": "Portland Maine is a thriving coastal market known for its vibrant food and tourism economy, with strong demand for boutique hotel, restaurant, and mixed-use assets in the Old Port district. The metro's growing remote worker population and limited new housing supply drive multifamily rent growth well above regional averages.",
+      "multifamily": "Portland's multifamily market reflects the metro's growth trajectory, with demand driven by in-migration and a limited housing supply pipeline. Investors are active across value-add Class B/C product and new Class A development.",
+      "industrial": "Industrial fundamentals in Portland are supported by regional distribution demand, proximity to major transportation corridors, and steady e-commerce growth. Vacancy has remained below the national average with rental rate increases year-over-year.",
+      "office_retail": "The Portland office market shows bifurcated performance between suburban flex product and downtown Class A towers. Retail remains resilient in dense neighborhood corridors with strong foot traffic and limited new supply.",
+      "financing": "Lender appetite in Portland is healthy across multifamily and industrial asset classes. Agency execution is competitive for stabilized apartments, while regional banks and credit unions are active in smaller commercial transactions.",
+      "outlook": "Portland offers a compelling risk-adjusted opportunity for commercial real estate investors in 2026. The market's diversified economic base and steady population growth provide durable demand drivers across property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Portland is most active for value-add multifamily and transitional office repositioning. Debt funds and regional lenders compete for deals in the $2M-$20M range with 12-36 month terms.",
+      "permanent": "Permanent financing in Portland benefits from strong agency execution on multifamily and competitive life company pricing on industrial. Stabilized assets with strong cash flow command spreads near the tight end of national ranges.",
+      "construction": "Construction lending in Portland is driven by multifamily ground-up and industrial build-to-suit activity. Regional banks are active for projects under $15M while national debt funds and CMBS lenders cover larger deals.",
+      "sba": "SBA lending is highly active in Portland for owner-occupied commercial properties, particularly medical offices, manufacturing facilities, and retail buildings where the 90% LTV financing gives owner-users a significant advantage.",
+      "mezzanine": "Mezzanine and preferred equity in Portland bridge the gap for sponsors acquiring larger value-add assets where senior debt falls short of required proceeds. The market sees regular activity in the $3M-$25M subordinate capital range.",
+      "specialty": "Specialty financing in Portland covers the market's niche asset classes including self-storage, mobile home parks, hospitality, and mixed-use projects. Specialized lenders with local market knowledge are essential for these transactions."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Portland spans garden-style suburban complexes and urban infill apartment communities. Value-add operators find strong opportunity in the market's aging Class B/C stock with room for rent growth.",
+      "industrial": "Industrial properties in Portland benefit from the market's position as a regional distribution hub. Warehouse, flex industrial, and last-mile fulfillment facilities attract strong tenant demand and investor interest.",
+      "office": "The office market in Portland is navigating post-pandemic normalization with suburban Class B flex product outperforming downtown Class A towers. Medical office and government-leased buildings offer stable cash flow.",
+      "retail": "Retail in Portland is led by grocery-anchored neighborhood centers and essential service corridors with high traffic and strong tenant retention. Regional malls face headwinds but power centers remain resilient.",
+      "mixed_use": "Mixed-use development in Portland is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
+      "hospitality": "The hospitality market in Portland serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
+    }
   }
 }
