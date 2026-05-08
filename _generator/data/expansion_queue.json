@@ -601,72 +601,6 @@
       ]
     },
     {
-      "slug": "canton",
-      "city": "Canton",
-      "state": "OH",
-      "metro": "Canton-Massillon",
-      "tier1": false,
-      "context": "Canton-Massillon is a Northeast Ohio industrial market with stable manufacturing and distribution activity, affordable commercial real estate, and consistent demand from regional operators. The Pro Football Hall of Fame drives modest tourism infrastructure investment.",
-      "neighborhoods": [
-        "Downtown Canton",
-        "North Canton",
-        "Massillon",
-        "Alliance",
-        "Louisville",
-        "Minerva",
-        "Wooster",
-        "New Philadelphia",
-        "Millersburg",
-        "Ashland OH",
-        "Mount Vernon OH",
-        "Coshocton"
-      ]
-    },
-    {
-      "slug": "flint",
-      "city": "Flint",
-      "state": "MI",
-      "metro": "Flint",
-      "tier1": false,
-      "context": "Flint's commercial market has stabilized around healthcare, education, and light manufacturing following significant economic restructuring. The metro offers deeply discounted industrial assets with high yield potential and proximity to major automotive supply chains.",
-      "neighborhoods": [
-        "Downtown Flint",
-        "East Side",
-        "North End",
-        "Flint Township",
-        "Grand Blanc",
-        "Burton",
-        "Swartz Creek",
-        "Fenton",
-        "Holly",
-        "Goodrich",
-        "Davison",
-        "Mount Morris"
-      ]
-    },
-    {
-      "slug": "kalamazoo",
-      "city": "Kalamazoo",
-      "state": "MI",
-      "metro": "Kalamazoo-Portage",
-      "tier1": false,
-      "context": "Kalamazoo is a mid-size Michigan market anchored by Western Michigan University, the pharmaceutical industry, and a craft brewing sector that drives above-average hospitality and retail activity. The metro's diversified economy and stable employment support consistent multifamily demand.",
-      "neighborhoods": [
-        "Downtown Kalamazoo",
-        "Vine",
-        "Eastside",
-        "Portage",
-        "Parchment",
-        "Richland",
-        "Galesburg",
-        "Comstock",
-        "Vicksburg",
-        "Three Rivers",
-        "St. Joseph",
-        "Benton Harbor"
-      ]
-    },
-    {
       "slug": "lansing",
       "city": "Lansing",
       "state": "MI",
@@ -3332,9 +3266,24 @@
       "slug": "youngstown",
       "city": "Youngstown",
       "added": "2026-05-08"
+    },
+    {
+      "slug": "canton",
+      "city": "Canton",
+      "added": "2026-05-08"
+    },
+    {
+      "slug": "flint",
+      "city": "Flint",
+      "added": "2026-05-08"
+    },
+    {
+      "slug": "kalamazoo",
+      "city": "Kalamazoo",
+      "added": "2026-05-08"
     }
   ],
-  "last_run": "2026-05-08T03:53:57.533472Z",
-  "total_pages_added": 324,
-  "runs_completed": 9
+  "last_run": "2026-05-08T09:52:48.318522Z",
+  "total_pages_added": 360,
+  "runs_completed": 10
 }
