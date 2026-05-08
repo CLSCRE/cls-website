@@ -2797,5 +2797,68 @@
       "Decatur IN",
       "Warsaw"
     ]
+  },
+  {
+    "slug": "south-bend",
+    "city": "South Bend",
+    "state": "IN",
+    "metro": "South Bend-Mishawaka",
+    "context": "South Bend is home to the University of Notre Dame and a growing advanced manufacturing base, with ongoing downtown revitalization driven by the Smart District tech initiative and significant retail and multifamily investment. The metro benefits from proximity to Chicago while maintaining significantly lower land costs.",
+    "neighborhoods": [
+      "Downtown South Bend",
+      "Mishawaka",
+      "Granger",
+      "Elkhart",
+      "Goshen",
+      "Warsaw",
+      "Nappanee",
+      "Buchanan MI",
+      "Benton Harbor",
+      "St. Joseph MI",
+      "Laporte",
+      "Plymouth IN"
+    ]
+  },
+  {
+    "slug": "evansville",
+    "city": "Evansville",
+    "state": "IN",
+    "metro": "Evansville",
+    "context": "Evansville is a tri-state commercial hub serving Indiana, Kentucky, and Illinois, with a diverse economy anchored by healthcare, manufacturing, and river logistics. The metro offers stable commercial real estate fundamentals with attractive cap rates and consistent demand from regional necessity-based tenants.",
+    "neighborhoods": [
+      "Downtown Evansville",
+      "East Side",
+      "West Side",
+      "North Side",
+      "Newburgh",
+      "Boonville",
+      "Henderson KY",
+      "Owensboro",
+      "Jasper IN",
+      "Princeton IN",
+      "Mount Vernon IN",
+      "Vincennes"
+    ]
+  },
+  {
+    "slug": "youngstown",
+    "city": "Youngstown",
+    "state": "OH",
+    "metro": "Youngstown-Warren",
+    "context": "Youngstown is an affordable Northeast Ohio market with industrial properties trading at some of the highest cap rates in the region, supported by logistics and light manufacturing activity along the I-80 corridor. The metro's position between Pittsburgh and Cleveland makes it viable for distribution operations serving both markets.",
+    "neighborhoods": [
+      "Downtown Youngstown",
+      "North Side",
+      "South Side",
+      "Warren",
+      "Boardman",
+      "Austintown",
+      "Canfield",
+      "Niles",
+      "Girard",
+      "Hubbard",
+      "Campbell",
+      "Struthers"
+    ]
   }
 ]
