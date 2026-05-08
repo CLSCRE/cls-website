@@ -2923,5 +2923,68 @@
       "St. Joseph",
       "Benton Harbor"
     ]
+  },
+  {
+    "slug": "lansing",
+    "city": "Lansing",
+    "state": "MI",
+    "metro": "Lansing-East Lansing",
+    "context": "Lansing-East Lansing is Michigan's capital market anchored by state government employment and Michigan State University, providing recession-resistant demand for multifamily, medical office, and retail. The metro offers stable occupancy and attractive yields relative to Detroit and Grand Rapids.",
+    "neighborhoods": [
+      "Downtown Lansing",
+      "East Lansing",
+      "Okemos",
+      "Haslett",
+      "Grand Ledge",
+      "Mason",
+      "DeWitt",
+      "Williamston",
+      "Charlotte",
+      "Holt",
+      "Waverly",
+      "Delta Township"
+    ]
+  },
+  {
+    "slug": "duluth",
+    "city": "Duluth",
+    "state": "MN",
+    "metro": "Duluth-Superior",
+    "context": "Duluth is a Great Lakes port city and regional commercial hub with a diversified economy spanning healthcare, higher education, port logistics, and outdoor recreation tourism. The metro offers affordable commercial real estate with stable demand from regional healthcare and distribution tenants.",
+    "neighborhoods": [
+      "Downtown Duluth",
+      "East Hillside",
+      "West Duluth",
+      "Superior WI",
+      "Cloquet",
+      "Two Harbors",
+      "Hermantown",
+      "Proctor",
+      "Carlton",
+      "Ashland WI",
+      "Ironwood MI",
+      "Virginia MN"
+    ]
+  },
+  {
+    "slug": "rochester-mn",
+    "city": "Rochester",
+    "state": "MN",
+    "metro": "Rochester MN",
+    "context": "Rochester is uniquely anchored by the Mayo Clinic, one of the world's largest medical centers, which drives extraordinary healthcare real estate demand, medical office development, and hospitality infrastructure serving millions of annual patients and their families. The metro's recession-resistant economy makes it one of the most stable commercial markets in the Upper Midwest.",
+    "neighborhoods": [
+      "Downtown Rochester",
+      "Apache Mall Area",
+      "Southeast Rochester",
+      "Northwest Rochester",
+      "Byron",
+      "Stewartville",
+      "Kasson",
+      "Austin MN",
+      "Owatonna",
+      "Faribault",
+      "Northfield",
+      "Winona"
+    ]
   }
 ]
