@@ -3049,5 +3049,68 @@
       "Antigo",
       "Medford"
     ]
+  },
+  {
+    "slug": "eau-claire",
+    "city": "Eau Claire",
+    "state": "WI",
+    "metro": "Eau Claire",
+    "context": "Eau Claire is a growing western Wisconsin market anchored by UW-Eau Claire, a major hospital system, and proximity to the Twin Cities, which drives healthcare, student housing, and retail demand. The metro offers attractive cap rates relative to the Minneapolis-St. Paul metro.",
+    "neighborhoods": [
+      "Downtown Eau Claire",
+      "Altoona",
+      "Chippewa Falls",
+      "Menomonie",
+      "Rice Lake",
+      "Bloomer",
+      "Fall Creek",
+      "Augusta",
+      "Elk Mound",
+      "Black River Falls",
+      "Osseo",
+      "Owen"
+    ]
+  },
+  {
+    "slug": "rockford",
+    "city": "Rockford",
+    "state": "IL",
+    "metro": "Rockford",
+    "context": "Rockford is northern Illinois's industrial hub with a deep aerospace and automotive manufacturing base that anchors industrial demand despite ongoing economic restructuring. The metro offers deeply discounted industrial assets with above-average yields and proximity to Chicago and Milwaukee supply chains.",
+    "neighborhoods": [
+      "Downtown Rockford",
+      "East Side",
+      "West Side",
+      "South Rockford",
+      "Cherry Valley",
+      "Loves Park",
+      "Machesney Park",
+      "Belvidere",
+      "Roscoe",
+      "South Beloit",
+      "Freeport",
+      "Sterling"
+    ]
+  },
+  {
+    "slug": "champaign-urbana",
+    "city": "Champaign-Urbana",
+    "state": "IL",
+    "metro": "Champaign-Urbana",
+    "context": "Champaign-Urbana is Illinois's flagship university market, anchored by the University of Illinois's 50,000-student campus and a growing startup and research commercialization ecosystem. Student housing, medical office, and necessity-based retail all benefit from stable institutional demand.",
+    "neighborhoods": [
+      "Downtown Champaign",
+      "Campustown",
+      "Urbana",
+      "Savoy",
+      "Mahomet",
+      "Monticello",
+      "Rantoul",
+      "Tuscola",
+      "Danville",
+      "Paris IL",
+      "Mattoon",
+      "Charleston IL"
+    ]
   }
 ]
