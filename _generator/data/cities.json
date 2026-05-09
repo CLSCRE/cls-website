@@ -2986,5 +2986,68 @@
       "Northfield",
       "Winona"
     ]
+  },
+  {
+    "slug": "green-bay",
+    "city": "Green Bay",
+    "state": "WI",
+    "metro": "Green Bay",
+    "context": "Green Bay is a regional commercial hub in northeast Wisconsin with a diversified economy spanning food processing, paper manufacturing, healthcare, and logistics. The metro's tight industrial vacancy and growing distribution activity along US-41 and I-43 create strong demand for new industrial development.",
+    "neighborhoods": [
+      "Downtown Green Bay",
+      "West Green Bay",
+      "Ashwaubenon",
+      "Allouez",
+      "De Pere",
+      "Bellevue",
+      "Howard",
+      "Suamico",
+      "Wrightstown",
+      "Pulaski",
+      "Oconto Falls",
+      "Sheboygan"
+    ]
+  },
+  {
+    "slug": "appleton",
+    "city": "Appleton",
+    "state": "WI",
+    "metro": "Appleton",
+    "context": "Appleton is the Fox Cities' commercial hub with a strong manufacturing and paper industry legacy transitioning toward healthcare, insurance, and distribution. The metro offers affordable industrial inventory and tight multifamily vacancy driven by Fox Valley Technical College and multiple healthcare systems.",
+    "neighborhoods": [
+      "Downtown Appleton",
+      "Grand Chute",
+      "Menasha",
+      "Neenah",
+      "Kaukauna",
+      "Combined Locks",
+      "Little Chute",
+      "Wrightstown",
+      "Oshkosh",
+      "Fond du Lac",
+      "Waupaca",
+      "Clintonville"
+    ]
+  },
+  {
+    "slug": "wausau",
+    "city": "Wausau",
+    "state": "WI",
+    "metro": "Wausau-Weston",
+    "context": "Wausau is central Wisconsin's commercial center with healthcare, insurance, and manufacturing anchoring a stable regional economy. The metro offers affordable retail and industrial properties with consistent local tenant demand and limited new supply.",
+    "neighborhoods": [
+      "Downtown Wausau",
+      "Weston",
+      "Rib Mountain",
+      "Schofield",
+      "Rothschild",
+      "Kronenwetter",
+      "Mosinee",
+      "Stevens Point",
+      "Marshfield",
+      "Wisconsin Rapids",
+      "Antigo",
+      "Medford"
+    ]
   }
 ]
