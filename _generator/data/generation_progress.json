@@ -1,11 +1,11 @@
 {
-  "cities_in_system": 147,
+  "cities_in_system": 150,
   "tier1_cities": 68,
   "total_pages_last_count": 5929,
-  "last_run": "2026-05-09T09:44:02.027873Z",
-  "runs_completed": 13,
+  "last_run": "2026-05-09T17:13:01.007259Z",
+  "runs_completed": 14,
   "weekly_rates_generated": 0,
   "notes": "Autonomous expansion engine initialized 2026-05-07",
   "cities_added_this_run": 3,
-  "total_pages_estimated": 3146
+  "total_pages_estimated": 3209
 }

@@ -3112,5 +3112,68 @@
       "Mattoon",
       "Charleston IL"
     ]
+  },
+  {
+    "slug": "quad-cities",
+    "city": "Davenport",
+    "state": "IA",
+    "metro": "Davenport-Moline-Rock Island",
+    "context": "The Quad Cities metro spans Iowa and Illinois along the Mississippi River, with a diversified economy anchored by John Deere headquarters, manufacturing, and river logistics. Industrial and retail assets offer attractive yields driven by regional distribution activity and a stable middle-market economy.",
+    "neighborhoods": [
+      "Downtown Davenport",
+      "Bettendorf",
+      "Rock Island",
+      "Moline",
+      "East Moline",
+      "Silvis",
+      "Coal Valley",
+      "Milan",
+      "Carbon Cliff",
+      "LeClaire",
+      "Eldridge",
+      "Blue Grass"
+    ]
+  },
+  {
+    "slug": "waterloo-ia",
+    "city": "Waterloo",
+    "state": "IA",
+    "metro": "Waterloo-Cedar Falls",
+    "context": "Waterloo-Cedar Falls is a northeastern Iowa market anchored by John Deere manufacturing, the University of Northern Iowa, and a growing healthcare sector. Industrial and multifamily assets offer stable fundamentals driven by manufacturing employment and university demand.",
+    "neighborhoods": [
+      "Downtown Waterloo",
+      "Cedar Falls",
+      "Hudson",
+      "Evansdale",
+      "Jesup",
+      "Reinbeck",
+      "Grundy Center",
+      "Independence",
+      "Waverly",
+      "Charles City",
+      "Mason City",
+      "Hampton"
+    ]
+  },
+  {
+    "slug": "sioux-city",
+    "city": "Sioux City",
+    "state": "IA",
+    "metro": "Sioux City",
+    "context": "Sioux City is a tri-state commercial hub serving Iowa, Nebraska, and South Dakota, with a meatpacking and food processing industry, regional retail anchor, and growing logistics sector. Industrial assets along the I-29 corridor offer strong yields from food processing and distribution tenants.",
+    "neighborhoods": [
+      "Downtown Sioux City",
+      "South Sioux City NE",
+      "Dakota City NE",
+      "South Sioux City",
+      "North Sioux City SD",
+      "Morningside",
+      "Sergeant Bluff",
+      "North Sioux City",
+      "Le Mars",
+      "Spencer IA",
+      "Cherokee",
+      "Vermillion SD"
+    ]
   }
 ]
