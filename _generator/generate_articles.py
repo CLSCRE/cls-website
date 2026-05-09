@@ -45,9 +45,15 @@ MARKET_REPORT_CITIES = [
     "sioux-falls",
     "fargo",
     "lincoln",
-    "cedar-rapids",
-    "fort-wayne",
-    "south-bend",
+    "cedar-rapids", "fort-wayne", "south-bend",
+    # Batch 1 expansion — major metros
+    "san-diego", "san-francisco", "minneapolis", "portland", "las-vegas",
+    "orlando", "raleigh", "salt-lake-city", "san-antonio", "kansas-city",
+    "columbus", "indianapolis", "philadelphia", "washington-dc", "sacramento",
+    # Batch 2 expansion — secondary metros
+    "detroit", "baltimore", "st-louis", "pittsburgh", "jacksonville",
+    "memphis", "new-orleans", "boise", "spokane", "albuquerque",
+    "tucson", "richmond",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -69,9 +75,15 @@ ALL_CITIES = [
     "sioux-falls",
     "fargo",
     "lincoln",
-    "cedar-rapids",
-    "fort-wayne",
-    "south-bend",
+    "cedar-rapids", "fort-wayne", "south-bend",
+    # Batch 1 expansion — major metros
+    "san-diego", "san-francisco", "minneapolis", "portland", "las-vegas",
+    "orlando", "raleigh", "salt-lake-city", "san-antonio", "kansas-city",
+    "columbus", "indianapolis", "philadelphia", "washington-dc", "sacramento",
+    # Batch 2 expansion — secondary metros
+    "detroit", "baltimore", "st-louis", "pittsburgh", "jacksonville",
+    "memphis", "new-orleans", "boise", "spokane", "albuquerque",
+    "tucson", "richmond",
 ]
 
 # Loan slug → context key mapping
