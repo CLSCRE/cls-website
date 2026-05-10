@@ -623,72 +623,6 @@
       ]
     },
     {
-      "slug": "abilene",
-      "city": "Abilene",
-      "state": "TX",
-      "metro": "Abilene",
-      "tier1": false,
-      "context": "Abilene is a stable West Texas market anchored by Dyess Air Force Base, three major universities, and a regional healthcare sector that creates consistent demand for multifamily, retail, and medical office properties. The city's low vacancy rates and affordable entry pricing attract value-add investors.",
-      "neighborhoods": [
-        "Downtown Abilene",
-        "North Abilene",
-        "South Abilene",
-        "Clyde",
-        "Cisco",
-        "Brownwood",
-        "San Angelo",
-        "Sweetwater",
-        "Stamford",
-        "Anson",
-        "Breckenridge",
-        "Eastland"
-      ]
-    },
-    {
-      "slug": "tyler",
-      "city": "Tyler",
-      "state": "TX",
-      "metro": "Tyler",
-      "tier1": false,
-      "context": "Tyler is East Texas's commercial hub with a diversified economy spanning healthcare, rose growing agriculture, and a growing logistics sector anchored by several major distribution centers along the US-69 and Loop 323 corridors. The metro offers stable retail and industrial fundamentals with above-market yields.",
-      "neighborhoods": [
-        "Downtown Tyler",
-        "South Tyler",
-        "North Tyler",
-        "Longview",
-        "Marshall TX",
-        "Nacogdoches",
-        "Kilgore",
-        "Henderson",
-        "Jacksonville TX",
-        "Athens TX",
-        "Palestine TX",
-        "Corsicana"
-      ]
-    },
-    {
-      "slug": "waco",
-      "city": "Waco",
-      "state": "TX",
-      "metro": "Waco",
-      "tier1": false,
-      "context": "Waco has transformed into a nationally known destination following Magnolia Market's opening, driving significant tourism infrastructure investment and retail interest in the downtown and Silo District. Baylor University's enrollment growth and I-35 corridor logistics activity support multifamily and industrial demand.",
-      "neighborhoods": [
-        "Downtown Waco",
-        "Silo District",
-        "South Waco",
-        "East Waco",
-        "Woodway",
-        "Hewitt",
-        "Lorena",
-        "Hillsboro",
-        "Corsicana",
-        "Temple",
-        "Killeen",
-        "Belton"
-      ]
-    },
-    {
       "slug": "beaumont",
       "city": "Beaumont",
       "state": "TX",
@@ -3026,9 +2960,24 @@
       "slug": "midland",
       "city": "Midland",
       "added": "2026-05-10"
+    },
+    {
+      "slug": "abilene",
+      "city": "Abilene",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "tyler",
+      "city": "Tyler",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "waco",
+      "city": "Waco",
+      "added": "2026-05-10"
     }
   ],
-  "last_run": "2026-05-10T04:15:20.915955Z",
-  "total_pages_added": 540,
-  "runs_completed": 15
+  "last_run": "2026-05-10T09:48:53.998273Z",
+  "total_pages_added": 576,
+  "runs_completed": 16
 }

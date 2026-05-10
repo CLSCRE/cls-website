@@ -3238,5 +3238,68 @@
       "Alpine",
       "Monahans"
     ]
+  },
+  {
+    "slug": "abilene",
+    "city": "Abilene",
+    "state": "TX",
+    "metro": "Abilene",
+    "context": "Abilene is a stable West Texas market anchored by Dyess Air Force Base, three major universities, and a regional healthcare sector that creates consistent demand for multifamily, retail, and medical office properties. The city's low vacancy rates and affordable entry pricing attract value-add investors.",
+    "neighborhoods": [
+      "Downtown Abilene",
+      "North Abilene",
+      "South Abilene",
+      "Clyde",
+      "Cisco",
+      "Brownwood",
+      "San Angelo",
+      "Sweetwater",
+      "Stamford",
+      "Anson",
+      "Breckenridge",
+      "Eastland"
+    ]
+  },
+  {
+    "slug": "tyler",
+    "city": "Tyler",
+    "state": "TX",
+    "metro": "Tyler",
+    "context": "Tyler is East Texas's commercial hub with a diversified economy spanning healthcare, rose growing agriculture, and a growing logistics sector anchored by several major distribution centers along the US-69 and Loop 323 corridors. The metro offers stable retail and industrial fundamentals with above-market yields.",
+    "neighborhoods": [
+      "Downtown Tyler",
+      "South Tyler",
+      "North Tyler",
+      "Longview",
+      "Marshall TX",
+      "Nacogdoches",
+      "Kilgore",
+      "Henderson",
+      "Jacksonville TX",
+      "Athens TX",
+      "Palestine TX",
+      "Corsicana"
+    ]
+  },
+  {
+    "slug": "waco",
+    "city": "Waco",
+    "state": "TX",
+    "metro": "Waco",
+    "context": "Waco has transformed into a nationally known destination following Magnolia Market's opening, driving significant tourism infrastructure investment and retail interest in the downtown and Silo District. Baylor University's enrollment growth and I-35 corridor logistics activity support multifamily and industrial demand.",
+    "neighborhoods": [
+      "Downtown Waco",
+      "Silo District",
+      "South Waco",
+      "East Waco",
+      "Woodway",
+      "Hewitt",
+      "Lorena",
+      "Hillsboro",
+      "Corsicana",
+      "Temple",
+      "Killeen",
+      "Belton"
+    ]
   }
 ]
