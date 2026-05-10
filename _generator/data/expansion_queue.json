@@ -601,28 +601,6 @@
       ]
     },
     {
-      "slug": "topeka",
-      "city": "Topeka",
-      "state": "KS",
-      "metro": "Topeka",
-      "tier1": false,
-      "context": "Topeka is Kansas's capital and a stable commercial market anchored by state government, insurance companies, and a growing manufacturing base. Net lease and retail assets benefit from consistent government worker demand, while industrial properties along the Kansas Turnpike draw logistics operators.",
-      "neighborhoods": [
-        "Downtown Topeka",
-        "East Topeka",
-        "North Topeka",
-        "West Topeka",
-        "Shawnee County",
-        "Lawrence KS",
-        "Manhattan KS",
-        "Emporia",
-        "Junction City",
-        "Leavenworth",
-        "Atchison",
-        "Ottawa KS"
-      ]
-    },
-    {
       "slug": "wichita",
       "city": "Wichita",
       "state": "KS",
@@ -642,50 +620,6 @@
         "El Dorado",
         "Newton",
         "Hutchinson"
-      ]
-    },
-    {
-      "slug": "lubbock",
-      "city": "Lubbock",
-      "state": "TX",
-      "metro": "Lubbock",
-      "tier1": false,
-      "context": "Lubbock is a West Texas university market anchored by Texas Tech University's 40,000-student enrollment and a regional healthcare system, creating stable multifamily and retail demand in a relatively low-supply environment. The metro's agricultural economy and position as a regional service center provide consistent commercial occupancy.",
-      "neighborhoods": [
-        "Downtown Lubbock",
-        "South Lubbock",
-        "North Lubbock",
-        "East Lubbock",
-        "Wolfforth",
-        "Shallowater",
-        "Slaton",
-        "Plainview",
-        "Levelland",
-        "Brownfield",
-        "Lamesa",
-        "Snyder"
-      ]
-    },
-    {
-      "slug": "midland",
-      "city": "Midland",
-      "state": "TX",
-      "metro": "Midland",
-      "tier1": false,
-      "context": "Midland is the capital of the Permian Basin, the world's most productive shale oil field, with commercial real estate fundamentals directly tied to energy sector activity that creates boom-and-bust cycles but exceptional cash flows during expansion periods. The market's limited supply and tight industrial vacancy during oil expansions generate substantial investment returns.",
-      "neighborhoods": [
-        "Downtown Midland",
-        "North Midland",
-        "South Midland",
-        "Odessa",
-        "Gardendale",
-        "Garden City TX",
-        "Andrews",
-        "Stanton",
-        "Big Spring",
-        "Pecos",
-        "Alpine",
-        "Monahans"
       ]
     },
     {
@@ -3077,9 +3011,24 @@
       "slug": "sioux-city",
       "city": "Sioux City",
       "added": "2026-05-09"
+    },
+    {
+      "slug": "topeka",
+      "city": "Topeka",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "lubbock",
+      "city": "Lubbock",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "midland",
+      "city": "Midland",
+      "added": "2026-05-10"
     }
   ],
-  "last_run": "2026-05-09T17:12:52.723470Z",
-  "total_pages_added": 504,
-  "runs_completed": 14
+  "last_run": "2026-05-10T04:15:20.915955Z",
+  "total_pages_added": 540,
+  "runs_completed": 15
 }
