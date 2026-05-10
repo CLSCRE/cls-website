@@ -3301,5 +3301,68 @@
       "Killeen",
       "Belton"
     ]
+  },
+  {
+    "slug": "beaumont",
+    "city": "Beaumont",
+    "state": "TX",
+    "metro": "Beaumont-Port Arthur",
+    "context": "Beaumont-Port Arthur is a petrochemical refining and heavy industrial market situated in Southeast Texas's Golden Triangle, with one of the highest concentrations of oil refining capacity on the Gulf Coast. Industrial and net lease properties tied to energy infrastructure offer above-average yields.",
+    "neighborhoods": [
+      "Downtown Beaumont",
+      "Port Arthur",
+      "Orange TX",
+      "Vidor",
+      "Groves",
+      "Port Neches",
+      "Nederland",
+      "Lumberton",
+      "Silsbee",
+      "Jasper TX",
+      "Livingston TX",
+      "Lake Charles LA"
+    ]
+  },
+  {
+    "slug": "corpus-christi",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "metro": "Corpus Christi",
+    "context": "Corpus Christi is a Gulf Coast port city and energy market with the nation's largest port by tonnage, significant petrochemical investment, and a Naval Air Station that anchors a large defense economy. Industrial and net lease properties benefit from port-adjacent activity and limited new supply.",
+    "neighborhoods": [
+      "Downtown Corpus Christi",
+      "South Side",
+      "North Corpus Christi",
+      "Portland TX",
+      "Aransas Pass",
+      "Rockport",
+      "Victoria TX",
+      "Kingsville",
+      "Alice",
+      "Robstown",
+      "Three Rivers",
+      "George West"
+    ]
+  },
+  {
+    "slug": "killeen",
+    "city": "Killeen",
+    "state": "TX",
+    "metro": "Killeen-Temple",
+    "context": "Killeen-Temple is a dual-anchored Central Texas market centered on Fort Hood, the world's largest military base, and a major hospital complex in Temple that drives healthcare real estate demand. The military presence creates exceptional stability for multifamily and retail commercial properties.",
+    "neighborhoods": [
+      "Downtown Killeen",
+      "Fort Hood",
+      "Temple TX",
+      "Belton",
+      "Copperas Cove",
+      "Waco",
+      "Round Rock",
+      "Georgetown TX",
+      "Taylor TX",
+      "Lampasas",
+      "Burnet",
+      "Marble Falls"
+    ]
   }
 ]
