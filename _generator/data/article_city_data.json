@@ -4574,5 +4574,389 @@
       "mixed_use": "Mixed-use investment in Baton Rouge is concentrated in Mid City and downtown where city redevelopment incentives are supporting residential and commercial projects. The LSU innovation corridor adjacent to campus is a growing area for mixed-use development targeting the university research and startup community.",
       "hospitality": "Hospitality investment in Baton Rouge benefits from ExxonMobil and petrochemical industry corporate travel, LSU athletic events driving peak demand, and state government visitor traffic. The Baton Rouge River Center convention complex anchors group demand. Select-service hotels near the airport and along the I-10 corridor are the most active investment segment."
     }
+  },
+  "rochester-ny": {
+    "city": "Rochester",
+    "state": "NY",
+    "stats": {
+      "multifamily_vacancy": "4.8%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "6.5%",
+      "industrial_cap_rate": "6.25%-7.00%",
+      "office_vacancy": "15.2%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "7.5%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "34.0%",
+      "hospitality_cap_rate": "7.50%-8.25%",
+      "mixed_use_vacancy": "5.8%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "1.3%",
+      "population_growth": "0.5%",
+      "rent_growth": "5.4%",
+      "median_asking_rent": "$1,580",
+      "major_employers": "University of Rochester, Strong Memorial Hospital, Wegmans Food Markets, Paychex, Rochester Regional Health, Carestream Health, Xerox, RIT",
+      "top_submarkets": "Downtown Rochester, East Avenue, Pittsford, Brighton, Webster, Greece, Victor, Penfield"
+    },
+    "market_report": {
+      "overview": "Rochester anchors the western New York economy as home to the University of Rochester Medical Center, one of the top academic medical systems in the country, and a dense cluster of optics, photonics, and imaging technology companies. The metro's transformation from Kodak's industrial base to a diversified innovation economy has been driven by the University of Rochester and Rochester Institute of Technology. Wegmans Food Markets, headquartered in Rochester, anchors regional retail employment. The market offers some of the most affordable commercial real estate in New York State.",
+      "multifamily": "Rochester multifamily is driven by University of Rochester and RIT student and faculty housing demand, healthcare worker housing near Strong Memorial Hospital, and affordable urban living in the East Avenue and Park Avenue neighborhoods. Suburban demand in Pittsford, Brighton, and Victor serves corporate and professional households. The market's affordability relative to other New York metros attracts value-add investors seeking higher yields with stable occupancy.",
+      "industrial": "Rochester industrial benefits from the photonics and precision optics manufacturing cluster anchored by the University of Rochester's Institute of Optics and dozens of spinout companies. The Eastman Business Park, a redevelopment of Kodak's former manufacturing campus, offers flexible industrial and lab space that attracts technology manufacturers. Last-mile logistics serving the Rochester metro and western New York region is a growing industrial category.",
+      "office_retail": "University of Rochester Medical Center and Paychex anchor Class A office demand in the metro. Rochester's tech and optics cluster drives demand for lab and flex office space near the university corridor. East Avenue and Park Avenue retail districts serve the affluent East Side neighborhood with boutique retail and dining. The Rochester Public Market district is seeing renewed mixed-use development interest.",
+      "financing": "Rochester lenders include M&T Bank, Five Star Bank, and regional credit unions with deep western New York market knowledge. New York State economic development programs and Empire State Development incentives support qualifying projects. Agency multifamily financing is widely available for stabilized assets. Technology company build-outs at Eastman Business Park attract specialized lenders familiar with industrial conversion financing.",
+      "outlook": "Rochester's innovation economy is gaining momentum as photonics, life sciences, and semiconductor-related companies expand around the university cluster. The University of Rochester's growing research funding and Strong Memorial Hospital expansion will sustain healthcare real estate demand. Eastman Business Park's continued redevelopment offers decades of industrial conversion opportunity. New York State's semiconductor supply chain investment creates adjacent demand."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Rochester are most active on multifamily value-add plays in East Avenue and Greece, Eastman Business Park industrial conversion projects, and suburban retail repositioning in Webster and Victor. Western New York lenders and national alternative lenders with New York State market knowledge are both active.",
+      "permanent": "Permanent financing in Rochester is available from M&T Bank, regional life insurance companies, and agency lenders for stabilized multifamily. Healthcare-anchored office near Strong Memorial and industrial assets at Eastman Business Park attract long-term permanent capital. Rochester's affordability metrics support strong rent-to-income ratios that comfort permanent lenders.",
+      "construction": "Construction lending in Rochester focuses on University of Rochester medical campus expansion, Eastman Business Park lab and flex build-outs, and downtown mixed-use residential projects near the Public Market. RIT-adjacent student housing construction is also active.",
+      "sba": "SBA lending is active in Rochester for optics and photonics technology companies, medical practices serving the healthcare corridor, and professional service firms purchasing owner-occupied suburban space. The university technology transfer ecosystem generates SBA volume from spinout companies.",
+      "mezzanine": "Mezzanine financing in Rochester supports larger Eastman Business Park campus redevelopment projects and downtown mixed-use developments where senior loan constraints require additional capital. Healthcare campus expansion projects with anchor tenant pre-leasing are attractive to mezzanine lenders.",
+      "specialty": "Specialty financing in Rochester includes New York State Historic Tax Credits for Eastman Business Park and downtown adaptive reuse, New Market Tax Credits for underserved neighborhood development, and PACE financing for energy efficiency improvements to industrial and commercial facilities."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Rochester offers New York State yields at significantly lower price points than New York City or Buffalo. University corridor assets near UR and RIT command student-driven rents. East Avenue and Park Avenue walkable neighborhoods attract young professionals. Suburban workforce housing in Greece and Webster serves regional employer demand with stable long-term occupancy.",
+      "industrial": "Industrial investment in Rochester is led by the photonics and precision manufacturing cluster and Eastman Business Park flex-industrial. The Business Park's phased redevelopment offers decades of value-add industrial opportunity. Last-mile logistics and cold storage serving western New York round out the industrial investment landscape.",
+      "office": "Office investment in Rochester is most defensible in healthcare-anchored suburban parks near Strong Memorial and in University of Rochester-adjacent research buildings. Paychex and technology company campuses in Penfield and Victor offer stable suburban Class A tenancy. Downtown Class B adaptive reuse for creative office is gaining interest from tech and startup tenants.",
+      "retail": "Retail investment in Rochester is strongest on East Avenue and at suburban power centers in Pittsford, Victor, and Webster where affluent household demographics support national retailers. Wegmans-anchored grocery centers across the metro offer the most stable income with long-term lease security. Downtown Rochester entertainment retail is growing around Parcel 5 redevelopment.",
+      "mixed_use": "Mixed-use investment in Rochester is concentrated downtown near the Public Market and in the East Avenue neighborhood where residential, dining, and arts uses are supported by city redevelopment programs. The University of Rochester innovation corridor is emerging as a target for mixed-use development serving the research community.",
+      "hospitality": "Hospitality investment in Rochester benefits from University of Rochester and RIT event demand, Paychex and Wegmans corporate travel, and regional leisure tourism tied to the Finger Lakes wine country. The downtown revitalization and Paetec Park event venue support group demand. Select-service hotels near the Greater Rochester International Airport and along I-90 are the most active investment segment."
+    }
+  },
+  "worcester": {
+    "city": "Worcester",
+    "state": "MA",
+    "stats": {
+      "multifamily_vacancy": "3.8%",
+      "multifamily_cap_rate": "5.00%-5.75%",
+      "industrial_vacancy": "5.2%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "13.5%",
+      "office_cap_rate": "6.75%-7.50%",
+      "retail_vacancy": "6.8%",
+      "retail_cap_rate": "6.25%-7.00%",
+      "hospitality_vacancy": "31.0%",
+      "hospitality_cap_rate": "7.00%-7.75%",
+      "mixed_use_vacancy": "4.5%",
+      "mixed_use_cap_rate": "5.50%-6.25%",
+      "job_growth": "2.0%",
+      "population_growth": "1.4%",
+      "rent_growth": "7.2%",
+      "median_asking_rent": "$2,050",
+      "major_employers": "UMass Medical School, UMass Memorial Health Care, Hanover Insurance Group, Saint-Gobain, Worcester Polytechnic Institute, Clark University, Reliant Medical Group",
+      "top_submarkets": "Downtown Worcester, Canal District, Shrewsbury Street, Auburn, Shrewsbury, Millbury, Westborough"
+    },
+    "market_report": {
+      "overview": "Worcester is New England's second-largest city and the fastest-growing major city in Massachusetts, driven by its position as a Boston relief valve for workers and renters priced out of the Greater Boston market. UMass Medical School and a growing life sciences cluster are transforming the city's economic profile. The Canal District and Polar Park baseball stadium development have anchored a downtown revitalization wave that is attracting institutional real estate capital for the first time.",
+      "multifamily": "Worcester multifamily is among the tightest markets in New England with vacancy below 4% and accelerating rent growth. The Canal District and downtown core are seeing strong demand from young professionals commuting to Boston via the MBTA Commuter Rail. University corridors near WPI, Clark, and Holy Cross anchor student and faculty housing demand. The market's relative affordability versus Boston is the primary demand driver attracting population and investor interest.",
+      "industrial": "Worcester industrial benefits from its central New England location at the I-290 and I-395 interchange, positioning the metro as a distribution hub for interior New England. Life sciences and biotech manufacturing is a growing industrial category driven by UMass Medical School spinouts. The former manufacturing corridor along Route 9 is seeing flex industrial and lab conversion interest from life sciences tenants.",
+      "office_retail": "UMass Medical School and UMass Memorial anchor healthcare office demand while Hanover Insurance and financial services firms drive suburban Class A demand in Westborough. Shrewsbury Street restaurant row is Worcester's most successful retail corridor with consistently strong food and beverage performance. Canal District mixed-use retail benefiting from Polar Park event programming is the emerging destination retail story.",
+      "financing": "Worcester lenders include Hanover Insurance's investment activity, Webster Bank, and Massachusetts-focused community banks with deep Central Massachusetts market knowledge. Massachusetts Economic Development financing programs support qualifying life sciences and innovation projects. Agency multifamily financing is competitive given the tight vacancy and strong rent growth fundamentals.",
+      "outlook": "Worcester is at an inflection point driven by Boston overflow demand, the Canal District revitalization, and the growing life sciences cluster around UMass Medical. MBTA Commuter Rail access to Boston positions downtown Worcester as a compelling live-work destination for remote and hybrid workers. Life sciences industrial demand will grow as UMass Medical School research commercialization accelerates. Investor interest from Boston-based institutions is increasing."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Worcester are most active on downtown multifamily value-add plays near Polar Park, life sciences lab conversion projects along the Route 9 industrial corridor, and Canal District mixed-use acquisitions. Boston-area bridge lenders increasingly active in Central Massachusetts are competing with local lenders for quality deals.",
+      "permanent": "Permanent financing in Worcester is competitive from Webster Bank, Rockland Trust, and life insurance companies attracted by the strong multifamily fundamentals. Canal District and university-adjacent multifamily command the tightest spreads. Life sciences industrial assets with UMass Medical School tenant relationships attract long-term permanent capital.",
+      "construction": "Construction lending in Worcester focuses on downtown residential towers near Polar Park, UMass Medical School life sciences facility expansion, and Canal District mixed-use. The MBTA Commuter Rail access corridor is the most active construction submarket driven by transit-oriented development demand.",
+      "sba": "SBA lending is active in Worcester for life sciences startups, medical practices, and professional service firms. The UMass Medical School technology transfer ecosystem and the life sciences cluster generate consistent SBA volume. Restaurant and retail concepts along Shrewsbury Street are also active SBA borrowers.",
+      "mezzanine": "Mezzanine financing in Worcester supports larger Canal District mixed-use developments and life sciences campus projects where senior loan constraints require additional capital. The strong rent growth trajectory makes Worcester multifamily attractive to mezzanine lenders seeking current income plus appreciation.",
+      "specialty": "Specialty financing in Worcester includes Massachusetts Historic Tax Credits for downtown mill and industrial building adaptive reuse, MassDevelopment financing for qualifying projects, and PACE financing for commercial energy efficiency improvements."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Worcester offers near-Boston fundamentals at Central Massachusetts pricing. Downtown and Canal District assets command premium rents from Boston commuters. University corridors near WPI and Clark provide stable student and faculty demand. Suburban workforce housing in Auburn and Millbury serves regional employer demand with strong rent growth driven by Boston overflow.",
+      "industrial": "Industrial investment in Worcester targets life sciences and biotech manufacturing near UMass Medical School, last-mile logistics for interior New England, and flex industrial along the I-290 corridor. The Route 9 industrial corridor is seeing increasing life sciences conversion activity. Central New England location makes Worcester a natural hub for regional distribution.",
+      "office": "Office investment in Worcester is most defensible in UMass Medical School adjacent life sciences buildings and in Westborough Class A suburban parks with Hanover Insurance and technology company tenants. Downtown Worcester boutique office in historic mill buildings is attracting creative and tech tenants. Boston commuter access supports hybrid worker office demand.",
+      "retail": "Retail investment in Worcester is strongest along Shrewsbury Street restaurant row and in the Canal District where Polar Park event traffic supports food and beverage. Suburban power centers in Auburn and Millbury serve strong trade area demographics. Grocery-anchored centers across the metro offer stable income driven by consistent residential demand.",
+      "mixed_use": "Mixed-use investment in Worcester is concentrated in the Canal District where Polar Park, residential, and retail are supported by city and state redevelopment investment. The downtown core along Main Street is seeing adaptive reuse of historic buildings for residential and creative office mixed-use.",
+      "hospitality": "Hospitality investment in Worcester benefits from UMass Medical School and WPI event demand, Hanover Insurance and regional corporate travel, and growing leisure tourism tied to Canal District entertainment. The DCU Center convention and arena complex anchors group demand. Select-service hotels near I-290 and the MBTA Commuter Rail station are the most active investment segment."
+    }
+  },
+  "albany-ny": {
+    "city": "Albany",
+    "state": "NY",
+    "stats": {
+      "multifamily_vacancy": "4.5%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "6.0%",
+      "industrial_cap_rate": "6.25%-7.00%",
+      "office_vacancy": "15.8%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "7.2%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "33.0%",
+      "hospitality_cap_rate": "7.25%-8.00%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "1.5%",
+      "population_growth": "0.8%",
+      "rent_growth": "5.8%",
+      "median_asking_rent": "$1,680",
+      "major_employers": "New York State government, GlobalFoundries, University at Albany, Albany Medical Center, Capital Region BOCES, MVP Health Care, Regeneron Pharmaceuticals (nearby)",
+      "top_submarkets": "Downtown Albany, Colonie, Guilderland, Clifton Park, Troy, Latham, Saratoga Springs"
+    },
+    "market_report": {
+      "overview": "Albany anchors the Capital Region as New York's state capital and a growing technology and life sciences hub. New York State government is the single largest employer, providing recession-resistant office and professional services demand. GlobalFoundries' semiconductor fab in Malta and the broader Tech Valley initiative have attracted semiconductor supply chain investment. Albany Medical Center and the University at Albany's research programs add healthcare and innovation employment to the economy.",
+      "multifamily": "Albany multifamily benefits from dual demand drivers: state government employee housing in the downtown core and Colonie, and university student housing near the University at Albany. Clifton Park and Guilderland serve suburban professionals in the technology corridor. Saratoga Springs provides a premium suburban submarket with seasonal hospitality demand. The market's stability through economic cycles, anchored by government employment, makes Albany multifamily attractive to conservative investors.",
+      "industrial": "Albany industrial is being reshaped by the semiconductor supply chain cluster growing around GlobalFoundries' Malta fab and the SUNY Polytechnic Institute nanotechnology campus in Albany. Clean room and precision manufacturing space is in growing demand. Traditional distribution and logistics along the I-87 and I-90 interchange serves the broader Capital Region and upstate New York market.",
+      "office_retail": "New York State government anchors Class A office demand in the downtown empire state plaza complex and surrounding corridors. Healthcare administration at Albany Medical Center and technology company offices in the Tech Valley corridor drive suburban Class B demand. Wolf Road in Colonie is the primary retail corridor with strong national tenant performance driven by Capital Region traffic patterns.",
+      "financing": "Albany lenders include KeyBank, Trustco Bancorp, and Capital Region community banks with deep New York State government-adjacent market knowledge. New York State economic development financing and Empire State Development programs support qualifying technology and life sciences projects. Agency multifamily financing is available for stabilized assets across the metro.",
+      "outlook": "Albany's long-term outlook is anchored by New York State government stability and enhanced by semiconductor and life sciences investment in the Tech Valley corridor. GlobalFoundries' ongoing fab investment and SUNY Poly's nanotechnology program will continue attracting semiconductor supply chain tenants. Saratoga Springs and Clifton Park suburban growth supports sustained multifamily demand. The CHIPS Act is driving additional semiconductor investment to upstate New York."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Albany are most active on multifamily value-add plays in downtown Albany and Colonie, semiconductor supply chain industrial repositioning near Malta, and suburban retail redevelopment along Wolf Road. New York-focused bridge lenders and national alternative lenders with government-market experience are both active.",
+      "permanent": "Permanent financing in Albany is available from KeyBank, Trustco, and national life insurance companies for stabilized multifamily and industrial assets. Government-adjacent office buildings with state agency tenants attract very favorable permanent loan terms given the credit quality of government leases. Semiconductor industrial assets with GlobalFoundries supply chain tenants are increasingly attractive to permanent lenders.",
+      "construction": "Construction lending in Albany focuses on semiconductor supply chain facility build-outs near Malta and the SUNY Poly campus, downtown mixed-use residential, and Clifton Park suburban multifamily. New York State economic development incentives often complement construction financing structures for qualifying technology projects.",
+      "sba": "SBA lending is active in Albany for professional service firms serving state government, healthcare practices near Albany Medical Center, and technology spinout companies from the SUNY Poly nanotechnology program. The government contractor ecosystem generates consistent SBA volume from small business owners.",
+      "mezzanine": "Mezzanine financing in Albany supports larger Tech Valley semiconductor and life sciences campus development projects and downtown mixed-use developments. State government agency pre-leasing provides credit comfort that can attract mezzanine capital on favorable terms.",
+      "specialty": "Specialty financing in Albany includes New York State Historic Tax Credits for downtown adaptive reuse, New Market Tax Credits for qualifying projects in underserved Albany neighborhoods, and PACE financing for industrial energy efficiency improvements at semiconductor and technology facilities."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Albany offers government-anchored stability with growing technology sector upside. Downtown Albany assets serve state government employees while Clifton Park and Guilderland serve suburban technology professionals. University at Albany corridor assets provide student housing demand. Sarasota Springs premium suburban assets command the highest rents in the Capital Region.",
+      "industrial": "Industrial investment in Albany is being driven by the semiconductor supply chain cluster around GlobalFoundries and SUNY Poly. Clean room and precision manufacturing facility demand is growing. Traditional distribution along I-87 and I-90 serves the upstate New York market. The emerging semiconductor supply chain is the highest-growth industrial investment category in the Capital Region.",
+      "office": "Office investment in Albany is uniquely anchored by New York State government tenancy, making government-adjacent downtown Class A buildings among the most credit-stable office investments in the Northeast. Technology company offices in the Tech Valley corridor and healthcare administration near Albany Medical round out the office investment landscape.",
+      "retail": "Retail investment in Albany is strongest along Wolf Road in Colonie and at Crossgates Mall in Guilderland where Capital Region trade area demographics support strong national retailer performance. Grocery-anchored neighborhood centers across the metro serve stable government employee and suburban professional demand.",
+      "mixed_use": "Mixed-use investment in Albany is concentrated in downtown near the Empire State Plaza where residential and food and beverage uses complement state government office activity. The Troy waterfront across the Hudson River is the most active mixed-use development corridor in the Capital Region.",
+      "hospitality": "Hospitality investment in Albany benefits from New York State government meeting and hearing demand, University at Albany events, and Saratoga Springs racing season driving peak regional hotel demand. The Albany Convention Center anchors group business. Saratoga Springs luxury and boutique hospitality commands premium ADR during the August racing season."
+    }
+  },
+  "bakersfield": {
+    "city": "Bakersfield",
+    "state": "CA",
+    "stats": {
+      "multifamily_vacancy": "5.2%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "6.8%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "16.2%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "8.5%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "35.0%",
+      "hospitality_cap_rate": "7.50%-8.25%",
+      "mixed_use_vacancy": "6.5%",
+      "mixed_use_cap_rate": "6.25%-7.00%",
+      "job_growth": "1.6%",
+      "population_growth": "1.0%",
+      "rent_growth": "4.8%",
+      "median_asking_rent": "$1,480",
+      "major_employers": "Aera Energy, Chevron, Kern Medical Center, Wonderful Company, Adventist Health, CalPortland, Castle and Cooke California, California State University Bakersfield",
+      "top_submarkets": "Downtown Bakersfield, Northwest Bakersfield, Rosedale, Oildale, East Bakersfield, Delano, Shafter logistics corridor"
+    },
+    "market_report": {
+      "overview": "Bakersfield is the economic capital of Kern County and the center of California's oil and gas production industry. Chevron, Aera Energy, and dozens of independent operators make Kern County the most productive oil-producing county in California. The Wonderful Company's agricultural operations and Bolthouse Farms anchor a massive food processing industry. The Shafter logistics corridor is emerging as a major inland California distribution hub driven by proximity to Highway 99 and Interstate 5.",
+      "multifamily": "Bakersfield multifamily demand is driven by oil and gas industry workforce housing, agricultural processing workers, and California State University Bakersfield student housing. Northwest Bakersfield and Rosedale command the highest rents from petroleum industry professionals and suburban families. The metro's affordability relative to coastal California attracts Bay Area and Los Angeles investors seeking higher cap rates with stable occupancy.",
+      "industrial": "Bakersfield industrial is anchored by oil field service facilities, agricultural processing and cold storage, and the growing Shafter logistics corridor. The Shafter rail-served industrial park is attracting e-commerce and logistics tenants. CalPortland's operations and the construction materials supply chain serving Central Valley residential growth add industrial demand. The energy transition is creating new demand for battery mineral processing and renewable energy maintenance facilities.",
+      "office_retail": "Oil and gas company administrative offices anchor Class B office demand in downtown Bakersfield and the Ming Avenue corridor. Kern Medical Center and Adventist Health drive healthcare office demand. Retail vacancy is elevated but Northwest Bakersfield power centers near Rosedale Highway serve strong household income demographics. The Valley Plaza and Rio Bravo anchored retail corridors provide stable grocery and service retail income.",
+      "financing": "Bakersfield lenders include Mechanics Bank, Rabobank (agricultural focus), and California-based regional institutions with Central Valley market knowledge. Energy sector lenders occasionally cross-finance adjacent commercial real estate. SBA volume is significant given the large agricultural supply chain small business population. Agency multifamily financing is available for stabilized assets.",
+      "outlook": "Bakersfield's energy and agricultural economic base provides structural stability through broader economic cycles. The Shafter logistics corridor is the highest-growth commercial real estate story in the metro, positioning Kern County as an inland California logistics node. Energy transition investment in battery minerals and renewable energy maintenance will create new industrial demand categories. Affordability relative to coastal California will sustain population inflows and multifamily demand."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Bakersfield are most active on multifamily value-add plays in Northwest Bakersfield, Shafter logistics facility lease-up, and agricultural processing industrial repositioning. California-focused bridge lenders and national alternative lenders active in inland California are both present in the market.",
+      "permanent": "Permanent financing in Bakersfield is available from Mechanics Bank, regional community banks, and national lenders for stabilized multifamily and industrial assets. Shafter logistics facilities with e-commerce tenants attract favorable permanent loan terms. Agricultural processing and cold storage assets with long-term food company tenants also attract long-term permanent capital.",
+      "construction": "Construction lending in Bakersfield focuses on Shafter logistics park development, agricultural cold storage and processing facility construction, and Northwest Bakersfield suburban multifamily. The energy sector creates episodic construction demand for oil field service facility expansions.",
+      "sba": "SBA lending is deeply active in Bakersfield given the large owner-user market among oil field service companies, agricultural equipment dealers, food processing businesses, and professional service firms. Kern County's small business ecosystem generates consistent SBA volume.",
+      "mezzanine": "Mezzanine financing in Bakersfield supports larger Shafter logistics campus developments and agricultural processing facility expansions where senior loan constraints require additional capital. Energy company build-to-suit projects with credit tenants can attract mezzanine capital on favorable terms.",
+      "specialty": "Specialty financing in Bakersfield includes USDA Business and Industry loans for agricultural supply chain businesses, California Energy Commission financing for industrial energy efficiency, and New Market Tax Credits for downtown Bakersfield revitalization and Opportunity Zone development."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Bakersfield offers California yields at inland pricing with stable demand from oil and gas, agriculture, and CSUB student populations. Northwest Bakersfield and Rosedale command Class A rents from petroleum industry professionals. East Bakersfield and Oildale offer higher-yield workforce housing serving oil field workers. The affordability gap versus coastal California sustains consistent population demand.",
+      "industrial": "Industrial investment in Bakersfield is led by the Shafter logistics corridor, agricultural cold storage and processing, and oil field service facilities. The Shafter rail-served park is attracting institutional e-commerce and logistics tenants. Agricultural processing facilities with long-term food company leases provide stable high-yield income. Energy transition is creating new battery mineral and renewable maintenance facility demand.",
+      "office": "Office investment in Bakersfield is most defensible with oil and gas administrative tenants and healthcare anchor tenants near Kern Medical and Adventist Health campuses. CSUB-adjacent office serves university administration and research functions. Downtown Bakersfield Class B office is slowly recovering with government and professional service tenants.",
+      "retail": "Retail investment in Bakersfield is strongest in Northwest Bakersfield power centers near Rosedale Highway where household incomes from petroleum industry professionals support national retailers. Grocery-anchored neighborhood centers across the metro offer stable income driven by consistent residential demand. The Valley Plaza mall corridor serves the broader Kern County trade area.",
+      "mixed_use": "Mixed-use investment in Bakersfield is concentrated in downtown where city revitalization incentives support mixed residential and commercial development near Mechanics Bank Arena and the Rabobank Arena entertainment district. Northwest Bakersfield lifestyle center development is emerging near higher-income residential.",
+      "hospitality": "Hospitality investment in Bakersfield serves oil and gas industry corporate travel, agricultural company visitors, and Kern County government travel. The convention center and Mechanics Bank Arena anchor group demand. Highway 99 corridor select-service hotels serve the I-5 to Highway 99 traveler market and regional business travelers."
+    }
+  },
+  "dayton": {
+    "city": "Dayton",
+    "state": "OH",
+    "stats": {
+      "multifamily_vacancy": "5.0%",
+      "multifamily_cap_rate": "6.00%-6.75%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "16.0%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "7.8%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "32.0%",
+      "hospitality_cap_rate": "7.25%-8.00%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "6.25%-7.00%",
+      "job_growth": "1.4%",
+      "population_growth": "0.5%",
+      "rent_growth": "5.0%",
+      "median_asking_rent": "$1,350",
+      "major_employers": "Wright-Patterson Air Force Base, Premier Health, CareSource, Kettering Health Network, Reynolds and Reynolds, Standard Register, University of Dayton",
+      "top_submarkets": "Downtown Dayton, Beavercreek, Miamisburg, Centerville, Springboro, Fairborn, Kettering"
+    },
+    "market_report": {
+      "overview": "Dayton's commercial real estate market is uniquely defined by Wright-Patterson Air Force Base, the largest single-site employer in Ohio with over 30,000 military and civilian employees. The base drives enormous defense contractor, aerospace, and technology company demand for commercial space in the surrounding Beavercreek and Fairborn submarkets. The University of Dayton's research programs and the National Air and Space Intelligence Center add to the defense and aerospace cluster. Dayton's affordability is among the most compelling in the Midwest.",
+      "multifamily": "Dayton multifamily benefits from Wright-Patterson civilian and contractor workforce housing demand centered in Beavercreek, Fairborn, and Kettering. The University of Dayton corridor anchors student housing demand. Centerville and Springboro serve suburban professional and family demand. The metro's exceptional affordability relative to Columbus and Cincinnati attracts value-add investors seeking Ohio-market yields with strong employment anchoring.",
+      "industrial": "Dayton industrial is anchored by Wright-Patterson's massive logistics and maintenance operations and the defense contractor supply chain that surrounds the base. Advanced manufacturing, aerospace components, and defense systems manufacturing are the dominant industrial categories. The I-75 corridor south of Dayton serves automotive and general logistics demand with Miamisburg as the primary logistics submarket.",
+      "office_retail": "Wright-Patterson and its defense contractor ecosystem drive sustained demand for Class A and Class B office in Beavercreek and the I-675 corridor. CareSource and Premier Health anchor healthcare office demand. Centerville and Beavercreek retail corridors serve the highest household income demographics in the metro. The Oregon District entertainment district in downtown Dayton is the premier dining and retail destination.",
+      "financing": "Dayton lenders include Fifth Third Bank, KeyBank, and Ohio-based community banks with deep Miami Valley market knowledge. Defense contractor relationships create financing opportunities for specialized commercial real estate. Ohio Department of Development and JobsOhio programs support qualifying industrial and technology projects. Agency multifamily financing is widely available.",
+      "outlook": "Dayton's defense and aerospace anchor is the most recession-resistant employment base in Ohio. Wright-Patterson's role as the Air Force's primary logistics, research, and intelligence hub ensures continued federal investment. The University of Dayton's growing research partnership with Wright-Patterson is creating civilian technology commercialization opportunities. Affordable housing and industrial land attract distribution and logistics investment from I-75 corridor national operators."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Dayton are most active on Beavercreek and Fairborn multifamily acquisitions near Wright-Patterson, defense contractor office repositioning along I-675, and Miamisburg logistics facility lease-up plays. Ohio-focused bridge lenders and national alternative lenders with defense market experience are active.",
+      "permanent": "Permanent financing in Dayton is available from Fifth Third, KeyBank, and regional life insurance companies for stabilized multifamily and industrial assets. Wright-Patterson adjacent assets with defense contractor tenants attract very favorable permanent loan terms given government-linked lease demand. Ohio's commercial real estate fundamentals support strong permanent lending activity.",
+      "construction": "Construction lending in Dayton focuses on Beavercreek defense contractor facility build-outs, downtown Dayton mixed-use residential near the Oregon District, and Springboro and Centerville suburban multifamily. University of Dayton research and innovation facility construction is growing.",
+      "sba": "SBA lending is active in Dayton for defense technology companies, healthcare practices, and professional service firms purchasing owner-occupied space in Beavercreek and the I-675 corridor. The defense contractor small business ecosystem generates consistent SBA volume.",
+      "mezzanine": "Mezzanine financing in Dayton supports larger defense contractor campus developments near Wright-Patterson and downtown mixed-use projects in the Oregon District area where senior loan constraints require additional capital.",
+      "specialty": "Specialty financing in Dayton includes Ohio Historic Preservation Tax Credits for downtown adaptive reuse in the Warehouse District and Oregon District, New Market Tax Credits for qualifying west Dayton projects, and JobsOhio innovation financing for defense technology companies."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Dayton offers Ohio's best defense-anchored stability with Wright-Patterson civilian workforce demand in Beavercreek and Fairborn. University of Dayton corridor assets serve stable student demand. Centerville and Springboro suburban assets serve the highest-income demographics in the metro. The affordability versus Columbus and Cincinnati creates strong value-add opportunity.",
+      "industrial": "Industrial investment in Dayton is led by defense contractor supply chain, aerospace manufacturing, and I-75 corridor logistics. Beavercreek and Fairborn industrial parks serve Wright-Patterson supply chain tenants with stable long-term demand. Miamisburg is the primary logistics and distribution submarket for general industrial and e-commerce tenants.",
+      "office": "Office investment in Dayton is most defensible in Beavercreek and the I-675 corridor where defense contractor and government agency tenants provide credit stability. CareSource and Premier Health anchor healthcare office demand in suburban parks. Downtown Dayton Class B office is seeing adaptive reuse interest for creative and tech uses near the Oregon District.",
+      "retail": "Retail investment in Dayton is strongest in Centerville and Beavercreek where high household income demographics from Wright-Patterson professionals and defense contractors support national retailers. The Greene Town Center in Beavercreek is the premier retail destination. Grocery-anchored centers across the metro serve stable residential demand.",
+      "mixed_use": "Mixed-use investment in Dayton is concentrated in the Oregon District and downtown core where entertainment, dining, and residential uses are supported by city and state incentive programs. The University of Dayton innovation district is emerging as a mixed-use target for research and startup-adjacent development.",
+      "hospitality": "Hospitality investment in Dayton benefits from Wright-Patterson contractor and government visitor demand, University of Dayton athletic and event programming, and the Dayton Convention Center group business. Select-service hotels near Wright-Patterson and along I-75 are the most active investment segment. The Oregon District boutique hotel market is emerging as a lifestyle lodging option."
+    }
+  },
+  "fort-myers": {
+    "city": "Fort Myers",
+    "state": "FL",
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "multifamily_cap_rate": "5.00%-5.75%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_vacancy": "13.2%",
+      "office_cap_rate": "6.50%-7.25%",
+      "retail_vacancy": "5.8%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "hospitality_vacancy": "29.0%",
+      "hospitality_cap_rate": "6.25%-7.00%",
+      "mixed_use_vacancy": "5.2%",
+      "mixed_use_cap_rate": "5.50%-6.25%",
+      "job_growth": "3.2%",
+      "population_growth": "3.5%",
+      "rent_growth": "6.8%",
+      "median_asking_rent": "$2,180",
+      "major_employers": "Lee Health, Hertz Global Holdings, Chico's FAS, FineMark National Bank, Lee County government, Arthrex, Gartner",
+      "top_submarkets": "Downtown Fort Myers, Cape Coral, Estero, Bonita Springs, Lehigh Acres, Gateway, San Carlos Park"
+    },
+    "market_report": {
+      "overview": "Fort Myers anchors one of Florida's fastest-growing metros, the Lee County Southwest Florida market that includes Cape Coral and Bonita Springs. The region is experiencing explosive population growth from retirees, remote workers, and corporate relocations attracted by Florida's tax advantages and coastal lifestyle. Arthrex's orthopedic device manufacturing campus and Hertz's global headquarters anchor corporate employment. Hurricane Ian's 2022 impact created a construction and recovery boom that has significantly tightened the industrial market.",
+      "multifamily": "Fort Myers multifamily is experiencing some of the strongest population-driven demand in Florida. Cape Coral, the largest city by land area in Florida, is absorbing enormous new household formation. Estero and Bonita Springs command premium rents from retirees and remote workers. Hurricane Ian recovery is adding complexity to the multifamily market as displaced residents seek rentals. New supply is elevated but population growth continues to absorb deliveries.",
+      "industrial": "Fort Myers industrial is the tightest market in Southwest Florida with vacancy below 5% driven by Hurricane Ian reconstruction materials demand, Arthrex supply chain growth, and last-mile logistics serving the exploding population base. Land scarcity for new industrial development in Lee County constrains supply growth, creating a durable landlord advantage. Construction materials, contractor staging yards, and cold storage are the dominant industrial categories.",
+      "office_retail": "Lee Health's expansion and Arthrex's growing operations anchor healthcare and medical device office demand. Hertz's headquarters drives corporate office activity. Retail vacancy is tightening as population growth brings national retailers to previously underserved trade areas in Cape Coral, Lehigh Acres, and Gateway. The Bell Tower Shops and Miromar Outlets serve the region's affluent retiree demographics.",
+      "financing": "Fort Myers lenders include FineMark National Bank, Fifth Third, and national institutions attracted by the market's strong growth fundamentals. Hurricane Ian recovery financing created a wave of bridge and construction lending activity. Florida-focused lenders are competitive across all property types given the market's strong performance metrics. Agency multifamily financing is widely available.",
+      "outlook": "Fort Myers is one of Florida's most compelling long-term commercial real estate markets driven by structural population growth, Florida's tax advantages, and the post-hurricane recovery investment wave. Arthrex's continued campus expansion and corporate relocation activity will sustain office and industrial demand. Cape Coral's buildout from one of the largest canal systems in the world will drive decades of retail and service commercial development."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Fort Myers are most active on Cape Coral and Estero multifamily acquisitions, industrial lease-up plays near the airport Gateway corridor, and retail redevelopment in recovering Hurricane Ian affected areas. Florida-focused bridge lenders and national alternative lenders with disaster recovery experience are both active.",
+      "permanent": "Permanent financing in Fort Myers is competitive with multiple Florida-focused life insurance companies and national banks active in the market. Cape Coral multifamily and industrial assets near Arthrex's campus command favorable permanent loan terms. The strong population growth trajectory provides comfort to permanent lenders on future rent coverage.",
+      "construction": "Construction lending in Fort Myers is heavily active across all property types driven by Hurricane Ian recovery, Arthrex campus expansion, and population-driven residential and retail development. Industrial construction near the Southwest Florida International Airport corridor is particularly active.",
+      "sba": "SBA lending is active in Fort Myers for medical device and healthcare practices serving the growing retiree population, contractor and construction businesses, and professional service firms. Hurricane Ian recovery created significant SBA lending for damaged businesses rebuilding or relocating.",
+      "mezzanine": "Mezzanine financing in Fort Myers supports larger mixed-use and hospitality developments in Estero and Bonita Springs where senior loan constraints require additional capital. Cape Coral large-format retail and residential projects with strong pre-sales or lease commitments can attract mezzanine capital.",
+      "specialty": "Specialty financing in Fort Myers includes SBA disaster recovery loans for Hurricane Ian affected businesses, Florida PACE financing for commercial energy and wind resilience improvements, and private equity structures for marina and waterfront hospitality development."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Fort Myers offers Florida growth market fundamentals with some of the strongest population growth in the state. Cape Coral new construction absorbs rapidly from the enormous new household formation. Estero and Bonita Springs command premium rents from retirees and remote workers. Lehigh Acres workforce housing offers higher yields with stable demand from construction and healthcare workers.",
+      "industrial": "Industrial investment in Fort Myers is among Southwest Florida's most compelling due to supply constraints and demand driven by Hurricane Ian recovery, Arthrex supply chain, and population-driven last-mile logistics. The Gateway airport corridor is the primary institutional industrial submarket. Land scarcity creates a durable competitive moat for existing industrial owners.",
+      "office": "Office investment in Fort Myers is most defensible in Arthrex and Lee Health adjacent medical office and in FineMark and Gartner corporate campus buildings. Cape Coral professional office is growing rapidly as the city's population supports local professional services. The Gateway airport area Class A office park serves the metro's corporate tenant base.",
+      "retail": "Retail investment in Fort Myers is strongest in Estero and Bonita Springs where retiree and affluent household demographics support national retailers and specialty concepts. The Miromar Outlets and Bell Tower Shops serve the regional trade area. Cape Coral neighborhood retail is growing rapidly as one of Florida's largest cities continues its buildout. Grocery-anchored centers across the metro offer strong income stability.",
+      "mixed_use": "Mixed-use investment in Fort Myers is concentrated in downtown along the Caloosahatchee River waterfront where residential, restaurant, and entertainment uses benefit from the River District revitalization. Estero mixed-use lifestyle developments serve the affluent retiree and snowbird demographic.",
+      "hospitality": "Hospitality investment in Fort Myers benefits from beach destination tourism at Fort Myers Beach and Sanibel, Arthrex and corporate meeting demand, and the snowbird seasonal visitor market. Hurricane Ian's impact on Sanibel and Fort Myers Beach created significant rebuilt and new hotel demand. The Edison and Ford Winter Estates and spring training baseball attract leisure travelers throughout the year."
+    }
+  },
+  "wichita": {
+    "city": "Wichita",
+    "state": "KS",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "multifamily_cap_rate": "6.25%-7.00%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "16.5%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "8.0%",
+      "retail_cap_rate": "7.00%-7.75%",
+      "hospitality_vacancy": "34.0%",
+      "hospitality_cap_rate": "7.50%-8.25%",
+      "mixed_use_vacancy": "6.0%",
+      "mixed_use_cap_rate": "6.50%-7.25%",
+      "job_growth": "1.3%",
+      "population_growth": "0.6%",
+      "rent_growth": "4.5%",
+      "median_asking_rent": "$1,280",
+      "major_employers": "Spirit AeroSystems, Textron Aviation (Cessna and Beechcraft), Boeing, Koch Industries, Via Christi Health, Wesley Healthcare, Wichita State University",
+      "top_submarkets": "Downtown Wichita, East Wichita, Derby, Andover, Maize, Haysville, Goddard"
+    },
+    "market_report": {
+      "overview": "Wichita is the undisputed Air Capital of the World, with Spirit AeroSystems, Textron Aviation (Cessna and Beechcraft), and Boeing collectively making Wichita the most concentrated general aviation and commercial aerospace manufacturing hub in the United States. Koch Industries' global headquarters adds Fortune 500 corporate employment. Wichita State University's National Institute for Aviation Research provides an aerospace innovation pipeline. The metro's aerospace concentration makes it uniquely resilient to broader economic cycles as long as aircraft production remains healthy.",
+      "multifamily": "Wichita multifamily is driven by aerospace industry workforce housing, Wichita State University student and faculty demand, and healthcare worker housing. East Wichita and Andover command the highest rents from aerospace engineers and corporate professionals. Maize and Derby serve suburban family demand. The metro's affordability and stable employment base attract investors from larger markets seeking predictable cash flow.",
+      "industrial": "Wichita industrial is defined by the aerospace manufacturing complex. Spirit AeroSystems' enormous manufacturing campus and Boeing's Wichita operations anchor demand for specialized aerospace manufacturing and maintenance facilities. The McConnell Air Force Base at the south edge of the city adds military logistics demand. General aviation infrastructure, including dozens of private airports and FBOs, creates unique industrial real estate categories.",
+      "office_retail": "Koch Industries and aerospace company administrative offices anchor Class A office demand in the East Wichita corridor. Via Christi Health and Wesley Healthcare drive healthcare office demand. The Bradley Fair retail corridor in east Wichita is the premier shopping destination serving the highest household income demographics in the metro. Downtown Wichita retail is anchored by the Old Town entertainment district.",
+      "financing": "Wichita lenders include Intrust Bank, Capitol Federal Savings, and regional community banks with deep Kansas market knowledge. Koch Industries' financial relationships create unique access to private capital. Aerospace industry lenders with aircraft as collateral occasionally cross-finance adjacent commercial real estate. SBA volume from aerospace supply chain businesses is significant.",
+      "outlook": "Wichita's aerospace concentration positions the metro for sustained industrial and professional employment growth as commercial aviation continues its post-pandemic recovery and defense spending remains elevated. Spirit AeroSystems' production ramp for Boeing and Airbus programs will drive industrial demand. Koch Industries' global headquarters investments support Class A office and corporate campus development. The market's affordability and defense anchor provide downturn resilience."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Wichita are most active on east Wichita multifamily value-add plays, aerospace supply chain industrial repositioning, and Old Town entertainment district mixed-use acquisitions. Kansas-focused bridge lenders and national alternative lenders with aerospace market experience are active.",
+      "permanent": "Permanent financing in Wichita is available from Intrust Bank, Capitol Federal, and regional lenders for stabilized multifamily and industrial assets. Aerospace manufacturing facilities with Spirit AeroSystems or Textron supply chain tenants attract favorable permanent loan terms. Wichita's stable employment fundamentals support strong rent-to-income ratios that comfort permanent lenders.",
+      "construction": "Construction lending in Wichita focuses on aerospace supply chain facility build-outs, east Wichita suburban multifamily in Andover and Maize, and downtown Old Town mixed-use development. McConnell Air Force Base adjacent logistics facility construction is also active.",
+      "sba": "SBA lending is active in Wichita for aerospace component manufacturers, aviation maintenance and FBO businesses, and professional service firms purchasing owner-occupied space. The aerospace supply chain small business ecosystem generates some of the highest SBA volume per capita in the Midwest.",
+      "mezzanine": "Mezzanine financing in Wichita supports larger aerospace campus development projects and downtown mixed-use where senior loan constraints require additional capital. Koch Industries supply chain facility projects with credit tenants can attract mezzanine capital on favorable terms.",
+      "specialty": "Specialty financing in Wichita includes Kansas Historic Preservation Tax Credits for downtown adaptive reuse in Old Town and the Delano district, New Market Tax Credits for underserved west Wichita development, and PACE financing for industrial energy efficiency improvements at aerospace manufacturing facilities."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Wichita offers Midwest yields with aerospace-anchored employment stability. East Wichita and Andover command Class A rents from aerospace engineers and Koch Industries professionals. Wichita State University corridor assets serve stable student demand. Derby and Maize suburban workforce housing offers the highest current yields. The metro's affordability makes it attractive to investors seeking predictable cash flow.",
+      "industrial": "Industrial investment in Wichita is anchored by the aerospace manufacturing complex. Spirit AeroSystems supply chain facilities and aviation maintenance hangars are the most specialized industrial asset class. General I-35 corridor logistics serves the regional Kansas market. McConnell Air Force Base adjacent logistics is a growing category. Aerospace manufacturing expansion drives consistent new industrial construction demand.",
+      "office": "Office investment in Wichita is most defensible in east Wichita suburban parks with Koch Industries supply chain and aerospace administrative tenants. Via Christi and Wesley Healthcare anchor medical office demand. Downtown Wichita Class A is recovering with professional services tenants. Old Town creative office is growing from the tech and startup ecosystem.",
+      "retail": "Retail investment in Wichita is strongest along Bradley Fair corridor in east Wichita where household incomes from aerospace professionals support luxury and national retailers. Greenwich Place and NewMarket Square serve the growing east Wichita trade area. Old Town entertainment retail serves the broader metro dining and nightlife market. Grocery-anchored centers across the metro offer stable income.",
+      "mixed_use": "Mixed-use investment in Wichita is concentrated in Old Town and the downtown Douglas Avenue corridor where entertainment, dining, and residential uses are supported by city revitalization investment. The Delano neighborhood west of downtown is an emerging mixed-use target as arts and entertainment venues cluster.",
+      "hospitality": "Hospitality investment in Wichita serves Spirit AeroSystems and aerospace industry corporate travel, Koch Industries business visits, and Cessna and Beechcraft delivery and training demand from pilots. The Hyatt Regency downtown and select-service hotels near the airport and I-35 corridor are the most active investment segments. The Air Capital is a unique niche destination for aviation enthusiasts."
+    }
+  },
+  "chattanooga": {
+    "city": "Chattanooga",
+    "state": "TN",
+    "stats": {
+      "multifamily_vacancy": "5.2%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_vacancy": "4.8%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_vacancy": "13.5%",
+      "office_cap_rate": "6.75%-7.50%",
+      "retail_vacancy": "6.2%",
+      "retail_cap_rate": "6.00%-6.75%",
+      "hospitality_vacancy": "29.5%",
+      "hospitality_cap_rate": "6.25%-7.00%",
+      "mixed_use_vacancy": "4.8%",
+      "mixed_use_cap_rate": "5.50%-6.25%",
+      "job_growth": "2.5%",
+      "population_growth": "2.0%",
+      "rent_growth": "7.0%",
+      "median_asking_rent": "$1,680",
+      "major_employers": "Volkswagen Group of America, Tennessee Valley Authority, BlueCross BlueShield of Tennessee, Amazon, CHI Memorial Health, Erlanger Health System, University of Tennessee at Chattanooga",
+      "top_submarkets": "Downtown Chattanooga, North Shore, East Brainerd, Hixson, Ooltewah, Signal Mountain, Lookout Mountain"
+    },
+    "market_report": {
+      "overview": "Chattanooga is one of the most remarkable urban transformation stories in America, evolving from a polluted industrial city to a nationally recognized innovation hub known as Gig City for its municipal gigabit fiber internet network. Volkswagen's assembly plant anchors automotive manufacturing while Tennessee Valley Authority and BlueCross BlueShield provide institutional employment stability. Amazon's fulfillment center investments and a growing technology startup ecosystem are diversifying the employment base. The Tennessee River waterfront revitalization has made Chattanooga a regional tourism destination.",
+      "multifamily": "Chattanooga multifamily is experiencing strong demand driven by population inflows from Atlanta and Nashville attracted by Tennessee's tax advantages and Chattanooga's outdoor lifestyle. The North Shore and downtown core command premium rents from young professionals and remote workers. Ooltewah and East Brainerd serve suburban family demand from Volkswagen and corporate employees. The market's rent growth trajectory ranks among the Southeast's strongest.",
+      "industrial": "Chattanooga industrial is anchored by Volkswagen's Assembly Plant in Chattanooga and the extensive automotive supply chain that has developed around it. Amazon's fulfillment and logistics facilities add significant e-commerce industrial demand. The I-75 and I-24 interchange positioning makes Chattanooga a natural distribution node between Atlanta and Nashville. Industrial vacancy is among the tightest in Tennessee driven by limited new supply and consistent automotive demand.",
+      "office_retail": "BlueCross BlueShield of Tennessee's campus and TVA's regional offices anchor Class A office demand in the Chattanooga market. The Innovation District on the South Broad Street corridor is attracting technology and startup tenants. Retail vacancy is tightening as population growth brings national brands to the North Shore and Hamilton Place trade area. The Tennessee Aquarium and Lookout Mountain outdoor tourism drive consistent retail and food and beverage performance.",
+      "financing": "Chattanooga lenders include Tennessee-based community banks, Avenue Bank, and regional institutions with deep Southeast market knowledge. Volkswagen supply chain relationships create lending opportunities for specialized industrial facilities. Tennessee's no income tax policy creates wealth-building advantages for investors. Agency multifamily financing is competitive given the strong fundamentals.",
+      "outlook": "Chattanooga is positioned for sustained growth as a Southeast innovation hub driven by Gig City technology reputation, Volkswagen's long-term manufacturing commitment, and Tennessee's tax advantages attracting corporate relocations. The planned Volkswagen EV production expansion will sustain and grow the automotive supply chain industrial demand. Population inflows from Atlanta and Nashville will continue to drive multifamily demand. The outdoor recreation economy is a durable tourism and hospitality growth driver."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Chattanooga are most active on North Shore and downtown multifamily value-add plays, automotive supply chain industrial lease-up, and South Broad innovation district office repositioning. Tennessee-focused bridge lenders and Southeast alternative lenders are increasingly active as Chattanooga's institutional profile grows.",
+      "permanent": "Permanent financing in Chattanooga is competitive with multiple Tennessee-based and Southeast regional institutions active in the market. Volkswagen supply chain industrial assets attract favorable permanent loan terms given the automotive anchor's long-term commitment. North Shore multifamily commands tight spreads from life insurance companies attracted by the strong rent growth.",
+      "construction": "Construction lending in Chattanooga focuses on Volkswagen EV supply chain facility build-outs, downtown and North Shore luxury residential, and the South Broad innovation district office and lab construction. Amazon distribution facility expansion also generates construction lending activity.",
+      "sba": "SBA lending is active in Chattanooga for automotive supply chain manufacturers, technology startups in the innovation district, and outdoor recreation and tourism businesses. The small business ecosystem supporting Volkswagen and Amazon operations generates consistent SBA volume.",
+      "mezzanine": "Mezzanine financing in Chattanooga supports larger downtown mixed-use and innovation district developments where senior loan constraints require additional capital. Volkswagen supply chain build-to-suit projects with credit tenants can attract mezzanine capital on favorable terms.",
+      "specialty": "Specialty financing in Chattanooga includes Tennessee Historic Preservation Tax Credits for downtown adaptive reuse in the revitalized warehouse district, PACE financing for industrial energy efficiency improvements, and New Market Tax Credits for South Broad innovation district development."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Chattanooga offers one of the Southeast's strongest rent growth trajectories driven by population inflows from Atlanta and Nashville. Downtown and North Shore luxury rentals serve young professionals and remote workers. Ooltewah and East Brainerd suburban assets serve automotive and corporate employee demand. The Tennessee tax advantage is a durable driver of household formation and rental demand.",
+      "industrial": "Industrial investment in Chattanooga is anchored by the Volkswagen automotive supply chain and Amazon's fulfillment operations. The I-75 and I-24 corridor hosts institutional-quality logistics facilities. Volkswagen's EV production expansion is creating new battery and EV component supplier demand. Tight vacancy and limited new supply create a landlord-favorable industrial market.",
+      "office": "Office investment in Chattanooga is most defensible in BlueCross BlueShield campus adjacent buildings and in the South Broad innovation district where technology and startup tenants create growing absorption. TVA regional offices provide government-anchored demand. North Shore boutique office serves the creative and professional services cluster that has formed around the innovation economy.",
+      "retail": "Retail investment in Chattanooga is strongest at Hamilton Place and the North Shore lifestyle retail district where household incomes from automotive and corporate employees support national retailers. The Tennessee Aquarium tourism corridor on the waterfront drives food and beverage performance. Grocery-anchored centers across the metro offer stable income driven by strong population growth.",
+      "mixed_use": "Mixed-use investment in Chattanooga is concentrated along the Tennessee River waterfront, North Shore, and the emerging South Broad innovation corridor where residential, retail, and office stacking aligns with Chattanooga's master planning vision. The Market Street and Frazier Avenue corridors are the most active mixed-use investment targets.",
+      "hospitality": "Hospitality investment in Chattanooga benefits from Tennessee Aquarium and Lookout Mountain tourism, Volkswagen assembly plant and supply chain corporate travel, and the growing tech conference and event calendar tied to the Gig City innovation brand. The Chattanooga Convention Center anchors group demand. The North Shore boutique hotel market is the fastest-growing lodging segment."
+    }
   }
 }
