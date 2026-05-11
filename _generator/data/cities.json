@@ -3427,5 +3427,68 @@
       "Mission TX",
       "Edinburg"
     ]
+  },
+  {
+    "slug": "flagstaff",
+    "city": "Flagstaff",
+    "state": "AZ",
+    "metro": "Flagstaff",
+    "context": "Flagstaff is a high-altitude Northern Arizona market anchored by Northern Arizona University and a year-round tourism economy serving Grand Canyon visitors, generating consistent hospitality, student housing, and retail demand at above-average occupancy rates. The market's elevation and scenic setting limit expansion but support strong per-unit economics.",
+    "neighborhoods": [
+      "Downtown Flagstaff",
+      "East Flagstaff",
+      "South Flagstaff",
+      "Pulliam Airport Area",
+      "Bellemont",
+      "Williams AZ",
+      "Winslow",
+      "Cottonwood",
+      "Prescott",
+      "Sedona",
+      "Jerome",
+      "Camp Verde"
+    ]
+  },
+  {
+    "slug": "yuma",
+    "city": "Yuma",
+    "state": "AZ",
+    "metro": "Yuma",
+    "context": "Yuma is a Southwest Arizona market with a large military presence at MCAS Yuma, significant agricultural activity, and a growing border trade economy. Multifamily demand is supported by military personnel, seasonal farmworkers, and cross-border commuters from Mexico.",
+    "neighborhoods": [
+      "Downtown Yuma",
+      "West Yuma",
+      "Fortuna Foothills",
+      "San Luis",
+      "Somerton",
+      "Wellton",
+      "Gila Bend",
+      "Ajo",
+      "Parker AZ",
+      "Kingman",
+      "Lake Havasu City",
+      "Quartzsite"
+    ]
+  },
+  {
+    "slug": "santa-barbara",
+    "city": "Santa Barbara",
+    "state": "CA",
+    "metro": "Santa Barbara-Santa Maria",
+    "context": "Santa Barbara is a high-barrier coastal California market with extremely limited commercial real estate supply, premium retail and hospitality demand from affluent residents and tourism, and persistent housing constraints that support strong multifamily fundamentals. Cap rates are among the lowest in California but assets hold value exceptionally well.",
+    "neighborhoods": [
+      "Downtown Santa Barbara",
+      "Goleta",
+      "Carpinteria",
+      "Montecito",
+      "Santa Ynez",
+      "Solvang",
+      "Buellton",
+      "Santa Maria",
+      "Lompoc",
+      "Orcutt",
+      "Nipomo",
+      "Pismo Beach"
+    ]
   }
 ]
