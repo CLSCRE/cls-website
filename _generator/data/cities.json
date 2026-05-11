@@ -3364,5 +3364,68 @@
       "Burnet",
       "Marble Falls"
     ]
+  },
+  {
+    "slug": "round-rock",
+    "city": "Round Rock",
+    "state": "TX",
+    "metro": "Austin-Round Rock",
+    "context": "Round Rock is a premier Austin suburb and major corporate destination anchored by Dell Technologies' global headquarters and significant corporate campus investments that create office and industrial demand. The city's population growth, high household incomes, and proximity to Austin's tech corridor drive premium retail fundamentals.",
+    "neighborhoods": [
+      "Downtown Round Rock",
+      "South Round Rock",
+      "North Round Rock",
+      "Cedar Park",
+      "Pflugerville",
+      "Hutto",
+      "Georgetown",
+      "Taylor TX",
+      "Leander",
+      "Liberty Hill",
+      "Buda",
+      "Kyle"
+    ]
+  },
+  {
+    "slug": "brownsville",
+    "city": "Brownsville",
+    "state": "TX",
+    "metro": "Brownsville-Harlingen",
+    "context": "Brownsville is a US-Mexico border market with a rapidly growing aerospace and advanced manufacturing sector anchored by SpaceX's Starbase facility, creating significant industrial and workforce housing demand. The maquiladora economy and port of entry logistics also drive industrial investment.",
+    "neighborhoods": [
+      "Downtown Brownsville",
+      "South Padre Island",
+      "Harlingen",
+      "McAllen",
+      "Edinburg",
+      "Mission",
+      "Pharr",
+      "Weslaco",
+      "San Juan",
+      "Alamo TX",
+      "Los Fresnos",
+      "Laguna Vista"
+    ]
+  },
+  {
+    "slug": "laredo",
+    "city": "Laredo",
+    "state": "TX",
+    "metro": "Laredo",
+    "context": "Laredo is the nation's busiest inland port and a critical US-Mexico trade gateway, with commercial real estate demand driven almost entirely by cross-border logistics, warehouse development, and freight trucking operations along the I-35 corridor to Monterrey. Industrial development in gateway logistics parks offers strong yields.",
+    "neighborhoods": [
+      "Downtown Laredo",
+      "North Laredo",
+      "South Laredo",
+      "Nuevo Laredo MX",
+      "Del Rio",
+      "Eagle Pass",
+      "Piedras Negras MX",
+      "Cotulla",
+      "Zapata",
+      "Rio Grande City",
+      "Mission TX",
+      "Edinburg"
+    ]
   }
 ]

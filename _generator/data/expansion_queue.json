@@ -623,72 +623,6 @@
       ]
     },
     {
-      "slug": "round-rock",
-      "city": "Round Rock",
-      "state": "TX",
-      "metro": "Austin-Round Rock",
-      "tier1": false,
-      "context": "Round Rock is a premier Austin suburb and major corporate destination anchored by Dell Technologies' global headquarters and significant corporate campus investments that create office and industrial demand. The city's population growth, high household incomes, and proximity to Austin's tech corridor drive premium retail fundamentals.",
-      "neighborhoods": [
-        "Downtown Round Rock",
-        "South Round Rock",
-        "North Round Rock",
-        "Cedar Park",
-        "Pflugerville",
-        "Hutto",
-        "Georgetown",
-        "Taylor TX",
-        "Leander",
-        "Liberty Hill",
-        "Buda",
-        "Kyle"
-      ]
-    },
-    {
-      "slug": "brownsville",
-      "city": "Brownsville",
-      "state": "TX",
-      "metro": "Brownsville-Harlingen",
-      "tier1": false,
-      "context": "Brownsville is a US-Mexico border market with a rapidly growing aerospace and advanced manufacturing sector anchored by SpaceX's Starbase facility, creating significant industrial and workforce housing demand. The maquiladora economy and port of entry logistics also drive industrial investment.",
-      "neighborhoods": [
-        "Downtown Brownsville",
-        "South Padre Island",
-        "Harlingen",
-        "McAllen",
-        "Edinburg",
-        "Mission",
-        "Pharr",
-        "Weslaco",
-        "San Juan",
-        "Alamo TX",
-        "Los Fresnos",
-        "Laguna Vista"
-      ]
-    },
-    {
-      "slug": "laredo",
-      "city": "Laredo",
-      "state": "TX",
-      "metro": "Laredo",
-      "tier1": false,
-      "context": "Laredo is the nation's busiest inland port and a critical US-Mexico trade gateway, with commercial real estate demand driven almost entirely by cross-border logistics, warehouse development, and freight trucking operations along the I-35 corridor to Monterrey. Industrial development in gateway logistics parks offers strong yields.",
-      "neighborhoods": [
-        "Downtown Laredo",
-        "North Laredo",
-        "South Laredo",
-        "Nuevo Laredo MX",
-        "Del Rio",
-        "Eagle Pass",
-        "Piedras Negras MX",
-        "Cotulla",
-        "Zapata",
-        "Rio Grande City",
-        "Mission TX",
-        "Edinburg"
-      ]
-    },
-    {
       "slug": "mcallen",
       "city": "McAllen",
       "state": "TX",
@@ -2924,9 +2858,24 @@
       "slug": "killeen",
       "city": "Killeen",
       "added": "2026-05-10"
+    },
+    {
+      "slug": "round-rock",
+      "city": "Round Rock",
+      "added": "2026-05-11"
+    },
+    {
+      "slug": "brownsville",
+      "city": "Brownsville",
+      "added": "2026-05-11"
+    },
+    {
+      "slug": "laredo",
+      "city": "Laredo",
+      "added": "2026-05-11"
     }
   ],
-  "last_run": "2026-05-10T17:13:41.465434Z",
-  "total_pages_added": 612,
-  "runs_completed": 17
+  "last_run": "2026-05-11T04:36:40.215527Z",
+  "total_pages_added": 648,
+  "runs_completed": 18
 }
