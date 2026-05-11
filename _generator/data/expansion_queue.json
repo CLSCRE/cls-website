@@ -601,160 +601,6 @@
       ]
     },
     {
-      "slug": "eau-claire",
-      "city": "Eau Claire",
-      "state": "WI",
-      "metro": "Eau Claire",
-      "tier1": false,
-      "context": "Eau Claire is a growing western Wisconsin market anchored by UW-Eau Claire, a major hospital system, and proximity to the Twin Cities, which drives healthcare, student housing, and retail demand. The metro offers attractive cap rates relative to the Minneapolis-St. Paul metro.",
-      "neighborhoods": [
-        "Downtown Eau Claire",
-        "Altoona",
-        "Chippewa Falls",
-        "Menomonie",
-        "Rice Lake",
-        "Bloomer",
-        "Fall Creek",
-        "Augusta",
-        "Elk Mound",
-        "Black River Falls",
-        "Osseo",
-        "Owen"
-      ]
-    },
-    {
-      "slug": "rockford",
-      "city": "Rockford",
-      "state": "IL",
-      "metro": "Rockford",
-      "tier1": false,
-      "context": "Rockford is northern Illinois's industrial hub with a deep aerospace and automotive manufacturing base that anchors industrial demand despite ongoing economic restructuring. The metro offers deeply discounted industrial assets with above-average yields and proximity to Chicago and Milwaukee supply chains.",
-      "neighborhoods": [
-        "Downtown Rockford",
-        "East Side",
-        "West Side",
-        "South Rockford",
-        "Cherry Valley",
-        "Loves Park",
-        "Machesney Park",
-        "Belvidere",
-        "Roscoe",
-        "South Beloit",
-        "Freeport",
-        "Sterling"
-      ]
-    },
-    {
-      "slug": "champaign-urbana",
-      "city": "Champaign-Urbana",
-      "state": "IL",
-      "metro": "Champaign-Urbana",
-      "tier1": false,
-      "context": "Champaign-Urbana is Illinois's flagship university market, anchored by the University of Illinois's 50,000-student campus and a growing startup and research commercialization ecosystem. Student housing, medical office, and necessity-based retail all benefit from stable institutional demand.",
-      "neighborhoods": [
-        "Downtown Champaign",
-        "Campustown",
-        "Urbana",
-        "Savoy",
-        "Mahomet",
-        "Monticello",
-        "Rantoul",
-        "Tuscola",
-        "Danville",
-        "Paris IL",
-        "Mattoon",
-        "Charleston IL"
-      ]
-    },
-    {
-      "slug": "quad-cities",
-      "city": "Davenport",
-      "state": "IA",
-      "metro": "Davenport-Moline-Rock Island",
-      "tier1": false,
-      "context": "The Quad Cities metro spans Iowa and Illinois along the Mississippi River, with a diversified economy anchored by John Deere headquarters, manufacturing, and river logistics. Industrial and retail assets offer attractive yields driven by regional distribution activity and a stable middle-market economy.",
-      "neighborhoods": [
-        "Downtown Davenport",
-        "Bettendorf",
-        "Rock Island",
-        "Moline",
-        "East Moline",
-        "Silvis",
-        "Coal Valley",
-        "Milan",
-        "Carbon Cliff",
-        "LeClaire",
-        "Eldridge",
-        "Blue Grass"
-      ]
-    },
-    {
-      "slug": "waterloo-ia",
-      "city": "Waterloo",
-      "state": "IA",
-      "metro": "Waterloo-Cedar Falls",
-      "tier1": false,
-      "context": "Waterloo-Cedar Falls is a northeastern Iowa market anchored by John Deere manufacturing, the University of Northern Iowa, and a growing healthcare sector. Industrial and multifamily assets offer stable fundamentals driven by manufacturing employment and university demand.",
-      "neighborhoods": [
-        "Downtown Waterloo",
-        "Cedar Falls",
-        "Hudson",
-        "Evansdale",
-        "Jesup",
-        "Reinbeck",
-        "Grundy Center",
-        "Independence",
-        "Waverly",
-        "Charles City",
-        "Mason City",
-        "Hampton"
-      ]
-    },
-    {
-      "slug": "sioux-city",
-      "city": "Sioux City",
-      "state": "IA",
-      "metro": "Sioux City",
-      "tier1": false,
-      "context": "Sioux City is a tri-state commercial hub serving Iowa, Nebraska, and South Dakota, with a meatpacking and food processing industry, regional retail anchor, and growing logistics sector. Industrial assets along the I-29 corridor offer strong yields from food processing and distribution tenants.",
-      "neighborhoods": [
-        "Downtown Sioux City",
-        "South Sioux City NE",
-        "Dakota City NE",
-        "South Sioux City",
-        "North Sioux City SD",
-        "Morningside",
-        "Sergeant Bluff",
-        "North Sioux City",
-        "Le Mars",
-        "Spencer IA",
-        "Cherokee",
-        "Vermillion SD"
-      ]
-    },
-    {
-      "slug": "topeka",
-      "city": "Topeka",
-      "state": "KS",
-      "metro": "Topeka",
-      "tier1": false,
-      "context": "Topeka is Kansas's capital and a stable commercial market anchored by state government, insurance companies, and a growing manufacturing base. Net lease and retail assets benefit from consistent government worker demand, while industrial properties along the Kansas Turnpike draw logistics operators.",
-      "neighborhoods": [
-        "Downtown Topeka",
-        "East Topeka",
-        "North Topeka",
-        "West Topeka",
-        "Shawnee County",
-        "Lawrence KS",
-        "Manhattan KS",
-        "Emporia",
-        "Junction City",
-        "Leavenworth",
-        "Atchison",
-        "Ottawa KS"
-      ]
-    },
-    {
       "slug": "wichita",
       "city": "Wichita",
       "state": "KS",
@@ -774,182 +620,6 @@
         "El Dorado",
         "Newton",
         "Hutchinson"
-      ]
-    },
-    {
-      "slug": "lubbock",
-      "city": "Lubbock",
-      "state": "TX",
-      "metro": "Lubbock",
-      "tier1": false,
-      "context": "Lubbock is a West Texas university market anchored by Texas Tech University's 40,000-student enrollment and a regional healthcare system, creating stable multifamily and retail demand in a relatively low-supply environment. The metro's agricultural economy and position as a regional service center provide consistent commercial occupancy.",
-      "neighborhoods": [
-        "Downtown Lubbock",
-        "South Lubbock",
-        "North Lubbock",
-        "East Lubbock",
-        "Wolfforth",
-        "Shallowater",
-        "Slaton",
-        "Plainview",
-        "Levelland",
-        "Brownfield",
-        "Lamesa",
-        "Snyder"
-      ]
-    },
-    {
-      "slug": "midland",
-      "city": "Midland",
-      "state": "TX",
-      "metro": "Midland",
-      "tier1": false,
-      "context": "Midland is the capital of the Permian Basin, the world's most productive shale oil field, with commercial real estate fundamentals directly tied to energy sector activity that creates boom-and-bust cycles but exceptional cash flows during expansion periods. The market's limited supply and tight industrial vacancy during oil expansions generate substantial investment returns.",
-      "neighborhoods": [
-        "Downtown Midland",
-        "North Midland",
-        "South Midland",
-        "Odessa",
-        "Gardendale",
-        "Garden City TX",
-        "Andrews",
-        "Stanton",
-        "Big Spring",
-        "Pecos",
-        "Alpine",
-        "Monahans"
-      ]
-    },
-    {
-      "slug": "abilene",
-      "city": "Abilene",
-      "state": "TX",
-      "metro": "Abilene",
-      "tier1": false,
-      "context": "Abilene is a stable West Texas market anchored by Dyess Air Force Base, three major universities, and a regional healthcare sector that creates consistent demand for multifamily, retail, and medical office properties. The city's low vacancy rates and affordable entry pricing attract value-add investors.",
-      "neighborhoods": [
-        "Downtown Abilene",
-        "North Abilene",
-        "South Abilene",
-        "Clyde",
-        "Cisco",
-        "Brownwood",
-        "San Angelo",
-        "Sweetwater",
-        "Stamford",
-        "Anson",
-        "Breckenridge",
-        "Eastland"
-      ]
-    },
-    {
-      "slug": "tyler",
-      "city": "Tyler",
-      "state": "TX",
-      "metro": "Tyler",
-      "tier1": false,
-      "context": "Tyler is East Texas's commercial hub with a diversified economy spanning healthcare, rose growing agriculture, and a growing logistics sector anchored by several major distribution centers along the US-69 and Loop 323 corridors. The metro offers stable retail and industrial fundamentals with above-market yields.",
-      "neighborhoods": [
-        "Downtown Tyler",
-        "South Tyler",
-        "North Tyler",
-        "Longview",
-        "Marshall TX",
-        "Nacogdoches",
-        "Kilgore",
-        "Henderson",
-        "Jacksonville TX",
-        "Athens TX",
-        "Palestine TX",
-        "Corsicana"
-      ]
-    },
-    {
-      "slug": "waco",
-      "city": "Waco",
-      "state": "TX",
-      "metro": "Waco",
-      "tier1": false,
-      "context": "Waco has transformed into a nationally known destination following Magnolia Market's opening, driving significant tourism infrastructure investment and retail interest in the downtown and Silo District. Baylor University's enrollment growth and I-35 corridor logistics activity support multifamily and industrial demand.",
-      "neighborhoods": [
-        "Downtown Waco",
-        "Silo District",
-        "South Waco",
-        "East Waco",
-        "Woodway",
-        "Hewitt",
-        "Lorena",
-        "Hillsboro",
-        "Corsicana",
-        "Temple",
-        "Killeen",
-        "Belton"
-      ]
-    },
-    {
-      "slug": "beaumont",
-      "city": "Beaumont",
-      "state": "TX",
-      "metro": "Beaumont-Port Arthur",
-      "tier1": false,
-      "context": "Beaumont-Port Arthur is a petrochemical refining and heavy industrial market situated in Southeast Texas's Golden Triangle, with one of the highest concentrations of oil refining capacity on the Gulf Coast. Industrial and net lease properties tied to energy infrastructure offer above-average yields.",
-      "neighborhoods": [
-        "Downtown Beaumont",
-        "Port Arthur",
-        "Orange TX",
-        "Vidor",
-        "Groves",
-        "Port Neches",
-        "Nederland",
-        "Lumberton",
-        "Silsbee",
-        "Jasper TX",
-        "Livingston TX",
-        "Lake Charles LA"
-      ]
-    },
-    {
-      "slug": "corpus-christi",
-      "city": "Corpus Christi",
-      "state": "TX",
-      "metro": "Corpus Christi",
-      "tier1": false,
-      "context": "Corpus Christi is a Gulf Coast port city and energy market with the nation's largest port by tonnage, significant petrochemical investment, and a Naval Air Station that anchors a large defense economy. Industrial and net lease properties benefit from port-adjacent activity and limited new supply.",
-      "neighborhoods": [
-        "Downtown Corpus Christi",
-        "South Side",
-        "North Corpus Christi",
-        "Portland TX",
-        "Aransas Pass",
-        "Rockport",
-        "Victoria TX",
-        "Kingsville",
-        "Alice",
-        "Robstown",
-        "Three Rivers",
-        "George West"
-      ]
-    },
-    {
-      "slug": "killeen",
-      "city": "Killeen",
-      "state": "TX",
-      "metro": "Killeen-Temple",
-      "tier1": false,
-      "context": "Killeen-Temple is a dual-anchored Central Texas market centered on Fort Hood, the world's largest military base, and a major hospital complex in Temple that drives healthcare real estate demand. The military presence creates exceptional stability for multifamily and retail commercial properties.",
-      "neighborhoods": [
-        "Downtown Killeen",
-        "Fort Hood",
-        "Temple TX",
-        "Belton",
-        "Copperas Cove",
-        "Waco",
-        "Round Rock",
-        "Georgetown TX",
-        "Taylor TX",
-        "Lampasas",
-        "Burnet",
-        "Marble Falls"
       ]
     },
     {
@@ -3179,9 +2849,84 @@
       "slug": "wausau",
       "city": "Wausau",
       "added": "2026-05-09"
+    },
+    {
+      "slug": "eau-claire",
+      "city": "Eau Claire",
+      "added": "2026-05-09"
+    },
+    {
+      "slug": "rockford",
+      "city": "Rockford",
+      "added": "2026-05-09"
+    },
+    {
+      "slug": "champaign-urbana",
+      "city": "Champaign-Urbana",
+      "added": "2026-05-09"
+    },
+    {
+      "slug": "quad-cities",
+      "city": "Davenport",
+      "added": "2026-05-09"
+    },
+    {
+      "slug": "waterloo-ia",
+      "city": "Waterloo",
+      "added": "2026-05-09"
+    },
+    {
+      "slug": "sioux-city",
+      "city": "Sioux City",
+      "added": "2026-05-09"
+    },
+    {
+      "slug": "topeka",
+      "city": "Topeka",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "lubbock",
+      "city": "Lubbock",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "midland",
+      "city": "Midland",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "abilene",
+      "city": "Abilene",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "tyler",
+      "city": "Tyler",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "waco",
+      "city": "Waco",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "beaumont",
+      "city": "Beaumont",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "corpus-christi",
+      "city": "Corpus Christi",
+      "added": "2026-05-10"
+    },
+    {
+      "slug": "killeen",
+      "city": "Killeen",
+      "added": "2026-05-10"
     }
   ],
-  "last_run": "2026-05-09T03:55:48.723970Z",
-  "total_pages_added": 432,
-  "runs_completed": 12
+  "last_run": "2026-05-10T17:13:41.465434Z",
+  "total_pages_added": 612,
+  "runs_completed": 17
 }
