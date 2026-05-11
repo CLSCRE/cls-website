@@ -436,13 +436,13 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
         <tr><td class="rt-name">1-Mo SOFR</td><td class="rt-today">3.60%</td><td>3.61%</td><td>3.62%</td><td>4.28%</td></tr>
         <tr><td class="rt-name">Prime Rate</td><td class="rt-today">6.75%</td><td>6.75%</td><td>6.75%</td><td>7.50%</td></tr>
         <tr><td class="rt-name">S&amp;P 500</td><td class="rt-today">7,399</td><td>7,337</td><td>6,783</td><td>5,660</td></tr>
-        <tr><td class="rt-name">Gold ($/oz)</td><td class="rt-today">$4,703</td><td>$4,720</td><td>$4,792</td><td>$3,220</td></tr>
-        <tr><td class="rt-name">Bitcoin</td><td class="rt-today">$81,520</td><td>$80,664</td><td>$75,726</td><td>$104,106</td></tr>
-        <tr><td class="rt-name">Oil (WTI/bbl)</td><td class="rt-today">$99</td><td>$95</td><td>$98</td><td>$62</td></tr>
+        <tr><td class="rt-name">Gold ($/oz)</td><td class="rt-today">$4,696</td><td>$4,720</td><td>$4,792</td><td>$3,220</td></tr>
+        <tr><td class="rt-name">Bitcoin</td><td class="rt-today">$80,652</td><td>$80,664</td><td>$75,726</td><td>$104,106</td></tr>
+        <tr><td class="rt-name">Oil (WTI/bbl)</td><td class="rt-today">$100</td><td>$95</td><td>$98</td><td>$62</td></tr>
       </tbody>
     </table>
     </div>
-    <div class="rate-updated">Updated May 10, 2026 6:42 PM &middot; <a href="market-data.html" style="color:var(--green);text-decoration:none;font-weight:600">Full Market Data &rarr;</a></div>
+    <div class="rate-updated">Updated May 10, 2026 8:42 PM &middot; <a href="market-data.html" style="color:var(--green);text-decoration:none;font-weight:600">Full Market Data &rarr;</a></div>
   </div>
 </div>
 </section>
@@ -500,6 +500,142 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
   </div>
 </div>
 </section>
+
+<!-- QUICK CALCULATOR HUB -->
+<section id="quick-calc" style="padding:64px 0;background:var(--gray-50,#f9fafb);border-bottom:1px solid var(--gray-200,#e5e7eb)">
+<div class="section-inner">
+  <div class="section-label reveal">Free Tools</div>
+  <h2 style="font-family:var(--font-display);font-size:clamp(22px,3vw,34px);color:var(--navy);margin:0 0 6px" class="reveal">Instant Deal Analysis</h2>
+  <p style="color:var(--gray-500);font-size:15px;margin:0 0 28px" class="reveal">Get numbers before you call. All calculations run in your browser — no data shared.</p>
+  <!-- Tab switcher -->
+  <div style="display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap" role="tablist" aria-label="Calculator tools">
+    <button class="qc-tab qc-tab-active" data-tab="loan" role="tab" aria-selected="true" aria-controls="qcLoan" type="button">Loan Sizing</button>
+    <button class="qc-tab" data-tab="rates" role="tab" aria-selected="false" aria-controls="qcRates" type="button">Rate &amp; Program Table</button>
+    <button class="qc-tab" data-tab="refi" role="tab" aria-selected="false" aria-controls="qcRefi" type="button">Refi Estimator</button>
+  </div>
+  <!-- Loan Sizing mini-calc -->
+  <div id="qcLoan" role="tabpanel">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start">
+      <div style="background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:24px">
+        <div class="calc-field" style="margin-bottom:14px">
+          <label for="qcPropVal" style="font-size:13px;font-weight:600;color:var(--gray-500);display:block;margin-bottom:4px">Property Value</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="qcPropVal" inputmode="decimal" placeholder="5,000,000" aria-label="Property value"></div>
+        </div>
+        <div class="calc-field" style="margin-bottom:14px">
+          <label for="qcLtv" style="font-size:13px;font-weight:600;color:var(--gray-500);display:block;margin-bottom:4px">LTV Target &mdash; <strong id="qcLtvDisplay">65%</strong></label>
+          <input type="range" id="qcLtv" min="50" max="80" value="65" step="1" style="width:100%;accent-color:var(--green);cursor:pointer" aria-label="LTV percentage">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--gray-400)"><span>50%</span><span>80%</span></div>
+        </div>
+        <div class="calc-field">
+          <label for="qcLoanType" style="font-size:13px;font-weight:600;color:var(--gray-500);display:block;margin-bottom:4px">Loan Type</label>
+          <div class="calc-input-wrap" style="padding:0"><select id="qcLoanType" style="width:100%;padding:11px 14px;border:none;background:transparent;font-size:14px;font-family:var(--font-body);cursor:pointer;outline:none" aria-label="Loan type">
+            <option value="6.25">Permanent Loan (6.25%)</option>
+            <option value="9.00">Bridge Loan (9.00%)</option>
+            <option value="9.50">Construction Loan (9.50%)</option>
+            <option value="7.50">SBA Loan (7.50%)</option>
+            <option value="5.75">Agency Loan (5.75%)</option>
+            <option value="11.00">Hard Money (11.00%)</option>
+          </select></div>
+        </div>
+      </div>
+      <div style="background:var(--navy,#153D63);border-radius:12px;padding:24px;color:#fff">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.5);margin-bottom:4px">Max Loan Amount</div>
+        <div id="qcMaxLoan" style="font-family:var(--font-display);font-size:32px;font-weight:700;margin-bottom:20px">--</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div style="background:rgba(255,255,255,.08);border-radius:8px;padding:12px">
+            <div style="font-size:11px;color:rgba(255,255,255,.5);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px">Monthly Payment</div>
+            <div id="qcMonthly" style="font-size:18px;font-weight:700">--</div>
+          </div>
+          <div style="background:rgba(255,255,255,.08);border-radius:8px;padding:12px">
+            <div style="font-size:11px;color:rgba(255,255,255,.5);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px">Annual Debt Service</div>
+            <div id="qcAnnual" style="font-size:18px;font-weight:700">--</div>
+          </div>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+          <a href="#" id="qcQuoteCTA" class="btn-primary" style="flex:1;justify-content:center;font-size:13px;padding:10px 14px">Request a Quote &rarr;</a>
+          <a href="./tools/loan-calculator.html" style="flex:1;text-align:center;padding:10px 14px;border:1px solid rgba(255,255,255,.3);border-radius:8px;color:rgba(255,255,255,.8);font-size:13px;font-weight:600;text-decoration:none;transition:all .15s" onmouseover="this.style.borderColor='rgba(255,255,255,.7)'" onmouseout="this.style.borderColor='rgba(255,255,255,.3)'">Full Calculator &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Rate Table panel -->
+  <div id="qcRates" role="tabpanel" style="display:none">
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+      <div style="flex:1;min-width:260px">
+        <div style="font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:8px">Current Rate Ranges</div>
+        <p style="color:var(--gray-500);font-size:14px;margin:0 0 16px">Compare 12 programs side by side. Filter by property type, loan type, and LTV. Updated May 2026.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+          <span style="padding:4px 12px;background:#fef3c7;color:#92400e;border-radius:20px;font-size:12px;font-weight:700">Bridge: 8.50–11.00%</span>
+          <span style="padding:4px 12px;background:#d1fae5;color:#065f46;border-radius:20px;font-size:12px;font-weight:700">Permanent: 5.75–7.50%</span>
+          <span style="padding:4px 12px;background:#dbeafe;color:#1e40af;border-radius:20px;font-size:12px;font-weight:700">Agency: 5.50–6.75%</span>
+          <span style="padding:4px 12px;background:#ede9fe;color:#5b21b6;border-radius:20px;font-size:12px;font-weight:700">CMBS: 6.00–7.50%</span>
+        </div>
+      </div>
+      <a href="./rates.html" class="btn-primary" style="white-space:nowrap">View Rate Table &rarr;</a>
+    </div>
+  </div>
+  <!-- Refi Check panel -->
+  <div id="qcRefi" role="tabpanel" style="display:none">
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+      <div style="flex:1;min-width:260px">
+        <div style="font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:8px">Check Your Refi Opportunity</div>
+        <p style="color:var(--gray-500);font-size:14px;margin:0 0 8px">If you have a commercial loan originated before mid-2023, you may be able to significantly reduce your payment. Enter your current loan details and see your savings in under a minute.</p>
+        <p style="color:var(--gray-400);font-size:12px;margin:0">Shows: new payment &bull; annual savings &bull; new LTV &bull; breakeven period</p>
+      </div>
+      <a href="./refinance.html" class="btn-primary" style="white-space:nowrap">Check My Refi &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+<style>
+.qc-tab{padding:9px 18px;border:1px solid var(--gray-200,#e5e7eb);border-radius:8px;background:#fff;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;font-family:var(--font-body,Inter,sans-serif);color:var(--navy,#153D63)}
+.qc-tab:hover{border-color:var(--green,#006A4E)}
+.qc-tab-active{background:var(--green,#006A4E);color:#fff;border-color:var(--green,#006A4E)}
+@media (max-width:640px){#qcLoan>div{grid-template-columns:1fr!important}}
+</style>
+<script src="./tools/calc-utils.js"></script>
+<script src="./tools/analytics.js"></script>
+<script>
+(function(){
+  var qcFirst = false;
+  function qcFmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});}
+  function qcCalc(){
+    if(!qcFirst){qcFirst=true;Analytics.calculatorInteraction('homepage_quick_calc');}
+    var pv=parseFloat(document.getElementById('qcPropVal').value.replace(/[^0-9.]/g,''))||0;
+    var ltv=parseInt(document.getElementById('qcLtv').value)||65;
+    var rate=parseFloat(document.getElementById('qcLoanType').value)||6.25;
+    document.getElementById('qcLtvDisplay').textContent=ltv+'%';
+    var loan=pv>0?pv*ltv/100:0;
+    var r=rate/100/12,n=360;
+    var pmt=loan>0&&r>0?loan*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1):0;
+    document.getElementById('qcMaxLoan').textContent=loan>0?qcFmt(loan):'--';
+    document.getElementById('qcMonthly').textContent=pmt>0?qcFmt(pmt):'--';
+    document.getElementById('qcAnnual').textContent=pmt>0?qcFmt(pmt*12):'--';
+    var loanTypeEl=document.getElementById('qcLoanType');
+    var typeName=loanTypeEl.options[loanTypeEl.selectedIndex].text.split(' (')[0];
+    var subject='Loan Inquiry: '+(loan>0?qcFmt(loan):'TBD')+' '+typeName+' — '+(pv>0?qcFmt(pv):'TBD')+' property';
+    document.getElementById('qcQuoteCTA').href='mailto:loans@clscre.com?subject='+encodeURIComponent(subject);
+  }
+  document.getElementById('qcPropVal').addEventListener('input',qcCalc);
+  document.getElementById('qcLtv').addEventListener('input',qcCalc);
+  document.getElementById('qcLoanType').addEventListener('change',qcCalc);
+  document.getElementById('qcQuoteCTA').addEventListener('click',function(){
+    var pv=parseFloat(document.getElementById('qcPropVal').value.replace(/[^0-9.]/g,''))||0;
+    var ltv=parseInt(document.getElementById('qcLtv').value)||65;
+    var loanTypeEl=document.getElementById('qcLoanType');
+    Analytics.quoteRequested(pv*ltv/100,loanTypeEl.options[loanTypeEl.selectedIndex].text.split(' (')[0],pv);
+  });
+  document.querySelectorAll('.qc-tab').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var tab=this.dataset.tab;
+      document.querySelectorAll('.qc-tab').forEach(function(b){b.classList.remove('qc-tab-active');b.setAttribute('aria-selected','false');});
+      this.classList.add('qc-tab-active');this.setAttribute('aria-selected','true');
+      ['loan','rates','refi'].forEach(function(t){document.getElementById('qc'+t.charAt(0).toUpperCase()+t.slice(1)).style.display=t===tab?'':'none';});
+    });
+  });
+  qcCalc();
+})();
+</script>
 
 <!-- VERTICAL HUBS -->
 <section class="verticals" id="verticals" style="padding:80px 0;background:#fff;border-bottom:1px solid var(--gray-100)">
