@@ -66,6 +66,9 @@ MARKET_REPORT_CITIES = [
     # Batch 6 expansion — next Tier 2 metros
     "rochester-ny", "worcester", "albany-ny", "bakersfield",
     "dayton", "fort-myers", "wichita", "chattanooga",
+    # Batch 7 expansion — next Tier 2 metros
+    "bridgeport-stamford", "new-haven", "oxnard-ventura", "allentown-lehigh-valley",
+    "mcallen", "stockton", "columbia-sc", "winston-salem",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -108,6 +111,9 @@ ALL_CITIES = [
     # Batch 6 expansion — next Tier 2 metros
     "rochester-ny", "worcester", "albany-ny", "bakersfield",
     "dayton", "fort-myers", "wichita", "chattanooga",
+    # Batch 7 expansion — next Tier 2 metros
+    "bridgeport-stamford", "new-haven", "oxnard-ventura", "allentown-lehigh-valley",
+    "mcallen", "stockton", "columbia-sc", "winston-salem",
 ]
 
 # Loan slug → context key mapping
