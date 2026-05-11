@@ -57,6 +57,9 @@ MARKET_REPORT_CITIES = [
     # Batch 3 expansion — remaining Tier 2 metros
     "san-jose", "fort-worth", "cincinnati", "milwaukee", "oklahoma-city",
     "louisville", "knoxville", "savannah", "charleston", "omaha",
+    # Batch 4 expansion — next Tier 2 metros
+    "cleveland", "virginia-beach", "birmingham", "hartford", "tulsa",
+    "honolulu", "el-paso", "riverside",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -90,6 +93,9 @@ ALL_CITIES = [
     # Batch 3 expansion — remaining Tier 2 metros
     "san-jose", "fort-worth", "cincinnati", "milwaukee", "oklahoma-city",
     "louisville", "knoxville", "savannah", "charleston", "omaha",
+    # Batch 4 expansion — next Tier 2 metros
+    "cleveland", "virginia-beach", "birmingham", "hartford", "tulsa",
+    "honolulu", "el-paso", "riverside",
 ]
 
 # Loan slug → context key mapping
