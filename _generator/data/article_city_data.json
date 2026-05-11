@@ -3326,5 +3326,485 @@
       "mixed_use": "Mixed-use development in South Bend is concentrated in walkable downtown districts and transit-adjacent neighborhoods where residential demand supports ground-floor retail viability and long-term value creation.",
       "hospitality": "The hospitality market in South Bend serves regional business travel, leisure tourism, and convention demand. Extended-stay and select-service hotels offer the most attractive risk-adjusted returns in the current cycle."
     }
+  },
+  "san-jose": {
+    "city": "San Jose",
+    "state": "CA",
+    "stats": {
+      "multifamily_vacancy": "4.5%",
+      "multifamily_cap_rate": "4.25%-4.75%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "4.75%-5.25%",
+      "office_vacancy": "22.8%",
+      "office_cap_rate": "7.00%-8.50%",
+      "retail_vacancy": "4.2%",
+      "retail_cap_rate": "5.00%-5.75%",
+      "hospitality_vacancy": "19.5%",
+      "hospitality_cap_rate": "6.50%-7.75%",
+      "mixed_use_vacancy": "6.5%",
+      "mixed_use_cap_rate": "5.00%-5.75%",
+      "job_growth": "2.1%",
+      "population_growth": "0.4%",
+      "rent_growth": "3.5%",
+      "median_asking_rent": "$2,850",
+      "major_employers": "technology, semiconductor manufacturing, software, biotech, aerospace",
+      "top_submarkets": "South Bay industrial corridor, Downtown San Jose, Milpitas, North San Jose tech campus district"
+    },
+    "market_report": {
+      "overview": "San Jose anchors Silicon Valley, the densest concentration of technology capital in the world. As the seat of Santa Clara County, the metro combines a massive institutional-grade commercial real estate stock with one of the highest household income profiles in the United States. The commercial property landscape is shaped by the boom-and-bust cycles of the technology sector, with industrial and life sciences absorbing steady demand while the office market navigates a prolonged right-sizing following the remote work transition of 2020 to 2022.",
+      "multifamily": "Multifamily fundamentals in San Jose remain supported by structural undersupply and the highest average renter incomes in the country. Vacancy has stabilized near 4.5% following a wave of new deliveries, and rent growth of 3.5% reflects the metro having absorbed those units into a market where median asking rents exceed $2,800 per month. Workforce housing at the 80 to 120 percent area median income band represents the most active value-add opportunity, as Class A product faces near-term supply competition while mid-tier assets benefit from persistent affordability pressure keeping renters in place.",
+      "industrial": "The San Jose industrial and R and D flex market is driven by semiconductor fabrication, advanced manufacturing, and logistics serving the regional tech economy. Vacancy near 5.8% reflects the market digesting a meaningful development cycle, but net absorption from semiconductor supply chain expansion and domestic chip fabrication investment is expected to tighten conditions through 2026 and 2027. Investors are targeting last-mile infill sites in Milpitas and North San Jose as well as advanced manufacturing assets with specialized power and HVAC infrastructure that commands premium rents from technology tenants.",
+      "office_retail": "The San Jose office market reflects the broader Silicon Valley reset, with vacancy near 22.8% as major technology employers right-size their footprints following layoff cycles and hybrid work adoption. However, the market is bifurcated: campuses leased to single credit technology tenants trade at premium pricing, while multi-tenant suburban parks face meaningful sublease overhang and elevated effective vacancy. Retail fundamentals are stronger, with grocery-anchored centers and experiential formats serving affluent suburban demographics maintaining low vacancy and strong rent performance.",
+      "financing": "Lender appetite for San Jose commercial real estate reflects the asset quality and sponsor depth that characterize a major institutional market. Agency execution is efficient for stabilized multifamily, and life insurance companies compete aggressively for industrial and well-located retail with credit tenancy. Bridge and construction lending is available from debt funds and regional banks, though underwriting has tightened for speculative office construction. The depth of local institutional capital and high-net-worth investor activity supports competitive pricing across stabilized asset classes.",
+      "outlook": "San Jose is well positioned for a recovery in technology sector employment as the AI infrastructure buildout accelerates demand for data centers, semiconductor fabrication, and advanced manufacturing in the South Bay. Industrial and R and D flex assets with power-dense infrastructure will be the primary beneficiaries of this cycle. Multifamily fundamentals remain structurally supported by the chronic housing shortage and income demographics that make the metro one of the most defensible rental markets in the nation."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in San Jose is most active in the $5M to $40M range for value-add multifamily repositioning in established neighborhoods and light industrial conversions to R and D flex use. Debt funds and non-bank lenders are comfortable at 65% to 72% LTV given the strong exit liquidity in one of the nation's most liquid commercial real estate markets. Sponsor experience in Silicon Valley markets is weighted heavily given the complexity of local entitlement and the specialized nature of technology tenant improvements.",
+      "permanent": "Permanent financing in San Jose benefits from intense institutional lender competition. Agency execution through Fannie Mae and Freddie Mac is available for stabilized multifamily, with life insurance companies and CMBS conduits aggressively pricing industrial and well-located retail. The metro's depth of stabilized institutional product and the high average loan size attract the full spectrum of permanent capital sources, and competitive borrowers routinely shop 8 to 12 lenders to find the tightest execution.",
+      "construction": "Construction lending in San Jose requires navigating some of the most complex and expensive entitlement environments in California, but lenders remain willing to finance well-sponsored multifamily and industrial projects with clear demand drivers. Equity requirements have settled in the 35% to 40% range for most construction programs, with 24 to 36 month initial terms. Sponsors with demonstrated experience in the Santa Clara County market and strong relationships with local subcontractors have a meaningful advantage in securing construction commitments.",
+      "sba": "SBA 504 and 7(a) lending in San Jose serves the metro's large owner-occupied commercial segment, particularly among technology services firms, biotech startups, medical practices, and specialty manufacturers. High property values make the 90% financing structure of the SBA 504 program especially valuable, allowing business owners to deploy capital into operations rather than real estate equity. Active CDCs serving the Bay Area and regional bank SBA departments compete for well-qualified borrowers in deals ranging from $1M to $15M.",
+      "mezzanine": "Mezzanine and preferred equity is deployed in San Jose primarily on larger multifamily and mixed-use transactions where senior loan proceeds leave a gap that sponsors prefer to fill with structured subordinate debt. Deal sizes in the $15M to $100M range attract national debt funds and family office capital, with preferred equity returns generally in the 10% to 13% range and mezzanine debt at 9% to 12% depending on position and asset quality.",
+      "specialty": "Specialty financing in San Jose covers data centers in North San Jose and Santa Clara, semiconductor fabrication support facilities, life sciences campus assets in the South Bay, and self-storage facilities serving the high-density residential base. These asset types require lenders with specific underwriting expertise in power-intensive real estate, long-term net lease structures, and specialized tenant improvement economics. Commercial Lending Solutions maintains relationships with specialty lenders active across all of these categories."
+    },
+    "property_context": {
+      "multifamily": "San Jose multifamily investing is defined by structural undersupply and income demographics that support some of the highest rents in the nation. Value-add repositioning of 1970s to 1990s garden-style apartments in established neighborhoods offers compelling risk-adjusted returns given the basis advantage relative to Class A product. Ground-up workforce housing development leveraging California density bonus incentives is active for well-capitalized sponsors, and transit-oriented development sites near VTA and BART extensions attract institutional attention.",
+      "industrial": "San Jose industrial and R and D flex properties benefit from sustained demand driven by semiconductor fabrication supply chain expansion, advanced manufacturing growth, and data center development. Power-dense assets with substantial electrical infrastructure, heavy floor loads, and high-bay clearance command premium rents from technology and logistics tenants. Investors are targeting infill sites in Milpitas and North San Jose where land constraints limit new supply and existing industrial stock offers value-add conversion potential.",
+      "office": "The San Jose office market in 2026 presents selective opportunity for investors with patient capital and a clear view on technology sector recovery. Single-tenant campuses leased to credit technology companies offer bond-like cash flow with strong downside protection. Value-add opportunities exist in well-located multi-tenant suburban parks where lease-up to recovering technology demand can generate above-market returns for investors willing to absorb short-term vacancy.",
+      "retail": "San Jose retail investing benefits from among the highest consumer spending demographics in the United States. Grocery-anchored centers in high-density residential nodes maintain low vacancy and consistent rent performance driven by a population with median household incomes well above national averages. Net lease assets with strong credit tenants in high-traffic locations are priced competitively but offer durable income profiles that appeal to institutional and high-net-worth investors.",
+      "mixed_use": "Mixed-use investing in San Jose benefits from transit-oriented development momentum and California density incentives that allow residential above ground-floor retail in established commercial corridors. Downtown San Jose and the North San Jose technology campus district are the primary mixed-use investment zones, with vertical projects combining residential, retail, and office proving viable in locations with strong transit access and employment proximity.",
+      "hospitality": "Hospitality investing in San Jose leverages the metro's substantial corporate travel demand from the global technology industry, convention activity at the San Jose McEnery Convention Center, and year-round business travel supporting above-average RevPAR relative to most Sunbelt markets. Extended-stay formats serving long-term technology project teams maintain particularly strong occupancy. Value-add full-service hotels in the Downtown corridor have attracted investor interest as corporate travel normalizes."
+    }
+  },
+  "fort-worth": {
+    "city": "Fort Worth",
+    "state": "TX",
+    "stats": {
+      "multifamily_vacancy": "7.2%",
+      "multifamily_cap_rate": "5.25%-6.00%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.00%-5.75%",
+      "office_vacancy": "16.5%",
+      "office_cap_rate": "6.50%-7.50%",
+      "retail_vacancy": "5.8%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "hospitality_vacancy": "22.5%",
+      "hospitality_cap_rate": "7.00%-8.50%",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "5.75%-6.50%",
+      "job_growth": "2.9%",
+      "population_growth": "2.3%",
+      "rent_growth": "4.2%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "defense, aerospace, aviation, healthcare, logistics, finance",
+      "top_submarkets": "Alliance corridor industrial, Near Southside mixed-use, Cultural District, TCU multifamily, West 7th retail"
+    },
+    "market_report": {
+      "overview": "Fort Worth is the fastest-growing large city in Texas, combining a mature industrial base anchored by defense, aerospace, and logistics with explosive population growth that is driving multifamily and retail demand across the metro. As the western anchor of the Dallas-Fort Worth Metroplex, Fort Worth offers lower land costs than Dallas proper while sharing access to the same deep capital markets, major airport infrastructure, and Fortune 500 tenant base. The Alliance Corridor in the north has emerged as one of the most active industrial development zones in the country.",
+      "multifamily": "The Fort Worth multifamily market is absorbing a significant new supply cycle following the pandemic-era construction boom, with vacancy near 7.2% as the metro digests deliveries across North Fort Worth, Keller, and Southlake. Rent growth remains positive at 4.2% as the metro continues to attract corporate relocations and in-migration from higher-cost coastal markets. Value-add opportunities in established neighborhoods near TCU, the Cultural District, and Near Southside are attracting investor attention given the basis advantage relative to comparable assets in Dallas proper.",
+      "industrial": "Fort Worth industrial demand is driven by the Alliance Airport logistics ecosystem, which hosts major distribution operations for global e-commerce and retail companies, and by defense and aerospace manufacturing that has anchored the west side of the metroplex for decades. Vacancy near 5.5% reflects healthy absorption of speculative supply in the Alliance Corridor and south Fort Worth submarkets. The AllianceTexas development continues to attract Class A distribution and manufacturing requirements from national credit tenants.",
+      "office_retail": "The Fort Worth office market is in better shape than most Texas metros, with vacancy near 16.5% driven primarily by legacy suburban park product rather than the downtown core, which benefits from significant reinvestment and activity around Sundance Square. Retail fundamentals are strong, with grocery-anchored centers serving the booming suburban north Fort Worth corridor and experiential formats in the Cultural District and West 7th attracting both national concepts and local operators.",
+      "financing": "Lender appetite for Fort Worth commercial real estate reflects both the metro's strong growth fundamentals and the broader Texas lending environment, which remains one of the most competitive in the country. Agency execution is efficient for stabilized multifamily, while debt funds are aggressively pricing industrial bridge loans in the Alliance Corridor given the depth of institutional exit demand. Construction lending for multifamily and industrial is available from regional banks and national credit facilities, typically at 60% to 65% LTC.",
+      "outlook": "Fort Worth is positioned as one of the most compelling commercial real estate markets in the country for 2026 and beyond. The continued buildout of the Alliance Corridor, ongoing defense and aerospace sector growth anchored by Lockheed Martin and Bell Helicopter, and population in-migration that shows no signs of slowing create durable demand across all asset classes. Multifamily investors who absorbed the supply cycle should see tightening conditions by late 2026 as the pace of new construction slows."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Fort Worth is most active in the $3M to $25M range for value-add multifamily in established neighborhoods and industrial repositioning along the I-35W and I-820 corridors. Non-bank lenders and debt funds are competitive in the market, offering 65% to 72% LTV with 12 to 36 month initial terms. Lenders are particularly active on business plans with clear stabilization paths into agency or life company permanent takeout.",
+      "permanent": "Agency execution through Fannie Mae and Freddie Mac is the dominant takeout structure for stabilized multifamily in Fort Worth, with life insurance companies competing aggressively for Class A industrial and grocery-anchored retail. The metro's strong rent growth trajectory and population fundamentals support tight agency pricing on well-located multifamily, and CMBS is a competitive option for hotel, mixed-use, and retail deals that fall outside agency parameters.",
+      "construction": "Construction lending in Fort Worth is available from regional banks, national credit facilities, and Texas-focused lenders who are comfortable underwriting the metro's strong absorption rates and demonstrated demand. Typical structures feature 60% to 65% LTC with 24 to 36 month terms and extension options. Industrial construction lending in the Alliance Corridor often commands the tightest pricing given the depth of institutional takeout demand.",
+      "sba": "SBA 504 and 7(a) lending is active in Fort Worth for owner-occupied commercial real estate across the defense supply chain, healthcare, hospitality, and professional services sectors. Texas has one of the most active SBA lending ecosystems in the country, with multiple CDCs and dozens of bank SBA departments competing for well-qualified borrowers. The combination of lower land costs than Dallas and strong business formation creates frequent acquisition opportunities for owner-occupants in the $1M to $8M range.",
+      "mezzanine": "Mezzanine and preferred equity is deployed in Fort Worth primarily on multifamily and industrial acquisitions or developments where the senior loan proceeds leave a meaningful funding gap. National debt funds active in the DFW market are willing to participate in Fort Worth transactions given the proven exit liquidity, with preferred equity pricing generally in the 10% to 13% range.",
+      "specialty": "Specialty financing in Fort Worth covers data centers in the AllianceTexas corridor, self-storage facilities serving rapid population growth, hospitality assets near Sundance Square, and net lease development for retail growth corridors along I-35W and north Tarrant County. Commercial Lending Solutions maintains relationships with specialty lenders active across these categories, including data center lenders with significant DFW exposure."
+    },
+    "property_context": {
+      "multifamily": "Fort Worth multifamily investing is driven by one of the strongest population growth rates among major Texas metros, with the city adding more than 20,000 residents annually. Value-add opportunities are concentrated in established neighborhoods near the Cultural District, TCU, and Near Southside. Ground-up development remains active in North Fort Worth, Keller, and Southlake, where master-planned communities and corporate relocations create anchor demand for institutional-quality multifamily.",
+      "industrial": "Fort Worth industrial investing is anchored by the AllianceTexas ecosystem, a 27,000-acre master-planned development that hosts hundreds of companies and tens of millions of square feet of Class A industrial space. The AllianceTexas Airport supports air cargo operations for e-commerce and high-value logistics users. Investors are acquiring value-add infill industrial along I-820 and I-30 as well as new Class A product in the Alliance and south Fort Worth corridors.",
+      "office": "The Fort Worth office market benefits from a vibrant downtown core anchored by Sundance Square and the ongoing development of the Central Business District, which has attracted corporate headquarters from financial services, energy, and healthcare companies. Value-add opportunities in well-located mid-rise suburban parks in the Camp Bowie and West 7th corridors are performing well. Owner-occupied SBA transactions are active for professional services firms throughout the west Fort Worth market.",
+      "retail": "Fort Worth retail benefits from a combination of strong consumer fundamentals driven by population growth and the diverse tenant base serving both established neighborhoods and rapidly expanding suburban corridors. The Cultural District and West 7th mixed-use corridors attract national food and beverage concepts. Net lease development along major arterials is active, driven by healthcare, fitness, and quick-service restaurant tenants serving the growing residential base.",
+      "mixed_use": "Mixed-use investing in Fort Worth is concentrated in the Near Southside, West 7th, and Magnolia Avenue corridors, where adaptive reuse of historic industrial and commercial buildings has created vibrant urban districts. Vertical mixed-use combining ground-floor restaurant and retail with residential above is attractive in walkable nodes near the Cultural District and TCU.",
+      "hospitality": "Fort Worth hospitality investing benefits from a diverse demand base including business travel supporting the defense and aerospace economy, the highly visited Stockyards National Historic District, the nationally recognized Cultural District and museum campus, and convention activity centered on the Fort Worth Convention Center. Boutique hotel development in the Near Southside and West 7th corridors has attracted both national brands and independent concepts."
+    }
+  },
+  "cincinnati": {
+    "city": "Cincinnati",
+    "state": "OH",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "5.25%-5.75%",
+      "office_vacancy": "17.5%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_vacancy": "6.2%",
+      "retail_cap_rate": "6.25%-7.00%",
+      "hospitality_vacancy": "25.0%",
+      "hospitality_cap_rate": "7.50%-9.00%",
+      "mixed_use_vacancy": "9.0%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "1.4%",
+      "population_growth": "0.6%",
+      "rent_growth": "3.2%",
+      "median_asking_rent": "$1,275",
+      "major_employers": "healthcare, finance, consumer goods manufacturing, logistics, technology",
+      "top_submarkets": "Kenwood-Oakley mixed-use, Norwood industrial, Blue Ash tech corridor, Over-the-Rhine multifamily, south I-75 logistics"
+    },
+    "market_report": {
+      "overview": "Cincinnati is a major Midwest commercial real estate market anchored by a diversified economy spanning healthcare, financial services, consumer goods manufacturing, and logistics. The metro's position at the intersection of I-71, I-75, and I-74 makes it one of the most important distribution hubs in the eastern United States, and the presence of major corporate headquarters including Procter and Gamble, Kroger, and Fifth Third Bank creates a stable institutional tenant base that underpins office and industrial demand.",
+      "multifamily": "The Cincinnati multifamily market has maintained healthy fundamentals through recent supply cycles, with vacancy near 5.8% and rent growth of 3.2% supported by a growing young professional population attracted by the metro's below-national-average cost of living and improving urban amenities. The Over-the-Rhine neighborhood has been the most transformed submarket over the past decade, and value-add opportunities in adjacent Norwood, Oakley, and Hyde Park neighborhoods attract investors seeking yield without gateway market premiums.",
+      "industrial": "Cincinnati industrial demand is driven by its logistics position at the intersection of major interstate arteries and its role as a Midwest distribution hub for e-commerce fulfillment, consumer goods manufacturing, and cold storage. Vacancy near 4.5% reflects strong net absorption of speculative supply in the south I-75 corridor. Amazon, DHL, and major consumer goods companies have anchored large-format distribution requirements in the metro, creating deep institutional investment demand for Class A big-box product.",
+      "office_retail": "The Cincinnati office market reflects a bifurcated landscape, with the Central Business District and the Kenwood-Blue Ash corridor hosting the healthiest demand while suburban parks face elevated vacancy near 17.5%. Retail fundamentals are supported by the metro's stable consumer base and diversified income demographics, with grocery-anchored centers in established suburban corridors maintaining near-full occupancy.",
+      "financing": "Lender appetite for Cincinnati commercial real estate reflects the metro's stable fundamentals and lower volatility compared to coastal gateway markets. Regional banks including Fifth Third, PNC, and Huntington are consistent participants across all product types, and national lenders are increasingly active given the proven absorption and exit liquidity. Agency execution is efficient for stabilized multifamily, and debt funds are active in bridge lending for value-add industrial and multifamily repositioning.",
+      "outlook": "Cincinnati is positioned for continued stable commercial real estate performance in 2026, with industrial growth driven by ongoing e-commerce buildout and nearshoring of manufacturing to Midwest logistics hubs. The metro's affordable cost of living continues to attract corporate back-office operations and technology sector employment growth, supporting office and multifamily demand in urban core and suburban locations."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Cincinnati is most active in the $2M to $15M range for value-add multifamily in established neighborhoods and industrial repositioning along the I-75 and I-71 corridors. Regional and national non-bank lenders are competitive in the market, offering 65% to 70% LTV with 12 to 36 month terms. Sponsor experience in the Cincinnati market and a clear stabilization plan are the primary underwriting considerations.",
+      "permanent": "Agency execution through Fannie Mae and Freddie Mac is the primary takeout for stabilized multifamily in Cincinnati, with regional bank balance sheet lending competitive for smaller loan sizes in the $2M to $10M range. Life insurance companies are selectively active on Class A industrial and grocery-anchored retail. CMBS provides execution for hotel, retail, and mixed-use deals that fall outside agency parameters.",
+      "construction": "Construction lending in Cincinnati is available from regional banks and national credit facilities comfortable with the metro's proven demand fundamentals. Typical structures feature 60% to 65% LTC with 24 to 30 month terms for multifamily and industrial projects in high-demand submarkets. Equity requirements of 35% to 40% are standard for most construction programs.",
+      "sba": "SBA 504 and 7(a) lending is active in Cincinnati for owner-occupied commercial real estate across the healthcare, professional services, manufacturing, and hospitality sectors. Regional bank SBA departments and local CDCs are consistent participants, and the metro's diversified small business economy creates steady demand for owner-occupied financing in the $800K to $6M range.",
+      "mezzanine": "Mezzanine and preferred equity is deployed in Cincinnati primarily on larger multifamily and industrial transactions in the $8M to $30M range where senior loan proceeds leave a gap requiring structured subordinate capital. National debt funds active in the Midwest are comfortable with Cincinnati exposure given the proven exit liquidity, with preferred equity pricing in the 10% to 13% range.",
+      "specialty": "Specialty financing in Cincinnati covers cold storage facilities serving the food manufacturing and distribution economy, medical office buildings in the healthcare corridor, self-storage serving suburban growth, and net lease development along retail corridors. Commercial Lending Solutions maintains relationships with specialty lenders active in these categories."
+    },
+    "property_context": {
+      "multifamily": "Cincinnati multifamily investing benefits from affordable basis levels, improving urban amenities, and steady demand from a diverse employment base. The Over-the-Rhine neighborhood commands rents that support institutional-quality investment. Adjacent neighborhoods including Norwood, Oakley, and Mt. Adams offer value-add opportunities at attractive basis levels for investors seeking above-market yields.",
+      "industrial": "Cincinnati industrial investing is anchored by the metro's position as one of the Midwest's most important logistics hubs, with major interstate access, proximity to Cincinnati/Northern Kentucky International Airport, and a deep tenant base of e-commerce, consumer goods, and cold storage operators. Value-add infill industrial in Norwood and Reading offers above-market yields for investors willing to take on lease-up risk.",
+      "office": "The Cincinnati office market offers selective opportunity, with the Blue Ash tech corridor and Kenwood mixed-use district hosting the most active leasing demand. Owner-occupied SBA transactions remain active for healthcare and professional services firms. The metro's below-national-average vacancy in select submarkets suggests better fundamental support than most similarly sized markets.",
+      "retail": "Cincinnati retail investing is anchored by the metro's stable consumer base and the strong performance of necessity and experience-oriented formats. Grocery-anchored centers in established suburban corridors including Hyde Park, Blue Ash, and Mason maintain near-full occupancy. Net lease assets with national credit tenants attract a deep pool of 1031 exchange investors.",
+      "mixed_use": "Mixed-use investing in Cincinnati is concentrated in the Over-the-Rhine, Oakley Square, and Hyde Park corridors, where adaptive reuse of historic commercial buildings and ground-up vertical mixed-use development have created vibrant urban environments. Development incentives for historic tax credit projects provide meaningful return enhancement for investors willing to navigate the tax credit syndication process.",
+      "hospitality": "Cincinnati hospitality investing is supported by a stable corporate travel base, convention activity at the Duke Energy Convention Center, and leisure travel driven by the Cincinnati Reds, Bengals, and the nationally recognized Cincinnati Art Museum and Cincinnati Zoo. Boutique hotel development in Over-the-Rhine has demonstrated strong RevPAR performance."
+    }
+  },
+  "milwaukee": {
+    "city": "Milwaukee",
+    "state": "WI",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "5.2%",
+      "industrial_cap_rate": "5.50%-6.00%",
+      "office_vacancy": "18.5%",
+      "office_cap_rate": "7.25%-8.25%",
+      "retail_vacancy": "7.0%",
+      "retail_cap_rate": "6.50%-7.50%",
+      "hospitality_vacancy": "26.0%",
+      "hospitality_cap_rate": "7.75%-9.25%",
+      "mixed_use_vacancy": "9.5%",
+      "mixed_use_cap_rate": "6.25%-7.00%",
+      "job_growth": "0.8%",
+      "population_growth": "0.2%",
+      "rent_growth": "2.8%",
+      "median_asking_rent": "$1,175",
+      "major_employers": "manufacturing, healthcare, financial services, brewing, education",
+      "top_submarkets": "Walker's Point mixed-use, Third Ward, Menomonee Valley industrial, north shore multifamily, Oak Creek industrial"
+    },
+    "market_report": {
+      "overview": "Milwaukee is a major Midwest industrial and healthcare market with a diverse economic base anchored by manufacturing, financial services, and a growing healthcare sector. The city's position on Lake Michigan and its role as the economic center of southeastern Wisconsin create stable demand fundamentals across commercial property types. The Third Ward and Walker's Point neighborhoods have emerged as vibrant mixed-use investment corridors, while the Menomonee Valley and Oak Creek industrial submarkets benefit from proximity to the Port of Milwaukee and major interstate access.",
+      "multifamily": "The Milwaukee multifamily market benefits from improving urban demographics and a cost of living that remains highly attractive relative to Chicago and other Midwest metros. Vacancy near 5.5% reflects healthy absorption of recent deliveries in the downtown core and suburban growth corridors. The Third Ward, Walker's Point, and Bay View neighborhoods attract young professional renters, supporting above-average rents for urban product. Value-add opportunities in established north shore neighborhoods offer stable yields for lower-volatility investors.",
+      "industrial": "Milwaukee industrial demand is anchored by the metro's legacy manufacturing base, growing cold storage and food processing sector, and logistics operations serving the southeastern Wisconsin market. Vacancy near 5.2% reflects steady absorption of modern Class A supply, and the deep industrial tenant base of manufacturers and distributors supports above-average lease terms and creditworthy tenancy. The Menomonee Valley and Oak Creek corridors are the most active industrial investment zones.",
+      "office_retail": "The Milwaukee office market reflects the broader Midwest pattern of elevated vacancy near 18.5%, masking significant submarket divergence between the vibrant East Town and Third Ward corridors and legacy suburban parks facing meaningful challenges. The Historic Third Ward has established itself as one of the strongest retail corridors in the Midwest, attracting both national and local concepts to an established pedestrian and tourist destination.",
+      "financing": "Lender appetite for Milwaukee commercial real estate reflects the metro's stable fundamentals and the deep regional bank presence that characterizes the Midwest lending environment. Associated Bank, Wintrust, and Old National are consistent participants, and national lenders are increasingly active for larger transactions. Agency execution is competitive for well-located stabilized multifamily, and debt funds are beginning to expand their Midwest reach to include Milwaukee given the attractive basis levels.",
+      "outlook": "Milwaukee is positioned for steady commercial real estate performance in 2026, with industrial growth driven by manufacturing nearshoring and a growing cold storage and food processing economy. The ongoing revitalization of the downtown core and waterfront corridor continues to attract new residents and businesses. Investors targeting yield with lower basis risk than Chicago will find Milwaukee increasingly competitive."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Milwaukee is available in the $2M to $12M range for value-add multifamily in urban neighborhoods and industrial repositioning along the I-94 and I-43 corridors. Regional and national non-bank lenders are active, offering 65% LTV with 12 to 24 month terms for well-positioned business plans. Lender selectivity is highest for office and retail bridge requests given current demand uncertainty.",
+      "permanent": "Agency execution through Fannie Mae and Freddie Mac is available for stabilized multifamily in Milwaukee, with regional bank balance sheet lending competing aggressively for smaller loan sizes. Life insurance companies are selectively active on Class A industrial and grocery-anchored retail in established corridors. The depth of regional bank competition in the Wisconsin market keeps permanent pricing competitive.",
+      "construction": "Construction lending in Milwaukee is available from regional Wisconsin banks and national credit facilities, with typical LTC caps of 60% to 65% and 24 month initial terms. Multifamily construction in urban infill locations near the Third Ward and Walker's Point can achieve tighter pricing given demonstrated absorption, while industrial construction in Oak Creek and the Menomonee Valley is well-supported given proven tenant demand.",
+      "sba": "SBA 504 and 7(a) lending serves Milwaukee's active owner-occupied commercial market, particularly among manufacturing companies, healthcare providers, professional services firms, and hospitality operators. Wisconsin CDCs and regional bank SBA departments are active participants, and the metro's lower land costs create frequent owner-occupied acquisition opportunities in the $800K to $5M range.",
+      "mezzanine": "Mezzanine and preferred equity is deployed selectively in Milwaukee on larger multifamily and industrial transactions where senior loan proceeds leave a funding gap. National debt funds active in the Midwest are willing to extend to Milwaukee given the stable fundamentals and improving urban demographics, with preferred equity pricing in the 10% to 13% range.",
+      "specialty": "Specialty financing in Milwaukee covers brewing and food processing facilities in the Menomonee Valley, cold storage assets serving the food manufacturing economy, medical office buildings in the Milwaukee Medical Mile healthcare corridor, and self-storage serving suburban growth. Commercial Lending Solutions maintains lender relationships across these specialty categories."
+    },
+    "property_context": {
+      "multifamily": "Milwaukee multifamily investing benefits from affordable basis levels, improving urban quality of life, and a cost-of-living advantage that makes the metro increasingly attractive relative to Chicago. The Third Ward, Walker's Point, and Bay View neighborhoods command the highest rents and attract the most institutional attention, while value-add opportunities in established near-north and near-west neighborhoods offer above-market yields.",
+      "industrial": "Milwaukee industrial investing is anchored by the metro's legacy manufacturing base and a growing modern industrial sector serving e-commerce distribution, cold storage, and food processing. The Menomonee Valley and Oak Creek submarkets offer a combination of value-add legacy buildings and Class A modern facilities. Long-term lease stability from manufacturing users creates predictable cash flows that attract core-plus investors.",
+      "office": "Milwaukee office investing requires careful submarket selection, with the Historic Third Ward and East Town CBD offering the strongest demand dynamics. Owner-occupied SBA transactions remain active for professional services and healthcare firms, and adaptive reuse of historic industrial buildings to creative office and mixed-use is the most active investment strategy in the urban core.",
+      "retail": "Milwaukee retail investing is anchored by the Historic Third Ward's established reputation as a premium retail and dining destination, and by necessity-driven formats in established suburban corridors. Grocery-anchored centers in Wauwatosa, Brookfield, and Shorewood maintain stable occupancy driven by affluent consumer demographics along the north and west shore corridors.",
+      "mixed_use": "Mixed-use investing in Milwaukee is concentrated in the Third Ward, Walker's Point, and the emerging Harbor District, where adaptive reuse of historic warehouse and industrial buildings creates authentic urban environments. Historic tax credit opportunities exist for investors willing to preserve architecturally significant structures in the Menomonee Valley and Walker's Point.",
+      "hospitality": "Milwaukee hospitality investing benefits from the city's established reputation as a convention and leisure destination, anchored by Fiserv Forum, the Summerfest music festival, and the nationally recognized Milwaukee Art Museum. Corporate travel from the metro's manufacturing and financial services employer base provides a stable weekday occupancy floor."
+    }
+  },
+  "oklahoma-city": {
+    "city": "Oklahoma City",
+    "state": "OK",
+    "stats": {
+      "multifamily_vacancy": "8.5%",
+      "multifamily_cap_rate": "6.00%-6.75%",
+      "industrial_vacancy": "6.8%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "21.5%",
+      "office_cap_rate": "7.50%-8.50%",
+      "retail_vacancy": "7.5%",
+      "retail_cap_rate": "6.50%-7.50%",
+      "hospitality_vacancy": "29.0%",
+      "hospitality_cap_rate": "7.75%-9.25%",
+      "mixed_use_vacancy": "10.5%",
+      "mixed_use_cap_rate": "6.50%-7.50%",
+      "job_growth": "1.6%",
+      "population_growth": "1.1%",
+      "rent_growth": "2.9%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "energy, aerospace, defense, healthcare, government, agriculture",
+      "top_submarkets": "Bricktown mixed-use, Midtown, Automobile Alley, south OKC industrial, Edmond multifamily"
+    },
+    "market_report": {
+      "overview": "Oklahoma City is a major regional commercial real estate market anchored by energy, aerospace, defense, and government employment. As the capital and largest city of Oklahoma, the metro combines an affordable cost structure with a diversified economic base that has expanded beyond its traditional energy roots. The city's ongoing downtown reinvestment, centered on the Bricktown entertainment district and Midtown redevelopment corridor, has driven improved urban multifamily and mixed-use demand.",
+      "multifamily": "The Oklahoma City multifamily market reflects a supply cycle that has pushed vacancy to 8.5% as the metro absorbs a significant wave of new deliveries in urban core and suburban growth corridors. Rent growth of 2.9% reflects healthy underlying demand from a growing workforce, and the market's affordability relative to coastal metros continues to attract corporate relocation and in-migration. Value-add opportunities in established neighborhoods near the downtown core offer investors above-market yields given the low basis and improving urban fundamentals.",
+      "industrial": "Oklahoma City industrial demand is driven by its position as a major Midwest logistics hub at the intersection of I-35 and I-40, energy sector manufacturing and distribution, and growing aerospace and defense manufacturing operations. Vacancy near 6.8% reflects absorption of recent speculative supply in the south OKC logistics corridor. The metro's cost-competitive land and labor make it attractive for national distribution operators.",
+      "office_retail": "The Oklahoma City office market faces elevated vacancy near 21.5% as energy sector tenants right-size footprints, but the downtown core has benefited from significant amenity investment and improving urban demographics. Retail fundamentals are more stable, with necessity-driven formats and suburban centers serving the growing Edmond, Yukon, and Moore corridors maintaining healthy occupancy.",
+      "financing": "Lender appetite for Oklahoma City commercial real estate reflects the metro's stable fundamentals and the competitive Oklahoma lending environment. Regional banks including BancFirst, Arvest, and BOK Financial are consistent participants across all product types. Agency execution is available for well-located stabilized multifamily, and debt funds are selectively active in bridge lending for urban core repositioning deals.",
+      "outlook": "Oklahoma City is positioned for steady commercial real estate performance in 2026, with ongoing downtown reinvestment driving improved multifamily and mixed-use demand, and the logistics and aerospace sectors providing stable industrial absorption. The metro's cost-competitive structure and affordable household fundamentals create conditions for continued population and employment growth."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Oklahoma City is available in the $2M to $12M range for value-add multifamily in urban neighborhoods and industrial repositioning along major interstate corridors. Regional and Oklahoma-focused non-bank lenders are the primary participants, offering 65% to 70% LTV with 12 to 24 month terms. Lender selectivity is highest for office bridge requests given current demand challenges.",
+      "permanent": "Agency execution through Fannie Mae and Freddie Mac is available for well-located stabilized multifamily in Oklahoma City, with regional bank balance sheet lending providing competitive options for smaller loan sizes. Life insurance companies are selectively active on Class A industrial and grocery-anchored retail. The depth of regional bank competition in the Oklahoma market supports competitive permanent pricing.",
+      "construction": "Construction lending in Oklahoma City is primarily sourced from regional Oklahoma banks, with typical LTC caps of 60% to 65% and 24 month initial terms. Urban core multifamily construction benefits from city incentives that improve deal feasibility, while industrial construction in the south OKC logistics corridor is well-supported given proven tenant absorption from national distribution operators.",
+      "sba": "SBA 504 and 7(a) lending is active in Oklahoma City for owner-occupied commercial real estate across the energy services, healthcare, professional services, and hospitality sectors. Oklahoma CDCs and regional bank SBA departments are consistent participants, and the metro's lower land costs create frequent owner-occupied opportunities in the $500K to $5M range.",
+      "mezzanine": "Mezzanine and preferred equity is deployed selectively in Oklahoma City primarily on urban core multifamily and mixed-use projects where city incentive programs and below-market land costs create development feasibility but senior loan proceeds alone are insufficient. National debt funds with Sunbelt and Midwest coverage occasionally extend to OKC for well-sponsored transactions with strong basis and clear exit paths.",
+      "specialty": "Specialty financing in Oklahoma City covers energy sector real estate including equipment storage yards and fabrication facilities, aerospace component manufacturing facilities near Tinker Air Force Base, self-storage serving suburban population growth, and net lease development along major retail corridors. Commercial Lending Solutions maintains specialty lender relationships across these categories."
+    },
+    "property_context": {
+      "multifamily": "Oklahoma City multifamily investing offers among the most attractive yield-to-basis ratios of any major Sunbelt market, with cap rates in the 6% to 6.75% range. Value-add opportunities in urban core neighborhoods near Bricktown, Automobile Alley, and the Paseo Arts District attract investors seeking gentrification-driven upside, while suburban garden-style product in Edmond and Moore provides stable cash flow. The metro's affordability ensures a large and stable renter base.",
+      "industrial": "Oklahoma City industrial investing is anchored by the metro's position at the intersection of I-35 and I-40, creating natural demand from national distribution operators. South OKC and Midwest City near Tinker Air Force Base are the primary industrial investment zones, with a mix of legacy buildings offering value-add potential and modern Class A facilities commanding institutional tenant interest.",
+      "office": "Oklahoma City office investing requires careful basis analysis and submarket selection, with the downtown Bricktown and Midtown corridors offering the strongest demand dynamics. Owner-occupied SBA transactions are active for energy services companies, law firms, and healthcare practices. The metro's lower average office rents make value-add repositioning of suburban parks challenging absent strong sponsorship.",
+      "retail": "Oklahoma City retail investing benefits from the metro's stable consumer base and strong suburban growth corridors in Edmond, Yukon, and Moore. Grocery-anchored centers in established suburban locations maintain near-full occupancy. Bricktown and the Automobile Alley corridor have attracted national food and beverage concepts that benefit from the entertainment and sports district activity surrounding the Paycom Center.",
+      "mixed_use": "Mixed-use investing in Oklahoma City is concentrated in the Bricktown, Midtown, and Automobile Alley corridors, where adaptive reuse of historic commercial buildings has created the most vibrant urban environments in the metro. City incentive programs for downtown development support project feasibility, and the ongoing improvement of urban amenities is attracting a growing young professional demographic.",
+      "hospitality": "Oklahoma City hospitality investing benefits from corporate travel supporting the energy, aerospace, and government employment base, convention activity at the Cox Convention Center, and the growing sports and entertainment economy centered on the Paycom Center and the OKC Thunder NBA franchise."
+    }
+  },
+  "louisville": {
+    "city": "Louisville",
+    "state": "KY",
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "5.00%-5.75%",
+      "office_vacancy": "17.5%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_vacancy": "6.0%",
+      "retail_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "24.5%",
+      "hospitality_cap_rate": "7.00%-8.50%",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "1.5%",
+      "population_growth": "0.7%",
+      "rent_growth": "3.2%",
+      "median_asking_rent": "$1,200",
+      "major_employers": "logistics, healthcare, bourbon and spirits manufacturing, automotive, financial services",
+      "top_submarkets": "NuLu mixed-use, Butchertown, Jeffersontown industrial, Oxmoor multifamily, East End retail"
+    },
+    "market_report": {
+      "overview": "Louisville is a major Midwest commercial real estate market anchored by one of the most important logistics ecosystems in the world, anchored by the UPS Worldport at Louisville Muhammad Ali International Airport, the largest air cargo hub in the United States. The metro's position along the Ohio River and at the intersection of I-64, I-65, and I-71 makes it a critical node in national supply chains, and the diverse economic base spanning healthcare, bourbon and spirits production, automotive manufacturing, and financial services creates stable demand fundamentals across commercial property types.",
+      "multifamily": "The Louisville multifamily market has maintained healthy fundamentals through recent supply cycles, with vacancy near 6.5% and rent growth of 3.2% supported by steady population growth and corporate in-migration. The NuLu and Butchertown neighborhoods have emerged as the most dynamic urban multifamily investment corridors, attracting young professionals drawn by the bourbon district revival and the growing local food and arts scene.",
+      "industrial": "Louisville industrial demand is driven by its role as a global logistics hub, with UPS Worldport processing more than 1.7 million packages per day and the combination of river port, interstate, and air freight infrastructure creating an unmatched multimodal logistics position. Vacancy near 4.5% reflects sustained absorption of Class A distribution space in the Bluegrass Industrial Park and I-65 south corridor.",
+      "office_retail": "The Louisville office market has fared relatively well compared to similarly sized metros, with vacancy near 17.5% driven primarily by suburban park product while the CBD and East End corridors benefit from healthcare, financial services, and professional services tenant demand. Bardstown Road and the NuLu corridor have attracted a distinctive mix of local restaurant and retail concepts that drive consistent foot traffic.",
+      "financing": "Lender appetite for Louisville commercial real estate reflects the metro's stable fundamentals and the competitive Kentucky lending environment. Regional banks including Stock Yards, Fifth Third, and PNC are consistent participants, and national lenders are increasingly active for industrial transactions given the market's proven absorption and the institutional quality of the tenant base. Agency execution is efficient for stabilized multifamily.",
+      "outlook": "Louisville is positioned for continued commercial real estate strength in 2026, with industrial demand driven by the ongoing expansion of e-commerce logistics infrastructure and the UPS Worldport ecosystem. Healthcare employment growth and bourbon tourism drive demand for mixed-use and hospitality investment in the urban core. The metro's cost-competitive fundamentals continue to attract corporate relocations from higher-cost metros."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Louisville is most active in the $2M to $15M range for value-add multifamily in urban neighborhoods and industrial repositioning along the I-65 and I-71 corridors. Regional and national non-bank lenders offer 65% to 70% LTV with 12 to 36 month terms for well-structured business plans. The industrial sector consistently attracts the most competitive bridge pricing given the depth of institutional takeout demand.",
+      "permanent": "Agency execution through Fannie Mae and Freddie Mac is the primary takeout for stabilized multifamily in Louisville, with life insurance companies and regional bank balance sheet lenders competing for industrial and retail transactions. The metro's deep institutional industrial market supports tight permanent cap rate pricing for Class A logistics assets.",
+      "construction": "Construction lending in Louisville is available from regional Kentucky banks and national credit facilities, with typical LTC structures of 60% to 65% for multifamily and industrial. Industrial construction in the Bluegrass Industrial Park and I-65 corridor commands the most competitive terms given proven tenant absorption.",
+      "sba": "SBA 504 and 7(a) lending is active in Louisville for owner-occupied commercial real estate across the healthcare, bourbon industry, professional services, and hospitality sectors. Kentucky CDCs and regional bank SBA departments are active participants, and the bourbon and spirits industry creates a distinctive pool of SBA borrowers seeking distillery, warehouse, and hospitality real estate.",
+      "mezzanine": "Mezzanine and preferred equity is deployed in Louisville primarily on industrial and multifamily transactions in the $8M to $30M range where senior loan proceeds leave a funding gap. National debt funds active in the Midwest are comfortable with Louisville industrial exposure given the exceptional tenant quality and proven exit liquidity, with preferred equity pricing in the 10% to 12% range.",
+      "specialty": "Specialty financing in Louisville covers bourbon distillery and bonded warehouse facilities, medical office buildings in the NortonHealthcare and Baptist Health corridors, cold storage facilities serving the regional food distribution economy, and net lease development for robust retail growth corridors in the East End. Commercial Lending Solutions maintains relationships with lenders active across these specialized categories."
+    },
+    "property_context": {
+      "multifamily": "Louisville multifamily investing benefits from a stable employment base anchored by the largest air cargo operation in the United States, a growing healthcare sector, and improving urban amenities driven by the bourbon tourism revival. The NuLu and Butchertown neighborhoods attract young professional renters and support above-market rent growth for well-positioned value-add assets.",
+      "industrial": "Louisville industrial investing is anchored by the UPS Worldport ecosystem and the metro's position as one of the most important logistics nodes in North America. Class A big-box distribution in the Bluegrass Industrial Park, I-65 south corridor, and the Riverport industrial zone commands institutional-quality cap rates from a deep pool of core and core-plus buyers.",
+      "office": "Louisville office investing offers selective opportunity, with the downtown CBD and the Hurstbourne East End corridor hosting the strongest demand from healthcare, professional services, and financial services tenants. Owner-occupied SBA transactions are active for healthcare practices, law firms, and professional services companies seeking to anchor their operations in owned real estate.",
+      "retail": "Louisville retail investing benefits from the metro's diverse consumer demographics and the strength of suburban growth corridors in the East End and Jeffersontown. Grocery-anchored centers in established neighborhoods maintain near-full occupancy, and the Bardstown Road and NuLu corridors attract distinctive local and regional retail and dining concepts.",
+      "mixed_use": "Mixed-use investing in Louisville is concentrated in NuLu, Butchertown, and the bourbon district corridor, where adaptive reuse of historic industrial and warehouse buildings has created vibrant urban environments. Distillery-anchored mixed-use developments that combine production, tasting rooms, and hospitality have emerged as a distinctive Louisville investment category driven by the global bourbon tourism economy.",
+      "hospitality": "Louisville hospitality investing is anchored by the Kentucky Derby and the broader bourbon tourism economy, which drives significant leisure travel to the city year-round. The Kentucky International Convention Center supports corporate group travel, and the growing urban entertainment district around NuLu and the bourbon district creates a compelling lifestyle destination for regional and national visitors."
+    }
+  },
+  "knoxville": {
+    "city": "Knoxville",
+    "state": "TN",
+    "stats": {
+      "multifamily_vacancy": "7.5%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "4.2%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_vacancy": "14.5%",
+      "office_cap_rate": "6.75%-7.75%",
+      "retail_vacancy": "5.5%",
+      "retail_cap_rate": "6.00%-7.00%",
+      "hospitality_vacancy": "23.0%",
+      "hospitality_cap_rate": "7.00%-8.50%",
+      "mixed_use_vacancy": "8.2%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "2.1%",
+      "population_growth": "1.5%",
+      "rent_growth": "4.2%",
+      "median_asking_rent": "$1,250",
+      "major_employers": "University of Tennessee, TVA, healthcare, automotive manufacturing, logistics",
+      "top_submarkets": "Downtown Knoxville mixed-use, Farragut retail, Hardin Valley industrial, west Knox multifamily, east Knox industrial"
+    },
+    "market_report": {
+      "overview": "Knoxville is one of the fastest-growing commercial real estate markets in the Southeast, driven by a combination of population in-migration from higher-cost metros, University of Tennessee anchored economic activity, Tennessee Valley Authority operations, and rapid expansion of automotive and advanced manufacturing in the East Tennessee industrial corridor. The metro's position at the intersection of I-40 and I-75 and its proximity to the Great Smoky Mountains create both logistics and tourism demand that diversify the commercial property base.",
+      "multifamily": "The Knoxville multifamily market is absorbing a significant new supply cycle, with vacancy near 7.5% as the metro digests deliveries in west Knox County and the downtown corridor. Rent growth of 4.2% remains robust, reflecting strong underlying demand from University of Tennessee enrollment growth, in-migration from Nashville and Charlotte, and expanding healthcare and manufacturing employment. Value-add opportunities in established neighborhoods near the University District, Fort Sanders, and the Market Square corridor offer investors above-market yields.",
+      "industrial": "Knoxville industrial demand is driven by the metro's position in the Eastern Tennessee automotive and advanced manufacturing corridor. Vacancy near 4.2% reflects strong absorption of modern industrial supply in Hardin Valley, east Knox County, and the I-40 corridor east of the city. Logistics operators serving the regional Southeast distribution network are an increasing source of industrial demand, attracted by the intersection of major east-west and north-south interstate arteries.",
+      "office_retail": "The Knoxville office market is performing relatively well with vacancy near 14.5% reflecting stable demand from healthcare, University of Tennessee affiliated businesses, and professional services. Downtown Knoxville and the West Hills-Farragut corridor host the strongest demand. Retail fundamentals are healthy, with Farragut and west Knox County retail corridors maintaining low vacancy driven by affluent suburban demographics.",
+      "financing": "Lender appetite for Knoxville commercial real estate reflects the metro's strong growth trajectory and the competitive Tennessee lending environment. Tennessee-focused regional banks and national lenders active in the Southeast are consistent participants, and the metro's improving institutional profile is attracting debt fund coverage for bridge and construction transactions. Agency execution is available for well-located stabilized multifamily.",
+      "outlook": "Knoxville is positioned as one of the most compelling smaller metro commercial real estate opportunities in the Southeast for 2026 and beyond. Population growth rates approaching those of much larger Sunbelt metros, combined with a diversified economic base and below-median cost of living, create durable demand fundamentals. Industrial growth driven by automotive manufacturing supply chain expansion will continue to anchor the investment case."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Knoxville is available in the $2M to $10M range for value-add multifamily repositioning and industrial acquisition along the I-40 corridor. Southeast-focused non-bank lenders and regional Tennessee banks are the primary participants, with LTV caps of 65% to 70% and 12 to 24 month initial terms. Sponsor track record in the Southeast market and a clear stabilization plan are the primary underwriting considerations.",
+      "permanent": "Agency execution through Fannie Mae and Freddie Mac is available for well-located stabilized multifamily in Knoxville, with regional bank balance sheet lending providing competitive alternatives for smaller transactions. Life insurance companies are selectively active on Class A industrial in Hardin Valley and east Knox County. The metro's improving institutional profile is expanding the pool of permanent lenders willing to pursue Knoxville transactions.",
+      "construction": "Construction lending in Knoxville is available from Tennessee-focused regional banks and national credit facilities, with typical LTC caps of 60% to 65% and 24 month initial terms. Multifamily construction in urban infill locations near the University District benefits from student and young professional demand, while industrial construction in Hardin Valley and east Knox County achieves competitive financing given proven absorption from automotive and logistics tenants.",
+      "sba": "SBA 504 and 7(a) lending is active in Knoxville for owner-occupied commercial real estate across the healthcare, professional services, manufacturing, and hospitality sectors. Tennessee CDCs and regional bank SBA departments are active participants, and the metro's growing small business economy creates steady demand for owner-occupied financing in the $800K to $5M range.",
+      "mezzanine": "Mezzanine and preferred equity is deployed selectively in Knoxville primarily on larger multifamily and industrial developments where the metro's strong growth trajectory supports subordinate capital deployment. Southeast-focused debt funds are increasingly covering Knoxville as the metro's institutional profile improves, with preferred equity returns in the 10% to 13% range.",
+      "specialty": "Specialty financing in Knoxville covers medical facilities associated with the University of Tennessee Medical Center, tourism and hospitality assets near the Great Smoky Mountains National Park gateway, automotive component manufacturing facilities, and self-storage serving rapid suburban growth. Commercial Lending Solutions maintains specialty lender relationships that extend to these Knoxville-specific categories."
+    },
+    "property_context": {
+      "multifamily": "Knoxville multifamily investing benefits from one of the strongest population growth rates among smaller Southeast metros, driven by University of Tennessee enrollment, in-migration from higher-cost metros, and expanding manufacturing employment. Value-add opportunities in the Fort Sanders, Oakwood-Lincoln Park, and Market Square corridors attract investors seeking gentrification upside, while suburban garden-style product in west Knox County and Farragut provides stable yields.",
+      "industrial": "Knoxville industrial investing is anchored by the metro's position in the East Tennessee automotive manufacturing corridor, with major component suppliers, logistics operators, and advanced manufacturers driving consistent demand. Hardin Valley and the I-40 east corridor are the primary investment zones, offering Class A modern buildings with strong credit tenancy and value-add properties in established industrial parks.",
+      "office": "Knoxville office investing is led by owner-occupied SBA transactions for healthcare practices, professional services firms, and University of Tennessee affiliated businesses. The downtown core and the West Hills corridor host the most active leasing demand. The metro's below-national-average vacancy rate suggests better fundamental support than most similarly sized markets.",
+      "retail": "Knoxville retail investing benefits from the strong consumer demographics of west Knox County and Farragut, where affluent suburban households support grocery-anchored centers and lifestyle retail formats. The downtown Market Square corridor attracts local dining and experiential retail that serves both the residential and the visitor economy.",
+      "mixed_use": "Mixed-use investing in Knoxville is concentrated in the downtown Market Square, Gay Street, and the emerging South Knoxville waterfront corridor, where adaptive reuse of historic buildings and ground-up mixed-use development are creating vibrant urban environments. City development incentives for downtown revitalization projects support mixed-use feasibility.",
+      "hospitality": "Knoxville hospitality investing benefits from the metro's role as a gateway to the Great Smoky Mountains National Park, the most visited national park in the United States, as well as University of Tennessee athletics events that draw significant regional travel. The downtown convention and entertainment district supports corporate group travel, and the expanding culinary and cultural scene in Old City and Market Square has improved the leisure visitor experience."
+    }
+  },
+  "savannah": {
+    "city": "Savannah",
+    "state": "GA",
+    "stats": {
+      "multifamily_vacancy": "8.0%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_vacancy": "3.5%",
+      "industrial_cap_rate": "4.75%-5.50%",
+      "office_vacancy": "12.5%",
+      "office_cap_rate": "6.50%-7.50%",
+      "retail_vacancy": "5.2%",
+      "retail_cap_rate": "5.75%-6.75%",
+      "hospitality_vacancy": "21.0%",
+      "hospitality_cap_rate": "6.50%-8.00%",
+      "mixed_use_vacancy": "7.5%",
+      "mixed_use_cap_rate": "5.75%-6.50%",
+      "job_growth": "3.2%",
+      "population_growth": "2.5%",
+      "rent_growth": "5.1%",
+      "median_asking_rent": "$1,500",
+      "major_employers": "Port of Savannah, logistics, automotive manufacturing, healthcare, tourism, military",
+      "top_submarkets": "Port Wentworth industrial, Pooler logistics corridor, Downtown Historic District, Islands multifamily, Georgetown industrial"
+    },
+    "market_report": {
+      "overview": "Savannah has emerged as one of the most dynamic commercial real estate markets in the Southeast, driven by the Port of Savannah, the fastest-growing port in the United States and the third-busiest container port by volume, and by the arrival of Hyundai's first North American assembly plant in nearby Bryan County. The metro combines a globally significant logistics and manufacturing base with a world-class historic tourism economy and a growing technology and defense sector, creating unusually diversified demand fundamentals for a market of its size.",
+      "multifamily": "The Savannah multifamily market is absorbing a significant supply wave driven by rapid population growth from port, logistics, and manufacturing employment in-migration, with vacancy near 8.0% as new deliveries are absorbed into a market with rent growth of 5.1%, among the highest of any Southeastern metro. Value-add opportunities in established neighborhoods near the historic district and the Southside residential corridor attract investors seeking above-market yield.",
+      "industrial": "Savannah industrial demand is extraordinary, driven by the Port of Savannah's position as the primary East Coast gateway for Asian manufactured goods. Vacancy near 3.5% is one of the tightest readings of any major Southeastern industrial market, and the Hyundai Metaplant in Bryan County has attracted hundreds of component suppliers requiring industrial real estate within close proximity of the production facility. Port Wentworth and Pooler are the epicenter of industrial investment.",
+      "office_retail": "The Savannah office market is performing well, with vacancy near 12.5% reflecting stable demand from port logistics companies, healthcare, professional services, and defense contractors near Hunter Army Airfield. Retail fundamentals are strong, with grocery-anchored centers serving the rapidly growing residential base and historic downtown retail benefiting from one of the strongest tourism economies of any American city.",
+      "financing": "Lender appetite for Savannah commercial real estate is among the strongest in the Southeast, reflecting the metro's exceptional industrial fundamentals and the depth of institutional demand for Port Wentworth and Pooler logistics assets. National insurance companies, pension funds, and international capital sources are active buyers for stabilized Class A industrial. Bridge and construction lending for multifamily and light industrial is available from regional Georgia banks and national credit facilities active in the Southeast.",
+      "outlook": "Savannah is positioned as one of the most compelling commercial real estate investment opportunities in the country for 2026 and beyond. The port's continued expansion, the Hyundai supplier ecosystem buildout, ongoing population growth, and a tourism economy with global reach create a multi-decade demand story across industrial, multifamily, and hospitality property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Savannah is most active in the $3M to $20M range for multifamily repositioning and light industrial value-add acquisitions in the expanding Pooler and west Chatham County markets. Southeast-focused non-bank lenders and regional Georgia banks are competitive, offering 65% to 72% LTV given the strong underlying fundamentals and institutional exit liquidity. Lenders are particularly active on industrial bridge loans near the port corridor given the extraordinary tenant demand.",
+      "permanent": "Permanent financing for Savannah commercial real estate reflects the metro's exceptional fundamentals. Life insurance companies are aggressively pricing industrial assets in the Port Wentworth and Pooler corridors. Agency execution is efficient for stabilized multifamily, and the depth of institutional demand for all product types creates a competitive permanent lending environment that benefits well-positioned sponsors.",
+      "construction": "Construction lending in Savannah is available from regional banks and national credit facilities, with industrial construction in Port Wentworth and Pooler attracting the most competitive terms given proven absorption from port-driven and Hyundai supplier tenants. Multifamily construction is active to serve the rapid population growth, with typical LTC structures of 60% to 65% and 24 to 36 month initial terms.",
+      "sba": "SBA 504 and 7(a) lending is active in Savannah for owner-occupied commercial real estate across the logistics, healthcare, tourism, and professional services sectors. Georgia CDCs and regional bank SBA departments serve the market, and the metro's rapid growth creates consistent demand for owner-occupied acquisition by businesses seeking to anchor their operations in a market with strong appreciation fundamentals.",
+      "mezzanine": "Mezzanine and preferred equity is deployed in Savannah primarily on industrial development transactions where the strong underlying demand exceeds senior loan availability. National debt funds active in the Southeast are increasingly pursuing Savannah industrial bridge transactions given the exceptional fundamentals, with preferred equity pricing at 10% to 12% for port-adjacent logistics development.",
+      "specialty": "Specialty financing in Savannah covers port and maritime-related real estate including container yard facilities, cold storage for agricultural exports, tourism and hospitality assets in the Historic District, Hyundai supplier manufacturing facilities in Bryan County, and military contractor real estate near Hunter Army Airfield. Commercial Lending Solutions maintains lender relationships across these specialized categories."
+    },
+    "property_context": {
+      "multifamily": "Savannah multifamily investing is driven by one of the fastest population growth rates among southeastern metros, fueled by in-migration of logistics, port, and automotive manufacturing workers and the growing appeal of Savannah's exceptional quality of life. Value-add opportunities in the Islands, Southside, and Midtown corridors offer investors above-market yields, while new ground-up development in Pooler and west Chatham County is directly serving the workforce housing needs of the expanding industrial employment base.",
+      "industrial": "Savannah industrial investing is anchored by the Port of Savannah ecosystem and the Hyundai Metaplant supply chain, creating extraordinary and durable demand for logistics, manufacturing, and distribution real estate in and around Chatham, Bryan, and Effingham counties. Port Wentworth and Pooler are the primary industrial investment zones, commanding cap rates in the 4.75% to 5.50% range. Value-add infill industrial in the I-16 and I-95 corridors offers above-market yields for investors with exceptional demand tailwinds.",
+      "office": "Savannah office investing benefits from stable demand from port logistics companies, healthcare systems, professional services, and defense contractors. The metro's below-national-average vacancy rate reflects the positive employment absorption that accompanies strong population and industrial growth. Owner-occupied SBA transactions are active for healthcare practices, engineering firms serving the logistics sector, and professional services companies.",
+      "retail": "Savannah retail investing is anchored by the Historic District's Broughton Street corridor, one of the most visited retail streets in the Southeast, and by rapidly growing suburban retail along the Abercorn Street and Pooler Parkway corridors. Grocery-anchored centers in west Chatham County and Pooler are achieving below-market vacancy as new households demand neighborhood retail. Tourism-driven retail in the Historic District commands premium rents.",
+      "mixed_use": "Mixed-use investing in Savannah is concentrated in the Historic District and the emerging Starland and Thomas Square corridors, where the city's extraordinary historic building stock and arts college community create authentic urban environments. SCAD-affiliated development has transformed underutilized historic buildings into creative mixed-use assets, and private investment has followed into adjacent neighborhoods.",
+      "hospitality": "Savannah hospitality investing is anchored by one of the most compelling tourism economies in the United States. The Historic District's combination of architecture, culinary scene, nightlife, and SCAD-affiliated arts culture draws millions of visitors annually and supports exceptional RevPAR among historic boutique hotels. The St. Patrick's Day Festival, food and wine events, and a year-round convention calendar create diversified demand drivers."
+    }
+  },
+  "charleston": {
+    "city": "Charleston",
+    "state": "SC",
+    "stats": {
+      "multifamily_vacancy": "7.2%",
+      "multifamily_cap_rate": "5.25%-6.00%",
+      "industrial_vacancy": "4.8%",
+      "industrial_cap_rate": "5.00%-5.75%",
+      "office_vacancy": "13.5%",
+      "office_cap_rate": "6.50%-7.50%",
+      "retail_vacancy": "5.0%",
+      "retail_cap_rate": "5.50%-6.50%",
+      "hospitality_vacancy": "20.0%",
+      "hospitality_cap_rate": "6.50%-8.00%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "5.50%-6.25%",
+      "job_growth": "2.8%",
+      "population_growth": "2.2%",
+      "rent_growth": "4.5%",
+      "median_asking_rent": "$1,675",
+      "major_employers": "Boeing, healthcare, tourism, technology, military, port logistics",
+      "top_submarkets": "North Charleston industrial, West Ashley multifamily, Daniel Island mixed-use, Mount Pleasant retail, Johns Island development"
+    },
+    "market_report": {
+      "overview": "Charleston is one of the most sought-after commercial real estate markets in the Southeast, combining a growing industrial base anchored by Boeing and the Port of Charleston with one of the most vibrant tourism and lifestyle economies in the country. As one of the fastest-growing metros in South Carolina, Charleston attracts significant corporate relocation, in-migration from high-cost Northeast and Midwest markets, and sustained institutional real estate investment across all property types.",
+      "multifamily": "The Charleston multifamily market has maintained strong fundamentals through its supply cycle, with vacancy near 7.2% and rent growth of 4.5% reflecting persistent demand from in-migration, growing technology and aerospace employment, and a military population base that provides stable renter demand. Value-add opportunities in established West Ashley, North Charleston, and Summerville neighborhoods offer investors above-market yields relative to more expensive Sunbelt gateway markets.",
+      "industrial": "Charleston industrial demand is anchored by Boeing's manufacturing operations at the Charleston International Airport complex, the Port of Charleston's role as a major East Coast container gateway, and the growing tier-1 and tier-2 aerospace supplier ecosystem in North Charleston. Vacancy near 4.8% reflects strong absorption of Class A distribution and manufacturing supply, and the ongoing expansion of port capacity is expected to sustain industrial demand growth.",
+      "office_retail": "The Charleston office market is performing well, with vacancy near 13.5% reflecting stable demand from technology companies, Boeing-affiliated professional services, healthcare, and financial services tenants. Retail fundamentals are strong, with Mount Pleasant and Summerville suburban corridors maintaining low vacancy, and the King Street and East Bay corridor in historic downtown attracting nationally recognized luxury and lifestyle retail concepts.",
+      "financing": "Lender appetite for Charleston commercial real estate is among the strongest in the Southeast, reflecting the metro's exceptional population growth trajectory and the diversified institutional demand for industrial and multifamily assets. National life insurance companies and pension funds are aggressively competing for stabilized Class A industrial near the port and Boeing campus, and agency execution for multifamily is efficient given the strong fundamentals.",
+      "outlook": "Charleston is positioned as one of the most compelling commercial real estate markets in the Southeast for the next decade. The Boeing campus expansion, port capacity growth, continued technology sector in-migration, and the metro's exceptional quality of life create durable demand across all asset classes. Industrial cap rates in the 5% range reflect institutional recognition that Charleston's combination of aerospace and port logistics creates an irreplaceable investment thesis."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Charleston is active in the $3M to $20M range for value-add multifamily in established neighborhoods and industrial repositioning along the I-26 corridor and in North Charleston. Southeast-focused non-bank lenders and regional banks are competitive, offering 65% to 72% LTV given the strong underlying fundamentals. Industrial bridge loans near the port and Boeing campus receive particularly competitive pricing given the depth of institutional takeout demand.",
+      "permanent": "Permanent financing in Charleston reflects the metro's exceptional investment appeal. Life insurance companies compete aggressively for Class A industrial near the port and Boeing campus, and agency execution for stabilized multifamily is efficient given strong rent growth and occupancy fundamentals. The depth of institutional buyer demand for Charleston commercial real estate supports tight cap rate pricing across all property types.",
+      "construction": "Construction lending in Charleston is available from regional South Carolina banks and national credit facilities, with industrial construction near the port and Boeing campus attracting the most competitive terms. Multifamily construction in suburban growth corridors in West Ashley, Summerville, and Johns Island is active, with typical LTC structures of 60% to 65% and 24 to 36 month initial terms.",
+      "sba": "SBA 504 and 7(a) lending is active in Charleston for owner-occupied commercial real estate across the aerospace, healthcare, technology, and hospitality sectors. South Carolina CDCs and regional bank SBA departments serve the market, and the metro's rapid growth creates consistent demand for owner-occupied acquisition across a broad range of property types and business categories.",
+      "mezzanine": "Mezzanine and preferred equity is deployed in Charleston primarily on industrial and multifamily development transactions where the strong underlying demand exceeds senior loan availability. Southeast-focused debt funds are actively covering Charleston for transactions with strong growth and exit fundamentals, with preferred equity pricing in the 10% to 12% range.",
+      "specialty": "Specialty financing in Charleston covers aerospace and defense manufacturing facilities associated with the Boeing campus and military installations, marina and boat storage assets serving the coastal lifestyle economy, historic tax credit properties in the downtown Peninsula, and tourism and hospitality assets throughout the metro. Commercial Lending Solutions maintains lender relationships across these specialized categories."
+    },
+    "property_context": {
+      "multifamily": "Charleston multifamily investing benefits from one of the strongest in-migration stories in the Southeast, driven by the tech sector, Boeing, military, healthcare, and lifestyle-motivated relocations from Northeast and Midwest markets. Value-add opportunities in West Ashley, North Charleston, and Summerville offer above-market yields given the strong demand tailwinds. New ground-up development in Johns Island and the West Ashley expansion corridor is serving workforce housing demand from the growing industrial and healthcare employment base.",
+      "industrial": "Charleston industrial investing is anchored by the Port of Charleston and the Boeing manufacturing campus, creating extraordinary demand for logistics, aerospace manufacturing, and distribution real estate in and around North Charleston and the I-26 corridor. Class A industrial assets near port facilities command institutional cap rates from a deep pool of global buyers, while value-add flex industrial in the North Charleston submarket serves the growing aerospace supply chain and technology sectors.",
+      "office": "Charleston office investing benefits from stable demand from technology companies, aerospace and defense contractors, healthcare systems, and professional services firms. The Daniel Island office park and downtown Peninsula host the strongest leasing demand, and owner-occupied SBA transactions are active for technology startups, law firms, and healthcare practices anchoring operations in an improving growth market.",
+      "retail": "Charleston retail investing is anchored by the downtown Peninsula's King Street corridor, which has established itself as one of the most sought-after retail destinations in the Southeast for national luxury and lifestyle concepts. Suburban retail in Mount Pleasant, Summerville, and the Savannah Highway corridor serves rapidly growing residential populations with strong consumer demographics. Net lease development along major arterials is active to serve the expanding suburban residential base.",
+      "mixed_use": "Mixed-use investing in Charleston is concentrated in the downtown Peninsula and the Daniel Island mixed-use district, where the combination of historic architecture, walkable urbanism, and strong consumer demographics creates exceptional retail and residential demand. Adaptive reuse of historic commercial and industrial buildings in the Neck Area and upper Peninsula is attracting creative capital.",
+      "hospitality": "Charleston hospitality investing is anchored by one of the most compelling tourism economies in the United States, with the Historic District, Spoleto Festival, and culinary reputation consistently drawing national recognition. The combination of high leisure demand and stable corporate travel from Boeing, military installations, and the growing technology sector creates diversified RevPAR drivers. Boutique hotel development in the Peninsula commands premium rates."
+    }
+  },
+  "omaha": {
+    "city": "Omaha",
+    "state": "NE",
+    "stats": {
+      "multifamily_vacancy": "6.2%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.50%-6.25%",
+      "office_vacancy": "16.5%",
+      "office_cap_rate": "7.00%-8.00%",
+      "retail_vacancy": "6.5%",
+      "retail_cap_rate": "6.25%-7.25%",
+      "hospitality_vacancy": "24.5%",
+      "hospitality_cap_rate": "7.25%-8.75%",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.25%-7.00%",
+      "job_growth": "1.2%",
+      "population_growth": "0.9%",
+      "rent_growth": "2.8%",
+      "median_asking_rent": "$1,150",
+      "major_employers": "financial services, insurance, logistics, agriculture processing, healthcare, defense",
+      "top_submarkets": "Midtown Crossing mixed-use, Aksarben Village, West Omaha suburban, Pacific Street corridor, Sarpy County industrial"
+    },
+    "market_report": {
+      "overview": "Omaha is a major Midwest commercial real estate market anchored by one of the most concentrated clusters of financial services, insurance, and corporate headquarters activity in the central United States. As the home of Berkshire Hathaway, Union Pacific, Mutual of Omaha, and dozens of Fortune 500 subsidiaries, Omaha combines institutional-quality corporate tenancy with a stable and diverse economic base that has historically demonstrated lower volatility than coastal gateway markets.",
+      "multifamily": "The Omaha multifamily market has maintained stable fundamentals through recent supply cycles, with vacancy near 6.2% and rent growth of 2.8% reflecting the metro's steady growth profile. The Aksarben Village and Midtown Crossing mixed-use developments have created genuine urban walkability nodes that attract above-market rents from the young professional segment. Value-add opportunities in established midtown and northwest Omaha neighborhoods offer investors stable yields with lower basis risk.",
+      "industrial": "Omaha industrial demand is supported by the metro's position as a major central U.S. logistics point, with Union Pacific's headquarters and extensive rail infrastructure creating structural demand from agricultural commodity processors, e-commerce distribution operators, and manufacturing companies serving the Midwest market. Vacancy near 5.5% reflects stable absorption of Class A supply in Sarpy County and the I-80 corridor.",
+      "office_retail": "The Omaha office market benefits from some of the most creditworthy tenants of any Midwest market, with financial services and insurance company headquarters occupying significant CBD and suburban park space. Vacancy near 16.5% reflects the impact of hybrid work, but Omaha's institutional tenant base tends to maintain longer leases. Retail fundamentals are supported by the metro's stable consumer base and growing west Omaha suburban corridor.",
+      "financing": "Lender appetite for Omaha commercial real estate reflects the metro's stable fundamentals and the Midwest lending environment's preference for creditworthy sponsorship and conservative underwriting. First National Bank of Omaha, Wells Fargo, and US Bank are consistent participants, and life insurance companies actively compete for industrial and net lease assets given the credit quality of Omaha-based tenants.",
+      "outlook": "Omaha is positioned for continued steady commercial real estate performance in 2026, with industrial growth driven by ongoing e-commerce distribution buildout in Sarpy County and agricultural processing expansion. The metro's exceptional corporate tenant quality and below-national-average cap rates create a compelling defensive investment case for investors seeking stable yield with lower downside risk."
+    },
+    "loan_context": {
+      "bridge": "Bridge lending in Omaha is available in the $2M to $12M range for value-add multifamily repositioning and industrial acquisition along the I-80 and I-480 corridors. Midwest-focused non-bank lenders and regional banks offer 65% to 70% LTV with 12 to 24 month initial terms. The creditworthy tenant base and proven exit liquidity make Omaha attractive to bridge lenders seeking lower-risk Midwest exposure.",
+      "permanent": "Agency execution is available for well-located stabilized multifamily in Omaha, with life insurance companies and regional bank balance sheet lenders competing for industrial and office transactions backed by creditworthy corporate tenants. The metro's stable fundamentals and institutional tenant quality attract competitive permanent financing terms.",
+      "construction": "Construction lending in Omaha is primarily sourced from regional Nebraska banks and national credit facilities, with typical LTC caps of 60% to 65% and 24 month initial terms. Sarpy County industrial construction is well-supported given proven tenant absorption, while multifamily construction in Aksarben Village and west Omaha achieves competitive financing from regional lenders.",
+      "sba": "SBA 504 and 7(a) lending is active in Omaha for owner-occupied commercial real estate across the financial services, healthcare, agricultural supply chain, and professional services sectors. Nebraska CDCs and regional bank SBA departments are active participants, and the metro's diverse small business economy creates consistent demand for owner-occupied financing in the $800K to $5M range.",
+      "mezzanine": "Mezzanine and preferred equity is deployed selectively in Omaha on larger multifamily and industrial transactions in the $8M to $25M range. Midwest-focused debt funds are comfortable with Omaha exposure given the creditworthy tenant base and stable exit liquidity, with preferred equity pricing in the 10% to 12% range for well-structured transactions.",
+      "specialty": "Specialty financing in Omaha covers agricultural processing and cold storage facilities serving the Midwest commodity economy, data center assets supported by the area's low energy costs and central US network positioning, medical office buildings in the Nebraska Medical Center corridor, and net lease development along suburban retail corridors. Commercial Lending Solutions maintains lender relationships across these categories."
+    },
+    "property_context": {
+      "multifamily": "Omaha multifamily investing benefits from stable fundamentals, an institutional-quality corporate tenant base that supports strong renter incomes, and below-national-average land costs that allow investors to build or acquire at attractive per-unit basis levels. The Aksarben Village and Midtown Crossing mixed-use corridors command above-market rents from young professionals employed by the metro's major corporate employers.",
+      "industrial": "Omaha industrial investing is anchored by Union Pacific's rail network, agricultural processing demand, and the growing e-commerce distribution infrastructure serving the central U.S. market. Sarpy County and the I-80 corridor are the primary industrial investment zones, offering Class A modern buildings with strong credit tenancy and value-add properties in established industrial parks.",
+      "office": "Omaha office investing benefits from among the most creditworthy institutional tenants of any Midwest market, with financial services and insurance company headquarters anchoring CBD and suburban park demand. Owner-occupied SBA transactions are active for professional services firms, and well-located suburban product in the Regency and West Omaha corridor is performing well.",
+      "retail": "Omaha retail investing benefits from stable consumer fundamentals driven by the metro's institutional-quality employment base and below-national-average unemployment. Grocery-anchored centers in established west Omaha and suburban corridors maintain consistent occupancy. The Aksarben Village and Midtown corridors support experiential and restaurant-oriented retail at above-market rents.",
+      "mixed_use": "Mixed-use investing in Omaha is concentrated in the Aksarben Village and Midtown Crossing developments, purpose-built mixed-use districts that have demonstrated strong demand from young professionals. The downtown Old Market district provides a model of successful adaptive reuse of historic commercial buildings into mixed retail and residential use.",
+      "hospitality": "Omaha hospitality investing benefits from stable corporate travel demand from the metro's institutional employer base, convention activity at the CHI Health Center, and the College World Series, which brings significant leisure visitation each year. The Berkshire Hathaway Annual Meeting draws tens of thousands of visitors annually, creating one of the most distinctive hospitality demand events of any Midwest market."
+    }
   }
 }

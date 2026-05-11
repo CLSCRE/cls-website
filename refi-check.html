@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PH6TD3TC');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Your Refinance Opportunity | CLS CRE</title>
+<meta name="description" content="See if your commercial property qualifies for a rate and payment reduction. Takes 60 seconds.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://clscre.com/refi-check.html">
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="preload" href="./fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./css/global.min.css">
+<link rel="stylesheet" href="./css/pages.min.css">
+<style>
+*{box-sizing:border-box}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Minimal page shell */
+.rc-header{background:var(--navy,#153D63);padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+.rc-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.rc-logo img{height:40px;width:auto}
+.rc-logo-text{color:#fff;font-family:var(--font-display,serif);font-size:16px;line-height:1.2}
+.rc-phone{color:rgba(255,255,255,.8);font-size:14px;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:6px}
+.rc-phone:hover{color:#fff}
+.rc-hero{background:var(--navy,#153D63);padding:40px 24px 48px;text-align:center;color:#fff}
+.rc-hero h1{font-family:var(--font-display,serif);font-size:clamp(24px,4vw,38px);margin:0 0 12px;line-height:1.2}
+.rc-hero p{font-size:16px;color:rgba(255,255,255,.8);margin:0 auto;max-width:540px}
+.rc-body{max-width:780px;margin:0 auto;padding:32px 16px 64px}
+.rc-card{background:#fff;border:1px solid var(--gray-200,#e5e7eb);border-radius:16px;padding:28px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.rc-card-title{font-family:var(--font-display,serif);font-size:18px;color:var(--navy,#153D63);margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--gray-100,#f3f4f6)}
+.rc-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:480px){.rc-row{grid-template-columns:1fr}}
+
+/* Results */
+.refi-compare{display:flex;gap:12px;margin:0 0 16px}
+.refi-compare-col{flex:1;background:var(--gray-50,#f9fafb);border-radius:10px;padding:14px;text-align:center}
+.refi-compare-col.new-rate{background:var(--green,#006A4E);color:#fff}
+.refi-compare-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;opacity:.65;margin-bottom:4px}
+.refi-compare-val{font-size:22px;font-weight:800;font-family:var(--font-display,serif)}
+.rc-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.rc-detail{background:var(--gray-50,#f9fafb);border-radius:8px;padding:12px}
+.rc-detail-label{font-size:11px;color:var(--gray-400,#9ca3af);font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
+.rc-detail-val{font-size:16px;font-weight:700;color:var(--navy,#153D63)}
+.qualify-badge{padding:12px 16px;border-radius:8px;font-size:14px;font-weight:600;text-align:center;margin-bottom:16px}
+.qualify-yes{background:#d1fae5;color:#065f46}
+.qualify-close{background:#fef3c7;color:#92400e}
+.qualify-no{background:var(--gray-100,#f3f4f6);color:var(--gray-500,#6b7280)}
+
+/* Lead form */
+.lead-card{background:var(--navy,#153D63);border-radius:16px;padding:28px;color:#fff;margin-bottom:20px;display:none}
+.lead-card h3{font-family:var(--font-display,serif);font-size:20px;margin:0 0 6px}
+.lead-card p{font-size:14px;color:rgba(255,255,255,.75);margin:0 0 20px}
+.lead-field{margin-bottom:12px}
+.lead-field label{display:block;font-size:12px;font-weight:600;color:rgba(255,255,255,.7);margin-bottom:4px}
+.lead-field input{width:100%;padding:11px 14px;border:1px solid rgba(255,255,255,.2);border-radius:8px;background:rgba(255,255,255,.1);color:#fff;font-size:15px;font-family:var(--font-body,Inter,sans-serif);outline:none;transition:border-color .2s}
+.lead-field input::placeholder{color:rgba(255,255,255,.4)}
+.lead-field input:focus{border-color:var(--green-bright,#00A676)}
+.lead-submit{width:100%;padding:14px;background:var(--green-bright,#00A676);color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;font-family:var(--font-body,Inter,sans-serif);transition:background .15s}
+.lead-submit:hover{background:#009966}
+.lead-submit:disabled{opacity:.6;cursor:not-allowed}
+.lead-success{text-align:center;padding:16px 0;display:none}
+.lead-success .check{font-size:44px;color:var(--green-bright,#00A676);margin-bottom:8px}
+
+/* Footer strip */
+.rc-footer{background:var(--gray-50,#f9fafb);border-top:1px solid var(--gray-200,#e5e7eb);padding:20px 24px;text-align:center;font-size:12px;color:var(--gray-400,#9ca3af)}
+.rc-footer a{color:var(--gray-400,#9ca3af);text-decoration:none}
+.rc-footer a:hover{color:var(--navy,#153D63)}
+
+@media (prefers-color-scheme:dark){.rc-card{background:#1e293b;border-color:#334155}.rc-detail{background:#0f172a}.rc-detail-val{color:#e2e8f0}.refi-compare-col{background:#0f172a}.lead-field input{background:rgba(255,255,255,.08)}}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH6TD3TC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="rc-header">
+  <a href="./index.html" class="rc-logo" aria-label="CLS CRE Home">
+    <img src="./images/cls-logo-emblem.png" alt="CLS CRE" width="40" height="40">
+    <span class="rc-logo-text">Commercial<br>Lending Solutions</span>
+  </a>
+  <a href="tel:+13107080690" class="rc-phone" aria-label="Call CLS CRE at 310.708.0690">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    310.708.0690
+  </a>
+</header>
+
+<div class="rc-hero">
+  <h1>Check Your Refinance Opportunity</h1>
+  <p>Enter your current loan details below. We'll show you your estimated savings, new LTV, and whether you're a strong candidate for a lower rate.</p>
+</div>
+
+<main id="main-content" class="rc-body">
+
+  <div class="rc-card">
+    <div class="rc-card-title">Your Current Loan</div>
+    <div class="rc-row">
+      <div class="calc-field">
+        <label for="curBalance">Current Loan Balance</label>
+        <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="curBalance" inputmode="decimal" placeholder="3,500,000" aria-label="Current loan balance"></div>
+      </div>
+      <div class="calc-field">
+        <label for="curRate">Current Interest Rate</label>
+        <div class="calc-input-wrap"><input type="text" id="curRate" inputmode="decimal" placeholder="8.50" aria-label="Current interest rate"><span class="calc-suffix">%</span></div>
+      </div>
+    </div>
+    <div class="rc-row">
+      <div class="calc-field">
+        <label for="curTerm">Remaining Term (months)</label>
+        <div class="calc-input-wrap"><input type="text" id="curTerm" inputmode="decimal" placeholder="48" aria-label="Remaining term in months"></div>
+      </div>
+      <div class="calc-field">
+        <label for="propValue">Property Value (est.)</label>
+        <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="propValue" inputmode="decimal" placeholder="5,000,000" aria-label="Estimated property value"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rc-card">
+    <div class="rc-card-title">Refinance Target</div>
+    <div class="rc-row">
+      <div class="calc-field">
+        <label for="newRate">Target New Rate</label>
+        <div class="calc-input-wrap"><input type="text" id="newRate" inputmode="decimal" value="6.25" aria-label="Target refinance rate"><span class="calc-suffix">%</span></div>
+      </div>
+      <div class="calc-field">
+        <label for="closingCostPct">Est. Closing Costs</label>
+        <div class="calc-input-wrap"><input type="text" id="closingCostPct" inputmode="decimal" value="1.00" aria-label="Closing costs as percent of loan"><span class="calc-suffix">% of loan</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results — hidden until calc runs -->
+  <div id="resultsCard" class="rc-card" style="display:none">
+    <div class="rc-card-title">Your Refinance Snapshot</div>
+    <div class="refi-compare" aria-label="Monthly payment comparison">
+      <div class="refi-compare-col">
+        <div class="refi-compare-label">Current Payment</div>
+        <div class="refi-compare-val" id="resCurPayment">--</div>
+        <div style="font-size:11px;opacity:.6;margin-top:2px">per month</div>
+      </div>
+      <div class="refi-compare-col new-rate">
+        <div class="refi-compare-label">New Payment</div>
+        <div class="refi-compare-val" id="resNewPayment">--</div>
+        <div style="font-size:11px;opacity:.7;margin-top:2px">per month (30-yr)</div>
+      </div>
+    </div>
+    <div class="rc-detail-grid">
+      <div class="rc-detail"><div class="rc-detail-label">Annual Savings</div><div class="rc-detail-val" id="resAnnualSavings">--</div></div>
+      <div class="rc-detail"><div class="rc-detail-label">5-Year Savings</div><div class="rc-detail-val" id="res5YrSavings">--</div></div>
+      <div class="rc-detail"><div class="rc-detail-label">New LTV</div><div class="rc-detail-val" id="resNewLtv">--</div></div>
+      <div class="rc-detail"><div class="rc-detail-label">Breakeven Period</div><div class="rc-detail-val" id="resBreakeven">--</div></div>
+    </div>
+    <div id="qualifyBadge" class="qualify-badge" style="display:none" role="status"></div>
+  </div>
+
+  <!-- Lead capture — shown after calc runs -->
+  <div class="lead-card" id="leadCard">
+    <h3>Want Actual Lender Options?</h3>
+    <p>Leave your email and we'll come back within 24 hours with real quotes from lenders that match your scenario. No obligation.</p>
+    <form id="refiLeadForm" novalidate>
+      <div class="lead-field">
+        <label for="leadName">Your Name</label>
+        <input type="text" id="leadName" placeholder="Your name" autocomplete="name">
+      </div>
+      <div class="lead-field">
+        <label for="leadEmail">Email <span style="color:var(--green-bright,#00A676)">*</span></label>
+        <input type="email" id="leadEmail" placeholder="you@company.com" required autocomplete="email">
+      </div>
+      <div class="lead-field">
+        <label for="leadPhone">Phone <span style="font-weight:400;opacity:.6">(optional)</span></label>
+        <input type="tel" id="leadPhone" placeholder="(310) 000-0000" autocomplete="tel">
+      </div>
+      <input type="hidden" id="leadScenario" name="Scenario">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <button type="submit" class="lead-submit" id="leadSubmitBtn">Show Me Lender Options &rarr;</button>
+      <p style="font-size:11px;color:rgba(255,255,255,.5);text-align:center;margin:10px 0 0">No spam. Trevor responds personally within 24 hours.</p>
+    </form>
+    <div class="lead-success" id="leadSuccess">
+      <div class="check">&#10003;</div>
+      <h3 style="color:var(--green-bright,#00A676);margin:0 0 6px">Got it — Thank You</h3>
+      <p style="color:rgba(255,255,255,.75)">We'll review your scenario and reach out within 24 hours with lender options.</p>
+    </div>
+  </div>
+
+  <div style="text-align:center;padding:8px 0 24px">
+    <a href="./refinance.html" style="font-size:13px;color:var(--gray-400,#9ca3af);text-decoration:none">View full refinance page &rarr;</a>
+  </div>
+
+</main>
+
+<footer class="rc-footer">
+  &copy; 2026 Commercial Lending Solutions. DRE #02244836. &nbsp;|&nbsp;
+  <a href="./privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+  <a href="tel:+13107080690">310.708.0690</a> &nbsp;|&nbsp;
+  <a href="mailto:loans@clscre.com">loans@clscre.com</a>
+</footer>
+
+<script src="./tools/calc-utils.js"></script>
+<script src="./tools/analytics.js"></script>
+<script>
+(function () {
+  var calcRan = false;
+  var LEAD_ENDPOINT = 'https://formsubmit.co/ajax/loans@clscre.com';
+
+  ['curBalance','curRate','curTerm','propValue','newRate','closingCostPct'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('input', calcRefi);
+  });
+
+  function calcRefi() {
+    var balance = CalcUtils.parseField('curBalance');
+    var curRate = CalcUtils.parseField('curRate');
+    var termMo = CalcUtils.parseField('curTerm') || 360;
+    var propVal = CalcUtils.parseField('propValue');
+    var newRate = CalcUtils.parseField('newRate');
+    var closingPct = CalcUtils.parseField('closingCostPct') || 1;
+
+    if (balance <= 0 || newRate <= 0) return;
+
+    var curPayment = CalcUtils.monthlyPayment(balance, curRate > 0 ? curRate : newRate, termMo, false);
+    var newPayment = CalcUtils.monthlyPayment(balance, newRate, 360, false);
+    var monthlySavings = curPayment - newPayment;
+    var annualSavings = monthlySavings * 12;
+    var closingCosts = CalcUtils.originationFee(balance, closingPct);
+    var breakevenMo = monthlySavings > 0 ? CalcUtils.breakeven(closingCosts, monthlySavings) : null;
+    var newLtv = propVal > 0 ? Math.round(balance / propVal * 100) : null;
+
+    document.getElementById('resCurPayment').textContent = CalcUtils.fmtUSD(curPayment);
+    document.getElementById('resNewPayment').textContent = CalcUtils.fmtUSD(newPayment);
+    document.getElementById('resAnnualSavings').textContent = annualSavings >= 0 ? CalcUtils.fmtUSD(annualSavings) : '-' + CalcUtils.fmtUSD(Math.abs(annualSavings));
+    document.getElementById('res5YrSavings').textContent = fiveYr(annualSavings);
+    document.getElementById('resNewLtv').textContent = newLtv !== null ? newLtv + '%' : 'N/A';
+    document.getElementById('resBreakeven').textContent = breakevenMo !== null && monthlySavings > 0 ? breakevenMo + ' months' : monthlySavings <= 0 ? 'No savings' : 'N/A';
+
+    var badge = document.getElementById('qualifyBadge');
+    var qualifies = newLtv !== null && newLtv <= 75 && annualSavings > 10000;
+    var nearQualifies = (newLtv === null || newLtv <= 80) && annualSavings > 5000;
+    badge.style.display = '';
+    if (qualifies) {
+      badge.className = 'qualify-badge qualify-yes';
+      badge.textContent = 'You may qualify — Strong candidate for permanent refinancing';
+    } else if (nearQualifies) {
+      badge.className = 'qualify-badge qualify-close';
+      badge.textContent = 'Possible — Likely options available. Details matter here.';
+    } else {
+      badge.className = 'qualify-badge qualify-no';
+      badge.textContent = 'Challenging — Let\'s talk through creative structures.';
+    }
+
+    document.getElementById('resultsCard').style.display = '';
+    document.getElementById('leadCard').style.display = '';
+
+    var scenario = 'Balance: ' + CalcUtils.fmtUSD(balance) + ' | Current: ' + curRate + '% | New Target: ' + newRate + '% | Est. Savings: ' + CalcUtils.fmtUSD(annualSavings) + '/yr | LTV: ' + (newLtv !== null ? newLtv + '%' : 'N/A');
+    document.getElementById('leadScenario').value = scenario;
+
+    if (!calcRan) {
+      calcRan = true;
+      Analytics.refiCalcRun(annualSavings, newLtv);
+    }
+  }
+
+  function fiveYr(annual) {
+    var v = annual * 5;
+    return v >= 0 ? CalcUtils.fmtUSD(v) : '-' + CalcUtils.fmtUSD(Math.abs(v));
+  }
+
+  document.getElementById('refiLeadForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('leadEmail').value.trim();
+    if (!email) { document.getElementById('leadEmail').focus(); return; }
+    var btn = document.getElementById('leadSubmitBtn');
+    btn.textContent = 'Sending...'; btn.disabled = true;
+    fetch(LEAD_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        Name: document.getElementById('leadName').value.trim() || 'Not provided',
+        Email: email,
+        Phone: document.getElementById('leadPhone').value.trim() || 'Not provided',
+        Scenario: document.getElementById('leadScenario').value,
+        _subject: 'Refi Check Lead — CLS CRE',
+        _captcha: 'false',
+        _template: 'table'
+      })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function() {
+      Analytics.refiLeadCaptured();
+      document.getElementById('refiLeadForm').style.display = 'none';
+      document.getElementById('leadSuccess').style.display = 'block';
+    })
+    .catch(function() {
+      btn.textContent = 'Show Me Lender Options →';
+      btn.disabled = false;
+    });
+  });
+})();
+</script>
+<script src="./js/tracking.js" defer></script>
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
+</body>
+</html>

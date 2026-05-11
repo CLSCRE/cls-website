@@ -54,6 +54,9 @@ MARKET_REPORT_CITIES = [
     "detroit", "baltimore", "st-louis", "pittsburgh", "jacksonville",
     "memphis", "new-orleans", "boise", "spokane", "albuquerque",
     "tucson", "richmond",
+    # Batch 3 expansion — remaining Tier 2 metros
+    "san-jose", "fort-worth", "cincinnati", "milwaukee", "oklahoma-city",
+    "louisville", "knoxville", "savannah", "charleston", "omaha",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -84,6 +87,9 @@ ALL_CITIES = [
     "detroit", "baltimore", "st-louis", "pittsburgh", "jacksonville",
     "memphis", "new-orleans", "boise", "spokane", "albuquerque",
     "tucson", "richmond",
+    # Batch 3 expansion — remaining Tier 2 metros
+    "san-jose", "fort-worth", "cincinnati", "milwaukee", "oklahoma-city",
+    "louisville", "knoxville", "savannah", "charleston", "omaha",
 ]
 
 # Loan slug → context key mapping
