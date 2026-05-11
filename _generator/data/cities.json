@@ -3490,5 +3490,68 @@
       "Nipomo",
       "Pismo Beach"
     ]
+  },
+  {
+    "slug": "san-luis-obispo",
+    "city": "San Luis Obispo",
+    "state": "CA",
+    "metro": "San Luis Obispo",
+    "context": "San Luis Obispo is a Central Coast California market anchored by Cal Poly SLO and a premium wine and tourism economy, with extremely limited commercial supply that supports strong occupancy and above-average rent growth. Student housing, hospitality, and boutique retail all perform well in this high-income coastal market.",
+    "neighborhoods": [
+      "Downtown SLO",
+      "Edna Valley",
+      "Arroyo Grande",
+      "Pismo Beach",
+      "Grover Beach",
+      "Paso Robles",
+      "Templeton",
+      "Atascadero",
+      "Morro Bay",
+      "Cambria",
+      "Nipomo",
+      "Santa Maria"
+    ]
+  },
+  {
+    "slug": "santa-cruz",
+    "city": "Santa Cruz",
+    "state": "CA",
+    "metro": "Santa Cruz-Watsonville",
+    "context": "Santa Cruz is a high-cost coastal California market anchored by UC Santa Cruz and a thriving tourism economy, with extremely constrained commercial supply and persistent housing demand. The market's proximity to Silicon Valley drives premium rents and above-average occupancy across all commercial property types.",
+    "neighborhoods": [
+      "Downtown Santa Cruz",
+      "Capitola",
+      "Aptos",
+      "Soquel",
+      "Scotts Valley",
+      "Boulder Creek",
+      "Watsonville",
+      "Gilroy",
+      "Morgan Hill",
+      "Hollister",
+      "Salinas",
+      "Monterey"
+    ]
+  },
+  {
+    "slug": "palm-springs",
+    "city": "Palm Springs",
+    "state": "CA",
+    "metro": "Riverside-San Bernardino",
+    "context": "Palm Springs is a Coachella Valley resort market with strong boutique hotel, luxury retail, and event venue demand driven by winter snowbird migration and year-round tourism. The market's limited commercial supply and high barriers to entry support premium hospitality and retail yields.",
+    "neighborhoods": [
+      "Downtown Palm Springs",
+      "Palm Desert",
+      "Rancho Mirage",
+      "Indian Wells",
+      "La Quinta",
+      "Indio",
+      "Coachella",
+      "Cathedral City",
+      "Desert Hot Springs",
+      "Yucca Valley",
+      "Twentynine Palms",
+      "Banning"
+    ]
   }
 ]

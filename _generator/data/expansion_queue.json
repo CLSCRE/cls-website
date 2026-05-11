@@ -645,72 +645,6 @@
       ]
     },
     {
-      "slug": "san-luis-obispo",
-      "city": "San Luis Obispo",
-      "state": "CA",
-      "metro": "San Luis Obispo",
-      "tier1": false,
-      "context": "San Luis Obispo is a Central Coast California market anchored by Cal Poly SLO and a premium wine and tourism economy, with extremely limited commercial supply that supports strong occupancy and above-average rent growth. Student housing, hospitality, and boutique retail all perform well in this high-income coastal market.",
-      "neighborhoods": [
-        "Downtown SLO",
-        "Edna Valley",
-        "Arroyo Grande",
-        "Pismo Beach",
-        "Grover Beach",
-        "Paso Robles",
-        "Templeton",
-        "Atascadero",
-        "Morro Bay",
-        "Cambria",
-        "Nipomo",
-        "Santa Maria"
-      ]
-    },
-    {
-      "slug": "santa-cruz",
-      "city": "Santa Cruz",
-      "state": "CA",
-      "metro": "Santa Cruz-Watsonville",
-      "tier1": false,
-      "context": "Santa Cruz is a high-cost coastal California market anchored by UC Santa Cruz and a thriving tourism economy, with extremely constrained commercial supply and persistent housing demand. The market's proximity to Silicon Valley drives premium rents and above-average occupancy across all commercial property types.",
-      "neighborhoods": [
-        "Downtown Santa Cruz",
-        "Capitola",
-        "Aptos",
-        "Soquel",
-        "Scotts Valley",
-        "Boulder Creek",
-        "Watsonville",
-        "Gilroy",
-        "Morgan Hill",
-        "Hollister",
-        "Salinas",
-        "Monterey"
-      ]
-    },
-    {
-      "slug": "palm-springs",
-      "city": "Palm Springs",
-      "state": "CA",
-      "metro": "Riverside-San Bernardino",
-      "tier1": false,
-      "context": "Palm Springs is a Coachella Valley resort market with strong boutique hotel, luxury retail, and event venue demand driven by winter snowbird migration and year-round tourism. The market's limited commercial supply and high barriers to entry support premium hospitality and retail yields.",
-      "neighborhoods": [
-        "Downtown Palm Springs",
-        "Palm Desert",
-        "Rancho Mirage",
-        "Indian Wells",
-        "La Quinta",
-        "Indio",
-        "Coachella",
-        "Cathedral City",
-        "Desert Hot Springs",
-        "Yucca Valley",
-        "Twentynine Palms",
-        "Banning"
-      ]
-    },
-    {
       "slug": "visalia",
       "city": "Visalia",
       "state": "CA",
@@ -2822,9 +2756,24 @@
       "slug": "santa-barbara",
       "city": "Santa Barbara",
       "added": "2026-05-11"
+    },
+    {
+      "slug": "san-luis-obispo",
+      "city": "San Luis Obispo",
+      "added": "2026-05-11"
+    },
+    {
+      "slug": "santa-cruz",
+      "city": "Santa Cruz",
+      "added": "2026-05-11"
+    },
+    {
+      "slug": "palm-springs",
+      "city": "Palm Springs",
+      "added": "2026-05-11"
     }
   ],
-  "last_run": "2026-05-11T11:36:53.784519Z",
-  "total_pages_added": 684,
-  "runs_completed": 19
+  "last_run": "2026-05-11T18:05:02.915484Z",
+  "total_pages_added": 720,
+  "runs_completed": 20
 }
