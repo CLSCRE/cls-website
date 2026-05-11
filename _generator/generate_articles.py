@@ -60,6 +60,9 @@ MARKET_REPORT_CITIES = [
     # Batch 4 expansion — next Tier 2 metros
     "cleveland", "virginia-beach", "birmingham", "hartford", "tulsa",
     "honolulu", "el-paso", "riverside",
+    # Batch 5 expansion — next Tier 2 metros
+    "providence", "buffalo", "grand-rapids", "fresno",
+    "greensboro", "akron", "sarasota", "baton-rouge",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -96,6 +99,9 @@ ALL_CITIES = [
     # Batch 4 expansion — next Tier 2 metros
     "cleveland", "virginia-beach", "birmingham", "hartford", "tulsa",
     "honolulu", "el-paso", "riverside",
+    # Batch 5 expansion — next Tier 2 metros
+    "providence", "buffalo", "grand-rapids", "fresno",
+    "greensboro", "akron", "sarasota", "baton-rouge",
 ]
 
 # Loan slug → context key mapping

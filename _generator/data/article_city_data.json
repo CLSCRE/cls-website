@@ -4190,5 +4190,389 @@
       "mixed_use": "Mixed-use investing in Riverside is concentrated in the Downtown Riverside corridor, where UC Riverside's expanding presence and city-led revitalization initiatives are creating genuine urban density. The Mission Inn and historic downtown area attract both retail and residential investment, and transit-oriented development sites near the Metrolink rail corridor offer opportunities for density-bonus residential projects with ground-floor retail.",
       "hospitality": "Riverside hospitality investing benefits from corporate travel associated with the massive logistics and distribution employer base, healthcare and university travel, and regional leisure tourism centered on the Mission Inn Hotel, the National Orange Show, and access to the Palm Springs and Big Bear resort destinations. Business travel from the thousands of e-commerce and logistics companies headquartered or operating in the Inland Empire creates consistent weekday hotel demand that stabilizes seasonal leisure patterns."
     }
+  },
+  "providence": {
+    "city": "Providence",
+    "state": "RI",
+    "stats": {
+      "multifamily_vacancy": "4.2%",
+      "multifamily_cap_rate": "5.25%-6.00%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "6.00%-6.75%",
+      "office_vacancy": "14.5%",
+      "office_cap_rate": "7.00%-7.75%",
+      "retail_vacancy": "7.2%",
+      "retail_cap_rate": "6.50%-7.25%",
+      "hospitality_vacancy": "32.0%",
+      "hospitality_cap_rate": "7.25%-8.00%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "5.75%-6.50%",
+      "job_growth": "1.4%",
+      "population_growth": "0.6%",
+      "rent_growth": "5.8%",
+      "median_asking_rent": "$1,980",
+      "major_employers": "Brown University, Lifespan Health System, Rhode Island Hospital, CVS Health, Textron, IGT, Providence College",
+      "top_submarkets": "Downtown Providence, East Side, Jewelry District, Olneyville, Wayland Square, Cranston, Pawtucket"
+    },
+    "market_report": {
+      "overview": "Providence anchors the Rhode Island economy as the state capital and a major New England university hub. Brown University and Rhode Island School of Design anchor significant student housing demand while the Jewelry District has emerged as a life sciences and innovation corridor. The metro sits within the Boston to New York corridor, attracting institutional capital looking for relative value versus those gateway markets.",
+      "multifamily": "Providence multifamily fundamentals remain tight driven by university enrollment growth and a constrained construction pipeline. The East Side and downtown core command premium rents from graduate students and young professionals. Suburban submarkets in Cranston and North Providence offer higher yields with stable workforce housing demand from healthcare and education sector employees.",
+      "industrial": "Providence industrial benefits from Port of Providence access and its position as a regional distribution hub for New England. Cold storage and last-mile logistics facilities are the most active segments. The conversion of older mill and warehouse buildings to creative and flex industrial use is a defining trend across Olneyville and the Woonasquatucket River corridor.",
+      "office_retail": "Office demand in Providence centers on life sciences, healthcare administration, and state government tenants. The Jewelry District innovation district is seeing growing biotech and digital health tenancy. Retail vacancy has declined along Thayer Street and on the East Side where university foot traffic sustains service and dining concepts year-round.",
+      "financing": "Providence lenders include community banks with strong New England market knowledge, credit unions, and regional institutions. The life sciences corridor attracts SBA lending for owner-user medical and lab facilities. Agency financing is readily available for stabilized multifamily across the metro. Bridge lenders are active on mill conversion and adaptive reuse projects.",
+      "outlook": "Providence is positioned to benefit from Boston overflow demand as rents and land costs push investors into secondary New England markets. Life sciences investment in the Jewelry District, continued university expansion, and infrastructure investment in the Providence Station transit hub all support sustained commercial real estate demand through 2026 and beyond."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Providence are most active on adaptive reuse of historic mill buildings along the Woonasquatucket corridor and on multifamily value-add acquisitions in East Side and Cranston. Lenders look favorably on university-adjacent assets with strong occupancy histories.",
+      "permanent": "Permanent financing in Providence is led by life insurance companies and regional banks comfortable with the New England market. Stabilized multifamily near Brown and RISD commands the tightest spreads. Industrial assets along the Port of Providence corridor also attract long-term permanent capital.",
+      "construction": "Construction lending in Providence focuses on downtown residential mixed-use projects and life sciences lab build-outs in the Jewelry District innovation corridor. Mill conversions to residential and creative office are the most active construction loan category given the historic preservation tax credit opportunities.",
+      "sba": "SBA lending is active in Providence for healthcare practices, dental offices, and professional service firms buying owner-occupied space in suburban submarkets. The Cranston and Johnston corridors have seen meaningful SBA volume from immigrant-owned small businesses and medical practices.",
+      "mezzanine": "Mezzanine financing in Providence supports larger mixed-use developments in the downtown core and Jewelry District innovation zone where senior loan-to-cost constraints leave meaningful equity gaps. Life sciences projects with federal grant backing are attractive to mezzanine lenders.",
+      "specialty": "Specialty financing in Providence includes historic tax credit equity for mill conversions, EB-5 capital for larger hotel and mixed-use projects, and PACE financing for energy efficiency improvements to older building stock across the metro."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Providence centers on the East Side for premium rents and Cranston and North Providence for higher-yield workforce housing plays. University-adjacent assets near Brown, RISD, and Providence College provide built-in demand. The historic mill conversion segment offers value-add upside with strong tax credit equity potential.",
+      "industrial": "Industrial investment in Providence targets last-mile distribution, cold storage, and flex space near the Port of Providence. The conversion of historic mill buildings to modern flex-industrial use is a dominant strategy. Route 95 and Route 195 corridor proximity is a key underwriting criterion for logistics-oriented assets.",
+      "office": "Office investment in Providence is concentrated in the Jewelry District life sciences corridor and downtown Class A towers anchored by healthcare and government tenants. Suburban Class B office in Johnston and Cranston offers higher yields with stable regional employer occupancy. Remote work headwinds have moderated but demand from biotech and health IT tenants is growing.",
+      "retail": "Retail investment in Providence is strongest along Thayer Street on the East Side and in the Wayland Square neighborhood where university foot traffic and affluent resident density support strong sales. Power center investment along Reservoir Avenue and Bald Hill Road in Warwick offers stable grocery and service anchored returns.",
+      "mixed_use": "Mixed-use investment in Providence is centered on the downtown core and Jewelry District where ground-floor retail, office, and residential stacking is supported by zoning and city incentives. Mill-to-mixed-use conversions along the Woonasquatucket corridor represent the most active development pipeline.",
+      "hospitality": "Hospitality investment in Providence is driven by Brown University parents' weekends, convention center demand, and regional leisure travel. The Graduate Hotels format has proven successful near Brown. Downtown boutique hotels benefit from the Providence Performing Arts Center and Rhode Island Convention Center event calendar."
+    }
+  },
+  "buffalo": {
+    "city": "Buffalo",
+    "state": "NY",
+    "stats": {
+      "multifamily_vacancy": "4.5%",
+      "multifamily_cap_rate": "6.00%-6.75%",
+      "industrial_vacancy": "6.2%",
+      "industrial_cap_rate": "6.25%-7.00%",
+      "office_vacancy": "16.8%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "7.5%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "33.0%",
+      "hospitality_cap_rate": "7.50%-8.25%",
+      "mixed_use_vacancy": "6.0%",
+      "mixed_use_cap_rate": "6.25%-7.00%",
+      "job_growth": "1.2%",
+      "population_growth": "0.4%",
+      "rent_growth": "5.2%",
+      "median_asking_rent": "$1,650",
+      "major_employers": "Buffalo Niagara Medical Campus, University at Buffalo, M&T Bank, Delaware North, Rich Products, Moog, New Era Cap, Kaleida Health",
+      "top_submarkets": "Downtown Buffalo, Elmwood Village, Amherst, Cheektowaga, Williamsville, Tonawanda, Lackawanna, Niagara Falls corridor"
+    },
+    "market_report": {
+      "overview": "Buffalo is one of the most affordable large metros in the Northeast, anchored by the Buffalo Niagara Medical Campus, the University at Buffalo, and a resurgent downtown waterfront. The metro benefits from proximity to the Canadian border which drives cross-border logistics and trade. Significant state and federal investment in semiconductor manufacturing and clean energy is reshaping the employment base.",
+      "multifamily": "Buffalo multifamily fundamentals are strong relative to the metro's price point. Elmwood Village and the medical campus corridor command premium rents while Amherst and Williamsville serve UB graduate students and suburban professionals. Workforce housing across Cheektowaga and Tonawanda offers high current yields with stable regional employer demand.",
+      "industrial": "Buffalo industrial benefits from Great Lakes port access, cross-border trade with Canada via the Peace Bridge and Rainbow Bridge, and growing cold storage demand for the food and agriculture sector. The former Bethlehem Steel site in Lackawanna has drawn significant industrial redevelopment interest. Last-mile distribution serving the Buffalo metro is increasingly active.",
+      "office_retail": "Office demand in Buffalo is anchored by M&T Bank, healthcare administration at the medical campus, and state government. Downtown Class A towers are seeing modest recovery while suburban Class B in Amherst and Williamsville retains strong professional services tenancy. Retail is strongest in Elmwood Village and the Walden Galleria trade area.",
+      "financing": "Buffalo lenders include M&T Bank as a dominant local institution, regional credit unions with deep community ties, and national lenders drawn by New York State economic development incentives. Buffalo Billion and Invest Buffalo Niagara programs create favorable financing environments for qualifying projects. Agency multifamily financing is widely available.",
+      "outlook": "Buffalo is positioned for sustained growth driven by the medical campus expansion, Micron Technology's upstate semiconductor investment creating supplier demand, and the University at Buffalo's growing research profile. The waterfront redevelopment along Canalside continues to attract hospitality and mixed-use investment. Canadian proximity remains a structural economic advantage."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Buffalo are most active on medical campus adjacent multifamily acquisitions, downtown adaptive reuse projects, and industrial redevelopment along the former Bethlehem Steel corridor in Lackawanna. Lenders respond well to assets with New York State incentive support or proximity to anchor institutions.",
+      "permanent": "Permanent financing in Buffalo is readily available for stabilized multifamily and industrial assets. M&T Bank and regional life insurance companies are active long-term lenders in the market. The favorable affordability metrics and strong rent-to-income ratios make Buffalo multifamily attractive to permanent lenders seeking credit stability.",
+      "construction": "Construction lending in Buffalo focuses on medical campus adjacent development, downtown mixed-use projects, and UB-area student housing. Empire State Development incentives and Buffalo Billion grant programs often complement construction financing structures.",
+      "sba": "SBA lending is active in Buffalo for manufacturing, food processing, and professional service firms purchasing owner-occupied space in suburban submarkets. The cross-border trade corridor and food manufacturing cluster generate consistent SBA volume from small business owners.",
+      "mezzanine": "Mezzanine financing in Buffalo supports larger downtown mixed-use and waterfront development projects where senior loan proceeds are constrained by lease-up risk. Medical campus development with anchor tenant pre-leasing is the most attractive mezzanine segment.",
+      "specialty": "Specialty financing in Buffalo includes New Market Tax Credits for Opportunity Zone projects in underserved neighborhoods, historic tax credits for downtown adaptive reuse, and green energy financing for industrial and manufacturing facilities."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Buffalo offers some of the best risk-adjusted yields in the Northeast given low basis, stable occupancy, and growing institutional interest. Elmwood Village and medical campus adjacency command premium pricing while suburban Amherst and Williamsville offer strong UB demand. Value-add plays in Cheektowaga and Tonawanda are popular among regional investors.",
+      "industrial": "Industrial investment in Buffalo targets cross-border logistics, cold storage, and advanced manufacturing near the Peace Bridge corridor. The former steel sites in Lackawanna offer large-format industrial redevelopment potential. Food processing and distribution facilities serve the Buffalo-to-Toronto corridor demand.",
+      "office": "Office investment in Buffalo is most defensible in medical campus adjacent buildings and downtown towers with government or financial services anchor tenants. Suburban Class B in Amherst near UB offers stable professional services occupancy at attractive yields. Remote work headwinds have moderated demand in traditional office submarkets.",
+      "retail": "Retail investment in Buffalo is strongest in the Elmwood Village walkable district, Walden Galleria power center, and transit-oriented retail near the NFTA Metro Rail stations. Grocery-anchored neighborhood centers across Amherst and Williamsville provide stable income with limited new competition.",
+      "mixed_use": "Mixed-use investment in Buffalo is concentrated along the waterfront Canalside district and downtown Main Street where hospitality, residential, and retail are supported by city and state redevelopment programs. Medical campus mixed-use is a growing category driven by housing demand from healthcare workers.",
+      "hospitality": "Hospitality investment in Buffalo benefits from medical tourism at the medical campus, Bills and Sabres game demand, and growing leisure tourism tied to Canalside and Niagara Falls. Select-service hotels near the Buffalo Niagara International Airport and convention center are the most active investment segment."
+    }
+  },
+  "grand-rapids": {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "stats": {
+      "multifamily_vacancy": "4.0%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "13.8%",
+      "office_cap_rate": "6.75%-7.50%",
+      "retail_vacancy": "6.5%",
+      "retail_cap_rate": "6.25%-7.00%",
+      "hospitality_vacancy": "30.0%",
+      "hospitality_cap_rate": "7.00%-7.75%",
+      "mixed_use_vacancy": "5.0%",
+      "mixed_use_cap_rate": "5.75%-6.50%",
+      "job_growth": "2.1%",
+      "population_growth": "1.2%",
+      "rent_growth": "6.5%",
+      "median_asking_rent": "$1,820",
+      "major_employers": "Spectrum Health, Amway/Alticor, Steelcase, Meijer, Wolverine World Wide, Gentex, West Michigan medical corridor employers",
+      "top_submarkets": "Downtown Grand Rapids, East Hills, Wyoming-Kentwood, Grandville, Walker, Ada-Cascade, Caledonia"
+    },
+    "market_report": {
+      "overview": "Grand Rapids is one of the fastest-growing metros in the Midwest, anchored by a world-class medical corridor known as Medical Mile, the global headquarters of Amway and Steelcase, and a thriving craft beverage and technology startup ecosystem. West Michigan's economic diversification from its manufacturing base into healthcare, technology, and professional services has driven sustained population growth and commercial real estate demand.",
+      "multifamily": "Grand Rapids multifamily is among the tightest markets in the Midwest with vacancy below 4%. The downtown core and Medical Mile corridor command premium rents from healthcare workers, graduate students, and young professionals. Suburban demand in Wyoming, Kentwood, and the Ada-Cascade corridor serves families and corporate relocations. The construction pipeline has been active but absorption continues to outpace deliveries.",
+      "industrial": "Grand Rapids industrial benefits from proximity to major automotive OEMs, a diverse advanced manufacturing base in office furniture, automotive components, and food processing, and strong logistics infrastructure via I-96 and US-131. The Kent County International Airport area and Walker industrial corridors are the most active segments for institutional investment.",
+      "office_retail": "Medical Mile drives sustained office demand for healthcare administration, life sciences research, and medical technology firms. Downtown Grand Rapids Class A towers benefit from growing professional and financial services employment. Retail vacancy has tightened along 28th Street and the East Beltline where strong household income demographics support national and regional retailers.",
+      "financing": "Grand Rapids lenders include Mercantile Bank, Macatawa Bank, and regional credit unions with deep West Michigan market knowledge. National banks and life insurance companies are increasingly active as the market's institutional profile grows. The West Michigan Regional Planning Commission and Michigan Economic Development Corporation offer economic development financing support.",
+      "outlook": "Grand Rapids is positioned for sustained growth driven by Medical Mile expansion, Amway and Steelcase global corporate anchoring, and a growing technology and startup ecosystem. Population inflows from Detroit and Chicago seeking affordability and quality of life advantages continue to support multifamily demand. Industrial vacancy is expected to remain tight as manufacturing diversification continues."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Grand Rapids are most active on multifamily value-add acquisitions in the downtown core and Wyoming-Kentwood corridor, Medical Mile adjacent office repositioning, and industrial lease-up plays near the airport. Lenders are attracted by the metro's low vacancy and strong employment fundamentals.",
+      "permanent": "Permanent financing in Grand Rapids is competitive with multiple life insurance companies and national banks active in the market. Multifamily assets along Medical Mile and in Wyoming command the tightest spreads. Industrial assets with automotive and manufacturing tenants attract long-term permanent capital from institutional lenders.",
+      "construction": "Construction lending in Grand Rapids is focused on downtown mixed-use residential towers, Medical Mile healthcare and lab facilities, and suburban multifamily in Ada-Cascade and Caledonia. The strong absorption track record makes construction lenders comfortable with the market.",
+      "sba": "SBA lending is active in Grand Rapids for healthcare practices, professional service firms, and manufacturing companies purchasing owner-occupied facilities. The office furniture, food processing, and medical technology sectors generate consistent SBA volume in suburban submarkets.",
+      "mezzanine": "Mezzanine financing in Grand Rapids supports larger downtown mixed-use developments and Medical Mile healthcare projects where senior loan-to-cost constraints require additional capital. Strong pre-leasing from medical tenants makes these assets attractive to mezzanine lenders.",
+      "specialty": "Specialty financing in Grand Rapids includes Michigan Historic Preservation Tax Credits for downtown adaptive reuse, PACE financing for industrial energy efficiency improvements, and New Market Tax Credits for Opportunity Zone projects in underserved neighborhoods along the urban core."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Grand Rapids offers a compelling combination of strong fundamentals and relative affordability versus coastal markets. Medical Mile adjacency, downtown proximity, and suburban family demand in Ada-Cascade all support different risk-return profiles. New construction absorption has been robust and value-add plays in Wyoming and Kentwood offer meaningful upside.",
+      "industrial": "Industrial investment in Grand Rapids targets automotive supply chain, advanced manufacturing, and food processing tenants across the Walker and airport corridors. The Kent County International Airport area is seeing growing logistics and e-commerce distribution demand. Net lease industrial assets with manufacturing tenants offer stable long-term cash flow.",
+      "office": "Office investment in Grand Rapids is most defensible along Medical Mile where healthcare and life sciences tenancy provides stability. Downtown Class A assets with corporate anchor tenants benefit from the growing professional services employment base. Suburban Class B in Cascade offers higher yields with stable regional employer occupancy.",
+      "retail": "Retail investment in Grand Rapids is strongest along the 28th Street corridor and East Beltline where strong household incomes support national retailers, restaurants, and service concepts. Grocery-anchored neighborhood centers in Wyoming and Kentwood provide stable income with limited e-commerce disruption risk.",
+      "mixed_use": "Mixed-use investment in Grand Rapids is concentrated in the downtown core along Monroe Center and in the Medical Mile corridor where ground-floor healthcare retail, food and beverage, and residential stacking align with city master planning. The East Hills neighborhood offers boutique mixed-use for local and regional investors.",
+      "hospitality": "Hospitality investment in Grand Rapids benefits from corporate demand from Amway, Steelcase, and Meijer headquarters travel, ArtPrize and Grand Rapids events, and growing medical tourism from Medical Mile expansion. The downtown convention center and DeVos Performance Hall anchor strong group demand for select-service and full-service hotels."
+    }
+  },
+  "fresno": {
+    "city": "Fresno",
+    "state": "CA",
+    "stats": {
+      "multifamily_vacancy": "4.8%",
+      "multifamily_cap_rate": "5.50%-6.25%",
+      "industrial_vacancy": "6.5%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "15.2%",
+      "office_cap_rate": "7.00%-7.75%",
+      "retail_vacancy": "7.8%",
+      "retail_cap_rate": "6.50%-7.25%",
+      "hospitality_vacancy": "34.0%",
+      "hospitality_cap_rate": "7.25%-8.00%",
+      "mixed_use_vacancy": "6.2%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "1.8%",
+      "population_growth": "1.1%",
+      "rent_growth": "5.5%",
+      "median_asking_rent": "$1,580",
+      "major_employers": "Community Medical Centers, Kaiser Permanente, Fresno Unified School District, California State University Fresno, County of Fresno, Save Mart Companies, Sun Maid Growers",
+      "top_submarkets": "Downtown Fresno, Fig Garden, Northwest Fresno, Clovis, Sunnyside, Selma industrial corridor, Fowler"
+    },
+    "market_report": {
+      "overview": "Fresno is the economic capital of California's Central Valley, the most productive agricultural region in the world. The metro's economy combines large-scale agriculture and food processing with healthcare, education, and government employment. California High-Speed Rail's planned Central Valley stations are driving significant land and development interest in the downtown and transit corridors.",
+      "multifamily": "Fresno multifamily demand is driven by agricultural workforce housing, healthcare worker demand from Community Medical Centers and Kaiser Permanente, and Fresno State student housing. Northwest Fresno and Clovis command premium rents from suburban professionals while downtown is seeing a revitalization wave tied to High-Speed Rail investment. The affordable price point relative to coastal California attracts value-add investors from the Bay Area and Los Angeles.",
+      "industrial": "Fresno industrial is one of the most compelling stories in inland California. Cold storage, food processing, and Central Valley logistics are in high demand. Proximity to Ports of Los Angeles and Long Beach via Highway 99 and Interstate 5 positions Fresno as a critical inland distribution node. The agricultural processing cluster in Selma and Fowler anchors significant food-grade industrial investment.",
+      "office_retail": "Fresno office demand centers on healthcare administration, county and state government, and professional services serving the agricultural industry. Fig Garden and North Fresno retail corridors benefit from the highest household incomes in the metro. Downtown Fresno retail is recovering with restaurant and entertainment concepts leading the reactivation tied to High-Speed Rail momentum.",
+      "financing": "Fresno lenders include Central Valley community banks with deep agricultural lending knowledge, regional credit unions, and California-focused institutions. SBA volume is significant given the large small business population in the agricultural supply chain. Agency multifamily financing is widely available for stabilized assets. Agricultural lenders occasionally cross-finance adjacent commercial real estate.",
+      "outlook": "Fresno is uniquely positioned at the intersection of California's agricultural dominance and High-Speed Rail infrastructure investment. Cold storage and food processing industrial demand will sustain through commodity cycles. The downtown revitalization tied to High-Speed Rail stations could catalyze a decade of mixed-use development. Affordability relative to coastal California will continue attracting population and investment."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Fresno are most active on multifamily value-add acquisitions in Northwest Fresno and Clovis, cold storage and food processing industrial repositioning, and downtown adaptive reuse projects. Central Valley lenders and national bridge lenders active in California are both active in the market.",
+      "permanent": "Permanent financing in Fresno is available from regional banks, life insurance companies, and agency lenders for stabilized multifamily. Industrial assets with food processing or cold storage tenants attract long-term permanent capital given the essential nature of those facilities. Fresno's affordability metrics make permanent lenders comfortable with rent coverage.",
+      "construction": "Construction lending in Fresno is active for cold storage and food processing facilities driven by supply chain investment, Northwest Fresno and Clovis residential mixed-use, and downtown High-Speed Rail corridor development. Agricultural lenders participate in construction financing for food processing expansions.",
+      "sba": "SBA lending is deeply active in Fresno given the large owner-user market among agricultural suppliers, food processing companies, healthcare practices, and service businesses. The Central Valley small business ecosystem generates some of California's highest SBA volume relative to metro size.",
+      "mezzanine": "Mezzanine financing in Fresno supports larger downtown mixed-use developments with High-Speed Rail adjacency and cold storage industrial projects where senior loan proceeds are constrained. The California Historic Tax Credit program can complement mezzanine structures on downtown adaptive reuse projects.",
+      "specialty": "Specialty financing in Fresno includes USDA Business and Industry loans for agricultural supply chain businesses, California Climate Investments PACE financing for cold storage energy efficiency, and New Market Tax Credits for downtown Opportunity Zone development projects."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Fresno offers California yields at inland California pricing. Northwest Fresno and Clovis command Class A rents from suburban professionals while downtown is emerging as a value-add play tied to High-Speed Rail. Agricultural workforce housing in Sunnyside and southeast Fresno offers high current yields with stable demand from processing plant workers.",
+      "industrial": "Industrial investment in Fresno is led by cold storage, food processing, and agricultural supply chain logistics. The Selma and Fowler corridors south of Fresno host major food processing facilities with long-term credit tenants. Inland distribution and last-mile delivery to the Central Valley is a growing investment category as e-commerce penetration increases.",
+      "office": "Office investment in Fresno is most defensible with healthcare and government anchor tenants. Fig Garden office park commands the highest rents from professional services and financial firms. Downtown Class B office is seeing renewed interest tied to High-Speed Rail development momentum and city revitalization incentives.",
+      "retail": "Retail investment in Fresno is strongest in the Fig Garden Village and North Fresno power center corridor where above-average household incomes support national tenants. Grocery-anchored centers across Northwest Fresno and Clovis offer stable income with strong trade area demographics. Downtown Fresno retail is recovering with food and beverage leading new openings.",
+      "mixed_use": "Mixed-use investment in Fresno is concentrated in the downtown High-Speed Rail station area where city and state incentives are supporting residential and commercial development. Fig Garden and North Fresno also support mixed-use projects serving the professional and medical worker population.",
+      "hospitality": "Hospitality investment in Fresno serves corporate travelers from agricultural companies, healthcare visitors at Community Medical Centers and Kaiser, and Yosemite National Park gateway tourism. Select-service hotels near Fresno Yosemite International Airport and along Highway 99 are the most active investment segment."
+    }
+  },
+  "greensboro": {
+    "city": "Greensboro",
+    "state": "NC",
+    "stats": {
+      "multifamily_vacancy": "5.2%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "5.50%-6.25%",
+      "office_vacancy": "14.2%",
+      "office_cap_rate": "7.00%-7.75%",
+      "retail_vacancy": "6.8%",
+      "retail_cap_rate": "6.25%-7.00%",
+      "hospitality_vacancy": "31.0%",
+      "hospitality_cap_rate": "7.25%-8.00%",
+      "mixed_use_vacancy": "5.8%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "2.0%",
+      "population_growth": "1.3%",
+      "rent_growth": "6.2%",
+      "median_asking_rent": "$1,480",
+      "major_employers": "Cone Health, Moses H. Cone Memorial Hospital, VF Corporation, FedEx, Honda Aircraft Company, Guilford County Schools, University of North Carolina Greensboro",
+      "top_submarkets": "Downtown Greensboro, Friendly Center, Airport District, Highpoint Road, Kernersville, Burlington, Jamestown"
+    },
+    "market_report": {
+      "overview": "Greensboro anchors the Piedmont Triad region alongside Winston-Salem and High Point, forming one of the Southeast's major manufacturing and logistics centers. The FedEx Hub at Piedmont Triad International Airport is one of the largest in the eastern United States. Honda Aircraft Company and a growing aerospace cluster are diversifying the metro's industrial base. Greensboro's affordability relative to Charlotte and the Research Triangle makes it a growing destination for corporate relocations and real estate investors.",
+      "multifamily": "Greensboro multifamily vacancy remains above the regional average given an active new supply pipeline, but absorption is accelerating as population inflows from higher-cost Southeast metros grow. Downtown Greensboro is seeing the most competitive rental market with new Class A product filling quickly. The University of North Carolina Greensboro and North Carolina A&T anchor student housing demand in the university corridor.",
+      "industrial": "Greensboro industrial is one of the most compelling investment stories in the Piedmont Triad. The FedEx Hub drives enormous logistics employment and adjacent industrial demand. Honda Aircraft Company's operations attract aerospace manufacturing supply chain tenants. I-40 and I-85 intersection positioning makes Greensboro a natural distribution node between Charlotte and the Research Triangle.",
+      "office_retail": "Cone Health and the healthcare sector anchor office demand in Greensboro, complemented by VF Corporation's administrative functions and professional services. Friendly Center remains the premier retail destination with strong national tenant performance. Downtown Greensboro retail is benefiting from the LeBauer Park and Center City Park revitalization investment attracting food and beverage concepts.",
+      "financing": "Greensboro lenders include Truist (BB&T's legacy market), First National Bank, and regional credit unions with deep Piedmont Triad market knowledge. National industrial and logistics lenders are increasingly active given the FedEx Hub and Honda Aircraft demand drivers. Agency multifamily financing is widely available for stabilized assets across the metro.",
+      "outlook": "Greensboro is positioned to capture growing logistics and aerospace industrial investment as the Piedmont Triad International Airport corridor develops. Population growth from Charlotte and Research Triangle overflow will sustain multifamily demand. Downtown revitalization and the convention center expansion support hospitality and mixed-use investment. The affordability advantage relative to larger Southeast markets is a durable structural positive."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Greensboro are most active on multifamily value-add acquisitions along the I-40 corridor, airport district industrial lease-up plays, and downtown adaptive reuse office-to-residential conversions. Regional and national bridge lenders are drawn by the strong industrial fundamentals and improving multifamily absorption.",
+      "permanent": "Permanent financing in Greensboro is available from Truist, First National Bank, and national life insurance companies for stabilized multifamily and industrial assets. Airport district logistics facilities with FedEx-adjacent tenants attract favorable permanent loan terms. Healthcare-anchored office also draws long-term permanent capital.",
+      "construction": "Construction lending in Greensboro focuses on airport district industrial and logistics facilities, downtown mixed-use residential projects, and suburban multifamily in Burlington and Kernersville. Honda Aircraft supply chain build-to-suit projects are increasingly active in the construction lending pipeline.",
+      "sba": "SBA lending is active in Greensboro for manufacturing, logistics, and professional service firms purchasing owner-occupied space. The airport corridor and Highpoint Road commercial corridor generate consistent SBA volume from small business owners in the Piedmont Triad economy.",
+      "mezzanine": "Mezzanine financing in Greensboro supports larger airport district industrial developments and downtown mixed-use projects where senior loan constraints require additional capital. Aerospace manufacturing build-to-suit projects with credit tenants can attract mezzanine capital on favorable terms.",
+      "specialty": "Specialty financing in Greensboro includes North Carolina Historic Tax Credits for downtown adaptive reuse, PACE financing for industrial energy efficiency improvements, and New Market Tax Credits for Opportunity Zone development in underserved Greensboro neighborhoods."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Greensboro offers Southeast value pricing with improving fundamentals driven by population inflows from Charlotte and the Research Triangle. Downtown Greensboro Class A new supply is leasing well. The UNCG and North Carolina A&T university corridor provides student housing demand. Suburban workforce housing along I-40 in Burlington and Mebane offers the highest current yields.",
+      "industrial": "Industrial investment in Greensboro is led by logistics, aerospace supply chain, and last-mile distribution. The Piedmont Triad International Airport corridor is the highest-value industrial submarket with FedEx Hub and Honda Aircraft adjacency driving demand. I-40 and I-85 access makes Greensboro a natural distribution hub for the Carolinas.",
+      "office": "Office investment in Greensboro is most defensible in healthcare-anchored suburban parks near Cone Health campuses and in downtown Class A buildings with professional services tenants. VF Corporation's administrative hub supports office demand in the Creekridge area. Remote work headwinds have moderated but flight to quality is creating opportunities in well-located suburban parks.",
+      "retail": "Retail investment in Greensboro is strongest at Friendly Center and the Wendover Avenue corridor where household income demographics support national retailers. Grocery-anchored neighborhood centers across East Greensboro and suburban Burlington offer stable income. Downtown Greensboro restaurant and entertainment retail is benefiting from public park investment.",
+      "mixed_use": "Mixed-use investment in Greensboro is concentrated in downtown where the LeBauer Park and Center City Park revitalization is activating ground-floor retail and residential stacking. The UNCG innovation district is a growing area for mixed-use development serving the university community.",
+      "hospitality": "Hospitality investment in Greensboro benefits from FedEx Hub contractor and airline crew demand, Honda Aircraft and corporate travel, and Piedmont Triad convention center events. Select-service hotels near the airport and along I-40 are the most active investment segment."
+    }
+  },
+  "akron": {
+    "city": "Akron",
+    "state": "OH",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "multifamily_cap_rate": "6.25%-7.00%",
+      "industrial_vacancy": "6.8%",
+      "industrial_cap_rate": "6.00%-6.75%",
+      "office_vacancy": "17.5%",
+      "office_cap_rate": "7.50%-8.25%",
+      "retail_vacancy": "8.2%",
+      "retail_cap_rate": "7.00%-7.75%",
+      "hospitality_vacancy": "35.0%",
+      "hospitality_cap_rate": "7.75%-8.50%",
+      "mixed_use_vacancy": "6.5%",
+      "mixed_use_cap_rate": "6.50%-7.25%",
+      "job_growth": "1.1%",
+      "population_growth": "0.3%",
+      "rent_growth": "4.8%",
+      "median_asking_rent": "$1,320",
+      "major_employers": "Summa Health, Cleveland Clinic Akron General, Goodyear Tire and Rubber, FirstEnergy, University of Akron, Bridgestone Americas, InfoSonics",
+      "top_submarkets": "Downtown Akron, Fairlawn, Hudson, Bath Township, Stow, Cuyahoga Falls, Medina County"
+    },
+    "market_report": {
+      "overview": "Akron anchors the southern portion of the Greater Cleveland metro and is undergoing an economic transformation from its polymer and rubber manufacturing heritage toward healthcare, higher education, and advanced manufacturing. The University of Akron and the Akron polymer science cluster position the metro as a leader in materials science innovation. Goodyear Tire and Rubber remains a global anchor employer whose headquarters drives professional services demand.",
+      "multifamily": "Akron multifamily offers some of the highest cap rates in Ohio given the metro's lower rent levels and ownership culture. The downtown core is seeing a revitalization-driven multifamily demand wave from young professionals attracted by affordable urban living. Fairlawn and Hudson command the highest suburban rents from corporate and professional tenants. Workforce housing across Cuyahoga Falls and Stow offers stable occupancy with minimal new competition.",
+      "industrial": "Akron industrial benefits from a deep advanced manufacturing and polymer science heritage that attracts specialty chemical and materials manufacturing tenants. Proximity to Cleveland and the I-76 and I-77 intersection positions Akron as a distribution and logistics node. The former rubber factory campuses in the urban core offer significant adaptive reuse potential for mixed industrial and creative office use.",
+      "office_retail": "Healthcare anchors Akron office demand through Summa Health and Cleveland Clinic Akron General's administrative functions. Goodyear's headquarters and FirstEnergy's operations support Class A demand in downtown and Fairlawn. Retail vacancy has stabilized along the Fairlawn and Bath Road corridors where household income demographics support service retail and dining.",
+      "financing": "Akron lenders include Ohio-based regional banks, Huntington National Bank, KeyBank, and community lenders with deep Northeast Ohio market knowledge. The Ohio Department of Development and JobsOhio offer economic development financing for qualifying projects. Agency multifamily financing is available for stabilized assets across the metro.",
+      "outlook": "Akron's transformation from rubber capital to polymer science innovation hub is the defining long-term trend for commercial real estate investment. The University of Akron's research partnerships with Goodyear, Bridgestone, and global chemical companies support sustained professional employment. Downtown revitalization driven by the Lock 3 entertainment district and the Bowery District is attracting hospitality and mixed-use investment."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Akron are most active on downtown adaptive reuse of former industrial buildings, multifamily value-add plays in Cuyahoga Falls and Stow, and suburban office repositioning in Fairlawn. Ohio-based bridge lenders and national alternative lenders active in secondary Midwest markets are both present.",
+      "permanent": "Permanent financing in Akron is available from Huntington, KeyBank, and regional institutions for stabilized multifamily and industrial assets. Healthcare-anchored office and industrial assets with advanced manufacturing tenants attract the most favorable permanent loan terms. Akron's affordability metrics provide comfort to permanent lenders on multifamily rent coverage.",
+      "construction": "Construction lending in Akron focuses on downtown mixed-use residential and entertainment concepts near Lock 3 and the Bowery District, suburban multifamily in Stow and Medina County, and polymer science and advanced manufacturing build-to-suit projects near the University of Akron.",
+      "sba": "SBA lending is active in Akron for polymer science startups, healthcare practices, and professional service firms purchasing owner-occupied suburban space. The University of Akron technology transfer ecosystem generates SBA volume from research commercialization companies.",
+      "mezzanine": "Mezzanine financing in Akron supports larger downtown adaptive reuse projects where senior loan constraints require additional capital. Former rubber factory campuses with historic tax credit equity are attractive mezzanine investment targets given the blended return from operating income and tax credit proceeds.",
+      "specialty": "Specialty financing in Akron includes Ohio Historic Preservation Tax Credits for downtown adaptive reuse of industrial buildings, New Market Tax Credits for Opportunity Zone projects, and JobsOhio innovation district financing for polymer and advanced materials manufacturing facilities."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Akron offers Ohio's highest cap rates and an improving demand picture from downtown revitalization and healthcare employment growth. Downtown loft and adaptive reuse multifamily is the most active sector. Suburban workforce housing in Cuyahoga Falls and Stow offers stable high-yield income. Hudson and Bath Township command premium rents from Goodyear and FirstEnergy executive households.",
+      "industrial": "Industrial investment in Akron targets advanced manufacturing, polymer and specialty chemical processing, and last-mile distribution. The former rubber factory campuses offer distinctive adaptive reuse potential for flex industrial and creative office. I-76 and I-77 corridor access supports logistics and distribution investment from national operators.",
+      "office": "Office investment in Akron is most defensible in healthcare-anchored suburban parks near Summa and Cleveland Clinic campuses and in Goodyear-adjacent Class A downtown buildings. Fairlawn suburban Class B offers higher yields with stable professional services tenancy. Downtown adaptive reuse office-to-residential conversion is increasingly viable given office market softness.",
+      "retail": "Retail investment in Akron is strongest along the Fairlawn Bath Road corridor and in Hudson where high household incomes support national and specialty retailers. Grocery-anchored centers across Stow and Cuyahoga Falls offer stable income with limited e-commerce disruption risk. Downtown Akron entertainment retail is growing around the Lock 3 park.",
+      "mixed_use": "Mixed-use investment in Akron is concentrated in the Bowery District and Lock 3 entertainment corridor where residential, food and beverage, and entertainment stacking is supported by city redevelopment incentives. The University of Akron innovation district is a growing target for mixed-use development serving the research community.",
+      "hospitality": "Hospitality investment in Akron serves Goodyear and Bridgestone corporate travel, University of Akron events, and Cleveland spillover demand for affordable lodging. The downtown revitalization and Lock 3 event programming support growing leisure demand. Select-service hotels near the Akron-Canton Airport and I-77 corridor are the most active investment segment."
+    }
+  },
+  "sarasota": {
+    "city": "Sarasota",
+    "state": "FL",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "multifamily_cap_rate": "4.75%-5.50%",
+      "industrial_vacancy": "4.2%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_vacancy": "12.5%",
+      "office_cap_rate": "6.50%-7.25%",
+      "retail_vacancy": "5.5%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "hospitality_vacancy": "28.0%",
+      "hospitality_cap_rate": "6.00%-6.75%",
+      "mixed_use_vacancy": "4.8%",
+      "mixed_use_cap_rate": "5.25%-6.00%",
+      "job_growth": "2.8%",
+      "population_growth": "2.2%",
+      "rent_growth": "7.5%",
+      "median_asking_rent": "$2,380",
+      "major_employers": "Sarasota Memorial Hospital, PGT Innovations, Sun Hydraulics, Publix Super Markets, Sarasota County School District, FCCI Insurance Group",
+      "top_submarkets": "Downtown Sarasota, Siesta Key, Lakewood Ranch, University Town Center, Palmer Ranch, Osprey, Venice"
+    },
+    "market_report": {
+      "overview": "Sarasota is one of Florida's fastest-growing metros, attracting affluent retirees, remote workers, and corporate relocations from high-tax northern states. The metro's arts and culture scene anchored by The Ringling Museum, world-class beaches at Siesta Key, and the Lakewood Ranch master-planned community make Sarasota one of the most desirable lifestyle destinations in the Southeast. Institutional investors are increasingly active across all property types.",
+      "multifamily": "Sarasota multifamily is experiencing strong demand from the population influx of remote workers and retirees. Lakewood Ranch is the most active master-planned community submarket with new Class A product leasing well above national averages. Downtown Sarasota luxury rentals serve young professionals and seasonal residents. The Venice and Osprey suburban corridors offer value-add plays with improving rent growth.",
+      "industrial": "Sarasota industrial vacancy is among the tightest in Florida driven by PGT Innovations manufacturing demand, construction materials distribution serving the residential building boom, and last-mile logistics growth. The limited land supply for new industrial development constrains new supply, keeping vacancy tight and rents growing consistently.",
+      "office_retail": "Sarasota Memorial Hospital anchors healthcare office demand while financial services, wealth management, and professional services serving the affluent retiree population drive suburban Class A demand. University Town Center is the premier retail destination with luxury and national retailers performing well. Downtown Sarasota's Main Street retail corridor benefits from arts district foot traffic year-round.",
+      "financing": "Sarasota lenders include Florida-based regional banks, national institutions attracted by the market's institutional profile, and life insurance companies comfortable with Florida multifamily and retail fundamentals. The luxury residential demand supports favorable multifamily financing terms. Industrial lenders are increasingly competitive given the tight vacancy and rent growth.",
+      "outlook": "Sarasota is among the most supply-constrained and demand-driven commercial real estate markets in Florida. Population growth from northern states will sustain multifamily and retail demand. The construction boom is absorbing industrial capacity faster than new supply can be delivered. Arts and culture tourism combined with beach destination appeal will sustain hospitality investment returns through market cycles."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Sarasota are most active on multifamily value-add acquisitions in Venice and Osprey, retail repositioning in established corridors, and light industrial lease-up plays near the construction materials distribution cluster. Florida-focused bridge lenders and national alternative lenders are competitive in the market.",
+      "permanent": "Permanent financing in Sarasota is competitive with multiple life insurance companies and national banks active in the market. Lakewood Ranch multifamily and University Town Center retail command the tightest spreads. Industrial assets with long-term manufacturing tenants like PGT attract favorable permanent capital from institutional lenders.",
+      "construction": "Construction lending in Sarasota is active for Lakewood Ranch master-planned community phases, downtown mixed-use residential projects, and industrial facilities serving the construction supply chain. The strong absorption track record and population growth make construction lenders comfortable with the market.",
+      "sba": "SBA lending is active in Sarasota for healthcare practices serving the retiree population, wealth management firms, and professional service businesses purchasing owner-occupied space. The high-income demographics support robust small business formation and SBA volume.",
+      "mezzanine": "Mezzanine financing in Sarasota supports larger mixed-use developments in Lakewood Ranch and downtown Sarasota where senior loan constraints require additional capital. Luxury residential and hospitality projects with strong pre-sales or reservations can attract mezzanine capital on favorable terms.",
+      "specialty": "Specialty financing in Sarasota includes PACE financing for commercial energy efficiency improvements, Florida Historic Preservation Tax Credits for downtown adaptive reuse, and private equity structures for luxury hospitality and marina development projects."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Sarasota offers Florida's lifestyle premium with strong rent growth and institutional-quality demand. Lakewood Ranch new construction commands Class A rents with consistent absorption. Downtown Sarasota luxury rentals attract seasonal and full-time affluent residents. Venice and Osprey offer value-add plays as population spillover from Sarasota proper drives rent growth in suburban submarkets.",
+      "industrial": "Industrial investment in Sarasota is among the most supply-constrained in Florida. PGT Innovations and the construction materials distribution cluster anchor core-plus industrial demand. Last-mile logistics serving the residential building boom generates consistent tenant demand. Land scarcity limits new supply, creating a durable advantage for existing industrial owners.",
+      "office": "Office investment in Sarasota is most defensible in healthcare-anchored suburban parks near Sarasota Memorial Hospital and in financial and wealth management districts serving the affluent retiree population. Downtown Sarasota Class A boutique offices command premium rents from professional services and arts-adjacent businesses. Remote work has had limited impact on Sarasota office given the professional services orientation.",
+      "retail": "Retail investment in Sarasota is strongest at University Town Center and along the St. Armands Circle luxury retail district. Grocery-anchored neighborhood centers across the metro offer stable income with Publix as the dominant anchor. Siesta Key Village retail benefits from year-round beach tourism driving consistent food and beverage sales.",
+      "mixed_use": "Mixed-use investment in Sarasota is concentrated in downtown along Palm Avenue and Main Street where arts district programming, dining, and residential stacking align with master planning goals. Lakewood Ranch Town Center is the most active master-planned mixed-use development in the market.",
+      "hospitality": "Hospitality investment in Sarasota is among Florida's strongest stories. Siesta Key beach tourism, arts and culture events from The Ringling and Sarasota Opera, and growing corporate demand from corporate relocations all support strong RevPAR. Boutique and lifestyle hotels in downtown Sarasota command premium ADR. The lack of new hotel supply relative to demand growth supports sustained investment returns."
+    }
+  },
+  "baton-rouge": {
+    "city": "Baton Rouge",
+    "state": "LA",
+    "stats": {
+      "multifamily_vacancy": "6.2%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.50%-6.25%",
+      "office_vacancy": "16.5%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "7.8%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "33.0%",
+      "hospitality_cap_rate": "7.25%-8.00%",
+      "mixed_use_vacancy": "6.5%",
+      "mixed_use_cap_rate": "6.25%-7.00%",
+      "job_growth": "1.5%",
+      "population_growth": "0.8%",
+      "rent_growth": "5.0%",
+      "median_asking_rent": "$1,420",
+      "major_employers": "ExxonMobil, Turner Industries, Albemarle Corporation, Louisiana State University, BASF, Dow Chemical, Lane Regional Medical Center, Our Lady of the Lake Regional Medical Center",
+      "top_submarkets": "Downtown Baton Rouge, Mid City, Prairieville, Gonzales, Zachary, Central, Denham Springs"
+    },
+    "market_report": {
+      "overview": "Baton Rouge anchors the Louisiana chemical corridor as home to one of the largest petrochemical and refinery complexes in the United States along the Mississippi River. ExxonMobil's Baton Rouge Refinery, BASF, Albemarle, and Dow Chemical anchor an industrial employment base that drives significant commercial real estate demand. Louisiana State University adds 35,000 students and a growing research economy. The metro's position as Louisiana's state capital adds government employment stability.",
+      "multifamily": "Baton Rouge multifamily demand is driven by LSU student housing, petrochemical workforce housing, and state government employees. The LSU corridor along Nicholson Drive commands student-focused rents while Prairieville and Gonzales serve suburban families with petroleum industry employment. Mid City is the urban revitalization submarket with growing appeal to young professionals. Denham Springs and Central offer affordable workforce housing with stable demand.",
+      "industrial": "Baton Rouge industrial is defined by the petrochemical and refinery complex along the Mississippi River between Baton Rouge and New Orleans. ExxonMobil, BASF, Dow, and Albemarle are anchor tenants driving enormous industrial maintenance and contractor facility demand. Port of Greater Baton Rouge access supports bulk chemical, grain, and petroleum logistics. Industrial rents are growing as chemical sector capital investment accelerates.",
+      "office_retail": "State government and LSU anchor office demand in downtown Baton Rouge and the university corridor. Healthcare administration at Our Lady of the Lake and Lane Regional drives suburban Class B demand. Retail vacancy has moderated along the Siegen Lane corridor and in Gonzales where household income demographics support national retailers and restaurants.",
+      "financing": "Baton Rouge lenders include Investar Bank, Home Bank, and regional institutions with deep Louisiana market knowledge. Energy sector lenders occasionally cross-finance commercial real estate for petrochemical industry borrowers. Agency multifamily financing is available for stabilized assets. SBA volume is significant from small petrochemical supplier businesses and professional service firms.",
+      "outlook": "Baton Rouge's petrochemical and refinery complex is the foundation of a durable industrial real estate market that has proven resilient through energy price cycles. The energy transition is driving Albemarle and other chemical companies to expand lithium and battery materials production, adding new industrial demand. LSU's growing research profile and healthcare expansion will sustain office and multifamily demand across market cycles."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Baton Rouge are most active on multifamily value-add acquisitions in the LSU corridor and Mid City, industrial facility repositioning for petrochemical supply chain uses, and suburban retail redevelopment in Gonzales and Prairieville. Energy sector relationships often generate bridge loan opportunities for industrial-adjacent commercial properties.",
+      "permanent": "Permanent financing in Baton Rouge is available from regional banks and national lenders for stabilized multifamily and industrial assets. Petrochemical-adjacent industrial assets with credit tenants attract favorable permanent loan terms. LSU corridor multifamily with strong student demand histories provides comfort to permanent lenders on rent coverage.",
+      "construction": "Construction lending in Baton Rouge focuses on LSU-adjacent student housing developments, petrochemical contractor facility build-to-suit projects along the River Road industrial corridor, and suburban mixed-use in Prairieville and Gonzales. Energy sector capital investment cycles create episodic construction demand for contractor facilities.",
+      "sba": "SBA lending is active in Baton Rouge for petrochemical supply chain service businesses, healthcare practices, and professional service firms serving state government and LSU. The large small business population in the energy supply chain generates consistent SBA volume across the Baton Rouge metro.",
+      "mezzanine": "Mezzanine financing in Baton Rouge supports larger downtown mixed-use and healthcare campus development projects. Petrochemical contractor facility build-to-suit projects with investment-grade anchor tenants can attract mezzanine capital when senior loan constraints require additional proceeds.",
+      "specialty": "Specialty financing in Baton Rouge includes Louisiana Historic Tax Credits for downtown adaptive reuse, Gulf Opportunity Zone legacy financing for qualifying properties, and PACE financing for industrial energy efficiency improvements at petrochemical-adjacent facilities."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Baton Rouge offers Louisiana yields with stable dual demand drivers from LSU and the petrochemical industry. The LSU Nicholson Drive corridor serves student demand while Prairieville and Gonzales serve suburban families. Mid City urban lofts and downtown multifamily represent the value-add and emerging market opportunity. Workforce housing in Denham Springs and Central serves petrochemical plant workers with stable long-term occupancy.",
+      "industrial": "Industrial investment in Baton Rouge is anchored by the Mississippi River petrochemical corridor. Contractor staging yards, specialty chemical storage, and maintenance facilities are the dominant industrial categories. Port of Greater Baton Rouge access provides bulk commodity logistics infrastructure. The energy transition is creating new demand for battery material processing and specialty chemical storage facilities.",
+      "office": "Office investment in Baton Rouge is most defensible in state government-adjacent downtown buildings and in healthcare-anchored suburban parks near Our Lady of the Lake and Lane Regional. LSU-affiliated research and administrative functions anchor university corridor office demand. Energy company administrative offices in Class A suburban parks serve ExxonMobil and chemical company white-collar employment.",
+      "retail": "Retail investment in Baton Rouge is strongest along the Siegen Lane power center corridor and in Gonzales where strong trade area demographics support national retailers. The Mall of Louisiana anchors the dominant retail submarket. Grocery-anchored neighborhood centers across Prairieville and Denham Springs offer stable income with consistent petrochemical workforce demand.",
+      "mixed_use": "Mixed-use investment in Baton Rouge is concentrated in Mid City and downtown where city redevelopment incentives are supporting residential and commercial projects. The LSU innovation corridor adjacent to campus is a growing area for mixed-use development targeting the university research and startup community.",
+      "hospitality": "Hospitality investment in Baton Rouge benefits from ExxonMobil and petrochemical industry corporate travel, LSU athletic events driving peak demand, and state government visitor traffic. The Baton Rouge River Center convention complex anchors group demand. Select-service hotels near the airport and along the I-10 corridor are the most active investment segment."
+    }
   }
 }
