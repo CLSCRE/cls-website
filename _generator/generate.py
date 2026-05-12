@@ -196,6 +196,13 @@ def main():
         {"loc": f"{BASE_URL}/market-data.html", "lastmod": TODAY, "changefreq": "daily", "priority": "0.8"},
         {"loc": f"{BASE_URL}/about.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6"},
         {"loc": f"{BASE_URL}/about/trevor-damyan.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7"},
+        # Rate pages — high-value standalone pages updated monthly
+        {"loc": f"{BASE_URL}/financing/bridge-loan-rates.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
+        {"loc": f"{BASE_URL}/financing/dscr-loan-rates.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
+        {"loc": f"{BASE_URL}/financing/hard-money-loan-rates.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
+        {"loc": f"{BASE_URL}/financing/sba-504-loan-rates.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
+        {"loc": f"{BASE_URL}/financing/construction-loan-rates.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
+        {"loc": f"{BASE_URL}/financing/commercial-mortgage-rates.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
         {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
         {"loc": f"{BASE_URL}/submit-deal.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7"},
         {"loc": f"{BASE_URL}/tools/edi-eligibility-check.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
