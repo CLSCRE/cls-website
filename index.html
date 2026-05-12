@@ -609,20 +609,66 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       </div>
     </div>
   </div>
-  <!-- Rate Table panel -->
+  <!-- Rate &amp; Program Table panel -->
   <div id="qcRates" role="tabpanel" style="display:none">
-    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
-      <div style="flex:1;min-width:260px">
-        <div style="font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:8px">Current Rate Ranges</div>
-        <p style="color:var(--gray-500);font-size:14px;margin:0 0 16px">Compare 12 programs side by side. Filter by property type, loan type, and LTV. Updated May 2026.</p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
-          <span style="padding:4px 12px;background:#fef3c7;color:#92400e;border-radius:20px;font-size:12px;font-weight:700">Bridge: 8.50–11.00%</span>
-          <span style="padding:4px 12px;background:#d1fae5;color:#065f46;border-radius:20px;font-size:12px;font-weight:700">Permanent: 5.75–7.50%</span>
-          <span style="padding:4px 12px;background:#dbeafe;color:#1e40af;border-radius:20px;font-size:12px;font-weight:700">Agency: 5.50–6.75%</span>
-          <span style="padding:4px 12px;background:#ede9fe;color:#5b21b6;border-radius:20px;font-size:12px;font-weight:700">CMBS: 6.00–7.50%</span>
-        </div>
-      </div>
-      <a href="./rates.html" class="btn-primary" style="white-space:nowrap">View Rate Table &rarr;</a>
+    <div style="background:#fff;border:1px solid var(--gray-200,#e5e7eb);border-radius:12px 12px 0 0;padding:14px 18px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--gray-100,#f3f4f6)">
+      <select id="qrType" class="qr-filter" aria-label="Filter by loan type">
+        <option value="">All Loan Types</option>
+        <option value="bridge">Bridge</option>
+        <option value="permanent">Permanent</option>
+        <option value="cmbs">CMBS / Conduit</option>
+        <option value="agency">Agency (Multifamily)</option>
+        <option value="sba">SBA</option>
+        <option value="construction">Construction</option>
+        <option value="hard-money">Hard Money</option>
+        <option value="mezz">Mezzanine / Pref Equity</option>
+        <option value="dscr">DSCR</option>
+      </select>
+      <select id="qrLender" class="qr-filter" aria-label="Filter by lender type">
+        <option value="">All Lenders</option>
+        <option value="life-co">Life Company</option>
+        <option value="debt-fund">Debt Fund</option>
+        <option value="bank">Bank</option>
+        <option value="credit-union">Credit Union</option>
+        <option value="agency">Agency / GSE</option>
+        <option value="cmbs">CMBS Conduit</option>
+        <option value="private">Private / Hard Money</option>
+        <option value="sba">SBA</option>
+      </select>
+      <select id="qrMarket" class="qr-filter" aria-label="Filter by market tier">
+        <option value="">All Markets</option>
+        <option value="primary">Primary (NYC, LA, SF, MIA, CHI...)</option>
+        <option value="secondary">Secondary (ATL, DEN, PHX, AUS...)</option>
+        <option value="tertiary">Tertiary / Rural</option>
+      </select>
+      <select id="qrSize" class="qr-filter" aria-label="Filter by loan size">
+        <option value="">All Loan Sizes</option>
+        <option value="small">Small Balance (&lt;$2M)</option>
+        <option value="mid">Mid-Market ($2M&ndash;$10M)</option>
+        <option value="large">Large ($10M&ndash;$50M)</option>
+        <option value="inst">Institutional ($50M+)</option>
+      </select>
+      <span id="qrCount" style="margin-left:auto;font-size:12px;color:var(--gray-400,#9ca3af);font-weight:600;white-space:nowrap"></span>
+    </div>
+    <div style="overflow-x:auto;border:1px solid var(--gray-200,#e5e7eb);border-top:none;border-radius:0 0 12px 12px;background:#fff;max-height:460px;overflow-y:auto">
+      <table id="qrTable" style="width:100%;border-collapse:collapse;font-size:13px">
+        <thead style="position:sticky;top:0;z-index:2">
+          <tr style="background:var(--gray-50,#f9fafb);border-bottom:2px solid var(--gray-200,#e5e7eb)">
+            <th style="text-align:left;padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500,#6b7280);white-space:nowrap;min-width:220px">Program / Lender</th>
+            <th style="text-align:left;padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500,#6b7280);white-space:nowrap">Rate Range</th>
+            <th style="text-align:left;padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500,#6b7280);white-space:nowrap">Max LTV</th>
+            <th style="text-align:left;padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500,#6b7280);white-space:nowrap">Min Loan</th>
+            <th style="text-align:left;padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500,#6b7280);white-space:nowrap">Term</th>
+            <th style="text-align:left;padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500,#6b7280);white-space:nowrap">Amort</th>
+            <th style="text-align:left;padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500,#6b7280)">Features</th>
+          </tr>
+        </thead>
+        <tbody id="qrTbody"></tbody>
+      </table>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+      <p style="font-size:11px;color:var(--gray-400,#9ca3af);margin:0">Indicative ranges as of May 2026. Actual terms vary by property, sponsor, and market. All programs available through Commercial Lending Solutions.</p>
+      <a href="mailto:loans@clscre.com?subject=Rate%20Inquiry" class="btn-primary" style="font-size:13px;padding:9px 16px;white-space:nowrap">Get a Program Quote &rarr;</a>
     </div>
   </div>
   <!-- Refi Check panel -->
@@ -658,8 +704,11 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 .qc-stat{background:rgba(255,255,255,.07);border-radius:8px;padding:11px 13px}
 .qc-stat-label{font-size:10px;color:rgba(255,255,255,.45);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
 .qc-stat-val{font-size:17px;font-weight:700;line-height:1.2}
+/* Rate table filter selects */
+.qr-filter{padding:7px 10px;border:1px solid var(--gray-200,#e5e7eb);border-radius:6px;background:#fff;font-size:13px;font-family:var(--font-body,Inter,sans-serif);color:var(--gray-700,#374151);cursor:pointer;outline:none;min-width:130px}
+.qr-filter:focus{border-color:var(--green,#006A4E)}
 @media(max-width:768px){#qcLoan>div{grid-template-columns:1fr!important}}
-@media(max-width:640px){#qcLoan .calc-field:nth-child(n){grid-column:span 1}}
+@media(max-width:640px){#qcLoan .calc-field:nth-child(n){grid-column:span 1}.qr-filter{min-width:calc(50% - 4px)}}
 </style>
 <script src="./tools/calc-utils.js"></script>
 <script src="./tools/analytics.js"></script>
@@ -766,9 +815,136 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       document.querySelectorAll('.qc-tab').forEach(function(b){b.classList.remove('qc-tab-active');b.setAttribute('aria-selected','false');});
       this.classList.add('qc-tab-active');this.setAttribute('aria-selected','true');
       ['loan','rates','refi'].forEach(function(t){document.getElementById('qc'+t.charAt(0).toUpperCase()+t.slice(1)).style.display=t===tab?'':'none';});
+      if(tab==='rates'&&!window._qrBuilt){window._qrBuilt=true;qrBuild();}
     });
   });
   qcCalc();
+})();
+
+// ── Rate & Program Table ──────────────────────────────────────────
+(function(){
+  var CAT={
+    bridge:      {bg:'#fef3c7',tx:'#92400e',label:'Bridge / Transitional'},
+    permanent:   {bg:'#dbeafe',tx:'#1e40af',label:'Permanent / Long-Term'},
+    cmbs:        {bg:'#ede9fe',tx:'#5b21b6',label:'CMBS / Conduit'},
+    agency:      {bg:'#d1fae5',tx:'#065f46',label:'Agency (Multifamily Only)'},
+    sba:         {bg:'#ccfbf1',tx:'#134e4a',label:'SBA Loans'},
+    construction:{bg:'#ffedd5',tx:'#9a3412',label:'Construction / Development'},
+    'hard-money':{bg:'#fee2e2',tx:'#991b1b',label:'Hard Money'},
+    mezz:        {bg:'#fce7f3',tx:'#9d174d',label:'Mezzanine &amp; Preferred Equity'},
+    dscr:        {bg:'#e0e7ff',tx:'#3730a3',label:'DSCR / Investor Loans'}
+  };
+  var TAGS={
+    'Non-recourse':   'background:rgba(0,106,78,.13);color:#006A4E',
+    'I/O':            'background:rgba(30,64,175,.1);color:#1e40af',
+    'Best Rate':      'background:rgba(0,166,118,.18);color:#065f46',
+    'Assumable':      'background:rgba(107,114,128,.1);color:#374151',
+    'Recourse':       'background:rgba(185,28,28,.1);color:#b91c1c',
+    'Fast Close':     'background:rgba(146,64,14,.13);color:#92400e',
+    'High LTV':       'background:rgba(251,191,36,.2);color:#92400e',
+    'Owner-Occupied': 'background:rgba(154,52,18,.1);color:#9a3412',
+    'Low Down':       'background:rgba(0,166,118,.15);color:#065f46',
+    'Converts to Perm':'background:rgba(0,106,78,.1);color:#006A4E',
+    'Multifamily Only':'background:rgba(91,33,182,.1);color:#5b21b6',
+    'No Income Verify':'background:rgba(55,48,163,.1);color:#3730a3',
+    '2nd Lien':       'background:rgba(157,23,77,.1);color:#9d174d',
+    'Equity Position':'background:rgba(157,23,77,.1);color:#9d174d',
+    'Asset-Based':    'background:rgba(107,114,128,.1);color:#374151',
+    'Institutional':  'background:rgba(21,61,99,.1);color:#153D63',
+    'Flexible':       'background:rgba(0,106,78,.1);color:#006A4E'
+  };
+  var DATA=[
+    // Bridge
+    {cat:'bridge',lender:'debt-fund',program:'Senior Bridge — Debt Fund',desc:'Value-add, repositioning, lease-up',rate:'8.00–10.00%',ltv:'65%',min:'$5M',term:'1–3 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O']},
+    {cat:'bridge',lender:'debt-fund',program:'Stretch Bridge — Debt Fund',desc:'Higher-leverage value-add plays',rate:'10.00–13.00%',ltv:'80%',min:'$3M',term:'1–3 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O','High LTV']},
+    {cat:'bridge',lender:'bank',program:'Bank Bridge Loan',desc:'Relationship-based, stabilized assets',rate:'7.50–9.50%',ltv:'65%',min:'$2M',term:'1–3 yr',amort:'I/O or P&I',mkt:'primary secondary tertiary',sz:'mid large',tags:['Recourse','Flexible']},
+    {cat:'bridge',lender:'private',program:'Private / Balance Sheet Bridge',desc:'Asset-based, fast close, creative structures',rate:'9.00–12.00%',ltv:'65%',min:'$1M',term:'12–24 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small mid',tags:['Fast Close','I/O']},
+    // Permanent
+    {cat:'permanent',lender:'life-co',program:'Life Company — Primary Markets',desc:'Core assets, best execution, 25-yr fixed',rate:'5.50–6.75%',ltv:'60%',min:'$5M',term:'10–25 yr',amort:'25–30 yr',mkt:'primary',sz:'large inst',tags:['Non-recourse','Best Rate']},
+    {cat:'permanent',lender:'life-co',program:'Life Company — Secondary Markets',desc:'Suburban core, net lease, credit tenants',rate:'5.75–7.00%',ltv:'55%',min:'$3M',term:'10–25 yr',amort:'25–30 yr',mkt:'secondary',sz:'mid large',tags:['Non-recourse']},
+    {cat:'permanent',lender:'bank',program:'Regional / Community Bank',desc:'Relationship-based, all market tiers',rate:'6.25–8.00%',ltv:'70%',min:'$1M',term:'3–10 yr',amort:'20–25 yr',mkt:'primary secondary tertiary',sz:'small mid large',tags:['Recourse','Flexible']},
+    {cat:'permanent',lender:'credit-union',program:'Credit Union',desc:'Owner-user, smaller deals, member rates',rate:'5.75–7.25%',ltv:'70%',min:'$500K',term:'5–15 yr',amort:'20–25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Recourse']},
+    {cat:'permanent',lender:'debt-fund',program:'Debt Fund — Permanent',desc:'Non-recourse, flexible underwriting criteria',rate:'7.00–9.00%',ltv:'70%',min:'$3M',term:'3–5 yr',amort:'30 yr',mkt:'primary secondary',sz:'mid large',tags:['Non-recourse']},
+    // CMBS
+    {cat:'cmbs',lender:'cmbs',program:'CMBS Conduit',desc:'Non-recourse, broad property types, fixed',rate:'6.00–7.50%',ltv:'70%',min:'$2M',term:'5–10 yr',amort:'25–30 yr',mkt:'primary secondary',sz:'mid large',tags:['Non-recourse','Assumable']},
+    {cat:'cmbs',lender:'cmbs',program:'CMBS Large Loan',desc:'I/O periods, portfolio-level collateral',rate:'5.75–7.00%',ltv:'65%',min:'$20M',term:'5–10 yr',amort:'I/O + amort',mkt:'primary',sz:'inst',tags:['Non-recourse','I/O','Assumable']},
+    {cat:'cmbs',lender:'cmbs',program:'Single Asset Single Borrower (SASB)',desc:'Bespoke, major institutional transactions',rate:'5.50–6.75%',ltv:'65%',min:'$50M',term:'5–10 yr',amort:'I/O',mkt:'primary',sz:'inst',tags:['Non-recourse','I/O','Institutional']},
+    // Agency
+    {cat:'agency',lender:'agency',program:'Fannie Mae DUS',desc:'Conventional multifamily, all market tiers',rate:'5.50–6.50%',ltv:'80%',min:'$1M',term:'5–30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid large inst',tags:['Non-recourse','Multifamily Only']},
+    {cat:'agency',lender:'agency',program:'Freddie Mac Multifamily',desc:'Conventional + small balance programs',rate:'5.50–6.50%',ltv:'80%',min:'$1M',term:'5–30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid large inst',tags:['Non-recourse','Multifamily Only']},
+    {cat:'agency',lender:'agency',program:'Fannie Mae Small Balance Loan',desc:'5–50 unit properties, suburban markets',rate:'5.75–6.75%',ltv:'80%',min:'$750K',term:'5–30 yr',amort:'30 yr',mkt:'primary secondary',sz:'small mid',tags:['Non-recourse','Multifamily Only']},
+    {cat:'agency',lender:'agency',program:'HUD / FHA 223(f) — Refi',desc:'Stabilized multifamily, 35-yr fully amortizing',rate:'5.00–5.75%',ltv:'85%',min:'$2M',term:'35 yr',amort:'35 yr',mkt:'primary secondary tertiary',sz:'mid large',tags:['Non-recourse','Best Rate','Multifamily Only']},
+    // SBA
+    {cat:'sba',lender:'sba',program:'SBA 504 — Commercial Real Estate',desc:'Owner-occupied, fixed CDC tranche',rate:'5.50–6.50% (CDC)',ltv:'90%',min:'$500K',term:'10–25 yr',amort:'10–25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Owner-Occupied','Low Down']},
+    {cat:'sba',lender:'sba',program:'SBA 7(a) — Real Estate',desc:'Broad property types, mixed-use',rate:'Prime +1.50–3.50%',ltv:'85%',min:'$500K',term:'10–25 yr',amort:'10–25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Owner-Occupied','Flexible']},
+    // Construction
+    {cat:'construction',lender:'bank',program:'Bank Construction-to-Perm',desc:'One-close, converts to permanent',rate:'7.50–10.00%',ltv:'65% LTC',min:'$2M',term:'18–36 mo',amort:'I/O',mkt:'primary secondary',sz:'mid large',tags:['Recourse','Converts to Perm','I/O']},
+    {cat:'construction',lender:'debt-fund',program:'Debt Fund — Construction',desc:'Non-recourse, complex infill sites',rate:'9.00–12.00%',ltv:'75% LTC',min:'$5M',term:'18–36 mo',amort:'I/O',mkt:'primary secondary',sz:'large inst',tags:['Non-recourse','I/O']},
+    {cat:'construction',lender:'agency',program:'HUD 221(d)(4) — New Construction',desc:'Ground-up multifamily, max leverage',rate:'5.00–5.75%',ltv:'85% LTC',min:'$5M',term:'40 yr',amort:'40 yr',mkt:'primary secondary tertiary',sz:'mid large inst',tags:['Non-recourse','Best Rate','Multifamily Only']},
+    // Hard Money
+    {cat:'hard-money',lender:'private',program:'Hard Money — Residential Investor',desc:'Fix-and-flip, fast close, asset-based',rate:'9.00–13.00%',ltv:'65%',min:'$150K',term:'6–18 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small',tags:['Fast Close','Asset-Based','I/O']},
+    {cat:'hard-money',lender:'private',program:'Hard Money — Commercial',desc:'Light value-add, credit-light underwrite',rate:'10.00–14.00%',ltv:'60%',min:'$500K',term:'12–24 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small mid',tags:['Fast Close','Asset-Based','I/O']},
+    // Mezz
+    {cat:'mezz',lender:'debt-fund',program:'Mezzanine Debt',desc:'Behind senior debt, fills leverage gap',rate:'12.00–16.00%',ltv:'85% CLTV',min:'$2M',term:'1–5 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O','2nd Lien']},
+    {cat:'mezz',lender:'debt-fund',program:'Preferred Equity',desc:'Equity position, waterfall structure',rate:'14.00–18.00%',ltv:'90% CLTV',min:'$3M',term:'1–5 yr',amort:'I/O',mkt:'primary',sz:'mid large inst',tags:['I/O','Equity Position']},
+    // DSCR
+    {cat:'dscr',lender:'agency',program:'DSCR — Agency (1–4 unit)',desc:'Rental income only, no W-2 required',rate:'6.50–8.00%',ltv:'75%',min:'$150K',term:'30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['No Income Verify']},
+    {cat:'dscr',lender:'debt-fund',program:'DSCR — Portfolio / Non-QM (5+ units)',desc:'Commercial DSCR, larger rental portfolios',rate:'7.00–9.00%',ltv:'70%',min:'$500K',term:'30 yr',amort:'30 yr',mkt:'primary secondary',sz:'small mid large',tags:['No Income Verify']}
+  ];
+
+  function tag(t){var s=TAGS[t]||'background:rgba(107,114,128,.1);color:#374151';return '<span style="'+s+';font-size:10px;font-weight:600;padding:2px 6px;border-radius:4px;white-space:nowrap;display:inline-block;margin:1px 2px 1px 0">'+t+'</span>';}
+
+  window.qrBuild=function(){
+    var tbody=document.getElementById('qrTbody');
+    if(!tbody)return;
+    var html='',lastCat='';
+    DATA.forEach(function(d){
+      if(d.cat!==lastCat){
+        var c=CAT[d.cat]||{bg:'#f9fafb',tx:'#374151',label:d.cat};
+        html+='<tr class="qr-cat" data-cat="'+d.cat+'" style="background:'+c.bg+'"><td colspan="7" style="padding:7px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:'+c.tx+'">'+c.label+'</td></tr>';
+        lastCat=d.cat;
+      }
+      html+='<tr class="qr-row" data-cat="'+d.cat+'" data-lender="'+d.lender+'" data-mkt="'+d.mkt+'" data-sz="'+d.sz+'" style="border-bottom:1px solid #f3f4f6;cursor:default" onmouseover="this.style.background=\'#f9fafb\'" onmouseout="this.style.background=\'\'">';
+      html+='<td style="padding:9px 14px;vertical-align:top"><div style="font-size:13px;font-weight:600;color:var(--navy,#153D63);margin-bottom:2px">'+d.program+'</div><div style="font-size:11px;color:#9ca3af">'+d.desc+'</div></td>';
+      html+='<td style="padding:9px 14px;white-space:nowrap;font-weight:700;color:var(--navy,#153D63);font-size:13px;vertical-align:top">'+d.rate+'</td>';
+      html+='<td style="padding:9px 14px;white-space:nowrap;font-size:13px;color:#374151;vertical-align:top">'+d.ltv+'</td>';
+      html+='<td style="padding:9px 14px;white-space:nowrap;font-size:13px;color:#374151;vertical-align:top">'+d.min+'</td>';
+      html+='<td style="padding:9px 14px;white-space:nowrap;font-size:13px;color:#374151;vertical-align:top">'+d.term+'</td>';
+      html+='<td style="padding:9px 14px;white-space:nowrap;font-size:13px;color:#374151;vertical-align:top">'+d.amort+'</td>';
+      html+='<td style="padding:9px 14px;vertical-align:top;min-width:160px">'+d.tags.map(tag).join('')+'</td>';
+      html+='</tr>';
+    });
+    tbody.innerHTML=html;
+    qrCount();
+    ['qrType','qrLender','qrMarket','qrSize'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el)el.addEventListener('change',qrFilter);
+    });
+  };
+
+  function qrFilter(){
+    var type=document.getElementById('qrType').value;
+    var lender=document.getElementById('qrLender').value;
+    var mkt=document.getElementById('qrMarket').value;
+    var sz=document.getElementById('qrSize').value;
+    document.querySelectorAll('#qrTbody .qr-row').forEach(function(r){
+      var ok=(!type||r.dataset.cat===type)&&(!lender||r.dataset.lender===lender)&&(!mkt||(' '+r.dataset.mkt+' ').indexOf(' '+mkt+' ')>-1)&&(!sz||(' '+r.dataset.sz+' ').indexOf(' '+sz+' ')>-1);
+      r.style.display=ok?'':'none';
+    });
+    document.querySelectorAll('#qrTbody .qr-cat').forEach(function(hdr){
+      var any=false;
+      document.querySelectorAll('#qrTbody .qr-row[data-cat="'+hdr.dataset.cat+'"]').forEach(function(r){if(r.style.display!=='none')any=true;});
+      hdr.style.display=any?'':'none';
+    });
+    qrCount();
+  }
+
+  function qrCount(){
+    var rows=document.querySelectorAll('#qrTbody .qr-row');
+    var vis=0;rows.forEach(function(r){if(r.style.display!=='none')vis++;});
+    var el=document.getElementById('qrCount');
+    if(el)el.textContent=vis+' of '+rows.length+' programs';
+  }
 })();
 </script>
 
