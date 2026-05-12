@@ -645,72 +645,6 @@
       ]
     },
     {
-      "slug": "redding",
-      "city": "Redding",
-      "state": "CA",
-      "metro": "Redding",
-      "tier1": false,
-      "context": "Redding is Northern California's gateway market anchored by a large healthcare system, regional retail serving a multi-county trade area, and modest industrial activity. The market offers affordable commercial properties with stable occupancy from regional necessity-based tenants.",
-      "neighborhoods": [
-        "Downtown Redding",
-        "Anderson",
-        "Shasta Lake",
-        "Cottonwood",
-        "Red Bluff",
-        "Tehama",
-        "Weaverville",
-        "Mount Shasta",
-        "Yreka",
-        "Alturas",
-        "Weed",
-        "McCloud"
-      ]
-    },
-    {
-      "slug": "victorville",
-      "city": "Victorville",
-      "state": "CA",
-      "metro": "Victor Valley",
-      "tier1": false,
-      "context": "Victorville-Hesperia is the High Desert market serving as an affordable alternative to the Inland Empire and Los Angeles Basin, with industrial and logistics demand accelerating along the I-15 corridor and Southern California Logistics Airport driving significant speculative industrial development.",
-      "neighborhoods": [
-        "Downtown Victorville",
-        "Hesperia",
-        "Apple Valley",
-        "Adelanto",
-        "Barstow",
-        "Twentynine Palms",
-        "Yucca Valley",
-        "Lucerne Valley",
-        "Big Bear Lake",
-        "Wrightwood",
-        "Phelan",
-        "Pinon Hills"
-      ]
-    },
-    {
-      "slug": "temecula",
-      "city": "Temecula",
-      "state": "CA",
-      "metro": "Riverside-San Bernardino",
-      "tier1": false,
-      "context": "Temecula is a rapidly growing Southwest Riverside County market anchored by wine tourism, healthcare expansion, and a strong commuter base to San Diego and Orange County. Industrial and retail development is accelerating along the I-15 corridor with strong absorption from regional distribution and service tenants.",
-      "neighborhoods": [
-        "Old Town Temecula",
-        "Murrieta",
-        "Menifee",
-        "Wildomar",
-        "Lake Elsinore",
-        "Hemet",
-        "San Jacinto",
-        "Perris",
-        "Banning",
-        "Palm Springs",
-        "Escondido",
-        "San Marcos"
-      ]
-    },
-    {
       "slug": "oxnard",
       "city": "Oxnard",
       "state": "CA",
@@ -2720,9 +2654,24 @@
       "slug": "chico",
       "city": "Chico",
       "added": "2026-05-12"
+    },
+    {
+      "slug": "redding",
+      "city": "Redding",
+      "added": "2026-05-12"
+    },
+    {
+      "slug": "victorville",
+      "city": "Victorville",
+      "added": "2026-05-12"
+    },
+    {
+      "slug": "temecula",
+      "city": "Temecula",
+      "added": "2026-05-12"
     }
   ],
-  "last_run": "2026-05-12T04:05:43.992593Z",
-  "total_pages_added": 756,
-  "runs_completed": 21
+  "last_run": "2026-05-12T10:42:11.033132Z",
+  "total_pages_added": 792,
+  "runs_completed": 22
 }
