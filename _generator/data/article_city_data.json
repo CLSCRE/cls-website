@@ -5727,5 +5727,389 @@
       "mixed_use": "Mixed-use investment in Pensacola is concentrated in historic downtown along Palafox and in the Seville Square district where residential, dining, and arts uses benefit from the walkable urban environment. Pensacola Beach mixed-use development combining hospitality, retail, and residential is the highest-value development opportunity given the beach frontage premium.",
       "hospitality": "Hospitality investment in Pensacola benefits from Emerald Coast beach tourism with some of Florida's most beautiful white sand beaches, NAS Pensacola Blue Angels air show demand, and Navy Federal Credit Union corporate meeting traffic. Pensacola Beach resort hotels and boutique properties command premium ADR from May through September. The Wahoo's baseball stadium and downtown Palafox entertainment district anchor year-round leisure hospitality demand."
     }
+  },
+  "shreveport": {
+    "city": "Shreveport",
+    "state": "LA",
+    "stats": {
+      "multifamily_vacancy": "9.2%",
+      "multifamily_cap_rate": "7.00%-8.50%",
+      "industrial_vacancy": "7.5%",
+      "industrial_cap_rate": "7.25%-8.75%",
+      "office_vacancy": "18.5%",
+      "office_cap_rate": "8.00%-9.50%",
+      "retail_vacancy": "12.0%",
+      "retail_cap_rate": "7.50%-9.00%",
+      "hospitality_vacancy": "38.0%",
+      "hospitality_cap_rate": "8.50%-10.00%",
+      "mixed_use_vacancy": "10.5%",
+      "mixed_use_cap_rate": "7.50%-9.00%",
+      "job_growth": "0.8%",
+      "population_growth": "-0.3%",
+      "rent_growth": "2.1%",
+      "median_asking_rent": "$875",
+      "major_employers": "Barksdale Air Force Base, Willis-Knighton Health System, Ochsner LSU Health, Eldorado Resorts, Horseshoe Bossier City, Harrah's, Louisiana state government, Red River Bank",
+      "top_submarkets": "South Shreveport, Youree Drive corridor, Bossier City, Pierremont, Shreveport Common arts district, Blanchard, Stonewall"
+    },
+    "market_report": {
+      "overview": "Shreveport anchors the Ark-La-Tex tri-state region spanning northwest Louisiana, northeast Texas, and southwest Arkansas. The metro economy is diversifying beyond its historic oil and gas base into healthcare, education, and gaming, with Barksdale Air Force Base providing a stable employment anchor of roughly 13,000 military and civilian jobs.",
+      "economy": "Healthcare systems led by Willis-Knighton and Ochsner LSU Health represent the largest private employers. Barksdale AFB underpins government spending across the region. Petroleum services and gaming (Harrah's, Horseshoe, and Eldorado casino resort) contribute meaningfully to tax revenues. The Louisiana Economic Development office has targeted Shreveport for manufacturing recruitment given its rail access and affordable industrial land.",
+      "real_estate": "Commercial real estate cap rates in Shreveport rank among the highest in the South, typically ranging 7.00 to 8.50 percent for multifamily, making the metro attractive to value-add investors comfortable with secondary market risk. Multifamily fundamentals are stable rather than dynamic, with vacancy near 9 percent and moderate rent growth of 2 percent annually. Industrial demand along the I-20 corridor is the brightest spot, driven by logistics operators seeking access to the Dallas-to-New Orleans freight lane.",
+      "outlook": "Near-term outlook is cautious. Population has been flat to declining over the decade, limiting organic demand drivers. However, infrastructure investment tied to the Louisiana Watershed Initiative and Barksdale mission expansion provide countercyclical support. Investors focused on yield over appreciation are finding attractively priced multifamily and net-lease retail at cap rates unavailable in larger Sun Belt metros.",
+      "financing": "Commercial Lending Solutions arranges financing across Shreveport asset classes from $1 million upward. Preferred programs include CMBS permanent loans for stabilized retail and office, bridge loans for value-add multifamily, and SBA 504 for owner-occupied commercial. Direct lender relationships allow CLS to place loans that institutional desks often decline in secondary Louisiana markets.",
+      "cta": "Contact Commercial Lending Solutions to discuss Shreveport commercial real estate financing. Our capital markets desk maintains active lender relationships covering secondary Louisiana markets often overlooked by national advisors."
+    },
+    "loan_context": {
+      "bridge": "Shreveport bridge loan demand centers on value-add multifamily along Youree Drive and the South Shreveport corridor. Investors are acquiring 1980s-era garden complexes at sub-$40,000 per door, renovating, and stabilizing at market rents. CLS structures 12 to 24 month bridge facilities with interest reserves sized for renovation timelines typical in the Louisiana regulatory environment.",
+      "permanent": "Permanent financing in Shreveport leans heavily on CMBS given the market's secondary status. CLS sources 10-year fixed-rate CMBS execution for stabilized multifamily and net-lease retail at rates competitive with major metro lenders. Life insurance companies occasionally lend here for grocery-anchored retail but require strong sponsorship and low LTV.",
+      "construction": "Construction lending in Shreveport is limited to well-capitalized sponsors with established contractor relationships. Healthcare-adjacent development near LSU Health and Willis-Knighton commands the most institutional interest. CLS structures construction-to-permanent facilities through regional banks and community lenders familiar with Louisiana's wet weather construction cycle.",
+      "sba": "SBA 504 and 7(a) programs are highly relevant in Shreveport for owner-occupied medical, dental, and professional office. The small business community in the Pierremont and Kings Highway corridors is active, and CLS places SBA loans starting at $1 million for qualifying operating companies.",
+      "agency": "Fannie Mae and Freddie Mac small balance programs cover Shreveport multifamily properties 5 units and above. CLS accesses both agencies for stabilized assets, achieving 30-year amortization and competitive fixed rates that typically outperform local bank terms by 50 to 100 basis points.",
+      "cmbs": "CMBS is the primary permanent loan vehicle for Shreveport's non-multifamily assets. CLS structures conduit loans for anchored retail, medical office, and mixed-use properties, with loan sizes typically ranging from $2 million to $15 million in this market."
+    },
+    "property_context": {
+      "multifamily": "Shreveport's multifamily stock is dominated by 1970s and 1980s garden-style complexes, with few Class A deliveries in the past decade. Value-add strategies targeting B and C assets at per-unit prices well below replacement cost are the dominant investment thesis. Cap rates of 7.5 to 8.5 percent for stabilized product provide strong cash-on-cash yields for leveraged buyers.",
+      "industrial": "Industrial is the strongest performing sector in Shreveport. The I-20 corridor between Shreveport and Bossier City offers shovel-ready industrial sites with rail access. Average asking rents for warehouse product are well below national averages, attracting distribution and light manufacturing tenants priced out of Dallas and Houston.",
+      "office": "Office fundamentals are challenged in Shreveport. Downtown vacancies exceed 20 percent as suburban medical and professional users migrate to Youree Drive and the Pierremont corridor. Adaptive reuse of downtown office for residential or hospitality use is gaining momentum as an alternative disposition strategy.",
+      "retail": "Retail in Shreveport is bifurcated. Grocery-anchored centers along Youree Drive and Mansfield Road remain well-occupied with stable NOI. Power center and enclosed mall formats face structural headwinds similar to other mid-size southern markets, with several big-box anchors having vacated in recent cycles.",
+      "hospitality": "Shreveport's hospitality market is gaming-centric. The casino resort corridor in Bossier City drives the majority of hotel demand alongside Barksdale-related travel. Limited-service hotel development has been modest, and RevPAR recovery post-pandemic has been slower than comparable Sun Belt markets.",
+      "mixed_use": "Mixed-use development in Shreveport is concentrated in the Shreveport Common arts and culture district and along the Red River waterfront. Projects combining residential, retail, and entertainment uses benefit from Louisiana historic tax credits, which CLS incorporates into financing structures for qualifying projects."
+    }
+  },
+  "fayetteville-nc": {
+    "city": "Fayetteville",
+    "state": "NC",
+    "stats": {
+      "multifamily_vacancy": "7.2%",
+      "multifamily_cap_rate": "6.50%-8.00%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "6.50%-7.75%",
+      "office_vacancy": "14.5%",
+      "office_cap_rate": "7.50%-8.75%",
+      "retail_vacancy": "9.5%",
+      "retail_cap_rate": "6.75%-8.00%",
+      "hospitality_vacancy": "34.0%",
+      "hospitality_cap_rate": "8.00%-9.50%",
+      "mixed_use_vacancy": "8.0%",
+      "mixed_use_cap_rate": "6.75%-8.00%",
+      "job_growth": "1.5%",
+      "population_growth": "0.8%",
+      "rent_growth": "3.8%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "Fort Liberty (US Army), Cape Fear Valley Health, Fayetteville State University, Methodist University, Cumberland County Schools, Highsmith-Rainey Specialty Hospital, SAIC, Leidos",
+      "top_submarkets": "Fort Liberty gate corridors, Skibo Road, Raeford Road, Cross Creek Mall area, downtown Fayetteville, Hope Mills, Spring Lake, Ramsey Street"
+    },
+    "market_report": {
+      "overview": "Fayetteville is a mid-size North Carolina market anchored by Fort Liberty (formerly Fort Bragg), one of the largest military installations in the world with more than 57,000 active duty personnel. The military mission provides extraordinary economic stability rarely found in markets of this size, insulating Fayetteville from cyclical downturns that affect similarly populated metros.",
+      "economy": "Fort Liberty generates an estimated $10 billion in annual economic impact for the region. Special Operations Command (SOCOM) and XVIII Airborne Corps are headquartered here, ensuring long-term federal commitment. Healthcare (Cape Fear Valley Health), retail, and logistics round out the private sector. Cumberland County's proximity to Research Triangle Park fuels spillover demand as Triangle housing costs rise.",
+      "real_estate": "Commercial real estate fundamentals in Fayetteville are stable and improving. Multifamily demand is driven by enlisted personnel seeking off-base housing and the growing civilian workforce. Retail along Skibo Road and Raeford Road maintains sub-10 percent vacancy. Industrial demand is emerging as distribution operators seek low-cost space within 90 minutes of the Triangle and Charlotte.",
+      "outlook": "Fayetteville's outlook is positive. Population growth from military-affiliated households is steady, and civilian in-migration from higher-cost North Carolina markets is accelerating. The city's downtown revitalization plan has attracted boutique hospitality and mixed-use investment. Commercial Lending Solutions expects multifamily and industrial to lead investment activity through 2026 and 2027.",
+      "financing": "Commercial Lending Solutions arranges financing for Fayetteville commercial real estate from $1 million upward. Military town dynamics make agency multifamily programs particularly efficient here, with Fannie Mae and Freddie Mac lenders recognizing the stability of military-affiliated tenant bases.",
+      "cta": "Contact Commercial Lending Solutions to discuss Fayetteville commercial real estate financing. Our team understands military market dynamics and structures loans that reflect the stability Fort Liberty provides to the local economy."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Fayetteville focuses on value-add apartment communities serving junior enlisted personnel and young families. CLS structures 18 to 24 month bridge facilities for sponsors acquiring 1990s garden complexes, renovating unit interiors, and repositioning rents to capture the steady demand from Fort Liberty's workforce.",
+      "permanent": "Permanent loan execution in Fayetteville favors agency programs. Fannie Mae and Freddie Mac recognize the military-stabilized demand base and offer favorable terms for properties with proven occupancy. CLS sources 10-year fixed-rate agency loans with 30-year amortization for stabilized multifamily assets.",
+      "construction": "Ground-up construction in Fayetteville is focused on build-to-rent communities and limited-service hotels near Fort Liberty gates. CLS structures construction loans through regional and national lenders with military market experience, sizing interest reserves conservatively given North Carolina's permitting timelines.",
+      "sba": "SBA lending in Fayetteville supports the robust small business community serving Fort Liberty personnel and their families. Fitness, childcare, retail, and quick-service food uses are active borrowers. CLS places SBA 7(a) and 504 loans from $1 million for qualifying owner-occupied properties.",
+      "agency": "Agency multifamily financing is the most efficient capital source in Fayetteville. CLS leverages Fannie Mae DUS and Freddie Mac Optigo platforms for properties 5 units and above, achieving rates 50 to 100 basis points below comparable bank terms with non-recourse structure.",
+      "cmbs": "CMBS execution serves Fayetteville's stabilized retail and hospitality assets. Skibo Road and Ramsey Street retail corridors attract conduit lender interest at loan sizes from $3 million. CLS structures CMBS loans with 10-year fixed rates and 30-year amortization for qualifying anchored centers."
+    },
+    "property_context": {
+      "multifamily": "Multifamily is the premier investment asset class in Fayetteville. Fort Liberty's 57,000-plus active duty personnel, combined with the Basic Allowance for Housing (BAH) subsidy, creates a reliable rent-paying tenant base that weathers recessions. Cap rates range 6.5 to 8 percent depending on vintage and proximity to post gates.",
+      "industrial": "Industrial demand in Fayetteville is growing as e-commerce operators and regional distributors seek affordable alternatives to the Triangle. The I-95 and US-401 corridors offer well-located sites. Average asking rents are substantially below Raleigh-Durham rates, attracting cost-conscious tenants.",
+      "office": "Office demand in Fayetteville is government and healthcare-driven. Medical office near Cape Fear Valley and Womack Army Medical Center maintains stable occupancy. Suburban professional office has softer fundamentals, with some 1990s product being converted to medical or light flex use.",
+      "retail": "Retail in Fayetteville benefits from the military consumer base. BAH-backed purchasing power supports grocery, home goods, and restaurant concepts. The Skibo Road and Cross Creek Mall trade areas are the primary retail destinations. Vacancy has been trending downward as the market absorbs post-pandemic closures.",
+      "hospitality": "Hospitality in Fayetteville is tied to military training, family travel to post, and graduations. Limited-service brands near Fort Liberty gates perform consistently. RevPAR recovery has been solid, and a new convention-oriented hotel in the downtown Fayetteville revitalization zone attracted investor interest in 2025.",
+      "mixed_use": "Downtown Fayetteville is experiencing a mixed-use revival anchored by Segra Stadium (minor league baseball) and the Airborne and Special Operations Museum. Adaptive reuse of historic commercial buildings for restaurant, retail, and residential use is attracting local and regional developers backed by Historic Preservation tax credits."
+    }
+  },
+  "montgomery": {
+    "city": "Montgomery",
+    "state": "AL",
+    "stats": {
+      "multifamily_vacancy": "8.5%",
+      "multifamily_cap_rate": "6.75%-8.25%",
+      "industrial_vacancy": "6.5%",
+      "industrial_cap_rate": "7.00%-8.50%",
+      "office_vacancy": "16.2%",
+      "office_cap_rate": "7.75%-9.25%",
+      "retail_vacancy": "11.0%",
+      "retail_cap_rate": "7.00%-8.50%",
+      "hospitality_vacancy": "36.0%",
+      "hospitality_cap_rate": "8.25%-9.75%",
+      "mixed_use_vacancy": "9.0%",
+      "mixed_use_cap_rate": "7.00%-8.50%",
+      "job_growth": "1.2%",
+      "population_growth": "0.4%",
+      "rent_growth": "2.5%",
+      "median_asking_rent": "$900",
+      "major_employers": "Alabama state government, Hyundai Motor Manufacturing Alabama, Maxwell-Gunter Air Force Base, Baptist Health, Jackson Hospital, Montgomery Public Schools, Regions Bank, Southern Company",
+      "top_submarkets": "EastChase, Eastern Boulevard, Taylor Road, Vaughn Road, downtown Montgomery, Midtown, Prattville, Wetumpka"
+    },
+    "market_report": {
+      "overview": "Montgomery is the capital of Alabama and the seat of state government, providing the metro with a stable public-sector employment base that buffers commercial real estate from cyclical downturns. The Hyundai Motor Manufacturing Alabama plant in nearby Hope Hull anchors the private sector, with a supplier ecosystem that employs thousands across the metro.",
+      "economy": "State and local government employ roughly 30 percent of Montgomery's workforce. Hyundai's assembly plant produces more than 300,000 vehicles annually and has attracted a dense auto parts supply chain. Maxwell-Gunter Air Force Base provides an additional 5,000 military and civilian jobs. Healthcare anchored by Baptist Health and Jackson Hospital rounds out the major employment sectors.",
+      "real_estate": "Commercial real estate fundamentals in Montgomery reflect its status as a stable, government-anchored secondary market. Cap rates of 6.75 to 8.25 percent are attractive for income-oriented investors. Multifamily supply-demand is balanced, with vacancy near 8.5 percent and modest rent growth. The EastChase retail corridor and Eastern Boulevard trade area attract national tenants with proven sales productivity.",
+      "outlook": "Montgomery's near-term outlook is steady. The Alabama Legislature's capital infrastructure program is directing state spending into downtown renovations and public facilities, supporting construction employment. Hyundai's long-term production commitment provides manufacturing employment stability through at least 2030 under its current expansion agreement. Investors seeking yield in a government-insulated market find Montgomery attractive relative to higher-priced Alabama metros.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing across Montgomery from $1 million upward. Government-leased assets and credit tenant net-lease properties are particularly bankable, and CLS sources life insurance and CMBS execution for qualifying credits.",
+      "cta": "Contact Commercial Lending Solutions to discuss Montgomery Alabama commercial real estate financing. Our team structures loans across the capital stack for assets ranging from value-add multifamily to net-lease retail in government-anchored markets."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan activity in Montgomery is centered on value-add multifamily in the Midtown and Hampstead neighborhoods. Sponsors are acquiring 1980s and 1990s garden communities at per-unit prices of $40,000 to $70,000, renovating, and repositioning rents. CLS structures 18-month bridge facilities with interest reserves calibrated to Alabama's renovation timelines.",
+      "permanent": "Permanent financing in Montgomery is sourced through CMBS, agency, and regional bank programs depending on asset class. Government-leased office and net-lease retail trade at the tightest cap rates and attract life insurance company interest. Multifamily permanent loans through Fannie Mae and Freddie Mac provide the best long-term terms for stabilized apartment communities.",
+      "construction": "Construction lending in Montgomery supports healthcare expansion near Baptist Health South and Jackson Medical Park, as well as build-to-rent residential development in the EastChase trade area. CLS structures construction-to-permanent facilities through regional Alabama banks with Southeast experience.",
+      "sba": "SBA programs are active in Montgomery for owner-occupied healthcare, veterinary, professional services, and light manufacturing. The auto supplier ecosystem provides SBA borrowers expanding production capacity. CLS places SBA 504 and 7(a) loans from $1 million for qualifying operating businesses.",
+      "agency": "Fannie Mae and Freddie Mac provide the most competitive permanent financing for Montgomery multifamily. Non-recourse 10-year fixed rates with 30-year amortization outperform local bank terms significantly. CLS accesses both agency platforms for properties 5 units and above.",
+      "cmbs": "CMBS serves Montgomery's stabilized retail, office, and mixed-use assets. The EastChase corridor retail centers and suburban medical office buildings are natural conduit candidates. Loan sizes from $2 million to $20 million with 10-year fixed rates and 30-year amortization."
+    },
+    "property_context": {
+      "multifamily": "Montgomery's multifamily market is stable and yield-driven. Cap rates of 7 to 8.25 percent for Class B and C product provide cash-on-cash returns that are scarce in larger Alabama metros. The government and auto manufacturing workforce creates steady demand. Renovation-driven repositioning is the dominant investment strategy.",
+      "industrial": "Industrial demand in Montgomery is driven by Hyundai's supply chain. Auto parts manufacturers and logistics operators along the US-231 and I-65 corridors keep industrial vacancy in the mid single digits. Average rents are competitive for regional distribution tenants.",
+      "office": "Office vacancy in Montgomery is elevated at 16 percent, reflecting remote work adoption among state government workers and suburban flight from downtown Class B product. Medical office near the hospital corridor on Taylor Road and Vaughn Road is the most resilient submarket.",
+      "retail": "The EastChase mixed-use town center is Montgomery's premier retail destination, with national anchors and a proven consumer draw from across the metro. Secondary retail along Eastern Boulevard and Atlanta Highway is more challenged. Grocery-anchored community centers in Midtown and East Montgomery are the most stable investment retail product.",
+      "hospitality": "Montgomery's hospitality market serves government travelers, sports tourism (Riverwalk Stadium, AHSAA championship events), and the growing civil rights heritage tourism segment. The National Memorial for Peace and Justice and the Legacy Museum have added a new tourist demographic. Limited-service hotel RevPAR has recovered past 2019 peaks.",
+      "mixed_use": "Downtown Montgomery's mixed-use revival is centered on the Court Square and Commerce Street corridors. The Montgomery Riverfront and Riverwalk Stadium district has attracted restaurant and entertainment investment. Historic tax credit projects converting 1920s commercial buildings to residential lofts and boutique hotel use are attracting regional developers."
+    }
+  },
+  "roanoke": {
+    "city": "Roanoke",
+    "state": "VA",
+    "stats": {
+      "multifamily_vacancy": "6.8%",
+      "multifamily_cap_rate": "6.25%-7.75%",
+      "industrial_vacancy": "5.2%",
+      "industrial_cap_rate": "6.50%-7.75%",
+      "office_vacancy": "12.5%",
+      "office_cap_rate": "7.00%-8.50%",
+      "retail_vacancy": "8.5%",
+      "retail_cap_rate": "6.50%-8.00%",
+      "hospitality_vacancy": "32.0%",
+      "hospitality_cap_rate": "7.75%-9.25%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "6.50%-7.75%",
+      "job_growth": "1.4%",
+      "population_growth": "0.6%",
+      "rent_growth": "3.2%",
+      "median_asking_rent": "$1,100",
+      "major_employers": "Carilion Clinic, Roanoke City and County governments, Virginia Tech (Carilion School of Medicine), Norfolk Southern, General Electric, Roanoke College, National College, Lewis-Gale Medical Center",
+      "top_submarkets": "Downtown Roanoke, Grandin Road, South Roanoke, Williamson Road, Vinton, Cave Spring, Tanglewood, Valley View"
+    },
+    "market_report": {
+      "overview": "Roanoke is the economic center of western Virginia, a Blue Ridge Mountain market with a diversified base spanning healthcare, manufacturing, railroading heritage, and an emerging outdoor recreation economy. The Star City's geographic setting and relative affordability have made it a destination for remote workers and retirees migrating from higher-cost Mid-Atlantic and Northeast metros.",
+      "economy": "Carilion Clinic, one of Virginia's largest health systems, is Roanoke's dominant employer with more than 12,000 employees and an affiliated medical school in partnership with Virginia Tech. Norfolk Southern's locomotive maintenance operations and corporate legacy create stable transportation employment. Advanced manufacturing, including Roanoke Electric Steel and General Electric, provides industrial depth. Remote worker in-migration from Northern Virginia and the DC suburbs has added high-income households.",
+      "real_estate": "Commercial real estate in Roanoke is performing better than the metro's modest size suggests. Multifamily vacancy of 6.8 percent and 3.2 percent annual rent growth reflect genuine housing demand from the healthcare workforce and in-migrants. Industrial along the I-81 corridor benefits from Virginia's logistics growth. Retail fundamentals are solid, with the Tanglewood and Valley View trade areas maintaining sub-10 percent vacancy.",
+      "outlook": "Roanoke's outlook is positive. Virginia Tech's Innovation Campus in nearby Blacksburg is channeling technology talent toward the region. Carilion Clinic's continued expansion of medical facilities drives healthcare real estate demand. The downtown Roanoke revival, anchored by the historic City Market and Hotel Roanoke, continues to attract boutique hospitality and mixed-use investment.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Roanoke from $1 million upward. Healthcare-adjacent office and multifamily command the most lender interest from institutional sources. CLS sources agency, CMBS, and life insurance company execution for qualifying assets.",
+      "cta": "Contact Commercial Lending Solutions to discuss Roanoke Virginia commercial real estate financing. Our capital markets relationships extend to institutional lenders who value healthcare-anchored markets like Roanoke."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Roanoke is primarily for multifamily value-add in the Grandin Road, Williamson Road, and South Roanoke submarkets. Sponsors are acquiring 1970s and 1980s apartment buildings below replacement cost, renovating, and capturing in-migration driven rent growth. CLS structures 18 to 24 month bridge facilities sized for Virginia renovation cycle timelines.",
+      "permanent": "Permanent financing in Roanoke favors agency multifamily and CMBS for other asset classes. Fannie Mae and Freddie Mac DUS lenders compete aggressively for well-located Roanoke apartment properties given the healthcare-anchored tenant demand. Life insurance companies lend on healthcare-leased office and net-lease retail for creditworthy tenants.",
+      "construction": "Construction lending in Roanoke supports medical office expansion near Carilion Clinic's Riverside campus and build-to-rent residential development in Vinton and Cave Spring. CLS structures construction-to-permanent facilities through Virginia-based regional banks and national lenders with healthcare real estate experience.",
+      "sba": "SBA programs serve Roanoke's independent healthcare providers, outdoor recreation retail, and professional services firms. CLS places SBA 504 and 7(a) loans from $1 million for qualifying borrowers.",
+      "agency": "Fannie Mae and Freddie Mac small balance and standard programs cover Roanoke multifamily assets efficiently. Non-recourse 10-year fixed-rate agency loans with 30-year amortization are the preferred exit financing for bridge loan sponsors in this market.",
+      "cmbs": "CMBS execution covers Roanoke's stabilized retail, office, and light industrial assets. Tanglewood and Valley View area retail centers are natural conduit loan candidates. Loan sizes from $2 million to $20 million with competitive 10-year fixed rates."
+    },
+    "property_context": {
+      "multifamily": "Multifamily is Roanoke's most competitive investment sector. The Carilion Clinic workforce, remote worker households, and Virginia Tech-affiliated residents create steady demand. Cap rates of 6.25 to 7.25 percent for Class B product are being compressed by out-of-market capital recognizing Roanoke's relative value versus similarly performing Virginia metros.",
+      "industrial": "Roanoke's I-81 corridor industrial market is a beneficiary of Virginia's logistics growth. Warehouse and flex space vacancy is below 6 percent, and asking rents have grown steadily. Average rents for industrial space are well below Northern Virginia rates.",
+      "office": "Office demand in Roanoke is anchored by Carilion Clinic's medical and administrative campus expansions. The downtown Roanoke office market has stabilized with adaptive reuse conversions of 1970s commercial buildings. Suburban office along US-220 and Route 419 maintains healthy occupancy driven by financial services, healthcare, and professional services tenants.",
+      "retail": "Roanoke retail is performing well relative to similarly-sized Virginia markets. The Tanglewood Mall area and Valley View Mall trade area anchor regional retail demand. Grandin Road and downtown City Market attract independent retail and food-and-beverage operators, with virtually full occupancy in the urban village submarkets.",
+      "hospitality": "Roanoke's hospitality market benefits from Blue Ridge Parkway outdoor recreation tourism, Virginia Tech sports travel, and healthcare-related medical travel to Carilion Clinic. The historic Hotel Roanoke and Conference Center anchors the downtown market. Limited-service supply additions have been modest.",
+      "mixed_use": "Roanoke's downtown and Grandin Village are the centers of mixed-use development activity. The City Market district has attracted restaurant, retail, and residential investment. Historic N&W Railway structures are being converted to residential, hotel, and office uses with Virginia Historic Rehabilitation Tax Credit financing."
+    }
+  },
+  "charlottesville": {
+    "city": "Charlottesville",
+    "state": "VA",
+    "stats": {
+      "multifamily_vacancy": "4.8%",
+      "multifamily_cap_rate": "5.50%-6.75%",
+      "industrial_vacancy": "4.2%",
+      "industrial_cap_rate": "6.00%-7.25%",
+      "office_vacancy": "9.5%",
+      "office_cap_rate": "6.25%-7.50%",
+      "retail_vacancy": "6.5%",
+      "retail_cap_rate": "5.75%-7.00%",
+      "hospitality_vacancy": "28.0%",
+      "hospitality_cap_rate": "7.00%-8.50%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "5.75%-7.00%",
+      "job_growth": "2.0%",
+      "population_growth": "1.2%",
+      "rent_growth": "4.5%",
+      "median_asking_rent": "$1,650",
+      "major_employers": "University of Virginia, UVA Health, Albemarle County government, National Ground Intelligence Center, Crutchfield Corporation, State Farm (regional operations), System1 Group, Silvon Software",
+      "top_submarkets": "UVA grounds area, Downtown Mall, Belmont, Route 29 North corridor, Barracks Road, North Fork Research Park, Pantops Mountain, Albemarle County"
+    },
+    "market_report": {
+      "overview": "Charlottesville is a high-demand university and knowledge economy market anchored by the University of Virginia. Despite its modest population of 230,000 in the metro, the market commands commercial real estate fundamentals comparable to much larger Virginia cities, driven by UVA's 23,000 students and 14,000 employees, a robust healthcare system, and steady in-migration of high-income households.",
+      "economy": "The University of Virginia is Charlottesville's dominant economic engine, contributing an estimated $5 billion annually to the regional economy through employment, construction, healthcare, and technology transfer. UVA Health is a separate major employer with nearly 9,000 employees and an affiliated medical school generating substantial real estate demand. The technology sector has grown around UVA research, with firms clustering in the North Fork Research Park. Wine country tourism and a thriving independent business district add economic diversity.",
+      "real_estate": "Commercial real estate fundamentals in Charlottesville are among the tightest in Virginia outside of Northern Virginia. Multifamily vacancy is below 5 percent and annual rent growth exceeds 4 percent. Retail vacancy on the Downtown Mall is effectively zero, with waiting lists for prime storefront positions. Office demand is driven by healthcare and technology, with the Route 29 North corridor and downtown serving as primary nodes.",
+      "outlook": "Charlottesville's outlook is strongly positive. UVA's ongoing capital program and innovation partnerships ensure sustained demand. The regional housing shortage is pushing workers and students further from campus, creating multifamily development opportunities in adjacent Albemarle County corridors. CLS expects cap rate compression to continue as institutional capital recognizes Charlottesville's elite market fundamentals.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Charlottesville from $1 million upward. The market's tight fundamentals and UVA affiliation attract institutional lender interest from agency, life insurance, and CMBS platforms. Competition among lenders keeps pricing efficient for qualified sponsors.",
+      "cta": "Contact Commercial Lending Solutions to discuss Charlottesville commercial real estate financing. Our lender relationships include institutions with dedicated university market programs that recognize UVA's stabilizing influence on this market."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Charlottesville is focused on multifamily value-add in Belmont, 10th and Page, and the Route 250 East corridor. Sponsors are acquiring older apartment stock and repositioning it for the graduate student and young professional demographic. CLS structures 18-month bridge facilities sized conservatively in this high-demand, constrained supply market.",
+      "permanent": "Permanent financing in Charlottesville commands some of Virginia's most favorable terms outside of Northern Virginia. Agency lenders and life insurance companies compete for multifamily and healthcare office in this market. Cap rates as low as 5.50 percent for Class A product are bankable through life insurance company programs.",
+      "construction": "Construction lending in Charlottesville is constrained by permitting complexity and community design standards. Projects near UVA and UVA Health's expansion zones attract the most lender interest. CLS structures construction-to-permanent facilities for medical office, student-proximate multifamily, and select mixed-use projects.",
+      "sba": "SBA programs serve Charlottesville's boutique hospitality, winery, professional services, and healthcare provider market. Owner-occupied medical and dental offices near UVA Health are natural SBA 504 borrowers. CLS places SBA loans from $1 million for qualifying Charlottesville businesses.",
+      "agency": "Fannie Mae and Freddie Mac compete aggressively for Charlottesville multifamily given the UVA stabilization premium. Small balance and standard programs both apply. Non-recourse 10-year fixed-rate agency loans with 30-year amortization.",
+      "cmbs": "CMBS execution serves Charlottesville's stabilized office, retail, and hospitality assets. Route 29 North retail centers and mixed-use Downtown Mall adjacent properties attract conduit lender interest. Loan sizes from $3 million to $30 million with 10-year fixed rates."
+    },
+    "property_context": {
+      "multifamily": "Multifamily is Charlottesville's most supply-constrained and highest-performing asset class. UVA enrollment growth outpaces housing supply year over year. Vacancy below 5 percent and 4.5 percent annual rent growth make this market attractive for long-term hold strategies. Cap rates of 5.5 to 6.5 percent for Class A product reflect institutional quality demand.",
+      "industrial": "Industrial in Charlottesville is a niche but tight market. The Rivanna Industrial Center and areas near I-64 serve light manufacturing, distribution, and construction trade tenants. Vacancy below 5 percent has compressed further as demand from UVA-adjacent businesses grows.",
+      "office": "Office demand in Charlottesville is anchored by UVA Health's administrative and clinical expansion along the JPA and Brandon Avenue corridors. Technology firms in North Fork Research Park and the emerging Downtown innovation district maintain healthy absorption. Vacancy of 9.5 percent is well below the national average for markets this size.",
+      "retail": "The Downtown Mall is one of Virginia's most successful pedestrian retail districts, with permanent waiting lists for prime space. Route 29 North corridor anchored shopping centers serve regional trade area demand. The Barracks Road Shopping Center and Stonefield mixed-use development anchor the northwest trade area.",
+      "hospitality": "Charlottesville's hospitality market is driven by UVA events, alumni travel, wine country tourism, and UVA Health-related medical travel. The market commands some of Virginia's highest ADR outside of Northern Virginia and Richmond. Boutique inn and small hotel development in and around Charlottesville has attracted private equity hospitality investment.",
+      "mixed_use": "Mixed-use development activity in Charlottesville is concentrated on the Route 250 East corridor, along Avon Street Extended in Albemarle County, and in the downtown core near the Transit Center. Projects combining multifamily with ground-floor retail benefit from the UVA walkability premium and are absorbing quickly."
+    }
+  },
+  "springfield-ma": {
+    "city": "Springfield",
+    "state": "MA",
+    "stats": {
+      "multifamily_vacancy": "7.5%",
+      "multifamily_cap_rate": "6.50%-8.00%",
+      "industrial_vacancy": "6.8%",
+      "industrial_cap_rate": "6.75%-8.25%",
+      "office_vacancy": "15.0%",
+      "office_cap_rate": "7.50%-9.00%",
+      "retail_vacancy": "10.5%",
+      "retail_cap_rate": "7.00%-8.50%",
+      "hospitality_vacancy": "35.0%",
+      "hospitality_cap_rate": "8.00%-9.50%",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "7.00%-8.50%",
+      "job_growth": "1.1%",
+      "population_growth": "0.3%",
+      "rent_growth": "3.5%",
+      "median_asking_rent": "$1,250",
+      "major_employers": "Baystate Health, MassMutual Financial Group, MGM Springfield, Big Y Foods, Mercy Medical Center, Western New England University, Springfield College, American International College, Pratt and Whitney",
+      "top_submarkets": "Downtown Springfield, Forest Park, East Forest Park, South End, Sixteen Acres, Longmeadow, Agawam, Chicopee, Holyoke"
+    },
+    "market_report": {
+      "overview": "Springfield anchors the Pioneer Valley of western Massachusetts, a 700,000-person metro bisected by the Connecticut River and home to one of the nation's densest concentrations of higher education institutions per capita. The Five College consortium (UMass Amherst, Amherst, Smith, Mount Holyoke, Hampshire) generates substantial demand across office, multifamily, and retail, while MGM Springfield has added a gaming-hospitality demand driver since its 2018 opening.",
+      "economy": "The educational sector, healthcare (Baystate Health, Trinity Health of New England), and financial services (MassMutual's headquarters) anchor the economy. MGM Springfield's $960 million casino resort has driven downtown hospitality and retail recovery. Defense contractor Pratt and Whitney and precision manufacturing firms along the I-291 and Route 20 corridors provide manufacturing employment. Logistics operators in the I-91 and I-90 interchange zone are expanding.",
+      "real_estate": "Commercial real estate fundamentals in Springfield reflect a market in gradual recovery. Cap rates of 6.5 to 8 percent are attractive relative to Boston, two hours east. Multifamily is the strongest sector, with rent growth of 3.5 percent driven by affordability migration from greater Boston and Hartford. Industrial vacancy below 7 percent reflects logistics demand growth along the I-91 corridor.",
+      "outlook": "Springfield's near-term outlook is improving. The MGM-driven downtown recovery is real, with new restaurants, hotels, and housing attracting investment capital. UMass Amherst and Smith College enrollment trends are stable, underpinning Pioneer Valley housing demand. The proposed east-west rail connection between Springfield and Boston, if funded, would substantially compress the market's discount to Boston fundamentals.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Springfield from $1 million upward. Massachusetts housing affordability programs complement federal agency multifamily financing for qualifying projects. CMBS and life insurance company execution are available for stabilized commercial assets.",
+      "cta": "Contact Commercial Lending Solutions to discuss Springfield Massachusetts commercial real estate financing. Our team structures loans that incorporate Massachusetts-specific incentive programs alongside conventional capital markets execution."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan activity in Springfield centers on multifamily value-add in the Forest Park, East Forest Park, and South End neighborhoods. Sponsors are acquiring 1960s and 1970s brick apartment buildings at prices that still represent meaningful discounts to eastern Massachusetts replacement cost, renovating, and achieving market rents from the affordability-migration tenant pool.",
+      "permanent": "Permanent financing in Springfield uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Agency lenders recognize the Pioneer Valley's stable higher education demand base and will lend on non-luxury multifamily near the Five College campuses at competitive fixed rates.",
+      "construction": "Construction lending in Springfield supports MGM-adjacent mixed-use development, medical office near Baystate Health, and workforce housing projects accessing Massachusetts affordable housing programs. CLS structures construction-to-permanent facilities and works with state housing finance agencies when equity is layered.",
+      "sba": "SBA programs support Springfield's diverse small business community including food manufacturing, healthcare, retail, and hospitality. MGM Springfield's operation has spawned ancillary small business demand downtown. CLS places SBA 504 and 7(a) loans from $1 million for qualifying owner-occupied properties.",
+      "agency": "Fannie Mae and Freddie Mac DUS programs cover Springfield multifamily efficiently. The Pioneer Valley's steady educational employment base supports underwriting metrics that institutional agency lenders find acceptable. Non-recourse 10-year fixed-rate loans with 30-year amortization are the preferred permanent product.",
+      "cmbs": "CMBS serves Springfield's stabilized retail, office, and hospitality assets. MGM-adjacent properties, downtown office, and suburban retail on Sumner Avenue and Boston Road attract conduit lender interest. Loan sizes from $3 million to $30 million."
+    },
+    "property_context": {
+      "multifamily": "Multifamily is Springfield's most active investment sector. Affordability migration from Boston and Hartford, combined with the Five College workforce, creates steady demand. Cap rates of 6.5 to 7.5 percent for Class B product are compelling relative to eastern Massachusetts pricing. Renovation-driven repositioning in Forest Park and East Forest Park is generating strong returns.",
+      "industrial": "Industrial demand in Springfield is growing along the I-91 and Massachusetts Turnpike corridors. Logistics operators servicing New England distribution networks find Springfield's central location attractive. Average asking rents remain well below Boston area rates, creating a cost advantage for regional distributors.",
+      "office": "Office vacancy of 15 percent in Springfield reflects work-from-home adoption among financial services and professional services tenants. Baystate Health's expansion is the primary demand driver for new medical office construction. Downtown Class B office is being converted to residential or hospitality use to address the supply overhang.",
+      "retail": "MGM Springfield has catalyzed downtown retail recovery, with restaurants and entertainment concepts opening in its orbit. Suburban retail on Boston Road and the Sumner Avenue corridor serves the metro's working-class consumer base with value-oriented grocery, discount, and service tenants.",
+      "hospitality": "Springfield's hospitality market has been transformed by MGM's 250-room hotel and casino complex. The MGM facility drove a wave of limited-service hotel development nearby. Business travel to MassMutual Financial Group and Five College events provides additional demand. RevPAR has recovered above 2019 levels for well-located properties.",
+      "mixed_use": "Mixed-use development in downtown Springfield is clustering around the MGM resort and the historic Court Square. Adaptive reuse of 1920s commercial buildings for residential, retail, and hospitality uses benefits from Historic Tax Credit financing. The proposed Union Station redevelopment anchor and east-west rail investment could further catalyze downtown mixed-use activity."
+    }
+  },
+  "daytona-beach": {
+    "city": "Daytona Beach",
+    "state": "FL",
+    "stats": {
+      "multifamily_vacancy": "8.0%",
+      "multifamily_cap_rate": "6.00%-7.50%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "6.00%-7.25%",
+      "office_vacancy": "13.5%",
+      "office_cap_rate": "7.00%-8.50%",
+      "retail_vacancy": "9.0%",
+      "retail_cap_rate": "6.25%-7.75%",
+      "hospitality_vacancy": "32.0%",
+      "hospitality_cap_rate": "7.50%-9.00%",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "6.25%-7.75%",
+      "job_growth": "2.2%",
+      "population_growth": "1.8%",
+      "rent_growth": "5.2%",
+      "median_asking_rent": "$1,400",
+      "major_employers": "Embry-Riddle Aeronautical University, AdventHealth, Halifax Health, Daytona International Speedway (ISC), Volusia County government, International Speedway Corporation, Brown and Brown Insurance, Amazon",
+      "top_submarkets": "International Speedway Boulevard corridor, LPGA Boulevard, South Daytona, Ormond Beach, Port Orange, Deltona, Beville Road, Williamson Boulevard"
+    },
+    "market_report": {
+      "overview": "Daytona Beach is the dominant market in Volusia County and the eastern anchor of the Central Florida megaregion. The metro of 700,000 has diversified substantially beyond its motorsports and Spring Break identity, with aerospace and aviation manufacturing, healthcare, and a rapidly growing permanent resident base driven by Florida in-migration from the Northeast and Midwest.",
+      "economy": "Tourism and hospitality remain the largest economic sector, centered on Daytona International Speedway and the 23 miles of Atlantic beachfront. The aerospace and aviation cluster at Embry-Riddle Aeronautical University has spawned a growing aerospace manufacturing and maintenance supply chain. AdventHealth and Halifax Health are major healthcare employers. Florida's population growth is fueling residential-anchored commercial development along I-4 and US-92.",
+      "real_estate": "Commercial real estate fundamentals in Daytona Beach are improving rapidly on the back of Florida's population influx. Multifamily rent growth of 5.2 percent reflects the single-family affordability squeeze pushing households into apartments. Industrial demand along I-4 and LPGA Boulevard is increasing as e-commerce operators and light manufacturers expand in Central Florida.",
+      "outlook": "Daytona Beach's outlook is strongly positive driven by Florida's demographic tailwind. The International Speedway Boulevard corridor is undergoing commercial redevelopment. Embry-Riddle's enrollment growth and drone and UAM research programs are attracting aerospace investment. Proximity to Orlando International via I-4 makes this market increasingly attractive to institutional investors priced out of Orlando proper.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Daytona Beach from $1 million upward. Florida's population growth and agency multifamily programs are particularly efficient in this market. Industrial and retail assets along major corridors attract CMBS and life insurance company interest.",
+      "cta": "Contact Commercial Lending Solutions to discuss Daytona Beach commercial real estate financing. Our Florida lender relationships span agency, CMBS, bridge, and construction programs suited to this fast-growing Atlantic Coast market."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Daytona Beach is concentrated in multifamily value-add along US-1, Beville Road, and the South Daytona corridor. Sponsors are acquiring workforce housing complexes at prices still below Orlando replacement cost and upgrading units to capture in-migration demand. CLS structures 18 to 24 month bridge facilities with interest reserves appropriate for Florida permitting timelines.",
+      "permanent": "Permanent financing in Daytona Beach favors Fannie Mae and Freddie Mac for multifamily and CMBS for retail and hospitality. Florida's population growth thesis makes agency lenders highly competitive for Volusia County apartment communities. Life insurance companies lend on net-lease retail and industrial anchored by national tenants.",
+      "construction": "Construction lending in Daytona Beach supports build-to-rent residential communities, Embry-Riddle adjacent mixed-use, and industrial development along LPGA Boulevard and the I-4 commerce corridor. CLS structures construction-to-permanent facilities through Florida-experienced regional banks and national construction lenders.",
+      "sba": "SBA programs serve Daytona Beach's aviation, marine, tourism, and small business community. Embry-Riddle supplier firms, boat dealers, and hospitality operators are active SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million for qualifying owner-occupied properties.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive in the Daytona Beach multifamily market given Florida's population growth fundamentals. Non-recourse 10-year fixed-rate loans with 30-year amortization at pricing that reflects Florida's low-vacancy, high-growth environment.",
+      "cmbs": "CMBS execution covers Daytona Beach's stabilized retail, hospitality, and industrial assets. Beachside hotel assets, International Speedway Boulevard retail, and LPGA corridor industrial attract conduit lender interest. Loan sizes from $3 million to $40 million."
+    },
+    "property_context": {
+      "multifamily": "Multifamily is Daytona Beach's fastest-growing investment sector. Florida in-migration from higher-cost states is compressing vacancy and pushing rents up 5.2 percent annually. Cap rates of 6 to 7.5 percent for Class B product are tightening as institutional capital follows the population growth story. Build-to-rent single-family communities are also gaining traction in Volusia County.",
+      "industrial": "Industrial is a standout performer in the Daytona Beach market. I-4 corridor logistics demand from Central Florida operators seeking lower-cost space than Orlando is filling available inventory. LPGA Boulevard and I-4 interchange sites are commanding land premiums for last-mile distribution uses.",
+      "office": "Office in Daytona Beach is healthcare and aviation-driven. Embry-Riddle Aeronautical University's research park and Halifax Health and AdventHealth's campus expansions are the primary demand drivers. Suburban medical office vacancy is below 8 percent. General office along Beville Road and the ISB corridor is softer, in the mid-teens.",
+      "retail": "Retail recovery in Daytona Beach is tracking population growth. The Volusia Mall area is experiencing repositioning with new entertainment and food-and-beverage concepts. Beach Street downtown and Ormond Beach's Granada Boulevard trade areas maintain healthy independent retail demand. Grocery-anchored centers anchored by Publix are the most stable investment product.",
+      "hospitality": "Daytona Beach's hospitality market is one of Florida's most specialized. NASCAR event weekends drive among the highest ADR events on the East Coast. Bike Week and spring break provide additional peak-period demand. The Daytona Lagoon waterpark redevelopment and Streamline Hotel renovation signal ongoing hospitality investment.",
+      "mixed_use": "Mixed-use development is concentrated along International Speedway Boulevard between the Speedway and the Beach Street corridor. The Daytona Beach Rising initiative is coordinating mixed-use investment in the downtown-to-beach connector zone. Beachside hotel-retail projects and ISB corridor redevelopment are attracting regional and national development interest."
+    }
+  },
+  "peoria": {
+    "city": "Peoria",
+    "state": "IL",
+    "stats": {
+      "multifamily_vacancy": "9.5%",
+      "multifamily_cap_rate": "7.25%-9.00%",
+      "industrial_vacancy": "8.5%",
+      "industrial_cap_rate": "7.50%-9.00%",
+      "office_vacancy": "17.5%",
+      "office_cap_rate": "8.25%-10.00%",
+      "retail_vacancy": "13.0%",
+      "retail_cap_rate": "7.75%-9.50%",
+      "hospitality_vacancy": "40.0%",
+      "hospitality_cap_rate": "9.00%-11.00%",
+      "mixed_use_vacancy": "11.0%",
+      "mixed_use_cap_rate": "8.00%-9.50%",
+      "job_growth": "0.5%",
+      "population_growth": "-0.4%",
+      "rent_growth": "1.5%",
+      "median_asking_rent": "$825",
+      "major_employers": "Caterpillar Inc., OSF HealthCare, UnityPoint Health Methodist, Bradley University, Illinois Central College, State Farm Insurance, Midwest Grain Products, RLI Corp",
+      "top_submarkets": "Dunlap, North Peoria, Moss-Bradley, Richwoods, Peoria Heights, East Peoria, Morton, Washington, Chillicothe"
+    },
+    "market_report": {
+      "overview": "Peoria is the economic center of central Illinois, anchored by Caterpillar Inc.'s global headquarters and a deep manufacturing heritage along the Illinois River. The metro of 380,000 has faced headwinds from Caterpillar's cyclical business and some corporate function relocations, but maintains meaningful industrial and healthcare assets that attract yield-focused commercial real estate investors.",
+      "economy": "Caterpillar remains Peoria's most influential employer despite headcount reductions from peak levels, employing approximately 10,000 people across its Peoria-area facilities and generating enormous economic multiplier effects through its supply chain. OSF HealthCare and UnityPoint Health are the largest healthcare employers. Bradley University and Illinois Central College support an educated workforce pipeline. Distilling heritage and State Farm Insurance add economic diversification.",
+      "real_estate": "Commercial real estate in Peoria offers some of the highest cap rates in the Midwest for investors comfortable with a market facing demographic and economic headwinds. Cap rates of 7.25 to 9 percent for multifamily and 8 to 10 percent for commercial product provide cash-on-cash yields difficult to find in supply-constrained markets. Industrial vacancy of 8.5 percent is above Midwest averages but reflects Caterpillar production cycle exposure rather than structural deterioration.",
+      "outlook": "Peoria's near-term outlook is cautiously stable. Caterpillar's infrastructure and mining equipment demand remains tied to global commodity cycles and federal infrastructure spending. OSF HealthCare's continued expansion of its clinical campus provides a countercyclical employment anchor. Peoria's low cost of living and affordable real estate prices attract remote workers from Chicago, creating modest upward pressure on residential rents.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Peoria from $1 million upward. High cap rate environments create opportunities for CMBS and bridge-to-perm strategies that pencil at current prices. SBA programs serve Peoria's active small business and manufacturing community.",
+      "cta": "Contact Commercial Lending Solutions to discuss Peoria Illinois commercial real estate financing. Our lender relationships include institutions active in Midwest secondary markets willing to underwrite stabilized assets at appropriate cap rates."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Peoria targets value-add multifamily in the Moss-Bradley, Richwoods, and Dunlap corridors. Sponsors are acquiring 1970s and 1980s garden complexes at per-unit prices well below $30,000, renovating, and targeting the stabilized workforce housing tenant base. CLS structures 12 to 18 month bridge facilities sized conservatively for this yield-driven market.",
+      "permanent": "Permanent financing in Peoria leans on CMBS for commercial assets and agency for multifamily. Cap rates above 7.5 percent support DSCR coverage ratios that make Peoria multifamily particularly bankable through Fannie Mae small balance programs. Life insurance companies are selective but do lend on Caterpillar-adjacent net-lease industrial for investment-grade credits.",
+      "construction": "Construction lending in Peoria is limited to OSF and UnityPoint Healthcare expansion projects, industrial build-to-suit for Caterpillar suppliers, and select infill residential. CLS structures construction facilities through Illinois community banks and regional lenders familiar with central Illinois permitting and labor markets.",
+      "sba": "SBA programs are highly relevant in Peoria for owner-occupied manufacturing, healthcare, and professional services. Caterpillar's supplier ecosystem provides a steady pool of SBA-eligible businesses with real property collateral needs. CLS places SBA 504 and 7(a) loans from $1 million for qualifying Peoria businesses.",
+      "agency": "Fannie Mae small balance programs serve Peoria multifamily assets 5 units and above. The high cap rate environment means DSCR coverage is generally strong, making agency underwriting relatively straightforward for stabilized assets. Non-recourse 10-year fixed-rate terms with 30-year amortization.",
+      "cmbs": "CMBS execution covers Peoria's stabilized retail, industrial, and office assets with creditworthy tenancy. Caterpillar-leased or Caterpillar supply chain-occupied industrial is the most attractive conduit product. Dunlap area retail anchored by national grocers maintains CMBS-bankable metrics. Loan sizes from $2 million to $15 million."
+    },
+    "property_context": {
+      "multifamily": "Peoria multifamily offers some of the highest cash-on-cash yields in the Midwest for leveraged investors. Cap rates of 7.5 to 9 percent for Class B product at per-unit prices below $40,000 attract yield-focused buyers. The Caterpillar and OSF workforce provides stable tenancy. Annual rent growth of 1.5 percent is modest but consistent in this below-replacement-cost market.",
+      "industrial": "Industrial in Peoria is directly tied to Caterpillar's production cycle. Heavy manufacturing, parts distribution, and agricultural equipment supply chain uses cluster along the Illinois River corridor and Route 150 industrial areas. Average asking rents for warehouse and manufacturing space are competitive for cost-sensitive industrial tenants.",
+      "office": "Office vacancy in Peoria is elevated at 17.5 percent, reflecting both work-from-home adoption and some Caterpillar corporate function relocations. Medical office near OSF Saint Francis Medical Center and UnityPoint's Methodist facility maintains below-average vacancy. Downtown Class B office faces conversion pressure.",
+      "retail": "Retail in Peoria is challenged by population trends and e-commerce. The Northwoods Mall area anchors regional retail, while the Sheridan Road and War Memorial Drive corridors serve the metro's established neighborhoods. Grocery-anchored centers with national supermarket anchors are the most defensible retail product.",
+      "hospitality": "Peoria's hospitality market is corporate and convention-driven. Caterpillar supplier visits, OSF medical travel, and Bradley University events provide demand. The Peoria Civic Center convention complex anchors downtown hotel demand. Limited-service hotel fundamentals are stable at modest RevPAR levels.",
+      "mixed_use": "Mixed-use development in Peoria is concentrated in the Warehouse District and along the Riverfront corridor. Adaptive reuse of historic industrial buildings for loft residential, craft beverage, and creative office uses has attracted private investment. The Riverfront Museum District and Caterpillar Visitors Center are anchoring civic investment that catalyzes adjacent private mixed-use activity."
+    }
   }
 }

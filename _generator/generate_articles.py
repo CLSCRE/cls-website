@@ -72,6 +72,9 @@ MARKET_REPORT_CITIES = [
     # Batch 8 expansion — next Tier 2 metros
     "little-rock", "lakeland", "ogden", "augusta",
     "syracuse", "toledo", "asheville", "pensacola",
+    # Batch 9 expansion — next Tier 2 metros
+    "shreveport", "fayetteville-nc", "montgomery", "roanoke",
+    "charlottesville", "springfield-ma", "daytona-beach", "peoria",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -120,6 +123,9 @@ ALL_CITIES = [
     # Batch 8 expansion — next Tier 2 metros
     "little-rock", "lakeland", "ogden", "augusta",
     "syracuse", "toledo", "asheville", "pensacola",
+    # Batch 9 expansion — next Tier 2 metros
+    "shreveport", "fayetteville-nc", "montgomery", "roanoke",
+    "charlottesville", "springfield-ma", "daytona-beach", "peoria",
 ]
 
 # Loan slug → context key mapping
