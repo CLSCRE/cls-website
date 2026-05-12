@@ -5342,5 +5342,390 @@
       "mixed_use": "Mixed-use investment in Winston-Salem is concentrated in downtown around the Innovation Quarter, Trade Street arts district, and Bailey Park where creative office, residential, and food and beverage stacking is supported by city revitalization investment. The Whitaker Park campus redevelopment is the most ambitious mixed-use adaptive reuse project in the metro.",
       "hospitality": "Hospitality investment in Winston-Salem benefits from Wake Forest Baptist Medical Center visitor demand, Wake Forest University event programming, and the BB&T Point amphitheater and LJVM Coliseum event calendar. The Innovation Quarter draws biotech conference and corporate visitor demand. Boutique hotels in the downtown arts district are seeing growing interest from investors aligned with the urban revitalization narrative."
     }
+  },
+  "little-rock": {
+    "city": "Little Rock",
+    "state": "AR",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "multifamily_cap_rate": "6.00%-6.75%",
+      "industrial_vacancy": "6.2%",
+      "industrial_cap_rate": "6.00%-6.75%",
+      "office_vacancy": "15.5%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "7.5%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "33.0%",
+      "hospitality_cap_rate": "7.25%-8.00%",
+      "mixed_use_vacancy": "6.0%",
+      "mixed_use_cap_rate": "6.25%-7.00%",
+      "job_growth": "1.6%",
+      "population_growth": "1.0%",
+      "rent_growth": "5.2%",
+      "median_asking_rent": "$1,280",
+      "major_employers": "Dillard's, Windstream Communications, Stephens Inc., Arkansas Children's Hospital, UAMS, Simmons Bank, Murphy USA, Arkansas state government",
+      "top_submarkets": "Downtown Little Rock, West Little Rock, Chenal Parkway, North Little Rock, Maumelle, Conway, Benton"
+    },
+    "market_report": {
+      "overview": "Little Rock anchors the Arkansas economy as the state capital and home to Dillard's department stores, Stephens Inc. (one of the largest investment banks outside Wall Street), and the University of Arkansas for Medical Sciences. The metro benefits from proximity to Walmart's Bentonville headquarters, with dozens of supplier and vendor companies maintaining Little Rock offices. Arkansas's low cost of living, no corporate income tax on manufacturers, and central US location attract distribution and logistics investment along the I-30 and I-40 corridors.",
+      "multifamily": "Little Rock multifamily is driven by state government employee housing, UAMS medical student and resident demand, and University of Arkansas at Little Rock student housing. West Little Rock and Chenal Parkway command the highest rents from corporate professionals and Dillard's and Stephens employees. The metro's exceptional affordability relative to other state capitals attracts value-add investors seeking stable Arkansas-market yields. Conway and Maumelle serve growing suburban family demand.",
+      "industrial": "Little Rock industrial benefits from the I-30 and I-40 intersection positioning the metro at the center of the southern US distribution network. The Port of Little Rock on the Arkansas River provides barge access to the Mississippi River system. Walmart supplier warehousing generates ongoing industrial demand. The Pulaski County industrial corridor serves food processing and light manufacturing tenants with stable long-term occupancy.",
+      "office_retail": "Dillard's, Stephens Inc., and Windstream Communications anchor Class A suburban office demand in the Chenal Parkway and west Little Rock corridors. UAMS drives healthcare administrative office demand. The River Market district is Little Rock's premier retail and entertainment destination. Chenal Parkway retail serves the highest household income demographics in the metro with strong national tenant performance.",
+      "financing": "Little Rock lenders include Simmons Bank, Bank of Arkansas, and regional community banks with deep Arkansas market knowledge. Stephens Inc.'s financial relationships create unique access to private capital. Arkansas Economic Development Commission programs support qualifying manufacturing and logistics projects. Agency multifamily financing is available for stabilized assets.",
+      "outlook": "Little Rock's state capital stability and Walmart ecosystem proximity provide a durable economic foundation. UAMS's growing research profile and healthcare system expansion will sustain medical real estate demand. The I-30 and I-40 logistics position will attract growing distribution investment as e-commerce penetration deepens across the south-central US. Arkansas's business-friendly regulatory environment supports continued corporate relocation activity."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Little Rock are most active on West Little Rock and Chenal Parkway multifamily value-add plays, industrial lease-up along the I-30 corridor, and River Market district mixed-use acquisitions. Arkansas-focused bridge lenders and national alternative lenders with south-central US market experience are active.",
+      "permanent": "Permanent financing in Little Rock is available from Simmons Bank, Bank of Arkansas, and regional life insurance companies for stabilized multifamily and industrial assets. State government-adjacent office buildings and UAMS medical corridor assets attract favorable permanent loan terms. Arkansas's affordability metrics support strong rent-to-income ratios.",
+      "construction": "Construction lending in Little Rock focuses on Chenal Parkway suburban multifamily, UAMS medical campus expansion, and I-30 corridor industrial and logistics facility construction. The River Market district mixed-use pipeline also generates construction lending activity.",
+      "sba": "SBA lending is active in Little Rock for Walmart ecosystem supplier businesses, healthcare practices, and professional service firms. The state government contractor community and UAMS spinout healthcare companies generate consistent SBA volume. Chenal Parkway small business owners are active SBA borrowers.",
+      "mezzanine": "Mezzanine financing in Little Rock supports larger downtown mixed-use and UAMS campus development projects. Stephens Inc.'s investment banking relationships provide access to alternative capital structures not typically available in smaller Arkansas markets.",
+      "specialty": "Specialty financing in Little Rock includes Arkansas Historic Tax Credits for downtown and River Market adaptive reuse, New Market Tax Credits for qualifying projects in underserved Little Rock neighborhoods, and Arkansas Economic Development Commission incentive financing for qualifying manufacturing and logistics projects."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Little Rock offers Arkansas state capital stability with some of the most affordable acquisition pricing of any state capital in the south-central US. Chenal Parkway and West Little Rock command Class A rents from corporate and medical professionals. UAMS corridor assets serve stable graduate and resident demand. Conway suburban workforce housing offers high current yields with consistent demand.",
+      "industrial": "Industrial investment in Little Rock targets the I-30 and I-40 corridor distribution network, Port of Little Rock barge logistics, and Walmart ecosystem warehousing. The Pulaski County industrial corridor hosts food processing and light manufacturing tenants. Central US positioning makes Little Rock a compelling logistics hub for south-central distribution.",
+      "office": "Office investment in Little Rock is most defensible in Chenal Parkway suburban parks with Dillard's, Windstream, and professional services anchor tenants. Stephens Inc. and Simmons Bank drive downtown Class A demand. UAMS medical corridor office serves healthcare administration and research functions. State government adjacency supports downtown Class B investment.",
+      "retail": "Retail investment in Little Rock is strongest along Chenal Parkway and in the Breckenridge Village and Shackleford Crossing power centers where affluent west Little Rock demographics support national retailers. The River Market district serves the entertainment retail and dining market. Grocery-anchored centers across Conway and Maumelle offer stable suburban income.",
+      "mixed_use": "Mixed-use investment in Little Rock is concentrated in the River Market district and downtown along Main Street where the Clinton Presidential Center anchors tourism and residential stacking. The SoMa arts district in south Main is an emerging mixed-use neighborhood for creative and boutique investment.",
+      "hospitality": "Hospitality investment in Little Rock benefits from state government visitor demand, Dillard's and Stephens Inc. corporate travel, and Clinton Presidential Center tourism. The Statehouse Convention Center anchors group business. River Market boutique hotels serve leisure travelers exploring the revitalized downtown waterfront."
+    }
+  },
+  "lakeland": {
+    "city": "Lakeland",
+    "state": "FL",
+    "stats": {
+      "multifamily_vacancy": "6.2%",
+      "multifamily_cap_rate": "5.25%-6.00%",
+      "industrial_vacancy": "3.5%",
+      "industrial_cap_rate": "4.75%-5.50%",
+      "office_vacancy": "13.5%",
+      "office_cap_rate": "6.50%-7.25%",
+      "retail_vacancy": "5.5%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "hospitality_vacancy": "30.0%",
+      "hospitality_cap_rate": "6.25%-7.00%",
+      "mixed_use_vacancy": "5.0%",
+      "mixed_use_cap_rate": "5.75%-6.50%",
+      "job_growth": "3.0%",
+      "population_growth": "2.8%",
+      "rent_growth": "7.0%",
+      "median_asking_rent": "$1,780",
+      "major_employers": "Publix Super Markets, Watson Clinic, Lakeland Regional Health, GEICO, Amazon, Saddle Creek Logistics, Walmart Distribution, Florida Polytechnic University",
+      "top_submarkets": "Downtown Lakeland, South Lakeland, North Lakeland, Winter Haven, Haines City, Bartow, Davenport, Plant City"
+    },
+    "market_report": {
+      "overview": "Lakeland occupies the most strategic logistics position in Florida, sitting directly on I-4 between Tampa and Orlando, the two largest Florida metros. Publix Super Markets' world headquarters anchors a significant corporate and professional employment base. The Polk County logistics corridor has become one of Florida's most active industrial markets driven by e-commerce distribution, grocery supply chain, and construction materials distribution for the enormous residential building boom across the I-4 corridor. Florida Polytechnic University is building a STEM-focused research university that will reshape the long-term employment profile.",
+      "multifamily": "Lakeland multifamily is among Florida's strongest value markets, with rental demand driven by population inflows from Tampa, Orlando, and out-of-state migrants seeking Florida's tax advantages at lower price points. The Davenport and Haines City southern corridor captures enormous demand from Disney area service workers who cannot afford Orlando-market rents. Publix corporate campus adjacency drives professional multifamily demand in south Lakeland. Rent growth has been among Florida's strongest as supply has struggled to keep pace with population inflows.",
+      "industrial": "Lakeland industrial is one of the hottest markets in the Southeast. Vacancy below 4% reflects insatiable demand from e-commerce fulfillment, grocery supply chain, and construction materials distribution. Saddle Creek Logistics, Amazon, and Walmart operate enormous facilities here. The I-4 positioning enables one-day delivery reach to the entire Florida peninsula. Land constraints are emerging as the pipeline of developable industrial land shrinks, creating upward rent pressure that rivals coastal Florida markets.",
+      "office_retail": "Publix's world headquarters anchors Class A office demand with its 10,000-person corporate campus. Watson Clinic and Lakeland Regional Health drive healthcare office demand. Lakeland Square Mall and the Lakeland Highlands commercial corridor serve regional retail demand. The lakefront downtown is seeing growing restaurant and boutique retail activity as the urban revitalization gains momentum.",
+      "financing": "Lakeland lenders include Heartland Bank, SunTrust (now Truist), and Florida-focused institutions with Polk County market knowledge. National industrial lenders are extremely competitive given the market's exceptional performance. Agency multifamily financing is competitive. Industrial construction lenders are very active given the development pipeline.",
+      "outlook": "Lakeland's I-4 logistics position is permanent and growing in strategic value. E-commerce growth and the continued Florida population boom will sustain industrial demand for years. Publix's headquarters presence ensures durable professional employment. Florida Polytechnic University's growing enrollment will add a STEM-focused workforce that attracts technology employer interest. The price gap versus Tampa and Orlando will continue driving population and investment to Lakeland."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Lakeland are most active on industrial lease-up plays along the I-4 corridor, south Lakeland and Davenport multifamily acquisitions, and downtown mixed-use repositioning. Florida industrial bridge lenders and national alternative lenders with logistics market experience are extremely active.",
+      "permanent": "Permanent financing in Lakeland is most competitive for industrial assets where life insurance companies and debt funds compete aggressively for logistics facilities with national tenants. South Lakeland and Davenport multifamily commands favorable permanent loan terms given the strong population growth and rent trajectory. Publix-adjacent retail also attracts long-term permanent capital.",
+      "construction": "Construction lending in Lakeland is heavily active across industrial and multifamily driven by the logistics boom and population-driven residential demand. The Haines City and Davenport growth corridors are the most active multifamily construction markets. Industrial construction along I-4 is a statewide priority for national developers.",
+      "sba": "SBA lending is active in Lakeland for small logistics and transportation businesses, healthcare practices, and professional service firms. Publix's supplier ecosystem generates SBA volume from food and consumer products small businesses. Florida Polytechnic University spinout technology companies are emerging SBA borrowers.",
+      "mezzanine": "Mezzanine financing in Lakeland supports larger industrial park developments and downtown mixed-use projects. The exceptional industrial fundamentals make Lakeland mezzanine positions among the most sought-after in the Florida market.",
+      "specialty": "Specialty financing in Lakeland includes Florida PACE financing for industrial energy efficiency, New Market Tax Credits for qualifying downtown Lakeland and Bartow projects, and Florida Department of Economic Opportunity incentive financing for qualifying manufacturing and distribution investments."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Lakeland offers Florida growth market fundamentals at Central Florida value pricing. The Davenport and Haines City southern corridor serves enormous Disney and Orlando service worker demand. South Lakeland luxury rentals serve Publix corporate employees. Plant City workforce housing serves the agricultural and distribution worker base. Population inflows from Tampa, Orlando, and out-of-state markets are accelerating rent growth.",
+      "industrial": "Industrial investment in Lakeland is among Florida's most compelling opportunities. Sub-4% vacancy, accelerating rent growth, and the nation's most strategic Florida logistics position create exceptional landlord conditions. Amazon, Saddle Creek, and Walmart anchor institutional-quality demand. Land constraints are emerging, making existing industrial ownership extremely valuable. The I-4 corridor enables one-day delivery to all of Florida.",
+      "office": "Office investment in Lakeland is most defensible in Publix corporate campus adjacent buildings and in Watson Clinic and Lakeland Regional Health medical office parks. Florida Polytechnic University is creating demand for research and technology office near the campus. Downtown Lakeland boutique office is recovering as the lakefront revitalization drives residential and foot traffic growth.",
+      "retail": "Retail investment in Lakeland is strongest along the Lakeland Highlands corridor and at Lakeland Square Mall where strong trade area demographics from the booming population support national retailers. Publix-anchored grocery centers across the metro offer Florida's most stable retail income. The Davenport and Haines City areas are experiencing rapid new retail development driven by population growth.",
+      "mixed_use": "Mixed-use investment in Lakeland is concentrated in downtown along the scenic lakes where city revitalization investment is supporting residential and food and beverage development. The lakefront setting creates a distinctive mixed-use opportunity unique among Central Florida markets. Florida Polytechnic University is catalyzing mixed-use interest near the campus in north Lakeland.",
+      "hospitality": "Hospitality investment in Lakeland benefits from Publix corporate meeting demand, Polk County fair and event programming, and overflow demand from the Tampa and Orlando market. The Detroit Tigers spring training complex and Florida Polytechnic University generate event-driven hospitality demand. Select-service hotels along I-4 serve the enormous drive-through Florida travel market."
+    }
+  },
+  "ogden": {
+    "city": "Ogden",
+    "state": "UT",
+    "stats": {
+      "multifamily_vacancy": "4.5%",
+      "multifamily_cap_rate": "5.25%-6.00%",
+      "industrial_vacancy": "4.8%",
+      "industrial_cap_rate": "5.50%-6.25%",
+      "office_vacancy": "13.2%",
+      "office_cap_rate": "6.75%-7.50%",
+      "retail_vacancy": "6.2%",
+      "retail_cap_rate": "6.25%-7.00%",
+      "hospitality_vacancy": "30.0%",
+      "hospitality_cap_rate": "6.75%-7.50%",
+      "mixed_use_vacancy": "5.0%",
+      "mixed_use_cap_rate": "5.75%-6.50%",
+      "job_growth": "2.5%",
+      "population_growth": "2.0%",
+      "rent_growth": "6.8%",
+      "median_asking_rent": "$1,680",
+      "major_employers": "Hill Air Force Base, IRS Ogden Service Center, Weber State University, Autoliv, Lifetime Products, Northrop Grumman, ATK (Northrop), Amazon",
+      "top_submarkets": "Downtown Ogden, South Ogden, Roy, Layton, Clearfield, West Haven, North Ogden, Pleasant View"
+    },
+    "market_report": {
+      "overview": "Ogden anchors the northern portion of Utah's Wasatch Front and is home to Hill Air Force Base, the largest single employer in Utah with over 22,000 military and civilian employees. The base serves as the Air Force's primary depot maintenance and logistics hub for fighter aircraft, making its federal presence essentially permanent. Ogden is benefiting from Salt Lake City's explosive growth as population and employers spread north along the Wasatch Front. The metro's outdoor recreation access to Snowbasin, Powder Mountain, and Nordic Valley ski resorts is emerging as a talent retention advantage for technology and outdoor industry employers.",
+      "multifamily": "Ogden multifamily is driven by Hill Air Force Base civilian and military housing demand in Roy, Layton, and Clearfield, Weber State University student housing, and Salt Lake City overflow demand from households priced out of the Salt Lake market. The I-15 corridor north of Salt Lake City is experiencing rapid population growth as remote workers and corporate relocations discover Ogden's affordability and outdoor access. Layton and Clearfield command the highest rents from Hill AFB professionals while downtown Ogden is seeing a revitalization-driven demand wave.",
+      "industrial": "Ogden industrial benefits from Hill Air Force Base's enormous supply chain and defense contractor industrial ecosystem, the Union Pacific Railroad main line that runs through Ogden, and growing e-commerce distribution serving the northern Utah and southern Idaho market. Autoliv's airbag manufacturing and Northrop Grumman's solid rocket motor operations anchor advanced manufacturing industrial demand. The Clearfield and Roy industrial corridors serve defense contractor and general logistics tenants.",
+      "office_retail": "Hill Air Force Base contractor offices and Weber State University administrative functions anchor office demand. Northrop Grumman and Autoliv corporate offices drive suburban Class B demand in Clearfield. Historic 25th Street in downtown Ogden is the premier retail and dining destination with growing boutique and restaurant performance. The Newgate Mall trade area serves the broader Weber County retail market.",
+      "financing": "Ogden lenders include Bank of Utah, Zions Bank, and Utah community banks with deep Wasatch Front market knowledge. Defense contractor lending relationships occasionally intersect with commercial real estate. Agency multifamily financing is competitive given the strong Utah market fundamentals. National industrial lenders are increasingly active as Ogden's industrial profile grows.",
+      "outlook": "Ogden's long-term outlook is exceptional. Hill Air Force Base's role in F-35 and next-generation fighter maintenance ensures decades of federal employment. Salt Lake City's growth will continue driving Ogden's population expansion northward along I-15. Outdoor recreation tourism at Snowbasin, Powder Mountain, and Nordic Valley will sustain hospitality investment. The outdoor industry employer cluster anchored by brands choosing Ogden for talent access will diversify the employment base."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Ogden are most active on downtown Ogden multifamily value-add plays, Clearfield defense contractor industrial repositioning, and Layton suburban retail acquisitions. Utah-focused bridge lenders and national alternative lenders with defense market experience are active.",
+      "permanent": "Permanent financing in Ogden is available from Zions Bank, Bank of Utah, and regional life insurance companies for stabilized multifamily and industrial assets. Hill AFB adjacent assets with defense contractor tenants attract very favorable permanent loan terms. Layton and Clearfield multifamily commands strong permanent lending terms reflecting Salt Lake City spillover demand.",
+      "construction": "Construction lending in Ogden focuses on I-15 corridor multifamily in Layton and Clearfield, defense contractor facility build-outs near Hill AFB, and downtown Ogden mixed-use residential. The outdoor recreation economy is driving boutique hotel construction in the Ogden Canyon gateway area.",
+      "sba": "SBA lending is active in Ogden for defense technology companies, outdoor recreation businesses, and professional service firms. The Hill AFB small business contractor community generates consistent SBA volume. Outdoor gear and recreation companies choosing Ogden as a headquarters location are emerging SBA borrowers.",
+      "mezzanine": "Mezzanine financing in Ogden supports larger I-15 corridor multifamily developments and defense contractor campus build-outs where senior loan constraints require additional capital. The strong Utah market fundamentals make Ogden mezzanine positions attractive to institutional lenders.",
+      "specialty": "Specialty financing in Ogden includes Utah Historic Tax Credits for downtown 25th Street adaptive reuse, PACE financing for industrial energy efficiency improvements near Hill AFB, and New Market Tax Credits for qualifying projects in underserved Ogden neighborhoods."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Ogden offers Utah market fundamentals at Salt Lake City discount pricing. Hill AFB civilian workforce housing in Roy, Layton, and Clearfield provides defense-anchored stability. Weber State University corridor assets serve stable student demand. Downtown Ogden value-add plays offer the highest cap rates with improving fundamentals from the revitalization wave. I-15 corridor growth from Salt Lake City spillover creates consistent absorption.",
+      "industrial": "Industrial investment in Ogden is anchored by the Hill AFB defense contractor supply chain and Autoliv and Northrop Grumman advanced manufacturing. Union Pacific rail access adds logistics depth. The Clearfield and Roy industrial corridors host defense-oriented and general manufacturing tenants. E-commerce distribution serving northern Utah is a growing category.",
+      "office": "Office investment in Ogden is most defensible in Hill AFB contractor office parks and Weber State University adjacent research buildings. Northrop Grumman and Autoliv corporate campuses in Clearfield drive suburban Class A demand. Downtown Ogden is emerging as a creative and outdoor industry office destination with companies choosing Ogden for lifestyle recruitment advantages.",
+      "retail": "Retail investment in Ogden is strongest along historic 25th Street and at the Newgate Mall trade area. Weber County's growing population from Salt Lake City overflow is supporting new retail development along I-15 in Layton and Clearfield. Outdoor recreation retail is a distinctive Ogden category with ski and adventure sports brands maintaining local retail presence.",
+      "mixed_use": "Mixed-use investment in Ogden is concentrated in historic downtown along 25th Street and the adjacent Ogden River district where city revitalization investment is supporting residential and retail mixed-use. The Ogden Canyon gateway area is emerging as a boutique lodging and outdoor recreation mixed-use target.",
+      "hospitality": "Hospitality investment in Ogden benefits from Hill AFB contractor and military visitor demand, ski resort tourism at Snowbasin and Powder Mountain, and the emerging outdoor recreation destination reputation. The Union Station convention and events venue anchors group demand. Ski season boutique lodging in the Ogden Canyon and mountain resort gateway areas commands premium ADR."
+    }
+  },
+  "augusta": {
+    "city": "Augusta",
+    "state": "GA",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "14.8%",
+      "office_cap_rate": "7.00%-7.75%",
+      "retail_vacancy": "7.0%",
+      "retail_cap_rate": "6.50%-7.25%",
+      "hospitality_vacancy": "30.0%",
+      "hospitality_cap_rate": "6.75%-7.50%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "2.0%",
+      "population_growth": "1.5%",
+      "rent_growth": "6.0%",
+      "median_against_rent": "$1,380",
+      "median_asking_rent": "$1,380",
+      "major_employers": "Savannah River Site, Augusta University Medical Center, Augusta University, U.S. Army Cyber Command at Fort Eisenhower, Kimberly-Clark, John Deere, Bridgestone Americas",
+      "top_submarkets": "Downtown Augusta, Martinez, Evans, Grovetown, North Augusta SC, Aiken SC corridor, Harlem"
+    },
+    "market_report": {
+      "overview": "Augusta is undergoing a transformational shift driven by two powerful anchors: the U.S. Army Cyber Command's relocation to Fort Eisenhower (formerly Fort Gordon) and the Savannah River Site's ongoing nuclear materials management mission. The Cyber Command relocation has made Augusta one of the most significant cybersecurity hubs in the country, attracting dozens of defense technology and cybersecurity contractor companies. Augusta National Golf Club and the Masters Tournament generate one of the most economically impactful single-week events in American sports, with estimated direct economic impact exceeding $200 million annually.",
+      "multifamily": "Augusta multifamily demand is driven by Fort Eisenhower military and civilian cyber workforce housing, Savannah River Site contractor housing, Augusta University student and medical resident housing, and a growing cybersecurity professional population. Evans and Martinez command the highest rents from cyber and defense professionals while Grovetown serves military family demand near Fort Eisenhower's gates. The Masters Tournament creates a unique annual rental demand spike that supports short-term rental income for multifamily owners.",
+      "industrial": "Augusta industrial benefits from the Savannah River Site's enormous supply chain and contractor industrial demand, John Deere's Harvester Works manufacturing plant, and Bridgestone Americas' tire manufacturing operations. The I-20 corridor connecting Augusta to Atlanta and Columbia SC positions the metro as a distribution hub for the Augusta-Aiken region. Kimberly-Clark's manufacturing operations add consumer goods industrial depth.",
+      "office_retail": "The U.S. Army Cyber Command and its contractor ecosystem anchor the most rapid office demand growth in Augusta's history. Augusta University Medical Center's expansion drives healthcare office demand. The Augusta National Golf Club's influence extends beyond tournament week with corporate membership attracting executive headquarters decisions. Washington Road is the primary retail and dining corridor serving the highest household income demographics in the metro.",
+      "financing": "Augusta lenders include South State Bank, First Bank of Georgia, and South Carolina and Georgia community banks with CSRA (Central Savannah River Area) market knowledge. Defense contractor relationships create financing opportunities for specialized facilities. Agency multifamily financing is widely available. The cybersecurity cluster is beginning to attract specialized technology lenders.",
+      "outlook": "Augusta's cybersecurity hub status is the most significant commercial real estate catalyst in the metro's history. As the U.S. Army Cyber Command's presence grows and more defense technology contractors establish Augusta operations, office and industrial demand will accelerate. The Savannah River Site's long-term nuclear management mission provides decades of contractor employment. Masters Tournament prestige continues to attract corporate investment and executive residence decisions."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Augusta are most active on Evans and Martinez multifamily value-add plays, cybersecurity contractor office repositioning near Fort Eisenhower, and downtown Augusta mixed-use acquisitions. Georgia and South Carolina bridge lenders and national defense-market lenders are growing in the Augusta market.",
+      "permanent": "Permanent financing in Augusta is available from South State Bank, regional life insurance companies, and agency lenders for stabilized multifamily and industrial assets. Fort Eisenhower adjacent multifamily and defense contractor office buildings attract favorable permanent loan terms given government-linked demand. Savannah River Site contractor industrial assets provide long-term income stability.",
+      "construction": "Construction lending in Augusta focuses on Evans and Grovetown multifamily near Fort Eisenhower, cybersecurity contractor office and lab build-outs, and downtown Augusta mixed-use. Masters Tournament visibility is creating boutique hotel and luxury residential construction interest in downtown Augusta.",
+      "sba": "SBA lending is active in Augusta for cybersecurity technology startups, healthcare practices, and professional service firms serving the defense and medical community. Augusta University entrepreneurship program spinouts and Fort Eisenhower contractor small businesses generate consistent SBA volume.",
+      "mezzanine": "Mezzanine financing in Augusta supports larger cybersecurity campus developments and downtown mixed-use projects. Fort Eisenhower Cyber Command anchor pre-leasing in office buildings provides government-credit comfort for mezzanine lenders.",
+      "specialty": "Specialty financing in Augusta includes Georgia Historic Tax Credits for downtown adaptive reuse along Broad Street, New Market Tax Credits for qualifying projects in underserved Augusta neighborhoods, and Opportunity Zone financing for eligible development near the urban core."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Augusta offers Southeast value pricing with accelerating fundamentals driven by the cybersecurity hub transformation. Evans and Martinez serve the highest-income cyber and defense professional demand. Grovetown military family housing offers stable Fort Eisenhower-anchored demand. Downtown Augusta loft and adaptive reuse multifamily is growing as the urban core revitalizes. Masters Tournament short-term rental premium is a unique Augusta income enhancer.",
+      "industrial": "Industrial investment in Augusta targets Savannah River Site contractor supply chain, John Deere and Bridgestone manufacturing supply chain, and I-20 corridor distribution. Fort Eisenhower cybersecurity contractor facility demand is creating a new specialized office-industrial category. The Augusta Regional Airport industrial corridor serves general logistics and manufacturing tenants.",
+      "office": "Office investment in Augusta is most defensible in Fort Eisenhower cybersecurity contractor parks and Augusta University Medical Center adjacent buildings. The Cyber Command relocation is creating one of the fastest-growing defense contractor office markets in the Southeast. Washington Road suburban Class B serves professional services with stable regional employer demand.",
+      "retail": "Retail investment in Augusta is strongest along Washington Road and in the Evans Town Center where high household income demographics from defense and medical professionals support national retailers. Augusta Mall serves the regional trade area. The Masters Tournament week generates extraordinary retail sales that support the Augusta merchant community year-round.",
+      "mixed_use": "Mixed-use investment in Augusta is concentrated along Broad Street in downtown and near the Augusta Common where city revitalization investment is supporting residential and entertainment mixed-use. The Riverwalk Augusta waterfront is an emerging mixed-use development target as downtown population grows.",
+      "hospitality": "Hospitality investment in Augusta is defined by the Masters Tournament which makes Augusta one of the most sought-after hospitality markets in the world during Masters week. Annual Masters week ADR for quality hotels reaches several thousand dollars per night. Year-round demand from Cyber Command contractor travel, Savannah River Site visitors, and Augusta University events supports stable non-tournament occupancy."
+    }
+  },
+  "syracuse": {
+    "city": "Syracuse",
+    "state": "NY",
+    "stats": {
+      "multifamily_vacancy": "4.8%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "6.5%",
+      "industrial_cap_rate": "6.25%-7.00%",
+      "office_vacancy": "16.2%",
+      "office_cap_rate": "7.25%-8.00%",
+      "retail_vacancy": "8.0%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "33.0%",
+      "hospitality_cap_rate": "7.25%-8.00%",
+      "mixed_use_vacancy": "5.8%",
+      "mixed_use_cap_rate": "6.00%-6.75%",
+      "job_growth": "1.2%",
+      "population_growth": "0.4%",
+      "rent_growth": "5.0%",
+      "median_asking_rent": "$1,480",
+      "major_employers": "Onondaga County, Crouse Health, St. Joseph's Health, SUNY Upstate Medical University, Carrier Global, National Grid, Syracuse University, Lockheed Martin",
+      "top_submarkets": "Downtown Syracuse, Armory Square, DeWitt, Manlius, Liverpool, Camillus, Cicero, East Syracuse"
+    },
+    "market_report": {
+      "overview": "Syracuse anchors central New York as a major healthcare, education, and manufacturing hub. Syracuse University's 22,000-student enrollment and Division I athletics program are cultural and economic anchors. SUNY Upstate Medical University and the surrounding hospital cluster make Syracuse one of upstate New York's largest healthcare employment centers. Carrier Global's heritage as the inventor of modern air conditioning traces to Syracuse, and the company maintains significant operations here. New York State's semiconductor and advanced manufacturing investment is beginning to benefit Central New York.",
+      "multifamily": "Syracuse multifamily is driven by Syracuse University student and graduate housing, SUNY Upstate and hospital system healthcare worker demand, and affordable urban living in the Armory Square district. DeWitt and Manlius command the highest suburban rents from corporate and professional households. Liverpool and Camillus serve working family demand. The metro's exceptional affordability relative to other New York State metros attracts value-add investors seeking upstate New York yields.",
+      "industrial": "Syracuse industrial benefits from its location at the I-90 and I-81 intersection, positioning the metro as the crossroads of upstate New York logistics. Carrier Global's manufacturing legacy and Lockheed Martin's Electronic Systems operations anchor defense and advanced manufacturing industrial demand. The East Syracuse and Liverpool industrial corridors serve logistics and light manufacturing tenants. New York State semiconductor supply chain investment is creating new advanced manufacturing demand.",
+      "office_retail": "SUNY Upstate Medical University and Crouse Health anchor healthcare office demand. Carrier Global and National Grid drive suburban Class B demand in DeWitt and the I-690 corridor. Armory Square is Syracuse's premier retail and dining destination with strong boutique and restaurant performance. The Destiny USA mega-mall in the Carousel Center is the regional retail anchor serving the broader Central New York trade area.",
+      "financing": "Syracuse lenders include Pathfinder Bank, Berkshire Bank, and New York community banks with central New York market knowledge. New York State economic development programs support qualifying technology and manufacturing projects. Agency multifamily financing is available for stabilized assets. Syracuse University's investment relationships create occasional access to private capital.",
+      "outlook": "Syracuse's healthcare and education anchors provide recession-resistant stability. New York State's semiconductor and advanced manufacturing investment is beginning to create technology supply chain demand in Central New York. Syracuse University's research profile and medical school expansion will sustain healthcare real estate demand. Destiny USA's evolution from retail to entertainment and hospitality is reshaping the Carousel Center into a mixed-use destination."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Syracuse are most active on Syracuse University corridor multifamily value-add plays, Armory Square mixed-use acquisitions, and East Syracuse industrial repositioning. New York State bridge lenders and national alternative lenders with upstate New York market experience are active.",
+      "permanent": "Permanent financing in Syracuse is available from Pathfinder Bank, Berkshire Bank, and regional life insurance companies for stabilized multifamily and industrial assets. Healthcare-anchored office near SUNY Upstate and Crouse Health attracts favorable permanent loan terms. University corridor multifamily with strong student demand histories provides comfort to permanent lenders.",
+      "construction": "Construction lending in Syracuse focuses on SUNY Upstate medical campus expansion, downtown Armory Square mixed-use residential, and semiconductor supply chain industrial build-outs. Syracuse University innovation district projects are an emerging construction lending category.",
+      "sba": "SBA lending is active in Syracuse for healthcare practices, technology companies, and professional service firms. Syracuse University entrepreneurship program spinouts and Carrier Global supply chain businesses generate SBA volume. Armory Square restaurant and retail businesses are active SBA borrowers.",
+      "mezzanine": "Mezzanine financing in Syracuse supports larger Destiny USA entertainment redevelopment projects and downtown mixed-use developments. Healthcare campus expansion with anchor tenant pre-leasing attracts mezzanine capital on favorable terms.",
+      "specialty": "Specialty financing in Syracuse includes New York State Historic Tax Credits for downtown adaptive reuse in the Warehouse District, New Market Tax Credits for qualifying projects in underserved Syracuse neighborhoods, and semiconductor supply chain-specific manufacturing incentive financing."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Syracuse offers upstate New York yields with Syracuse University providing built-in student demand and SUNY Upstate anchoring healthcare worker housing. Armory Square and downtown loft conversions serve young professional demand. DeWitt and Manlius suburban assets serve corporate and professional households. The affordability versus Albany and Buffalo creates a structural value proposition.",
+      "industrial": "Industrial investment in Syracuse targets I-90 and I-81 corridor logistics, Carrier Global and Lockheed Martin defense supply chain, and semiconductor supply chain manufacturing driven by New York State investment. East Syracuse and Liverpool are the primary industrial submarkets. Advanced manufacturing in defense electronics and precision components is the highest-value industrial category.",
+      "office": "Office investment in Syracuse is most defensible in healthcare-anchored buildings near SUNY Upstate, Crouse Health, and St. Joseph's Health. Carrier Global and National Grid corporate campuses anchor suburban Class A demand. Armory Square boutique office serves creative and technology tenants drawn by the neighborhood's cultural profile.",
+      "retail": "Retail investment in Syracuse is led by Destiny USA which anchors the regional trade area with entertainment and dining supplementing traditional retail. Armory Square independent and boutique retail serves the urban professional and university market. Grocery-anchored neighborhood centers in Liverpool and Camillus offer stable suburban income. DeWitt retail serves the highest household income demographics.",
+      "mixed_use": "Mixed-use investment in Syracuse is concentrated in Armory Square and the emerging innovation district near Syracuse University where residential, creative office, and food and beverage uses are supported by university and city investment. Destiny USA's evolution toward entertainment and hospitality mixed-use is reshaping its district.",
+      "hospitality": "Hospitality investment in Syracuse benefits from Syracuse University athletics, SUNY Upstate medical conference demand, and Carrier Global and defense contractor corporate travel. The JMA Wireless Dome expansion has increased the event capacity that drives hotel demand. Destiny USA's entertainment and hotel complex anchors the non-downtown hospitality market."
+    }
+  },
+  "toledo": {
+    "city": "Toledo",
+    "state": "OH",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "multifamily_cap_rate": "6.25%-7.00%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "17.0%",
+      "office_cap_rate": "7.50%-8.25%",
+      "retail_vacancy": "8.5%",
+      "retail_cap_rate": "7.00%-7.75%",
+      "hospitality_vacancy": "34.0%",
+      "hospitality_cap_rate": "7.50%-8.25%",
+      "mixed_use_vacancy": "6.5%",
+      "mixed_use_cap_rate": "6.50%-7.25%",
+      "job_growth": "1.0%",
+      "population_growth": "0.2%",
+      "rent_growth": "4.5%",
+      "median_asking_rent": "$1,220",
+      "major_employers": "ProMedica Health System, Mercy Health, Stellantis (Jeep Assembly), Owens Corning, O-I Glass, HCR ManorCare, University of Toledo, Dana Incorporated",
+      "top_submarkets": "Downtown Toledo, Perrysburg, Maumee, Sylvania, Oregon, Rossford, Holland, Findlay corridor"
+    },
+    "market_report": {
+      "overview": "Toledo occupies a strategic Great Lakes position on Lake Erie and the Maumee River, historically known as the Glass City for its dominant role in flat glass and glass container manufacturing anchored by Owens Corning and O-I Glass. Stellantis operates the Toledo Assembly Complex, one of North America's primary Jeep manufacturing facilities. ProMedica and Mercy Health anchor a substantial healthcare employment base. Toledo's port on Lake Erie provides bulk commodity and general cargo logistics infrastructure connecting to the St. Lawrence Seaway. The metro's affordability is among the most compelling in Ohio.",
+      "multifamily": "Toledo multifamily is driven by Stellantis and auto manufacturing workforce housing, ProMedica and Mercy Health healthcare worker demand, and University of Toledo student and faculty housing. Perrysburg and Maumee command the highest rents from corporate and professional households. Sylvania serves suburban family demand. The metro's exceptional affordability relative to Columbus and Cleveland attracts value-add investors seeking northwest Ohio yields with manufacturing-anchored stability.",
+      "industrial": "Toledo industrial is anchored by the Jeep Assembly Complex, glass manufacturing supply chain, and Great Lakes port logistics. The Port of Toledo handles grain, coal, and general cargo with connections to the St. Lawrence Seaway and global shipping. Dana Incorporated's drivetrain manufacturing and the broader automotive supply chain create significant industrial demand. The I-75 and I-80 Ohio Turnpike intersection positions Toledo as a logistics hub for the Great Lakes industrial region.",
+      "office_retail": "ProMedica and Mercy Health anchor healthcare office demand across multiple Toledo campuses. Owens Corning's world headquarters drives Class A suburban office demand. The Franklin Park Mall area is the primary retail destination for northwest Ohio. Perrysburg and Maumee retail corridors serve the highest household income demographics with strong national tenant performance.",
+      "financing": "Toledo lenders include Fifth Third Bank, KeyBank, and northwest Ohio community banks with deep Toledo market knowledge. Automotive industry lending relationships occasionally intersect with commercial real estate. Ohio Department of Development and JobsOhio programs support qualifying industrial and manufacturing projects. Agency multifamily financing is available for stabilized assets.",
+      "outlook": "Toledo's industrial anchor in Jeep manufacturing and Great Lakes logistics provides structural stability. The energy transition is creating new demand as O-I Glass and Owens Corning adapt their operations. ProMedica's healthcare system expansion will sustain medical real estate demand. The University of Toledo's growing research profile is building an innovation ecosystem adjacent to the manufacturing base. Port of Toledo's St. Lawrence Seaway access positions Toledo for growing international trade."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Toledo are most active on Perrysburg and Maumee multifamily value-add plays, Jeep Assembly supply chain industrial repositioning, and downtown Toledo mixed-use acquisitions. Ohio bridge lenders and national alternative lenders with automotive market experience are active.",
+      "permanent": "Permanent financing in Toledo is available from Fifth Third Bank, KeyBank, and regional life insurance companies for stabilized multifamily and industrial assets. Automotive supply chain industrial assets and healthcare-anchored office attract favorable permanent loan terms. Toledo's affordability metrics support strong rent-to-income ratios that comfort permanent lenders.",
+      "construction": "Construction lending in Toledo focuses on ProMedica and Mercy Health medical campus expansion, Perrysburg and Maumee suburban multifamily, and Port of Toledo logistics facility construction. Stellantis supply chain build-to-suit projects generate periodic construction lending activity.",
+      "sba": "SBA lending is active in Toledo for automotive supply chain manufacturers, glass industry suppliers, and healthcare practices. The Jeep Assembly supply chain small business ecosystem generates consistent SBA volume. University of Toledo entrepreneurship spinouts are emerging SBA borrowers.",
+      "mezzanine": "Mezzanine financing in Toledo supports larger downtown mixed-use projects and ProMedica campus development where senior loan constraints require additional capital. Automotive supplier build-to-suit facilities with Stellantis-linked tenants can attract mezzanine capital.",
+      "specialty": "Specialty financing in Toledo includes Ohio Historic Preservation Tax Credits for downtown adaptive reuse, New Market Tax Credits for qualifying projects in underserved Toledo neighborhoods, and JobsOhio manufacturing financing for automotive supply chain and glass industry facility investments."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Toledo offers Ohio's highest cap rates with Jeep Assembly and healthcare employment anchoring stable demand. Perrysburg and Maumee command Class A rents from Owens Corning and corporate professionals. Sylvania serves suburban family demand. Downtown Toledo loft conversions are growing as the urban core revitalizes. The affordability versus Columbus and Cleveland creates a compelling value entry point for Ohio investors.",
+      "industrial": "Industrial investment in Toledo is anchored by the Jeep Assembly supply chain, glass manufacturing operations, and Port of Toledo Great Lakes logistics. Automotive drivetrain and glass container supply chain tenants provide long-term industrial income. The I-75 and Ohio Turnpike intersection positions Toledo as a natural logistics hub for northwest Ohio and the Great Lakes region.",
+      "office": "Office investment in Toledo is most defensible in ProMedica and Mercy Health healthcare office and in Owens Corning and Dana Incorporated corporate campus-adjacent buildings. Perrysburg suburban Class B serves the professional services market. University of Toledo research park is an emerging office investment category as the university's research commercialization grows.",
+      "retail": "Retail investment in Toledo is strongest at Franklin Park Mall and the Talmadge Road and Reynolds Road retail corridors where northwest Ohio trade area demographics support national retailers. Perrysburg Levis Commons is the premier lifestyle retail destination in the metro. Grocery-anchored neighborhood centers across Maumee and Sylvania offer stable income with consistent residential demand.",
+      "mixed_use": "Mixed-use investment in Toledo is concentrated in downtown near the Toledo Museum of Art and the Warehouse District where city revitalization investment is supporting residential and food and beverage mixed-use. The Erie Street Market and Fifth Third Field ballpark area anchor the downtown entertainment and mixed-use district.",
+      "hospitality": "Hospitality investment in Toledo benefits from Stellantis and Owens Corning corporate travel, ProMedica and Mercy Health medical visitor demand, and University of Toledo athletics. The Huntington Center arena and Toledo Mud Hens minor league baseball anchor group and event hospitality demand. The Toledo Zoo is a regional tourism driver that supports leisure hotel demand."
+    }
+  },
+  "asheville": {
+    "city": "Asheville",
+    "state": "NC",
+    "stats": {
+      "multifamily_vacancy": "5.2%",
+      "multifamily_cap_rate": "5.25%-6.00%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "12.8%",
+      "office_cap_rate": "6.75%-7.50%",
+      "retail_vacancy": "5.5%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "hospitality_vacancy": "26.0%",
+      "hospitality_cap_rate": "5.75%-6.50%",
+      "mixed_use_vacancy": "4.5%",
+      "mixed_use_cap_rate": "5.50%-6.25%",
+      "job_growth": "2.2%",
+      "population_growth": "2.0%",
+      "rent_growth": "6.8%",
+      "median_asking_rent": "$1,780",
+      "major_employers": "Mission Hospital (HCA Healthcare), Biltmore Estate, Ingles Markets, New Belgium Brewing, Highland Brewing, University of North Carolina Asheville, Craggy Mountain Line",
+      "top_submarkets": "Downtown Asheville, West Asheville, River Arts District, South Slope, North Asheville, Weaverville, Fletcher, Arden, Black Mountain"
+    },
+    "market_report": {
+      "overview": "Asheville has emerged as one of America's most celebrated destinations for food, arts, outdoor recreation, and quality of life, ranking consistently among the top US travel destinations and relocation choices for remote workers and retirees. The River Arts District, South Slope craft brewery cluster, and downtown arts scene attract millions of visitors annually. Mission Hospital, operated by HCA Healthcare, is the anchor healthcare employer. The Biltmore Estate is the most visited privately-owned historic home in America. Blue Ridge Parkway access and proximity to Great Smoky Mountains National Park make Asheville the gateway to western North Carolina's outdoor recreation economy.",
+      "multifamily": "Asheville multifamily is experiencing extreme demand pressure from population inflows of remote workers, retirees, and lifestyle-driven relocations that has outpaced housing supply for years. North Asheville and Kenilworth command premium rents from professionals and retirees attracted by the city's national reputation. West Asheville and the River Arts District serve young creative professionals. The construction pipeline has been constrained by land scarcity and community opposition, keeping vacancy rates persistently tight despite elevated new supply nationally.",
+      "industrial": "Asheville industrial is supply-constrained given the mountainous terrain that limits flat industrial land availability. Craft beverage manufacturing from New Belgium, Sierra Nevada, and dozens of local breweries and distilleries anchors a unique food and beverage industrial category. Mission Hospital supply chain, Ingles Markets distribution, and construction materials distribution serve the metro's industrial base. Fletcher and Arden south of Asheville are the primary industrial submarkets given terrain constraints.",
+      "office_retail": "Mission Hospital anchors healthcare office demand across the metro. UNC Asheville generates research and administrative office demand. Downtown Asheville is one of the strongest independent retail markets in the Southeast with Pack Square and the Lexington Avenue corridor supporting a dense cluster of independent boutiques, galleries, and restaurants that outperform national retail benchmarks. The Biltmore Village retail district serves the estate's visitor base with upscale shopping and dining.",
+      "financing": "Asheville lenders include HomeTrust Bank, First Bank, and North Carolina community banks with western North Carolina market knowledge. Tourism industry lenders with hospitality expertise are active given the market's hotel investment profile. Agency multifamily financing is competitive. Industrial construction lenders face limited opportunities given terrain constraints on developable land.",
+      "outlook": "Asheville's trajectory as America's premier arts, food, and outdoor recreation destination is the strongest it has ever been. Remote work adoption has made Asheville permanently accessible to high-income professionals who previously could not relocate from gateway cities. The craft beverage cluster's national influence continues to grow. Mission Hospital's expansion will sustain healthcare real estate demand. The primary risk is Hurricane Helene's 2024 flood damage requiring continued infrastructure recovery investment."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Asheville are most active on boutique hotel acquisitions and value-add repositioning, multifamily acquisitions in West Asheville and River Arts District, and craft brewery and food production facility expansion. Tourism-market lenders and national alternative lenders with destination market experience are active.",
+      "permanent": "Permanent financing in Asheville is competitive for stabilized hospitality and multifamily assets given the market's strong performance history. Mission Hospital adjacent medical office and downtown mixed-use retail command favorable permanent loan terms. Craft beverage industrial facilities with long-term operating brewery tenants attract specialized food and beverage permanent lenders.",
+      "construction": "Construction lending in Asheville is constrained by terrain and limited flat developable land but active for Fletcher and Arden industrial and suburban multifamily. Downtown mixed-use residential and boutique hotel construction is the most active urban construction category. Craft brewery and distillery facility expansion generates specialized construction lending.",
+      "sba": "SBA lending is deeply active in Asheville for craft beverage producers, restaurant and hospitality businesses, outdoor recreation companies, and arts-related enterprises. The tourism and food economy generates some of North Carolina's highest SBA volume per capita. Short-term rental property management companies are active SBA borrowers.",
+      "mezzanine": "Mezzanine financing in Asheville supports larger boutique hotel developments and downtown mixed-use projects. The market's strong hospitality ADR and consistent occupancy make hotel mezzanine positions attractive to lenders comfortable with Asheville's tourism demand drivers.",
+      "specialty": "Specialty financing in Asheville includes North Carolina Historic Tax Credits for downtown adaptive reuse of industrial and commercial buildings, USDA Rural Development financing for western North Carolina economic development, and PACE financing for energy efficiency improvements to commercial buildings."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Asheville offers one of the Southeast's most compelling supply-demand imbalances driven by remote worker and retiree inflows into a geographically constrained market. North Asheville commands premium rents from high-income professionals. West Asheville creative district assets serve young professional demand. The Fletcher and Arden suburban corridor offers more developable land for new multifamily supply. The market's national reputation as a destination creates durable long-term rental demand.",
+      "industrial": "Industrial investment in Asheville is highly specialized given the terrain constraints. Craft beverage production facilities and food manufacturing assets are the most distinctive industrial category. Fletcher and Arden are the primary general industrial submarkets. Mission Hospital and Ingles Markets supply chain logistics create stable demand for industrial facilities south of the city. Scarcity of flat industrial land makes existing assets extremely valuable.",
+      "office": "Office investment in Asheville is most defensible in Mission Hospital adjacent medical office and in downtown boutique buildings serving the creative economy professional services market. UNC Asheville research park is an emerging office investment category. Remote work adoption has increased demand for high-quality flexible office in downtown Asheville from distributed workers seeking a physical workspace.",
+      "retail": "Retail investment in Asheville is among the Southeast's strongest given the national tourism draw. Downtown Pack Square and Lexington Avenue independent retail outperforms national retail benchmarks. Biltmore Village serves the upscale tourist and resident demographic. Grocery-anchored centers in Fletcher and Arden serve suburban residential demand. Short-term rental visitor spending drives sustained retail performance through seasonal fluctuations.",
+      "mixed_use": "Mixed-use investment in Asheville is concentrated in the River Arts District, South Slope craft beverage and entertainment district, and downtown along Lexington Avenue. The River Arts District's transformation from industrial to arts and mixed-use is a national model. South Slope brewery row mixed-use combining production, taproom, and residential is Asheville's most distinctive development category.",
+      "hospitality": "Hospitality investment in Asheville is among the Southeast's most compelling given national destination appeal, consistent occupancy, and premium ADR driven by arts tourism, foodie travel, and outdoor recreation. Downtown boutique hotels command some of the highest ADR in the Carolinas. The Grove Park Inn and Omni Grove Park Inn set the luxury standard. Short-term rental investment is extremely active given Asheville's leisure travel demand."
+    }
+  },
+  "pensacola": {
+    "city": "Pensacola",
+    "state": "FL",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "multifamily_cap_rate": "5.25%-6.00%",
+      "industrial_vacancy": "5.0%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "13.8%",
+      "office_cap_rate": "6.75%-7.50%",
+      "retail_vacancy": "6.0%",
+      "retail_cap_rate": "6.00%-6.75%",
+      "hospitality_vacancy": "28.0%",
+      "hospitality_cap_rate": "6.00%-6.75%",
+      "mixed_use_vacancy": "5.2%",
+      "mixed_use_cap_rate": "5.75%-6.50%",
+      "job_growth": "2.5%",
+      "population_growth": "2.2%",
+      "rent_growth": "6.5%",
+      "median_asking_rent": "$1,580",
+      "major_employers": "Naval Air Station Pensacola, Navy Federal Credit Union, Baptist Health Care, University of West Florida, Gulf Power (Southern Company), Sacred Heart Health System, Airbus Helicopters",
+      "top_submarkets": "Downtown Pensacola, Pensacola Beach, Gulf Breeze, Navarre, Milton, Pace, Cantonment, Perdido Key"
+    },
+    "market_report": {
+      "overview": "Pensacola anchors Northwest Florida's economy as the cradle of naval aviation, home to Naval Air Station Pensacola and the legendary Blue Angels flight demonstration squadron. NAS Pensacola is one of the largest naval air installations in the world and processes virtually all US Navy and Marine Corps pilots through its training pipeline, creating a permanent massive federal employment base. Navy Federal Credit Union maintains one of its largest operations centers in Pensacola with over 8,000 employees. Airbus Helicopters operates a US helicopter assembly facility. The Emerald Coast beaches at Pensacola Beach and Perdido Key drive an enormous tourism economy.",
+      "multifamily": "Pensacola multifamily benefits from NAS Pensacola military housing demand, Navy Federal Credit Union employee housing, and a rapidly growing population of remote workers and retirees attracted by the Emerald Coast lifestyle and Florida's tax advantages. Gulf Breeze and Navarre serve military family demand near the base. Pace and Milton serve workforce housing demand. Pensacola Beach and Perdido Key command the highest rents from lifestyle-oriented tenants and seasonal visitors. The metro's growing reputation as a value alternative to South Florida is driving significant population inflows.",
+      "industrial": "Pensacola industrial is anchored by NAS Pensacola supply chain and defense contractor facilities, Airbus Helicopters manufacturing, and Gulf Coast port logistics through the Port of Pensacola. Cantonment serves manufacturing and distribution tenants along the I-10 corridor. The defense contractor ecosystem supporting the Navy's aviation training pipeline creates specialized industrial demand for maintenance and repair facilities.",
+      "office_retail": "Navy Federal Credit Union's operations campus and NAS Pensacola contractor offices anchor office demand. Baptist Health Care and Sacred Heart anchor healthcare office across the metro. Pensacola's Palafox Street downtown district is the premier retail and dining destination with consistent performance driven by both residential and tourist foot traffic. Gulf Breeze and Navarre retail corridors serve growing military family and residential demographics.",
+      "financing": "Pensacola lenders include Pen Air Federal Credit Union, Centennial Bank, and Florida Panhandle community banks with deep Northwest Florida market knowledge. Defense contractor lending relationships intersect with commercial real estate for NAS-adjacent facilities. Agency multifamily financing is competitive. Tourism-oriented hospitality lenders are active given the Emerald Coast beach destination profile.",
+      "outlook": "Pensacola's dual anchors of federal military employment and Emerald Coast tourism provide one of Florida's most resilient economic foundations. NAS Pensacola's role as the Navy's primary pilot training base is permanent and strategic. Navy Federal Credit Union's continued operations center expansion is adding thousands of professional employees. The remote work transformation is converting Pensacola's seasonal tourist appeal into year-round residential demand that sustains multifamily and retail fundamentals."
+    },
+    "loan_context": {
+      "bridge": "Bridge loans in Pensacola are most active on Gulf Breeze and Navarre multifamily value-add plays, Cantonment industrial lease-up, and downtown Pensacola and Pensacola Beach hospitality acquisitions. Florida Panhandle bridge lenders and national alternative lenders with military market experience are active.",
+      "permanent": "Permanent financing in Pensacola is available from Centennial Bank, Pen Air Federal, and Florida-focused life insurance companies for stabilized multifamily and industrial assets. NAS Pensacola adjacent multifamily with defense contractor workforce demand attracts favorable permanent loan terms. Beach hospitality assets with consistent occupancy histories attract long-term permanent capital.",
+      "construction": "Construction lending in Pensacola focuses on Navy Federal Credit Union campus expansion support facilities, Gulf Breeze and Navarre suburban multifamily, and Pensacola Beach boutique hotel and residential construction. Cantonment industrial development along I-10 is also active.",
+      "sba": "SBA lending is active in Pensacola for defense contractor businesses, healthcare practices, tourism and hospitality companies, and professional service firms serving the military community. The NAS Pensacola contractor small business ecosystem generates consistent SBA volume. Pensacola Beach and Perdido Key hospitality businesses are active SBA borrowers.",
+      "mezzanine": "Mezzanine financing in Pensacola supports larger Pensacola Beach resort and mixed-use developments and downtown mixed-use projects. Beach destination hospitality assets with proven RevPAR histories attract mezzanine capital on favorable terms given the predictable tourism demand.",
+      "specialty": "Specialty financing in Pensacola includes Florida Historic Tax Credits for downtown Palafox Street and Seville Square adaptive reuse, Florida PACE financing for coastal resilience and energy efficiency improvements, and SBA military community lending programs for NAS Pensacola adjacent businesses."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in Pensacola offers Florida Panhandle fundamentals with the structural stability of NAS Pensacola federal employment. Gulf Breeze and Navarre military family housing provides defense-anchored demand. Pensacola Beach luxury rentals command seasonal and year-round premium pricing. Pace and Milton workforce housing serves the defense and manufacturing worker base. Remote worker and retiree inflows from northern states are accelerating rent growth metro-wide.",
+      "industrial": "Industrial investment in Pensacola targets NAS Pensacola defense contractor supply chain, Airbus Helicopters manufacturing support facilities, and Port of Pensacola logistics. The Cantonment I-10 corridor serves general manufacturing and distribution tenants. Defense maintenance and repair industrial facilities adjacent to the naval air station are specialized assets with long-term government-linked demand.",
+      "office": "Office investment in Pensacola is most defensible in Navy Federal Credit Union adjacent buildings and in Baptist Health Care and Sacred Heart medical office parks. NAS Pensacola contractor administrative offices create defense-linked Class B demand. Downtown Palafox Street boutique office serves the growing professional services and technology employer base attracted by the quality of life.",
+      "retail": "Retail investment in Pensacola is strongest along Palafox Street downtown and in the Cordova Mall trade area where the growing population supports national retailers. Pensacola Beach retail benefits from the enormous annual tourism volume with restaurants and specialty shops outperforming national metrics. Grocery-anchored centers in Gulf Breeze, Navarre, and Pace serve consistent military and suburban residential demand.",
+      "mixed_use": "Mixed-use investment in Pensacola is concentrated in historic downtown along Palafox and in the Seville Square district where residential, dining, and arts uses benefit from the walkable urban environment. Pensacola Beach mixed-use development combining hospitality, retail, and residential is the highest-value development opportunity given the beach frontage premium.",
+      "hospitality": "Hospitality investment in Pensacola benefits from Emerald Coast beach tourism with some of Florida's most beautiful white sand beaches, NAS Pensacola Blue Angels air show demand, and Navy Federal Credit Union corporate meeting traffic. Pensacola Beach resort hotels and boutique properties command premium ADR from May through September. The Wahoo's baseball stadium and downtown Palafox entertainment district anchor year-round leisure hospitality demand."
+    }
   }
 }

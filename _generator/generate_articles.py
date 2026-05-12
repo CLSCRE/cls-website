@@ -69,6 +69,9 @@ MARKET_REPORT_CITIES = [
     # Batch 7 expansion — next Tier 2 metros
     "bridgeport-stamford", "new-haven", "oxnard-ventura", "allentown-lehigh-valley",
     "mcallen", "stockton", "columbia-sc", "winston-salem",
+    # Batch 8 expansion — next Tier 2 metros
+    "little-rock", "lakeland", "ogden", "augusta",
+    "syracuse", "toledo", "asheville", "pensacola",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -114,6 +117,9 @@ ALL_CITIES = [
     # Batch 7 expansion — next Tier 2 metros
     "bridgeport-stamford", "new-haven", "oxnard-ventura", "allentown-lehigh-valley",
     "mcallen", "stockton", "columbia-sc", "winston-salem",
+    # Batch 8 expansion — next Tier 2 metros
+    "little-rock", "lakeland", "ogden", "augusta",
+    "syracuse", "toledo", "asheville", "pensacola",
 ]
 
 # Loan slug → context key mapping
