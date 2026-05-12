@@ -513,72 +513,98 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
     <button class="qc-tab" data-tab="rates" role="tab" aria-selected="false" aria-controls="qcRates" type="button">Rate &amp; Program Table</button>
     <button class="qc-tab" data-tab="refi" role="tab" aria-selected="false" aria-controls="qcRefi" type="button">Refi Estimator</button>
   </div>
-  <!-- Loan Sizing mini-calc -->
+  <!-- Loan Sizing -->
   <div id="qcLoan" role="tabpanel">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start">
+    <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:24px;align-items:start">
       <!-- Input card -->
       <div style="background:#fff;border:1px solid var(--gray-200,#e5e7eb);border-radius:12px;padding:28px">
-        <div class="calc-form">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
           <div class="calc-field">
             <label for="qcPropVal">Property Value</label>
-            <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="qcPropVal" inputmode="decimal" placeholder="5,000,000" aria-label="Property value"></div>
+            <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="qcPropVal" inputmode="decimal" placeholder="10,000,000" aria-label="Property value"></div>
           </div>
           <div class="calc-field">
-            <label for="qcNoi">Net Operating Income <span style="font-weight:400;color:var(--gray-400,#9ca3af);font-size:12px">annual, optional</span></label>
-            <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="qcNoi" inputmode="decimal" placeholder="300,000" aria-label="Net operating income"></div>
+            <label for="qcNoi">Annual NOI <span style="font-weight:400;color:var(--gray-400,#9ca3af);font-size:11px">optional</span></label>
+            <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="qcNoi" inputmode="decimal" placeholder="650,000" aria-label="Annual net operating income"></div>
           </div>
           <div class="calc-field">
-            <label for="qcLtv" style="display:flex;justify-content:space-between;align-items:center">
-              <span>LTV Target</span>
-              <span id="qcLtvDisplay" style="background:var(--navy,#153D63);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px">65%</span>
-            </label>
-            <input type="range" id="qcLtv" min="50" max="80" value="65" step="1" class="qc-slider" aria-label="LTV percentage">
-            <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--gray-400,#9ca3af);margin-top:4px"><span>50%</span><span>65%</span><span>80%</span></div>
+            <label for="qcLtv">LTV Target</label>
+            <div class="calc-input-wrap"><input type="text" id="qcLtv" inputmode="decimal" value="65" placeholder="65" aria-label="LTV percentage" style="text-align:right"><span class="calc-suffix">%</span></div>
           </div>
           <div class="calc-field">
             <label for="qcLoanType">Loan Program</label>
             <div class="calc-input-wrap" style="position:relative">
               <select id="qcLoanType" style="width:100%;padding:12px 36px 12px 14px;border:none;background:transparent;font-size:14px;font-family:var(--font-body,Inter,sans-serif);cursor:pointer;outline:none;-webkit-appearance:none;appearance:none;color:var(--gray-700,#374151)" aria-label="Loan program">
-                <option value="6.25">Permanent Loan (6.25%)</option>
-                <option value="9.00">Bridge Loan (9.00%)</option>
-                <option value="9.50">Construction Loan (9.50%)</option>
-                <option value="7.50">SBA Loan (7.50%)</option>
-                <option value="5.75">Agency Loan (5.75%)</option>
-                <option value="11.00">Hard Money (11.00%)</option>
+                <option value="permanent">Permanent Loan</option>
+                <option value="bridge">Bridge Loan</option>
+                <option value="construction">Construction Loan</option>
+                <option value="sba">SBA 504 / 7(a)</option>
+                <option value="agency">Agency / CMBS</option>
+                <option value="life-co">Life Company</option>
+                <option value="dscr">DSCR Loan</option>
+                <option value="hard-money">Hard Money</option>
               </select>
-              <span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--gray-400,#9ca3af)">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--gray-400,#9ca3af)"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </div>
           </div>
+          <div class="calc-field">
+            <label for="qcRate">Interest Rate</label>
+            <div class="calc-input-wrap"><input type="text" id="qcRate" inputmode="decimal" value="6.25" placeholder="6.25" aria-label="Interest rate" style="text-align:right"><span class="calc-suffix">%</span></div>
+          </div>
+          <div class="calc-field">
+            <label for="qcAmort">Amortization</label>
+            <div class="calc-input-wrap"><input type="text" id="qcAmort" inputmode="decimal" value="30" placeholder="30" aria-label="Amortization in years" style="text-align:right"><span class="calc-suffix">yrs</span></div>
+          </div>
+        </div>
+        <!-- Quick presets -->
+        <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--gray-100,#f3f4f6);display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+          <span style="font-size:11px;color:var(--gray-400,#9ca3af);font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-right:2px">Amort:</span>
+          <button type="button" class="qc-pill" data-field="qcAmort" data-val="20">20yr</button>
+          <button type="button" class="qc-pill" data-field="qcAmort" data-val="25">25yr</button>
+          <button type="button" class="qc-pill" data-field="qcAmort" data-val="30">30yr</button>
+          <button type="button" class="qc-pill" data-field="qcAmort" data-val="0">I/O</button>
+          <span style="margin-left:6px;color:var(--gray-200,#e5e7eb)">|</span>
+          <span style="font-size:11px;color:var(--gray-400,#9ca3af);font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-left:4px;margin-right:2px">LTV:</span>
+          <button type="button" class="qc-pill" data-field="qcLtv" data-val="55">55%</button>
+          <button type="button" class="qc-pill" data-field="qcLtv" data-val="65">65%</button>
+          <button type="button" class="qc-pill" data-field="qcLtv" data-val="75">75%</button>
+          <span style="flex:1"></span>
+          <button type="button" id="qcResetBtn" style="font-size:11px;color:var(--green,#006A4E);font-weight:600;background:none;border:none;cursor:pointer;padding:4px 2px;text-decoration:underline;text-underline-offset:2px">Reset</button>
         </div>
       </div>
       <!-- Output panel -->
-      <div style="background:var(--navy,#153D63);border-radius:12px;padding:24px;color:#fff">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.5);margin-bottom:4px">Max Loan Amount</div>
-        <div id="qcMaxLoan" style="font-family:var(--font-display);font-size:32px;font-weight:700;margin-bottom:20px">--</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
-          <div style="background:rgba(255,255,255,.08);border-radius:8px;padding:12px">
-            <div style="font-size:10px;color:rgba(255,255,255,.5);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">Monthly Payment</div>
-            <div id="qcMonthly" style="font-size:18px;font-weight:700">--</div>
+      <div style="background:var(--navy,#153D63);border-radius:12px;padding:22px;color:#fff">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.4);margin-bottom:3px">Max Loan Amount</div>
+        <div id="qcMaxLoan" style="font-family:var(--font-display);font-size:34px;font-weight:700;margin-bottom:14px;line-height:1.1">--</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+          <div class="qc-stat">
+            <div class="qc-stat-label">Monthly Payment</div>
+            <div id="qcMonthly" class="qc-stat-val">--</div>
           </div>
-          <div style="background:rgba(255,255,255,.08);border-radius:8px;padding:12px">
-            <div style="font-size:10px;color:rgba(255,255,255,.5);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">Annual Debt Service</div>
-            <div id="qcAnnual" style="font-size:18px;font-weight:700">--</div>
+          <div class="qc-stat">
+            <div class="qc-stat-label">Annual Debt Service</div>
+            <div id="qcAnnual" class="qc-stat-val">--</div>
+          </div>
+          <div class="qc-stat">
+            <div class="qc-stat-label">DSCR <span id="qcDscrTag" style="display:none;font-size:10px;padding:2px 7px;border-radius:20px;font-weight:700;margin-left:3px;vertical-align:middle"></span></div>
+            <div id="qcDscr" class="qc-stat-val">--</div>
+          </div>
+          <div class="qc-stat">
+            <div class="qc-stat-label">Debt Yield</div>
+            <div id="qcDebtYield" class="qc-stat-val">--</div>
+          </div>
+          <div class="qc-stat">
+            <div class="qc-stat-label">Cap Rate</div>
+            <div id="qcCapRate" class="qc-stat-val">--</div>
+          </div>
+          <div class="qc-stat">
+            <div class="qc-stat-label">Equity Required</div>
+            <div id="qcEquity" class="qc-stat-val">--</div>
           </div>
         </div>
-        <div id="qcDscrRow" style="display:none;background:rgba(255,255,255,.08);border-radius:8px;padding:12px;margin-bottom:10px">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <div>
-              <div style="font-size:10px;color:rgba(255,255,255,.5);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">DSCR</div>
-              <div id="qcDscr" style="font-size:22px;font-weight:700">--</div>
-            </div>
-            <div id="qcDscrLabel" style="font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(255,255,255,.15)">--</div>
-          </div>
-        </div>
-        <div style="margin-top:4px;display:flex;gap:8px;flex-wrap:wrap">
-          <a href="#" id="qcQuoteCTA" class="btn-primary" style="flex:1;justify-content:center;font-size:13px;padding:10px 14px">Request a Quote &rarr;</a>
-          <a href="./tools/loan-calculator.html" style="flex:1;text-align:center;padding:10px 14px;border:1px solid rgba(255,255,255,.3);border-radius:8px;color:rgba(255,255,255,.8);font-size:13px;font-weight:600;text-decoration:none;transition:all .15s" onmouseover="this.style.borderColor='rgba(255,255,255,.7)'" onmouseout="this.style.borderColor='rgba(255,255,255,.3)'">Full Calculator &rarr;</a>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
+          <a href="#" id="qcQuoteCTA" class="btn-primary" style="flex:1;justify-content:center;font-size:13px;padding:10px 12px">Get a Quote &rarr;</a>
+          <a href="./tools/loan-calculator.html" style="flex:1;text-align:center;padding:10px 12px;border:1px solid rgba(255,255,255,.3);border-radius:8px;color:rgba(255,255,255,.8);font-size:13px;font-weight:600;text-decoration:none;transition:border-color .15s" onmouseover="this.style.borderColor='rgba(255,255,255,.7)'" onmouseout="this.style.borderColor='rgba(255,255,255,.3)'">Full Amort Schedule &rarr;</a>
         </div>
       </div>
     </div>
@@ -617,77 +643,123 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 .qc-tab{padding:9px 18px;border:1px solid var(--gray-200,#e5e7eb);border-radius:8px;background:#fff;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;font-family:var(--font-body,Inter,sans-serif);color:var(--navy,#153D63)}
 .qc-tab:hover{border-color:var(--green,#006A4E)}
 .qc-tab-active{background:var(--green,#006A4E);color:#fff;border-color:var(--green,#006A4E)}
-/* Calculator input styles (mirrors pages.min.css for homepage context) */
-.calc-form{display:flex;flex-direction:column;gap:16px}
+/* Calculator input styles */
 .calc-field label{display:block;font-size:13px;font-weight:600;color:var(--gray-700,#374151);margin-bottom:6px}
 .calc-input-wrap{display:flex;align-items:center;border:1px solid var(--gray-200,#e5e7eb);border-radius:6px;background:#fff;overflow:hidden;transition:border-color .2s}
 .calc-input-wrap:focus-within{border-color:var(--green,#006A4E)}
 .calc-prefix,.calc-suffix{padding:0 12px;font-size:14px;color:var(--gray-500,#6b7280);font-weight:600;background:var(--gray-50,#f9fafb);height:44px;display:flex;align-items:center;flex-shrink:0;border-right:1px solid var(--gray-200,#e5e7eb)}
 .calc-suffix{border-right:none;border-left:1px solid var(--gray-200,#e5e7eb)}
-.calc-input-wrap input,.calc-input-wrap select{flex:1;border:none;padding:10px 14px;font-size:15px;font-family:var(--font-body,Inter,sans-serif);outline:none;background:transparent;color:var(--gray-700,#374151)}
-/* Custom range slider */
-.qc-slider{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:3px;outline:none;cursor:pointer;background:linear-gradient(to right,var(--green,#006A4E) 0%,var(--green,#006A4E) 50%,#e5e7eb 50%,#e5e7eb 100%);margin:6px 0}
-.qc-slider::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#fff;border:2.5px solid var(--green,#006A4E);box-shadow:0 1px 4px rgba(0,0,0,.18);cursor:pointer;transition:box-shadow .15s}
-.qc-slider::-webkit-slider-thumb:hover{box-shadow:0 0 0 4px rgba(0,106,78,.15)}
-.qc-slider::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#fff;border:2.5px solid var(--green,#006A4E);box-shadow:0 1px 4px rgba(0,0,0,.18);cursor:pointer}
-.qc-slider::-moz-range-track{height:6px;border-radius:3px;background:#e5e7eb}
-@media (max-width:640px){#qcLoan>div{grid-template-columns:1fr!important}}
+.calc-input-wrap input,.calc-input-wrap select{flex:1;min-width:0;border:none;padding:10px 14px;font-size:15px;font-family:var(--font-body,Inter,sans-serif);outline:none;background:transparent;color:var(--gray-700,#374151)}
+/* Quick preset pills */
+.qc-pill{padding:4px 10px;border:1px solid var(--gray-200,#e5e7eb);border-radius:20px;background:#fff;font-size:11px;font-weight:600;cursor:pointer;font-family:var(--font-body,Inter,sans-serif);color:var(--gray-500,#6b7280);transition:all .15s;line-height:1.4}
+.qc-pill:hover{border-color:var(--green,#006A4E);color:var(--green,#006A4E)}
+.qc-pill-active{background:var(--green,#006A4E)!important;color:#fff!important;border-color:var(--green,#006A4E)!important}
+/* Output stat cells */
+.qc-stat{background:rgba(255,255,255,.07);border-radius:8px;padding:11px 13px}
+.qc-stat-label{font-size:10px;color:rgba(255,255,255,.45);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.qc-stat-val{font-size:17px;font-weight:700;line-height:1.2}
+@media(max-width:768px){#qcLoan>div{grid-template-columns:1fr!important}}
+@media(max-width:640px){#qcLoan .calc-field:nth-child(n){grid-column:span 1}}
 </style>
 <script src="./tools/calc-utils.js"></script>
 <script src="./tools/analytics.js"></script>
 <script>
 (function(){
-  var qcFirst = false;
+  var qcFirst=false;
+  // Program defaults: rate (%), amortization (yrs, 0=I/O), typical LTV (%)
+  var QC_PROGRAMS={
+    'permanent':{rate:6.25,amort:30,ltv:65,label:'Permanent Loan'},
+    'bridge':{rate:9.00,amort:0,ltv:65,label:'Bridge Loan'},
+    'construction':{rate:9.50,amort:0,ltv:65,label:'Construction Loan'},
+    'sba':{rate:7.50,amort:25,ltv:75,label:'SBA 504/7(a)'},
+    'agency':{rate:5.75,amort:30,ltv:75,label:'Agency/CMBS'},
+    'life-co':{rate:6.50,amort:30,ltv:60,label:'Life Company'},
+    'dscr':{rate:7.25,amort:30,ltv:70,label:'DSCR Loan'},
+    'hard-money':{rate:11.00,amort:0,ltv:60,label:'Hard Money'}
+  };
   function qcFmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});}
-  function qcUpdateSlider(){
-    var slider=document.getElementById('qcLtv');
-    var ltv=parseInt(slider.value)||65;
-    var pct=((ltv-50)/(80-50)*100).toFixed(1);
-    slider.style.background='linear-gradient(to right,var(--green,#006A4E) 0%,var(--green,#006A4E) '+pct+'%,#e5e7eb '+pct+'%,#e5e7eb 100%)';
+  function qcPct(n){return n.toFixed(2)+'%';}
+  function qcParse(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0;}
+  function qcPillActive(field,val){
+    document.querySelectorAll('.qc-pill[data-field="'+field+'"]').forEach(function(b){
+      b.classList.toggle('qc-pill-active',b.dataset.val===String(val));
+    });
   }
   function qcCalc(){
     if(!qcFirst){qcFirst=true;if(typeof Analytics!=='undefined')Analytics.calculatorInteraction('homepage_quick_calc');}
-    var pv=parseFloat(document.getElementById('qcPropVal').value.replace(/[^0-9.]/g,''))||0;
-    var noi=parseFloat(document.getElementById('qcNoi').value.replace(/[^0-9.]/g,''))||0;
-    var ltv=parseInt(document.getElementById('qcLtv').value)||65;
-    var rate=parseFloat(document.getElementById('qcLoanType').value)||6.25;
-    document.getElementById('qcLtvDisplay').textContent=ltv+'%';
-    qcUpdateSlider();
+    var pv=qcParse('qcPropVal');
+    var noi=qcParse('qcNoi');
+    var ltv=Math.min(Math.max(qcParse('qcLtv'),1),90)||65;
+    var rate=qcParse('qcRate')||6.25;
+    var amort=qcParse('qcAmort');
     var loan=pv>0?pv*ltv/100:0;
-    var r=rate/100/12,n=360;
-    var pmt=loan>0&&r>0?loan*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1):0;
-    var annual=pmt*12;
-    document.getElementById('qcMaxLoan').textContent=loan>0?qcFmt(loan):'--';
-    document.getElementById('qcMonthly').textContent=pmt>0?qcFmt(pmt):'--';
-    document.getElementById('qcAnnual').textContent=pmt>0?qcFmt(annual):'--';
-    // DSCR row
-    var dscrRow=document.getElementById('qcDscrRow');
-    if(noi>0&&annual>0){
-      var dscr=noi/annual;
-      document.getElementById('qcDscr').textContent=dscr.toFixed(2)+'x';
-      var lbl=document.getElementById('qcDscrLabel');
-      if(dscr>=1.25){lbl.textContent='Strong';lbl.style.background='rgba(0,166,118,.25)';}
-      else if(dscr>=1.0){lbl.textContent='Marginal';lbl.style.background='rgba(251,191,36,.25)';}
-      else{lbl.textContent='Below Min';lbl.style.background='rgba(239,68,68,.25)';}
-      dscrRow.style.display='';
-    } else {
-      dscrRow.style.display='none';
+    // Monthly payment
+    var monthly=0;
+    if(loan>0){
+      if(amort===0){
+        monthly=loan*(rate/100/12); // interest only
+      } else {
+        var r=rate/100/12,n=amort*12;
+        monthly=r===0?loan/n:loan*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+      }
     }
-    var loanTypeEl=document.getElementById('qcLoanType');
-    var typeName=loanTypeEl.options[loanTypeEl.selectedIndex].text.split(' (')[0];
-    var subject='Loan Inquiry: '+(loan>0?qcFmt(loan):'TBD')+' '+typeName+' — '+(pv>0?qcFmt(pv):'TBD')+' property';
+    var annual=monthly*12;
+    var equity=pv>0?pv*(1-ltv/100):0;
+    var dscr=noi>0&&annual>0?noi/annual:0;
+    var debtYield=noi>0&&loan>0?noi/loan*100:0;
+    var capRate=noi>0&&pv>0?noi/pv*100:0;
+    var ioNote=amort===0?' (I/O)':'';
+    // DOM updates
+    document.getElementById('qcMaxLoan').textContent=loan>0?qcFmt(loan):'--';
+    document.getElementById('qcMonthly').textContent=monthly>0?qcFmt(monthly)+ioNote:'--';
+    document.getElementById('qcAnnual').textContent=annual>0?qcFmt(annual):'--';
+    document.getElementById('qcEquity').textContent=equity>0?qcFmt(equity):'--';
+    // DSCR with badge
+    var dscrEl=document.getElementById('qcDscr');
+    var dscrTag=document.getElementById('qcDscrTag');
+    if(dscr>0){
+      dscrEl.textContent=dscr.toFixed(2)+'x';
+      dscrTag.style.display='inline';
+      if(dscr>=1.25){dscrTag.textContent='Strong';dscrTag.style.background='rgba(0,166,118,.4)';}
+      else if(dscr>=1.0){dscrTag.textContent='Marginal';dscrTag.style.background='rgba(251,191,36,.45)';}
+      else{dscrTag.textContent='Below Min';dscrTag.style.background='rgba(239,68,68,.45)';}
+    } else{dscrEl.textContent='--';dscrTag.style.display='none';}
+    document.getElementById('qcDebtYield').textContent=debtYield>0?qcPct(debtYield):'--';
+    document.getElementById('qcCapRate').textContent=capRate>0?qcPct(capRate):'--';
+    // Quote CTA
+    var prog=QC_PROGRAMS[document.getElementById('qcLoanType').value]||{};
+    var subject='Loan Inquiry: '+(loan>0?qcFmt(loan):'TBD')+' '+(prog.label||'Commercial Loan')+' — '+(pv>0?qcFmt(pv):'TBD')+' property';
     document.getElementById('qcQuoteCTA').href='mailto:loans@clscre.com?subject='+encodeURIComponent(subject);
+    // Active pill states
+    qcPillActive('qcAmort',amort);
+    qcPillActive('qcLtv',ltv);
   }
-  document.getElementById('qcPropVal').addEventListener('input',qcCalc);
-  document.getElementById('qcNoi').addEventListener('input',qcCalc);
-  document.getElementById('qcLtv').addEventListener('input',qcCalc);
-  document.getElementById('qcLoanType').addEventListener('change',qcCalc);
-  document.getElementById('qcQuoteCTA').addEventListener('click',function(){
-    var pv=parseFloat(document.getElementById('qcPropVal').value.replace(/[^0-9.]/g,''))||0;
-    var ltv=parseInt(document.getElementById('qcLtv').value)||65;
-    var loanTypeEl=document.getElementById('qcLoanType');
-    if(typeof Analytics!=='undefined')Analytics.quoteRequested(pv*ltv/100,loanTypeEl.options[loanTypeEl.selectedIndex].text.split(' (')[0],pv);
+  // Loan program change: auto-fill rate, amort
+  document.getElementById('qcLoanType').addEventListener('change',function(){
+    var p=QC_PROGRAMS[this.value];
+    if(p){document.getElementById('qcRate').value=p.rate;document.getElementById('qcAmort').value=p.amort;}
+    qcCalc();
   });
+  // Preset pill clicks
+  document.querySelectorAll('.qc-pill').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.getElementById(this.dataset.field).value=this.dataset.val;
+      qcCalc();
+    });
+  });
+  // Reset button
+  document.getElementById('qcResetBtn').addEventListener('click',function(){
+    var p=QC_PROGRAMS[document.getElementById('qcLoanType').value]||QC_PROGRAMS['permanent'];
+    document.getElementById('qcRate').value=p.rate;
+    document.getElementById('qcAmort').value=p.amort;
+    document.getElementById('qcLtv').value=p.ltv;
+    qcCalc();
+  });
+  // Input listeners
+  ['qcPropVal','qcNoi','qcLtv','qcRate','qcAmort'].forEach(function(id){
+    document.getElementById(id).addEventListener('input',qcCalc);
+  });
+  // Tab switching
   document.querySelectorAll('.qc-tab').forEach(function(btn){
     btn.addEventListener('click',function(){
       var tab=this.dataset.tab;
@@ -696,7 +768,6 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       ['loan','rates','refi'].forEach(function(t){document.getElementById('qc'+t.charAt(0).toUpperCase()+t.slice(1)).style.display=t===tab?'':'none';});
     });
   });
-  qcUpdateSlider();
   qcCalc();
 })();
 </script>
