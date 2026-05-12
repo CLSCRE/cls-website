@@ -11,7 +11,7 @@
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"{{ article.title }}","description":"{{ article.excerpt }}","image":"https://clscre.com/images/cls-og-image.png","author":{"@type":"Person","name":"{{ article.author }}","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about.html","image":"https://clscre.com/images/trevor-damyan.jpg","worksFor":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}},"datePublished":"{{ article.date }}","dateModified":"{{ article.date_modified or article.date }}","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"mainEntityOfPage":"https://clscre.com/blog/{{ article.slug }}.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"{{ article.title }}","description":"{{ article.excerpt }}","image":"https://clscre.com/images/cls-og-image.png","author":{"@type":"Person","name":"{{ article.author }}","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html","image":"https://clscre.com/images/trevor-damyan.jpg","worksFor":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}},"datePublished":"{{ article.date }}","dateModified":"{{ article.date_modified or article.date }}","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"mainEntityOfPage":"https://clscre.com/blog/{{ article.slug }}.html"}
 </script>
 {% if faqs %}
 <script type="application/ld+json">
@@ -55,6 +55,17 @@
   <div class="article-layout">
     <div class="article-body reveal">
       {{ article.content }}
+
+      <!-- AUTHOR BIO BOX -->
+      <div class="author-bio-box reveal" style="margin-top:40px;padding:24px 28px;background:var(--gray-50,#f9fafb);border:1px solid var(--gray-100,#e5e7eb);border-radius:8px;display:flex;gap:20px;align-items:flex-start">
+        <img src="{{ depth }}images/trevor-damyan.webp" alt="Trevor Damyan, Commercial Mortgage Broker" width="72" height="72" style="width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--navy,#153D63)">
+        <div>
+          <div style="font-weight:700;color:var(--navy,#153D63);font-size:15px;margin-bottom:2px">Trevor Damyan</div>
+          <div style="font-size:13px;color:var(--gray-500,#6b7280);margin-bottom:8px">Commercial Mortgage Broker, CLS CRE | CA DRE 02244836</div>
+          <p style="font-size:14px;line-height:1.6;color:var(--gray-700,#374151);margin:0 0 10px">Trevor Damyan is a commercial mortgage broker at Commercial Lending Solutions with a background in structured finance at CBRE and Marcus and Millichap Capital Corporation. He specializes in bridge loans, construction financing, SBA programs, DSCR loans, and complex capital structures for investors and developers across all 50 states.</p>
+          <a href="{{ depth }}about/trevor-damyan.html" style="font-size:13px;color:var(--green,#006A4E);font-weight:600;text-decoration:none">View full profile &rarr;</a>
+        </div>
+      </div>
     </div>
 
     <aside class="article-sidebar">
@@ -95,7 +106,7 @@
           </li>
           {% endfor %}
         </ul>
-        <a href="{{ depth }}locations.html" style="display:inline-block;margin-top:10px;font-size:12px;color:var(--green);text-decoration:none;font-weight:600">View All 61 Markets &rarr;</a>
+        <a href="{{ depth }}locations.html" style="display:inline-block;margin-top:10px;font-size:12px;color:var(--green);text-decoration:none;font-weight:600">View All 171 Markets &rarr;</a>
       </div>
       {% endif %}
     </aside>
@@ -146,7 +157,7 @@
     {% endfor %}
   </div>
   <div style="text-align:center;margin-top:24px">
-    <a href="{{ depth }}locations.html" class="pill-link reveal" style="font-size:14px">View All 61 Markets &rarr;</a>
+    <a href="{{ depth }}locations.html" class="pill-link reveal" style="font-size:14px">View All 171 Markets &rarr;</a>
   </div>
 </div>
 </section>
