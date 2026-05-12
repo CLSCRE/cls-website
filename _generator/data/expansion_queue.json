@@ -645,28 +645,6 @@
       ]
     },
     {
-      "slug": "oxnard",
-      "city": "Oxnard",
-      "state": "CA",
-      "metro": "Oxnard-Thousand Oaks",
-      "tier1": false,
-      "context": "Oxnard-Thousand Oaks-Ventura is a high-barrier coastal California market with a diverse economy spanning agriculture, manufacturing, high-tech, and military activity at Point Mugu Naval Air Station. Multifamily and industrial assets benefit from extremely constrained supply and strong demand from well-employed residents.",
-      "neighborhoods": [
-        "Downtown Oxnard",
-        "Camarillo",
-        "Thousand Oaks",
-        "Ventura",
-        "Moorpark",
-        "Simi Valley",
-        "Port Hueneme",
-        "Santa Paula",
-        "Fillmore",
-        "Carpinteria",
-        "Westlake Village",
-        "Agoura Hills"
-      ]
-    },
-    {
       "slug": "stockton",
       "city": "Stockton",
       "state": "CA",
@@ -686,50 +664,6 @@
         "Modesto",
         "Oakdale",
         "Angels Camp"
-      ]
-    },
-    {
-      "slug": "modesto",
-      "city": "Modesto",
-      "state": "CA",
-      "metro": "Modesto",
-      "tier1": false,
-      "context": "Modesto is a Central Valley agricultural and distribution market with significant food processing, cold storage, and light industrial activity driven by California's wine and almond industries. Industrial vacancy is tight relative to the Bay Area and presents strong yield opportunities for investors.",
-      "neighborhoods": [
-        "Downtown Modesto",
-        "Salida",
-        "Riverbank",
-        "Ceres",
-        "Turlock",
-        "Atwater",
-        "Merced",
-        "Los Banos",
-        "Patterson",
-        "Gustine",
-        "Newman",
-        "Oakdale"
-      ]
-    },
-    {
-      "slug": "missoula",
-      "city": "Missoula",
-      "state": "MT",
-      "metro": "Missoula",
-      "tier1": false,
-      "context": "Missoula is Montana's cultural and university hub, anchored by the University of Montana and a growing outdoor recreation economy that attracts significant in-migration from coastal markets. Multifamily demand is among the strongest in the Mountain West relative to supply, driving consistent rent growth.",
-      "neighborhoods": [
-        "Downtown Missoula",
-        "University District",
-        "South Side",
-        "Rattlesnake",
-        "Hellgate",
-        "East Missoula",
-        "Lolo",
-        "Florence",
-        "Stevensville",
-        "Hamilton",
-        "Polson",
-        "Ronan"
       ]
     },
     {
@@ -2669,9 +2603,24 @@
       "slug": "temecula",
       "city": "Temecula",
       "added": "2026-05-12"
+    },
+    {
+      "slug": "oxnard",
+      "city": "Oxnard",
+      "added": "2026-05-12"
+    },
+    {
+      "slug": "modesto",
+      "city": "Modesto",
+      "added": "2026-05-12"
+    },
+    {
+      "slug": "missoula",
+      "city": "Missoula",
+      "added": "2026-05-12"
     }
   ],
-  "last_run": "2026-05-12T10:42:11.033132Z",
-  "total_pages_added": 792,
-  "runs_completed": 22
+  "last_run": "2026-05-12T18:17:54.256044Z",
+  "total_pages_added": 828,
+  "runs_completed": 23
 }
