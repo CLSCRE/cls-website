@@ -6975,5 +6975,581 @@
       "hospitality": "Santa Barbara is one of California's premier luxury travel destinations, with the American Riviera identity commanding ADR among the highest outside of San Francisco and Los Angeles. The Four Seasons Resort the Biltmore, Rosewood Miramar, and Bacara Resort anchor the luxury segment. Downtown boutique hotels command premium weekend leisure rates year-round. Wine country tourism in Santa Ynez Valley adds a distinct hospitality demand driver.",
       "mixed_use": "Santa Barbara's mixed-use investment is concentrated along upper and lower State Street and in the Funk Zone arts and food district near the waterfront. The Funk Zone's adaptive reuse of historic industrial buildings for wine tasting rooms, breweries, restaurants, and retail has become a model for California coastal mixed-use revival. State Street's ongoing commercial redevelopment is transitioning some retail to residential and hotel uses."
     }
+  },
+  "duluth": {
+    "city": "Duluth",
+    "state": "MN",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "multifamily_cap_rate": "6.50%-8.00%",
+      "industrial_vacancy": "5.0%",
+      "industrial_cap_rate": "6.50%-7.75%",
+      "office_vacancy": "12.0%",
+      "office_cap_rate": "7.25%-8.75%",
+      "retail_vacancy": "8.0%",
+      "retail_cap_rate": "6.75%-8.25%",
+      "hospitality_vacancy": "35.0%",
+      "hospitality_cap_rate": "7.75%-9.25%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "6.75%-8.25%",
+      "job_growth": "1.2%",
+      "population_growth": "0.4%",
+      "rent_growth": "3.5%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "Essentia Health, St. Luke's Hospital, University of Minnesota Duluth, Minnesota Power (ALLETE), BNSF Railway, US Steel (Minntac nearby), Cirrus Aircraft, Canal Park tourism district",
+      "top_submarkets": "Canal Park, downtown Duluth, Duluth Heights, Hermantown, Proctor, Superior WI, Two Harbors, Cloquet"
+    },
+    "market_report": {
+      "overview": "Duluth anchors the Lake Superior region at the head of the Great Lakes shipping system, a market of approximately 280,000 in the twin-port metro with Duluth MN and Superior WI. The economy spans healthcare, higher education, iron ore shipping, outdoor recreation tourism, and a growing aerospace manufacturing sector anchored by Cirrus Aircraft. Duluth's position as the westernmost port on the St. Lawrence Seaway gives it unique industrial logistics significance.",
+      "economy": "Essentia Health is the dominant employer, with a regional health system serving northern Minnesota, Wisconsin, and North Dakota. The University of Minnesota Duluth anchors higher education and research. Minnesota Power, a regulated electric utility, provides stable corporate employment. BNSF Railway's Duluth Lakehead operations support iron ore and grain shipping through the port. Cirrus Aircraft, manufacturer of the world's best-selling personal aircraft, represents advanced manufacturing.",
+      "real_estate": "Duluth's commercial real estate fundamentals are steady and improving. Multifamily vacancy of 5.5 percent reflects genuine housing demand from the healthcare and university workforce. Canal Park's tourism economy drives hospitality and retail demand, with the Lake Superior waterfront attracting boutique hotel and restaurant investment. Industrial near the port and BNSF intermodal facility serves the regional logistics and mining supply chain.",
+      "outlook": "Duluth's outlook is cautiously positive. Essentia Health's ongoing clinical expansion and UMD's research programs anchor demand. The outdoor recreation economy (North Shore trails, Superior Hiking Trail, DECC events) continues to drive hospitality investment. Iron ore shipping through the port is linked to steel production cycles, providing volatility but also high-volume demand. The Twin Ports region attracts remote workers from the Twin Cities seeking outdoor lifestyle access.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Duluth from $1 million upward. Healthcare-adjacent office, agency multifamily, and port-adjacent industrial are the most active financing categories for institutional lenders.",
+      "cta": "Contact Commercial Lending Solutions to discuss Duluth Minnesota commercial real estate financing. Our Midwest lender relationships cover the Lake Superior region across all commercial property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Duluth targets multifamily value-add in Duluth Heights and Hermantown, and Canal Park boutique hotel renovations capitalizing on North Shore tourism growth. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Duluth uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Agency lenders recognize Essentia Health's stabilizing influence. Life insurance companies lend on port-adjacent industrial for creditworthy logistics and mining tenants.",
+      "construction": "Construction lending supports Essentia Health clinical expansion, UMD student housing, and Canal Park boutique hospitality development. CLS structures construction-to-permanent facilities through Minnesota regional banks.",
+      "sba": "SBA programs serve Duluth's outdoor recreation, hospitality, professional services, and maritime small business community. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac cover Duluth multifamily efficiently. The Essentia Health and UMD employment anchor supports occupancy underwriting. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Duluth's stabilized retail, hospitality, and industrial assets. Canal Park area hospitality and Miller Hill Mall corridor retail attract conduit lender interest at loan sizes from $3 million."
+    },
+    "property_context": {
+      "multifamily": "Duluth multifamily benefits from the healthcare and university workforce, remote worker in-migration from the Twin Cities, and housing undersupply relative to demand. Cap rates of 6.5 to 8 percent for Class B product in Hermantown and Duluth Heights are competitive for a Minnesota market of this quality.",
+      "industrial": "Industrial in Duluth serves the iron ore shipping supply chain, BNSF intermodal, and regional distribution. Port-adjacent industrial is the most valued, with logistics and mining equipment tenants providing stable occupancy.",
+      "office": "Office demand in Duluth is healthcare and professional services-driven. Essentia Health's administrative and outpatient expansion drives medical office absorption. Downtown Duluth benefits from the growing technology and remote-work employer base.",
+      "retail": "Canal Park and the downtown Duluth Waterfront are the premier retail and dining destinations. Miller Hill Mall serves the broader metro suburban trade area. North Shore-oriented outdoor gear, restaurant, and specialty retail in Canal Park commands premium rents.",
+      "hospitality": "Duluth's hospitality market benefits from North Shore outdoor recreation tourism, Canal Park's entertainment district, the DECC convention complex, and UMD and College of St. Scholastica events. The Pier B Resort and similar boutique waterfront properties command strong leisure ADR.",
+      "mixed_use": "Canal Park and Lincoln Park's Craft District anchor Duluth's mixed-use investment zones. Adaptive reuse of historic industrial and warehouse buildings for restaurant, brewery, gallery, and residential uses has attracted private developer investment. The Waterfront development corridor from Canal Park to the DECC is the most active mixed-use pipeline."
+    }
+  },
+  "rochester-mn": {
+    "city": "Rochester",
+    "state": "MN",
+    "stats": {
+      "multifamily_vacancy": "3.5%",
+      "multifamily_cap_rate": "5.25%-6.75%",
+      "industrial_vacancy": "3.8%",
+      "industrial_cap_rate": "5.75%-7.00%",
+      "office_vacancy": "7.5%",
+      "office_cap_rate": "6.00%-7.50%",
+      "retail_vacancy": "5.5%",
+      "retail_cap_rate": "5.75%-7.00%",
+      "hospitality_vacancy": "26.0%",
+      "hospitality_cap_rate": "6.75%-8.25%",
+      "mixed_use_vacancy": "5.0%",
+      "mixed_use_cap_rate": "5.75%-7.00%",
+      "job_growth": "2.5%",
+      "population_growth": "1.5%",
+      "rent_growth": "5.5%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "Mayo Clinic (dominant employer, 40000+ employees), IBM Rochester, Olmsted County government, Rochester Community and Technical College, Olmsted Medical Center, Minnesota Department of Transportation",
+      "top_submarkets": "Mayo Clinic campus area, downtown Rochester, Northwest Rochester, Southeast Rochester, Byron, Stewartville, Kasson"
+    },
+    "market_report": {
+      "overview": "Rochester is one of the most extraordinary secondary market commercial real estate stories in the United States. Mayo Clinic, consistently ranked the number one hospital in America, employs more than 40,000 people in this metro of approximately 230,000 — a concentration of medical employment so extreme that nearly every commercial real estate decision in the market flows from Mayo's needs and growth trajectory.",
+      "economy": "Mayo Clinic is Rochester's economy. As the world's leading destination medical center, Mayo treats patients from all 50 states and 150 countries, generating hospitality, residential, retail, and office demand that defies the market's size. IBM's Rochester facility, once producing AS/400 mainframes, has transitioned to technology services employment. The Destination Medical Community (DMC) initiative represents a $5.6 billion public-private investment program to develop Rochester into a global medical destination by 2041.",
+      "real_estate": "Rochester's commercial real estate fundamentals are among the tightest in Minnesota. Multifamily vacancy of 3.5 percent and 5.5 percent rent growth are driven by Mayo's continuous hiring. Office vacancy of 7.5 percent is well below Minnesota averages, driven by Mayo administrative and research expansion. The DMC initiative is delivering major mixed-use, hospitality, and research real estate investments adjacent to Mayo's campus.",
+      "outlook": "Rochester's outlook is exceptionally positive. The DMC initiative ensures $5.6 billion in structured investment over two decades. Mayo's global patient base and continuous clinical expansion mean healthcare real estate demand is structurally insulated from economic cycles. The Discovery Square innovation district adjacent to Mayo is creating a life sciences startup cluster that adds private-sector diversification.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Rochester from $1 million upward. Mayo-adjacent real estate commands institutional lender attention at terms that reflect the world's premier medical center as a demand anchor. Life insurance companies, agency lenders, and CMBS all compete for Rochester assets.",
+      "cta": "Contact Commercial Lending Solutions to discuss Rochester Minnesota commercial real estate financing. Few markets in America offer the combination of Mayo Clinic's demand anchor, the DMC investment program, and the fundamentals Rochester delivers."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Rochester focuses on multifamily value-add for the continuous stream of Mayo staff relocating to the market and adaptive reuse of properties adjacent to the DMC development zone. CLS structures 18 to 24 month bridge facilities sized for a market where exit cap rates are compressing toward Twin Cities levels.",
+      "permanent": "Permanent financing in Rochester commands Minnesota's most competitive terms outside of the Twin Cities. Life insurance companies and agency lenders compete aggressively for Mayo-proximate multifamily and medical office. Cap rates as low as 5.25 percent for Class A multifamily are bankable through life insurance programs.",
+      "construction": "Construction in Rochester is dominated by the DMC initiative, Mayo campus expansion, and the Discovery Square life sciences district. CLS structures construction-to-permanent facilities through Minnesota banks and national lenders with large-scale healthcare real estate experience.",
+      "sba": "SBA programs serve Rochester's hospitality, professional services, and medical supply small business community. Patient family hospitality businesses and medical equipment supply companies are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive for Rochester multifamily. The Mayo employment anchor and structural housing undersupply support aggressive agency underwriting. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Rochester's stabilized retail, hospitality, and commercial assets. Mayo-adjacent hotel and retail assets attract conduit lender interest at premium pricing reflecting the medical destination demand base. Loan sizes from $5 million to $50 million."
+    },
+    "property_context": {
+      "multifamily": "Rochester multifamily is arguably Minnesota's best investment thesis outside of Minneapolis. Mayo's 40,000 employees plus continuous patient family demand creates structural undersupply. Vacancy of 3.5 percent and 5.5 percent rent growth are sustained by Mayo's hiring pipeline. Cap rates of 5.25 to 6.75 percent are compressing toward Twin Cities levels.",
+      "industrial": "Industrial in Rochester serves Mayo's supply chain, medical equipment distribution, and regional logistics. Vacancy below 4 percent reflects genuine demand from medical and technology tenants. IBM's technology services campus occupies significant industrial and office flex space.",
+      "office": "Rochester office is almost entirely healthcare and technology-driven. Mayo's research, administrative, and clinical functions anchor the highest-quality office in the market. Discovery Square's life sciences incubator is creating demand for specialized research and lab space adjacent to Mayo.",
+      "retail": "Rochester retail serves Mayo's patient, family, and employee base plus the regional trade area. Downtown Rochester's Peace Plaza and Apache Mall corridor anchor regional retail. The DMC Heart of the City development is creating new premium retail and dining in the Mayo campus zone.",
+      "hospitality": "Rochester's hospitality market is uniquely Mayo-driven. Medical travel from 150 countries produces sustained high-occupancy demand unlike any other market of this size. The Destination Medical Community initiative includes major hotel development adjacent to Mayo. Patient family demand creates occupancy floors that make Rochester hotels exceptionally stable investments.",
+      "mixed_use": "The Discovery Square and Heart of the City districts within the DMC plan are Rochester's primary mixed-use development zones. Mayo-adjacent mixed-use combining life sciences office, hotel, retail, and residential is attracting national developer attention. The Zumbro River corridor and downtown Rochester streetscape are receiving major public investment."
+    }
+  },
+  "wausau": {
+    "city": "Wausau",
+    "state": "WI",
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "multifamily_cap_rate": "7.00%-8.50%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "6.75%-8.00%",
+      "office_vacancy": "13.5%",
+      "office_cap_rate": "7.50%-9.00%",
+      "retail_vacancy": "9.0%",
+      "retail_cap_rate": "7.00%-8.50%",
+      "hospitality_vacancy": "36.0%",
+      "hospitality_cap_rate": "8.00%-9.50%",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "7.25%-8.75%",
+      "job_growth": "1.0%",
+      "population_growth": "0.3%",
+      "rent_growth": "2.8%",
+      "median_asking_rent": "$900",
+      "major_employers": "Aspirus Health, Marathon County government, Wausau Financial Systems, Sentry Insurance, Kolbe and Kolbe Windows, Wausau Tile, University of Wisconsin-Stevens Point (nearby), Northcentral Technical College",
+      "top_submarkets": "Rib Mountain, Weston, Rothschild, Kronenwetter, Schofield, Mosinee, Stevens Point, Merrill"
+    },
+    "market_report": {
+      "overview": "Wausau anchors Marathon County in north-central Wisconsin, a market of approximately 136,000 with a stable manufacturing, healthcare, and insurance employment base. The metro has a long history in the specialty paper and wood products industries, and while those sectors have contracted, Aspirus Health and Sentry Insurance provide diversified employment anchors that support steady commercial real estate fundamentals.",
+      "economy": "Aspirus Health is the dominant employer, with a regional health system serving north-central Wisconsin and the Upper Peninsula of Michigan. Sentry Insurance, a major mutual insurance company, is headquartered in Stevens Point near Wausau and provides significant financial services employment. Kolbe and Kolbe Windows, a national manufacturer of premium windows and doors, represents advanced manufacturing. Marathon County government and Northcentral Technical College round out the public-sector base.",
+      "real_estate": "Wausau's commercial real estate offers stable yield-focused investment. Multifamily vacancy of 6.5 percent and 2.8 percent rent growth reflect the healthcare and manufacturing workforce creating steady demand. Rib Mountain and Weston are the strongest suburban commercial submarkets. Industrial in the Rothschild and Schofield industrial parks serves regional manufacturing and distribution.",
+      "outlook": "Wausau's outlook is stable. Aspirus Health's ongoing expansion is the primary commercial real estate demand driver. The Wausau Center mall redevelopment and downtown revitalization efforts are catalyzing mixed-use investment. Manufacturing employment is stabilizing after years of contraction, and Northcentral Technical College's workforce development programs are supporting employer attraction.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Wausau from $1 million upward. Healthcare-adjacent office, agency multifamily, and industrial in the Rib Mountain corridor are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Wausau Wisconsin commercial real estate financing. Our Midwest lender relationships cover north-central Wisconsin markets for yield-focused investors seeking stable fundamentals."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Wausau focuses on multifamily value-add in Weston and Rib Mountain, where healthcare and manufacturing workforce tenants provide stable occupancy. CLS structures 12 to 18 month bridge facilities.",
+      "permanent": "Permanent financing in Wausau uses Fannie Mae small balance for multifamily and CMBS for commercial assets. High cap rates provide DSCR coverage that supports agency underwriting for stabilized assets. Life insurance companies lend on Aspirus-adjacent healthcare net-lease.",
+      "construction": "Construction lending supports Aspirus Health clinical expansion and Northcentral Technical College campus development. CLS structures construction facilities through Wisconsin community banks and regional lenders.",
+      "sba": "SBA programs serve Wausau's active small business community spanning manufacturing services, healthcare, and professional services. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae small balance programs cover Wausau multifamily assets. High cap rates produce strong DSCR coverage. Non-recourse 10-year fixed-rate terms with 30-year amortization.",
+      "cmbs": "CMBS serves Wausau's stabilized retail and commercial assets. Rib Mountain corridor retail and suburban industrial parks attract conduit lender interest at loan sizes from $2 million."
+    },
+    "property_context": {
+      "multifamily": "Wausau multifamily provides stable yield for Midwest-focused investors. Cap rates of 7 to 8.5 percent for Class B product in Weston and Rib Mountain reflect the healthcare and manufacturing workforce tenant base. Per-unit prices are well below replacement cost.",
+      "industrial": "Industrial in Wausau serves the regional manufacturing supply chain and distribution network. Rothschild and Schofield industrial parks along US-51 provide well-located space for manufacturing tenants. Vacancy below 6 percent reflects steady demand.",
+      "office": "Office demand in Wausau is Aspirus Health and insurance sector-driven. Medical office near Aspirus Wausau Hospital maintains strong occupancy. Sentry Insurance's regional operations support professional office demand in the Stevens Point-Wausau corridor.",
+      "retail": "Retail in Wausau is stabilizing after the Wausau Center mall-era contraction. Rib Mountain's retail corridor along Rib Mountain Drive serves the suburban consumer base. Downtown Wausau's Third Street arts district has attracted restaurant and independent retail investment.",
+      "hospitality": "Wausau's hospitality market is ski resort (Granite Peak), snowmobile tourism, Aspirus medical travel, and highway business-driven. Granite Peak ski area drives winter weekend occupancy. The Wausau Events Center and Grand Theater support limited meeting and cultural travel.",
+      "mixed_use": "Downtown Wausau's Third Street district and the riverfront area are the focus of mixed-use investment. Adaptive reuse of historic commercial buildings for restaurant, gallery, and residential uses has attracted local developer capital. The Wausau Center mall redevelopment plan calls for mixed-use conversion of significant anchor space."
+    }
+  },
+  "eau-claire": {
+    "city": "Eau Claire",
+    "state": "WI",
+    "stats": {
+      "multifamily_vacancy": "5.0%",
+      "multifamily_cap_rate": "6.50%-8.00%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "6.25%-7.50%",
+      "office_vacancy": "11.5%",
+      "office_cap_rate": "7.00%-8.50%",
+      "retail_vacancy": "7.5%",
+      "retail_cap_rate": "6.75%-8.00%",
+      "hospitality_vacancy": "31.0%",
+      "hospitality_cap_rate": "7.50%-9.00%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "6.75%-8.00%",
+      "job_growth": "1.5%",
+      "population_growth": "1.0%",
+      "rent_growth": "4.0%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "Mayo Clinic Health System-Eau Claire, University of Wisconsin-Eau Claire, Chippewa Valley Technical College, Royal Credit Union, Menards (regional operations), Charter Communications, National Presto Industries",
+      "top_submarkets": "Downtown Eau Claire, Altoona, Chippewa Falls, Menomonie, Owen-Withee, Fall Creek, Elk Mound, Lake Hallie"
+    },
+    "market_report": {
+      "overview": "Eau Claire anchors the Chippewa Valley in western Wisconsin, a market of approximately 175,000 with a quality-of-life profile and economic fundamentals that have made it one of Wisconsin's rising secondary markets. The combination of Mayo Clinic Health System's regional medical anchor, University of Wisconsin-Eau Claire's 11,000-student enrollment, a growing arts and music scene, and excellent outdoor recreation access has attracted in-migration and commercial real estate investment.",
+      "economy": "Mayo Clinic Health System is the dominant employer, anchoring healthcare real estate demand across the region. University of Wisconsin-Eau Claire provides educational employment and student housing demand. Chippewa Valley Technical College supports workforce development for the regional manufacturing and healthcare base. National Presto Industries and Charter Communications provide private-sector manufacturing and technology employment.",
+      "real_estate": "Eau Claire's commercial real estate fundamentals are among Wisconsin's best for a market its size. Multifamily vacancy of 5 percent and 4 percent rent growth reflect the UW-Eau Claire and Mayo workforce creating genuine housing demand. Industrial vacancy below 5 percent reflects the regional manufacturing and distribution economy. Downtown Eau Claire's arts and entertainment district has attracted boutique hospitality and mixed-use investment.",
+      "outlook": "Eau Claire's outlook is positive. The arts and music festival economy (Eaux Claires music festival) has elevated the city's national profile and attracted creative economy talent. Mayo's clinical expansion continues to drive healthcare real estate demand. UW-Eau Claire's enrollment stability supports student housing. The city's affordability relative to the Twin Cities continues to attract remote workers seeking outdoor and cultural amenity.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Eau Claire from $1 million upward. Agency multifamily, Mayo-adjacent healthcare office, and industrial along I-94 are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Eau Claire Wisconsin commercial real estate financing. Our Midwest lender relationships recognize Eau Claire's rising commercial real estate profile driven by the Mayo and UW-Eau Claire anchors."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Eau Claire focuses on multifamily value-add in Altoona and downtown Eau Claire, and boutique hospitality projects capitalizing on the arts and festival tourism economy. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Eau Claire uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Agency lenders recognize Mayo's stabilizing influence and UW-Eau Claire's enrollment anchor.",
+      "construction": "Construction lending supports Mayo Health System clinical expansion, UW-Eau Claire student housing, and downtown mixed-use development. CLS structures construction-to-permanent facilities through Wisconsin regional banks.",
+      "sba": "SBA programs serve Eau Claire's growing arts, technology, outdoor recreation, and professional services small business community. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac DUS programs cover Eau Claire multifamily. The Mayo and UW-Eau Claire employment anchors support occupancy underwriting. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Eau Claire's stabilized retail and commercial assets. South Hastings Way retail corridor and suburban industrial parks attract conduit lender interest from $3 million."
+    },
+    "property_context": {
+      "multifamily": "Eau Claire multifamily is Wisconsin's most promising smaller-market investment. Vacancy of 5 percent and 4 percent rent growth driven by the Mayo and university workforce, combined with arts-scene in-migration, create above-average fundamentals. Cap rates of 6.5 to 8 percent for Class B product are compressing as out-of-state capital discovers this market.",
+      "industrial": "Industrial in Eau Claire serves the Chippewa Valley manufacturing and I-94 corridor distribution economy. National Presto Industries and regional food and beverage manufacturers are steady tenants. Vacancy below 5 percent reflects genuine supply constraint.",
+      "office": "Office demand in Eau Claire is Mayo Health System, UW-Eau Claire, and professional services-driven. Medical office near the Mayo campus on Bellinger Street maintains strong occupancy. Downtown Eau Claire technology and creative office is growing with the arts economy.",
+      "retail": "Retail in Eau Claire serves the regional Chippewa Valley trade area. Oakwood Mall and the South Hastings Way corridor anchor suburban retail. Downtown Eau Claire's Barstow Street and Water Street districts support thriving independent retail, restaurant, and entertainment uses.",
+      "hospitality": "Eau Claire's hospitality market benefits from the Eaux Claires music festival, UW-Eau Claire events, Mayo medical travel, and outdoor recreation demand. The Pablo Center at the Confluence performing arts center has elevated cultural tourism. Limited-service and boutique hotel supply has expanded to meet growing arts and leisure demand.",
+      "mixed_use": "Downtown Eau Claire's Water Street and the Confluence area adjacent to the Pablo Center are the most active mixed-use investment zones. Adaptive reuse of historic industrial and commercial buildings for residential, restaurant, and creative office uses is well advanced. The Confluence park and river amenity anchor premium mixed-use development."
+    }
+  },
+  "rockford": {
+    "city": "Rockford",
+    "state": "IL",
+    "stats": {
+      "multifamily_vacancy": "8.5%",
+      "multifamily_cap_rate": "7.50%-9.25%",
+      "industrial_vacancy": "7.0%",
+      "industrial_cap_rate": "7.00%-8.50%",
+      "office_vacancy": "17.5%",
+      "office_cap_rate": "8.25%-10.00%",
+      "retail_vacancy": "12.0%",
+      "retail_cap_rate": "7.75%-9.25%",
+      "hospitality_vacancy": "39.0%",
+      "hospitality_cap_rate": "8.75%-10.50%",
+      "mixed_use_vacancy": "10.5%",
+      "mixed_use_cap_rate": "8.00%-9.75%",
+      "job_growth": "0.8%",
+      "population_growth": "-0.2%",
+      "rent_growth": "2.5%",
+      "median_asking_rent": "$900",
+      "major_employers": "SwedishAmerican Health System (UW Health), OSF HealthCare Saint Anthony Medical Center, Woodward Inc., Hamilton Sundstrand (RTX), Honeywell, Winnebago County government, Rock Valley College, Illinois Tool Works",
+      "top_submarkets": "Loves Park, Machesney Park, Roscoe, Belvidere, Rockton, Poplar Grove, downtown Rockford, East Rockford"
+    },
+    "market_report": {
+      "overview": "Rockford is northern Illinois's largest market outside the Chicago metropolitan area, a metro of approximately 337,000 anchored by aerospace and defense manufacturing, healthcare, and a manufacturing heritage that has been gradually diversifying. The market faces population headwinds from the urban core but suburban communities like Loves Park and Machesney Park offer stable commercial real estate fundamentals.",
+      "economy": "SwedishAmerican Health System (now part of UW Health) and OSF HealthCare are the dominant healthcare employers. Woodward Inc. and Hamilton Sundstrand (RTX) anchor the aerospace and defense manufacturing sector, producing components for jet engines and aircraft systems. Honeywell and Illinois Tool Works maintain significant manufacturing presence. Chicago Rockford International Airport provides a modest aviation industry employment base and logistics access.",
+      "real_estate": "Rockford commercial real estate offers high-yield investment for investors comfortable with a market in structural transition. Cap rates of 7.5 to 9.25 percent for multifamily and 7.75 to 9.25 percent for retail are compelling for income-focused strategies. Suburban Loves Park and Machesney Park offer meaningfully better fundamentals than the urban core. Industrial along I-39 and the Rock River corridor serves the aerospace and regional manufacturing supply chain.",
+      "outlook": "Rockford's near-term outlook is stable. Healthcare system expansion by SwedishAmerican and OSF is the most reliable commercial real estate demand driver. Aerospace manufacturing orders tied to commercial aviation recovery support Woodward and Hamilton Sundstrand employment. The Anderson Japanese Gardens and Discovery Center Museum anchor a growing cultural tourism economy.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Rockford from $1 million upward. Healthcare-adjacent office, suburban net-lease retail, and industrial serving the aerospace supply chain are the most financeable asset classes.",
+      "cta": "Contact Commercial Lending Solutions to discuss Rockford Illinois commercial real estate financing. Our Midwest lender relationships cover northern Illinois secondary markets for yield-focused investors."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Rockford targets suburban multifamily value-add in Loves Park and Machesney Park, where 1970s and 1980s apartment communities trade at per-unit prices below $35,000. CLS structures 12 to 18 month bridge facilities.",
+      "permanent": "Permanent financing in Rockford uses Fannie Mae small balance for multifamily and CMBS for commercial assets. High cap rates provide strong DSCR coverage for agency underwriting of stabilized suburban assets.",
+      "construction": "Construction lending supports SwedishAmerican and OSF medical expansion, aerospace supplier industrial build-to-suit, and suburban residential development. CLS structures construction facilities through Illinois regional banks.",
+      "sba": "SBA programs serve Rockford's aerospace supply, healthcare services, and manufacturing support small business community. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae small balance programs cover suburban Rockford multifamily assets. DSCR coverage from high cap rates supports agency underwriting for stabilized Loves Park and Machesney Park communities.",
+      "cmbs": "CMBS serves Rockford's stabilized retail and industrial assets. East State Street corridor retail and I-39 industrial parks attract conduit lender interest from $2 million."
+    },
+    "property_context": {
+      "multifamily": "Rockford suburban multifamily offers high yield for investors. Cap rates of 7.5 to 9 percent for Class B product in Loves Park and Machesney Park at per-unit prices below $40,000 generate strong cash-on-cash returns. The aerospace and healthcare workforce provides occupancy stability.",
+      "industrial": "Industrial in Rockford serves the aerospace and defense manufacturing supply chain. Woodward, Hamilton Sundstrand, and regional automotive supplier demand keeps industrial vacancy in the mid-single digits in suburban parks. I-39 corridor positioning supports regional distribution.",
+      "office": "Office vacancy in Rockford is elevated at 17.5 percent, with medical office near SwedishAmerican and OSF campuses substantially outperforming general suburban office. Aerospace corporate functions in Loves Park and East Rockford maintain steady demand.",
+      "retail": "Retail in Rockford is suburban-focused. CherryVale Mall and the East State Street corridor serve the regional trade area. Loves Park and Machesney Park suburban retail with grocery anchors maintains healthy occupancy. Downtown Rockford retail recovery is centered on the State Street and Riverfront districts.",
+      "hospitality": "Rockford's hospitality market is manufacturing business travel, sports tourism (BMO Harris Bank Center), and highway-adjacent demand. The Anderson Japanese Gardens draws cultural tourism. Limited-service brands along I-90 serve Chicago-area travelers.",
+      "mixed_use": "Downtown Rockford's Riverfront and East State Street districts are the focus of mixed-use revival investment. Adaptive reuse of historic manufacturing and commercial buildings for restaurant, residential, and creative office has attracted local developer capital."
+    }
+  },
+  "champaign-urbana": {
+    "city": "Champaign-Urbana",
+    "state": "IL",
+    "stats": {
+      "multifamily_vacancy": "4.5%",
+      "multifamily_cap_rate": "5.75%-7.25%",
+      "industrial_vacancy": "4.0%",
+      "industrial_cap_rate": "6.00%-7.25%",
+      "office_vacancy": "9.0%",
+      "office_cap_rate": "6.50%-8.00%",
+      "retail_vacancy": "6.5%",
+      "retail_cap_rate": "6.25%-7.50%",
+      "hospitality_vacancy": "28.0%",
+      "hospitality_cap_rate": "7.25%-8.75%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "6.25%-7.50%",
+      "job_growth": "1.8%",
+      "population_growth": "0.8%",
+      "rent_growth": "4.8%",
+      "median_asking_rent": "$1,200",
+      "major_employers": "University of Illinois at Urbana-Champaign (55000 students, 16000 employees), Carle Health, Christie Clinic, Champaign and Urbana governments, State Farm (technology center), Wolfram Research, Beckman Institute for Advanced Science and Technology",
+      "top_submarkets": "University of Illinois campus area, downtown Champaign, Savoy, Urbana downtown, Tolono, Mahomet, Rantoul, St. Joseph"
+    },
+    "market_report": {
+      "overview": "Champaign-Urbana is anchored by the University of Illinois at Urbana-Champaign, a flagship Big Ten research university that generates one of the most powerful economic engines in Illinois outside of Chicago. With 55,000 students and 16,000 employees, UIUC produces technology spinoffs, healthcare demand, and student housing absorption that make this a consistently high-performing commercial real estate market despite its modest population of 237,000.",
+      "economy": "The University of Illinois at Urbana-Champaign is the metropolitan economy. UIUC's Grainger College of Engineering is consistently ranked among the top five engineering schools globally, generating a technology startup ecosystem and technology company attraction (Wolfram Research, Beckman Institute) that diversifies the economic base beyond pure education. Carle Health and Christie Clinic anchor the healthcare sector. State Farm's technology center and other corporate research facilities locate in Champaign-Urbana specifically to recruit UIUC talent.",
+      "real_estate": "Champaign-Urbana commercial real estate fundamentals are exceptional for a market of this size. Multifamily vacancy of 4.5 percent and 4.8 percent rent growth are driven by structural student and workforce housing undersupply relative to UIUC's sustained enrollment. Office vacancy of 9 percent reflects the technology and professional services demand generated by the university ecosystem. Retail near campus and the downtown Champaign corridor maintains near-full occupancy.",
+      "outlook": "Champaign-Urbana's outlook is strongly positive. UIUC's enrollment growth and its role as one of America's premier engineering and computer science universities ensure sustained commercial real estate demand. The university's technology transfer and startup programs are deepening the private-sector economic base. Illinois's Research Park adjacent to UIUC is attracting major technology companies.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Champaign-Urbana from $1 million upward. University-proximate multifamily, technology office in the Research Park, and healthcare adjacent to Carle and Christie clinics are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Champaign-Urbana Illinois commercial real estate financing. Our lender relationships include institutions that understand UIUC's extraordinary demand anchor effect on this market."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Champaign-Urbana focuses on student and workforce multifamily value-add near the UIUC campus and in Savoy. Sponsors are acquiring older apartment communities and repositioning for the graduate student and technology worker demographic. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Champaign-Urbana favors agency multifamily and CMBS for commercial assets. Fannie Mae and Freddie Mac recognize the UIUC enrollment anchor. Life insurance companies lend on Carle Health-adjacent medical office and technology campus assets.",
+      "construction": "Construction lending supports UIUC-adjacent student housing, Carle Health clinical expansion, and Illinois Research Park technology office construction. CLS structures construction-to-permanent facilities through Illinois regional banks and national lenders with university market expertise.",
+      "sba": "SBA programs serve Champaign-Urbana's entrepreneurial technology, hospitality, and professional services small business community. UIUC spinoff technology firms are frequent SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive for Champaign-Urbana multifamily. UIUC enrollment creates structural occupancy support. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Champaign-Urbana's stabilized retail, office, and commercial assets. Downtown Champaign retail on Neil Street and Market Place Mall corridor, plus Research Park office, attract conduit lender interest from $3 million."
+    },
+    "property_context": {
+      "multifamily": "Champaign-Urbana multifamily is an elite university market investment. UIUC's 55,000 students and 16,000 employees create structural housing demand that new supply cannot meet. Vacancy of 4.5 percent and 4.8 percent rent growth provide above-average Illinois investment returns. Cap rates of 5.75 to 7.25 percent for Class B product are compressing as institutional capital recognizes UIUC's anchor strength.",
+      "industrial": "Industrial in Champaign-Urbana serves the regional manufacturing and technology distribution economy. The I-57 and I-74 intersection provides strong logistics positioning for central Illinois distribution. Research-related light manufacturing and technology testing facilities command premium rents near UIUC.",
+      "office": "Office demand is uniquely strong in Champaign-Urbana given UIUC's research commercialization engine. Illinois Research Park adjacent to campus hosts major technology company offices including State Farm technology, Caterpillar Simulation, and Abbott. Carle Health's administrative campus drives medical office demand.",
+      "retail": "Retail in Champaign-Urbana serves the university and regional consumer base. Campustown on Green Street near UIUC is one of Illinois's most active university retail districts. Market Place Mall and the North Prospect Avenue corridor serve the suburban trade area. Downtown Champaign's Neil Street maintains strong independent retail and dining occupancy.",
+      "hospitality": "Champaign-Urbana hospitality is dominated by UIUC events. Fighting Illini football (Memorial Stadium), basketball (State Farm Center), graduation, and conference demand drive exceptional occupancy spikes. The State Farm Center arena events add year-round demand beyond university cycles. Corporate visitors to UIUC-based technology companies provide steady business travel.",
+      "mixed_use": "Downtown Champaign's Main Street and Campustown near UIUC are the primary mixed-use investment zones. Adaptive reuse of commercial buildings for restaurant, retail, and student residential uses is active. Illinois Research Park's mixed-use technology campus model is expanding with new office and amenity development."
+    }
+  },
+  "quad-cities": {
+    "city": "Davenport",
+    "state": "IA",
+    "stats": {
+      "multifamily_vacancy": "7.0%",
+      "multifamily_cap_rate": "7.00%-8.50%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "6.50%-8.00%",
+      "office_vacancy": "14.0%",
+      "office_cap_rate": "7.50%-9.00%",
+      "retail_vacancy": "10.0%",
+      "retail_cap_rate": "7.00%-8.50%",
+      "hospitality_vacancy": "35.0%",
+      "hospitality_cap_rate": "8.00%-9.50%",
+      "mixed_use_vacancy": "9.0%",
+      "mixed_use_cap_rate": "7.25%-8.75%",
+      "job_growth": "1.2%",
+      "population_growth": "0.4%",
+      "rent_growth": "3.2%",
+      "median_asking_rent": "$1,000",
+      "major_employers": "John Deere (headquarters and manufacturing), UnityPoint Health, Genesis Health System, Rock Island Arsenal (federal), Arconic (aluminum manufacturing), Hy-Vee Food Stores, Iowa American Water, Modern Woodmen of America",
+      "top_submarkets": "Bettendorf, North Davenport, Moline IL, Rock Island IL, Milan IL, East Moline, LeClaire, Pleasant Valley"
+    },
+    "market_report": {
+      "overview": "The Quad Cities metro of approximately 383,000 spans Davenport and Bettendorf in Iowa and Rock Island, Moline, and East Moline in Illinois along the Mississippi River. The economy is anchored by John Deere's headquarters and major manufacturing operations, Rock Island Arsenal (the nation's largest government-owned weapons manufacturing arsenal), and a substantial healthcare sector. The bi-state market offers industrial fundamentals driven by Deere's global agricultural equipment demand.",
+      "economy": "John Deere is the defining economic force of the Quad Cities. Deere's worldwide headquarters in Moline, combined with manufacturing facilities throughout the metro, employs tens of thousands directly and generates an enormous agricultural equipment supply chain ecosystem. Rock Island Arsenal, one of the largest federal employers in the Midwest, provides stable defense manufacturing employment. UnityPoint Health and Genesis Health System anchor the healthcare sector. Modern Woodmen of America provides financial services employment.",
+      "real_estate": "Quad Cities commercial real estate fundamentals reflect the Deere cycle and are generally healthy. Multifamily vacancy of 7 percent and 3.2 percent rent growth reflect the manufacturing and healthcare workforce creating steady demand. Bettendorf is the strongest suburban commercial submarket. Industrial along I-280 and the BNSF rail corridor serves the Deere supply chain and regional distribution.",
+      "outlook": "The Quad Cities outlook is tied largely to John Deere's agricultural equipment cycle. Current infrastructure and precision agriculture spending is supporting Deere production and employment. Rock Island Arsenal's defense contract pipeline provides counter-cyclical stability. The bi-state nature of the market creates some complexity for investors but also diversifies risk across two state regulatory environments.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in the Quad Cities from $1 million upward. Deere-adjacent industrial, agency multifamily in Bettendorf, and healthcare office serving UnityPoint and Genesis are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Quad Cities commercial real estate financing. Our Midwest lender relationships cover the Iowa-Illinois bi-state metro for assets across all commercial property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in the Quad Cities targets multifamily value-add in Bettendorf and North Davenport, where John Deere and healthcare workforce tenants support renovation repositioning. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in the Quad Cities uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Agency lenders recognize the Deere and Arsenal employment anchors. Life insurance companies lend on Deere-adjacent industrial and net-lease for investment-grade tenants.",
+      "construction": "Construction lending supports UnityPoint Health clinical expansion, Deere supplier industrial build-to-suit, and Bettendorf residential and commercial development. CLS structures construction-to-permanent facilities through Iowa and Illinois regional banks.",
+      "sba": "SBA programs serve the Quad Cities' manufacturing services, professional services, and agricultural technology small business community. Deere supplier firms and agricultural technology startups are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are active for Quad Cities multifamily, particularly in Bettendorf. The Deere and Arsenal employment anchors support occupancy underwriting. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Quad Cities stabilized retail, industrial, and commercial assets. Bettendorf's retail corridor and Deere-adjacent industrial parks attract conduit lender interest from $3 million."
+    },
+    "property_context": {
+      "multifamily": "Quad Cities multifamily is Deere and Arsenal cycle-correlated but provides stable yields for investors. Cap rates of 7 to 8.5 percent for Class B product in Bettendorf and North Davenport at per-unit prices of $50,000 to $80,000 generate solid income returns from the manufacturing and healthcare workforce.",
+      "industrial": "Industrial in the Quad Cities is the premier investment sector, driven by John Deere's supply chain. I-280 corridor industrial parks serve distribution and light manufacturing. BNSF rail access supports heavy manufacturing logistics. Average rents are competitive for the Midwest industrial market.",
+      "office": "Office demand in the Quad Cities is Deere corporate, healthcare, and professional services-driven. John Deere's Moline headquarters anchors suburban office. UnityPoint and Genesis administrative functions drive medical office. Downtown Davenport's office market is improving with riverfront mixed-use investment.",
+      "retail": "Retail in the Quad Cities serves the Iowa-Illinois bi-state consumer base. NorthPark Mall in Davenport and the Village of East Davenport independent retail district anchor the market. Bettendorf's growing residential base is supporting new retail development on the Iowa side.",
+      "hospitality": "The Quad Cities hospitality market benefits from Deere business travel, Rock Island Arsenal military travel, riverboat gaming (Isle Casino), and Mississippi River tourism. The iWireless Center arena drives sports and entertainment demand. Limited-service hotels along I-80 and I-280 serve regional travelers.",
+      "mixed_use": "Downtown Davenport's Riverfront district and Rock Island's entertainment district are the primary mixed-use investment zones. Adaptive reuse of historic commercial and industrial buildings along the Mississippi River for restaurant, entertainment, and residential uses has attracted developer investment."
+    }
+  },
+  "waterloo-ia": {
+    "city": "Waterloo",
+    "state": "IA",
+    "stats": {
+      "multifamily_vacancy": "7.5%",
+      "multifamily_cap_rate": "7.25%-9.00%",
+      "industrial_vacancy": "6.5%",
+      "industrial_cap_rate": "7.00%-8.50%",
+      "office_vacancy": "15.0%",
+      "office_cap_rate": "7.75%-9.25%",
+      "retail_vacancy": "11.0%",
+      "retail_cap_rate": "7.25%-8.75%",
+      "hospitality_vacancy": "37.0%",
+      "hospitality_cap_rate": "8.25%-9.75%",
+      "mixed_use_vacancy": "10.0%",
+      "mixed_use_cap_rate": "7.50%-9.00%",
+      "job_growth": "0.8%",
+      "population_growth": "-0.2%",
+      "rent_growth": "2.2%",
+      "median_asking_rent": "$850",
+      "major_employers": "Tyson Foods (major beef processing plant), UnityPoint Health-Allen Hospital, Covenant Medical Center, John Deere (Waterloo works, tractor manufacturing), University of Northern Iowa, Hawkeye Community College, Black Hawk County government",
+      "top_submarkets": "Cedar Falls, Evansdale, Hudson, Elk Run Heights, downtown Waterloo, La Porte City, Jesup"
+    },
+    "market_report": {
+      "overview": "Waterloo anchors Black Hawk County in northeast Iowa, a market of approximately 168,000 that pairs with Cedar Falls in a twin-city relationship. The economy rests on two pillars: John Deere's Waterloo works, one of the world's largest tractor manufacturing complexes, and a healthcare sector anchored by UnityPoint Health-Allen Hospital and Covenant Medical Center. The market offers stable if modest commercial real estate fundamentals driven by the manufacturing and healthcare workforce.",
+      "economy": "John Deere's Waterloo Works is one of the largest manufacturing facilities in Iowa, producing large tractors that are distributed globally. Deere's production cycle directly influences the metro's economic performance, creating some cyclicality. Tyson Foods' beef processing plant is a major food manufacturing employer. UnityPoint and Covenant provide healthcare employment stability. The University of Northern Iowa in Cedar Falls educates approximately 11,000 students and provides educational employment.",
+      "real_estate": "Waterloo commercial real estate offers high-yield investment in a stable Midwest manufacturing market. Cap rates of 7.25 to 9 percent for multifamily reflect the market's secondary positioning. Cedar Falls offers slightly better fundamentals than Waterloo given the University of Northern Iowa's stabilizing influence. Industrial near Deere's Waterloo Works serves the agricultural equipment supply chain.",
+      "outlook": "Waterloo's outlook is stable and linked to John Deere's production cycle. Current precision agriculture investment is supporting Deere production, providing a positive near-term demand signal. UnityPoint's clinical expansion anchors healthcare real estate demand independent of the manufacturing cycle.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in the Waterloo-Cedar Falls metro from $1 million upward. Deere-adjacent industrial, UNI-proximate multifamily in Cedar Falls, and healthcare office near Allen Hospital are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Waterloo Iowa commercial real estate financing. Our Midwest lender relationships cover northeast Iowa for yield-focused investors in manufacturing and healthcare-anchored markets."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in the Waterloo-Cedar Falls metro targets multifamily value-add near the University of Northern Iowa and Deere worker housing in Cedar Falls and Evansdale. CLS structures 12 to 18 month bridge facilities.",
+      "permanent": "Permanent financing uses Fannie Mae small balance for multifamily and CMBS for commercial assets. High cap rates support DSCR coverage for agency underwriting of stabilized Cedar Falls and Waterloo apartment communities.",
+      "construction": "Construction lending supports UnityPoint Allen clinical expansion and Cedar Falls residential development near UNI. CLS structures construction facilities through Iowa community banks.",
+      "sba": "SBA programs serve the Waterloo-Cedar Falls small business community spanning agriculture technology, food manufacturing services, and professional services. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae small balance programs cover Waterloo-Cedar Falls multifamily. High cap rates produce strong DSCR coverage for stabilized assets near UNI and Deere employment centers.",
+      "cmbs": "CMBS serves Waterloo's stabilized retail and industrial assets. University Avenue corridor retail in Cedar Falls and Deere-adjacent industrial attract conduit lender interest from $2 million."
+    },
+    "property_context": {
+      "multifamily": "Waterloo-Cedar Falls multifamily benefits from the UNI student and Deere workforce tenant base. Cedar Falls multifamily near UNI performs best, with vacancy around 5 to 6 percent and steady rent growth. Cap rates of 7.25 to 9 percent provide high income yields for investors.",
+      "industrial": "Industrial in the Waterloo metro is Deere supply chain and food processing-driven. The Waterloo Works facility anchors demand for manufacturing, parts supply, and logistics space. Tyson's supply chain adds food processing industrial tenants.",
+      "office": "Office demand is healthcare and professional services-driven. UnityPoint Allen and Covenant medical office near their respective campuses maintains steady occupancy. University of Northern Iowa's Cedar Falls campus generates educational office and research demand.",
+      "retail": "Retail in the Waterloo-Cedar Falls metro serves the manufacturing and university consumer base. College Square Mall and the University Avenue corridor in Cedar Falls serve the UNI market. Crossroads Center in Waterloo anchors suburban retail for the broader metro.",
+      "hospitality": "Waterloo's hospitality market is Deere business travel, UnityPoint medical travel, and UNI events-driven. The Five Sullivan Brothers Convention Center anchors meeting demand in downtown Waterloo.",
+      "mixed_use": "Downtown Waterloo's East Fourth Street arts corridor and the Crossroads mixed-use development represent the primary mixed-use investment activity. Cedar Falls' College Hill district near UNI maintains active independent retail and dining mixed-use."
+    }
+  },
+  "sioux-city": {
+    "city": "Sioux City",
+    "state": "IA",
+    "stats": {
+      "multifamily_vacancy": "7.0%",
+      "multifamily_cap_rate": "7.00%-8.75%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "6.75%-8.25%",
+      "office_vacancy": "14.0%",
+      "office_cap_rate": "7.50%-9.00%",
+      "retail_vacancy": "9.5%",
+      "retail_cap_rate": "7.00%-8.50%",
+      "hospitality_vacancy": "35.0%",
+      "hospitality_cap_rate": "8.00%-9.50%",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "7.25%-8.75%",
+      "job_growth": "1.0%",
+      "population_growth": "0.3%",
+      "rent_growth": "3.0%",
+      "median_asking_rent": "$950",
+      "major_employers": "MercyOne Siouxland Medical Center, UnityPoint Health-St. Luke's, IBP (Tyson Foods beef processing), Morningside University, Western Iowa Tech Community College, Woodbury County government, Briar Cliff University",
+      "top_submarkets": "South Sioux City NE, North Sioux City SD, Dakota Dunes SD, Sergeant Bluff, Lawton, Le Mars, downtown Sioux City"
+    },
+    "market_report": {
+      "overview": "Sioux City is the commercial center of the tri-state Iowa-Nebraska-South Dakota market, a metro of approximately 170,000 that serves as the economic hub for a substantial agricultural region. The economy is built on food processing, healthcare, regional retail, and agricultural services, creating a stable but modest commercial real estate market with high cap rates and income-focused investment characteristics.",
+      "economy": "The food processing sector, led by IBP (Tyson Foods) and other agricultural processors, is Sioux City's largest private employer, generating industrial real estate demand tied to the region's livestock and grain production economy. MercyOne Siouxland and UnityPoint Health-St. Luke's are the leading healthcare employers. The tri-state regional position makes Sioux City the retail and professional services hub for a large agricultural hinterland. Morningside University and Briar Cliff University contribute educational employment.",
+      "real_estate": "Sioux City commercial real estate reflects its role as a regional agricultural and commercial hub. Cap rates of 7 to 8.75 percent for multifamily reflect the market's secondary status. Industrial near the livestock processing corridor is the most active sector. Retail along Sunnybrook Drive and the Hamilton Boulevard corridor serves the tri-state regional consumer base. Dakota Dunes in South Dakota is the strongest suburban submarket, benefiting from South Dakota's no income tax advantage.",
+      "outlook": "Sioux City's outlook is stable. The agricultural economy provides a reliable economic base, though commodity cycle exposure creates some volatility. Dakota Dunes is growing rapidly as the premium suburban alternative. MercyOne and UnityPoint healthcare expansion drives medical office demand. The Hard Rock Hotel and Casino Sioux City has added a hospitality and entertainment demand driver.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Sioux City from $1 million upward. Food processing industrial, healthcare office, and regional retail anchoring the tri-state trade area are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Sioux City Iowa commercial real estate financing. Our Midwest lender relationships cover the Iowa-Nebraska-South Dakota tri-state agricultural market across all commercial property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Sioux City targets multifamily value-add in the South Sioux City and Sergeant Bluff corridors, where food processing and healthcare workforce tenants provide occupancy stability. CLS structures 12 to 18 month bridge facilities.",
+      "permanent": "Permanent financing uses Fannie Mae small balance for multifamily and CMBS for retail and industrial. High cap rates support DSCR coverage for agency underwriting. Life insurance companies lend selectively on food processing industrial for investment-grade credit tenants.",
+      "construction": "Construction lending supports MercyOne and UnityPoint clinical expansion, Dakota Dunes residential development, and food processing industrial build-to-suit. CLS structures construction facilities through Iowa and South Dakota regional banks.",
+      "sba": "SBA programs serve Sioux City's agricultural services, food industry supply chain, and professional services small business community. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae small balance programs cover Sioux City multifamily. DSCR coverage from high cap rates supports agency underwriting for stabilized assets near healthcare and food processing employment centers.",
+      "cmbs": "CMBS serves Sioux City's stabilized retail and industrial assets. Hamilton Boulevard retail corridor and food processing industrial facilities attract conduit lender interest from $2 million."
+    },
+    "property_context": {
+      "multifamily": "Sioux City multifamily is food processing and healthcare workforce-driven. Cap rates of 7 to 8.75 percent for Class B product provide income yields for investors. Dakota Dunes multifamily in South Dakota offers slightly stronger fundamentals given the no-income-tax advantage.",
+      "industrial": "Industrial in Sioux City is food processing and agricultural supply chain-driven. IBP (Tyson) and other processing facilities anchor demand for cold storage, distribution, and manufacturing space. I-29 corridor positioning supports regional agricultural logistics.",
+      "office": "Office in Sioux City is healthcare and professional services-driven. MercyOne Siouxland and UnityPoint medical office near their respective campuses maintains steady demand. Professional services and financial advisory firms serving the agricultural sector anchor downtown Sioux City office.",
+      "retail": "Retail in Sioux City serves the tri-state regional trade area. Southern Hills Mall and the Sunnybrook corridor anchor regional retail. Dakota Dunes in South Dakota is the fastest-growing retail development zone, benefiting from South Dakota's tax advantage.",
+      "hospitality": "Sioux City's hospitality market benefits from agricultural business travel, Hard Rock Casino entertainment demand, MercyOne and UnityPoint medical travel, and regional highway positioning. The Sioux City Convention Center and Tyson Events Center anchor meeting and arena demand.",
+      "mixed_use": "Downtown Sioux City's 4th Street Entertainment District and the Historic Pearl District represent the primary mixed-use investment zones. Adaptive reuse of historic commercial buildings for restaurant, entertainment, and residential uses has attracted local developer investment."
+    }
+  },
+  "topeka": {
+    "city": "Topeka",
+    "state": "KS",
+    "stats": {
+      "multifamily_vacancy": "7.5%",
+      "multifamily_cap_rate": "7.00%-8.75%",
+      "industrial_vacancy": "6.0%",
+      "industrial_cap_rate": "6.75%-8.25%",
+      "office_vacancy": "15.5%",
+      "office_cap_rate": "7.75%-9.25%",
+      "retail_vacancy": "10.5%",
+      "retail_cap_rate": "7.25%-8.75%",
+      "hospitality_vacancy": "36.0%",
+      "hospitality_cap_rate": "8.25%-9.75%",
+      "mixed_use_vacancy": "9.0%",
+      "mixed_use_cap_rate": "7.50%-9.00%",
+      "job_growth": "1.0%",
+      "population_growth": "0.2%",
+      "rent_growth": "2.8%",
+      "median_asking_rent": "$900",
+      "major_employers": "Kansas state government, Stormont Vail Health, BNSF Railway (repair shops), Goodyear Tire and Rubber, Frito-Lay (manufacturing), Security Benefit Group, Washburn University, Kansas Department of Transportation",
+      "top_submarkets": "West Topeka, Southwest Topeka, Auburn Hills, Shawnee County, Tecumseh, Meriden, Silver Lake, downtown Topeka"
+    },
+    "market_report": {
+      "overview": "Topeka is Kansas's state capital and the seat of Shawnee County, a market of approximately 235,000 anchored by Kansas state government employment, healthcare, and a diversified manufacturing base including BNSF Railway, Goodyear Tire, and Frito-Lay. The government anchor provides the commercial real estate market with employment stability uncommon in markets of this size.",
+      "economy": "Kansas state government employs approximately 15,000 people in the Topeka area, creating a stable public-sector employment base that insulates commercial real estate from private-sector cycles. Stormont Vail Health is the dominant private employer, with a regional health system anchoring healthcare real estate demand. BNSF Railway's major repair and maintenance facility and Goodyear's tire manufacturing plant represent significant industrial employment. Security Benefit Group provides financial services employment.",
+      "real_estate": "Topeka commercial real estate offers stable yield-focused investment. Cap rates of 7 to 8.75 percent for multifamily and 7.25 to 8.75 percent for retail reflect the market's secondary status while providing income returns difficult to find in Kansas City or Wichita. The West Topeka and Southwest Topeka suburban corridors offer the strongest commercial fundamentals. Industrial near BNSF and Goodyear facilities serves the regional manufacturing and logistics economy.",
+      "outlook": "Topeka's outlook is stable. Kansas state government employment is structurally stable, and Stormont Vail's clinical expansion drives healthcare real estate demand. BNSF's commitment to the Topeka repair facility and Goodyear's manufacturing investment provide industrial employment anchors. The city's affordability relative to Kansas City continues to attract households seeking lower cost of living.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Topeka from $1 million upward. Government-anchored office, agency multifamily, and manufacturing-adjacent industrial are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Topeka Kansas commercial real estate financing. Our Midwest lender relationships cover the Kansas capital market for yield-focused investors seeking government-stabilized commercial real estate."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Topeka targets multifamily value-add in West and Southwest Topeka, where state government and healthcare workforce tenants provide stable occupancy. CLS structures 12 to 18 month bridge facilities.",
+      "permanent": "Permanent financing uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Government employment stability supports agency underwriting for Topeka apartment communities. Life insurance companies lend selectively on BNSF and Goodyear-adjacent net-lease industrial.",
+      "construction": "Construction lending supports Stormont Vail Health clinical expansion, Washburn University campus development, and West Topeka suburban commercial growth. CLS structures construction facilities through Kansas regional banks.",
+      "sba": "SBA programs serve Topeka's active small business community spanning government contracting, healthcare services, and professional services. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac cover Topeka multifamily efficiently. Government employment stability supports occupancy underwriting. Non-recourse 10-year fixed-rate terms with 30-year amortization.",
+      "cmbs": "CMBS serves Topeka's stabilized retail and industrial assets. West Topeka retail corridors and BNSF-adjacent industrial parks attract conduit lender interest from $2 million."
+    },
+    "property_context": {
+      "multifamily": "Topeka multifamily is government and healthcare workforce-driven. Cap rates of 7 to 8.75 percent for Class B product in West and Southwest Topeka provide income yields for investors. State government employment creates occupancy stability that buffers against economic cycles.",
+      "industrial": "Industrial in Topeka is BNSF Railway and manufacturing-driven. BNSF's repair facility and Goodyear's manufacturing operations anchor industrial demand. Frito-Lay's food manufacturing plant and regional distribution tenants round out the industrial base. I-70 corridor positioning supports distribution.",
+      "office": "Office in Topeka is government-dominated. Kansas state government facilities and contractors occupy the majority of quality office space. Stormont Vail's medical office expansion drives healthcare office absorption. Washburn University's campus generates educational and professional services office demand.",
+      "retail": "Retail in Topeka serves the regional Shawnee County consumer base. West Ridge Mall and the Wanamaker Road corridor anchor suburban retail. Downtown Topeka's NOTO Arts and Entertainment District has attracted restaurant and independent retail investment.",
+      "hospitality": "Topeka's hospitality market is government business travel, BNSF and manufacturing business, and Washburn University events-driven. The Topeka Performing Arts Center and Heartland Park motorsports facility provide entertainment demand spikes.",
+      "mixed_use": "Downtown Topeka's NOTO Arts District along North Topeka Boulevard and the Warehouse Arts District near the Kansas State Capitol represent the primary mixed-use investment zones. Adaptive reuse of historic commercial buildings for restaurant, arts, and residential uses has attracted public and private investment."
+    }
+  },
+  "flagstaff": {
+    "city": "Flagstaff",
+    "state": "AZ",
+    "stats": {
+      "multifamily_vacancy": "4.5%",
+      "multifamily_cap_rate": "5.50%-7.00%",
+      "industrial_vacancy": "4.0%",
+      "industrial_cap_rate": "5.75%-7.00%",
+      "office_vacancy": "9.5%",
+      "office_cap_rate": "6.25%-7.75%",
+      "retail_vacancy": "6.5%",
+      "retail_cap_rate": "5.75%-7.25%",
+      "hospitality_vacancy": "27.0%",
+      "hospitality_cap_rate": "6.75%-8.25%",
+      "mixed_use_vacancy": "6.0%",
+      "mixed_use_cap_rate": "5.75%-7.25%",
+      "job_growth": "2.5%",
+      "population_growth": "1.5%",
+      "rent_growth": "5.2%",
+      "median_asking_rent": "$1,650",
+      "major_employers": "Northern Arizona University (29000 students), Flagstaff Medical Center (Banner Health), Coconino County government, Burlington Northern Santa Fe Railway (main line operations), Arizona Snowbowl ski resort, Grand Canyon National Park (nearby gateway), Lowell Observatory",
+      "top_submarkets": "East Flagstaff, Flagstaff Ranch, downtown Flagstaff, Bellemont, Parks, Williams, Sedona (nearby)"
+    },
+    "market_report": {
+      "overview": "Flagstaff is one of Arizona's most supply-constrained and highest-quality secondary markets, sitting at 7,000 feet elevation in the ponderosa pine forests of the Colorado Plateau. The metro of approximately 145,000 is anchored by Northern Arizona University, serves as the primary gateway to the Grand Canyon, and attracts significant in-migration from Phoenix households seeking a cooler, more outdoor-oriented lifestyle. Supply constraints from federal forest land surrounding the city on virtually all sides create exceptional commercial real estate scarcity.",
+      "economy": "Northern Arizona University is the dominant economic engine, with 29,000 students and approximately 5,000 employees generating healthcare, retail, and student housing demand. Flagstaff Medical Center (Banner Health) anchors the healthcare sector. The Grand Canyon National Park, one of the world's most visited natural wonders, drives tourism and hospitality demand year-round, with Flagstaff serving as the primary lodging market for park visitors. BNSF Railway's main transcontinental line through Flagstaff creates logistics and rail employment.",
+      "real_estate": "Flagstaff's commercial real estate fundamentals are exceptional. Multifamily vacancy of 4.5 percent and 5.2 percent rent growth are driven by housing undersupply that is legally enforced by federal forest land ownership surrounding the city. Industrial vacancy below 4 percent reflects the limited supply serving NAU's supply chain and regional construction. Retail near NAU and downtown Flagstaff benefits from student, resident, and Grand Canyon visitor demand.",
+      "outlook": "Flagstaff's outlook is strongly positive. NAU enrollment growth, Grand Canyon tourism expansion, and Phoenix-to-Flagstaff in-migration driven by climate and lifestyle preferences are structurally positive demand drivers. The federal land constraint on development ensures supply scarcity persists. I-40 and Route 66 heritage tourism add additional commercial demand.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Flagstaff from $1 million upward. NAU-proximate multifamily, tourism hospitality, and the limited commercial real estate inventory all command institutional lender attention at terms reflecting genuine supply scarcity.",
+      "cta": "Contact Commercial Lending Solutions to discuss Flagstaff Arizona commercial real estate financing. Our Arizona lender relationships understand the federal land constraint that makes Flagstaff one of the Southwest's most supply-constrained investment markets."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Flagstaff is focused on boutique hotel renovations serving the Grand Canyon gateway market and multifamily value-add near NAU. The supply constraint means stabilized exit values are well-supported, simplifying bridge underwriting. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Flagstaff commands Arizona's most competitive terms outside of Phoenix and Scottsdale for university-market assets. Fannie Mae and Freddie Mac compete aggressively for NAU-proximate multifamily. Life insurance companies lend on hospitality and net-lease retail given the demand-supply imbalance.",
+      "construction": "Construction in Flagstaff is highly constrained by federal land, permitting complexity, and elevation construction costs. Projects that obtain entitlements command significant lender interest given the scarcity of new supply. CLS structures construction facilities sized conservatively for Arizona permitting and weather cycle timelines.",
+      "sba": "SBA programs serve Flagstaff's tourism, outdoor recreation, and university small business community. Route 66-themed hospitality, outdoor gear retailers, and NAU-adjacent food and beverage operators are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive for Flagstaff multifamily. NAU enrollment and Grand Canyon tourism demand create structural occupancy that agency lenders value highly. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Flagstaff's stabilized hospitality, retail, and commercial assets. Grand Canyon gateway hotels, downtown Flagstaff retail, and NAU-adjacent commercial attract conduit lender interest from $3 million."
+    },
+    "property_context": {
+      "multifamily": "Flagstaff multifamily is Arizona's most supply-constrained university market. Federal forest land ownership on all sides legally prevents suburban sprawl, creating a housing crisis with 4.5 percent vacancy and 5.2 percent annual rent growth. Cap rates of 5.5 to 7 percent for Class B product are compressing toward Phoenix levels as institutional capital recognizes the scarcity dynamic.",
+      "industrial": "Industrial in Flagstaff is scarce and fully occupied. The limited industrial land in Bellemont and the Flagstaff Ranch corridor serves NAU, BNSF, and regional construction and distribution. Vacancy below 4 percent and rising rents reflect the structural supply constraint.",
+      "office": "Office demand in Flagstaff is NAU, Banner Health, and professional services-driven. NAU's administrative and research functions anchor the quality office market. Banner Flagstaff Medical Center's outpatient expansion drives medical office absorption. Downtown Flagstaff professional services offices are well-occupied.",
+      "retail": "Downtown Flagstaff's Heritage Square and San Francisco Street district is one of Arizona's most vibrant independent retail and dining destinations. NAU student demand and Grand Canyon visitor traffic provide year-round commercial retail demand. Route 66-themed retail and restaurants serve the highway tourism market.",
+      "hospitality": "Flagstaff's hospitality market is uniquely Grand Canyon-driven. With 6 million Grand Canyon visitors annually, Flagstaff captures a substantial share of gateway lodging demand. Ski tourism at Arizona Snowbowl, NAU events, and Sedona proximity add seasonal hospitality demand. ADR for well-located Flagstaff hotels is among the highest in rural Arizona.",
+      "mixed_use": "Downtown Flagstaff's Heritage Square area and the Southside neighborhood are the primary mixed-use investment zones. Adaptive reuse of historic Route 66-era commercial buildings for boutique hotel, restaurant, and retail uses is well-advanced. The NAU campus edge and the old railroad corridor are attracting mixed-use development proposals."
+    }
+  },
+  "yuma": {
+    "city": "Yuma",
+    "state": "AZ",
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "multifamily_cap_rate": "6.00%-7.50%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.75%-7.00%",
+      "office_vacancy": "13.0%",
+      "office_cap_rate": "7.00%-8.50%",
+      "retail_vacancy": "9.0%",
+      "retail_cap_rate": "6.50%-8.00%",
+      "hospitality_vacancy": "33.0%",
+      "hospitality_cap_rate": "7.50%-9.00%",
+      "mixed_use_vacancy": "8.0%",
+      "mixed_use_cap_rate": "6.75%-8.25%",
+      "job_growth": "2.0%",
+      "population_growth": "1.5%",
+      "rent_growth": "4.2%",
+      "median_asking_rent": "$1,150",
+      "major_employers": "Marine Corps Air Station Yuma, Yuma Regional Medical Center, Arizona Western College, Yuma Union High School District, Yuma County government, Dole Food Company, Fresh Express, Eurofresh Farms (village farms)",
+      "top_submarkets": "Fortuna Foothills, San Luis, Somerton, Wellton, Dateland, downtown Yuma, Southwest Yuma"
+    },
+    "market_report": {
+      "overview": "Yuma is the commercial center of southwest Arizona's agricultural heartland, a market of approximately 210,000 anchored by Marine Corps Air Station Yuma, one of the world's busiest military air stations, and an agricultural economy that produces 85 percent of the United States' winter vegetables. Yuma's strategic position at the California-Arizona-Mexico tri-state junction makes it a significant border trade and agricultural logistics hub.",
+      "economy": "Marine Corps Air Station Yuma is the largest employer in the metro, with approximately 10,000 military and civilian employees and an economic impact estimated at over $1 billion annually. The agricultural sector, dominated by lettuce, broccoli, cauliflower, and other winter vegetable production, employs thousands of seasonal and year-round workers and drives cold storage, distribution, and agricultural supply chain real estate demand. Yuma Regional Medical Center anchors the healthcare sector. Cross-border trade with San Luis Rio Colorado generates significant commercial activity.",
+      "real_estate": "Yuma's commercial real estate fundamentals are improving, driven by military household demand, agricultural sector growth, and Arizona population in-migration. Multifamily vacancy of 6.5 percent and 4.2 percent rent growth reflect the MCAS workforce and population growth from California retirees seeking affordability. Industrial demand for agricultural cold storage, distribution, and cross-border logistics facilities keeps industrial vacancy tight.",
+      "outlook": "Yuma's outlook is positive. MCAS Yuma's training mission expansion and its role as the premier military jet trainer airfield in the world provides long-term federal employment growth. Agricultural technology investment in indoor growing facilities and precision agriculture is expanding the year-round growing capacity. Cross-border trade infrastructure investment supports industrial and logistics real estate.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Yuma from $1 million upward. Military-market multifamily benefiting from BAH support, agricultural cold storage and distribution industrial, and healthcare office near Yuma Regional Medical Center are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Yuma Arizona commercial real estate financing. Our Arizona and California lender relationships cover the Southwest's agricultural and military market dynamics that make Yuma a distinctive investment opportunity."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Yuma targets multifamily value-add in Fortuna Foothills and Southwest Yuma, where MCAS personnel seeking off-base housing drive occupancy. CLS structures 18 to 24 month bridge facilities sized for the Arizona permitting environment.",
+      "permanent": "Permanent financing in Yuma uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Military BAH demand supports agency multifamily underwriting. Life insurance companies lend on agricultural cold storage and distribution facilities for creditworthy food company tenants.",
+      "construction": "Construction lending supports Yuma Regional Medical Center expansion, MCAS Yuma-adjacent multifamily, and agricultural cold storage and distribution facility development. CLS structures construction-to-permanent facilities through Arizona regional banks.",
+      "sba": "SBA programs serve Yuma's agricultural services, cross-border trade, hospitality, and professional services small business community. Agricultural equipment dealers and border trade businesses are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are active for Yuma multifamily. MCAS BAH demand creates occupancy floors that agency lenders value. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Yuma's stabilized retail, agricultural industrial, and commercial assets. Yuma Palms Regional Center retail and agricultural cold storage facilities attract conduit lender interest from $3 million."
+    },
+    "property_context": {
+      "multifamily": "Yuma multifamily benefits from MCAS Yuma's BAH-supported military household demand and California retiree in-migration seeking affordable warm-weather living. Cap rates of 6 to 7.5 percent for Class B product are compressing as Arizona population growth attracts investment capital to markets previously overlooked.",
+      "industrial": "Industrial in Yuma is agricultural economy-driven. Cold storage and refrigerated distribution facilities serving the winter vegetable industry are the dominant industrial product type. Cross-border logistics from San Luis creates additional industrial demand. The Yuma Proving Ground and MCAS create defense-related industrial and services demand.",
+      "office": "Office demand in Yuma is Yuma Regional Medical Center, MCAS administrative functions, and professional services-driven. Medical office near the hospital campus maintains steady occupancy. Government and military contractor offices supporting MCAS operations provide stable tenancy.",
+      "retail": "Retail in Yuma serves the military, agricultural worker, and retiree consumer base plus cross-border shoppers from Mexico. Yuma Palms Regional Center and the Fourth Avenue corridor anchor regional retail. San Luis shopping centers serve the significant Mexican consumer cross-border market.",
+      "hospitality": "Yuma's hospitality market benefits from military training visits, agricultural business travel, and the snowbird retiree market that doubles the effective winter population. MCAS Yuma air show events drive major hospitality demand spikes. Limited-service hotels along I-8 serve highway travelers between Phoenix and San Diego.",
+      "mixed_use": "Downtown Yuma's Historic Commercial District and the Gateway Park area represent the primary mixed-use investment zones. Adaptive reuse of historic territorial-era commercial buildings for restaurant and retail uses is attracting local developer investment. The Colorado River waterfront development opportunity along the Yuma Crossing National Heritage Area is a long-term mixed-use catalyst."
+    }
   }
 }

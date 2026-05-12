@@ -81,6 +81,9 @@ MARKET_REPORT_CITIES = [
     # Batch 11 expansion — next Tier 2 metros
     "flint", "kalamazoo", "lansing", "green-bay", "appleton",
     "corpus-christi", "lubbock", "waco", "santa-barbara",
+    # Batch 12 expansion — next Tier 2 metros
+    "duluth", "rochester-mn", "wausau", "eau-claire", "rockford", "champaign-urbana",
+    "quad-cities", "waterloo-ia", "sioux-city", "topeka", "flagstaff", "yuma",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -138,6 +141,9 @@ ALL_CITIES = [
     # Batch 11 expansion — next Tier 2 metros
     "flint", "kalamazoo", "lansing", "green-bay", "appleton",
     "corpus-christi", "lubbock", "waco", "santa-barbara",
+    # Batch 12 expansion — next Tier 2 metros
+    "duluth", "rochester-mn", "wausau", "eau-claire", "rockford", "champaign-urbana",
+    "quad-cities", "waterloo-ia", "sioux-city", "topeka", "flagstaff", "yuma",
 ]
 
 # Loan slug → context key mapping
