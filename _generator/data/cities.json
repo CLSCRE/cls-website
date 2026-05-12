@@ -3553,5 +3553,68 @@
       "Twentynine Palms",
       "Banning"
     ]
+  },
+  {
+    "slug": "visalia",
+    "city": "Visalia",
+    "state": "CA",
+    "metro": "Visalia-Porterville",
+    "context": "Visalia is the Central Valley's fastest-growing commercial market, benefiting from agriculture, healthcare expansion, and a growing logistics sector serving Sequoia National Park tourism and San Joaquin Valley distribution. The metro offers significantly higher yields than Fresno with strong industrial and retail fundamentals.",
+    "neighborhoods": [
+      "Downtown Visalia",
+      "Tulare",
+      "Porterville",
+      "Lindsay",
+      "Exeter",
+      "Woodlake",
+      "Hanford",
+      "Lemoore",
+      "Corcoran",
+      "Delano",
+      "McFarland",
+      "Wasco"
+    ]
+  },
+  {
+    "slug": "salinas",
+    "city": "Salinas",
+    "state": "CA",
+    "metro": "Salinas",
+    "context": "Salinas is the commercial hub of the Salinas Valley, the nation's premier salad bowl agricultural region, with commercial real estate demand anchored by agricultural services, cold storage logistics, and healthcare serving a large farmworker population. Industrial cold storage and distribution assets offer strong yields.",
+    "neighborhoods": [
+      "Downtown Salinas",
+      "North Salinas",
+      "East Salinas",
+      "Seaside",
+      "Monterey",
+      "Pacific Grove",
+      "Carmel",
+      "Greenfield",
+      "Gonzales",
+      "King City",
+      "Hollister",
+      "Watsonville"
+    ]
+  },
+  {
+    "slug": "chico",
+    "city": "Chico",
+    "state": "CA",
+    "metro": "Chico",
+    "context": "Chico is Northern California's commercial hub with a significant population increase following Paradise fire evacuees, Chico State University enrollment driving multifamily demand, and a growing healthcare sector. The market offers affordable commercial real estate relative to the Bay Area and Sacramento markets.",
+    "neighborhoods": [
+      "Downtown Chico",
+      "South Chico",
+      "Nord",
+      "Durham",
+      "Orland",
+      "Willows",
+      "Red Bluff",
+      "Corning",
+      "Paradise",
+      "Oroville",
+      "Marysville",
+      "Woodland"
+    ]
   }
 ]
