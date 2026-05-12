@@ -6111,5 +6111,437 @@
       "hospitality": "Peoria's hospitality market is corporate and convention-driven. Caterpillar supplier visits, OSF medical travel, and Bradley University events provide demand. The Peoria Civic Center convention complex anchors downtown hotel demand. Limited-service hotel fundamentals are stable at modest RevPAR levels.",
       "mixed_use": "Mixed-use development in Peoria is concentrated in the Warehouse District and along the Riverfront corridor. Adaptive reuse of historic industrial buildings for loft residential, craft beverage, and creative office uses has attracted private investment. The Riverfront Museum District and Caterpillar Visitors Center are anchoring civic investment that catalyzes adjacent private mixed-use activity."
     }
+  },
+  "lancaster-pa": {
+    "city": "Lancaster",
+    "state": "PA",
+    "stats": {
+      "multifamily_vacancy": "5.5%",
+      "multifamily_cap_rate": "6.00%-7.50%",
+      "industrial_vacancy": "4.8%",
+      "industrial_cap_rate": "6.00%-7.25%",
+      "office_vacancy": "11.5%",
+      "office_cap_rate": "7.00%-8.25%",
+      "retail_vacancy": "7.0%",
+      "retail_cap_rate": "6.25%-7.50%",
+      "hospitality_vacancy": "30.0%",
+      "hospitality_cap_rate": "7.50%-9.00%",
+      "mixed_use_vacancy": "6.5%",
+      "mixed_use_cap_rate": "6.25%-7.50%",
+      "job_growth": "1.8%",
+      "population_growth": "0.9%",
+      "rent_growth": "4.2%",
+      "median_asking_rent": "$1,350",
+      "major_employers": "Penn Medicine Lancaster General Health, Armstrong World Industries, Fulton Financial Corporation, Hamilton Watch Company, PA state government, Franklin and Marshall College, Millersville University, ACNB Corporation",
+      "top_submarkets": "Downtown Lancaster, Manheim Township, East Hempfield, Columbia, Ephrata, Lititz, Quarryville, Mount Joy"
+    },
+    "market_report": {
+      "overview": "Lancaster is one of Pennsylvania's strongest performing secondary markets, a 545,000-person metro anchored by healthcare, advanced manufacturing, and a surging tourism economy driven by Pennsylvania Dutch Country and a nationally recognized food and arts scene. The market has attracted significant out-of-market investment as Philadelphia and New York capital seeks yield in a fundamentally strong but relatively affordable Mid-Atlantic market.",
+      "economy": "Penn Medicine Lancaster General Health is the metro's largest employer, with a regional medical campus that drives healthcare real estate demand across office and outpatient categories. Armstrong World Industries anchors advanced manufacturing, while Fulton Financial and ACNB Corporation represent a sophisticated regional banking sector. Franklin and Marshall College and Millersville University provide a stable educational employment base. Tourism centered on the Amish community and Lancaster's Central Market draws substantial visitor spending.",
+      "real_estate": "Lancaster's commercial real estate fundamentals are among the strongest in Pennsylvania outside of Philadelphia. Multifamily vacancy of 5.5 percent and rent growth of 4.2 percent reflect genuine housing undersupply relative to job growth. Industrial vacancy below 5 percent reflects the metro's position as a regional distribution hub for e-commerce operators seeking access to the Philadelphia-Baltimore-Washington triangle. Downtown Lancaster retail maintains sub-7 percent vacancy, with independent retailers and restaurants actively backfilling space.",
+      "outlook": "Lancaster's outlook is strongly positive. Population growth from Philadelphia and New York households seeking affordable Mid-Atlantic living is driving residential demand that flows into commercial real estate. Penn Medicine's continued clinical expansion and Amtrak service to Philadelphia and New York make Lancaster increasingly competitive for knowledge economy employers. CLS expects industrial and multifamily to continue leading investment performance through 2027.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Lancaster from $1 million upward. Agency multifamily programs and CMBS for retail and industrial are the primary execution vehicles. Life insurance companies actively lend on healthcare and net-lease product in this market.",
+      "cta": "Contact Commercial Lending Solutions to discuss Lancaster Pennsylvania commercial real estate financing. Our Mid-Atlantic lender relationships include institutions that recognize Lancaster's strong fundamentals and relative value versus Philadelphia suburbs."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Lancaster centers on multifamily value-add in the Manheim Township and East Hempfield submarkets, and historic downtown building renovations. Sponsors are acquiring 1960s and 1970s apartment communities and repositioning for the in-migration tenant demographic. CLS structures 18 to 24 month bridge facilities suited to Pennsylvania renovation timelines.",
+      "permanent": "Permanent financing in Lancaster favors agency multifamily and CMBS for retail and industrial. Fannie Mae and Freddie Mac DUS lenders are active in this market, recognizing the strong population growth and healthcare-anchored employment base. Life insurance companies lend on net-lease and healthcare-adjacent office.",
+      "construction": "Construction lending in Lancaster supports Penn Medicine-adjacent medical office, build-to-rent residential in suburban Manheim Township, and downtown mixed-use adaptive reuse. CLS structures construction-to-permanent facilities through Pennsylvania regional banks and national lenders with Mid-Atlantic experience.",
+      "sba": "SBA programs serve Lancaster's active small business community spanning artisan food manufacturing, hospitality, professional services, and tourism-related retail. Franklin and Marshall and Millersville alumni entrepreneurs are active borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive for Lancaster multifamily given the tight vacancy and steady rent growth. Non-recourse 10-year fixed-rate loans with 30-year amortization outperform local bank terms meaningfully. CLS sources both small balance and standard agency programs.",
+      "cmbs": "CMBS serves Lancaster's stabilized retail, industrial, and commercial assets. The Route 30 corridor retail centers and Manheim Township industrial parks attract conduit lender interest. Loan sizes from $3 million to $30 million with 10-year fixed rates."
+    },
+    "property_context": {
+      "multifamily": "Lancaster's multifamily market is tight and appreciating. Vacancy of 5.5 percent and 4.2 percent annual rent growth reflect undersupply relative to in-migration demand. Cap rates of 6 to 7.5 percent for Class B product are compelling versus Philadelphia suburban pricing while reflecting stronger fundamentals than most comparable Pennsylvania markets.",
+      "industrial": "Industrial is Lancaster's strongest performing commercial sector. Vacancy below 5 percent and steadily rising rents reflect the metro's strategic position in the Mid-Atlantic supply chain. Distribution operators, food manufacturers, and e-commerce fulfillment tenants are active. Class A last-mile facilities near Route 30 are trading at historically tight cap rates.",
+      "office": "Office demand in Lancaster is healthcare and professional services-driven. Medical office near Penn Medicine's Regional Cancer Center and outpatient facilities maintains sub-8 percent vacancy. General office in the downtown innovation district is benefiting from a revival of independent and technology employers seeking creative space.",
+      "retail": "Downtown Lancaster's Central Market and Gallery Row are consistently among Pennsylvania's most successful independent retail destinations. Penn Square and the King Street corridor maintain effectively full occupancy. Suburban retail in Manheim Township serves a high-income consumer base with strong productivity for national tenants.",
+      "hospitality": "Lancaster's hospitality market benefits from Pennsylvania Dutch Country tourism, Franklin and Marshall alumni events, and growing leisure demand from Philadelphia and New York day-trippers and weekenders. Boutique hotel development in and around downtown has outperformed limited-service brands on ADR. RevPAR recovery exceeded 2019 peaks in 2023.",
+      "mixed_use": "Downtown Lancaster is one of Pennsylvania's most active mixed-use revival markets. Historic tobacco warehouse and factory conversions to residential lofts, restaurant, and creative office uses have attracted regional and national developers. The Warehouse Arts District and Penn Square area anchor high-demand mixed-use activity. Pennsylvania Historic Tax Credits are widely used in project capital stacks."
+    }
+  },
+  "scranton": {
+    "city": "Scranton",
+    "state": "PA",
+    "stats": {
+      "multifamily_vacancy": "8.0%",
+      "multifamily_cap_rate": "7.00%-8.75%",
+      "industrial_vacancy": "7.5%",
+      "industrial_cap_rate": "7.25%-8.75%",
+      "office_vacancy": "17.0%",
+      "office_cap_rate": "8.00%-9.75%",
+      "retail_vacancy": "11.5%",
+      "retail_cap_rate": "7.50%-9.00%",
+      "hospitality_vacancy": "38.0%",
+      "hospitality_cap_rate": "8.50%-10.25%",
+      "mixed_use_vacancy": "10.0%",
+      "mixed_use_cap_rate": "7.50%-9.00%",
+      "job_growth": "0.9%",
+      "population_growth": "0.2%",
+      "rent_growth": "3.0%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "Geisinger (Commonwealth Health), Commonwealth Medical College, University of Scranton, Marywood University, Pennsylvania state government, Lackawanna County, PPL Corporation, GlobalSpec",
+      "top_submarkets": "Downtown Scranton, South Side, Green Ridge, Dickson City, Moosic, Taylor, Old Forge, Dunmore"
+    },
+    "market_report": {
+      "overview": "Scranton anchors the Lackawanna County portion of the Scranton-Wilkes-Barre-Hazleton metro, a market of approximately 570,000 people in northeastern Pennsylvania. While the market carries the legacy of its coal mining and manufacturing heritage, healthcare systems, higher education, and proximity to the New York metropolitan area have created a stabilizing economic foundation for commercial real estate.",
+      "economy": "Geisinger's Commonwealth Health system is the dominant healthcare employer, with Commonwealth Medical College anchoring the academic medical presence. The University of Scranton and Marywood University provide educational employment and student housing demand. Pennsylvania state government operations in Lackawanna County provide stable public-sector employment. The market's proximity to New York City (two hours via I-380 and I-80) attracts remote workers and second-home buyers who support residential and retail demand.",
+      "real_estate": "Commercial real estate in Scranton offers compelling yield for investors comfortable with a market in gradual stabilization. Cap rates of 7 to 8.75 percent for multifamily and 8 to 9.75 percent for office reflect the historical headwinds. However, multifamily demand is improving as New York-priced-out households discover Scranton's affordability, and industrial along I-81 is benefiting from regional logistics growth.",
+      "outlook": "Scranton's outlook is modestly improving. The New York remote worker dynamic is a genuine demand driver for both residential and retail. Geisinger Commonwealth's clinical expansion and the University of Scranton's continued enrollment support healthcare and student housing demand. The HBO series and tourism around Scranton's cultural identity has become an unexpected driver of boutique hospitality investment.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Scranton from $1 million upward. High cap rate environments create attractive DSCR coverage for bridge and permanent loan structures. SBA programs serve the active small business community across healthcare, hospitality, and professional services.",
+      "cta": "Contact Commercial Lending Solutions to discuss Scranton Pennsylvania commercial real estate financing. Our team structures financing for yield-focused investors active in northeastern Pennsylvania's improving secondary markets."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Scranton focuses on multifamily value-add in the Green Ridge and South Side neighborhoods, and adaptive reuse of downtown commercial buildings. Sponsors are acquiring apartments at per-unit prices that represent significant discounts to construction cost, renovating, and targeting the remote-worker and university-adjacent tenant pool. CLS structures 12 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Scranton uses CMBS for commercial assets and agency programs for multifamily. High cap rates provide DSCR coverage that makes Scranton multifamily particularly bankable through Fannie Mae small balance programs. Life insurance companies are selective but lend on healthcare-adjacent net-lease for creditworthy tenants.",
+      "construction": "Construction lending in Scranton is focused on Geisinger Commonwealth medical office expansion and student housing near the University of Scranton campus. CLS structures construction facilities through Pennsylvania community banks and regional lenders with experience in northeastern Pennsylvania development.",
+      "sba": "SBA programs support Scranton's small business community spanning healthcare services, hospitality, professional services, and light manufacturing. The University of Scranton's entrepreneur programs create a pipeline of SBA-eligible borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae small balance programs cover Scranton multifamily assets efficiently. The strong DSCR coverage provided by high cap rates makes agency underwriting straightforward for well-occupied assets. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS execution serves Scranton's stabilized retail and commercial assets with creditworthy tenancy. Dickson City retail corridor assets and suburban industrial along I-81 attract conduit lender interest. Loan sizes from $2 million to $15 million."
+    },
+    "property_context": {
+      "multifamily": "Multifamily in Scranton offers high cap rates and improving fundamentals. Per-unit prices below $50,000 for renovatable product attract yield-focused investors. The remote-worker and university tenant base provides occupancy stability. Cap rates of 7 to 8.75 percent for Class B product generate cash-on-cash yields difficult to replicate in Philadelphia or Lehigh Valley markets.",
+      "industrial": "Industrial in Scranton benefits from I-81's position as a major Northeast freight corridor. Distribution operators serving northeastern Pennsylvania and the New York feeder market are steady tenants. Average rents remain affordable relative to competing New Jersey and New York markets.",
+      "office": "Office vacancy in Scranton is elevated at 17 percent, reflecting both work-from-home trends and historical oversupply of downtown Class B product. Medical office near Geisinger Commonwealth and the Scranton/Temple University medical school maintains below-average vacancy. Adaptive reuse of historic downtown office for residential conversion is the primary strategy for challenged buildings.",
+      "retail": "Retail in Scranton follows the healthcare, university, and remote-worker demand pattern. The Steamtown Mall has been partially converted to office and entertainment uses. Dickson City and Moosic's Route 6 corridor serves the broader Lackawanna County consumer base with national grocery and value retail. Downtown independent retail on Lackawanna Avenue is gradually recovering.",
+      "hospitality": "Scranton's hospitality market is quirky but growing. The city's television fame from 'The Office' has generated genuine tourism demand, with a visiting fan demographic supporting downtown boutique hotel concepts. University events, Geisinger medical travel, and highway-adjacent limited-service hotels provide the more traditional demand base.",
+      "mixed_use": "Downtown Scranton's mixed-use revival is centered on Lackawanna Avenue and the Electric City theme. Historic bank buildings, former department stores, and coal heritage buildings are being converted to loft residential, restaurant, and creative office. Pennsylvania Historic Tax Credits and federal Historic Tax Credits are the primary equity tools in these adaptive reuse projects."
+    }
+  },
+  "harrisburg": {
+    "city": "Harrisburg",
+    "state": "PA",
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "multifamily_cap_rate": "6.25%-7.75%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "6.25%-7.50%",
+      "office_vacancy": "14.5%",
+      "office_cap_rate": "7.25%-8.75%",
+      "retail_vacancy": "9.0%",
+      "retail_cap_rate": "6.75%-8.00%",
+      "hospitality_vacancy": "33.0%",
+      "hospitality_cap_rate": "7.75%-9.25%",
+      "mixed_use_vacancy": "8.0%",
+      "mixed_use_cap_rate": "6.75%-8.00%",
+      "job_growth": "1.3%",
+      "population_growth": "0.6%",
+      "rent_growth": "3.5%",
+      "median_asking_rent": "$1,150",
+      "major_employers": "Pennsylvania state government, Penn State Milton S. Hershey Medical Center, UPMC Pinnacle, Hershey Entertainment and Resorts, Highmark Health, Commonwealth of Pennsylvania, AIG, Deloitte",
+      "top_submarkets": "Downtown Harrisburg, Camp Hill, Mechanicsburg, Carlisle, Hershey, Lower Paxton Township, Swatara Township, Lemoyne"
+    },
+    "market_report": {
+      "overview": "Harrisburg is Pennsylvania's state capital and the economic center of the Cumberland-Dauphin-Perry metro, a market of approximately 580,000 anchored by state government employment, Penn State Hershey Medical Center, and Hershey Entertainment. The government anchor provides exceptional employment stability that insulates commercial real estate from economic cycles in ways uncommon in markets of this size.",
+      "economy": "Pennsylvania state government is the dominant employer, with 75,000 state employees in the Harrisburg area driving office, retail, and multifamily demand year-round. Penn State Milton S. Hershey Medical Center, one of Pennsylvania's leading academic medical centers, anchors healthcare real estate demand. Hershey Entertainment and Resorts (Hersheypark, Hotel Hershey) generates substantial hospitality and tourism employment. Financial services and consulting firms serving state government operations create a sophisticated private-sector employer base.",
+      "real_estate": "Commercial real estate in Harrisburg performs well given the government-anchored demand base. Multifamily vacancy of 6.5 percent and 3.5 percent rent growth reflect steady household formation from government and healthcare workers. Industrial along I-81 and the Pennsylvania Turnpike benefits from the metro's central Pennsylvania logistics position. Office fundamentals vary significantly between government-leased product (near full occupancy) and speculative suburban office (elevated vacancy).",
+      "outlook": "Harrisburg's outlook is stable to positive. Pennsylvania government employment is unlikely to contract significantly, providing a floor under commercial demand. Penn State Hershey's expansion of clinical services and research programs drives healthcare real estate demand. The I-81 and I-76 intersection makes Harrisburg an attractive logistics node for regional distribution operators.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Harrisburg from $1 million upward. Government-leased office, agency multifamily, and industrial along major corridors are the most financeable asset classes. Life insurance companies and CMBS both actively serve this market.",
+      "cta": "Contact Commercial Lending Solutions to discuss Harrisburg Pennsylvania commercial real estate financing. Our team understands government-anchored market dynamics and structures loans that reflect the stability Pennsylvania state employment provides."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Harrisburg focuses on multifamily value-add in the Camp Hill and Mechanicsburg submarkets, and downtown Harrisburg urban infill residential. Sponsors are acquiring 1970s and 1980s apartment communities and upgrading units to capture demand from state government and Penn State Hershey workers. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Harrisburg favors agency multifamily and CMBS for commercial assets. Government-leased office assets attract life insurance company interest at favorable cap rates reflecting the credit quality of the Commonwealth of Pennsylvania as a tenant. Fannie Mae and Freddie Mac are active for stabilized apartment properties.",
+      "construction": "Construction lending in Harrisburg supports Penn State Hershey medical campus expansion, downtown Harrisburg urban residential, and logistics facility development along I-81. CLS structures construction-to-permanent facilities through Pennsylvania regional banks and national construction lenders.",
+      "sba": "SBA programs serve Harrisburg's active professional services, healthcare, and hospitality small business community. Hershey-area tourism businesses and professional service firms serving state government are active SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac DUS programs are highly active for Harrisburg multifamily. Government employment stability supports occupancy underwriting, and agency rates typically outperform local bank terms by a meaningful margin. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Harrisburg's stabilized retail, industrial, and commercial assets. Route 15 and Carlisle Pike corridor retail centers and I-81 industrial parks attract conduit lender interest. Loan sizes from $3 million to $30 million with 10-year fixed rates."
+    },
+    "property_context": {
+      "multifamily": "Harrisburg multifamily benefits from the largest stable employer base in Pennsylvania outside Philadelphia and Pittsburgh. State government workers, healthcare employees, and Hershey tourism sector employees create steady occupancy. Cap rates of 6.25 to 7.75 percent for well-located Class B product reflect the government stability premium.",
+      "industrial": "Industrial in Harrisburg is one of central Pennsylvania's strongest performers. I-81's role as a major Northeast-to-Southeast freight corridor, combined with access to I-76 and I-83, positions Harrisburg logistics facilities well for regional distribution. Vacancy below 6 percent and rising rents attract institutional industrial capital.",
+      "office": "Office performance in Harrisburg bifurcates sharply. Government-leased downtown and Capitol area office maintains near-full occupancy with credit tenants. Speculative suburban office in Camp Hill and Lower Paxton faces elevated vacancy as state agencies prefer consolidated government-owned or long-term leased facilities.",
+      "retail": "Retail in Harrisburg serves a stable government and healthcare worker consumer base. The Colonial Park Mall trade area and Carlisle Pike corridor anchor regional retail. Downtown Harrisburg's 2nd Street restaurant row and City Island area maintain active independent food and beverage and entertainment retail.",
+      "hospitality": "Harrisburg's hospitality market is convention and government-driven. The Pennsylvania Farm Show complex, the Hersheypark Entertainment Complex, and government conference demand support robust hotel occupancy. Hershey's tourism economy generates year-round hospitality demand from the Giant Center arena and Hersheypark.",
+      "mixed_use": "Downtown Harrisburg's Strawberry Square complex and the 2nd Street corridor are the centers of mixed-use activity. Adaptive reuse of historic commercial buildings for residential lofts, restaurant, and creative office has been active. The Cumberland County side of the Susquehanna River in Camp Hill and Wormleysburg is developing as a mixed-use alternative to downtown."
+    }
+  },
+  "jackson": {
+    "city": "Jackson",
+    "state": "MS",
+    "stats": {
+      "multifamily_vacancy": "10.5%",
+      "multifamily_cap_rate": "7.50%-9.50%",
+      "industrial_vacancy": "9.0%",
+      "industrial_cap_rate": "7.75%-9.50%",
+      "office_vacancy": "20.0%",
+      "office_cap_rate": "8.50%-10.50%",
+      "retail_vacancy": "14.0%",
+      "retail_cap_rate": "8.00%-10.00%",
+      "hospitality_vacancy": "42.0%",
+      "hospitality_cap_rate": "9.00%-11.00%",
+      "mixed_use_vacancy": "12.0%",
+      "mixed_use_cap_rate": "8.00%-10.00%",
+      "job_growth": "0.5%",
+      "population_growth": "-0.8%",
+      "rent_growth": "1.8%",
+      "median_asking_rent": "$850",
+      "major_employers": "University of Mississippi Medical Center, Baptist Health Systems, St. Dominic Health Services, Mississippi state government, Nissan North America (Canton plant), Entergy Mississippi, BlueCross BlueShield of Mississippi, Regions Bank",
+      "top_submarkets": "Ridgeland, Madison, Brandon, Flowood, Reservoir area, East Jackson, Byram, Fondren neighborhood"
+    },
+    "market_report": {
+      "overview": "Jackson is the capital and largest city of Mississippi, a market of approximately 580,000 in the metro anchored by state government and the University of Mississippi Medical Center. The market faces demographic headwinds from population decline in the urban core, but the suburban corridors of Madison, Ridgeland, and Flowood are growing and offer compelling commercial real estate fundamentals for investors focused on yield and suburban stabilization.",
+      "economy": "The University of Mississippi Medical Center is the state's only academic medical center and one of the largest employers in Mississippi, with more than 10,000 employees and a nationally recognized medical school. Mississippi state government employs a substantial share of the capital metro workforce. Nissan North America's Canton assembly plant (30 miles north) and its supplier ecosystem generate significant private-sector employment. Baptist Health and St. Dominic's provide additional healthcare employment.",
+      "real_estate": "Commercial real estate in Jackson requires careful submarket selection. The urban core faces elevated vacancy and declining population, but suburban Madison County and Rankin County (Flowood, Brandon, Pearl) offer meaningfully stronger fundamentals. Cap rates of 7.5 to 9.5 percent for suburban multifamily and net-lease retail in growing corridors attract yield-focused investors willing to underwrite suburban rather than urban exposure.",
+      "outlook": "Jackson's outlook is bifurcated. The suburban growth story in Madison County is genuinely positive, driven by Jackson-area families relocating to Ridgeland, Madison, and Gluckstadt for schools and safety. The urban core faces continued challenges from infrastructure issues and population decline. Investors who focus on suburban Madison and Rankin County assets will find better fundamentals than market-level statistics suggest.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in the Jackson metro from $1 million upward with strong focus on suburban Madison and Rankin County assets. UMMC-adjacent healthcare office, suburban multifamily, and net-lease retail in growing corridors are the most financeable asset classes.",
+      "cta": "Contact Commercial Lending Solutions to discuss Jackson Mississippi commercial real estate financing. Our team focuses on suburban Madison and Rankin County assets where fundamentals support institutional lending on attractive yield."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in the Jackson metro focuses on suburban multifamily value-add in Ridgeland, Madison, and Flowood, where well-located 1990s and 2000s apartment communities offer renovation upside. CLS structures 12 to 18 month bridge facilities focused on suburban Madison and Rankin County assets with demonstrated occupancy.",
+      "permanent": "Permanent financing in the Jackson metro favors CMBS for suburban commercial assets and agency for stabilized multifamily. Fannie Mae and Freddie Mac small balance programs cover suburban apartment communities in Madison County. Life insurance companies lend on UMMC-adjacent medical office and credit-tenant net-lease.",
+      "construction": "Construction lending in the Jackson area supports UMMC medical campus expansion, suburban Madison County residential development, and Flowood's growing commercial corridor. CLS structures construction facilities through Mississippi-chartered banks and regional lenders with deep Southeast secondary market experience.",
+      "sba": "SBA programs serve Jackson's active small business community in healthcare services, professional services, and suburban retail. UMMC physician practice groups and professional service firms are active SBA 504 borrowers. CLS places SBA loans from $1 million for qualifying Mississippi businesses.",
+      "agency": "Fannie Mae small balance programs serve stabilized suburban multifamily in Madison and Rankin Counties. DSCR coverage from high cap rates makes agency underwriting manageable for well-occupied suburban assets. Non-recourse 10-year fixed-rate terms with 30-year amortization.",
+      "cmbs": "CMBS serves suburban Jackson's stabilized retail, medical office, and light industrial assets in growing corridors. Flowood and Ridgeland retail centers with national grocers anchor conduit loan consideration. Loan sizes from $2 million to $15 million."
+    },
+    "property_context": {
+      "multifamily": "Multifamily investment in the Jackson metro requires submarket selection. Suburban Ridgeland, Madison, and Flowood offer cap rates of 7.5 to 8.5 percent for stabilized product with low vacancy driven by school quality-driven household migration. Urban Jackson core product carries materially higher risk premiums. Suburban value-add at per-unit prices of $50,000 to $90,000 generates compelling yields.",
+      "industrial": "Industrial in Jackson is focused along I-20 and US-49, serving regional distribution and Nissan supply chain logistics. Average rents for warehouse and manufacturing space are among the lowest in the South, attracting cost-sensitive tenants. Vacancy is elevated in older urban product but tighter in modern suburban facilities.",
+      "office": "Office fundamentals in Jackson are the most challenged sector. Downtown and midtown office vacancy is among the highest in the South, with state government occupying the most reliable credit tenancy. Suburban medical office near UMMC and Baptist Health campuses is the most defensible office product.",
+      "retail": "Retail in the Jackson metro bifurcates sharply. Madison County and Flowood's Dogwood Festival Market and Renaissance at Colony Park serve high-income suburban consumers with national retailers achieving strong productivity. Urban Jackson retail is significantly more challenged, with substantial vacancy in older power centers.",
+      "hospitality": "Jackson's hospitality market is state government, convention, and medical travel-driven. The Jackson Convention Complex and the Mississippi Arts Center anchor downtown hotel demand. The Fondren neighborhood has attracted boutique food and beverage investment that supports hotel demand from a creative class audience.",
+      "mixed_use": "Mixed-use development in Jackson is concentrated in the Fondren neighborhood, historically one of Mississippi's most vibrant urban villages. Restaurant, retail, and residential density in Fondren represents the most active privately-funded urban mixed-use activity. Suburban Madison County town center developments in Ridgeland and Madison also represent active mixed-use investment."
+    }
+  },
+  "fredericksburg": {
+    "city": "Fredericksburg",
+    "state": "VA",
+    "stats": {
+      "multifamily_vacancy": "5.0%",
+      "multifamily_cap_rate": "5.75%-7.00%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "5.75%-7.00%",
+      "office_vacancy": "10.5%",
+      "office_cap_rate": "6.75%-8.00%",
+      "retail_vacancy": "7.5%",
+      "retail_cap_rate": "6.00%-7.25%",
+      "hospitality_vacancy": "29.0%",
+      "hospitality_cap_rate": "7.25%-8.75%",
+      "mixed_use_vacancy": "6.0%",
+      "mixed_use_cap_rate": "6.00%-7.25%",
+      "job_growth": "2.5%",
+      "population_growth": "2.0%",
+      "rent_growth": "4.8%",
+      "median_asking_rent": "$1,550",
+      "major_employers": "Mary Washington Healthcare, University of Mary Washington, Stafford County and Fredericksburg governments, GEICO (regional office), NCI Information Systems, Germanna Community College, Amazon (regional distribution), Wegmans",
+      "top_submarkets": "Central Park corridor, Celebrate Virginia, South Stafford, Spotsylvania Courthouse, Downtown Fredericksburg, Route 1 corridor, Stafford County, Culpeper"
+    },
+    "market_report": {
+      "overview": "Fredericksburg is one of Virginia's fastest-growing markets, anchored by its position as the premier DC commuter destination south of NoVA. The 340,000-person metro has been experiencing sustained population growth as DC-area workers seek affordable single-family housing while maintaining access to Northern Virginia employment centers via VRE and I-95 express lanes. Commercial real estate has tracked residential growth with a lag, creating opportunity across multifamily, retail, and industrial.",
+      "economy": "The Fredericksburg economy is fundamentally a DC commuter economy overlaid with a growing independent employment base. Mary Washington Healthcare anchors the local healthcare sector. University of Mary Washington provides educational employment and student demand. Amazon's regional distribution facility and a growing technology and government contracting sector in Stafford County are building a local employer base independent of DC commuting. Population growth from DC spillover is the defining economic driver.",
+      "real_estate": "Commercial real estate fundamentals in Fredericksburg are among the strongest in Virginia outside of Northern Virginia proper. Multifamily vacancy of 5 percent and rent growth of 4.8 percent reflect sustained household formation from in-migration. Retail vacancy of 7.5 percent is tightening as population growth drives new household consumption. Industrial vacancy below 5 percent reflects e-commerce and regional distribution demand along I-95.",
+      "outlook": "Fredericksburg's outlook is strongly positive. The DC spillover dynamic is a long-term secular trend driven by Northern Virginia housing affordability. VRE commuter rail service to Union Station makes Fredericksburg a genuine DC alternative for professional households. Stafford County's technology and government contracting cluster is expanding the local employment base. CLS expects continued cap rate compression as institutional capital follows the population growth trajectory.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Fredericksburg from $1 million upward. Virginia's population growth fundamentals support competitive agency multifamily pricing. Industrial and retail assets on major growth corridors attract life insurance and CMBS interest.",
+      "cta": "Contact Commercial Lending Solutions to discuss Fredericksburg Virginia commercial real estate financing. Our DC-area lender relationships recognize Fredericksburg's growth story and structure financing that reflects the market's improving fundamentals."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Fredericksburg focuses on multifamily value-add in the Route 1 corridor and older Stafford County apartment communities. Sponsors are acquiring 1990s communities and repositioning for the in-migration tenant demographic. CLS structures 18 to 24 month bridge facilities sized for Virginia renovation timelines and a market where exit cap rates are compressing toward Northern Virginia levels.",
+      "permanent": "Permanent financing in Fredericksburg favors agency multifamily and CMBS for commercial assets. Fannie Mae and Freddie Mac DUS lenders are highly competitive, recognizing the population growth and DC commuter demand underpinning Fredericksburg's multifamily market. Life insurance companies lend on net-lease retail and industrial for national credit tenants.",
+      "construction": "Construction lending in Fredericksburg supports significant activity: suburban build-to-rent communities, Central Park district retail and hospitality, and Route 17 industrial development. CLS structures construction-to-permanent facilities through Virginia regional banks and national lenders active in Virginia growth markets.",
+      "sba": "SBA programs serve Fredericksburg's active small business community spanning healthcare, professional services, and population-growth-driven retail and hospitality. Mary Washington healthcare-affiliated practices and technology service firms are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive for Fredericksburg multifamily. The population growth thesis and DC commuter base drive occupancy underwriting confidence. Non-recourse 10-year fixed-rate loans with 30-year amortization at pricing reflecting Virginia's growth market premium.",
+      "cmbs": "CMBS serves Fredericksburg's stabilized retail, industrial, and hospitality assets. The Central Park district lifestyle center and Stafford County industrial parks attract conduit lender interest. Loan sizes from $3 million to $35 million."
+    },
+    "property_context": {
+      "multifamily": "Fredericksburg multifamily is the premier investment theme in the market. DC commuter demand, in-migration population growth, and the VRE rail access premium create sustained occupancy. Cap rates of 5.75 to 7 percent for Class B product are compressing toward Northern Virginia levels as out-of-market capital recognizes the growth story.",
+      "industrial": "Industrial in Fredericksburg is a standout performer. I-95 corridor positioning, Amazon's established distribution presence, and e-commerce demand for last-mile facilities in the DC-to-Richmond corridor drive strong absorption. Vacancy below 5 percent and rising rents attract both local and institutional industrial capital.",
+      "office": "Office demand in Fredericksburg is growing with the local employment base. Technology and government contracting firms in Stafford County's Quantico corporate park and Celebrate Virginia South are expanding. Medical office near Mary Washington Hospital maintains strong occupancy. General suburban office is benefiting from DC commuters working locally one to two days per week.",
+      "retail": "Retail in Fredericksburg serves a rapidly growing consumer base with above-average household incomes driven by DC commuters. The Central Park lifestyle center is one of Virginia's most successful open-air retail destinations. Route 3 and Plank Road corridors serve the core Fredericksburg trade area. Cosner's Corner in Spotsylvania serves the southern suburbs.",
+      "hospitality": "Fredericksburg's hospitality market benefits from Civil War heritage tourism, University of Mary Washington events, and business travel from expanding Stafford County employers. The historic downtown boutique hotel market is growing. I-95 corridor limited-service hotels serve highway and construction-workforce demand.",
+      "mixed_use": "Mixed-use development in Fredericksburg is concentrated in the downtown historic district along Caroline Street and in the Celebrate Virginia development north of the city. Downtown adaptive reuse of historic commercial buildings for restaurant, retail, and residential uses benefits from Virginia Historic Tax Credits. Celebrate Virginia's mixed-use town center model is the template for Stafford County growth corridor development."
+    }
+  },
+  "burlington-vt": {
+    "city": "Burlington",
+    "state": "VT",
+    "stats": {
+      "multifamily_vacancy": "3.8%",
+      "multifamily_cap_rate": "5.50%-7.00%",
+      "industrial_vacancy": "5.0%",
+      "industrial_cap_rate": "6.25%-7.50%",
+      "office_vacancy": "10.0%",
+      "office_cap_rate": "6.75%-8.25%",
+      "retail_vacancy": "7.5%",
+      "retail_cap_rate": "6.25%-7.75%",
+      "hospitality_vacancy": "28.0%",
+      "hospitality_cap_rate": "7.50%-9.00%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "6.00%-7.25%",
+      "job_growth": "1.5%",
+      "population_growth": "0.8%",
+      "rent_growth": "5.0%",
+      "median_asking_rent": "$1,750",
+      "major_employers": "University of Vermont, UVM Medical Center, GlobalFoundries (Essex Junction), Vermont state government, MyWebGrocer, Seventh Generation, Community College of Vermont, Fletcher Allen Health Care",
+      "top_submarkets": "Downtown Burlington, South Burlington, Williston, Essex Junction, Shelburne, Colchester, Winooski, South End Arts District"
+    },
+    "market_report": {
+      "overview": "Burlington is New England's smallest major market but punches well above its weight in commercial real estate fundamentals. The 230,000-person metro anchored by the University of Vermont and UVM Medical Center has a knowledge economy profile typically associated with much larger cities, with a technology sector, biomedical research base, and outdoor recreation economy that drives demographic desirability far exceeding the market's population.",
+      "economy": "The University of Vermont and UVM Medical Center together employ more than 10,000 people and generate an economic impact exceeding $1.5 billion annually. GlobalFoundries' semiconductor fabrication facility in Essex Junction employs more than 2,500 people in high-wage advanced manufacturing. Vermont state government provides stable public-sector employment. The clean technology and natural products sectors (Seventh Generation, King Arthur Baking, Keurig Dr Pepper's Green Mountain brands) represent a growing private employer base.",
+      "real_estate": "Burlington's commercial real estate fundamentals are exceptional for a market of this size. Multifamily vacancy of 3.8 percent is among the tightest in New England, with rent growth of 5 percent driven by UVM enrollment growth and in-migration from Boston and New York. Office demand from UVM research commercialization and technology firms is steady. The Church Street Marketplace retail district maintains near-full occupancy as one of New England's most successful pedestrian retail streets.",
+      "outlook": "Burlington's outlook is strongly positive. GlobalFoundries' long-term commitment to the Essex Junction fabrication facility anchors the private sector. UVM's capital expansion program ensures ongoing construction and healthcare real estate demand. The outdoor recreation economy (skiing, lake activities, cycling) continues to drive residential demand from remote-working professionals. The severe housing undersupply relative to demand creates sustained rent growth pressure.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Burlington from $1 million upward. Vermont's strong market fundamentals attract institutional agency, life insurance, and CMBS lender interest in a market that is often underserved by national capital.",
+      "cta": "Contact Commercial Lending Solutions to discuss Burlington Vermont commercial real estate financing. Our New England lender relationships include institutions that recognize Burlington's unique combination of university anchor, advanced manufacturing, and lifestyle-driven demand."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Burlington focuses on multifamily value-add in Winooski, the South End Arts District, and Colchester. Sponsors are acquiring 1970s and 1980s apartment buildings at prices that reflect Vermont's challenging development environment and repositioning for the high-income UVM and tech sector tenant base. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Burlington commands some of New England's most competitive terms. Agency lenders recognize UVM's stabilizing influence and Vermont's housing undersupply. Life insurance companies lend on net-lease retail, medical office, and technology campus assets for creditworthy tenants. CMBS serves stabilized commercial assets.",
+      "construction": "Construction lending in Burlington is challenged by Vermont's permitting process and Act 250 environmental review, which can extend timelines significantly. UVM Medical Center expansion, technology office near GlobalFoundries, and infill residential in Winooski and South Burlington attract the most lender interest. CLS structures construction facilities sized with conservative permit-period interest reserves.",
+      "sba": "SBA programs serve Burlington's vibrant small business community spanning natural foods, outdoor gear, technology, and professional services. Vermont's entrepreneurial culture produces a steady pipeline of SBA-eligible owner-occupied real estate borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive for Burlington multifamily. The market's 3.8 percent vacancy rate and 5 percent rent growth make agency underwriting straightforward. Non-recourse 10-year fixed-rate loans with 30-year amortization at pricing reflecting New England's tight multifamily dynamics.",
+      "cmbs": "CMBS serves Burlington's stabilized retail, office, and commercial assets. Church Street Marketplace adjacent retail, South Burlington big-box corridor centers, and GlobalFoundries-adjacent commercial are natural conduit loan candidates. Loan sizes from $3 million to $25 million."
+    },
+    "property_context": {
+      "multifamily": "Burlington's multifamily market is the tightest in Vermont and among the tightest in New England. Vacancy of 3.8 percent reflects a housing crisis driven by UVM enrollment growth, in-migration, and Vermont's constrained development environment. Cap rates of 5.5 to 7 percent for Class B product reflect the premium for genuine supply constraint and strong rent growth.",
+      "industrial": "Industrial in Burlington is niche but tight. GlobalFoundries' semiconductor supply chain creates demand for precision manufacturing and logistics space. Vermont's geography and limited Interstate access constrain industrial supply, keeping vacancy low. Average rents are well above comparable New England secondary markets.",
+      "office": "Office demand in Burlington is UVM research, technology, and healthcare-driven. The UVM Innovation Hub and Farrell Street corridor anchor technology office demand. UVM Medical Center's administrative and outpatient expansion drives medical office absorption. The South End Arts District has emerged as a creative office hub.",
+      "retail": "The Church Street Marketplace is Burlington's crown jewel retail asset, a pedestrian mall with effectively zero vacancy and a waiting list for prime positions. South Burlington's Williston Road and Dorset Street corridors serve the suburban trade area with national retailers and restaurants. Burlington Town Center's redevelopment added residential above ground-floor retail.",
+      "hospitality": "Burlington's hospitality market benefits from UVM athletics and events, Lake Champlain leisure tourism, Vermont ski resort proximity (Stowe, Sugarbush, Bolton Valley), and a growing arts and music tourism draw (Higher Ground, Flynn Center). Summer and fall foliage seasons drive premium leisure demand. Boutique hotel development downtown has outperformed limited-service brands significantly on ADR.",
+      "mixed_use": "Burlington's South End Arts District and the Winooski One Mill redevelopment are the templates for New England adaptive reuse mixed-use success. The former granite mill and industrial buildings converted to residential, retail, and creative office generate premium rents. Downtown Burlington's Church Street and Battery Street corridors maintain dense mixed-use activity."
+    }
+  },
+  "evansville": {
+    "city": "Evansville",
+    "state": "IN",
+    "stats": {
+      "multifamily_vacancy": "7.5%",
+      "multifamily_cap_rate": "7.00%-8.75%",
+      "industrial_vacancy": "6.5%",
+      "industrial_cap_rate": "6.75%-8.25%",
+      "office_vacancy": "15.5%",
+      "office_cap_rate": "7.75%-9.25%",
+      "retail_vacancy": "10.5%",
+      "retail_cap_rate": "7.25%-8.75%",
+      "hospitality_vacancy": "37.0%",
+      "hospitality_cap_rate": "8.25%-9.75%",
+      "mixed_use_vacancy": "9.0%",
+      "mixed_use_cap_rate": "7.25%-8.75%",
+      "job_growth": "1.0%",
+      "population_growth": "0.3%",
+      "rent_growth": "2.8%",
+      "median_asking_rent": "$950",
+      "major_employers": "Deaconess Health System, St. Vincent Evansville (Ascension), Toyota Manufacturing Indiana (Princeton, nearby), Berry Global Group, Shoe Carnival, Old National Bank, University of Southern Indiana, University of Evansville",
+      "top_submarkets": "East Side Evansville, Lloyd Expressway corridor, North Green River Road, Newburgh, Boonville, Warrick County, Vanderburgh County, Downtown Evansville"
+    },
+    "market_report": {
+      "overview": "Evansville anchors the Indiana-Illinois-Kentucky tri-state region at the bend of the Ohio River, a market of approximately 315,000 with a diversified manufacturing, healthcare, and regional retail base. The market has avoided the severe population decline seen in other Rust Belt peers, maintaining steady if modest growth while Toyota's Princeton plant (45 miles north) provides significant economic uplift.",
+      "economy": "Deaconess Health System and Ascension St. Vincent are the two dominant healthcare employers, driving consistent medical office and outpatient real estate demand. Berry Global Group, one of the world's largest plastic packaging manufacturers, is headquartered in Evansville and provides stable advanced manufacturing employment. Toyota's Princeton plant generates substantial supplier chain demand in the regional economy. Old National Bank and Shoe Carnival represent significant financial and retail headquarter employment.",
+      "real_estate": "Commercial real estate in Evansville offers stable yield-focused investment characteristics. Cap rates of 7 to 8.75 percent for multifamily and 7.25 to 8.75 percent for retail provide income returns that are increasingly attractive to investors priced out of Indianapolis and Louisville. Industrial along Lloyd Expressway and US-41 serves the regional manufacturing and distribution economy.",
+      "outlook": "Evansville's outlook is stable to modestly positive. Healthcare system expansion by both Deaconess and Ascension is the primary commercial real estate demand driver. Warrick County's suburban growth corridor in Newburgh is the most dynamic residential submarket. Berry Global's headquarters presence and Toyota's regional influence anchor manufacturing employment. The University of Southern Indiana's enrollment growth supports student housing demand.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Evansville from $1 million upward. Healthcare-adjacent office, agency multifamily, and industrial along major corridors are the most financeable asset classes. CMBS and regional bank programs serve the balance of commercial real estate needs.",
+      "cta": "Contact Commercial Lending Solutions to discuss Evansville Indiana commercial real estate financing. Our Midwest lender relationships cover the tri-state Indiana-Illinois-Kentucky region for assets across all commercial property types."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Evansville focuses on multifamily value-add in the East Side and Lloyd Expressway submarkets, and select downtown adaptive reuse projects. Sponsors are acquiring 1970s and 1980s apartment communities at per-unit prices well below replacement cost and renovating for the healthcare and manufacturing workforce tenant base. CLS structures 12 to 18 month bridge facilities.",
+      "permanent": "Permanent financing in Evansville leans on agency multifamily and CMBS for commercial assets. Fannie Mae small balance and standard programs are active for stabilized apartment communities. Healthcare-adjacent net-lease and industrial assets attract CMBS execution at loan sizes from $2 million.",
+      "construction": "Construction lending in Evansville supports Deaconess and Ascension medical campus expansion, University of Southern Indiana student housing, and industrial build-to-suit for Berry Global suppliers. CLS structures construction-to-permanent facilities through Indiana community banks and regional lenders with Midwest manufacturing market experience.",
+      "sba": "SBA programs serve Evansville's diverse small business community spanning healthcare services, manufacturing support, and professional services. Berry Global supplier firms and healthcare provider practices are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac small balance programs efficiently cover Evansville multifamily assets 5 units and above. High cap rates provide DSCR coverage that simplifies agency underwriting for stabilized assets. Non-recourse 10-year fixed-rate terms with 30-year amortization.",
+      "cmbs": "CMBS serves Evansville's stabilized retail, industrial, and commercial assets. Lloyd Expressway corridor retail, East Side shopping centers, and regional industrial facilities attract conduit lender interest. Loan sizes from $2 million to $20 million."
+    },
+    "property_context": {
+      "multifamily": "Evansville multifamily offers Midwest value-add yield for investors seeking above-market returns. Cap rates of 7 to 8.75 percent for Class B product at per-unit prices of $40,000 to $70,000 generate compelling cash-on-cash yields. The healthcare and manufacturing workforce provides stable tenancy. Rent growth of 2.8 percent is modest but consistent.",
+      "industrial": "Industrial in Evansville serves the regional manufacturing and distribution economy anchored by Berry Global and the Toyota supplier chain. US-41 and I-164 access positions Evansville facilities for the Ohio Valley distribution network. Average rents are affordable relative to Indianapolis and Louisville, attracting cost-sensitive tenants.",
+      "office": "Office demand in Evansville is healthcare and professional services-driven. Medical office near Deaconess Gateway Campus and Ascension St. Vincent facilities maintains strong occupancy. Downtown office faces elevated vacancy, with the Civic Center complex providing a government tenancy anchor. Suburban professional office along Lloyd Expressway is the primary private sector node.",
+      "retail": "Retail in Evansville serves a stable consumer base across the tri-state region. The Eastland Mall trade area and Green River Road corridor anchor regional retail. Newburgh's growing suburban corridor in Warrick County is the most active retail development zone. Grocery-anchored community centers with Schnucks and Meijer anchors are the most defensible investment product.",
+      "hospitality": "Evansville's hospitality market is convention and gaming-driven. The Old National Events Plaza convention center and the Tropicana Evansville casino anchor downtown hotel demand. Toyota supplier visits and Deaconess Healthcare medical travel provide additional occupancy. RevPAR is stable at levels reflecting a secondary Midwest manufacturing market.",
+      "mixed_use": "Downtown Evansville's Main Street and the Haynie's Corner Arts District are the centers of mixed-use activity. Adaptive reuse of historic commercial buildings for restaurant, retail, and residential uses has attracted local developer investment. The Evansville Riverfront development and the Ford Center arena anchor adjacent mixed-use demand."
+    }
+  },
+  "youngstown": {
+    "city": "Youngstown",
+    "state": "OH",
+    "stats": {
+      "multifamily_vacancy": "9.0%",
+      "multifamily_cap_rate": "8.00%-10.00%",
+      "industrial_vacancy": "8.5%",
+      "industrial_cap_rate": "7.75%-9.50%",
+      "office_vacancy": "19.0%",
+      "office_cap_rate": "9.00%-11.00%",
+      "retail_vacancy": "13.5%",
+      "retail_cap_rate": "8.25%-10.00%",
+      "hospitality_vacancy": "40.0%",
+      "hospitality_cap_rate": "9.50%-11.50%",
+      "mixed_use_vacancy": "12.0%",
+      "mixed_use_cap_rate": "8.50%-10.50%",
+      "job_growth": "0.3%",
+      "population_growth": "-0.9%",
+      "rent_growth": "1.5%",
+      "median_asking_rent": "$750",
+      "major_employers": "Mercy Health (Bon Secours), St. Elizabeth Health Center, Youngstown State University, Mahoning County government, General Motors (nearby Lordstown), Phar-Mor Center, Vallourec Star, Turning Technologies",
+      "top_submarkets": "Boardman, Canfield, Poland, Austintown, Niles, Warren, Howland Township, downtown Youngstown"
+    },
+    "market_report": {
+      "overview": "Youngstown anchors the Mahoning Valley in northeastern Ohio, a market of approximately 535,000 that has experienced significant population decline from its steel industry peak but maintains meaningful healthcare, education, and regional manufacturing assets. Cap rates among the highest in Ohio attract value-focused investors willing to underwrite a market in long-term structural transition.",
+      "economy": "Mercy Health and St. Elizabeth Health Center are the metro's largest private employers, providing healthcare employment that is structurally resistant to economic cycles. Youngstown State University employs more than 1,000 faculty and staff and provides student housing demand. General Motors' Lordstown facilities, though reduced from prior employment levels, maintain significant regional economic influence. Vallourec Star's steel tube operations represent the remnant of the region's steel heritage. Turning Technologies has emerged as a notable technology employer.",
+      "real_estate": "Commercial real estate in Youngstown offers some of the highest cap rates in Ohio, with multifamily trading at 8 to 10 percent and net-lease retail at 8.25 to 10 percent for stabilized suburban product. Suburban Boardman, Canfield, and Poland offer meaningfully better fundamentals than the urban core. Industrial along I-76 and the Ohio Turnpike benefits from Ohio's manufacturing and logistics economy.",
+      "outlook": "Youngstown's outlook is challenging in aggregate but with pockets of stability. Suburban Boardman and Poland Township are growing relative to the urban core. Healthcare system expansion by Mercy Health and St. Elizabeth is the most reliable commercial real estate demand driver. The Youngstown Business Incubator has produced technology spin-offs that represent a nascent economic diversification. Investors focused exclusively on suburban medical office and net-lease retail can find compelling yield.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in the Youngstown metro from $1 million upward with strong focus on suburban Mahoning County assets. Healthcare-adjacent office, net-lease retail, and suburban multifamily are the most financeable asset classes for institutional lenders.",
+      "cta": "Contact Commercial Lending Solutions to discuss Youngstown Ohio commercial real estate financing. Our Midwest lender relationships include institutions that finance stabilized suburban assets in northeastern Ohio at cap rates that generate real yield."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in the Youngstown metro targets suburban multifamily value-add in Boardman and Poland Township, where 1980s and 1990s garden complexes trade at per-unit prices well below $30,000. Sponsors renovate and stabilize for the healthcare and university workforce tenant base. CLS structures 12 to 18 month bridge facilities sized conservatively for this high-yield market.",
+      "permanent": "Permanent financing in Youngstown focuses on CMBS for suburban commercial assets and Fannie Mae small balance for stabilized multifamily. High cap rates provide strong DSCR coverage that makes underwriting relatively straightforward for suburban assets with demonstrated occupancy.",
+      "construction": "Construction lending in Youngstown is focused on Mercy Health and St. Elizabeth medical campus expansion, Youngstown State University student housing, and industrial build-to-suit along I-76 and the Ohio Turnpike. CLS structures construction facilities through Ohio community banks and regional lenders.",
+      "sba": "SBA programs serve Youngstown's small business community spanning healthcare services, professional services, and light manufacturing. Mahoning Valley entrepreneurs in food, technology, and healthcare services are active SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae small balance programs cover suburban Youngstown multifamily assets. High cap rates produce strong DSCR coverage ratios that support agency underwriting for stabilized Boardman and Poland Township apartment communities.",
+      "cmbs": "CMBS serves suburban Youngstown's stabilized retail and commercial assets. Boardman's Market Street and Southern Park Mall area retail centers, along with industrial facilities along I-76, attract conduit lender consideration. Loan sizes from $2 million to $12 million."
+    },
+    "property_context": {
+      "multifamily": "Youngstown multifamily offers some of the highest cap rates in Ohio for investors comfortable with a post-industrial market. Suburban Boardman and Poland Township apartment communities at per-unit prices below $30,000 generate cash-on-cash yields of 12 to 15 percent for renovated and stabilized product. The healthcare and university workforce provides occupancy stability in suburban submarkets.",
+      "industrial": "Industrial in the Youngstown metro benefits from Ohio Turnpike and I-76 access and proximity to the Pittsburgh and Cleveland metro logistics networks. Legacy steel supply chain tenants are supplemented by regional distribution and light manufacturing operators. Average rents are among the lowest in Ohio, attracting cost-sensitive industrial users.",
+      "office": "Office vacancy in Youngstown is elevated at 19 percent, reflecting work-from-home trends and population decline reducing suburban professional employment. Medical office near Mercy Health and St. Elizabeth campuses is the most defensible office product. Youngstown State University's Williamson Hall administrative complex anchors downtown institutional office.",
+      "retail": "Retail in the Youngstown metro bifurcates between suburban Boardman's active Southern Park Mall trade area and challenged urban retail. Boardman's Market Street corridor maintains relatively healthy occupancy with national grocery anchors. Southern Park Mall itself has undergone significant remerchandising. Urban Youngstown retail faces the most difficult structural challenges.",
+      "hospitality": "Youngstown's hospitality market is sports and healthcare-driven. Youngstown State football games, the Covelli Centre arena, and Mercy Health medical travel provide demand. The newly renovated downtown boutique hotel market is modest but growing. Limited-service hotels in Boardman serve highway travelers and regional visitors.",
+      "mixed_use": "Downtown Youngstown's mixed-use revival is an ongoing effort centered on Federal Street and the Stambaugh Building corridor. The Youngstown Business Incubator has catalyzed technology tenant demand. Arts and cultural uses including the Youngstown Playhouse and Butler Institute of American Art anchor the cultural district adjacent to mixed-use development."
+    }
+  },
+  "canton": {
+    "city": "Canton",
+    "state": "OH",
+    "stats": {
+      "multifamily_vacancy": "8.5%",
+      "multifamily_cap_rate": "7.50%-9.25%",
+      "industrial_vacancy": "7.5%",
+      "industrial_cap_rate": "7.25%-8.75%",
+      "office_vacancy": "17.0%",
+      "office_cap_rate": "8.25%-10.00%",
+      "retail_vacancy": "12.0%",
+      "retail_cap_rate": "7.75%-9.25%",
+      "hospitality_vacancy": "39.0%",
+      "hospitality_cap_rate": "8.75%-10.50%",
+      "mixed_use_vacancy": "10.5%",
+      "mixed_use_cap_rate": "8.00%-9.75%",
+      "job_growth": "0.5%",
+      "population_growth": "-0.5%",
+      "rent_growth": "2.0%",
+      "median_asking_rent": "$800",
+      "major_employers": "Aultman Health Foundation, Mercy Medical Center Canton, Stark County government, Timken Company, Republic Steel (AK Steel), Pro Football Hall of Fame, Hall of Fame Village, Diebold Nixdorf, Stark State College",
+      "top_submarkets": "Jackson Township, Plain Township, Perry Township, Massillon, North Canton, downtown Canton, Alliance, Louisville"
+    },
+    "market_report": {
+      "overview": "Canton anchors Stark County in northeast Ohio, a market of approximately 405,000 anchored by healthcare, advanced manufacturing, and a unique tourism draw from the Pro Football Hall of Fame. The Hall of Fame Village development has added a significant hospitality and entertainment demand driver to what is otherwise a stable, yield-focused industrial and healthcare market.",
+      "economy": "Aultman Health Foundation and Mercy Medical Center are the dominant employers, driving medical office and outpatient healthcare real estate demand. The Timken Company, one of the world's largest manufacturers of bearings and steel products, is headquartered in Canton and provides advanced manufacturing employment across the region. Diebold Nixdorf, a major financial technology company, employs significant technology and professional services workers in North Canton. The Pro Football Hall of Fame and Hall of Fame Village development represent a growing hospitality and entertainment economic layer.",
+      "real_estate": "Commercial real estate in Canton offers high cap rates and stable fundamentals in the suburban submarkets of Jackson Township and Plain Township. Cap rates of 7.5 to 9.25 percent for multifamily and 7.75 to 9.25 percent for retail reflect the market's secondary Midwest positioning. Industrial in the Timken and AK Steel supply chain remains active. The Hall of Fame Village hospitality and entertainment complex has created new commercial demand in the downtown and stadium area.",
+      "outlook": "Canton's outlook is cautiously stable. Hall of Fame Village's Phase 2 and Phase 3 development represents significant capital investment in the downtown area that will catalyze adjacent commercial activity. Healthcare system expansion by Aultman and Mercy provides consistent medical office demand. Timken's continued manufacturing presence anchors industrial employment. Suburban Jackson Township growth supports residential and retail demand.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Canton from $1 million upward. Healthcare adjacent office, suburban net-lease retail, and industrial are the most active financing categories. High cap rates create favorable DSCR coverage for both bridge and permanent loan structures.",
+      "cta": "Contact Commercial Lending Solutions to discuss Canton Ohio commercial real estate financing. Our Midwest lender relationships cover Stark County assets across property types at cap rates that generate genuine income returns."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Canton targets multifamily value-add in Jackson Township and Plain Township, where 1980s and 1990s apartment communities trade at per-unit prices well below replacement cost. Sponsors renovate and stabilize for the healthcare and manufacturing workforce tenant base. CLS structures 12 to 18 month bridge facilities.",
+      "permanent": "Permanent financing in Canton uses Fannie Mae small balance for multifamily and CMBS for retail and commercial assets. High cap rates support strong DSCR coverage ratios that make underwriting straightforward for suburban stabilized assets. Life insurance companies lend selectively on healthcare net-lease and Timken-tenanted industrial.",
+      "construction": "Construction lending in Canton supports Aultman and Mercy medical campus expansion, Hall of Fame Village Phase 2 hospitality development, and industrial build-to-suit for Timken and AK Steel suppliers. CLS structures construction facilities through Ohio regional banks and national lenders.",
+      "sba": "SBA programs serve Canton's small business community spanning healthcare services, automotive and manufacturing supply, and professional services. Diebold Nixdorf supplier firms and healthcare provider practices are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae small balance programs cover Canton multifamily assets in suburban Jackson and Plain Townships. DSCR coverage from high cap rates supports agency underwriting for stabilized assets. Non-recourse 10-year fixed-rate terms with 30-year amortization.",
+      "cmbs": "CMBS serves Canton's stabilized retail and commercial assets. Jackson Township's Belden Village corridor retail centers and industrial facilities along I-77 attract conduit lender interest. Loan sizes from $2 million to $15 million."
+    },
+    "property_context": {
+      "multifamily": "Canton multifamily offers strong cash-on-cash yields for investors in suburban Stark County. Jackson Township and Plain Township apartment communities at per-unit prices of $30,000 to $55,000 generate compelling returns with the healthcare and manufacturing workforce tenant base providing occupancy stability. Cap rates of 7.5 to 9.25 percent are among the highest in Ohio.",
+      "industrial": "Canton's industrial market is anchored by Timken's bearing and specialty steel operations and the regional manufacturing supply chain. I-77 corridor positioning supports regional distribution. Average rents are affordable relative to Cleveland and Akron, attracting cost-sensitive industrial users. Vacancy is elevated in older urban industrial but tighter in suburban business park product.",
+      "office": "Office in Canton is healthcare and professional services-driven. Medical office near Aultman Hospital and Mercy Medical Center maintains sub-10 percent vacancy. Diebold Nixdorf's North Canton campus anchors suburban technology office. Downtown Canton office faces elevated vacancy consistent with other post-industrial Midwest markets.",
+      "retail": "Retail in Canton is anchored by the Belden Village corridor in Jackson Township, one of northeast Ohio's strongest retail trade areas. National retailers and restaurants maintain productive occupancy in the Belden Village area. Hall of Fame Village's retail and entertainment components have added a new downtown retail demand generator. Suburban grocery-anchored centers are the most stable investment retail product.",
+      "hospitality": "The Pro Football Hall of Fame and Hall of Fame Village are Canton's defining hospitality assets. Enshrinement Weekend in August drives among the highest hotel demand events in Ohio outside of Columbus. Hall of Fame Village's hotel, waterpark, and arena are designed to extend the hospitality season year-round. Aultman and Mercy medical travel provides steady hospitality demand outside of event peaks.",
+      "mixed_use": "Hall of Fame Village represents Canton's largest mixed-use development initiative, combining hotel, retail, entertainment, and sports facilities adjacent to the Pro Football Hall of Fame. Downtown Canton's Second Street NW arts district has attracted restaurant and gallery investment. Adaptive reuse of historic commercial buildings for loft residential and creative uses is gaining momentum."
+    }
   }
 }
