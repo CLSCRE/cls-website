@@ -6543,5 +6543,437 @@
       "hospitality": "The Pro Football Hall of Fame and Hall of Fame Village are Canton's defining hospitality assets. Enshrinement Weekend in August drives among the highest hotel demand events in Ohio outside of Columbus. Hall of Fame Village's hotel, waterpark, and arena are designed to extend the hospitality season year-round. Aultman and Mercy medical travel provides steady hospitality demand outside of event peaks.",
       "mixed_use": "Hall of Fame Village represents Canton's largest mixed-use development initiative, combining hotel, retail, entertainment, and sports facilities adjacent to the Pro Football Hall of Fame. Downtown Canton's Second Street NW arts district has attracted restaurant and gallery investment. Adaptive reuse of historic commercial buildings for loft residential and creative uses is gaining momentum."
     }
+  },
+  "flint": {
+    "city": "Flint",
+    "state": "MI",
+    "stats": {
+      "multifamily_vacancy": "10.5%",
+      "multifamily_cap_rate": "8.50%-11.00%",
+      "industrial_vacancy": "9.0%",
+      "industrial_cap_rate": "8.00%-10.00%",
+      "office_vacancy": "21.0%",
+      "office_cap_rate": "9.00%-11.50%",
+      "retail_vacancy": "14.5%",
+      "retail_cap_rate": "8.50%-10.50%",
+      "hospitality_vacancy": "43.0%",
+      "hospitality_cap_rate": "10.00%-12.00%",
+      "mixed_use_vacancy": "13.0%",
+      "mixed_use_cap_rate": "9.00%-11.00%",
+      "job_growth": "0.2%",
+      "population_growth": "-1.2%",
+      "rent_growth": "1.8%",
+      "median_asking_rent": "$700",
+      "major_employers": "McLaren Flint (McLaren Health Care), Hurley Medical Center, General Motors (corporate and manufacturing), University of Michigan-Flint, Kettering University, Genesee County government, Diplomat Pharmacy, Citizens Republic Bancorp",
+      "top_submarkets": "Grand Blanc, Fenton, Flint Township, Burton, Davison, Swartz Creek, Clio, downtown Flint"
+    },
+    "market_report": {
+      "overview": "Flint anchors Genesee County in east-central Michigan, a market of approximately 400,000 that has confronted severe post-industrial and infrastructure challenges over the past two decades. Despite these headwinds, the metro retains meaningful healthcare, higher education, and General Motors-related manufacturing assets, and select suburban submarkets in Grand Blanc and Fenton offer commercial real estate fundamentals substantially better than market-level statistics suggest.",
+      "economy": "General Motors maintains a substantial presence in Flint through the Flint Assembly Complex and related operations, though the workforce is a fraction of historical peaks. McLaren Flint and Hurley Medical Center are the two dominant healthcare employers, anchoring a healthcare economy that is structurally resilient. University of Michigan-Flint and Kettering University provide educational employment and student housing demand. The Diplomat Pharmacy headquarters (now part of UnitedHealth) represents the most significant private-sector corporate employer outside healthcare and manufacturing.",
+      "real_estate": "Commercial real estate in Flint offers some of the highest cap rates in Michigan for investors comfortable with a challenging urban core market. Suburban Grand Blanc and Fenton offer meaningfully better fundamentals, with multifamily vacancy well below the metro average and retail performing at levels consistent with healthy suburban Michigan markets. Cap rates of 8.5 to 11 percent for urban multifamily reflect genuine risk premiums. Suburban net-lease retail anchored by national grocers in Grand Blanc is the most institutional-quality product.",
+      "outlook": "Flint's outlook is bifurcated by submarket. Grand Blanc Township, Fenton, and Swartz Creek are growing suburban communities with solid commercial fundamentals independent of the Flint urban core story. General Motors' ongoing manufacturing commitment and McLaren Health Care's clinical expansion provide economic anchors. The Flint water crisis recovery investment is channeling substantial public capital into infrastructure that could catalyze longer-term private investment.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in the Flint metro from $1 million upward with a strong focus on suburban Grand Blanc and Fenton assets. Healthcare-adjacent office, net-lease retail, and suburban multifamily are the most financeable asset classes for institutional lenders.",
+      "cta": "Contact Commercial Lending Solutions to discuss Flint Michigan commercial real estate financing. Our Midwest lender relationships cover suburban Genesee County assets where fundamentals support institutional lending at compelling cap rates."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in the Flint metro focuses on suburban multifamily value-add in Grand Blanc and Flint Township, where well-located 1990s apartment communities offer renovation upside with healthcare and university workforce tenants. CLS structures 12 to 18 month bridge facilities sized conservatively for this high-yield market.",
+      "permanent": "Permanent financing in the Flint metro uses Fannie Mae small balance programs for stabilized suburban multifamily and CMBS for suburban retail. High cap rates provide DSCR coverage that simplifies agency underwriting for Grand Blanc and Fenton apartment communities. Life insurance companies lend selectively on McLaren-adjacent healthcare net-lease.",
+      "construction": "Construction lending in the Flint metro focuses on McLaren Health Care expansion projects, University of Michigan-Flint student housing, and Grand Blanc suburban commercial development. CLS structures construction facilities through Michigan community banks and regional lenders with east-central Michigan experience.",
+      "sba": "SBA programs serve Flint's small business community spanning healthcare services, automotive supply, and professional services. Kettering University-affiliated engineering and manufacturing firms are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae small balance programs cover suburban Flint metro multifamily in Grand Blanc and Fenton. High cap rates produce strong DSCR coverage ratios that support agency underwriting for stabilized assets. Non-recourse 10-year fixed-rate terms.",
+      "cmbs": "CMBS serves suburban Flint's stabilized retail and commercial assets. Grand Blanc's Miller Road corridor and Fenton's US-23 retail centers attract conduit lender interest at loan sizes from $2 million."
+    },
+    "property_context": {
+      "multifamily": "Flint metro multifamily investment requires disciplined submarket selection. Suburban Grand Blanc and Flint Township apartment communities at per-unit prices of $30,000 to $55,000 offer cap rates of 8 to 10 percent with healthcare and manufacturing workforce occupancy. Urban Flint product carries significantly higher risk premiums and requires local operational expertise.",
+      "industrial": "Industrial in the Flint metro serves the automotive supply chain and regional distribution economy. GM's Flint Assembly complex and related parts operations create steady industrial demand. I-75 and I-69 access supports regional logistics positioning. Average rents for warehouse and manufacturing space are competitive for cost-sensitive automotive and industrial tenants.",
+      "office": "Office vacancy in Flint is elevated at 21 percent across the metro, with suburban Grand Blanc and medical corridors near McLaren and Hurley substantially outperforming the downtown average. Medical office is the most defensible product. Kettering University's technology transfer activities support modest technology office demand.",
+      "retail": "Retail in the Flint metro is strongest in suburban Grand Blanc and Fenton, where population growth and income demographics support national retailer and restaurant productivity. The Genesee Valley Center trade area in Flint Township anchors regional retail. Urban Flint retail faces the most significant challenges with substantial vacancy in older commercial corridors.",
+      "hospitality": "Flint's hospitality market is automotive business travel, healthcare-related medical travel, and highway-adjacent leisure demand. Grand Blanc Township near I-75 supports the strongest hotel performance. Limited-service brands near Kettering University and McLaren Flint serve university and medical travel demand.",
+      "mixed_use": "Downtown Flint's Buckham Alley arts district and the Capitol Theatre area represent the most active mixed-use investment zones. Adaptive reuse of historic commercial buildings for restaurant, gallery, and creative uses has attracted philanthropic and community development capital. The Flint Cultural Center campus anchors institutional mixed-use demand."
+    }
+  },
+  "kalamazoo": {
+    "city": "Kalamazoo",
+    "state": "MI",
+    "stats": {
+      "multifamily_vacancy": "6.0%",
+      "multifamily_cap_rate": "6.50%-8.00%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "6.50%-7.75%",
+      "office_vacancy": "13.0%",
+      "office_cap_rate": "7.25%-8.75%",
+      "retail_vacancy": "8.5%",
+      "retail_cap_rate": "6.75%-8.25%",
+      "hospitality_vacancy": "32.0%",
+      "hospitality_cap_rate": "7.75%-9.25%",
+      "mixed_use_vacancy": "7.5%",
+      "mixed_use_cap_rate": "6.75%-8.25%",
+      "job_growth": "1.5%",
+      "population_growth": "0.7%",
+      "rent_growth": "3.5%",
+      "median_asking_rent": "$1,100",
+      "major_employers": "Pfizer (pharmaceutical manufacturing), Stryker Corporation (headquarters), Kalamazoo College, Western Michigan University, Bronson Healthcare, Ascension Borgess, Consumers Energy, Bell's Brewery (Kalamazoo Brewing)",
+      "top_submarkets": "Portage, Texas Township, Oshtemo Township, Kalamazoo township, downtown Kalamazoo, Vicksburg, Galesburg, Battle Creek corridor"
+    },
+    "market_report": {
+      "overview": "Kalamazoo is one of Michigan's most economically vibrant secondary markets, home to Stryker Corporation's global headquarters and a deep pharmaceutical and life sciences manufacturing base anchored by Pfizer. The 265,000-person metro punches well above its weight in commercial real estate fundamentals, with healthcare, higher education, and advanced manufacturing providing an employment base that insulates the market from cyclical downturns.",
+      "economy": "Stryker Corporation, a global medical technology company with $19 billion in annual revenue, is headquartered in Kalamazoo and is the metro's most influential private employer. Pfizer's pharmaceutical manufacturing facilities in Kalamazoo have operated for decades and produce vaccines and pharmaceuticals distributed globally. Bronson Healthcare and Ascension Borgess are the leading healthcare systems. Western Michigan University enrolls approximately 23,000 students and employs more than 3,000 faculty and staff.",
+      "real_estate": "Kalamazoo's commercial real estate fundamentals are strong relative to its size and Michigan peer markets. Multifamily vacancy of 6 percent and 3.5 percent rent growth reflect genuine housing demand from the Stryker, Pfizer, and university workforce. Industrial vacancy below 6 percent is driven by life sciences and manufacturing supply chain demand. Portage and Texas Township are the primary suburban commercial growth corridors.",
+      "outlook": "Kalamazoo's outlook is positive. Stryker's ongoing expansion, including a significant headquarters campus investment, anchors the high-wage employment base. Pfizer's continued pharmaceutical manufacturing commitment provides industrial demand stability. Western Michigan University's medical school partnership with Stryker is deepening the healthcare and life sciences cluster. The Kalamazoo Promise scholarship program has improved public school quality and attracted family in-migration.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Kalamazoo from $1 million upward. Life sciences and healthcare-adjacent real estate, agency multifamily, and industrial supporting the Stryker and Pfizer supply chains are the most active financing categories. Institutional lenders recognize Kalamazoo's Stryker anchor premium.",
+      "cta": "Contact Commercial Lending Solutions to discuss Kalamazoo Michigan commercial real estate financing. Our Midwest lender relationships include institutions that recognize the Stryker and Pfizer anchor effect on this market's commercial real estate fundamentals."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Kalamazoo focuses on multifamily value-add in Kalamazoo Township and Portage, where 1970s and 1980s apartment communities offer renovation upside with the university and life sciences workforce tenant base. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Kalamazoo favors agency multifamily and CMBS for commercial assets. Fannie Mae DUS lenders recognize the Stryker and Pfizer employment anchor and offer competitive terms for Kalamazoo apartment communities. Life insurance companies lend on life sciences and healthcare-adjacent office for creditworthy tenants.",
+      "construction": "Construction lending in Kalamazoo supports Stryker campus expansion, Western Michigan University student housing, Bronson Healthcare clinical expansion, and industrial build-to-suit for life sciences manufacturers. CLS structures construction-to-permanent facilities through Michigan regional banks.",
+      "sba": "SBA programs serve Kalamazoo's entrepreneurial small business community spanning craft brewing, technology, healthcare services, and professional services. WMU spinoff companies and craft beverage producers (Bell's Brewery, Arcadia Ales) reflect the market's entrepreneurial culture. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac DUS programs cover Kalamazoo multifamily efficiently. The Stryker and Pfizer employment anchor supports occupancy underwriting, and agency rates outperform local bank terms. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Kalamazoo's stabilized retail, office, and commercial assets. Portage's South Westnedge Avenue and Texas Township retail corridors attract conduit lender interest. Loan sizes from $3 million to $25 million."
+    },
+    "property_context": {
+      "multifamily": "Kalamazoo multifamily benefits from the Stryker, Pfizer, and WMU employment anchor creating sustained demand across income bands. Cap rates of 6.5 to 8 percent for Class B product in Portage and Kalamazoo Township are compelling relative to Grand Rapids and Lansing. The university student housing market is a distinct and active segment near WMU.",
+      "industrial": "Industrial in Kalamazoo is life sciences and manufacturing-driven. Pfizer's supply chain and Stryker's manufacturing operations create demand for specialized industrial and flex space. The Kalamazoo County industrial parks along I-94 serve regional distribution as well. Average rents for life sciences and manufacturing space command premiums over pure warehouse product.",
+      "office": "Office demand in Kalamazoo is anchored by Stryker's headquarter functions and the healthcare system administrative and clinical expansion. Downtown Kalamazoo's business district benefits from Stryker's corporate presence and the growing startup ecosystem around WMU. Medical office near Bronson and Borgess campuses maintains strong occupancy.",
+      "retail": "Retail in Kalamazoo serves the university and life sciences workforce consumer base. Portage's South Westnedge Avenue corridor is the primary suburban retail destination with national anchors and restaurants. Downtown Kalamazoo's Burdick Street and Bronson Park area support independent retail and dining. The Kalamazoo Mall area has been repositioned for non-traditional retail uses.",
+      "hospitality": "Kalamazoo's hospitality market benefits from Stryker and Pfizer business travel, Western Michigan University events (Broncos athletics, graduation), and craft beverage tourism. Bell's Brewery and the growing craft beer and spirits trail draw visitors from across Michigan and Indiana. Limited-service and boutique hotel supply has expanded to meet growing demand.",
+      "mixed_use": "Downtown Kalamazoo's Vine neighborhood and the Arcadia Creek Festival Place area anchor mixed-use investment. Adaptive reuse of historic commercial buildings for residential, restaurant, and creative office uses has been robust. The Kalamazoo Valley Museum and Henderson Castle areas attract boutique hospitality and mixed-use investment adjacent to cultural anchors."
+    }
+  },
+  "lansing": {
+    "city": "Lansing",
+    "state": "MI",
+    "stats": {
+      "multifamily_vacancy": "6.8%",
+      "multifamily_cap_rate": "6.75%-8.25%",
+      "industrial_vacancy": "6.2%",
+      "industrial_cap_rate": "6.75%-8.25%",
+      "office_vacancy": "15.0%",
+      "office_cap_rate": "7.50%-9.00%",
+      "retail_vacancy": "9.5%",
+      "retail_cap_rate": "7.00%-8.50%",
+      "hospitality_vacancy": "35.0%",
+      "hospitality_cap_rate": "8.00%-9.75%",
+      "mixed_use_vacancy": "8.5%",
+      "mixed_use_cap_rate": "7.00%-8.50%",
+      "job_growth": "1.2%",
+      "population_growth": "0.4%",
+      "rent_growth": "3.2%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "Michigan state government, Michigan State University, Sparrow Health System (Ascension), McLaren Greater Lansing, General Motors (Lansing Delta Township and Grand River Assembly), Jackson National Life Insurance, Consumers Energy",
+      "top_submarkets": "East Lansing, Okemos, Meridian Township, Delta Township, Downtown Lansing, DeWitt Township, Holt, Mason"
+    },
+    "market_report": {
+      "overview": "Lansing is Michigan's state capital and home to Michigan State University, a dual anchor that provides extraordinary employment stability across public-sector government and higher education. The 540,000-person metro has diversified beyond its automotive manufacturing heritage, with MSU's research enterprise, healthcare systems, and a financial services sector anchored by Jackson National Life Insurance adding private-sector depth.",
+      "economy": "Michigan state government employs more than 16,000 people in the Lansing area, creating a stable public-sector employment floor that insulates the market from private-sector cycles. Michigan State University, with approximately 50,000 students and 11,000 employees, is the second anchor, generating substantial healthcare, research, and student housing demand. General Motors' Lansing Delta Township and Grand River assembly plants maintain a meaningful automotive manufacturing presence. Jackson National Life Insurance provides significant financial services employment.",
+      "real_estate": "Commercial real estate fundamentals in Lansing reflect the government-university anchor premium. Multifamily vacancy of 6.8 percent and 3.2 percent rent growth are driven by MSU enrollment and state government employment growth. East Lansing and Meridian Township are the strongest commercial submarkets, benefiting from MSU proximity and high-income household demand. Industrial in Delta Township serves the GM supply chain and regional distribution.",
+      "outlook": "Lansing's outlook is stable to positive. Michigan state government employment is stable, and MSU's research and innovation agenda is attracting technology and life sciences capital. The MSU Innovation Center and LEAP Research and Innovation Park are developing a startup ecosystem that could diversify the employment base over time. GM's ongoing assembly plant investment ensures continued automotive manufacturing employment.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Lansing from $1 million upward. Government-anchored office, agency multifamily in East Lansing and Meridian Township, and industrial along the I-96 and US-127 corridors are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Lansing Michigan commercial real estate financing. Our team understands dual government-university anchor markets and structures loans that reflect the stability Michigan state government and MSU provide."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Lansing focuses on multifamily value-add in Holt, Delta Township, and the East Lansing graduate student market. Sponsors are acquiring 1970s and 1980s apartment communities and repositioning for the government and university workforce tenant base. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Lansing uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Agency lenders recognize the MSU and state government stability premium for East Lansing and Meridian Township apartment communities. Life insurance companies lend on government-leased office and MSU-adjacent net-lease.",
+      "construction": "Construction lending in Lansing supports MSU research park development, Sparrow Health clinical expansion, and GM supplier industrial build-to-suit in Delta Township. CLS structures construction-to-permanent facilities through Michigan regional banks and national lenders with university market experience.",
+      "sba": "SBA programs serve Lansing's small business community spanning technology startups, healthcare services, and professional services. MSU spinoff companies and state government vendor firms are active SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac DUS programs are highly active for East Lansing and Meridian Township multifamily. The MSU enrollment anchor supports occupancy underwriting, and agency rates compete effectively against local bank terms. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Lansing's stabilized retail, office, and industrial assets. Okemos and East Lansing retail corridors and Delta Township industrial parks attract conduit lender interest. Loan sizes from $3 million to $30 million."
+    },
+    "property_context": {
+      "multifamily": "Lansing multifamily is driven by MSU enrollment, state government employment, and the growing innovation economy workforce. East Lansing commands the tightest vacancy and highest rents, with cap rates compressing toward 6.75 percent for Class A assets. Suburban Meridian Township and Okemos offer slightly higher cap rates for similar quality fundamentals.",
+      "industrial": "Industrial in Lansing is automotive and logistics-driven. GM's Delta Township and Grand River plants anchor the supply chain. I-96 corridor industrial parks serve regional distribution. Average rents are competitive for Michigan secondary markets and attract cost-sensitive manufacturing and distribution tenants.",
+      "office": "Office fundamentals in Lansing bifurcate between government-leased (near full occupancy) and speculative suburban (elevated vacancy). Michigan state government's consolidated facilities and MSU's administrative campus anchor the most reliable office tenancy. Medical office near Sparrow and McLaren campuses maintains strong demand.",
+      "retail": "Retail in Lansing serves the government and university consumer base. Meridian Mall and the Okemos Road corridor are the primary regional retail destinations. The East Lansing downtown along Grand River Avenue serves the MSU student and faculty market with restaurants and independent retail maintaining near-full occupancy.",
+      "hospitality": "Lansing's hospitality market benefits from Michigan government business travel, MSU athletics (Spartan football and basketball attract regional visitors), and convention demand anchored by the Lansing Center. Limited-service brands along US-127 and I-496 serve highway travelers and university-related guests.",
+      "mixed_use": "Downtown Lansing's REO Town neighborhood and the Old Town arts district are the centers of mixed-use revival. Adaptive reuse of historic commercial buildings for restaurant, creative office, and residential loft uses has attracted private developer investment. The East Lansing downtown near the MSU campus supports dense mixed-use retail and residential development."
+    }
+  },
+  "green-bay": {
+    "city": "Green Bay",
+    "state": "WI",
+    "stats": {
+      "multifamily_vacancy": "5.8%",
+      "multifamily_cap_rate": "6.50%-8.00%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "6.25%-7.50%",
+      "office_vacancy": "12.0%",
+      "office_cap_rate": "7.00%-8.50%",
+      "retail_vacancy": "7.5%",
+      "retail_cap_rate": "6.75%-8.00%",
+      "hospitality_vacancy": "30.0%",
+      "hospitality_cap_rate": "7.50%-9.00%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "6.75%-8.25%",
+      "job_growth": "1.6%",
+      "population_growth": "0.8%",
+      "rent_growth": "4.0%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "Green Bay Packers, Schneider National, Associated Banc-Corp, Bellin Health, HSHS St. Vincent Hospital, Georgia-Pacific, Fincantieri Marinette Marine, University of Wisconsin-Green Bay",
+      "top_submarkets": "Allouez, Bellevue, Howard, Ashwaubenon, De Pere, Suamico, Pulaski, Oneida"
+    },
+    "market_report": {
+      "overview": "Green Bay is northeast Wisconsin's economic center, a market of approximately 320,000 anchored by a uniquely diversified economy spanning paper and packaging manufacturing, logistics, financial services, healthcare, and the global brand of the Green Bay Packers. The Packers' community ownership model and stadium anchor create a hospitality and retail demand driver unlike any other mid-size American market.",
+      "economy": "Schneider National, one of North America's largest truckload carriers, is headquartered in Green Bay and anchors the logistics sector. Associated Banc-Corp provides financial services employment. Georgia-Pacific's tissue and packaging operations represent the remnant of the region's deep paper industry heritage. Bellin Health and HSHS St. Vincent anchor the healthcare sector. Fincantieri Marinette Marine's defense shipbuilding contracts provide advanced manufacturing employment. The Green Bay Packers generate economic activity estimated at over $300 million annually.",
+      "real_estate": "Green Bay's commercial real estate fundamentals are healthy and improving. Multifamily vacancy of 5.8 percent and 4 percent rent growth reflect genuine housing undersupply relative to job growth. Industrial vacancy below 5 percent reflects the logistics and manufacturing demand from Schneider, Georgia-Pacific, and the regional supply chain. The Ashwaubenon and Bellevue suburban corridors are the most active commercial development zones.",
+      "outlook": "Green Bay's outlook is positive. Schneider National's technology investment in autonomous and electric fleet infrastructure creates ongoing real estate demand. The US Navy's ongoing investment in Fincantieri Marinette Marine's shipbuilding contract creates a long-term manufacturing anchor. Healthcare system expansion by Bellin and HSHS generates steady medical office and outpatient demand. Packers game weekends drive hospitality demand spikes 10 times annually.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Green Bay from $1 million upward. Industrial and logistics real estate serving the Schneider ecosystem, agency multifamily, and hospitality assets benefiting from the Packers demand driver are the most active financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Green Bay Wisconsin commercial real estate financing. Our Midwest lender relationships cover northeast Wisconsin assets across all commercial property types with particular expertise in logistics and hospitality financing."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Green Bay focuses on multifamily value-add in Howard, Bellevue, and Allouez, where 1970s and 1980s apartment communities offer renovation upside with the logistics and manufacturing workforce tenant base. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Green Bay uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Agency lenders recognize Green Bay's diversified employment base and offer competitive terms for stabilized apartment communities. Life insurance companies lend on Schneider-adjacent logistics and HSHS healthcare net-lease.",
+      "construction": "Construction lending in Green Bay supports Bellin Health clinical expansion, Fincantieri Marinette Marine-related industrial development, and build-to-rent residential in Suamico and Pulaski. CLS structures construction-to-permanent facilities through Wisconsin regional banks.",
+      "sba": "SBA programs serve Green Bay's active small business community spanning logistics services, food manufacturing, and professional services. Schneider vendor firms and healthcare provider practices are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac DUS programs cover Green Bay multifamily efficiently. The diversified employment base supports occupancy underwriting, and agency rates outperform local Wisconsin bank terms. Non-recourse 10-year fixed-rate loans with 30-year amortization.",
+      "cmbs": "CMBS serves Green Bay's stabilized retail, hospitality, and industrial assets. Ashwaubenon retail corridor assets near Lambeau Field and Schneider-adjacent industrial parks attract conduit lender interest. Loan sizes from $3 million to $25 million."
+    },
+    "property_context": {
+      "multifamily": "Green Bay multifamily benefits from the logistics, manufacturing, and healthcare workforce creating steady demand across price points. Cap rates of 6.5 to 8 percent for Class B product in Howard and Bellevue are compelling versus Madison and Milwaukee pricing while reflecting stronger fundamentals than most Wisconsin secondary markets.",
+      "industrial": "Industrial in Green Bay is the strongest performing commercial sector. The Schneider National trucking ecosystem, Georgia-Pacific supply chain, and I-43 and US-141 logistics positioning drive demand for warehouse, flex, and distribution space. Vacancy below 5 percent is among the tightest in Wisconsin, and rents are rising steadily.",
+      "office": "Office demand in Green Bay is logistics, healthcare, and financial services-driven. Schneider's headquarter campus and associated operations anchor suburban office demand in the Howard and Suamico corridors. Bellin and HSHS medical office expansion near their respective campuses drives healthcare office absorption. Downtown Green Bay office is improving with residential and entertainment investment.",
+      "retail": "Retail in Green Bay benefits from the Packers consumer draw. Ashwaubenon's Lambeau Field area retail and Bay Park Square mall corridor are the primary regional retail destinations. National retailers near Lambeau capture tourism and fan spending on game weekends. De Pere and Bellevue serve the growing suburban consumer base.",
+      "hospitality": "Green Bay's hospitality market is unique. Lambeau Field game days drive among the highest hotel occupancy rates in Wisconsin, with premium ADR on Packers home game weekends. The Titletown District development adjacent to Lambeau Field has added boutique hotel, restaurant, and entertainment capacity. Medical travel to Bellin and HSHS and Schneider business travel provide off-season demand.",
+      "mixed_use": "The Titletown District adjacent to Lambeau Field is Green Bay's signature mixed-use development, combining hotel, restaurant, retail, office, and residential uses within walking distance of the stadium. Downtown Green Bay's Broadway Street corridor and the Shipyard development on the Fox River represent additional mixed-use investment activity."
+    }
+  },
+  "appleton": {
+    "city": "Appleton",
+    "state": "WI",
+    "stats": {
+      "multifamily_vacancy": "5.2%",
+      "multifamily_cap_rate": "6.25%-7.75%",
+      "industrial_vacancy": "4.0%",
+      "industrial_cap_rate": "6.00%-7.25%",
+      "office_vacancy": "11.0%",
+      "office_cap_rate": "6.75%-8.25%",
+      "retail_vacancy": "7.0%",
+      "retail_cap_rate": "6.50%-7.75%",
+      "hospitality_vacancy": "29.0%",
+      "hospitality_cap_rate": "7.25%-8.75%",
+      "mixed_use_vacancy": "6.5%",
+      "mixed_use_cap_rate": "6.50%-7.75%",
+      "job_growth": "1.8%",
+      "population_growth": "1.0%",
+      "rent_growth": "4.2%",
+      "median_asking_rent": "$1,100",
+      "major_employers": "ThedaCare (regional health system), Appvion (specialty papers), Fox River Mills, Lawrence University, Fox Valley Technical College, Pierce Manufacturing (Oshkosh Defense), Bergstrom Automotive, U.S. Venture",
+      "top_submarkets": "Grand Chute, Town of Menasha, Neenah, Oshkosh, Kaukauna, Little Chute, Kimberly, downtown Appleton"
+    },
+    "market_report": {
+      "overview": "Appleton anchors the Fox Cities metro of approximately 240,000 in east-central Wisconsin, a market with consistently strong commercial real estate fundamentals driven by a diverse manufacturing base, healthcare anchors, and one of Wisconsin's most educated workforces. The Fox Cities' position between Green Bay and Milwaukee on the I-41 corridor enhances its logistics appeal and has attracted significant distribution investment.",
+      "economy": "ThedaCare is the region's largest employer, with a regional health system anchoring healthcare real estate demand across office and outpatient categories. Advanced manufacturing spanning specialty papers (Appvion), defense vehicles (Pierce Manufacturing-Oshkosh), and plastics provides diversified industrial employment. Lawrence University, a nationally regarded liberal arts college, contributes educational employment and cultural amenity. U.S. Venture and Bergstrom Automotive represent significant privately-held regional enterprises headquartered in Appleton.",
+      "real_estate": "Appleton's commercial real estate fundamentals are among the strongest in Wisconsin outside Milwaukee and Madison. Multifamily vacancy of 5.2 percent and 4.2 percent rent growth reflect a genuine housing undersupply relative to the educated manufacturing and healthcare workforce. Industrial vacancy below 4 percent is the tightest in the Fox Cities, driven by specialty manufacturing and e-commerce distribution demand on the I-41 corridor.",
+      "outlook": "Appleton's outlook is strongly positive. Oshkosh Defense's defense vehicle production contracts ensure long-term manufacturing employment in the region. ThedaCare's ongoing clinical expansion drives healthcare real estate demand. The I-41 logistics corridor is attracting distribution investment between Milwaukee and Green Bay. Fox Valley Technical College's workforce development programs support employer attraction to the region.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Appleton from $1 million upward. Industrial and logistics real estate along I-41, agency multifamily, and ThedaCare-adjacent healthcare office are the most active financing categories. Wisconsin institutional lenders compete aggressively for Fox Cities assets.",
+      "cta": "Contact Commercial Lending Solutions to discuss Appleton Wisconsin commercial real estate financing. Our Midwest lender relationships recognize the Fox Cities' strong manufacturing and healthcare fundamentals that consistently outperform Wisconsin peer markets."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Appleton focuses on multifamily value-add in Grand Chute and the Menasha-Neenah corridor, where 1970s and 1980s apartment communities offer renovation upside with the manufacturing and healthcare workforce tenant base. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Appleton favors agency multifamily and CMBS for commercial assets. Fannie Mae and Freddie Mac DUS lenders recognize Appleton's diversified employment base and tight vacancy, offering competitive terms. Life insurance companies lend on ThedaCare-adjacent healthcare office and net-lease industrial.",
+      "construction": "Construction lending in Appleton supports ThedaCare clinical expansion, Pierce Manufacturing-adjacent industrial development, and build-to-rent residential in Kaukauna and Little Chute. CLS structures construction-to-permanent facilities through Wisconsin regional banks.",
+      "sba": "SBA programs serve Appleton's entrepreneurial small business community spanning manufacturing, professional services, and food and beverage. Lawrence University alumni entrepreneurs and manufacturing supplier firms are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive for Appleton multifamily given the 5.2 percent vacancy and 4.2 percent rent growth. Non-recourse 10-year fixed-rate loans with 30-year amortization at pricing reflecting Wisconsin's strong multifamily fundamentals.",
+      "cmbs": "CMBS serves Appleton's stabilized retail, office, and industrial assets. Grand Chute's retail corridors and I-41 industrial parks attract conduit lender interest. Loan sizes from $3 million to $25 million."
+    },
+    "property_context": {
+      "multifamily": "Appleton multifamily is Wisconsin's strongest performing secondary market. Vacancy below 5.5 percent and 4.2 percent annual rent growth driven by the manufacturing and healthcare workforce create above-average investment fundamentals. Cap rates of 6.25 to 7.75 percent for Class B product in Grand Chute and Menasha are compressing as out-of-market capital recognizes Appleton's consistent performance.",
+      "industrial": "Industrial in Appleton is the top investment sector. Vacancy below 4 percent is among the tightest in Wisconsin, driven by specialty manufacturing, defense vehicle supply chain, and I-41 corridor e-commerce distribution. Asking rents are rising steadily, and new industrial development is being absorbed before completion.",
+      "office": "Office demand in Appleton is ThedaCare, manufacturing headquarters, and professional services-driven. ThedaCare's main campus and outpatient expansion drive medical office demand. U.S. Venture and Bergstrom Automotive headquarter operations anchor suburban office. Downtown Appleton's College Avenue business district supports independent professional services tenants.",
+      "retail": "Retail in Appleton serves a high-income manufacturing and professional workforce. Fox River Mall in Grand Chute is the regional anchor, and College Avenue in downtown Appleton supports a vibrant independent retail and dining scene. Appleton's retail fundamentals consistently outperform comparable Wisconsin markets on vacancy and tenant productivity.",
+      "hospitality": "Appleton's hospitality market benefits from manufacturing business travel, ThedaCare medical travel, Lawrence University events, and the Fox Cities Performing Arts Center. Limited-service brands along I-41 serve highway travelers and manufacturing visitors. Boutique hotel development in downtown Appleton has expanded to meet growing leisure demand.",
+      "mixed_use": "Downtown Appleton's College Avenue is one of Wisconsin's most successful urban retail and dining corridors, with effectively full occupancy and an active pipeline of adaptive reuse projects. Historic mill buildings along the Fox River in Appleton and Menasha are being converted to residential lofts, restaurant, and creative office. The Appleton waterfront development is attracting mixed-use investment adjacent to the river amenity."
+    }
+  },
+  "corpus-christi": {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "stats": {
+      "multifamily_vacancy": "7.5%",
+      "multifamily_cap_rate": "6.00%-7.50%",
+      "industrial_vacancy": "6.0%",
+      "industrial_cap_rate": "5.75%-7.25%",
+      "office_vacancy": "14.0%",
+      "office_cap_rate": "7.00%-8.50%",
+      "retail_vacancy": "8.5%",
+      "retail_cap_rate": "6.25%-7.75%",
+      "hospitality_vacancy": "32.0%",
+      "hospitality_cap_rate": "7.50%-9.00%",
+      "mixed_use_vacancy": "8.0%",
+      "mixed_use_cap_rate": "6.25%-7.75%",
+      "job_growth": "2.0%",
+      "population_growth": "1.0%",
+      "rent_growth": "3.8%",
+      "median_asking_rent": "$1,150",
+      "major_employers": "Naval Air Station Corpus Christi, Christus Spohn Health System, Valero Energy (refining), Flint Hills Resources, M&G Polymers USA, Del Mar College, Texas A&M University-Corpus Christi, Port of Corpus Christi",
+      "top_submarkets": "Southside, Northwest Corpus Christi, Portland, Calallen, Padre Island, Flour Bluff, North Beach, downtown Corpus Christi"
+    },
+    "market_report": {
+      "overview": "Corpus Christi is the economic hub of the Texas Coastal Bend, a market of approximately 470,000 anchored by petrochemical refining, the Port of Corpus Christi (one of the largest US ports by tonnage), Naval Air Station Corpus Christi, and a growing tourism and coastal lifestyle economy. The market sits at the intersection of Texas's energy sector and the Gulf Coast logistics network.",
+      "economy": "The Port of Corpus Christi is the nation's fourth-largest port by cargo tonnage and is the primary export hub for Permian Basin crude oil, generating significant industrial, logistics, and professional services employment. Valero Energy's refining complex and Flint Hills Resources operate major refinery facilities that anchor the petrochemical employment base. Naval Air Station Corpus Christi provides a stable federal employment anchor with more than 12,000 military and civilian jobs. Christus Spohn is the leading healthcare system. Texas A&M University-Corpus Christi contributes educational and research employment.",
+      "real_estate": "Corpus Christi's commercial real estate is driven by the energy and port economy, producing industrial and office fundamentals tied to commodity cycles. Multifamily benefits from steady military and energy workforce demand, with 3.8 percent rent growth driven by housing undersupply relative to the port expansion workforce. The Southside corridor is the primary suburban commercial growth zone. Industrial along the port and Ship Channel maintains solid occupancy from petrochemical and logistics tenants.",
+      "outlook": "Corpus Christi's outlook is positive, driven by the Permian Basin oil export boom and significant LNG export infrastructure investment along the Texas coast. Port expansion projects are creating substantial construction employment and long-term industrial real estate demand. Naval Air Station's training mission expansion provides steady federal employment growth. Texas A&M-Corpus Christi's enrollment growth supports student housing development.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Corpus Christi from $1 million upward. Port-adjacent industrial, military-market multifamily, and energy-sector office are the primary financing categories. Texas's no state income tax and business-friendly environment attract national lender interest.",
+      "cta": "Contact Commercial Lending Solutions to discuss Corpus Christi Texas commercial real estate financing. Our Texas lender relationships span agency, CMBS, bridge, and construction programs suited to the Gulf Coast energy and port economy."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Corpus Christi focuses on multifamily value-add in the Southside and Calallen corridors, where port expansion workforce demand is driving occupancy improvement in renovated 1990s apartment communities. CLS structures 18 to 24 month bridge facilities with interest reserves suited to Texas permitting timelines.",
+      "permanent": "Permanent financing in Corpus Christi uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Military market multifamily benefits from BAH-supported demand, and agency lenders recognize the NAS Corpus Christi stabilization effect. Life insurance companies lend on port-adjacent industrial for investment-grade energy and logistics tenants.",
+      "construction": "Construction lending in Corpus Christi supports port expansion-related industrial development, Texas A&M-Corpus Christi student housing, and Southside commercial development. CLS structures construction-to-permanent facilities through Texas regional banks and national construction lenders with energy market experience.",
+      "sba": "SBA programs serve Corpus Christi's active small business community spanning maritime, energy services, hospitality, and professional services. Port-related vendor firms and energy service companies are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are active for Corpus Christi multifamily. Military BAH demand and port workforce housing needs underpin occupancy. Non-recourse 10-year fixed-rate loans with 30-year amortization at pricing reflecting Texas's growth market dynamics.",
+      "cmbs": "CMBS serves Corpus Christi's stabilized retail, office, and industrial assets. Southside retail corridors and port-adjacent industrial attract conduit lender interest. Loan sizes from $3 million to $35 million."
+    },
+    "property_context": {
+      "multifamily": "Corpus Christi multifamily benefits from two stable demand pillars: military households at NAS Corpus Christi and the energy and port workforce. Cap rates of 6 to 7.5 percent for Class B product in the Southside and Calallen submarkets are compressing as Texas energy market capital seeks diversified coastal market exposure.",
+      "industrial": "Industrial in Corpus Christi is port and petrochemical-driven. The Port of Corpus Christi Ship Channel and La Quinta Trade Gateway industrial districts serve Permian Basin crude export and LNG-related logistics. Vacancy below 6 percent in port-proximate industrial reflects sustained demand from energy infrastructure operators.",
+      "office": "Office demand in Corpus Christi is energy company, port authority, and healthcare-driven. Valero and Flint Hills Resources maintain significant professional staff in the metro. Christus Spohn's administrative and outpatient expansion drives medical office demand on the Southside. Downtown Corpus Christi office benefits from port authority and energy company headquarters tenancy.",
+      "retail": "Retail in Corpus Christi serves the military, energy, and coastal tourism consumer base. La Palmera Mall and the Southside corridor retail centers are the primary retail destinations. North Padre Island and Mustang Island tourist retail serves the Gulf Coast leisure market. National grocers and home goods retailers along Saratoga Boulevard serve the Southside growth area.",
+      "hospitality": "Corpus Christi's hospitality market is driven by Gulf Coast beach tourism, spring break activity, NAS Corpus Christi family travel, and energy business visitors. North Padre Island and downtown waterfront hotels command the highest ADR. The American Bank Center arena and convention complex anchor large group demand. Cruise ship arrivals at the Bayfront add additional visitor demand.",
+      "mixed_use": "The downtown Corpus Christi Bayfront is the primary mixed-use development zone, with the American Bank Center, restaurants, and the Whataburger Field baseball stadium anchoring waterfront mixed-use activity. The SEA District (Sports, Entertainment, Arts) redevelopment plan calls for additional mixed-use investment along the bay. North Beach and the marina area are attracting boutique hospitality and restaurant investment."
+    }
+  },
+  "lubbock": {
+    "city": "Lubbock",
+    "state": "TX",
+    "stats": {
+      "multifamily_vacancy": "7.0%",
+      "multifamily_cap_rate": "6.25%-7.75%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "6.25%-7.50%",
+      "office_vacancy": "13.5%",
+      "office_cap_rate": "7.00%-8.50%",
+      "retail_vacancy": "8.0%",
+      "retail_cap_rate": "6.50%-7.75%",
+      "hospitality_vacancy": "33.0%",
+      "hospitality_cap_rate": "7.75%-9.25%",
+      "mixed_use_vacancy": "7.5%",
+      "mixed_use_cap_rate": "6.50%-7.75%",
+      "job_growth": "2.2%",
+      "population_growth": "1.3%",
+      "rent_growth": "4.5%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "Texas Tech University, Covenant Medical Center (CommonSpirit Health), University Medical Center, AT&T (regional operations), United Supermarkets, Plains All American Pipeline, City of Lubbock, Lubbock Independent School District",
+      "top_submarkets": "South Loop 289, North Lubbock, Tech Terrace near TTU, Wolfforth, Shallowater, Slaton, downtown Lubbock"
+    },
+    "market_report": {
+      "overview": "Lubbock is the economic center of the South Plains region of Texas, a market of approximately 330,000 anchored by Texas Tech University, a comprehensive academic medical center, and the agricultural and energy economy of the Permian Basin periphery. TTU's 40,000-student enrollment and its health sciences center make Lubbock one of Texas's most education and healthcare-anchored secondary markets.",
+      "economy": "Texas Tech University is Lubbock's dominant economic force, with approximately 40,000 students and 10,000 employees generating more than $2 billion in annual economic impact. The TTU Health Sciences Center anchors the academic medical complex alongside Covenant Medical Center and University Medical Center. The South Plains agricultural economy, including cotton ginning, grain storage, and agricultural services, provides a regional economic base. Plains All American Pipeline's Lubbock area operations connect the market to the broader Permian Basin energy economy.",
+      "real_estate": "Lubbock's commercial real estate is performing well on the strength of the Texas Tech enrollment growth and healthcare expansion. Multifamily vacancy of 7 percent and 4.5 percent rent growth reflect the student housing and healthcare workforce demand driving above-average absorption. The South Loop 289 corridor is the primary suburban commercial development zone, while Tech Terrace serves the university-proximate multifamily and retail market.",
+      "outlook": "Lubbock's outlook is positive. Texas Tech's enrollment growth trajectory and health sciences expansion are the primary commercial real estate demand drivers. The South Plains agricultural economy provides a stable regional income base. Texas's no state income tax and business-friendly regulatory environment attract corporate investment. Energy infrastructure serving the Permian Basin periphery creates industrial and services demand.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Lubbock from $1 million upward. University-proximate multifamily, medical office serving TTU Health Sciences Center, and agricultural-related commercial real estate are the primary financing categories.",
+      "cta": "Contact Commercial Lending Solutions to discuss Lubbock Texas commercial real estate financing. Our Texas lender relationships span agency, CMBS, and bridge programs for university-anchored and energy-adjacent South Plains market assets."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Lubbock focuses on multifamily value-add in Tech Terrace and the South Loop 289 corridor, where aging apartment communities serve the TTU student and staff market. Sponsors are renovating units and capturing rent growth from enrollment-driven demand. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Lubbock uses Fannie Mae and Freddie Mac for multifamily and CMBS for commercial assets. Agency lenders recognize the Texas Tech enrollment anchor, and TTU-proximate apartment communities achieve favorable agency terms. Life insurance companies lend on medical office for TTU Health Sciences Center-affiliated practices.",
+      "construction": "Construction lending in Lubbock supports student housing development near TTU, TTU Health Sciences Center expansion, and South Loop 289 commercial development. CLS structures construction-to-permanent facilities through Texas regional banks and national lenders with university market experience.",
+      "sba": "SBA programs serve Lubbock's active small business community spanning agricultural services, technology, healthcare, and professional services. TTU spinoff technology firms and agricultural equipment dealers are natural SBA borrowers. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are active for Lubbock multifamily given the TTU enrollment anchor and 4.5 percent rent growth. Non-recourse 10-year fixed-rate loans with 30-year amortization at competitive Texas market pricing.",
+      "cmbs": "CMBS serves Lubbock's stabilized retail, office, and commercial assets. South Loop 289 retail corridor centers and medical office near Covenant and UMC attract conduit lender interest. Loan sizes from $3 million to $25 million."
+    },
+    "property_context": {
+      "multifamily": "Lubbock multifamily is driven by Texas Tech's 40,000-student enrollment, creating one of Texas's most stable student and young professional housing markets. Cap rates of 6.25 to 7.75 percent for Class B product are competitive with other Texas secondary markets. Tech Terrace vacancy is structurally low, and the broader metro market benefits from enrollment growth year over year.",
+      "industrial": "Industrial in Lubbock serves the South Plains agricultural economy and Permian Basin periphery energy sector. Cotton gin equipment, grain storage, agricultural chemicals, and energy services supply chain uses are the primary industrial tenants. I-27 corridor positioning connects Lubbock to Amarillo and the Texas Panhandle distribution network.",
+      "office": "Office demand in Lubbock is Texas Tech, healthcare, and regional professional services-driven. TTU Health Sciences Center's growth is the primary medical office demand driver. Covenant Medical Center and UMC administrative and outpatient expansion add to healthcare office absorption. Downtown Lubbock office benefits from TTU administrative and technology transfer functions.",
+      "retail": "Retail in Lubbock serves the university, agricultural, and regional trade area consumer base. South Plains Mall and the South Loop 289 retail corridor are the primary regional destinations. 50th Street and Slide Road corridor serves the established residential neighborhoods with national grocery, home goods, and restaurant uses.",
+      "hospitality": "Lubbock's hospitality market is Texas Tech sports-driven. TTU football (Jones AT&T Stadium), basketball, and graduation events drive among the highest hotel demand spikes in West Texas. Agricultural show and Permian Basin energy conference demand provides additional business travel occupancy. Limited-service brands near TTU and medical center campuses serve university and medical travel.",
+      "mixed_use": "Downtown Lubbock's Depot District entertainment and arts district and the Buddy Holly Hall of Performing Arts and Sciences are the anchors of mixed-use investment activity. Adaptive reuse of historic depot buildings for restaurant, bar, and entertainment uses has attracted significant private investment. The Hub City Downtown initiative is catalyzing mixed-use development adjacent to the Buddy Holly Center cultural complex."
+    }
+  },
+  "waco": {
+    "city": "Waco",
+    "state": "TX",
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "multifamily_cap_rate": "6.00%-7.50%",
+      "industrial_vacancy": "5.0%",
+      "industrial_cap_rate": "5.75%-7.00%",
+      "office_vacancy": "12.0%",
+      "office_cap_rate": "6.75%-8.25%",
+      "retail_vacancy": "7.0%",
+      "retail_cap_rate": "6.00%-7.50%",
+      "hospitality_vacancy": "30.0%",
+      "hospitality_cap_rate": "7.25%-8.75%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "6.25%-7.50%",
+      "job_growth": "2.8%",
+      "population_growth": "2.0%",
+      "rent_growth": "5.0%",
+      "median_asking_rent": "$1,200",
+      "major_employers": "Baylor University, Magnolia (Chip and Joanna Gaines), L3Harris Technologies, Hillcrest Baptist Medical Center (Baylor Scott and White), Sodexo, City of Waco, McLennan County government, H-E-B",
+      "top_submarkets": "Woodway, Hewitt, Lorena, West Waco, Bellmead, Lacy-Lakeview, McGregor, downtown Waco Magnolia district"
+    },
+    "market_report": {
+      "overview": "Waco is one of Texas's fastest-growing secondary markets, driven by Baylor University's expanding national profile, the global tourism phenomenon created by Chip and Joanna Gaines' Magnolia brand, and its strategic position on the I-35 corridor between Dallas and Austin. The market of approximately 290,000 has seen commercial real estate fundamentals improve dramatically since 2016 as Magnolia's tourism draw transformed the downtown commercial landscape.",
+      "economy": "Baylor University anchors Waco's economy with more than 20,000 students and 5,000 employees, generating billions in economic impact. The Magnolia brand (Magnolia Market at the Silos, Magnolia Table restaurant, Magnolia Hotel, Magnolia Press) has created a tourism economy attracting more than 2 million visitors annually to Waco, an unprecedented economic driver for a market of this size. L3Harris Technologies' electronic warfare systems facility provides advanced manufacturing employment. The I-35 position between Dallas-Fort Worth and Austin attracts logistics and distribution investment.",
+      "real_estate": "Waco's commercial real estate fundamentals have transformed since 2016. Multifamily vacancy of 6.5 percent and 5 percent rent growth reflect genuine population in-migration driven by affordability relative to Austin and DFW. The downtown Magnolia district retail is effectively fully occupied, with asking rents for proximity to the Silos commanding premiums. Industrial along I-35 is benefiting from the Dallas-Austin logistics corridor demand.",
+      "outlook": "Waco's outlook is strongly positive. The Magnolia economic phenomenon continues to attract national retail and hospitality brands to the downtown district. Baylor University's enrollment growth and its expansion of professional schools in law, medicine, and business drives real estate demand. I-35 corridor industrial development is accelerating. CLS expects continued cap rate compression as institutional capital follows Waco's growth trajectory.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Waco from $1 million upward. Magnolia district and Baylor-proximate retail, agency multifamily, and I-35 corridor industrial are the most active financing categories. Waco's transformation story attracts national lender interest unusual for a market of this size.",
+      "cta": "Contact Commercial Lending Solutions to discuss Waco Texas commercial real estate financing. Our Texas lender relationships span agency, CMBS, bridge, and construction programs for one of Texas's most compelling growth market stories."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Waco focuses on multifamily value-add in Woodway and Hewitt, and downtown adaptive reuse projects near the Magnolia district. Sponsors are capitalizing on Waco's population growth and repositioning older apartment communities for the in-migration demographic. CLS structures 18 to 24 month bridge facilities.",
+      "permanent": "Permanent financing in Waco favors agency multifamily and CMBS for retail and hospitality. Fannie Mae and Freddie Mac recognize Waco's population growth fundamentals. Life insurance companies are increasingly active in Waco as the market's institutional profile rises. CMBS serves the Magnolia district and Baylor-adjacent commercial assets.",
+      "construction": "Construction lending in Waco supports Baylor University-related development, Magnolia district hotel and retail construction, and I-35 industrial development. CLS structures construction-to-permanent facilities through Texas regional banks and national lenders drawn to Waco's growth story.",
+      "sba": "SBA programs serve Waco's rapidly growing small business community spanning tourism-related hospitality, food and beverage, professional services, and technology. Magnolia-inspired entrepreneurial culture has produced a wave of SBA-eligible small businesses. CLS places SBA 504 and 7(a) loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are highly competitive for Waco multifamily given the 5 percent rent growth and strong population in-migration. Non-recourse 10-year fixed-rate loans with 30-year amortization at pricing reflecting Texas's high-growth market dynamics.",
+      "cmbs": "CMBS serves Waco's stabilized retail, hospitality, and commercial assets. Magnolia district adjacent retail and Woodway corridor shopping centers attract conduit lender interest. Loan sizes from $3 million to $30 million with 10-year fixed rates."
+    },
+    "property_context": {
+      "multifamily": "Waco multifamily is one of Texas's most compelling value-add and new development stories. Population in-migration from Austin and DFW, Baylor enrollment growth, and the Magnolia visitor economy drive 5 percent annual rent growth. Cap rates of 6 to 7.5 percent for Class B product are tightening rapidly as out-of-market capital recognizes Waco's transformation.",
+      "industrial": "Industrial in Waco benefits from the I-35 Dallas-to-Austin logistics corridor, positioning the market as an alternative to higher-cost DFW and Austin industrial space. Vacancy below 5 percent and rising rents attract distribution operators, food manufacturers, and light manufacturers seeking central Texas cost advantages.",
+      "office": "Office demand in Waco is Baylor University, healthcare, and the growing technology and professional services sector-driven. Baylor Scott and White's Hillcrest campus expansion and the Baylor College of Medicine clinical program are the primary medical office demand drivers. Downtown office near the Magnolia district commands a premium for creative and professional service tenants.",
+      "retail": "Downtown Waco's Magnolia district is one of Texas's most remarkable retail success stories. The Magnolia Silos, Magnolia Table restaurant, and Magnolia Hotel anchor a retail ecosystem that draws 2 million visitors annually. National and independent retailers in the Magnolia orbit achieve sales productivity figures that outperform Texas retail averages significantly. Woodway corridor suburban retail serves the established residential trade area.",
+      "hospitality": "Waco's hospitality market has been transformed by Magnolia tourism. Hotel demand from Magnolia visitors, Baylor athletics, and the I-35 highway market supports RevPAR performance that consistently surprises national hotel analysts. The Magnolia Hotel and boutique properties near the Silos command premium ADR. Limited-service brands along I-35 capture highway and Baylor family travel.",
+      "mixed_use": "The downtown Waco Magnolia district is Texas's most distinctive mixed-use success of the past decade. The Silos anchor retail, restaurant, and hospitality mixed-use within walking distance of the Brazos River. Adaptive reuse of historic Waco commercial and industrial buildings for residential, retail, and hotel uses has attracted national developer attention. Baylor's East Village development adjacent to campus creates additional mixed-use demand."
+    }
+  },
+  "santa-barbara": {
+    "city": "Santa Barbara",
+    "state": "CA",
+    "stats": {
+      "multifamily_vacancy": "3.5%",
+      "multifamily_cap_rate": "4.25%-5.75%",
+      "industrial_vacancy": "3.0%",
+      "industrial_cap_rate": "4.50%-5.75%",
+      "office_vacancy": "8.5%",
+      "office_cap_rate": "5.25%-6.75%",
+      "retail_vacancy": "5.5%",
+      "retail_cap_rate": "4.75%-6.25%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "6.00%-7.50%",
+      "mixed_use_vacancy": "4.5%",
+      "mixed_use_cap_rate": "4.75%-6.00%",
+      "job_growth": "1.8%",
+      "population_growth": "0.4%",
+      "rent_growth": "4.8%",
+      "median_asking_rent": "$3,200",
+      "major_employers": "UC Santa Barbara, Cottage Health, Sansum Clinic, County of Santa Barbara, Channel Islands NPS, Procore Technologies, AppFolio, Deckers Brands (UGG, HOKA), General Atomics, Lockheed Martin Space",
+      "top_submarkets": "Goleta, Montecito, Carpinteria, Santa Barbara downtown, Upper State Street, Calle Real corridor, Fairview Avenue, Santa Ynez Valley"
+    },
+    "market_report": {
+      "overview": "Santa Barbara is one of California's most exclusive and supply-constrained commercial real estate markets, a coastal enclave of approximately 450,000 in the metro anchored by UC Santa Barbara, a growing technology sector, luxury tourism, and some of California's tightest land use regulations. Commercial real estate in Santa Barbara commands fundamentals typically associated with San Francisco or Los Angeles, driven by genuine scarcity and one of the most desirable coastal climates in the world.",
+      "economy": "UC Santa Barbara is a top-20 research university with approximately 26,000 students and 14,000 employees, anchoring the technology and life sciences economy in Goleta. Procore Technologies and AppFolio, both publicly traded technology companies, are headquartered in Santa Barbara, representing significant private-sector technology employment. Deckers Brands (UGG, HOKA, Teva) is headquartered in Goleta. Luxury tourism driven by the American Riviera brand generates exceptional hospitality and retail revenue. Defense and aerospace with Lockheed Martin Space and General Atomics add high-wage employment.",
+      "real_estate": "Commercial real estate in Santa Barbara operates in a different supply-demand paradigm than most California markets. Multifamily vacancy of 3.5 percent reflects a housing crisis driven by strict land use regulations and coastal development restrictions. Industrial vacancy below 3 percent in Goleta is essentially structural zero, driven by technology company growth outpacing the limited industrial supply. Cap rates of 4.25 to 5.75 percent for multifamily reflect the premium for genuine, legally enforced supply scarcity.",
+      "outlook": "Santa Barbara's outlook is constrained but resilient. Regulatory barriers to new development ensure continued supply scarcity across all asset classes. UCSB's research enterprise continues to spawn technology and life sciences spin-offs that maintain demand for scarce office and industrial space in Goleta. The luxury tourism economy, anchored by the American Riviera identity and the wine country tourism in Santa Ynez Valley, drives sustained hospitality and retail demand.",
+      "financing": "Commercial Lending Solutions arranges commercial real estate financing in Santa Barbara from $1 million upward. California's high-value asset environment means loan sizes are typically larger, and life insurance companies and CMBS compete actively for the limited inventory of financeable assets. The scarcity premium supports conservative LTV underwriting with strong exit values.",
+      "cta": "Contact Commercial Lending Solutions to discuss Santa Barbara California commercial real estate financing. Our California lender relationships include institutions that understand the supply-constrained coastal market dynamics that make Santa Barbara assets exceptional long-term holds."
+    },
+    "loan_context": {
+      "bridge": "Bridge loan demand in Santa Barbara is focused on multifamily value-add in Goleta and the lower State Street corridor, adaptive reuse of commercial buildings for residential conversion, and select boutique hotel renovations. The scarcity of available assets means competition for bridge opportunities is intense. CLS structures 18 to 24 month bridge facilities at California market pricing.",
+      "permanent": "Permanent financing in Santa Barbara commands California's most competitive terms for assets of this quality. Life insurance companies and agency lenders compete for the limited multifamily inventory. Low cap rates of 4.25 to 5.75 percent are supported by life insurance company long-term hold strategies that tolerate lower current yields for appreciation certainty. CMBS serves commercial assets at loan sizes typically $5 million and above.",
+      "construction": "Construction lending in Santa Barbara is constrained by the California permitting and environmental review process, which routinely extends 3 to 5 years for significant projects. Projects with entitlements in hand command premium lender interest. CLS structures construction facilities with interest reserves calibrated for California's long pre-construction timeline.",
+      "sba": "SBA programs serve Santa Barbara's technology, hospitality, wine country, and professional services small business community. Procore and AppFolio supplier firms and UCSB spinoff companies are natural SBA borrowers for owner-occupied commercial real estate. CLS places SBA 504 loans from $1 million.",
+      "agency": "Fannie Mae and Freddie Mac are active for Santa Barbara multifamily, though low cap rates mean loan sizing is constrained by DSCR rather than LTV. Agency programs provide the most efficient non-recourse permanent execution for well-located Goleta and downtown Santa Barbara apartment properties.",
+      "cmbs": "CMBS serves Santa Barbara's stabilized retail, hospitality, and office assets. State Street retail and Goleta technology office attract conduit lender interest at loan sizes that reflect California's premium asset values. Loan sizes typically $5 million to $50 million with 10-year fixed rates."
+    },
+    "property_context": {
+      "multifamily": "Santa Barbara multifamily is among California's most supply-constrained and highest-performing investment asset classes. Vacancy of 3.5 percent is structural rather than cyclical, enforced by California's coastal development restrictions and Santa Barbara's design review process. Cap rates of 4.25 to 5.75 percent reflect institutional quality scarcity premiums. The UCSB enrollment and technology workforce create demand that cannot be met by new supply.",
+      "industrial": "Industrial in Santa Barbara is the rarest and most valuable small-bay and R&D flex space in the tri-county region. Goleta's technology park industrial inventory is effectively fully occupied by UCSB spinoff companies, Procore, AppFolio, and aerospace firms. Waiting lists exist for available space. Asking rents for Class A flex and R&D space in Goleta rival Los Angeles and San Diego rates.",
+      "office": "Office demand in Santa Barbara is technology and professional services-driven. Procore and AppFolio headquarters, along with UCSB research commercialization, drive demand for quality office and R&D space in Goleta. State Street downtown office serves the professional services, legal, and financial advisory community. Office vacancy of 8.5 percent is well below California averages for a market this size.",
+      "retail": "Santa Barbara's State Street and La Cumbre Plaza serve the affluent local and tourist consumer base. The American Riviera retail environment commands premium rents per square foot among California coastal markets. Paseo Nuevo and El Paseo shopping districts anchor the downtown core. Carpinteria and Goleta serve the suburban retail market with national grocery and home goods anchors.",
+      "hospitality": "Santa Barbara is one of California's premier luxury travel destinations, with the American Riviera identity commanding ADR among the highest outside of San Francisco and Los Angeles. The Four Seasons Resort the Biltmore, Rosewood Miramar, and Bacara Resort anchor the luxury segment. Downtown boutique hotels command premium weekend leisure rates year-round. Wine country tourism in Santa Ynez Valley adds a distinct hospitality demand driver.",
+      "mixed_use": "Santa Barbara's mixed-use investment is concentrated along upper and lower State Street and in the Funk Zone arts and food district near the waterfront. The Funk Zone's adaptive reuse of historic industrial buildings for wine tasting rooms, breweries, restaurants, and retail has become a model for California coastal mixed-use revival. State Street's ongoing commercial redevelopment is transitioning some retail to residential and hotel uses."
+    }
   }
 }

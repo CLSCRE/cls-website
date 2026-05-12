@@ -78,6 +78,9 @@ MARKET_REPORT_CITIES = [
     # Batch 10 expansion — next Tier 2 metros
     "lancaster-pa", "scranton", "harrisburg", "jackson",
     "fredericksburg", "burlington-vt", "evansville", "youngstown", "canton",
+    # Batch 11 expansion — next Tier 2 metros
+    "flint", "kalamazoo", "lansing", "green-bay", "appleton",
+    "corpus-christi", "lubbock", "waco", "santa-barbara",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -132,6 +135,9 @@ ALL_CITIES = [
     # Batch 10 expansion — next Tier 2 metros
     "lancaster-pa", "scranton", "harrisburg", "jackson",
     "fredericksburg", "burlington-vt", "evansville", "youngstown", "canton",
+    # Batch 11 expansion — next Tier 2 metros
+    "flint", "kalamazoo", "lansing", "green-bay", "appleton",
+    "corpus-christi", "lubbock", "waco", "santa-barbara",
 ]
 
 # Loan slug → context key mapping
