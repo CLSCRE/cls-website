@@ -7551,5 +7551,434 @@
       "hospitality": "Yuma's hospitality market benefits from military training visits, agricultural business travel, and the snowbird retiree market that doubles the effective winter population. MCAS Yuma air show events drive major hospitality demand spikes. Limited-service hotels along I-8 serve highway travelers between Phoenix and San Diego.",
       "mixed_use": "Downtown Yuma's Historic Commercial District and the Gateway Park area represent the primary mixed-use investment zones. Adaptive reuse of historic territorial-era commercial buildings for restaurant and retail uses is attracting local developer investment. The Colorado River waterfront development opportunity along the Yuma Crossing National Heritage Area is a long-term mixed-use catalyst."
     }
+  },
+  "midland": {
+    "stats": {
+      "multifamily_vacancy": "4.5%",
+      "multifamily_cap_rate": "5.75%-6.50%",
+      "industrial_vacancy": "5.8%",
+      "industrial_cap_rate": "6.00%-6.75%",
+      "office_vacancy": "12.5%",
+      "office_cap_rate": "7.50%-8.25%",
+      "retail_vacancy": "6.5%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "30.5%",
+      "hospitality_cap_rate": "7.50%-8.25%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "6.25%-7.00%",
+      "job_growth": "3.8%",
+      "population_growth": "2.1%",
+      "rent_growth": "7.5%",
+      "median_asking_rent": "$1,450",
+      "major_employers": "Pioneer Natural Resources, Diamondback Energy, Permian Basin Royalty Trust, Midland Memorial Hospital, Schlumberger",
+      "top_submarkets": "Midland Downtown, West Midland, North Midland, Greenwood, Grassland"
+    },
+    "market_report": "Midland's commercial real estate market moves in lockstep with West Texas Intermediate crude prices. The Permian Basin's status as the world's most prolific oil field drives everything from workforce housing demand to industrial land values. When oil trades above $70 per barrel, multifamily absorption accelerates and cap rates compress; below $50, concessions surface and speculative construction stalls. Industrial properties along the I-20 Energy Corridor command premium rents from oilfield services operators. Midland's small downtown is seeing adaptive reuse interest as energy companies consolidate regional offices.",
+    "loan_context": {
+      "bridge": "Midland bridge lenders require thorough oil-price stress testing in underwriting. Most require a minimum 10% debt service coverage at $55 per barrel. Short-term bridge debt funds oilfield service acquisitions and workforce housing projects along the Permian Basin.",
+      "permanent": "Permanent financing in Midland carries energy-sector concentration risk premiums. Life companies and CMBS desks typically require 30-year amortization floors and oil-price sensitivity covenants. Stabilized multifamily with proven occupancy through a downcycle commands the tightest spreads.",
+      "construction": "Construction lending in Midland follows the oil rig count. Lenders price spec construction risk heavily and prefer presold or pre-leased collateral. Labor availability from oilfield competition drives cost contingencies to 15 to 20 percent above standard national rates.",
+      "sba": "SBA 504 loans support oilfield services businesses purchasing owner-occupied facilities along the I-20 corridor. Hotel acquisitions near the Midland International Air and Space Port also qualify when owner-operated.",
+      "mezzanine": "Mezzanine debt funds workforce housing developments that exceed conventional leverage, particularly when first-lien lenders cap LTC at 55 to 60 percent due to energy sector volatility.",
+      "agency": "Agency multifamily financing is available for stabilized Midland projects but requires demonstrated occupancy through at least one oil price downcycle. Fannie Mae and Freddie Mac apply geographic concentration overlays."
+    },
+    "property_context": {
+      "multifamily": "Midland multifamily is almost entirely workforce housing serving Permian Basin operators. Class A product near downtown and the Bush Convention Center trades at sub-5.75 percent cap rates during oil booms. Occupancy swings 15 to 20 points between peak and trough cycles.",
+      "industrial": "Industrial in Midland serves oilfield services, equipment staging, and pipe yards. Properties along the I-20 Energy Corridor with large covered storage, truck scales, and laydown yards command the highest rents. Sale-leasebacks with oilfield operators are common.",
+      "office": "Office demand in Midland comes almost entirely from energy companies. Class A space near the Tall City Business Park fills quickly during booms and softens in downturns. Adaptive reuse of older energy-company buildings is an active trend.",
+      "retail": "Midland retail follows population growth tied to oil employment. The Midland Park Mall corridor and North Loop 250 are the primary retail nodes. Food and entertainment concepts that serve oil workers outperform discount and value retail.",
+      "hospitality": "Hospitality in Midland serves business travelers in the energy sector. Extended-stay and select-service hotels near the Energy Corridor and Midland International Airport trade well during production booms. ADRs are among the highest in Texas outside Austin and Houston.",
+      "mixed_use": "Mixed-use in Midland is nascent, concentrated around the downtown revitalization corridor near Wall Street and Texas Avenue. Projects combining energy company office space with ground-floor dining have attracted institutional interest."
+    }
+  },
+  "abilene": {
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "multifamily_cap_rate": "6.25%-7.00%",
+      "industrial_vacancy": "7.5%",
+      "industrial_cap_rate": "6.75%-7.50%",
+      "office_vacancy": "14.0%",
+      "office_cap_rate": "7.75%-8.50%",
+      "retail_vacancy": "8.5%",
+      "retail_cap_rate": "7.00%-7.75%",
+      "hospitality_vacancy": "36.0%",
+      "hospitality_cap_rate": "7.75%-8.50%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "6.75%-7.50%",
+      "job_growth": "1.4%",
+      "population_growth": "0.8%",
+      "rent_growth": "4.2%",
+      "median_asking_rent": "$950",
+      "major_employers": "Dyess Air Force Base, Hendrick Health System, ACU, Taylor County, Hendrick Medical Center",
+      "top_submarkets": "Abilene Downtown, South Abilene, Wylie, North Abilene, Buffalo Gap Road Corridor"
+    },
+    "market_report": "Abilene's commercial real estate market draws stability from its three-pillar economy: military (Dyess Air Force Base), healthcare (Hendrick Health), and higher education (ACU, HCU, McMurry). This institutional base insulates Abilene from the commodity cycles that affect neighboring Permian Basin markets. Multifamily demand is steady but unspectacular; developers who target university students and healthcare workers achieve the best occupancy. The Loop 322 retail corridor is the market's dominant shopping node, while the downtown redevelopment effort is attracting small restaurant and entertainment operators.",
+    "loan_context": {
+      "bridge": "Bridge loans in Abilene fund value-add acquisitions targeting military and university demographics. Most bridge lenders require 1.15x DSCR at stabilization and six to 12 months of interest reserves given the thin institutional investor pool.",
+      "permanent": "Permanent financing in Abilene is dominated by regional banks and credit unions that understand the institutional tenant base. Life company capital is available for Dyess-adjacent multifamily with demonstrated military occupancy.",
+      "construction": "Construction lending focuses on workforce and student housing. Lenders require significant presales or pre-leases given limited absorption in this secondary market. Projects targeting Dyess families have succeeded with VA-backed construction takeouts.",
+      "sba": "SBA 7(a) and 504 loans are common for Abilene small businesses purchasing owner-occupied retail and service facilities serving the military and university communities.",
+      "mezzanine": "Mezzanine is rarely used in Abilene given the conservative leverage appetite. When deployed, it typically bridges gap financing in healthcare facility acquisitions.",
+      "agency": "Agency multifamily financing applies to stabilized projects near ACU and Hendrick Medical. Fannie Mae small loan programs under $6 million are frequently used for 50 to 150 unit properties."
+    },
+    "property_context": {
+      "multifamily": "Abilene multifamily is split between student housing near the three universities and workforce housing for Dyess personnel and Hendrick employees. Cap rates in the 6.25 to 7.00 percent range reflect secondary market risk, but occupancy has held above 93 percent through recent cycles.",
+      "industrial": "Industrial in Abilene serves regional distribution and agribusiness. Properties along the Burlington Northern Santa Fe rail corridor attract food processing and agricultural supply tenants. Vacancy has remained manageable at under 8 percent.",
+      "office": "Office demand is thin in Abilene. Healthcare-adjacent office near Hendrick and the ACU campus commands premium rents from medical practices and education-related tenants. Significant downtown office remains functionally obsolete.",
+      "retail": "Loop 322 is Abilene's retail backbone, anchored by national box stores and fast-casual dining. Inline retail with national grocery anchors performs best. The downtown entertainment district on Pine Street is generating new restaurant and bar interest.",
+      "hospitality": "Abilene hospitality is driven by Dyess Air Force Base visitors, university parents, and regional convention business. Select-service brands near the Abilene Civic Center perform best. Extended-stay product near the hospital cluster is stable.",
+      "mixed_use": "Mixed-use is limited in Abilene but growing in the downtown historic district. Adaptive reuse of older commercial buildings for live-work loft units is an early trend near Cypress Street."
+    }
+  },
+  "tyler": {
+    "stats": {
+      "multifamily_vacancy": "6.8%",
+      "multifamily_cap_rate": "6.00%-6.75%",
+      "industrial_vacancy": "7.2%",
+      "industrial_cap_rate": "6.50%-7.25%",
+      "office_vacancy": "13.5%",
+      "office_cap_rate": "7.50%-8.25%",
+      "retail_vacancy": "7.8%",
+      "retail_cap_rate": "6.75%-7.50%",
+      "hospitality_vacancy": "34.0%",
+      "hospitality_cap_rate": "7.50%-8.25%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "6.50%-7.25%",
+      "job_growth": "1.8%",
+      "population_growth": "1.2%",
+      "rent_growth": "4.8%",
+      "median_asking_rent": "$1,050",
+      "major_employers": "UT Health Tyler, Christus Trinity Mother Frances, University of Texas at Tyler, Tyler ISD, Brookshire Grocery Company",
+      "top_submarkets": "Tyler Downtown, South Broadway Medical Corridor, Loop 323, Whitehouse, Lindale"
+    },
+    "market_report": "Tyler is East Texas's dominant regional center, anchored by a rapidly growing healthcare corridor along South Broadway and Loop 49. UT Health Tyler and Christus Trinity Mother Frances collectively employ more than 8,000 people and are driving demand for medical office, skilled nursing, and workforce housing. The University of Texas at Tyler adds student housing demand on the northeast side. Tyler's retail market benefits from its draw area covering a 60-mile radius across East Texas. Industrial demand is growing modestly along the US-69 distribution corridor.",
+    "loan_context": {
+      "bridge": "Bridge loans in Tyler most commonly fund value-add multifamily near the healthcare corridor and acquisitions in the growing Loop 49 submarket. Lenders typically require 90 to 120 days of market data and local appraisals.",
+      "permanent": "Permanent financing in Tyler is well-supported by community and regional banks. Healthcare-adjacent office and multifamily command the tightest spreads. Life company interest is increasing as Tyler's market size crosses critical institutional thresholds.",
+      "construction": "Construction lending is active for healthcare-adjacent medical office and workforce housing. Ground-up senior housing projects have attracted specialty construction lenders given the aging East Texas demographic.",
+      "sba": "SBA 504 loans support small business acquisitions in Tyler's growing suburban retail and healthcare services sectors. Owner-occupied medical office near the hospital cluster is a common use case.",
+      "mezzanine": "Mezzanine fills capital stack gaps in healthcare facility acquisitions and senior housing development projects that exceed conventional first-lien LTV limits.",
+      "agency": "Agency multifamily financing is available for stabilized Tyler projects. Freddie Mac SBL and Fannie Mae DUS programs apply to the 80 to 250 unit range that dominates the Tyler market."
+    },
+    "property_context": {
+      "multifamily": "Tyler multifamily benefits from healthcare workforce demand. Properties within a 10-minute drive of UT Health and Christus command 5 to 10 percent occupancy premiums. Class B and C properties targeting workforce renters are the dominant investment grade.",
+      "industrial": "Industrial in Tyler serves regional distribution and light manufacturing along US-69 and the Loop 49 connector. E-commerce and food distribution tenants are the most active. Vacancy remains below 8 percent.",
+      "office": "Tyler's office market is defined by medical office along South Broadway and traditional professional services near downtown. New medical office built adjacent to hospital campuses leases quickly at premium rents.",
+      "retail": "Tyler's retail market draws from a 60-mile trade area. Broadway Avenue and the South Side retail corridor are the primary nodes. Grocery-anchored centers in growing residential neighborhoods command the lowest cap rates.",
+      "hospitality": "Tyler hospitality is driven by medical visitors, regional convention business, and the growing athletic tourism economy. Full-service hotels near the Brookshire Grocery Arena and select-service properties near hospitals perform best.",
+      "mixed_use": "Mixed-use development is concentrating near the historic downtown square and the new UT Tyler Innovation Complex. Live-work loft conversions in older industrial buildings are attracting technology startup tenants."
+    }
+  },
+  "beaumont": {
+    "stats": {
+      "multifamily_vacancy": "8.5%",
+      "multifamily_cap_rate": "6.50%-7.25%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "16.5%",
+      "office_cap_rate": "8.00%-8.75%",
+      "retail_vacancy": "9.5%",
+      "retail_cap_rate": "7.25%-8.00%",
+      "hospitality_vacancy": "38.5%",
+      "hospitality_cap_rate": "8.00%-8.75%",
+      "mixed_use_vacancy": "8.0%",
+      "mixed_use_cap_rate": "7.00%-7.75%",
+      "job_growth": "1.0%",
+      "population_growth": "0.2%",
+      "rent_growth": "3.2%",
+      "median_asking_rent": "$920",
+      "major_employers": "ExxonMobil Beaumont Refinery, Motiva Enterprises, Baptist Hospitals of Southeast Texas, Christus Health, Port of Beaumont",
+      "top_submarkets": "Beaumont Downtown, Port Arthur Corridor, Nederland, Mid-County, Lumberton"
+    },
+    "market_report": "Beaumont's commercial real estate market is defined by petrochemical refining and the Golden Triangle industrial complex. ExxonMobil, Motiva, and several other majors operate large refineries along the Neches River corridor, creating consistent demand for industrial flex, equipment storage, and workforce housing. The Port of Beaumont is one of the top US military outloading ports and drives adjacent industrial activity. Office and retail markets are soft due to corporate consolidation, but industrial vacancy remains exceptionally tight. Baptist Hospitals and Christus Health anchor the medical corridor along Beaumont's south side.",
+    "loan_context": {
+      "bridge": "Bridge lenders in Beaumont focus on industrial and workforce housing acquisitions near the refinery complex. Underwriting requires careful evaluation of environmental risk, and most lenders require Phase I and Phase II environmental reports on industrial collateral.",
+      "permanent": "Permanent financing for Beaumont industrial is driven by creditworthy refinery-adjacent tenants with long lease terms. Lenders apply environmental risk overlays and typically require 25-year amortization minimums on industrial collateral.",
+      "construction": "Construction lending in Beaumont is conservative given the environmental risk profile. Medical office construction near Baptist Hospitals is the most active new development category.",
+      "sba": "SBA 504 loans serve Beaumont's small business community in refinery services, equipment maintenance, and medical ancillary services. Owner-occupied industrial along the refinery corridor is a common use.",
+      "mezzanine": "Mezzanine is rarely deployed in Beaumont given the conservative local lender culture. When used, it fills capital stack gaps in large industrial sale-leaseback transactions.",
+      "agency": "Agency multifamily financing applies to stabilized workforce housing. Freddie Mac Optigo and Fannie Mae DUS lenders are active in Beaumont's 100 to 300 unit workforce housing segment."
+    },
+    "property_context": {
+      "multifamily": "Beaumont multifamily serves refinery workers, port employees, and hospital staff. Demand is steady but unspectacular. Class B and C product in established neighborhoods near employment centers maintains stable occupancy.",
+      "industrial": "Industrial is the dominant CRE asset class in Beaumont. Properties along the Neches River industrial corridor and Port Arthur-Beaumont ship channel command premium rents from refinery services operators. Environmental site assessment is mandatory in underwriting.",
+      "office": "Beaumont office is weak. Downtown office occupancy has declined steadily as petrochemical companies consolidate regional operations in Houston. Medical office near the Baptist and Christus campuses is the only growing office subtype.",
+      "retail": "Retail in Beaumont clusters along Dowlen Road in the west and Phelan Boulevard in the north. The Parkdale Mall corridor is the dominant power center node. Discount retail and essential services outperform soft goods.",
+      "hospitality": "Hospitality serves business travelers tied to refinery turnarounds, Port of Beaumont shipping operations, and Lamar University visitors. Extended-stay product near the refinery complex has the most consistent occupancy.",
+      "mixed_use": "Mixed-use is minimal in Beaumont. Downtown redevelopment efforts along Pearl Street have produced a handful of restaurant and entertainment conversions in older commercial buildings."
+    }
+  },
+  "killeen": {
+    "stats": {
+      "multifamily_vacancy": "7.5%",
+      "multifamily_cap_rate": "6.25%-7.00%",
+      "industrial_vacancy": "7.8%",
+      "industrial_cap_rate": "6.75%-7.50%",
+      "office_vacancy": "14.5%",
+      "office_cap_rate": "7.75%-8.50%",
+      "retail_vacancy": "8.5%",
+      "retail_cap_rate": "7.00%-7.75%",
+      "hospitality_vacancy": "37.0%",
+      "hospitality_cap_rate": "7.75%-8.50%",
+      "mixed_use_vacancy": "7.5%",
+      "mixed_use_cap_rate": "6.75%-7.50%",
+      "job_growth": "1.6%",
+      "population_growth": "1.1%",
+      "rent_growth": "4.5%",
+      "median_asking_rent": "$1,020",
+      "major_employers": "Fort Cavazos, Killeen ISD, Seton Medical Center Harker Heights, Carl R. Darnall Army Medical Center, Texas A&M Central Texas",
+      "top_submarkets": "Killeen Downtown, Harker Heights, Copperas Cove, Nolanville, Belton"
+    },
+    "market_report": "Killeen's commercial real estate market is anchored by Fort Cavazos (formerly Fort Hood), the largest active-duty US Army installation with approximately 40,000 soldiers and 8,000 civilian employees. The base drives constant multifamily turnover, retail demand, and workforce housing need in Killeen, Harker Heights, Copperas Cove, and Nolanville. Texas A&M Central Texas adds a higher education anchor. The market's primary risk is BRAC (base realignment) sensitivity, which investors must underwrite carefully. Retail is strong along the Clear Creek Medical Center corridor and Central Texas Marketplace.",
+    "loan_context": {
+      "bridge": "Bridge loans in Killeen target value-add multifamily near the Fort Cavazos gates and workforce housing in Harker Heights. Lenders typically require BRAC sensitivity analysis and strong historical occupancy data.",
+      "permanent": "Permanent financing in Killeen is well-supported by community banks familiar with the military tenant base. Life companies are cautious due to base concentration risk. CMBS pools include Killeen multifamily when stabilized occupancy exceeds 93 percent.",
+      "construction": "Construction lending follows residential and light commercial demand near new residential subdivisions. Medical office construction near Seton Medical Center Harker Heights is active.",
+      "sba": "SBA 7(a) loans support veteran-owned businesses and retail operators serving the military community. Hotel acquisitions near the Killeen-Fort Hood Regional Airport also qualify.",
+      "mezzanine": "Mezzanine is infrequently used in Killeen. When deployed, it funds gap financing in larger retail center acquisitions or healthcare facility developments.",
+      "agency": "Agency multifamily is the primary permanent financing vehicle for Killeen workforce housing. Freddie Mac and Fannie Mae both recognize the strong military-driven occupancy fundamentals."
+    },
+    "property_context": {
+      "multifamily": "Killeen multifamily is among the most cyclically stable in Texas due to constant military rotation. Properties within three miles of Fort Cavazos gates maintain 92 to 96 percent occupancy throughout the cycle. BAH (Basic Allowance for Housing) sets an effective rent ceiling that keeps affordability in check.",
+      "industrial": "Industrial in Killeen is limited and serves defense contractors, logistics operators, and light manufacturing. Properties near the Killeen-Fort Hood Regional Airport attract the best tenants.",
+      "office": "Office demand in Killeen is thin. Medical office near Seton and Carl R. Darnall Army Medical Center is the primary growth segment. Traditional professional services office is stagnant.",
+      "retail": "Retail in Killeen serves one of the youngest demographics in Texas. Fast food, cell phones, automotive, and discount retail dominate. The Killeen Mall corridor and Clear Creek retail node are the primary concentrations.",
+      "hospitality": "Hospitality serves military families during PCS moves, base visitors, and regional events. Extended-stay and value select-service brands near Gate 1 on Clear Creek Road perform consistently.",
+      "mixed_use": "Mixed-use is limited in Killeen. A modest downtown revitalization effort near Veterans Memorial Boulevard has produced scattered restaurant and retail openings."
+    }
+  },
+  "round-rock": {
+    "stats": {
+      "multifamily_vacancy": "6.0%",
+      "multifamily_cap_rate": "5.25%-6.00%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.50%-6.25%",
+      "office_vacancy": "11.5%",
+      "office_cap_rate": "6.75%-7.50%",
+      "retail_vacancy": "6.5%",
+      "retail_cap_rate": "6.00%-6.75%",
+      "hospitality_vacancy": "30.0%",
+      "hospitality_cap_rate": "7.00%-7.75%",
+      "mixed_use_vacancy": "5.5%",
+      "mixed_use_cap_rate": "5.75%-6.50%",
+      "job_growth": "3.5%",
+      "population_growth": "2.8%",
+      "rent_growth": "6.5%",
+      "median_asking_rent": "$1,550",
+      "major_employers": "Dell Technologies, Emerson Electric, Old Navy Distribution, Round Rock ISD, St. David's Medical Center",
+      "top_submarkets": "Round Rock Downtown, La Frontera, Hutto, Georgetown, Pflugerville"
+    },
+    "market_report": "Round Rock is one of the fastest-growing cities in the United States, anchored by Dell Technologies' global headquarters and a rapidly expanding technology and manufacturing base. The city's location at the intersection of I-35 and SH-45 positions it as the primary industrial and distribution hub north of Austin. Multifamily development has been aggressive, with more than 3,000 units delivered between 2023 and 2025, temporarily pushing vacancy above 8 percent before absorption catches up. La Frontera Village and the Round Rock Premium Outlets anchor a strong retail trade area. Healthcare is growing along the St. David's Medical Center campus in Round Rock.",
+    "loan_context": {
+      "bridge": "Bridge loans in Round Rock fund value-add multifamily, industrial acquisitions near the Dell Campus, and retail repositioning. The strength of the Austin-Round Rock metro provides lender confidence even with elevated new supply.",
+      "permanent": "Permanent financing is aggressively priced in Round Rock given its AAA-tier Austin suburban positioning. Life companies actively compete for industrial and multifamily with Dell or medical anchors. CMBS is common for retail with national credit tenants.",
+      "construction": "Construction lending is very active in Round Rock. Industrial spec projects along Kenney Fort Blvd and SH-45 attract multiple competing lenders. Residential-adjacent retail construction is also well-funded.",
+      "sba": "SBA 504 loans are common for technology services and light manufacturing businesses purchasing owner-occupied facilities near the Dell Campus and Research Triangle Drive.",
+      "mezzanine": "Mezzanine is used in Round Rock for large mixed-use developments exceeding conventional senior lender LTC limits and for multifamily developments that need bridge-to-perm capital stack optimization.",
+      "agency": "Agency multifamily financing is highly competitive in Round Rock. Freddie Mac and Fannie Mae compete aggressively on DUS loan terms for stabilized 200-plus unit properties."
+    },
+    "property_context": {
+      "multifamily": "Round Rock multifamily is supply-challenged in the short term but fundamentally strong. The young professional and tech worker demographic commands high-quality amenities. Properties near the La Frontera and Dell corridors perform best. Lease-up periods have extended to 18 to 24 months on new Class A deliveries.",
+      "industrial": "Round Rock industrial along SH-45 and Kenney Fort Blvd is among the most sought-after suburban Austin product. Dell's supply chain and technology distribution operations create consistent demand. Vacancy is extremely tight and new deliveries lease within six months.",
+      "office": "Office demand in Round Rock is driven by Dell's supplier ecosystem and healthcare companies near St. David's. Flex office and R&D space outperform traditional office. Remote work has slowed traditional office absorption.",
+      "retail": "Round Rock retail is driven by strong household income and rapid population growth. La Frontera, the Premium Outlets, and the Ikea-anchored cluster are the dominant nodes. Grocery-anchored neighborhood centers in new residential areas lease quickly.",
+      "hospitality": "Round Rock hospitality serves Dell business travelers, family visitors to the medical center, and sports tourists visiting the Dell Diamond (Round Rock Express AAA stadium). Select-service brands near I-35 perform consistently.",
+      "mixed_use": "Mixed-use is emerging in Round Rock's downtown along Mays Street and near the new Round Rock Sports Center. Mixed-use projects combining apartments, retail, and medical office are attracting institutional capital."
+    }
+  },
+  "brownsville": {
+    "stats": {
+      "multifamily_vacancy": "7.2%",
+      "multifamily_cap_rate": "6.50%-7.25%",
+      "industrial_vacancy": "6.8%",
+      "industrial_cap_rate": "6.25%-7.00%",
+      "office_vacancy": "15.0%",
+      "office_cap_rate": "7.75%-8.50%",
+      "retail_vacancy": "8.5%",
+      "retail_cap_rate": "7.00%-7.75%",
+      "hospitality_vacancy": "36.0%",
+      "hospitality_cap_rate": "7.75%-8.50%",
+      "mixed_use_vacancy": "7.0%",
+      "mixed_use_cap_rate": "6.75%-7.50%",
+      "job_growth": "2.2%",
+      "population_growth": "1.5%",
+      "rent_growth": "5.0%",
+      "median_asking_rent": "$960",
+      "major_employers": "SpaceX Starbase, University of Texas Rio Grande Valley, Valley Baptist Medical Center, Brownsville ISD, Port of Brownsville",
+      "top_submarkets": "Brownsville Downtown, Boca Chica Corridor, Harlingen, San Benito, Palm Boulevard"
+    },
+    "market_report": "Brownsville is experiencing its most significant economic transformation in decades, driven by SpaceX's Starbase facility at Boca Chica and growing maquiladora activity at the US-Mexico border. The presence of SpaceX is creating new demand for workforce housing, industrial flex for aerospace suppliers, and commercial services that the market has never previously needed. UT Rio Grande Valley has a campus in Brownsville that adds education-related demand. The port of Brownsville is one of the largest US deepwater ports and drives consistent industrial activity. Cross-border trade through the international bridges is the primary economic driver.",
+    "loan_context": {
+      "bridge": "Bridge lenders in Brownsville are cautious given the border market dynamics. SpaceX-adjacent housing and industrial projects have attracted specialty lenders with aerospace experience. Most require 12 to 18 months of interest reserves.",
+      "permanent": "Permanent financing in Brownsville is primarily through community banks and CDFI lenders. SpaceX's long-term presence has begun to attract regional bank interest in permanent multifamily and industrial loans.",
+      "construction": "Construction lending is growing in Brownsville, particularly for workforce housing projects serving SpaceX workers and maquiladora employees. Lenders require strong contractor track records given labor market tightness.",
+      "sba": "SBA 504 loans support small business expansion tied to border trade, aerospace services, and healthcare. The SBA's border community lending program offers enhanced terms for qualifying Brownsville projects.",
+      "mezzanine": "Mezzanine is rare in Brownsville but is beginning to appear in larger SpaceX-adjacent workforce housing developments where conventional first-lien limits are restrictive.",
+      "agency": "Agency multifamily is available in Brownsville for stabilized workforce housing. Freddie Mac and Fannie Mae are cautious about SpaceX concentration risk and typically require demonstrated multi-employer tenant diversity."
+    },
+    "property_context": {
+      "multifamily": "Brownsville multifamily is being transformed by SpaceX demand. Properties near Boca Chica are experiencing dramatic rent growth while traditional neighborhoods maintain stable but lower-rent workforce housing. The UTRGV student housing segment is a separate niche.",
+      "industrial": "Industrial in Brownsville serves border trade, maquiladora supply chains, and emerging aerospace components manufacturing for SpaceX. The Port of Brownsville industrial submarket is the most institutional-grade location.",
+      "office": "Office demand is thin in Brownsville. The primary office users are legal, financial, and import/export trade services firms serving the border crossing community. Medical office near Valley Baptist Medical Center is the strongest growth segment.",
+      "retail": "Retail in Brownsville serves a binational trade area that includes Mexican consumers crossing for US goods. The Sunrise Mall corridor and US-77/83 retail strip are the primary nodes. Essential services and discount retail dominate.",
+      "hospitality": "Hospitality is growing in Brownsville due to SpaceX-related business travel, UT RGBV visitors, and border trade activity. Limited-service brands near the international bridges and SpaceX Boca Chica site perform best.",
+      "mixed_use": "Mixed-use is emerging in Brownsville's historic downtown near Elizabeth Street. Small-scale adaptive reuse of historic commercial buildings for restaurants and boutique retail is the primary activity."
+    }
+  },
+  "laredo": {
+    "stats": {
+      "multifamily_vacancy": "6.5%",
+      "multifamily_cap_rate": "6.50%-7.25%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "5.75%-6.50%",
+      "office_vacancy": "14.5%",
+      "office_cap_rate": "7.75%-8.50%",
+      "retail_vacancy": "8.0%",
+      "retail_cap_rate": "7.00%-7.75%",
+      "hospitality_vacancy": "34.0%",
+      "hospitality_cap_rate": "7.75%-8.50%",
+      "mixed_use_vacancy": "6.5%",
+      "mixed_use_cap_rate": "7.00%-7.75%",
+      "job_growth": "1.9%",
+      "population_growth": "1.3%",
+      "rent_growth": "4.5%",
+      "median_asking_rent": "$980",
+      "major_employers": "World Trade Bridge, Colombia Solidarity International Bridge, Laredo Medical Center, TAMIU, Laredo ISD",
+      "top_submarkets": "Laredo International District, Del Mar, North Laredo, Loop 20 Industrial Corridor, South Laredo"
+    },
+    "market_report": "Laredo is the busiest inland port in the United States, handling more than $300 billion in trade annually through its four international bridges. This trade volume makes industrial the overwhelmingly dominant CRE asset class. Distribution centers, cross-dock facilities, and customs bonded warehouses along the I-35 corridor and Loop 20 fill within weeks of delivery. TAMIU (Texas A&M International University) and Laredo Medical Center anchor modest office and healthcare demand. Multifamily serves a steady workforce of logistics, customs brokerage, and border trade employees. Retail follows population growth north along Bob Bullock Loop.",
+    "loan_context": {
+      "bridge": "Bridge lenders in Laredo focus almost exclusively on industrial acquisitions along Loop 20 and the I-35 corridor. Lenders require long-term lease verification with creditworthy logistics and distribution tenants.",
+      "permanent": "Permanent financing for Laredo industrial is driven by investment-grade tenant credit. Life companies and CMBS desks are active on distribution centers leased to publicly traded retailers and logistics operators. Cap rate compression has been significant.",
+      "construction": "Construction lending focuses on industrial spec development along the World Trade Bridge corridor. Lenders require 50 to 60 percent pre-leasing given the significant supply pipeline already under development.",
+      "sba": "SBA 504 loans serve Laredo's customs brokerage, freight forwarding, and border trade services businesses purchasing owner-occupied facilities.",
+      "mezzanine": "Mezzanine is used in Laredo for large-scale distribution center developments that require higher LTC than conventional senior lenders will provide on spec industrial.",
+      "agency": "Agency multifamily is available for stabilized workforce housing. Fannie Mae and Freddie Mac recognize Laredo's consistent employment base tied to trade activity."
+    },
+    "property_context": {
+      "multifamily": "Laredo multifamily serves logistics workers, customs professionals, and TAMIU students. Demand is consistent if unspectacular. Properties near the university and major employment corridors maintain occupancy above 92 percent.",
+      "industrial": "Industrial is the defining asset class in Laredo. Cross-dock facilities, distribution centers, and customs bonded warehouses along I-35 and Loop 20 command the highest industrial rents in Texas outside the major metros. Vacancy is chronically below 5 percent.",
+      "office": "Office is secondary in Laredo. Customs brokerage firms, freight forwarders, and legal services occupy most of the professional office space. Medical office near Laredo Medical Center and the Doctors Hospital at Renaissance is the growth segment.",
+      "retail": "Retail in Laredo benefits from Mexican cross-border shoppers who account for an estimated 40 percent of retail spending. The Mall del Norte and the US-83 retail corridor are the primary concentrations. National retail brands perform exceptionally well.",
+      "hospitality": "Hospitality in Laredo serves trade-related business travelers, Mexican shoppers who stay overnight, and government officials transiting through the border. Select-service brands near the international bridges and I-35 perform consistently.",
+      "mixed_use": "Mixed-use is limited in Laredo. A modest downtown revitalization near San Agustin Plaza has produced a handful of restaurant and retail openings. The historic district's UNESCO World Heritage potential is generating some adaptive reuse interest."
+    }
+  },
+  "san-luis-obispo": {
+    "stats": {
+      "multifamily_vacancy": "3.5%",
+      "multifamily_cap_rate": "4.25%-5.25%",
+      "industrial_vacancy": "4.5%",
+      "industrial_cap_rate": "5.00%-5.75%",
+      "office_vacancy": "10.5%",
+      "office_cap_rate": "5.75%-6.50%",
+      "retail_vacancy": "5.5%",
+      "retail_cap_rate": "5.25%-6.00%",
+      "hospitality_vacancy": "25.0%",
+      "hospitality_cap_rate": "6.00%-6.75%",
+      "mixed_use_vacancy": "4.0%",
+      "mixed_use_cap_rate": "4.75%-5.50%",
+      "job_growth": "1.4%",
+      "population_growth": "0.5%",
+      "rent_growth": "4.8%",
+      "median_asking_rent": "$2,150",
+      "major_employers": "Cal Poly SLO, French Hospital Medical Center, County of San Luis Obispo, Sierra Vista Regional Medical Center, PG&E",
+      "top_submarkets": "SLO Downtown, Edna Valley, Paso Robles, Arroyo Grande, Pismo Beach"
+    },
+    "market_report": "San Luis Obispo commands some of the most attractive commercial real estate fundamentals on California's Central Coast. Cal Poly SLO's 22,000-student enrollment drives consistent housing demand in a market where supply is severely constrained by Coastal Commission regulations, hillside terrain, and community opposition to density. The wine country economy centered on Edna Valley and Paso Robles generates hospitality, restaurant, and retail demand. Healthcare employment from French Hospital and Sierra Vista Regional Medical Center anchors office demand. SLO's walkable downtown is among the most successful small-city retail environments in California.",
+    "loan_context": {
+      "bridge": "Bridge loans in SLO fund value-add multifamily repositioning near Cal Poly and hospitality acquisitions along US-101. Lenders require environmental screening and Coastal Commission entitlement confirmation on any development-adjacent collateral.",
+      "permanent": "Permanent financing in SLO is competitive. Life companies and debt funds compete for multifamily and hospitality with proven occupancy. Cap rates in the 4.25 to 5.25 percent range reflect institutional quality demand in a supply-constrained market.",
+      "construction": "Construction lending is difficult in SLO due to high entitlement costs, Coastal Commission review timelines, and significant contractor cost premiums. Projects with entitled land and pre-sold or pre-leased space attract the strongest lender competition.",
+      "sba": "SBA 504 loans support wine industry and hospitality businesses purchasing owner-occupied facilities in the Edna Valley and Paso Robles wine corridor.",
+      "mezzanine": "Mezzanine is used in SLO for hospitality developments and mixed-use projects where entitlement risk and construction cost overruns push total project cost above conventional first-lien limits.",
+      "agency": "Agency multifamily is highly competitive in SLO. Fannie Mae and Freddie Mac compete aggressively on DUS terms for stabilized Cal Poly-adjacent properties with consistent occupancy above 96 percent."
+    },
+    "property_context": {
+      "multifamily": "SLO multifamily is among the most supply-constrained in California outside the Bay Area and coastal LA. Cal Poly students and faculty compete with young professional renters for a limited inventory. Cap rates in the 4.25 to 5.25 percent range reflect the scarcity premium.",
+      "industrial": "Industrial in SLO serves regional distribution, wine production support, and agricultural processing. The limited industrial inventory along Tank Farm Road and Broad Street commands solid rents. New development is constrained by land cost and entitlement difficulty.",
+      "office": "Office demand in SLO is concentrated around healthcare, professional services, and Cal Poly research partnerships. The downtown office market is healthy by California standards with strong foot traffic and restaurant density.",
+      "retail": "SLO downtown is one of the most successful small-city retail environments in California. Higuera Street foot traffic rivals many urban retail districts. Farmers market, wine tasting, and experiential retail concepts perform exceptionally well.",
+      "hospitality": "SLO hospitality benefits from wine tourism, Cal Poly parents and alumni, and Pacific Coast Highway drive travelers. Boutique hotels and wine country inns command premium ADRs. The expanding conference and wedding venue market is driving new hospitality development.",
+      "mixed_use": "Mixed-use is the preferred development form in SLO's infill market. Projects combining ground-floor restaurant and retail with upper-floor apartments or offices are being approved more readily than single-use residential near downtown."
+    }
+  },
+  "santa-cruz": {
+    "stats": {
+      "multifamily_vacancy": "3.2%",
+      "multifamily_cap_rate": "4.00%-5.00%",
+      "industrial_vacancy": "4.0%",
+      "industrial_cap_rate": "4.75%-5.50%",
+      "office_vacancy": "11.0%",
+      "office_cap_rate": "5.50%-6.25%",
+      "retail_vacancy": "5.5%",
+      "retail_cap_rate": "5.25%-6.00%",
+      "hospitality_vacancy": "24.0%",
+      "hospitality_cap_rate": "5.75%-6.50%",
+      "mixed_use_vacancy": "3.5%",
+      "mixed_use_cap_rate": "4.50%-5.25%",
+      "job_growth": "1.6%",
+      "population_growth": "0.4%",
+      "rent_growth": "5.2%",
+      "median_asking_rent": "$2,650",
+      "major_employers": "UC Santa Cruz, Plantronics, Seagate Technology, Dominican Hospital, County of Santa Cruz",
+      "top_submarkets": "Santa Cruz Downtown, Capitola, Aptos, Scotts Valley, Watsonville"
+    },
+    "market_report": "Santa Cruz occupies a unique position in California commercial real estate: a coastal market with Silicon Valley proximity that is far more supply-constrained than the Bay Area itself. UC Santa Cruz's 19,000-student enrollment drives intense housing demand in a city where Coastal Commission regulations, hillside terrain, and strong community preservation sentiment severely limit new supply. The technology sector has a significant footprint with Plantronics, Seagate, and numerous remote workers who relocated from the Bay Area. Downtown Pacific Avenue is one of the strongest performing small-city retail corridors in California. Industrial inventory is extremely limited and commands premium rents.",
+    "loan_context": {
+      "bridge": "Bridge lenders in Santa Cruz require Coastal Commission entitlement confirmation before funding any development-adjacent collateral. Value-add multifamily near UCSC is the primary bridge loan use case.",
+      "permanent": "Permanent financing in Santa Cruz is competitive at cap rates approaching 4.00 to 5.00 percent for multifamily. Life companies and debt funds compete for well-located, stabilized assets. Environmental review adds complexity to any coastal-zone properties.",
+      "construction": "Construction lending is exceptionally difficult in Santa Cruz. Coastal Commission review, UCSC enrollment growth pressure, and community opposition to density mean that approved projects attract very strong lender interest. Construction cost premiums of 20 to 30 percent above national averages are typical.",
+      "sba": "SBA 504 loans support technology services, restaurant, and hospitality businesses purchasing owner-occupied facilities in Santa Cruz County.",
+      "mezzanine": "Mezzanine is used in Santa Cruz for student housing developments and coastal hospitality projects where construction costs and entitlement premiums push total cost above conventional first-lien limits.",
+      "agency": "Agency multifamily is very competitive in Santa Cruz given the extreme supply constraint. Fannie Mae and Freddie Mac offer the tightest spreads on UCSC-adjacent properties with occupancy above 97 percent."
+    },
+    "property_context": {
+      "multifamily": "Santa Cruz multifamily is among the most severely supply-constrained markets in California. UCSC students, faculty, and Silicon Valley remote workers compete for a fixed inventory. Sub-4.00 percent cap rates are achievable on UCSC-adjacent properties. Rent growth has consistently outperformed the state average.",
+      "industrial": "Industrial in Santa Cruz is extremely scarce. The small inventory along North River Street and the Scotts Valley Technology Park commands rents approaching Silicon Valley levels. Seagate and Plantronics occupy significant portions of the existing inventory.",
+      "office": "Office demand is driven by UCSC research partnerships, technology companies, and healthcare services. Downtown Pacific Avenue office attracts boutique professional services that benefit from the foot traffic and walkability.",
+      "retail": "Pacific Avenue downtown is one of the strongest performing retail streets in California outside San Francisco and LA. Independent restaurants, surf shops, bookstores, and experiential retail coexist with national credit tenants.",
+      "hospitality": "Santa Cruz hospitality commands premium rates from Silicon Valley weekenders, surf tourism, and UCSC visitors. Boutique coastal properties and surf-adjacent motels outperform corporate brands. ADRs have grown significantly as remote work has expanded the weekend leisure market.",
+      "mixed_use": "Mixed-use is the dominant infill development form in Santa Cruz. Ground-floor retail with upper-floor apartments is favored by the planning department and attracts strong tenant demand from the young professional demographic."
+    }
+  },
+  "palm-springs": {
+    "stats": {
+      "multifamily_vacancy": "4.5%",
+      "multifamily_cap_rate": "4.50%-5.50%",
+      "industrial_vacancy": "5.5%",
+      "industrial_cap_rate": "5.25%-6.00%",
+      "office_vacancy": "12.0%",
+      "office_cap_rate": "6.25%-7.00%",
+      "retail_vacancy": "7.0%",
+      "retail_cap_rate": "5.75%-6.50%",
+      "hospitality_vacancy": "22.0%",
+      "hospitality_cap_rate": "5.50%-6.25%",
+      "mixed_use_vacancy": "5.0%",
+      "mixed_use_cap_rate": "5.00%-5.75%",
+      "job_growth": "1.5%",
+      "population_growth": "0.9%",
+      "rent_growth": "5.8%",
+      "median_asking_rent": "$1,850",
+      "major_employers": "Desert Healthcare District, Palm Springs Unified, Agua Caliente Band of Cahuilla Indians, Eisenhower Health, College of the Desert",
+      "top_submarkets": "Palm Springs Downtown, Cathedral City, Rancho Mirage, Palm Desert, Indian Wells"
+    },
+    "market_report": "Palm Springs anchors the Coachella Valley as a world-class resort, hospitality, and lifestyle destination. The Agua Caliente Band of Cahuilla Indians controls significant land in the valley and has emerged as a major development partner and employer through Agua Caliente Casino Resort Spa and related hospitality properties. The Coachella and Stagecoach music festivals generate annual hospitality demand spikes that support hotel and short-term rental economics. Snowbird multifamily demand from cold-weather retirees drives seasonal occupancy patterns. Industrial in the Coachella Valley serves regional distribution and date palm agriculture. Medical and wellness real estate is a growing segment as the area attracts health-conscious lifestyle residents.",
+    "loan_context": {
+      "bridge": "Bridge loans in Palm Springs target hospitality acquisitions and short-term rental portfolio conversions. Lenders require detailed revenue analysis accounting for seasonal Coachella Valley occupancy patterns, which swing dramatically from peak winter-spring to summer heat.",
+      "permanent": "Permanent financing is competitive for hospitality with proven annual RevPAR performance. Life companies compete for boutique hotels with long operating histories. Multifamily permanent debt reflects the seasonal occupancy pattern in structuring.",
+      "construction": "Construction lending in Palm Springs is active for new hospitality and wellness resort development. High-end residential-adjacent mixed-use projects also attract construction lenders given the strong underlying demand.",
+      "sba": "SBA 504 loans support owner-operated hospitality, restaurant, and medical spa businesses in the Coachella Valley. The Agua Caliente tribe's land trust complicates title for tribal land parcels.",
+      "mezzanine": "Mezzanine is used in Palm Springs for large hospitality developments and mixed-use lifestyle projects that exceed conventional senior LTC limits. Festival-related land value appreciation supports elevated leverage.",
+      "agency": "Agency multifamily is available for stabilized projects targeting year-round residents rather than seasonal snowbirds. Freddie Mac and Fannie Mae apply seasonal occupancy overlays to underwriting."
+    },
+    "property_context": {
+      "multifamily": "Palm Springs multifamily serves a mix of year-round residents, seasonal snowbirds, and healthcare workers. Properties near downtown and the Medical Mile maintain consistent occupancy. Short-term rental conversions have removed a meaningful share of inventory from the long-term rental market.",
+      "industrial": "Industrial in the Coachella Valley serves regional distribution, date palm agriculture, and emerging solar and renewable energy supply chains. Indio and Coachella have the most active industrial submarkets. Palm Springs proper has minimal industrial inventory.",
+      "office": "Office in Palm Springs is concentrated around healthcare and professional services. The Eisenhower Health medical campus anchors a growing medical office corridor. Downtown creative office attracts design, architecture, and media firms.",
+      "retail": "Palm Springs retail benefits from high-income tourists, wealthy snowbirds, and the festival economy. Palm Canyon Drive is the dominant retail corridor with luxury boutiques, restaurants, and gallery spaces. National retailers are increasing their presence.",
+      "hospitality": "Hospitality is the dominant institutional asset class in Palm Springs. Boutique hotels along Indian Canyon Drive and larger resort properties in Rancho Mirage and Palm Desert trade at premium multiples. Coachella Valley ADRs during festival weekends are among the highest in the country.",
+      "mixed_use": "Mixed-use is the preferred development form in Palm Springs' infill market. Ground-floor restaurant and retail with boutique hotel rooms or residential condominiums above is the prototype for new downtown development."
+    }
   }
 }
