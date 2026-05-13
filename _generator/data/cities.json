@@ -3868,5 +3868,68 @@
       "Salmon",
       "Rexburg"
     ]
+  },
+  {
+    "slug": "twin-falls",
+    "city": "Twin Falls",
+    "state": "ID",
+    "metro": "Twin Falls",
+    "context": "Twin Falls is a rapidly growing southern Idaho agricultural and food processing market with Chobani's massive yogurt plant and several large food manufacturers driving industrial demand. The metro's strong population growth, affordable land, and US-93 location support retail and multifamily development.",
+    "neighborhoods": [
+      "Downtown Twin Falls",
+      "Burley",
+      "Rupert",
+      "Heyburn",
+      "Paul",
+      "Wendell",
+      "Gooding",
+      "Shoshone",
+      "Bliss",
+      "Hagerman",
+      "Buhl",
+      "Filer"
+    ]
+  },
+  {
+    "slug": "casper",
+    "city": "Casper",
+    "state": "WY",
+    "metro": "Casper",
+    "context": "Casper is Wyoming's oil and gas capital with commercial real estate fundamentals closely tied to energy sector activity. The market offers extremely affordable commercial properties with high yield potential during energy expansion cycles, supported by a stable government and healthcare base.",
+    "neighborhoods": [
+      "Downtown Casper",
+      "East Casper",
+      "North Casper",
+      "Evansville",
+      "Mills",
+      "Bar Nunn",
+      "Glenrock",
+      "Douglas",
+      "Lusk",
+      "Torrington",
+      "Wheatland",
+      "Thermopolis"
+    ]
+  },
+  {
+    "slug": "bismarck",
+    "city": "Bismarck",
+    "state": "ND",
+    "metro": "Bismarck",
+    "context": "Bismarck is North Dakota's capital and a stable commercial market with government, healthcare, and agricultural services providing recession-resistant demand. The Bakken oil field proximity creates industrial and workforce housing demand during energy expansions.",
+    "neighborhoods": [
+      "Downtown Bismarck",
+      "Mandan",
+      "Lincoln ND",
+      "Washburn",
+      "Hazen",
+      "Dickinson",
+      "Minot",
+      "Williston",
+      "Jamestown",
+      "Valley City",
+      "Wahpeton",
+      "Lisbon ND"
+    ]
   }
 ]
