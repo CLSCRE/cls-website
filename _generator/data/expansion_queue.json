@@ -667,72 +667,6 @@
       ]
     },
     {
-      "slug": "bozeman",
-      "city": "Bozeman",
-      "state": "MT",
-      "metro": "Bozeman",
-      "tier1": false,
-      "context": "Bozeman is one of the fastest-growing cities in the Mountain West, fueled by tech sector migration, Montana State University enrollment growth, and outdoor recreation appeal that has made it a premium market for multifamily, retail, and boutique hospitality development.",
-      "neighborhoods": [
-        "Downtown Bozeman",
-        "South Bozeman",
-        "North Bozeman",
-        "Four Corners",
-        "Belgrade",
-        "Manhattan MT",
-        "Three Forks",
-        "Livingston",
-        "Big Sky",
-        "Gardiner",
-        "West Yellowstone",
-        "Columbus MT"
-      ]
-    },
-    {
-      "slug": "idaho-falls",
-      "city": "Idaho Falls",
-      "state": "ID",
-      "metro": "Idaho Falls",
-      "tier1": false,
-      "context": "Idaho Falls is eastern Idaho's commercial hub with a diversified economy anchored by nuclear research at Idaho National Laboratory, agricultural services, and regional retail. Industrial and healthcare real estate benefit from stable government and agricultural employment.",
-      "neighborhoods": [
-        "Downtown Idaho Falls",
-        "Ammon",
-        "Shelley",
-        "Blackfoot",
-        "Pocatello",
-        "American Falls",
-        "Burley",
-        "Rupert",
-        "Twin Falls",
-        "Jerome",
-        "Gooding",
-        "Arco"
-      ]
-    },
-    {
-      "slug": "pocatello",
-      "city": "Pocatello",
-      "state": "ID",
-      "metro": "Pocatello",
-      "tier1": false,
-      "context": "Pocatello is a southeastern Idaho market anchored by Idaho State University and regional healthcare, with stable commercial demand from an agricultural and education economy. Net lease and multifamily assets offer consistent occupancy at yields well above Idaho Falls and Boise.",
-      "neighborhoods": [
-        "Downtown Pocatello",
-        "Chubbuck",
-        "Lava Hot Springs",
-        "American Falls",
-        "Blackfoot",
-        "Fort Hall",
-        "Aberdeen",
-        "Arco",
-        "Mackay",
-        "Challis",
-        "Salmon",
-        "Rexburg"
-      ]
-    },
-    {
       "slug": "twin-falls",
       "city": "Twin Falls",
       "state": "ID",
@@ -2567,9 +2501,24 @@
       "slug": "helena",
       "city": "Helena",
       "added": "2026-05-13"
+    },
+    {
+      "slug": "bozeman",
+      "city": "Bozeman",
+      "added": "2026-05-13"
+    },
+    {
+      "slug": "idaho-falls",
+      "city": "Idaho Falls",
+      "added": "2026-05-13"
+    },
+    {
+      "slug": "pocatello",
+      "city": "Pocatello",
+      "added": "2026-05-13"
     }
   ],
-  "last_run": "2026-05-13T04:12:50.801641Z",
-  "total_pages_added": 864,
-  "runs_completed": 24
+  "last_run": "2026-05-13T10:44:22.680180Z",
+  "total_pages_added": 900,
+  "runs_completed": 25
 }

@@ -3805,5 +3805,68 @@
       "Livingston",
       "Bozeman"
     ]
+  },
+  {
+    "slug": "bozeman",
+    "city": "Bozeman",
+    "state": "MT",
+    "metro": "Bozeman",
+    "context": "Bozeman is one of the fastest-growing cities in the Mountain West, fueled by tech sector migration, Montana State University enrollment growth, and outdoor recreation appeal that has made it a premium market for multifamily, retail, and boutique hospitality development.",
+    "neighborhoods": [
+      "Downtown Bozeman",
+      "South Bozeman",
+      "North Bozeman",
+      "Four Corners",
+      "Belgrade",
+      "Manhattan MT",
+      "Three Forks",
+      "Livingston",
+      "Big Sky",
+      "Gardiner",
+      "West Yellowstone",
+      "Columbus MT"
+    ]
+  },
+  {
+    "slug": "idaho-falls",
+    "city": "Idaho Falls",
+    "state": "ID",
+    "metro": "Idaho Falls",
+    "context": "Idaho Falls is eastern Idaho's commercial hub with a diversified economy anchored by nuclear research at Idaho National Laboratory, agricultural services, and regional retail. Industrial and healthcare real estate benefit from stable government and agricultural employment.",
+    "neighborhoods": [
+      "Downtown Idaho Falls",
+      "Ammon",
+      "Shelley",
+      "Blackfoot",
+      "Pocatello",
+      "American Falls",
+      "Burley",
+      "Rupert",
+      "Twin Falls",
+      "Jerome",
+      "Gooding",
+      "Arco"
+    ]
+  },
+  {
+    "slug": "pocatello",
+    "city": "Pocatello",
+    "state": "ID",
+    "metro": "Pocatello",
+    "context": "Pocatello is a southeastern Idaho market anchored by Idaho State University and regional healthcare, with stable commercial demand from an agricultural and education economy. Net lease and multifamily assets offer consistent occupancy at yields well above Idaho Falls and Boise.",
+    "neighborhoods": [
+      "Downtown Pocatello",
+      "Chubbuck",
+      "Lava Hot Springs",
+      "American Falls",
+      "Blackfoot",
+      "Fort Hall",
+      "Aberdeen",
+      "Arco",
+      "Mackay",
+      "Challis",
+      "Salmon",
+      "Rexburg"
+    ]
   }
 ]
