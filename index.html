@@ -511,7 +511,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
   <div style="display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap" role="tablist" aria-label="Calculator tools">
     <button class="qc-tab qc-tab-active" data-tab="loan" role="tab" aria-selected="true" aria-controls="qcLoan" type="button">Loan Sizing</button>
     <button class="qc-tab" data-tab="rates" role="tab" aria-selected="false" aria-controls="qcRates" type="button">Rate &amp; Program Table</button>
-    <button class="qc-tab" data-tab="refi" role="tab" aria-selected="false" aria-controls="qcRefi" type="button">Refi Estimator</button>
+    <button class="qc-tab" data-tab="tools" role="tab" aria-selected="false" aria-controls="qcTools" type="button">More Calculators</button>
   </div>
   <!-- Loan Sizing -->
   <div id="qcLoan" role="tabpanel">
@@ -671,16 +671,77 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       <a href="mailto:loans@clscre.com?subject=Rate%20Inquiry" class="btn-primary" style="font-size:13px;padding:9px 16px;white-space:nowrap">Get a Program Quote &rarr;</a>
     </div>
   </div>
-  <!-- Refi Check panel -->
-  <div id="qcRefi" role="tabpanel" style="display:none">
-    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
-      <div style="flex:1;min-width:260px">
-        <div style="font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:8px">Check Your Refi Opportunity</div>
-        <p style="color:var(--gray-500);font-size:14px;margin:0 0 8px">If you have a commercial loan originated before mid-2023, you may be able to significantly reduce your payment. Enter your current loan details and see your savings in under a minute.</p>
-        <p style="color:var(--gray-400);font-size:12px;margin:0">Shows: new payment &bull; annual savings &bull; new LTV &bull; breakeven period</p>
-      </div>
-      <a href="./refinance.html" class="btn-primary" style="white-space:nowrap">Check My Refi &rarr;</a>
+  <!-- More Calculators panel -->
+  <div id="qcTools" role="tabpanel" style="display:none">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px">
+      <!-- DSCR Calculator -->
+      <a href="./tools/dscr-calculator.html" class="qc-tool-card">
+        <div class="qc-tool-icon" style="background:#d1fae5;color:#065f46">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="qc-tool-body">
+          <div class="qc-tool-name">DSCR Calculator</div>
+          <div class="qc-tool-desc">Debt service coverage ratio — see if your NOI qualifies</div>
+        </div>
+        <span class="qc-tool-arrow">&rarr;</span>
+      </a>
+      <!-- Cap Rate Calculator -->
+      <a href="./tools/cap-rate-calculator.html" class="qc-tool-card">
+        <div class="qc-tool-icon" style="background:#dbeafe;color:#1e40af">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="qc-tool-body">
+          <div class="qc-tool-name">Cap Rate Calculator</div>
+          <div class="qc-tool-desc">Value a property by its income relative to market cap rates</div>
+        </div>
+        <span class="qc-tool-arrow">&rarr;</span>
+      </a>
+      <!-- Cash-on-Cash Return -->
+      <a href="./tools/cashoncash-calculator.html" class="qc-tool-card">
+        <div class="qc-tool-icon" style="background:#fef3c7;color:#92400e">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="qc-tool-body">
+          <div class="qc-tool-name">Cash-on-Cash Return</div>
+          <div class="qc-tool-desc">Measure actual cash yield on your equity investment</div>
+        </div>
+        <span class="qc-tool-arrow">&rarr;</span>
+      </a>
+      <!-- NOI Calculator -->
+      <a href="./tools/noi-calculator.html" class="qc-tool-card">
+        <div class="qc-tool-icon" style="background:#ede9fe;color:#5b21b6">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h18v18H3zM9 9h6M9 12h6M9 15h4"/></svg>
+        </div>
+        <div class="qc-tool-body">
+          <div class="qc-tool-name">NOI Calculator</div>
+          <div class="qc-tool-desc">Build your net operating income from gross rents and expenses</div>
+        </div>
+        <span class="qc-tool-arrow">&rarr;</span>
+      </a>
+      <!-- Full Amortization Schedule -->
+      <a href="./tools/loan-calculator.html" class="qc-tool-card">
+        <div class="qc-tool-icon" style="background:#ffedd5;color:#9a3412">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+        </div>
+        <div class="qc-tool-body">
+          <div class="qc-tool-name">Full Amort Schedule</div>
+          <div class="qc-tool-desc">Month-by-month principal and interest breakdown for any loan</div>
+        </div>
+        <span class="qc-tool-arrow">&rarr;</span>
+      </a>
+      <!-- Refi Analysis (AI) -->
+      <a href="https://clscre.ai" target="_blank" rel="noopener" class="qc-tool-card qc-tool-card-ai">
+        <div class="qc-tool-icon" style="background:#e0e7ff;color:#3730a3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 8v4l3 3"/><circle cx="18" cy="5" r="3"/></svg>
+        </div>
+        <div class="qc-tool-body">
+          <div class="qc-tool-name">Refi vs. Sell Analysis <span style="font-size:10px;font-weight:700;background:#3730a3;color:#fff;border-radius:10px;padding:1px 7px;margin-left:4px;vertical-align:middle">AI</span></div>
+          <div class="qc-tool-desc">Deep analysis of your refinance options on clscre.ai</div>
+        </div>
+        <span class="qc-tool-arrow">&rarr;</span>
+      </a>
     </div>
+    <p style="font-size:11px;color:var(--gray-400,#9ca3af);margin:14px 0 0">All calculators run in your browser. No data is stored or shared. Need a full deal analysis? <a href="https://clscre.ai" target="_blank" rel="noopener" style="color:var(--green,#006A4E);font-weight:600;text-decoration:none">Try clscre.ai &rarr;</a></p>
   </div>
 </div>
 </section>
@@ -707,6 +768,17 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 /* Rate table filter selects */
 .qr-filter{padding:7px 10px;border:1px solid var(--gray-200,#e5e7eb);border-radius:6px;background:#fff;font-size:13px;font-family:var(--font-body,Inter,sans-serif);color:var(--gray-700,#374151);cursor:pointer;outline:none;min-width:130px}
 .qr-filter:focus{border-color:var(--green,#006A4E)}
+/* More Calculators tool cards */
+.qc-tool-card{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--gray-200,#e5e7eb);border-radius:12px;padding:16px 18px;text-decoration:none;color:inherit;transition:box-shadow .15s,border-color .15s}
+.qc-tool-card:hover{border-color:var(--green,#006A4E);box-shadow:0 4px 12px rgba(0,106,78,.1)}
+.qc-tool-card-ai{border-style:dashed;border-color:#a5b4fc}
+.qc-tool-card-ai:hover{border-color:#3730a3;border-style:solid;box-shadow:0 4px 12px rgba(55,48,163,.1)}
+.qc-tool-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.qc-tool-body{flex:1;min-width:0}
+.qc-tool-name{font-size:14px;font-weight:700;color:var(--navy,#153D63);margin-bottom:3px}
+.qc-tool-desc{font-size:12px;color:var(--gray-500,#6b7280);line-height:1.4}
+.qc-tool-arrow{font-size:16px;color:var(--gray-300,#d1d5db);flex-shrink:0;transition:color .15s}
+.qc-tool-card:hover .qc-tool-arrow{color:var(--green,#006A4E)}
 @media(max-width:768px){#qcLoan>div{grid-template-columns:1fr!important}}
 @media(max-width:640px){#qcLoan .calc-field:nth-child(n){grid-column:span 1}.qr-filter{min-width:calc(50% - 4px)}}
 </style>
@@ -814,7 +886,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       var tab=this.dataset.tab;
       document.querySelectorAll('.qc-tab').forEach(function(b){b.classList.remove('qc-tab-active');b.setAttribute('aria-selected','false');});
       this.classList.add('qc-tab-active');this.setAttribute('aria-selected','true');
-      ['loan','rates','refi'].forEach(function(t){document.getElementById('qc'+t.charAt(0).toUpperCase()+t.slice(1)).style.display=t===tab?'':'none';});
+      ['loan','rates','tools'].forEach(function(t){document.getElementById('qc'+t.charAt(0).toUpperCase()+t.slice(1)).style.display=t===tab?'':'none';});
       if(tab==='rates'&&!window._qrBuilt){window._qrBuilt=true;qrBuild();}
     });
   });
