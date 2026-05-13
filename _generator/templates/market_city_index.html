@@ -129,20 +129,6 @@
 {% set faq_title = "Commercial Real Estate Lending in " + city.city + " — FAQ" %}
 {% include '_faq_section.html' %}
 
-<!-- OTHER CITIES -->
-<section class="content-section alt">
-<div class="section-inner">
-  <h2 class="section-title reveal">Other Markets</h2>
-  <div class="pill-links">
-    {% for c in all_cities %}
-    {% if c.slug != city.slug %}
-    <a href="{{ depth }}markets/{{ c.slug }}/" class="pill-link">{{ c.city }}, {{ c.state }}</a>
-    {% endif %}
-    {% endfor %}
-  </div>
-</div>
-</section>
-
 <!-- CTA -->
 {% set cta_title = 'Get Commercial Financing in ' + city.city %}
 {% set cta_description = 'Contact Commercial Lending Solutions for a free, no-obligation quote on commercial real estate financing in ' + city.city + ', ' + city.state + '. We respond within 24 hours.' %}

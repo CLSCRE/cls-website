@@ -91,20 +91,6 @@
 </div>
 </section>
 
-<!-- SAME LOAN TYPE IN OTHER CITIES -->
-<section class="content-section alt">
-<div class="section-inner">
-  <h2 class="section-title reveal">{{ loan.name }} in Other Cities</h2>
-  <div class="pill-links">
-    {% for c in all_cities %}
-    {% if c.slug != city.slug %}
-    <a href="{{ depth }}financing/{{ loan.slug }}-{{ c.slug }}.html" class="pill-link">{{ c.city }}, {{ c.state }}</a>
-    {% endif %}
-    {% endfor %}
-  </div>
-</div>
-</section>
-
 <!-- FAQ -->
 {% set faq_title = loan.name + ' in ' + city.city + ' FAQ' %}
 {% include '_faq_section.html' %}

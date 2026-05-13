@@ -99,20 +99,6 @@
 </div>
 </section>
 
-<!-- SAME PROPERTY TYPE IN OTHER CITIES -->
-<section class="content-section alt">
-<div class="section-inner">
-  <h2 class="section-title reveal">{{ prop.name }} Financing in Other Cities</h2>
-  <div class="pill-links">
-    {% for c in all_cities %}
-    {% if c.slug != city.slug %}
-    <a href="{{ depth }}property/{{ prop.slug }}-{{ c.slug }}.html" class="pill-link">{{ c.city }}, {{ c.state }}</a>
-    {% endif %}
-    {% endfor %}
-  </div>
-</div>
-</section>
-
 <!-- FAQ -->
 {% set faq_title = prop.name + ' Financing in ' + city.city + ' FAQ' %}
 {% include '_faq_section.html' %}
