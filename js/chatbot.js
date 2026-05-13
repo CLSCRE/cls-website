@@ -33,7 +33,7 @@
       </div>
       <div id="cls-chat-messages">
         <div class="cls-msg cls-msg-bot">
-          <div class="cls-msg-bubble">Welcome to Commercial Lending Solutions! I can help with commercial real estate financing — rates, loan programs, qualification requirements, and more. What can I help you with?</div>
+          <div class="cls-msg-bubble">Welcome to Commercial Lending Solutions. I can help with commercial real estate financing: rates, loan programs, qualification requirements, and more. What can I help you with?</div>
         </div>
         <div class="cls-quick-btns">
           <button class="cls-quick-btn" data-msg="What are current commercial loan rates?">Current Rates</button>
