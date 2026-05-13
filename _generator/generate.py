@@ -129,6 +129,136 @@ def build_neighborhood_faqs(city, neighborhood, city_data=None):
     return faqs
 
 
+# ── Regional grouping (used for cross-market cross-linking) ─────────────
+STATE_TO_REGION = {
+    # West Coast
+    "CA": "West Coast", "OR": "West Coast", "WA": "West Coast", "HI": "West Coast",
+    # Mountain West
+    "CO": "Mountain West", "UT": "Mountain West", "NV": "Mountain West",
+    "ID": "Mountain West", "AZ": "Mountain West", "NM": "Mountain West",
+    "MT": "Mountain West", "WY": "Mountain West",
+    # Texas & Southwest
+    "TX": "Texas & Southwest", "OK": "Texas & Southwest",
+    # Midwest & Plains
+    "IL": "Midwest", "MI": "Midwest", "OH": "Midwest", "IN": "Midwest",
+    "WI": "Midwest", "MN": "Midwest", "IA": "Midwest", "MO": "Midwest",
+    "KS": "Midwest", "NE": "Midwest", "SD": "Midwest", "ND": "Midwest",
+    # Southeast
+    "FL": "Southeast", "GA": "Southeast", "NC": "Southeast", "SC": "Southeast",
+    "TN": "Southeast", "AL": "Southeast", "MS": "Southeast", "LA": "Southeast",
+    "AR": "Southeast", "KY": "Southeast",
+    # Mid-Atlantic
+    "VA": "Mid-Atlantic", "DC": "Mid-Atlantic", "MD": "Mid-Atlantic",
+    "PA": "Mid-Atlantic", "WV": "Mid-Atlantic", "DE": "Mid-Atlantic", "NJ": "Mid-Atlantic",
+    # Northeast
+    "NY": "Northeast", "MA": "Northeast", "CT": "Northeast", "RI": "Northeast",
+    "VT": "Northeast", "NH": "Northeast", "ME": "Northeast",
+}
+
+REGION_ORDER = [
+    "West Coast", "Mountain West", "Texas & Southwest", "Midwest",
+    "Southeast", "Mid-Atlantic", "Northeast",
+]
+
+REGION_DESCRIPTIONS = {
+    "West Coast": "Pacific gateway markets driving tech, logistics, and entertainment capital flows.",
+    "Mountain West": "Sun Belt growth corridors with sustained in-migration and yield premiums.",
+    "Texas & Southwest": "America's fastest-growing metros, anchored by energy, tech, and population gains.",
+    "Midwest": "Industrial Belt and Plains markets with deep manufacturing and logistics demand.",
+    "Southeast": "High-growth Southeast and Sun Belt markets with strong fundamentals across asset classes.",
+    "Mid-Atlantic": "Federal, financial, and industrial corridors connecting DC, Philadelphia, and the Northeast.",
+    "Northeast": "Established gateway markets with institutional capital depth and long-cycle stability.",
+}
+
+NATIONAL_ANCHORS = [
+    "los-angeles", "new-york", "dallas", "miami", "atlanta",
+    "chicago", "houston", "phoenix", "washington-dc",
+]
+
+
+def region_for_state(state: str) -> str:
+    return STATE_TO_REGION.get(state, "Other Markets")
+
+
+def first_sentence(text: str, max_chars: int = 160) -> str:
+    """Return the first sentence of text, capped at max_chars."""
+    if not text:
+        return ""
+    # Find sentence boundary
+    for end in (". ", "! ", "? "):
+        idx = text.find(end)
+        if 0 < idx <= max_chars:
+            return text[:idx + 1].strip()
+    return text[:max_chars].rstrip() + ("..." if len(text) > max_chars else "")
+
+
+def build_regional_groups(cities):
+    """Group cities by region, ordered per REGION_ORDER. Returns list of
+    {region, blurb, cities: [city...]} dicts, only for regions with cities."""
+    by_region = {r: [] for r in REGION_ORDER}
+    for c in cities:
+        r = region_for_state(c["state"])
+        by_region.setdefault(r, []).append(c)
+    # Sort cities alphabetically within each region for clean presentation
+    out = []
+    for r in REGION_ORDER:
+        items = by_region.get(r, [])
+        if not items:
+            continue
+        items_sorted = sorted(items, key=lambda x: x["city"])
+        out.append({
+            "region": r,
+            "blurb": REGION_DESCRIPTIONS.get(r, ""),
+            "cities": items_sorted,
+        })
+    return out
+
+
+def pick_featured_markets(current_city, cities, n_total=8):
+    """Pick a curated set of ~8 markets to feature: regional peers + national anchors.
+    Returns list of city dicts (excludes current_city)."""
+    current_slug = current_city["slug"]
+    current_region = region_for_state(current_city["state"])
+    picks = []
+    seen = {current_slug}
+
+    # Pool 1: top metros in same region (up to 4)
+    region_peers = [c for c in cities
+                    if region_for_state(c["state"]) == current_region
+                    and c["slug"] not in seen]
+    # Prioritize peers that are also national anchors, then by metro name
+    region_peers.sort(key=lambda c: (
+        0 if c["slug"] in NATIONAL_ANCHORS else 1,
+        c["city"],
+    ))
+    for c in region_peers[:4]:
+        picks.append(c)
+        seen.add(c["slug"])
+
+    # Pool 2: national anchors not already picked (fill to n_total)
+    anchor_lookup = {c["slug"]: c for c in cities}
+    for slug in NATIONAL_ANCHORS:
+        if len(picks) >= n_total:
+            break
+        if slug in seen:
+            continue
+        if slug in anchor_lookup:
+            picks.append(anchor_lookup[slug])
+            seen.add(slug)
+
+    # Pool 3: if still short (e.g., small region + many anchors taken), pad
+    # from the largest national metros not yet picked.
+    if len(picks) < n_total:
+        for c in cities:
+            if len(picks) >= n_total:
+                break
+            if c["slug"] not in seen:
+                picks.append(c)
+                seen.add(c["slug"])
+
+    return picks
+
+
 def minify_css(src_path: Path, dst_path: Path):
     """Simple CSS minification: strip comments, collapse whitespace."""
     css = src_path.read_text(encoding="utf-8")
@@ -184,10 +314,13 @@ def main():
     )
 
     # Shared context for nav/footer
+    regional_groups = build_regional_groups(cities)
     shared = {
         "all_loan_types": loan_types,
         "all_property_types": property_types,
         "all_cities": cities,
+        "regional_groups": regional_groups,
+        "total_market_count": len(cities),
     }
 
     # Track all generated URLs for sitemap
@@ -473,6 +606,12 @@ def main():
                 "meta_description": f"{loan['name']} for commercial real estate in {city['city']}, {city['state']}. Competitive rates from 1,000+ lenders. Get a free quote from Commercial Lending Solutions.",
             }
             slug = f"{loan['slug']}-{city['slug']}"
+            featured = pick_featured_markets(city, cities, n_total=8)
+            # Attach a short context teaser + cross-link URL to each pick
+            featured = [{**c, "teaser": first_sentence(c.get("context", ""), 140),
+                         "region": region_for_state(c["state"]),
+                         "cross_link_url": f"../financing/{loan['slug']}-{c['slug']}.html"}
+                        for c in featured]
             html = tpl_city_fin.render(
                 **shared,
                 loan=loan,
@@ -482,6 +621,8 @@ def main():
                 depth="../",
                 transactions=txns,
                 faqs=city_faqs,
+                featured_markets=featured,
+                current_region=region_for_state(city["state"]),
             )
             out_path = WEBSITE_DIR / "financing" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")
@@ -508,6 +649,11 @@ def main():
                 "meta_description": f"{prop['name']} financing in {city['city']}, {city['state']}. Banks, life companies, CMBS, bridge & construction loans. Free quote from Commercial Lending Solutions.",
             }
             slug = f"{prop['slug']}-{city['slug']}"
+            featured = pick_featured_markets(city, cities, n_total=8)
+            featured = [{**c, "teaser": first_sentence(c.get("context", ""), 140),
+                         "region": region_for_state(c["state"]),
+                         "cross_link_url": f"../property/{prop['slug']}-{c['slug']}.html"}
+                        for c in featured]
             html = tpl_city_prop.render(
                 **shared,
                 prop=prop,
@@ -517,6 +663,8 @@ def main():
                 depth="../",
                 transactions=txns,
                 faqs=city_faqs,
+                featured_markets=featured,
+                current_region=region_for_state(city["state"]),
             )
             out_path = WEBSITE_DIR / "property" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")
@@ -727,6 +875,11 @@ def main():
             "title": f"Commercial Real Estate Financing in {city['city']}, {city['state']} | Commercial Lending Solutions",
             "meta_description": f"Explore commercial lending options by neighborhood in {city['city']}, {city['state']}. Browse {len(neighborhoods)} submarkets with financing for every property type.",
         }
+        featured = pick_featured_markets(city, cities, n_total=8)
+        featured = [{**c, "teaser": first_sentence(c.get("context", ""), 140),
+                     "region": region_for_state(c["state"]),
+                     "cross_link_url": f"../../markets/{c['slug']}/"}
+                    for c in featured]
         html = tpl_market_index.render(
             **shared,
             city=city,
@@ -734,6 +887,8 @@ def main():
             seo=seo_index,
             canonical_path=f"markets/{city['slug']}/",
             depth="../../",
+            featured_markets=featured,
+            current_region=region_for_state(city["state"]),
         )
         (city_market_dir / "index.html").write_text(html, encoding="utf-8")
         page_count += 1

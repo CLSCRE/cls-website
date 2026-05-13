@@ -1,0 +1,63 @@
+{# Related Markets partial — editorial cross-market section.
+   Required context:
+     featured_markets    : list of city dicts with .city .state .metro .teaser .region .cross_link_url
+     regional_groups     : list of {region, blurb, cities[]} from build_regional_groups()
+     current_region      : str (region of the current page's city)
+     total_market_count  : int (total cities served)
+     depth               : "../" or "../../" (Jinja path prefix)
+     section_eyebrow     : short eyebrow text (e.g., "Nationwide Coverage")
+     section_headline    : large headline (e.g., "HUD/FHA Multifamily Loans Beyond Houston")
+     section_intro       : 1-2 sentence intro paragraph
+     national_coverage_intro : intro line for the bottom regional index
+#}
+<section class="related-markets-section">
+<div class="section-inner">
+
+  <!-- Editorial header -->
+  <div class="rm-header reveal">
+    <div class="rm-eyebrow">{{ section_eyebrow }}</div>
+    <h2 class="rm-headline">{{ section_headline }}</h2>
+    <p class="rm-intro">{{ section_intro }}</p>
+  </div>
+
+  <!-- Featured market cards: regional peers + national anchors -->
+  <div class="rm-featured-grid">
+    {% for m in featured_markets %}
+    <a href="{{ m.cross_link_url }}" class="rm-card reveal">
+      <div class="rm-card-region">{{ m.region }}</div>
+      <h3 class="rm-card-city">{{ m.city }}<span class="rm-card-state">, {{ m.state }}</span></h3>
+      <div class="rm-card-metro">{{ m.metro }}</div>
+      {% if m.teaser %}
+      <p class="rm-card-teaser">{{ m.teaser }}</p>
+      {% endif %}
+      <div class="rm-card-cta">View this market <span class="rm-arrow">&rarr;</span></div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <!-- Nationwide coverage index: every city, grouped by region -->
+  <div class="rm-coverage">
+    <div class="rm-coverage-header reveal">
+      <h3 class="rm-coverage-title">Full Nationwide Coverage</h3>
+      <p class="rm-coverage-desc">{{ national_coverage_intro }}</p>
+    </div>
+    <div class="rm-region-grid">
+      {% for group in regional_groups %}
+      <div class="rm-region-col {% if group.region == current_region %}rm-region-active{% endif %}">
+        <div class="rm-region-name">{{ group.region }}</div>
+        <div class="rm-region-blurb">{{ group.blurb }}</div>
+        <ul class="rm-city-list">
+          {% for c in group.cities %}
+          <li><a href="{{ depth }}markets/{{ c.slug }}/">{{ c.city }}<span class="rm-city-state">, {{ c.state }}</span></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="rm-coverage-foot reveal">
+      <a href="{{ depth }}locations.html" class="rm-foot-link">Explore the full {{ total_market_count }}-market directory <span class="rm-arrow">&rarr;</span></a>
+    </div>
+  </div>
+
+</div>
+</section>

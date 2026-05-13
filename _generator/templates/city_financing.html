@@ -13,6 +13,9 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LoanOrCredit","name":"{{ loan.name }} in {{ city.city }}, {{ city.state }}","description":"{{ seo.meta_description }}","loanType":"{{ loan.short_name }}","provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com","telephone":"+13107080690","email":"loans@clscre.com"},"url":"https://clscre.com/financing/{{ loan.slug }}-{{ city.slug }}.html","interestRate":{"@type":"QuantitativeValue","value":"{{ loan.key_features.rates }}"},"loanTerm":{"@type":"QuantitativeValue","value":"{{ loan.key_features.term }}"},"amount":{"@type":"MonetaryAmount","currency":"USD","minValue":"100000","value":"{{ loan.key_features.loan_amount }}"},"areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}}}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"{{ loan.name }}","provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com"},"areaServed":[{% for c in all_cities %}{"@type":"City","name":"{{ c.city }}","containedInPlace":{"@type":"State","name":"{{ c.state }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
 {% endblock %}
 
 {% block content %}
@@ -90,6 +93,13 @@
   </div>
 </div>
 </section>
+
+<!-- RELATED MARKETS — editorial cross-market section -->
+{% set section_eyebrow = 'Nationwide Coverage' %}
+{% set section_headline = loan.name + ' Beyond ' + city.city %}
+{% set section_intro = 'Commercial Lending Solutions structures ' + loan.short_name|lower + ' financing across ' + total_market_count|string + ' U.S. metros. Below: the markets closest in profile to ' + city.city + ', plus the full national footprint we work in every week.' %}
+{% set national_coverage_intro = 'Every metro where Commercial Lending Solutions actively places ' + loan.short_name|lower + ' capital. Click any market for local financing detail.' %}
+{% include '_related_markets.html' %}
 
 <!-- FAQ -->
 {% set faq_title = loan.name + ' in ' + city.city + ' FAQ' %}

@@ -16,6 +16,9 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What types of commercial real estate can I finance in {{ city.city }}?","acceptedAnswer":{"@type":"Answer","text":{{ _fa0|tojson }}}},{"@type":"Question","name":"What are the minimum and maximum loan sizes for commercial loans in {{ city.city }}?","acceptedAnswer":{"@type":"Answer","text":{{ _fa1|tojson }}}},{"@type":"Question","name":"How long does it take to close a commercial loan in {{ city.city }}?","acceptedAnswer":{"@type":"Answer","text":{{ _fa2|tojson }}}},{"@type":"Question","name":"Do I need to be a {{ city.city }} resident to get a commercial loan there?","acceptedAnswer":{"@type":"Answer","text":{{ _fa3|tojson }}}},{"@type":"Question","name":"Why use a commercial mortgage broker in {{ city.city }}?","acceptedAnswer":{"@type":"Answer","text":{{ _fa4|tojson }}}}]}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"Commercial Real Estate Financing","provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com"},"areaServed":[{% for c in all_cities %}{"@type":"City","name":"{{ c.city }}","containedInPlace":{"@type":"State","name":"{{ c.state }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
 {% endblock %}
 
 {% block content %}
@@ -128,6 +131,13 @@
 ] %}
 {% set faq_title = "Commercial Real Estate Lending in " + city.city + " — FAQ" %}
 {% include '_faq_section.html' %}
+
+<!-- RELATED MARKETS — editorial cross-market section -->
+{% set section_eyebrow = 'Nationwide Coverage' %}
+{% set section_headline = 'Beyond ' + city.city + ': Markets We Cover' %}
+{% set section_intro = 'Commercial Lending Solutions structures debt across ' + total_market_count|string + ' U.S. metros each year. Below: the markets closest in profile to ' + city.city + ', plus the full national footprint we underwrite in every quarter.' %}
+{% set national_coverage_intro = 'Every metro where Commercial Lending Solutions actively places capital. Click any market for local financing detail.' %}
+{% include '_related_markets.html' %}
 
 <!-- CTA -->
 {% set cta_title = 'Get Commercial Financing in ' + city.city %}
