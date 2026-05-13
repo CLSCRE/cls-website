@@ -667,72 +667,6 @@
       ]
     },
     {
-      "slug": "billings",
-      "city": "Billings",
-      "state": "MT",
-      "metro": "Billings",
-      "tier1": false,
-      "context": "Billings is Montana's largest commercial market and the primary service and distribution hub for a vast Montana, Wyoming, and Dakotas trade area. Industrial, retail, and healthcare assets benefit from Billings' position as the regional medical center and the only major city within 300 miles in multiple directions.",
-      "neighborhoods": [
-        "Downtown Billings",
-        "Heights",
-        "Lockwood",
-        "Laurel",
-        "Hardin",
-        "Miles City",
-        "Glendive",
-        "Sidney",
-        "Billings Heights",
-        "Worden",
-        "Shepherd",
-        "Broadus"
-      ]
-    },
-    {
-      "slug": "great-falls",
-      "city": "Great Falls",
-      "state": "MT",
-      "metro": "Great Falls",
-      "tier1": false,
-      "context": "Great Falls is a north-central Montana market anchored by Malmstrom Air Force Base, a major regional medical center, and agricultural services. The military presence provides exceptional stability for retail and multifamily assets, while industrial properties serve regional grain storage and logistics operators.",
-      "neighborhoods": [
-        "Downtown Great Falls",
-        "Black Eagle",
-        "Malmstrom Area",
-        "Paris Gibson Square",
-        "Cascade",
-        "Belt",
-        "Choteau",
-        "Havre",
-        "Shelby",
-        "Cut Bank",
-        "Conrad",
-        "Lewistown"
-      ]
-    },
-    {
-      "slug": "helena",
-      "city": "Helena",
-      "state": "MT",
-      "metro": "Helena",
-      "tier1": false,
-      "context": "Helena is Montana's capital city with a stable commercial real estate market anchored by state government employment, a regional hospital, and Carroll College. The market offers consistent demand for professional office and retail with limited new supply.",
-      "neighborhoods": [
-        "Downtown Helena",
-        "East Helena",
-        "Clancy",
-        "Jefferson City MT",
-        "Townsend",
-        "White Sulphur Springs",
-        "Deer Lodge",
-        "Anaconda",
-        "Butte",
-        "Dillon",
-        "Livingston",
-        "Bozeman"
-      ]
-    },
-    {
       "slug": "bozeman",
       "city": "Bozeman",
       "state": "MT",
@@ -2618,9 +2552,24 @@
       "slug": "missoula",
       "city": "Missoula",
       "added": "2026-05-12"
+    },
+    {
+      "slug": "billings",
+      "city": "Billings",
+      "added": "2026-05-13"
+    },
+    {
+      "slug": "great-falls",
+      "city": "Great Falls",
+      "added": "2026-05-13"
+    },
+    {
+      "slug": "helena",
+      "city": "Helena",
+      "added": "2026-05-13"
     }
   ],
-  "last_run": "2026-05-12T18:17:54.256044Z",
-  "total_pages_added": 828,
-  "runs_completed": 23
+  "last_run": "2026-05-13T04:12:50.801641Z",
+  "total_pages_added": 864,
+  "runs_completed": 24
 }
