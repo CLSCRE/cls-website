@@ -8,7 +8,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/permanent-industrial-warehouse-75mm-phoenix-arizona.jpg",
+    "image": "images/deals/aerial-industrial-001.jpg",
     "summary": "Major distribution center refinancing in the Phoenix metro's prime industrial corridor, one of the fastest-growing logistics hubs in the Southwest."
   },
   {
@@ -20,7 +20,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "office",
-    "image": "images/deals/construction-1.jpg",
+    "image": "images/deals/aerial-office-002.jpg",
     "summary": "Construction financing for a Class A office development in Long Island City, Queens, catering to tech and media tenants seeking modern amenity-rich space with Manhattan skyline views and excellent transit access."
   },
   {
@@ -32,7 +32,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/125-unit-ground-up-construction.jpg",
+    "image": "images/deals/aerial-multifamily-003.jpg",
     "summary": "Ground-up construction financing for a 125-unit luxury apartment development in Seattle's booming residential market."
   },
   {
@@ -44,7 +44,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/washington-multifamily-apartments-55m.jpg",
+    "image": "images/deals/aerial-multifamily-004.jpg",
     "summary": "Construction financing for a 250-unit luxury apartment development in DC’s Navy Yard neighborhood, one of the District’s fastest-appreciating submarkets with a thriving waterfront dining and entertainment scene."
   },
   {
@@ -56,7 +56,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/construction-2.jpg",
+    "image": "images/deals/aerial-multifamily-005.jpg",
     "summary": "Ground-up construction financing for a luxury 220-unit apartment tower in Miami’s Brickell corridor, one of the nation’s fastest-growing urban submarkets driven by corporate relocations and international capital inflows."
   },
   {
@@ -68,7 +68,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/mixed-use-1.jpg",
+    "image": "images/deals/aerial-mixed-use-006.jpg",
     "summary": "Bridge financing for a mixed-use repositioning in Brooklyn’s Williamsburg neighborhood, converting a former industrial building into 65 residential units with ground-floor retail along the Bedford Avenue commercial strip."
   },
   {
@@ -80,7 +80,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/permanent-industrial-food-processing-45mm-san-antonio-texas.jpg",
+    "image": "images/deals/aerial-industrial-007.jpg",
     "summary": "Long-term financing for a specialized food processing and cold chain facility serving the South Texas distribution market."
   },
   {
@@ -92,7 +92,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "retail",
-    "image": "images/deals/retail-center-2.jpg",
+    "image": "images/deals/aerial-retail-008.jpg",
     "summary": "Build-to-suit construction for a national credit tenant in Fairfield, combining development returns with investment-grade lease security."
   },
   {
@@ -104,7 +104,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "retail",
-    "image": "images/deals/retail-center-1.jpg",
+    "image": "images/deals/aerial-retail-009.jpg",
     "summary": "Major build-to-suit construction near SoFi Stadium in Inglewood, one of LA's most dynamic development corridors."
   },
   {
@@ -116,7 +116,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/permanent-industrial-cold-storage-42mm-houston-texas.jpg",
+    "image": "images/deals/aerial-industrial-010.jpg",
     "summary": "Permanent financing for a temperature-controlled distribution hub serving the Gulf Coast supply chain network."
   },
   {
@@ -128,7 +128,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "office",
-    "image": "images/deals/office-building-2.jpg",
+    "image": "images/deals/aerial-office-011.jpg",
     "summary": "Bridge financing for a Class A office repositioning in Washington DC’s East End submarket, targeting government contractors and lobbying firms with a full-building modernization near the Capitol Hill corridor."
   },
   {
@@ -140,7 +140,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/raleigh-multifamily-apartments-38m.jpg",
+    "image": "images/deals/aerial-multifamily-012.jpg",
     "summary": "Construction financing for a 200-unit garden-style apartment community in Raleigh’s Research Triangle Park corridor, one of the nation’s top-performing job growth markets driven by biotech and technology employers."
   },
   {
@@ -152,7 +152,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/permanent-multifamily-mobile-homes-36.4mm-san-jose-california.jpg",
+    "image": "images/deals/aerial-multifamily-013.jpg",
     "summary": "Manufactured housing community portfolio refinancing in one of the nation's tightest and most expensive housing markets."
   },
   {
@@ -164,7 +164,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/industrial-warehouse-1.jpg",
+    "image": "images/deals/aerial-industrial-014.jpg",
     "summary": "Acquisition financing for a Class A distribution facility in the Los Angeles industrial core with long-term credit tenancy."
   },
   {
@@ -176,7 +176,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/denver-mixed-use-34m.jpg",
+    "image": "images/deals/aerial-mixed-use-015.jpg",
     "summary": "Ground-up construction financing for a five-story mixed-use development in Denver’s LoHi neighborhood, combining 85 residential units with 12,000 square feet of ground-floor retail along a high-traffic transit corridor."
   },
   {
@@ -188,7 +188,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/sacramento-retail-shopping-center-32m.jpg",
+    "image": "images/deals/aerial-retail-016.jpg",
     "summary": "Stabilized retail center anchored by national tenants in Northern California's growing capital region."
   },
   {
@@ -200,7 +200,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/riverside-multifamily-apartments-32m.jpg",
+    "image": "images/deals/aerial-multifamily-017.jpg",
     "summary": "Construction financing for a 160-unit workforce housing development near UC Riverside, addressing severe housing undersupply in the Inland Empire where population growth continues to outpace new residential construction."
   },
   {
@@ -212,7 +212,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "hospitality",
-    "image": "images/deals/hotel-1.jpg",
+    "image": "images/deals/aerial-hospitality-018.jpg",
     "summary": "Bridge financing for a boutique hotel repositioning in Miami Beach’s Art Deco Historic District, funding a comprehensive renovation to capture surging leisure and business travel demand in South Florida."
   },
   {
@@ -224,7 +224,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/washington-mixed-use-29m.jpg",
+    "image": "images/deals/aerial-mixed-use-019.jpg",
     "summary": "Permanent financing for a transit-oriented mixed-use development near the Columbia Heights Metro station, combining 100 residential units with 20,000 square feet of neighborhood retail in one of DC’s most diverse and densely populated corridors."
   },
   {
@@ -236,7 +236,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "industrial",
-    "image": "images/deals/las-vegas-industrial-distribution-28.5m.jpg",
+    "image": "images/deals/aerial-industrial-020.jpg",
     "summary": "Ground-up construction financing for a Class A distribution center in the Las Vegas industrial market, targeting the surge of e-commerce and last-mile logistics operators drawn by Nevada's no state income tax, rapid population growth, and proximity to the Southern California consumer base."
   },
   {
@@ -248,7 +248,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/multifamily-apartments-1.jpg",
+    "image": "images/deals/aerial-multifamily-021.jpg",
     "summary": "Value-add bridge financing for a 180-unit apartment community in Denver’s RiNo district, funding unit renovations and common area upgrades to capture strong rent growth in one of the city’s most dynamic neighborhoods."
   },
   {
@@ -260,7 +260,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "hospitality",
-    "image": "images/deals/marq-san-mateo.jpg",
+    "image": "images/deals/aerial-hospitality-022.jpg",
     "summary": "Specialty entertainment venue financing for a nationally branded tenant with long-term lease structure in Southwest Florida."
   },
   {
@@ -272,7 +272,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/industrial-manufacturing-2.jpg",
+    "image": "images/deals/aerial-industrial-023.jpg",
     "summary": "Heavy manufacturing and industrial campus refinancing in the Vernon industrial district, a premier hub for production facilities in LA County."
   },
   {
@@ -284,7 +284,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/2742-dow-ave-tustin.jpg",
+    "image": "images/deals/aerial-industrial-024.jpg",
     "summary": "Portfolio financing spanning industrial and medical office assets in Orange County's Tustin corridor."
   },
   {
@@ -296,7 +296,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/permanent-multifamily-apartments-26.3mm-jacksonville-florida.jpg",
+    "image": "images/deals/aerial-multifamily-025.jpg",
     "summary": "Permanent financing for a stabilized multifamily community in one of Florida's fastest-growing metro areas."
   },
   {
@@ -308,7 +308,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/multifamily-apartments-3.jpg",
+    "image": "images/deals/aerial-multifamily-026.jpg",
     "summary": "Permanent financing for a stabilized 95-unit apartment building in the South Bronx, benefiting from continued revitalization along the Grand Concourse and proximity to major transit connections."
   },
   {
@@ -320,7 +320,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/detroit-industrial-automotive-24m.jpg",
+    "image": "images/deals/aerial-industrial-027.jpg",
     "summary": "Permanent financing for an automotive manufacturing and assembly support facility in the Detroit metro, positioned to serve the industry's accelerating transition to EV platform production at major OEM plants."
   },
   {
@@ -332,7 +332,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/st-louis-mixed-use-24m.jpg",
+    "image": "images/deals/aerial-mixed-use-028.jpg",
     "summary": "Construction financing for an adaptive reuse mixed-use project in the historic Cortex Innovation District, converting a former warehouse into creative office and retail space in the heart of St. Louis’s tech startup corridor."
   },
   {
@@ -344,7 +344,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/kansas-city-single-tenant-net-lease-23.6m.jpg",
+    "image": "images/deals/aerial-retail-029.jpg",
     "summary": "Net lease portfolio financing with investment-grade credit tenancy and long-term lease remaining in the Kansas City market."
   },
   {
@@ -356,7 +356,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/industrial-flex-1.jpg",
+    "image": "images/deals/aerial-industrial-030.jpg",
     "summary": "Permanent financing for a Class A logistics facility in the Atlanta metro, leveraging Hartsfield-Jackson Atlanta International Airport — the world's busiest — and a critical Southeast distribution position serving the region's rapidly expanding consumer base."
   },
   {
@@ -368,7 +368,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/pittsburgh-office-building-23m.jpg",
+    "image": "images/deals/aerial-office-031.jpg",
     "summary": "Permanent financing for a tech-oriented office building in Pittsburgh’s Oakland Innovation District, anchored by tenants tied to Carnegie Mellon University’s robotics and AI research ecosystem."
   },
   {
@@ -380,7 +380,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/life-sciences-1.jpg",
+    "image": "images/deals/aerial-office-032.jpg",
     "summary": "Permanent financing for a Class A life sciences and R&D facility in the Greater Boston market, one of the nation's most competitive lab and biotech corridors along Route 128."
   },
   {
@@ -392,7 +392,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "industrial",
-    "image": "images/deals/industrial-warehouse-3.jpg",
+    "image": "images/deals/aerial-industrial-033.jpg",
     "summary": "Bridge financing for a cross-border logistics facility in El Paso’s Upper Valley industrial zone, positioned to serve the high-volume U.S.-Mexico trade corridor with direct access to the Zaragoza International Bridge."
   },
   {
@@ -404,7 +404,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/minneapolis-industrial-distribution-21.5m.jpg",
+    "image": "images/deals/aerial-industrial-034.jpg",
     "summary": "Permanent financing for a modern distribution facility in the Twin Cities metro, serving the region's dense Fortune 500 corporate base and positioned on key freight corridors connecting the Upper Midwest."
   },
   {
@@ -416,7 +416,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/riverside-industrial-distribution-21.5m.jpg",
+    "image": "images/deals/aerial-industrial-035.jpg",
     "summary": "Permanent financing for a bulk distribution warehouse in the Inland Empire’s Riverside submarket, serving as a critical link in the Southern California logistics chain connecting the Ports of Long Beach and Los Angeles to the western U.S."
   },
   {
@@ -428,7 +428,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/salt-lake-city-industrial-warehouse-19.8m.jpg",
+    "image": "images/deals/aerial-industrial-036.jpg",
     "summary": "Permanent financing for a modern industrial warehouse in the Salt Lake City metro, serving the Silicon Slopes technology ecosystem and positioned on I-15 for regional distribution throughout the Intermountain West."
   },
   {
@@ -440,7 +440,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/los-angeles-office-19.5m.jpg",
+    "image": "images/deals/aerial-office-037.jpg",
     "summary": "Class A office building refinancing in a premier Los Angeles submarket with strong institutional tenancy."
   },
   {
@@ -452,7 +452,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "hospitality",
-    "image": "images/deals/honolulu-hospitality-full-service-hotel-19.5m.jpg",
+    "image": "images/deals/aerial-hospitality-038.jpg",
     "summary": "Permanent financing for a full-service hotel on Oahu, capitalizing on Hawaii's irreplaceable tourism market and supply-constrained hospitality landscape that consistently supports premium RevPAR performance."
   },
   {
@@ -464,7 +464,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/office-building-1.jpg",
+    "image": "images/deals/aerial-office-039.jpg",
     "summary": "Permanent financing for a Class A office building in the Coral Gables business district, benefiting from Miami’s emergence as a major financial services and tech hub with record-low vacancy rates."
   },
   {
@@ -476,7 +476,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/6484-monroe-st-sylvania-oh.jpg",
+    "image": "images/deals/aerial-retail-040.jpg",
     "summary": "Multi-property pharmacy portfolio with national credit tenants and triple-net lease structures across Ohio locations."
   },
   {
@@ -488,7 +488,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/cold-storage-1.jpg",
+    "image": "images/deals/aerial-industrial-041.jpg",
     "summary": "Permanent financing for a temperature-controlled cold storage and food distribution facility in the Dallas-Fort Worth metroplex, serving the region's massive and rapidly growing consumer and restaurant supply chain."
   },
   {
@@ -500,7 +500,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/tucson-multifamily-apartments-19m.jpg",
+    "image": "images/deals/aerial-multifamily-042.jpg",
     "summary": "Permanent financing for a 150-unit apartment community near the University of Arizona campus, benefiting from consistent student and faculty housing demand in Tucson’s strongest rental submarket."
   },
   {
@@ -512,7 +512,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "industrial",
-    "image": "images/deals/250000-sf-ground-up-construction.jpg",
+    "image": "images/deals/aerial-industrial-043.jpg",
     "summary": "Ground-up construction of a 250,000 SF industrial warehouse in Sacramento's expanding logistics and distribution market."
   },
   {
@@ -524,7 +524,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/permanent-industrial-data-center-18.2mm-san-diego-california.jpg",
+    "image": "images/deals/aerial-industrial-044.jpg",
     "summary": "Specialized data center financing in San Diego's growing technology and defense corridor."
   },
   {
@@ -536,7 +536,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/denver-industrial-warehouse-18.2m.jpg",
+    "image": "images/deals/aerial-industrial-045.jpg",
     "summary": "Permanent financing for a last-mile distribution facility near Denver International Airport, serving the rapidly expanding e-commerce logistics corridor along the I-70 East highway."
   },
   {
@@ -548,7 +548,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/21815-hawthorne-blvd.jpg",
+    "image": "images/deals/aerial-industrial-046.jpg",
     "summary": "Mixed net lease portfolio spanning industrial and retail assets along the South Bay's Hawthorne Boulevard corridor."
   },
   {
@@ -560,7 +560,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/industrial-manufacturing-1.jpg",
+    "image": "images/deals/aerial-industrial-047.jpg",
     "summary": "Manufacturing facility refinancing in Chicago's industrial belt, featuring specialized production infrastructure and rail access."
   },
   {
@@ -572,7 +572,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/55-unit-ground-up.jpg",
+    "image": "images/deals/aerial-multifamily-048.jpg",
     "summary": "55-unit multifamily ground-up construction in Orange County, targeting high demand for new Class A rental product."
   },
   {
@@ -584,7 +584,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/baltimore-industrial-distribution-18m.jpg",
+    "image": "images/deals/aerial-industrial-049.jpg",
     "summary": "Permanent financing for a modern distribution facility in the Baltimore-Washington corridor, strategically positioned to serve the dense Mid-Atlantic consumer base and capitalize on Port of Baltimore freight flows."
   },
   {
@@ -596,7 +596,7 @@
     "category": "perm",
     "loan_type_slug": "specialty",
     "property_slug": "hospitality",
-    "image": "images/deals/washington-hotel-18m.jpg",
+    "image": "images/deals/aerial-hospitality-050.jpg",
     "summary": "Specialty financing for a boutique hotel in DC’s Dupont Circle neighborhood, catering to business travelers and international visitors with strong year-round occupancy driven by government and diplomatic activity."
   },
   {
@@ -608,7 +608,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/multifamily-apartments-2.jpg",
+    "image": "images/deals/aerial-multifamily-051.jpg",
     "summary": "Bridge financing for a value-add apartment acquisition in St. Louis’s Central West End, one of the city’s most walkable neighborhoods with strong demand from medical professionals at nearby Barnes-Jewish Hospital and Washington University."
   },
   {
@@ -620,7 +620,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/hartford-industrial-manufacturing-17.4m.jpg",
+    "image": "images/deals/aerial-industrial-052.jpg",
     "summary": "Permanent financing for a precision manufacturing facility in the Hartford metro, serving the region's deep aerospace and defense supply chain anchored by Pratt and Whitney and Sikorsky."
   },
   {
@@ -632,7 +632,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "industrial",
-    "image": "images/deals/charleston-industrial-logistics-16.8m.jpg",
+    "image": "images/deals/aerial-industrial-053.jpg",
     "summary": "Construction financing for a speculative industrial facility in the Charleston logistics corridor, positioned to capture demand driven by the South Carolina Ports Authority's ongoing capacity expansion at the Wando Welch Terminal."
   },
   {
@@ -644,7 +644,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/louisville-industrial-logistics-16.5m.jpg",
+    "image": "images/deals/aerial-industrial-054.jpg",
     "summary": "Permanent financing for a Class A logistics facility near UPS Worldport at Louisville Muhammad Ali International Airport, capitalizing on Louisville's position as one of the nation's premier air cargo and distribution hubs."
   },
   {
@@ -656,7 +656,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/pittsburgh-multifamily-apartments-16.5m.jpg",
+    "image": "images/deals/aerial-multifamily-055.jpg",
     "summary": "Bridge financing for a value-add apartment acquisition in Pittsburgh’s Lawrenceville neighborhood, targeting young professionals drawn to the Strip District’s dining and entertainment scene and proximity to major healthcare employers."
   },
   {
@@ -668,7 +668,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/vista-industrial-16.2m.jpg",
+    "image": "images/deals/aerial-industrial-056.jpg",
     "summary": "Industrial asset refinancing in North San Diego County's Vista submarket, a growing hub for light manufacturing and distribution."
   },
   {
@@ -680,7 +680,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/nashville-multifamily-apartments-16.2m.jpg",
+    "image": "images/deals/aerial-multifamily-057.jpg",
     "summary": "Bridge financing for a value-add multifamily acquisition in the Nashville metro, targeting rent growth in a market fueled by healthcare industry dominance, entertainment tourism, and some of the nation's strongest net in-migration figures."
   },
   {
@@ -692,7 +692,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/san-mateo-apartments-88-units-16.2m.jpg",
+    "image": "images/deals/aerial-multifamily-058.jpg",
     "summary": "88-unit apartment community refinancing on the San Francisco Peninsula, one of the Bay Area's strongest rental markets."
   },
   {
@@ -704,7 +704,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/portland-industrial-logistics-15.6m.jpg",
+    "image": "images/deals/aerial-industrial-059.jpg",
     "summary": "Permanent financing for a Class A logistics facility in the Portland metro, benefiting from Port of Portland activity and the region's role as a Pacific Northwest distribution gateway for national retail and e-commerce supply chains."
   },
   {
@@ -716,7 +716,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/colorado-springs-single-tenant-net-lease-15.4m.jpg",
+    "image": "images/deals/aerial-retail-060.jpg",
     "summary": "Credit-tenant net lease financing in Colorado Springs, leveraging strong lease terms and market fundamentals."
   },
   {
@@ -728,7 +728,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "retail",
-    "image": "images/deals/multitenant-retail-construction.jpg",
+    "image": "images/deals/aerial-retail-061.jpg",
     "summary": "New multi-tenant retail center construction in the Palm Springs resort market, capitalizing on tourism-driven demand."
   },
   {
@@ -740,7 +740,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "industrial",
-    "image": "images/deals/raleigh-industrial-warehouse-15m.jpg",
+    "image": "images/deals/aerial-industrial-062.jpg",
     "summary": "Bridge financing for a last-mile distribution facility near Raleigh-Durham International Airport, positioning for permanent takeout after lease-up in a market with surging logistics demand along the I-40 corridor."
   },
   {
@@ -752,7 +752,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/boston-multifamily-apartments-14.8m.jpg",
+    "image": "images/deals/aerial-multifamily-063.jpg",
     "summary": "Bridge financing for a value-add apartment community in the Greater Boston metro, targeting significant rent growth in one of the nation's tightest and most undersupplied multifamily markets."
   },
   {
@@ -764,7 +764,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/tampa-multifamily-apartments-14.7m.jpg",
+    "image": "images/deals/aerial-multifamily-064.jpg",
     "summary": "Permanent financing for a stabilized apartment community in the Tampa Bay metro, one of Florida's fastest-growing markets benefiting from strong population in-migration, no state income tax, and a diversifying economy spanning healthcare, financial services, and technology."
   },
   {
@@ -776,7 +776,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/permanent-industrial-truck-terminal-14.5mm-philadelphia-pennsylvania.jpg",
+    "image": "images/deals/aerial-industrial-065.jpg",
     "summary": "Truck terminal and logistics facility financing in the Philadelphia corridor, a critical East Coast distribution hub."
   },
   {
@@ -788,7 +788,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/el-paso-multifamily-apartments-14.5m.jpg",
+    "image": "images/deals/aerial-multifamily-066.jpg",
     "summary": "Permanent financing for a 120-unit apartment complex near Fort Bliss, capitalizing on steady housing demand driven by one of the largest military installations in the Western United States."
   },
   {
@@ -800,7 +800,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/value-add-multifamily.jpg",
+    "image": "images/deals/aerial-multifamily-067.jpg",
     "summary": "Bridge financing for a multifamily value-add renovation in Los Angeles, targeting significant rent growth post-renovation."
   },
   {
@@ -812,7 +812,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/unentitled-land-downtown-la.jpg",
+    "image": "images/deals/aerial-mixed-use-068.jpg",
     "summary": "Land bridge loan for an unentitled Downtown LA parcel during the entitlement and planning process for a major development."
   },
   {
@@ -824,7 +824,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/omaha-industrial-distribution-14m.jpg",
+    "image": "images/deals/aerial-industrial-069.jpg",
     "summary": "Permanent financing for a distribution center in the Omaha metro, leveraging the city's central U.S. location and Union Pacific rail infrastructure to serve national logistics networks."
   },
   {
@@ -836,7 +836,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/griffin-plaza-simi-valley-ca.jpg",
+    "image": "images/deals/aerial-retail-070.jpg",
     "summary": "Grocery-anchored retail center refinancing in Simi Valley with strong occupancy and established tenancy."
   },
   {
@@ -848,7 +848,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/savannah-industrial-warehouse-13.5m.jpg",
+    "image": "images/deals/aerial-industrial-071.jpg",
     "summary": "Permanent financing for a bulk distribution warehouse in the Savannah logistics corridor, positioned to serve the Port of Savannah — one of the nation's fastest-growing container ports — and the expanding Southeast industrial tenant base anchored by major e-commerce and automotive occupiers."
   },
   {
@@ -860,7 +860,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/mobile-homes-1.jpg",
+    "image": "images/deals/aerial-multifamily-072.jpg",
     "summary": "Manufactured housing community financing in the greater Seattle area, providing affordable workforce housing."
   },
   {
@@ -872,7 +872,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/new-orleans-industrial-warehouse-13.2m.jpg",
+    "image": "images/deals/aerial-industrial-073.jpg",
     "summary": "Permanent financing for a warehouse and distribution facility in the New Orleans metro, leveraging proximity to the Port of New Orleans and critical Gulf Coast freight infrastructure."
   },
   {
@@ -884,7 +884,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/st-louis-industrial-manufacturing-13m.jpg",
+    "image": "images/deals/aerial-industrial-074.jpg",
     "summary": "Permanent financing for a single-tenant manufacturing facility in the St. Louis metro’s Hazelwood industrial park, anchored by a long-term lease with a Fortune 500 aerospace and defense subcontractor."
   },
   {
@@ -896,7 +896,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/miami-mixed-use-12.8m.jpg",
+    "image": "images/deals/aerial-mixed-use-075.jpg",
     "summary": "Bridge financing for a mixed-use property in Miami’s Wynwood Arts District, combining creative office space with ground-floor retail in one of the city’s most vibrant cultural and entertainment corridors."
   },
   {
@@ -908,7 +908,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/cincinnati-multifamily-apartments-12.6m.jpg",
+    "image": "images/deals/aerial-multifamily-076.jpg",
     "summary": "Permanent financing for a stabilized apartment community in Cincinnati's Over-the-Rhine submarket, benefiting from ongoing neighborhood revitalization and a strong employment base anchored by Procter and Gamble, Kroger, and Fifth Third Bank."
   },
   {
@@ -920,7 +920,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/3371-w-cahuenga.jpg",
+    "image": "images/deals/aerial-mixed-use-077.jpg",
     "summary": "Mixed-use portfolio refinancing spanning residential and commercial assets in Los Angeles's Cahuenga corridor."
   },
   {
@@ -932,7 +932,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/permanent-industrial-showroom-12.4mm-dallas-texas.jpg",
+    "image": "images/deals/aerial-industrial-078.jpg",
     "summary": "Industrial showroom and flex space financing in the Dallas-Fort Worth metroplex, one of the nation's fastest-growing industrial markets."
   },
   {
@@ -944,7 +944,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "industrial",
-    "image": "images/deals/boise-industrial-warehouse-12.3m.jpg",
+    "image": "images/deals/aerial-industrial-079.jpg",
     "summary": "Ground-up construction financing for a speculative industrial warehouse in Boise's rapidly expanding logistics market, targeting the surge of new businesses and residents relocating from higher-cost West Coast markets."
   },
   {
@@ -956,7 +956,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/940-hill-street.jpg",
+    "image": "images/deals/aerial-mixed-use-080.jpg",
     "summary": "Infill land acquisition financing in Downtown Los Angeles with entitlement potential for future ground-up development."
   },
   {
@@ -968,7 +968,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/35-unit-ground-up.jpg",
+    "image": "images/deals/aerial-multifamily-081.jpg",
     "summary": "35-unit apartment ground-up development in Los Angeles, addressing the city's persistent housing shortage."
   },
   {
@@ -980,7 +980,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "industrial",
-    "image": "images/deals/150000-sf-ground-up-construction.jpg",
+    "image": "images/deals/aerial-industrial-082.jpg",
     "summary": "150,000 SF industrial warehouse construction in the Los Angeles industrial market, one of the lowest vacancy markets in the country."
   },
   {
@@ -992,7 +992,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/multi-unit-additional-sf.jpg",
+    "image": "images/deals/aerial-multifamily-083.jpg",
     "summary": "Expansion and renovation of an existing multi-unit property in the San Fernando Valley with significant value-add potential."
   },
   {
@@ -1004,7 +1004,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/richmond-multifamily-apartments-11.8m.jpg",
+    "image": "images/deals/aerial-multifamily-084.jpg",
     "summary": "Permanent financing for a stabilized apartment community in Richmond's Scott's Addition neighborhood, benefiting from strong in-migration and a growing technology and financial services employment base."
   },
   {
@@ -1016,7 +1016,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/3371-3425-cahuenga-boulevard-west.jpg",
+    "image": "images/deals/aerial-office-085.jpg",
     "summary": "Creative office campus refinancing in the media-centric Cahuenga Pass area, attracting entertainment and tech tenants."
   },
   {
@@ -1028,7 +1028,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "industrial",
-    "image": "images/deals/orlando-industrial-distribution-11.3m.jpg",
+    "image": "images/deals/aerial-industrial-086.jpg",
     "summary": "Construction financing for a Class A industrial facility in the Orlando metro, serving the region's rapidly growing e-commerce and last-mile logistics demand driven by one of Florida's fastest-expanding consumer populations."
   },
   {
@@ -1040,7 +1040,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/permanent-multifamily-mobile-homes-11.2mm-charlotte-north-carolina.jpg",
+    "image": "images/deals/aerial-multifamily-087.jpg",
     "summary": "Manufactured housing community refinancing in the Charlotte metro, one of the Southeast's strongest growth markets."
   },
   {
@@ -1052,7 +1052,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/milwaukee-industrial-manufacturing-11.2m.jpg",
+    "image": "images/deals/aerial-industrial-088.jpg",
     "summary": "Permanent financing for a specialized manufacturing facility in the Milwaukee metro, serving the region's deep industrial base across food processing, printing, and advanced manufacturing sectors."
   },
   {
@@ -1064,7 +1064,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/pittsburgh-industrial-flex-11.2m.jpg",
+    "image": "images/deals/aerial-industrial-089.jpg",
     "summary": "Permanent financing for a multi-tenant flex industrial park along the Allegheny Valley Expressway, serving advanced manufacturing and life sciences tenants in the greater Pittsburgh metro."
   },
   {
@@ -1076,7 +1076,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/stanford-pico-plaza.jpg",
+    "image": "images/deals/aerial-office-090.jpg",
     "summary": "Commercial condominium portfolio financing for a multi-tenant complex near the Pico-Robertson neighborhood."
   },
   {
@@ -1088,7 +1088,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/salt-lake-city-multifamily-apartments-11m.jpg",
+    "image": "images/deals/aerial-multifamily-091.jpg",
     "summary": "Construction financing for a ground-up apartment development in the Salt Lake City metro, targeting one of the nation's youngest and fastest-growing workforces driven by a thriving technology sector and exceptional quality of life."
   },
   {
@@ -1100,7 +1100,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/oklahoma-city-industrial-flex-10.8m.jpg",
+    "image": "images/deals/aerial-industrial-092.jpg",
     "summary": "Permanent financing for a flex industrial campus in Oklahoma City, serving the metro's growing aerospace, energy, and defense contractor tenant base with competitive below-market rents."
   },
   {
@@ -1112,7 +1112,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/minneapolis-office-campus-10.5m.jpg",
+    "image": "images/deals/aerial-office-093.jpg",
     "summary": "Permanent financing for a suburban office campus in the Twin Cities metro, occupied by corporate tenants in healthcare, financial services, and technology sectors supporting Minnesota's 16 Fortune 500 headquarters."
   },
   {
@@ -1124,7 +1124,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/las-vegas-multifamily-apartments-10.2m.jpg",
+    "image": "images/deals/aerial-multifamily-094.jpg",
     "summary": "Permanent financing for a stabilized apartment community in the Las Vegas metro, benefiting from extraordinary population in-migration from California, no state income tax, and a rapidly diversifying economy beyond tourism into technology and logistics."
   },
   {
@@ -1136,7 +1136,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/detroit-multifamily-apartments-9.8m.jpg",
+    "image": "images/deals/aerial-multifamily-095.jpg",
     "summary": "Bridge financing for a value-add multifamily acquisition in Detroit's Midtown submarket, capitalizing on the metro's urban renaissance and strong rental demand near Corktown and the Wayne State University medical corridor."
   },
   {
@@ -1148,7 +1148,7 @@
     "category": "perm",
     "loan_type_slug": "sba-loans",
     "property_slug": "retail",
-    "image": "images/deals/denver-retail-center-9.8m.jpg",
+    "image": "images/deals/aerial-retail-096.jpg",
     "summary": "SBA 504 financing for an owner-occupied retail plaza in Denver’s Cherry Creek North corridor, anchored by a medical services tenant and benefiting from strong daytime foot traffic."
   },
   {
@@ -1160,7 +1160,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/albuquerque-industrial-r-d-9.7m.jpg",
+    "image": "images/deals/aerial-industrial-097.jpg",
     "summary": "Permanent financing for an R&D and advanced manufacturing facility in Albuquerque, adjacent to Sandia National Laboratories and serving the metro's growing semiconductor and defense technology ecosystem."
   },
   {
@@ -1172,7 +1172,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/outrigger-grandstreet-alameda.jpg",
+    "image": "images/deals/aerial-multifamily-098.jpg",
     "summary": "48-unit apartment community refinancing on Alameda Island in the East Bay, with waterfront proximity and strong occupancy."
   },
   {
@@ -1184,7 +1184,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/birmingham-multifamily-apartments-9.5m.jpg",
+    "image": "images/deals/aerial-multifamily-099.jpg",
     "summary": "Permanent financing for a stabilized apartment community in the Birmingham metro, benefiting from strong UAB medical center employment and an improving urban core attracting young professionals."
   },
   {
@@ -1196,7 +1196,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/permanent-multifamily-apartments-9.4mm-fort-worth-texas.jpg",
+    "image": "images/deals/aerial-multifamily-100.jpg",
     "summary": "Stabilized apartment community financing in the Fort Worth submarket with strong population and job growth fundamentals."
   },
   {
@@ -1208,7 +1208,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/cactus-house-malibu.jpg",
+    "image": "images/deals/aerial-multifamily-101.jpg",
     "summary": "Luxury single-family rental financing for a premier oceanside Malibu property commanding premium monthly rents."
   },
   {
@@ -1220,7 +1220,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/baltimore-medical-office-9.2m.jpg",
+    "image": "images/deals/aerial-office-102.jpg",
     "summary": "Permanent financing for a medical office building in the Baltimore metro anchored by healthcare tenants affiliated with the Johns Hopkins and University of Maryland medical systems."
   },
   {
@@ -1232,7 +1232,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/permanent-multifamily-mobile-homes-8.9mm-columbus-ohio.jpg",
+    "image": "images/deals/aerial-multifamily-103.jpg",
     "summary": "Manufactured housing community financing in the Columbus metro area, a growing affordable housing market in the Midwest."
   },
   {
@@ -1244,7 +1244,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/greenville-multifamily-apartments-8.9m.jpg",
+    "image": "images/deals/aerial-multifamily-104.jpg",
     "summary": "Permanent financing for a stabilized apartment community in the Greenville-Spartanburg metro, benefiting from strong population growth driven by BMW and Michelin manufacturing operations and a diversifying corporate base."
   },
   {
@@ -1256,7 +1256,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "industrial",
-    "image": "images/deals/tucson-industrial-warehouse-8.9m.jpg",
+    "image": "images/deals/aerial-industrial-105.jpg",
     "summary": "Bridge financing for a speculative industrial warehouse along Tucson’s I-10 corridor, targeting logistics and defense contractor tenants drawn by Raytheon Missiles and Defense and Davis-Monthan Air Force Base."
   },
   {
@@ -1268,7 +1268,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/1415-n-cahuenga-blvd-los-angeles.jpg",
+    "image": "images/deals/aerial-office-106.jpg",
     "summary": "Class B office building refinancing in the Hollywood submarket with diverse tenant base and value-add upside."
   },
   {
@@ -1280,7 +1280,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/virginia-beach-industrial-flex-8.6m.jpg",
+    "image": "images/deals/aerial-industrial-107.jpg",
     "summary": "Permanent financing for a flex industrial park in the Hampton Roads market, serving the region's dense concentration of defense contractors and logistics operators tied to the Port of Virginia."
   },
   {
@@ -1292,7 +1292,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/entitled-land-sf-ca.jpg",
+    "image": "images/deals/aerial-mixed-use-108.jpg",
     "summary": "Bridge financing for entitled development land in San Francisco, bridging to construction start."
   },
   {
@@ -1304,7 +1304,7 @@
     "category": "perm",
     "loan_type_slug": "sba-loans",
     "property_slug": "retail",
-    "image": "images/deals/new-york-retail-center-8.5m.jpg",
+    "image": "images/deals/aerial-retail-109.jpg",
     "summary": "SBA 504 financing for an owner-occupied retail property on Staten Island’s Hylan Boulevard, one of the borough’s highest-traffic commercial corridors with strong neighborhood-serving tenant demand."
   },
   {
@@ -1316,7 +1316,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/honolulu-multifamily-apartments-8.4m.jpg",
+    "image": "images/deals/aerial-multifamily-110.jpg",
     "summary": "Permanent financing for a low-rise apartment community in Honolulu, where geographic constraints on Oahu create one of the nation's most supply-restricted multifamily markets and support long-term rent growth."
   },
   {
@@ -1328,7 +1328,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/cleveland-industrial-flex-8.4m.jpg",
+    "image": "images/deals/aerial-industrial-111.jpg",
     "summary": "Permanent financing for a multi-tenant flex industrial park in the Cleveland metro, serving regional manufacturing and logistics tenants with competitive rents and attractive returns driven by Cleveland Clinic-anchored economic stability."
   },
   {
@@ -1340,7 +1340,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/memphis-industrial-distribution-8.3m.jpg",
+    "image": "images/deals/aerial-industrial-112.jpg",
     "summary": "Permanent financing for a distribution facility in Memphis, home to the FedEx global headquarters and the second-busiest air cargo airport in the world, generating extraordinary industrial demand across the metro's logistics corridor."
   },
   {
@@ -1352,7 +1352,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/2740-magnolia-burbank.jpg",
+    "image": "images/deals/aerial-office-113.jpg",
     "summary": "Co-working and creative office space financing in the Burbank Media District, home to major entertainment studios."
   },
   {
@@ -1364,7 +1364,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/hartford-mixed-use-office-retail-8.1m.jpg",
+    "image": "images/deals/aerial-mixed-use-114.jpg",
     "summary": "Bridge financing for a mixed-use office and retail property in downtown Hartford during repositioning, capitalizing on improving fundamentals in the Insurance Capital of the World."
   },
   {
@@ -1376,7 +1376,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "hospitality",
-    "image": "images/deals/hotel-rehabilitation.jpg",
+    "image": "images/deals/aerial-hospitality-115.jpg",
     "summary": "Comprehensive hotel rehabilitation in Santa Barbara's premium hospitality market, upgrading to boutique luxury positioning."
   },
   {
@@ -1388,7 +1388,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "retail",
-    "image": "images/deals/washington-retail-center-8m.jpg",
+    "image": "images/deals/aerial-retail-116.jpg",
     "summary": "Bridge financing for a neighborhood retail center in Silver Spring with below-market rents, targeting lease-up to market rates ahead of permanent takeout."
   },
   {
@@ -1400,7 +1400,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/boise-multifamily-apartments-7.9m.jpg",
+    "image": "images/deals/aerial-multifamily-117.jpg",
     "summary": "Permanent take-out financing for a newly delivered multifamily community in Boise, one of the nation's fastest-growing metros driven by migration from California and the Pacific Northwest."
   },
   {
@@ -1412,7 +1412,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "retail",
-    "image": "images/deals/austin-retail-shopping-center-7.8m.jpg",
+    "image": "images/deals/aerial-retail-118.jpg",
     "summary": "Bridge financing for a neighborhood retail center in Austin during tenant repositioning, capitalizing on Austin's extraordinary population growth and strong consumer spending driven by the city's booming technology employment base."
   },
   {
@@ -1424,7 +1424,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/raleigh-office-building-7.8m.jpg",
+    "image": "images/deals/aerial-office-119.jpg",
     "summary": "Permanent financing for a multi-tenant office property in Raleigh’s North Hills submarket, fully leased to professional services and healthcare tenants serving the rapidly growing Wake County population."
   },
   {
@@ -1436,7 +1436,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/milwaukee-multifamily-mixed-income-7.6m.jpg",
+    "image": "images/deals/aerial-multifamily-120.jpg",
     "summary": "Permanent financing for a mixed-income apartment community in Milwaukee, providing workforce and market-rate units in a Great Lakes market offering attractive yields relative to coastal alternatives."
   },
   {
@@ -1448,7 +1448,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/mobile-homes-2.jpg",
+    "image": "images/deals/aerial-multifamily-121.jpg",
     "summary": "Manufactured housing community refinancing in the Louisville metro, providing essential workforce housing in a market anchored by healthcare, manufacturing, and logistics employment."
   },
   {
@@ -1460,7 +1460,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/portland-multifamily-apartments-7.2m.jpg",
+    "image": "images/deals/aerial-multifamily-122.jpg",
     "summary": "Permanent financing for a stabilized apartment community in the Portland metro, serving strong rental demand driven by a growing technology sector and limited new housing supply in a market with among the strictest land use regulations in the West."
   },
   {
@@ -1472,7 +1472,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/knoxville-multifamily-mobile-homes-6.9m.jpg",
+    "image": "images/deals/aerial-multifamily-123.jpg",
     "summary": "Manufactured housing community financing in the Knoxville metro, providing essential affordable housing in a growing East Tennessee market anchored by the University of Tennessee and Oak Ridge National Laboratory."
   },
   {
@@ -1484,7 +1484,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "hospitality",
-    "image": "images/deals/new-orleans-boutique-hotel-6.8m.jpg",
+    "image": "images/deals/aerial-hospitality-124.jpg",
     "summary": "Bridge financing for a boutique hotel in the New Orleans Warehouse District during a comprehensive renovation, repositioning the property to capture premium rates in one of the nation's top tourism markets."
   },
   {
@@ -1496,7 +1496,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/3303-east-artesia-boulevard.jpg",
+    "image": "images/deals/aerial-retail-125.jpg",
     "summary": "35-unit neighborhood retail center refinancing in Long Beach with diversified small-business tenancy and strong foot traffic."
   },
   {
@@ -1508,7 +1508,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "hospitality",
-    "image": "images/deals/houston-aquarium.jpg",
+    "image": "images/deals/aerial-hospitality-126.jpg",
     "summary": "Specialty owner-user financing for a commercial aquarium and entertainment venue in the Houston metro area."
   },
   {
@@ -1520,7 +1520,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/omaha-multifamily-mobile-homes-6.5m.jpg",
+    "image": "images/deals/aerial-multifamily-127.jpg",
     "summary": "Manufactured housing community financing in the Omaha metro, providing affordable workforce housing in a stable Midwestern market anchored by Fortune 500 corporate headquarters."
   },
   {
@@ -1532,7 +1532,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/miami-retail-strip-center-6.5m.jpg",
+    "image": "images/deals/aerial-retail-128.jpg",
     "summary": "Permanent financing for a neighborhood retail strip center in Hialeah, fully leased to essential service tenants including a pharmacy and urgent care clinic."
   },
   {
@@ -1544,7 +1544,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/los-angeles-commercial-condominium-6.5m.jpg",
+    "image": "images/deals/aerial-office-129.jpg",
     "summary": "Commercial condo acquisition financing in a prime Los Angeles location with mixed retail and office use."
   },
   {
@@ -1556,7 +1556,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/el-paso-retail-center-6.2m.jpg",
+    "image": "images/deals/aerial-retail-130.jpg",
     "summary": "Permanent financing for a neighborhood retail center in El Paso’s Eastside, anchored by essential service tenants and serving a growing residential population along the Montana Avenue commercial corridor."
   },
   {
@@ -1568,7 +1568,7 @@
     "category": "perm",
     "loan_type_slug": "specialty",
     "property_slug": "industrial",
-    "image": "images/deals/1897-e-colton-avenue-mentone.jpg",
+    "image": "images/deals/aerial-industrial-131.jpg",
     "summary": "Specialty boat and RV storage facility financing in the Inland Empire, a high-demand niche asset class with strong NOI."
   },
   {
@@ -1580,7 +1580,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/single-family-rental-fix-n-flip.jpg",
+    "image": "images/deals/aerial-multifamily-132.jpg",
     "summary": "High-end residential fix-and-flip financing for a luxury renovation project in a prime Los Angeles neighborhood."
   },
   {
@@ -1592,7 +1592,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "hospitality",
-    "image": "images/deals/6506-westward-malibu-country-inn.jpg",
+    "image": "images/deals/aerial-hospitality-133.jpg",
     "summary": "Boutique hospitality financing for a charming country inn on Pacific Coast Highway in Malibu."
   },
   {
@@ -1604,7 +1604,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/tulsa-retail-strip-center-5.7m.jpg",
+    "image": "images/deals/aerial-retail-134.jpg",
     "summary": "Permanent financing for a grocery-shadow anchored strip center in Tulsa's Brookside corridor, benefiting from strong daily-needs traffic and stable multi-tenant occupancy."
   },
   {
@@ -1616,7 +1616,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/indianapolis-multifamily-mobile-homes-5.6m.jpg",
+    "image": "images/deals/aerial-multifamily-135.jpg",
     "summary": "Manufactured housing community in the Indianapolis metro providing essential affordable housing."
   },
   {
@@ -1628,7 +1628,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "retail",
-    "image": "images/deals/active-campaign-1.jpg",
+    "image": "images/deals/aerial-retail-136.jpg",
     "summary": "Bridge loan for a high-end retail property in Beverly Hills during tenant transition and lease-up."
   },
   {
@@ -1640,7 +1640,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/1621-east-spring-st-long-beach.jpg",
+    "image": "images/deals/aerial-industrial-137.jpg",
     "summary": "Manufacturing facility refinancing near the Port of Long Beach with proximity to major transportation infrastructure."
   },
   {
@@ -1652,7 +1652,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "hospitality",
-    "image": "images/deals/san-antonio-aquarium-5.5m.jpg",
+    "image": "images/deals/aerial-hospitality-138.jpg",
     "summary": "Specialty aquarium and entertainment venue financing in San Antonio's tourism-driven market along the River Walk."
   },
   {
@@ -1664,7 +1664,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/permanent-multifamily-apartments-5.5mm-austin-texas.jpg",
+    "image": "images/deals/aerial-multifamily-139.jpg",
     "summary": "Apartment community financing in Austin, one of the nation's top tech-driven growth markets for multifamily demand."
   },
   {
@@ -1676,7 +1676,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "retail",
-    "image": "images/deals/lease-up-and-ti-multitenant-retail.jpg",
+    "image": "images/deals/aerial-retail-140.jpg",
     "summary": "Bridge financing for a multi-tenant retail center during lease-up and tenant improvement phase in Los Angeles."
   },
   {
@@ -1688,7 +1688,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/washington-medical-office-5.5m.jpg",
+    "image": "images/deals/aerial-office-141.jpg",
     "summary": "Permanent financing for a medical office condo in the Capitol Hill corridor, fully occupied by a pediatric group practice with a long-term lease in place."
   },
   {
@@ -1700,7 +1700,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "retail",
-    "image": "images/deals/riverside-retail-center-5.4m.jpg",
+    "image": "images/deals/aerial-retail-142.jpg",
     "summary": "Bridge financing for a neighborhood retail center in Riverside’s Arlington Heights corridor, funding tenant improvements and lease-up to stabilization in a high-traffic location along Magnolia Avenue."
   },
   {
@@ -1712,7 +1712,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/albuquerque-multifamily-apartments-5.3m.jpg",
+    "image": "images/deals/aerial-multifamily-143.jpg",
     "summary": "Permanent financing for a stabilized apartment community near the University of New Mexico, benefiting from consistent student and healthcare worker demand in one of the Southwest's most affordable major metros."
   },
   {
@@ -1724,7 +1724,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/birmingham-net-lease-retail-5.2m.jpg",
+    "image": "images/deals/aerial-retail-144.jpg",
     "summary": "Single-tenant net lease financing for a national credit retailer in the Birmingham metro, providing long-term passive income with minimal landlord responsibility."
   },
   {
@@ -1736,7 +1736,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "retail",
-    "image": "images/deals/lincoln-blvd.jpg",
+    "image": "images/deals/aerial-retail-145.jpg",
     "summary": "Multi-tenant automotive service center on Lincoln Boulevard in Santa Monica with strong local demand and stable cash flow."
   },
   {
@@ -1748,7 +1748,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/shoreline-22-unit-multifamily.jpg",
+    "image": "images/deals/aerial-multifamily-146.jpg",
     "summary": "Permanent take-out financing for a newly constructed 22-unit multifamily project in the Seattle suburb of Shoreline."
   },
   {
@@ -1760,7 +1760,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/906-foothill-road-ojai.jpg",
+    "image": "images/deals/aerial-multifamily-147.jpg",
     "summary": "24-unit apartment community in the scenic Ojai Valley, a supply-constrained market with strong rental demand."
   },
   {
@@ -1772,7 +1772,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/620-stone-meadow-ln.jpg",
+    "image": "images/deals/aerial-multifamily-148.jpg",
     "summary": "18-unit apartment complex refinancing in the highly desirable Santa Barbara market with limited new supply."
   },
   {
@@ -1784,7 +1784,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/2633-ocean-st.jpg",
+    "image": "images/deals/aerial-mixed-use-149.jpg",
     "summary": "Mixed-use property with ground-floor retail and upper-level apartments in coastal North San Diego County."
   },
   {
@@ -1796,7 +1796,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/153-powell-avenue.jpg",
+    "image": "images/deals/aerial-industrial-150.jpg",
     "summary": "Industrial warehouse financing in the Hamptons on Long Island's East End, a unique and supply-constrained market."
   },
   {
@@ -1808,7 +1808,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/4807-elmwood-avenue.jpg",
+    "image": "images/deals/aerial-multifamily-151.jpg",
     "summary": "20-unit apartment building refinancing in a residential Los Angeles neighborhood with strong rental fundamentals."
   },
   {
@@ -1820,7 +1820,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/san-francisco-multifamily-mobile-homes-4.3m.jpg",
+    "image": "images/deals/aerial-multifamily-152.jpg",
     "summary": "Manufactured housing community in the San Francisco Bay Area, providing essential affordable housing in one of the nation's priciest markets."
   },
   {
@@ -1832,7 +1832,7 @@
     "category": "perm",
     "loan_type_slug": "sba-loans",
     "property_slug": "retail",
-    "image": "images/deals/tucson-retail-center-4.2m.jpg",
+    "image": "images/deals/aerial-retail-153.jpg",
     "summary": "SBA 504 financing for an owner-occupied retail property on Tucson’s Fourth Avenue, a high-foot-traffic dining and entertainment district adjacent to the university and downtown cultural attractions."
   },
   {
@@ -1844,7 +1844,7 @@
     "category": "sba",
     "loan_type_slug": "sba-loans",
     "property_slug": "office",
-    "image": "images/deals/denver-office-building-4.2m.jpg",
+    "image": "images/deals/aerial-office-154.jpg",
     "summary": "SBA 504 owner-occupied financing for a medical office building near the Anschutz Medical Campus, supporting a growing multi-specialty practice expansion."
   },
   {
@@ -1856,7 +1856,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/miami-multifamily-apartments-3.5m.jpg",
+    "image": "images/deals/aerial-multifamily-155.jpg",
     "summary": "Bridge financing for a 12-unit apartment building acquisition in Miami's Little Havana neighborhood, targeting value-add renovations in one of the city's fastest-appreciating submarkets."
   },
   {
@@ -1868,7 +1868,7 @@
     "category": "bridge",
     "loan_type_slug": "bridge-loans",
     "property_slug": "mixed-use",
-    "image": "images/deals/new-york-mixed-use-walk-up-2.8m.jpg",
+    "image": "images/deals/aerial-mixed-use-156.jpg",
     "summary": "Bridge loan for a 4-story mixed-use walk-up in the Bronx with ground-floor retail and 8 residential units above, positioned for rent stabilization optimization."
   },
   {
@@ -1880,7 +1880,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "industrial",
-    "image": "images/deals/active-campaign-2.jpg",
+    "image": "images/deals/aerial-industrial-157.jpg",
     "summary": "Adaptive reuse financing for a dual-purpose industrial and religious facility in the Los Angeles area."
   },
   {
@@ -1892,7 +1892,7 @@
     "category": "perm",
     "loan_type_slug": "permanent-loans",
     "property_slug": "office",
-    "image": "images/deals/hawthorne-1.jpg",
+    "image": "images/deals/aerial-office-158.jpg",
     "summary": "Owner-user acquisition financing for an operating business property in the South Bay's Torrance market."
   },
   {
@@ -1904,7 +1904,7 @@
     "category": "perm",
     "loan_type_slug": "sba-loans",
     "property_slug": "retail",
-    "image": "images/deals/400-w-4th-st-fleenors.jpg",
+    "image": "images/deals/aerial-retail-159.jpg",
     "summary": "SBA financing for an owner-operated restaurant and coffee shop in downtown Santa Ana's revitalized arts district."
   },
   {
@@ -1916,7 +1916,7 @@
     "category": "constr",
     "loan_type_slug": "construction-loans",
     "property_slug": "multifamily",
-    "image": "images/deals/los-angeles-single-family-fix-flip-1m.jpg",
+    "image": "images/deals/aerial-multifamily-160.jpg",
     "summary": "Residential renovation financing for a fix-and-flip project in the Los Angeles market."
   }
 ]
