@@ -667,72 +667,6 @@
       ]
     },
     {
-      "slug": "minot",
-      "city": "Minot",
-      "state": "ND",
-      "metro": "Minot",
-      "tier1": false,
-      "context": "Minot is a northern North Dakota market anchored by Minot Air Force Base and a significant agricultural and energy services economy. The military presence creates consistent retail and multifamily demand while the oil patch proximity drives industrial and warehouse investment.",
-      "neighborhoods": [
-        "Downtown Minot",
-        "South Hill",
-        "Minot AFB",
-        "Surrey",
-        "Burlington ND",
-        "Bottineau",
-        "Rugby",
-        "Velva",
-        "Kenmare",
-        "Tioga",
-        "Stanley",
-        "Williston"
-      ]
-    },
-    {
-      "slug": "rapid-city",
-      "city": "Rapid City",
-      "state": "SD",
-      "metro": "Rapid City",
-      "tier1": false,
-      "context": "Rapid City is western South Dakota's commercial hub serving the Black Hills tourism region, Ellsworth Air Force Base, and a regional healthcare system. Retail and hospitality assets benefit from significant Mount Rushmore and Black Hills tourism while industrial properties serve regional logistics.",
-      "neighborhoods": [
-        "Downtown Rapid City",
-        "West Rapid City",
-        "Box Elder",
-        "Ellsworth AFB",
-        "Spearfish",
-        "Sturgis",
-        "Deadwood",
-        "Lead",
-        "Hot Springs",
-        "Custer",
-        "Hill City",
-        "Keystone"
-      ]
-    },
-    {
-      "slug": "macon",
-      "city": "Macon",
-      "state": "GA",
-      "metro": "Macon-Bibb County",
-      "tier1": false,
-      "context": "Macon is central Georgia's commercial hub with Robins Air Force Base, one of the largest Air Force logistics centers in the world, anchoring a stable economy. Industrial and retail properties near the base and along I-75 offer consistent government and defense contractor demand.",
-      "neighborhoods": [
-        "Downtown Macon",
-        "East Macon",
-        "West Macon",
-        "North Macon",
-        "Warner Robins",
-        "Centerville",
-        "Perry GA",
-        "Fort Valley",
-        "Milledgeville",
-        "Dublin GA",
-        "Forsyth",
-        "Barnesville"
-      ]
-    },
-    {
       "slug": "columbus-ga",
       "city": "Columbus",
       "state": "GA",
@@ -2465,9 +2399,24 @@
       "slug": "bismarck",
       "city": "Bismarck",
       "added": "2026-05-13"
+    },
+    {
+      "slug": "minot",
+      "city": "Minot",
+      "added": "2026-05-14"
+    },
+    {
+      "slug": "rapid-city",
+      "city": "Rapid City",
+      "added": "2026-05-14"
+    },
+    {
+      "slug": "macon",
+      "city": "Macon",
+      "added": "2026-05-14"
     }
   ],
-  "last_run": "2026-05-13T18:16:14.159789Z",
-  "total_pages_added": 936,
-  "runs_completed": 26
+  "last_run": "2026-05-14T04:13:06.796568Z",
+  "total_pages_added": 972,
+  "runs_completed": 27
 }
