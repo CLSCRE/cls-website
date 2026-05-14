@@ -667,72 +667,6 @@
       ]
     },
     {
-      "slug": "columbus-ga",
-      "city": "Columbus",
-      "state": "GA",
-      "metro": "Columbus GA",
-      "tier1": false,
-      "context": "Columbus Georgia is anchored by Fort Benning, one of the Army's primary training installations, creating consistent multifamily, retail, and self-storage demand. Synovus Financial's headquarters and a growing manufacturing base diversify the economy beyond military dependence.",
-      "neighborhoods": [
-        "Downtown Columbus",
-        "Phenix City AL",
-        "Midland GA",
-        "Upatoi",
-        "Cusseta",
-        "Buena Vista",
-        "Americus",
-        "Cordele",
-        "Albany GA",
-        "Tifton",
-        "Valdosta",
-        "Dothan AL"
-      ]
-    },
-    {
-      "slug": "florence-al",
-      "city": "Florence",
-      "state": "AL",
-      "metro": "Florence-Muscle Shoals",
-      "tier1": false,
-      "context": "Florence is the commercial hub of the Muscle Shoals area with a diverse manufacturing base, the University of North Alabama, and an emerging Shoals music tourism economy. Net lease and multifamily assets offer stable fundamentals at above-market yields.",
-      "neighborhoods": [
-        "Downtown Florence",
-        "Muscle Shoals",
-        "Sheffield",
-        "Tuscumbia",
-        "Decatur AL",
-        "Hartselle",
-        "Cullman",
-        "Athens AL",
-        "Huntsville",
-        "Madison AL",
-        "Arab",
-        "Guntersville"
-      ]
-    },
-    {
-      "slug": "dothan",
-      "city": "Dothan",
-      "state": "AL",
-      "metro": "Dothan",
-      "tier1": false,
-      "context": "Dothan is southeastern Alabama's commercial hub, serving as the regional retail and healthcare center for a multi-county Alabama and Florida Panhandle trade area. The city's position near Fort Rucker and a major peanut and agriculture processing industry create stable demand for industrial and retail properties.",
-      "neighborhoods": [
-        "Downtown Dothan",
-        "Northside Dothan",
-        "Westgate",
-        "Ashford",
-        "Ozark",
-        "Daleville",
-        "Enterprise AL",
-        "Troy",
-        "Greenville AL",
-        "Brewton",
-        "Atmore",
-        "Andalusia"
-      ]
-    },
-    {
       "slug": "gulfport",
       "city": "Gulfport",
       "state": "MS",
@@ -2414,9 +2348,24 @@
       "slug": "macon",
       "city": "Macon",
       "added": "2026-05-14"
+    },
+    {
+      "slug": "columbus-ga",
+      "city": "Columbus",
+      "added": "2026-05-14"
+    },
+    {
+      "slug": "florence-al",
+      "city": "Florence",
+      "added": "2026-05-14"
+    },
+    {
+      "slug": "dothan",
+      "city": "Dothan",
+      "added": "2026-05-14"
     }
   ],
-  "last_run": "2026-05-14T04:13:06.796568Z",
-  "total_pages_added": 972,
-  "runs_completed": 27
+  "last_run": "2026-05-14T10:33:29.641865Z",
+  "total_pages_added": 1008,
+  "runs_completed": 28
 }
