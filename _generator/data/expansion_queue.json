@@ -667,72 +667,6 @@
       ]
     },
     {
-      "slug": "gulfport",
-      "city": "Gulfport",
-      "state": "MS",
-      "metro": "Gulfport-Biloxi",
-      "tier1": false,
-      "context": "Gulfport-Biloxi is Mississippi's coastal commercial market anchored by Gulf Coast tourism and casino gaming that drives hospitality investment and a significant supporting retail and services sector. Keesler Air Force Base adds stability to an otherwise cyclical hospitality-driven economy.",
-      "neighborhoods": [
-        "Downtown Gulfport",
-        "Biloxi",
-        "Ocean Springs",
-        "D'Iberville",
-        "Long Beach MS",
-        "Pass Christian",
-        "Bay St. Louis",
-        "Waveland",
-        "Pascagoula",
-        "Gautier",
-        "Moss Point",
-        "Picayune"
-      ]
-    },
-    {
-      "slug": "hattiesburg",
-      "city": "Hattiesburg",
-      "state": "MS",
-      "metro": "Hattiesburg",
-      "tier1": false,
-      "context": "Hattiesburg is southern Mississippi's commercial center anchored by the University of Southern Mississippi and Forrest General Hospital, with stable multifamily and retail demand from student and healthcare populations. Camp Shelby's periodic activations add intermittent industrial demand.",
-      "neighborhoods": [
-        "Downtown Hattiesburg",
-        "North Hattiesburg",
-        "South Hattiesburg",
-        "Petal",
-        "Purvis",
-        "Columbia MS",
-        "Laurel",
-        "Natchez",
-        "McComb",
-        "Brookhaven",
-        "Meridian",
-        "Philadelphia MS"
-      ]
-    },
-    {
-      "slug": "fredericksburg-tx",
-      "city": "Fredericksburg",
-      "state": "TX",
-      "metro": "Fredericksburg TX",
-      "tier1": false,
-      "context": "Fredericksburg is the Texas Hill Country's premier wine and tourism destination, with boutique hotel, restaurant, and retail demand driven by Austin and San Antonio visitors. Limited commercial supply and significant tourism spending create premium hospitality returns.",
-      "neighborhoods": [
-        "Downtown Fredericksburg",
-        "Kerrville",
-        "Comfort TX",
-        "Boerne",
-        "Bandera",
-        "Hondo",
-        "Uvalde",
-        "Del Rio",
-        "Junction TX",
-        "Mason",
-        "Llano",
-        "Marble Falls"
-      ]
-    },
-    {
       "slug": "lynchburg",
       "city": "Lynchburg",
       "state": "VA",
@@ -2363,9 +2297,24 @@
       "slug": "dothan",
       "city": "Dothan",
       "added": "2026-05-14"
+    },
+    {
+      "slug": "gulfport",
+      "city": "Gulfport",
+      "added": "2026-05-14"
+    },
+    {
+      "slug": "hattiesburg",
+      "city": "Hattiesburg",
+      "added": "2026-05-14"
+    },
+    {
+      "slug": "fredericksburg-tx",
+      "city": "Fredericksburg",
+      "added": "2026-05-14"
     }
   ],
-  "last_run": "2026-05-14T10:33:29.641865Z",
-  "total_pages_added": 1008,
-  "runs_completed": 28
+  "last_run": "2026-05-14T18:08:33.914393Z",
+  "total_pages_added": 1044,
+  "runs_completed": 29
 }

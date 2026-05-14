@@ -4057,5 +4057,68 @@
       "Atmore",
       "Andalusia"
     ]
+  },
+  {
+    "slug": "gulfport",
+    "city": "Gulfport",
+    "state": "MS",
+    "metro": "Gulfport-Biloxi",
+    "context": "Gulfport-Biloxi is Mississippi's coastal commercial market anchored by Gulf Coast tourism and casino gaming that drives hospitality investment and a significant supporting retail and services sector. Keesler Air Force Base adds stability to an otherwise cyclical hospitality-driven economy.",
+    "neighborhoods": [
+      "Downtown Gulfport",
+      "Biloxi",
+      "Ocean Springs",
+      "D'Iberville",
+      "Long Beach MS",
+      "Pass Christian",
+      "Bay St. Louis",
+      "Waveland",
+      "Pascagoula",
+      "Gautier",
+      "Moss Point",
+      "Picayune"
+    ]
+  },
+  {
+    "slug": "hattiesburg",
+    "city": "Hattiesburg",
+    "state": "MS",
+    "metro": "Hattiesburg",
+    "context": "Hattiesburg is southern Mississippi's commercial center anchored by the University of Southern Mississippi and Forrest General Hospital, with stable multifamily and retail demand from student and healthcare populations. Camp Shelby's periodic activations add intermittent industrial demand.",
+    "neighborhoods": [
+      "Downtown Hattiesburg",
+      "North Hattiesburg",
+      "South Hattiesburg",
+      "Petal",
+      "Purvis",
+      "Columbia MS",
+      "Laurel",
+      "Natchez",
+      "McComb",
+      "Brookhaven",
+      "Meridian",
+      "Philadelphia MS"
+    ]
+  },
+  {
+    "slug": "fredericksburg-tx",
+    "city": "Fredericksburg",
+    "state": "TX",
+    "metro": "Fredericksburg TX",
+    "context": "Fredericksburg is the Texas Hill Country's premier wine and tourism destination, with boutique hotel, restaurant, and retail demand driven by Austin and San Antonio visitors. Limited commercial supply and significant tourism spending create premium hospitality returns.",
+    "neighborhoods": [
+      "Downtown Fredericksburg",
+      "Kerrville",
+      "Comfort TX",
+      "Boerne",
+      "Bandera",
+      "Hondo",
+      "Uvalde",
+      "Del Rio",
+      "Junction TX",
+      "Mason",
+      "Llano",
+      "Marble Falls"
+    ]
   }
 ]
