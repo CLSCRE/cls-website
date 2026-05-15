@@ -667,72 +667,6 @@
       ]
     },
     {
-      "slug": "lynchburg",
-      "city": "Lynchburg",
-      "state": "VA",
-      "metro": "Lynchburg",
-      "tier1": false,
-      "context": "Lynchburg is central Virginia's commercial hub with Liberty University's enormous enrollment driving significant student housing demand alongside regional manufacturing and healthcare anchors. The metro's affordable real estate offers compelling multifamily and retail yields.",
-      "neighborhoods": [
-        "Downtown Lynchburg",
-        "Forest VA",
-        "Timberlake",
-        "Bedford VA",
-        "Amherst",
-        "Rustburg",
-        "Altavista",
-        "Farmville",
-        "Appomattox",
-        "Chatham VA",
-        "Martinsville",
-        "South Boston VA"
-      ]
-    },
-    {
-      "slug": "hagerstown",
-      "city": "Hagerstown",
-      "state": "MD",
-      "metro": "Hagerstown-Martinsburg",
-      "tier1": false,
-      "context": "Hagerstown anchors a I-81 corridor logistics market serving the Mid-Atlantic region, with industrial and distribution demand driven by proximity to Baltimore, Washington DC, and the tri-state Pennsylvania-Maryland-West Virginia junction. Distribution center development is accelerating in this affordable alternative to the Baltimore-DC corridor.",
-      "neighborhoods": [
-        "Downtown Hagerstown",
-        "Halfway",
-        "Maugansville",
-        "Martinsburg WV",
-        "Chambersburg PA",
-        "Waynesboro PA",
-        "Gettysburg PA",
-        "Frederick MD",
-        "Thurmont",
-        "Smithsburg",
-        "Boonsboro",
-        "Clear Spring"
-      ]
-    },
-    {
-      "slug": "salisbury-md",
-      "city": "Salisbury",
-      "state": "MD",
-      "metro": "Salisbury MD-DE",
-      "tier1": false,
-      "context": "Salisbury is the Delmarva Peninsula's commercial hub, anchored by a major regional hospital, Salisbury University, and significant agricultural and food processing activity. Retail and healthcare real estate benefit from the peninsula's large rural trade area.",
-      "neighborhoods": [
-        "Downtown Salisbury",
-        "Fruitland",
-        "Delmar",
-        "Ocean City MD",
-        "Ocean Pines",
-        "Berlin MD",
-        "Pocomoke City",
-        "Cambridge MD",
-        "Easton MD",
-        "Chestertown",
-        "Milford DE",
-        "Dover DE"
-      ]
-    },
-    {
       "slug": "trenton",
       "city": "Trenton",
       "state": "NJ",
@@ -2312,9 +2246,24 @@
       "slug": "fredericksburg-tx",
       "city": "Fredericksburg",
       "added": "2026-05-14"
+    },
+    {
+      "slug": "lynchburg",
+      "city": "Lynchburg",
+      "added": "2026-05-15"
+    },
+    {
+      "slug": "hagerstown",
+      "city": "Hagerstown",
+      "added": "2026-05-15"
+    },
+    {
+      "slug": "salisbury-md",
+      "city": "Salisbury",
+      "added": "2026-05-15"
     }
   ],
-  "last_run": "2026-05-14T18:08:33.914393Z",
-  "total_pages_added": 1044,
-  "runs_completed": 29
+  "last_run": "2026-05-15T04:18:06.933452Z",
+  "total_pages_added": 1080,
+  "runs_completed": 30
 }

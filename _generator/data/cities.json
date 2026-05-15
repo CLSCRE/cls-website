@@ -4120,5 +4120,68 @@
       "Llano",
       "Marble Falls"
     ]
+  },
+  {
+    "slug": "lynchburg",
+    "city": "Lynchburg",
+    "state": "VA",
+    "metro": "Lynchburg",
+    "context": "Lynchburg is central Virginia's commercial hub with Liberty University's enormous enrollment driving significant student housing demand alongside regional manufacturing and healthcare anchors. The metro's affordable real estate offers compelling multifamily and retail yields.",
+    "neighborhoods": [
+      "Downtown Lynchburg",
+      "Forest VA",
+      "Timberlake",
+      "Bedford VA",
+      "Amherst",
+      "Rustburg",
+      "Altavista",
+      "Farmville",
+      "Appomattox",
+      "Chatham VA",
+      "Martinsville",
+      "South Boston VA"
+    ]
+  },
+  {
+    "slug": "hagerstown",
+    "city": "Hagerstown",
+    "state": "MD",
+    "metro": "Hagerstown-Martinsburg",
+    "context": "Hagerstown anchors a I-81 corridor logistics market serving the Mid-Atlantic region, with industrial and distribution demand driven by proximity to Baltimore, Washington DC, and the tri-state Pennsylvania-Maryland-West Virginia junction. Distribution center development is accelerating in this affordable alternative to the Baltimore-DC corridor.",
+    "neighborhoods": [
+      "Downtown Hagerstown",
+      "Halfway",
+      "Maugansville",
+      "Martinsburg WV",
+      "Chambersburg PA",
+      "Waynesboro PA",
+      "Gettysburg PA",
+      "Frederick MD",
+      "Thurmont",
+      "Smithsburg",
+      "Boonsboro",
+      "Clear Spring"
+    ]
+  },
+  {
+    "slug": "salisbury-md",
+    "city": "Salisbury",
+    "state": "MD",
+    "metro": "Salisbury MD-DE",
+    "context": "Salisbury is the Delmarva Peninsula's commercial hub, anchored by a major regional hospital, Salisbury University, and significant agricultural and food processing activity. Retail and healthcare real estate benefit from the peninsula's large rural trade area.",
+    "neighborhoods": [
+      "Downtown Salisbury",
+      "Fruitland",
+      "Delmar",
+      "Ocean City MD",
+      "Ocean Pines",
+      "Berlin MD",
+      "Pocomoke City",
+      "Cambridge MD",
+      "Easton MD",
+      "Chestertown",
+      "Milford DE",
+      "Dover DE"
+    ]
   }
 ]
