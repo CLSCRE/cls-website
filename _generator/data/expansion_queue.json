@@ -689,50 +689,6 @@
       ]
     },
     {
-      "slug": "york-pa",
-      "city": "York",
-      "state": "PA",
-      "metro": "York-Hanover",
-      "tier1": false,
-      "context": "York is a south-central Pennsylvania industrial market with a deep manufacturing heritage in food processing, automotive components, and distribution that benefits from proximity to Baltimore, Philadelphia, and the I-83 corridor to Maryland. Industrial cap rates are competitive with the Lehigh Valley.",
-      "neighborhoods": [
-        "Downtown York",
-        "West York",
-        "Hanover PA",
-        "Gettysburg PA",
-        "Littlestown",
-        "Waynesboro PA",
-        "Chambersburg PA",
-        "Mechanicsburg",
-        "Camp Hill",
-        "New Cumberland",
-        "Harrisburg",
-        "Carlisle PA"
-      ]
-    },
-    {
-      "slug": "erie-pa",
-      "city": "Erie",
-      "state": "PA",
-      "metro": "Erie",
-      "tier1": false,
-      "context": "Erie is a Great Lakes port city with a manufacturing legacy in metalworking, plastics, and food processing, offering highly affordable industrial assets with access to Lake Erie shipping infrastructure. The market's proximity to Cleveland, Pittsburgh, and Buffalo supports regional logistics operators.",
-      "neighborhoods": [
-        "Downtown Erie",
-        "East Erie",
-        "West Erie",
-        "Millcreek Township",
-        "Fairview PA",
-        "Girard PA",
-        "Corry",
-        "Meadville",
-        "Titusville",
-        "Oil City",
-        "Franklin PA",
-        "Sharon PA"
-      ]
-    },
-    {
       "slug": "scranton",
       "city": "Scranton",
       "state": "PA",
@@ -752,28 +708,6 @@
         "Old Forge",
         "Carbondale",
         "Honesdale"
-      ]
-    },
-    {
-      "slug": "state-college",
-      "city": "State College",
-      "state": "PA",
-      "metro": "State College",
-      "tier1": false,
-      "context": "State College is a classic university market anchored by Penn State's flagship campus, driving exceptional student housing demand and stable retail occupancy that weathers economic cycles. The market's limited commercial supply and high student enrollment create reliable yields for multifamily investors.",
-      "neighborhoods": [
-        "Downtown State College",
-        "Bellefonte",
-        "Philipsburg",
-        "Clearfield",
-        "Lock Haven",
-        "Lewisburg PA",
-        "Bloomsburg",
-        "Williamsport",
-        "Jersey Shore PA",
-        "Sunbury",
-        "Selinsgrove",
-        "Milton PA"
       ]
     },
     {
@@ -2210,9 +2144,24 @@
       "slug": "reading-pa",
       "city": "Reading",
       "added": "2026-05-15"
+    },
+    {
+      "slug": "york-pa",
+      "city": "York",
+      "added": "2026-05-15"
+    },
+    {
+      "slug": "erie-pa",
+      "city": "Erie",
+      "added": "2026-05-15"
+    },
+    {
+      "slug": "state-college",
+      "city": "State College",
+      "added": "2026-05-15"
     }
   ],
-  "last_run": "2026-05-15T10:38:00.926857Z",
-  "total_pages_added": 1116,
-  "runs_completed": 31
+  "last_run": "2026-05-15T17:53:26.517689Z",
+  "total_pages_added": 1152,
+  "runs_completed": 32
 }
