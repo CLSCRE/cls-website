@@ -4,13 +4,13 @@
  * Fires events on:
  *   - Contact clicks (mailto:, tel:) for ANY address (legacy compat)
  *   - "Web-sourced lead" specifically for the dedicated website-only
- *     channels (loans@clscre.com + 310-758-3576). These channels are
+ *     channels (loans@clscre.com + 310-708-0690). These channels are
  *     reserved for clscre.com surfaces only, so a click there proves
  *     web origin and is the primary conversion event for paid ads.
  *
  * Events emitted (both dataLayer for GTM and gtag for direct GA4/Ads):
  *   - contact_click            - any tel:/mailto: click (legacy)
- *   - web_sourced_lead         - clicks on loans@ or 310-758-3576 only
+ *   - web_sourced_lead         - clicks on loans@ or 310-708-0690 only
  *   - tool_engagement          - 30+ second engagement on a calculator
  *   - exit_intent_engaged      - exit intent CTA click
  *
@@ -30,7 +30,7 @@
   // Website-only channel identifiers. Any contact click matching these
   // values is provably web-sourced and triggers the web_sourced_lead
   // conversion event in addition to the generic contact_click.
-  var WEBSITE_ONLY_PHONES = ['3107583576', '+13107583576', '310-758-3576', '310.708.0690'];
+  var WEBSITE_ONLY_PHONES = ['3107080690', '+13107080690', '310-708-0690', '310.708.0690'];
   var WEBSITE_ONLY_EMAILS = ['loans@clscre.com'];
 
   function normalizePhone(value) {
@@ -84,7 +84,7 @@
 
         if (webSourced) {
           fireEvent('web_sourced_lead', {
-            channel: 'phone_3107583576',
+            channel: 'phone_3107080690',
             contact_value: phone,
             page_path: pagePath,
             link_text: linkText,
