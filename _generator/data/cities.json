@@ -4309,5 +4309,68 @@
       "Selinsgrove",
       "Milton PA"
     ]
+  },
+  {
+    "slug": "charleston-wv",
+    "city": "Charleston",
+    "state": "WV",
+    "metro": "Charleston WV",
+    "context": "Charleston is West Virginia's capital and largest commercial market with state government, healthcare, and chemical manufacturing anchoring a relatively stable economy. The metro offers attractively priced commercial real estate with consistent demand from government and healthcare tenants.",
+    "neighborhoods": [
+      "Downtown Charleston WV",
+      "South Hills",
+      "Kanawha City",
+      "St. Albans",
+      "Dunbar WV",
+      "Cross Lanes",
+      "South Charleston",
+      "Nitro",
+      "Winfield",
+      "Teays Valley",
+      "Huntington WV",
+      "Barboursville"
+    ]
+  },
+  {
+    "slug": "huntington-wv",
+    "city": "Huntington",
+    "state": "WV",
+    "metro": "Huntington-Ashland",
+    "context": "Huntington is a tri-state Ohio-West Virginia-Kentucky market with a healthcare economy anchored by Marshall University and a large hospital system. The market offers deeply discounted commercial real estate with stable occupancy from healthcare and education tenants.",
+    "neighborhoods": [
+      "Downtown Huntington WV",
+      "East Huntington",
+      "West Huntington",
+      "Barboursville",
+      "Kenova",
+      "Ashland KY",
+      "Ironton OH",
+      "Proctorville OH",
+      "Milton WV",
+      "Hurricane WV",
+      "Teays Valley",
+      "South Point OH"
+    ]
+  },
+  {
+    "slug": "wheeling",
+    "city": "Wheeling",
+    "state": "WV",
+    "metro": "Wheeling WV-OH",
+    "context": "Wheeling is an Ohio River border market with a modest commercial base anchored by healthcare, regional retail, and light manufacturing. The market's affordable industrial assets and proximity to Pittsburgh and Cleveland make it viable for logistics operations.",
+    "neighborhoods": [
+      "Downtown Wheeling",
+      "Elm Grove",
+      "Triadelphia",
+      "Bethlehem WV",
+      "Moundsville",
+      "New Martinsville",
+      "St. Clairsville OH",
+      "Barnesville OH",
+      "Shadyside OH",
+      "Belpre OH",
+      "Parkersburg WV",
+      "Williamstown WV"
+    ]
   }
 ]
