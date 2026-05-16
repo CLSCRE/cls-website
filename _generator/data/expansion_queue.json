@@ -667,72 +667,6 @@
       ]
     },
     {
-      "slug": "trenton",
-      "city": "Trenton",
-      "state": "NJ",
-      "metro": "Trenton-Princeton",
-      "tier1": false,
-      "context": "Trenton is New Jersey's capital and a stable commercial market anchored by state government employment, pharmaceutical research in the Princeton corridor, and industrial logistics operations along the I-95 and I-295 corridors. The metro offers affordable yields relative to the New York and Philadelphia metros.",
-      "neighborhoods": [
-        "Downtown Trenton",
-        "Hamilton NJ",
-        "Ewing Township",
-        "Lawrence Township",
-        "Pennington",
-        "Princeton",
-        "Plainsboro",
-        "West Windsor",
-        "Robbinsville",
-        "Bordentown",
-        "Burlington NJ",
-        "Mount Holly"
-      ]
-    },
-    {
-      "slug": "atlantic-city",
-      "city": "Atlantic City",
-      "state": "NJ",
-      "metro": "Atlantic City-Hammonton",
-      "tier1": false,
-      "context": "Atlantic City is a recovering casino and hospitality market with significant net lease retail and industrial opportunity in its suburban collar communities. While the casino economy continues to evolve, surrounding suburban municipalities offer stable commercial fundamentals driven by proximity to Philadelphia.",
-      "neighborhoods": [
-        "Downtown Atlantic City",
-        "Ventnor City",
-        "Margate",
-        "Longport",
-        "Egg Harbor Township",
-        "Pleasantville NJ",
-        "Absecon",
-        "Galloway",
-        "Smithville NJ",
-        "Hammonton",
-        "Vineland",
-        "Millville NJ"
-      ]
-    },
-    {
-      "slug": "reading-pa",
-      "city": "Reading",
-      "state": "PA",
-      "metro": "Reading",
-      "tier1": false,
-      "context": "Reading is a southeastern Pennsylvania industrial market with a strong manufacturing base and significant warehouse and distribution activity along the I-422 and US-422 corridors. The metro offers significantly lower industrial lease rates than the Philadelphia suburbs with improving occupancy fundamentals.",
-      "neighborhoods": [
-        "Downtown Reading",
-        "West Reading",
-        "Wyomissing",
-        "Sinking Spring",
-        "Shillington",
-        "Kutztown",
-        "Fleetwood",
-        "Boyertown",
-        "Pottstown",
-        "Hamburg",
-        "Lebanon PA",
-        "Palmyra PA"
-      ]
-    },
-    {
       "slug": "lancaster-pa",
       "city": "Lancaster",
       "state": "PA",
@@ -2261,9 +2195,24 @@
       "slug": "salisbury-md",
       "city": "Salisbury",
       "added": "2026-05-15"
+    },
+    {
+      "slug": "trenton",
+      "city": "Trenton",
+      "added": "2026-05-16"
+    },
+    {
+      "slug": "atlantic-city",
+      "city": "Atlantic City",
+      "added": "2026-05-16"
+    },
+    {
+      "slug": "reading-pa",
+      "city": "Reading",
+      "added": "2026-05-16"
     }
   ],
-  "last_run": "2026-05-15T04:18:06.933452Z",
-  "total_pages_added": 1080,
-  "runs_completed": 30
+  "last_run": "2026-05-16T04:02:14.027978Z",
+  "total_pages_added": 1116,
+  "runs_completed": 31
 }
