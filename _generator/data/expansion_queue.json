@@ -711,72 +711,6 @@
       ]
     },
     {
-      "slug": "manchester-tn",
-      "city": "Manchester",
-      "state": "TN",
-      "metro": "Manchester TN",
-      "tier1": false,
-      "context": "Manchester-Tullahoma is a south-central Tennessee industrial market benefiting from Arnold Air Force Base and significant automotive supplier investment along the I-24 corridor. Industrial and net lease assets offer strong yields from defense and manufacturing tenants.",
-      "neighborhoods": [
-        "Downtown Manchester TN",
-        "Tullahoma",
-        "Estill Springs",
-        "Decherd",
-        "Winchester TN",
-        "Fayetteville TN",
-        "Shelbyville",
-        "McMinnville",
-        "Murfreesboro",
-        "Smyrna",
-        "La Vergne",
-        "Lavergne"
-      ]
-    },
-    {
-      "slug": "clarksville",
-      "city": "Clarksville",
-      "state": "TN",
-      "metro": "Clarksville TN",
-      "tier1": false,
-      "context": "Clarksville is one of Tennessee's fastest-growing cities, anchored by Fort Campbell on the Kentucky border and a booming manufacturing sector that includes LG Electronics and Hankook Tire. Multifamily and retail development is surging to serve the large military population and in-migration from Nashville.",
-      "neighborhoods": [
-        "Downtown Clarksville",
-        "Sango",
-        "Oakwood",
-        "Northwest Clarksville",
-        "Oak Grove KY",
-        "Hopkinsville KY",
-        "Erin TN",
-        "Dover TN",
-        "Springfield TN",
-        "Gallatin",
-        "Portland TN",
-        "Goodlettsville"
-      ]
-    },
-    {
-      "slug": "johnson-city",
-      "city": "Johnson City",
-      "state": "TN",
-      "metro": "Johnson City-Kingsport-Bristol",
-      "tier1": false,
-      "context": "Johnson City is part of the Tri-Cities region in Northeast Tennessee with a major healthcare hub in Mountain States Health Alliance, East Tennessee State University, and a growing advanced manufacturing base. The metro offers stable commercial fundamentals with compelling yields in multifamily and industrial.",
-      "neighborhoods": [
-        "Downtown Johnson City",
-        "Kingsport",
-        "Bristol TN",
-        "Elizabethton",
-        "Jonesborough",
-        "Blountville",
-        "Colonial Heights TN",
-        "Gray",
-        "Greeneville",
-        "Rogersville TN",
-        "Morristown",
-        "Newport TN"
-      ]
-    },
-    {
       "slug": "bowling-green",
       "city": "Bowling Green",
       "state": "KY",
@@ -2108,9 +2042,24 @@
       "slug": "wheeling",
       "city": "Wheeling",
       "added": "2026-05-16"
+    },
+    {
+      "slug": "manchester-tn",
+      "city": "Manchester",
+      "added": "2026-05-17"
+    },
+    {
+      "slug": "clarksville",
+      "city": "Clarksville",
+      "added": "2026-05-17"
+    },
+    {
+      "slug": "johnson-city",
+      "city": "Johnson City",
+      "added": "2026-05-17"
     }
   ],
-  "last_run": "2026-05-16T17:15:34.383932Z",
-  "total_pages_added": 1188,
-  "runs_completed": 33
+  "last_run": "2026-05-17T04:32:33.146122Z",
+  "total_pages_added": 1224,
+  "runs_completed": 34
 }
