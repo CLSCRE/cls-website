@@ -4498,5 +4498,68 @@
       "Cape Girardeau MO",
       "Cairo IL"
     ]
+  },
+  {
+    "slug": "columbia-sc-2",
+    "city": "Rock Hill",
+    "state": "SC",
+    "metro": "Charlotte-Concord-Gastonia",
+    "context": "Rock Hill is a Charlotte suburb experiencing explosive commercial growth driven by overflow from the Charlotte market, with significant industrial and retail development along I-77 and significant corporate campus investment from firms seeking lower costs than Mecklenburg County.",
+    "neighborhoods": [
+      "Downtown Rock Hill",
+      "Fort Mill",
+      "Indian Land",
+      "Tega Cay",
+      "Lake Wylie",
+      "Clover SC",
+      "York SC",
+      "Chester SC",
+      "Gastonia NC",
+      "Shelby NC",
+      "Gaffney SC",
+      "Spartanburg"
+    ]
+  },
+  {
+    "slug": "florence-sc",
+    "city": "Florence",
+    "state": "SC",
+    "metro": "Florence SC",
+    "context": "Florence is South Carolina's I-95 corridor commercial hub serving as a major rest stop and regional distribution point for coastal Carolinas logistics. Industrial and net lease retail along I-95 and US-76 benefit from consistent freight and distribution demand.",
+    "neighborhoods": [
+      "Downtown Florence SC",
+      "Darlington",
+      "Hartsville",
+      "Lake City SC",
+      "Sumter SC",
+      "Manning",
+      "Bishopville",
+      "Mullins",
+      "Marion SC",
+      "Bennettsville",
+      "Dillon SC",
+      "Latta"
+    ]
+  },
+  {
+    "slug": "hilton-head",
+    "city": "Hilton Head Island",
+    "state": "SC",
+    "metro": "Hilton Head Island-Bluffton",
+    "context": "Hilton Head-Bluffton is a premium coastal South Carolina resort market with extraordinary barrier island location constraints, affluent demographics, and significant high-income retiree migration driving boutique retail, hospitality, and luxury multifamily demand at above-average cap rates.",
+    "neighborhoods": [
+      "Hilton Head North",
+      "Sea Pines",
+      "Port Royal",
+      "Palmetto Dunes",
+      "Forest Beach",
+      "Bluffton SC",
+      "Beaufort SC",
+      "Ridgeland SC",
+      "Hardeeville",
+      "Savannah GA",
+      "Port Wentworth",
+      "Garden City GA"
+    ]
   }
 ]
