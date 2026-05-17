@@ -4435,5 +4435,68 @@
       "Morristown",
       "Newport TN"
     ]
+  },
+  {
+    "slug": "bowling-green",
+    "city": "Bowling Green",
+    "state": "KY",
+    "metro": "Bowling Green KY",
+    "context": "Bowling Green is Kentucky's third-largest city and a manufacturing powerhouse anchored by the Corvette Assembly Plant and a large automotive supplier base along the I-65 corridor. Industrial vacancy is extremely tight with significant speculative development to serve expanding automotive tenants.",
+    "neighborhoods": [
+      "Downtown Bowling Green",
+      "East Bowling Green",
+      "Scottsville",
+      "Glasgow KY",
+      "Franklin KY",
+      "Elizabethtown",
+      "Radcliff",
+      "Campbellsville",
+      "Horse Cave",
+      "Cave City",
+      "Munfordville",
+      "Columbia KY"
+    ]
+  },
+  {
+    "slug": "owensboro",
+    "city": "Owensboro",
+    "state": "KY",
+    "metro": "Owensboro",
+    "context": "Owensboro is western Kentucky's commercial hub with a diversified economy spanning healthcare, manufacturing, and bourbon distilling that creates consistent industrial and commercial demand. The market offers affordable industrial assets and stable retail occupancy from a growing regional trade area.",
+    "neighborhoods": [
+      "Downtown Owensboro",
+      "East Owensboro",
+      "Whitesville",
+      "Fordsville",
+      "Hartford",
+      "Madisonville",
+      "Henderson KY",
+      "Evansville IN",
+      "Beaver Dam",
+      "Central City",
+      "Leitchfield",
+      "Elizabethtown"
+    ]
+  },
+  {
+    "slug": "paducah",
+    "city": "Paducah",
+    "state": "KY",
+    "metro": "Paducah",
+    "context": "Paducah is a western Kentucky river port market with a stable economy anchored by a nuclear enrichment facility, regional healthcare, and river logistics on the Ohio and Tennessee Rivers. Net lease and industrial assets offer above-market yields with stable government-related tenancy.",
+    "neighborhoods": [
+      "Downtown Paducah",
+      "West Paducah",
+      "Lone Oak",
+      "Reidland",
+      "McCracken County",
+      "Mayfield KY",
+      "Benton KY",
+      "Murray KY",
+      "Hopkinsville KY",
+      "Fulton KY",
+      "Cape Girardeau MO",
+      "Cairo IL"
+    ]
   }
 ]
