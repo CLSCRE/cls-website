@@ -733,72 +733,6 @@
       ]
     },
     {
-      "slug": "wilmington-de",
-      "city": "Wilmington",
-      "state": "DE",
-      "metro": "Wilmington-Newark DE-MD",
-      "tier1": false,
-      "context": "Wilmington is Delaware's largest city and corporate law capital, home to the registered offices of more than half the Fortune 500, with stable demand for legal, financial services, and administrative office space. Industrial and logistics properties along the I-95 corridor benefit from proximity to Philadelphia and Baltimore.",
-      "neighborhoods": [
-        "Downtown Wilmington",
-        "Brandywine",
-        "Newark DE",
-        "Christiana",
-        "Middletown DE",
-        "Dover",
-        "Hockessin",
-        "Talleyville",
-        "Trolley Square",
-        "Claymont",
-        "Bear",
-        "Glasgow DE"
-      ]
-    },
-    {
-      "slug": "dover-de",
-      "city": "Dover",
-      "state": "DE",
-      "metro": "Dover",
-      "tier1": false,
-      "context": "Dover is Delaware's capital with a stable commercial market anchored by state government, Dover Air Force Base, and Delaware State University. Net lease and retail properties benefit from Delaware's lack of sales tax which draws regional shoppers.",
-      "neighborhoods": [
-        "Downtown Dover",
-        "Smyrna DE",
-        "Middletown DE",
-        "Milford DE",
-        "Seaford",
-        "Georgetown DE",
-        "Rehoboth Beach",
-        "Lewes",
-        "Millsboro",
-        "Laurel DE",
-        "Salisbury MD",
-        "Ocean City MD"
-      ]
-    },
-    {
-      "slug": "manchester-ct",
-      "city": "Manchester",
-      "state": "CT",
-      "metro": "Hartford-West Hartford",
-      "tier1": false,
-      "context": "Manchester-Hartford is Connecticut's capital region market anchored by insurance giants Aetna and Hartford Financial, state government, and a growing healthcare sector. The market offers industrial and office assets at significant discounts to the Boston and New York metros.",
-      "neighborhoods": [
-        "Downtown Hartford",
-        "West Hartford",
-        "Manchester CT",
-        "Glastonbury",
-        "South Windsor",
-        "East Hartford",
-        "Windsor",
-        "Bloomfield",
-        "Newington",
-        "Wethersfield",
-        "Enfield",
-        "Rocky Hill"
-      ]
-    },
-    {
       "slug": "new-haven",
       "city": "New Haven",
       "state": "CT",
@@ -1955,9 +1889,24 @@
       "slug": "hilton-head",
       "city": "Hilton Head Island",
       "added": "2026-05-17"
+    },
+    {
+      "slug": "wilmington-de",
+      "city": "Wilmington",
+      "added": "2026-05-18"
+    },
+    {
+      "slug": "dover-de",
+      "city": "Dover",
+      "added": "2026-05-18"
+    },
+    {
+      "slug": "manchester-ct",
+      "city": "Manchester",
+      "added": "2026-05-18"
     }
   ],
-  "last_run": "2026-05-17T17:14:40.381252Z",
-  "total_pages_added": 1296,
-  "runs_completed": 36
+  "last_run": "2026-05-18T04:42:19.601330Z",
+  "total_pages_added": 1332,
+  "runs_completed": 37
 }
