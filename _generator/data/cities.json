@@ -4624,5 +4624,68 @@
       "Enfield",
       "Rocky Hill"
     ]
+  },
+  {
+    "slug": "bridgeport",
+    "city": "Bridgeport",
+    "state": "CT",
+    "metro": "Bridgeport-Stamford",
+    "context": "Bridgeport-Stamford anchors Fairfield County, Connecticut's most prosperous market and a major hedge fund and finance hub closely linked to New York City. Commercial real estate offers significantly higher yields than Manhattan while serving an extremely high-income demographic base.",
+    "neighborhoods": [
+      "Downtown Bridgeport",
+      "Stratford",
+      "Milford",
+      "Shelton",
+      "Derby",
+      "Trumbull",
+      "Monroe CT",
+      "Newtown CT",
+      "Danbury",
+      "Norwalk",
+      "Stamford",
+      "Greenwich"
+    ]
+  },
+  {
+    "slug": "bangor",
+    "city": "Bangor",
+    "state": "ME",
+    "metro": "Bangor",
+    "context": "Bangor is northern Maine's commercial hub with a stable economy anchored by a large regional hospital system, the University of Maine, and retail that serves a vast northern Maine trade area. Multifamily and net lease retail offer consistent returns from a relatively captive trade area.",
+    "neighborhoods": [
+      "Downtown Bangor",
+      "Brewer ME",
+      "Orono",
+      "Old Town ME",
+      "Millinocket",
+      "Machias",
+      "Calais ME",
+      "Eastport",
+      "Belfast ME",
+      "Rockland ME",
+      "Camden ME",
+      "Waterville"
+    ]
+  },
+  {
+    "slug": "albany",
+    "city": "Albany",
+    "state": "NY",
+    "metro": "Albany-Schenectady-Troy",
+    "context": "Albany is New York State's capital with a stable commercial market driven by state government, GlobalFoundries semiconductor manufacturing, and several major research universities. Industrial and office assets in the Capital Region offer compelling yields relative to downstate markets.",
+    "neighborhoods": [
+      "Downtown Albany",
+      "Midtown Albany",
+      "Pine Hills",
+      "Center Square",
+      "Colonie",
+      "Guilderland",
+      "Latham",
+      "Clifton Park",
+      "Saratoga Springs",
+      "Troy",
+      "Schenectady",
+      "Delmar"
+    ]
   }
 ]
