@@ -4687,5 +4687,68 @@
       "Schenectady",
       "Delmar"
     ]
+  },
+  {
+    "slug": "binghamton",
+    "city": "Binghamton",
+    "state": "NY",
+    "metro": "Binghamton",
+    "context": "Binghamton is a Southern Tier New York market with Binghamton University and BAE Systems anchoring a modest but stable economy. Industrial and multifamily assets offer above-average yields driven by university demand and limited new supply.",
+    "neighborhoods": [
+      "Downtown Binghamton",
+      "Vestal",
+      "Johnson City",
+      "Endicott",
+      "Endwell",
+      "Owego",
+      "Waverly NY",
+      "Elmira",
+      "Corning NY",
+      "Ithaca",
+      "Cortland",
+      "Norwich NY"
+    ]
+  },
+  {
+    "slug": "poughkeepsie",
+    "city": "Poughkeepsie",
+    "state": "NY",
+    "metro": "Poughkeepsie-Newburgh",
+    "context": "Poughkeepsie-Newburgh is the Hudson Valley market anchored by IBM's research campus, Vassar College, and growing remote worker migration from New York City. The market's proximity to Manhattan and scenic Hudson River location support premium multifamily and hospitality investment.",
+    "neighborhoods": [
+      "Downtown Poughkeepsie",
+      "Newburgh",
+      "Middletown NY",
+      "Kingston NY",
+      "Highland",
+      "Pleasant Valley",
+      "LaGrangeville",
+      "Fishkill",
+      "Beacon NY",
+      "Rhinebeck",
+      "Red Hook NY",
+      "Hyde Park"
+    ]
+  },
+  {
+    "slug": "utica",
+    "city": "Utica",
+    "state": "NY",
+    "metro": "Utica-Rome",
+    "context": "Utica-Rome is a central New York market benefiting from Nanotechnology research at SUNY Poly and several major manufacturing investments, offering affordable industrial and commercial real estate with above-average yield potential.",
+    "neighborhoods": [
+      "Downtown Utica",
+      "New Hartford",
+      "Whitesboro",
+      "Rome NY",
+      "Ilion",
+      "Herkimer",
+      "Little Falls",
+      "Amsterdam NY",
+      "Gloversville",
+      "Johnstown NY",
+      "Fulton NY",
+      "Oswego"
+    ]
   }
 ]
