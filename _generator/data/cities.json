@@ -4750,5 +4750,68 @@
       "Fulton NY",
       "Oswego"
     ]
+  },
+  {
+    "slug": "lowell",
+    "city": "Lowell",
+    "state": "MA",
+    "metro": "Lowell-Lawrence-Haverhill",
+    "context": "Lowell is a Merrimack Valley Massachusetts market anchored by UMass Lowell and a growing tech sector, offering significantly more affordable commercial real estate than Boston and Cambridge while serving an increasingly diverse economy. Mill building conversions and mixed-use development have revitalized the downtown.",
+    "neighborhoods": [
+      "Downtown Lowell",
+      "Centralville",
+      "Belvidere",
+      "Acre",
+      "Lawrence MA",
+      "Methuen",
+      "Andover MA",
+      "North Andover",
+      "Haverhill",
+      "Amesbury",
+      "Newburyport",
+      "Salem MA"
+    ]
+  },
+  {
+    "slug": "springfield-il",
+    "city": "Springfield",
+    "state": "IL",
+    "metro": "Springfield IL",
+    "context": "Springfield is Illinois's state capital with a stable commercial market anchored by government employment, healthcare, and the Abraham Lincoln Presidential Library tourism economy. The market offers consistent retail and office fundamentals driven by the large state government workforce.",
+    "neighborhoods": [
+      "Downtown Springfield IL",
+      "West Springfield",
+      "East Springfield",
+      "Rochester IL",
+      "Sherman IL",
+      "Chatham IL",
+      "Auburn IL",
+      "Jacksonville IL",
+      "Quincy IL",
+      "Decatur",
+      "Bloomington",
+      "Champaign"
+    ]
+  },
+  {
+    "slug": "decatur",
+    "city": "Decatur",
+    "state": "IL",
+    "metro": "Decatur IL",
+    "context": "Decatur is a central Illinois agricultural processing market with Archer Daniels Midland's global headquarters driving industrial and office demand. The market offers affordable industrial assets anchored by agricultural commodity processing tenants.",
+    "neighborhoods": [
+      "Downtown Decatur",
+      "East Decatur",
+      "West Decatur",
+      "Forsyth IL",
+      "Maroa",
+      "Macon IL",
+      "Mount Zion",
+      "Sullivan IL",
+      "Mattoon",
+      "Charleston IL",
+      "Champaign",
+      "Springfield IL"
+    ]
   }
 ]

@@ -799,72 +799,6 @@
       ]
     },
     {
-      "slug": "lowell",
-      "city": "Lowell",
-      "state": "MA",
-      "metro": "Lowell-Lawrence-Haverhill",
-      "tier1": false,
-      "context": "Lowell is a Merrimack Valley Massachusetts market anchored by UMass Lowell and a growing tech sector, offering significantly more affordable commercial real estate than Boston and Cambridge while serving an increasingly diverse economy. Mill building conversions and mixed-use development have revitalized the downtown.",
-      "neighborhoods": [
-        "Downtown Lowell",
-        "Centralville",
-        "Belvidere",
-        "Acre",
-        "Lawrence MA",
-        "Methuen",
-        "Andover MA",
-        "North Andover",
-        "Haverhill",
-        "Amesbury",
-        "Newburyport",
-        "Salem MA"
-      ]
-    },
-    {
-      "slug": "springfield-il",
-      "city": "Springfield",
-      "state": "IL",
-      "metro": "Springfield IL",
-      "tier1": false,
-      "context": "Springfield is Illinois's state capital with a stable commercial market anchored by government employment, healthcare, and the Abraham Lincoln Presidential Library tourism economy. The market offers consistent retail and office fundamentals driven by the large state government workforce.",
-      "neighborhoods": [
-        "Downtown Springfield IL",
-        "West Springfield",
-        "East Springfield",
-        "Rochester IL",
-        "Sherman IL",
-        "Chatham IL",
-        "Auburn IL",
-        "Jacksonville IL",
-        "Quincy IL",
-        "Decatur",
-        "Bloomington",
-        "Champaign"
-      ]
-    },
-    {
-      "slug": "decatur",
-      "city": "Decatur",
-      "state": "IL",
-      "metro": "Decatur IL",
-      "tier1": false,
-      "context": "Decatur is a central Illinois agricultural processing market with Archer Daniels Midland's global headquarters driving industrial and office demand. The market offers affordable industrial assets anchored by agricultural commodity processing tenants.",
-      "neighborhoods": [
-        "Downtown Decatur",
-        "East Decatur",
-        "West Decatur",
-        "Forsyth IL",
-        "Maroa",
-        "Macon IL",
-        "Mount Zion",
-        "Sullivan IL",
-        "Mattoon",
-        "Charleston IL",
-        "Champaign",
-        "Springfield IL"
-      ]
-    },
-    {
       "slug": "bloomington-il",
       "city": "Bloomington",
       "state": "IL",
@@ -1802,9 +1736,24 @@
       "slug": "utica",
       "city": "Utica",
       "added": "2026-05-18"
+    },
+    {
+      "slug": "lowell",
+      "city": "Lowell",
+      "added": "2026-05-19"
+    },
+    {
+      "slug": "springfield-il",
+      "city": "Springfield",
+      "added": "2026-05-19"
+    },
+    {
+      "slug": "decatur",
+      "city": "Decatur",
+      "added": "2026-05-19"
     }
   ],
-  "last_run": "2026-05-18T18:10:33.528357Z",
-  "total_pages_added": 1404,
-  "runs_completed": 39
+  "last_run": "2026-05-19T04:34:25.359526Z",
+  "total_pages_added": 1440,
+  "runs_completed": 40
 }
