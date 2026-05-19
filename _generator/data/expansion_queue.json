@@ -799,72 +799,6 @@
       ]
     },
     {
-      "slug": "bloomington-il",
-      "city": "Bloomington",
-      "state": "IL",
-      "metro": "Bloomington-Normal",
-      "tier1": false,
-      "context": "Bloomington-Normal is a stable central Illinois market anchored by State Farm's global headquarters, Illinois State University, and Illinois Wesleyan University, providing consistent demand for office, retail, and multifamily. The market's institutional employers create recession-resistant commercial fundamentals.",
-      "neighborhoods": [
-        "Downtown Bloomington",
-        "Normal",
-        "East Bloomington",
-        "Uptown Normal",
-        "Hudson IL",
-        "Le Roy",
-        "Pontiac IL",
-        "Lincoln IL",
-        "Atlanta IL",
-        "Pekin",
-        "Morton IL",
-        "Eureka IL"
-      ]
-    },
-    {
-      "slug": "joliet",
-      "city": "Joliet",
-      "state": "IL",
-      "metro": "Chicago-Naperville-Elgin",
-      "tier1": false,
-      "context": "Joliet is a major Chicago suburban industrial market along the I-55 and I-80 corridors with some of the most active speculative industrial development in the Midwest, driven by proximity to the BNSF and UP intermodal facilities at Elwood. Amazon, Target, and major 3PLs operate significant distribution centers here.",
-      "neighborhoods": [
-        "Downtown Joliet",
-        "Plainfield",
-        "Bolingbrook",
-        "Romeoville",
-        "Crest Hill",
-        "Lockport",
-        "New Lenox",
-        "Mokena",
-        "Minooka",
-        "Manhattan IL",
-        "Channahon",
-        "Coal City"
-      ]
-    },
-    {
-      "slug": "elgin",
-      "city": "Elgin",
-      "state": "IL",
-      "metro": "Chicago-Naperville-Elgin",
-      "tier1": false,
-      "context": "Elgin is a Chicago northwest suburban market with a strong manufacturing base along the I-90 corridor and steady retail and multifamily demand from growing suburban populations. Industrial assets offer yields above Chicago proper with proximity to O'Hare airport logistics.",
-      "neighborhoods": [
-        "Downtown Elgin",
-        "South Elgin",
-        "Streamwood",
-        "Bartlett",
-        "Hanover Park",
-        "Schaumburg",
-        "Carol Stream",
-        "Bloomingdale",
-        "Glendale Heights",
-        "Roselle",
-        "Medinah",
-        "St. Charles"
-      ]
-    },
-    {
       "slug": "waukegan",
       "city": "Waukegan",
       "state": "IL",
@@ -1751,9 +1685,24 @@
       "slug": "decatur",
       "city": "Decatur",
       "added": "2026-05-19"
+    },
+    {
+      "slug": "bloomington-il",
+      "city": "Bloomington",
+      "added": "2026-05-19"
+    },
+    {
+      "slug": "joliet",
+      "city": "Joliet",
+      "added": "2026-05-19"
+    },
+    {
+      "slug": "elgin",
+      "city": "Elgin",
+      "added": "2026-05-19"
     }
   ],
-  "last_run": "2026-05-19T04:34:25.359526Z",
-  "total_pages_added": 1440,
-  "runs_completed": 40
+  "last_run": "2026-05-19T11:33:39.178053Z",
+  "total_pages_added": 1476,
+  "runs_completed": 41
 }

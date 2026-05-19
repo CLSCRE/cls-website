@@ -4813,5 +4813,68 @@
       "Champaign",
       "Springfield IL"
     ]
+  },
+  {
+    "slug": "bloomington-il",
+    "city": "Bloomington",
+    "state": "IL",
+    "metro": "Bloomington-Normal",
+    "context": "Bloomington-Normal is a stable central Illinois market anchored by State Farm's global headquarters, Illinois State University, and Illinois Wesleyan University, providing consistent demand for office, retail, and multifamily. The market's institutional employers create recession-resistant commercial fundamentals.",
+    "neighborhoods": [
+      "Downtown Bloomington",
+      "Normal",
+      "East Bloomington",
+      "Uptown Normal",
+      "Hudson IL",
+      "Le Roy",
+      "Pontiac IL",
+      "Lincoln IL",
+      "Atlanta IL",
+      "Pekin",
+      "Morton IL",
+      "Eureka IL"
+    ]
+  },
+  {
+    "slug": "joliet",
+    "city": "Joliet",
+    "state": "IL",
+    "metro": "Chicago-Naperville-Elgin",
+    "context": "Joliet is a major Chicago suburban industrial market along the I-55 and I-80 corridors with some of the most active speculative industrial development in the Midwest, driven by proximity to the BNSF and UP intermodal facilities at Elwood. Amazon, Target, and major 3PLs operate significant distribution centers here.",
+    "neighborhoods": [
+      "Downtown Joliet",
+      "Plainfield",
+      "Bolingbrook",
+      "Romeoville",
+      "Crest Hill",
+      "Lockport",
+      "New Lenox",
+      "Mokena",
+      "Minooka",
+      "Manhattan IL",
+      "Channahon",
+      "Coal City"
+    ]
+  },
+  {
+    "slug": "elgin",
+    "city": "Elgin",
+    "state": "IL",
+    "metro": "Chicago-Naperville-Elgin",
+    "context": "Elgin is a Chicago northwest suburban market with a strong manufacturing base along the I-90 corridor and steady retail and multifamily demand from growing suburban populations. Industrial assets offer yields above Chicago proper with proximity to O'Hare airport logistics.",
+    "neighborhoods": [
+      "Downtown Elgin",
+      "South Elgin",
+      "Streamwood",
+      "Bartlett",
+      "Hanover Park",
+      "Schaumburg",
+      "Carol Stream",
+      "Bloomingdale",
+      "Glendale Heights",
+      "Roselle",
+      "Medinah",
+      "St. Charles"
+    ]
   }
 ]
