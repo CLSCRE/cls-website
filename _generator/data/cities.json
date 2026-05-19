@@ -4876,5 +4876,68 @@
       "Medinah",
       "St. Charles"
     ]
+  },
+  {
+    "slug": "waukegan",
+    "city": "Waukegan",
+    "state": "IL",
+    "metro": "Lake County IL",
+    "context": "Waukegan is the North Shore Chicago suburban industrial market along Lake Michigan with significant port access and a strong manufacturing base serving the greater Chicagoland area. Industrial assets offer above-market yields relative to the Chicago industrial core.",
+    "neighborhoods": [
+      "Downtown Waukegan",
+      "North Chicago",
+      "Zion IL",
+      "Beach Park",
+      "Gurnee",
+      "Grayslake",
+      "Round Lake Beach",
+      "Lake Bluff",
+      "North Lake",
+      "Libertyville",
+      "Vernon Hills",
+      "Mundelein"
+    ]
+  },
+  {
+    "slug": "rockford-il",
+    "city": "Rockford",
+    "state": "IL",
+    "metro": "Rockford",
+    "context": "Rockford is northern Illinois's industrial hub with deep aerospace and defense manufacturing roots that anchor industrial demand despite challenging economic restructuring. The market offers attractively priced industrial assets with above-average yields from manufacturing and distribution tenants.",
+    "neighborhoods": [
+      "Downtown Rockford",
+      "North Rockford",
+      "South Rockford",
+      "East Rockford",
+      "Cherry Valley",
+      "Loves Park",
+      "Machesney Park",
+      "Roscoe",
+      "Belvidere",
+      "Beloit WI",
+      "Janesville WI",
+      "Monroe WI"
+    ]
+  },
+  {
+    "slug": "la-crosse",
+    "city": "La Crosse",
+    "state": "WI",
+    "metro": "La Crosse-Onalaska",
+    "context": "La Crosse is western Wisconsin's commercial hub anchored by a major healthcare system, the University of Wisconsin-La Crosse, and regional retail serving the Driftless Area. The market offers stable occupancy and affordable yields for multifamily and necessity-based retail investors.",
+    "neighborhoods": [
+      "Downtown La Crosse",
+      "Onalaska",
+      "Holmen",
+      "West Salem",
+      "Sparta WI",
+      "Tomah",
+      "Winona MN",
+      "Rochester MN",
+      "Prairie du Chien",
+      "Viroqua",
+      "Richland Center",
+      "Boscobel"
+    ]
   }
 ]
