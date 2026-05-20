@@ -5002,5 +5002,68 @@
       "Prosser",
       "Kennewick"
     ]
+  },
+  {
+    "slug": "kennewick",
+    "city": "Kennewick",
+    "state": "WA",
+    "metro": "Kennewick-Richland",
+    "context": "Kennewick-Richland is the Tri-Cities market in southeast Washington, anchored by the Hanford Site cleanup and Pacific Northwest National Laboratory, creating stable government and defense contractor employment. The metro's growing logistics sector along I-82 and US-395 supports industrial and distribution investment.",
+    "neighborhoods": [
+      "Downtown Kennewick",
+      "Richland WA",
+      "Pasco",
+      "West Richland",
+      "Finley",
+      "Benton City",
+      "Prosser",
+      "Walla Walla",
+      "College Place",
+      "Burbank WA",
+      "Connell",
+      "Ritzville"
+    ]
+  },
+  {
+    "slug": "bellingham",
+    "city": "Bellingham",
+    "state": "WA",
+    "metro": "Bellingham",
+    "context": "Bellingham is a Western Washington gateway city anchored by Western Washington University and significant cross-border commerce with Canada, with growing industrial and cold storage demand from agriculture, seafood, and manufacturing. The market's proximity to Vancouver BC and limited supply support strong rent growth.",
+    "neighborhoods": [
+      "Downtown Bellingham",
+      "Fairhaven",
+      "West Bellingham",
+      "Happy Valley",
+      "Squalicum Harbor",
+      "Ferndale",
+      "Lynden",
+      "Blaine",
+      "Mount Vernon",
+      "Burlington WA",
+      "Anacortes",
+      "Oak Harbor"
+    ]
+  },
+  {
+    "slug": "olympia",
+    "city": "Olympia",
+    "state": "WA",
+    "metro": "Olympia-Tumwater",
+    "context": "Olympia is Washington State's capital with a stable commercial market anchored by state government employment and several major healthcare facilities. The market's proximity to Tacoma and Seattle creates consistent demand for multifamily and retail properties serving government workers and state employees.",
+    "neighborhoods": [
+      "Downtown Olympia",
+      "Tumwater",
+      "Lacey",
+      "Yelm",
+      "Tenino",
+      "Centralia",
+      "Chehalis",
+      "Aberdeen WA",
+      "Shelton",
+      "Belfair",
+      "Port Orchard",
+      "Bremerton"
+    ]
   }
 ]

@@ -799,72 +799,6 @@
       ]
     },
     {
-      "slug": "kennewick",
-      "city": "Kennewick",
-      "state": "WA",
-      "metro": "Kennewick-Richland",
-      "tier1": false,
-      "context": "Kennewick-Richland is the Tri-Cities market in southeast Washington, anchored by the Hanford Site cleanup and Pacific Northwest National Laboratory, creating stable government and defense contractor employment. The metro's growing logistics sector along I-82 and US-395 supports industrial and distribution investment.",
-      "neighborhoods": [
-        "Downtown Kennewick",
-        "Richland WA",
-        "Pasco",
-        "West Richland",
-        "Finley",
-        "Benton City",
-        "Prosser",
-        "Walla Walla",
-        "College Place",
-        "Burbank WA",
-        "Connell",
-        "Ritzville"
-      ]
-    },
-    {
-      "slug": "bellingham",
-      "city": "Bellingham",
-      "state": "WA",
-      "metro": "Bellingham",
-      "tier1": false,
-      "context": "Bellingham is a Western Washington gateway city anchored by Western Washington University and significant cross-border commerce with Canada, with growing industrial and cold storage demand from agriculture, seafood, and manufacturing. The market's proximity to Vancouver BC and limited supply support strong rent growth.",
-      "neighborhoods": [
-        "Downtown Bellingham",
-        "Fairhaven",
-        "West Bellingham",
-        "Happy Valley",
-        "Squalicum Harbor",
-        "Ferndale",
-        "Lynden",
-        "Blaine",
-        "Mount Vernon",
-        "Burlington WA",
-        "Anacortes",
-        "Oak Harbor"
-      ]
-    },
-    {
-      "slug": "olympia",
-      "city": "Olympia",
-      "state": "WA",
-      "metro": "Olympia-Tumwater",
-      "tier1": false,
-      "context": "Olympia is Washington State's capital with a stable commercial market anchored by state government employment and several major healthcare facilities. The market's proximity to Tacoma and Seattle creates consistent demand for multifamily and retail properties serving government workers and state employees.",
-      "neighborhoods": [
-        "Downtown Olympia",
-        "Tumwater",
-        "Lacey",
-        "Yelm",
-        "Tenino",
-        "Centralia",
-        "Chehalis",
-        "Aberdeen WA",
-        "Shelton",
-        "Belfair",
-        "Port Orchard",
-        "Bremerton"
-      ]
-    },
-    {
       "slug": "tacoma",
       "city": "Tacoma",
       "state": "WA",
@@ -1598,9 +1532,24 @@
       "slug": "yakima",
       "city": "Yakima",
       "added": "2026-05-20"
+    },
+    {
+      "slug": "kennewick",
+      "city": "Kennewick",
+      "added": "2026-05-20"
+    },
+    {
+      "slug": "bellingham",
+      "city": "Bellingham",
+      "added": "2026-05-20"
+    },
+    {
+      "slug": "olympia",
+      "city": "Olympia",
+      "added": "2026-05-20"
     }
   ],
-  "last_run": "2026-05-20T04:37:02.814458Z",
-  "total_pages_added": 1548,
-  "runs_completed": 43
+  "last_run": "2026-05-20T11:21:18.791419Z",
+  "total_pages_added": 1584,
+  "runs_completed": 44
 }
