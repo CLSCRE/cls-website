@@ -4939,5 +4939,68 @@
       "Richland Center",
       "Boscobel"
     ]
+  },
+  {
+    "slug": "kenosha",
+    "city": "Kenosha",
+    "state": "WI",
+    "metro": "Kenosha County",
+    "context": "Kenosha is a southern Wisconsin industrial market benefiting from its position between Chicago and Milwaukee along I-94, with significant distribution and logistics investment from retailers seeking alternatives to Illinois's higher tax burden. Amazon and Uline maintain major distribution operations in the metro.",
+    "neighborhoods": [
+      "Downtown Kenosha",
+      "Pleasant Prairie",
+      "Racine",
+      "Mount Pleasant",
+      "Sturtevant",
+      "Oak Creek WI",
+      "South Milwaukee",
+      "Cudahy",
+      "St. Francis",
+      "South Kenosha",
+      "North Kenosha",
+      "Winthrop Harbor IL"
+    ]
+  },
+  {
+    "slug": "racine",
+    "city": "Racine",
+    "state": "WI",
+    "metro": "Racine",
+    "context": "Racine is a Lake Michigan industrial market with SC Johnson's global headquarters anchoring a manufacturing base spanning automotive, consumer products, and metalworking. Industrial assets offer stable occupancy from established manufacturers with above-average yields.",
+    "neighborhoods": [
+      "Downtown Racine",
+      "West Racine",
+      "Mount Pleasant",
+      "Wind Point",
+      "Sturtevant",
+      "Caledonia",
+      "North Bay",
+      "Franksville",
+      "Union Grove",
+      "Burlington WI",
+      "Waterford",
+      "Elkhorn"
+    ]
+  },
+  {
+    "slug": "yakima",
+    "city": "Yakima",
+    "state": "WA",
+    "metro": "Yakima",
+    "context": "Yakima is Washington State's agricultural and fruit processing capital with a major cold storage, food processing, and distribution base supporting the tree fruit and hop industries. Industrial and cold storage assets along US-97 and I-82 offer strong yields from food processing tenants.",
+    "neighborhoods": [
+      "Downtown Yakima",
+      "East Yakima",
+      "West Valley",
+      "Selah",
+      "Terrace Heights",
+      "Union Gap",
+      "Moxee",
+      "Wapato",
+      "Sunnyside",
+      "Grandview",
+      "Prosser",
+      "Kennewick"
+    ]
   }
 ]
