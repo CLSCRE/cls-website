@@ -799,72 +799,6 @@
       ]
     },
     {
-      "slug": "tacoma",
-      "city": "Tacoma",
-      "state": "WA",
-      "metro": "Seattle-Tacoma-Bellevue",
-      "tier1": false,
-      "context": "Tacoma is the South Sound's major port city and a significant industrial hub anchored by the Port of Tacoma, one of the largest container ports on the West Coast. Industrial vacancy is extremely tight driven by e-commerce distribution demand, while multifamily benefits from Seattle overspill at significantly lower rents.",
-      "neighborhoods": [
-        "Downtown Tacoma",
-        "North End",
-        "South Tacoma",
-        "Hilltop",
-        "University Place",
-        "Lakewood WA",
-        "Puyallup",
-        "Federal Way",
-        "Auburn WA",
-        "Kent",
-        "Fife",
-        "Sumner"
-      ]
-    },
-    {
-      "slug": "eugene",
-      "city": "Eugene",
-      "state": "OR",
-      "metro": "Eugene",
-      "tier1": false,
-      "context": "Eugene is western Oregon's second-largest market, anchored by the University of Oregon and a growing outdoor recreation and athletic footwear industry. Student housing, healthcare, and necessity-based retail benefit from stable university enrollment and growing in-migration from higher-cost Pacific Northwest cities.",
-      "neighborhoods": [
-        "Downtown Eugene",
-        "West Eugene",
-        "Santa Clara",
-        "Bethel",
-        "Coburg",
-        "Springfield OR",
-        "Junction City",
-        "Cottage Grove",
-        "Creswell",
-        "Albany OR",
-        "Corvallis",
-        "Salem OR"
-      ]
-    },
-    {
-      "slug": "medford",
-      "city": "Medford",
-      "state": "OR",
-      "metro": "Medford",
-      "tier1": false,
-      "context": "Medford is southern Oregon's commercial hub with a growing healthcare, pear agricultural, and wine tourism economy. Industrial and retail assets in the Rogue Valley benefit from constrained supply and consistent demand from regional businesses and retirees.",
-      "neighborhoods": [
-        "Downtown Medford",
-        "Central Point",
-        "Ashland OR",
-        "Jacksonville OR",
-        "Talent",
-        "Phoenix OR",
-        "White City",
-        "Eagle Point",
-        "Grants Pass",
-        "Klamath Falls",
-        "Yreka CA",
-        "Mount Shasta CA"
-      ]
-    },
-    {
       "slug": "astoria",
       "city": "Astoria",
       "state": "OR",
@@ -1547,9 +1481,24 @@
       "slug": "olympia",
       "city": "Olympia",
       "added": "2026-05-20"
+    },
+    {
+      "slug": "tacoma",
+      "city": "Tacoma",
+      "added": "2026-05-20"
+    },
+    {
+      "slug": "eugene",
+      "city": "Eugene",
+      "added": "2026-05-20"
+    },
+    {
+      "slug": "medford",
+      "city": "Medford",
+      "added": "2026-05-20"
     }
   ],
-  "last_run": "2026-05-20T11:21:18.791419Z",
-  "total_pages_added": 1584,
-  "runs_completed": 44
+  "last_run": "2026-05-20T18:32:24.234456Z",
+  "total_pages_added": 1620,
+  "runs_completed": 45
 }
