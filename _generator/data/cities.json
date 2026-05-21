@@ -5128,5 +5128,26 @@
       "Yreka CA",
       "Mount Shasta CA"
     ]
+  },
+  {
+    "slug": "astoria",
+    "city": "Astoria",
+    "state": "OR",
+    "metro": "Astoria",
+    "context": "Astoria is a small Pacific Northwest coastal market with a boutique hospitality, historic tourism, and fishing industry economy. Hospitality and mixed-use retail investments in the historic downtown benefit from strong summer tourism demand.",
+    "neighborhoods": [
+      "Downtown Astoria",
+      "Astoria Heights",
+      "Warrenton OR",
+      "Seaside OR",
+      "Cannon Beach",
+      "Tillamook",
+      "Long Beach WA",
+      "Ilwaco WA",
+      "Clatskanie OR",
+      "Rainier OR",
+      "St. Helens OR",
+      "Scappoose OR"
+    ]
   }
 ]

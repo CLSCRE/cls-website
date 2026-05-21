@@ -797,28 +797,6 @@
         "East Syracuse",
         "Cicero"
       ]
-    },
-    {
-      "slug": "astoria",
-      "city": "Astoria",
-      "state": "OR",
-      "metro": "Astoria",
-      "tier1": false,
-      "context": "Astoria is a small Pacific Northwest coastal market with a boutique hospitality, historic tourism, and fishing industry economy. Hospitality and mixed-use retail investments in the historic downtown benefit from strong summer tourism demand.",
-      "neighborhoods": [
-        "Downtown Astoria",
-        "Astoria Heights",
-        "Warrenton OR",
-        "Seaside OR",
-        "Cannon Beach",
-        "Tillamook",
-        "Long Beach WA",
-        "Ilwaco WA",
-        "Clatskanie OR",
-        "Rainier OR",
-        "St. Helens OR",
-        "Scappoose OR"
-      ]
     }
   ],
   "cities_done": [
@@ -1496,9 +1474,14 @@
       "slug": "medford",
       "city": "Medford",
       "added": "2026-05-20"
+    },
+    {
+      "slug": "astoria",
+      "city": "Astoria",
+      "added": "2026-05-21"
     }
   ],
-  "last_run": "2026-05-20T18:32:24.234456Z",
-  "total_pages_added": 1620,
-  "runs_completed": 45
+  "last_run": "2026-05-21T04:44:28.924960Z",
+  "total_pages_added": 1632,
+  "runs_completed": 46
 }
