@@ -32,6 +32,7 @@ WEBSITE_DIR = SCRIPT_DIR.parent  # website/
 
 BASE_URL = "https://clscre.com"
 TODAY = date.today().isoformat()
+TODAY_HUMAN = date.today().strftime("%B %Y")  # e.g., "May 2026" — for visible bylines
 
 
 def load_json(name: str):
@@ -321,6 +322,8 @@ def main():
         "all_cities": cities,
         "regional_groups": regional_groups,
         "total_market_count": len(cities),
+        "current_date": TODAY,            # ISO date for schema (dateModified, lastReviewed)
+        "current_date_human": TODAY_HUMAN, # e.g., "May 2026" — for visible bylines
     }
 
     # Track all generated URLs for sitemap
