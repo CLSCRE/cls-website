@@ -40,6 +40,10 @@
     <span aria-hidden="true">·</span>
     <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
   </div>
+  <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 24px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0">
+    <strong style="color:var(--navy)">Quick answer:</strong>
+    {{ prop.name }} financing in {{ city.city }}, {{ city.state }} covers all major subtypes including {{ prop.subtypes[0] }}, {{ prop.subtypes[1] }}, and {{ prop.subtypes[2] }}. Capital sources include {{ prop.financing_options[0] }}, {{ prop.financing_options[1] }}, and {{ prop.financing_options[2] }}. Commercial Lending Solutions structures these deals for {{ city.city }} properties through 1,000+ lender relationships across the {{ city.metro }} market.
+  </div>
   <p class="reveal">{{ city.context }}</p>
   <a href="{{ depth }}apply.html" class="btn-primary reveal">Apply for {{ city.city }} {{ prop.name }} Financing &rarr;</a>
 </div>
