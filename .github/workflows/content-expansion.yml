@@ -15,11 +15,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
@@ -37,4 +37,23 @@ jobs:
           git config user.email "bot@clscre.com"
           git config user.name "CLS CRE Content Bot"
           git add .
-          git diff --cached --quiet || (git commit -m "auto: content expansion $(date +'%Y-%m-%d %H:%M UTC') [skip actions]" && git push)
+          if git diff --cached --quiet; then
+            echo "No changes to commit — exiting cleanly."
+            exit 0
+          fi
+          git commit -m "auto: content expansion $(date +'%Y-%m-%d %H:%M UTC') [skip actions]"
+          # Retry push up to 3 times with pull-rebase between attempts.
+          # Handles: (a) transient GitHub `fatal error in commit_refs`,
+          #          (b) races with the local rate-update bot pushing concurrently,
+          #          (c) post-deploy ref locks during GitHub Pages publish.
+          for attempt in 1 2 3; do
+            if git push origin main; then
+              echo "Push succeeded on attempt $attempt"
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; backoff + pull-rebase"
+            sleep $((attempt * 15))
+            git pull --rebase origin main || { echo "Rebase failed on attempt $attempt"; exit 1; }
+          done
+          echo "ERROR: all 3 push attempts failed"
+          exit 1

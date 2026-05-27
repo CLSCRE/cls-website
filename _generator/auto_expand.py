@@ -310,30 +310,36 @@ def run_generators() -> bool:
 # ────────────────────────────────────────────────────────────────────────────
 
 def submit_indexnow(new_city_slugs: list[str]) -> None:
-    """Submit new city URLs to IndexNow."""
+    """Submit new city URLs to IndexNow.
+
+    Reads loan_types.json + property_types.json so the URL list stays in sync
+    when new loan programs or property types are added. URL patterns match
+    what generate.py actually produces (see docs/SEO_ARCHITECTURE.md).
+    """
     if not new_city_slugs:
         print("No new city URLs to submit to IndexNow.")
         return
 
-    # Build URL list: markets pages for new cities
-    loan_types = [
-        "bridge-loans", "permanent-loans", "construction-loans",
-        "sba-loans", "mezzanine", "agency-loans",
-        "hud-fha-loans", "cmbs-loans", "life-company-loans",
-    ]
-    property_types = [
-        "multifamily", "industrial", "office",
-        "retail", "mixed-use", "hospitality",
-    ]
+    # Read current loan + property type slugs from the data files
+    # (was previously hardcoded — drift caused new loan/property pages to
+    # never be pinged to IndexNow when the schema was expanded).
+    loan_type_slugs     = [lt["slug"] for lt in load_json(DATA_DIR / "loan_types.json")]
+    property_type_slugs = [pt["slug"] for pt in load_json(DATA_DIR / "property_types.json")]
 
     urls = []
-    for slug in new_city_slugs:
-        for lt in loan_types:
-            urls.append(f"{BASE_URL}/markets/{slug}-{lt}.html")
-        for pt in property_types:
-            urls.append(f"{BASE_URL}/markets/{slug}-{pt}.html")
-        # Submarket pages
-        urls.append(f"{BASE_URL}/markets/{slug}.html")
+    for city_slug in new_city_slugs:
+        # City × loan pages: /financing/{loan-slug}-{city-slug}.html
+        for lt_slug in loan_type_slugs:
+            urls.append(f"{BASE_URL}/financing/{lt_slug}-{city_slug}.html")
+        # City × property pages: /property/{prop-slug}-{city-slug}.html
+        for pt_slug in property_type_slugs:
+            urls.append(f"{BASE_URL}/property/{pt_slug}-{city_slug}.html")
+        # Market index: /markets/{city-slug}/ (directory index, not .html)
+        urls.append(f"{BASE_URL}/markets/{city_slug}/")
+
+    print(f"  Submitting {len(urls)} URLs ({len(loan_type_slugs)} loan + "
+          f"{len(property_type_slugs)} property + 1 market index per city × "
+          f"{len(new_city_slugs)} new cities)")
 
     # Batch into groups of 100
     batches = [urls[i:i+100] for i in range(0, len(urls), 100)]

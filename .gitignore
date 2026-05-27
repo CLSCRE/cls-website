@@ -1,0 +1,21 @@
+# Python build artifacts — should never be committed
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS metadata files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor swap / temp files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Local environment overrides
+.env
+.env.local
