@@ -43,6 +43,10 @@
     <span aria-hidden="true">·</span>
     <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
   </div>
+  <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 24px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0">
+    <strong style="color:var(--navy)">Quick answer:</strong>
+    {{ loan.name }} in {{ city.city }}, {{ city.state }} range from {{ loan.key_features.loan_amount }} at {{ loan.key_features.rates }}, with terms of {{ loan.key_features.term|lower }}. Best for {{ loan.ideal_for[0]|lower }}. Commercial Lending Solutions sources {{ loan.short_name }} financing for {{ city.city }} commercial properties from {{ loan.lender_sources[:3]|join(', ') }}, and 1,000+ other capital sources nationwide.
+  </div>
   <p class="reveal">{{ city.context }}</p>
   <a href="{{ depth }}apply.html" class="btn-primary reveal">Apply for {{ city.city }} {{ loan.short_name }} Financing &rarr;</a>
 </div>
