@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
     steps:
       - uses: actions/checkout@v6
         with:
@@ -57,3 +58,68 @@ jobs:
           done
           echo "ERROR: all 3 push attempts failed"
           exit 1
+
+      - name: Notify on workflow failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const now = new Date().toISOString();
+            const label = 'workflow-failure';
+
+            // Dedupe: if there's already an open workflow-failure issue,
+            // comment on it instead of opening a new one. Prevents issue
+            // spam when a problem persists across multiple scheduled runs.
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: label,
+              per_page: 5,
+            });
+
+            if (existing.data.length > 0) {
+              const issueNumber = existing.data[0].number;
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: `Another failure at ${now}.\n\nRun: ${runUrl}\n\nThis is failure #${existing.data[0].comments + 2} on this open issue. If the root cause has been fixed, close this issue and a new one will open if it fails again.`,
+              });
+              core.setFailed(`Workflow failed. Commented on existing issue #${issueNumber}.`);
+              return;
+            }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Auto Content Expansion workflow failed (${now.slice(0, 10)})`,
+              body: [
+                `The Auto Content Expansion workflow failed at ${now}.`,
+                ``,
+                `**Run:** ${runUrl}`,
+                ``,
+                `## What this means`,
+                ``,
+                `The bot tried to generate + commit new content and either (a) the generator script exited with an error, or (b) all 3 \`git push\` retry attempts failed.`,
+                ``,
+                `## Likely causes (in rough order of probability)`,
+                ``,
+                `1. **Transient GitHub error that persisted** — \`fatal error in commit_refs\` lasting longer than 45s (rare). Check the next scheduled run before debugging — it may self-heal.`,
+                `2. **Race with local rate-update bot** — both bots tried to push within seconds. The retry usually catches this but extreme cases slip through.`,
+                `3. **\`auto_expand.py\` error** — a code or data issue in \`_generator/auto_expand.py\`, \`generate.py\`, or one of the data JSON files. Check the run log's "Run content expansion" step.`,
+                `4. **\`generate.py\` template error** — Jinja2 rendering exception. Check the run log's "Run content expansion" step.`,
+                ``,
+                `## Triage steps`,
+                ``,
+                `1. Open the run URL above and check which step failed (red X marks it).`,
+                `2. If "Commit and push" failed after 3 attempts — likely transient or persistent race. Wait one cycle (~8 hours) before manual intervention.`,
+                `3. If "Run content expansion" failed — there's a real bug. Pull the repo locally and reproduce: \`cd website/_generator && python auto_expand.py\`.`,
+                `4. Once resolved, **close this issue**. The next failure will open a new one (this isn't reused indefinitely).`,
+                ``,
+                `<sub>Auto-created by \`.github/workflows/content-expansion.yml\`. To stop these notifications, remove the "Notify on workflow failure" step from that file.</sub>`,
+              ].join('\n'),
+              labels: [label, 'automation'],
+            });
+            core.setFailed('Workflow failed. Opened a new tracking issue.');
