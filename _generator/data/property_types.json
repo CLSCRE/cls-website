@@ -5,8 +5,24 @@
     "headline": "Multifamily & Apartment Financing",
     "description": "Multifamily properties are the most actively financed asset class in commercial real estate. From small 5-unit apartment buildings to large 500+ unit communities, multifamily assets benefit from the broadest range of financing sources including agency lenders (Fannie Mae, Freddie Mac), banks, life insurance companies, CMBS conduits, and debt funds.",
     "description_extended": "The multifamily sector consistently attracts strong capital flows due to fundamental housing demand, favorable demographics, and government-backed lending programs. Agency financing through Fannie Mae and Freddie Mac offers the most competitive long-term rates with non-recourse terms, while bank and life company options provide flexibility for portfolio borrowers. CLS CRE specializes in multifamily financing across all subtypes, from conventional apartments to manufactured housing communities.",
-    "subtypes": ["Conventional Apartments", "Garden-Style Communities", "Mid-Rise & High-Rise", "Manufactured Housing / Mobile Homes", "Student Housing", "Senior Living & Assisted Living", "Affordable / Workforce Housing", "Single-Family Rental Portfolios"],
-    "financing_options": ["Agency (Fannie Mae / Freddie Mac)", "Bank Permanent Loans", "Life Insurance Company Loans", "CMBS", "Bridge & Value-Add", "Construction"],
+    "subtypes": [
+      "Conventional Apartments",
+      "Garden-Style Communities",
+      "Mid-Rise & High-Rise",
+      "Manufactured Housing / Mobile Homes",
+      "Student Housing",
+      "Senior Living & Assisted Living",
+      "Affordable / Workforce Housing",
+      "Single-Family Rental Portfolios"
+    ],
+    "financing_options": [
+      "Agency (Fannie Mae / Freddie Mac)",
+      "Bank Permanent Loans",
+      "Life Insurance Company Loans",
+      "CMBS",
+      "Bridge & Value-Add",
+      "Construction"
+    ],
     "seo": {
       "title": "Multifamily & Apartment Financing | CLS CRE",
       "meta_description": "Multifamily and apartment financing from $1M to $100M+. Agency, bank, life company, CMBS, bridge, and construction loans. Nationwide coverage. Get a quote.",
@@ -19,8 +35,24 @@
     "headline": "Industrial & Warehouse Financing",
     "description": "Industrial properties have emerged as one of the most sought-after asset classes in commercial real estate, driven by e-commerce growth, supply chain reshoring, and data center demand. Financing is widely available from banks, life insurance companies, CMBS lenders, and debt funds for warehouses, distribution centers, manufacturing facilities, and flex/R&D space.",
     "description_extended": "The industrial sector benefits from strong tenant demand, low vacancy rates, and favorable rent growth trends across most major markets. Lenders view industrial assets favorably due to long-term lease structures, creditworthy tenants, and relatively low capital expenditure requirements. CLS CRE's track record includes financing for distribution centers, cold storage, manufacturing plants, truck terminals, data centers, and specialty industrial assets.",
-    "subtypes": ["Distribution & Logistics Centers", "Cold Storage & Food Processing", "Manufacturing & Production", "Flex / R&D Space", "Truck Terminals & Cross-Dock", "Data Centers", "Self-Storage", "Industrial Showrooms"],
-    "financing_options": ["Bank Permanent Loans", "Life Insurance Company Loans", "CMBS", "Bridge Loans", "Construction Loans", "SBA 504 (Owner-Occupied)"],
+    "subtypes": [
+      "Distribution & Logistics Centers",
+      "Cold Storage & Food Processing",
+      "Manufacturing & Production",
+      "Flex / R&D Space",
+      "Truck Terminals & Cross-Dock",
+      "Data Centers",
+      "Self-Storage",
+      "Industrial Showrooms"
+    ],
+    "financing_options": [
+      "Bank Permanent Loans",
+      "Life Insurance Company Loans",
+      "CMBS",
+      "Bridge Loans",
+      "Construction Loans",
+      "SBA 504 (Owner-Occupied)"
+    ],
     "seo": {
       "title": "Industrial & Warehouse Financing | CLS CRE",
       "meta_description": "Industrial and warehouse financing for distribution, manufacturing, cold storage, data centers, and more. Competitive rates from $1M to $100M+. Get a quote.",
@@ -33,8 +65,24 @@
     "headline": "Retail & Shopping Center Financing",
     "description": "Retail property financing spans single-tenant net lease assets to large multi-tenant shopping centers. Creditworthy tenancy and long-term lease structures drive the most competitive terms, with strong net lease assets qualifying for life insurance company and CMBS financing. Community and neighborhood centers with grocery anchors remain attractive to bank and agency lenders.",
     "description_extended": "While retail has evolved significantly with the growth of e-commerce, well-located, well-tenanted retail properties continue to generate strong returns and attract financing. Net lease properties with investment-grade tenants command premium financing terms, while value-add retail opportunities may leverage bridge capital for repositioning. CLS CRE structures financing for the full spectrum of retail assets, from single-tenant pharmacies to regional shopping centers.",
-    "subtypes": ["Single-Tenant Net Lease (NNN)", "Multi-Tenant Shopping Centers", "Grocery-Anchored Centers", "Power Centers & Outlet Malls", "Strip Retail & Inline Shops", "Restaurant & Food Service", "Auto Service & Car Wash", "Entertainment & Experiential Retail"],
-    "financing_options": ["Life Insurance Company Loans", "CMBS", "Bank Permanent Loans", "Bridge Loans", "Construction (Build-to-Suit)", "SBA 504 (Owner-Occupied)"],
+    "subtypes": [
+      "Single-Tenant Net Lease (NNN)",
+      "Multi-Tenant Shopping Centers",
+      "Grocery-Anchored Centers",
+      "Power Centers & Outlet Malls",
+      "Strip Retail & Inline Shops",
+      "Restaurant & Food Service",
+      "Auto Service & Car Wash",
+      "Entertainment & Experiential Retail"
+    ],
+    "financing_options": [
+      "Life Insurance Company Loans",
+      "CMBS",
+      "Bank Permanent Loans",
+      "Bridge Loans",
+      "Construction (Build-to-Suit)",
+      "SBA 504 (Owner-Occupied)"
+    ],
     "seo": {
       "title": "Retail & Shopping Center Financing | CLS CRE",
       "meta_description": "Retail property financing for net lease, shopping centers, grocery-anchored, and multi-tenant assets. Life company, CMBS, bank, and bridge loans. Get a quote.",
@@ -47,8 +95,24 @@
     "headline": "Office Building Financing",
     "description": "Office property financing serves Class A through C buildings, from single-tenant headquarters to multi-tenant towers. While the office sector has faced headwinds from remote work trends, well-located assets with strong tenancy continue to attract competitive financing from banks, life insurance companies, and CMBS lenders.",
     "description_extended": "Office financing underwriting focuses heavily on tenant quality, lease rollover risk, and market fundamentals. Properties with long-term leases to creditworthy tenants and located in strong submarkets with low vacancy continue to access favorable terms. CLS CRE helps office investors navigate the current lending landscape to secure optimal financing, whether for stabilized holdings, value-add repositioning, or owner-occupied acquisitions.",
-    "subtypes": ["Class A Trophy Office", "Class B Value-Add Office", "Creative / Flex Office", "Medical & Dental Office", "Co-Working & Shared Space", "Owner-Occupied Office", "Government & GSA-Leased", "Suburban Office Campus"],
-    "financing_options": ["Bank Permanent Loans", "Life Insurance Company Loans", "CMBS", "Bridge Loans", "SBA 504 / 7(a) (Owner-Occupied)", "Construction"],
+    "subtypes": [
+      "Class A Trophy Office",
+      "Class B Value-Add Office",
+      "Creative / Flex Office",
+      "Medical & Dental Office",
+      "Co-Working & Shared Space",
+      "Owner-Occupied Office",
+      "Government & GSA-Leased",
+      "Suburban Office Campus"
+    ],
+    "financing_options": [
+      "Bank Permanent Loans",
+      "Life Insurance Company Loans",
+      "CMBS",
+      "Bridge Loans",
+      "SBA 504 / 7(a) (Owner-Occupied)",
+      "Construction"
+    ],
     "seo": {
       "title": "Office Building Financing | CLS CRE",
       "meta_description": "Office building financing for Class A, B, and C properties. Banks, life companies, CMBS, bridge, and SBA loans. Nationwide coverage from $1M to $100M+. Get a quote.",
@@ -61,8 +125,24 @@
     "headline": "Mixed-Use Property Financing",
     "description": "Mixed-use properties combine residential, commercial, and sometimes industrial uses within a single asset or development. These properties can be challenging to finance due to their hybrid nature, but experienced brokers can source competitive capital from banks, CMBS lenders, and specialized mixed-use lenders who understand the unique underwriting dynamics.",
     "description_extended": "Mixed-use financing requires lenders comfortable with multiple income streams and use types within a single property. Vertical mixed-use (retail ground floor with apartments above) is the most common structure, followed by horizontal mixed-use developments. Lenders typically underwrite the residential and commercial components separately, then blend the analysis. CLS CRE's expertise in mixed-use structuring helps investors maximize leverage across the full capital stack.",
-    "subtypes": ["Retail + Residential", "Office + Residential", "Live-Work Spaces", "Transit-Oriented Development", "Land & Development Sites", "Adaptive Reuse & Conversion", "Ground-Floor Commercial + Apartments", "Mixed-Use Portfolios"],
-    "financing_options": ["Bank Permanent Loans", "Bridge Loans", "Construction Loans", "CMBS", "Agency (If 80%+ Residential)", "Mezzanine & Preferred Equity"],
+    "subtypes": [
+      "Retail + Residential",
+      "Office + Residential",
+      "Live-Work Spaces",
+      "Transit-Oriented Development",
+      "Land & Development Sites",
+      "Adaptive Reuse & Conversion",
+      "Ground-Floor Commercial + Apartments",
+      "Mixed-Use Portfolios"
+    ],
+    "financing_options": [
+      "Bank Permanent Loans",
+      "Bridge Loans",
+      "Construction Loans",
+      "CMBS",
+      "Agency (If 80%+ Residential)",
+      "Mezzanine & Preferred Equity"
+    ],
     "seo": {
       "title": "Mixed-Use Property Financing | CLS CRE",
       "meta_description": "Mixed-use property financing for retail + residential, live-work, TOD, and adaptive reuse projects. Bank, bridge, construction, and CMBS loans. Get a quote.",
@@ -75,8 +155,24 @@
     "headline": "Hotel & Hospitality Financing",
     "description": "Hospitality financing covers hotels, motels, resorts, and specialty entertainment venues. As operating businesses with volatile revenue streams, hospitality properties require lenders with specific expertise in underwriting room revenue, occupancy trends, and management quality. Sources include banks, CMBS conduits, SBA programs, and specialized hospitality lenders.",
     "description_extended": "Hotel financing is among the most complex in commercial real estate due to the operating business nature of the asset. Lenders evaluate not just the real estate but also brand affiliation, management quality, competitive set positioning, and market-level supply/demand dynamics. CLS CRE has financed boutique hotels, flagged properties, entertainment venues, and specialty hospitality assets, bringing deep lender relationships and structuring expertise to every deal.",
-    "subtypes": ["Full-Service Hotels", "Limited-Service / Select-Service", "Boutique & Independent Hotels", "Extended Stay", "Resorts & Spas", "Entertainment Venues", "Conference & Event Centers", "Specialty Hospitality (Aquariums, TopGolf, etc.)"],
-    "financing_options": ["Bank Permanent Loans", "CMBS", "SBA 504 / 7(a)", "Bridge Loans", "Construction & Renovation", "Mezzanine & Preferred Equity"],
+    "subtypes": [
+      "Full-Service Hotels",
+      "Limited-Service / Select-Service",
+      "Boutique & Independent Hotels",
+      "Extended Stay",
+      "Resorts & Spas",
+      "Entertainment Venues",
+      "Conference & Event Centers",
+      "Specialty Hospitality (Aquariums, TopGolf, etc.)"
+    ],
+    "financing_options": [
+      "Bank Permanent Loans",
+      "CMBS",
+      "SBA 504 / 7(a)",
+      "Bridge Loans",
+      "Construction & Renovation",
+      "Mezzanine & Preferred Equity"
+    ],
     "seo": {
       "title": "Hotel & Hospitality Financing | CLS CRE",
       "meta_description": "Hotel and hospitality financing for full-service, boutique, limited-service, and specialty venues. Bank, CMBS, SBA, bridge, and construction loans. Get a quote.",
@@ -89,8 +185,25 @@
     "headline": "Self-Storage Facility Financing",
     "description": "Self-storage has become one of the most resilient asset classes in commercial real estate, driven by demographic mobility, downsizing trends, and the growth of e-commerce businesses needing inventory space. Financing is widely available from banks, life insurance companies, CMBS lenders, and specialty self-storage lenders for stabilized facilities, conversions, and ground-up development.",
     "description_extended": "Self-storage properties offer predictable cash flows, low operating complexity, and strong performance across economic cycles. Lenders view storage favorably due to diversified tenant bases (often 200-500+ tenants per facility), low turnover costs, and minimal capital expenditure requirements. Modern climate-controlled facilities with digital access systems and professional management command premium valuations and the most competitive financing terms. Commercial Lending Solutions finances self-storage facilities ranging from single-story drive-up units to multi-story climate-controlled facilities across all major markets.",
-    "subtypes": ["Climate-Controlled Storage", "Standard Drive-Up Storage", "Multi-Story Urban Storage", "Vehicle & RV Storage", "Boat & Marine Storage", "Portable / Container Storage", "Records & Document Storage", "Mixed-Use Storage (Retail + Storage)"],
-    "financing_options": ["Bank Permanent Loans", "Life Insurance Company Loans", "CMBS", "Bridge Loans", "Construction Loans", "SBA 504 (Owner-Occupied)", "Specialty Self-Storage Lenders"],
+    "subtypes": [
+      "Climate-Controlled Storage",
+      "Standard Drive-Up Storage",
+      "Multi-Story Urban Storage",
+      "Vehicle & RV Storage",
+      "Boat & Marine Storage",
+      "Portable / Container Storage",
+      "Records & Document Storage",
+      "Mixed-Use Storage (Retail + Storage)"
+    ],
+    "financing_options": [
+      "Bank Permanent Loans",
+      "Life Insurance Company Loans",
+      "CMBS",
+      "Bridge Loans",
+      "Construction Loans",
+      "SBA 504 (Owner-Occupied)",
+      "Specialty Self-Storage Lenders"
+    ],
     "seo": {
       "title": "Self-Storage Facility Financing | Commercial Lending Solutions",
       "meta_description": "Self-storage facility financing from $1M to $50M+. Banks, life companies, CMBS, bridge, and construction loans for climate-controlled and drive-up facilities. Get a quote.",
@@ -103,8 +216,25 @@
     "headline": "Data Center Financing",
     "description": "Data centers are among the fastest-growing commercial real estate asset classes, driven by cloud computing, artificial intelligence, and the exponential growth of digital infrastructure. Financing for data centers requires lenders who understand the unique power, cooling, and connectivity requirements that differentiate these specialized facilities from conventional industrial assets.",
     "description_extended": "Data center financing underwriting focuses on power capacity (measured in megawatts), redundancy levels (Tier I through IV), tenant credit quality, lease terms, and the cost of power in the local market. Single-tenant, build-to-suit data centers leased to hyperscalers or enterprise tenants attract the most competitive financing terms, while colocation and edge facilities offer diversified revenue streams. Commercial Lending Solutions works with lenders who specialize in mission-critical infrastructure, including life insurance companies, CMBS conduits, and debt funds focused on technology real estate.",
-    "subtypes": ["Hyperscale Data Centers", "Colocation Facilities", "Enterprise / Single-Tenant", "Edge Data Centers", "Powered Shell / Build-to-Suit", "Carrier Hotels & Network Hubs", "Modular / Prefabricated Data Centers", "AI / GPU-Optimized Facilities"],
-    "financing_options": ["Life Insurance Company Loans", "Bank Permanent Loans", "CMBS", "Bridge Loans", "Construction Loans", "Mezzanine & Preferred Equity", "Infrastructure Debt Funds"],
+    "subtypes": [
+      "Hyperscale Data Centers",
+      "Colocation Facilities",
+      "Enterprise / Single-Tenant",
+      "Edge Data Centers",
+      "Powered Shell / Build-to-Suit",
+      "Carrier Hotels & Network Hubs",
+      "Modular / Prefabricated Data Centers",
+      "AI / GPU-Optimized Facilities"
+    ],
+    "financing_options": [
+      "Life Insurance Company Loans",
+      "Bank Permanent Loans",
+      "CMBS",
+      "Bridge Loans",
+      "Construction Loans",
+      "Mezzanine & Preferred Equity",
+      "Infrastructure Debt Funds"
+    ],
     "seo": {
       "title": "Data Center Financing | Commercial Lending Solutions",
       "meta_description": "Data center financing for hyperscale, colocation, edge, and enterprise facilities. Life company, bank, CMBS, bridge, and construction loans from $5M to $100M+. Get a quote.",
@@ -117,8 +247,25 @@
     "headline": "Senior Living & Assisted Living Financing",
     "description": "Senior living financing covers the full continuum of care from independent living and assisted living to memory care and skilled nursing facilities. As the U.S. population ages rapidly, senior housing demand is projected to grow significantly, creating strong long-term investment fundamentals. Lenders with healthcare real estate expertise provide acquisition, refinance, construction, and bridge capital for operators and investors.",
     "description_extended": "Senior living underwriting is more complex than conventional multifamily because lenders evaluate operating metrics (occupancy, revenue per occupied unit, staffing ratios, regulatory compliance) in addition to traditional real estate fundamentals. Properties with strong operators, proven track records, and favorable demographic profiles in their trade areas attract the most competitive financing. HUD/FHA 232 programs offer the most aggressive permanent financing terms for stabilized facilities. Commercial Lending Solutions works with banks, HUD lenders, bridge lenders, and debt funds that specialize in healthcare and senior housing, helping owners navigate the unique requirements of this asset class.",
-    "subtypes": ["Independent Living", "Assisted Living", "Memory Care", "Continuing Care Retirement Communities (CCRC)", "Skilled Nursing Facilities (SNF)", "Active Adult / 55+ Communities", "Combination IL/AL/MC Campuses", "Senior Affordable Housing"],
-    "financing_options": ["HUD / FHA 232 Loans", "Bank Permanent Loans", "Bridge Loans", "CMBS", "Construction Loans", "Mezzanine & Preferred Equity", "SBA 504 (Owner-Operated)"],
+    "subtypes": [
+      "Independent Living",
+      "Assisted Living",
+      "Memory Care",
+      "Continuing Care Retirement Communities (CCRC)",
+      "Skilled Nursing Facilities (SNF)",
+      "Active Adult / 55+ Communities",
+      "Combination IL/AL/MC Campuses",
+      "Senior Affordable Housing"
+    ],
+    "financing_options": [
+      "HUD / FHA 232 Loans",
+      "Bank Permanent Loans",
+      "Bridge Loans",
+      "CMBS",
+      "Construction Loans",
+      "Mezzanine & Preferred Equity",
+      "SBA 504 (Owner-Operated)"
+    ],
     "seo": {
       "title": "Senior Living & Assisted Living Financing | Commercial Lending Solutions",
       "meta_description": "Senior living financing for independent living, assisted living, memory care, and skilled nursing. HUD 232, bank, bridge, and construction loans from $2M to $50M+. Get a quote.",
@@ -131,12 +278,89 @@
     "headline": "Medical Office Building Financing",
     "description": "Medical office buildings (MOBs) represent one of the most stable segments of commercial real estate, driven by the essential nature of healthcare services and the aging U.S. population. Lenders favor medical office properties for their creditworthy tenants (health systems, physician groups, insurance companies), long lease terms, and high tenant retention rates due to the cost of relocating specialized build-outs.",
     "description_extended": "Medical office financing benefits from the non-discretionary nature of healthcare demand, making these assets more recession-resistant than general office. Properties located on or near hospital campuses, with long-term leases to credit-rated health systems, attract the most competitive terms from life insurance companies and CMBS lenders. Outpatient surgery centers, dialysis clinics, dental practices, and specialty medical facilities each have unique underwriting considerations. Commercial Lending Solutions structures financing for the full range of healthcare real estate, from single-tenant physician offices to large medical campus developments.",
-    "subtypes": ["On-Campus Medical Office", "Off-Campus Medical Office", "Outpatient Surgery Centers (ASC)", "Dental & Orthodontic Offices", "Dialysis Centers", "Urgent Care & Walk-In Clinics", "Veterinary Hospitals", "Medical / Biotech Lab Space"],
-    "financing_options": ["Life Insurance Company Loans", "Bank Permanent Loans", "CMBS", "Bridge Loans", "Construction Loans", "SBA 504 / 7(a) (Owner-Occupied)", "HUD / FHA Programs"],
+    "subtypes": [
+      "On-Campus Medical Office",
+      "Off-Campus Medical Office",
+      "Outpatient Surgery Centers (ASC)",
+      "Dental & Orthodontic Offices",
+      "Dialysis Centers",
+      "Urgent Care & Walk-In Clinics",
+      "Veterinary Hospitals",
+      "Medical / Biotech Lab Space"
+    ],
+    "financing_options": [
+      "Life Insurance Company Loans",
+      "Bank Permanent Loans",
+      "CMBS",
+      "Bridge Loans",
+      "Construction Loans",
+      "SBA 504 / 7(a) (Owner-Occupied)",
+      "HUD / FHA Programs"
+    ],
     "seo": {
       "title": "Medical Office Building Financing | Commercial Lending Solutions",
       "meta_description": "Medical office financing for MOBs, surgery centers, dental offices, and healthcare facilities. Life company, bank, CMBS, bridge, and SBA loans from $1M to $50M+. Get a quote.",
       "h1": "Medical Office Building Financing"
+    }
+  },
+  {
+    "slug": "manufactured-housing",
+    "name": "Manufactured Housing",
+    "headline": "Manufactured Housing Community (MHC) Financing",
+    "description": "Manufactured housing communities are one of the highest-yielding stabilized multifamily asset classes in commercial real estate, with strong agency execution, low historical vacancy, and durable tenant retention driven by the cost of relocating a manufactured home. Commercial Lending Solutions arranges MHC financing from agency lenders, banks and credit unions, CMBS, and debt funds for acquisition, refinance, and value-add repositioning.",
+    "description_extended": "Manufactured housing community investment has matured into an institutional asset class over the past decade, with private equity, REITs, and family offices all actively bidding for stabilized 4-star and 5-star communities. Underwriting fundamentals are favorable: residents own their homes and rent the lot, so capex obligations are minimal compared to apartment ownership; relocating a manufactured home costs $5,000 to $15,000, producing tenant retention rates that exceed 90 percent annually; and demand for affordable housing continues to grow in markets where conventional rentals price out moderate-income households. Agency lenders treat MHC as a multifamily asset class and offer dedicated programs (Fannie Mae MHC, Freddie Mac MHC, including small balance versions) with non-recourse 10-year fixed-rate financing at competitive multifamily spreads. Commercial Lending Solutions has placed MHC capital across 3-star to 5-star communities, age-restricted (55+) parks, and RV resort hybrids.",
+    "subtypes": [
+      "3-Star Entry-Level Communities",
+      "4-Star Mid-Grade Communities",
+      "5-Star Class A Communities",
+      "Age-Restricted 55+ Communities",
+      "RV Resort Hybrids",
+      "Tenant-Owned Home Communities (TOH)",
+      "Land-Lease Only Parks",
+      "Conversion / Adaptive Reuse Sites"
+    ],
+    "financing_options": [
+      "Agency (Fannie Mae MHC, Freddie Mac MHC, MHC SBL)",
+      "Bank & Credit Union Permanent",
+      "CMBS Conduit",
+      "Life Insurance Company Loans",
+      "Bridge & Value-Add Debt Funds",
+      "USDA Rural Development"
+    ],
+    "seo": {
+      "title": "Manufactured Housing Community (MHC) Financing | CLS CRE",
+      "meta_description": "Manufactured housing community (MHC) financing nationwide. Agency, bank, CMBS, and bridge loans for 3-star to 5-star parks, 55+ communities, and RV hybrids. $1M to $50M+. Get a quote.",
+      "h1": "Manufactured Housing Community Financing"
+    }
+  },
+  {
+    "slug": "parking",
+    "name": "Parking",
+    "headline": "Parking Facility and Garage Financing",
+    "description": "Parking facilities serve a unique role in commercial real estate financing, with cash flow dynamics that combine real estate, infrastructure, and operating-business characteristics. Commercial Lending Solutions arranges financing for urban parking garages, surface lots, airport parking, transit-oriented facilities, and mixed-use parking podiums from banks, CMBS conduits, life insurance companies, and specialty parking lenders who understand the asset class.",
+    "description_extended": "Parking financing splits into two categories: pure-play standalone garages and surface lots underwritten on parking revenue alone, and parking podiums embedded in mixed-use or office buildings underwritten as part of the larger asset. Standalone parking is harder to finance than other CRE asset classes because lenders treat it as part real estate, part operating business. Revenue is sensitive to occupancy patterns of nearby buildings, transit ridership, and special events, all of which can be volatile. Despite this, well-located urban garages in transit-rich downtowns, dense employment centers, and airport-adjacent submarkets attract reliable capital from banks, life insurance companies on triple-net ground leases to credit-tenant operators, CMBS conduits, and specialty parking REITs. Surface lots in high-density urban settings command premium pricing as redevelopment land plays. Commercial Lending Solutions has placed financing across standalone garages, surface lots, airport parking, ground-lease structures, and mixed-use parking components.",
+    "subtypes": [
+      "Urban Standalone Garages",
+      "Surface Parking Lots",
+      "Airport Parking Facilities",
+      "Transit-Oriented Park-and-Ride",
+      "Event-Driven Parking (Stadium, Arena)",
+      "Mixed-Use Parking Podiums",
+      "Ground-Leased Parking on Credit-Tenant Operator Leases",
+      "Automated and Robotic Parking Facilities"
+    ],
+    "financing_options": [
+      "Bank Permanent Loans",
+      "CMBS Conduit",
+      "Life Insurance Company Loans (Ground Lease)",
+      "Specialty Parking REIT / Operator Capital",
+      "Bridge & Value-Add",
+      "Ground Lease Structures"
+    ],
+    "seo": {
+      "title": "Parking Facility and Garage Financing | CLS CRE",
+      "meta_description": "Commercial parking facility financing from CLS CRE. Bank, CMBS, life company, and bridge loans for urban garages, surface lots, airport parking, and transit-oriented facilities. Get a quote.",
+      "h1": "Parking Facility and Garage Financing"
     }
   }
 ]

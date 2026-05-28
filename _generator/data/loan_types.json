@@ -14,8 +14,22 @@
       "amortization": "25 - 30 Years",
       "recourse": "Non-Recourse Available"
     },
-    "lender_sources": ["Banks", "Credit Unions", "Life Insurance Companies", "CMBS Conduits", "Fannie Mae / Freddie Mac", "Debt Funds"],
-    "ideal_for": ["Stabilized multifamily apartments", "Industrial warehouses and distribution centers", "Anchored retail shopping centers", "Net lease properties with credit tenants", "Office buildings with strong occupancy", "Mixed-use assets with proven cash flow"],
+    "lender_sources": [
+      "Banks",
+      "Credit Unions",
+      "Life Insurance Companies",
+      "CMBS Conduits",
+      "Fannie Mae / Freddie Mac",
+      "Debt Funds"
+    ],
+    "ideal_for": [
+      "Stabilized multifamily apartments",
+      "Industrial warehouses and distribution centers",
+      "Anchored retail shopping centers",
+      "Net lease properties with credit tenants",
+      "Office buildings with strong occupancy",
+      "Mixed-use assets with proven cash flow"
+    ],
     "seo": {
       "title": "Permanent Commercial Loans | CLS CRE",
       "meta_description": "Long-term permanent commercial mortgage financing from $1M to $100M+. Competitive rates from banks, life insurance companies, CMBS, and agency lenders. Get a quote today.",
@@ -37,8 +51,21 @@
       "structure": "Interest-Only, Progressive Draws",
       "recourse": "Recourse Typical, Non-Recourse Available"
     },
-    "lender_sources": ["Banks", "Debt Funds", "Private Lenders", "Credit Unions", "CDFI Lenders"],
-    "ideal_for": ["Ground-up apartment developments", "Industrial warehouse construction", "Build-to-suit retail and office", "Hotel development and rehabilitation", "Fix-and-flip residential projects", "Major property renovations and repositioning"],
+    "lender_sources": [
+      "Banks",
+      "Debt Funds",
+      "Private Lenders",
+      "Credit Unions",
+      "CDFI Lenders"
+    ],
+    "ideal_for": [
+      "Ground-up apartment developments",
+      "Industrial warehouse construction",
+      "Build-to-suit retail and office",
+      "Hotel development and rehabilitation",
+      "Fix-and-flip residential projects",
+      "Major property renovations and repositioning"
+    ],
     "seo": {
       "title": "Construction Loans for Commercial Real Estate | CLS CRE",
       "meta_description": "Commercial construction financing from $1M to $100M+. Ground-up development, renovation, and build-to-suit loans. Banks, debt funds, and private lenders. Get a quote.",
@@ -60,8 +87,20 @@
       "structure": "Interest-Only",
       "recourse": "Non-Recourse Available"
     },
-    "lender_sources": ["Debt Funds", "Private Lenders", "Banks", "Insurance Companies"],
-    "ideal_for": ["Value-add multifamily renovations", "Lease-up and tenant improvement periods", "Land entitlement and pre-development", "Acquisitions needing quick close", "Properties transitioning between uses", "Recapitalizations and partner buyouts"],
+    "lender_sources": [
+      "Debt Funds",
+      "Private Lenders",
+      "Banks",
+      "Insurance Companies"
+    ],
+    "ideal_for": [
+      "Value-add multifamily renovations",
+      "Lease-up and tenant improvement periods",
+      "Land entitlement and pre-development",
+      "Acquisitions needing quick close",
+      "Properties transitioning between uses",
+      "Recapitalizations and partner buyouts"
+    ],
     "seo": {
       "title": "Bridge Loans for Commercial Real Estate | CLS CRE",
       "meta_description": "Short-term bridge financing from $1M to $100M+ for transitional commercial properties. Fast close, flexible terms. Value-add, lease-up, and acquisition bridge loans.",
@@ -83,8 +122,20 @@
       "equity": "As Low as 10% Down",
       "recourse": "Full Recourse (Personal Guarantee)"
     },
-    "lender_sources": ["SBA-Approved Banks", "Certified Development Companies (CDCs)", "Credit Unions", "Community Banks"],
-    "ideal_for": ["Owner-occupied office buildings", "Restaurant and hospitality acquisitions", "Medical and dental practices", "Retail storefronts and service businesses", "Industrial and manufacturing owner-users", "Business expansions and equipment purchases"],
+    "lender_sources": [
+      "SBA-Approved Banks",
+      "Certified Development Companies (CDCs)",
+      "Credit Unions",
+      "Community Banks"
+    ],
+    "ideal_for": [
+      "Owner-occupied office buildings",
+      "Restaurant and hospitality acquisitions",
+      "Medical and dental practices",
+      "Retail storefronts and service businesses",
+      "Industrial and manufacturing owner-users",
+      "Business expansions and equipment purchases"
+    ],
     "seo": {
       "title": "SBA 504 & 7(a) Commercial Loans | CLS CRE",
       "meta_description": "SBA 504 and 7(a) loans for owner-occupied commercial real estate. Up to 90% financing, below-market rates. $1M to $20M for small businesses. Get a quote.",
@@ -106,8 +157,21 @@
       "structure": "Interest-Only or Accruing",
       "total_leverage": "Up to 85-90% LTC"
     },
-    "lender_sources": ["Debt Funds", "Private Equity Firms", "Family Offices", "Insurance Companies", "Specialty Lenders"],
-    "ideal_for": ["High-leverage acquisitions", "Development projects needing additional capital", "Value-add strategies with equity gap", "Recapitalizations and cash-out scenarios", "Joint venture equity structures", "Portfolio-level capital solutions"],
+    "lender_sources": [
+      "Debt Funds",
+      "Private Equity Firms",
+      "Family Offices",
+      "Insurance Companies",
+      "Specialty Lenders"
+    ],
+    "ideal_for": [
+      "High-leverage acquisitions",
+      "Development projects needing additional capital",
+      "Value-add strategies with equity gap",
+      "Recapitalizations and cash-out scenarios",
+      "Joint venture equity structures",
+      "Portfolio-level capital solutions"
+    ],
     "seo": {
       "title": "Mezzanine & Preferred Equity Financing | CLS CRE",
       "meta_description": "Mezzanine debt and preferred equity for commercial real estate. Fill the capital stack gap with subordinate financing from $5M to $50M+. Increase leverage, reduce equity.",
@@ -129,8 +193,22 @@
       "structure": "Customized per Deal",
       "recourse": "Varies by Lender"
     },
-    "lender_sources": ["Specialty Lenders", "Banks with Niche Expertise", "Debt Funds", "Life Insurance Companies", "Private Lenders", "CMBS Conduits"],
-    "ideal_for": ["Self-storage facilities", "Data centers and tech infrastructure", "Marinas and boat storage", "Religious and nonprofit facilities", "Entertainment and recreation venues", "Adaptive reuse and conversion projects"],
+    "lender_sources": [
+      "Specialty Lenders",
+      "Banks with Niche Expertise",
+      "Debt Funds",
+      "Life Insurance Companies",
+      "Private Lenders",
+      "CMBS Conduits"
+    ],
+    "ideal_for": [
+      "Self-storage facilities",
+      "Data centers and tech infrastructure",
+      "Marinas and boat storage",
+      "Religious and nonprofit facilities",
+      "Entertainment and recreation venues",
+      "Adaptive reuse and conversion projects"
+    ],
     "seo": {
       "title": "Specialty Commercial Real Estate Financing | CLS CRE",
       "meta_description": "Financing for specialty commercial properties: self-storage, data centers, marinas, entertainment venues, and more. Creative structuring with 1,000+ lender relationships.",
@@ -152,8 +230,20 @@
       "amortization": "30 Years",
       "recourse": "Non-Recourse Standard"
     },
-    "lender_sources": ["Fannie Mae DUS Lenders", "Freddie Mac Optigo Lenders", "Fannie Mae Small Balance Loan Lenders", "Freddie Mac Small Balance Loan Lenders"],
-    "ideal_for": ["Stabilized conventional apartments", "Affordable and workforce housing", "Manufactured housing communities", "Student housing properties", "Senior independent and assisted living", "Green-certified and energy-efficient multifamily"],
+    "lender_sources": [
+      "Fannie Mae DUS Lenders",
+      "Freddie Mac Optigo Lenders",
+      "Fannie Mae Small Balance Loan Lenders",
+      "Freddie Mac Small Balance Loan Lenders"
+    ],
+    "ideal_for": [
+      "Stabilized conventional apartments",
+      "Affordable and workforce housing",
+      "Manufactured housing communities",
+      "Student housing properties",
+      "Senior independent and assisted living",
+      "Green-certified and energy-efficient multifamily"
+    ],
     "seo": {
       "title": "Fannie Mae & Freddie Mac Agency Loans | CLS CRE",
       "meta_description": "Agency multifamily financing from Fannie Mae and Freddie Mac. Lowest rates, up to 80% LTV, non-recourse, 30-year amortization. $1M to $100M+. Get a free quote.",
@@ -175,8 +265,19 @@
       "amortization": "Fully Amortizing",
       "recourse": "Non-Recourse"
     },
-    "lender_sources": ["HUD MAP-Approved Lenders", "FHA LEAN-Approved Lenders (Healthcare)", "Specialty Affordable Housing Lenders"],
-    "ideal_for": ["Market-rate multifamily refinance and acquisition (223(f))", "New construction and substantial rehab (221(d)(4))", "Streamlined rate-and-term refinance (223(a)(7))", "Seniors housing, assisted living, and skilled nursing (232)", "LIHTC and affordable preservation", "Workforce housing with long hold strategies"],
+    "lender_sources": [
+      "HUD MAP-Approved Lenders",
+      "FHA LEAN-Approved Lenders (Healthcare)",
+      "Specialty Affordable Housing Lenders"
+    ],
+    "ideal_for": [
+      "Market-rate multifamily refinance and acquisition (223(f))",
+      "New construction and substantial rehab (221(d)(4))",
+      "Streamlined rate-and-term refinance (223(a)(7))",
+      "Seniors housing, assisted living, and skilled nursing (232)",
+      "LIHTC and affordable preservation",
+      "Workforce housing with long hold strategies"
+    ],
     "seo": {
       "title": "HUD & FHA Multifamily Loans | CLS CRE",
       "meta_description": "HUD and FHA multifamily financing with 35 to 40 year terms, non-recourse, up to 85% LTV. 223(f), 221(d)(4), 223(a)(7), 232 programs. $5M+. Get a free quote.",
@@ -198,8 +299,19 @@
       "amortization": "25 to 30 Years",
       "recourse": "Non-Recourse Standard"
     },
-    "lender_sources": ["Conduit Lenders (Wall Street and Major Banks)", "Investment Banks", "Specialty CMBS Platforms"],
-    "ideal_for": ["Stabilized multifamily, industrial, retail, office, hospitality, and self-storage", "Class B and Class C properties in secondary markets", "Portfolio refinance across multiple states", "Cash-out refinance scenarios", "Properties with strong metrics but weak banking relationships", "Deals requiring maximum proceeds and non-recourse terms"],
+    "lender_sources": [
+      "Conduit Lenders (Wall Street and Major Banks)",
+      "Investment Banks",
+      "Specialty CMBS Platforms"
+    ],
+    "ideal_for": [
+      "Stabilized multifamily, industrial, retail, office, hospitality, and self-storage",
+      "Class B and Class C properties in secondary markets",
+      "Portfolio refinance across multiple states",
+      "Cash-out refinance scenarios",
+      "Properties with strong metrics but weak banking relationships",
+      "Deals requiring maximum proceeds and non-recourse terms"
+    ],
     "seo": {
       "title": "CMBS Commercial Loans | CLS CRE",
       "meta_description": "CMBS conduit financing for stabilized commercial real estate. Non-recourse, 10-year fixed rates, up to 75% LTV, $5M to $100M+. All property types. Get a quote.",
@@ -221,8 +333,22 @@
       "amortization": "25 to 30 Years",
       "recourse": "Non-Recourse Available"
     },
-    "lender_sources": ["Banks with Dedicated STNL Programs", "CMBS Conduit Lenders", "Life Insurance Companies", "Debt Funds (Bridge)", "SBA-Approved Lenders (Owner-Occupied NNN)"],
-    "ideal_for": ["QSR and fast casual restaurant NNN acquisitions", "Pharmacy and drug store NNN refinances", "Dollar store and value retail NNN portfolios", "Auto parts and service NNN properties", "1031 exchange NNN acquisitions", "Sale-leaseback transactions with corporate tenants", "Multi-property NNN portfolios"],
+    "lender_sources": [
+      "Banks with Dedicated STNL Programs",
+      "CMBS Conduit Lenders",
+      "Life Insurance Companies",
+      "Debt Funds (Bridge)",
+      "SBA-Approved Lenders (Owner-Occupied NNN)"
+    ],
+    "ideal_for": [
+      "QSR and fast casual restaurant NNN acquisitions",
+      "Pharmacy and drug store NNN refinances",
+      "Dollar store and value retail NNN portfolios",
+      "Auto parts and service NNN properties",
+      "1031 exchange NNN acquisitions",
+      "Sale-leaseback transactions with corporate tenants",
+      "Multi-property NNN portfolios"
+    ],
     "seo": {
       "title": "Net Lease (NNN) Financing | CLS CRE",
       "meta_description": "Single tenant net lease (NNN) financing nationwide. Bank programs from $750K, CMBS and life company loans to $100M+. QSR, pharmacy, dollar stores, auto parts, and more. Get a quote.",
@@ -244,8 +370,20 @@
       "amortization": "25 to 30 Years",
       "recourse": "Non-Recourse Standard"
     },
-    "lender_sources": ["Top-Tier Life Insurance Companies", "Mutual Life Companies", "Mid-Sized Life Insurance Lenders", "Correspondent Life Company Programs"],
-    "ideal_for": ["Class A office and industrial in primary markets", "Institutional-quality multifamily portfolios", "Anchored retail with credit tenants", "Net lease properties with investment-grade guarantors", "Long-term hold strategies", "Borrowers prioritizing rate over leverage"],
+    "lender_sources": [
+      "Top-Tier Life Insurance Companies",
+      "Mutual Life Companies",
+      "Mid-Sized Life Insurance Lenders",
+      "Correspondent Life Company Programs"
+    ],
+    "ideal_for": [
+      "Class A office and industrial in primary markets",
+      "Institutional-quality multifamily portfolios",
+      "Anchored retail with credit tenants",
+      "Net lease properties with investment-grade guarantors",
+      "Long-term hold strategies",
+      "Borrowers prioritizing rate over leverage"
+    ],
     "seo": {
       "title": "Life Insurance Company Commercial Loans | CLS CRE",
       "meta_description": "Life insurance company commercial real estate loans. Lowest fixed rates, 25-year terms, non-recourse, $3M to $100M+. Direct life company relationships. Get a quote.",
@@ -267,8 +405,21 @@
       "qualification": "Property Cash Flow Only",
       "recourse": "Varies by Lender"
     },
-    "lender_sources": ["Non-QM Lenders", "Debt Funds", "Private Lenders", "Balance-Sheet Portfolio Lenders", "Family Offices"],
-    "ideal_for": ["Small multifamily investor portfolios (5 to 20 units)", "Mixed-use buildings with residential and commercial tenants", "Investors with complex tax returns or multiple LLCs", "Self-employed borrowers with significant write-offs", "Portfolio landlords consolidating scattered properties", "1031 exchange acquisitions needing fast income qualification"],
+    "lender_sources": [
+      "Non-QM Lenders",
+      "Debt Funds",
+      "Private Lenders",
+      "Balance-Sheet Portfolio Lenders",
+      "Family Offices"
+    ],
+    "ideal_for": [
+      "Small multifamily investor portfolios (5 to 20 units)",
+      "Mixed-use buildings with residential and commercial tenants",
+      "Investors with complex tax returns or multiple LLCs",
+      "Self-employed borrowers with significant write-offs",
+      "Portfolio landlords consolidating scattered properties",
+      "1031 exchange acquisitions needing fast income qualification"
+    ],
     "seo": {
       "title": "DSCR Loans for Real Estate Investors | CLS CRE",
       "meta_description": "DSCR loans that qualify on property cash flow, not personal income. No tax returns required. $1M to $10M for multifamily and commercial investor portfolios. Get a quote.",
@@ -290,8 +441,21 @@
       "close_time": "1 to 2 Weeks",
       "recourse": "Recourse Typical"
     },
-    "lender_sources": ["Private Hard Money Lenders", "Family Offices", "High-Net-Worth Individual Lenders", "Specialty Debt Funds", "Asset-Based Lending Platforms"],
-    "ideal_for": ["Auction and foreclosure property acquisitions", "Distressed assets requiring rehab before permanent financing", "Time-sensitive off-market acquisitions", "Properties that do not yet qualify for bank or agency financing", "Fix-and-flip commercial and mixed-use projects", "Bridge to construction or permanent loan on value-add assets"],
+    "lender_sources": [
+      "Private Hard Money Lenders",
+      "Family Offices",
+      "High-Net-Worth Individual Lenders",
+      "Specialty Debt Funds",
+      "Asset-Based Lending Platforms"
+    ],
+    "ideal_for": [
+      "Auction and foreclosure property acquisitions",
+      "Distressed assets requiring rehab before permanent financing",
+      "Time-sensitive off-market acquisitions",
+      "Properties that do not yet qualify for bank or agency financing",
+      "Fix-and-flip commercial and mixed-use projects",
+      "Bridge to construction or permanent loan on value-add assets"
+    ],
     "seo": {
       "title": "Hard Money Loans for Commercial Real Estate | CLS CRE",
       "meta_description": "Fast hard money loans for commercial real estate. Close in 1 to 2 weeks. $1M to $20M, up to 70% LTV. Distressed, auction, and value-add acquisitions. Get a quote.",
@@ -313,8 +477,21 @@
       "structure": "Cross-Collateralized Blanket Lien",
       "recourse": "Non-Recourse Available"
     },
-    "lender_sources": ["Institutional Balance-Sheet Lenders", "Debt Funds", "Private Banks", "Family Offices", "Insurance Company Portfolio Programs"],
-    "ideal_for": ["Institutional investors with 10 to 100+ properties seeking one facility", "Mixed-asset portfolios spanning multifamily, industrial, and retail", "Sponsors retiring multiple individual loans at maturity into one execution", "Private equity and family office real estate portfolios", "Out-of-state investors with geographically diversified holdings", "Operators seeking to recapitalize and extract equity across a portfolio"],
+    "lender_sources": [
+      "Institutional Balance-Sheet Lenders",
+      "Debt Funds",
+      "Private Banks",
+      "Family Offices",
+      "Insurance Company Portfolio Programs"
+    ],
+    "ideal_for": [
+      "Institutional investors with 10 to 100+ properties seeking one facility",
+      "Mixed-asset portfolios spanning multifamily, industrial, and retail",
+      "Sponsors retiring multiple individual loans at maturity into one execution",
+      "Private equity and family office real estate portfolios",
+      "Out-of-state investors with geographically diversified holdings",
+      "Operators seeking to recapitalize and extract equity across a portfolio"
+    ],
     "seo": {
       "title": "Portfolio Loans for Real Estate Investors | CLS CRE",
       "meta_description": "Blanket portfolio loans for institutional real estate investors. Finance multiple properties under one facility. $5M to $100M+, cross-collateralized. Get a quote.",
@@ -336,8 +513,21 @@
       "structure": "Interest-Only with Construction Draws",
       "recourse": "Non-Recourse Available"
     },
-    "lender_sources": ["Institutional Debt Funds", "Private Bridge Lenders with Renovation Programs", "Family Offices", "Specialty Value-Add Platforms", "Balance-Sheet Bridge Lenders"],
-    "ideal_for": ["Distressed multifamily acquisition and full gut renovation", "Anchored retail and mixed-use repositioning for institutional resale", "Warehouse-to-residential or office-to-multifamily adaptive reuse", "Mid-size and large apartment building value-add and condo conversion", "Distressed commercial property acquisitions requiring significant capital infusion", "Sponsors targeting a 12 to 24 month repositioning and exit"],
+    "lender_sources": [
+      "Institutional Debt Funds",
+      "Private Bridge Lenders with Renovation Programs",
+      "Family Offices",
+      "Specialty Value-Add Platforms",
+      "Balance-Sheet Bridge Lenders"
+    ],
+    "ideal_for": [
+      "Distressed multifamily acquisition and full gut renovation",
+      "Anchored retail and mixed-use repositioning for institutional resale",
+      "Warehouse-to-residential or office-to-multifamily adaptive reuse",
+      "Mid-size and large apartment building value-add and condo conversion",
+      "Distressed commercial property acquisitions requiring significant capital infusion",
+      "Sponsors targeting a 12 to 24 month repositioning and exit"
+    ],
     "seo": {
       "title": "Fix and Flip Loans for Commercial Real Estate | CLS CRE",
       "meta_description": "Fix and flip loans for commercial value-add projects. Fast close, up to 85% of cost, draws tied to renovation progress. $5M to $50M+. Get a quote from CLS CRE.",
@@ -359,12 +549,61 @@
       "qualification": "Bank Statements, Asset Depletion, or Property Income",
       "recourse": "Non-Recourse Available"
     },
-    "lender_sources": ["Institutional Non-QM Lenders", "Private Balance-Sheet Lenders", "Debt Funds", "Private Banks with Lite-Doc Programs", "Family Offices"],
-    "ideal_for": ["Self-employed sponsors with significant depreciation and write-offs", "Business owners whose tax returns materially understate income", "High-net-worth principals qualifying on assets rather than W-2 income", "Foreign national investors and family offices without U.S. tax history", "Sponsors with complex entity structures across multiple investment vehicles", "Institutional investors seeking confidential, discreet financing without full income disclosure"],
+    "lender_sources": [
+      "Institutional Non-QM Lenders",
+      "Private Balance-Sheet Lenders",
+      "Debt Funds",
+      "Private Banks with Lite-Doc Programs",
+      "Family Offices"
+    ],
+    "ideal_for": [
+      "Self-employed sponsors with significant depreciation and write-offs",
+      "Business owners whose tax returns materially understate income",
+      "High-net-worth principals qualifying on assets rather than W-2 income",
+      "Foreign national investors and family offices without U.S. tax history",
+      "Sponsors with complex entity structures across multiple investment vehicles",
+      "Institutional investors seeking confidential, discreet financing without full income disclosure"
+    ],
     "seo": {
       "title": "Stated Income Commercial Real Estate Loans | CLS CRE",
       "meta_description": "Stated income and no-doc commercial loans for self-employed sponsors and high-net-worth investors. Bank statement and asset-depletion qualification. $5M to $50M+. Get a quote.",
       "h1": "Stated Income Commercial Real Estate Loans"
+    }
+  },
+  {
+    "slug": "bridge-to-perm-loans",
+    "name": "Bridge-to-Perm Loans",
+    "short_name": "Bridge-to-Perm",
+    "headline": "Bridge-to-Permanent Loans for CRE Acquisition and Stabilization",
+    "description": "Bridge-to-perm loans combine a short-term acquisition or construction facility with a pre-committed permanent take-out under one lender, eliminating the refinance risk that comes with executing a separate take-out on a stabilized asset. Commercial Lending Solutions sources these structures from banks, debt funds with forward commitment programs, and agency lenders offering Forward Standby Commitments for multifamily.",
+    "description_extended": "Traditional value-add or ground-up commercial real estate execution requires a sponsor to close a bridge or construction loan, complete the business plan, then refinance into permanent financing through a separate process. This exposes the sponsor to interest-rate risk during the construction or stabilization period and the execution risk of finding a permanent lender willing to underwrite on day-one stabilized fundamentals. A bridge-to-perm structure removes both. The bridge or construction phase prices and underwrites with the permanent take-out already in place, often at a locked rate or rate cap, and converts automatically upon meeting pre-agreed stabilization tests (DSCR, occupancy, NOI). This product is most powerful for ground-up multifamily that will convert to agency, value-add commercial that will convert to bank or life company, and large industrial developments with credit tenant pre-leases.",
+    "key_features": {
+      "loan_amount": "$5M - $100M+",
+      "term": "Construction 24 to 36 mo plus Permanent 5 to 30 yr",
+      "rates": "Construction SOFR plus 250 to 400, Permanent locked at close",
+      "ltv": "Up to 75% LTC during construction, 70 to 75% LTV at conversion",
+      "structure": "Single Loan, Automatic Conversion at Stabilization",
+      "recourse": "Recourse During Construction, Non-Recourse at Conversion"
+    },
+    "lender_sources": [
+      "Regional Banks with Construction-to-Perm Platforms",
+      "Agency Forward Commitments (Fannie Mae, Freddie Mac)",
+      "Life Insurance Companies with Forward Commitment Programs",
+      "Debt Funds with Bridge-to-Agency Structures",
+      "National Banks"
+    ],
+    "ideal_for": [
+      "Ground-up multifamily projects targeting agency permanent take-out at stabilization",
+      "Industrial build-to-suit with credit-tenant pre-leases supporting life company conversion",
+      "Value-add multifamily repositioning eliminating refinance risk during business plan execution",
+      "Mixed-use development converting to bank permanent upon lease-up",
+      "Sponsors locking rate in a rising-rate environment to protect projected exit yields",
+      "Institutional developers requiring certainty of execution on long-cycle projects"
+    ],
+    "seo": {
+      "title": "Bridge-to-Perm Loans for Commercial Real Estate | CLS CRE",
+      "meta_description": "Bridge-to-permanent commercial real estate loans. Combine construction or bridge financing with a locked permanent take-out. $5M to $100M+. Eliminate refinance risk. Get a quote.",
+      "h1": "Bridge-to-Permanent Commercial Real Estate Loans"
     }
   }
 ]
