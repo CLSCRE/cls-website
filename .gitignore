@@ -19,3 +19,6 @@ desktop.ini
 # Local environment overrides
 .env
 .env.local
+
+# Local backups (created by content-enrichment scripts)
+_generator/data/_backups/
