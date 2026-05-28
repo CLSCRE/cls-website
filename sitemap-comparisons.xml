@@ -127,6 +127,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/fannie-mae-sbl-vs-freddie-mac-sbl.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/fixed-rate-vs-arm-permanent.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -175,6 +181,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/life-company-vs-pension-fund-permanent.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/loan-assumption-vs-new-loan.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -200,6 +212,12 @@
   </url>
   <url>
     <loc>https://clscre.com/comparisons/office-vs-industrial-cap-rate.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/owner-occupied-vs-investment-mixed-use.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -254,6 +272,12 @@
   </url>
   <url>
     <loc>https://clscre.com/comparisons/stnl-vs-multi-tenant-retail.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/stnl-vs-multitenant-retail-permanent.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
