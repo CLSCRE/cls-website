@@ -42,6 +42,11 @@ INDEXNOW_KEY  = "a1494521ad404bb6af8988ffd5a6dd71"
 INDEXNOW_HOST = "clscre.com"
 BASE_URL      = "https://clscre.com"
 
+# Anthropic model used for per-city article_city_data generation.
+# Falls back to the boilerplate stub if the API key is unset or the call fails.
+ANTHROPIC_MODEL = "claude-sonnet-4-6"
+REFERENCE_CITY_SLUGS = ("los-angeles", "atlanta", "dallas", "boise")
+
 
 # ────────────────────────────────────────────────────────────────────────────
 # Helpers
@@ -159,13 +164,186 @@ def add_tier1_city_to_articles(city: dict) -> None:
     # --- article_city_data.json stub ---
     article_data = load_json(ARTICLE_DATA_FILE)
     if slug not in article_data:
-        article_data[slug] = _build_article_city_stub(city)
+        entry = _build_article_city_via_claude(city)
+        if entry is None:
+            print(f"  Claude unavailable, using boilerplate stub for {city_name}")
+            entry = _build_article_city_stub(city)
+        else:
+            print(f"  Claude-generated per-city article_city_data for {city_name}")
+        article_data[slug] = entry
         save_json(ARTICLE_DATA_FILE, article_data, indent=2)
-        print(f"  article_city_data stub created for {city_name}")
+
+
+def _load_reference_examples(article_data: dict | None = None) -> str:
+    """Return JSON of a few well-curated city entries to anchor Claude's output."""
+    if article_data is None:
+        try:
+            article_data = load_json(ARTICLE_DATA_FILE)
+        except Exception:
+            return "[]"
+    refs = [{slug: article_data[slug]} for slug in REFERENCE_CITY_SLUGS if slug in article_data]
+    return json.dumps(refs, indent=2)
+
+
+def _build_article_city_via_claude(city: dict, article_data: dict | None = None) -> dict | None:
+    """Generate a unique per-city article_city_data entry using the Anthropic API.
+
+    Returns None on any failure so the caller can fall back to the boilerplate
+    stub. This is the fix for the mass-AI-content risk where every bot-added
+    city received identical "5.8% vacancy / 5.50%-6.25% cap rate" stats.
+    """
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        return None
+
+    try:
+        from anthropic import Anthropic
+    except ImportError:
+        print("  anthropic SDK not installed, skipping Claude generation")
+        return None
+
+    city_name = city["city"]
+    state = city["state"]
+    context = city.get("context", "") or ""
+    neighborhoods = city.get("neighborhoods", []) or []
+    metro = city.get("metro", f"{city_name} metro")
+
+    refs = _load_reference_examples(article_data)
+
+    system_prompt = (
+        "You generate structured commercial real estate market data for a programmatic "
+        "SEO site published by Commercial Lending Solutions, a Los Angeles based "
+        "commercial mortgage brokerage.\n\n"
+        "Output a single JSON object. NO preamble, NO markdown fences, NO trailing prose.\n\n"
+        "Style rules (ENFORCED):\n"
+        "- NEVER use em-dashes or en-dashes. Use commas, periods, or the word 'to'.\n"
+        "- Voice: capital markets insider, not salesperson. Specific numbers beat adjectives.\n"
+        "- Privacy: NEVER name specific banks, debt funds, credit unions, CDFIs, life insurance "
+        "companies, agency lenders, or any other lender by brand. NEVER name borrowers or street "
+        "addresses. Use ONLY generic descriptors like 'a regional bank', 'a debt fund', 'a credit "
+        "union', 'Iowa-chartered community banks', 'an agency execution', 'a life company program'. "
+        "(Naming PUBLIC market employers like Microsoft, Principal Financial Group, Nationwide, or "
+        "John Deere as economic-base context is fine because they are not lenders to CLS deals; "
+        "only the lender-naming prohibition is absolute.)\n"
+        "- Avoid filler phrases like 'growth trajectory', 'in-migration', 'compelling "
+        "risk-adjusted opportunity' that show up identically across cities. Each city "
+        "deserves prose grounded in its actual industry mix, sub-market geography, and "
+        "lender landscape.\n"
+        "- Cap rates and vacancy figures should reflect what a 2026 commercial mortgage "
+        "broker would actually quote for this specific market tier (gateway, primary, "
+        "secondary, tertiary). Vary realistically across asset classes."
+    )
+
+    user_prompt = f"""Produce article_city_data for {city_name}, {state}.
+
+City context: {context}
+Major submarkets or neighborhoods: {', '.join(neighborhoods) if neighborhoods else 'unspecified'}
+Metro: {metro}
+
+Reference entries (calibrated examples, DO NOT copy their numbers, derive values appropriate to {city_name}):
+
+{refs}
+
+Output a single JSON object matching this exact schema for {city_name}, {state}:
+
+{{
+  "city": "{city_name}",
+  "state": "{state}",
+  "stats": {{
+    "multifamily_vacancy": "X.X%",
+    "industrial_vacancy": "X.X%",
+    "office_vacancy": "X.X%",
+    "retail_vacancy": "X.X%",
+    "multifamily_cap_rate": "X.XX%-Y.YY%",
+    "industrial_cap_rate": "X.XX%-Y.YY%",
+    "office_cap_rate": "X.XX%-Y.YY%",
+    "retail_cap_rate": "X.XX%-Y.YY%",
+    "rent_growth": "X.X%",
+    "job_growth": "X.X%",
+    "population_growth": "X.X%",
+    "median_asking_rent": "$X,XXX",
+    "major_employers": "industry1, industry2, industry3, industry4, industry5",
+    "top_submarkets": "submarket1, submarket2, submarket3, submarket4",
+    "mixed_use_vacancy": "X.X%",
+    "mixed_use_cap_rate": "X.XX%-Y.YY%",
+    "hospitality_vacancy": "XX.X%",
+    "hospitality_cap_rate": "X.XX%-Y.YY%"
+  }},
+  "market_report": {{
+    "overview": "2 to 3 sentences. Specific to {city_name}.",
+    "multifamily": "2 to 3 sentences. Cite the vacancy and rent growth values you set above.",
+    "industrial": "2 to 3 sentences. Tied to the local industry mix.",
+    "office_retail": "2 to 3 sentences. Honest about post-pandemic office in this specific market.",
+    "financing": "2 to 3 sentences. Lender appetite, agency vs life co vs bank dynamics.",
+    "outlook": "2 to 3 sentences. Forward-looking 2026 read on this market."
+  }},
+  "loan_context": {{
+    "bridge": "2 to 3 sentences specific to {city_name}, including a typical deal-size range.",
+    "permanent": "2 to 3 sentences.",
+    "construction": "2 to 3 sentences.",
+    "sba": "2 to 3 sentences.",
+    "mezzanine": "2 to 3 sentences.",
+    "specialty": "2 to 3 sentences."
+  }},
+  "property_context": {{
+    "multifamily": "2 to 3 sentences.",
+    "industrial": "2 to 3 sentences.",
+    "office": "2 to 3 sentences.",
+    "retail": "2 to 3 sentences.",
+    "mixed_use": "2 to 3 sentences.",
+    "hospitality": "2 to 3 sentences."
+  }}
+}}
+
+Output ONLY the JSON object."""
+
+    try:
+        client = Anthropic(api_key=api_key)
+        response = client.messages.create(
+            model=ANTHROPIC_MODEL,
+            max_tokens=4096,
+            system=system_prompt,
+            messages=[{"role": "user", "content": user_prompt}],
+        )
+        text = response.content[0].text.strip()
+        if text.startswith("```"):
+            text = text.split("\n", 1)[1] if "\n" in text else text
+            text = text.rsplit("```", 1)[0].strip()
+        data = json.loads(text)
+    except json.JSONDecodeError as e:
+        print(f"  Claude returned invalid JSON: {e}")
+        return None
+    except Exception as e:
+        print(f"  Claude API call failed: {e}")
+        return None
+
+    required_top = ("city", "state", "stats", "market_report", "loan_context", "property_context")
+    for key in required_top:
+        if key not in data:
+            print(f"  Claude output missing required key '{key}'")
+            return None
+
+    # Light defensive strip of dashes that may have slipped through
+    def _strip_dashes(obj):
+        if isinstance(obj, str):
+            return obj.replace("—", ", ").replace("–", " to ")
+        if isinstance(obj, dict):
+            return {k: _strip_dashes(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [_strip_dashes(v) for v in obj]
+        return obj
+
+    return _strip_dashes(data)
 
 
 def _build_article_city_stub(city: dict) -> dict:
-    """Build a minimal article_city_data entry from queue city data."""
+    """Build a minimal article_city_data entry from queue city data.
+
+    Boilerplate fallback used only when the Anthropic API is unavailable. The
+    primary path is _build_article_city_via_claude(), which produces unique
+    per-city stats and prose. See docs/SEO_ARCHITECTURE.md remaining action item
+    #6 for the reason this stub is no longer the default.
+    """
     city_name = city["city"]
     state     = city["state"]
     context   = city.get("context", "")
