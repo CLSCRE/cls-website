@@ -79,6 +79,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/cmbs-conduit-vs-single-borrower-cmbs.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/cmbs-vs-bank-middle-market-permanent.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -253,6 +259,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clscre.com/comparisons/recourse-vs-non-recourse-permanent.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/comparisons/recourse-vs-non-recourse.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -302,6 +314,12 @@
   </url>
   <url>
     <loc>https://clscre.com/comparisons/stnl-vs-multitenant-retail-permanent.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/comparisons/yield-maintenance-vs-defeasance-prepayment.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

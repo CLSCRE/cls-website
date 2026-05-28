@@ -4,13 +4,17 @@
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PH6TD3TC');</script>
 <!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js) — GA4 G-1S9151E1ZM -->
+<!-- gtag helper for inline event calls (calculator_lead, newsletter_subscribe).
+     GA4 page view tracking is handled by the GA4 - All Pages tag inside
+     GTM-PH6TD3TC. Page views are NOT registered here (send_page_view:false)
+     so sessions don't double-count. Events still push to dataLayer where GTM
+     can pick them up via custom event triggers. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1S9151E1ZM"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-1S9151E1ZM');
+  gtag('config', 'G-1S9151E1ZM', { 'send_page_view': false });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -504,6 +508,18 @@
     </a>
     <a href="../comparisons/ground-lease-vs-fee-simple-financing.html" class="cross-link-card reveal">
       <div class="cl-title">Ground Lease vs Fee Simple Financing</div>
+      <div class="cl-sub">Compare capital sources</div>
+    </a>
+    <a href="../comparisons/yield-maintenance-vs-defeasance-prepayment.html" class="cross-link-card reveal">
+      <div class="cl-title">Yield Maintenance vs Defeasance</div>
+      <div class="cl-sub">Compare capital sources</div>
+    </a>
+    <a href="../comparisons/recourse-vs-non-recourse-permanent.html" class="cross-link-card reveal">
+      <div class="cl-title">Recourse vs Non-Recourse Permanent CRE Loans</div>
+      <div class="cl-sub">Compare capital sources</div>
+    </a>
+    <a href="../comparisons/cmbs-conduit-vs-single-borrower-cmbs.html" class="cross-link-card reveal">
+      <div class="cl-title">CMBS Conduit vs Single-Borrower CMBS</div>
       <div class="cl-sub">Compare capital sources</div>
     </a>
   </div>

@@ -7960,5 +7960,506 @@
         "sub": "Protective provisions, separated-stack structures, and lender requirements"
       }
     ]
+  },
+  {
+    "slug": "yield-maintenance-vs-defeasance-prepayment",
+    "short_title": "Yield Maintenance vs Defeasance",
+    "h1": "Yield Maintenance vs Defeasance: The Two Dominant CRE Permanent Loan Prepayment Structures",
+    "name_a": "Yield Maintenance",
+    "name_b": "Defeasance",
+    "published": "2026-05-28",
+    "seo": {
+      "title": "Yield Maintenance vs Defeasance Prepayment | CLS CRE",
+      "meta_description": "Side-by-side comparison of yield maintenance and defeasance prepayment for CRE permanent loans. Cost mechanics, rate environments, and when each structure wins."
+    },
+    "lead": "Yield maintenance and defeasance are the two dominant prepayment structures on permanent commercial real estate loans, covering the vast majority of agency multifamily, CMBS conduit, single-borrower, and life company executions. Both are designed to make the lender or trust whole when a borrower exits before maturity, replacing the lost coupon cash flows with Treasury cash flows. Neither is a penalty in the punitive sense; both are economic make-whole mechanisms. The critical difference is structural: yield maintenance is a cash payment made at payoff, while defeasance is a collateral substitution that releases the property from the lien while the loan continues to exist, funded by a purchased Treasury portfolio. The choice between them is largely determined at loan origination by the execution type selected, but understanding the cost mechanics, the rate-curve sensitivity, and the assumption optionality each structure creates is essential before committing to a loan program. In certain rate environments, defeasance can cost less than yield maintenance on an identical loan; in others, it costs more. Getting this wrong by a few basis points of spread can mean a six-figure difference at exit.",
+    "table": [
+      {
+        "feature": "Core mechanism",
+        "side_a": "Borrower pays a lump-sum prepayment premium equal to the present value of remaining interest shortfall, discounted at current Treasury yield",
+        "side_b": "Borrower purchases a Treasury securities portfolio sufficient to replicate remaining loan cash flows; Treasuries substitute into the trust as collateral"
+      },
+      {
+        "feature": "Property lien at exit",
+        "side_a": "Lien released immediately upon payment of the prepayment premium and outstanding balance",
+        "side_b": "Property lien released upon defeasance closing; loan continues to exist, funded by substituted Treasuries"
+      },
+      {
+        "feature": "Typical loan programs",
+        "side_a": "Agency multifamily (Fannie Mae DUS, Freddie Mac Optigo), some life company programs, some conduit bank portfolios",
+        "side_b": "CMBS conduit, CMBS single-borrower, some life company programs; rarely used in agency executions"
+      },
+      {
+        "feature": "Cost driver",
+        "side_a": "Spread between loan coupon and current Treasury yield at prepayment date; wider spread equals higher cost",
+        "side_b": "Cost of purchasing the defeasance Treasury portfolio; spread between loan coupon and current Treasury yields at defeasance date plus consultant and legal fees"
+      },
+      {
+        "feature": "Rate environment sensitivity",
+        "side_a": "Expensive when rates fall (Treasury yields drop below coupon, widening the present-value shortfall); can approach zero cost when Treasury yields equal the coupon",
+        "side_b": "Expensive when rates fall (more Treasuries needed to replicate higher-coupon cash flows at lower yield); can produce near-zero or negative net cost when current Treasury yields significantly exceed the loan coupon"
+      },
+      {
+        "feature": "Negative prepayment cost",
+        "side_a": "Yield maintenance floor is typically 1 percent of outstanding balance; rarely produces a true zero-cost exit",
+        "side_b": "Defeasance can produce a net credit to the borrower when Treasury yields exceed the loan coupon, because fewer Treasuries are needed than the outstanding loan balance; no contractual floor in most CMBS docs"
+      },
+      {
+        "feature": "Assumption optionality",
+        "side_a": "Prepayment retires the loan; no assumption optionality preserved unless the loan has a separate assumability provision",
+        "side_b": "Defeased loan can be assumed by a buyer at sale if the buyer qualifies; seller avoids the defeasance cost entirely by passing the loan to the buyer"
+      },
+      {
+        "feature": "Transaction complexity and timeline",
+        "side_a": "Relatively simple calculation; borrower or broker computes the premium, pays at closing; no third-party consultant required in most cases",
+        "side_b": "Requires a defeasance consultant, a successor borrower entity, legal counsel, and a Treasury portfolio custodian; typical transaction timeline is 30 to 45 days from notice to close; consultant fees typically $30,000 to $80,000"
+      },
+      {
+        "feature": "Open period",
+        "side_a": "Most loans include a 3 to 6 month open window at the end of the term with no prepayment premium",
+        "side_b": "Most CMBS loans include a 3 to 4 month open window at the end of the term; defeasance is not available during the open period"
+      },
+      {
+        "feature": "Step-down alternative",
+        "side_a": "Some agency and portfolio loans allow a declining percentage schedule (e.g., 5,4,3,2,1 percent of balance) in lieu of yield maintenance; simpler but typically more expensive in early years",
+        "side_b": "Step-down prepayment schedules are uncommon in CMBS defeasance structures; most conduit loans use defeasance as the primary exit mechanism"
+      },
+      {
+        "feature": "Calculation transparency",
+        "side_a": "Formula is specified in the loan documents; borrower can model the premium with the loan balance, coupon, remaining term, and current Treasury yield at any point",
+        "side_b": "Cost is determined by live Treasury market pricing at the time of defeasance; consultant provides a preliminary estimate, but the final cost is locked only when the Treasury portfolio is purchased"
+      },
+      {
+        "feature": "Best exit scenario",
+        "side_a": "Rising rate environment (Treasury yields approach or exceed coupon, compressing the yield maintenance premium toward zero or the contractual floor)",
+        "side_b": "Rising rate environment where Treasury yields exceed the loan coupon (defeasance cost turns negative, producing a net credit); or sale where buyer assumes the defeased loan entirely"
+      }
+    ],
+    "when_a_intro": "Yield maintenance is the default prepayment structure on agency multifamily executions and is the right structure when the borrower values simplicity, does not anticipate a sale scenario where loan assumption adds value, and is originating in a rate environment where a near-zero YM exit is plausible within the planned hold period.",
+    "when_a_bullets": [
+      "Agency multifamily execution where yield maintenance is the standard structure and defeasance is not offered as an alternative",
+      "Sponsor with a long planned hold of 7 to 10 years who expects to exit near or after the open window with minimal prepayment cost",
+      "Borrower who wants a simple, calculable exit cost with no third-party consultant dependency or 30 to 45 day defeasance closing timeline",
+      "Rising rate environment at loan origination where the coupon is locked at a relatively low rate, and the borrower expects Treasury yields to rise above the coupon before the planned exit date",
+      "Portfolio loan or life company loan where yield maintenance is the negotiated structure and step-down is not offered",
+      "Refinance scenario, not a sale, where loan assumption by a third party is not relevant and a clean payoff is the only exit path"
+    ],
+    "when_b_intro": "Defeasance is the standard prepayment structure on CMBS conduit and single-borrower loans and creates a unique optionality that yield maintenance does not: a buyer at sale can assume the defeased loan if the economics are favorable, potentially eliminating the prepayment cost entirely. The structure favors sponsors who plan to sell during the loan term and want to preserve that optionality.",
+    "when_b_bullets": [
+      "CMBS conduit or single-borrower execution where defeasance is the contractually specified prepayment mechanism and yield maintenance is not an option",
+      "Sponsor who plans to sell the asset before maturity and wants to preserve assumption optionality so a buyer can take over the loan if the below-market coupon is an asset",
+      "Rate environment where current Treasury yields significantly exceed the loan coupon, compressing defeasance cost toward zero or producing a net credit to the borrower",
+      "Transaction where the sponsor is willing to absorb $30,000 to $80,000 in defeasance consultant and legal fees in exchange for the assumption optionality and potential negative-cost exit",
+      "Larger loan sizes ($20M or above) where the scale of the transaction makes the fixed defeasance consultant cost a smaller percentage of total exit economics",
+      "Mixed-use, office, retail, industrial, or hospitality asset that is ineligible for agency financing and is therefore financed through CMBS conduit, where defeasance is the market standard"
+    ],
+    "decision_framework": [
+      "The choice between yield maintenance and defeasance is largely made for you at the time of execution selection, not at prepayment. Agency multifamily loans are almost universally yield maintenance. CMBS conduit and single-borrower loans are almost universally defeasance. Life company programs offer both, and on life co loans the structure is negotiable at origination. If you have a choice, the decision turns on three inputs: your planned hold period, your rate-curve view at exit, and whether assumption optionality at a potential sale has value in your business plan.",
+      "The rate-curve sensitivity of both structures is often misunderstood. Both yield maintenance and defeasance become expensive when rates fall after origination, because the Treasury yield used to discount the remaining cash flows is lower, requiring either a larger premium payment or a larger Treasury portfolio. The difference is that defeasance has no contractual floor in most CMBS documents, meaning that if Treasury yields rise above the loan coupon before the exit date, the defeasance can cost less than the outstanding loan balance, producing a net credit to the borrower. Yield maintenance in agency loans typically includes a 1 percent floor, capping the downside to the lender. In a sharply rising rate environment, defeasance can be dramatically cheaper than yield maintenance on an otherwise identical loan.",
+      "The defeasance assumption option is the most underappreciated element of CMBS loan structuring. When a sponsor sells an asset with a defeased CMBS loan, the buyer has the option to assume the loan if the existing coupon is below market. In a rising rate environment, a 5.50 percent coupon on a 10-year fixed CMBS loan originated in 2024 or 2025 could be a meaningful asset to a buyer in 2028 or 2029 if new money rates are 6.50 percent or higher. In that scenario, the buyer pays for the assumption, the seller avoids the defeasance cost entirely, and the loan is transferred. Yield maintenance loans do not preserve this optionality in the same way; the sponsor must pay the premium and retire the loan at sale.",
+      "Step-down prepayment is the third structure and is worth understanding as an alternative on agency and portfolio loans. A step-down schedule, such as 5,4,3,2,1 percent of outstanding balance in years one through five, is simple and predictable but is almost always more expensive than yield maintenance in the first two to three years of the loan and less expensive in the final years. Step-down is favored by borrowers who prioritize simplicity over optimization and who plan to exit in the final years of a short-term fixed-rate loan. It is not available on CMBS and is offered only on select agency and portfolio executions. For any loan above $10M, the economic difference between step-down and yield maintenance over the life of the loan is worth modeling explicitly before selecting a structure."
+    ],
+    "real_deal_example": "On a 186,000 square foot anchored retail center in a major California MSA, a sponsor refinanced out of a maturing CMBS conduit loan and evaluated both a new CMBS execution with defeasance and a life company execution with yield maintenance. The CMBS quote came in at 6.45 percent for a 10-year fixed term with a defeasance prepayment structure. The life company quote came in at 6.38 percent with yield maintenance and a 1 percent floor. The sponsor's business plan called for a potential sale or recapitalization at year 5. At prevailing rate-curve assumptions, the defeasance cost at year 5 was modeled at approximately $310,000 net of the Treasury credit, including $55,000 in consultant and legal fees. The yield maintenance cost under the life company loan at the same exit date was modeled at approximately $480,000 assuming Treasury yields at that point were 75 basis points below the coupon. The sponsor selected the CMBS execution primarily for the lower modeled exit cost and the assumption optionality if a buyer found the coupon attractive at sale. The 7 basis point rate disadvantage on CMBS was absorbed by the projected prepay savings in the base case.",
+    "expert_quote": "Most borrowers focus on the coupon and forget that the prepayment structure is a second interest rate embedded in the loan. In the wrong rate environment, yield maintenance or defeasance can cost more than the origination fee, the rate spread, and the closing costs combined. Model the exit, not just the entry.",
+    "faqs": [
+      {
+        "q": "What is yield maintenance on a commercial real estate loan?",
+        "a": "Yield maintenance is a prepayment premium that compensates the lender for lost interest income when a borrower pays off a fixed-rate loan before maturity. The premium equals the present value of remaining scheduled interest payments, discounted at the current Treasury yield for the remaining loan term. It is the standard prepayment structure on agency multifamily loans and is calculated using a formula specified in the loan documents."
+      },
+      {
+        "q": "What is defeasance on a commercial real estate loan?",
+        "a": "Defeasance is a prepayment mechanism where the borrower purchases a portfolio of US Treasury securities sufficient to replicate the loan's remaining scheduled cash flows. The Treasuries are substituted into the trust as collateral, the loan continues to exist funded by those Treasuries, and the property is released from the mortgage lien. Defeasance is the standard prepayment structure on CMBS conduit and single-borrower loans. It requires a defeasance consultant, a successor borrower entity, and legal counsel, with a typical closing timeline of 30 to 45 days."
+      },
+      {
+        "q": "Can defeasance cost less than yield maintenance?",
+        "a": "Yes. Defeasance can produce a net credit to the borrower when current Treasury yields significantly exceed the loan coupon. In that rate environment, fewer Treasuries are needed to replicate the loan's remaining cash flows than the outstanding loan balance, generating a surplus. Most CMBS defeasance documents have no contractual floor, unlike agency yield maintenance, which typically includes a 1 percent of balance minimum. The net cost also includes $30,000 to $80,000 in consultant and legal fees."
+      },
+      {
+        "q": "What is the defeasance consultant's role and what does it cost?",
+        "a": "A defeasance consultant manages the mechanics of the defeasance transaction, including calculating the required Treasury portfolio, coordinating with the loan servicer, establishing the successor borrower entity, and managing the Treasury portfolio purchase and custodian arrangement. Consultant fees typically range from $30,000 to $80,000 depending on loan size and complexity, and are paid by the borrower in addition to the cost of the Treasury portfolio. Legal fees for borrower's and lender's counsel add another $15,000 to $30,000 in most transactions."
+      },
+      {
+        "q": "What is the difference between yield maintenance and a step-down prepayment schedule?",
+        "a": "Yield maintenance calculates the prepayment premium dynamically based on the present value of remaining interest shortfall at the time of prepayment, using current Treasury yields. A step-down schedule is a fixed declining percentage of the outstanding loan balance, such as 5,4,3,2,1 percent in years one through five. Step-down is simpler and more predictable but is typically more expensive than yield maintenance in early years and less expensive in later years. Step-down is offered on select agency and portfolio loans; it is not available on CMBS."
+      },
+      {
+        "q": "Does defeasance allow a buyer to assume the loan at sale?",
+        "a": "Yes, and this is defeasance's most important structural advantage over yield maintenance. When a CMBS loan is defeased and the property is sold, a qualified buyer can assume the defeased loan if the existing coupon is below current market rates, effectively avoiding the defeasance cost entirely. The buyer pays an assumption fee and meets lender credit requirements. In a rising rate environment, a below-market coupon on an existing CMBS loan can be a meaningful asset that increases sale proceeds or reduces the buyer's required return."
+      },
+      {
+        "q": "Which loan types use yield maintenance and which use defeasance?",
+        "a": "Agency multifamily loans, including Fannie Mae DUS and Freddie Mac Optigo, almost universally use yield maintenance as the primary prepayment structure, sometimes paired with a step-down option on certain programs. CMBS conduit and single-borrower loans almost universally use defeasance. Life company loans can use either structure, and the choice is negotiable at origination. Portfolio bank loans most commonly use step-down schedules or yield maintenance; defeasance is rarely used in non-securitized portfolio lending."
+      },
+      {
+        "q": "How far in advance do I need to notify the servicer before defeasing a CMBS loan?",
+        "a": "Most CMBS loan documents require a minimum advance notice period of 30 days before the intended defeasance date, and some require up to 45 days. The total timeline from decision to close typically runs 30 to 45 days when a defeasance consultant is engaged promptly. Borrowers should plan for 60 days to allow for any servicer delays or Treasury market timing. Defeasance is not available during the final open period, which typically begins 3 to 4 months before the loan maturity date."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/cmbs-loans.html",
+        "title": "CMBS Loans",
+        "sub": "Conduit and single-borrower securitized lending"
+      },
+      {
+        "href": "financing/agency-loans.html",
+        "title": "Agency Loans",
+        "sub": "Fannie Mae and Freddie Mac multifamily programs"
+      },
+      {
+        "href": "financing/life-company-loans.html",
+        "title": "Life Company Loans",
+        "sub": "Permanent financing from insurance company lenders"
+      },
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "All capital sources for apartment loans"
+      },
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans",
+        "sub": "Short-term transitional financing before permanent loan"
+      },
+      {
+        "href": "financing/dscr-loans-rates.html",
+        "title": "DSCR Loan Rates",
+        "sub": "Current rate ranges for debt-service-coverage ratio loans"
+      }
+    ]
+  },
+  {
+    "slug": "recourse-vs-non-recourse-permanent",
+    "short_title": "Recourse vs Non-Recourse Permanent CRE Loans",
+    "h1": "Recourse vs Non-Recourse Permanent CRE Loans: Personal Guarantee Trade-Offs Every Sponsor Faces",
+    "name_a": "Recourse Permanent CRE Loan",
+    "name_b": "Non-Recourse Permanent CRE Loan",
+    "published": "2026-05-28",
+    "seo": {
+      "title": "Recourse vs Non-Recourse CRE Loans: Trade-Offs | CLS CRE",
+      "meta_description": "Side-by-side comparison of recourse and non-recourse permanent CRE loans: rate spread, LTV, bad-boy carve-outs, lender types, and when each structure makes sense."
+    },
+    "lead": "Whether a permanent CRE loan is recourse or non-recourse is the single most consequential structural decision a sponsor makes at loan origination. On a recourse loan, the borrower and any personal guarantors are liable beyond the collateral: a default can produce a deficiency judgment, putting personal assets at risk. On a non-recourse loan, the lender's remedy is limited to foreclosing on the property, with personal assets shielded, subject to a negotiated package of bad-boy carve-outs covering fraud, voluntary bankruptcy, environmental misrepresentation, and similar bad acts. The pricing spread between the two structures runs 25 to 75 basis points in April 2026, recourse pricing tighter because the lender holds a broader recovery claim. Recourse also unlocks higher leverage, commonly 75 to 80 percent LTV versus 65 to 75 percent non-recourse on comparable assets, and closes faster with lighter documentation because bank balance-sheet lenders dominate below $25 million. Non-recourse is the standard product from agency, life company, CMBS, and most institutional debt fund sources above $5 million. The decision turns on sponsor net worth, asset protection priorities, leverage need, timing, and the lender category that makes sense for the deal size and asset class.",
+    "table": [
+      {
+        "feature": "Rate range (Apr 2026)",
+        "side_a": "6.00 to 7.25 percent (fixed or floating, bank balance sheet)",
+        "side_b": "6.25 to 7.50 percent (fixed, agency or life co); 6.75 to 8.25 percent (CMBS)"
+      },
+      {
+        "feature": "Rate premium vs. comparable",
+        "side_a": "Benchmark: prices 25 to 75 bps tighter than non-recourse on equivalent asset and LTV",
+        "side_b": "25 to 75 bps wider than recourse; premium reflects limited lender recovery on default"
+      },
+      {
+        "feature": "Maximum LTV",
+        "side_a": "75 to 80 percent (bank balance sheet, stabilized); up to 85 percent with SBA guarantee",
+        "side_b": "65 to 75 percent (agency, life co, CMBS); 70 to 75 percent on stronger assets"
+      },
+      {
+        "feature": "Minimum DSCR",
+        "side_a": "1.20x to 1.25x (bank underwriting, varies by lender)",
+        "side_b": "1.25x to 1.35x (agency and life co); 1.20x to 1.25x (CMBS, asset dependent)"
+      },
+      {
+        "feature": "Personal liability",
+        "side_a": "Full recourse to borrower and guarantors; deficiency judgment available after foreclosure",
+        "side_b": "No personal liability beyond bad-boy carve-outs; property is the sole collateral"
+      },
+      {
+        "feature": "Typical loan size",
+        "side_a": "Under $25M (bank balance sheet); SBA 504 up to $14M; some regional lenders to $50M",
+        "side_b": "$5M and above; agency from $1M; life co typically $10M and above; CMBS from $5M"
+      },
+      {
+        "feature": "Term options",
+        "side_a": "3, 5, 7, 10 years (bank); 25 to 30 years (SBA 504); rarely longer than 10 years fixed",
+        "side_b": "5, 7, 10, 15, 25, 30 years (agency); 10 to 25 years (life co); 5 to 10 years (CMBS)"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "15 to 25 years (bank); 25 years (SBA); interest-only less common",
+        "side_b": "Up to 30 years (agency, life co, CMBS); partial or full interest-only available at lower LTV"
+      },
+      {
+        "feature": "Prepayment",
+        "side_a": "Step-down or flat prepay penalty; sometimes open after lock; negotiated bank by bank",
+        "side_b": "Yield maintenance (agency, life co); defeasance (CMBS, some life co); lockout periods common"
+      },
+      {
+        "feature": "Documentation burden",
+        "side_a": "Lighter: bank credit memo driven; personal financial statements and tax returns required; faster conditional approval",
+        "side_b": "Heavier: full underwriting package, third-party reports (appraisal, Phase I, PCA), rating agency for CMBS"
+      },
+      {
+        "feature": "Typical close timeline",
+        "side_a": "25 to 45 days (bank balance sheet); 45 to 75 days (SBA 504)",
+        "side_b": "50 to 75 days (agency); 60 to 90 days (life co); 75 to 100 days (CMBS)"
+      },
+      {
+        "feature": "Lender ecosystem",
+        "side_a": "Regional and community banks, credit unions, some national banks, SBA-approved lenders",
+        "side_b": "Agency Seller-Servicers, life companies, CMBS conduits, institutional debt funds"
+      }
+    ],
+    "when_a_intro": "Recourse financing is the correct choice when sponsor leverage need exceeds what non-recourse programs will support, when deal size falls below the efficient origination threshold of institutional lenders, or when execution speed is a hard constraint. Most bank balance-sheet lenders price competitively and close faster than any non-recourse channel, and for sponsors with strong net worth and low personal leverage, signing a guarantee on a well-underwritten deal is a reasonable trade for tighter pricing and higher LTV.",
+    "when_a_bullets": [
+      "Loan amount under $5M to $10M, where agency and life company minimums eliminate non-recourse options or make execution uneconomical",
+      "Leverage need at 75 to 80 percent LTV on a stabilized asset, which most non-recourse programs will not support without significant additional credit enhancement",
+      "Acquisition with a 30 to 45 day financing contingency where bank execution is the only realistic path to close on time",
+      "Sponsor net worth is high relative to the loan balance and the marginal cost of the guarantee is low compared to the 25 to 75 bps rate savings",
+      "Partial recourse or burn-off structure negotiated with a bank, where recourse reduces to zero as the loan seasons or as DSCR hits a specified threshold",
+      "SBA 504 deal on an owner-occupied commercial property where the SBA guarantee structure inherently requires full recourse but delivers below-market fixed-rate debt"
+    ],
+    "when_b_intro": "Non-recourse financing is the right structure when sponsor asset protection is a priority, when the deal supports institutional execution at 65 to 75 percent LTV, and when term and amortization requirements exceed what bank portfolio lenders will hold. Agency, life company, and CMBS channels all offer 10-year-plus fixed rates with longer amortization periods that bank balance sheets rarely match, and the non-recourse shield is often a prerequisite for institutional equity partners and joint venture structures.",
+    "when_b_bullets": [
+      "Institutional equity joint venture where the LP or equity partner requires non-recourse as a structural condition, and a personal guarantee from the GP is not acceptable",
+      "Sponsor with concentrated personal net worth in other real estate assets who cannot afford deficiency exposure on a large loan without materially impairing the broader balance sheet",
+      "Long-term hold strategy requiring a 10 to 30 year fixed rate, which bank portfolio lenders rarely offer and which non-recourse agency and life company programs are specifically designed to deliver",
+      "Multifamily, industrial, or retail asset above $10M that qualifies cleanly for agency, life company, or CMBS execution at 65 to 70 percent LTV with a 1.30x or better DSCR",
+      "Portfolio or entity-level financing where multiple properties are cross-collateralized and a recourse structure would expose the entire sponsor balance sheet to a single asset default",
+      "Refinance with proceeds earmarked for capital distribution to investors, where non-recourse execution prevents individual investor guarantors from being exposed to lender deficiency claims"
+    ],
+    "decision_framework": [
+      "The first filter is loan size and lender availability. Below $5 million, non-recourse permanent financing is functionally unavailable from institutional sources: agency minimums, life company origination economics, and CMBS pooling requirements all exclude small loans. From $5 million to $10 million, non-recourse is available through agency small-balance programs but the universe of willing lenders narrows. Above $10 million on a stabilized asset with 65 percent or better LTV and 1.25x or better DSCR, non-recourse becomes the dominant product from most institutional channels. Map your deal to the lender category first before treating recourse versus non-recourse as an open question.",
+      "The second filter is leverage. Non-recourse permanent lenders, including agency, life company, and CMBS, generally top out at 70 to 75 percent LTV on market-rate commercial assets. If your acquisition or refinance requires 75 to 80 percent LTV to work, recourse bank financing is likely the only path that delivers that leverage. The pricing savings on recourse (25 to 75 bps tighter) partially offset the higher leverage cost, but the real reason sponsors take recourse at high LTV is that non-recourse at that LTV simply does not exist outside of HUD or SBA structures. Do not conflate the recourse decision with a preference: it is often a leverage necessity.",
+      "The third filter is the bad-boy carve-out package on any non-recourse loan you are considering. Industry-standard carve-outs cover fraud, material misrepresentation, voluntary bankruptcy filing, environmental contamination, and transfer or encumbrance of the property without lender consent. These are narrow and most sponsors can confidently avoid triggering them. However, lender-specific addenda in CMBS and some institutional debt fund loans can expand carve-outs to cover acts like failing to maintain insurance, failing to provide financial reporting, or creating any unpermitted lien, any of which can convert a nominally non-recourse loan into effectively full recourse through carve-out burn. Always negotiate the carve-out schedule before signing, and engage counsel familiar with the specific lender's standard document package.",
+      "The fourth filter is the partial recourse and burn-off structures that many bank lenders offer as a middle path. A burn-off structure starts with full recourse and reduces sponsor exposure to zero or to a capped dollar amount as the loan seasons, typically at year 3 or upon the property reaching a 1.30x DSCR for four consecutive quarters. A partial recourse structure caps the guarantee at a fixed percentage of the loan balance (commonly 25 to 50 percent) rather than requiring the sponsor to guarantee the full outstanding principal. These hybrid structures are common below $25 million and allow sponsors to access bank pricing and leverage while reducing but not eliminating personal exposure. They are not available from agency or CMBS channels, and each bank structures them differently, so the comparison across lenders requires reading the guarantee documents, not just the term sheet."
+    ],
+    "real_deal_example": "On the refinance of a 48,000 square foot anchored retail strip in a Los Angeles suburb, a sponsor with two institutional equity partners needed to maximize proceeds on a stabilized asset at 1.28x DSCR. A regional bank quoted recourse at 6.45 percent fixed for 7 years, 25-year amortization, 76 percent LTV, closing in 35 days, with a full personal guarantee from the operating partner. A non-recourse CMBS conduit quoted 6.85 percent fixed for 10 years, 30-year amortization, 70 percent LTV, closing in 85 days. The recourse loan delivered $440,000 more in proceeds on a $12.2 million loan due to higher LTV, priced 40 basis points tighter, and closed two months earlier. The equity partners required non-recourse as a structural term of their JV agreement, which removed the bank option entirely. The deal closed CMBS non-recourse at 70 percent LTV. The takeaway: sponsor capital structure and JV obligations frequently override the pricing and leverage math when choosing between recourse and non-recourse.",
+    "expert_quote": "Most sponsors frame recourse versus non-recourse as a pricing question. It is not. It is a liability question first, a leverage question second, and a pricing question third. The 40 basis point savings on a recourse loan is irrelevant if a default on that loan can unwind fifteen years of personal wealth accumulation.",
+    "faqs": [
+      {
+        "q": "What is the difference between a recourse and non-recourse CRE loan?",
+        "a": "A recourse CRE loan holds the borrower and any personal guarantors personally liable for the full loan balance: if the property is foreclosed and the sale proceeds do not cover the debt, the lender can pursue a deficiency judgment against personal assets. A non-recourse loan limits the lender's remedy to foreclosing on the property, with no claim against personal assets, except through negotiated bad-boy carve-outs for fraud, voluntary bankruptcy, environmental violations, and similar misconduct."
+      },
+      {
+        "q": "What are bad-boy carve-outs and how do they affect non-recourse protection?",
+        "a": "Bad-boy carve-outs are specific exceptions to non-recourse protection that convert a loan to full recourse if the borrower commits defined bad acts. Industry-standard carve-outs cover fraud, material misrepresentation, voluntary bankruptcy filing, environmental contamination, and unauthorized property transfers. Lender-specific addenda can expand this list significantly. Sponsors should negotiate the carve-out schedule carefully, as overly broad addenda can effectively eliminate non-recourse protection through ordinary operational missteps."
+      },
+      {
+        "q": "How much cheaper are recourse loans compared to non-recourse loans?",
+        "a": "Recourse permanent CRE loans typically price 25 to 75 basis points tighter than non-recourse loans on comparable assets and leverage levels as of April 2026. The spread reflects the lender's broader recovery claim: a recourse lender has collateral plus personal assets, a non-recourse lender has the property only. The actual spread on any specific deal depends on loan size, asset class, market, lender type, and sponsor credit profile."
+      },
+      {
+        "q": "Do non-recourse loans allow higher leverage than recourse loans?",
+        "a": "No. Recourse loans generally allow higher leverage than non-recourse loans. Recourse bank balance-sheet lenders commonly lend to 75 to 80 percent LTV on stabilized assets. Non-recourse agency, life company, and CMBS lenders typically cap out at 65 to 75 percent LTV on comparable assets. The higher leverage on recourse loans comes with full personal liability, so the additional proceeds are not free; the sponsor is accepting expanded personal risk in exchange for more capital."
+      },
+      {
+        "q": "What is a partial recourse or burn-off structure?",
+        "a": "A partial recourse structure caps the borrower's personal guarantee at a fixed percentage or dollar amount of the loan balance rather than requiring a full guarantee. A burn-off structure starts at full recourse and reduces sponsor liability to zero over time, typically after the property achieves a target DSCR for several consecutive quarters or after a defined seasoning period. Both structures are common in bank balance-sheet lending below $25 million and are generally not available from agency or CMBS lenders."
+      },
+      {
+        "q": "Which lender types offer non-recourse permanent CRE loans?",
+        "a": "Non-recourse permanent CRE loans come primarily from agency Seller-Servicers (Fannie Mae, Freddie Mac, FHA, HUD) for multifamily, life insurance companies for stabilized commercial assets above $10 million, CMBS conduits for income-producing commercial assets above $5 million, and institutional debt funds on larger or transitional assets. Regional and community banks almost always require recourse. The lender category is largely determined by loan size and asset type before any sponsor preference enters the picture."
+      },
+      {
+        "q": "Can a personal guarantee on a recourse CRE loan be negotiated or limited?",
+        "a": "Yes, within limits. Bank lenders commonly negotiate partial recourse structures that cap the guarantee at 25 to 50 percent of the loan balance, burn-off provisions that eliminate recourse after seasoning milestones, carve-out-only guarantees that mirror the bad-boy structure used on non-recourse loans, and spousal carve-outs that limit community property exposure. Negotiating leverage depends on borrower strength, deal quality, and lender appetite. Sponsors with strong net worth and clean credit history typically have the most room to limit guarantee scope."
+      },
+      {
+        "q": "How does recourse versus non-recourse affect a CRE joint venture structure?",
+        "a": "Institutional equity partners and passive investors in CRE joint ventures frequently require non-recourse financing as a structural condition, because a recourse guarantee from the general partner creates deficiency exposure that can flow through the entity or encumber the GP's other assets. Many LP agreements explicitly prohibit the GP from signing a personal guarantee on JV debt without LP consent. Sponsors raising institutional equity should confirm financing structure requirements before pursuing bank recourse quotes, as a signed term sheet from a recourse lender may not be usable."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/permanent-loans.html",
+        "title": "Permanent CRE Loans (Hub)",
+        "sub": "All permanent financing sources for stabilized commercial assets"
+      },
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans",
+        "sub": "Short-term recourse and non-recourse transitional financing"
+      },
+      {
+        "href": "financing/cmbs-loans.html",
+        "title": "CMBS Loans",
+        "sub": "Non-recourse conduit execution for income-producing commercial assets"
+      },
+      {
+        "href": "financing/sba-loans.html",
+        "title": "SBA 504 and SBA 7(a) Loans",
+        "sub": "Recourse owner-occupied commercial real estate financing"
+      },
+      {
+        "href": "financing/hard-money-loans.html",
+        "title": "Hard Money Loans",
+        "sub": "Asset-based recourse lending for time-sensitive situations"
+      },
+      {
+        "href": "financing/life-company-loans.html",
+        "title": "Life Company Loans",
+        "sub": "Non-recourse long-term fixed-rate financing from insurance companies"
+      }
+    ]
+  },
+  {
+    "slug": "cmbs-conduit-vs-single-borrower-cmbs",
+    "short_title": "CMBS Conduit vs Single-Borrower CMBS",
+    "h1": "CMBS Conduit vs Single-Borrower CMBS: Two Different CMBS Markets for Different Deal Sizes",
+    "name_a": "CMBS Conduit Loans",
+    "name_b": "Single-Borrower CMBS Loans",
+    "published": "2026-05-28",
+    "seo": {
+      "title": "CMBS Conduit vs Single-Borrower CMBS Loans | CLS CRE",
+      "meta_description": "Side-by-side comparison of CMBS conduit and single-borrower CMBS. Rate ranges, deal size, B-piece dynamics, structural flexibility, and when each execution wins."
+    },
+    "lead": "CMBS conduit loans and single-borrower CMBS loans share the same surface characteristics: fixed-rate, 10-year term, non-recourse, defeasance prepayment, and securitized execution. Underneath that surface, they are two entirely separate capital markets serving different deal sizes, different asset quality tiers, and different sponsor profiles. Conduit CMBS aggregates 50 to 100 loans into a single multi-borrower pool, standardizes documents, and prices to aggregate AAA tranche execution. Single-borrower CMBS securitizes one deal or a small portfolio as its own transaction, with individually negotiated documents, direct B-piece engagement, and pricing that reflects the specific asset rather than the average of a pool. The decision between them is not a rate decision first. It is a deal size, asset quality, and structural flexibility decision, with rate as the output. Getting the execution channel wrong can cost a sponsor 25 to 50 basis points and months of rework.",
+    "table": [
+      {
+        "feature": "Rate range (May 2026)",
+        "side_a": "5.75 to 7.50 percent (10-year fixed, stabilized assets)",
+        "side_b": "5.50 to 7.00 percent (10-year fixed, trophy and Class A assets)"
+      },
+      {
+        "feature": "Loan size band",
+        "side_a": "$5M to $50M per loan",
+        "side_b": "$75M and above, typically $100M to $500M+"
+      },
+      {
+        "feature": "Securitization structure",
+        "side_a": "Multi-borrower pool, 50 to 100 loans per trust",
+        "side_b": "Single-asset or small-portfolio trust, one borrower entity"
+      },
+      {
+        "feature": "Maximum LTV",
+        "side_a": "75 percent on most property types; 65 percent on hospitality",
+        "side_b": "Up to 75 percent on core assets; occasionally 75 to 80 percent on trophy with strong structure"
+      },
+      {
+        "feature": "Minimum DSCR",
+        "side_a": "1.25x on most property types; 1.35x to 1.40x on retail and hospitality",
+        "side_b": "1.20x to 1.30x depending on asset quality and debt yield floor"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Non-recourse with standard bad-boy carve-outs",
+        "side_b": "Non-recourse with negotiated carve-out language, often more borrower-friendly"
+      },
+      {
+        "feature": "Document standardization",
+        "side_a": "Highly standardized CREFC/CMSA loan documents with limited negotiation",
+        "side_b": "Individually negotiated loan agreement, cash management, and intercreditor documents"
+      },
+      {
+        "feature": "B-piece buyer role",
+        "side_a": "B-piece buyer reviews pool and can kick out or re-price individual loans",
+        "side_b": "Sponsor negotiates directly with B-piece buyer; B-piece buyer is deal-specific counterparty"
+      },
+      {
+        "feature": "Prepayment",
+        "side_a": "Defeasance (standard); yield maintenance less common",
+        "side_b": "Defeasance (standard); negotiated open period and partial release provisions possible"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "25 to 30 years; interest-only available on lower-leverage deals",
+        "side_b": "25 to 30 years; full-term interest-only more accessible on trophy assets at 55 to 65 percent LTV"
+      },
+      {
+        "feature": "Typical close timeline",
+        "side_a": "60 to 90 days from application to closing",
+        "side_b": "90 to 150 days; more complex structuring and B-piece negotiation extend timeline"
+      },
+      {
+        "feature": "Lender ecosystem",
+        "side_a": "Multiple conduit lenders (banks, insurance company affiliates, non-bank originators) competing for flow",
+        "side_b": "Smaller universe of investment banks and large non-bank originators with single-borrower shelf capacity"
+      }
+    ],
+    "when_a_intro": "CMBS conduit is the right execution for stabilized, income-producing commercial properties in the $5M to $50M range where the sponsor needs non-recourse, fixed-rate financing and the asset fits a defined credit box. The conduit market is competitive, liquid, and fast relative to single-borrower executions, with multiple lenders quoting the same deal simultaneously. The standardized document set is a feature, not a limitation, for sponsors who are not seeking structural customization.",
+    "when_a_bullets": [
+      "Stabilized retail, office, industrial, mixed-use, or hospitality asset in the $5M to $50M range where non-recourse fixed-rate is the primary objective",
+      "Sponsor wants a programmatic, repeatable execution across a portfolio of mid-market properties without negotiating bespoke documents on each loan",
+      "Deal fits the conduit credit box on LTV, DSCR, and debt yield without requiring structural carve-outs or partial release provisions",
+      "Market has multiple conduit lenders competing for origination volume, driving pricing inside what a bank or debt fund would offer on a recourse basis",
+      "Sponsor anticipates holding the loan to maturity or near maturity, making the standardized defeasance exit sufficient",
+      "Property type is office, retail, or hospitality where agency and bank lenders are more constrained and conduit remains one of the few active fixed-rate non-recourse channels"
+    ],
+    "when_b_intro": "Single-borrower CMBS is the right execution when deal size exceeds $75M, the asset is trophy or Class A quality requiring leverage or structural terms that a conduit pool cannot accommodate, and the sponsor can manage a longer timeline and direct B-piece negotiation. Single-borrower execution also unlocks partial release provisions on portfolio loans and more borrower-friendly carve-out language that conduit documents do not permit.",
+    "when_b_bullets": [
+      "Loan size is $75M or above and the deal is too large for the conduit market to absorb cleanly within its pool concentration limits",
+      "Trophy or Class A asset that justifies 70 to 75 percent LTV and full-term interest-only, terms that are difficult to clear through a conduit B-piece review process",
+      "Sponsor needs partial release provisions on a multi-property portfolio securitized in a single trust, a structure conduit cannot accommodate",
+      "Deal requires customized cash management, reserve structures, or springing lock-box mechanics that standardized conduit documents do not allow",
+      "Pricing on a top-tier asset can clear inside agency execution, particularly on Class A multifamily where single-borrower CMBS has historically competed with Fannie Mae and Freddie Mac on large deals",
+      "Sponsor has the sophistication and legal resources to engage directly in B-piece negotiation and wants the flexibility that comes from being the sole borrower in the trust"
+    ],
+    "decision_framework": [
+      "The first filter is deal size. Conduit CMBS dominates the $5M to $50M range and is structurally unsuited to loans above $75M due to pool concentration limits. A single loan representing more than 10 to 15 percent of a conduit pool creates outsized B-piece exposure that most conduit buyers will reject or re-price aggressively. If your loan is above $75M, conduit is not a realistic option regardless of asset quality, and single-borrower is the execution to pursue. If your loan is below $50M, single-borrower CMBS is not a realistic option regardless of asset quality, because the economics of a single-asset securitization do not work at that size.",
+      "The second filter is asset quality. Single-borrower CMBS requires a trophy or Class A asset to attract a B-piece buyer willing to take deal-specific risk on a single credit. A B-piece buyer in a conduit pool is diversified across 50 to 100 loans; a B-piece buyer in a single-borrower deal is fully concentrated in one asset and one market. That concentration demands a high-quality, well-located, institutionally managed property. Conduit, by contrast, accepts a wider range of asset quality because individual loan risk is diluted across the pool. A well-occupied Class B retail strip center in a secondary market that clears the conduit credit box is a straightforward conduit deal but would not clear single-borrower underwriting.",
+      "The third filter is structural need. If your deal requires partial release provisions, heavily negotiated reserve structures, springing cash management tied to specific performance triggers, or carve-out language that departs from CREFC standards, conduit cannot deliver those terms. The conduit B-piece buyer reviews a pool of standardized loans and will not approve structural exceptions that would make one loan non-comparable to the others in the pool. Single-borrower CMBS allows direct negotiation with the B-piece buyer on every structural element because there are no other borrowers in the trust who would be affected. Sponsors who need structural flexibility and are above the $75M threshold should not attempt to force-fit their deal into conduit.",
+      "The fourth filter is timeline and execution certainty. Conduit closes in 60 to 90 days from application, driven by a relatively standardized origination and securitization process. Single-borrower CMBS closes in 90 to 150 days, with the additional time consumed by bespoke document negotiation, B-piece engagement, and deal-specific rating agency review. Sponsors with acquisition deadlines or refinance urgency should factor this into the channel decision before engaging. Running a single-borrower process without adequate time is one of the more common execution failures in large-balance CMBS, and the costs of a failed deal at that size, including legal fees, rate lock deposits, and extension penalties, are substantial."
+    ],
+    "real_deal_example": "On a $38M refinance of a fully leased, single-tenant net-lease industrial asset in a major Midwest market, we ran conduit quotes from four lenders simultaneously. The tightest conduit execution came in at 6.18 percent fixed, 10-year term, 30-year amortization, with two years of interest-only and standard defeasance. The sponsor initially asked whether single-borrower execution could improve terms, and the answer was no: at $38M, no single-borrower shelf would accept the deal at that size, and the asset, while institutional quality, was not the type of trophy collateral that drives B-piece appetite in a single-asset trust. The conduit deal closed in 72 days. The rate was inside what three bank lenders had quoted on a recourse basis, and the non-recourse structure was the sponsor's primary requirement. The takeaway is that conduit, when the deal fits the box, is a highly efficient non-recourse channel for the $10M to $50M range, and the discipline is knowing not to pursue single-borrower for deals that conduit is designed to serve.",
+    "expert_quote": "The sponsors who over-complicate the channel decision are usually the ones who have heard that single-borrower CMBS prices better and assume that applies to their $30M deal. It does not. Single-borrower is a different product for a different market. At $30M you are competing against 50 other conduit loans for B-piece attention; at $200M you are the only loan in the trust. Those are fundamentally different risk conversations and they produce fundamentally different terms.",
+    "faqs": [
+      {
+        "q": "What is the minimum loan size for a CMBS conduit loan?",
+        "a": "CMBS conduit lenders generally require a minimum loan size of $5M to $10M, with most active conduit programs targeting $10M and above for efficient execution. Below $5M, the securitization economics do not support the legal and structuring costs of CMBS, and borrowers in that range are better served by bank, credit union, or SBA 504 financing on a recourse basis."
+      },
+      {
+        "q": "How does the B-piece buyer affect CMBS conduit pricing?",
+        "a": "The B-piece buyer in a conduit pool purchases the most subordinate and highest-risk tranche of the securitization, covering first losses. The B-piece buyer reviews every loan in the pool and can require a higher coupon, a loan kick-out, or additional reserves on any credit that fails their underwriting. Because the B-piece buyer bears concentrated first-loss risk across 50 to 100 loans, their credit standards effectively set the floor for what the conduit market will accept."
+      },
+      {
+        "q": "Can a CMBS conduit loan be prepaid early?",
+        "a": "CMBS conduit loans use defeasance as the standard prepayment mechanism. The borrower purchases a portfolio of U.S. Treasury securities that replicates the remaining loan cash flows, substituting those securities as collateral in the trust in place of the original property. Defeasance is expensive in a falling-rate environment because Treasuries are more costly to assemble. Most conduit loans also include a two-year lockout period during which prepayment is not permitted under any circumstance."
+      },
+      {
+        "q": "What is the difference between a CMBS conduit loan and a single-borrower CMBS loan?",
+        "a": "A CMBS conduit loan is one of 50 to 100 loans pooled into a multi-borrower securitization trust, with standardized documents and pricing driven by aggregate pool execution. A single-borrower CMBS loan securitizes a single asset or portfolio in its own trust, with individually negotiated documents and pricing based on the specific deal. Single-borrower CMBS is typically for loans above $75M on trophy or Class A assets; conduit dominates the $5M to $50M range."
+      },
+      {
+        "q": "What property types are eligible for CMBS conduit financing?",
+        "a": "CMBS conduit lenders accept most stabilized income-producing commercial property types, including retail, office, industrial, multifamily, self-storage, mixed-use, and hospitality. DSCR and LTV requirements vary by property type, with hospitality typically requiring a 1.35x to 1.40x DSCR and 65 percent LTV due to cash flow volatility. Single-tenant, short-lease, or dark properties are difficult to place in conduit without structural credit enhancements."
+      },
+      {
+        "q": "How long does it take to close a CMBS conduit loan?",
+        "a": "CMBS conduit loans typically close in 60 to 90 days from application. The timeline includes third-party report ordering (appraisal, environmental, property condition assessment), underwriting, loan committee approval, B-piece review, and securitization documentation. Rate locks are typically offered 30 to 45 days before closing. Sponsors who need a faster close should consider bridge financing to buy time before transitioning to a conduit permanent loan."
+      },
+      {
+        "q": "Is single-borrower CMBS better priced than conduit CMBS?",
+        "a": "Single-borrower CMBS can price inside conduit on trophy assets because the B-piece buyer is underwriting a single high-quality credit rather than a diverse pool with weaker credits dragging average pricing. As of May 2026, single-borrower CMBS on top-tier assets has been pricing at 5.50 to 7.00 percent versus 5.75 to 7.50 percent for conduit. However, the single-borrower execution is only accessible above $75M and on institutional-quality collateral."
+      },
+      {
+        "q": "What are risk retention rules and how do they apply to CMBS?",
+        "a": "Under the Dodd-Frank Act risk retention rules, CMBS issuers must retain at least 5 percent of the credit risk in any securitization they sponsor. In practice, the B-piece buyer typically satisfies risk retention by holding the most subordinate tranche of the CMBS trust for a minimum holding period. This regulatory requirement affects who participates as a B-piece buyer and shapes the economics of both conduit and single-borrower CMBS transactions."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans",
+        "sub": "Short-term financing before CMBS permanent execution"
+      },
+      {
+        "href": "financing/hard-money-loans.html",
+        "title": "Hard Money Loans",
+        "sub": "Speed-focused alternatives for value-add and transitional assets"
+      },
+      {
+        "href": "financing/dscr-loans.html",
+        "title": "DSCR Loans",
+        "sub": "Income-based non-recourse options across property types"
+      },
+      {
+        "href": "financing/dscr-loans-rates.html",
+        "title": "DSCR Loan Rates",
+        "sub": "Current rate ranges and what drives DSCR pricing"
+      },
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "All capital sources for apartment loans including CMBS"
+      },
+      {
+        "href": "financing/agency-loans.html",
+        "title": "Agency Loans",
+        "sub": "Fannie Mae and Freddie Mac as alternatives to single-borrower CMBS on large multifamily"
+      }
+    ]
   }
 ]
