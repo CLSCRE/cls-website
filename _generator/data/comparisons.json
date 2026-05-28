@@ -5966,5 +5966,668 @@
         "sub": "Full program mechanics and borrower playbook"
       }
     ]
+  },
+  {
+    "slug": "fixed-rate-vs-arm-permanent",
+    "short_title": "Fixed-Rate vs ARM Permanent Loans",
+    "h1": "Fixed-Rate vs ARM for Permanent Commercial Real Estate Financing",
+    "name_a": "Fixed-Rate Permanent Loan",
+    "name_b": "Adjustable-Rate (ARM) Permanent Loan",
+    "published": "2026-05-28",
+    "seo": {
+      "title": "Fixed-Rate vs ARM Commercial Loans 2026 | CLS CRE",
+      "meta_description": "Fixed-rate vs ARM permanent CRE loans: rate ranges, prepay structures, reset risk, and which structure wins by hold period and rate-curve view. April 2026 data."
+    },
+    "lead": "For permanent commercial real estate financing between $1M and $50M, the most consequential structural decision is not which lender you use. It is whether you lock a fixed coupon for the full term or accept an adjustable rate that starts lower and resets after an initial fixed window. Fixed-rate permanent loans, typically structured with 5, 7, or 10-year terms at 25 to 30-year amortization, eliminate rate risk entirely in exchange for a higher initial coupon, currently 5.75 to 7.00 percent on stabilized assets as of April 2026, and tighter prepayment penalties such as yield maintenance or step-down schedules. ARM permanent loans, typically structured with a 3 or 5-year initial fixed period that then adjusts annually or every five years over SOFR plus a margin of 200 to 300 basis points, start 50 to 75 basis points lower, around 5.25 to 6.25 percent initial, but expose the borrower to rate risk at every reset. The decision turns on four variables: your view of the rate curve over the hold period, how long you actually plan to hold the asset, your ability to absorb a payment shock at reset, and the cost and availability of interest rate caps if the lender or program requires one.",
+    "table": [
+      {
+        "feature": "Rate range (Apr 2026)",
+        "side_a": "5.75 to 7.00 percent (stabilized, 5 to 10-yr fixed)",
+        "side_b": "5.25 to 6.25 percent (initial fixed period, 3/1 or 5/1 ARM)"
+      },
+      {
+        "feature": "Loan size band",
+        "side_a": "$1M to $50M+ across banks, life companies, and agencies",
+        "side_b": "$1M to $50M+ across banks, agencies, and debt funds"
+      },
+      {
+        "feature": "Maximum LTV",
+        "side_a": "75 to 80 percent (stabilized multifamily), 65 to 75 percent (CRE)",
+        "side_b": "70 to 80 percent (stabilized), often 65 to 70 percent without a rate cap"
+      },
+      {
+        "feature": "Minimum DSCR",
+        "side_a": "1.20x to 1.30x underwritten at the fixed note rate",
+        "side_b": "1.20x to 1.30x underwritten at the initial rate; some lenders stress-test at the cap rate"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Non-recourse available through agencies and life companies; recourse typical at regional banks",
+        "side_b": "Non-recourse available through agency ARM products; recourse more common at banks"
+      },
+      {
+        "feature": "Term and reset structure",
+        "side_a": "5, 7, or 10-year fixed term, fully locked for the duration",
+        "side_b": "3/1, 5/1, 5/5 initial fix then annual or 5-year adjustments over index"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "25 to 30 years; interest-only available for 1 to 5 years depending on leverage",
+        "side_b": "25 to 30 years; interest-only more readily available at lower initial payment"
+      },
+      {
+        "feature": "Prepayment structure",
+        "side_a": "Yield maintenance or step-down (5,4,3,2,1 or similar); typically hard through full term",
+        "side_b": "Step-down during initial fixed window, open or light penalty after first reset"
+      },
+      {
+        "feature": "Index and margin (ARM)",
+        "side_a": "Not applicable",
+        "side_b": "SOFR plus 200 to 300 bps margin; periodic cap typically 1 to 2 percent per adjustment"
+      },
+      {
+        "feature": "Lifetime and periodic caps (ARM)",
+        "side_a": "Not applicable",
+        "side_b": "Lifetime cap typically 5 to 6 percent over initial rate; periodic cap 1 to 2 percent per reset"
+      },
+      {
+        "feature": "Rate cap requirement",
+        "side_a": "Not applicable",
+        "side_b": "Required by most agency ARM and bank programs; cap cost varies with term, strike, and volatility"
+      },
+      {
+        "feature": "Lender ecosystem",
+        "side_a": "Life companies (dominant fixed-rate execution), banks, Fannie Mae, Freddie Mac, CMBS conduits",
+        "side_b": "Banks, Fannie Mae and Freddie Mac ARM products, debt funds; life companies rarely offer ARMs"
+      }
+    ],
+    "when_a_intro": "Fixed-rate permanent financing is the right structure when your primary objective is payment certainty over a multi-year hold, when the asset's cash flow margin over debt service is tight, or when you are financing an asset you intend to hold through at least one full rate cycle. Life companies and agencies price fixed-rate paper most aggressively on stabilized assets with strong in-place income, and the non-recourse, long-term fixed execution that life companies offer is genuinely difficult to replicate on an adjustable basis.",
+    "when_a_bullets": [
+      "Long hold strategy of 7 to 10-plus years where rate certainty protects cash-on-cash returns from reset risk",
+      "Asset with tight DSCR cushion of 1.20x to 1.30x where a 200 basis point rate increase at reset would breach coverage",
+      "Sponsor with a distribution obligation to passive investors who underwrite to a stable preferred return",
+      "Rate-curve view that SOFR will remain flat or rise over the next 5 years, making the fixed coupon the cheaper option in total interest cost",
+      "Stabilized multifamily, anchored retail, or NNN industrial where a life company offers 5.75 to 6.25 percent non-recourse fixed for 10 years, below bank ARM all-in cost when cap premium is included",
+      "Refinance of a maturing loan where the borrower wants to eliminate rollover risk entirely and lock final financing through a target disposition date"
+    ],
+    "when_b_intro": "ARM permanent financing wins when the hold period is intermediate, when the borrower has a well-supported thesis that short-term rates will fall materially before the first reset, or when the lower initial rate meaningfully improves day-one cash-on-cash returns for a yield-sensitive investor base. Agency ARM products on multifamily have standardized lifetime and periodic caps that bound worst-case scenarios, making them more defensible than bank ARM products that may have wider margins and less transparent cap structures.",
+    "when_b_bullets": [
+      "Planned hold or refinance within 3 to 5 years, where the ARM's initial rate is lower and the lighter post-fix prepayment allows a clean exit without a punishing yield maintenance calculation",
+      "Rate-curve view that the Federal Reserve will cut meaningfully before the first reset, allowing the ARM to reprice down rather than up",
+      "Multifamily acquisition where day-one cash-on-cash return to equity is the gating metric and the 50 to 75 basis point rate advantage over fixed closes the gap",
+      "Sponsor with strong balance sheet and asset-level cash flow cushion of 1.40x or better who can absorb a reset without a capital call",
+      "Agency ARM on multifamily where lifetime caps of 5 to 6 percent over initial and periodic caps of 1 to 2 percent per adjustment define the worst-case scenario with precision",
+      "Value-add or transitional asset reaching stabilization with a 5-year business plan and a likely refinance or sale before the ARM's second reset"
+    ],
+    "decision_framework": [
+      "The starting point is hold period math, not rate opinion. If you plan to sell or refinance in 3 to 5 years, the ARM's lower initial coupon compresses interest expense during the period you actually own the asset, and the lighter prepayment after the initial fixed window lets you exit without writing a large yield maintenance check. If you plan to hold for 7 to 10 years, the fixed rate eliminates the single biggest unknown in your pro forma: what SOFR is doing in year 5 or 6 when the ARM resets. Lenders underwrite to the initial ARM rate, but your actual debt service cost resets on a schedule the market controls, not you.",
+      "The second variable is the all-in cost comparison, not just the coupon. ARM permanent loans on stabilized commercial assets frequently require an interest rate cap, particularly through agency programs and most bank lenders above 70 percent LTV. A 3-year cap with a strike 200 basis points above the initial rate on a $10M loan can cost $80,000 to $150,000 depending on volatility at the time of origination, and that cost amortizes into your effective yield. When you add cap premium to the ARM coupon, the spread advantage over fixed narrows from 50 to 75 basis points to 20 to 40 basis points in many executions. Run the total interest cost including cap premium before concluding the ARM is cheaper.",
+      "Rate-curve view is the third input, and it is the one most borrowers overweight relative to the first two. If SOFR drops 150 basis points before your first ARM reset, the adjustable loan wins decisively on total interest cost. If SOFR stays flat or rises, the fixed rate wins. The problem is that SOFR forecasts 3 to 5 years forward are close to random for most commercial borrowers. The responsible framework is to treat the ARM as a rate bet and the fixed as rate insurance, then price that insurance against your actual risk tolerance and the cash flow margin of the specific asset. An asset with 1.45x DSCR at the initial ARM rate and 1.10x at the fully-indexed worst-case rate is a very different risk profile than an asset with 1.30x at initial and 0.92x at worst case.",
+      "Lender selection and program mechanics should inform the structure decision, not follow it. Life companies are the dominant source of long-term fixed-rate permanent financing at competitive spreads, and they rarely offer ARM products. Agency multifamily ARM products have standardized cap structures and transparent index mechanics, making them more borrower-friendly than many bank ARM programs where margin and cap terms vary by relationship. Banks will do both fixed and ARM, often with recourse below $5M and sometimes above it, and bank ARM margins have historically been 200 to 275 basis points over SOFR on CRE assets outside multifamily. If the asset is multifamily and the loan is above $3M, running an agency ARM quote alongside agency fixed and a life company fixed quote is the minimum competitive process. On CRE asset types outside multifamily, the fixed versus ARM choice narrows to bank and debt fund execution, where fixed bank terms of 5 to 7 years with balloon payments and ARM bank products with shorter reset windows are both common."
+    ],
+    "real_deal_example": "On a 96-unit multifamily acquisition in a major West Coast MSA, the sponsor underwrote a 5-year hold with a planned refinance or sale at stabilization. The acquisition DSCR was 1.31x. We ran a 10-year agency fixed quote, a 5/1 agency ARM quote, and a 7-year bank fixed quote simultaneously. The 10-year fixed came back at 6.05 percent with yield maintenance through year 10. The 5/1 agency ARM came back at 5.55 percent initial, adjusting annually over SOFR plus 230 basis points with a 1 percent periodic cap and a 5 percent lifetime cap, with a required rate cap costing approximately $112,000. The 7-year bank fixed came in at 6.20 percent with a 4,3,2,1 step-down prepayment and full recourse. The sponsor selected the agency ARM: the 50 basis point coupon advantage over the 10-year fixed improved year-one cash-on-cash by 68 basis points to equity, the step-down prepayment after year 5 aligned with the exit plan, and the lifetime cap bounded worst-case debt service at a level the asset could cover at 1.07x even in a stress scenario. The fixed rate would have been the right call if the hold were 10 years or if the DSCR cushion were tighter.",
+    "expert_quote": "The fixed versus ARM decision is a hold-period and risk-capacity question, not a rate forecast contest. Know your exit, know your DSCR floor at the worst-case reset, price the cap, and then pick the structure. Most sponsors who regret an ARM chose it because the initial rate was attractive, not because the hold period or cash flow math supported it.",
+    "faqs": [
+      {
+        "q": "What is the current rate difference between fixed-rate and ARM permanent commercial loans?",
+        "a": "As of April 2026, fixed-rate permanent commercial loans on stabilized assets are pricing at 5.75 to 7.00 percent depending on asset type, LTV, and lender type. ARM permanent loans are pricing at 5.25 to 6.25 percent for the initial fixed window. The gross spread is 50 to 75 basis points, but when interest rate cap premiums required on many ARM programs are included, the net advantage narrows to 20 to 40 basis points in total interest cost terms."
+      },
+      {
+        "q": "How do interest rate caps work on commercial ARM permanent loans?",
+        "a": "An interest rate cap is a purchased derivative that limits the ARM coupon from rising above a specified strike rate, typically 150 to 250 basis points above the initial rate, for a defined term. Most agency and bank ARM programs require a cap at origination, particularly above 70 percent LTV. Cap cost is driven by the strike, the term, notional balance, and current volatility. On a $10M loan in April 2026, a 3-year cap can cost $80,000 to $150,000, which must be factored into the ARM's all-in cost comparison against fixed."
+      },
+      {
+        "q": "What are lifetime caps and periodic caps on agency ARM permanent loans?",
+        "a": "Lifetime caps limit how far the ARM rate can rise above the initial note rate over the entire loan term, typically 5 to 6 percent on agency multifamily ARM products. Periodic caps limit the rate increase at any single adjustment date, typically 1 to 2 percent per reset. Together, these caps define the worst-case payment scenario. For example, a 5.50 percent initial rate with a 5 percent lifetime cap cannot exceed 10.50 percent regardless of where SOFR moves, and cannot jump more than 1 to 2 percent in any single year."
+      },
+      {
+        "q": "Which lenders offer fixed-rate permanent commercial loans versus ARM permanent loans?",
+        "a": "Life companies dominate long-term fixed-rate permanent commercial lending and rarely offer ARM products. Fannie Mae and Freddie Mac offer both fixed and ARM products on multifamily, with agency ARM products featuring standardized cap structures. Banks offer both fixed and ARM on most commercial asset types, typically with recourse and shorter fixed terms of 5 to 7 years. Debt funds occasionally offer fixed-rate bridge-to-perm products but are less common in stabilized permanent fixed execution compared to life companies or agencies."
+      },
+      {
+        "q": "When does an ARM permanent loan make more sense than a fixed-rate permanent loan?",
+        "a": "An ARM permanent loan makes more sense when the hold period is 3 to 5 years and the lighter post-fix prepayment allows a clean exit, when the lower initial rate materially improves day-one cash flow for a yield-sensitive investor, or when the borrower has a defensible view that SOFR will fall before the first reset. The ARM also works when the asset has a strong DSCR cushion of 1.40x or better that can absorb a worst-case reset without breaching coverage covenants."
+      },
+      {
+        "q": "What prepayment structures apply to fixed-rate versus ARM permanent loans?",
+        "a": "Fixed-rate permanent loans typically carry yield maintenance or a step-down prepayment schedule such as 5,4,3,2,1 percent declining annually. Yield maintenance can generate a very large penalty in a falling-rate environment, particularly on long-term life company loans. ARM permanent loans generally have a step-down penalty during the initial fixed window and are open or carry minimal penalty after the first reset, aligning well with a planned exit near the end of the initial fixed period."
+      },
+      {
+        "q": "How do lenders underwrite debt service coverage on ARM permanent loans?",
+        "a": "Most lenders underwrite ARM permanent loans at the initial note rate for DSCR qualification, which is the same rate the borrower actually pays at close. However, some agency programs and more conservative bank lenders stress-test coverage at a higher rate, often the initial rate plus 200 to 300 basis points or at the fully-indexed rate, to confirm the asset can survive a reset without falling below 1.20x. Borrowers should ask specifically whether the lender qualifies at the initial rate or a stressed rate, as this directly affects maximum loan proceeds."
+      },
+      {
+        "q": "Is a fixed-rate or ARM permanent loan better for a value-add multifamily asset approaching stabilization?",
+        "a": "A 5/1 ARM permanent loan is often a better fit for a value-add multifamily asset reaching stabilization with a 5-year business plan. The lower initial rate improves cash-on-cash during lease-up, the 5-year fixed window matches the typical hold horizon before refinance or sale, and the lighter prepayment after year 5 allows a clean exit. A fixed-rate loan makes more sense if the sponsor intends to hold through multiple rent growth cycles and prioritizes payment certainty over initial yield."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans",
+        "sub": "Short-term floating-rate financing before permanent placement"
+      },
+      {
+        "href": "financing/dscr-loans.html",
+        "title": "DSCR Loans",
+        "sub": "Debt service coverage ratio loan programs and qualifying mechanics"
+      },
+      {
+        "href": "financing/dscr-loans-rates.html",
+        "title": "DSCR Loan Rates",
+        "sub": "Current rate ranges and program comparisons"
+      },
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "All capital sources for apartment and multifamily loans"
+      },
+      {
+        "href": "financing/agency-loans.html",
+        "title": "Agency Loans",
+        "sub": "Fannie Mae and Freddie Mac fixed and ARM multifamily programs"
+      },
+      {
+        "href": "financing/hard-money-loans.html",
+        "title": "Hard Money Loans",
+        "sub": "Asset-based short-term lending before permanent takeout"
+      }
+    ]
+  },
+  {
+    "slug": "mezzanine-vs-bridge-junior",
+    "short_title": "Mezzanine Debt vs Bridge Junior Debt",
+    "h1": "Mezzanine vs Bridge Junior Debt: Two Forms of Subordinate CRE Capital",
+    "name_a": "Mezzanine Debt",
+    "name_b": "Bridge Junior Debt / B-Notes",
+    "published": "2026-05-28",
+    "seo": {
+      "title": "Mezzanine Debt vs Bridge Junior Debt / B-Notes | CLS CRE",
+      "meta_description": "Side-by-side comparison of mezzanine debt and bridge junior debt (B-notes) for CRE. Structure, pricing, intercreditor mechanics, and when each subordinate capital path wins."
+    },
+    "lead": "When a senior lender caps proceeds at 60 to 65 percent LTV but a sponsor needs 75 to 80 percent of total cost, two subordinate-capital paths exist: mezzanine debt and bridge junior debt, also called B-notes or B-pieces. Both sit behind the senior, both carry all-in coupons in the 10 to 15 percent range, and both fund the gap between senior LTV and total capitalization. The structural mechanics, however, are fundamentally different. Mezzanine debt is secured by a pledge of the borrower's equity interests in the property-owning entity, not by a direct mortgage lien. Bridge junior debt is a recorded second mortgage on the real estate itself. That distinction drives everything downstream: foreclosure remedy, intercreditor requirements, lender appetite, and deal timeline. Understanding which path fits your deal, your senior lender's preferences, and your exit horizon is the difference between a clean close and a costly restructuring.",
+    "table": [
+      {
+        "feature": "Rate range (May 2026)",
+        "side_a": "11 to 15 percent (fixed or floating, all-in)",
+        "side_b": "10 to 14 percent (fixed or floating, all-in)"
+      },
+      {
+        "feature": "Security instrument",
+        "side_a": "Pledge of equity interests in the property-owning entity (UCC filing)",
+        "side_b": "Recorded second mortgage lien directly on the real estate"
+      },
+      {
+        "feature": "Loan-to-value range",
+        "side_a": "Mezz tranche typically covers 60 to 75 percent LTV band",
+        "side_b": "B-note tranche typically covers 60 to 80 percent LTV band"
+      },
+      {
+        "feature": "Typical loan size",
+        "side_a": "$3M to $50M+ mezz tranche",
+        "side_b": "$2M to $100M+ B-note tranche (whole-loan splits common)"
+      },
+      {
+        "feature": "Default remedy and timeline",
+        "side_a": "UCC foreclosure on equity interests; remedy in weeks, not months",
+        "side_b": "Second-position mortgage foreclosure on the property; 6 to 24 months depending on state"
+      },
+      {
+        "feature": "Intercreditor agreement",
+        "side_a": "Required; governs cure rights, standstill periods, and purchase option",
+        "side_b": "Co-lender or participation agreement if same lender; intercreditor if separate lender"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Non-recourse with standard bad-act carve-outs typical",
+        "side_b": "Non-recourse with bad-act carve-outs; recourse possible in smaller deals"
+      },
+      {
+        "feature": "Term",
+        "side_a": "Matches senior term; 1 to 3 years on bridge, 5 to 10 on perm mezz",
+        "side_b": "Matches senior bridge term; typically 1 to 3 years with extension options"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "Interest-only during term is standard; balloon at maturity",
+        "side_b": "Interest-only during term is standard; balloon at maturity"
+      },
+      {
+        "feature": "Lender type",
+        "side_a": "Debt funds, family offices, specialty finance platforms",
+        "side_b": "Debt funds, bridge lenders offering whole-loan splits, some regional banks"
+      },
+      {
+        "feature": "Documentation complexity",
+        "side_a": "High; intercreditor negotiation, UCC filings, entity structure review required",
+        "side_b": "Moderate to high; second mortgage doc plus co-lender or intercreditor agreement"
+      },
+      {
+        "feature": "Close timeline",
+        "side_a": "30 to 60 days once senior is engaged and intercreditor is drafted",
+        "side_b": "20 to 45 days if whole-loan with same lender; 30 to 60 if separate B-note lender"
+      }
+    ],
+    "when_a_intro": "Mezzanine debt fits when the senior lender is a conduit, agency, or debt fund that explicitly prohibits a second mortgage but will consent to a mezzanine structure governed by an intercreditor agreement. It also fits sponsors who are comfortable pledging equity interests and who prioritize a faster default remedy path for their capital provider.",
+    "when_a_bullets": [
+      "Senior lender is a conduit CMBS lender or agency program that prohibits recorded junior liens but permits intercreditor-governed mezz",
+      "Sponsor needs a leverage boost on a stabilized or value-add asset and the senior lender's counsel has standard intercreditor templates already approved",
+      "Sponsor is sophisticated with entity structuring and comfortable with UCC equity pledge mechanics and related operating agreement restrictions",
+      "Capital provider is a debt fund seeking faster-to-remedy collateral in the event of borrower default, preferring UCC foreclosure over a protracted state court process",
+      "Deal involves a large mixed-use or office asset where second mortgage junior lenders are scarce but mezz capital providers are active",
+      "Recapitalization of an existing stabilized asset where the senior is already in place and only the subordinate tranche needs to be filled"
+    ],
+    "when_b_intro": "Bridge junior debt, structured as a B-note or recorded second mortgage, fits when the sponsor and senior lender are operating within the same lending platform via a whole-loan split, or when a separate junior lender is comfortable with a second-position mortgage lien and the deal does not involve a conduit or agency senior that prohibits junior liens.",
+    "when_b_bullets": [
+      "Senior and junior debt are originated by the same bridge lender as a whole-loan and then split into an A-note and B-note, eliminating intercreditor friction between separate parties",
+      "Asset type is multifamily, industrial, or net-lease where second-mortgage junior lenders are active and comfortable with the state-level foreclosure timeline",
+      "Sponsor prefers a direct real-property lien structure and avoids the entity-level complexity of UCC pledge mechanics and operating agreement restrictions",
+      "Deal is in a lender-friendly foreclosure state where second-position remedy timelines are measured in months, not years, making the slower remedy less of a pricing penalty",
+      "Transaction is a ground-up construction or heavy value-add where the whole-loan structure with a single lender controlling both tranches provides simpler draw administration",
+      "Sponsor is using SBA 504 financing or a structure where the subordinate tranche must be a recorded lien rather than an equity pledge for program compliance"
+    ],
+    "decision_framework": [
+      "The first question is not pricing, it is what your senior lender will permit. A conduit CMBS lender or an agency program will flatly reject a recorded second mortgage but will often consent to mezzanine debt subject to an intercreditor agreement they have pre-approved. A bridge lender originating a whole loan can split it internally into an A-note and B-note without any intercreditor friction at all, because the same entity holds both pieces. Knowing your senior lender's constraints before you approach junior capital providers saves weeks of wasted outreach.",
+      "Intercreditor negotiation is the most underestimated variable in mezz deal timelines. A standard intercreditor agreement governs the mezz lender's cure rights (how long the mezz lender has to cure a senior default before the senior can accelerate), the standstill period (how long the mezz lender must wait before exercising its own remedies), and the purchase option (the mezz lender's right to acquire the senior loan at par). Negotiating a non-standard intercreditor from scratch between two parties who have not worked together before can add 30 to 45 days to close. If speed matters, ask whether the senior lender has an approved intercreditor form before engaging a mezz provider.",
+      "Pricing between the two structures is comparable but not identical, and the spread reflects the remedy differential. Mezzanine lenders accept a UCC foreclosure path that is faster in theory but can be contested if the borrower challenges the pledge. Bridge junior lenders accept a slower second-mortgage foreclosure path, which they price slightly tighter (10 to 14 percent versus 11 to 15 percent for mezz) because the direct real-property collateral is more familiar to capital markets investors and easier to model in a workout scenario. On deals where both structures are available, the 50 to 100 basis point pricing difference between mezz and a B-note may matter less than the operational simplicity of a same-lender whole-loan split.",
+      "Preferred equity is the third path, and sponsors should understand where it sits relative to mezz and B-notes before ruling it out. Preferred equity is not debt at all; it is an equity investment in the property-owning entity that carries a preferred return (typically 12 to 16 percent) and a promoted interest or redemption right. It does not require a mortgage lien or a UCC pledge and does not trigger intercreditor requirements in the same way. However, preferred equity investors have fewer legal protections than secured lenders in a default scenario, and their remedy path (forcing a sale or buyout of their interest) is governed by the operating agreement rather than by foreclosure law. Preferred equity is most common when both mezz and B-note structures are blocked by the senior lender's restrictions, or when the sponsor wants to avoid the debt-service load of a high-coupon subordinate loan on an asset with thin current cash flow."
+    ],
+    "real_deal_example": "On a 210-unit value-add multifamily acquisition in a major West Coast market, the sponsor needed a 78 percent loan-to-cost capital stack. A regional debt fund provided a senior bridge loan at 65 percent LTC. The gap was filled with a B-note originated by the same debt fund and structured as a whole-loan split, with the senior A-note at 65 percent LTC priced at SOFR plus 275 and the B-note covering the 65 to 78 percent band priced at a fixed 12.5 percent. Because the same lender held both tranches, there was no intercreditor negotiation, and the transaction closed in 31 days. The sponsor initially explored a separate mezz provider but the whole-loan B-note path saved an estimated three to four weeks and roughly 50 basis points in all-in cost, because the single-lender structure eliminated the mezz provider's intercreditor risk premium.",
+    "expert_quote": "Most sponsors see mezz and B-notes as interchangeable gap-fillers. They are not. The collateral, the remedy, and the intercreditor mechanics are different products entirely. The right answer is usually determined by what your senior lender will allow, not by which coupon is 50 basis points tighter on a term sheet.",
+    "faqs": [
+      {
+        "q": "What is the difference between mezzanine debt and a B-note in commercial real estate?",
+        "a": "Mezzanine debt is secured by a pledge of the borrower's equity interests in the property-owning entity, not by a mortgage lien on the real estate itself. A B-note is a recorded second mortgage lien directly on the property. Both are subordinate to the senior loan and fill the gap between senior LTV and total capitalization, but the collateral, foreclosure remedy, and intercreditor mechanics are structurally different."
+      },
+      {
+        "q": "Which is faster to foreclose on: mezzanine debt or a B-note?",
+        "a": "Mezzanine debt forecloses faster in theory. UCC foreclosure on pledged equity interests can run in weeks in most states, compared to second-position mortgage foreclosure on a B-note, which can take 6 to 24 months depending on state law and judicial versus non-judicial process. However, UCC foreclosure can be contested by a borrower, and the intercreditor agreement governing the mezz lender's rights adds procedural steps that slow the practical timeline."
+      },
+      {
+        "q": "Does a senior lender have to approve mezzanine debt or a B-note?",
+        "a": "Yes, in virtually all cases. Senior lenders require consent and typically require an intercreditor agreement before any subordinate capital is placed on the deal. CMBS conduit lenders and agency programs generally prohibit recorded second mortgages but will consent to mezzanine debt governed by an approved intercreditor form. Bridge lenders originating whole loans may hold both tranches internally, avoiding third-party consent entirely."
+      },
+      {
+        "q": "What is an intercreditor agreement and why does it matter for mezz financing?",
+        "a": "An intercreditor agreement is a contract between the senior lender and the mezzanine lender that governs the relative rights of each party in a default scenario. It sets the mezz lender's cure period (time to cure a senior default), standstill period (time before the mezz can exercise its own remedies), and purchase option (the mezz lender's right to buy the senior loan at par). Negotiating a non-standard intercreditor can add 30 to 45 days to close and is the most common source of deal delay in mezz structures."
+      },
+      {
+        "q": "What are current mezzanine debt and B-note rates in 2026?",
+        "a": "As of May 2026, mezzanine debt is pricing in the 11 to 15 percent all-in range depending on leverage, asset type, market, and deal complexity. Bridge junior debt and B-notes are pricing slightly tighter, in the 10 to 14 percent range, because the direct real-property collateral carries less structural risk premium for capital providers. Both tranches are typically floating-rate on bridge deals and fixed on longer-term perm structures."
+      },
+      {
+        "q": "What is a whole-loan structure and how does it relate to B-notes?",
+        "a": "A whole-loan structure is when a single lender originates the full loan at 75 to 80 percent LTV and then bifurcates it internally into a senior A-note and a subordinate B-note, retaining or selling each piece separately. Because the same entity originates both tranches, there is no third-party intercreditor negotiation, which simplifies the process and often accelerates close by three to four weeks compared to a separate mezz provider requiring its own intercreditor."
+      },
+      {
+        "q": "When should a sponsor consider preferred equity instead of mezzanine or a B-note?",
+        "a": "Preferred equity is the right path when both mezzanine and B-note structures are blocked by the senior lender's restrictions, or when the asset's current cash flow is too thin to service a high-coupon subordinate debt obligation. Preferred equity carries no fixed debt-service requirement, only a preferred return accrued to redemption. The tradeoff is weaker legal protection for the investor compared to a secured lender, and a higher implied cost of capital in the 12 to 16 percent range."
+      },
+      {
+        "q": "Which asset types are best suited to mezzanine debt versus B-notes?",
+        "a": "Mezzanine debt is most common on larger office, mixed-use, hospitality, and CMBS-financed deals where the senior lender prohibits junior liens. B-notes are more common on multifamily, industrial, and net-lease assets financed through bridge lenders using whole-loan structures. Ground-up construction deals often use whole-loan B-note structures because a single lender controlling both tranches simplifies the construction draw process compared to a separate mezz lender requiring intercreditor consent at each draw."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans (Hub)",
+        "sub": "Senior and whole-loan bridge financing for transitional assets"
+      },
+      {
+        "href": "financing/hard-money-loans.html",
+        "title": "Hard Money Loans",
+        "sub": "Short-term private capital including subordinate positions"
+      },
+      {
+        "href": "financing/dscr-loans.html",
+        "title": "DSCR Loans",
+        "sub": "Cash-flow based permanent financing for stabilized assets"
+      },
+      {
+        "href": "financing/dscr-loans-rates.html",
+        "title": "DSCR Loan Rates",
+        "sub": "Current rate ranges across property types and leverage bands"
+      },
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "Full capital stack options for apartment acquisitions and refinances"
+      }
+    ]
+  },
+  {
+    "slug": "agency-forward-commitment-vs-direct-construction",
+    "short_title": "Agency Forward Commitment vs Direct Construction-to-Perm",
+    "h1": "Agency Forward Commitment vs Direct Construction-to-Perm for Multifamily Development",
+    "name_a": "Agency Forward Commitment (Fannie Mae / Freddie Mac)",
+    "name_b": "Direct Construction-to-Permanent",
+    "published": "2026-05-28",
+    "seo": {
+      "title": "Agency Forward Commitment vs Construction-to-Perm | CLS CRE",
+      "meta_description": "Side-by-side comparison of agency forward commitments and direct construction-to-perm loans for multifamily development. Rate lock mechanics, leverage, fees, and when each wins."
+    },
+    "lead": "For ground-up multifamily development in the $10M to $100M range, two capital structures dominate: an agency forward commitment from Fannie Mae or Freddie Mac paired with a separate construction loan, versus a direct construction-to-permanent loan from a balance-sheet lender. The agency forward commitment locks the permanent take-out rate and execution at the start of construction, giving the sponsor rate certainty in exchange for a forward-commitment fee and the discipline of an agency underwrite at month zero. Direct construction-to-perm rolls both phases into one loan with one closing, eliminating take-out execution risk but leaving the sponsor exposed to whatever the lender prices the perm conversion at. The decision turns on your rate view, leverage requirements, construction lender appetite, and tolerance for forward fees and SOFR cap exposure. Getting this choice right can mean 25 to 50 basis points on the permanent rate and six to twelve figures of difference in permanent loan proceeds.",
+    "table": [
+      {
+        "feature": "Permanent rate range (May 2026)",
+        "side_a": "5.50 to 6.00 percent fixed, locked at forward commitment issuance",
+        "side_b": "6.00 to 6.75 percent fixed, set at conversion to perm"
+      },
+      {
+        "feature": "Loan size band",
+        "side_a": "$10M to $100M+ (agency conventional forward)",
+        "side_b": "$10M to $75M typical (balance-sheet lender dependent)"
+      },
+      {
+        "feature": "Maximum LTV at stabilization",
+        "side_a": "Up to 80 percent (market-rate, Fannie Mae DUS or Freddie Mac forward)",
+        "side_b": "65 to 75 percent typical at perm conversion; lender discretion"
+      },
+      {
+        "feature": "Minimum DSCR at conversion",
+        "side_a": "1.25x (market-rate, underwritten at commitment issuance on pro forma NOI)",
+        "side_b": "1.20x to 1.30x, tested at actual stabilized NOI at conversion date"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Non-recourse with standard carve-outs on the permanent agency loan",
+        "side_b": "Full recourse during construction, typically non-recourse or partial recourse at perm conversion"
+      },
+      {
+        "feature": "Term structure",
+        "side_a": "12 to 24 month forward window plus 10, 12, or 15 year permanent term",
+        "side_b": "18 to 36 month construction period converting to 5, 7, or 10 year permanent term"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "Up to 30 years on perm; interest-only periods available based on leverage and DSCR",
+        "side_b": "Up to 30 years on perm conversion; IO during construction period standard"
+      },
+      {
+        "feature": "Prepayment on permanent loan",
+        "side_a": "Yield maintenance or declining schedule per agency program; defeasance available under Freddie Mac",
+        "side_b": "Negotiated at origination; step-down schedule or yield maintenance, lender specific"
+      },
+      {
+        "feature": "Forward commitment fee",
+        "side_a": "0.50 to 1.00 percent of permanent loan amount, paid at commitment issuance; partially refundable on some programs",
+        "side_b": "No forward commitment fee; single origination fee of 0.50 to 1.00 percent at closing"
+      },
+      {
+        "feature": "Construction lender relationship",
+        "side_a": "Separate construction lender required; forward commitment de-risks take-out for construction lender, often unlocking higher leverage and lower spread",
+        "side_b": "Same lender holds construction and perm; no separate take-out risk, but lender concentration and single credit approval"
+      },
+      {
+        "feature": "Typical timeline from commitment to first perm draw",
+        "side_a": "30 to 60 days to agency commitment issuance; construction period of 18 to 24 months; perm converts at certificate of occupancy and stabilization",
+        "side_b": "45 to 90 days to initial closing; construction period of 18 to 36 months; conversion at lender-defined stabilization threshold"
+      },
+      {
+        "feature": "Lender ecosystem",
+        "side_a": "Approximately 25 Fannie Mae DUS lenders and 25 Freddie Mac Optigo Seller-Servicers with forward commitment programs",
+        "side_b": "Regional banks, national banks, life insurance companies, and select debt funds with balance-sheet construction-to-perm programs"
+      }
+    ],
+    "when_a_intro": "An agency forward commitment is the right structure when locking the permanent rate and execution at month zero has more value than preserving flexibility. The forward commitment converts construction lender risk into a financing decision rather than a market risk decision, and agency leverage ceilings are frequently higher than what a balance-sheet lender will approve at conversion in a soft leasing market. Sponsors who used agency forwards during the 2022 to 2023 rate cycle locked permanent rates before the Fed tightened and stabilized projects into a pre-committed take-out regardless of market conditions.",
+    "when_a_bullets": [
+      "Sponsor expects rates to rise or remain elevated during the construction window and wants to lock the permanent rate at start of construction",
+      "Deal sizing requires 75 to 80 percent LTV on the permanent loan, which is more reliably available through agency underwriting than through a balance-sheet lender conversion",
+      "Construction lender will provide more aggressive construction financing terms (higher LTC, lower spread) because the agency forward eliminates take-out risk",
+      "Sponsor is building in a market or at a project scale where lining up a qualified permanent lender at conversion would be uncertain or time-consuming",
+      "Pro forma NOI at stabilization is strong enough to support agency underwriting at commitment issuance, and sponsor wants non-recourse permanent debt locked before breaking ground",
+      "Sponsor has a pipeline of development projects and values the operational certainty of a programmatic agency forward relationship for repeat execution"
+    ],
+    "when_b_intro": "Direct construction-to-perm is the right structure when the sponsor values simplicity and single-lender execution over rate certainty, when the project timeline or pro forma is too early-stage for an agency underwrite at month zero, or when the forward-commitment fee and SOFR cap costs would materially reduce project returns. Many regional bank construction-to-perm programs are competitive on all-in cost when the construction period rate is factored alongside the perm conversion spread.",
+    "when_b_bullets": [
+      "Sponsor believes rates will be equal or lower at conversion and does not want to pay a forward-commitment fee to lock current levels",
+      "Project is at an early design or entitlement stage where the agency underwrite cannot be completed with sufficient certainty to support a forward commitment",
+      "Deal size is below $15M, where forward commitment overhead (fee, agency underwrite, two-closing legal costs) erodes the rate advantage relative to a bank construction-to-perm",
+      "Sponsor has a deep relationship with a balance-sheet lender that offers competitive perm conversion pricing and flexible conversion thresholds on occupancy and DSCR",
+      "Project has atypical collateral (mixed-use, ground lease, complex condo conversion component) that fits a balance-sheet underwrite better than an agency program box",
+      "Sponsor is building with an equity partner or institutional co-investor whose fund documents require a single-lender execution for simplicity of loan administration"
+    ],
+    "decision_framework": [
+      "The first decision is a rate view decision, and you should be honest with yourself about what you actually know. Agency forward commitments price off the current agency execution, meaning you are locking a spread over Treasuries today for a permanent loan that will not fund for 18 to 24 months. As of May 2026, 10-year agency permanents for stabilized multifamily are pricing in the 5.50 to 6.00 percent range. If you believe rates will be materially lower at conversion, the forward-commitment fee of 0.50 to 1.00 percent of the permanent loan is a hard cost against an uncertain benefit. If you believe rates will be flat or higher, the forward commitment is cheap insurance. Most sponsors overestimate their ability to forecast rates over a two-year construction window. The forward commitment removes the forecast requirement entirely.",
+      "The second decision is a leverage decision. Agency underwriting for a forward commitment is based on pro forma stabilized NOI, and agencies will lend to 80 percent LTV on qualifying market-rate projects with 1.25x DSCR coverage at projected rents. Balance-sheet lenders converting construction loans to permanent debt test actual stabilized NOI, and in a soft leasing environment or below-projection lease-up, a direct construction-to-perm lender may convert at a lower loan balance than the original commitment. If your development budget is sized around a specific permanent loan repayment, an agency forward commitment that locks the loan amount at a committed underwrite is materially safer than a direct construction-to-perm where the conversion amount floats with actual performance.",
+      "The third decision is a cost stacking decision. Agency forward commitments require two closings (construction loan and agency perm), two sets of legal fees, one forward-commitment fee, and a SOFR interest rate cap on the construction loan for the construction period. Direct construction-to-perm requires one closing, one set of legal fees, and typically no forward-commitment fee. For a $20M permanent loan, the incremental cost of the agency forward structure is roughly $100K to $200K in fees above the direct construction-to-perm alternative. That cost is real and must be weighed against the rate differential. On a $40M permanent loan, the forward commitment fee alone is $200K to $400K. The spread savings of 25 to 50 basis points on the permanent rate typically exceeds that fee over a 10-year term, but not always on shorter terms or in narrow spread environments.",
+      "The fourth decision is a construction lender dynamic. A signed agency forward commitment from Fannie Mae or Freddie Mac is one of the most powerful tools a construction borrower can carry into a construction loan negotiation. The construction lender's primary risk is take-out uncertainty, and an executed agency forward commitment eliminates that risk entirely. In practice, construction lenders respond to agency forwards by offering lower construction spreads, higher LTC, and in some cases, eliminating completion guarantees or reducing recourse. If your construction lender is offering SOFR plus 325 to 375 basis points without an agency forward and SOFR plus 250 to 275 basis points with one, the construction spread savings alone can offset the forward-commitment fee over the construction period, making the agency forward structure net positive on all-in cost before the permanent rate advantage is even counted."
+    ],
+    "real_deal_example": "On a 210-unit Class A ground-up multifamily development in a major Sun Belt metro, a sponsor evaluated both structures for a $52M permanent loan. The agency forward commitment quote locked a 10-year Fannie Mae DUS permanent at 5.72 percent fixed, non-recourse, 75 percent LTV, with a forward-commitment fee of $364K. The direct construction-to-perm quote from a regional bank came in at SOFR plus 265 basis points during construction, converting to a 7-year fixed permanent at the bank's then-current rate, estimated at 6.15 to 6.35 percent depending on conditions at conversion. The sponsor modeled both scenarios over the construction period and 7-year hold. The agency forward delivered roughly $1.1M in interest savings over the permanent term, net of the forward-commitment fee and the incremental legal cost of a second closing. The construction lender also reduced its spread by 40 basis points after the agency forward was executed, adding another $180K of savings during the construction period. The sponsor selected the agency forward structure. The takeaway: the forward-commitment fee is visible and the rate savings are probabilistic, but on a deal of this size with a 7-year or longer hold, the agency forward almost always wins on total cost.",
+    "expert_quote": "A signed agency forward commitment does two things at once: it locks your permanent financing and it becomes the single most effective piece of collateral you can hand a construction lender to improve your construction terms. Sponsors who treat the forward as just a rate lock are leaving the construction loan savings on the table.",
+    "faqs": [
+      {
+        "q": "What is an agency forward commitment for multifamily construction?",
+        "a": "An agency forward commitment is a binding agreement from Fannie Mae or Freddie Mac to provide permanent financing on a multifamily project when it reaches certificate of occupancy and stabilization. The commitment is issued before or at the start of construction, locking the permanent rate, loan amount, and terms. The sponsor pays a forward-commitment fee, typically 0.50 to 1.00 percent of the permanent loan amount, at issuance."
+      },
+      {
+        "q": "How does the rate get locked on an agency forward commitment?",
+        "a": "The agency forward commitment locks a spread over a Treasury index at the time of commitment issuance, fixing the permanent rate for the life of the construction period. The rate applies when the loan converts to permanent at certificate of occupancy and stabilization, regardless of where Treasury rates are at that time. This eliminates permanent rate risk for the sponsor during the entire construction window."
+      },
+      {
+        "q": "What are the main costs of an agency forward commitment versus direct construction-to-perm?",
+        "a": "Agency forward structures carry a forward-commitment fee of 0.50 to 1.00 percent of the permanent loan, plus two sets of closing costs for the construction loan and the agency perm. Direct construction-to-perm structures have one closing, eliminating the second set of legal and title fees, and no forward-commitment fee. On a $30M permanent loan, the incremental cost of the agency forward structure is typically $150K to $350K before rate savings are counted."
+      },
+      {
+        "q": "Does an agency forward commitment help with the construction loan?",
+        "a": "Yes, materially. Construction lenders cite take-out uncertainty as their primary risk on ground-up multifamily. An executed Fannie Mae or Freddie Mac forward commitment eliminates that uncertainty entirely. In practice, construction lenders respond with lower spreads, often 30 to 60 basis points tighter, higher loan-to-cost, and sometimes reduced recourse or completion guarantee requirements. The construction loan savings can partially or fully offset the forward-commitment fee."
+      },
+      {
+        "q": "What happens if my project does not reach stabilization before the forward commitment expires?",
+        "a": "Agency forward commitments include a defined delivery window, typically 12 to 24 months from commitment issuance. If the project is not at certificate of occupancy and the agency-defined stabilization threshold by the expiration date, the sponsor must negotiate an extension with the agency lender, usually for an extension fee. Repeated delays can result in commitment expiration, in which case the sponsor loses the forward-commitment fee and must seek new permanent financing at current market terms."
+      },
+      {
+        "q": "How does leverage compare between agency forward commitment and direct construction-to-perm?",
+        "a": "Agency forward commitments underwrite permanent loan proceeds to pro forma stabilized NOI at the time of commitment issuance, allowing up to 80 percent LTV on qualifying market-rate projects with 1.25x DSCR. Direct construction-to-perm lenders test actual stabilized NOI at conversion, capping permanent proceeds at 65 to 75 percent LTV in most programs. In a soft leasing environment where actual NOI comes in below pro forma, the agency forward typically delivers more permanent loan proceeds."
+      },
+      {
+        "q": "Can a sponsor use a direct construction-to-perm loan and then refinance into agency debt at stabilization?",
+        "a": "Yes. Some sponsors use a direct construction-to-perm loan to simplify the construction phase, then refinance the perm into a Fannie Mae or Freddie Mac loan once the property is stabilized and qualifies for agency underwriting. This approach preserves flexibility but adds a third transaction, a stabilized agency refinance, with its own closing costs, prepayment exposure on the construction-to-perm loan, and execution timing risk at stabilization."
+      },
+      {
+        "q": "Which structure is better for smaller multifamily development projects?",
+        "a": "For projects under $15M in permanent loan size, direct construction-to-perm is often more cost-efficient. The overhead of two closings, a forward-commitment fee, and agency underwriting at month zero is harder to justify when the permanent loan amount is small. Agency forward commitments deliver their greatest cost advantage on permanent loans of $20M and above, where the rate savings over a 10-year term exceed the fee and dual-closing costs by a meaningful margin."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans",
+        "sub": "Short-term transitional financing for multifamily and commercial assets"
+      },
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "All capital sources for apartment and multifamily loans"
+      },
+      {
+        "href": "financing/agency-loans.html",
+        "title": "Agency Loans (Hub)",
+        "sub": "Fannie Mae and Freddie Mac multifamily permanent programs"
+      },
+      {
+        "href": "financing/hard-money-loans.html",
+        "title": "Hard Money Construction Loans",
+        "sub": "Non-bank construction financing for ground-up development"
+      },
+      {
+        "href": "financing/dscr-loans.html",
+        "title": "DSCR Loans",
+        "sub": "Debt-service coverage ratio loan programs for stabilized assets"
+      },
+      {
+        "href": "financing/dscr-loans-rates.html",
+        "title": "DSCR Loan Rates",
+        "sub": "Current rate ranges and program terms for DSCR financing"
+      }
+    ]
+  },
+  {
+    "slug": "multifamily-vs-mixed-use-financing",
+    "short_title": "Multifamily vs Mixed-Use Financing",
+    "h1": "Multifamily vs Mixed-Use Financing: How Ground-Floor Retail Changes the Capital Stack",
+    "name_a": "Pure Multifamily Financing",
+    "name_b": "Mixed-Use (Multifamily + Ground-Floor Retail) Financing",
+    "published": "2026-05-28",
+    "seo": {
+      "title": "Multifamily vs Mixed-Use Financing Compared | CLS CRE",
+      "meta_description": "Side-by-side comparison of pure multifamily and mixed-use financing. Agency eligibility, CMBS, rate differences, and how retail concentration changes your capital stack."
+    },
+    "lead": "A mid-rise apartment building with 4,000 square feet of ground-floor retail looks like a multifamily deal with a retail amenity. From a capital markets perspective, it is a fundamentally different asset that gets underwritten by a different lender pool under different leverage, rate, and structural rules. Agency lenders, Fannie Mae DUS and Freddie Mac Optigo, apply hard limits on non-residential income and square footage, typically capping commercial concentration at 20 to 25 percent of gross income or net rentable area. Exceed that threshold and the deal loses agency eligibility and must execute as CMBS, a life company program, or bank balance-sheet financing, each of which prices retail risk into the coupon and may impose recourse on the commercial component. The decision turns on four variables: the commercial income percentage relative to the agency cap, the credit quality of retail tenants, the submarket's retail fundamentals, and the sponsor's appetite for recourse. Getting the structure wrong costs 50 to 100 basis points on rate and can eliminate the most competitive lender pools entirely.",
+    "table": [
+      {
+        "feature": "Rate range (Apr 2026)",
+        "side_a": "5.55 to 6.10 percent (agency 10-year fixed)",
+        "side_b": "6.00 to 7.25 percent (CMBS or bank, depending on retail concentration)"
+      },
+      {
+        "feature": "Loan size band",
+        "side_a": "$1M to $100M+ (agency conventional); $1M to $9M (small balance)",
+        "side_b": "$3M to $100M+ (CMBS); $2M to $50M (bank balance-sheet)"
+      },
+      {
+        "feature": "Maximum LTV",
+        "side_a": "80 percent (market-rate stabilized, agency)",
+        "side_b": "65 to 75 percent (CMBS); 60 to 70 percent (bank) on mixed-use"
+      },
+      {
+        "feature": "Minimum DSCR",
+        "side_a": "1.25x (agency, market-rate, major MSA)",
+        "side_b": "1.30x to 1.40x (CMBS retail haircut applied); 1.25x to 1.35x (bank)"
+      },
+      {
+        "feature": "Commercial income concentration limit",
+        "side_a": "20 to 25 percent of gross income or NRA (hard agency cap; above this, not agency-eligible)",
+        "side_b": "Up to 35 to 40 percent commercial concentration (CMBS); no hard cap on bank balance-sheet"
+      },
+      {
+        "feature": "Recourse",
+        "side_a": "Non-recourse with standard carve-outs",
+        "side_b": "Non-recourse (CMBS conduit); partial or full recourse on retail component common in bank execution"
+      },
+      {
+        "feature": "Term options",
+        "side_a": "5, 7, 10, 12, 15, 30 years (agency)",
+        "side_b": "5 and 10 years most common (CMBS conduit); 3 to 10 years (bank)"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "Up to 30 years; interest-only available at lower leverage",
+        "side_b": "25 to 30 years (CMBS); 25 years typical on bank; IO limited to strong credit-tenant stories"
+      },
+      {
+        "feature": "Prepayment",
+        "side_a": "Yield maintenance or declining step-down schedule (agency)",
+        "side_b": "Defeasance or yield maintenance (CMBS conduit); open prepay after lockout or step-down (bank)"
+      },
+      {
+        "feature": "Retail tenant underwriting",
+        "side_a": "Not applicable; any de minimis retail is subordinated in the residential income stack",
+        "side_b": "Credit-tenant leases underwritten at full contract rent; mom-and-pop retail may be haircut 10 to 20 percent or vacancy-adjusted"
+      },
+      {
+        "feature": "Documentation and complexity",
+        "side_a": "Standard residential rent roll, T-12 operating statement, agency forms",
+        "side_b": "Dual underwriting: residential rent roll plus commercial rent roll, lease abstracts, tenant estoppels, co-tenancy clause review"
+      },
+      {
+        "feature": "Typical close timeline",
+        "side_a": "45 to 75 days (agency conventional); 30 to 50 days (small balance)",
+        "side_b": "75 to 105 days (CMBS conduit); 60 to 90 days (bank balance-sheet)"
+      }
+    ],
+    "when_a_intro": "Pure multifamily financing, specifically agency execution through Fannie Mae DUS or Freddie Mac Optigo, is the right structure when the commercial component of the asset is small enough to stay inside the program eligibility box. Agency rates, leverage, and non-recourse terms are the best available in the market for stabilized apartments and are worth structuring toward when the deal allows it.",
+    "when_a_bullets": [
+      "Commercial income is below 20 percent of gross income and commercial NRA is below 20 to 25 percent of total NRA, keeping the deal inside agency eligibility thresholds",
+      "Ground-floor retail is month-to-month or occupied by the property owner for building services, which can be excluded from the commercial income calculation under agency guidelines",
+      "Sponsor is engineering the pro forma to subordinate retail income and qualify the deal as primarily residential, a legitimate and commonly used structuring strategy when retail income is borderline",
+      "Property is in a major or Tier 1 MSA where agency competition between DUS and Optigo lenders produces tight execution and sponsors can run both programs simultaneously",
+      "Sponsor requires non-recourse financing on the full asset and wants to avoid the partial recourse carve-outs that bank balance-sheet lenders often impose on the retail piece",
+      "Loan size is under $9M and speed matters, where agency small-balance execution under 50 days is materially faster than CMBS conduit timelines"
+    ],
+    "when_b_intro": "Mixed-use financing through CMBS, a life company program, or bank balance-sheet lending becomes necessary when the commercial component is too large or too prominent to fit inside the agency box, or when the retail tenancy includes national credit names that actually improve the underwriting story and justify a non-agency execution.",
+    "when_b_bullets": [
+      "Commercial income exceeds 20 to 25 percent of gross income or NRA, making the deal ineligible for Fannie Mae DUS or Freddie Mac Optigo regardless of the residential quality",
+      "Ground-floor retail is anchored by one or more national credit tenants with long-term leases, where the commercial component adds genuine value that CMBS or a life company will credit at higher leverage than the residential component alone would support",
+      "Urban infill location where ground-floor retail is an integral part of the asset's value proposition and where CMBS conduit lenders are familiar with the mixed-use subtype and price it competitively",
+      "Sponsor wants a single non-recourse loan on the whole asset and the CMBS conduit structure, which is non-recourse by design, is preferable to a bank balance-sheet loan that imposes recourse on the retail component",
+      "Life company execution is available when the retail tenant lineup is predominantly national credit, long WALT (weighted average lease term), and the property is in a primary or major secondary market where life co programs are active",
+      "Bank balance-sheet lending is the right tool when flexibility on structure matters more than rate, for instance when the retail space is being repositioned and the sponsor needs a forward commitment or lease-up holdback that CMBS conduit cannot accommodate"
+    ],
+    "decision_framework": [
+      "The first decision is binary: does the deal stay inside the agency commercial concentration cap or does it cross the line? Run the math before engaging lenders. Calculate commercial income as a percentage of gross potential income (residential market rents plus retail contract rents) and commercial NRA as a percentage of total net rentable area. If both numbers are under 20 percent, you are likely agency-eligible. If either number is between 20 and 25 percent, you are in the gray zone where lender-by-lender interpretation matters and structuring decisions can swing the outcome. Above 25 percent on income or NRA, plan on non-agency execution. The agency cap is not negotiable at the lender level; it is an agency guideline that DUS and Optigo lenders must enforce to maintain their program status.",
+      "When the deal is in the gray zone, the pro forma structure is the lever. Two legitimate strategies exist. The first is subordinating retail income entirely, meaning the loan is sized and underwritten using only residential net operating income, and the retail income is treated as upside not included in the base case. This approach often keeps the commercial income percentage inside the agency cap and preserves agency eligibility at the cost of loan sizing. The second strategy is to document the retail as ancillary to the residential use, for instance as a fitness studio, leasing office, or building service tenant, categories that some agency lenders treat outside the commercial concentration calculation. Both strategies require early coordination with the agency lender and honest disclosure of the lease structure. Attempting to misrepresent the commercial percentage to an agency lender is a compliance violation, not a structuring strategy.",
+      "When the deal is unambiguously non-agency, the execution choice is between CMBS conduit and bank balance-sheet. CMBS conduit pricing in April 2026 for mixed-use assets with stable residential occupancy and at least one credit-tenant retail lease runs approximately 6.00 to 6.75 percent on a 10-year fixed term with non-recourse structure, defeasance prepay, and 65 to 72 percent LTV. Bank balance-sheet pricing runs 6.50 to 7.25 percent floating or fixed on shorter 3 to 7 year terms with partial or full recourse on the retail component. CMBS wins on rate and recourse. Bank wins on flexibility, particularly for assets with retail vacancy, near-term lease rollover, or lease-up scenarios that CMBS conduit cannot underwrite to. Life company programs are selective but price inside CMBS by 25 to 50 basis points when the deal qualifies, typically requiring national credit retail tenants, 90 percent or higher occupancy across both uses, and primary or major secondary market locations.",
+      "The exit strategy implication of mixed-use financing is underappreciated at origination. A non-agency CMBS loan on a mixed-use asset creates a constraint on future agency recapitalization if the retail component is later downsized or converted. Conversely, an agency loan on a borderline mixed-use asset could be called out of compliance if a new retail tenant expands into additional space and pushes the commercial concentration above the cap mid-term. Both scenarios require active asset management attention. Sponsors should model the property at the 5-year and 10-year horizon under multiple retail occupancy assumptions and confirm that the financing strategy remains consistent with the most likely exit, whether that is a sale to an institutional buyer who will finance conventionally, a refinance into a longer-term fixed-rate product, or a conversion of retail space to residential or amenity use."
+    ],
+    "real_deal_example": "On a 78-unit mixed-use acquisition in a dense urban neighborhood of a major West Coast city, the subject property included 3,800 square feet of ground-floor retail leased to a regional restaurant operator on a 7-year NNN lease. Retail income represented 22 percent of gross income at acquisition, putting the deal in the agency gray zone. We ran the numbers two ways: an agency scenario that subordinated retail income entirely and sized the loan on residential NOI only, and a CMBS scenario that credited the full retail income at a 10 percent vacancy haircut. The agency scenario produced a 72 percent LTV non-recourse loan at 5.82 percent for 10 years with yield maintenance prepay. The CMBS scenario produced a 68 percent LTV non-recourse loan at 6.35 percent for 10 years with defeasance. The agency loan delivered 4 points more leverage and 53 basis points less rate, saving the sponsor approximately $310,000 in interest over the loan term with a higher initial loan proceeds by $490,000. The sponsor chose agency execution and accepted that the retail income was not included in the debt service coverage covenant, which the property covered comfortably on residential income alone. The retail income was genuine upside not baked into the structure.",
+    "expert_quote": "The mistake we see most often on mixed-use deals is sponsors who treat the commercial concentration limit as a negotiating point with the agency lender. It is not. It is a program eligibility rule. The conversation to have is with your broker before the loan application, not with the lender during underwriting.",
+    "faqs": [
+      {
+        "q": "What is the agency commercial concentration limit for mixed-use multifamily?",
+        "a": "Fannie Mae DUS and Freddie Mac Optigo generally cap commercial income at 20 to 25 percent of gross income and commercial net rentable area at a similar percentage of total NRA. Deals exceeding these thresholds are not agency-eligible and must execute through CMBS, a life company program, or bank balance-sheet financing. The exact threshold can vary slightly by lender interpretation, so confirm the calculation methodology with your lender before committing to agency execution."
+      },
+      {
+        "q": "Can I structure a mixed-use deal to stay inside the agency eligibility box?",
+        "a": "Yes, when the commercial component is borderline, two structuring strategies are commonly used. The first is sizing the agency loan on residential NOI only, excluding retail income from the underwriting so commercial concentration stays under the cap. The second is documenting certain ground-floor uses as ancillary amenities rather than commercial tenants, a valid approach for fitness studios or leasing offices. Both require early coordination with the agency lender and accurate lease disclosure."
+      },
+      {
+        "q": "Does CMBS offer non-recourse financing on mixed-use assets?",
+        "a": "Yes. CMBS conduit loans are non-recourse by structure, covering both the residential and commercial components of a mixed-use asset under a single non-recourse instrument with standard bad-act carve-outs. This is a key advantage over bank balance-sheet financing, which frequently requires partial or full recourse on the retail piece. For sponsors who require non-recourse on the whole asset and cannot qualify for agency, CMBS is typically the most competitive option in April 2026."
+      },
+      {
+        "q": "How do lenders underwrite retail tenants in a mixed-use building?",
+        "a": "Underwriting methodology depends on tenant credit. National credit tenants with long-term leases are typically credited at full contract rent with minimal vacancy reserve. Local or mom-and-pop retail tenants are commonly haircut 10 to 20 percent below contract rent and may be underwritten to market rent if the lease is short-term or has near-term rollover. Vacant retail is underwritten at zero unless a signed lease or letter of intent supports stabilized income, which is treated as a forward commitment scenario."
+      },
+      {
+        "q": "What is the rate premium for mixed-use financing over pure multifamily financing?",
+        "a": "As of April 2026, the rate differential between agency multifamily execution and CMBS mixed-use execution is typically 40 to 90 basis points on a 10-year fixed term for stabilized assets. Bank balance-sheet mixed-use financing adds another 50 to 100 basis points above CMBS depending on recourse structure and term. The premium reflects retail income volatility, shorter retail lease terms relative to apartment leases, and the additional underwriting complexity of a dual-use asset."
+      },
+      {
+        "q": "How does retail tenant credit quality affect mixed-use loan terms?",
+        "a": "Credit quality is a primary driver of mixed-use loan pricing and structure. National credit tenants with investment-grade ratings and 10-plus year NNN leases can reduce the retail income haircut, support higher LTV on the commercial component, and make the deal attractive to life company programs that would otherwise pass. Local or single-location tenants introduce rollover risk that CMBS and bank lenders price into the coupon and manage through reserves or holdbacks. Improving your tenant lineup before financing materially changes your capital access."
+      },
+      {
+        "q": "Is a life company a good option for mixed-use financing?",
+        "a": "Life company programs can be the most competitive non-agency option for mixed-use assets when the deal meets their selection criteria: national credit retail tenants, 90 percent or higher stabilized occupancy across both uses, primary or major secondary market location, and loan size above approximately $10M. When eligible, life company pricing typically runs 25 to 50 basis points inside CMBS conduit with non-recourse structure and flexible prepayment terms. The tradeoff is a narrower underwriting box and a more selective approval process."
+      },
+      {
+        "q": "What are the exit strategy implications of mixed-use versus pure multifamily financing?",
+        "a": "Pure multifamily agency loans are the most liquid at exit because the asset and loan both conform to a buyer pool that has deep and efficient agency refinancing access. Mixed-use CMBS loans are assumable, which supports institutional buyer acquisition financing, but limit future recapitalization to non-agency execution unless the retail component is subsequently reduced below agency thresholds. Sponsors planning to sell to a 1031 exchange buyer or a REIT should confirm at origination that the mixed-use financing structure is compatible with the most likely buyer's financing strategy."
+      }
+    ],
+    "related_links": [
+      {
+        "href": "property/multifamily.html",
+        "title": "Multifamily Financing",
+        "sub": "All capital sources for apartment loans"
+      },
+      {
+        "href": "financing/bridge-loans.html",
+        "title": "Bridge Loans",
+        "sub": "Short-term financing for mixed-use value-add and lease-up"
+      },
+      {
+        "href": "financing/cmbs-loans.html",
+        "title": "CMBS Loans",
+        "sub": "Conduit execution for mixed-use and commercial assets"
+      },
+      {
+        "href": "financing/dscr-loans.html",
+        "title": "DSCR Loans",
+        "sub": "Debt-service coverage ratio programs for income properties"
+      },
+      {
+        "href": "financing/hard-money-loans.html",
+        "title": "Hard Money Loans",
+        "sub": "Fast-close bridge capital for transitional mixed-use"
+      },
+      {
+        "href": "financing/dscr-loans-rates.html",
+        "title": "DSCR Loan Rates",
+        "sub": "Current rate benchmarks for income property financing"
+      }
+    ]
   }
 ]
