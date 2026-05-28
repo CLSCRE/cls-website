@@ -33,6 +33,24 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BATCH_SIZE: ${{ github.event.inputs.batch_size || '3' }}
 
+      - name: Content quality smoke test (pre-push gate)
+        run: |
+          # Closes audit anti-pattern #12. Fail the workflow if the
+          # generator produced HTML with unresolved Jinja, placeholder
+          # literals, empty titles, or other catastrophic rendering bugs.
+          # Warnings (dashes, multi-H1, FAQ-schema mismatches) are logged
+          # but do not block. The script is in the PARENT repo (the SEO
+          # Programmatic engine), so we fetch the latest version inline.
+          # If the fetch fails (private repo / network), we log and skip
+          # rather than block the workflow — the goal is defense in depth,
+          # not a hard dependency on the parent repo.
+          if curl -fsSL https://raw.githubusercontent.com/CLSCRE/social-media-engine/main/scripts/content_quality_check.py -o /tmp/content_quality_check.py; then
+            python /tmp/content_quality_check.py --website-root "$(pwd)" --max-issues 50
+          else
+            echo "WARN: could not fetch quality check script from parent repo, skipping"
+            exit 0
+          fi
+
       - name: Commit and push generated content
         run: |
           git config user.email "bot@clscre.com"
