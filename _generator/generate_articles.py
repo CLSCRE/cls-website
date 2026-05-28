@@ -164,6 +164,9 @@ LOAN_TYPES_MAP = [
     ("hud-fha-loans", "hud"),
     ("cmbs-loans", "cmbs"),
     ("life-company-loans", "life-company"),
+    # 2026-05-28: bridge-to-perm uses bridge underwriting context (FAQs etc.)
+    # but renders under its own distinct loan name + URL family.
+    ("bridge-to-perm-loans", "bridge"),
 ]
 
 # Close-time phrasing per loan_key (used in blog-article FAQ builder)
@@ -195,6 +198,11 @@ PROP_TYPES_MAP = [
     ("office", "office"),
     ("mixed-use", "mixed_use"),
     ("hospitality", "hospitality"),
+    # 2026-05-28: MHC is underwritten as multifamily by agencies; parking
+    # most often appears as part of mixed-use buildings. Alias stats keys
+    # to those existing fields in article_city_data.json.
+    ("manufactured-housing", "multifamily"),
+    ("parking", "mixed_use"),
 ]
 
 # Type C: 90 City × Property Type Guides (6 property types × 15 cities each)
