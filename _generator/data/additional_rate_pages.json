@@ -1,0 +1,1347 @@
+[
+  {
+    "slug": "bridge-to-perm-loan-rates",
+    "title": "Bridge-to-Perm Loan Rates 2026: Current Rates, Terms, and What Lenders Are Pricing",
+    "meta": "Bridge-to-perm loan rates in 2026 range from 7.00% to 10.50% floating during construction, then 5.50% to 7.25% fixed at conversion. See rate tables, drivers, and program mechanics.",
+    "h1": "Bridge-to-Perm Loan Rates 2026",
+    "h2_intro": "Two-Phase Pricing Explained for Borrowers",
+    "rate_range": "Construction/bridge 7.00% to 10.50% floating, permanent 5.50% to 7.25% locked at close",
+    "rate_type": "Floating SOFR-based during construction or bridge phase, fixed rate locked at origination for the permanent phase",
+    "term": "Construction/bridge phase 12 to 36 months, permanent phase 5 to 30 years",
+    "typical_ltv": "65% to 75% of stabilized value on the permanent commitment, 55% to 70% on the construction facility",
+    "amortization": "Interest only during the bridge or construction phase, amortizing (typically 25 to 30 years) or interest only available on the permanent phase depending on program",
+    "hub_url": "bridge-to-perm-loans.html",
+    "hub_name": "Bridge-to-Perm Loans",
+    "intro": "Bridge-to-perm loan rates in May 2026 carry two distinct pricing components: a floating construction or bridge rate of 7.00% to 10.50% (SOFR plus 250 to 400 basis points) during the build or stabilization period, and a permanent rate of 5.50% to 7.25% that is locked at origination and activates at conversion. The core borrower benefit is eliminating refinance risk by securing the permanent take-out before construction begins, even as the floating bridge rate fluctuates with SOFR over the intervening months. Forward commitments are available through Fannie Mae, Freddie Mac, life companies, and regional banks, with pricing on each phase reflecting the respective risk profile of that component.",
+    "rate_table": [
+      {
+        "tier": "Bridge Phase, Conservative (55% to 60% LTC)",
+        "rate": "7.00% to 8.25%",
+        "note": "Lower leverage construction or bridge draw facility, strong sponsorship"
+      },
+      {
+        "tier": "Bridge Phase, Standard (65% to 70% LTC)",
+        "rate": "8.25% to 9.50%",
+        "note": "Most common range for multifamily and mixed-use construction bridge"
+      },
+      {
+        "tier": "Bridge Phase, Higher Leverage (70% to 75% LTC)",
+        "rate": "9.50% to 10.50%",
+        "note": "Requires strong market, experienced sponsor, and solid permanent commitment"
+      },
+      {
+        "tier": "Permanent Phase, Agency Forward (Fannie Mae or Freddie Mac)",
+        "rate": "5.50% to 6.25%",
+        "note": "Rate locked at origination, activates upon stabilization and conversion"
+      },
+      {
+        "tier": "Permanent Phase, Life Company or Bank",
+        "rate": "6.00% to 7.25%",
+        "note": "Balance sheet permanent commitment, fixed for 5 to 15 years at conversion"
+      }
+    ],
+    "drivers": [
+      [
+        "Forward Commitment Rate Lock Mechanics",
+        "The permanent rate is locked at origination, not at conversion. That lock premium is priced into the permanent spread at close, typically 15 to 40 basis points above a spot permanent loan, reflecting the lender's interest rate risk over the construction window. The longer the construction period, the wider the forward commitment premium."
+      ],
+      [
+        "SOFR Benchmark During the Bridge Phase",
+        "The construction or bridge facility floats over 30-day SOFR at a spread of 250 to 400 basis points. When the Fed moves rates, the bridge phase payment adjusts within days. Borrowers can buy interest rate caps on the floating component, which is often required by the permanent lender as a condition of the forward commitment."
+      ],
+      [
+        "Stabilization Risk and Conversion Trigger",
+        "Permanent lenders set specific conversion triggers, typically a debt service coverage ratio of 1.20x to 1.25x and occupancy of 90% to 93% for 90 days. Deals where the stabilization underwriting is aggressive, thin market absorption, or lease-up timelines are extended will price wider on both phases because conversion risk is higher."
+      ],
+      [
+        "Property Type and Permanent Lender Program",
+        "Multifamily projects with a Fannie Mae or Freddie Mac forward commitment achieve the tightest permanent spreads because agency pricing is transparent and the commitment is highly reliable. Mixed-use, industrial, or retail projects relying on life company or bank balance sheet commitments carry wider permanent spreads and more negotiated conversion conditions."
+      ],
+      [
+        "Sponsorship, Guaranty Structure, and Track Record",
+        "Most bridge-to-perm lenders require a completion guaranty and often a repayment guaranty through conversion. Sponsors with a demonstrable history of delivering projects on time and within budget can negotiate recourse burn-off provisions and tighter bridge spreads, sometimes 50 to 75 basis points below first-time developer pricing."
+      ],
+      [
+        "Construction Cost Certainty and Contractor Credentials",
+        "Lenders underwriting the construction phase price in cost overrun and schedule risk. Projects with a fixed-price contract from a bonded general contractor, funded contingency reserves of 5% to 10% of hard costs, and a completed set of plans and permits will price meaningfully tighter than projects still in pre-construction."
+      ],
+      [
+        "Loan Size and Market Liquidity",
+        "Loan sizes below $5 million have fewer competitive forward commitment sources, which can widen permanent spreads by 25 to 50 basis points relative to larger loans where multiple lender types actively compete. Primary markets with deep agency execution (Los Angeles, Dallas, Miami) price tighter than tertiary markets with limited permanent lender appetite."
+      ]
+    ],
+    "comparisons": [
+      [
+        "Standalone Construction Loan plus Separate Permanent Refinance",
+        "Bridge phase 7.50% to 11.00%, permanent refinance at market rate at completion",
+        "Standalone construction gives flexibility to shop the permanent loan at stabilization but exposes the borrower to rate risk and refinance execution risk at the worst possible time, when the project is newly stabilized and capital markets may have moved. Bridge-to-perm eliminates that risk by locking the permanent rate now, at the cost of a modest forward commitment premium."
+      ],
+      [
+        "Standalone Bridge Loan",
+        "7.50% to 11.50% floating",
+        "A standalone bridge loan carries no forward commitment and leaves the borrower to arrange permanent financing at stabilization. Pricing on the bridge itself is similar, but the borrower absorbs all refinance risk. Bridge-to-perm is the better structure when interest rate visibility matters more than flexibility."
+      ],
+      [
+        "Agency Permanent Loan (Fannie Mae or Freddie Mac)",
+        "5.50% to 6.50%",
+        "Agency permanent loans require existing stabilization, typically 90% occupancy for 90 days. They cannot fund construction or lease-up. Bridge-to-perm uses the same agency programs as the permanent phase but adds the construction facility upfront, making it the path to agency execution for projects not yet stabilized."
+      ],
+      [
+        "HUD or FHA Construction to Permanent (221(d)(4))",
+        "5.25% to 6.00% all-in, fixed for 40 years",
+        "HUD 221(d)(4) offers the lowest long-term fixed rate available for multifamily construction and is a single-close structure similar to bridge-to-perm. The tradeoff is timeline, typically 12 to 18 months to close, Davis-Bacon prevailing wage requirements, and significant compliance overhead. Bridge-to-perm closes faster and works for asset types HUD does not finance."
+      ],
+      [
+        "DSCR Permanent Loan",
+        "6.50% to 9.00%",
+        "DSCR loans require a fully stabilized, income-producing property and cannot accommodate construction or lease-up phases. They are a take-out option after stabilization but are not a construction vehicle. Bridge-to-perm is appropriate when the asset needs to be built or stabilized before any permanent financing is possible."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current bridge-to-perm loan rates?",
+        "Bridge-to-perm loan rates in May 2026 have two components. The construction or bridge phase floats at 7.00% to 10.50%, priced at SOFR plus 250 to 400 basis points depending on leverage and sponsorship. The permanent phase rate is locked at origination and ranges from 5.50% to 7.25% depending on the permanent lender program, property type, and loan term selected."
+      ],
+      [
+        "When is the permanent rate locked in a bridge-to-perm loan?",
+        "The permanent rate is locked at origination, before construction begins, not at the time of conversion. This is the defining feature of the program. The borrower receives a forward commitment from the permanent lender specifying the rate, term, and conversion conditions at the same time the construction facility closes. A modest forward commitment premium of 15 to 40 basis points is typically embedded in the permanent rate to compensate the lender for holding that rate lock through the construction period."
+      ],
+      [
+        "What triggers conversion from the bridge phase to the permanent phase?",
+        "Conversion is triggered when the property meets the permanent lender's stabilization tests, which typically include minimum occupancy of 90% to 93% held for 60 to 90 consecutive days, a debt service coverage ratio of 1.20x to 1.25x based on actual income, and completion of all construction as verified by an independent inspector. Missing a conversion trigger can result in extension fees or, in worst cases, a maturity default on the bridge facility."
+      ],
+      [
+        "Is an interest rate cap required on the bridge phase?",
+        "Most permanent lenders issuing forward commitments require the borrower to purchase an interest rate cap on the floating bridge facility. The cap protects both the borrower's carry cost and the permanent lender's underwriting assumptions during the construction period. Cap strike rates are typically set 100 to 200 basis points above the SOFR index at origination, and the cap must remain in force through the conversion date."
+      ],
+      [
+        "What property types qualify for bridge-to-perm financing?",
+        "Multifamily is the most common property type because Fannie Mae and Freddie Mac offer standardized forward commitment programs for it. Mixed-use projects with a significant residential component also qualify. Life companies and regional banks provide forward commitments for industrial, self-storage, and select retail or office projects, though pricing is wider and underwriting is more negotiated for non-multifamily assets."
+      ],
+      [
+        "How does bridge-to-perm compare to HUD 221(d)(4) for multifamily construction?",
+        "HUD 221(d)(4) is also a single-close construction-to-permanent program and typically offers the lowest long-term fixed rate, around 5.25% to 6.00%, amortizing over 40 years. Bridge-to-perm closes in 60 to 90 days versus 12 to 18 months for HUD, has no Davis-Bacon wage requirements, and works for property types HUD does not finance. Borrowers who can meet HUD requirements and tolerate the timeline often prefer it for the rate, but bridge-to-perm wins on speed and flexibility."
+      ],
+      [
+        "What is a typical loan-to-cost for the construction phase of a bridge-to-perm loan?",
+        "Construction phase loan-to-cost typically ranges from 55% to 75% of total project cost, including land, hard costs, soft costs, and interest reserves. The permanent forward commitment is sized to a loan-to-value of 65% to 75% of stabilized appraised value. If the stabilized LTV is lower than the construction LTC, the borrower may need to pay down the loan at conversion, so pro forma underwriting of both phases must align from the start."
+      ]
+    ]
+  },
+  {
+    "slug": "agency-loan-rates",
+    "title": "Agency Multifamily Loan Rates 2026: Current Rates, Terms, and Pricing Mechanics",
+    "meta": "Agency multifamily loan rates range from 5.50% to 6.50% in 2026. See Fannie Mae DUS and Freddie Mac Optigo rate tiers, spread drivers, and how Tier pricing affects your all-in cost.",
+    "h1": "Agency Multifamily Loan Rates 2026 (Fannie Mae DUS & Freddie Mac Optigo)",
+    "h2_intro": "What Stabilized Multifamily Is Pricing At",
+    "rate_range": "5.50% to 6.50%",
+    "rate_type": "Fixed rate, priced as 10-year Treasury plus a lender spread (Tier 1 through Tier 4)",
+    "term": "5 to 30 years, with 10-year fixed being the dominant execution",
+    "typical_ltv": "65% to 80% of stabilized value",
+    "amortization": "30-year amortization standard, with full-term or partial interest-only periods available on qualified deals",
+    "hub_url": "agency-loans.html",
+    "hub_name": "Agency Loans (Fannie Mae & Freddie Mac)",
+    "intro": "Agency multifamily loan rates in May 2026 range from 5.50% to 6.50% for a standard 10-year fixed conventional execution, priced as the 10-year Treasury yield plus a spread that reflects market tier, DSCR, and loan size. Fannie Mae DUS and Freddie Mac Optigo remain the lowest all-in cost permanent execution available for stabilized multifamily, with non-recourse structure, 30-year amortization, and optional interest-only periods unavailable in most bank or debt fund products. Small Balance programs (DUS Small Loans and Optigo SBL) serve the $1M to $9M range with expedited underwriting and competitive pricing on the same Treasury-based pricing grid.",
+    "rate_table": [
+      {
+        "tier": "Tier 1 (Top Markets, DSCR 1.35x or above, 65% LTV or below)",
+        "rate": "5.50% to 5.85%",
+        "note": "Best execution, major MSAs, strong cash flow, partial or full IO often available"
+      },
+      {
+        "tier": "Tier 2 (Primary Markets, DSCR 1.25x to 1.35x, LTV 65% to 70%)",
+        "rate": "5.85% to 6.15%",
+        "note": "Most common execution for well-located stabilized assets"
+      },
+      {
+        "tier": "Tier 3 (Secondary Markets or DSCR 1.20x to 1.25x, LTV 70% to 75%)",
+        "rate": "6.15% to 6.40%",
+        "note": "Secondary market assets or moderate leverage with acceptable debt coverage"
+      },
+      {
+        "tier": "Tier 4 (Tertiary Markets or Higher Leverage up to 80% LTV)",
+        "rate": "6.40% to 6.50%",
+        "note": "Maximum agency leverage, limited IO availability, smaller loan amounts relative to NOI"
+      },
+      {
+        "tier": "Small Balance (DUS Small Loans or Optigo SBL, $1M to $9M)",
+        "rate": "5.65% to 6.50%",
+        "note": "Streamlined underwriting, faster close, pricing follows same Treasury-plus-spread grid"
+      }
+    ],
+    "drivers": [
+      [
+        "10-Year Treasury Benchmark",
+        "Agency multifamily spreads are priced over the 10-year Treasury, which means the all-in rate moves with long-end rates, not Fed Funds or SOFR. A 25 basis point move in the 10-year Treasury translates directly into a 25 basis point move in the note rate at rate lock. Borrowers who float-lock early in the application process carry rate risk during the 45 to 90 day underwriting window."
+      ],
+      [
+        "Tier Classification (Market and Property Quality)",
+        "Fannie Mae and Freddie Mac assign loans a Tier from 1 to 4 based on market depth, property quality, occupancy history, and DSCR. Tier 1 receives the tightest lender spread over Treasury, often 140 to 165 basis points. Tier 4 spreads can run 185 to 215 basis points. Moving from Tier 2 to Tier 1 by improving NOI or reducing loan size can save 20 to 30 basis points on the note rate."
+      ],
+      [
+        "Debt Service Coverage Ratio",
+        "DSCR is the primary underwriting threshold that determines maximum loan proceeds and tier eligibility. Conventional agency programs require a minimum 1.20x to 1.25x DSCR depending on market tier, with the best pricing reserved for deals underwriting at 1.35x or above. Each incremental 0.05x improvement in DSCR can unlock a better tier classification and reduce the note rate."
+      ],
+      [
+        "Loan-to-Value Ratio",
+        "Agency programs allow up to 80% LTV for conventional multifamily, but lenders price incrementally wider spreads above 70% LTV as they hold greater loss-given-default risk under the DUS risk-sharing model. Dropping from 75% to 65% LTV can tighten the spread by 15 to 30 basis points in addition to unlocking better tier eligibility."
+      ],
+      [
+        "Interest-Only Period Length",
+        "Full-term IO carries a spread premium of roughly 15 to 25 basis points over a fully amortizing loan at the same LTV and DSCR. Partial IO (2 to 5 years of IO on a 10-year term) carries a smaller premium of 5 to 15 basis points. IO availability is constrained by DSCR tests run on both the IO payment and the fully amortizing payment, so not every deal qualifies."
+      ],
+      [
+        "Loan Size and Small Balance Programs",
+        "Loans below $9M route through the DUS Small Loans or Optigo SBL programs, which use standardized underwriting templates and third-party report requirements that differ from standard DUS. Pricing is competitive with the standard grid, but the spread premium for small balance is typically 10 to 20 basis points relative to a comparable standard loan. Close timelines compress to 30 to 45 days versus 60 to 90 days for standard deals."
+      ],
+      [
+        "Prepayment Structure",
+        "Agency loans are quoted with either yield maintenance or step-down prepayment (e.g., 5-4-3-2-1 on a 10-year term). Yield maintenance protects the lender's spread from early payoff and is the standard structure. Step-down prepayment, which reduces the penalty over time, carries a modest spread premium of 5 to 15 basis points because it shortens the lender's effective duration. The prepayment choice has no effect on qualifying metrics but materially affects exit flexibility."
+      ]
+    ],
+    "comparisons": [
+      [
+        "Bank Permanent Loans",
+        "5.75% to 7.50%",
+        "Bank loans offer recourse or partial recourse structures and may close faster for smaller loans, but they lack the non-recourse protection, 30-year amortization depth, and IO availability of agency execution. Agency wins on cost and terms for any stabilized deal above $1M where non-recourse matters to the sponsor."
+      ],
+      [
+        "Life Company Loans",
+        "5.25% to 6.25%",
+        "Life companies can price inside agency on trophy-quality multifamily in primary markets at 50% to 55% LTV, often at comparable or tighter spreads over Treasury. However, life company programs cap LTV well below agency maximums, have limited appetite outside core markets, and offer far fewer loans per year. Agency is the default choice for anything above 60% LTV or in a secondary market."
+      ],
+      [
+        "CMBS Conduit Loans",
+        "6.00% to 7.25%",
+        "CMBS executes across more property types than agency but prices wider for multifamily because agency programs carry an implicit government backstop that compresses spreads. CMBS offers more flexibility on unusual collateral (student housing, manufactured housing, mixed-use) but lacks the IO availability, non-recourse consistency, and execution speed of agency for standard garden or mid-rise apartments."
+      ],
+      [
+        "Bridge Loans",
+        "7.50% to 11.50%",
+        "Bridge loans are floating-rate, short-term, and sized to current or near-current value for properties that do not yet meet agency occupancy or DSCR thresholds. The typical business plan is to stabilize the asset and then refinance into an agency permanent loan, which is where this rate table becomes relevant. Agency is the target exit, not the entry point, for value-add deals."
+      ],
+      [
+        "HUD or FHA Multifamily Loans (221(d)(4) and 223(f))",
+        "5.00% to 5.75%",
+        "HUD loans price inside agency on a fully amortizing 35-year or 40-year basis and are fully non-recourse, but they require 6 to 18 months to close depending on processing queue and deal complexity. Agency is the preferred execution when speed and certainty of close matter. HUD is used when the lowest possible rate and longest amortization period are the primary objectives and timeline is flexible."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current Fannie Mae and Freddie Mac multifamily loan rates?",
+        "Agency multifamily loan rates in May 2026 range from 5.50% to 6.50% for a 10-year fixed conventional execution. Rates are priced as the 10-year Treasury yield plus a spread of roughly 140 to 215 basis points depending on Tier classification, DSCR, LTV, and loan size. Tier 1 deals in major markets with strong debt coverage price at the tight end of that range."
+      ],
+      [
+        "How is the Tier system used in agency multifamily pricing?",
+        "Agency lenders assign a Tier from 1 to 4 based on market depth, property quality, DSCR, and LTV. Tier 1 reflects the strongest combination of those factors and receives the lowest spread over the 10-year Treasury. Tier 4 applies to tertiary markets, higher leverage, or thinner debt coverage and carries a spread premium of 40 to 50 basis points over Tier 1. The Tier determines both rate and maximum proceeds."
+      ],
+      [
+        "What is the minimum loan size for an agency multifamily loan?",
+        "Fannie Mae DUS and Freddie Mac Optigo standard programs generally start at $1M to $3M depending on the lender. Below $9M, loans route through the Small Balance programs (DUS Small Loans and Optigo SBL), which use streamlined underwriting, fewer third-party reports, and faster timelines of 30 to 45 days. Both programs price on the same Treasury-plus-spread grid as standard agency loans."
+      ],
+      [
+        "Can I get interest only on an agency multifamily loan?",
+        "Yes. Agency programs allow partial or full-term interest-only periods on qualifying deals. Full-term IO on a 10-year loan carries a spread premium of 15 to 25 basis points and requires the deal to pass DSCR tests on both the IO payment and the hypothetical fully amortizing payment. Partial IO of 2 to 5 years carries a smaller premium and is available to a wider range of deals."
+      ],
+      [
+        "Are agency multifamily loans non-recourse?",
+        "Yes. Fannie Mae DUS and Freddie Mac Optigo loans are non-recourse to the borrower, with standard carve-outs for bad acts such as fraud, misrepresentation, and environmental liability. This is one of the primary advantages of agency execution over bank or credit union permanent loans, which typically require full or partial recourse regardless of loan quality."
+      ],
+      [
+        "How long does it take to close an agency multifamily loan?",
+        "Standard agency multifamily loans close in 60 to 90 days from application, driven by third-party report timelines (appraisal, environmental, property condition) and agency underwriting review. Small Balance program loans (below $9M) can close in 30 to 45 days due to abbreviated report requirements. Rate lock is typically available at application or commitment, which determines when Treasury-based rate exposure begins."
+      ],
+      [
+        "What prepayment options are available on agency multifamily loans?",
+        "Agency multifamily loans are typically structured with either yield maintenance or step-down prepayment. Yield maintenance calculates a penalty based on the present value of remaining cash flows at a Treasury benchmark, and it applies for most of the loan term. Step-down prepayment reduces the penalty annually, for example 5-4-3-2-1 on a 10-year loan, and carries a modest spread premium of 5 to 15 basis points for the additional exit flexibility."
+      ]
+    ]
+  },
+  {
+    "slug": "hud-fha-loan-rates",
+    "title": "HUD / FHA Loan Rates 2026: Current Rates, Terms, and Program Mechanics",
+    "meta": "HUD 223(f) rates range from 5.00% to 6.00% and HUD 221(d)(4) from 5.25% to 6.25% in 2026. See rate tables, MIP costs, program comparisons, and timeline realities.",
+    "h1": "HUD / FHA Multifamily and Healthcare Loan Rates 2026",
+    "h2_intro": "What the Market Is Actually Pricing",
+    "rate_range": "5.00% to 6.25% depending on program",
+    "rate_type": "Fixed rate for the full loan term, set at rate lock with FHA-approved lender",
+    "term": "35 years (HUD 223f), 40 years plus construction period (HUD 221d4)",
+    "typical_ltv": "80% to 87% LTV or LTC depending on program and property type",
+    "amortization": "Fully amortizing fixed-rate for the entire loan term, no balloon payment",
+    "hub_url": "hud-fha-loans.html",
+    "hub_name": "HUD / FHA Loans",
+    "intro": "HUD and FHA multifamily loan rates in May 2026 range from 5.00% to 6.00% for stabilized acquisition and refinance under HUD 223(f) and from 5.25% to 6.25% for ground-up construction under HUD 221(d)(4), making these programs among the lowest fixed rates available in commercial real estate. The rate advantage comes bundled with full non-recourse liability, maximum leverage up to 87% LTV on affordable properties, and 35 to 40-year fully amortizing terms with no balloon risk. The tradeoff is a closing timeline of 6 to 12 months and an ongoing Mortgage Insurance Premium that adds 25 to 65 basis points annually to the effective cost of capital.",
+    "rate_table": [
+      {
+        "tier": "HUD 223(f) Stabilized Multifamily Refinance or Acquisition",
+        "rate": "5.00% to 6.00%",
+        "note": "35-year fixed, up to 85% LTV, fully amortizing, non-recourse"
+      },
+      {
+        "tier": "HUD 221(d)(4) Ground-Up Multifamily Construction",
+        "rate": "5.25% to 6.25%",
+        "note": "40-year fixed permanent term plus construction period, up to 85% LTC"
+      },
+      {
+        "tier": "HUD 232 Assisted Living and Nursing Facility",
+        "rate": "5.10% to 6.10%",
+        "note": "Healthcare-specific underwriting, up to 80% LTV, fully amortizing"
+      },
+      {
+        "tier": "HUD 223(a)(7) HUD-to-HUD Streamline Refinance",
+        "rate": "5.00% to 5.75%",
+        "note": "Fastest HUD execution, existing HUD loans only, reduced underwriting"
+      }
+    ],
+    "drivers": [
+      [
+        "10-Year Treasury Benchmark",
+        "HUD and FHA multifamily rates are set at rate lock and priced relative to the 10-year Treasury yield. Lenders typically add a spread of 150 to 225 basis points over the 10-year Treasury. When Treasury yields rise, HUD rates rise with them, and when yields fall, borrowers who have not yet locked are the beneficiaries."
+      ],
+      [
+        "Mortgage Insurance Premium (MIP)",
+        "MIP is charged annually by HUD and adds 25 to 65 basis points to the all-in cost of the loan depending on program and affordability designation. Market-rate properties under HUD 221(d)(4) carry a 65 basis point MIP, while properties with meaningful affordable set-asides can qualify for a 25 basis point MIP, meaningfully improving the effective rate a borrower experiences over the loan term."
+      ],
+      [
+        "Property Type and Program",
+        "HUD 223(f) for stabilized multifamily prices tighter than HUD 221(d)(4) construction because stabilized assets carry lower completion and lease-up risk. HUD 232 for healthcare facilities sits between the two, reflecting the operational complexity of assisted living and skilled nursing underwriting. The 223(a)(7) streamline refinance typically prices at the low end because HUD already knows the asset."
+      ],
+      [
+        "Leverage and Debt Service Coverage",
+        "HUD sets maximum LTV at 85% for market-rate properties and 87% for affordable designations, but lenders will shade rates slightly higher when borrowers push to the ceiling on leverage. A loan at 70% LTV on a well-occupied property with a 1.35 or higher DSCR will clear processing faster and may attract a tighter lender spread than a loan underwritten to the 85% LTV limit."
+      ],
+      [
+        "Affordability and Green Designations",
+        "Properties qualifying under the Green MIP reduction program or carrying Low Income Housing Tax Credit (LIHTC) designations access lower MIP tiers, which directly reduces the all-in effective rate by 25 to 40 basis points. This makes HUD financing particularly compelling for affordable housing sponsors who can access the lowest available MIP bands."
+      ],
+      [
+        "Processing Track and Timeline Risk",
+        "HUD offers an expedited Lean processing track for smaller or straightforward 223(f) applications and a standard track for larger or more complex deals. Standard track processing adds 2 to 4 months to the timeline versus Lean. Lenders price rate lock fee risk differently depending on which track applies, and borrowers should underwrite rate lock extension costs into their deal economics."
+      ]
+    ],
+    "comparisons": [
+      [
+        "Agency Loans (Fannie Mae or Freddie Mac)",
+        "5.50% to 7.00%",
+        "Agency loans close in 45 to 90 days versus 6 to 12 months for HUD, and offer more flexible prepayment and partial release structures. HUD wins on maximum term (35 to 40 years versus 30 years), higher leverage on affordable product, and full non-recourse without carve-out exposure. For market-rate stabilized multifamily where speed and prepayment flexibility matter, agency is often preferred."
+      ],
+      [
+        "Life Company Loans",
+        "5.25% to 6.50%",
+        "Life companies offer competitive fixed rates and close in 60 to 90 days, but cap leverage at 65% to 70% LTV with full recourse on some executions. HUD is the clear winner on leverage and non-recourse terms. Life company loans suit low-leverage borrowers who want a quiet, relationship-driven execution without HUD's MIP or processing timeline."
+      ],
+      [
+        "Bank or Credit Union Permanent Loans",
+        "6.00% to 8.00%",
+        "Regional banks and credit unions close faster than HUD and have more flexible underwriting criteria, but carry 5 to 10-year balloon maturities and partial recourse. A borrower who cannot tolerate refinance risk at balloon should seriously evaluate HUD's 35-year fully amortizing structure even at the cost of a longer close timeline."
+      ],
+      [
+        "Bridge Loans",
+        "7.50% to 11.50%",
+        "Bridge financing is the path to HUD, not a substitute for it. A property that does not yet meet HUD's occupancy or DSCR minimums will need 12 to 36 months of stabilization on a bridge loan before it qualifies for a HUD 223(f) refinance. Borrowers should model the blended cost of the bridge period plus the HUD takeout when evaluating a construction or value-add deal."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current HUD FHA multifamily loan rates?",
+        "HUD 223(f) stabilized multifamily rates range from 5.00% to 6.00% and HUD 221(d)(4) construction rates range from 5.25% to 6.25% in May 2026. Rates are fixed at rate lock for the full 35 to 40-year loan term and move with the 10-year Treasury. The Mortgage Insurance Premium of 25 to 65 basis points annually adds to the effective all-in cost."
+      ],
+      [
+        "How long does it take to close a HUD FHA multifamily loan?",
+        "HUD multifamily loans typically take 6 to 12 months to close from application to funding. The Lean processing track for simpler 223(f) applications can close closer to 6 months, while standard-track 221(d)(4) construction loans routinely take 9 to 12 months. Borrowers must underwrite holding costs and rate lock extension fees into the transaction budget accordingly."
+      ],
+      [
+        "What is the Mortgage Insurance Premium on a HUD loan?",
+        "The HUD Mortgage Insurance Premium ranges from 25 to 65 basis points annually depending on program and affordability designation. Market-rate properties under HUD 221(d)(4) carry 65 basis points annually. Properties qualifying for affordable or green MIP reductions can pay as little as 25 basis points. MIP is paid monthly and adds directly to the loan's effective cost of capital beyond the stated interest rate."
+      ],
+      [
+        "What is the difference between HUD 223(f) and HUD 221(d)(4)?",
+        "HUD 223(f) finances the acquisition or refinance of existing stabilized multifamily properties with a 35-year fixed fully amortizing loan at up to 85% LTV. HUD 221(d)(4) finances ground-up construction or substantial rehabilitation, converting to a 40-year fixed permanent loan at completion, at up to 85% LTC. The 221(d)(4) carries higher rates and a longer processing timeline because it includes construction risk."
+      ],
+      [
+        "Are HUD FHA multifamily loans non-recourse?",
+        "Yes. HUD and FHA multifamily loans are fully non-recourse, meaning the lender's only collateral is the property itself with no personal guarantee from the borrower. Standard bad-boy carve-outs for fraud or intentional misrepresentation apply, as they do across virtually all non-recourse commercial real estate debt. This non-recourse feature is one of HUD's most valued structural characteristics for institutional borrowers."
+      ],
+      [
+        "What properties qualify for HUD 232 healthcare loans?",
+        "HUD 232 finances assisted living facilities, skilled nursing facilities, board and care homes, and intermediate care facilities. Properties must meet minimum occupancy thresholds and HUD's healthcare-specific operational and licensing requirements. Rates range from 5.10% to 6.10% in May 2026 on fully amortizing 35-year fixed terms, at up to 80% LTV, with the same non-recourse and MIP structure as other HUD programs."
+      ],
+      [
+        "What is a HUD 223(a)(7) streamline refinance?",
+        "HUD 223(a)(7) is a streamlined refinance program available exclusively to borrowers who already have an existing HUD-insured loan. It allows a rate reduction and term extension without full underwriting, using a significantly abbreviated review process. Closing timelines are 3 to 6 months versus 6 to 12 months for standard HUD executions, and rates range from 5.00% to 5.75% in May 2026, making it the fastest and lowest-friction HUD execution available."
+      ]
+    ]
+  },
+  {
+    "slug": "cmbs-loan-rates",
+    "title": "CMBS Conduit Loan Rates 2026: Current Rates, Terms, and Pricing Mechanics",
+    "meta": "CMBS conduit loan rates range from 5.75% to 7.50% for 10-year fixed non-recourse financing. See current rate tiers by property type, spread drivers, and how conduit pricing works in May 2026.",
+    "h1": "CMBS Conduit Loan Rates 2026",
+    "h2_intro": "What the Bond Market Is Pricing Today",
+    "rate_range": "5.75% to 7.50%",
+    "rate_type": "Fixed rate, 10-year Treasury plus CMBS bond spread (175 to 250 bps)",
+    "term": "10 years (standard conduit structure)",
+    "typical_ltv": "55% to 75% of stabilized value",
+    "amortization": "30-year amortization; interest-only periods of 2 to 5 years common on stronger deals",
+    "hub_url": "cmbs-loans.html",
+    "hub_name": "CMBS Loans",
+    "intro": "CMBS conduit loan rates in May 2026 range from 5.75% to 7.50% for 10-year fixed non-recourse permanent financing, with pricing determined by the 10-year Treasury yield plus a CMBS bond spread currently running 175 to 250 basis points depending on property type, leverage, and deal structure. Loans are pooled with other commercial mortgages, securitized, and sold as bonds, which means underwriting standards are set by the bond market rather than a single lender's credit committee. Loan sizes typically run from $3 million to well over $250 million, covering office, retail, multifamily, industrial, hospitality, and self-storage assets on a non-recourse basis.",
+    "rate_table": [
+      {
+        "tier": "Industrial or Multifamily, 55% to 60% LTV",
+        "rate": "5.75% to 6.25%",
+        "note": "Tightest spreads, preferred bond collateral, often qualifies for IO"
+      },
+      {
+        "tier": "Anchored Retail or Self-Storage, 60% to 65% LTV",
+        "rate": "6.25% to 6.75%",
+        "note": "Stable cash flow assets priced near mid-range"
+      },
+      {
+        "tier": "Hospitality or Mixed-Use, 60% to 65% LTV",
+        "rate": "6.75% to 7.25%",
+        "note": "Operator-dependent assets carry wider CMBS spreads"
+      },
+      {
+        "tier": "Office or Secondary-Market Retail, 55% to 65% LTV",
+        "rate": "7.00% to 7.50%",
+        "note": "Elevated bond spread reflects current investor risk aversion to office collateral"
+      }
+    ],
+    "drivers": [
+      [
+        "10-Year Treasury Yield",
+        "CMBS conduit rates are fixed at origination and float with the 10-year Treasury until closing. A 25-basis-point move in the 10-year translates directly into a 25-basis-point shift in the all-in rate, making rate lock timing a material execution decision."
+      ],
+      [
+        "CMBS Bond Spread",
+        "The spread over Treasuries is set by demand from bond investors for the CMBS security, not by the originating lender. B-piece buyer demand, current CMBS issuance volume, and overall credit market conditions drive spreads. In May 2026, spreads on investment-grade conduit issuances are running 175 to 250 basis points over the 10-year Treasury."
+      ],
+      [
+        "Property Type and Collateral Quality",
+        "Bond investors apply wider spreads to collateral types with higher perceived default risk. Industrial and multifamily trade at the tight end; office in secondary markets commands the widest spreads. Hospitality and retail spreads sit in between and are sensitive to tenancy and brand strength."
+      ],
+      [
+        "Debt Service Coverage Ratio",
+        "Conduit underwriting uses a stressed DSCR, typically requiring 1.25x or better on in-place net cash flow at the loan constant. Lower DSCR at origination limits available leverage and can push the deal into a higher-spread tier or require additional credit enhancement."
+      ],
+      [
+        "Loan-to-Value and Leverage",
+        "CMBS lenders size loans to the lesser of 65% to 75% LTV or the DSCR constraint. Deals cleared below 60% LTV often qualify for interest-only periods, reducing debt service and improving DSCR. Higher leverage compresses IO eligibility and widens the spread the B-piece buyer demands."
+      ],
+      [
+        "Prepayment Structure",
+        "Conduit loans carry either yield maintenance or defeasance, both designed to protect bondholders from early repayment. Defeasance requires substituting Treasury securities for the collateral. Neither option is cheap, and the cost of exit in years one through nine is a real economic factor in underwriting total deal returns."
+      ],
+      [
+        "Loan Size and Pooling Dynamics",
+        "Very large loans (above $100 million) can become concentration issues within a pool and may price wider than smaller loans that diversify easily into a standard conduit deal. Loans below $5 million may face execution risk from conduit lenders with minimum pool-size requirements, sometimes pushing smaller borrowers toward portfolio or balance-sheet alternatives."
+      ]
+    ],
+    "comparisons": [
+      [
+        "Agency Loans (Fannie Mae or Freddie Mac)",
+        "5.50% to 6.75%",
+        "Agency rates are often 25 to 75 basis points tighter than CMBS for qualifying multifamily assets and offer more flexible prepayment structures, including step-down prepay. CMBS covers non-multifamily property types that agencies do not, making it the default permanent execution for retail, office, hospitality, and mixed-use."
+      ],
+      [
+        "Life Company Loans",
+        "5.50% to 6.50%",
+        "Life companies typically price 25 to 50 basis points inside CMBS conduit on core assets, offer more prepayment flexibility, and allow partial recourse structures. However, life companies are selective on property type and market, concentrate on lower-leverage deals, and have smaller individual allocations. CMBS accommodates a wider range of assets and leverage points."
+      ],
+      [
+        "Bank Portfolio Loans",
+        "6.00% to 7.50%",
+        "Regional and community banks offer recourse permanent loans with more flexible prepayment (often step-down or open after a lockout), shorter fixed periods (3 to 10 years), and quicker credit decisions. CMBS wins on non-recourse, larger loan sizes, longer fixed terms, and access to higher leverage on cash-flowing assets."
+      ],
+      [
+        "Debt Fund Bridge Loans",
+        "8.50% to 11.50%",
+        "Bridge financing is transitional and priced 250 to 400 basis points above stabilized CMBS rates. The standard execution path for a value-add acquisition is bridge financing during the lease-up period followed by CMBS conduit takeout once the asset stabilizes and qualifies for permanent fixed-rate debt."
+      ],
+      [
+        "SBA 504 Loans",
+        "5.50% to 6.50%",
+        "SBA 504 financing covers owner-occupied commercial real estate at competitive fixed rates with 10 or 25-year terms and requires the borrower to occupy at least 51% of the property. CMBS serves investor-owned income-producing properties with no owner-occupancy requirement and substantially larger loan sizes."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current CMBS conduit loan rates?",
+        "CMBS conduit loan rates in May 2026 range from 5.75% to 7.50% for 10-year fixed non-recourse loans. Pricing is determined by the 10-year Treasury yield plus a CMBS bond spread of 175 to 250 basis points. Industrial and multifamily collateral prices at the tight end; office and hospitality in secondary markets price near the wide end of the range."
+      ],
+      [
+        "How is a CMBS loan rate calculated?",
+        "A CMBS conduit rate equals the 10-year Treasury yield at rate lock plus the CMBS spread, which is driven by bond investor demand at the time of securitization. The spread typically runs 175 to 250 basis points on current conduit issuances. Unlike bank loans priced to Prime or SOFR, the all-in rate is fixed at origination and does not adjust over the 10-year term."
+      ],
+      [
+        "Are CMBS loans non-recourse?",
+        "Yes. Standard CMBS conduit loans are non-recourse, meaning the lender's recovery in default is limited to the collateral property. Borrowers do sign standard carve-out guarantees covering bad acts such as fraud, environmental violations, and unauthorized transfers, but routine loan default does not expose personal assets. Non-recourse execution is one of the primary reasons sophisticated sponsors prefer CMBS over bank financing."
+      ],
+      [
+        "What prepayment options does a CMBS loan have?",
+        "CMBS conduit loans use either yield maintenance or defeasance to protect bondholders from early repayment. Yield maintenance requires paying the present value difference between the loan rate and the current Treasury yield on the remaining balance. Defeasance substitutes a portfolio of Treasury securities for the real estate collateral. Both mechanisms are costly in the first several years of the loan term."
+      ],
+      [
+        "What property types qualify for CMBS conduit financing?",
+        "CMBS conduit lenders finance most income-producing commercial property types, including multifamily, industrial, anchored and unanchored retail, office, hospitality, self-storage, and mixed-use assets. Hospitality and office currently carry wider CMBS spreads due to bond market risk sentiment. Raw land, ground-up construction, and owner-occupied properties do not qualify for standard conduit execution."
+      ],
+      [
+        "What loan sizes do CMBS conduit lenders require?",
+        "Most conduit programs require a minimum loan size of $3 million to $5 million to cover the fixed costs of securitization and due diligence. There is no practical upper limit, with single-asset CMBS transactions regularly exceeding $250 million. Very large loans above $100 million may be structured as single-asset single-borrower (SASB) deals rather than pooled conduit transactions, which affects pricing and structure."
+      ],
+      [
+        "Can I get interest-only on a CMBS conduit loan?",
+        "Interest-only periods of 2 to 5 years are available on CMBS conduit loans for deals that meet minimum DSCR and LTV thresholds at origination. Full-term IO is achievable on lower-leverage, high-cash-flow assets, particularly industrial and multifamily. IO improves current cash-on-cash returns but increases balloon risk at maturity since no principal is paid down during the IO period."
+      ]
+    ]
+  },
+  {
+    "slug": "net-lease-loan-rates",
+    "title": "Net Lease Loan Rates 2026: Current STNL Rates, Terms, and Lender Pricing",
+    "meta": "STNL loan rates range from 5.25% to 8.00% in 2026. See rate tables by tenant credit tier, key pricing drivers, and which lender type wins on net lease deals.",
+    "h1": "Single-Tenant Net Lease (STNL) Loan Rates 2026",
+    "h2_intro": "What Lenders Are Actually Pricing Today",
+    "rate_range": "5.25% to 8.00%",
+    "rate_type": "Fixed rate, benchmarked to the 10-year Treasury; some floating-rate options from banks and debt funds",
+    "term": "10 to 25 years for permanent financing; 3 to 5 years for bank and CMBS execution",
+    "typical_ltv": "60% to 75% of appraised value",
+    "amortization": "25 to 30 years, with some life company and CMBS programs offering partial or full interest-only on strong credit-tenant deals",
+    "hub_url": "net-lease-financing.html",
+    "hub_name": "Net Lease Financing",
+    "intro": "Single-tenant net lease loan rates in May 2026 range from 5.25% to 7.00% for investment-grade credit-tenant properties and 6.00% to 8.00% for non-credit or franchise-operator assets, with the spread between tiers reflecting the degree to which debt service is backstopped by corporate covenant rather than real estate cash flow. Life companies dominate best-execution on long-WALT credit-tenant deals, CMBS handles standard STNL at moderate leverage, and regional banks step in for smaller loans or operators below investment grade. The most important pricing variables are tenant credit rating, weighted average lease term remaining, rent escalation structure, and the cap rate relationship to the loan constant.",
+    "rate_table": [
+      {
+        "tier": "Investment-Grade Credit Tenant, 10+ Years WALT",
+        "rate": "5.25% to 6.00%",
+        "note": "Life company best execution; long-term fixed, partial or full IO available"
+      },
+      {
+        "tier": "Investment-Grade Credit Tenant, 5 to 10 Years WALT",
+        "rate": "5.75% to 6.50%",
+        "note": "CMBS or life company; shorter lease term adds 25 to 50 bps"
+      },
+      {
+        "tier": "Non-Credit Franchise Operator, Strong Brand",
+        "rate": "6.25% to 7.25%",
+        "note": "CMBS or bank execution; 100 to 150 bps wider than investment-grade comp"
+      },
+      {
+        "tier": "Non-Credit Independent or Local Operator",
+        "rate": "6.75% to 8.00%",
+        "note": "Bank or debt fund; underwriting leans heavily on real estate residual value"
+      }
+    ],
+    "drivers": [
+      [
+        "Tenant Credit Rating",
+        "Tenant credit is the dominant pricing variable for STNL loans. An investment-grade tenant (BBB minus or higher) allows lenders to underwrite the corporate covenant directly, compressing spreads by 100 to 200 basis points versus a non-rated franchise operator. Sub-investment-grade or locally owned tenants shift underwriting weight back to real estate fundamentals and push rates to the wide end of the range."
+      ],
+      [
+        "Weighted Average Lease Term Remaining",
+        "Lenders price WALT very precisely on net lease assets. A 15-year absolute NNN lease on an investment-grade tenant commands the tightest execution. Each year of lease term below 10 years adds roughly 10 to 25 basis points, and most lenders will not term-match a loan beyond the lease expiration, which limits options when WALT falls under 5 years."
+      ],
+      [
+        "Rent Escalation Structure",
+        "Fixed rent bumps of 10% every 5 years or 1.5% to 2.0% annual increases support higher loan proceeds and tighter pricing by improving the debt yield trajectory over the loan term. Flat leases with no escalations compress proceeds and widen spreads modestly, as the real debt yield deteriorates in an inflationary environment."
+      ],
+      [
+        "10-Year Treasury Benchmark",
+        "Permanent STNL loans price as a spread over the 10-year Treasury, typically 125 to 250 basis points depending on lender type and deal quality. Life companies run the tightest spreads (125 to 175 bps) on qualifying credit-tenant deals. CMBS adds 25 to 50 basis points for structuring and distribution costs. When Treasuries move, STNL loan rates move in direct proportion."
+      ],
+      [
+        "Cap Rate to Loan Constant Relationship",
+        "Net lease lenders monitor the going-in cap rate relative to the loan constant closely. When cap rates compress below the loan constant, debt service coverage tightens and lenders reduce proceeds rather than waiving DSCR floors. For most credit-tenant product in 2026, lenders require a minimum 1.20x DSCR, which constrains LTV more than stated LTV limits on lower-cap-rate assets."
+      ],
+      [
+        "Lender Type and Execution Channel",
+        "Life companies offer the lowest all-in rates on qualifying deals but require 10 or more years of lease term, investment-grade tenancy, and typically a minimum loan size of $3M to $5M. CMBS provides broader credit acceptance and non-recourse structure but adds 25 to 75 basis points in spread and securitization costs. Banks offer flexibility on smaller or non-credit deals but introduce recourse requirements and shorter initial terms."
+      ],
+      [
+        "Property Location and Replacement Cost",
+        "While net lease underwriting is tenant-credit-first, lender comfort with residual real estate value still matters, particularly for non-credit operators. A net lease asset on a hard-corner signalized intersection in a top-50 MSA with strong traffic counts prices 25 to 50 basis points tighter than an equivalent lease on a secondary or rural location, reflecting the lender's confidence in re-tenanting or disposition if the lease does not renew."
+      ]
+    ],
+    "comparisons": [
+      [
+        "CMBS Conduit Loans",
+        "5.75% to 7.25%",
+        "CMBS is the default non-recourse execution for standard STNL deals where the tenant is not investment-grade or the loan size is too small for life company interest. STNL-specific CMBS pricing runs close to life company rates on credit-tenant product but accepts a wider range of operators and property types."
+      ],
+      [
+        "Life Company Permanent Loans",
+        "5.25% to 6.25%",
+        "Life companies provide the lowest rates and longest fixed-rate terms on qualifying credit-tenant STNL deals, often with full or partial interest-only and minimal prepayment flexibility. The tradeoff is strict eligibility: investment-grade tenant, 10 or more years WALT, major or secondary MSA, and minimum loan sizes that exclude smaller assets."
+      ],
+      [
+        "SBA 504 Loans",
+        "5.50% to 7.00%",
+        "SBA 504 applies when the owner of the business also owns the real estate and occupies at least 51% of the building, which is structurally incompatible with third-party net lease investment. For owner-user single-tenant buildings SBA 504 competes directly, but for investor-owned NNN assets it is not an available option."
+      ],
+      [
+        "Bridge Loans",
+        "7.50% to 11.50%",
+        "Bridge financing enters the STNL picture when lease term is too short for permanent execution, the tenant is in credit distress, or the property was recently acquired and permanent lenders want seasoning. Bridge rates are 200 to 400 basis points higher than permanent STNL rates and are floating, making them a transitional tool only."
+      ],
+      [
+        "Portfolio Bank Loans",
+        "6.00% to 8.00%",
+        "Regional and community banks are the primary execution channel for STNL deals under $3M, non-credit operators, or markets where CMBS and life companies decline to lend. Bank loans carry recourse, shorter amortization periods, and typically 5 to 7 year fixed-rate terms with balloon maturities, but close faster and involve fewer third-party costs."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current net lease loan rates?",
+        "Net lease loan rates in May 2026 range from 5.25% to 7.00% for investment-grade credit-tenant properties and 6.00% to 8.00% for non-credit or franchise-operator assets. Life companies set the floor on qualifying deals at 125 to 175 basis points over the 10-year Treasury, while bank and CMBS execution on non-credit STNL runs 200 to 250 basis points wider than that benchmark."
+      ],
+      [
+        "How much does tenant credit quality affect the rate?",
+        "Tenant credit is the single largest pricing variable on STNL loans. Investment-grade tenants price 100 to 200 basis points tighter than non-rated franchise or independent operators because lenders can underwrite the corporate covenant directly rather than relying solely on real estate cash flow. A deal anchored by a BBB-rated national tenant will consistently clear rates that a comparable non-credit deal cannot reach regardless of location."
+      ],
+      [
+        "What lease term is required to get the best rate?",
+        "Most lenders require a minimum of 10 years of weighted average lease term remaining to offer best-execution permanent financing on STNL assets. Life companies generally set a hard floor near 10 years. CMBS and bank lenders will go shorter but add 10 to 25 basis points per year below that threshold, and most lenders will not extend loan term past lease expiration, which limits options materially when WALT falls under 5 years."
+      ],
+      [
+        "Are net lease loans recourse or non-recourse?",
+        "CMBS and life company loans on STNL properties are typically structured non-recourse with standard carve-outs for fraud, environmental liability, and voluntary bankruptcy. Bank and credit union loans on STNL assets, particularly for deals under $5M or with non-credit tenants, usually require full recourse or a personal guarantee. Borrowers seeking non-recourse execution generally need to use CMBS or a life company program."
+      ],
+      [
+        "What LTV do net lease lenders allow?",
+        "Net lease lenders typically advance 60% to 75% of appraised value, but the binding constraint is often DSCR rather than stated LTV. Most lenders require a minimum 1.20x debt service coverage ratio at origination. On lower-cap-rate credit-tenant assets, that DSCR floor can limit actual proceeds to 55% to 65% LTV even when the lender's stated maximum is 70% or 75%."
+      ],
+      [
+        "Which lender type offers the best execution on STNL deals?",
+        "Life companies offer the best pricing on investment-grade credit-tenant deals with 10 or more years of lease term remaining, typically 125 to 175 basis points over the 10-year Treasury with partial or full interest-only periods. CMBS is the best non-recourse option for standard STNL deals outside life company parameters. Regional banks provide the most flexibility on smaller loan sizes and non-credit operators but require recourse and offer shorter fixed-rate terms."
+      ],
+      [
+        "Do rent escalations affect net lease loan sizing?",
+        "Yes. Fixed rent bumps of 10% every 5 years or annual increases of 1.5% to 2.0% improve the debt yield trajectory over the loan term, which supports tighter pricing and higher proceeds. Flat leases with no escalations result in a real debt yield that deteriorates over time in an inflationary environment, which leads lenders to reduce loan proceeds modestly and, in some cases, add 10 to 25 basis points to the rate."
+      ]
+    ]
+  },
+  {
+    "slug": "life-company-loan-rates",
+    "title": "Life Insurance Company Loan Rates 2026: Current Rates, Terms, and What Lenders Are Pricing",
+    "meta": "Life company loan rates range from 5.00% to 6.50% for 10-year fixed on institutional CRE. See rate tiers, program mechanics, and what drives life company spreads in May 2026.",
+    "h1": "Life Insurance Company Permanent Loan Rates 2026",
+    "h2_intro": "What Life Companies Are Actually Quoting",
+    "rate_range": "5.00% to 6.50%",
+    "rate_type": "Fixed rate, typically 10 to 25-year term, spread over corresponding Treasury",
+    "term": "10 to 25 years",
+    "typical_ltv": "55% to 65% of stabilized value",
+    "amortization": "30-year amortization standard, some interest-only periods for top-tier assets",
+    "hub_url": "life-company-loans.html",
+    "hub_name": "Life Company Loans",
+    "intro": "Life insurance company permanent loan rates in May 2026 range from 5.00% to 6.50% on 10-year fixed terms, with the tightest spreads reserved for institutional-grade assets in primary markets with strong sponsorship. Life companies price as a fixed spread over the corresponding Treasury, holding loans on balance sheet for the full term, which allows them to offer non-recourse execution at leverage levels and pricing that bank and agency programs frequently cannot match on the highest-quality deals. Loan sizes typically start at $5M and commonly reach $100M or more, with 10 to 25-year fixed periods and 30-year amortization the standard structure.",
+    "rate_table": [
+      {
+        "tier": "Prime Multifamily or Industrial, Primary Market (50% to 55% LTV)",
+        "rate": "5.00% to 5.50%",
+        "note": "Best-in-class assets, institutional sponsorship, tightest spreads available in the market"
+      },
+      {
+        "tier": "Stabilized Office or Retail, Primary Market (55% to 60% LTV)",
+        "rate": "5.25% to 5.75%",
+        "note": "Strong tenancy and lease term required; credit-tenant net lease fits well here"
+      },
+      {
+        "tier": "Standard Stabilized CRE, Primary to Secondary Market (60% to 65% LTV)",
+        "rate": "5.75% to 6.25%",
+        "note": "Most common execution range for life company submissions"
+      },
+      {
+        "tier": "Secondary Market or Asset-Type Haircut (up to 65% LTV)",
+        "rate": "6.00% to 6.50%",
+        "note": "Secondary market locations or property types at the edge of life company appetite"
+      }
+    ],
+    "drivers": [
+      [
+        "10-Year Treasury Benchmark",
+        "Life companies price fixed-rate loans as a spread over the corresponding Treasury. A 10-year life company loan is quoted as a spread over the 10-year Treasury yield, and a 15-year loan over the 15-year Treasury. When Treasury yields move 25 basis points, quoted rates move nearly in lockstep. The spread itself, typically 115 to 200 basis points over Treasury on quality deals, reflects credit and market risk, not benchmark volatility."
+      ],
+      [
+        "Asset Quality and Market Tier",
+        "Life companies are exceptionally selective. Institutional-grade multifamily, Class A industrial, and credit-tenant net lease in gateway or primary markets earn the tightest spreads. Secondary markets, older vintage assets, or properties with near-term lease rollover will see 50 to 100 basis points added to the spread or a declined submission outright."
+      ],
+      [
+        "Loan-to-Value and Debt Service Coverage",
+        "Life companies underwrite to conservative stabilized values and require DSCR of 1.25x to 1.35x minimum, often higher. Maximum LTV typically runs 60% to 65%. Borrowers who bring 50% to 55% LTV deals can access the tightest spread tier. Every 5 percentage points of additional leverage typically costs 15 to 30 basis points in spread."
+      ],
+      [
+        "Loan Term Selected",
+        "Life companies offer fixed terms from 10 to 25 years, which is a structural advantage over most capital sources. Longer fixed terms, such as 20 or 25 years, may price slightly wider than 10-year money depending on where the Treasury curve is shaped, but the certainty of rate lock for two decades carries real balance-sheet value for sponsors with long hold horizons."
+      ],
+      [
+        "Sponsorship Strength and Correspondent Relationship",
+        "Life companies do not lend direct to the public. All submissions flow through approved correspondent brokers or mortgage banking firms. Sponsorship quality, including net worth, liquidity, and portfolio track record, directly influences whether a life company engages and how aggressively they price. A sponsor with a demonstrated institutional track record will see materially better execution than an otherwise qualified but less-seasoned borrower."
+      ],
+      [
+        "Prepayment Structure",
+        "Life company loans almost universally carry yield maintenance or a combination of yield maintenance transitioning to defeasance in the final years. Because life companies match-fund their liabilities, early prepayment costs are real and non-negotiable. Understanding the prepay schedule matters: a 10-year loan with yield maintenance through year 9 and open in year 10 is a fundamentally different hold commitment than a CMBS loan."
+      ],
+      [
+        "Property Type Appetite Cycles",
+        "Life companies adjust their allocation targets annually. In 2026, industrial and multifamily remain overweighted in most life company portfolios, while suburban office allocations remain constrained. A deal in a favored property type submitted when a life company has remaining annual allocation will price tighter than the same deal submitted late in the year when allocation is exhausted."
+      ]
+    ],
+    "comparisons": [
+      [
+        "CMBS Fixed-Rate Loans",
+        "5.50% to 7.00%",
+        "CMBS can do higher leverage (up to 75% LTV) and accepts a wider range of asset types and markets. Life company wins on spread for the best deals, offers cleaner servicing, and avoids the covenant and reserve complexity of CMBS structures. For a primary-market Class A asset at 60% LTV, life company pricing typically beats CMBS by 25 to 75 basis points."
+      ],
+      [
+        "Agency Loans (Fannie Mae or Freddie Mac)",
+        "5.25% to 6.25%",
+        "Agency executes only on multifamily. For apartment deals, agency and life company pricing are competitive within 25 to 50 basis points. Agency offers higher leverage (up to 80% LTV) and supplemental loan options. Life companies win on term flexibility (up to 25 years fixed) and non-multifamily asset coverage."
+      ],
+      [
+        "Bank Portfolio Permanent Loans",
+        "5.75% to 7.50%",
+        "Regional and community banks offer 5 to 10-year fixed periods with 25-year amortization and often require recourse. Life companies price tighter on quality deals, offer longer fixed terms, and are non-recourse by default. Banks close faster and accept smaller loans, making them practical for deals under $5M or sponsors who cannot meet life company submission requirements."
+      ],
+      [
+        "Debt Fund Bridge Loans",
+        "8.00% to 11.00%",
+        "Debt funds serve transitional assets that do not yet qualify for permanent financing. The life company is the target exit lender: stabilize the asset with bridge debt, then refinance into a life company permanent loan at a materially lower rate. These are sequential tools, not direct substitutes."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current life insurance company loan rates?",
+        "Life insurance company permanent loan rates in May 2026 range from 5.00% to 6.50% on 10-year fixed terms for stabilized institutional-grade commercial real estate. Rates are quoted as a fixed spread over the corresponding Treasury yield, typically 115 to 200 basis points, and tightest spreads go to primary-market multifamily and industrial assets with conservative leverage at 55% to 60% LTV and strong sponsorship."
+      ],
+      [
+        "How do life companies set their loan rates?",
+        "Life companies price permanent loans as a fixed spread over the corresponding Treasury benchmark, matching the loan term to their liability duration. A 10-year loan is spread over the 10-year Treasury, a 15-year loan over the 15-year Treasury. The credit spread, typically 115 to 200 basis points on quality deals, reflects asset type, market, leverage, and sponsorship. Treasury movements pass through to quoted rates within days."
+      ],
+      [
+        "What property types do life companies lend on?",
+        "Life companies most actively lend on stabilized institutional-grade multifamily, industrial, grocery-anchored or credit-tenant retail, and net lease assets in primary markets. Office lending remains constrained in 2026 but is not entirely off the table for well-located, well-tenanted assets. Life companies generally decline transitional assets, secondary market properties with vacancy risk, and any property requiring a business plan to stabilize."
+      ],
+      [
+        "Do life company loans require personal recourse?",
+        "No. Non-recourse is standard for life insurance company permanent loans, with carve-outs limited to standard bad-boy provisions covering fraud, environmental liability, and voluntary bankruptcy. This is a significant structural advantage over bank portfolio loans, which routinely require full or partial personal recourse. The non-recourse structure is a primary reason institutional sponsors target life company execution on their core, long-hold assets."
+      ],
+      [
+        "What is yield maintenance and why do life company loans use it?",
+        "Yield maintenance is a prepayment penalty that compensates the lender for the interest income lost if a borrower repays early. Life companies match-fund long-duration loans against their insurance liabilities, so prepayment creates a real reinvestment problem. Yield maintenance calculates the present value of the remaining interest stream discounted at the current Treasury rate. On a 10-year life company loan prepaid in year three with rates lower than origination, the penalty can be substantial."
+      ],
+      [
+        "What is the minimum loan size for life company loans?",
+        "Most life insurance companies set a minimum loan size of $5M, with many correspondent programs having effective minimums of $10M to $15M for direct balance-sheet execution. Loans above $25M attract the most competitive life company pricing because deal economics justify the underwriting investment. Loans under $5M are typically better served by bank portfolio lenders or credit unions, which operate at smaller deal sizes with lower origination overhead."
+      ],
+      [
+        "How do I access life company financing?",
+        "Life insurance companies do not originate direct to borrowers. All loans are submitted through an approved correspondent mortgage banking firm or broker with an established life company relationship. The correspondent manages submission, underwriting coordination, and closing. Sponsorship track record, asset quality, and market all factor into whether a life company engages on a given submission. Working with a correspondent who has active allocations with multiple life companies broadens the competitive set and improves pricing outcomes."
+      ]
+    ]
+  },
+  {
+    "slug": "portfolio-loan-rates",
+    "title": "Blanket Portfolio Loan Rates 2026: Current Rates, Terms, and What Lenders Are Pricing",
+    "meta": "Portfolio loan rates range from 6.50% to 9.00% for cross-collateralized blanket facilities. See rate tables by LTV tier, key pricing drivers, and program mechanics for May 2026.",
+    "h1": "Blanket / Portfolio Loan Rates 2026",
+    "h2_intro": "What Lenders Are Pricing on Multi-Property Facilities",
+    "rate_range": "6.50% to 9.00%",
+    "rate_type": "Fixed or floating; fixed options tied to the 5 or 10-year Treasury, floating options tied to SOFR",
+    "term": "3 to 10 years",
+    "typical_ltv": "Up to 75% LTV on blended portfolio value",
+    "amortization": "25 to 30-year amortization, some interest-only periods available on larger facilities",
+    "hub_url": "portfolio-loans.html",
+    "hub_name": "Portfolio Loans",
+    "intro": "Blanket and portfolio loan rates in May 2026 range from 6.50% to 9.00% for cross-collateralized multi-property facilities, with pricing driven primarily by blended portfolio DSCR, aggregate loan size, property type mix, and sponsorship strength. Institutional balance-sheet lenders and debt funds with dedicated portfolio programs dominate this space, typically requiring $5M minimums and underwriting the facility as a single credit decision across all collateral. Borrowers accept a modest premium over single-asset financing in exchange for one closing, one payment, and a single underwriting cycle covering the entire portfolio.",
+    "rate_table": [
+      {
+        "tier": "Conservative Blended LTV (55% to 60%)",
+        "rate": "6.50% to 7.25%",
+        "note": "Strong blended DSCR above 1.35x, stabilized assets, experienced sponsor"
+      },
+      {
+        "tier": "Standard Portfolio (65% to 70% LTV)",
+        "rate": "7.25% to 8.00%",
+        "note": "Most common range for mixed residential and commercial portfolios"
+      },
+      {
+        "tier": "Higher Leverage (70% to 75% LTV)",
+        "rate": "8.00% to 8.75%",
+        "note": "Requires strong individual asset performance to support blended DSCR"
+      },
+      {
+        "tier": "Mixed or Value-Add Portfolio",
+        "rate": "8.25% to 9.00%",
+        "note": "One or more assets in lease-up or light transition; debt fund execution"
+      }
+    ],
+    "drivers": [
+      [
+        "Blended Portfolio DSCR",
+        "Portfolio lenders underwrite on aggregate net operating income across all collateral, not property by property. A blended DSCR above 1.30x typically unlocks the tightest spreads. Weak assets drag the blended ratio and widen pricing, making portfolio composition the primary credit variable lenders scrutinize."
+      ],
+      [
+        "Aggregate Loan Size",
+        "Portfolio facilities benefit from meaningful size premiums. Facilities above $20M attract institutional balance-sheet lenders and family offices willing to compress spreads by 25 to 75 basis points relative to smaller deals, because the economics justify deeper diligence and relationship pricing."
+      ],
+      [
+        "Property Type Mix",
+        "A portfolio composed entirely of stabilized multifamily prices tighter than one blending retail, hospitality, or industrial assets. Mixed-use and mixed-type portfolios require lenders to model separate stress scenarios for each asset class, adding complexity and basis points to the spread."
+      ],
+      [
+        "Cross-Collateralization Structure",
+        "The specific cross-collateral and cross-default provisions negotiated between borrower and lender affect pricing. Lenders offering partial release provisions, which allow individual assets to exit the facility upon paydown, charge a premium of 25 to 50 basis points relative to locked-in blanket structures with no release."
+      ],
+      [
+        "Treasury Benchmark and Term Selection",
+        "Fixed-rate portfolio loans price off the 5 or 10-year Treasury. The term selected directly affects rate, as the yield curve shape in 2026 means 5-year fixed executions may price 25 to 50 basis points tighter than 10-year fixed on equivalent credit. Floating-rate options price over SOFR with spreads of 275 to 500 basis points depending on leverage and asset quality."
+      ],
+      [
+        "Geographic Concentration Risk",
+        "Lenders apply concentration adjustments when a portfolio is heavily weighted toward a single market or submarket. A 10-property portfolio spread across three metro areas will price better than 10 properties in a single secondary market, because geographic diversification reduces correlated vacancy and valuation risk."
+      ],
+      [
+        "Sponsor Track Record and Net Worth",
+        "Portfolio facilities are relationship credits. Lenders expect sponsors to demonstrate prior experience managing multi-asset portfolios and require global net worth and liquidity to service the consolidated debt. Experienced operators with demonstrated portfolio management histories can negotiate 50 to 100 basis points tighter than first-time portfolio borrowers."
+      ]
+    ],
+    "comparisons": [
+      [
+        "Single-Asset Permanent Loans",
+        "5.75% to 7.50%",
+        "Single-asset loans price tighter because lenders underwrite one discrete collateral package with no cross-collateral complexity. Portfolio loans trade at a modest premium but eliminate the cost and time of multiple loan originations, making the all-in economics favorable for sponsors managing five or more properties."
+      ],
+      [
+        "Agency Multifamily Loans (Fannie Mae / Freddie Mac)",
+        "5.50% to 6.75%",
+        "Agency executions offer the lowest rates available for qualifying multifamily but require each property to meet GSE standards individually, and portfolio-level blanket structures are not available. Sponsors with mixed property types or non-conforming assets cannot use agency programs and must turn to portfolio lenders."
+      ],
+      [
+        "Bridge Loans",
+        "7.50% to 11.50%",
+        "Bridge loans accommodate transitional or value-add portfolios that cannot support a permanent facility today. Rate is significantly higher, terms are short (12 to 36 months), and the program is designed for execution speed rather than long-term hold. Portfolio permanent loans are the takeout once stabilization is achieved."
+      ],
+      [
+        "DSCR Rental Loans",
+        "6.50% to 9.00%",
+        "DSCR rental programs underwrite one property at a time using gross rental income without borrower income verification. They work well for smaller investors financing individual single-family or small multifamily assets but are not designed for commercial portfolios above $5M or for assets requiring cross-collateralization mechanics."
+      ],
+      [
+        "Hard Money Portfolio Lines",
+        "9.50% to 13.00%",
+        "Hard money lenders offer the fastest execution and the most flexible underwriting for portfolios in distress or transition, but at substantially higher cost. Private lenders and hard money sources are appropriate for short-term portfolio acquisitions or workouts, not for long-term stabilized hold financing."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current blanket portfolio loan rates?",
+        "Blanket and portfolio loan rates in May 2026 range from 6.50% to 9.00% for cross-collateralized multi-property facilities. Pricing depends on blended DSCR, aggregate loan size, property type mix, and term selection. Conservative leverage portfolios with strong blended income performance price at the low end of that range, while mixed or higher-leverage facilities price toward 9.00%."
+      ],
+      [
+        "What is the minimum loan size for a portfolio facility?",
+        "Most institutional balance-sheet lenders and debt fund portfolio programs require a minimum facility size of $5M, with many institutional sources preferring $10M or above. Below $5M, borrowers are typically better served by individual DSCR or single-asset loans on each property rather than a blanket facility, because the fixed origination costs of a portfolio facility reduce its efficiency at smaller sizes."
+      ],
+      [
+        "How does cross-collateralization affect my portfolio loan rate?",
+        "Cross-collateralization reduces lender risk by giving the lender claim on multiple properties if any one asset underperforms, which is why portfolio facilities can sometimes price competitively with single-asset loans despite added structure complexity. However, borrowers should understand that a default on any single property in a blanket facility can trigger cross-default provisions affecting the entire portfolio."
+      ],
+      [
+        "Can I release individual properties from a blanket loan?",
+        "Some portfolio lenders include partial release provisions allowing individual assets to exit the facility upon payment of a release price, typically 110% to 125% of the allocated loan amount for that property. Release provisions add negotiating complexity and often widen pricing by 25 to 50 basis points, but they give sponsors flexibility to sell assets individually without retiring the entire facility."
+      ],
+      [
+        "Do portfolio loans require individual property appraisals?",
+        "Yes. Lenders underwriting a blanket or portfolio facility require individual appraisals on each collateral property to establish allocated values and support the aggregate LTV calculation. For larger facilities, some lenders will accept desktop or restricted-scope appraisals on smaller or lower-risk assets within the portfolio to reduce due diligence cost and timeline."
+      ],
+      [
+        "How long does it take to close a portfolio loan?",
+        "Portfolio loans typically close in 45 to 75 days, longer than single-asset executions because lenders must complete due diligence on multiple properties simultaneously. Borrowers can accelerate closing by delivering complete rent rolls, operating statements, and title work for all properties at origination. Debt fund executions may close in 30 to 45 days for sponsors with strong relationships."
+      ],
+      [
+        "What property types qualify for portfolio loan financing?",
+        "Portfolio lenders accept a wide range of commercial and residential investment property types including multifamily, mixed-use, retail, industrial, and single-family rental portfolios. Most lenders apply concentration limits that restrict any single asset class to no more than 60% to 70% of total portfolio value. Hospitality and special-use assets face stricter underwriting and often require dedicated lender expertise."
+      ]
+    ]
+  },
+  {
+    "slug": "fix-and-flip-loan-rates",
+    "title": "Commercial Fix and Flip Loan Rates 2026: Current Rates, Terms, and What Lenders Are Pricing",
+    "meta": "Commercial fix and flip loan rates range from 9.00% to 13.50% in 2026. See rate tables by LTC tier, what drives pricing, and how lenders structure draws and points.",
+    "h1": "Commercial Fix and Flip Loan Rates 2026",
+    "h2_intro": "What Value-Add Borrowers Are Paying Now",
+    "rate_range": "9.00% to 13.50%",
+    "rate_type": "Fixed or floating, typically fixed for the short term; some programs float over Prime or SOFR",
+    "term": "12 to 24 months",
+    "typical_ltv": "Up to 85% of total project cost (LTC); up to 75% of after-repair value (ARV)",
+    "amortization": "Interest only during the loan term; full principal due at maturity or exit",
+    "hub_url": "fix-and-flip-loans.html",
+    "hub_name": "Fix and Flip Loans",
+    "intro": "Commercial fix and flip loan rates in May 2026 range from 9.00% to 13.50%, depending primarily on loan-to-cost, after-repair value leverage, sponsor experience, and the complexity of the renovation scope. Most lenders structure these loans as short-term interest-only facilities with 2 to 3 points charged upfront, funding acquisition at close and releasing renovation draws against verified construction progress. The program fits multifamily value-add, retail or mixed-use repositioning, and warehouse-to-residential adaptive reuse where the exit is a sale or stabilized refinance within 12 to 24 months.",
+    "rate_table": [
+      {
+        "tier": "Conservative (65% to 70% LTC, under 65% ARV)",
+        "rate": "9.00% to 10.50%",
+        "note": "Experienced sponsor, straightforward cosmetic rehab, clear sale exit"
+      },
+      {
+        "tier": "Standard (75% to 80% LTC, up to 70% ARV)",
+        "rate": "10.50% to 11.75%",
+        "note": "Most common fix and flip range for multifamily and mixed-use repositioning"
+      },
+      {
+        "tier": "Higher Leverage (80% to 85% LTC, up to 75% ARV)",
+        "rate": "11.75% to 13.00%",
+        "note": "Requires strong sponsorship track record and detailed project budget"
+      },
+      {
+        "tier": "Complex Adaptive Reuse (warehouse-to-residential, structural work)",
+        "rate": "12.00% to 13.50%",
+        "note": "Elevated rehab risk, longer draw schedules, secondary or tertiary markets"
+      }
+    ],
+    "drivers": [
+      [
+        "Loan-to-Cost Ratio",
+        "LTC is the primary lever in fix and flip pricing. Lenders advancing 85% of total project cost take on meaningfully more risk than those at 70% LTC. Each 5-point increase in LTC typically adds 50 to 125 basis points to the rate, and some lenders cap proceeds at a lower LTC ceiling for first-time sponsors or complex asset types."
+      ],
+      [
+        "After-Repair Value Leverage",
+        "ARV is the second constraint lenders underwrite alongside LTC. A loan priced at 80% LTC but only 60% ARV signals strong equity creation and commands tighter pricing. When ARV leverage approaches 75%, lenders price in the execution risk that the stabilized value may not be achieved on schedule or budget."
+      ],
+      [
+        "Sponsor Experience and Track Record",
+        "Fix and flip lenders weight sponsorship heavily because project execution risk is real. A sponsor with 10 or more completed value-add projects in the same asset class will price 75 to 150 basis points tighter than a first-time commercial flipper. Lenders often require a detailed resume of prior projects with documented cost and timeline performance."
+      ],
+      [
+        "Rehab Scope and Project Complexity",
+        "Cosmetic renovations such as unit upgrades, facade work, and landscaping carry far less execution risk than structural work, adaptive reuse conversions, or projects requiring entitlements. Complex rehab scopes mean longer draw periods, higher cost-overrun probability, and wider pricing spreads to compensate for extended lender exposure."
+      ],
+      [
+        "Exit Strategy Clarity",
+        "Lenders evaluate both the probability and the timing of repayment. A project with a signed letter of intent from a buyer, a pre-approved takeout refinance, or a lease-up plan backed by comparable sales prices tighter than a speculative flip in a softer market. Weak or vague exit strategies push pricing toward the top of the range."
+      ],
+      [
+        "Draw Structure and Inspection Requirements",
+        "Renovation funds are released in draws tied to verified construction milestones, typically inspected by a third-party construction manager. Loans with more draws, larger renovation budgets, or less experienced general contractors require more lender oversight, which is reflected in higher origination points and, in some cases, a wider rate."
+      ],
+      [
+        "Property Type and Market",
+        "Multifamily value-add in a primary or secondary market prices tightest because the exit buyer pool is deepest. Retail repositioning, mixed-use adaptive reuse, and industrial conversions carry more buyer-pool and lease-up uncertainty. Tertiary markets or unusual asset types can add 50 to 150 basis points versus a comparable urban multifamily flip."
+      ]
+    ],
+    "comparisons": [
+      [
+        "Bridge Loans",
+        "7.50% to 11.50%",
+        "Bridge loans are better suited to light value-add or stabilization plays where rehab is minimal and the asset is income-producing at close. Fix and flip loans are purpose-built for heavier renovation with draw-based construction funding, accepting higher leverage and pricing accordingly."
+      ],
+      [
+        "Hard Money Loans",
+        "10.00% to 14.00%",
+        "Hard money lenders often overlap with fix and flip programs but typically focus on smaller deals under $3M, close in 5 to 10 days, and apply more asset-based underwriting with less emphasis on borrower financials. Fix and flip programs often allow larger loan sizes and higher LTC with more structured draw management."
+      ],
+      [
+        "Construction Loans",
+        "9.00% to 12.50%",
+        "Construction loans fund ground-up builds from a cleared site, while fix and flip loans fund acquisition and renovation of existing structures. Fix and flip programs typically close faster and carry slightly different draw mechanics, but both price similarly because lender risk is concentrated in construction execution."
+      ],
+      [
+        "Permanent or DSCR Loans",
+        "6.50% to 8.50%",
+        "Permanent and DSCR loans require stabilized occupancy and proven income, making them the refinance target after a successful flip or value-add, not the entry vehicle. The rate differential of 200 to 500 basis points reflects the difference between stabilized cash flow risk and active construction and lease-up risk."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current commercial fix and flip loan rates?",
+        "Commercial fix and flip loan rates in May 2026 range from 9.00% to 13.50%, depending on loan-to-cost leverage, after-repair value, sponsor experience, and rehab complexity. Most lenders also charge 2 to 3 origination points upfront, making the all-in cost of capital higher than the note rate alone suggests. Borrowers should evaluate rate and points together when comparing programs."
+      ],
+      [
+        "How much of the project cost will a lender finance?",
+        "Most fix and flip lenders will advance up to 85% of total project cost, including acquisition and renovation budget, and cap proceeds at 75% of the stabilized after-repair value. The binding constraint is whichever limit produces the lower loan amount. Sponsors with stronger track records and lower-risk projects tend to access the top of that leverage range."
+      ],
+      [
+        "How are renovation draws funded?",
+        "Renovation funds are held back at closing and released in installments tied to verified construction milestones. A third-party inspector or lender-appointed construction manager typically reviews completed work before each draw is approved. Draw timelines vary, but most lenders fund within 3 to 7 business days of inspection approval, which makes keeping the general contractor informed of the process critical."
+      ],
+      [
+        "Are fix and flip loans interest only?",
+        "Yes. Commercial fix and flip loans are structured as interest-only during the entire loan term, with the full principal balance due at maturity. Monthly payments are calculated on the outstanding balance, which means payments increase as renovation draws are funded. Borrowers should model cash flow using the fully funded loan balance to avoid underestimating carrying costs during the renovation period."
+      ],
+      [
+        "What property types qualify for fix and flip financing?",
+        "Multifamily value-add, retail and mixed-use repositioning, and warehouse-to-residential adaptive reuse are the most common commercial fix and flip property types. Single-tenant net lease and ground-up construction are generally outside this program's scope. Properties must have a clear path to a sale or stabilized refinance exit within the 12 to 24-month loan term to satisfy lender underwriting requirements."
+      ],
+      [
+        "How does sponsor experience affect the rate?",
+        "Sponsor track record directly impacts rate, leverage, and approval. A borrower who has completed 5 or more comparable value-add projects can typically access lower rates by 75 to 150 basis points and higher LTC relative to a first-time commercial flipper. Lenders usually request a project resume documenting prior deals, final costs versus budget, timelines, and exit outcomes before quoting terms."
+      ],
+      [
+        "What is the typical loan term for a fix and flip loan?",
+        "Commercial fix and flip loan terms typically run 12 to 24 months, with some lenders offering a 6-month extension option subject to project progress and payment history. The term should be matched carefully to the realistic renovation and sale or refinance timeline, including permitting delays. Requesting an extension after maturity is possible but often triggers extension fees and potential rate adjustments."
+      ]
+    ]
+  },
+  {
+    "slug": "stated-income-loan-rates",
+    "title": "Stated Income / No-Doc Commercial Loan Rates 2026: Current Rates, Terms, and What Lenders Are Pricing",
+    "meta": "Stated income commercial loan rates range from 7.00% to 11.00% in 2026. See rate tables by documentation tier, key pricing drivers, and how bank statement and no-doc programs compare.",
+    "h1": "Stated Income / No-Doc Commercial Loan Rates 2026",
+    "h2_intro": "What Self-Employed Borrowers Are Paying Now",
+    "rate_range": "7.00% to 11.00%",
+    "rate_type": "Primarily fixed rate, some floating options; no direct benchmark tie for most programs",
+    "term": "5 to 30 years depending on program and property type",
+    "typical_ltv": "Up to 70% LTV typical across all documentation tiers",
+    "amortization": "25 to 30 year amortization on permanent programs; interest only available on shorter-term structures",
+    "hub_url": "stated-income-loans.html",
+    "hub_name": "Stated Income Loans",
+    "intro": "Stated income and no-doc commercial loan rates in May 2026 range from 7.00% to 11.00%, with pricing driven primarily by documentation level, loan-to-value ratio, property type, and borrower liquidity. Lenders charge a premium over fully documented bank and agency executions because they cannot independently verify reported income through tax returns, and that premium widens as documentation requirements decrease. Programs span bank statement underwriting, asset depletion, property-income-only structures, and full no-doc asset-based lending, each carrying a distinct rate tier.",
+    "rate_table": [
+      {
+        "tier": "Bank Statement (12 to 24 Months, Up to 65% LTV)",
+        "rate": "7.00% to 8.50%",
+        "note": "Most common program; strong deposits and low leverage keep rate near the floor"
+      },
+      {
+        "tier": "Asset Depletion (Liquid Assets Divided by Loan Term)",
+        "rate": "7.75% to 9.25%",
+        "note": "Qualifying income derived from asset pool; rate reflects added underwriting complexity"
+      },
+      {
+        "tier": "Property Income Only / Commercial DSCR (Up to 65% LTV)",
+        "rate": "8.00% to 9.50%",
+        "note": "Underwritten on gross rents or net operating income only; no personal income verification"
+      },
+      {
+        "tier": "Full No-Doc / Asset-Based Only (Up to 60% LTV)",
+        "rate": "9.50% to 11.00%",
+        "note": "No income or cash flow verification; rate reflects maximum documentation risk premium"
+      }
+    ],
+    "drivers": [
+      [
+        "Documentation Level",
+        "The primary rate driver in this program category. Bank statement loans carry the smallest premium over fully documented executions, typically 75 to 150 basis points above a comparable conventional commercial loan. Full no-doc asset-based programs can carry a 250 to 350 basis point premium because the lender assumes all income verification risk."
+      ],
+      [
+        "Loan-to-Value Ratio",
+        "Stated income lenders cap leverage at 70% LTV across most programs, and pricing compresses significantly as borrowers reduce leverage. Moving from 70% LTV to 60% LTV can save 50 to 100 basis points because the lender's collateral cushion increases materially when income cannot be verified."
+      ],
+      [
+        "Borrower Liquidity and Reserves",
+        "Post-closing reserves are a critical compensating factor when income documentation is limited. Lenders typically require 6 to 24 months of debt service in liquid reserves, and borrowers who can demonstrate 18 to 24 months of reserves often qualify for the lower end of the rate range within their program tier."
+      ],
+      [
+        "Property Type and Cash Flow Visibility",
+        "Multifamily and net-leased single-tenant properties command tighter pricing because rent rolls provide an independent income signal even when personal tax returns are unavailable. Mixed-use, self-storage, and light industrial are priced in the middle, while hospitality and special-use properties sit at the wide end of each tier."
+      ],
+      [
+        "Borrower Credit Score",
+        "Most stated income lenders impose a minimum credit score between 620 and 680, with materially better pricing available above 720 to 740. A borrower at 760 or above can offset some documentation risk and may access bank statement programs at rates within 50 basis points of conventional pricing."
+      ],
+      [
+        "Entity Structure and Sponsor Complexity",
+        "Foreign nationals, complex multi-tiered ownership structures, and sponsors with large portfolios of cross-collateralized assets require additional underwriting time and legal review, which lenders price into the spread. Clean single-purpose entity structures with a domestic sponsor receive the most straightforward execution."
+      ],
+      [
+        "Deposit Consistency for Bank Statement Programs",
+        "In bank statement underwriting, lenders apply an expense factor of 40% to 50% to gross deposits to derive qualifying income. Large month-to-month swings, irregular transfer activity, or significant non-business deposits reduce the qualifying income figure and can push the loan toward a lower-documentation tier with a higher rate."
+      ]
+    ],
+    "comparisons": [
+      [
+        "Conventional Commercial Bank Loans (Full Doc)",
+        "5.75% to 7.50%",
+        "Full documentation loans price 100 to 250 basis points tighter than stated income programs. Borrowers who can show two years of business tax returns with sufficient net income should pursue a conventional execution first. Stated income is the right choice when write-offs suppress reported income below qualifying thresholds."
+      ],
+      [
+        "DSCR Loans (Residential Investor)",
+        "6.50% to 9.00%",
+        "DSCR residential investor loans qualify purely on property cash flow without personal income verification, but are limited to one-to-four unit properties and loan sizes typically under $3M to $5M. Commercial stated income programs access larger loan sizes and commercial property types that DSCR residential programs cannot touch."
+      ],
+      [
+        "SBA 7(a) Loans",
+        "7.00% to 9.50%",
+        "SBA 7(a) loans require full income documentation, including personal and business tax returns for three years. They offer government-guaranteed lower rates for qualifying businesses, but self-employed borrowers with aggressive write-offs frequently cannot show enough taxable income to qualify, making stated income the practical alternative."
+      ],
+      [
+        "Hard Money Loans",
+        "9.50% to 13.00%",
+        "Hard money lenders also underwrite primarily on collateral with minimal income verification, but they price significantly higher, carry shorter terms of 12 to 24 months, and are designed for transitional assets. Stated income programs offer longer fixed terms and full amortization for stabilized properties, making them suitable for a permanent capital stack."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current stated income commercial loan rates?",
+        "Stated income commercial loan rates in May 2026 range from 7.00% to 11.00% depending on the documentation program, loan-to-value ratio, and property type. Bank statement programs at 65% LTV open near 7.00% to 8.50%, while full no-doc asset-based programs price at 9.50% to 11.00%. The premium over fully documented loans reflects the income verification risk lenders absorb."
+      ],
+      [
+        "What is the difference between a bank statement loan and a no-doc loan?",
+        "A bank statement loan derives qualifying income from 12 to 24 months of business or personal bank deposits, applying an expense factor to produce a documented income figure. A full no-doc loan requires no income documentation at all and is underwritten purely on collateral value and borrower liquidity. Bank statement programs price 150 to 250 basis points tighter than full no-doc executions because they retain partial income verification."
+      ],
+      [
+        "Who uses stated income commercial loans?",
+        "Stated income commercial loans are used by self-employed sponsors whose tax returns show low net income due to depreciation and business deductions, high-net-worth investors qualifying on asset depletion, foreign nationals without U.S. income history, and borrowers with complex entity structures that do not map cleanly to standard underwriting templates. The program exists specifically where income documentation fails, not where income itself is insufficient."
+      ],
+      [
+        "What LTV is available on stated income commercial loans?",
+        "Most stated income commercial programs cap at 70% LTV, with the most common executions at 60% to 65% LTV. Full no-doc asset-based loans typically cap at 55% to 60% LTV. Lenders compensate for reduced income transparency by requiring a larger equity cushion, so borrowers should plan for a 30% to 40% down payment or equivalent equity in a refinance."
+      ],
+      [
+        "How does asset depletion qualifying work?",
+        "Asset depletion qualifies borrowers by dividing verified liquid assets, such as brokerage accounts, savings, and retirement assets at a haircut, by the remaining loan term in months to produce a monthly qualifying income figure. For example, $2M in verified liquid assets divided by 240 months yields $8,333 per month in imputed income. The assets are not pledged as collateral; they are used solely to establish income capacity."
+      ],
+      [
+        "Are stated income commercial loans legal after the Dodd-Frank Act?",
+        "Stated income programs for commercial real estate remain legal because Dodd-Frank's ability-to-repay and qualified mortgage rules apply to owner-occupied residential mortgages, not commercial loans. Commercial lenders are not prohibited from using alternative documentation methods, though they still conduct their own underwriting and require compensating factors such as low LTV, strong credit, and substantial reserves."
+      ],
+      [
+        "Can a foreign national get a stated income commercial loan?",
+        "Yes. Foreign nationals are one of the primary borrower profiles for stated income and no-doc commercial programs because they typically lack U.S. tax returns, Social Security numbers, and domestic credit history. Lenders that specialize in foreign national commercial lending generally require an Individual Taxpayer Identification Number, a U.S. bank account, 12 months of international bank statements, and a maximum LTV of 60% to 65%."
+      ]
+    ]
+  },
+  {
+    "slug": "mezzanine-loan-rates",
+    "title": "Mezzanine Debt and Preferred Equity Rates 2026: Current Rates, Terms, and Capital Stack Mechanics",
+    "meta": "Mezzanine debt rates range from 11% to 15% all-in; preferred equity targets 12% to 16% preferred return. See rate tables, pricing drivers, and capital stack mechanics for May 2026.",
+    "h1": "Mezzanine Debt and Preferred Equity Rates 2026",
+    "h2_intro": "What the Capital Stack Actually Costs",
+    "rate_range": "Mezz 11% to 15% all-in; Pref Equity 12% to 16% preferred return",
+    "rate_type": "Fixed all-in rate (mezz); negotiated preferred return (pref equity); both typically include a current pay component plus accrual or exit fee",
+    "term": "12 to 36 months for value-add; 3 to 5 years for stabilized recapitalizations",
+    "typical_ltv": "80% to 90% of total capitalization (mezz or pref equity layered above 65% to 75% senior debt)",
+    "amortization": "Interest only on current pay component; accrued or deferred return paid at exit or refinance",
+    "hub_url": "mezzanine.html",
+    "hub_name": "Mezzanine & Preferred Equity",
+    "intro": "Mezzanine debt and preferred equity rates in May 2026 range from 11% to 15% all-in for mezz and 12% to 16% preferred return for pref equity, reflecting the subordinate position these instruments occupy above senior debt in the capital stack. Mezz is secured by a pledge of ownership interests in the borrowing entity rather than a direct mortgage lien, while pref equity is structured as an equity investment carrying a contractual preferred return before common equity participates. Both structures push total project leverage to 80% to 90%, filling the gap that senior lenders leave between 65% to 75% LTV and a sponsor's equity contribution.",
+    "rate_table": [
+      {
+        "tier": "Stabilized Recapitalization Mezz (80% to 83% total leverage)",
+        "rate": "11.00% to 12.50% all-in",
+        "note": "Lowest risk tier; cash-flowing asset, strong senior lender, clear refinance path"
+      },
+      {
+        "tier": "Value-Add Acquisition Mezz (83% to 87% total leverage)",
+        "rate": "12.50% to 14.00% all-in",
+        "note": "Most common mezz use case; current pay plus accrual or exit fee split"
+      },
+      {
+        "tier": "Development or Construction Mezz (87% to 90% total leverage)",
+        "rate": "13.50% to 15.00% all-in",
+        "note": "Highest leverage, highest execution risk; accrual component often larger"
+      },
+      {
+        "tier": "Preferred Equity, Stabilized or Light Value-Add",
+        "rate": "12.00% to 14.00% preferred return",
+        "note": "Structured as equity, no UCC lien; governance rights negotiated in operating agreement"
+      },
+      {
+        "tier": "Preferred Equity, Development or Heavy Repositioning",
+        "rate": "14.00% to 16.00% preferred return",
+        "note": "Higher execution risk priced into preferred return; promote or participation sometimes added"
+      }
+    ],
+    "drivers": [
+      [
+        "Position in the Capital Stack and Total Leverage",
+        "The primary pricing driver for both mezz and pref equity is where in the stack the instrument sits and how much total leverage it creates. A mezz piece that brings total leverage from 70% to 83% carries meaningfully less risk than one pushing to 90%. Each 5 percentage points of additional total leverage typically adds 75 to 150 basis points to the all-in cost."
+      ],
+      [
+        "Current Pay versus Accrual Structure",
+        "Pricing has two components: a current pay rate collected monthly and an accrual or exit fee paid at payoff. A mezz lender might quote 9% current pay plus 4% accrual for a 13% all-in, or 11% current pay plus 2% exit fee for the same headline number. Borrowers with tighter near-term cash flow push more cost to the back end, which lenders price accordingly given time value and execution risk."
+      ],
+      [
+        "Property Type and Business Plan Complexity",
+        "Stabilized multifamily or industrial assets with strong in-place cash flow command the tightest mezz spreads because the senior debt is well-covered and the exit is predictable. Distressed office, hospitality, or ground-up construction deals face wider pricing because the path to senior loan payoff is less certain and execution risk is higher."
+      ],
+      [
+        "Sponsor Track Record and Co-Investment",
+        "Debt funds and mortgage REITs pricing mezz or pref equity will underwrite the sponsor as carefully as the asset. A sponsor with a completed portfolio of similar transactions and meaningful co-investment in the common equity position will price 50 to 150 basis points tighter than a first-time borrower with limited skin in the game."
+      ],
+      [
+        "Senior Loan Quality and Intercreditor Terms",
+        "The mezz lender's rights depend entirely on the intercreditor agreement with the senior lender. Restrictive intercreditor terms, short cure periods, or a senior lender that limits mezz enforcement rights increase structural risk and widen pricing. Senior debt from agency programs or well-capitalized institutions with standard intercreditor templates typically supports tighter mezz pricing."
+      ],
+      [
+        "Loan Size and Liquidity",
+        "Mezz and pref equity in the $3M to $10M range is served by a smaller pool of capital providers, which can widen pricing by 50 to 100 basis points compared to $20M to $50M pieces that attract debt funds and mortgage REITs with larger mandates. Larger pieces also have more room to negotiate current pay versus accrual splits."
+      ],
+      [
+        "Exit Strategy and Refinance Visibility",
+        "Mezz and pref equity lenders are repaid when the senior loan is refinanced or the asset is sold. A project with a signed forward sale contract, a committed agency loan takeout, or a clear stabilization timeline will price 75 to 125 basis points tighter than a speculative development with an uncertain exit. Lenders price the probability of being repaid on time, not just the collateral value."
+      ]
+    ],
+    "comparisons": [
+      [
+        "Senior Bridge Loan",
+        "7.50% to 11.50%",
+        "Senior bridge debt is cheaper and is a first mortgage lien, but caps leverage at 75% to 80% of as-is value. Mezz or pref equity is layered on top of a senior bridge loan when a sponsor needs to push total leverage above 80% or reduce their equity check, accepting a blended cost of capital in the 9% to 13% range depending on the senior and mezz split."
+      ],
+      [
+        "Common Equity from a Joint Venture Partner",
+        "15% to 25% target IRR (equity)",
+        "Joint venture equity is unlevered common equity that participates in upside through a promote structure. Pref equity sits above common equity in the waterfall and receives its return before the JV sponsor, making it more expensive than senior debt but structurally safer than common equity from the capital provider's perspective. Sponsors use pref equity to avoid giving up promote economics to a common equity partner."
+      ],
+      [
+        "Construction Loan with High LTC",
+        "8.00% to 11.00%",
+        "Some construction lenders will push to 85% LTC on ground-up projects, which can eliminate the need for a mezz layer. However, these high-LTC construction programs are scarce and typically require strong sponsorship and pre-leasing. Mezz on a construction deal is a common alternative when the senior construction lender caps at 65% to 70% LTC."
+      ],
+      [
+        "SBA 504 Second Mortgage",
+        "Approximately 5.50% to 6.50% fixed",
+        "The SBA 504 program provides a subordinate debenture at below-market fixed rates for owner-occupied commercial real estate, pushing total leverage to 90%. It is dramatically cheaper than mezz or pref equity, but is limited to owner-occupants and excludes investment or development deals where mezz and pref equity are most commonly used."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current mezzanine loan rates?",
+        "Mezzanine debt rates in May 2026 range from 11% to 15% all-in, combining a current pay component and an accrual or exit fee. The specific split between current pay and deferred return depends on the asset's cash flow, the sponsor's liquidity preference, and the mezz lender's mandate. Higher leverage and more complex business plans push pricing toward the wide end of that range."
+      ],
+      [
+        "What is the difference between mezzanine debt and preferred equity?",
+        "Mezzanine debt is a loan secured by a pledge of ownership interests in the borrowing entity and carries a fixed interest obligation, giving the lender foreclosure rights through a UCC sale. Preferred equity is structured as an equity investment in the property-owning entity, with a contractual preferred return before common equity participates. Pref equity has no direct lien but controls the entity through governance rights negotiated in the operating agreement."
+      ],
+      [
+        "How much leverage can mezzanine debt or preferred equity provide?",
+        "Mezzanine debt and preferred equity are designed to fill the gap between senior debt, which typically stops at 65% to 75% LTV or LTC, and the sponsor's common equity. Combined with a senior loan, mezz or pref equity can push total project leverage to 80% to 90% of cost or value, depending on asset type, cash flow, and lender appetite."
+      ],
+      [
+        "What is the minimum and maximum loan size for mezzanine financing?",
+        "Most institutional mezz lenders and debt funds have minimum loan sizes of $3M to $5M because of the legal and structural costs of an intercreditor agreement and UCC pledge. Maximum mezz pieces regularly reach $50M or more on larger transactions. Smaller mezz pieces below $3M are occasionally available from family offices or private credit funds, typically at wider pricing."
+      ],
+      [
+        "How does a mezzanine lender get repaid?",
+        "A mezz lender is repaid when the senior loan is refinanced, the asset is sold, or the mezz term matures. Current pay interest is collected monthly throughout the loan term. Any accrued interest or exit fee is collected at payoff. If the borrower defaults, the mezz lender can foreclose on the pledged ownership interests through a UCC sale, taking control of the entity that owns the asset."
+      ],
+      [
+        "What property types are eligible for mezzanine financing?",
+        "Mezz and pref equity are used across most commercial property types, including multifamily, office, retail, industrial, hospitality, and mixed-use. Multifamily and industrial command the tightest pricing given liquidity and exit certainty. Distressed office and hospitality in secondary markets face wider pricing or limited lender availability. Ground-up development is eligible but carries the highest all-in cost."
+      ],
+      [
+        "Who provides mezzanine debt and preferred equity?",
+        "The primary sources of mezz and pref equity are debt funds, mortgage REITs, private equity firms with real estate credit mandates, family offices, and sovereign wealth vehicles. Unlike senior debt, mezz and pref equity are not provided by conventional banks or credit unions due to regulatory capital treatment. The market is less liquid than the senior loan market, which contributes to its wider pricing relative to first mortgage debt."
+      ]
+    ]
+  },
+  {
+    "slug": "sba-7a-loan-rates",
+    "title": "SBA 7(a) Loan Rates 2026: Current Rates, Terms, and What Lenders Are Pricing",
+    "meta": "SBA 7(a) loan rates range from Prime + 1.50% to Prime + 2.75%, roughly 9.00% to 10.25% in May 2026. See rate tiers, program mechanics, and how lenders price 7(a) deals.",
+    "h1": "SBA 7(a) Loan Rates 2026",
+    "h2_intro": "What Borrowers Are Actually Paying Now",
+    "rate_range": "9.00% to 10.25% (Prime + 1.50% to Prime + 2.75%)",
+    "rate_type": "Variable, tied to Wall Street Journal Prime Rate plus a lender margin capped at 2.75% above Prime",
+    "term": "10 years for equipment and working capital, up to 25 years for owner-occupied real estate",
+    "typical_ltv": "Up to 90% loan-to-cost for real estate, up to 90% for business acquisitions",
+    "amortization": "Fully amortizing over the loan term; 25-year amortization available for real estate collateral",
+    "hub_url": "sba-loans.html",
+    "hub_name": "SBA Loans",
+    "intro": "SBA 7(a) loan rates in May 2026 range from approximately 9.00% to 10.25% all-in, structured as the Wall Street Journal Prime Rate plus a lender margin the SBA caps at 2.75% above Prime for loans over $50,000. The program accommodates owner-occupied commercial real estate, business acquisitions, equipment purchases, and working capital up to a $5 million loan ceiling, with up to 90% financing and 25-year amortization for real estate, making it one of the most capital-efficient tools available to small business owners. Because the rate floats with Prime, borrowers benefit directly when the Federal Reserve cuts its benchmark, but should underwrite to current levels when projecting debt service.",
+    "rate_table": [
+      {
+        "tier": "Strong Credit, Real Estate Collateral (loan over $350K)",
+        "rate": "9.00% to 9.50%",
+        "note": "Owner-occupied CRE with full collateral coverage, borrower DSCR above 1.25x, credit above 700"
+      },
+      {
+        "tier": "Standard Business Acquisition or Mixed-Use Collateral",
+        "rate": "9.50% to 10.00%",
+        "note": "Most common pricing band for 7(a) deals with business assets plus real estate securing the loan"
+      },
+      {
+        "tier": "Working Capital or Equipment, Limited Collateral",
+        "rate": "10.00% to 10.25%",
+        "note": "Shorter terms, softer collateral, or borrower credit in the 650 to 680 range push margin to the SBA cap"
+      },
+      {
+        "tier": "Small Loans Under $50,000 (SBA 7(a) Small Loan / Express)",
+        "rate": "10.00% to 13.50%",
+        "note": "SBA permits higher margins on loans under $50K; Express loans carry a separate, wider spread allowance"
+      }
+    ],
+    "drivers": [
+      [
+        "Prime Rate Movement",
+        "Every Federal Reserve rate decision moves the all-in rate on a 7(a) loan immediately, since the program floats on the Wall Street Journal Prime Rate. A 25-basis-point Fed cut translates directly into a 25-basis-point reduction in the borrower's rate. Borrowers should model multiple rate scenarios when projecting 25-year real estate debt service."
+      ],
+      [
+        "Loan Size and SBA Margin Caps",
+        "The SBA sets maximum allowable spreads above Prime based on loan size and maturity. For loans over $50,000 with terms above seven years, the cap is Prime plus 2.75%. For loans under $50,000 or with very short terms, lenders are permitted wider margins, which is why small-balance and Express loans price materially higher."
+      ],
+      [
+        "Collateral Coverage and Type",
+        "SBA requires lenders to collateralize 7(a) loans to the extent practicable. When owner-occupied real estate is the primary collateral and its value fully covers the loan, lenders have more comfort and typically price at the lower end of the permitted margin range. Unsecured or partially secured loans carry higher margins and may require SBA guaranty fee offsets."
+      ],
+      [
+        "Borrower Credit Profile and DSCR",
+        "Lenders underwrite the operating business's debt service coverage ratio alongside personal credit scores. Deals with global DSCR above 1.25x and personal scores above 700 price tighter within the permitted margin band. Marginal credit or thin coverage pushes margins toward the 2.75% cap and may trigger additional SBA documentation requirements."
+      ],
+      [
+        "Use of Proceeds and Loan Purpose",
+        "Real estate loans up to 25-year terms and business acquisition loans are the highest-conviction 7(a) use cases and receive the most competitive lender margins. Working capital and equipment loans have shorter maximum terms, and some lenders price a small premium to compensate for the absence of hard real estate collateral securing the full loan."
+      ],
+      [
+        "SBA Guaranty Fee",
+        "The SBA charges an upfront guaranty fee based on the guaranteed portion of the loan, typically ranging from 0% to 3.50% depending on loan size and term. This fee is distinct from the interest rate but is a meaningful component of the all-in cost of capital and is often financed into the loan, increasing the effective amount borrowed."
+      ],
+      [
+        "Owner-Occupancy Compliance",
+        "SBA 7(a) requires the borrowing business to occupy at least 51% of an existing building or 60% of a newly constructed facility. Lenders verify occupancy intent at underwriting and ongoing compliance can be audited. Deals where occupancy is borderline or tenant income is being used to qualify introduce regulatory risk that lenders price into margins or address through structure."
+      ]
+    ],
+    "comparisons": [
+      [
+        "SBA 504 Loan",
+        "First mortgage portion 7.00% to 8.00%, CDC debenture portion 5.50% to 6.50% fixed",
+        "SBA 504 delivers a lower blended rate on owner-occupied real estate and equipment, but involves two separate loans (a bank first mortgage and a CDC-issued debenture), more moving parts, and a longer close timeline. SBA 7(a) is a single loan from a single lender, closes faster, and covers working capital and business acquisition in the same facility, which 504 cannot."
+      ],
+      [
+        "Conventional Owner-Occupied CRE Loan",
+        "7.00% to 8.50%",
+        "Conventional bank financing typically prices 100 to 150 basis points below 7(a) all-in, but requires 25% to 35% down versus 10% under 7(a), and rarely offers 25-year amortization. Borrowers with strong balance sheets who can fund a larger down payment will find conventional loans cheaper. Borrowers optimizing cash deployment into the business will favor 7(a)'s higher leverage."
+      ],
+      [
+        "USDA Business and Industry Loan",
+        "Prime + 1.00% to Prime + 2.25%",
+        "USDA B and I loans carry slightly tighter margins and can reach $25 million, but are restricted to rural markets (outside cities over 50,000 population). SBA 7(a) has no geographic restriction, making it the default choice for urban and suburban borrowers. Rural borrowers should compare both programs side by side on total cost including guaranty fees."
+      ],
+      [
+        "Conventional Business Term Loan (non-SBA)",
+        "7.50% to 10.50%",
+        "Conventional bank term loans for business acquisition or equipment require stronger collateral coverage and often shorter amortization (5 to 10 years), which inflates monthly payments relative to a 7(a) loan. The SBA guaranty allows participating lenders to extend credit to deals that would be declined on a conventional basis, making 7(a) the primary option for many small business borrowers."
+      ]
+    ],
+    "faqs": [
+      [
+        "What are current SBA 7(a) loan rates?",
+        "SBA 7(a) loan rates in May 2026 range from approximately 9.00% to 10.25% all-in, structured as the Wall Street Journal Prime Rate plus a lender margin the SBA caps at 2.75% above Prime for loans over $50,000. Rates adjust with Prime, so any Federal Reserve rate move flows through directly to the borrower's outstanding balance."
+      ],
+      [
+        "Are SBA 7(a) loan rates fixed or variable?",
+        "SBA 7(a) loans are predominantly variable rate, tied to the Wall Street Journal Prime Rate. Fixed-rate 7(a) loans are technically permissible but rare in practice. Borrowers who need rate certainty on a real estate purchase typically look at SBA 504, where the CDC debenture portion carries a fixed rate set at debenture funding."
+      ],
+      [
+        "What is the maximum SBA 7(a) loan amount?",
+        "The SBA 7(a) program caps individual loan size at $5 million. The SBA guarantees up to 85% on loans up to $150,000 and 75% on loans above $150,000. A single borrower or affiliated group can hold multiple 7(a) loans provided total outstanding SBA guaranteed debt does not exceed $5 million in aggregate at any time."
+      ],
+      [
+        "How much down payment does an SBA 7(a) loan require for real estate?",
+        "SBA 7(a) real estate loans typically require a 10% borrower equity injection, allowing up to 90% financing on owner-occupied commercial property. The SBA does not mandate a specific down payment percentage by rule, but most lenders require 10% minimum. Business acquisitions also commonly close at 10% down when the seller provides no secondary financing."
+      ],
+      [
+        "What owner-occupancy requirements apply to SBA 7(a) real estate loans?",
+        "SBA 7(a) requires the borrowing business to occupy at least 51% of the gross leasable area of an existing building being purchased or refinanced, and at least 60% of a newly constructed building. The remaining space can be leased to third-party tenants. Lenders verify occupancy intent at closing and the SBA can audit compliance throughout the loan term."
+      ],
+      [
+        "How does the SBA guaranty fee affect the total cost of a 7(a) loan?",
+        "The SBA charges an upfront guaranty fee on the guaranteed portion of the loan, ranging from 0% on loans under $150,000 to as much as 3.50% on larger, longer-term loans. This fee is separate from the interest rate and meaningfully increases the all-in cost of capital. Borrowers typically finance the guaranty fee into the loan amount, so it should be included in any cost-of-funds comparison to conventional alternatives."
+      ],
+      [
+        "How long does it take to close an SBA 7(a) loan?",
+        "Standard SBA 7(a) loans close in 45 to 90 days from complete application submission, depending on lender processing capacity and SBA review queue. Preferred Lender Program (PLP) lenders have delegated authority to approve loans in-house without SBA review, which can compress timelines to 30 to 45 days. SBA Express loans close faster, typically 30 days or less, but are capped at $500,000."
+      ]
+    ]
+  }
+]
