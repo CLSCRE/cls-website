@@ -340,6 +340,12 @@ def main():
             {"loc": f"{BASE_URL}/financing/{_rate_path.name}", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"}
             for _rate_path in sorted((WEBSITE_DIR / "financing").glob("*-rates.html"))
         ],
+        # How-to-qualify guides — mid-funnel qualification pages.
+        # Auto-discovered via glob (scripts/generate_how_to_qualify_pages.py).
+        *[
+            {"loc": f"{BASE_URL}/financing/{_q_path.name}", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"}
+            for _q_path in sorted((WEBSITE_DIR / "financing").glob("how-to-qualify-for-*.html"))
+        ],
         {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
         {"loc": f"{BASE_URL}/submit-deal.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7"},
         {"loc": f"{BASE_URL}/tools/edi-eligibility-check.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
