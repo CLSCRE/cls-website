@@ -283,7 +283,13 @@
     <form id="wizardForm" action="#" method="POST" enctype="multipart/form-data" style="display:none">
       <input type="hidden" name="_subject" value="New Loan Application, Commercial Lending Solutions">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html?form=apply">
-      <input type="hidden" name="_captcha" value="true">
+      <!-- _captcha=false: the apply wizard submits DIRECT to FormSubmit (not via the
+           Worker), and antispam.js already adds a Cloudflare Turnstile challenge plus
+           11 bot checks. Leaving _captcha=true stacked FormSubmit's "Almost There"
+           reCAPTCHA interstitial on top of Turnstile (double captcha) on the primary
+           application form, which silently lost leads who didn't solve the 2nd page.
+           See memory project_formsubmit_captcha_trap.md. -->
+      <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_autoresponse" value="Thank you for your application! A Commercial Lending Solutions advisor has received your information and will review your deal within 24 hours. For urgent inquiries, call us directly at 310.708.0690., Trevor Damyan, Commercial Mortgage Broker, Commercial Lending Solutions | clscre.com">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
