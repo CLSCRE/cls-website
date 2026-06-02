@@ -49,6 +49,186 @@
       "market_notes": "Sacramento is a strategic market as California's capital and a priority metro for state HCD funding programs (HHAP, NPLH, AHSC, MHP). Strong affordable housing pipeline, active mixed-use development along the Blue Line, and ground-up market-rate in Midtown and Oak Park.",
       "ads_priority": 5,
       "typical_submarkets": "Downtown Sacramento, Midtown, Oak Park, Del Paso Heights, Meadowview, North Sacramento, Arden-Arcade, Florin, South Sacramento"
+    },
+    {
+      "slug": "new-york",
+      "name": "New York",
+      "state": "NY",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions runs New York bridge deals remotely with the speed of a local shop, by phone, video, and email across the deal team, and we travel for transactions significant enough to justify it. We close transitional debt in all 50 states and coordinate with your title, counsel, and appraisal team wherever the asset sits.",
+      "market_notes": "New York bridge demand concentrates on multifamily value-add navigating the 2019 rent regime, office repositioning and office-to-residential conversion in Manhattan, outer-borough mixed-use, and last-mile industrial in the Bronx and Queens. Debt funds and mortgage REITs lead transitional execution here, with balance-sheet bridge from regional banks competing on stabilized-adjacent deals. Typical requests run from acquisition speed plays to lease-up and gut-renovation business plans.",
+      "ads_priority": 6,
+      "typical_submarkets": "Manhattan, Brooklyn, Queens, the Bronx, Long Island City, Downtown Brooklyn, Harlem, Jersey City"
+    },
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "state": "FL",
+      "is_hq": false,
+      "meet_in_person": "We handle Miami and South Florida bridge deals remotely with the responsiveness of a local desk, and we travel to the market for deals that warrant an in-person walk. Commercial Lending Solutions closes transitional debt in all 50 states and works directly with your local title and closing team.",
+      "market_notes": "Miami bridge activity is driven by condo and multifamily development in Brickell, Edgewater, and Wynwood, hospitality repositioning across Miami Beach, and industrial near the airport and Hialeah. Foreign capital and 1031 timelines make speed-to-close a recurring need, so debt funds and private bridge lenders dominate the transitional space. Common requests span acquisition bridge, predevelopment land, and value-add multifamily in transitioning neighborhoods.",
+      "ads_priority": 7,
+      "typical_submarkets": "Brickell, Downtown Miami, Wynwood, Edgewater, Miami Beach, Coral Gables, Doral, Hialeah, Little Havana"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions runs Dallas-Fort Worth bridge deals remotely at the pace of a local shop and travels to the metroplex for transactions that justify it. We close transitional debt in all 50 states and coordinate with your local title and appraisal team.",
+      "market_notes": "Dallas-Fort Worth bridge demand follows the region's population and job growth: value-add multifamily across the northern suburbs, industrial and logistics along the I-35 and I-20 corridors, and suburban office and retail repositioning. Debt funds, mortgage REITs, and active regional balance-sheet lenders compete hard on transitional deals in this high-velocity market. Typical business plans are lease-up, light-to-moderate renovation, and acquisition bridge ahead of agency takeout.",
+      "ads_priority": 8,
+      "typical_submarkets": "Uptown, Downtown Dallas, Deep Ellum, Plano, Frisco, Irving, Las Colinas, Arlington, Fort Worth"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "is_hq": false,
+      "meet_in_person": "We run Phoenix bridge deals remotely with local-desk speed and travel to the Valley for deals that warrant it. Commercial Lending Solutions closes transitional debt in all 50 states and works directly with your local closing team.",
+      "market_notes": "Phoenix bridge demand is anchored by value-add multifamily across the Valley, large-format industrial and data center development in the West Valley, and build-to-rent. Rapid rent growth followed by a supply wave has made interest-reserve sizing and exit timing the central underwriting questions, so debt funds and mortgage REITs lead transitional execution. Common requests are acquisition bridge, renovation and reposition, and bridge-to-agency on lease-up multifamily.",
+      "ads_priority": 9,
+      "typical_submarkets": "Downtown Phoenix, Tempe, Scottsdale, Mesa, Chandler, Gilbert, Glendale, Goodyear, the West Valley"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "state": "GA",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions handles Atlanta bridge deals remotely with the speed of a local shop and travels to the metro for transactions that justify it. We close transitional debt in all 50 states alongside your local title and appraisal team.",
+      "market_notes": "Atlanta bridge activity centers on value-add multifamily inside and along the Perimeter, film and logistics-driven industrial, and office and mixed-use repositioning in Midtown and the BeltLine submarkets. Workforce-housing value-add is a recurring theme, with debt funds and mortgage REITs financing renovation business plans ahead of agency permanent takeout. Typical requests run from acquisition bridge to gut-renovation and lease-up.",
+      "ads_priority": 10,
+      "typical_submarkets": "Midtown, Buckhead, Downtown Atlanta, West Midtown, the BeltLine, Sandy Springs, Alpharetta, Decatur"
+    },
+    {
+      "slug": "houston",
+      "name": "Houston",
+      "state": "TX",
+      "is_hq": false,
+      "meet_in_person": "We run Houston bridge deals remotely with local-desk responsiveness and travel to the market for deals that warrant it. Commercial Lending Solutions closes transitional debt in all 50 states with your local closing team.",
+      "market_notes": "Houston bridge demand spans value-add multifamily across the inner loop and energy-corridor submarkets, port-driven industrial in the east and southeast, and medical-district adjacent product. Storm-resilience and insurance underwriting factor into transitional sizing here, and debt funds and balance-sheet bridge lenders lead on renovation and lease-up plays. Common requests are acquisition bridge, value-add multifamily, and bridge-to-permanent on stabilizing assets.",
+      "ads_priority": 11,
+      "typical_submarkets": "Downtown Houston, Midtown, the Heights, Galleria, Energy Corridor, Medical Center, Sugar Land, the Woodlands"
+    },
+    {
+      "slug": "chicago",
+      "name": "Chicago",
+      "state": "IL",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions runs Chicago bridge deals remotely at the pace of a local desk and travels to the market for transactions that justify it. We close transitional debt in all 50 states and coordinate with your local title and counsel.",
+      "market_notes": "Chicago bridge demand is led by multifamily value-add across the North and Northwest sides, industrial along the I-55 and O'Hare corridors, and adaptive reuse and office repositioning in the Loop and Fulton Market. Tax and assessment volatility make underwriting the exit critical, and debt funds and mortgage REITs lead transitional execution while regional banks compete on stabilized-adjacent bridge. Typical plans are renovation, lease-up, and acquisition bridge.",
+      "ads_priority": 12,
+      "typical_submarkets": "The Loop, Fulton Market, West Loop, River North, Logan Square, Pilsen, Lincoln Park, the O'Hare submarket"
+    },
+    {
+      "slug": "washington-dc",
+      "name": "Washington DC",
+      "state": "DC",
+      "is_hq": false,
+      "meet_in_person": "We handle Washington DC area bridge deals remotely with local-desk speed and travel to the market for deals that warrant it. Commercial Lending Solutions closes transitional debt in all 50 states with your local closing team.",
+      "market_notes": "Washington DC bridge demand is shaped by office-to-residential conversion downtown, multifamily value-add across the District and inner suburbs, and life-science and lab repositioning in the Maryland and Virginia corridors. Conversion and repositioning plays drive predevelopment and heavy-renovation bridge, where debt funds and private credit lead. Typical requests are conversion bridge, value-add multifamily, and acquisition bridge ahead of agency or bank takeout.",
+      "ads_priority": 13,
+      "typical_submarkets": "Downtown DC, NoMa, Navy Yard, Capitol Hill, Arlington, Alexandria, Bethesda, Silver Spring"
+    },
+    {
+      "slug": "tampa",
+      "name": "Tampa",
+      "state": "FL",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions runs Tampa Bay bridge deals remotely with the responsiveness of a local desk and travels to the market for transactions that justify it. We close transitional debt in all 50 states alongside your local title and appraisal team.",
+      "market_notes": "Tampa Bay bridge demand is driven by in-migration-fueled multifamily value-add, Gulf-coast industrial and flex, and mixed-use redevelopment in Water Street and the St. Petersburg waterfront. Insurance cost and reserve sizing are front and center in transitional underwriting, and debt funds and mortgage REITs lead renovation and lease-up financing. Typical requests are acquisition bridge, value-add multifamily, and bridge-to-agency.",
+      "ads_priority": 14,
+      "typical_submarkets": "Downtown Tampa, Water Street, Ybor City, Westshore, South Tampa, St. Petersburg, Clearwater, Brandon"
+    },
+    {
+      "slug": "denver",
+      "name": "Denver",
+      "state": "CO",
+      "is_hq": false,
+      "meet_in_person": "We run Denver bridge deals remotely with local-desk speed and travel to the Front Range for deals that warrant it. Commercial Lending Solutions closes transitional debt in all 50 states with your local closing team.",
+      "market_notes": "Denver bridge demand centers on multifamily value-add across the metro, industrial along the I-70 and north corridors, and office and mixed-use repositioning in RiNo, LoDo, and the Tech Center. A post-supply-wave reset has made lease-up and exit timing the key underwriting questions, so debt funds and mortgage REITs lead transitional execution. Typical plans are renovation, lease-up, and acquisition bridge ahead of agency takeout.",
+      "ads_priority": 15,
+      "typical_submarkets": "LoDo, RiNo, Cherry Creek, Downtown Denver, Five Points, the Tech Center, Aurora, Lakewood"
+    },
+    {
+      "slug": "austin",
+      "name": "Austin",
+      "state": "TX",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions handles Austin bridge deals remotely at the pace of a local desk and travels to Central Texas for transactions that justify it. We close transitional debt in all 50 states with your local title team.",
+      "market_notes": "Austin bridge demand follows tech-driven growth: multifamily value-add and lease-up across the metro, semiconductor and logistics industrial in the north and east, and office repositioning downtown and in the Domain. A heavy multifamily delivery cycle has pushed interest-reserve sizing and exit underwriting to the front, and debt funds and mortgage REITs lead transitional execution. Typical requests are bridge-to-agency on lease-up, acquisition bridge, and value-add multifamily.",
+      "ads_priority": 16,
+      "typical_submarkets": "Downtown Austin, the Domain, East Austin, South Congress, Round Rock, Cedar Park, Georgetown, Pflugerville"
+    },
+    {
+      "slug": "nashville",
+      "name": "Nashville",
+      "state": "TN",
+      "is_hq": false,
+      "meet_in_person": "We run Nashville bridge deals remotely with local-desk responsiveness and travel to Middle Tennessee for deals that warrant it. Commercial Lending Solutions closes transitional debt in all 50 states with your local closing team.",
+      "market_notes": "Nashville bridge demand is led by multifamily value-add and lease-up across the metro, hospitality and mixed-use in the core, and healthcare-driven office and medical product. Rapid growth followed by new supply makes lease-up timing the central underwriting question, and debt funds and mortgage REITs lead transitional financing. Typical plans are acquisition bridge, value-add multifamily, and bridge-to-agency.",
+      "ads_priority": 17,
+      "typical_submarkets": "Downtown Nashville, the Gulch, Germantown, East Nashville, Wedgewood-Houston, Midtown, Franklin, Murfreesboro"
+    },
+    {
+      "slug": "charlotte",
+      "name": "Charlotte",
+      "state": "NC",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions handles Charlotte bridge deals remotely with the speed of a local desk and travels to the Carolinas for transactions that justify it. We close transitional debt in all 50 states with your local title team.",
+      "market_notes": "Charlotte bridge demand is anchored by multifamily value-add across the metro, distribution and logistics industrial along the I-77 and I-85 corridors, and office and mixed-use repositioning in Uptown and South End. Banking-sector growth and in-migration drive lease-up business plans, with debt funds and mortgage REITs leading transitional execution. Typical requests are acquisition bridge, value-add multifamily, and bridge-to-agency.",
+      "ads_priority": 18,
+      "typical_submarkets": "Uptown, South End, NoDa, Plaza Midwood, Ballantyne, University City, Concord, Gastonia"
+    },
+    {
+      "slug": "seattle",
+      "name": "Seattle",
+      "state": "WA",
+      "is_hq": false,
+      "meet_in_person": "We run Seattle bridge deals remotely with local-desk speed and travel to the Puget Sound for deals that warrant it. Commercial Lending Solutions closes transitional debt in all 50 states with your local closing team.",
+      "market_notes": "Seattle bridge demand centers on multifamily value-add across the city and Eastside, life-science and lab conversion in South Lake Union, and industrial in the Kent Valley and SODO. Tech-cycle leasing and entitlement complexity drive predevelopment and reposition bridge, where debt funds and private credit lead. Typical plans are value-add multifamily, conversion and reposition bridge, and acquisition bridge ahead of permanent takeout.",
+      "ads_priority": 19,
+      "typical_submarkets": "Downtown Seattle, South Lake Union, Capitol Hill, Ballard, Bellevue, Redmond, SODO, the Kent Valley"
+    },
+    {
+      "slug": "boston",
+      "name": "Boston",
+      "state": "MA",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions handles Boston bridge deals remotely at the pace of a local desk and travels to the market for transactions that justify it. We close transitional debt in all 50 states with your local title and counsel.",
+      "market_notes": "Boston bridge demand is led by life-science and lab development and repositioning in Cambridge and the Seaport, multifamily value-add across the metro, and suburban office reuse. Lab-supply normalization has made lease-up and re-tenanting underwriting central, and debt funds and private credit lead transitional and predevelopment financing. Typical requests are predevelopment and conversion bridge, value-add multifamily, and acquisition bridge.",
+      "ads_priority": 20,
+      "typical_submarkets": "Seaport, Back Bay, Cambridge, Somerville, the Fenway, South Boston, Allston, Newton"
+    },
+    {
+      "slug": "orlando",
+      "name": "Orlando",
+      "state": "FL",
+      "is_hq": false,
+      "meet_in_person": "We run Orlando bridge deals remotely with local-desk responsiveness and travel to Central Florida for deals that warrant it. Commercial Lending Solutions closes transitional debt in all 50 states with your local closing team.",
+      "market_notes": "Orlando bridge demand is driven by tourism-linked hospitality, multifamily value-add fueled by in-migration, and logistics industrial along the I-4 corridor. Hospitality repositioning and lease-up multifamily are recurring business plans, with debt funds and mortgage REITs leading transitional execution and insurance underwriting shaping reserves. Typical requests are hospitality bridge, value-add multifamily, and acquisition bridge.",
+      "ads_priority": 21,
+      "typical_submarkets": "Downtown Orlando, Lake Nona, Winter Park, the Tourist Corridor, Kissimmee, Sanford, Maitland, Altamonte Springs"
+    },
+    {
+      "slug": "las-vegas",
+      "name": "Las Vegas",
+      "state": "NV",
+      "is_hq": false,
+      "meet_in_person": "Commercial Lending Solutions handles Las Vegas bridge deals remotely with the speed of a local desk and travels to the market for transactions that justify it. We close transitional debt in all 50 states with your local title team.",
+      "market_notes": "Las Vegas bridge demand spans hospitality and gaming-adjacent repositioning, multifamily value-add across the valley, and industrial in the south and North Las Vegas submarkets. Tourism cash-flow seasonality and reserve sizing drive transitional underwriting, with debt funds and private bridge lenders leading execution. Typical requests are hospitality and mixed-use bridge, value-add multifamily, and acquisition bridge.",
+      "ads_priority": 22,
+      "typical_submarkets": "The Strip, Downtown Las Vegas, Summerlin, Henderson, Paradise, Spring Valley, North Las Vegas, the Southwest"
+    },
+    {
+      "slug": "philadelphia",
+      "name": "Philadelphia",
+      "state": "PA",
+      "is_hq": false,
+      "meet_in_person": "We run Philadelphia bridge deals remotely with local-desk speed and travel to the market for deals that warrant it. Commercial Lending Solutions closes transitional debt in all 50 states with your local closing team.",
+      "market_notes": "Philadelphia bridge demand is led by multifamily value-add across Center City and the river wards, life-science and lab development in University City and the Navy Yard, and logistics industrial along the I-95 and turnpike corridors. Tax-abatement timing and historic-rehab plays drive renovation and conversion bridge, where debt funds and private credit lead. Typical requests are value-add multifamily, conversion and rehab bridge, and acquisition bridge.",
+      "ads_priority": 23,
+      "typical_submarkets": "Center City, University City, Fishtown, Northern Liberties, the Navy Yard, South Philadelphia, Camden, King of Prussia"
     }
   ],
   "tier1_loan_types": [
