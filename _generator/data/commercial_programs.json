@@ -95,6 +95,56 @@
         "title_suffix": "Net Lease (NNN) Single-Tenant Financing",
         "meta_template": "Net lease single-tenant NNN financing in {city}. Tenant credit underwriting, life company and CMBS execution for investment-grade NNN, and portfolio financing strategies."
       }
+    },
+    {
+      "slug": "office-bridge",
+      "name": "Office Bridge Financing",
+      "short_name": "Office Bridge",
+      "description": "Bridge financing for transitional office assets: repositioning, re-tenanting, capital improvements, and office to residential or mixed-use conversion plays, structured to carry the asset through lease-up or entitlement before a permanent take-out or sale.",
+      "typical_deal_range": "$5M to $75M for single-asset office and conversion plays",
+      "typical_stack": [
+        "Bridge or predevelopment loan from a debt fund or private credit lender",
+        "Interest reserve sized for an extended lease-up or entitlement period",
+        "Capital for tenant improvements, leasing commissions, and base-building work",
+        "Exit to permanent financing, a conversion construction loan, or sale"
+      ],
+      "key_features": {
+        "rate_environment_2026": "SOFR + 450 to 750 bps, reflecting office risk",
+        "typical_ltv_ltc": "60 to 70 percent of cost, conservative on stabilized value",
+        "term": "2 to 3 years with extension options",
+        "prepayment": "Open after lockout period",
+        "recourse_structure": "Frequently partial recourse given office business-plan risk",
+        "primary_lender_type": "Debt funds and private credit"
+      },
+      "seo": {
+        "title_suffix": "Office Bridge Financing",
+        "meta_template": "Office bridge financing in {city}. Repositioning and conversion capital, lender appetite for transitional office, interest reserve sizing, and take-out sequencing."
+      }
+    },
+    {
+      "slug": "retail-bridge",
+      "name": "Retail Bridge Financing",
+      "short_name": "Retail Bridge",
+      "description": "Bridge financing for transitional retail assets: acquisition of under-occupied neighborhood and power centers, re-tenanting and re-merchandising, pad redevelopment, and grocery-anchored repositioning, carried through stabilization to a permanent or CMBS take-out.",
+      "typical_deal_range": "$5M to $60M for single-asset and small-portfolio retail",
+      "typical_stack": [
+        "Bridge loan from a debt fund, mortgage REIT, or bank",
+        "Interest reserve sized through re-tenanting and stabilization",
+        "Capital for tenant improvements, leasing commissions, and facade or pad work",
+        "Exit to CMBS, a life company, or bank permanent loan"
+      ],
+      "key_features": {
+        "rate_environment_2026": "SOFR + 400 to 700 bps depending on anchor and tenancy",
+        "typical_ltv_ltc": "65 to 75 percent LTC, 65 to 70 percent of stabilized value",
+        "term": "1 to 3 years with extension options",
+        "prepayment": "Open after lockout period",
+        "recourse_structure": "Non-recourse common for grocery-anchored; partial recourse on unanchored or heavy re-tenanting",
+        "primary_lender_type": "Debt funds, mortgage REITs, and banks"
+      },
+      "seo": {
+        "title_suffix": "Retail Bridge Financing",
+        "meta_template": "Retail bridge financing in {city}. Lender ecosystem for re-tenanting and grocery-anchored repositioning, interest reserve sizing, and permanent take-out."
+      }
     }
   ],
   "cities": [

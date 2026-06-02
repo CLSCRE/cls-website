@@ -94,6 +94,31 @@
         "title_suffix": "Manufacturing and Heavy Industrial Financing",
         "meta_template": "Manufacturing and heavy industrial financing in {city}. Specialty lender ecosystem, environmental and equipment underwriting, and why banks decline most of these deals."
       }
+    },
+    {
+      "slug": "industrial-bridge",
+      "name": "Industrial Bridge Financing",
+      "short_name": "Industrial Bridge",
+      "description": "Bridge financing for transitional industrial assets: acquisition of vacant or short-WALT warehouse and distribution space, lease-up of speculative development, last-mile conversion, and repositioning of older flex or manufacturing product ahead of a permanent take-out.",
+      "typical_deal_range": "$5M to $75M for single-asset and small-portfolio industrial",
+      "typical_stack": [
+        "Bridge loan from a debt fund, mortgage REIT, or balance-sheet bank",
+        "Interest reserve sized to carry the asset through lease-up",
+        "Capital for tenant improvements, leasing commissions, and light repositioning",
+        "Exit to a life company, CMBS, or bank permanent loan at stabilization"
+      ],
+      "key_features": {
+        "rate_environment_2026": "SOFR + 350 to 600 bps, floor rates common",
+        "typical_ltv_ltc": "70 to 80 percent LTC, 65 to 75 percent of stabilized value",
+        "term": "1 to 3 years with extension options",
+        "prepayment": "Open after a short lockout period",
+        "recourse_structure": "Often non-recourse with bad-boy carve-outs; partial recourse on heavier lease-up risk",
+        "primary_lender_type": "Debt funds, mortgage REITs, and regional balance-sheet banks"
+      },
+      "seo": {
+        "title_suffix": "Industrial Bridge Financing",
+        "meta_template": "Industrial bridge financing in {city}. Lender ecosystem for warehouse and distribution lease-up, interest reserve sizing, repositioning capital, and permanent take-out sequencing."
+      }
     }
   ],
   "cities": [
