@@ -773,8 +773,8 @@ def main():
             related_articles=related,
             related_cities=related_cities,
             seo={
-                "title": f"{article['title']} | Commercial Lending Solutions",
-                "meta_description": article["excerpt"],
+                "title": article.get("seo_title") or f"{article['title']} | Commercial Lending Solutions",
+                "meta_description": article.get("seo_description") or article["excerpt"],
             },
             canonical_path=f"blog/{article['slug']}.html",
             depth="../",

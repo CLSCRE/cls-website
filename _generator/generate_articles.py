@@ -354,6 +354,10 @@ def main():
         article = {
             "slug": f"cre-market-report-{city_slug}-2026",
             "title": f"Commercial Real Estate Market Report: {city['city']} 2026",
+            # CTR-optimized SEO title/description (overrides the default
+            # "{title} | Commercial Lending Solutions" pattern in generate.py).
+            "seo_title": f"{city['city']} Commercial Real Estate Market 2026 | Cap Rates",
+            "seo_description": f"{city['city']} commercial real estate market 2026: cap rates, rent & vacancy trends by property type, and the financing outlook for office, multifamily & industrial.",
             "category": "Market Insights",
             "author": "Trevor Damyan",
             "date": type_a_dates[i],
