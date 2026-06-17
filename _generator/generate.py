@@ -626,8 +626,8 @@ def main():
                 faqs_data.get("city_templates", {}), loan=loan, city=city
             )
             seo = {
-                "title": f"{loan['name']} in {city['city']}, {city['state']} | Commercial Lending Solutions",
-                "meta_description": f"{loan['name']} for commercial real estate in {city['city']}, {city['state']}. Competitive rates from 1,000+ lenders. Get a free quote from Commercial Lending Solutions.",
+                "title": f"{loan['name']} {city['city']} {city['state']} | CRE Lenders | CLS CRE",
+                "meta_description": f"Commercial {loan['name'].lower()} in {city['city']} from $1M. 1,000+ lender relationships, competitive rates, fast approvals. Free quote. CLS CRE.",
             }
             slug = f"{loan['slug']}-{city['slug']}"
             featured = pick_featured_markets(city, cities, n_total=8)
@@ -669,8 +669,8 @@ def main():
                 faqs_data.get("city_templates", {}), prop=prop, city=city
             )
             seo = {
-                "title": f"{prop['name']} Financing in {city['city']}, {city['state']} | Commercial Lending Solutions",
-                "meta_description": f"{prop['name']} financing in {city['city']}, {city['state']}. Banks, life companies, CMBS, bridge & construction loans. Free quote from Commercial Lending Solutions.",
+                "title": f"{prop['name']} Loans {city['city']} {city['state']} | CLS CRE",
+                "meta_description": f"{prop['name']} financing in {city['city']} from $1M. Banks, life companies, bridge and construction loans. 1,000+ lenders. Free quote. CLS CRE.",
             }
             slug = f"{prop['slug']}-{city['slug']}"
             featured = pick_featured_markets(city, cities, n_total=8)
