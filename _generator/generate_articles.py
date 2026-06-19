@@ -167,6 +167,13 @@ LOAN_TYPES_MAP = [
     # 2026-05-28: bridge-to-perm uses bridge underwriting context (FAQs etc.)
     # but renders under its own distinct loan name + URL family.
     ("bridge-to-perm-loans", "bridge"),
+    # 2026-06-18: expansion batch — high-search-volume loan types with zero city coverage
+    ("hard-money-loans", "hard-money"),
+    ("dscr-loans", "dscr"),
+    ("fix-and-flip-loans", "fix-and-flip"),
+    ("portfolio-loans", "portfolio"),
+    ("net-lease-financing", "net-lease"),
+    ("stated-income-loans", "stated-income"),
 ]
 
 # Close-time phrasing per loan_key (used in blog-article FAQ builder)
@@ -181,6 +188,12 @@ CLOSE_TIME_PHRASES = {
     "hud": "HUD/FHA loans have the longest timeline of any commercial program, typically closing in 6 to 9 months",
     "cmbs": "CMBS loans typically close in 60-90 days once the rate is locked",
     "life-company": "Life insurance company loans typically close in 45-90 days",
+    "hard-money": "Hard money loans can close in as little as 5-10 business days",
+    "dscr": "DSCR loans typically close in 21-45 days",
+    "fix-and-flip": "Fix and flip loans can close in as little as 5-15 business days",
+    "portfolio": "Portfolio loans typically close in 30-60 days",
+    "net-lease": "Net lease financing typically closes in 45-75 days",
+    "stated-income": "Stated income loans typically close in 21-45 days",
 }
 
 # Type B: 90 City × Loan Type Guides (6 loan types × 15 cities each)
