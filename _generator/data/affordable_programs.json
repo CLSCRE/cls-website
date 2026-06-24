@@ -2,6 +2,7 @@
   "programs": [
     {
       "slug": "edi-streamlined",
+      "california_only": true,
       "name": "EDI, SB 35, and AB 2011 Streamlined Affordable Financing",
       "short_name": "Streamlined Affordable (EDI / SB 35 / AB 2011)",
       "description": "Ministerial approval pathways for 100% affordable and qualifying mixed-income projects. LA Executive Directive 1 (ED1) is the city-specific layer; SB 35 and AB 2011 are statewide pathways that apply in every California jurisdiction.",
@@ -58,7 +59,7 @@
       "slug": "9pct-lihtc",
       "name": "9% Competitive LIHTC Financing",
       "short_name": "9% LIHTC",
-      "description": "The competitive 9% Low-Income Housing Tax Credit, allocated through the California Tax Credit Allocation Committee (TCAC) via scoring rounds. Delivers roughly 70% of development cost as equity, but requires a winning scoring profile in an increasingly competitive field.",
+      "description": "The competitive 9% Low-Income Housing Tax Credit, allocated through the state housing finance agency via scoring rounds. Delivers roughly 70% of development cost as equity, but requires a winning scoring profile in an increasingly competitive field.",
       "typical_deal_range": "$8M to $25M total development cost",
       "typical_stack": [
         "Construction loan (bank, CDFI, or mission-focused lender)",
@@ -70,7 +71,7 @@
       ],
       "key_features": {
         "credit_equity": "Approximately 70% of total development cost",
-        "allocation": "Competitive scoring through TCAC rounds",
+        "allocation": "Competitive scoring through state HFA rounds",
         "scoring_dynamics": "Multiple rounds per year; winning threshold varies by set-aside and region",
         "tcac_region_matters": "Region-specific scoring and set-asides create different competitive dynamics",
         "affordability_covenant": "55 years",
@@ -78,7 +79,7 @@
       },
       "seo": {
         "title_suffix": "9% Competitive LIHTC Financing",
-        "meta_template": "How 9% competitive Low-Income Housing Tax Credit allocation and financing works in {city}. TCAC scoring, capital stack, and the lenders who close these deals."
+        "meta_template": "How 9% competitive Low-Income Housing Tax Credit allocation and financing works in {city}. Scoring, capital stack, and the lenders who close these deals."
       }
     },
     {
@@ -96,8 +97,8 @@
         "Sponsor equity and deferred developer fee"
       ],
       "key_features": {
-        "issuer_types": "Local agencies (CMFA, CHFA), regional authorities, housing authorities",
-        "allocation": "State CDLAC allocates private activity bond cap annually",
+        "issuer_types": "Local agencies, regional authorities, state housing finance agencies",
+        "allocation": "State housing finance agency allocates private activity bond cap annually",
         "bond_structure": "Often issued as variable-rate demand obligations or fixed-rate bonds, with credit enhancement from letter of credit or bond insurance",
         "lihtc_coupling": "Bond-financed deals automatically qualify for 4% LIHTC",
         "minimum_deal_size": "Practical floor around $15M TDC due to issuance costs",
@@ -105,7 +106,145 @@
       },
       "seo": {
         "title_suffix": "Tax-Exempt Bond Financing for Affordable Multifamily",
-        "meta_template": "How tax-exempt bond financing for affordable multifamily works in {city}. CDLAC allocation, bond issuer types, capital stack, and the lenders who close these deals."
+        "meta_template": "How tax-exempt bond financing for affordable multifamily works in {city}. Bond allocation, issuer types, capital stack, and the lenders who close these deals."
+      }
+    },
+    {
+      "slug": "transit-oriented-communities",
+      "california_only": true,
+      "name": "Transit-Oriented Communities (TOC) and Density Bonus Affordable Financing",
+      "short_name": "TOC & Density Bonus",
+      "description": "Los Angeles Transit-Oriented Communities program and the California Density Bonus Law provide entitlement bonuses for affordable housing projects near high-quality transit. TOC Tiers 1 through 4 (based on transit proximity) deliver density bonuses of 22.5% to 70%+ above base zoning, reduced parking, and ministerial approval when layered with Executive Directive 1 or SB 35. Most TOC projects layer LIHTC, city soft debt, and state gap financing against the additional density to close the capital gap.",
+      "typical_deal_range": "$12M to $60M total development cost",
+      "typical_stack": [
+        "TOC or Density Bonus entitlement (by-right or ministerial for qualifying projects)",
+        "Construction loan (bank, CDFI, or tax-exempt bond issuer)",
+        "4% or 9% LIHTC investor equity depending on deal size and competitive profile",
+        "AHSC (Affordable Housing and Sustainable Communities) soft debt: transit-adjacent projects score well",
+        "City soft debt: LA Affordable Housing Trust Fund, Linkage Fee, HOME, CDBG",
+        "Sponsor equity and deferred developer fee"
+      ],
+      "key_features": {
+        "density_bonus_tiers": "TOC Tier 1: 22.5% above base FAR; Tier 2: 32.5%; Tier 3: 45%; Tier 4: 70%+",
+        "transit_proximity": "Tier 1: 1/4 mile from local bus; up to Tier 4: 1/4 mile from high-quality rail",
+        "affordable_set_aside": "Typically 11-25% of base units at 30-80% AMI depending on tier and bonuses requested",
+        "parking_reduction": "Significant reduction or elimination for units within 1/2 mile of transit",
+        "ceqa_treatment": "Categorically exempt or streamlined for qualifying projects",
+        "california_density_bonus_law": "State DBL (Government Code 65915) applies statewide; TOC is the LA-specific overlay"
+      },
+      "seo": {
+        "title_suffix": "Transit-Oriented Communities (TOC) and Density Bonus Affordable Financing",
+        "meta_template": "How Transit-Oriented Communities TOC and California Density Bonus Law affordable housing financing works in {city}. Entitlement bonuses, capital stack, LIHTC layering, and the lenders who close these deals."
+      }
+    },
+    {
+      "slug": "hud-221d4",
+      "name": "HUD 221(d)(4) Multifamily Construction-to-Permanent Financing",
+      "short_name": "HUD 221(d)(4)",
+      "description": "HUD Section 221(d)(4) provides FHA-insured, non-recourse construction-to-permanent mortgage financing for multifamily projects of five or more units. The program offers up to 87.5% LTC for market-rate and 90% LTC for affordable projects, with a 40-year fully amortizing term at a fixed rate. It is the most favorable long-term capital available for affordable and workforce multifamily construction when the timeline and complexity can be absorbed.",
+      "typical_deal_range": "$10M to $200M+ total development cost",
+      "typical_stack": [
+        "HUD 221(d)(4) first mortgage (FHA-insured, non-recourse, construction-to-perm)",
+        "4% or 9% LIHTC investor equity where affordable set-asides qualify",
+        "Tax-exempt bond financing (often the same lender as HUD MAP lender on single-close structures)",
+        "State soft debt: MHP, AHSC, NPLH where eligible",
+        "Local soft debt: city housing trust funds, HOME, CDBG",
+        "Sponsor equity and deferred developer fee"
+      ],
+      "key_features": {
+        "ltc": "Up to 87.5% for market-rate; 90% for affordable (50%+ affordable units at 80% AMI or below)",
+        "term": "40 years fully amortizing plus construction period (typically 24-36 months)",
+        "rate": "Fixed rate set at loan commitment; long-term favorable rate",
+        "recourse": "Non-recourse except for standard carve-outs (fraud, waste, environmental)",
+        "davis_bacon": "Federal prevailing wage (Davis-Bacon) required on all HUD-insured construction projects",
+        "timeline": "Typically 12-18 months from application to construction closing; not suited for time-sensitive deals",
+        "map_lender": "Must use an FHA-approved MAP (Multifamily Accelerated Processing) lender"
+      },
+      "seo": {
+        "title_suffix": "HUD 221(d)(4) Multifamily Construction-to-Permanent Financing",
+        "meta_template": "How HUD 221(d)(4) construction-to-permanent FHA mortgage financing works in {city}. LTC, terms, Davis-Bacon, LIHTC layering, and the MAP lenders who close these deals."
+      }
+    },
+    {
+      "slug": "permanent-supportive-housing",
+      "name": "Permanent Supportive Housing (PSH) Financing",
+      "short_name": "Permanent Supportive Housing",
+      "description": "Permanent supportive housing provides housing with integrated supportive services for people experiencing homelessness, those with chronic homelessness, or individuals with serious mental illness or substance use disorders. PSH financing layers capital from Proposition HHH (Los Angeles), NPLH (No Place Like Home), HHAP (Homeless Housing, Assistance and Prevention), LIHTC, and Section 8 project-based vouchers. These deals are among the most complex capital stacks in affordable housing, typically involving six or more funding sources.",
+      "typical_deal_range": "$10M to $50M total development cost",
+      "typical_stack": [
+        "Construction loan (CDFI, community development bank, or HUD 221(d)(4) for larger deals)",
+        "NPLH (No Place Like Home) capital: $30,000 to $60,000 per unit for qualified permanent supportive housing",
+        "HHAP: Local homeless housing assistance and prevention funds from city or county",
+        "Proposition HHH (Los Angeles only): City bond proceeds for permanent supportive housing",
+        "9% LIHTC equity (strong PSH projects score well in most state HFA rounds)",
+        "Section 8 project-based vouchers (HUD VASH or CoC-sponsored) as permanent operating subsidy",
+        "Sponsor equity and deferred developer fee"
+      ],
+      "key_features": {
+        "target_population": "Chronically homeless, seriously mentally ill, veterans (HUD-VASH), transition-age youth",
+        "nplh_funding": "$2B California statewide; $30,000 to $60,000 per unit for qualifying PSH projects",
+        "prop_hhh": "LA-specific: $1.2B bond measure for PSH; LAHD administers; winding down as of 2026",
+        "section_8_pbv": "Project-based vouchers are the permanent operating subsidy; CoC or PHA-administered",
+        "services_requirement": "Operator must demonstrate supportive services capacity; LAHSA or county approval often required",
+        "tcac_scoring": "PSH projects score well in 9% LIHTC competitive rounds due to homeless set-aside and special needs points"
+      },
+      "seo": {
+        "title_suffix": "Permanent Supportive Housing (PSH) Financing",
+        "meta_template": "How permanent supportive housing PSH financing works in {city}. NPLH, HHAP, LIHTC, project-based vouchers, and the lenders who close PSH deals."
+      }
+    },
+    {
+      "slug": "workforce-housing-noah",
+      "name": "Workforce Housing and NOAH Preservation Financing",
+      "short_name": "Workforce & NOAH Preservation",
+      "description": "Naturally Occurring Affordable Housing (NOAH) preservation and workforce housing financing covers acquisition and rehabilitation of older multifamily properties serving households earning 60-120% of Area Median Income without relying on government subsidy. These deals use conventional debt, bridge loans, agency financing, mezzanine capital, and in some cases 4% LIHTC with regulatory agreement to protect affordability. Workforce housing is the largest segment of the affordable housing universe by unit count.",
+      "typical_deal_range": "$5M to $75M acquisition or total development cost",
+      "typical_stack": [
+        "Acquisition or rehab bridge loan (bank, CDFI, or private lender)",
+        "Permanent agency debt (Freddie Mac TEL, Fannie Mae MTEB, or conventional permanent mortgage)",
+        "4% LIHTC investor equity (where income restrictions are accepted in exchange for below-market equity)",
+        "Mezzanine debt or preferred equity for gap coverage",
+        "State soft debt where workforce income limits qualify",
+        "Local inclusionary fund or housing trust proceeds where available"
+      ],
+      "key_features": {
+        "ami_range": "Serves households at 60-120% AMI; bridge between deep subsidy and market-rate",
+        "lihtc_option": "4% LIHTC available where developer accepts 55-year rent restrictions at 60% AMI for qualifying units",
+        "noah_preservation": "Preserves older multifamily (1960-1990 vintage) at risk of conversion to market-rate or luxury rehab",
+        "freddie_tl": "Freddie Mac Targeted Affordable Housing (TAH) and Tax-Exempt Loan (TEL) programs support NOAH deals",
+        "no_subsidy_required": "Deals can close without government subsidy; faster timeline than LIHTC transactions",
+        "regulatory_agreement": "Optional affordability covenant traded for soft debt access; typically 10-30 year term"
+      },
+      "seo": {
+        "title_suffix": "Workforce Housing and NOAH Preservation Financing",
+        "meta_template": "How workforce housing and NOAH preservation financing works in {city}. Bridge loans, agency debt, 4% LIHTC options, and the lenders who close these deals."
+      }
+    },
+    {
+      "slug": "opportunity-zone-affordable",
+      "name": "Opportunity Zone and Affordable LIHTC Overlay Financing",
+      "short_name": "OZ + Affordable LIHTC",
+      "description": "Opportunity Zone (OZ) equity can be layered with Low-Income Housing Tax Credit (LIHTC) financing when a project is located in a designated Qualified Opportunity Zone and meets both LIHTC affordable use requirements and the OZ substantial improvement test. These combined structures allow sponsors to access two federal tax incentive programs simultaneously, typically reducing the required permanent debt load and improving deal economics for patient equity investors.",
+      "typical_deal_range": "$15M to $100M total development cost",
+      "typical_stack": [
+        "Opportunity Zone equity (Qualified Opportunity Fund investment in the operating or property entity)",
+        "4% or 9% LIHTC investor equity",
+        "Tax-exempt bond financing (for 4% LIHTC deals)",
+        "Construction loan (bank or CDFI, often from the same lender as bond issuer)",
+        "State and local soft debt where OZ location and LIHTC restrictions are compatible",
+        "Permanent first mortgage or bond conversion at stabilization"
+      ],
+      "key_features": {
+        "oz_benefit": "OZ investors defer capital gains taxes until 2026 and exclude post-investment gains after 10-year hold",
+        "lihtc_overlay": "LIHTC investor equity reduces the OZ equity requirement, improving economics for both capital sources",
+        "10_year_hold": "OZ requires 10-year hold of investment, which aligns naturally with the LIHTC compliance period",
+        "qualified_opportunity_zone": "Project must be in a designated QOZ tract; 2018 IRS census tract designations apply",
+        "complexity": "Dual-compliance (LIHTC and OZ) requires specialized legal and tax counsel; limited lender pool active in this niche",
+        "competitiveness": "Fewer sponsors pursue OZ plus LIHTC; capital is less competitive than standalone LIHTC for patient equity investors"
+      },
+      "seo": {
+        "title_suffix": "Opportunity Zone and Affordable LIHTC Overlay Financing",
+        "meta_template": "How Opportunity Zone equity combined with LIHTC affordable housing financing works in {city}. OZ plus 4% or 9% LIHTC capital stack, compliance requirements, and the lenders who close these deals."
       }
     }
   ],
@@ -163,6 +302,960 @@
       "jurisdictional_notes": "Sacramento Housing and Redevelopment Agency (SHRA) administers Affordable Housing Fund, HOME, CDBG, and project-based voucher programs for both City and County. Sacramento County administers HHAP-SAC. Sacramento is a priority market for state HCD due to Central Valley housing needs and capital city status.",
       "active_programs_local": "SHRA Affordable Housing Fund, SHRA Multifamily Lending Program, inclusionary housing, Sacramento Housing Authority project-based vouchers, regional HHAP",
       "typical_submarkets_for_affordable": "Oak Park, Del Paso Heights, Meadowview, North Sacramento, Florin, Arden-Arcade, South Sacramento, Downtown / Midtown infill"
+    },
+    {
+      "slug": "long-beach",
+      "name": "Long Beach",
+      "state": "CA",
+      "tcac_region": "TCAC Region 4 (Los Angeles County)",
+      "jurisdictional_notes": "Long Beach Housing Authority administers the locally managed Housing Choice Voucher program and project-based vouchers. Long Beach Development Services administers inclusionary zoning, density bonus applications, and local funding programs. Long Beach is one of the most active affordable housing development markets in Southern California outside the City of LA, with strong LIHTC deal flow and active CDLAC bond allocation.",
+      "active_programs_local": "Long Beach Affordable Housing Trust Fund, inclusionary housing in-lieu fees, Long Beach Housing Authority project-based vouchers, HOME and CDBG entitlement, regional HHAP-LA distribution",
+      "typical_submarkets_for_affordable": "Central Long Beach, North Long Beach, West Long Beach, Downtown Long Beach (transit-proximate sites near Blue Line), Wrigley, Willmore"
+    },
+    {
+      "slug": "riverside",
+      "name": "Riverside",
+      "state": "CA",
+      "tcac_region": "TCAC Region 6 (Inland Empire)",
+      "jurisdictional_notes": "City of Riverside Community and Economic Development Department administers local affordable housing programs. Riverside County Economic Development Agency oversees regional affordable housing funding. The Inland Empire TCAC region is less competitive than coastal regions, which can improve 9% LIHTC scoring odds for qualifying projects. Riverside has seen significant affordable development activity driven by lower land costs and strong state HCD prioritization of inland valley housing production.",
+      "active_programs_local": "Riverside Affordable Housing Trust Fund, HOME and CDBG entitlement programs, Riverside County EDA affordable housing programs, regional HHAP-IE",
+      "typical_submarkets_for_affordable": "Downtown Riverside, Casa Blanca, Eastside, University corridor, Arlington, Jurupa Valley adjacent"
+    },
+    {
+      "slug": "fresno",
+      "name": "Fresno",
+      "state": "CA",
+      "tcac_region": "TCAC Region 3 (Sacramento / Central Valley)",
+      "jurisdictional_notes": "City of Fresno Department of Public Works and Planning administers affordable housing entitlements. Fresno Housing Authority is one of the most active PHAs in the state for affordable development, administering both the Housing Choice Voucher program and project-based voucher allocations. The Central Valley TCAC region is a priority for state HCD and typically offers favorable scoring dynamics for 9% LIHTC applications targeting farmworker, extremely low income, and rural populations.",
+      "active_programs_local": "Fresno Housing Authority project-based vouchers, HOME and CDBG entitlement, Central Valley HHAP allocation, state HCD infill infrastructure grants, Fresno County Housing Programs",
+      "typical_submarkets_for_affordable": "Downtown Fresno, West Fresno, Tower District, Chinatown-adjacent, Calwa, Lowell, Highway City"
+    },
+    {
+      "slug": "anaheim",
+      "name": "Anaheim",
+      "state": "CA",
+      "tcac_region": "TCAC Region 7 (Southern California / Orange County)",
+      "jurisdictional_notes": "City of Anaheim Planning and Building Department administers affordable housing approvals. Anaheim Housing Authority administers local voucher programs and project-based vouchers. Orange County is one of the most expensive rental markets in the US, creating strong affordable housing need. TCAC Region 7 includes all of Orange County and competes for a distinct regional allocation, which historically has lower overall competition than Los Angeles County.",
+      "active_programs_local": "Anaheim Affordable Housing Trust Fund, inclusionary housing program, Anaheim Housing Authority project-based vouchers, Orange County Housing Trust, OC HHAP regional distribution",
+      "typical_submarkets_for_affordable": "Anaheim Resort District-adjacent, West Anaheim, Central Anaheim, Platinum Triangle (transit-proximate near ARTIC), East Anaheim"
+    },
+    {
+      "slug": "pasadena",
+      "name": "Pasadena",
+      "state": "CA",
+      "tcac_region": "TCAC Region 4 (Los Angeles County)",
+      "jurisdictional_notes": "City of Pasadena Housing Department administers local affordable housing programs, inclusionary zoning, and density bonus applications. Pasadena is a charter city with its own planning authority and has been an active user of SB 35 ministerial approval. The city's Affordable Housing Agreement program requires inclusionary units or in-lieu fee payments. The Metro Gold Line (A Line) provides significant TOC and transit-oriented development opportunities.",
+      "active_programs_local": "Pasadena Affordable Housing Trust Fund, inclusionary zoning or in-lieu fee, Pasadena Community Development Commission programs, Metro A Line TOC opportunities, HOME and CDBG entitlement",
+      "typical_submarkets_for_affordable": "Old Pasadena-adjacent, Northwest Pasadena, Northwest Rosemead Blvd corridor, Fair Oaks corridor, Sierra Madre Villa station area"
+    },
+    {
+      "slug": "stockton",
+      "name": "Stockton",
+      "state": "CA",
+      "tcac_region": "TCAC Region 3 (Sacramento / Central Valley)",
+      "jurisdictional_notes": "City of Stockton Community Development Department administers affordable housing entitlements. Stockton Housing Authority administers Section 8 and project-based vouchers. San Joaquin County oversees regional HOME and CDBG distribution. Stockton is a priority city for state HCD due to high poverty rates, historical disinvestment, and low overall housing production. 9% LIHTC applications targeting ELI households score well in the Central Valley region.",
+      "active_programs_local": "Stockton Affordable Housing Trust Fund, San Joaquin County HOME program, Stockton Housing Authority project-based vouchers, state HCD infill infrastructure, regional HHAP-Central Valley",
+      "typical_submarkets_for_affordable": "Downtown Stockton, South Stockton, Victory Park, Lincoln Village, Weston Ranch, Morada"
+    },
+    {
+      "slug": "san-bernardino",
+      "name": "San Bernardino",
+      "state": "CA",
+      "tcac_region": "TCAC Region 6 (Inland Empire)",
+      "jurisdictional_notes": "City of San Bernardino Planning Division administers affordable housing entitlements. The city emerged from bankruptcy in 2012 and has significant HUD entitlement funding through HOME and CDBG. San Bernardino County has an active Housing and Community Development division. The Inland Empire TCAC region offers competitive scoring opportunities for projects targeting rural, farmworker, and extremely low-income populations.",
+      "active_programs_local": "San Bernardino HOME and CDBG entitlement, San Bernardino County Housing and Community Development, Housing Authority of the County of San Bernardino (HACSB) project-based vouchers, Inland Empire HHAP",
+      "typical_submarkets_for_affordable": "Downtown San Bernardino, Westside, Inland Center-adjacent, Waterman, Highland-adjacent, Loma Linda adjacent"
+    },
+    {
+      "slug": "bakersfield",
+      "name": "Bakersfield",
+      "state": "CA",
+      "tcac_region": "TCAC Region 3 (Sacramento / Central Valley)",
+      "jurisdictional_notes": "City of Bakersfield Planning Division administers affordable housing entitlements. Kern County Housing Authority is the primary PHA for project-based vouchers and Section 8 administration. Bakersfield is a high-growth city with significant affordable housing need driven by agricultural worker households and rapid population growth. The Central Valley TCAC region prioritizes farmworker, agricultural, and ELI applications with dedicated set-asides.",
+      "active_programs_local": "Kern County Housing Authority project-based vouchers, HOME and CDBG through Kern County, state HCD infill infrastructure grants, HHAP-Central Valley, farmworker housing set-asides through TCAC",
+      "typical_submarkets_for_affordable": "Downtown Bakersfield, East Bakersfield, Oildale-adjacent, Southeast Bakersfield, Rosedale, Greenfield"
+    },
+    {
+      "slug": "philadelphia",
+      "name": "Philadelphia",
+      "state": "PA",
+      "state_hfa": "Pennsylvania Housing Finance Agency (PHFA)",
+      "jurisdictional_notes": "Philadelphia Housing Development Corporation (PHDC) and the Division of Housing and Community Development (DHCD) administer local soft debt, HOME, CDBG, and gap financing programs. The Philadelphia Housing Authority (PHA) is one of the largest PHAs in the nation with an active project-based voucher program. PHFA administers 4% and 9% LIHTC statewide, with Philadelphia designated as a Difficult Development Area, and manages the Keystone HOME program and other Pennsylvania-specific soft debt sources.",
+      "active_programs_local": "Philadelphia Housing Trust Fund, DHCD gap financing, PHA project-based vouchers, HOME and CDBG entitlement, Neighborhood Preservation Initiative, Philadelphia Redevelopment Authority land disposition, Affordable Housing Master Fund",
+      "typical_submarkets_for_affordable": "North Philadelphia, Kensington, West Philadelphia, Germantown, Frankford, South Philadelphia, Point Breeze, Strawberry Mansion, Grays Ferry"
+    },
+    {
+      "slug": "new-york-city",
+      "name": "New York City",
+      "state": "NY",
+      "state_hfa": "New York State Homes and Community Renewal (HCR) / NYC Housing Development Corporation (HDC) / NYC Department of HPD",
+      "jurisdictional_notes": "New York City has its own affordable housing finance infrastructure operating alongside the state HFA. HPD (Department of Housing Preservation and Development) administers local soft debt, the City's affordable housing loan programs, and project approvals. HDC (Housing Development Corporation) is the city's bond issuer and lender for tax-exempt bond deals. HCR administers statewide LIHTC allocations. NYC's Extremely Low and Low Income Affordability (ELLA) and Mixed-Income Market Terms (MIMT) programs provide gap financing. NYC is the largest affordable housing market in the US with unique programs not available elsewhere.",
+      "active_programs_local": "HPD Extremely Low and Low Income Affordability (ELLA), HPD Mixed-Income Market Terms (MIMT), HDC tax-exempt bond issuance, NYC Housing Trust Fund, NYC Affordable Housing Preservation Fund, Inclusionary Housing Program, mandatory inclusionary housing in certain rezoning areas",
+      "typical_submarkets_for_affordable": "South Bronx, East Harlem, Central Harlem, Brownsville (Brooklyn), East New York, Far Rockaway (Queens), Staten Island North Shore, Washington Heights, Jamaica (Queens)"
+    },
+    {
+      "slug": "chicago",
+      "name": "Chicago",
+      "state": "IL",
+      "state_hfa": "Illinois Housing Development Authority (IHDA)",
+      "jurisdictional_notes": "Chicago Department of Housing (DOH) administers local affordable housing programs, the Affordable Requirements Ordinance (ARO), Tax Increment Financing (TIF) for affordable projects, and the Chicago Community Land Trust. The Chicago Housing Authority (CHA) administers project-based vouchers and is one of the most active PHAs for affordable development partnerships. IHDA administers 4% and 9% LIHTC for Illinois, with Chicago receiving the largest share of statewide allocations. Illinois also has dedicated bond cap through the Illinois Finance Authority.",
+      "active_programs_local": "Chicago Department of Housing gap financing, Affordable Requirements Ordinance (ARO) in-lieu fees and on-site units, CHA project-based vouchers, TIF affordable housing set-asides, Chicago Low-Income Housing Trust Fund, City of Chicago HOME and CDBG entitlement, Neighborhood Opportunity Fund",
+      "typical_submarkets_for_affordable": "South Side (Englewood, Woodlawn, Bronzeville), West Side (Lawndale, Austin, Humboldt Park), Pilsen, Logan Square-adjacent, Rogers Park, Roseland, Pullman"
+    },
+    {
+      "slug": "houston",
+      "name": "Houston",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "Houston Housing Authority (HHA) administers the local project-based voucher program and is an active affordable housing developer. The City of Houston Housing and Community Development Department administers HOME, CDBG, and local gap financing. TDHCA administers 9% and 4% LIHTC for Texas, with Houston falling in the competitive urban set-aside. Texas does not have a statewide inclusionary zoning mandate, and Houston has no zoning code, making land assembly more flexible but entitlement less predictable than zoned markets.",
+      "active_programs_local": "Houston Housing Authority project-based vouchers, City of Houston Housing Community Development Department gap financing, HOME and CDBG entitlement, Harvey disaster recovery CDBG-DR funds (winding down), TDHCA 9% and 4% LIHTC allocation",
+      "typical_submarkets_for_affordable": "Third Ward, Fifth Ward, Second Ward, Acres Homes, Near Northside, Sunnyside, Kashmere Gardens, East End, Near Southeast"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "Dallas Housing Authority (DHA) is one of the largest PHAs in Texas and actively partners on affordable development. The City of Dallas Office of Community Care administers HOME and CDBG. TDHCA's 9% LIHTC scoring in the Dallas metro is competitive due to its urban classification and population density. The Dallas Housing Policy 2033 has established affordable housing goals and incentive programs, including a housing trust fund and density bonuses near transit.",
+      "active_programs_local": "Dallas Housing Authority project-based vouchers, Office of Community Care gap financing, HOME and CDBG entitlement, Dallas Housing Trust Fund, density bonuses near DART transit, TDHCA 9% and 4% LIHTC",
+      "typical_submarkets_for_affordable": "South Dallas, West Dallas, Pleasant Grove, Hamilton Park, Vickery Meadow, East Dallas, Elm Thicket, Oak Cliff"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "state": "GA",
+      "state_hfa": "Georgia Department of Community Affairs (DCA)",
+      "jurisdictional_notes": "Atlanta Housing administers the Atlanta Housing Choice Voucher program and project-based vouchers, and is an active partner in mixed-income redevelopment. The City of Atlanta Department of City Planning oversees inclusionary zoning requirements in the Beltline Tax Allocation District. Georgia DCA administers 9% and 4% LIHTC statewide, with Atlanta's metro area receiving the largest share of allocations. Fulton and DeKalb County administer their own HOME entitlement programs, adding local soft debt layers.",
+      "active_programs_local": "Atlanta Housing project-based vouchers, City of Atlanta Affordable Housing Trust Fund, Beltline Affordable Housing Trust Fund, Invest Atlanta gap financing, HOME and CDBG entitlement (City and County), Georgia DCA LIHTC allocation",
+      "typical_submarkets_for_affordable": "English Avenue, Vine City, Pittsburgh, Mechanicsville, Summerhill, East Point, Cascade Heights, Southwest Atlanta, Thomasville Heights"
+    },
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "state": "FL",
+      "state_hfa": "Florida Housing Finance Corporation (Florida Housing)",
+      "jurisdictional_notes": "Miami-Dade County Public Housing and Community Development administers local affordable housing programs, HOME, CDBG, and the Surtax program (a dedicated affordable housing levy producing over $30M per year for soft debt). The City of Miami has its own Affordable Housing Trust Fund and inclusionary provisions in certain areas. Florida Housing administers 9% and 4% LIHTC statewide, with South Florida receiving a competitive regional allocation. Miami's extreme cost burden and land constraints make 4% LIHTC plus bonds the most common structure for larger developments.",
+      "active_programs_local": "Miami-Dade Documentary Stamp Surtax (largest local soft debt source), Miami-Dade HOME and CDBG entitlement, City of Miami Affordable Housing Trust Fund, Miami-Dade Public Housing and Community Development gap financing, Florida Housing 9% and 4% LIHTC",
+      "typical_submarkets_for_affordable": "Overtown, Liberty City, Little Havana, Hialeah, Opa-locka, Homestead, Perrine, West Little Havana, North Miami"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "state_hfa": "Arizona Department of Housing (ADOH)",
+      "jurisdictional_notes": "Phoenix Human Services Department and the Community and Economic Development division administer local affordable housing programs, HOME, and CDBG. The City of Phoenix Housing Trust Fund provides soft debt for qualifying developments. ADOH administers 9% and 4% LIHTC statewide. Phoenix has been one of the fastest-growing affordable housing markets in the country due to rapid population growth and a workforce housing shortage. Maricopa County also administers HOME entitlement separately from the City.",
+      "active_programs_local": "Phoenix Housing Trust Fund, City of Phoenix HOME and CDBG entitlement, Maricopa County HOME program, ADOH LIHTC allocation, Arizona Department of Housing gap financing, Phoenix Housing Authority project-based vouchers",
+      "typical_submarkets_for_affordable": "South Phoenix, Central Phoenix, Laveen, Maryvale, West Phoenix, Glendale-adjacent, Alhambra, Downtown Phoenix infill, Sunnyslope"
+    },
+    {
+      "slug": "san-antonio",
+      "name": "San Antonio",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "San Antonio Housing Authority (SAHA) is one of the most active PHAs in Texas for affordable development partnerships. The City of San Antonio's Neighborhood and Housing Services Department administers HOME, CDBG, and the SA Tomorrow Comprehensive Plan affordable housing goals. TDHCA administers 9% and 4% LIHTC, with San Antonio classified as a mid-size urban market in state scoring. The San Antonio Housing Trust Fund provides additional soft debt for qualifying developments.",
+      "active_programs_local": "SAHA project-based vouchers and development partnerships, San Antonio Housing Trust Fund, City of San Antonio HOME and CDBG entitlement, Neighborhood and Housing Services Department gap financing, TDHCA LIHTC allocation",
+      "typical_submarkets_for_affordable": "East Side, West Side, South Side, Near Northside, Eastside Promise Zone, Mission Trails, Harlandale, Edgewood"
+    },
+    {
+      "slug": "seattle",
+      "name": "Seattle",
+      "state": "WA",
+      "state_hfa": "Washington State Housing Finance Commission (WSHFC)",
+      "jurisdictional_notes": "Seattle Office of Housing administers the Mandatory Housing Affordability (MHA) program, which generates over $50M per year in in-lieu fees for affordable housing, plus direct gap financing through the Seattle Housing Levy. The Seattle Housing Authority (SHA) administers project-based vouchers. WSHFC administers 9% and 4% LIHTC for Washington State and issues tax-exempt bonds. King County also administers its own HOME entitlement and housing trust resources. Seattle is one of the most expensive rental markets nationally, creating significant affordable housing demand.",
+      "active_programs_local": "Seattle Housing Levy, Mandatory Housing Affordability in-lieu fees, Seattle Office of Housing gap financing, SHA project-based vouchers, King County Housing and Community Development programs, WSHFC LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Rainier Valley, Beacon Hill, South Seattle, Central District, International District, Delridge, Northgate transit area, South Lake Union-adjacent"
+    },
+    {
+      "slug": "denver",
+      "name": "Denver",
+      "state": "CO",
+      "state_hfa": "Colorado Housing and Finance Authority (CHFA)",
+      "jurisdictional_notes": "Denver Office of Housing Stability (HOST) administers the Denver Affordable Housing Fund, Affordable Housing Linkage Fee proceeds, and local gap financing. The Denver Housing Authority (DHA) administers project-based vouchers and is an active development partner. CHFA administers 9% and 4% LIHTC for Colorado and issues tax-exempt bonds. Denver's Affordable Denver bond program authorized $105M for affordable housing in 2022. The city's inclusionary housing ordinance requires affordable units or in-lieu fees for new market-rate development.",
+      "active_programs_local": "Denver Affordable Housing Fund, Affordable Housing Linkage Fee, Affordable Denver bond proceeds, DHA project-based vouchers, City of Denver HOME and CDBG entitlement, CHFA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Montbello, Sun Valley, Globeville, Elyria-Swansea, Northeast Denver, Five Points, Westwood, Green Valley Ranch, Cole"
+    },
+    {
+      "slug": "boston",
+      "name": "Boston",
+      "state": "MA",
+      "state_hfa": "MassHousing",
+      "jurisdictional_notes": "Boston Planning and Development Agency (BPDA) and the Mayor's Office of Housing administer Boston's Inclusionary Development Policy (IDP), which requires affordable set-asides in most new developments and generates a significant in-lieu fee stream for the city's Affordable Housing Fund. The Boston Housing Authority (BHA) administers one of the nation's largest project-based voucher programs. MassHousing administers 4% and 9% LIHTC and issues tax-exempt bonds. The Massachusetts Executive Office of Housing and Livable Communities (EOHLC) administers additional soft debt sources including the Community Development Block Grant and HOME programs.",
+      "active_programs_local": "Boston Affordable Housing Fund (IDP in-lieu fees), Mayor's Office of Housing gap financing, BHA project-based vouchers, HOME and CDBG entitlement, MassHousing LIHTC and bond allocation, EOHLC gap financing, Massachusetts Community Investment Tax Credit (CITC)",
+      "typical_submarkets_for_affordable": "Roxbury, Dorchester, Mattapan, East Boston, Hyde Park, Jamaica Plain, South End-adjacent, Chinatown-adjacent, Mission Hill"
+    },
+    {
+      "slug": "washington-dc",
+      "name": "Washington",
+      "state": "DC",
+      "state_hfa": "DC Housing Finance Agency (DCHFA)",
+      "jurisdictional_notes": "DC Department of Housing and Community Development (DHCD) administers the Housing Production Trust Fund (HPTF), which is one of the most well-capitalized local affordable housing funds in the country, receiving a dedicated percentage of deed recordation taxes. DC Housing Authority (DCHA) administers project-based vouchers. DCHFA administers 4% and 9% LIHTC and issues tax-exempt bonds. DC's inclusionary zoning program requires affordable units in new residential developments. DC's extremely high land costs and strong demand create significant need for deep gap financing in almost every affordable development.",
+      "active_programs_local": "DC Housing Production Trust Fund (HPTF), DHCD gap financing, DCHA project-based vouchers, HOME and CDBG entitlement, DCHFA LIHTC and bond allocation, DC Affordable Housing Preservation Fund, inclusionary zoning in-lieu fees",
+      "typical_submarkets_for_affordable": "Ward 7 (Deanwood, Capitol Heights), Ward 8 (Congress Heights, Anacostia), Shaw-adjacent, Columbia Heights, Petworth, Trinidad, Brookland"
+    },
+    {
+      "slug": "minneapolis",
+      "name": "Minneapolis",
+      "state": "MN",
+      "state_hfa": "Minnesota Housing Finance Agency (Minnesota Housing)",
+      "jurisdictional_notes": "Minneapolis Community Planning and Economic Development (CPED) administers local affordable housing programs, the Minneapolis Affordable Housing Trust Fund, and CDBG and HOME entitlement. The Minneapolis Public Housing Authority (MPHA) administers project-based vouchers. Minnesota Housing administers 9% and 4% LIHTC statewide and issues tax-exempt bonds. The Minneapolis 2040 Comprehensive Plan eliminated single-family zoning citywide, opening up affordable development opportunities throughout the city.",
+      "active_programs_local": "Minneapolis Affordable Housing Trust Fund, CPED gap financing, MPHA project-based vouchers, HOME and CDBG entitlement, Minnesota Housing LIHTC and bond allocation, Hennepin County HOME program, Naturally Occurring Affordable Housing (NOAH) Preservation Fund",
+      "typical_submarkets_for_affordable": "North Minneapolis, Powderhorn, Phillips, Cedar-Riverside, Jordan, Hawthorne, McKinley, Near Northside, Sumner-Glenwood"
+    },
+    {
+      "slug": "portland",
+      "name": "Portland",
+      "state": "OR",
+      "state_hfa": "Oregon Housing and Community Services (OHCS)",
+      "jurisdictional_notes": "Portland Housing Bureau (PHB) administers the affordable housing set-aside from the Portland Inclusionary Housing Program, as well as Metro Bond Measure funds (Measure 26-199, $652.8M) and voter-approved housing bonds. The Housing Authority of Portland (Home Forward) administers project-based vouchers. OHCS administers 9% and 4% LIHTC statewide and issues tax-exempt bonds. Metro's regional government has authority over land use in the Portland metro area, and the regional housing strategy influences where affordable development is prioritized.",
+      "active_programs_local": "Portland Housing Bureau gap financing, Metro Bond Measure affordable housing funds, Inclusionary Housing Program fees, Home Forward project-based vouchers, HOME and CDBG entitlement, OHCS LIHTC and bond allocation, Multnomah County SRV (Single Room Vehicle) and PSH programs",
+      "typical_submarkets_for_affordable": "East Portland (Lents, Foster-Powell, Centennial), Cully, St. Johns, Boise-Eliot, Albina corridor, Outer Southeast, Hazelwood"
+    },
+    {
+      "slug": "baltimore",
+      "name": "Baltimore",
+      "state": "MD",
+      "state_hfa": "Maryland Department of Housing and Community Development (DHCD)",
+      "jurisdictional_notes": "Baltimore City Department of Housing and Community Development (BCHCD) administers local affordable housing programs, HOME, CDBG, and the Baltimore City Community Development Block Grant. The Housing Authority of Baltimore City (HABC) administers project-based vouchers. Maryland DHCD administers 9% and 4% LIHTC and issues tax-exempt bonds through the Community Development Administration (CDA). Baltimore's significant inventory of vacant and blighted properties creates unique redevelopment opportunities, and several state programs specifically target revitalization of the city's historic neighborhood housing stock.",
+      "active_programs_local": "BCHCD gap financing, Affordable Housing Trust Fund, HABC project-based vouchers, HOME and CDBG entitlement, Maryland DHCD LIHTC and bond allocation, Rental Housing Works program, Community Legacy and Community Investment Tax Credit programs",
+      "typical_submarkets_for_affordable": "East Baltimore, West Baltimore, Sandtown-Winchester, Cherry Hill, Park Heights, Upton, Greenmount West, Reservoir Hill, Pigtown"
+    },
+    {
+      "slug": "charlotte",
+      "name": "Charlotte",
+      "state": "NC",
+      "state_hfa": "North Carolina Housing Finance Agency (NCHFA)",
+      "jurisdictional_notes": "Charlotte-Mecklenburg Housing Partnership and the City's Housing and Neighborhood Services administer local affordable housing programs. The Charlotte Housing Authority (CHA) administers project-based vouchers. NCHFA administers 9% and 4% LIHTC statewide and issues tax-exempt bonds. The Charlotte City Council has adopted Housing Charlotte, a $50M affordable housing investment program. Mecklenburg County operates the Mecklenburg County Housing Trust Fund in parallel with city resources.",
+      "active_programs_local": "Charlotte Housing Trust Fund, Housing Charlotte investment program, CHA project-based vouchers, HOME and CDBG entitlement, Mecklenburg County Housing Trust Fund, NCHFA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "West Charlotte, Grier Heights, Cherry, Villa Heights, University City-adjacent, Double Oaks, Eastland, Enderly Park, Hidden Valley"
+    },
+    {
+      "slug": "nashville",
+      "name": "Nashville",
+      "state": "TN",
+      "state_hfa": "Tennessee Housing Development Agency (THDA)",
+      "jurisdictional_notes": "Metropolitan Nashville Affordable Housing Division administers local affordable housing programs and the Barnes Housing Trust Fund. The Metropolitan Development and Housing Agency (MDHA) administers project-based vouchers and is an active redevelopment partner. THDA administers 9% and 4% LIHTC statewide and issues tax-exempt bonds. Nashville has experienced dramatic rental cost increases since 2018, creating intense demand for affordable units, particularly in the $700 to $1,100/month range. MDHA has used HOPE VI successor grants for several mixed-income redevelopments.",
+      "active_programs_local": "Barnes Housing Trust Fund, Metropolitan Nashville Affordable Housing Division gap financing, MDHA project-based vouchers, HOME and CDBG entitlement, THDA LIHTC and bond allocation, Payment in Lieu of Taxes (PILOT) program for affordable developments",
+      "typical_submarkets_for_affordable": "North Nashville, Bordeaux, East Nashville-affordable pockets, Antioch, Madison, Hermitage, Dickerson Road corridor, Haynes-Trinity, Hadley Park"
+    },
+    {
+      "slug": "las-vegas",
+      "name": "Las Vegas",
+      "state": "NV",
+      "state_hfa": "Nevada Housing Division",
+      "jurisdictional_notes": "City of Las Vegas Housing and Neighborhood Services administers local affordable housing programs, HOME, and CDBG. Clark County administers its own HOME entitlement separately. Nevada Housing Division administers 9% and 4% LIHTC statewide and issues tax-exempt bonds. The Southern Nevada Regional Housing Authority (SNRHA) administers project-based vouchers across the region. Nevada's lack of state income tax and relatively lower land costs make workforce and affordable housing deals feasible at smaller sizes than coastal markets, though rapid population growth and pandemic-era rental increases have significantly tightened affordability.",
+      "active_programs_local": "City of Las Vegas HOME and CDBG, Clark County HOME entitlement, SNRHA project-based vouchers, Nevada Housing Division LIHTC and bond allocation, Las Vegas Affordable Housing Trust Fund, Nevada Rural Housing Authority programs for outlying areas",
+      "typical_submarkets_for_affordable": "Downtown Las Vegas, East Las Vegas, North Las Vegas, Boulevard Mall area, Spring Valley, Paradise-adjacent, West Las Vegas, Historic Westside"
+    },
+    {
+      "slug": "detroit",
+      "name": "Detroit",
+      "state": "MI",
+      "state_hfa": "Michigan State Housing Development Authority (MSHDA)",
+      "jurisdictional_notes": "Detroit Housing Commission and the Detroit Land Bank Authority are the primary local affordable housing infrastructure. The City of Detroit administers HOME and CDBG through the Housing and Revitalization Department. MSHDA administers 9% and 4% LIHTC for Michigan and issues tax-exempt bonds. Detroit's affordable housing landscape is complicated by significant vacancy and blight, though the city has designated several areas as opportunity zones and has active programs for acquisition-rehabilitation of historic housing stock. Wayne County administers HOME entitlement separately.",
+      "active_programs_local": "Detroit Land Bank affordable development program, Detroit Housing Commission project-based vouchers, City of Detroit HOME and CDBG, Wayne County HOME entitlement, MSHDA LIHTC and bond allocation, Neighborhood Improvement Program, Detroit Housing Fund (philanthropic gap fund)",
+      "typical_submarkets_for_affordable": "North End, Milwaukee Junction, Corktown-adjacent, East Side, New Center, Brightmoor, Grandmont Rosedale, Jefferson Chalmers, Southwest Detroit"
+    },
+    {
+      "slug": "memphis",
+      "name": "Memphis",
+      "state": "TN",
+      "state_hfa": "Tennessee Housing Development Agency (THDA)",
+      "jurisdictional_notes": "Memphis City Government and Shelby County administer affordable housing programs through the Division of Housing and Community Development. The Memphis Housing Authority (MHA) administers project-based vouchers. THDA administers 9% and 4% LIHTC statewide and issues tax-exempt bonds. Memphis has a high concentration of cost-burdened renters, one of the highest poverty rates among large US cities, and significant naturally occurring affordable housing inventory at risk of conversion or deterioration. The city's large affordable housing market makes it a frequent target for LIHTC allocations.",
+      "active_programs_local": "Memphis and Shelby County Division of Housing and Community Development gap financing, MHA project-based vouchers, HOME and CDBG entitlement, THDA LIHTC and bond allocation, Payment in Lieu of Taxes (PILOT) for affordable developments, Affordable Housing Trust Fund",
+      "typical_submarkets_for_affordable": "South Memphis, Orange Mound, Frayser, Midtown-affordable pockets, Binghampton, Whitehaven, Raleigh, Hickory Hill, Uptown"
+    },
+    {
+      "slug": "indianapolis",
+      "name": "Indianapolis",
+      "state": "IN",
+      "state_hfa": "Indiana Housing and Community Development Authority (IHCDA)",
+      "jurisdictional_notes": "Indianapolis Office of Housing and Community Development administers HOME, CDBG, and local affordable housing programs. The Indianapolis Housing Agency (IHA) administers project-based vouchers and is an active development partner. IHCDA administers 9% and 4% LIHTC statewide and issues tax-exempt bonds. Indianapolis's relatively lower land costs compared to coastal markets make LIHTC deals more feasible, but statewide IHCDA scoring remains competitive. The city's Great Places 2020 initiative and Indy Rental Assistance Program have directed significant investment to targeted neighborhood corridors.",
+      "active_programs_local": "Indianapolis Office of Housing and Community Development gap financing, IHA project-based vouchers, HOME and CDBG entitlement, IHCDA LIHTC and bond allocation, Indianapolis Affordable Housing Trust Fund, Indy Chamber affordable housing programs",
+      "typical_submarkets_for_affordable": "Near Eastside, Near Northside, Martindale-Brightwood, Riverside, Fall Creek Place, Haughville, Fountain Square-affordable pockets, Far Eastside"
+    },
+    {
+      "slug": "columbus",
+      "name": "Columbus",
+      "state": "OH",
+      "state_hfa": "Ohio Housing Finance Agency (OHFA)",
+      "jurisdictional_notes": "Columbus Department of Development administers HOME, CDBG, and the Columbus Housing Trust Fund. The Columbus Metropolitan Housing Authority (CMHA) administers project-based vouchers and is an active development partner. OHFA administers 9% and 4% LIHTC statewide and issues tax-exempt bonds through the Ohio Capital Finance Corporation (OCFC). Columbus's high population growth rate driven by Ohio State University and technology sector expansion has created significant workforce housing demand. Franklin County administers HOME entitlement in the county area separately from the city.",
+      "active_programs_local": "Columbus Housing Trust Fund, Columbus Department of Development gap financing, CMHA project-based vouchers, HOME and CDBG entitlement, Franklin County HOME, OHFA LIHTC and bond allocation, Columbus Affordable Housing Bond Fund",
+      "typical_submarkets_for_affordable": "South Side, Linden, Hilltop, Franklinton, Far East Side, Near East Side, Columbus near-north, Driving Park, Livingston corridor"
+    },
+    {
+      "slug": "austin",
+      "name": "Austin",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "City of Austin Neighborhood Housing and Community Development Office administers HOME, CDBG, and the Austin Affordable Housing Bond (Proposition A, $300M approved in 2018). The Austin Housing Authority (AHA) administers project-based vouchers. TDHCA administers 9% and 4% LIHTC. Austin's dramatic rent increases since 2020 have created intense affordable housing demand. The city's Affordability Unlocked program provides entitlement incentives for projects with deep income targeting, and the 2024 City Council HOME Initiative eliminated most single-family zoning.",
+      "active_programs_local": "Austin Affordable Housing Bond proceeds, Neighborhood Housing and Community Development gap financing, AHA project-based vouchers, HOME and CDBG entitlement, TDHCA LIHTC and bond allocation, Affordability Unlocked density bonus program, City of Austin Community Land Trust",
+      "typical_submarkets_for_affordable": "East Austin (still affordable pockets), North Loop, North Lamar corridor, St. Johns, Windsor Park, Georgian Acres, Rundberg corridor, Wells Branch, Pflugerville-adjacent"
+    },
+    {
+      "slug": "cleveland",
+      "name": "Cleveland",
+      "state": "OH",
+      "state_hfa": "Ohio Housing Finance Agency (OHFA)",
+      "jurisdictional_notes": "City of Cleveland Department of Community Development administers HOME, CDBG, and local affordable housing gap financing. The Cuyahoga Metropolitan Housing Authority (CMHA) administers project-based vouchers and is an active development partner. OHFA administers 9% and 4% LIHTC. Cleveland Neighborhood Progress (CNP) is a major intermediary in the affordable housing market, channeling philanthropic and CDFI capital into neighborhood revitalization. Cuyahoga County also administers HOME entitlement separately.",
+      "active_programs_local": "Cleveland Department of Community Development gap financing, CMHA project-based vouchers, HOME and CDBG entitlement, Cuyahoga County HOME, OHFA LIHTC and bond allocation, Cleveland Neighborhood Progress intermediary loans, Greater Cleveland Community Shares affordable programs",
+      "typical_submarkets_for_affordable": "Glenville, Hough, Collinwood, Central, Slavic Village, West 25th corridor, Kinsman, Mount Pleasant, Clark-Fulton"
+    },
+    {
+      "slug": "kansas-city",
+      "name": "Kansas City",
+      "state": "MO",
+      "state_hfa": "Missouri Housing Development Commission (MHDC)",
+      "jurisdictional_notes": "City of Kansas City Housing Services Division administers HOME, CDBG, and the Affordable Housing Trust Fund. The Kansas City Housing Authority (KCHA) administers project-based vouchers. MHDC administers 9% and 4% LIHTC for Missouri. Kansas City has a substantial inventory of naturally occurring affordable housing in its older neighborhoods, and the city has used Tax Increment Financing (TIF) and tax abatement to incentivize affordable development in targeted areas. Jackson County also administers HOME entitlement separately.",
+      "active_programs_local": "Kansas City Affordable Housing Trust Fund, Housing Services Division gap financing, KCHA project-based vouchers, HOME and CDBG entitlement, Jackson County HOME, MHDC LIHTC and bond allocation, TIF and tax abatement for affordable development",
+      "typical_submarkets_for_affordable": "Westside, East Side, Swope Park, Northeast, Historic Northeast, Ivanhoe, South Hyde Park, Beacon Hill, Vineyard-area"
+    },
+    {
+      "slug": "milwaukee",
+      "name": "Milwaukee",
+      "state": "WI",
+      "state_hfa": "Wisconsin Housing and Economic Development Authority (WHEDA)",
+      "jurisdictional_notes": "City of Milwaukee Department of City Development administers HOME, CDBG, and local affordable housing programs. The Housing Authority of the City of Milwaukee (HACM) administers project-based vouchers and operates a significant portfolio of public housing. WHEDA administers 9% and 4% LIHTC for Wisconsin. Milwaukee has one of the highest renter cost burden rates among large Midwest cities and significant NOAH inventory at risk. The Wisconsin Housing and Economic Development Authority also provides construction financing for qualifying projects.",
+      "active_programs_local": "Milwaukee Department of City Development gap financing, HACM project-based vouchers, HOME and CDBG entitlement, WHEDA LIHTC and bond allocation, Wisconsin HOME Advantage program, Milwaukee Community Development Alliance programs",
+      "typical_submarkets_for_affordable": "North Side (Amani, Harambee, Lindsey Heights), South Side (Clarke Square, Silver City), Near West Side, Metcalfe Park, Washington Park, Midtown"
+    },
+    {
+      "slug": "raleigh",
+      "name": "Raleigh",
+      "state": "NC",
+      "state_hfa": "North Carolina Housing Finance Agency (NCHFA)",
+      "jurisdictional_notes": "City of Raleigh Housing and Neighborhoods Department administers local affordable housing programs, HOME, and CDBG. The Raleigh Housing Authority (RHA) administers project-based vouchers. NCHFA administers 9% and 4% LIHTC and issues tax-exempt bonds. Raleigh's high population growth driven by Research Triangle Park and tech sector expansion has created significant affordability pressures. Wake County administers HOME entitlement separately. The City of Raleigh Affordable Housing Bond ($80M approved in 2020) provides additional local gap financing.",
+      "active_programs_local": "Raleigh Affordable Housing Bond proceeds, Housing and Neighborhoods Department gap financing, RHA project-based vouchers, HOME and CDBG entitlement, Wake County HOME, NCHFA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "South Park, Southeast Raleigh, Walnut Creek, Brentwood, East Raleigh, Hedingham, Old Town, Louisburg Road corridor, Barwell Road area"
+    },
+    {
+      "slug": "st-louis",
+      "name": "St. Louis",
+      "state": "MO",
+      "state_hfa": "Missouri Housing Development Commission (MHDC)",
+      "jurisdictional_notes": "St. Louis Development Corporation and the City's Community Development Administration administer HOME, CDBG, and local affordable housing programs. The St. Louis Housing Authority (SLHA) administers project-based vouchers. MHDC administers 9% and 4% LIHTC. St. Louis City is an independent city not part of St. Louis County, which creates a bifurcated HOME entitlement structure. St. Louis has significant affordable housing opportunity in its historic neighborhoods, with many rehabilitation and adaptive reuse LIHTC deals in existing multifamily stock.",
+      "active_programs_local": "Community Development Administration gap financing, SLHA project-based vouchers, HOME and CDBG entitlement (City and County separate), MHDC LIHTC and bond allocation, St. Louis Affordable Housing Trust Fund, Tax Increment Financing for affordable development",
+      "typical_submarkets_for_affordable": "North St. Louis, Jeff-Vander-Lou, Greater Ville, Wells-Goodfellow, Baden, Benton Park West, Kingsway East, Dutchtown, Gravois Park"
+    },
+    {
+      "slug": "richmond",
+      "name": "Richmond",
+      "state": "VA",
+      "state_hfa": "Virginia Housing",
+      "jurisdictional_notes": "City of Richmond Department of Planning and Development Review and the Richmond Redevelopment and Housing Authority (RRHA) are the primary affordable housing infrastructure. RRHA administers project-based vouchers and is an active development partner in mixed-income redevelopment. Virginia Housing administers 9% and 4% LIHTC for Virginia, issues tax-exempt bonds, and provides construction and permanent financing for qualifying affordable developments. Richmond's Equity and Affordable Housing Strategy calls for 6,200 affordable units by 2030.",
+      "active_programs_local": "RRHA project-based vouchers and development partnerships, City of Richmond HOME and CDBG entitlement, Affordable Housing Trust Fund, Virginia Housing LIHTC and bond allocation, Virginia Housing construction and permanent loan programs, Amazon HQ2 regional housing commitments (pipeline)",
+      "typical_submarkets_for_affordable": "Church Hill, Gilpin Court area, Creighton area, Highland Park, Southside (Hull Street), Whitcomb Court area, Mosby Court area, Manchester"
+    },
+    {
+      "slug": "louisville",
+      "name": "Louisville",
+      "state": "KY",
+      "state_hfa": "Kentucky Housing Corporation (KHC)",
+      "jurisdictional_notes": "Louisville Metro Housing Authority (LMHA) administers project-based vouchers and is an active affordable development partner. Louisville Metro Government Department of Housing administers HOME, CDBG, and local affordable housing gap financing. KHC administers 9% and 4% LIHTC for Kentucky and issues tax-exempt bonds. Louisville's merged city-county government simplifies the entitlement and soft debt layering process compared to many other metros. The Louisville Affordable Housing Trust Fund provides additional local soft debt.",
+      "active_programs_local": "Louisville Affordable Housing Trust Fund, Louisville Metro HOME and CDBG entitlement, LMHA project-based vouchers, KHC LIHTC and bond allocation, KHC construction and permanent loan programs, Louisville Urban League housing programs",
+      "typical_submarkets_for_affordable": "West End (Russell, Portland, Shawnee), Smoketown, Limerick, Shelby Park, Newburg, California neighborhood, Park Hill, Algonquin"
+    },
+    {
+      "slug": "new-orleans",
+      "name": "New Orleans",
+      "state": "LA",
+      "state_hfa": "Louisiana Housing Corporation (LHC)",
+      "jurisdictional_notes": "New Orleans Mayor's Office of Community Development administers HOME, CDBG, and local affordable housing programs. The Housing Authority of New Orleans (HANO) administers project-based vouchers and has been a major participant in mixed-income redevelopment. LHC administers 9% and 4% LIHTC for Louisiana and issues tax-exempt bonds. New Orleans has a significant post-Katrina affordable housing pipeline that is largely complete, but ongoing CDBG-DR programs and a persistent housing affordability crisis continue to drive development. The city's unique urban fabric includes significant historic structures eligible for both LIHTC and historic tax credit layering.",
+      "active_programs_local": "New Orleans Mayor's Office of Community Development gap financing, HANO project-based vouchers, HOME and CDBG entitlement, LHC LIHTC and bond allocation, Louisiana Community Development Capital initiative, New Orleans Redevelopment Authority land disposition",
+      "typical_submarkets_for_affordable": "Gentilly, Mid-City, Central City, Tremé, Hollygrove, New Orleans East, Lower Ninth Ward, Broadmoor, Gert Town"
+    },
+    {
+      "slug": "cincinnati",
+      "name": "Cincinnati",
+      "state": "OH",
+      "state_hfa": "Ohio Housing Finance Agency (OHFA)",
+      "jurisdictional_notes": "City of Cincinnati Community and Economic Development Department administers HOME, CDBG, and local affordable housing programs. The Cincinnati Metropolitan Housing Authority (CMHA) administers project-based vouchers. OHFA administers 9% and 4% LIHTC and issues tax-exempt bonds through OCFC. Cincinnati has an active affordable housing intermediary sector, with several CDFIs operating construction and permanent financing programs in the market. Hamilton County administers HOME entitlement separately.",
+      "active_programs_local": "Cincinnati Department of Community and Economic Development gap financing, CMHA project-based vouchers, HOME and CDBG entitlement, Hamilton County HOME, OHFA LIHTC and bond allocation, Cincinnati Empowerment Corporation housing programs, Affordable Housing Advocates programs",
+      "typical_submarkets_for_affordable": "Over-the-Rhine (affordable pockets), Avondale, Evanston, Bond Hill, Roselawn, South Cumminsville, Price Hill, Walnut Hills, Norwood-adjacent"
+    },
+    {
+      "slug": "pittsburgh",
+      "name": "Pittsburgh",
+      "state": "PA",
+      "state_hfa": "Pennsylvania Housing Finance Agency (PHFA)",
+      "jurisdictional_notes": "City of Pittsburgh Urban Redevelopment Authority (URA) is the primary affordable housing finance vehicle, providing gap financing and land disposition. The Housing Authority of the City of Pittsburgh (HACP) administers project-based vouchers. PHFA administers 9% and 4% LIHTC for Pennsylvania and issues tax-exempt bonds. Allegheny County administers HOME entitlement separately from the city. Pittsburgh's affordable housing development is characterized by acquisition-rehabilitation of older multifamily stock, with LIHTC commonly paired with historic tax credits on pre-1940 buildings.",
+      "active_programs_local": "Pittsburgh Urban Redevelopment Authority gap financing and land, HACP project-based vouchers, City and Allegheny County HOME and CDBG, PHFA LIHTC and bond allocation, Pittsburgh Affordable Housing Task Force programs, Neighborhood Fund",
+      "typical_submarkets_for_affordable": "Hill District, Homewood, East Liberty-affordable pockets, Hazelwood, Beltzhoover, Lincoln-Larimer, Lawrenceville-north, Perry Hilltop, Brighton Heights"
+    },
+    {
+      "slug": "orlando",
+      "name": "Orlando",
+      "state": "FL",
+      "state_hfa": "Florida Housing Finance Corporation (Florida Housing)",
+      "jurisdictional_notes": "City of Orlando's Community Development Division administers HOME, CDBG, and local affordable housing gap financing. The Orlando Housing Authority (OHA) administers project-based vouchers. Florida Housing administers 9% and 4% LIHTC and issues tax-exempt bonds. Orange County administers HOME entitlement separately from the city. Orlando's tourism-driven economy creates an unusually high proportion of low-wage workers relative to housing costs, making workforce housing affordability a persistent challenge. The Sadowski Housing Trust Fund is the primary state soft debt source for Florida deals.",
+      "active_programs_local": "City of Orlando Community Development gap financing, OHA project-based vouchers, HOME and CDBG entitlement (City and Orange County), Florida Housing LIHTC and bond allocation, Sadowski Housing Trust Fund (SAIL, SHIP), Orange County Housing and Community Development programs",
+      "typical_submarkets_for_affordable": "Pine Hills, Parramore, Eatonville, Tangelo Park, Washington Shores, Azalea Park, Lake Underhill, OBT corridor, South Orange Blossom Trail"
+    },
+    {
+      "slug": "tampa",
+      "name": "Tampa",
+      "state": "FL",
+      "state_hfa": "Florida Housing Finance Corporation (Florida Housing)",
+      "jurisdictional_notes": "City of Tampa Affordable Housing Programs administers HOME, CDBG, and the Tampa Affordable Housing Trust Fund. The Tampa Housing Authority (THA) administers project-based vouchers and is an active development partner. Florida Housing administers 9% and 4% LIHTC and issues tax-exempt bonds. Hillsborough County administers HOME entitlement separately from the city. Tampa's affordable housing pipeline has grown significantly since 2022 driven by rapid rent increases and significant federal investment through ARPA and HUD programs.",
+      "active_programs_local": "Tampa Affordable Housing Trust Fund, City of Tampa HOME and CDBG entitlement, THA project-based vouchers, Florida Housing LIHTC and bond allocation, Sadowski Housing Trust Fund, Hillsborough County Affordable Housing Department programs",
+      "typical_submarkets_for_affordable": "East Tampa, Sulphur Springs, Ybor City-affordable pockets, North Tampa, New Tampa-affordable areas, West Tampa, Robles Park area, Palm River"
+    },
+    {
+      "slug": "jacksonville",
+      "name": "Jacksonville",
+      "state": "FL",
+      "state_hfa": "Florida Housing Finance Corporation (Florida Housing)",
+      "jurisdictional_notes": "City of Jacksonville Housing and Community Development Division administers HOME, CDBG, and local affordable housing programs. The Jacksonville Housing Authority (JHA) administers project-based vouchers. Florida Housing administers 9% and 4% LIHTC and issues tax-exempt bonds. Jacksonville is a consolidated city-county government, simplifying the entitlement process. The city's size (largest city by land area in the contiguous US) creates distinct submarkets with varying affordability dynamics.",
+      "active_programs_local": "Jacksonville Housing and Community Development gap financing, JHA project-based vouchers, HOME and CDBG entitlement, Florida Housing LIHTC and bond allocation, Sadowski Housing Trust Fund, Duval County Affordable Housing Advisory Committee programs",
+      "typical_submarkets_for_affordable": "Northside, Westside, Northwest Jacksonville, Moncrief, Brentwood, Lackawanna, Ribault, East Arlington-affordable areas, Downtown Jacksonville redevelopment"
+    },
+    {
+      "slug": "salt-lake-city",
+      "name": "Salt Lake City",
+      "state": "UT",
+      "state_hfa": "Utah Housing Corporation (UHC)",
+      "jurisdictional_notes": "Salt Lake City Community and Neighborhoods Department administers HOME, CDBG, and local affordable housing programs. The Housing Authority of Salt Lake City (HASLC) administers project-based vouchers. UHC administers 9% and 4% LIHTC for Utah and issues tax-exempt bonds. Salt Lake County also administers HOME entitlement separately. The Mormon church's significant land holdings and community development organizations play a unique role in the Salt Lake affordable housing ecosystem. Utah's relatively landlord-friendly regulatory environment and lower land costs outside the Wasatch Front make certain deal structures more viable than coastal markets.",
+      "active_programs_local": "Salt Lake City Community Development gap financing, HASLC project-based vouchers, HOME and CDBG entitlement, Salt Lake County HOME, UHC LIHTC and bond allocation, Utah Homeless Connect programs, LDS Church Community Housing Initiative (non-profit development pipeline)",
+      "typical_submarkets_for_affordable": "Rose Park, Glendale, Poplar Grove, Westside, Fairpark, Granary District, Central City-affordable pockets, Ballpark, Jordan Meadows"
+    },
+    {
+      "slug": "albuquerque",
+      "name": "Albuquerque",
+      "state": "NM",
+      "state_hfa": "New Mexico Mortgage Finance Authority (MFA)",
+      "jurisdictional_notes": "City of Albuquerque Family and Community Services Department administers HOME, CDBG, and local affordable housing programs. The Albuquerque Housing Authority (AHA) administers project-based vouchers. New Mexico MFA administers 9% and 4% LIHTC for New Mexico and issues tax-exempt bonds. Bernalillo County administers HOME entitlement separately. New Mexico's relatively low land costs and strong LIHTC scoring dynamics for projects targeting rural and ELI populations create opportunities for favorable deal structures. The city's high poverty rate and significant Native American population create specialized housing needs that affect program eligibility and scoring.",
+      "active_programs_local": "Albuquerque Family and Community Services gap financing, AHA project-based vouchers, HOME and CDBG entitlement, Bernalillo County HOME, New Mexico MFA LIHTC and bond allocation, New Mexico Mortgage Finance Authority gap financing",
+      "typical_submarkets_for_affordable": "International District, Downtown, Barelas, Westside, South Valley, North Valley, Martineztown, Sawmill, Pajarito Mesa"
+    },
+    {
+      "slug": "tucson",
+      "name": "Tucson",
+      "state": "AZ",
+      "state_hfa": "Arizona Department of Housing (ADOH)",
+      "jurisdictional_notes": "City of Tucson Housing and Community Development Division administers HOME, CDBG, and local affordable housing programs. The Housing Authority of the City of Tucson (HACT) administers project-based vouchers. ADOH administers 9% and 4% LIHTC. Pima County administers HOME entitlement separately from the city. Tucson's affordable housing market is deeply influenced by the University of Arizona and a large student population, creating distinct demand dynamics. The city's relatively low land costs compared to Phoenix make LIHTC feasibility more accessible.",
+      "active_programs_local": "Tucson Housing and Community Development gap financing, HACT project-based vouchers, HOME and CDBG entitlement, Pima County HOME, ADOH LIHTC and bond allocation, Community Investment Corporation of the Southwest housing programs",
+      "typical_submarkets_for_affordable": "South Tucson, South Park, Barrio Anita, Flowing Wells, Midtown, Pueblo Gardens, Armory Park-adjacent, Ward 3 southwest"
+    },
+    {
+      "slug": "virginia-beach",
+      "name": "Virginia Beach",
+      "state": "VA",
+      "state_hfa": "Virginia Housing",
+      "jurisdictional_notes": "City of Virginia Beach Housing and Neighborhood Preservation Division administers HOME, CDBG, and local affordable housing programs. The Virginia Beach Department of Housing and Neighborhood Preservation administers the city's VHSP (Virginia Housing Stability Program) and is the primary local affordable housing finance vehicle. Virginia Housing administers 9% and 4% LIHTC and issues tax-exempt bonds. Virginia Beach's strong military presence through Naval Station Norfolk creates consistent demand for workforce housing, and the city coordinates with Virginia Housing on HUD-VASH vouchers for veteran permanent supportive housing.",
+      "active_programs_local": "Virginia Beach Affordable Housing Programs gap financing, HOME and CDBG entitlement, Virginia Housing LIHTC and bond allocation, Virginia Housing construction and permanent loan programs, HUD-VASH vouchers for veteran PSH, Virginia Beach Housing Resource Center programs",
+      "typical_submarkets_for_affordable": "Princess Anne Plaza, Burton Station, Central Beach Area, Newtown, Lake James, Kempsville area, Lynnhaven area workforce housing"
+    },
+    {
+      "slug": "el-paso",
+      "name": "El Paso",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "City of El Paso Community and Human Development Department administers HOME, CDBG, and local affordable housing programs. The El Paso Housing Authority (EPHA) administers project-based vouchers. TDHCA administers 9% and 4% LIHTC. El Paso's border location creates unique affordable housing dynamics, including significant binational workforce demand, farmworker housing needs, and access to USDA rural development programs for outlying areas. Land costs are low relative to most Texas metros, improving LIHTC feasibility.",
+      "active_programs_local": "El Paso Community and Human Development gap financing, EPHA project-based vouchers, HOME and CDBG entitlement, TDHCA LIHTC and bond allocation, USDA 515 and 538 rural development programs for outlying areas, Paso del Norte Affordable Housing Initiative",
+      "typical_submarkets_for_affordable": "Lower Valley, Segundo Barrio, Sunset Heights, Northeast El Paso, Central El Paso, San Juan neighborhood, Ysleta, Canutillo"
+    },
+    {
+      "slug": "omaha",
+      "name": "Omaha",
+      "state": "NE",
+      "state_hfa": "Nebraska Investment Finance Authority (NIFA)",
+      "jurisdictional_notes": "City of Omaha Planning Department and the Omaha Housing Authority (OHA) are the primary affordable housing infrastructure. OHA administers project-based vouchers and is an active development partner. NIFA administers 9% and 4% LIHTC for Nebraska and issues tax-exempt bonds. Douglas County administers HOME entitlement separately from the city. Omaha's affordable housing market has been shaped by significant corporate employer presence (Union Pacific, Berkshire Hathaway, healthcare systems) creating steady workforce demand, and LIHTC deals are increasingly targeting mixed-income structures.",
+      "active_programs_local": "Omaha Planning Department gap financing, OHA project-based vouchers, HOME and CDBG entitlement, Douglas County HOME, NIFA LIHTC and bond allocation, Omaha Economic Development Corporation housing programs",
+      "typical_submarkets_for_affordable": "North Omaha, South Omaha, Near North Side, Logan Fontenelle, Florence-affordable pockets, Benson-affordable areas, Midtown Crossing-adjacent"
+    },
+    {
+      "slug": "st-paul",
+      "name": "St. Paul",
+      "state": "MN",
+      "state_hfa": "Minnesota Housing Finance Agency (Minnesota Housing)",
+      "jurisdictional_notes": "Saint Paul Department of Planning and Economic Development administers HOME, CDBG, and local affordable housing programs including the Capital Improvement Bond and Housing Infrastructure Bonds. The Saint Paul Public Housing Agency (PHA) administers project-based vouchers. Minnesota Housing administers 9% and 4% LIHTC and issues tax-exempt bonds. Ramsey County administers HOME entitlement separately. St. Paul's 2019 rent stabilization ordinance (3% annual cap) has complicated LIHTC feasibility calculations for some deals. The city coordinates affordable development with Minneapolis through the Regional Housing Bond and the Naturally Occurring Affordable Housing (NOAH) program.",
+      "active_programs_local": "Saint Paul HOME and CDBG entitlement, PHA project-based vouchers, Minnesota Housing LIHTC and bond allocation, Ramsey County HOME, Regional Housing Bond program, Saint Paul Housing and Redevelopment Authority gap financing, NOAH Preservation Fund",
+      "typical_submarkets_for_affordable": "Frogtown, Summit-University, Rondo area, North End, East Side, West Side, Payne-Phalen, Rice Street corridor"
+    },
+    {
+      "slug": "birmingham",
+      "name": "Birmingham",
+      "state": "AL",
+      "state_hfa": "Alabama Housing Finance Authority (AHFA)",
+      "jurisdictional_notes": "City of Birmingham Planning, Engineering, and Permits Department and the Jefferson County Department of Community Services administer HOME and CDBG. The Housing Authority of the Birmingham District (HABD) administers project-based vouchers and is an active redevelopment partner. AHFA administers 9% and 4% LIHTC for Alabama and issues tax-exempt bonds. Birmingham's urban center has experienced significant population loss but has a strong base of CDFIs, faith-based affordable developers, and nonprofit housing organizations driving affordable production.",
+      "active_programs_local": "Birmingham and Jefferson County HOME and CDBG, HABD project-based vouchers, AHFA LIHTC and bond allocation, Alabama Housing Finance Authority construction and permanent loan programs, Community Reinvestment Fund nonprofit programs, Neighborhood Revitalization Initiative",
+      "typical_submarkets_for_affordable": "Ensley, Pratt City, North Birmingham, Titusville, Woodlawn, East Lake, Kingston, Collegeville, West End"
+    },
+    {
+      "slug": "hartford",
+      "name": "Hartford",
+      "state": "CT",
+      "state_hfa": "Connecticut Housing Finance Authority (CHFA)",
+      "jurisdictional_notes": "City of Hartford Department of Development Services administers HOME, CDBG, and local affordable housing programs. The Hartford Housing Authority (HHA) administers project-based vouchers. CHFA administers 9% and 4% LIHTC for Connecticut and issues tax-exempt bonds. Hartford has one of the highest poverty rates in the Northeast and significant housing instability, creating strong state and federal investment in affordable production. The Connecticut Department of Housing (DOH) administers the State's Housing Trust Fund and additional soft debt sources. Hartford's Residents First Housing Plan targets 1,000 new affordable units by 2025.",
+      "active_programs_local": "Hartford Department of Development Services gap financing, HHA project-based vouchers, HOME and CDBG entitlement, CHFA LIHTC and bond allocation, Connecticut DOH Housing Trust Fund, State Moderate Rehabilitation and Rental Assistance programs",
+      "typical_submarkets_for_affordable": "North End, South End, Clay-Arsenal, Asylum Hill, Frog Hollow, Barry Square, Behind the Rocks, Blue Hills"
+    },
+    {
+      "slug": "providence",
+      "name": "Providence",
+      "state": "RI",
+      "state_hfa": "Rhode Island Housing",
+      "jurisdictional_notes": "City of Providence Department of Planning and Development administers HOME, CDBG, and local affordable housing programs. The Providence Housing Authority (PHA) administers project-based vouchers. Rhode Island Housing administers 9% and 4% LIHTC for Rhode Island, issues tax-exempt bonds, and provides construction and permanent financing for affordable developments. Providence is the only large city in Rhode Island, meaning most statewide LIHTC allocations flow through the city or the immediate surrounding area. Rhode Island Housing's Homeownership and Rental Housing programs provide both construction and permanent debt.",
+      "active_programs_local": "Providence Department of Planning and Development gap financing, PHA project-based vouchers, HOME and CDBG entitlement, Rhode Island Housing LIHTC and bond allocation, Rhode Island Housing construction and permanent loan programs, Capital Good Fund CDFI",
+      "typical_submarkets_for_affordable": "South Providence, Olneyville, North Providence adjacent, Elmhurst, Silver Lake, Wanskuck, Charles, West End"
+    },
+    {
+      "slug": "buffalo",
+      "name": "Buffalo",
+      "state": "NY",
+      "state_hfa": "New York State Homes and Community Renewal (HCR)",
+      "jurisdictional_notes": "City of Buffalo Department of Community Services administers HOME, CDBG, and local affordable housing programs. The Buffalo Municipal Housing Authority (BMHA) administers project-based vouchers. New York State Homes and Community Renewal (HCR) administers 9% and 4% LIHTC for New York State and issues tax-exempt bonds through the State of New York Mortgage Agency (SONYMA) and the Affordable Housing Corporation (AHC). Erie County administers HOME entitlement separately. Buffalo's significant inventory of historic multifamily housing, combined with the $10B+ in federal investment from the CHIPS Act and related tech sector growth, is creating both preservation and new construction affordable housing opportunities.",
+      "active_programs_local": "Buffalo and Erie County HOME and CDBG, BMHA project-based vouchers, HCR 9% and 4% LIHTC allocation, SONYMA and AHC financing, New York Main Street and Community Development Initiative programs, Buffalo Urban Development Corporation gap financing",
+      "typical_submarkets_for_affordable": "East Side (Masten, University, Schiller Park), West Side, Cold Spring, South Buffalo, Emerson, Front Park-adjacent, Lovejoy"
+    },
+    {
+      "slug": "newark",
+      "name": "Newark",
+      "state": "NJ",
+      "state_hfa": "New Jersey Housing and Mortgage Finance Agency (NJHMFA)",
+      "jurisdictional_notes": "City of Newark Department of Engineering administers HOME, CDBG, and local affordable housing programs. The Newark Housing Authority (NHA) administers project-based vouchers and is a major development partner. NJHMFA administers 9% and 4% LIHTC for New Jersey, issues tax-exempt bonds, and provides construction and permanent financing. Essex County administers HOME entitlement separately from Newark. Newark's Mount Laurel obligations, the New Jersey Fair Housing Act, and the state's Anti-Mount Laurel Act requirements create a unique regulatory framework affecting affordability set-asides in new development. Newark's proximity to Manhattan creates high land and construction costs that require deep gap financing.",
+      "active_programs_local": "Newark HOME and CDBG entitlement, NHA project-based vouchers, Essex County HOME, NJHMFA LIHTC and bond allocation, NJHMFA construction and permanent financing, New Jersey Neighborhood Revitalization Tax Credit (NRTC), New Jersey Affordable Housing Trust Fund",
+      "typical_submarkets_for_affordable": "Central Ward, South Ward, East Ward, North Ward, Lower Broadway, Roseville, Fairmount, Ironbound (affordable pockets)"
+    },
+    {
+      "slug": "baton-rouge",
+      "name": "Baton Rouge",
+      "state": "LA",
+      "state_hfa": "Louisiana Housing Corporation (LHC)",
+      "jurisdictional_notes": "City-Parish of Baton Rouge Community Development Division administers HOME, CDBG, and local affordable housing programs. The Housing Authority of East Baton Rouge Parish (HAEBR) administers project-based vouchers. Louisiana Housing Corporation (LHC) administers 9% and 4% LIHTC for Louisiana and issues tax-exempt bonds. Baton Rouge's affordable housing market has been shaped by post-hurricane recovery investment (2016 flood CDBG-DR largely disbursed) and a steady pipeline from Louisiana State University and state government employment. The city-parish consolidated government simplifies the entitlement process.",
+      "active_programs_local": "Baton Rouge Community Development Division gap financing, HAEBR project-based vouchers, HOME and CDBG entitlement, LHC LIHTC and bond allocation, Louisiana Housing Corporation soft debt, CDBG-DR programs (wind-down), East Baton Rouge Redevelopment Authority land disposition",
+      "typical_submarkets_for_affordable": "North Baton Rouge, Eden Park, Scotlandville, Old South Baton Rouge, Bank Street-adjacent, Eden Park, Southeast Baton Rouge, Gardere"
+    },
+    {
+      "slug": "columbia-sc",
+      "name": "Columbia",
+      "state": "SC",
+      "state_hfa": "South Carolina State Housing Finance and Development Authority (SC Housing)",
+      "jurisdictional_notes": "City of Columbia Community Development Department administers HOME, CDBG, and local affordable housing programs. The Columbia Housing Authority (CHA) administers project-based vouchers. SC Housing administers 9% and 4% LIHTC for South Carolina and issues tax-exempt bonds. Richland County administers HOME entitlement separately. Columbia's affordable housing market is shaped by University of South Carolina enrollment, Fort Jackson military presence, and a large state government employment base, creating demand across the income spectrum.",
+      "active_programs_local": "Columbia Community Development gap financing, CHA project-based vouchers, HOME and CDBG entitlement, Richland County HOME, SC Housing LIHTC and bond allocation, SC Housing construction and permanent loan programs",
+      "typical_submarkets_for_affordable": "North Columbia, Waverly, Eau Claire, Lower Richland, Edgewood, Bull Street corridor, Rosewood, North Main"
+    },
+    {
+      "slug": "greensboro",
+      "name": "Greensboro",
+      "state": "NC",
+      "state_hfa": "North Carolina Housing Finance Agency (NCHFA)",
+      "jurisdictional_notes": "City of Greensboro Community Development Department administers HOME, CDBG, and local affordable housing programs. The Greensboro Housing Authority (GHA) administers project-based vouchers. NCHFA administers 9% and 4% LIHTC for North Carolina and issues tax-exempt bonds. Guilford County administers HOME entitlement separately from the city. Greensboro's affordable housing market is driven by Wake Forest University Medical Center, distribution and logistics sector growth, and a large immigrant workforce. The city's 2019 Affordable Housing Master Plan targets 5,000 new affordable units.",
+      "active_programs_local": "Greensboro Community Development gap financing, GHA project-based vouchers, HOME and CDBG entitlement, Guilford County HOME, NCHFA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "East Greensboro, Southside, Revolution Mill area, Old Irving Park adjacent, Gate City Boulevard corridor, McLeansville, Renaissance community"
+    },
+    {
+      "slug": "durham-nc",
+      "name": "Durham",
+      "state": "NC",
+      "state_hfa": "North Carolina Housing Finance Agency (NCHFA)",
+      "jurisdictional_notes": "City of Durham Community Development Department administers HOME, CDBG, and local affordable housing programs. The Durham Housing Authority (DHA) administers project-based vouchers and is an active development partner. NCHFA administers 9% and 4% LIHTC for North Carolina and issues tax-exempt bonds. Durham County administers HOME entitlement separately. Durham's affordable housing market has been shaped by Duke University, the Research Triangle Park technology sector, and a rapidly rising cost of housing. The Durham Affordable Housing Initiative ($95M bond approved in 2019) provides significant local soft debt.",
+      "active_programs_local": "Durham Affordable Housing Bond proceeds, Community Development Department gap financing, DHA project-based vouchers, HOME and CDBG entitlement, Durham County HOME, NCHFA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "East Durham, Hayti, Northgate Park-adjacent, South Square area, Southwest Durham, Walltown, Holloway Street corridor, Old North Durham"
+    },
+    {
+      "slug": "des-moines",
+      "name": "Des Moines",
+      "state": "IA",
+      "state_hfa": "Iowa Finance Authority (IFA)",
+      "jurisdictional_notes": "City of Des Moines Neighborhood Development Division administers HOME, CDBG, and local affordable housing programs. The Des Moines Municipal Housing Authority (DMMHA) administers project-based vouchers. Iowa Finance Authority (IFA) administers 9% and 4% LIHTC for Iowa and issues tax-exempt bonds. Polk County administers HOME entitlement separately. Des Moines has emerged as a significant financial services and insurance hub, creating workforce demand across the income spectrum and driving interest in mixed-income affordable development.",
+      "active_programs_local": "Des Moines Neighborhood Development gap financing, DMMHA project-based vouchers, HOME and CDBG entitlement, Polk County HOME, IFA LIHTC and bond allocation, IFA construction and permanent financing",
+      "typical_submarkets_for_affordable": "Near North Side, Drake area adjacent, Southeast Des Moines, Oakridge area, South of Grand, Greenwood Park adjacent, River Bend, Merle Hay area"
+    },
+    {
+      "slug": "akron",
+      "name": "Akron",
+      "state": "OH",
+      "state_hfa": "Ohio Housing Finance Agency (OHFA)",
+      "jurisdictional_notes": "City of Akron Neighborhood Assistance Program and the Summit County Continuum of Care administer HOME, CDBG, and local affordable housing programs. The Akron Metropolitan Housing Authority (AMHA) administers project-based vouchers. OHFA administers 9% and 4% LIHTC for Ohio. Summit County administers HOME entitlement separately from the city. Akron's affordable housing market is shaped by the University of Akron's enrollment patterns, Goodyear Tire's headquarters presence, and a significant inventory of older multifamily housing eligible for rehabilitation LIHTC.",
+      "active_programs_local": "Akron Neighborhood Assistance gap financing, AMHA project-based vouchers, HOME and CDBG entitlement, Summit County HOME, OHFA LIHTC and bond allocation, Summit County Land Bank disposition",
+      "typical_submarkets_for_affordable": "North Hill, West Akron, Kenmore, Ellet, Summit Lake, Firestone Park, Goodyear Heights, Sherbondy Hill"
+    },
+    {
+      "slug": "fort-worth",
+      "name": "Fort Worth",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "City of Fort Worth Neighborhood Services Department administers HOME, CDBG, and local affordable housing programs. The Fort Worth Housing Solutions (FWHS) administers project-based vouchers and is an active development partner. TDHCA administers 9% and 4% LIHTC. Tarrant County administers HOME entitlement separately from the city. Fort Worth's affordable housing market has been shaped by rapid population growth in the Dallas-Fort Worth metro, significant industrial and logistics sector employment, and a large low-to-moderate income workforce population.",
+      "active_programs_local": "Fort Worth Neighborhood Services gap financing, FWHS project-based vouchers, HOME and CDBG entitlement, Tarrant County HOME, TDHCA LIHTC and bond allocation, Fort Worth Affordable Housing Trust Fund",
+      "typical_submarkets_for_affordable": "Stop Six, Polytechnic Heights, Southside, Morningside, East Fort Worth, Como, Rosemont, North Side"
+    },
+    {
+      "slug": "spokane",
+      "name": "Spokane",
+      "state": "WA",
+      "state_hfa": "Washington State Housing Finance Commission (WSHFC)",
+      "jurisdictional_notes": "City of Spokane Community, Housing, and Human Services Department administers HOME, CDBG, and local affordable housing programs. The Housing Authority of Spokane County (HASC) administers project-based vouchers. WSHFC administers 9% and 4% LIHTC for Washington State and issues tax-exempt bonds. Spokane County administers HOME entitlement separately. Spokane's affordable housing market has seen rapid rent increases driven by Seattle-area migration and has a significant homelessness challenge requiring permanent supportive housing investment.",
+      "active_programs_local": "Spokane Community Housing and Human Services gap financing, HASC project-based vouchers, HOME and CDBG entitlement, Spokane County HOME, WSHFC LIHTC and bond allocation, Spokane Housing Ventures nonprofit development programs",
+      "typical_submarkets_for_affordable": "East Spokane, West Central, Hillyard, Shiloh Hills, Kendall Yards-adjacent affordable areas, South Hill pockets, North Spokane"
+    },
+    {
+      "slug": "tacoma",
+      "name": "Tacoma",
+      "state": "WA",
+      "state_hfa": "Washington State Housing Finance Commission (WSHFC)",
+      "jurisdictional_notes": "City of Tacoma Community and Economic Development Department administers HOME, CDBG, and local affordable housing programs. The Tacoma Housing Authority (THA) administers project-based vouchers and is an active development partner. WSHFC administers 9% and 4% LIHTC for Washington State and issues tax-exempt bonds. Pierce County administers HOME entitlement separately. Tacoma's affordable housing market has grown significantly as Seattle area workers seek lower-cost options along the Sounder commuter rail corridor.",
+      "active_programs_local": "Tacoma Community and Economic Development gap financing, THA project-based vouchers, HOME and CDBG entitlement, Pierce County HOME, WSHFC LIHTC and bond allocation, Tacoma Affordable Housing Action Strategy programs",
+      "typical_submarkets_for_affordable": "Hilltop, East Side, Central Tacoma, Lincoln District, South End, Eastside-Fern Hill, McKinley Park, Stadium District-adjacent affordable areas"
+    },
+    {
+      "slug": "colorado-springs",
+      "name": "Colorado Springs",
+      "state": "CO",
+      "state_hfa": "Colorado Housing and Finance Authority (CHFA)",
+      "jurisdictional_notes": "City of Colorado Springs Housing Division administers HOME, CDBG, and local affordable housing programs. The Colorado Springs Housing Authority (CSHA) administers project-based vouchers. CHFA administers 9% and 4% LIHTC for Colorado and issues tax-exempt bonds. El Paso County administers HOME entitlement separately from the city. Colorado Springs's significant military presence (Fort Carson, Peterson AFB, Schriever AFB, NORAD) creates consistent demand for workforce housing, and the city coordinates with the Department of Defense on military housing initiatives.",
+      "active_programs_local": "Colorado Springs Housing Division gap financing, CSHA project-based vouchers, HOME and CDBG entitlement, El Paso County HOME, CHFA LIHTC and bond allocation, Military affordable housing partnership programs",
+      "typical_submarkets_for_affordable": "Fountain, East Colorado Springs, Cimarron Hills, Security-Widefield, North Nevada corridor, Southeast Springs, Stratmoor"
+    },
+    {
+      "slug": "boise",
+      "name": "Boise",
+      "state": "ID",
+      "state_hfa": "Idaho Housing and Finance Association (IHFA)",
+      "jurisdictional_notes": "City of Boise Housing and Community Development Division administers HOME, CDBG, and local affordable housing programs. The Boise City/Ada County Housing Authority (BCACHA) administers project-based vouchers. IHFA administers 9% and 4% LIHTC for Idaho, issues tax-exempt bonds, and provides construction and permanent financing for qualifying affordable developments. Ada County administers HOME entitlement separately. Boise has experienced some of the fastest rent growth in the nation since 2020, driven by California and Pacific Northwest in-migration, creating urgent affordable housing demand.",
+      "active_programs_local": "Boise Housing and Community Development gap financing, BCACHA project-based vouchers, HOME and CDBG entitlement, Ada County HOME, IHFA LIHTC and bond allocation, IHFA construction and permanent financing",
+      "typical_submarkets_for_affordable": "North End-adjacent, Southeast Boise, Bench area, West Boise, Ustick corridor, Garden City-adjacent, Nampa adjacent workforce housing"
+    },
+    {
+      "slug": "knoxville",
+      "name": "Knoxville",
+      "state": "TN",
+      "state_hfa": "Tennessee Housing Development Agency (THDA)",
+      "jurisdictional_notes": "City of Knoxville Community Development Corporation administers HOME, CDBG, and local affordable housing programs. The Knoxville's Community Development Corporation (KCDC) administers project-based vouchers and is an active development partner. THDA administers 9% and 4% LIHTC for Tennessee and issues tax-exempt bonds. Knox County administers HOME entitlement separately. Knoxville's affordable housing market has been shaped by the University of Tennessee, Oak Ridge National Laboratory employment, and the TVA corridor industrial workforce.",
+      "active_programs_local": "Knoxville Community Development Corporation gap financing, KCDC project-based vouchers, HOME and CDBG entitlement, Knox County HOME, THDA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "East Knoxville, Western Heights, Mechanicsville, Lonsdale, Burlington, Fourth and Gill, Beaumont, Island Home area"
+    },
+    {
+      "slug": "chattanooga",
+      "name": "Chattanooga",
+      "state": "TN",
+      "state_hfa": "Tennessee Housing Development Agency (THDA)",
+      "jurisdictional_notes": "City of Chattanooga Community Development Department administers HOME, CDBG, and local affordable housing programs. The Chattanooga Housing Authority (CHA) administers project-based vouchers. THDA administers 9% and 4% LIHTC for Tennessee and issues tax-exempt bonds. Hamilton County administers HOME entitlement separately. Chattanooga's affordable housing pipeline has grown significantly as the city's technology and creative economy transformation has driven rent increases, and the city uses the federal Opportunity Zone framework extensively for affordable development.",
+      "active_programs_local": "Chattanooga Community Development gap financing, CHA project-based vouchers, HOME and CDBG entitlement, Hamilton County HOME, THDA LIHTC and bond allocation, Opportunity Zone-related affordable development pipeline",
+      "typical_submarkets_for_affordable": "Missionary Ridge area, East Chattanooga, Alton Park, MLK Boulevard corridor, East Lake, Highland Park, Orchard Knob, Ridgedale"
+    },
+    {
+      "slug": "savannah",
+      "name": "Savannah",
+      "state": "GA",
+      "state_hfa": "Georgia Department of Community Affairs (DCA)",
+      "jurisdictional_notes": "City of Savannah Community Development Department administers HOME, CDBG, and local affordable housing programs. The Housing Authority of Savannah (HAS) administers project-based vouchers. Georgia DCA administers 9% and 4% LIHTC for Georgia and issues tax-exempt bonds. Chatham County administers HOME entitlement separately. Savannah's affordable housing market has been shaped by SCAD (Savannah College of Art and Design) enrollment, port employment, and significant tourism-sector low-wage employment. The historic district designation creates both opportunities for LIHTC and historic tax credit layering and constraints on new construction.",
+      "active_programs_local": "Savannah Community Development gap financing, HAS project-based vouchers, HOME and CDBG entitlement, Chatham County HOME, Georgia DCA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "West Savannah, East Savannah, Cuyler-Brownsville, Cloverdale, Carver Heights, Thomas Square-adjacent affordable areas, Kayton Homes area"
+    },
+    {
+      "slug": "norfolk",
+      "name": "Norfolk",
+      "state": "VA",
+      "state_hfa": "Virginia Housing",
+      "jurisdictional_notes": "City of Norfolk Department of Development administers HOME, CDBG, and local affordable housing programs. The Norfolk Redevelopment and Housing Authority (NRHA) administers project-based vouchers and is an active development partner. Virginia Housing administers 9% and 4% LIHTC for Virginia and issues tax-exempt bonds. Norfolk's significant military presence through Naval Station Norfolk, the world's largest naval base, creates consistent workforce housing demand, and the city coordinates with the Department of Defense on military housing gap programs.",
+      "active_programs_local": "Norfolk Department of Development gap financing, NRHA project-based vouchers, HOME and CDBG entitlement, Virginia Housing LIHTC and bond allocation, Virginia Housing construction and permanent loan programs",
+      "typical_submarkets_for_affordable": "Park Place, Ballentine Place, East Ocean View, Wards Corner area, Broad Creek, Young Terrace area, Merrimack Landing"
+    },
+    {
+      "slug": "fort-lauderdale",
+      "name": "Fort Lauderdale",
+      "state": "FL",
+      "state_hfa": "Florida Housing Finance Corporation (Florida Housing)",
+      "jurisdictional_notes": "City of Fort Lauderdale Department of Sustainable Development administers HOME, CDBG, and local affordable housing programs. The Housing Authority of the City of Fort Lauderdale (HACFL) administers project-based vouchers. Florida Housing administers 9% and 4% LIHTC and issues tax-exempt bonds. Broward County administers HOME entitlement separately. Fort Lauderdale's affordable housing challenges are amplified by its location in the Miami-Fort Lauderdale metro, one of the most cost-burdened regions nationally, and by significant second-home market compression on available rental inventory.",
+      "active_programs_local": "Fort Lauderdale Affordable Housing Trust Fund, Department of Sustainable Development gap financing, HACFL project-based vouchers, HOME and CDBG entitlement, Broward County HOME, Florida Housing LIHTC and bond allocation, Sadowski Housing Trust Fund",
+      "typical_submarkets_for_affordable": "Sistrunk, Progresso Village, Dillard, South Middle River, Flagler Village-adjacent affordable areas, Sailboat Bend, Riverland"
+    },
+    {
+      "slug": "west-palm-beach",
+      "name": "West Palm Beach",
+      "state": "FL",
+      "state_hfa": "Florida Housing Finance Corporation (Florida Housing)",
+      "jurisdictional_notes": "City of West Palm Beach Community Services Department administers HOME, CDBG, and local affordable housing programs. The Housing Authority of the City of West Palm Beach (WPBHA) administers project-based vouchers. Florida Housing administers 9% and 4% LIHTC and issues tax-exempt bonds. Palm Beach County administers HOME entitlement separately with its own substantial affordable housing program through the Palm Beach County Housing and Economic Sustainability Department.",
+      "active_programs_local": "West Palm Beach Community Services gap financing, WPBHA project-based vouchers, HOME and CDBG entitlement, Palm Beach County Housing and Economic Sustainability programs, Florida Housing LIHTC and bond allocation, Sadowski Housing Trust Fund",
+      "typical_submarkets_for_affordable": "Northwood Hills, Pleasant City, Flamingo Park-adjacent affordable areas, Mangonia Park, Pinewood, Coleman Park"
+    },
+    {
+      "slug": "dayton",
+      "name": "Dayton",
+      "state": "OH",
+      "state_hfa": "Ohio Housing Finance Agency (OHFA)",
+      "jurisdictional_notes": "City of Dayton Community Development Department administers HOME, CDBG, and local affordable housing programs. The Greater Dayton Premier Management (GDPM) administers project-based vouchers. OHFA administers 9% and 4% LIHTC for Ohio. Montgomery County administers HOME entitlement separately from the city. Dayton's affordable housing market has been shaped by significant population loss in its urban core, creating opportunity for land-cost-efficient new construction and adaptive reuse LIHTC in the downtown area.",
+      "active_programs_local": "Dayton Community Development gap financing, GDPM project-based vouchers, HOME and CDBG entitlement, Montgomery County HOME, OHFA LIHTC and bond allocation, Dayton Development Coalition housing programs",
+      "typical_submarkets_for_affordable": "West Dayton, Westwood, Five Oaks, Old North Dayton, Inner East Dayton, Hillcrest, Fairgrounds, Twin Towers"
+    },
+    {
+      "slug": "madison",
+      "name": "Madison",
+      "state": "WI",
+      "state_hfa": "Wisconsin Housing and Economic Development Authority (WHEDA)",
+      "jurisdictional_notes": "City of Madison Department of Planning and Community and Economic Development administers HOME, CDBG, and local affordable housing programs. The Housing Authority of the City of Madison (HACM) administers project-based vouchers. WHEDA administers 9% and 4% LIHTC for Wisconsin and issues tax-exempt bonds. Dane County administers HOME entitlement separately. Madison's affordable housing market is shaped by University of Wisconsin enrollment, state government employment, and one of the most competitive rental markets in the Midwest driven by strong demand and limited land supply within the isthmus.",
+      "active_programs_local": "Madison Community Development gap financing, HACM project-based vouchers, HOME and CDBG entitlement, Dane County HOME, WHEDA LIHTC and bond allocation, Madison Area Community Land Trust",
+      "typical_submarkets_for_affordable": "Allied Drive, Bram's Addition, Theresa Terrace area, Burke Heights, Bay Creek, Reindahl Park, Hawthorne-Worthington, South Madison"
+    },
+    {
+      "slug": "grand-rapids",
+      "name": "Grand Rapids",
+      "state": "MI",
+      "state_hfa": "Michigan State Housing Development Authority (MSHDA)",
+      "jurisdictional_notes": "City of Grand Rapids Community Development Department administers HOME, CDBG, and local affordable housing programs. The Grand Rapids Housing Commission (GRHC) administers project-based vouchers. MSHDA administers 9% and 4% LIHTC for Michigan and issues tax-exempt bonds. Kent County administers HOME entitlement separately. Grand Rapids has one of the fastest-growing economies in Michigan, driven by healthcare (Spectrum Health, Mercy Health), furniture manufacturing, and a growing tech sector, creating significant workforce housing demand.",
+      "active_programs_local": "Grand Rapids Community Development gap financing, GRHC project-based vouchers, HOME and CDBG entitlement, Kent County HOME, MSHDA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Southeast Grand Rapids, Baxter, Heartside, South East End, Franklin-Eastern, Roosevelt Park, West Grand, Ottawa Hills"
+    },
+    {
+      "slug": "albany",
+      "name": "Albany",
+      "state": "NY",
+      "state_hfa": "New York State Homes and Community Renewal (HCR)",
+      "jurisdictional_notes": "City of Albany Department of Development and Planning administers HOME, CDBG, and local affordable housing programs. The Albany Housing Authority (AHA) administers project-based vouchers. New York State Homes and Community Renewal (HCR) administers 9% and 4% LIHTC for New York and issues tax-exempt bonds. Albany County administers HOME entitlement separately. Albany's affordable housing development is significantly influenced by its status as the state capital, creating stable state government employment-driven demand and proximity to state housing program administrators at HCR.",
+      "active_programs_local": "Albany Department of Development gap financing, AHA project-based vouchers, HOME and CDBG entitlement, Albany County HOME, HCR LIHTC and bond allocation, SONYMA and AHC financing, Albany Community Land Trust",
+      "typical_submarkets_for_affordable": "South End, West Hill, Arbor Hill, North Albany, Sheridan Hollow, Warehouse District-adjacent affordable areas, Pine Hills-affordable pockets"
+    },
+    {
+      "slug": "syracuse",
+      "name": "Syracuse",
+      "state": "NY",
+      "state_hfa": "New York State Homes and Community Renewal (HCR)",
+      "jurisdictional_notes": "City of Syracuse Department of Neighborhood and Business Development administers HOME, CDBG, and local affordable housing programs. The Syracuse Housing Authority (SHA) administers project-based vouchers. New York State HCR administers 9% and 4% LIHTC. Onondaga County administers HOME entitlement separately. Syracuse has one of the highest poverty rates among upstate New York cities and significant federal investment in affordable housing production. The city's affordable housing strategy is closely tied to the Say Yes to Education initiative and school-centered community development.",
+      "active_programs_local": "Syracuse Department of Neighborhood and Business Development gap financing, SHA project-based vouchers, HOME and CDBG entitlement, Onondaga County HOME, HCR LIHTC and bond allocation, Syracuse Housing Alliance programs",
+      "typical_submarkets_for_affordable": "South Side, Near Westside, Tipperary Hill, North Side, Eastside, Strathmore, Brighton, Dunbar-Attucks"
+    },
+    {
+      "slug": "harrisburg",
+      "name": "Harrisburg",
+      "state": "PA",
+      "state_hfa": "Pennsylvania Housing Finance Agency (PHFA)",
+      "jurisdictional_notes": "City of Harrisburg Department of Building and Housing Development administers HOME, CDBG, and local affordable housing programs. The Housing Authority of the City of Harrisburg (HACH) administers project-based vouchers. PHFA administers 9% and 4% LIHTC for Pennsylvania and issues tax-exempt bonds. Dauphin County administers HOME entitlement separately. Harrisburg's status as the state capital creates stable government employment-driven demand, and the city's Riverfront redevelopment and arts district investments have spurred affordable development in adjacent neighborhoods.",
+      "active_programs_local": "Harrisburg Department of Building and Housing Development gap financing, HACH project-based vouchers, HOME and CDBG entitlement, Dauphin County HOME, PHFA LIHTC and bond allocation, Trestlewood Affordable Housing community",
+      "typical_submarkets_for_affordable": "Allison Hill, Uptown, Midtown, South Harrisburg, Penbrook, Camp Hill-adjacent affordable areas, Hall Manor area"
+    },
+    {
+      "slug": "little-rock",
+      "name": "Little Rock",
+      "state": "AR",
+      "state_hfa": "Arkansas Development Finance Authority (ADFA)",
+      "jurisdictional_notes": "City of Little Rock Housing and Neighborhood Programs administers HOME, CDBG, and local affordable housing programs. The Little Rock Housing Authority (LRHA) administers project-based vouchers. Arkansas Development Finance Authority (ADFA) administers 9% and 4% LIHTC for Arkansas and issues tax-exempt bonds. Pulaski County administers HOME entitlement separately. Little Rock's affordable housing market is shaped by its status as the state capital, University of Arkansas for Medical Sciences employment, and a significant low-wage service sector workforce.",
+      "active_programs_local": "Little Rock Housing and Neighborhood Programs gap financing, LRHA project-based vouchers, HOME and CDBG entitlement, Pulaski County HOME, ADFA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "West Little Rock-affordable pockets, East Little Rock, South Little Rock, 12th Street corridor, Granite Mountain, College Station, Cammack Village adjacent"
+    },
+    {
+      "slug": "oklahoma-city",
+      "name": "Oklahoma City",
+      "state": "OK",
+      "state_hfa": "Oklahoma Housing Finance Agency (OHFA)",
+      "jurisdictional_notes": "City of Oklahoma City Community Development Division administers HOME, CDBG, and local affordable housing programs. The Oklahoma City Housing Authority (OCHA) administers project-based vouchers. Oklahoma Housing Finance Agency (OHFA) administers 9% and 4% LIHTC for Oklahoma and issues tax-exempt bonds. Oklahoma County administers HOME entitlement separately. Oklahoma City's affordable housing market has been shaped by the energy sector's economic cycles, a large government employment base, and rapid suburban expansion that has left urban affordable housing underinvested.",
+      "active_programs_local": "Oklahoma City Community Development gap financing, OCHA project-based vouchers, HOME and CDBG entitlement, Oklahoma County HOME, OHFA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Northeast Oklahoma City, Capitol Hill, Southeast Oklahoma City, Nichols Hills adjacent affordable areas, Midwest City, Del City"
+    },
+    {
+      "slug": "tulsa",
+      "name": "Tulsa",
+      "state": "OK",
+      "state_hfa": "Oklahoma Housing Finance Agency (OHFA)",
+      "jurisdictional_notes": "City of Tulsa Planning and Development Division administers HOME, CDBG, and local affordable housing programs. The Tulsa Housing Authority (THA) administers project-based vouchers. Oklahoma Housing Finance Agency (OHFA) administers 9% and 4% LIHTC. Tulsa County administers HOME entitlement separately. Tulsa's affordable housing investment has been shaped by significant philanthropic involvement from the George Kaiser Family Foundation and other local foundations, creating a strong CDFI and nonprofit development ecosystem.",
+      "active_programs_local": "Tulsa Planning and Development gap financing, THA project-based vouchers, HOME and CDBG entitlement, Tulsa County HOME, OHFA LIHTC and bond allocation, George Kaiser Family Foundation housing programs, Tulsa Community Foundation affordable investments",
+      "typical_submarkets_for_affordable": "North Tulsa, Greenwood area, East Tulsa, Turley, Brady Heights, West Tulsa, Red Fork, Newblock Park"
+    },
+    {
+      "slug": "wichita",
+      "name": "Wichita",
+      "state": "KS",
+      "state_hfa": "Kansas Housing Resources Corporation (KHRC)",
+      "jurisdictional_notes": "City of Wichita Department of Housing and Community Services administers HOME, CDBG, and local affordable housing programs. The Wichita Housing Authority (WHA) administers project-based vouchers. Kansas Housing Resources Corporation (KHRC) administers 9% and 4% LIHTC for Kansas and issues tax-exempt bonds. Sedgwick County administers HOME entitlement separately. Wichita's affordable housing market is shaped by aviation manufacturing employment (Boeing, Cessna, Spirit AeroSystems), a large military workforce (McConnell AFB), and a predominantly low-density housing stock.",
+      "active_programs_local": "Wichita Department of Housing and Community Services gap financing, WHA project-based vouchers, HOME and CDBG entitlement, Sedgwick County HOME, KHRC LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Northeast Wichita, North Wichita, Park City, East Wichita, Planeview, Linwood, Edgemoor"
+    },
+    {
+      "slug": "jackson-ms",
+      "name": "Jackson",
+      "state": "MS",
+      "state_hfa": "Mississippi Home Corporation (MHC)",
+      "jurisdictional_notes": "City of Jackson Community Development Department administers HOME, CDBG, and local affordable housing programs. The Jackson Housing Authority (JHA) administers project-based vouchers. Mississippi Home Corporation (MHC) administers 9% and 4% LIHTC for Mississippi and issues tax-exempt bonds. Hinds County administers HOME entitlement separately. Jackson is the state capital with significant state government employment and has benefited from federal investment through CDBG-DR (Hurricane Katrina recovery, winding down) and infrastructure grants. The city's affordable housing pipeline includes significant permanent supportive housing for residents affected by the municipal water crisis.",
+      "active_programs_local": "Jackson Community Development gap financing, JHA project-based vouchers, HOME and CDBG entitlement, Hinds County HOME, MHC LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "West Jackson, South Jackson, Farish Street area, North Jackson-affordable pockets, McLeod Acres, Woodlea, Georgetown"
+    },
+    {
+      "slug": "columbia-mo",
+      "name": "Columbia",
+      "state": "MO",
+      "state_hfa": "Missouri Housing Development Commission (MHDC)",
+      "jurisdictional_notes": "City of Columbia Community Development Department administers HOME, CDBG, and local affordable housing programs. The Columbia Housing Authority (CHA) administers project-based vouchers. Missouri Housing Development Commission (MHDC) administers 9% and 4% LIHTC for Missouri and issues tax-exempt bonds. Boone County administers HOME entitlement separately. Columbia's affordable housing market is shaped by the University of Missouri enrollment and a large healthcare employment base (MU Health System), creating demand across the income spectrum.",
+      "active_programs_local": "Columbia Community Development gap financing, CHA project-based vouchers, HOME and CDBG entitlement, Boone County HOME, MHDC LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Flat Branch area, North Central Columbia, Garth Avenue corridor, Hubbell Park, Old Sycamore Park, East Campus area, Douglass Park"
+    },
+    {
+      "slug": "springfield-mo",
+      "name": "Springfield",
+      "state": "MO",
+      "state_hfa": "Missouri Housing Development Commission (MHDC)",
+      "jurisdictional_notes": "City of Springfield Planning and Development Department administers HOME, CDBG, and local affordable housing programs. The Springfield Housing Authority (SHA) administers project-based vouchers. Missouri Housing Development Commission (MHDC) administers 9% and 4% LIHTC for Missouri and issues tax-exempt bonds. Greene County administers HOME entitlement separately. Springfield's affordable housing market is shaped by Missouri State University enrollment, Mercy and CoxHealth hospital systems employment, and a significant tourism sector serving the Branson corridor.",
+      "active_programs_local": "Springfield Planning and Development gap financing, SHA project-based vouchers, HOME and CDBG entitlement, Greene County HOME, MHDC LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "North Springfield, West-Central, Battlefield area, Rountree, Grant Beach, Benton Park, Robberson"
+    },
+    {
+      "slug": "lincoln-ne",
+      "name": "Lincoln",
+      "state": "NE",
+      "state_hfa": "Nebraska Investment Finance Authority (NIFA)",
+      "jurisdictional_notes": "City of Lincoln Urban Development Department administers HOME, CDBG, and local affordable housing programs. The Lincoln Housing Authority (LHA) administers project-based vouchers. Nebraska Investment Finance Authority (NIFA) administers 9% and 4% LIHTC for Nebraska and issues tax-exempt bonds. Lancaster County administers HOME entitlement separately. Lincoln's affordable housing market is shaped by the University of Nebraska enrollment, state government employment, and a significant immigrant and refugee resettlement population requiring affordable housing.",
+      "active_programs_local": "Lincoln Urban Development gap financing, LHA project-based vouchers, HOME and CDBG entitlement, Lancaster County HOME, NIFA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Near South Lincoln, Antelope Valley, South Lincoln, Northeast Lincoln, University Place, Airport Neighborhood"
+    },
+    {
+      "slug": "cedar-rapids",
+      "name": "Cedar Rapids",
+      "state": "IA",
+      "state_hfa": "Iowa Finance Authority (IFA)",
+      "jurisdictional_notes": "City of Cedar Rapids Community Development Department administers HOME, CDBG, and local affordable housing programs. The Cedar Rapids Housing Services (CRHS) administers project-based vouchers. Iowa Finance Authority (IFA) administers 9% and 4% LIHTC for Iowa and issues tax-exempt bonds. Linn County administers HOME entitlement separately. Cedar Rapids's affordable housing market benefited from significant CDBG-DR investment following the 2008 Midwest floods, and the city has an established affordable housing infrastructure from that recovery experience.",
+      "active_programs_local": "Cedar Rapids Community Development gap financing, CRHS project-based vouchers, HOME and CDBG entitlement, Linn County HOME, IFA LIHTC and bond allocation, United Way of East Central Iowa housing programs",
+      "typical_submarkets_for_affordable": "Czech Village-adjacent affordable areas, Time Check, Mound View, Wellington Heights, Ellis-Bever, Taylor, Noelridge"
+    },
+    {
+      "slug": "anchorage",
+      "name": "Anchorage",
+      "state": "AK",
+      "state_hfa": "Alaska Housing Finance Corporation (AHFC)",
+      "jurisdictional_notes": "Municipality of Anchorage Community Development Division administers HOME, CDBG, and local affordable housing programs. The Anchorage Community Land Trust and Alaska Housing Finance Corporation (AHFC) are the primary affordable housing finance vehicles. AHFC administers 9% and 4% LIHTC for Alaska and issues tax-exempt bonds. Alaska's remote location and extreme construction costs create significant challenges for affordable housing feasibility, and state-specific programs through AHFC are designed to address the Alaska cost premium. The energy sector and military presence drive workforce demand.",
+      "active_programs_local": "Anchorage Community Development gap financing, HOME and CDBG entitlement, AHFC LIHTC and bond allocation, AHFC construction and permanent financing, Alaska Energy Authority weatherization assistance, Cook Inlet Housing Authority affordable programs",
+      "typical_submarkets_for_affordable": "Mountain View, Fairview, Spenard, South Anchorage-affordable pockets, Government Hill, Bayshore, Jewel Lake area"
+    },
+    {
+      "slug": "honolulu",
+      "name": "Honolulu",
+      "state": "HI",
+      "state_hfa": "Hawaii Housing Finance and Development Corporation (HHFDC)",
+      "jurisdictional_notes": "City and County of Honolulu Department of Community Services administers HOME, CDBG, and local affordable housing programs. The Honolulu Housing Authority (HHA) administers project-based vouchers. Hawaii Housing Finance and Development Corporation (HHFDC) administers 9% and 4% LIHTC for Hawaii and issues tax-exempt bonds. Hawaii is a single-county state in terms of HOME entitlement, meaning HHFDC administers most resources statewide. Hawaii has the highest housing costs relative to median income of any state, requiring extremely deep gap financing for affordable developments. The Hawaii Housing Assistance Corporation (HHAC) and Hawaii Public Housing Authority are additional actors in the ecosystem.",
+      "active_programs_local": "Honolulu Department of Community Services gap financing, HOME and CDBG entitlement, HHA project-based vouchers, HHFDC LIHTC and bond allocation, Rental Housing Revolving Fund (HHFDC), Rental Housing Trust Fund",
+      "typical_submarkets_for_affordable": "Chinatown, Kalihi, Palolo, Kaimuki-affordable areas, Ewa Beach, Waipahu, Pearl City, Halawa, Waianae Coast"
+    },
+    {
+      "slug": "allentown",
+      "name": "Allentown",
+      "state": "PA",
+      "state_hfa": "Pennsylvania Housing Finance Agency (PHFA)",
+      "jurisdictional_notes": "City of Allentown Community and Economic Development Department administers HOME, CDBG, and local affordable housing programs. The Allentown Housing Authority (AHA) administers project-based vouchers. PHFA administers 9% and 4% LIHTC for Pennsylvania and issues tax-exempt bonds. Lehigh County administers HOME entitlement separately. Allentown's Neighborhood Improvement Zone (NIZ), one of the largest locally created tax incentive zones in the US, has catalyzed significant downtown mixed-income development activity and created a pipeline for affordable unit creation through inclusionary set-asides.",
+      "active_programs_local": "Allentown Community and Economic Development gap financing, AHA project-based vouchers, HOME and CDBG entitlement, Lehigh County HOME, PHFA LIHTC and bond allocation, NIZ affordable housing set-asides, Allentown Neighborhood Improvement Zone Authority programs",
+      "typical_submarkets_for_affordable": "South Allentown, West Park, Jordan Heights, East Side, Sheridan area, Midway Manor, Elm Park"
+    },
+    {
+      "slug": "worcester",
+      "name": "Worcester",
+      "state": "MA",
+      "state_hfa": "MassHousing",
+      "jurisdictional_notes": "City of Worcester Department of Planning and Development administers HOME, CDBG, and local affordable housing programs. The Worcester Housing Authority (WHA) administers project-based vouchers. MassHousing administers 4% and 9% LIHTC and issues tax-exempt bonds. Worcester County administers HOME entitlement separately. Worcester's affordable housing market has been shaped by significant university and college enrollment (WPI, Clark University, Holy Cross), healthcare employment, and a large immigrant community. The city's designation as a Gateway City provides access to additional state resources through the MassHousing Gateway Cities program.",
+      "active_programs_local": "Worcester Department of Planning and Development gap financing, WHA project-based vouchers, HOME and CDBG entitlement, MassHousing LIHTC and bond allocation, MassHousing Gateway Cities affordable programs, Massachusetts Executive Office of Housing and Livable Communities gap financing",
+      "typical_submarkets_for_affordable": "Main South, Great Brook Valley, Plumley Village area, East Side, Piedmont, Grafton Hill, Lincoln Square-adjacent affordable areas"
+    },
+    {
+      "slug": "springfield-ma",
+      "name": "Springfield",
+      "state": "MA",
+      "state_hfa": "MassHousing",
+      "jurisdictional_notes": "City of Springfield Office of Planning and Economic Development administers HOME, CDBG, and local affordable housing programs. The Springfield Housing Authority (SHA) administers project-based vouchers. MassHousing administers 4% and 9% LIHTC and issues tax-exempt bonds. Hampden County administers HOME entitlement separately. Springfield is one of the poorest cities in Massachusetts, with a high cost-burden rate and significant housing need. The city's Gateway City designation provides access to state programs, and MGM Springfield's community benefits agreement has contributed to local affordable housing investment.",
+      "active_programs_local": "Springfield Office of Planning and Economic Development gap financing, SHA project-based vouchers, HOME and CDBG entitlement, MassHousing LIHTC and bond allocation, MassHousing Gateway Cities programs, EOHLC soft debt",
+      "typical_submarkets_for_affordable": "North End, South End, Old Hill, Six Corners, Brightwood, McKnight, East Forest Park-affordable pockets, Pine Point"
+    },
+    {
+      "slug": "flint",
+      "name": "Flint",
+      "state": "MI",
+      "state_hfa": "Michigan State Housing Development Authority (MSHDA)",
+      "jurisdictional_notes": "City of Flint Department of Planning and Development administers HOME, CDBG, and local affordable housing programs. The Flint Housing Commission administers project-based vouchers. MSHDA administers 9% and 4% LIHTC for Michigan and issues tax-exempt bonds. Genesee County administers HOME entitlement separately. Flint's affordable housing landscape is shaped by its water crisis recovery (significant CDBG-DR investment largely disbursed), significant population loss creating land availability, and a persistent poverty rate among the highest in Michigan.",
+      "active_programs_local": "Flint Department of Planning and Development gap financing, Flint Housing Commission project-based vouchers, HOME and CDBG entitlement (including water crisis recovery), Genesee County HOME, MSHDA LIHTC and bond allocation, Flint and Genesee County Land Bank disposition",
+      "typical_submarkets_for_affordable": "North Flint, East Village, Civic Park, Carriage Town, Woodcroft Estates area, South Flint, Mott Park"
+    },
+    {
+      "slug": "corpus-christi",
+      "name": "Corpus Christi",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "City of Corpus Christi Department of Neighborhood Services administers HOME, CDBG, and local affordable housing programs. The Corpus Christi Housing Authority (CCHA) administers project-based vouchers. TDHCA administers 9% and 4% LIHTC for Texas and issues tax-exempt bonds. Nueces County administers HOME entitlement separately. Corpus Christi's affordable housing market is shaped by the petrochemical and refinery sector, military presence (NAS Corpus Christi, Naval Air Station), and a large Hispanic workforce population.",
+      "active_programs_local": "Corpus Christi Department of Neighborhood Services gap financing, CCHA project-based vouchers, HOME and CDBG entitlement, Nueces County HOME, TDHCA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Molina neighborhood, Flour Bluff-affordable areas, South Side, North Beach, Northwest, Hillcrest, Westside"
+    },
+    {
+      "slug": "lubbock",
+      "name": "Lubbock",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "City of Lubbock Community Development Department administers HOME, CDBG, and local affordable housing programs. The Lubbock Housing Authority (LHA) administers project-based vouchers. TDHCA administers 9% and 4% LIHTC. Lubbock County administers HOME entitlement separately. Lubbock's affordable housing market is shaped by Texas Tech University enrollment, agricultural sector employment, and a relatively lower cost base compared to other Texas metros, making LIHTC feasibility more accessible.",
+      "active_programs_local": "Lubbock Community Development gap financing, LHA project-based vouchers, HOME and CDBG entitlement, Lubbock County HOME, TDHCA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "East Lubbock, MLK Boulevard corridor, South Lubbock, Guadalupe neighborhood, North Lubbock, Tech Terrace-adjacent affordable areas"
+    },
+    {
+      "slug": "laredo",
+      "name": "Laredo",
+      "state": "TX",
+      "state_hfa": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "jurisdictional_notes": "City of Laredo Community Development Department administers HOME, CDBG, and local affordable housing programs. The Laredo Housing Authority (LHA) administers project-based vouchers. TDHCA administers 9% and 4% LIHTC. Webb County administers HOME entitlement separately. Laredo's border location creates unique affordable housing dynamics, including significant cross-border workforce demand, import-export sector employment, and access to USDA programs for border community housing needs.",
+      "active_programs_local": "Laredo Community Development gap financing, LHA project-based vouchers, HOME and CDBG entitlement, Webb County HOME, TDHCA LIHTC and bond allocation, USDA Rural Development programs for border communities",
+      "typical_submarkets_for_affordable": "South Laredo, Del Mar area, Northeast Laredo, Bravo neighborhood, Santa Maria, Lakeside, Columbia"
+    },
+    {
+      "slug": "henderson-nv",
+      "name": "Henderson",
+      "state": "NV",
+      "state_hfa": "Nevada Housing Division",
+      "jurisdictional_notes": "City of Henderson Community Development and Services Department administers HOME and local affordable housing programs. The Southern Nevada Regional Housing Authority (SNRHA) administers project-based vouchers across the Clark County region including Henderson. Nevada Housing Division administers 9% and 4% LIHTC for Nevada and issues tax-exempt bonds. Henderson's affordable housing market has grown significantly as Las Vegas area workforce seeks lower-cost options, and the city has an active affordable development pipeline through SNRHA partnerships.",
+      "active_programs_local": "Henderson Community Development gap financing, HOME entitlement, SNRHA project-based vouchers, Nevada Housing Division LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Basic area, Whitney, Pittman, East Henderson, Elbow Canyon-adjacent affordable areas, Green Valley South-workforce housing"
+    },
+    {
+      "slug": "jersey-city",
+      "name": "Jersey City",
+      "state": "NJ",
+      "state_hfa": "New Jersey Housing and Mortgage Finance Agency (NJHMFA)",
+      "jurisdictional_notes": "City of Jersey City Division of Housing Preservation and Development administers HOME, CDBG, and local affordable housing programs. The Jersey City Housing Authority (JCHA) administers project-based vouchers. NJHMFA administers 9% and 4% LIHTC and issues tax-exempt bonds. Hudson County administers HOME entitlement separately. Jersey City's Mount Laurel affordable housing obligations, combined with its position as the fastest-growing city in New Jersey, create both significant demand and legal requirements for affordable production. The city's proximity to Manhattan drives extreme market-rate rents requiring substantial gap financing.",
+      "active_programs_local": "Jersey City Division of Housing gap financing, JCHA project-based vouchers, HOME and CDBG entitlement, Hudson County HOME, NJHMFA LIHTC and bond allocation, New Jersey Affordable Housing Trust Fund, Jersey City Affordable Housing Trust Fund",
+      "typical_submarkets_for_affordable": "West Bergen, Bergen-Lafayette, Greenville, Communipaw, West Side, McGinley Square, South Cove-affordable areas"
+    },
+    {
+      "slug": "aurora-co",
+      "name": "Aurora",
+      "state": "CO",
+      "state_hfa": "Colorado Housing and Finance Authority (CHFA)",
+      "jurisdictional_notes": "City of Aurora Neighborhood Services Department administers HOME, CDBG, and local affordable housing programs. The Aurora Housing Authority (AHA) administers project-based vouchers. Colorado Housing and Finance Authority (CHFA) administers 9% and 4% LIHTC for Colorado and issues tax-exempt bonds. Arapahoe County administers HOME entitlement separately. Aurora's affordable housing development has been significantly shaped by its large refugee and immigrant resettlement population, Aurora's position as a major Denver suburban job center, and proximity to Buckley Space Force Base.",
+      "active_programs_local": "Aurora Neighborhood Services gap financing, AHA project-based vouchers, HOME and CDBG entitlement, Arapahoe County HOME, CHFA LIHTC and bond allocation, Aurora Affordable Housing Fund, Denver Metro regional NOAH preservation programs",
+      "typical_submarkets_for_affordable": "East Colfax, Montbello (Aurora portion), Central Aurora, Fitzsimons area, South Aurora, Gateway area"
+    },
+    {
+      "slug": "mesa-az",
+      "name": "Mesa",
+      "state": "AZ",
+      "state_hfa": "Arizona Department of Housing (ADOH)",
+      "jurisdictional_notes": "City of Mesa Neighborhood Services Division administers HOME, CDBG, and local affordable housing programs. The Mesa Housing Authority administers project-based vouchers. Arizona Department of Housing (ADOH) administers 9% and 4% LIHTC and issues tax-exempt bonds. Maricopa County administers HOME entitlement separately. Mesa is the largest suburb in the Phoenix metro and has an active affordable housing pipeline through the Mesa Community College corridor and along LRT routes connecting to downtown Phoenix.",
+      "active_programs_local": "Mesa Neighborhood Services gap financing, Mesa Housing Authority project-based vouchers, HOME and CDBG entitlement, Maricopa County HOME, ADOH LIHTC and bond allocation, Mesa Arts and Innovation District affordable requirements",
+      "typical_submarkets_for_affordable": "West Mesa, Downtown Mesa LRT corridor, Lehi area, Adobe Mountain corridor, South Mesa, Mountain View area"
+    },
+    {
+      "slug": "fayetteville-nc",
+      "name": "Fayetteville",
+      "state": "NC",
+      "state_hfa": "North Carolina Housing Finance Agency (NCHFA)",
+      "jurisdictional_notes": "City of Fayetteville Community Development administers HOME, CDBG, and local affordable housing programs. The Fayetteville Metropolitan Housing Authority (FMHA) administers project-based vouchers. NCHFA administers 9% and 4% LIHTC for North Carolina and issues tax-exempt bonds. Cumberland County administers HOME entitlement separately. Fayetteville's affordable housing market is heavily shaped by Fort Bragg (now Fort Liberty), the largest military installation in the US by population, creating consistent demand for workforce and affordable housing serving active duty and veteran households.",
+      "active_programs_local": "Fayetteville Community Development gap financing, FMHA project-based vouchers, HOME and CDBG entitlement, Cumberland County HOME, NCHFA LIHTC and bond allocation, HUD-VASH vouchers for veteran PSH",
+      "typical_submarkets_for_affordable": "East Fayetteville, Murchison Road corridor, Hope Mills adjacent, Cliffdale, Cross Creek, Century II, Westover Hills"
+    },
+    {
+      "slug": "rockford",
+      "name": "Rockford",
+      "state": "IL",
+      "state_hfa": "Illinois Housing Development Authority (IHDA)",
+      "jurisdictional_notes": "City of Rockford Community and Economic Development Department administers HOME, CDBG, and local affordable housing programs. The Rockford Housing Authority (RHA) administers project-based vouchers. IHDA administers 9% and 4% LIHTC for Illinois and issues tax-exempt bonds. Winnebago County administers HOME entitlement separately. Rockford has a significant affordable housing shortage relative to its population and was among the first cities in the US to effectively end chronic veteran homelessness, creating a replicable model for permanent supportive housing integration.",
+      "active_programs_local": "Rockford Community and Economic Development gap financing, RHA project-based vouchers, HOME and CDBG entitlement, Winnebago County HOME, IHDA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Southeast Rockford, West Side, Midtown, South Main Street corridor, Fairgrounds, Coronado area, Kishwaukee corridor"
+    },
+    {
+      "slug": "reno",
+      "name": "Reno",
+      "state": "NV",
+      "state_hfa": "Nevada Housing Division",
+      "jurisdictional_notes": "City of Reno Community Development Department administers HOME, CDBG, and local affordable housing programs. The Reno Housing Authority (RHA) administers project-based vouchers. Nevada Housing Division administers 9% and 4% LIHTC for Nevada and issues tax-exempt bonds. Washoe County administers HOME entitlement separately. Reno's affordable housing market has experienced dramatic rent increases since 2020 driven by Tesla Gigafactory and technology sector employment growth, making workforce housing the primary affordability challenge in the market.",
+      "active_programs_local": "Reno Community Development gap financing, RHA project-based vouchers, HOME and CDBG entitlement, Washoe County HOME, Nevada Housing Division LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "Northeast Reno, North Valleys, Stead, Sparks-adjacent affordable areas, Southeast Reno, Wells Avenue corridor"
+    },
+    {
+      "slug": "aurora-il",
+      "name": "Aurora",
+      "state": "IL",
+      "state_hfa": "Illinois Housing Development Authority (IHDA)",
+      "jurisdictional_notes": "City of Aurora Community Services and Neighborhood Redevelopment administers HOME, CDBG, and local affordable housing programs. The Housing Authority of Kane County (HAKC) administers project-based vouchers for the region. IHDA administers 9% and 4% LIHTC for Illinois. Kane County administers HOME entitlement separately from Aurora, though the city receives CDBG entitlement directly. Aurora's affordable housing market is shaped by its position as a major Chicago suburb with significant Latino workforce population and a large Amazon fulfillment and logistics sector employer base.",
+      "active_programs_local": "Aurora Community Services gap financing, HAKC project-based vouchers, HOME and CDBG entitlement, Kane County HOME, IHDA LIHTC and bond allocation",
+      "typical_submarkets_for_affordable": "East Aurora, Downtown Aurora, West Aurora, North Aurora-affordable areas, New England area"
     }
   ]
 }

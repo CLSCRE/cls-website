@@ -781,6 +781,7 @@
       } catch(ex) {}
 
       var formData = new FormData(form);
+      formData.append('_cc', 'andi@clscre.com,lou@clscre.com');
       // Tag as exit form so Worker knows not to redirect
       if (form._useWorker) formData.append('_exit_form', 'true');
       var fetchMode = form._useWorker ? 'cors' : 'no-cors';
@@ -794,6 +795,7 @@
     // ── Worker mode: submit via fetch, then redirect on success ────
     if (form._useWorker) {
       var formData = new FormData(form);
+      formData.append('_cc', 'andi@clscre.com,lou@clscre.com');
       fetch(form._realAction, { method: 'POST', body: formData, mode: 'cors', redirect: 'follow' })
         .then(function(resp) {
           // Worker returns 303 redirect to thank-you on success

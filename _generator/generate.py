@@ -627,7 +627,7 @@ def main():
             )
             seo = {
                 "title": f"{loan['name']} {city['city']} {city['state']} | CRE Lenders | CLS CRE",
-                "meta_description": f"Commercial {loan['name'].lower()} in {city['city']} from $1M. 1,000+ lender relationships, competitive rates, fast approvals. Free quote. CLS CRE.",
+                "meta_description": f"Commercial {loan['name'].lower()} in {city['city']} from {loan.get('min_loan_display', '$1M')}. 1,000+ lender relationships, competitive rates, fast approvals. Free quote. CLS CRE.",
             }
             slug = f"{loan['slug']}-{city['slug']}"
             featured = pick_featured_markets(city, cities, n_total=8)
