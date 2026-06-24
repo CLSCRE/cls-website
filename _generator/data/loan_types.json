@@ -716,5 +716,227 @@
       "meta_description": "1031 exchange bridge loans from $2M. Close on replacement property in 10-21 days and satisfy your exchange deadline. Debt funds and private lenders. Get a quote.",
       "h1": "1031 Exchange Bridge Loans for Commercial Real Estate"
     }
+  },
+  {
+    "slug": "multifamily-bridge-loans",
+    "name": "Multifamily Bridge Loans",
+    "short_name": "Multifamily Bridge",
+    "headline": "Short-Term Bridge Financing for Apartment and Multifamily Assets",
+    "description": "Multifamily bridge loans provide short-term capital for apartment acquisitions, value-add renovations, lease-up stabilization, and portfolio repositioning. These 12 to 36-month facilities close in 2 to 4 weeks and offer leverage up to 80% of cost, bridging the gap between acquisition or renovation and permanent agency, CMBS, or bank financing. Minimum loan size is $2 million, targeting 20-unit-and-up assets where institutional capital is active.",
+    "description_extended": "Multifamily remains the most liquid and lender-competitive asset class in commercial real estate, which means multifamily bridge lenders are abundant and terms are competitive. Debt funds, bridge lending platforms, and select commercial banks all compete for well-structured multifamily bridge transactions. The typical use case is an investor acquiring a 30 to 200-unit apartment complex with below-market rents, financing the acquisition and renovation through a bridge loan, stabilizing occupancy, and then refinancing into agency debt (Fannie Mae or Freddie Mac) or a bank term loan at a lower permanent rate. Strong sponsors with proven value-add track records can access the most competitive pricing in this space.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $75M+",
+      "term": "12 - 36 Months",
+      "rates": "7.00% - 11.50%",
+      "ltv": "Up to 80% of Cost",
+      "structure": "Interest-Only, Non-Recourse Available",
+      "close_time": "14 to 28 Days Typical"
+    },
+    "lender_sources": [
+      "Debt Funds",
+      "Bridge Lending Platforms",
+      "Commercial Banks",
+      "Life Insurance Companies",
+      "Fannie Mae / Freddie Mac (bridge programs)"
+    ],
+    "ideal_for": [
+      "Value-add apartment acquisitions requiring renovation and lease-up",
+      "20-unit-and-up multifamily complexes with below-market rents or deferred maintenance",
+      "Class B and Class C apartment repositioning into Class B+ product",
+      "Multifamily acquisitions where agency financing requires 90-day seasoning",
+      "Build-to-rent (BTR) communities transitioning from construction to stabilized operation",
+      "Investors assembling multifamily portfolios before refinancing into a blanket facility"
+    ],
+    "seo": {
+      "title": "Multifamily Bridge Loans | Apartment Bridge Financing | CLS CRE",
+      "meta_description": "Multifamily bridge loans from $2M. Value-add apartment acquisitions, lease-up, and repositioning. Close in 14-28 days. Debt funds and bridge lenders. Get a quote.",
+      "h1": "Multifamily Bridge Loans for Apartment Investors"
+    }
+  },
+  {
+    "slug": "industrial-bridge-loans",
+    "name": "Industrial Bridge Loans",
+    "short_name": "Industrial Bridge",
+    "headline": "Bridge Financing for Industrial, Warehouse, and Logistics Properties",
+    "description": "Industrial bridge loans provide short-term capital for warehouse, distribution, flex, manufacturing, and last-mile logistics property acquisitions and repositioning. These 12 to 36-month facilities close faster than conventional bank financing and offer leverage up to 75% of cost, making them ideal for time-sensitive industrial acquisitions and value-add plays in high-demand logistics corridors. Minimum loan size is $2 million.",
+    "description_extended": "Industrial real estate has outperformed every other commercial property type over the past decade, driven by e-commerce distribution demand, nearshoring manufacturing, and last-mile logistics constraints in infill markets. This performance has made industrial the most competitive bridge lending category outside of multifamily, with debt funds and bridge platforms actively seeking well-located industrial assets. Typical bridge scenarios include acquiring a vacant or partially vacant industrial building, improving the asset, and stabilizing with credit tenants before refinancing into a CMBS, life company, or permanent bank loan. Sale-leaseback structures and owner-user acquisitions in SBA-ineligible situations also drive demand for industrial bridge capital.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $75M+",
+      "term": "12 - 36 Months",
+      "rates": "7.25% - 11.50%",
+      "ltv": "Up to 75% of Cost",
+      "structure": "Interest-Only, Non-Recourse Available",
+      "close_time": "14 to 30 Days Typical"
+    },
+    "lender_sources": [
+      "Debt Funds",
+      "Bridge Lending Platforms",
+      "Commercial Banks",
+      "Life Insurance Companies",
+      "CMBS Conduits"
+    ],
+    "ideal_for": [
+      "Vacant or partially vacant warehouse and distribution acquisitions",
+      "Last-mile logistics facilities in infill markets with rent growth potential",
+      "Flex and light industrial repositioning into higher-value uses",
+      "Manufacturing and cold storage acquisitions requiring lease-up",
+      "Industrial portfolio acquisitions needing a blanket bridge before permanent financing",
+      "Nearshoring and reshoring manufacturing facilities requiring fast-close capital"
+    ],
+    "seo": {
+      "title": "Industrial Bridge Loans | Warehouse & Logistics Financing | CLS CRE",
+      "meta_description": "Industrial bridge loans from $2M. Warehouse, distribution, and logistics acquisitions and repositioning. Close in 14-30 days. Debt funds and bridge lenders. Get a quote.",
+      "h1": "Industrial Bridge Loans for Warehouse and Logistics Properties"
+    }
+  },
+  {
+    "slug": "office-bridge-loans",
+    "name": "Office Bridge Loans",
+    "short_name": "Office Bridge",
+    "headline": "Bridge Financing for Office Acquisitions and Conversions",
+    "description": "Office bridge loans provide short-term capital for office building acquisitions, adaptive reuse conversions, and repositioning plays in a market fundamentally reshaped by remote work. These 12 to 36-month facilities are designed for investors buying distressed or vacant office assets at steep discounts and executing conversion or value-add strategies before refinancing into permanent debt. Minimum loan size is $2 million.",
+    "description_extended": "The office market bifurcation of the post-2020 era has created the most compelling distressed acquisition opportunity in commercial real estate: well-located, functionally obsolete suburban office buildings trading at 40 to 70 cents on the dollar relative to replacement cost. Investors executing office-to-residential conversions, creative office repositioning, or medical office upgrades can acquire these assets at deep basis and create meaningful value. Traditional lenders have largely exited office bridge lending, creating a significant gap filled by specialized debt funds and private lenders who understand the conversion thesis and can underwrite to stabilized value rather than current income. Deals that combine a strong conversion plan, experienced sponsorship, and sub-replacement-cost basis are finding active bridge lender interest.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $50M+",
+      "term": "12 - 36 Months",
+      "rates": "8.00% - 13.00%",
+      "ltv": "Up to 70% of Cost",
+      "structure": "Interest-Only, Conversion-Friendly Structure",
+      "close_time": "14 to 30 Days Typical"
+    },
+    "lender_sources": [
+      "Debt Funds",
+      "Private Lenders",
+      "Specialty Office Lenders",
+      "Bridge Lending Platforms",
+      "Family Offices"
+    ],
+    "ideal_for": [
+      "Distressed office acquisitions at deep discount to replacement cost",
+      "Office-to-residential adaptive reuse conversion projects",
+      "Class A trophy office acquisitions requiring repositioning and lease-up",
+      "Medical office conversion plays near major hospital systems",
+      "Creative office and life science conversions in innovation districts",
+      "Office portfolio acquisitions where permanent financing requires stabilization"
+    ],
+    "seo": {
+      "title": "Office Bridge Loans | Distressed Office & Conversion Financing | CLS CRE",
+      "meta_description": "Office bridge loans from $2M. Distressed office acquisitions, adaptive reuse conversions, and repositioning. Debt funds and private lenders. Get a quote.",
+      "h1": "Office Bridge Loans for Acquisitions and Conversions"
+    }
+  },
+  {
+    "slug": "retail-bridge-loans",
+    "name": "Retail Bridge Loans",
+    "short_name": "Retail Bridge",
+    "headline": "Bridge Financing for Retail Property Acquisitions and Repositioning",
+    "description": "Retail bridge loans provide short-term capital for shopping center acquisitions, anchored and unanchored retail repositioning, and ground lease or net lease retail plays requiring fast-close capital. These 12 to 36-month facilities offer leverage up to 70% of cost and close in 2 to 4 weeks, enabling investors to move quickly on distressed retail opportunities before refinancing into permanent CMBS, life company, or bank debt. Minimum loan size is $2 million.",
+    "description_extended": "Retail real estate has been through a structural reset that has actually created opportunity at the bottom of the market. Well-located retail in dense, high-traffic corridors continues to outperform, while power centers and enclosed malls face structural obsolescence. The most compelling bridge loan use cases in retail involve acquiring anchored neighborhood centers or single-tenant NNN assets with lease rollover, stabilizing tenancy and cash flow, and refinancing into permanent debt at a lower rate. Mixed-use retail components of urban infill projects also drive bridge demand, as does the growing restaurant, medical, and experiential retail conversion trend in former big-box spaces.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $50M+",
+      "term": "12 - 36 Months",
+      "rates": "7.50% - 12.00%",
+      "ltv": "Up to 70% of Cost",
+      "structure": "Interest-Only, Non-Recourse Available",
+      "close_time": "14 to 30 Days Typical"
+    },
+    "lender_sources": [
+      "Debt Funds",
+      "Private Lenders",
+      "Commercial Banks",
+      "CMBS Conduits",
+      "Life Insurance Companies"
+    ],
+    "ideal_for": [
+      "Anchored neighborhood and community shopping center acquisitions with lease rollover",
+      "Single-tenant NNN retail with near-term lease expiration requiring bridge to renewal",
+      "Grocery-anchored center acquisitions requiring fast close in competitive bidding",
+      "Big-box adaptive reuse and conversion plays",
+      "Strip center repositioning with below-market rents and deferred maintenance",
+      "Distressed retail portfolio acquisitions requiring bridge before permanent placement"
+    ],
+    "seo": {
+      "title": "Retail Bridge Loans | Shopping Center & NNN Bridge Financing | CLS CRE",
+      "meta_description": "Retail bridge loans from $2M. Shopping center acquisitions, NNN repositioning, and anchored retail plays. Debt funds and private lenders. Get a quote.",
+      "h1": "Retail Bridge Loans for Shopping Centers and NNN Properties"
+    }
+  },
+  {
+    "slug": "mixed-use-bridge-loans",
+    "name": "Mixed-Use Bridge Loans",
+    "short_name": "Mixed-Use Bridge",
+    "headline": "Bridge Financing for Mixed-Use and Urban Infill Properties",
+    "description": "Mixed-use bridge loans provide short-term capital for properties combining residential, retail, office, and hospitality uses in urban and dense suburban locations. These 12 to 36-month facilities are designed for the complexity of mixed-use underwriting, where multiple income streams and use types require lenders with experience across asset classes. Minimum loan size is $2 million, targeting urban infill projects where conventional lenders lack the flexibility to move quickly.",
+    "description_extended": "Mixed-use assets are among the most complex to finance because they blend residential and commercial underwriting criteria, often triggering regulatory requirements that vary by use percentage. Debt funds and experienced bridge lenders have filled the gap that conventional banks leave, offering single-loan solutions for the full mixed-use stack rather than requiring separate financing for the retail and residential components. Urban infill conversions, ground-floor retail with upper-floor residential, and live-work loft projects all represent active mixed-use bridge demand. Key markets include Los Angeles, New York, Miami, Seattle, and other dense metros where mixed-use development is incentivized by zoning and tenant demand.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $50M+",
+      "term": "12 - 36 Months",
+      "rates": "7.50% - 12.50%",
+      "ltv": "Up to 75% of Cost",
+      "structure": "Interest-Only, Blended Use Underwriting",
+      "close_time": "14 to 30 Days Typical"
+    },
+    "lender_sources": [
+      "Debt Funds",
+      "Bridge Lending Platforms",
+      "Private Lenders",
+      "CDFI Lenders",
+      "Commercial Banks"
+    ],
+    "ideal_for": [
+      "Urban infill projects combining ground-floor retail with upper-floor residential",
+      "Live-work loft and creative office-to-residential conversions",
+      "Transit-oriented development with retail, residential, and parking components",
+      "Hotel and condo mixed-use projects in urban cores",
+      "Downtown main street properties with retail and multifamily components",
+      "Mixed-use affordable housing with commercial ground-floor retail"
+    ],
+    "seo": {
+      "title": "Mixed-Use Bridge Loans | Urban Infill & Transit-Oriented Financing | CLS CRE",
+      "meta_description": "Mixed-use bridge loans from $2M. Urban infill, transit-oriented development, and retail-residential acquisitions. Debt funds and private lenders. Get a quote.",
+      "h1": "Mixed-Use Bridge Loans for Urban Infill Properties"
+    }
+  },
+  {
+    "slug": "multifamily-construction-loans",
+    "name": "Multifamily Construction Loans",
+    "short_name": "Multifamily Construction",
+    "headline": "Ground-Up Apartment and BTR Construction Financing",
+    "description": "Multifamily construction loans fund ground-up apartment development, build-to-rent (BTR) communities, and major renovation projects for residential rental assets. These 18 to 36-month facilities provide interest-only draws as construction milestones are met, with loan-to-cost ratios up to 75-85% for experienced sponsors. Minimum loan size is $2 million, targeting 20-unit-and-up projects where institutional construction capital is active.",
+    "description_extended": "Apartment construction remains one of the most active segments of commercial lending despite the rate environment, driven by persistent housing undersupply in most major U.S. markets. Lenders evaluate multifamily construction on sponsor track record, project feasibility, market absorption data, and the permanence of the take-out exit. Banks remain the dominant source for well-capitalized sponsors with prior multifamily construction experience; debt funds and CDFI lenders fill the gap for first-time developers, adaptive reuse projects, and projects in secondary markets where bank appetite is limited. Build-to-rent (BTR) has emerged as a distinct construction lending category with dedicated lender programs from several institutional debt funds.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $75M+",
+      "term": "18 - 36 Months",
+      "rates": "6.50% - 11.00%",
+      "ltc": "Up to 80-85% LTC",
+      "structure": "Interest-Only, Progressive Draws",
+      "recourse": "Completion Guarantee Typically Required"
+    },
+    "lender_sources": [
+      "Banks",
+      "Debt Funds",
+      "CDFI Lenders",
+      "Fannie Mae DUS Lenders",
+      "HUD 221(d)(4) (affordable and workforce)"
+    ],
+    "ideal_for": [
+      "Ground-up garden apartment and mid-rise development of 20 or more units",
+      "Build-to-rent (BTR) single-family and townhome rental communities",
+      "Adaptive reuse conversions of office, hotel, or retail into multifamily",
+      "Affordable and workforce housing development with LIHTC or HUD financing",
+      "Infill urban multifamily projects in transit-served locations",
+      "Mixed-income developments combining market-rate and affordable units"
+    ],
+    "seo": {
+      "title": "Multifamily Construction Loans | Apartment Development Financing | CLS CRE",
+      "meta_description": "Multifamily construction loans from $2M. Ground-up apartment development, BTR communities, and adaptive reuse. Banks, debt funds, and HUD lenders. Get a quote.",
+      "h1": "Multifamily Construction Loans for Apartment Developers"
+    }
   }
 ]
