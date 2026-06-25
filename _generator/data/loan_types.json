@@ -1234,5 +1234,227 @@
       "meta_description": "Medical office financing from $1M. MOB acquisition, surgery center loans, and healthcare real estate. Life companies, CMBS, SBA, and bank lenders. Get a quote.",
       "h1": "Medical Office Financing for Healthcare Real Estate Investors"
     }
+  },
+  {
+    "slug": "sale-leaseback-financing",
+    "name": "Sale-Leaseback Financing",
+    "short_name": "Sale-Leaseback",
+    "headline": "CRE Sale-Leaseback Financing for Corporate Real Estate Owners",
+    "description": "Sale-leaseback financing allows businesses and property owners to sell their commercial real estate to an investor and lease it back under a long-term net lease, unlocking 100% of the property equity while retaining full operational use. Commercial Lending Solutions structures sale-leaseback transactions and arranges acquisition financing for NNN investors purchasing corporate-occupied properties. Minimum transaction size is $2 million.",
+    "description_extended": "Sale-leaseback transactions have surged as corporate real estate owners prioritize capital efficiency over property ownership. Businesses free up equity trapped in owned facilities to fund operations, acquisitions, or debt paydown, while investors acquire credit-tenant NNN assets backed by corporate guarantees. The financing structure on the investor side is typically NNN acquisition debt: CMBS, life company, or bank financing secured by the long-term lease and corporate guarantor. Commercial Lending Solutions works on both sides: advising sellers on optimal lease structures and arranging investor acquisition financing at the most competitive rates for the resulting NNN asset.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $100M+",
+      "term": "10 - 25 Years (Permanent NNN)",
+      "rates": "5.25% - 7.50%",
+      "ltv": "Up to 75% LTV (NNN Acquisition)",
+      "structure": "NNN Lease-Backed Permanent Financing",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": [
+      "Life Insurance Companies",
+      "CMBS Conduits",
+      "Banks with STNL Programs",
+      "Debt Funds",
+      "Institutional NNN Lenders"
+    ],
+    "ideal_for": [
+      "Business owners unlocking equity from owner-occupied commercial real estate",
+      "Corporate real estate monetization for manufacturing, distribution, and office facilities",
+      "Investors acquiring corporate NNN assets with long-term lease guarantees",
+      "Restaurant and QSR operators converting owned locations to sale-leaseback NNN",
+      "Healthcare and medical businesses monetizing owned clinic and medical office real estate",
+      "Industrial and logistics companies freeing warehouse equity for business reinvestment"
+    ],
+    "seo": {
+      "title": "Sale-Leaseback Financing | CRE Sale-Leaseback Loans | CLS CRE",
+      "meta_description": "Sale-leaseback financing for commercial real estate from $2M. Unlock 100% of property equity while retaining operations. NNN acquisition loans for investors. Life company and CMBS. Get a quote.",
+      "h1": "Commercial Real Estate Sale-Leaseback Financing"
+    }
+  },
+  {
+    "slug": "office-conversion-loans",
+    "name": "Office Conversion Loans",
+    "short_name": "Office Conversion",
+    "headline": "Office-to-Residential and Adaptive Reuse Conversion Financing",
+    "description": "Office conversion loans provide construction and bridge financing for projects converting vacant or underperforming office buildings into residential, mixed-use, or alternative commercial uses. These 18 to 36-month facilities are structured for the complexity of adaptive reuse: phased draws, conversion cost reserves, and underwriting to post-conversion residential value rather than current office income. Minimum loan size is $2 million.",
+    "description_extended": "The U.S. office market carries over 1 billion square feet of vacant or chronically underutilized space, driven by the permanent shift to hybrid and remote work. Office-to-residential conversion has emerged as a top priority for urban planners, municipalities offering tax incentives, and real estate investors who can acquire Class B and C office at steep discounts to replacement cost and convert to residential at a significant value premium. Specialized debt funds and select banks with adaptive reuse experience are the primary construction capital sources for conversion projects. Lenders focus on post-conversion residential income, location fundamentals, floor-plate conversion feasibility, and sponsor execution track record.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $75M+",
+      "term": "18 - 36 Months",
+      "rates": "8.00% - 13.00%",
+      "ltc": "Up to 80% of Total Conversion Cost",
+      "structure": "Interest-Only, Phased Construction Draws",
+      "recourse": "Completion Guarantee Typically Required"
+    },
+    "lender_sources": [
+      "Adaptive Reuse Debt Funds",
+      "Private Lenders",
+      "CDFI Lenders",
+      "Banks with Conversion Programs",
+      "HUD 221(d)(4) for Affordable Conversion"
+    ],
+    "ideal_for": [
+      "Office-to-multifamily conversion projects in high-density urban locations",
+      "Class B and C office acquisitions at 40-70% discount for residential adaptive reuse",
+      "Municipalities offering tax abatements and incentives for office-to-residential conversion",
+      "Mixed-use conversion: residential upper floors with ground-floor retail or amenity uses",
+      "Office-to-hotel or short-term rental conversion in urban core locations",
+      "Medical office conversion of obsolete suburban office near hospital campuses"
+    ],
+    "seo": {
+      "title": "Office Conversion Loans | Office-to-Residential Financing | CLS CRE",
+      "meta_description": "Office conversion loans from $2M. Office-to-residential, adaptive reuse, and mixed-use conversion financing. Debt funds and private lenders. Up to 80% LTC. Get a quote.",
+      "h1": "Office Conversion and Adaptive Reuse Loans"
+    }
+  },
+  {
+    "slug": "preferred-equity",
+    "name": "Preferred Equity",
+    "short_name": "Preferred Equity",
+    "headline": "Preferred Equity and JV Financing for CRE Capital Stacks",
+    "description": "Preferred equity provides subordinate capital behind senior debt in commercial real estate capital stacks, offering investors higher returns than senior debt while giving sponsors access to leverage beyond what first mortgage lenders provide. Commercial Lending Solutions sources preferred equity from institutional debt funds, private equity firms, and family offices for value-add acquisitions, developments, and recapitalizations. Minimum investment size is $2 million.",
+    "description_extended": "Preferred equity occupies the gap between senior debt and common equity in the CRE capital stack. Unlike mezzanine debt which is structured as a loan secured by a pledge of ownership interests, preferred equity is an actual equity position with a preferred return, typically 8 to 15 percent current or accruing, and priority in distributions before common equity receives any return. Preferred equity providers often have consent rights over major decisions and conversion rights to common equity if performance triggers are not met. This structure is common in development and value-add transactions where senior lenders cap at 55 to 65 percent LTV and sponsors want to reduce common equity requirements to improve IRR. Commercial Lending Solutions matches each deal with the right preferred equity provider based on deal size, business plan, and required return profile.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $50M+",
+      "term": "1 - 5 Years",
+      "rates": "10% - 16% Preferred Return",
+      "position": "Subordinate to Senior Debt, Senior to Common Equity",
+      "structure": "Current Pay or Accruing",
+      "total_leverage": "Up to 85-90% of Total Capitalization"
+    },
+    "lender_sources": [
+      "Institutional Debt Funds",
+      "Private Equity Firms",
+      "Family Offices",
+      "Insurance Company Structured Finance",
+      "High-Net-Worth Investors"
+    ],
+    "ideal_for": [
+      "Development projects needing capital above senior construction loan proceeds",
+      "Value-add acquisitions where senior LTV cap creates equity gap",
+      "Recapitalizations unlocking equity for portfolio expansion",
+      "Joint venture structures where institutional capital partners need preferred return protection",
+      "Ground-up multifamily and mixed-use projects requiring 80 to 90 percent capitalization",
+      "Sponsors seeking to minimize common equity while maintaining full deal control"
+    ],
+    "seo": {
+      "title": "Preferred Equity Financing for Commercial Real Estate | CLS CRE",
+      "meta_description": "Preferred equity and JV financing for CRE capital stacks from $2M. 10-16% preferred returns. Fill the gap between senior debt and common equity. Get a quote.",
+      "h1": "Preferred Equity Financing for Commercial Real Estate"
+    }
+  },
+  {
+    "slug": "industrial-construction-loans",
+    "name": "Industrial Construction Loans",
+    "short_name": "Industrial Construction",
+    "headline": "Construction Financing for Warehouse, Logistics, and Industrial Development",
+    "description": "Industrial construction loans fund ground-up warehouse, distribution, flex industrial, and cold storage development projects. These 18 to 36-month facilities are structured for industrial development: phased construction draws, pre-lease or speculative underwriting, and exit to CMBS, life company, or agency permanent financing at stabilization. Minimum loan size is $2 million, targeting industrial developments in major logistics corridors.",
+    "description_extended": "Industrial and logistics construction remains one of the most active development sectors, driven by persistent e-commerce demand, nearshoring and reshoring of manufacturing, and constrained infill land supply in primary distribution markets. Lenders evaluate industrial construction on market absorption data, sponsor track record in industrial development, pre-leasing percentage, and exit cap rate assumptions. Speculative industrial construction in supply-constrained markets continues to attract bank and debt fund capital. Pre-leased build-to-suit industrial attracts the most competitive terms given the credit-tenant lease backing the project.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $100M+",
+      "term": "18 - 36 Months",
+      "rates": "6.50% - 11.00%",
+      "ltc": "Up to 75% LTC (Spec), 80% LTC (Pre-Leased)",
+      "structure": "Interest-Only, Progressive Draws",
+      "recourse": "Completion Guarantee Required"
+    },
+    "lender_sources": [
+      "Banks",
+      "Debt Funds",
+      "Life Insurance Companies (Pre-Leased)",
+      "Private Lenders",
+      "CDFI Lenders"
+    ],
+    "ideal_for": [
+      "Speculative warehouse and distribution construction in high-absorption logistics markets",
+      "Build-to-suit industrial for credit tenants including e-commerce, 3PL, and manufacturing",
+      "Cold storage and temperature-controlled warehouse construction",
+      "Last-mile infill industrial redevelopment and new construction",
+      "Flex industrial and light manufacturing park development",
+      "Industrial portfolio developers building multiple facilities under a single facility"
+    ],
+    "seo": {
+      "title": "Industrial Construction Loans | Warehouse Development Financing | CLS CRE",
+      "meta_description": "Industrial construction loans from $2M. Warehouse, distribution, cold storage, and flex industrial development. Banks and debt funds. Up to 80% LTC. Get a quote.",
+      "h1": "Industrial Construction Loans for Warehouse and Logistics Development"
+    }
+  },
+  {
+    "slug": "cpace-financing",
+    "name": "C-PACE Financing",
+    "short_name": "C-PACE",
+    "headline": "Commercial Property Assessed Clean Energy (C-PACE) Financing",
+    "description": "C-PACE (Commercial Property Assessed Clean Energy) financing provides long-term, fixed-rate capital for energy efficiency, renewable energy, and sustainability improvements to commercial real estate. Repaid as a property tax assessment, C-PACE does not require senior lender consent in most states and can be placed behind existing first mortgages, making it a powerful tool for reducing capital expenditure while meeting sustainability goals. Minimum project size is $500,000.",
+    "description_extended": "C-PACE has become a mainstream component of the CRE capital stack as building owners face pressure from ESG requirements, utility cost reduction goals, and property renovation needs. Because C-PACE is structured as a property tax assessment rather than a loan, it repays through the property tax bill and transfers to the next owner at sale, eliminating personal guarantee requirements. Eligible improvements include HVAC systems, roofing and insulation, LED lighting, solar and battery storage, EV charging infrastructure, seismic retrofits, and water conservation systems. C-PACE providers operate in 38 or more states and the District of Columbia, with programs available for new construction, existing building retrofits, and ground-up development.",
+    "min_loan_display": "$500K",
+    "key_features": {
+      "loan_amount": "$500K - $30M+",
+      "term": "10 - 30 Years",
+      "rates": "6.50% - 8.50% Fixed",
+      "position": "Repaid via Property Tax Assessment",
+      "structure": "Fixed-Rate, Non-Recourse, Transferable",
+      "recourse": "Non-Recourse, Transfers at Property Sale"
+    },
+    "lender_sources": [
+      "C-PACE Program Administrators",
+      "Specialty C-PACE Lenders",
+      "CDFI Lenders",
+      "Green Bond and ESG Capital Sources",
+      "State-Backed C-PACE Programs"
+    ],
+    "ideal_for": [
+      "Commercial building owners reducing energy costs through HVAC, LED, and insulation upgrades",
+      "Solar and battery storage installations on commercial, industrial, and multifamily properties",
+      "Net-zero and LEED certification capital improvements on existing buildings",
+      "New construction green building improvements qualifying for C-PACE in enabling states",
+      "Property owners facing seismic or fire code retrofits seeking low-rate long-term financing",
+      "Multifamily owners upgrading common area systems to reduce operating expenses and improve NOI"
+    ],
+    "seo": {
+      "title": "C-PACE Financing for Commercial Real Estate | CLS CRE",
+      "meta_description": "C-PACE financing for commercial real estate energy efficiency and sustainability improvements. Fixed-rate, non-recourse, repaid via property tax. $500K to $30M+. Get a quote.",
+      "h1": "C-PACE Commercial Property Financing"
+    }
+  },
+  {
+    "slug": "owner-occupied-commercial",
+    "name": "Owner-Occupied Commercial Loans",
+    "short_name": "Owner-Occupied",
+    "headline": "Commercial Real Estate Loans for Business Owner-Operators",
+    "description": "Owner-occupied commercial loans provide financing for businesses purchasing or refinancing the commercial property they operate from. Whether through SBA programs, conventional bank financing, or credit union balance-sheet loans, these facilities allow business owners to build equity in their operating real estate rather than paying rent. Commercial Lending Solutions sources owner-occupied financing for office, retail, industrial, medical, and mixed-use properties from $1 million and up.",
+    "description_extended": "Owner-occupied commercial real estate financing is fundamentally different from investment property lending because the primary repayment source is the business itself, not property rental income. This means lenders evaluate global cash flow: the business earnings and personal income of the owner-operator, not just the property DSCR. SBA programs are the most popular execution for owner-occupied commercial because they allow up to 90 percent financing with below-market rates and long amortization. Conventional bank and credit union programs are the alternative for borrowers who exceed SBA size standards, have stronger financials, or need larger loan sizes than SBA maximum limits.",
+    "min_loan_display": "$1M",
+    "key_features": {
+      "loan_amount": "$1M - $20M",
+      "term": "10 - 25 Years",
+      "rates": "5.50% - 8.50%",
+      "ltv": "Up to 90% (SBA) or 75% (Conventional)",
+      "qualification": "Business Cash Flow and Owner Income",
+      "recourse": "Full Recourse with Personal Guarantee"
+    },
+    "lender_sources": [
+      "SBA-Approved Banks (504 and 7(a))",
+      "Certified Development Companies (CDCs)",
+      "Conventional Commercial Banks",
+      "Credit Unions",
+      "Community Development Financial Institutions (CDFIs)"
+    ],
+    "ideal_for": [
+      "Medical, dental, and veterinary practices purchasing clinic space",
+      "Law firms, accounting firms, and professional services buying office buildings",
+      "Manufacturers and distributors acquiring owner-user industrial facilities",
+      "Restaurants and retailers purchasing their operating location",
+      "Auto repair, car wash, and service businesses buying commercial property",
+      "Childcare centers, gyms, and wellness operators purchasing their facilities"
+    ],
+    "seo": {
+      "title": "Owner-Occupied Commercial Real Estate Loans | CLS CRE",
+      "meta_description": "Owner-occupied commercial real estate loans from $1M. SBA 504, SBA 7(a), and conventional bank financing for business owner-operators. Up to 90% LTV. Get a quote.",
+      "h1": "Owner-Occupied Commercial Real Estate Loans"
+    }
   }
 ]
