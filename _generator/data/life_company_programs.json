@@ -1,0 +1,645 @@
+{
+  "programs": [
+    {
+      "slug": "multifamily",
+      "name": "Life Insurance Company Multifamily Loans",
+      "short_name": "Life Company Multifamily",
+      "description": "Permanent long-term multifamily financing funded directly by life insurance company correspondent capital. Commercial Lending Solutions is a direct correspondent lender, meaning we underwrite, commit, and close these loans in our name -- no broker layer, no submission to a third party. Life company execution is the most competitive permanent option for stabilized Class A and B multifamily in primary and secondary markets.",
+      "typical_deal_range": "$3M to $75M stabilized multifamily",
+      "typical_stack": [
+        "Life insurance company correspondent first mortgage (direct)",
+        "10 to 25 year fixed-rate term",
+        "Non-recourse with standard bad-boy carve-outs",
+        "Interest-only periods available for strong sponsorship"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Life company rates typically 10 to 30 bps inside agency for comparable stabilized product; tied to corresponding Treasury spread",
+        "typical_ltv": "55 to 65 percent for most markets; up to 70 percent for premier sponsors in gateway markets",
+        "amortization": "25 to 30 years; full-term interest-only available for select deals",
+        "prepayment": "Declining prepayment schedule or yield maintenance; lockout periods negotiable",
+        "recourse_structure": "Non-recourse standard with carve-outs for fraud, environmental, and voluntary bankruptcy",
+        "minimum_deal_size": "$3M; sweet spot $8M to $50M",
+        "hold_period": "10 to 25 year fixed terms suit long-term hold strategies"
+      },
+      "direct_lender_messaging": "As a direct correspondent lender, we commit our own capital and underwrite in-house. Borrowers get a single underwriting decision, one relationship, and faster closing timelines than deals that require submission and approval from a life company's home office.",
+      "seo": {
+        "title_suffix": "Life Insurance Company Multifamily Loans | Direct Correspondent Lender",
+        "meta_template": "Life insurance company multifamily loans in {city} -- direct correspondent lender. Commercial Lending Solutions underwrites and closes life company permanent financing in-house. No broker layer."
+      }
+    },
+    {
+      "slug": "industrial",
+      "name": "Life Insurance Company Industrial Loans",
+      "short_name": "Life Company Industrial",
+      "description": "Permanent long-term financing for industrial, warehouse, logistics, and flex properties funded directly through life insurance company correspondent capital. Commercial Lending Solutions is a direct correspondent lender for industrial CRE -- we underwrite and close in-house. Industrial is among the most favored asset classes for life company permanent capital in 2025 and 2026, with compressed spreads for Class A logistics and distribution facilities.",
+      "typical_deal_range": "$3M to $100M stabilized industrial and logistics",
+      "typical_stack": [
+        "Life insurance company correspondent first mortgage (direct)",
+        "10 to 25 year fixed-rate term, credit-tenant NNN for longer terms",
+        "Non-recourse with standard carve-outs",
+        "Full-term interest-only periods for trophy distribution product"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Industrial life company pricing at tight spreads over Treasury; Class A logistics can be among the most competitive life company execution in any asset class",
+        "typical_ltv": "55 to 65 percent; credit-tenant NNN up to 70 percent",
+        "amortization": "25 to 30 years or interest-only",
+        "prepayment": "Yield maintenance or declining schedule",
+        "recourse_structure": "Non-recourse standard",
+        "minimum_deal_size": "$3M; preference for $10M plus",
+        "asset_preference": "Class A logistics, last-mile distribution, bulk warehouse, light industrial parks with strong tenancy"
+      },
+      "direct_lender_messaging": "Life companies compete aggressively for quality industrial. As a direct correspondent, we can move from term sheet to commitment faster than a broker placing the deal with a life company's correspondent desk.",
+      "seo": {
+        "title_suffix": "Life Insurance Company Industrial Loans | Direct Correspondent Lender",
+        "meta_template": "Life insurance company industrial loans in {city} -- direct correspondent lender. Permanent financing for logistics, warehouse, and industrial. Commercial Lending Solutions closes in-house."
+      }
+    },
+    {
+      "slug": "net-lease",
+      "name": "Life Insurance Company Net Lease Loans",
+      "short_name": "Life Company Net Lease",
+      "description": "Long-term permanent financing for single-tenant NNN and anchored retail properties funded directly through life insurance company correspondent capital. Life companies have financed net lease real estate for decades -- the long lease terms, credit tenants, and predictable NOI match their liability profiles perfectly. Commercial Lending Solutions is a direct correspondent lender, not a broker placing these deals.",
+      "typical_deal_range": "$2M to $50M single-tenant NNN and anchored retail",
+      "typical_stack": [
+        "Life insurance company correspondent first mortgage (direct)",
+        "10 to 25 year fixed-rate term matching remaining lease term",
+        "Non-recourse, full-term interest-only for investment-grade tenants",
+        "Blend and extend options for lease rollover management"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Investment-grade NNN tenants (Walgreens, Dollar General, AutoZone, Starbucks) command life company pricing at some of the tightest spreads in the market",
+        "typical_ltv": "60 to 70 percent; up to 75 percent for IG tenants with long leases",
+        "amortization": "Interest-only for full term is common on investment-grade credit tenants",
+        "prepayment": "Yield maintenance or declining schedule; term structured to match lease expiration",
+        "recourse_structure": "Non-recourse standard",
+        "minimum_deal_size": "$2M single-tenant; $5M preferred for portfolio",
+        "tenant_preference": "Investment-grade credit tenants; 10 plus years remaining lease; absolute NNN"
+      },
+      "direct_lender_messaging": "Net lease financing is a life company specialty -- the predictable cash flows and long lease terms are exactly what they need. As a direct correspondent, we know what our life company wants to own and can structure accordingly without an intermediary.",
+      "seo": {
+        "title_suffix": "Life Insurance Company Net Lease Loans | Direct Correspondent Lender",
+        "meta_template": "Life insurance company net lease loans in {city} -- direct correspondent lender. NNN and anchored retail permanent financing. Commercial Lending Solutions underwrites and closes in-house."
+      }
+    },
+    {
+      "slug": "office",
+      "name": "Life Insurance Company Office Loans",
+      "short_name": "Life Company Office",
+      "description": "Permanent financing for Class A and select Class B office properties funded directly through life insurance company correspondent capital. Life company office lending has become more selective post-2020, but quality suburban and urban office with strong tenancy and long weighted average lease terms remains fundable at competitive rates. Commercial Lending Solutions is a direct correspondent lender and can provide honest guidance on what meets life company standards today.",
+      "typical_deal_range": "$5M to $75M stabilized office with strong tenancy",
+      "typical_stack": [
+        "Life insurance company correspondent first mortgage (direct)",
+        "10 to 15 year fixed-rate term for stabilized product",
+        "Non-recourse with standard carve-outs",
+        "Lower leverage required in current market; relationship lenders remain active"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Life company office execution most competitive for suburban Class A with government or credit tenants; urban Class A trickier but fundable for right sponsorship",
+        "typical_ltv": "50 to 60 percent in current market; under-leveraged structures command better pricing",
+        "amortization": "25 to 30 years",
+        "prepayment": "Yield maintenance standard",
+        "recourse_structure": "Non-recourse with potentially broader carve-outs in current market",
+        "minimum_deal_size": "$5M; most competitive at $15M plus",
+        "asset_preference": "Suburban Class A, medical office, government-tenanted, multi-tenanted with long WALT, low vacancy"
+      },
+      "direct_lender_messaging": "Life company office underwriting has tightened. As a direct correspondent, we can tell you upfront whether a deal fits -- saving months of wasted process a broker without a direct relationship cannot offer.",
+      "seo": {
+        "title_suffix": "Life Insurance Company Office Loans | Direct Correspondent Lender",
+        "meta_template": "Life insurance company office loans in {city} -- direct correspondent lender. Class A office permanent financing. Commercial Lending Solutions provides direct life company access and in-house underwriting."
+      }
+    },
+    {
+      "slug": "self-storage",
+      "name": "Life Insurance Company Self Storage Loans",
+      "short_name": "Life Company Self Storage",
+      "description": "Permanent long-term financing for self storage facilities funded directly through life insurance company correspondent capital. Life companies have increased their self storage allocations significantly over the past decade as the sector has proven its recession resilience and income stability. Commercial Lending Solutions is a direct correspondent lender for self storage -- we underwrite stabilized facilities in-house with no broker layer.",
+      "typical_deal_range": "$3M to $50M stabilized self storage",
+      "typical_stack": [
+        "Life insurance company correspondent first mortgage (direct)",
+        "10 to 20 year fixed-rate term",
+        "Non-recourse standard",
+        "Favorable execution for climate-controlled and institutional-quality facilities"
+      ],
+      "key_features": {
+        "rate_environment_2026": "Self storage life company pricing competitive with agency; institutions have embraced the sector as alternative to office/retail",
+        "typical_ltv": "55 to 65 percent stabilized",
+        "amortization": "25 to 30 years",
+        "prepayment": "Yield maintenance or declining schedule",
+        "recourse_structure": "Non-recourse standard",
+        "minimum_deal_size": "$3M; climate-controlled urban preferred",
+        "asset_preference": "Stabilized occupancy 85 percent plus; climate-controlled preferred; urban or suburban infill location"
+      },
+      "direct_lender_messaging": "Self storage is one of the fastest-growing life company allocations. As a direct correspondent, we can quote self storage deals quickly without the delays of indirect placement.",
+      "seo": {
+        "title_suffix": "Life Insurance Company Self Storage Loans | Direct Correspondent Lender",
+        "meta_template": "Life insurance company self storage loans in {city} -- direct correspondent lender. Permanent financing for stabilized self storage facilities. Commercial Lending Solutions closes life company loans in-house."
+      }
+    }
+  ],
+  "cities": [
+    {
+      "slug": "los-angeles",
+      "name": "Los Angeles",
+      "state": "CA",
+      "market_notes": "LA is one of the deepest life company CRE markets nationally. Life insurers have been active here for decades across multifamily, industrial, NNN, and Class A office. The market's high barriers to entry, strong in-migration, and institutional-quality asset base match life company underwriting preferences. Rent stabilization (RSO) applies to pre-1978 multifamily, limiting life company appetite for older value-add stock but supporting strong demand for newer Class A.",
+      "typical_assets": "Class A multifamily (Westside, DTLA, Mid-Wilshire), Class A logistics (Inland Empire, South Bay, LAX), NNN retail (credit-tenant suburban), suburban Class A office (El Segundo, Playa Vista, Woodland Hills)",
+      "submarkets": "Westside, DTLA, Mid-Wilshire, Culver City, El Segundo, South Bay, Inland Empire, Hollywood, Burbank, Glendale"
+    },
+    {
+      "slug": "new-york",
+      "name": "New York",
+      "state": "NY",
+      "market_notes": "New York is the largest life company CRE lending market in the country. Life insurers are active across all asset classes but have become more selective on NYC office post-2020. Multifamily outside rent-stabilized stock, industrial in the outer boroughs, and credit-tenant NNN remain strong life company targets. High land values support strong collateral coverage even at conservative LTVs. NYC's HSTPA rent stabilization rules restrict life company appetite for pre-1974 rent-stabilized multifamily.",
+      "typical_assets": "Class A multifamily (Manhattan, Brooklyn new construction), industrial and last-mile logistics (Bronx, Queens, Outer Boroughs), NNN retail credit-tenant, Class A trophy office (selective)",
+      "submarkets": "Midtown Manhattan, Downtown Brooklyn, Long Island City, Hudson Yards, Williamsburg, Greenpoint, Bronx industrial, JFK/Jamaica logistics"
+    },
+    {
+      "slug": "dallas",
+      "name": "Dallas",
+      "state": "TX",
+      "market_notes": "Dallas is one of the most active life company CRE markets in the Sun Belt. No state income tax, strong corporate in-migration, and pro-development regulatory environment create ideal conditions for life company underwriting. No rent control, strong job growth, and deep industrial demand from DFW logistics make Dallas a tier-one market for life company permanent capital across all major asset classes.",
+      "typical_assets": "Class A multifamily (Uptown, Knox-Henderson, Frisco, Plano), logistics and last-mile industrial (Southern Tier, DFW Airport submarket), NNN retail (high-traffic suburban), Class A office (Uptown, Legacy Town Center)",
+      "submarkets": "Uptown Dallas, Knox-Henderson, Frisco, Plano, Allen, McKinney, Legacy, Las Colinas, Southern Tier industrial, DFW Airport"
+    },
+    {
+      "slug": "houston",
+      "name": "Houston",
+      "state": "TX",
+      "market_notes": "Houston is a large and liquid life company CRE market driven by energy, healthcare, and logistics. The Port of Houston creates one of the strongest industrial submarkets in the nation, drawing significant life company capital. No zoning code and no rent control give life companies clean exit optionality. Life companies have been more cautious on Houston office since the 2015 energy downturn but remain active on industrial, multifamily, and NNN.",
+      "typical_assets": "Port-adjacent industrial and logistics (Bayport, Deer Park, Pasadena), Class A multifamily (Inner Loop, River Oaks, Energy Corridor), NNN retail (suburban Houston), medical office (Texas Medical Center)",
+      "submarkets": "Inner Loop, Energy Corridor, Texas Medical Center, Greenway Plaza, Galleria, Port of Houston industrial, Katy, Sugar Land"
+    },
+    {
+      "slug": "atlanta",
+      "name": "Atlanta",
+      "state": "GA",
+      "market_notes": "Atlanta is a top-five life company target market in the Southeast. The city's position as a logistics and film/tech hub has driven strong industrial demand, and multifamily fundamentals remain solid despite new supply waves. No rent control, strong in-migration, and a diverse corporate base make Atlanta underwriting straightforward for life companies. Life companies are particularly active on Class A industrial in the I-85/I-285 corridor and multifamily in transit-adjacent submarkets.",
+      "typical_assets": "I-85 and I-285 industrial and logistics, Class A multifamily (Midtown, Buckhead, Brookhaven, Sandy Springs), NNN retail (suburban Fulton and Gwinnett), Class A office (Buckhead, Midtown)",
+      "submarkets": "Buckhead, Midtown Atlanta, Sandy Springs, Brookhaven, Alpharetta, I-85 North industrial, I-285 airport logistics, Smyrna, East Atlanta"
+    },
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "state": "FL",
+      "market_notes": "Miami has emerged as a top-tier life company market following the COVID-era migration of finance and tech from the Northeast. Life companies are highly active on luxury and Class A multifamily, South Florida industrial driven by PortMiami, and credit-tenant NNN retail. Florida's no-income-tax environment and no rent control (state law preempts local rent control) give life companies clean underwriting. Miami's international investor base and foreign capital flows support strong collateral values.",
+      "typical_assets": "Class A and luxury multifamily (Brickell, Edgewater, Wynwood), PortMiami-adjacent industrial and cold storage, NNN retail credit-tenant, Class A office (Brickell City Centre, Coconut Grove)",
+      "submarkets": "Brickell, Edgewater, Wynwood, Coconut Grove, Doral industrial, Hialeah logistics, Airport West, South Beach, Coral Gables"
+    },
+    {
+      "slug": "phoenix",
+      "name": "Phoenix",
+      "state": "AZ",
+      "market_notes": "Phoenix is a preferred Sun Belt target for life company permanent capital. Strong population growth, Intel and semiconductor investment, TSMC Arizona manufacturing, and zero rent control create a predictable operating environment. Life companies are most active on Class A multifamily (where recent supply digestion has stabilized rents), industrial in the West Valley logistics corridor, and suburban NNN retail.",
+      "typical_assets": "Class A multifamily (Tempe, Scottsdale, Chandler, Goodyear), West Valley industrial and logistics (Goodyear, Buckeye, Avondale), NNN suburban retail, medical office and MOB (Scottsdale, Chandler)",
+      "submarkets": "Tempe, Scottsdale, Chandler, Gilbert, Mesa, Goodyear, Buckeye, West Valley industrial, North Phoenix, Peoria"
+    },
+    {
+      "slug": "chicago",
+      "name": "Chicago",
+      "state": "IL",
+      "market_notes": "Chicago remains one of the Midwest's most active life company markets despite political headwinds. Life companies are selective on multifamily due to Illinois rent control debates and high property taxes but remain active on high-quality stabilized assets in strong neighborhoods. Industrial in the O'Hare and I-55 logistics corridors is among the most competitive life company executions in the region. NNN and suburban Class A office also see regular life company placement.",
+      "typical_assets": "Class A multifamily (River North, West Loop, Lincoln Park, Fulton Market), O'Hare and I-55 industrial and logistics, suburban NNN retail, Class A suburban office (Rosemont, Oak Brook, Schaumburg)",
+      "submarkets": "River North, West Loop, Lincoln Park, Fulton Market, O'Hare industrial, I-55 logistics, Rosemont, Oak Brook, Schaumburg, Naperville"
+    },
+    {
+      "slug": "seattle",
+      "name": "Seattle",
+      "state": "WA",
+      "market_notes": "Seattle's tech-driven economy and major port position it as a consistently active life company market. Amazon, Microsoft, and major tech campuses create strong multifamily and office demand in core submarkets. Washington state's Tacoma/Seattle port drives significant industrial demand in the Kent Valley and SODO. Rent stabilization applies in Seattle (2024 ordinance), adding scrutiny to older multifamily, but life companies remain active on new construction and Class A product.",
+      "typical_assets": "Class A multifamily (South Lake Union, Capitol Hill, Bellevue, Kirkland), Kent Valley and SODO industrial and logistics, NNN suburban retail, Class A office (Bellevue CBD, South Lake Union)",
+      "submarkets": "South Lake Union, Capitol Hill, Bellevue, Kirkland, Redmond, Kent Valley industrial, SODO, Renton, Lynnwood"
+    },
+    {
+      "slug": "denver",
+      "name": "Denver",
+      "state": "CO",
+      "market_notes": "Denver is a leading Mountain West life company target. No rent control, strong job growth from tech and energy sectors, and a growing population position Denver as a reliable underwriting market. Life companies are most active on Class A multifamily along the I-25 corridor and in transit-oriented suburban submarkets, industrial in the I-70 East logistics corridor, and NNN retail. Aurora CO's growing logistics market also draws life company capital.",
+      "typical_assets": "Class A multifamily (LoDo, Cherry Creek, RiNo, Highlands, Aurora), I-70 East industrial and logistics, NNN suburban retail, Class A suburban office (DTC, Centennial)",
+      "submarkets": "LoDo, Cherry Creek, RiNo, Highlands, Aurora, Englewood, Lakewood, Denver Tech Center, I-70 East industrial, Brighton logistics"
+    },
+    {
+      "slug": "boston",
+      "name": "Boston",
+      "state": "MA",
+      "market_notes": "Boston is a first-tier life company market, particularly for life sciences, multifamily, and industrial. MassHousing and the city's inclusionary rules add complexity to affordable layers but do not deter life companies on Class A market-rate product. The Route 128/I-95 technology and biotech corridor has driven strong Class A office and lab demand, though life companies have become more selective on standard office. Cambridge and Greater Boston multifamily remain highly competitive life company targets.",
+      "typical_assets": "Class A multifamily (Seaport, South End, Cambridge, Somerville, East Cambridge), life sciences and lab (Cambridge Kendall Square, Waltham, Watertown), Route 128 industrial, NNN suburban retail",
+      "submarkets": "Seaport, South End, Cambridge, Kendall Square, Somerville, Waltham, Watertown, Route 128, Framingham, Burlington"
+    },
+    {
+      "slug": "washington-dc",
+      "name": "Washington",
+      "state": "DC",
+      "market_notes": "DC is a highly active life company market, especially for government-credit office and multifamily. Federal government tenancy provides the long-term stable NOI that life companies prize. Maryland and Virginia suburbs (NoVA, Silver Spring, Bethesda) are active life company targets for office and industrial. DC multifamily is a perennial life company holding -- the city's population stability and high renter demographics make underwriting predictable.",
+      "typical_assets": "Class A multifamily (NoMa, Capitol Hill, Navy Yard, Bethesda, Rosslyn), government-leased Class A office (downtown DC, NoVA), Northern Virginia industrial and logistics, NNN suburban retail",
+      "submarkets": "NoMa, Navy Yard, Capitol Hill, Tysons, Reston, Herndon, Bethesda, Silver Spring, National Landing, Northern Virginia logistics"
+    },
+    {
+      "slug": "nashville",
+      "name": "Nashville",
+      "state": "TN",
+      "market_notes": "Nashville has become one of the fastest-growing life company target markets in the Southeast. No state income tax, strong corporate in-migration (Oracle, Amazon, Ford BlueOval City supply chain), and a highly educated workforce drive multifamily and industrial demand. Life companies are very active on Nashville multifamily (though watching supply levels in certain submarkets), I-65 and I-24 logistics industrial, and suburban NNN retail serving the city's booming suburban growth areas.",
+      "typical_assets": "Class A multifamily (Midtown, The Gulch, East Nashville, Franklin, Brentwood), I-65 and I-24 industrial and logistics, NNN suburban retail, suburban Class A office (Cool Springs)",
+      "submarkets": "Midtown Nashville, The Gulch, East Nashville, Franklin, Brentwood, Berry Hill, Cool Springs, Nolensville, I-65 North industrial"
+    },
+    {
+      "slug": "austin",
+      "name": "Austin",
+      "state": "TX",
+      "market_notes": "Austin is a top target for life company permanent capital across all major asset classes. Texas forbids rent control, the tech economy (Apple, Tesla, Samsung, Dell) drives household formation, and Austin's in-migration trends are among the strongest nationally. Life companies are active on stabilized Class A multifamily (where recent supply digestion is underway), South Austin and I-35 industrial, NNN suburban retail, and selective on Class A office with strong tenancy.",
+      "typical_assets": "Class A multifamily (South Congress, East Austin, Domain area, Round Rock), I-35 and South Austin industrial, NNN suburban retail, Class A office (Domain, Downtown Austin)",
+      "submarkets": "South Congress, East Austin, The Domain, Round Rock, Cedar Park, Pflugerville, I-35 industrial, South Austin logistics"
+    },
+    {
+      "slug": "charlotte",
+      "name": "Charlotte",
+      "state": "NC",
+      "market_notes": "Charlotte is a top Southeast life company target. No rent control, strong banking and finance sector employment (Bank of America, Truist, Wells Fargo), and rapid suburban growth make Charlotte multifamily and industrial underwriting straightforward. Life companies are active on Class A multifamily in Uptown and South End corridors, industrial in the I-85 and I-485 logistics corridors, and NNN retail serving Charlotte's expanding suburban growth.",
+      "typical_assets": "Class A multifamily (Uptown, South End, Ballantyne, SouthPark), I-85 and I-485 industrial and logistics, NNN suburban retail, Class A office (Uptown, SouthPark)",
+      "submarkets": "Uptown Charlotte, South End, SouthPark, Ballantyne, Concord, Kannapolis, I-85 industrial, Huntersville, Matthews"
+    },
+    {
+      "slug": "raleigh",
+      "name": "Raleigh",
+      "state": "NC",
+      "market_notes": "Raleigh and the Research Triangle are increasingly active life company markets, driven by major tech investment (Apple North Campus, Amazon, Google) and strong university-anchored employment. Wake County's pro-development environment and North Carolina's no-rent-control statute give life companies clean underwriting. Life companies are particularly active on multifamily in transit-adjacent and tech-corridor submarkets and I-40/I-540 industrial.",
+      "typical_assets": "Class A multifamily (Downtown Raleigh, Brier Creek, Cary, Apex), I-40 and I-540 industrial and logistics, NNN suburban retail, Class A office (Research Triangle Park, North Hills)",
+      "submarkets": "Downtown Raleigh, Brier Creek, Cary, Apex, Morrisville, Research Triangle Park, Durham tech corridor, North Hills, I-540 industrial"
+    },
+    {
+      "slug": "tampa",
+      "name": "Tampa",
+      "state": "FL",
+      "market_notes": "Tampa Bay is a fast-growing life company market in the I-4 corridor. Florida's no rent control environment and strong in-migration from high-tax Northeast states have made Tampa a consistent life company underwriting target. Life companies are very active on stabilized Class A multifamily (Channelside, Ybor, Westshore, St. Pete), I-4 and I-75 industrial logistics, and suburban NNN retail across the metro.",
+      "typical_assets": "Class A multifamily (Channelside, Westshore, South Tampa, St. Petersburg), I-4 and I-75 industrial and logistics, NNN suburban retail, Class A office (Westshore, Downtown Tampa)",
+      "submarkets": "Channelside, Westshore, South Tampa, Ybor City, St. Petersburg, Clearwater, I-4 industrial, Hillsborough County logistics"
+    },
+    {
+      "slug": "minneapolis",
+      "name": "Minneapolis",
+      "state": "MN",
+      "market_notes": "Minneapolis is the primary Midwest life company market outside Chicago. The Twin Cities' diversified economy (healthcare, financial services, consumer goods), strong education base (University of Minnesota), and high household incomes make multifamily and industrial underwriting fundamentally sound. Minnesota has rent control in limited municipalities (not metro-wide), which has prompted life company selectivity on certain multifamily assets. Industrial in the I-494 and Highway 55 logistics corridors is highly active for life company placement.",
+      "typical_assets": "Class A multifamily (North Loop, Uptown, Dinkytown, Edina, Bloomington), I-494 and Highway 55 industrial, NNN suburban retail (Twin Cities suburbs), Class A office (downtown Minneapolis, suburban)",
+      "submarkets": "North Loop, Uptown Minneapolis, Dinkytown, Bloomington, Eden Prairie, Plymouth, I-494 industrial, Highway 55 logistics, St. Paul Lowertown"
+    },
+    {
+      "slug": "san-diego",
+      "name": "San Diego",
+      "state": "CA",
+      "market_notes": "San Diego is a high-priority life company market driven by life sciences, military, and tech. San Diego's biotech and pharma concentration (Torrey Pines, Sorrento Valley) is one of the strongest in the world and drives Class A lab and office demand that life companies actively target. Multifamily fundamentals are extremely strong given the military tenant base and limited developable land. Rent control applies in the city of San Diego (AB 1482 plus local overlay), adding scrutiny to older stock.",
+      "typical_assets": "Class A multifamily (Mission Valley, Little Italy, UTC, Del Mar), life sciences and R&D (Torrey Pines, Sorrento Valley, Kearny Mesa), I-5 and I-15 industrial, NNN suburban retail",
+      "submarkets": "Torrey Pines, Sorrento Valley, UTC, Mission Valley, Little Italy, Kearny Mesa, Sorrento Mesa, Carlsbad, Vista industrial"
+    },
+    {
+      "slug": "portland",
+      "name": "Portland",
+      "state": "OR",
+      "market_notes": "Portland's life company market has been more cautious than other West Coast cities due to Oregon's statewide rent control (SB 608, 7% plus CPI cap) and challenging urban policy environment. However, Portland industrial -- particularly in the Columbia Corridor and I-205 logistics zones -- remains a strong life company target. Oregon does not allow local rent control beyond the statewide cap, limiting but not eliminating multifamily life company activity. Class A multifamily in Beaverton and suburban Washington County bypasses Portland-specific dynamics.",
+      "typical_assets": "Columbia Corridor and I-205 industrial and logistics, Class A multifamily (Beaverton, Hillsboro, Lake Oswego), NNN suburban retail (Washington County), Class A suburban office (Beaverton, Tualatin)",
+      "submarkets": "Columbia Corridor industrial, I-205 logistics, Beaverton, Hillsboro, Lake Oswego, Tualatin, Vancouver WA logistics"
+    },
+    {
+      "slug": "las-vegas",
+      "name": "Las Vegas",
+      "state": "NV",
+      "market_notes": "Las Vegas has become a meaningful life company market driven by Southern Nevada's industrial and logistics boom. The distribution and e-commerce sector has turned the Las Vegas Valley into a top national industrial target, drawing significant life company permanent capital. Nevada has no rent control and no state income tax, making multifamily underwriting straightforward. NNN retail across the Las Vegas strip of suburban power centers is also a life company staple.",
+      "typical_assets": "Class A industrial and logistics (Henderson, North Las Vegas, Southwest Las Vegas Valley), Class A multifamily (Summerlin, Henderson, Southwest Valley), NNN suburban retail",
+      "submarkets": "Henderson, North Las Vegas, Southwest Las Vegas, Summerlin, Spring Valley, industrial I-15 corridor, North Las Vegas Airport logistics"
+    },
+    {
+      "slug": "salt-lake-city",
+      "name": "Salt Lake City",
+      "state": "UT",
+      "market_notes": "Salt Lake City is the fastest-growing life company target market in the Mountain West. Utah's pro-business environment, no rent control, lower cost of living relative to California, and strong tech and fintech job growth (the Silicon Slopes) have driven exceptional multifamily fundamentals. Life companies are very active on Class A multifamily along the Wasatch Front, I-15 and I-80 logistics industrial, and NNN retail serving Utah's rapidly growing suburban population.",
+      "typical_assets": "Class A multifamily (Downtown SLC, Sugar House, South Jordan, Lehi, Provo), I-15 and I-80 industrial and logistics, NNN suburban retail (the Wasatch Front suburbs), Class A office (Salt Lake CBD, Silicon Slopes)",
+      "submarkets": "Downtown SLC, Sugar House, Draper, South Jordan, Sandy, Lehi, American Fork, Provo, I-15 industrial, Point of the Mountain"
+    },
+    {
+      "slug": "kansas-city",
+      "name": "Kansas City",
+      "state": "MO",
+      "market_notes": "Kansas City is a solid secondary life company market with deep industrial roots. The I-70, I-35, and I-435 corridors position KC as a central US distribution hub, making industrial a strong life company allocation target. Multifamily fundamentals are stable with above-average cap rates for Midwest markets. No rent control and reasonable land costs create favorable underwriting dynamics for life company permanent capital.",
+      "typical_assets": "I-70 and I-435 industrial and logistics, Class A multifamily (Country Club Plaza, Crossroads, Leawood, Overland Park), NNN suburban retail, Class A office (Plaza, Crown Center, Overland Park)",
+      "submarkets": "Country Club Plaza, Crossroads, Leawood, Overland Park, Lenexa, I-70 industrial, I-435 logistics, North Kansas City, Lee's Summit"
+    },
+    {
+      "slug": "columbus",
+      "name": "Columbus",
+      "state": "OH",
+      "market_notes": "Columbus is an increasingly active life company target driven by Ohio State University, a diversified economy, and the Intel Ohio mega-campus in New Albany. Intel's $20B plus investment in central Ohio is attracting significant semiconductor supply chain industrial development -- a new category of high-quality industrial that life companies are funding. Multifamily fundamentals are among the strongest in the Midwest. No rent control.",
+      "typical_assets": "Class A multifamily (Short North, German Village, Arena District, Dublin, New Albany), Intel New Albany semiconductor industrial, I-270 logistics and distribution, NNN suburban retail",
+      "submarkets": "Short North, German Village, Arena District, Dublin, Westerville, New Albany, Easton, I-270 logistics, Rickenbacker International Airport"
+    },
+    {
+      "slug": "indianapolis",
+      "name": "Indianapolis",
+      "state": "IN",
+      "market_notes": "Indianapolis is one of the most active life company industrial markets in the Midwest. The city's central US location on I-65, I-70, I-74, and I-69 makes it a top-five national industrial and logistics hub. Life companies have made significant industrial allocations in the Whitestown/Zionsville and Plainfield/Avon corridors. Multifamily is also a growing life company allocation as Indianapolis continues to attract corporate relocations.",
+      "typical_assets": "I-65 and Whitestown industrial and logistics, I-70 and Plainfield logistics, Class A multifamily (Keystone, Carmel, Fishers, Broad Ripple), NNN suburban retail",
+      "submarkets": "Whitestown, Zionsville, Plainfield, Avon, Carmel, Fishers, Keystone, Greenfield, I-65 north industrial, I-70 west logistics"
+    },
+    {
+      "slug": "san-antonio",
+      "name": "San Antonio",
+      "state": "TX",
+      "market_notes": "San Antonio is a growing life company market anchored by military installations, healthcare, and a booming tourism/hospitality sector. Texas's no-rent-control environment and JBSA military tenant base create stable multifamily underwriting for life companies. Toyota manufacturing, USAA, and Valero Energy anchor the office and industrial markets. Life companies are particularly active on NNN retail serving San Antonio's large suburban population base.",
+      "typical_assets": "Class A multifamily (Pearl District, Stone Oak, North Central, Medical Center), I-35 and 281 industrial, NNN suburban retail (the far North Side, New Braunfels)",
+      "submarkets": "Pearl District, Stone Oak, Medical Center, Far North Side, North Central, I-35 industrial, New Braunfels, Schertz"
+    },
+    {
+      "slug": "fort-worth",
+      "name": "Fort Worth",
+      "state": "TX",
+      "market_notes": "Fort Worth anchors the western half of the DFW metroplex and is a top life company industrial target due to its proximity to Alliance Airport, one of the nation's premier master-planned logistics developments. Life companies are very active on industrial and logistics in AllianceTexas, the I-35W corridor, and Meacham Airport vicinity. Multifamily is growing as Fort Worth's population growth accelerates driven by corporate relocations from California.",
+      "typical_assets": "AllianceTexas industrial and logistics, I-35W industrial, Class A multifamily (Sundance Square, West 7th, Aledo, Burleson), NNN suburban retail",
+      "submarkets": "AllianceTexas, Haslet, Justin, Roanoke, North Fort Worth, West 7th, Sundance Square, I-35W industrial, Meacham logistics"
+    },
+    {
+      "slug": "sacramento",
+      "name": "Sacramento",
+      "state": "CA",
+      "market_notes": "Sacramento is an active California life company market benefiting from state government employment stability and significant Bay Area migration spillover. Amazon, Apple, and major distribution users have driven industrial demand in the West Sacramento, McClellan, and North Highlands logistics submarkets. California AB 1482 rent cap applies to most Sacramento multifamily, though new construction is exempt. Life companies remain active on stabilized Class A and newer construction.",
+      "typical_assets": "West Sacramento and North Highlands industrial and logistics, Class A multifamily (Midtown, East Sacramento, Elk Grove, Roseville, Folsom), NNN suburban retail",
+      "submarkets": "West Sacramento logistics, McClellan Business Park, Roseville, Folsom, Elk Grove, Midtown Sacramento, Rancho Cordova"
+    },
+    {
+      "slug": "orlando",
+      "name": "Orlando",
+      "state": "FL",
+      "market_notes": "Orlando is a fast-growing life company market in the I-4 corridor. Florida has no rent control, strong in-migration, and Orlando's tech and healthcare sectors are diversifying beyond tourism. Life companies are active on Class A multifamily in Lake Nona and transit-adjacent suburban submarkets, Central Florida industrial and logistics along I-4 and the Turnpike, and NNN retail serving the large suburban population base.",
+      "typical_assets": "I-4 and Florida Turnpike industrial and logistics, Class A multifamily (Lake Nona, Sanford, Lake Mary, Winter Park), NNN suburban retail, Class A office (Lake Nona, Maitland, Downtown Orlando)",
+      "submarkets": "Lake Nona, Sanford, Lake Mary, Altamonte Springs, I-4 industrial, Kissimmee, Winter Park, Maitland, Osceola County logistics"
+    },
+    {
+      "slug": "baltimore",
+      "name": "Baltimore",
+      "state": "MD",
+      "market_notes": "Baltimore's life company market is anchored by Johns Hopkins, University of Maryland Medical, and the Port of Baltimore. The Port creates consistent industrial demand in the Chesapeake logistics corridor. Life sciences and medical office around the Johns Hopkins Medical Campus and University of Maryland BioPark are strong life company targets. Maryland's rent stabilization law (2023) applies in some local jurisdictions, adding underwriting complexity to certain multifamily.",
+      "typical_assets": "Port of Baltimore and Chesapeake industrial and logistics, Johns Hopkins and bioscience office and lab, Class A multifamily (Harbor East, Federal Hill, Towson, Columbia), NNN suburban retail",
+      "submarkets": "Harbor East, Federal Hill, Towson, Columbia, Chesapeake industrial, Port of Baltimore logistics, Annapolis Junction life sciences"
+    },
+    {
+      "slug": "pittsburgh",
+      "name": "Pittsburgh",
+      "state": "PA",
+      "market_notes": "Pittsburgh is a niche but active life company market anchored by Carnegie Mellon University, the University of Pittsburgh, UPMC Health System, and a growing autonomous vehicle and AI tech sector. Life companies are most active on Class A multifamily in Oakland and Lawrenceville, medical office serving UPMC's campus network, and industrial in the I-376 and Route 30 logistics corridors. Pittsburgh's Opportunity Zones in the Hill District and Hazelwood have attracted life company interest in select development projects.",
+      "typical_assets": "UPMC-anchored medical office, Class A multifamily (Oakland, Lawrenceville, East Liberty, Squirrel Hill), I-376 and Route 30 industrial and logistics, NNN suburban retail",
+      "submarkets": "Oakland, Lawrenceville, East Liberty, Squirrel Hill, Cranberry Township, Robinson Township, I-376 logistics, Monroeville"
+    },
+    {
+      "slug": "philadelphia",
+      "name": "Philadelphia",
+      "state": "PA",
+      "market_notes": "Philadelphia is an active life company market anchored by major universities, healthcare systems (Penn Medicine, Jefferson Health, CHOP), and the Port of Philadelphia. Life companies are particularly active on NNN and anchored retail in the Philadelphia suburbs, I-95 and I-78 logistics industrial, multifamily in transit-adjacent Main Line and Center City neighborhoods, and healthcare and life sciences office. Pennsylvania's Act 6 rent control preemption keeps multifamily underwriting clean at the state level.",
+      "typical_assets": "I-95 and I-78 industrial and logistics, Class A multifamily (Center City, Old City, Northern Liberties, Conshohocken, Wayne), NNN suburban retail (Main Line, Wilmington DE corridor), healthcare office (University City)",
+      "submarkets": "Center City, Old City, Northern Liberties, University City, I-95 industrial, I-78 logistics, Conshohocken, King of Prussia, Malvern"
+    },
+    {
+      "slug": "charlotte",
+      "name": "Charlotte",
+      "state": "NC",
+      "market_notes": "Charlotte is a premier life company target in the Southeast, driven by financial services (Bank of America, Truist, Wells Fargo HQ) and rapid suburban population growth. No rent control in North Carolina, strong corporate tenant base, and pro-development regulatory environment make Charlotte multifamily underwriting among the cleanest in the Southeast. Life companies are very active on multifamily in South End and Ballantyne, I-85 industrial, and NNN suburban retail.",
+      "typical_assets": "Class A multifamily (South End, Uptown, Ballantyne, SouthPark, Huntersville), I-85 industrial and logistics, NNN suburban retail, Class A office (Uptown, Ballantyne)",
+      "submarkets": "South End, Uptown Charlotte, Ballantyne, SouthPark, Huntersville, Concord, I-85 industrial, Steele Creek, Pineville"
+    },
+    {
+      "slug": "richmond",
+      "name": "Richmond",
+      "state": "VA",
+      "market_notes": "Richmond is a steady life company secondary market anchored by strong state government employment, Virginia Commonwealth University Medical, Capital One Financial, and Amazon's growing Northern Virginia data center investment spilling into Richmond's logistics network. Life companies are most active on Class A multifamily in Scott's Addition and River District, Richmond-area industrial serving the I-95 and I-64 logistics corridors, and NNN retail.",
+      "typical_assets": "I-95 and I-64 industrial and logistics, Class A multifamily (Scott's Addition, Shockoe Bottom, West End, Short Pump), NNN suburban retail, medical office (MCV/VCU campus)",
+      "submarkets": "Scott's Addition, Shockoe Bottom, Short Pump, Midlothian, I-95 industrial, I-64 logistics, Henrico, Chesterfield"
+    },
+    {
+      "slug": "memphis",
+      "name": "Memphis",
+      "state": "TN",
+      "market_notes": "Memphis is a top-five national industrial and logistics life company market due to FedEx headquarters, the Memphis Aerotropolis, and the city's position at the intersection of I-40, I-55, and I-69. Life companies have made major industrial allocations in the Airport and Shelby Drive logistics corridors. Multifamily fundamentals are improving but remain secondary to industrial as a life company allocation target. NNN retail is also active given Memphis's role as a regional retail hub.",
+      "typical_assets": "Airport and Aerotropolis industrial and logistics, Memphis Shelby Drive distribution, Class A multifamily (East Memphis, Germantown, Collierville), NNN suburban retail",
+      "submarkets": "Memphis Aerotropolis, Airport industrial, Shelby Drive logistics, East Memphis, Germantown, Collierville, Bartlett, Southaven MS"
+    },
+    {
+      "slug": "louisville",
+      "name": "Louisville",
+      "state": "KY",
+      "market_notes": "Louisville is a strong life company industrial market anchored by UPS Worldport, the world's largest automated package sorting facility, at Louisville International Airport. Life companies are very active on air cargo-adjacent industrial and logistics in the South Central Louisville industrial zone. Multifamily is a growing life company allocation as Louisville's diverse manufacturing and logistics economy supports stable household formation. No Kentucky rent control.",
+      "typical_assets": "UPS Worldport-adjacent industrial and logistics, Class A multifamily (NuLu, Highlands, St. Matthews, Jeffersontown), NNN suburban retail, medical office (U of L Health)",
+      "submarkets": "South Central Louisville industrial, Airport logistics, NuLu, Highlands, St. Matthews, Jeffersontown, Oldham County, I-65 logistics"
+    },
+    {
+      "slug": "new-orleans",
+      "name": "New Orleans",
+      "state": "LA",
+      "market_notes": "New Orleans is a niche life company market anchored by port logistics, energy services, and healthcare. The Port of New Orleans and the Mississippi River logistics corridor drive consistent industrial demand for life company capital. Multifamily in post-Katrina recovery neighborhoods and the Warehouse District has attracted life company interest as the city's recovery has stabilized. Life companies are selective but active for quality stabilized assets.",
+      "typical_assets": "Port of New Orleans industrial and logistics, Warehouse District and CBD multifamily, New Orleans East and Metairie NNN retail, medical office (Tulane Medical, LSU Health)",
+      "submarkets": "Warehouse District, CBD, Metairie, New Orleans East logistics, Port of New Orleans industrial, Kenner, Elmwood"
+    },
+    {
+      "slug": "cincinnati",
+      "name": "Cincinnati",
+      "state": "OH",
+      "market_notes": "Cincinnati is an active life company market in the Midwest driven by consumer goods manufacturing (P&G, Kroger HQ), Northern Kentucky industrial logistics, and an increasingly vibrant multifamily market in Over-the-Rhine and nearby submarkets. The I-71/75 corridor is one of the most active industrial life company targets in the region. No Ohio rent control.",
+      "typical_assets": "I-71 and I-75 industrial and logistics, Northern Kentucky logistics, Class A multifamily (Over-the-Rhine, Hyde Park, Northern Kentucky suburbs), NNN suburban retail",
+      "submarkets": "Over-the-Rhine, Hyde Park, Florence KY, Covington KY, I-71 industrial, I-75 logistics, West Chester, Mason, Kenwood"
+    },
+    {
+      "slug": "cleveland",
+      "name": "Cleveland",
+      "state": "OH",
+      "market_notes": "Cleveland is a selective life company market, active primarily on industrial and healthcare. The Cleveland Clinic and University Hospitals systems are among the largest healthcare employers in the nation, driving significant medical office and life sciences demand. Industrial along I-90, I-71, and the Tiedeman Road logistics corridor draws life company capital. Multifamily in Ohio City and Tremont has attracted life company interest at improving fundamentals.",
+      "typical_assets": "Cleveland Clinic-adjacent medical office and lab, I-90 and I-71 industrial and logistics, Class A multifamily (Ohio City, Tremont, Lakewood), NNN suburban retail",
+      "submarkets": "Ohio City, Tremont, University Circle, Lakewood, Tiedeman industrial, I-90 logistics, Beachwood, Strongsville, Solon"
+    },
+    {
+      "slug": "detroit",
+      "name": "Detroit",
+      "state": "MI",
+      "market_notes": "Detroit's life company market is concentrated in industrial and suburban multifamily. Michigan's lack of statewide rent control and the EV manufacturing transition (Ford, GM, Stellantis EV plants) are reshaping the industrial landscape -- life companies are funding EV supply chain manufacturing and logistics assets in Metro Detroit. Multifamily in suburban Oakland and Macomb Counties is a life company target as urban core recovery continues.",
+      "typical_assets": "EV supply chain industrial (Macomb, Oakland County, Monroe), I-75 and I-94 logistics, suburban multifamily (Troy, Royal Oak, Birmingham, Ferndale), NNN suburban retail",
+      "submarkets": "Troy, Royal Oak, Birmingham, Auburn Hills, Sterling Heights, I-75 industrial, I-94 logistics, Macomb County EV manufacturing"
+    },
+    {
+      "slug": "st-louis",
+      "name": "St. Louis",
+      "state": "MO",
+      "market_notes": "St. Louis is a consistent life company secondary market driven by its position as a central US logistics hub (I-44, I-55, I-64, I-70 all converge) and Boeing's major defense manufacturing presence. Industrial in the Earth City and Westport logistics corridors is a life company staple. Multifamily in Clayton and West County has attracted life company capital as St. Louis's Central Corridor strengthens.",
+      "typical_assets": "Earth City and I-70 industrial and logistics, Boeing defense-adjacent industrial, Class A multifamily (Clayton, Richmond Heights, Brentwood, Kirkwood), NNN suburban retail",
+      "submarkets": "Clayton, Richmond Heights, Brentwood, Earth City industrial, I-70 logistics, Kirkwood, West County, Chesterfield"
+    },
+    {
+      "slug": "omaha",
+      "name": "Omaha",
+      "state": "NE",
+      "market_notes": "Omaha is a stable life company market with strong fundamentals driven by insurance and financial services (Berkshire Hathaway, Mutual of Omaha, Union Pacific). Life companies have a natural affinity for Omaha due to its well-known institutional investor base. Industrial along I-80 and the Sarpy County logistics corridor draws consistent life company allocations. Multifamily in Aksarben and Midtown is a growing life company target.",
+      "typical_assets": "I-80 and Sarpy County industrial and logistics, Class A multifamily (Aksarben, Midtown, Papillion, La Vista), NNN suburban retail, corporate Class A office (West Omaha)",
+      "submarkets": "Aksarben, Midtown Omaha, Papillion, La Vista, Sarpy County industrial, I-80 logistics, West Omaha office, Bellevue"
+    },
+    {
+      "slug": "oklahoma-city",
+      "name": "Oklahoma City",
+      "state": "OK",
+      "market_notes": "Oklahoma City is a selective life company market driven by energy, government, and a growing aerospace and defense sector. Life companies are most active on NNN retail serving OKC's large suburban market, industrial in the Will Rogers Airport and I-40 corridors, and Class A multifamily in Midtown and Bricktown. Oklahoma has no rent control and maintains favorable landlord laws.",
+      "typical_assets": "I-40 and Airport industrial and logistics, Class A multifamily (Midtown, Bricktown, Nichols Hills), NNN suburban retail (Memorial and Penn corridors), corporate office (Devon Tower area)",
+      "submarkets": "Midtown OKC, Bricktown, Edmond, Norman, Yukon, I-40 industrial, Will Rogers logistics, Nichols Hills, Penn Square"
+    },
+    {
+      "slug": "san-jose",
+      "name": "San Jose",
+      "state": "CA",
+      "market_notes": "San Jose is a premier life company market as the capital of Silicon Valley. Tech employer density (Apple, Google, Cisco, Adobe, eBay, Intel, Nvidia in the broader market) drives some of the nation's strongest multifamily and office underwriting fundamentals. California AB 1482 applies, limiting rent increases on covered multifamily. Life companies are selective but active on Class A tech campus office and stabilized multifamily in North San Jose, Willow Glen, and the South Bay suburbs.",
+      "typical_assets": "Class A tech campus office (North San Jose, Santa Clara, Sunnyvale, Mountain View), Class A multifamily (Willow Glen, North San Jose, Campbell, Cupertino), I-880 and I-101 industrial and logistics",
+      "submarkets": "North San Jose, Willow Glen, Campbell, Santa Clara, Sunnyvale, Mountain View, Cupertino, I-880 industrial, Milpitas"
+    },
+    {
+      "slug": "jacksonville",
+      "name": "Jacksonville",
+      "state": "FL",
+      "market_notes": "Jacksonville is a growing life company market driven by port logistics, financial services (Fidelity National, Everbank), and strong in-migration from higher-cost Florida metros. The Port of Jacksonville creates consistent industrial demand in the Dames Point and Southeast logistics corridors. Florida's no-rent-control environment gives life companies clean multifamily underwriting. Life companies are very active on I-95 industrial, NNN suburban retail, and stabilized multifamily in Riverside-Avondale and the beaches corridor.",
+      "typical_assets": "Port of Jacksonville and I-95 industrial and logistics, Class A multifamily (Riverside, Avondale, St. Johns County, Ponte Vedra), NNN suburban retail, medical office (Mayo Clinic Jacksonville)",
+      "submarkets": "Riverside, Avondale, St. Johns County, Ponte Vedra, Dames Point industrial, I-95 logistics, Southside, Mandarin"
+    },
+    {
+      "slug": "salt-lake-city",
+      "name": "Salt Lake City",
+      "state": "UT",
+      "market_notes": "Salt Lake City and the Wasatch Front are among the fastest-growing life company markets in the Mountain West. Utah's Silicon Slopes tech corridor (Lehi, Draper, South Jordan) is drawing massive tech investment and household formation, driving Class A multifamily and office demand. I-15 and I-80 logistics corridors are top industrial life company allocations. Utah has no rent control and a highly favorable regulatory environment.",
+      "typical_assets": "Silicon Slopes Class A office and tech campus, I-15 and I-80 industrial and logistics, Class A multifamily (Downtown SLC, Lehi, Draper, South Jordan), NNN suburban retail",
+      "submarkets": "Downtown Salt Lake City, Lehi, Draper, South Jordan, Sandy, American Fork, I-15 industrial, I-80 logistics, Point of the Mountain"
+    },
+    {
+      "slug": "boise",
+      "name": "Boise",
+      "state": "ID",
+      "market_notes": "Boise is one of the fastest-growing life company secondary markets in the country. Micron Technology, HP, and significant California and Pacific Northwest migration have driven exceptional multifamily demand. Idaho has no rent control. I-84 industrial and logistics in Nampa, Caldwell, and Mountain Home is a growing life company allocation as Treasure Valley population growth accelerates. Life companies are funding new Class A multifamily across the metro.",
+      "typical_assets": "Class A multifamily (Downtown Boise, Meridian, Nampa, Eagle, Caldwell), I-84 industrial and logistics, NNN suburban retail, Class A office (Downtown Boise, Meridian)",
+      "submarkets": "Downtown Boise, Meridian, Nampa, Eagle, Caldwell, I-84 industrial, Treasure Valley logistics, Garden City"
+    },
+    {
+      "slug": "albuquerque",
+      "name": "Albuquerque",
+      "state": "NM",
+      "market_notes": "Albuquerque is a steady life company secondary market anchored by Kirtland Air Force Base, Sandia National Laboratories, University of New Mexico Medical, and Intel's Rio Rancho manufacturing facility. Life companies are most active on medical and government office, industrial in the Southeast Heights and Airport corridors, and NNN retail. Multifamily fundamentals have strengthened with California and Texas migration spillover. New Mexico has no statewide rent control.",
+      "typical_assets": "Kirtland and Sandia-adjacent industrial and office, Intel Rio Rancho manufacturing supply chain, Class A multifamily (Uptown, Journal Center, Rio Rancho), NNN suburban retail",
+      "submarkets": "Uptown Albuquerque, Journal Center, Rio Rancho, Kirtland adjacent, Southeast industrial, Airport logistics, Cottonwood area"
+    },
+    {
+      "slug": "tucson",
+      "name": "Tucson",
+      "state": "AZ",
+      "market_notes": "Tucson is a selective life company market anchored by Raytheon Missiles and Defense (Arizona's largest private employer), University of Arizona, Banner Health, and significant retiree and snowbird demographics. Life companies are most active on Raytheon and defense-related industrial, NNN retail serving the large retiree demographic, and Class A multifamily for University of Arizona and healthcare workers. Arizona has no rent control.",
+      "typical_assets": "Raytheon and defense-adjacent industrial, University of Arizona-adjacent multifamily and student housing, NNN suburban retail (Oracle Road, Speedway corridors), Class A medical office (Banner Health)",
+      "submarkets": "Foothills, Marana, Sahuarita, University of Arizona adjacent, Oracle Road corridor, Speedway commercial, Raytheon industrial"
+    },
+    {
+      "slug": "spokane",
+      "name": "Spokane",
+      "state": "WA",
+      "market_notes": "Spokane is a growing life company secondary market benefiting from Eastern Washington's agricultural economy, Fairchild Air Force Base, and significant California migration seeking lower costs. Life companies are most active on NNN retail serving the Inland Northwest region, stabilized multifamily, and industrial in the industrial valley. Washington's rent stabilization (2024) adds selectivity to older Spokane multifamily but does not deter life company interest in newer product.",
+      "typical_assets": "Spokane Valley industrial and logistics, Class A multifamily (South Hill, Downtown Spokane, Liberty Lake), NNN suburban retail, Class A office (Downtown Spokane)",
+      "submarkets": "Spokane Valley, Liberty Lake, South Hill, Downtown Spokane, Airway Heights (Fairchild adjacent), I-90 industrial corridor"
+    },
+    {
+      "slug": "des-moines",
+      "name": "Des Moines",
+      "state": "IA",
+      "market_notes": "Des Moines is a highly active life company market -- notably, life insurance companies (Principal Financial, Meredith, EMC Insurance) are headquartered here, creating an institutional familiarity with the local CRE market. Life companies allocate consistently to Des Moines multifamily, industrial in the I-35 and I-80 corridors, and NNN retail. Iowa has no rent control and landlord-friendly statutes. The data center market around Waukee and Grimes is attracting new life company industrial allocations.",
+      "typical_assets": "I-35 and I-80 industrial and logistics, data center industrial (Waukee, Grimes), Class A multifamily (West Des Moines, Ankeny, Johnston, Urbandale), NNN suburban retail",
+      "submarkets": "West Des Moines, Ankeny, Johnston, Urbandale, Waukee data center, I-35 industrial, I-80 logistics, Clive"
+    },
+    {
+      "slug": "nashville",
+      "name": "Nashville",
+      "state": "TN",
+      "market_notes": "Nashville has emerged as a top-tier life company target in the Southeast, driven by Oracle, Amazon, AllianceBernstein, and major healthcare system HQs (HCA, Ardent Health). Tennessee has no income tax and no rent control. Life companies are very active on Class A multifamily (though monitoring supply levels), I-65 and I-24 logistics industrial, and suburban NNN retail serving one of the fastest-growing metros in the country.",
+      "typical_assets": "I-65 and I-24 industrial and logistics, Class A multifamily (The Gulch, Midtown, Franklin, Brentwood), NNN suburban retail, healthcare Class A office (Cool Springs, Brentwood)",
+      "submarkets": "The Gulch, Midtown Nashville, Franklin, Brentwood, Antioch, Berry Hill, Cool Springs, I-65 North industrial"
+    },
+    {
+      "slug": "grand-rapids",
+      "name": "Grand Rapids",
+      "state": "MI",
+      "market_notes": "Grand Rapids is a niche but growing life company market driven by the nation's largest concentration of office furniture manufacturing (Herman Miller, Steelcase, Haworth), Amway, and Spectrum Health. Michigan has no statewide rent control. Life companies are most active on industrial in the I-196 and US-131 corridors, NNN suburban retail, and Class A multifamily in the Medical Mile and Downtown GR areas.",
+      "typical_assets": "I-196 and US-131 industrial and manufacturing, Medical Mile and downtown multifamily, NNN suburban retail (28th Street corridor), Class A office (Downtown GR, suburban)",
+      "submarkets": "Downtown Grand Rapids, Medical Mile, Kentwood, Grandville, Walker, I-196 industrial, Cascade, Caledonia, Sparks logistics"
+    },
+    {
+      "slug": "madison",
+      "name": "Madison",
+      "state": "WI",
+      "market_notes": "Madison is a high-quality life company secondary market driven by University of Wisconsin, Epic Systems (the world's largest medical records company, headquartered in Verona), and strong state government employment. Life companies are most active on multifamily near the UW campus and in west-side employment corridors, Epic-adjacent office and R&D in Verona, and NNN retail. Wisconsin has no statewide rent control.",
+      "typical_assets": "UW-adjacent Class A multifamily, Epic campus-adjacent office and R&D (Verona), Class A multifamily (West Madison, Fitchburg, Middleton), NNN suburban retail",
+      "submarkets": "Downtown Madison, Middleton, Fitchburg, Verona (Epic campus), Monona, Waunakee, I-94 logistics"
+    },
+    {
+      "slug": "colorado-springs",
+      "name": "Colorado Springs",
+      "state": "CO",
+      "market_notes": "Colorado Springs is an active life company secondary market driven by a massive military installation footprint (Fort Liberty/Bragg, Peterson SFB, Schriever SFB, Cheyenne Mountain, NORAD/NORTHCOM) and the US Space Force. Military and defense contractor employment creates stable multifamily and NNN retail demand. Colorado has no rent control. Life companies are attracted to Colorado Springs for its stable military tenant base and below-Denver pricing.",
+      "typical_assets": "Military-adjacent multifamily and NNN retail, defense contractor Class A office, I-25 industrial and logistics, Class A multifamily (Briargate, Northgate, Falcon)",
+      "submarkets": "Briargate, Northgate, Falcon, Security-Widefield, Peterson SFB adjacent, I-25 industrial, Powers corridor retail"
+    },
+    {
+      "slug": "richmond",
+      "name": "Richmond",
+      "state": "VA",
+      "market_notes": "Richmond is a steady life company secondary market anchored by Capital One Financial, Amazon fulfillment, CarMax, and a growing biotech corridor. Life companies are active on Class A multifamily in Scott's Addition and the Fan/Museum District, I-95 industrial and logistics serving the Mid-Atlantic corridor, and NNN retail. Virginia Housing administers LIHTC but does not affect life company market-rate underwriting. Virginia has no rent control.",
+      "typical_assets": "I-95 and I-64 industrial and logistics, Class A multifamily (Scott's Addition, Museum District, Short Pump, Midlothian), NNN suburban retail, biotech office (Bio+Tech Park)",
+      "submarkets": "Scott's Addition, Museum District, Short Pump, Midlothian, Chesterfield, I-95 industrial, I-64 logistics, Henrico County"
+    },
+    {
+      "slug": "birmingham",
+      "name": "Birmingham",
+      "state": "AL",
+      "market_notes": "Birmingham is a selective life company secondary market with strength in healthcare-anchored real estate and industrial. UAB Health System is the state's largest employer and a major driver of medical office and life sciences real estate. Honda and Mercedes manufacturing supply chains drive industrial demand in the I-20 and I-65 corridors. Alabama has no rent control and is a landlord-favorable state for life company multifamily underwriting.",
+      "typical_assets": "UAB-anchored medical office and lab, I-20 and I-65 industrial and automotive supply chain logistics, Class A multifamily (Mountain Brook, Vestavia Hills, Homewood), NNN suburban retail",
+      "submarkets": "UAB campus, Vestavia Hills, Mountain Brook, Hoover, Homewood, I-20 industrial, I-65 automotive logistics, Trussville"
+    },
+    {
+      "slug": "chattanooga",
+      "name": "Chattanooga",
+      "state": "TN",
+      "market_notes": "Chattanooga is an emerging life company secondary market driven by Volkswagen's Tennessee manufacturing plant, Amazon, and the city's reputation as a fiber-connected tech hub. Tennessee has no rent control, and Chattanooga's industrial and logistics footprint along I-75 and I-24 draws consistent life company allocations. Multifamily in the Northshore and Downtown corridors is a growing life company target.",
+      "typical_assets": "Volkswagen and I-75 industrial and automotive supply chain, I-24 logistics, Class A multifamily (Northshore, Downtown, East Brainerd), NNN suburban retail",
+      "submarkets": "Northshore, Downtown Chattanooga, East Brainerd, I-75 industrial, I-24 logistics, Hixson, Ooltewah, Hamilton Place area"
+    },
+    {
+      "slug": "savannah",
+      "name": "Savannah",
+      "state": "GA",
+      "market_notes": "Savannah is one of the nation's hottest industrial life company markets due to the Port of Savannah, the largest single container terminal in North America. Major Amazon, Hyundai (the new Metaplant America), and electric vehicle supply chain industrial users have transformed Savannah into a top-five US logistics hub. Life companies are allocating significant industrial capital to the Savannah market. Georgia has no rent control.",
+      "typical_assets": "Port of Savannah industrial and logistics, Hyundai Metaplant America supply chain industrial, Class A multifamily (Downtown Savannah, Pooler, Richmond Hill), NNN suburban retail",
+      "submarkets": "Port of Savannah logistics, I-16 industrial, Pooler, Richmond Hill, Garden City, Rincon, Effingham County Hyundai corridor"
+    },
+    {
+      "slug": "knoxville",
+      "name": "Knoxville",
+      "state": "TN",
+      "market_notes": "Knoxville is a selective life company secondary market driven by the University of Tennessee, Oak Ridge National Laboratory, and Tennessee Valley Authority. Tennessee's no-rent-control environment and below-average pricing give life companies favorable yields on multifamily underwriting. Industrial in the I-40 and I-75 corridors is a consistent life company allocation. ORNL's growing clean energy and advanced manufacturing research draws institutional investors.",
+      "typical_assets": "ORNL-adjacent research and advanced manufacturing industrial, I-40 and I-75 industrial and logistics, Class A multifamily (West Knoxville, Farragut, Market Square area), NNN suburban retail",
+      "submarkets": "West Knoxville, Farragut, Oak Ridge, I-40 industrial, I-75 logistics, Halls, Bearden, Market Square"
+    },
+    {
+      "slug": "providence",
+      "name": "Providence",
+      "state": "RI",
+      "market_notes": "Providence is a niche life company secondary market anchored by Brown University, Rhode Island School of Design, Providence College, and Lifespan Health System. Life companies are most active on Class A multifamily near College Hill and the Jewelry District, medical and academic office, and NNN suburban retail. Rhode Island has no rent control (the state preempts local control). Providence's position 45 minutes from Boston gives it spillover demand from the more expensive Bay State market.",
+      "typical_assets": "Brown University and Jewelry District Class A multifamily, Lifespan and Care New England medical office, NNN suburban retail (Johnston, Cranston, Warwick), I-95 and Route 6 industrial",
+      "submarkets": "College Hill, Jewelry District, Downtown Providence, Cranston, Johnston, Warwick, I-95 industrial, Route 6 logistics"
+    },
+    {
+      "slug": "hartford",
+      "name": "Hartford",
+      "state": "CT",
+      "market_notes": "Hartford is a selective life company market -- uniquely, several major life insurance companies (Hartford Financial, Aetna, Cigna, Travelers, MetLife) have historical or current headquarters here, creating institutional familiarity with the local market. Life companies are most active on suburban Class A office along I-84, NNN retail in the Hartford suburbs, and stabilized multifamily. Connecticut has no statewide rent control.",
+      "typical_assets": "Insurance company corporate campus and suburban Class A office (Simsbury, Bloomfield, Rocky Hill), I-84 and I-91 industrial and logistics, Class A multifamily (West Hartford, Simsbury, Glastonbury), NNN suburban retail",
+      "submarkets": "West Hartford, Simsbury, Glastonbury, Rocky Hill, I-84 industrial, I-91 logistics, Bloomfield, Windsor Locks"
+    },
+    {
+      "slug": "norfolk",
+      "name": "Norfolk",
+      "state": "VA",
+      "market_notes": "Norfolk and Hampton Roads anchor a major life company secondary market driven by the world's largest naval base (Naval Station Norfolk), Huntington Ingalls shipbuilding, and the Port of Virginia. Military-adjacent multifamily and NNN retail are life company staples in Hampton Roads. Virginia has no rent control. Life companies also target industrial in the I-64 and Route 460 corridors serving port logistics.",
+      "typical_assets": "Military-adjacent multifamily (Virginia Beach, Chesapeake, Suffolk), Port of Virginia industrial and logistics, NNN suburban retail, Class A office (Town Center Virginia Beach, downtown Norfolk)",
+      "submarkets": "Virginia Beach Town Center, Chesapeake, Suffolk, Hampton, Newport News, I-64 industrial, Route 460 logistics, Portsmouth"
+    }
+  ]
+}
