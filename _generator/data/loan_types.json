@@ -938,5 +938,301 @@
       "meta_description": "Multifamily construction loans from $2M. Ground-up apartment development, BTR communities, and adaptive reuse. Banks, debt funds, and HUD lenders. Get a quote.",
       "h1": "Multifamily Construction Loans for Apartment Developers"
     }
+  },
+  {
+    "slug": "build-to-rent-loans",
+    "name": "Build-to-Rent Loans",
+    "short_name": "Build-to-Rent",
+    "headline": "Financing for Build-to-Rent Communities and Single-Family Rentals",
+    "description": "Build-to-rent (BTR) loans finance ground-up construction and acquisition of purpose-built single-family and townhome rental communities. These facilities cover land acquisition, vertical construction, and lease-up phases, with takeout into permanent agency or CMBS debt once the community reaches stabilized occupancy. Minimum loan size is $2 million, targeting BTR developments of 20 homes or more where institutional capital is most active.",
+    "description_extended": "Build-to-rent has emerged as one of the fastest-growing commercial real estate strategies in the United States, driven by millennial household formation, lifestyle renter demand, and the structural undersupply of entry-level for-sale housing. BTR communities offer investors the density and management efficiency of multifamily with the appeal and space of single-family housing. Institutional capital including Blackstone, Invitation Homes, and American Homes 4 Rent have validated the asset class at scale, and regional developers are now building BTR communities in Sun Belt and Mountain West markets with strong absorption. Lenders have responded with dedicated BTR programs covering construction, bridge-to-stabilization, and permanent financing.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $75M+",
+      "term": "18 - 36 Months (Construction) + Perm",
+      "rates": "6.75% - 11.00%",
+      "ltc": "Up to 80% LTC",
+      "structure": "Construction Draw + Bridge-to-Perm",
+      "close_time": "21 to 45 Days"
+    },
+    "lender_sources": [
+      "Debt Funds",
+      "Banks",
+      "BTR-Focused Bridge Platforms",
+      "Fannie Mae / Freddie Mac (stabilized)",
+      "Life Insurance Companies"
+    ],
+    "ideal_for": [
+      "Ground-up BTR communities of 20 to 300 homes in Sun Belt and Mountain West markets",
+      "Townhome and cottage-style rental communities in suburban infill locations",
+      "Single-family rental (SFR) portfolio construction by regional developers",
+      "Mixed-tenure communities combining BTR and for-sale product",
+      "BTR acquisitions of partially completed communities needing bridge-to-perm",
+      "Investors converting spec home inventory into BTR rental communities"
+    ],
+    "seo": {
+      "title": "Build-to-Rent Loans | BTR Community Financing | CLS CRE",
+      "meta_description": "Build-to-rent financing from $2M. BTR community construction, single-family rental development, and lease-up bridge loans. Banks and debt funds. Get a quote.",
+      "h1": "Build-to-Rent Loans for BTR Community Developers"
+    }
+  },
+  {
+    "slug": "construction-to-perm-loans",
+    "name": "Construction-to-Perm Loans",
+    "short_name": "Construction-to-Perm",
+    "headline": "One-Time Close Construction and Permanent Financing Combined",
+    "description": "Construction-to-perm loans combine ground-up construction financing and long-term permanent debt into a single closing, eliminating the cost and uncertainty of a two-step financing process. During construction the loan functions as a draw facility; at completion it converts automatically to a permanent term loan. This structure eliminates refinancing risk, reduces closing costs, and locks in permanent financing terms before construction begins. Minimum loan size is $1 million.",
+    "description_extended": "The primary risk in any construction project is not the build itself — it is the refinancing event at completion. Markets shift, rates change, and permanent lenders tighten requirements precisely when developers need them most. Construction-to-perm financing eliminates this risk by locking in the permanent loan at the time of construction commitment. Banks are the primary source for construction-to-perm loans, particularly for multifamily, mixed-use, and owner-occupied commercial projects. Agency lenders including Fannie Mae and Freddie Mac offer construction-to-perm programs for qualifying multifamily projects. The structure is particularly valuable in rising rate environments where locking a permanent rate before construction completion provides meaningful economic benefit.",
+    "min_loan_display": "$1M",
+    "key_features": {
+      "loan_amount": "$1M - $50M+",
+      "term": "12-36 Month Construction + 10-25 Year Perm",
+      "rates": "6.50% - 10.00%",
+      "ltc": "Up to 80% LTC",
+      "structure": "Single-Close, Auto-Converting to Perm",
+      "recourse": "Completion Guarantee Required During Construction"
+    },
+    "lender_sources": [
+      "Banks",
+      "Credit Unions",
+      "Fannie Mae / Freddie Mac",
+      "Life Insurance Companies",
+      "CDFI Lenders"
+    ],
+    "ideal_for": [
+      "Multifamily developments where permanent financing terms need to be locked at construction start",
+      "Owner-occupied commercial buildings where stabilization is guaranteed post-completion",
+      "Mixed-use infill projects in rising rate environments",
+      "Developers with strong bank relationships seeking to reduce transaction costs",
+      "Affordable housing developments using LIHTC where certainty of permanent financing is required",
+      "Build-to-suit projects with credit tenant leases signed prior to construction"
+    ],
+    "seo": {
+      "title": "Construction-to-Perm Loans | One-Time Close Commercial Financing | CLS CRE",
+      "meta_description": "Construction-to-perm loans from $1M. One-time close — lock in permanent financing at construction start and eliminate refinancing risk. Banks and agency lenders. Get a quote.",
+      "h1": "Construction-to-Perm Loans for Commercial Development"
+    }
+  },
+  {
+    "slug": "land-loans",
+    "name": "Land Loans",
+    "short_name": "Land",
+    "headline": "Commercial Land Acquisition and Pre-Development Financing",
+    "description": "Commercial land loans finance the acquisition of entitled, partially entitled, or raw land for future development. These short-term facilities cover land purchases, pre-development costs, and entitlement carrying costs while sponsors pursue permits, environmental clearances, and project approvals. Minimum loan size is $1 million. Lenders include private lenders, debt funds, and specialized land banks with appetite for predevelopment risk.",
+    "description_extended": "Land financing is the highest-risk category in commercial real estate lending because collateral value depends entirely on entitlement outcomes and future development feasibility. Conventional banks rarely lend on unentitled or partially entitled land, leaving the market to private lenders, debt funds, and family offices with appetite for development risk. Key underwriting factors include entitlement status, sponsor track record, comparable development sales, market absorption data, and the path to a bankable construction loan. Entitled land with approved plans and permits commands significantly better terms than raw land. Deals in supply-constrained markets with documented developer experience are the most competitive.",
+    "min_loan_display": "$1M",
+    "key_features": {
+      "loan_amount": "$1M - $30M+",
+      "term": "12 - 36 Months",
+      "rates": "8.00% - 14.00%",
+      "ltv": "Up to 65% of Land Value",
+      "structure": "Interest-Only, Flexible Draw Structure",
+      "recourse": "Recourse Typical"
+    },
+    "lender_sources": [
+      "Private Lenders",
+      "Debt Funds",
+      "Hard Money Lenders",
+      "Family Offices",
+      "Specialty Land Banks"
+    ],
+    "ideal_for": [
+      "Entitled residential and commercial land acquisitions ready for construction start",
+      "Partially entitled land while entitlement process is completed",
+      "Lot acquisition for homebuilders with active absorption in the submarket",
+      "Industrial and logistics land in high-demand corridors near major distribution hubs",
+      "Infill land assemblage in urban markets for mixed-use development",
+      "Agricultural and transitional land being repositioned for commercial development"
+    ],
+    "seo": {
+      "title": "Commercial Land Loans | Pre-Development Financing | CLS CRE",
+      "meta_description": "Commercial land loans from $1M. Entitled and raw land acquisition, pre-development financing, and lot loans. Private lenders and debt funds. Get a quote.",
+      "h1": "Commercial Land Loans and Pre-Development Financing"
+    }
+  },
+  {
+    "slug": "self-storage-financing",
+    "name": "Self-Storage Financing",
+    "short_name": "Self-Storage",
+    "headline": "Financing for Self-Storage Facilities and Climate-Controlled Storage",
+    "description": "Self-storage financing covers acquisition, construction, and refinancing of self-storage facilities, climate-controlled storage, and boat and RV storage. Self-storage is one of the most liquid and lender-competitive commercial asset classes, with strong lender appetite from CMBS conduits, life insurance companies, SBA lenders, and regional banks. Minimum loan size is $1 million, with most institutional capital focused on $3M and above.",
+    "description_extended": "Self-storage has outperformed nearly every other commercial real estate asset class over the past two decades, driven by demographic mobility, apartment downsizing trends, and low operating costs relative to revenue. Cap rates have compressed to 4.5-6.5% for Class A facilities in primary markets, attracting institutional capital including REITs, private equity, and life companies. The asset class is particularly resilient in downturns because both personal and business storage demand holds up during economic stress. New supply has been active in secondary and tertiary markets, creating opportunities for ground-up development alongside acquisition plays. Climate-controlled and Class A facilities in high-traffic suburban locations command the best financing terms.",
+    "min_loan_display": "$1M",
+    "key_features": {
+      "loan_amount": "$1M - $30M+",
+      "term": "5 - 25 Years",
+      "rates": "5.50% - 9.00%",
+      "ltv": "Up to 75% LTV",
+      "structure": "Fixed-Rate Permanent or Bridge-to-Perm",
+      "recourse": "Non-Recourse Available (CMBS, Life Company)"
+    },
+    "lender_sources": [
+      "CMBS Conduits",
+      "Life Insurance Companies",
+      "Banks",
+      "SBA 7(a) and 504",
+      "Debt Funds"
+    ],
+    "ideal_for": [
+      "Climate-controlled self-storage facility acquisitions in high-density suburban markets",
+      "Self-storage ground-up construction in supply-constrained corridors",
+      "Boat and RV storage facilities near coastal and recreational areas",
+      "Multi-story urban infill self-storage in dense metros",
+      "Portfolio acquisitions of multiple self-storage facilities",
+      "Conversion of retail, industrial, or office buildings into self-storage"
+    ],
+    "seo": {
+      "title": "Self-Storage Financing | Storage Facility Loans | CLS CRE",
+      "meta_description": "Self-storage financing from $1M. Climate-controlled storage acquisition, construction, and refinancing. CMBS, life companies, SBA, and bank lenders. Get a quote.",
+      "h1": "Self-Storage Financing for Storage Facility Investors"
+    }
+  },
+  {
+    "slug": "hotel-motel-financing",
+    "name": "Hotel & Motel Financing",
+    "short_name": "Hospitality",
+    "headline": "Financing for Hotels, Motels, and Hospitality Properties",
+    "description": "Hotel and motel financing covers acquisition, renovation, refinancing, and ground-up construction for full-service hotels, select-service hotels, extended-stay properties, boutique hotels, and budget motels. Hospitality is one of the most specialized commercial lending categories, requiring lenders with deep franchise and brand relationship experience. Capital sources include CMBS conduits, SBA 504, debt funds, and specialized hospitality lenders. Minimum loan size is $1 million.",
+    "description_extended": "Hospitality financing requires lenders who understand RevPAR, ADR, occupancy trends, brand standards, and the operational complexity of hotel assets. Most conventional banks have limited appetite for non-owner-operated hospitality, concentrating lending activity among CMBS conduits, specialized hospitality debt funds, and SBA programs for owner-operated properties. Franchise affiliation (Marriott, Hilton, IHG, Choice, Wyndham) significantly affects lender appetite and loan terms. Flag-affiliated limited-service and select-service hotels in markets with strong corporate and leisure demand are the most lendable. SBA 504 is particularly well-suited for owner-operated boutique and independent hotels seeking long-term fixed-rate financing.",
+    "min_loan_display": "$1M",
+    "key_features": {
+      "loan_amount": "$1M - $50M+",
+      "term": "5 - 25 Years (Perm) / 12-36 Months (Bridge)",
+      "rates": "6.00% - 12.00%",
+      "ltv": "Up to 70% LTV",
+      "structure": "Fixed or Floating, Brand-Specific Underwriting",
+      "recourse": "Non-Recourse Available (CMBS)"
+    },
+    "lender_sources": [
+      "CMBS Conduits",
+      "SBA 504 and 7(a)",
+      "Debt Funds",
+      "Hospitality-Focused Bridge Lenders",
+      "Life Insurance Companies (flagged, full-service)"
+    ],
+    "ideal_for": [
+      "Select-service and limited-service hotel acquisitions with major brand affiliations",
+      "Boutique and independent hotel renovations and repositioning",
+      "Extended-stay property acquisitions in corporate demand markets",
+      "Owner-operated hotel and motel purchases using SBA 504 financing",
+      "Hotel-to-residential or mixed-use adaptive reuse conversions",
+      "Ground-up hotel construction near airports, convention centers, and tourist destinations"
+    ],
+    "seo": {
+      "title": "Hotel & Motel Financing | Hospitality Loans | CLS CRE",
+      "meta_description": "Hotel and motel financing from $1M. Acquisition, renovation, and refinancing for full-service, select-service, and boutique hotels. CMBS, SBA, and debt funds. Get a quote.",
+      "h1": "Hotel and Motel Financing for Hospitality Investors"
+    }
+  },
+  {
+    "slug": "student-housing-loans",
+    "name": "Student Housing Loans",
+    "short_name": "Student Housing",
+    "headline": "Financing for Purpose-Built Student Housing Near Universities",
+    "description": "Student housing loans finance the acquisition, construction, and refinancing of purpose-built student housing communities, off-campus apartment complexes, and mixed-use student housing near major universities and colleges. These assets offer strong occupancy, predictable demand, and parental guarantees that make them attractive to lenders. Capital sources include Fannie Mae, Freddie Mac, banks, CMBS, and debt funds with dedicated student housing programs. Minimum loan size is $2 million.",
+    "description_extended": "Purpose-built student housing (PBSH) has matured into a distinct institutional asset class with dedicated lender programs and investor pools. Proximity to a tier-1 research university with 15,000 or more enrolled students is the primary underwriting criterion, followed by distance from campus, unit configuration (bed-per-bedroom pricing), and amenity package. Fannie Mae and Freddie Mac both have student housing loan programs with competitive permanent financing. CMBS conduits are active in PBSH deals near large universities. The asset class benefits from parental guarantors reducing credit risk, annual lease turnover creating mark-to-market rent opportunities, and university enrollment trends that have proven resilient even during economic downturns.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $50M+",
+      "term": "5 - 25 Years",
+      "rates": "5.75% - 9.50%",
+      "ltv": "Up to 80% LTV",
+      "structure": "Fixed-Rate Permanent or Bridge-to-Agency",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": [
+      "Fannie Mae / Freddie Mac",
+      "CMBS Conduits",
+      "Banks",
+      "Debt Funds",
+      "Life Insurance Companies"
+    ],
+    "ideal_for": [
+      "Purpose-built student housing within 0.5 miles of major university campuses",
+      "Off-campus apartment complexes with high student occupancy near tier-1 universities",
+      "Student housing acquisitions requiring value-add renovation and lease-up",
+      "Ground-up student housing construction near enrollment-growing universities",
+      "Student housing portfolio acquisitions in multiple university markets",
+      "Mixed-use student housing with ground-floor retail near campus districts"
+    ],
+    "seo": {
+      "title": "Student Housing Loans | University Apartment Financing | CLS CRE",
+      "meta_description": "Student housing financing from $2M. Purpose-built student housing acquisition, construction, and refinancing near universities. Fannie Mae, CMBS, and debt funds. Get a quote.",
+      "h1": "Student Housing Loans for University Market Investors"
+    }
+  },
+  {
+    "slug": "senior-housing-financing",
+    "name": "Senior Housing Financing",
+    "short_name": "Senior Housing",
+    "headline": "Financing for Senior Living, Assisted Living, and Memory Care",
+    "description": "Senior housing financing covers acquisition, construction, and refinancing of independent living communities, assisted living facilities, memory care communities, and continuing care retirement communities (CCRCs). This specialized segment requires lenders with healthcare regulatory expertise and operational underwriting capability. HUD 232, Fannie Mae, Freddie Mac, CMBS, and debt funds are primary capital sources. Minimum loan size is $2 million.",
+    "description_extended": "Senior housing is one of the most demographically supported commercial real estate sectors of the next decade, driven by the aging of 77 million baby boomers. The National Investment Center for Seniors Housing and Care (NIC) tracks occupancy, absorption, and inventory across hundreds of markets, providing lenders with granular data on local supply and demand dynamics. Underwriting senior housing requires understanding the difference between real estate risk (cap rates, occupancy) and operating risk (labor costs, regulatory compliance, reimbursement rates for skilled nursing). Private-pay independent living and assisted living are most attractive to conventional real estate lenders; skilled nursing facilities with significant Medicaid exposure require specialized healthcare lenders. HUD 232 is the dominant long-term financing source for seniors housing due to non-recourse, fully amortizing structure and competitive fixed rates.",
+    "min_loan_display": "$2M",
+    "key_features": {
+      "loan_amount": "$2M - $75M+",
+      "term": "5 - 35 Years",
+      "rates": "5.75% - 10.00%",
+      "ltv": "Up to 75% LTV",
+      "structure": "Fixed-Rate Permanent (HUD, Agency) or Bridge",
+      "recourse": "Non-Recourse Available (HUD, CMBS)"
+    },
+    "lender_sources": [
+      "HUD 232",
+      "Fannie Mae / Freddie Mac",
+      "CMBS Conduits",
+      "Debt Funds",
+      "Healthcare-Focused Banks"
+    ],
+    "ideal_for": [
+      "Private-pay independent living and assisted living facility acquisitions",
+      "Memory care communities in high-income suburban markets",
+      "Senior housing ground-up construction in undersupplied markets",
+      "Value-add senior housing acquisitions with below-market occupancy",
+      "CCRC and life plan community refinancing",
+      "Senior housing portfolio acquisitions with HUD permanent refinancing takeout"
+    ],
+    "seo": {
+      "title": "Senior Housing Financing | Assisted Living & Memory Care Loans | CLS CRE",
+      "meta_description": "Senior housing financing from $2M. Assisted living, memory care, and independent living acquisition and construction. HUD, Fannie Mae, CMBS, and debt funds. Get a quote.",
+      "h1": "Senior Housing Financing for Senior Living Investors"
+    }
+  },
+  {
+    "slug": "medical-office-financing",
+    "name": "Medical Office Financing",
+    "short_name": "Medical Office",
+    "headline": "Financing for Medical Office Buildings and Healthcare Real Estate",
+    "description": "Medical office financing covers acquisition, construction, and refinancing of medical office buildings (MOBs), surgery centers, urgent care facilities, and outpatient healthcare campuses. Medical office has emerged as one of the most resilient commercial real estate asset classes due to the non-discretionary nature of healthcare demand and the credit quality of medical tenant leases. Minimum loan size is $1 million, with strong lender appetite from life companies, CMBS, and SBA programs for owner-occupied facilities.",
+    "description_extended": "Medical office buildings represent a convergence of real estate and healthcare fundamentals that makes them uniquely attractive to lenders and investors. Long lease terms (10 to 20 years) with credit healthcare system tenants, high tenant improvement buildout costs that create switching cost stickiness, and the non-cyclical nature of healthcare demand all support tight cap rates (4.5-6.5% in primary markets) and strong lender appetite. On-campus and near-campus hospital-affiliated MOBs command the best financing terms; off-campus single-tenant and multi-tenant medical office is also broadly lendable. SBA 504 is a compelling source for physician groups and healthcare operators purchasing their own buildings, offering long-term fixed-rate owner-occupied financing.",
+    "min_loan_display": "$1M",
+    "key_features": {
+      "loan_amount": "$1M - $50M+",
+      "term": "5 - 25 Years",
+      "rates": "5.25% - 8.50%",
+      "ltv": "Up to 75% LTV",
+      "structure": "Fixed-Rate Permanent or SBA 504 Owner-Occupied",
+      "recourse": "Non-Recourse Available (CMBS, Life Company)"
+    },
+    "lender_sources": [
+      "Life Insurance Companies",
+      "CMBS Conduits",
+      "SBA 504 and 7(a)",
+      "Banks",
+      "Debt Funds"
+    ],
+    "ideal_for": [
+      "On-campus and near-campus hospital-affiliated medical office building acquisitions",
+      "Multi-tenant medical office buildings with long-term healthcare tenant leases",
+      "Surgery center and outpatient clinic acquisitions and refinancing",
+      "Physician group owner-occupied purchases using SBA 504",
+      "Medical office ground-up construction anchored by health system tenants",
+      "Urgent care, dialysis, and specialty clinic portfolio financing"
+    ],
+    "seo": {
+      "title": "Medical Office Financing | MOB Loans | CLS CRE",
+      "meta_description": "Medical office financing from $1M. MOB acquisition, surgery center loans, and healthcare real estate. Life companies, CMBS, SBA, and bank lenders. Get a quote.",
+      "h1": "Medical Office Financing for Healthcare Real Estate Investors"
+    }
   }
 ]
