@@ -1,0 +1,72 @@
+{% extends "_base.html" %}
+{% block content %}
+<style>
+.arc-hero{background:var(--navy);color:#fff;padding:56px 0 40px}
+.arc-hero-inner{max-width:900px;margin:0 auto;padding:0 24px}
+.arc-badge{display:inline-block;background:var(--green-bright,#00A676);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:16px}
+.arc-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);margin:0 0 12px}
+.arc-hero p{font-size:16px;opacity:.85;max-width:580px;margin:0}
+.arc-body{max-width:900px;margin:0 auto;padding:48px 24px}
+.arc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-bottom:48px}
+.arc-card{border:1px solid #e5e7eb;border-radius:8px;padding:24px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,border-color .15s}
+.arc-card:hover{box-shadow:0 4px 16px rgba(21,61,99,.12);border-color:var(--navy)}
+.arc-card-date{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green,#006A4E);margin-bottom:8px}
+.arc-card h2{font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--navy);margin:0 0 10px;line-height:1.3}
+.arc-card p{font-size:13px;color:#6b7280;margin:0 0 16px;flex:1}
+.arc-card .arc-read{font-size:13px;font-weight:700;color:var(--navy)}
+.arc-subscribe{background:#f0f9f6;border:1px solid var(--green,#006A4E);border-radius:8px;padding:32px;text-align:center;margin-bottom:48px}
+.arc-subscribe h2{font-family:'DM Serif Display',serif;color:var(--navy);font-size:1.4rem;margin:0 0 10px}
+.arc-subscribe p{color:#374151;font-size:15px;max-width:500px;margin:0 auto 20px}
+.arc-subscribe a{display:inline-block;background:var(--navy);color:#fff;font-weight:700;font-size:14px;padding:13px 28px;border-radius:4px;text-decoration:none}
+.arc-subscribe a:hover{background:var(--green)}
+.arc-breadcrumb{padding:12px 0;font-size:13px;color:#6b7280}
+.arc-breadcrumb a{color:var(--navy);text-decoration:none}
+.arc-breadcrumb a:hover{text-decoration:underline}
+</style>
+
+<main id="main-content">
+  <div style="max-width:900px;margin:0 auto;padding:0 24px">
+    <nav class="arc-breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ depth }}index.html">Home</a> &rsaquo;
+      <a href="{{ depth }}insights/index.html">Insights</a> &rsaquo;
+      {{ newsletter_label }}
+    </nav>
+  </div>
+
+  <header class="arc-hero">
+    <div class="arc-hero-inner">
+      <div class="arc-badge">Newsletter Archive</div>
+      <h1>{{ newsletter_label }}</h1>
+      <p>{{ subscribe_text }}</p>
+    </div>
+  </header>
+
+  <div class="arc-body">
+
+    <div class="arc-subscribe">
+      <h2>Get it in your inbox</h2>
+      <p>{{ subscribe_text }}</p>
+      <a href="{{ depth }}index.html#newsletter">Subscribe Free &rarr;</a>
+    </div>
+
+    {% if issues %}
+    <div class="arc-grid">
+      {% for issue in issues %}
+      <a class="arc-card" href="{{ depth }}insights/{{ newsletter_type }}/{{ issue.slug }}/">
+        <div class="arc-card-date">{{ issue.send_date_human }}</div>
+        <h2>{{ issue.subject }}</h2>
+        {% if issue.preheader %}<p>{{ issue.preheader }}</p>{% endif %}
+        <span class="arc-read">Read issue &rarr;</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="color:#6b7280;text-align:center;padding:48px 0;">Issues coming soon. Subscribe above to get them in your inbox.</p>
+    {% endif %}
+
+    <p style="font-size:13px;color:#6b7280">
+      &larr; <a href="{{ depth }}insights/index.html" style="color:var(--navy);font-weight:600;text-decoration:none">Back to all newsletters</a>
+    </p>
+  </div>
+</main>
+{% endblock %}
