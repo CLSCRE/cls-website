@@ -2749,48 +2749,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://clscre.com/markets/greenville/downtown-greenville.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/greenville/spartanburg.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/greenville/simpsonville.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/greenville/greer.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/greenville/mauldin.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/greenville/easley.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/greenville/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://clscre.com/markets/knoxville/downtown-knoxville.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -4783,103 +4741,43 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://clscre.com/markets/bridgeport-stamford/milford.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/bridgeport-stamford/derby.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/bridgeport-stamford/monroe-ct.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/bridgeport-stamford/newtown-ct.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/bridgeport-stamford/danbury.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/bridgeport-stamford/stamford.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/markets/bridgeport-stamford/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/downtown-albany.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/center-square.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/pine-hills.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/albany-shaker.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/colonie.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/schenectady.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/troy.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/saratoga-springs.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/clifton-park.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/latham.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/guilderland.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/bethlehem.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/niskayuna.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/rotterdam.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/cohoes.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/albany-ny/</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -5162,6 +5060,18 @@
   </url>
   <url>
     <loc>https://clscre.com/markets/oxnard-ventura/somis.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/oxnard-ventura/carpinteria.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/oxnard-ventura/agoura-hills.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -7796,6 +7706,12 @@
   </url>
   <url>
     <loc>https://clscre.com/markets/greenville-sc/anderson.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/greenville-sc/easley.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -10441,84 +10357,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://clscre.com/markets/rockford/downtown-rockford.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/east-side.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/west-side.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/south-rockford.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/cherry-valley.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/loves-park.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/machesney-park.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/belvidere.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/roscoe.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/south-beloit.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/freeport.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/sterling.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/rockford/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://clscre.com/markets/champaign-urbana/downtown-champaign.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -12698,84 +12536,6 @@
   </url>
   <url>
     <loc>https://clscre.com/markets/temecula/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/downtown-oxnard.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/camarillo.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/thousand-oaks.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/ventura.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/moorpark.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/simi-valley.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/port-hueneme.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/santa-paula.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/fillmore.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/carpinteria.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/westlake-village.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/agoura-hills.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/oxnard/</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -16213,84 +15973,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://clscre.com/markets/bridgeport/downtown-bridgeport.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/stratford.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/milford.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/shelton.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/derby.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/trumbull.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/monroe-ct.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/newtown-ct.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/danbury.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/norwalk.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/stamford.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/greenwich.html</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/bridgeport/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://clscre.com/markets/bangor/downtown-bangor.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -16436,6 +16118,36 @@
   </url>
   <url>
     <loc>https://clscre.com/markets/albany/delmar.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/albany/albany-shaker.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/albany/bethlehem.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/albany/niskayuna.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/albany/rotterdam.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/albany/cohoes.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -17294,6 +17006,36 @@
   </url>
   <url>
     <loc>https://clscre.com/markets/rockford-il/monroe-wi.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/rockford-il/east-side.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/rockford-il/west-side.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/rockford-il/south-beloit.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/rockford-il/freeport.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/markets/rockford-il/sterling.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

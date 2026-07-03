@@ -306,6 +306,27 @@ def main():
     faqs_data = load_json("faqs.json")
     article_city_data = load_json("article_city_data.json")
 
+    # Duplicate city merge (2026-07-03): these 5 slugs are the same real-world
+    # city as another entry already in cities.json (added twice across
+    # different metro-naming batches), so their hub/financing/property/
+    # neighborhood pages were pure duplicate content competing against the
+    # surviving slug for the same queries -- root cause of a chunk of the
+    # GSC "crawled, not indexed" cannibalization backlog. Excluded here from
+    # page generation, the sitemap, and cross-link picks (pick_featured_markets
+    # draws from this filtered `cities` list). The cities.json entries
+    # themselves are left in place because generate_articles.py loads its own
+    # copy independently and existing blog articles / affordable-housing
+    # vertical pages reference these slugs directly and are NOT duplicated.
+    # Old URLs 301-redirect at Cloudflare to the winning slug's equivalent page.
+    DUPLICATE_CITY_SLUGS = {
+        "greenville": "greenville-sc",
+        "rockford": "rockford-il",
+        "oxnard": "oxnard-ventura",
+        "bridgeport": "bridgeport-stamford",
+        "albany-ny": "albany",
+    }
+    cities = [c for c in cities if c["slug"] not in DUPLICATE_CITY_SLUGS]
+
     # ── Setup Jinja2 ───────────────────────────────────────────────────
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATE_DIR)),
