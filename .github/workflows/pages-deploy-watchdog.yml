@@ -1,0 +1,53 @@
+name: Pages Deploy Watchdog
+
+# GitHub Pages' own "pages build and deployment" workflow is platform-managed
+# (no checked-in .yml, "dynamic" trigger) so we can't add a retry step inside
+# it directly. At current site scale (20k+ pages) it fails intermittently --
+# sometimes a quick "Deployment failed, try again later", sometimes the
+# deploy step stalls in "deployment_queued" until it hits its own timeout.
+# Either way the failure is silent: the previous successful deploy just
+# keeps serving, so content can lag behind `main` by hours unless someone
+# checks the Actions tab. This polls for that and auto-reruns failed jobs.
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+  workflow_dispatch: {}
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Check latest Pages deployment and rerun if it failed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          RUN_JSON=$(gh run list --workflow="pages-build-deployment" --limit 1 \
+            --json databaseId,conclusion,status,attempt)
+          echo "$RUN_JSON"
+
+          STATUS=$(echo "$RUN_JSON" | jq -r '.[0].status')
+          CONCLUSION=$(echo "$RUN_JSON" | jq -r '.[0].conclusion')
+          RUN_ID=$(echo "$RUN_JSON" | jq -r '.[0].databaseId')
+          ATTEMPT=$(echo "$RUN_JSON" | jq -r '.[0].attempt')
+
+          if [ "$STATUS" != "completed" ]; then
+            echo "Latest deploy run ($RUN_ID) still in progress ($STATUS) -- nothing to do."
+            exit 0
+          fi
+
+          if [ "$CONCLUSION" == "success" ]; then
+            echo "Latest deploy run ($RUN_ID) succeeded -- nothing to do."
+            exit 0
+          fi
+
+          if [ "$ATTEMPT" -ge 3 ]; then
+            echo "::error::Pages deploy run $RUN_ID has failed $ATTEMPT times in a row. Not retrying again -- this needs a human look (check Actions tab, likely an artifact-size/timeout issue at current site scale, not a code problem)."
+            exit 1
+          fi
+
+          echo "Latest deploy run ($RUN_ID) failed (attempt $ATTEMPT) -- rerunning failed jobs."
+          gh run rerun "$RUN_ID" --repo CLSCRE/cls-website --failed
