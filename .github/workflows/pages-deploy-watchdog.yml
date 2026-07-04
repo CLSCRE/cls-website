@@ -23,6 +23,7 @@ jobs:
       - name: Check latest Pages deployment and rerun if it failed
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: CLSCRE/cls-website
         run: |
           set -e
           RUN_JSON=$(gh run list --workflow="pages-build-deployment" --limit 1 \
