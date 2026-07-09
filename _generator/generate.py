@@ -417,6 +417,15 @@ def main():
             {"loc": f"{BASE_URL}/financing/{_q_path.name}", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"}
             for _q_path in sorted((WEBSITE_DIR / "financing").glob("how-to-qualify-for-*.html"))
         ],
+        # Organic metro hub pages (e.g. commercial-mortgage-broker-los-angeles.html)
+        # — hand-built, not part of the loan_types x cities cross-product, so
+        # they need their own glob or a full regen silently drops them from the
+        # sitemap (this exact page was found orphaned 2026-07-09 after a
+        # recover-from-stash commit added the file back without a sitemap entry).
+        *[
+            {"loc": f"{BASE_URL}/financing/{_broker_path.name}", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"}
+            for _broker_path in sorted((WEBSITE_DIR / "financing").glob("commercial-mortgage-broker-*.html"))
+        ],
         {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
         {"loc": f"{BASE_URL}/submit-deal.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7"},
         {"loc": f"{BASE_URL}/tools/edi-eligibility-check.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
