@@ -58,6 +58,56 @@ def filter_transactions(transactions, loan_slug=None, prop_slug=None, city=None,
     return results
 
 
+# ── Per-loan-type FAQ rate ranges ────────────────────────────────────────
+# Fix (2026-07-08): city and neighborhood FAQs previously hardcoded the
+# permanent range (5.34% to 8.25%) for every loan type. Ranges now come
+# from loan_types.json key_features.rates, the single source of truth.
+_RATE_RANGE_RE = re.compile(r"(\d+(?:\.\d+)?%)\s*(?:-|to)\s*(\d+(?:\.\d+)?%)")
+
+# Display strings that are not simple ranges. If rate_low / rate_high
+# fields are ever added to loan_types.json entries, those win instead.
+_RATE_OVERRIDES = {
+    "net-lease-financing": ("5.00%", "6.75%"),
+    "bridge-to-perm-loans": ("6.50%", "10.00%"),
+}
+
+_LOAN_RATES_CACHE = None
+
+
+def _loan_rates_by_slug():
+    """slug -> (rate_low, rate_high) from loan_types.json."""
+    global _LOAN_RATES_CACHE
+    if _LOAN_RATES_CACHE is None:
+        table = {}
+        for lt in load_json("loan_types.json"):
+            slug = lt.get("slug", "")
+            if lt.get("rate_low") and lt.get("rate_high"):
+                table[slug] = (lt["rate_low"], lt["rate_high"])
+                continue
+            if slug in _RATE_OVERRIDES:
+                table[slug] = _RATE_OVERRIDES[slug]
+                continue
+            rates_str = (lt.get("key_features") or {}).get("rates", "")
+            m = _RATE_RANGE_RE.search(rates_str)
+            if m:
+                table[slug] = (m.group(1), m.group(2))
+        _LOAN_RATES_CACHE = table
+    return _LOAN_RATES_CACHE
+
+
+def _loan_rate_range(loan):
+    """(rate_low, rate_high) for a loan dict; all-programs span fallback."""
+    default = ("5.34%", "13.04%")
+    if not loan:
+        return default
+    return _loan_rates_by_slug().get(loan.get("slug", ""), default)
+
+
+def _slug_rate_text(slug):
+    low, high = _loan_rates_by_slug().get(slug, ("5.34%", "13.04%"))
+    return f"{low} to {high}"
+
+
 def build_city_faqs(templates, loan=None, prop=None, city=None):
     """Build city-specific FAQs from templates with variable substitution."""
     key = "financing" if loan else "property"
@@ -71,8 +121,8 @@ def build_city_faqs(templates, loan=None, prop=None, city=None):
             "{metro}": city["metro"] if city else "",
             "{loan_type}": loan["name"].lower() if loan else "",
             "{property_type}": prop["name"].lower() if prop else "",
-            "{rate_low}": "5.34%",
-            "{rate_high}": "8.25%",
+            "{rate_low}": _loan_rate_range(loan)[0],
+            "{rate_high}": _loan_rate_range(loan)[1],
             "{context_snippet}": (city.get("context", "")[:120] + "...") if city else "",
         }
         for k, v in replacements.items():
@@ -124,7 +174,7 @@ def build_neighborhood_faqs(city, neighborhood, city_data=None):
         },
         {
             "q": f"What are commercial real estate rates in {neighborhood}?",
-            "a": f"Commercial real estate rates in {neighborhood} and the {city_name} metro vary by loan type, property type, leverage, and borrower profile. Permanent loan rates typically range from 5.34% to 8.25%, bridge loans from 7.5% to 12%, and construction loans from 8% to 13%. Commercial Lending Solutions leverages lender competition to secure the most aggressive pricing available for your deal.",
+            "a": f"Commercial real estate rates in {neighborhood} and the {city_name} metro vary by loan type, property type, leverage, and borrower profile. Permanent loan rates typically range from {_slug_rate_text('permanent-loans')}, bridge loans from {_slug_rate_text('bridge-loans')}, and construction loans from {_slug_rate_text('construction-loans')}. Commercial Lending Solutions leverages lender competition to secure the most aggressive pricing available for your deal.",
         },
     ]
     return faqs
