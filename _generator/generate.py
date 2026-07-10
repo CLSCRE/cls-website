@@ -1019,8 +1019,8 @@ def main():
          "Free commercial mortgage payment calculator with I/O periods and amortization.", "0.8"),
         ("tool_ltv.html", "tools/ltv-calculator.html", "tools/ltv-calculator.html", "LTV Calculator | Commercial Lending Solutions",
          "Free Loan-to-Value calculator for commercial real estate. See typical LTV limits by lender type.", "0.8"),
-        ("tool_cashoncash.html", "tools/cashoncash-calculator.html", "tools/cashoncash-calculator.html", "Cash-on-Cash Return Calculator | Commercial Lending Solutions",
-         "Free cash-on-cash return calculator for commercial real estate investments.", "0.8"),
+        ("tool_cashoncash.html", "tools/cashoncash-calculator.html", "tools/cashoncash-calculator.html", "Cash-on-Cash Return Calculator | Free CRE Tool",
+         "Free cash-on-cash return calculator for commercial real estate. Enter cash invested and annual cash flow to see your return and what counts as good.", "0.8"),
         ("tool_noi.html", "tools/noi-calculator.html", "tools/noi-calculator.html", "NOI Calculator | Commercial Lending Solutions",
          "Free Net Operating Income calculator for commercial real estate. Calculate NOI from income and expenses.", "0.8"),
     ]
