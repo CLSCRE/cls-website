@@ -1136,6 +1136,37 @@ def main():
         dst = css_dir / css_file.replace(".css", ".min.css")
         minify_css(src, dst)
 
+    # ── 10b. Financing pages generated outside this script ────────────
+    # The content-expansion bot writes city pages for loan types that are
+    # NOT rendered from loan_types.json (btr-construction, ground-lease,
+    # manufactured-housing, agency-lending, ...) directly into
+    # website/financing/. Scan the directory and add any indexable file not
+    # already collected, so a full regen never drops them from the sitemap
+    # again (2026-07-10: a bot regen silently erased 1,445 of them, redoing
+    # the exact gap that morning's sitemap-integrity --fix had patched).
+    _fin_in_sitemap = {u["loc"] for u in sitemap_urls if "/financing/" in u["loc"]}
+    _extra_fin = 0
+    for _fin_html in sorted((WEBSITE_DIR / "financing").glob("*.html")):
+        _fin_url = f"{BASE_URL}/financing/{_fin_html.name}"
+        if _fin_url in _fin_in_sitemap:
+            continue
+        try:
+            _fin_head = _fin_html.read_text(encoding="utf-8", errors="ignore")[:6000]
+        except OSError:
+            continue
+        if re.search(r'name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', _fin_head, re.I):
+            continue
+        sitemap_urls.append({
+            "loc": _fin_url,
+            "lastmod": TODAY,
+            "changefreq": "monthly",
+            "priority": "0.7",
+        })
+        _fin_in_sitemap.add(_fin_url)
+        _extra_fin += 1
+    if _extra_fin:
+        print(f"  [OK] financing/*.html  (+{_extra_fin} extra pages found on disk, added to sitemap)")
+
     # ── 11. Sitemap.xml + segmented sitemaps ──────────────────────────
     print("\n=== Generating sitemaps (segmented) ===")
     tpl_sitemap = env.get_template("sitemap.xml.j2")
