@@ -441,7 +441,9 @@ def main():
                 ("refinance.html", "monthly", "0.8"),
                 ("partners.html", "monthly", "0.7"),
                 ("broker-portal.html", "monthly", "0.6"),
-                ("contact/index.html", "monthly", "0.7"),
+                # contact/index.html intentionally absent: it rel-canonicals
+                # to /contact.html (already listed above), so sitemapping it
+                # only produces "duplicate, not selected as canonical" noise in GSC.
                 ("expert-witness/index.html", "weekly", "0.9"),
                 ("developers/index.html", "monthly", "0.8"),
                 ("build-to-rent/index.html", "monthly", "0.8"),
@@ -1156,6 +1158,15 @@ def main():
 
     # Categorize each URL into a segmented sitemap. Categorization is
     # path-based: the first path segment after the domain determines bucket.
+    # Each vertical section gets its OWN sitemap-<vertical>.xml (split from
+    # the former shared sitemap-vertical.xml on 2026-07-09) so GSC reports
+    # index coverage per vertical instead of one opaque blob.
+    _VERTICAL_SECTIONS = {
+        "affordable-housing", "industrial", "multifamily", "commercial",
+        "life-company", "data-centers", "medical-office", "self-storage",
+        "senior-living",
+    }
+
     def _categorize(url):
         path = url["loc"].replace(BASE_URL, "").lstrip("/")
         if path.startswith("financing/"):
@@ -1174,12 +1185,11 @@ def main():
             return "research"
         if path.startswith("landing/"):
             return "landing"
-        if (path.startswith("affordable-housing/") or path.startswith("multifamily/markets/")
-                or path.startswith("commercial/markets/") or path.startswith("industrial/markets/")
-                or path.startswith(("life-company/", "data-centers/", "medical-office/",
-                                    "self-storage/", "senior-living/"))):
-            return "vertical"
-        # Anything else (homepage, about, apply, tools, locations, etc.)
+        _first = path.split("/")[0]
+        if _first in _VERTICAL_SECTIONS:
+            return _first  # -> sitemap-life-company.xml, sitemap-multifamily.xml, ...
+        # Anything else (homepage, about, apply, tools, locations,
+        # insights/, professionals/, resources/, root utility pages)
         return "pages"
 
     segmented = {}
@@ -1194,6 +1204,15 @@ def main():
         (WEBSITE_DIR / filename).write_text(xml, encoding="utf-8")
         category_files.append((filename, len(urls)))
         print(f"  [OK] {filename}  ({len(urls)} URLs)")
+
+    # Remove stale segmented sitemaps from renamed/retired buckets (e.g. the
+    # pre-2026-07-09 shared sitemap-vertical.xml). A stale file would keep
+    # serving old URLs and mask orphans in the integrity check.
+    _current = {fname for fname, _ in category_files} | {"sitemap.xml", "sitemap-index.xml"}
+    for _old in sorted(WEBSITE_DIR.glob("sitemap-*.xml")):
+        if _old.name not in _current:
+            _old.unlink()
+            print(f"  [cleanup] Removed stale {_old.name}")
 
     # Build sitemap-index.xml
     index_lines = ['<?xml version="1.0" encoding="UTF-8"?>',
