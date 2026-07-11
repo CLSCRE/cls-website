@@ -1,0 +1,76 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"LA Apartment Loans by Neighborhood","description":"{{ seo.meta_description }}","url":"https://clscre.com/multifamily/la/","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Los Angeles","item":"https://clscre.com/los-angeles/"},{"@type":"ListItem","position":3,"name":"LA Apartment Loans","item":"https://clscre.com/multifamily/la/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"https://clscre.com/multifamily/la/","name":"{{ seo.title }}","description":"{{ seo.meta_description }}","datePublished":"2026-07-11","dateModified":"{{ current_date }}","lastReviewed":"{{ current_date }}","reviewedBy":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html"},"author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about/trevor-damyan.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}}}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}los-angeles/index.html">Los Angeles</a></li>
+  <li><span>Apartment Loans by Neighborhood</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">LA Multifamily</div>
+  <h1 class="reveal">LA Apartment Loans, Neighborhood by Neighborhood</h1>
+  <div class="page-byline reveal" style="font-size:13px;color:var(--gray-500);margin:8px 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <span>Reviewed by</span>
+    <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+    <span>, Commercial Mortgage Broker (Los Angeles)</span>
+    <span aria-hidden="true">&middot;</span>
+    <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
+  </div>
+  <p class="reveal">An apartment loan in Koreatown is not an apartment loan in Sherman Oaks, and neither is one in Santa Monica. The rent regime, the vintage of the stock, the retrofit exposure, and the lender appetite change block by block, and your proceeds change with them. Commercial Lending Solutions finances LA apartments from LA: pick your submarket below for the street-level read, {{ hood_count }} neighborhoods and counting.</p>
+  <a href="{{ depth }}tools/la-rent-control-checker.html" class="btn-primary reveal">Check Your Building's Rent Control Status &rarr;</a>
+</div>
+</section>
+
+{% for group in hood_groups %}
+<section class="content-section {{ 'alt' if loop.index is even }}">
+<div class="section-inner">
+  <div class="section-label reveal">{{ group.region }}</div>
+  <h2 class="section-title reveal">{{ group.region }}</h2>
+  <div class="cross-link-grid">
+    {% for h in group.hoods %}
+    <a href="{{ depth }}multifamily/la/{{ h.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ h.name }}</div>
+      <div class="cl-sub">{{ h.jurisdiction }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endfor %}
+
+<!-- CROSS -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">The LA Rulebook</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}los-angeles/la-rent-control-apartment-financing.html" class="cross-link-card reveal"><div class="cl-title">Rent Control &amp; Financing</div><div class="cl-sub">RSO, AB 1482, municipal patchwork</div></a>
+    <a href="{{ depth }}los-angeles/measure-ula-commercial-real-estate.html" class="cross-link-card reveal"><div class="cl-title">Measure ULA</div><div class="cl-sub">Exit math and hold strategy</div></a>
+    <a href="{{ depth }}los-angeles/soft-story-retrofit-financing-la.html" class="cross-link-card reveal"><div class="cl-title">Soft-Story Retrofits</div><div class="cl-sub">Financing the mandate</div></a>
+    <a href="{{ depth }}los-angeles/index.html" class="cross-link-card reveal"><div class="cl-title">Los Angeles Hub</div><div class="cl-sub">All guides and tools</div></a>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+{% set cta_title = 'Get an LA Apartment Quote' %}
+{% set cta_description = 'From dingbat value-adds to TOC construction, Commercial Lending Solutions matches LA apartment deals to the lenders who want them. Free deal review, response within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

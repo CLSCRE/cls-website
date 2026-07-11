@@ -1,0 +1,100 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":{{ guide.title|tojson }},"description":"{{ seo.meta_description }}","image":"https://clscre.com/images/cls-og-image.png","url":"https://clscre.com/los-angeles/{{ guide.slug }}.html","datePublished":"2026-07-11","dateModified":"{{ current_date }}","author":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"about":{"@type":"Place","name":"Los Angeles, CA"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in guide.faqs %}{"@type":"Question","name":{{ faq.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a|tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Los Angeles","item":"https://clscre.com/los-angeles/"},{"@type":"ListItem","position":3,"name":{{ guide.title|tojson }},"item":"https://clscre.com/los-angeles/{{ guide.slug }}.html"}]}
+</script>
+{% endblock %}
+{% block og_type %}article{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}los-angeles/index.html">Los Angeles</a></li>
+  <li><span>{{ guide.category }}</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Los Angeles &middot; {{ guide.category }}</div>
+  <h1 class="reveal">{{ guide.seo.h1 }}</h1>
+  <div class="page-byline reveal" style="font-size:13px;color:var(--gray-500);margin:8px 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <span>By</span>
+    <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+    <span>, Commercial Mortgage Broker (Los Angeles)</span>
+    <span aria-hidden="true">&middot;</span>
+    <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
+  </div>
+  <p class="reveal" style="font-size:16.5px;line-height:1.7">{{ guide.hero_intro }}</p>
+</div>
+</section>
+
+<!-- KEY FACTS -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Key Facts</div>
+  <h2 class="section-title reveal">The Numbers That Matter</h2>
+  <div class="feature-grid">
+    {% for kf in guide.key_facts %}
+    <div class="feature-card reveal">
+      <div class="label">{{ kf.label }}</div>
+      <div class="value">{{ kf.value }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- BODY SECTIONS -->
+<section class="content-section alt">
+<div class="section-inner" style="max-width:860px">
+  {% for sec in guide.sections %}
+  <h2 class="section-title reveal" {% if not loop.first %}style="margin-top:36px"{% endif %}>{{ sec.heading }}</h2>
+  {% for para in sec.body.split('\n\n') %}
+  <p class="reveal" style="font-size:15px;line-height:1.75;color:var(--gray-700)">{{ para }}</p>
+  {% endfor %}
+  {% endfor %}
+</div>
+</section>
+
+<!-- FAQ -->
+{% set faqs = guide.faqs %}
+{% set faq_title = guide.seo.h1 + ': FAQ' %}
+{% include '_faq_section.html' %}
+
+<!-- RELATED GUIDES -->
+{% if related_guides %}
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More Los Angeles Guides</h2>
+  <div class="cross-link-grid">
+    {% for rg in related_guides %}
+    <a href="{{ depth }}los-angeles/{{ rg.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ rg.title }}</div>
+      <div class="cl-sub">{{ rg.category }}</div>
+    </a>
+    {% endfor %}
+    <a href="{{ depth }}multifamily/la/index.html" class="cross-link-card reveal" style="border-color:var(--green)">
+      <div class="cl-title">LA Apartment Loans by Neighborhood</div>
+      <div class="cl-sub">{{ hood_count }} submarkets, street-level detail</div>
+    </a>
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- CTA -->
+{% set cta_title = 'Talk to a Broker Who Lives These Rules' %}
+{% set cta_description = 'Commercial Lending Solutions is headquartered in Los Angeles. We structure deals around ULA, RSO, retrofit, and entitlement realities every week. Free deal review, response within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

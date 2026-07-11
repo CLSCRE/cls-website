@@ -23,6 +23,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 from generate_articles import main as generate_articles_main, pacific_today
+import la_vertical
 
 
 # ── Paths ──────────────────────────────────────────────────────────────
@@ -1368,6 +1369,8 @@ def main():
          "Free Net Operating Income calculator for commercial real estate. Calculate NOI from income and expenses.", "0.8"),
         ("tool_debtyield.html", "tools/debt-yield-calculator.html", "tools/debt-yield-calculator.html", "Debt Yield Calculator | Commercial Lending Solutions",
          "Free debt yield calculator for commercial real estate. NOI divided by loan amount, plus typical lender minimums and the max loan each floor supports.", "0.8"),
+        ("tool_la_rentcontrol.html", "tools/la-rent-control-checker.html", "tools/la-rent-control-checker.html", "LA Rent Control Checker | Commercial Lending Solutions",
+         "Free tool: enter jurisdiction, year built, and unit count to see whether an LA-area apartment building falls under RSO, a municipal rent ordinance, or AB 1482, and what it means for financing.", "0.8"),
     ]
     for tpl_name, out_rel, canonical, title, desc, priority in tool_pages:
         tpl_tool = env.get_template(tpl_name)
@@ -1385,6 +1388,115 @@ def main():
             "lastmod": TODAY, "changefreq": "monthly", "priority": priority,
         })
         print(f"  [OK] {out_rel}")
+
+    # ── 9a. Los Angeles Neighborhood Financing Vertical ─────────────────
+    # Hub + 6 deep regulatory/financing guides + neighborhood-by-neighborhood
+    # apartment financing index, one page per submarket (la_vertical.py).
+    # Curated ~30-submarket set, not a mail-merged canonical LA neighborhood
+    # list -- see la_vertical.py module docstring for the scope rationale.
+    # Templates authored 2026-07-10, data + wiring added 2026-07-11.
+    print("\n=== Generating Los Angeles Vertical ===")
+    la_hoods = la_vertical.build_hoods()
+    la_hood_groups = la_vertical.build_hood_groups(la_hoods)
+    la_guides = la_vertical.build_guides()
+    la_hood_count = len(la_hoods)
+
+    la_dir = WEBSITE_DIR / "los-angeles"
+    la_dir.mkdir(exist_ok=True)
+    mf_la_dir = WEBSITE_DIR / "multifamily" / "la"
+    mf_la_dir.mkdir(parents=True, exist_ok=True)
+
+    # Hub: /los-angeles/index.html
+    tpl_la_hub = env.get_template("la_hub.html")
+    html = tpl_la_hub.render(
+        **shared,
+        guides=la_guides,
+        hood_groups=la_hood_groups,
+        hood_count=la_hood_count,
+        seo={
+            "title": "Los Angeles Commercial Real Estate Financing | Commercial Lending Solutions",
+            "meta_description": (
+                "Los Angeles commercial real estate financing hub: RSO and rent-control guides, "
+                "Measure ULA, soft-story retrofits, and apartment loans across "
+                f"{la_hood_count} LA neighborhoods, from a broker headquartered on Wilshire Boulevard."
+            ),
+        },
+        canonical_path="los-angeles/index.html",
+        depth="../",
+    )
+    (la_dir / "index.html").write_text(html, encoding="utf-8")
+    page_count += 1
+    sitemap_urls.append({
+        "loc": f"{BASE_URL}/los-angeles/index.html",
+        "lastmod": TODAY, "changefreq": "weekly", "priority": "0.9",
+    })
+    print("  [OK] los-angeles/index.html")
+
+    # Guides: /los-angeles/{slug}.html
+    tpl_la_guide = env.get_template("la_guide.html")
+    for guide in la_guides:
+        related = la_vertical.related_guides_for(la_guides, guide["slug"])
+        html = tpl_la_guide.render(
+            **shared,
+            guide=guide,
+            related_guides=related,
+            hood_count=la_hood_count,
+            seo=guide["seo"],
+            canonical_path=f"los-angeles/{guide['slug']}.html",
+            depth="../",
+        )
+        (la_dir / f"{guide['slug']}.html").write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/los-angeles/{guide['slug']}.html",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8",
+        })
+    print(f"  [OK] los-angeles/*.html  ({len(la_guides)} guides)")
+
+    # Apartments index: /multifamily/la/index.html
+    tpl_la_apt_index = env.get_template("la_apartments_index.html")
+    html = tpl_la_apt_index.render(
+        **shared,
+        hood_groups=la_hood_groups,
+        hood_count=la_hood_count,
+        seo={
+            "title": "LA Apartment Loans by Neighborhood | Commercial Lending Solutions",
+            "meta_description": (
+                f"Apartment financing across {la_hood_count} Los Angeles neighborhoods: rent "
+                "regulation, building vintage, and financing playbook for each submarket. Bridge, "
+                "agency, bank, and construction loans."
+            ),
+        },
+        canonical_path="multifamily/la/index.html",
+        depth="../../",
+    )
+    (mf_la_dir / "index.html").write_text(html, encoding="utf-8")
+    page_count += 1
+    sitemap_urls.append({
+        "loc": f"{BASE_URL}/multifamily/la/index.html",
+        "lastmod": TODAY, "changefreq": "weekly", "priority": "0.9",
+    })
+    print("  [OK] multifamily/la/index.html")
+
+    # Per-neighborhood pages: /multifamily/la/{slug}.html
+    tpl_la_hood = env.get_template("la_apartment_page.html")
+    for hood in la_hoods:
+        nearby = la_vertical.nearby_hoods(la_hoods, hood["slug"], hood["region"])
+        html = tpl_la_hood.render(
+            **shared,
+            hood=hood,
+            nearby=nearby,
+            seo=hood["seo"],
+            canonical_path=f"multifamily/la/{hood['slug']}.html",
+            depth="../../",
+        )
+        (mf_la_dir / f"{hood['slug']}.html").write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/multifamily/la/{hood['slug']}.html",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+        })
+    print(f"  [OK] multifamily/la/*.html  ({la_hood_count} neighborhood pages)")
 
     # ── 9b. State Hub Pages ─────────────────────────────────────────
     # /states/{slug}.html: one deep hub per state (all 50 + DC), the top
@@ -1588,7 +1700,7 @@ def main():
     _VERTICAL_SECTIONS = {
         "affordable-housing", "industrial", "multifamily", "commercial",
         "life-company", "data-centers", "medical-office", "self-storage",
-        "senior-living",
+        "senior-living", "los-angeles",
     }
 
     def _categorize(url):

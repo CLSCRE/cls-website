@@ -1,0 +1,133 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":"Apartment Loans in {{ hood.name }} | CLS CRE","url":"https://clscre.com/multifamily/la/{{ hood.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107080690","email":"loans@clscre.com","areaServed":{"@type":"Place","name":"{{ hood.name }}, Los Angeles County, CA"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Los Angeles","item":"https://clscre.com/los-angeles/"},{"@type":"ListItem","position":3,"name":"LA Apartment Loans","item":"https://clscre.com/multifamily/la/"},{"@type":"ListItem","position":4,"name":"{{ hood.name }}","item":"https://clscre.com/multifamily/la/{{ hood.slug }}.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in hood.faqs %}{"@type":"Question","name":{{ faq.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a|tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"https://clscre.com/multifamily/la/{{ hood.slug }}.html","name":"{{ seo.title }}","description":"{{ seo.meta_description }}","datePublished":"2026-07-11","dateModified":"{{ current_date }}","lastReviewed":"{{ current_date }}","reviewedBy":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html"},"author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about/trevor-damyan.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"about":{"@type":"Place","name":"{{ hood.name }}, Los Angeles, CA"}}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}los-angeles/index.html">Los Angeles</a></li>
+  <li><a href="{{ depth }}multifamily/la/index.html">LA Apartment Loans</a></li>
+  <li><span>{{ hood.name }}</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">{{ hood.region }} &middot; {{ hood.jurisdiction }}</div>
+  <h1 class="reveal">{{ hood.seo.h1 }}</h1>
+  <div class="page-byline reveal" style="font-size:13px;color:var(--gray-500);margin:8px 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <span>Reviewed by</span>
+    <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+    <span>, Commercial Mortgage Broker (Los Angeles)</span>
+    <span aria-hidden="true">&middot;</span>
+    <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
+  </div>
+  <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 24px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0">
+    <strong style="color:var(--navy)">Quick answer:</strong>
+    Commercial Lending Solutions arranges apartment loans in {{ hood.name }} from $1 million to over $100 million: agency, bank, credit union, bridge, and construction debt, underwritten to this submarket's actual rent regulation and stock profile. LA is our home market; we finance {{ hood.name }} buildings from an office 20 minutes away, not a call center three time zones over.
+  </div>
+  {% for para in hood.overview.split('\n\n') %}
+  <p class="reveal">{{ para }}</p>
+  {% endfor %}
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Get a {{ hood.name }} Apartment Quote &rarr;</a>
+</div>
+</section>
+
+<!-- REGULATION + PLAYBOOK + WATCH ITEMS -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Underwriting {{ hood.name }}</div>
+  <h2 class="section-title reveal">Rent Regulation, Financing Playbook, and Watch Items</h2>
+  <div class="list-grid">
+    <div class="list-card reveal">
+      <h3>Rent Regulation Here</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--gray-700);margin:0 0 10px">{{ hood.rent_regulation }}</p>
+      <a href="{{ depth }}tools/la-rent-control-checker.html" style="font-size:13.5px;color:var(--green);font-weight:600;text-decoration:none">Check a specific building &rarr;</a>
+    </div>
+    <div class="list-card reveal">
+      <h3>How Deals Get Financed</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--gray-700);margin:0">{{ hood.financing_playbook }}</p>
+    </div>
+  </div>
+  <div class="list-card reveal" style="margin-top:16px;border-left:3px solid var(--navy)">
+    <h3>Watch Items</h3>
+    <p style="font-size:15px;line-height:1.7;color:var(--gray-700);margin:0">{{ hood.watch_items }}</p>
+  </div>
+</div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="content-section alt">
+<div class="section-inner">
+  <h2 class="section-title reveal">Loan Programs for {{ hood.name }} Apartments</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}financing/agency-loans.html" class="cross-link-card reveal"><div class="cl-title">Agency Loans</div><div class="cl-sub">Fannie Mae / Freddie Mac, stabilized</div></a>
+    <a href="{{ depth }}financing/bridge-loans.html" class="cross-link-card reveal"><div class="cl-title">Bridge Loans</div><div class="cl-sub">Renovate-at-turnover plans</div></a>
+    <a href="{{ depth }}financing/permanent-loans.html" class="cross-link-card reveal"><div class="cl-title">Bank &amp; Permanent Debt</div><div class="cl-sub">Long-term fixed rate</div></a>
+    <a href="{{ depth }}financing/construction-loans.html" class="cross-link-card reveal"><div class="cl-title">Construction Loans</div><div class="cl-sub">TOC and ground-up projects</div></a>
+    <a href="{{ depth }}financing/hud-fha-loans.html" class="cross-link-card reveal"><div class="cl-title">HUD / FHA</div><div class="cl-sub">Highest leverage, longest terms</div></a>
+    <a href="{{ depth }}financing/dscr-loans.html" class="cross-link-card reveal"><div class="cl-title">DSCR Loans</div><div class="cl-sub">Smaller stabilized deals</div></a>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+{% set faqs = hood.faqs %}
+{% set faq_title = hood.name + ' Apartment Financing: FAQ' %}
+{% include '_faq_section.html' %}
+
+<!-- NEARBY -->
+{% if nearby %}
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Nearby {{ hood.region }} Submarkets</h2>
+  <div class="cross-link-grid">
+    {% for n in nearby %}
+    <a href="{{ depth }}multifamily/la/{{ n.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ n.name }}</div>
+      <div class="cl-sub">Apartment loans</div>
+    </a>
+    {% endfor %}
+    <a href="{{ depth }}multifamily/la/index.html" class="cross-link-card reveal">
+      <div class="cl-title">All LA Neighborhoods</div>
+      <div class="cl-sub">Full apartment financing map</div>
+    </a>
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- LA GUIDES -->
+<section class="content-section alt">
+<div class="section-inner">
+  <h2 class="section-title reveal">LA Rules That Shape {{ hood.name }} Deals</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}los-angeles/measure-ula-commercial-real-estate.html" class="cross-link-card reveal"><div class="cl-title">Measure ULA Deal Math</div><div class="cl-sub">The transfer tax and your exit</div></a>
+    <a href="{{ depth }}los-angeles/la-rent-control-apartment-financing.html" class="cross-link-card reveal"><div class="cl-title">Rent Control &amp; Financing</div><div class="cl-sub">RSO, AB 1482, municipal rules</div></a>
+    <a href="{{ depth }}los-angeles/soft-story-retrofit-financing-la.html" class="cross-link-card reveal"><div class="cl-title">Soft-Story Retrofits</div><div class="cl-sub">Ordinance 183893 and lending</div></a>
+    <a href="{{ depth }}los-angeles/adu-portfolio-financing-la.html" class="cross-link-card reveal"><div class="cl-title">ADU Additions</div><div class="cl-sub">NOI growth on apartment parcels</div></a>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+{% set cta_title = 'Financing a ' + hood.name + ' Apartment Deal?' %}
+{% set cta_description = 'Commercial Lending Solutions is based in Los Angeles and underwrites ' + hood.name + ' buildings against the actual regulatory and stock profile of the submarket. Free deal review, response within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}
