@@ -190,7 +190,7 @@
     <strong style="color:var(--navy)">Quick answer:</strong>
     Commercial Lending Solutions arranges apartment loans in Pasadena from $1 million to over $100 million: agency, bank, credit union, bridge, and construction debt, underwritten to this submarket's actual rent regulation and stock profile. LA is our home market; we finance Pasadena buildings from an LA office, not a call center three time zones over.
   </div>
-  <p class="reveal">Pasadena is an independently incorporated city with its own Measure H rent control (adopted 2024), applied to an older apartment stock clustered around Old Town and the Playhouse District. JPL and Caltech anchor a stable, well-educated employment base that supports steady rental demand.</p>
+  <p class="reveal">Pasadena is an independently incorporated city with its own Measure H rent control (voter-approved November 2022), applied to an older apartment stock clustered around Old Town and the Playhouse District. JPL and Caltech anchor a stable, well-educated employment base that supports steady rental demand.</p>
   <p class="reveal">Investor interest spans long-hold regulated-building owners and newer buyers underwriting the impact of Measure H's 75%-of-CPI cap on future rent growth assumptions, a meaningfully tighter cap than City of LA RSO's formula.</p>
   <a href="../../apply.html" class="btn-primary reveal">Get a Pasadena Apartment Quote &rarr;</a>
 </div>
@@ -346,9 +346,9 @@
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-                window.dataLayer = window.dataLayer || [];
-                // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
-                window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
+        window.dataLayer = window.dataLayer || [];
+        // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+        window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

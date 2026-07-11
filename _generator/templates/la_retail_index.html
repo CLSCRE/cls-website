@@ -1,0 +1,72 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"LA Retail Loans by Corridor","description":"{{ seo.meta_description }}","url":"https://clscre.com/retail/la/","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Los Angeles","item":"https://clscre.com/los-angeles/"},{"@type":"ListItem","position":3,"name":"LA Retail Loans","item":"https://clscre.com/retail/la/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"https://clscre.com/retail/la/","name":"{{ seo.title }}","description":"{{ seo.meta_description }}","datePublished":"2026-07-11","dateModified":"{{ current_date }}","lastReviewed":"{{ current_date }}","reviewedBy":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html"},"author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about/trevor-damyan.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}}}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}los-angeles/index.html">Los Angeles</a></li>
+  <li><span>Retail Loans by Corridor</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">LA Retail</div>
+  <h1 class="reveal">LA Retail Loans, Corridor by Corridor</h1>
+  <div class="page-byline reveal" style="font-size:13px;color:var(--gray-500);margin:8px 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <span>Reviewed by</span>
+    <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+    <span>, Commercial Mortgage Broker (Los Angeles)</span>
+    <span aria-hidden="true">&middot;</span>
+    <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
+  </div>
+  <p class="reveal">A Melrose Avenue storefront, a Ventura Boulevard strip center, and a drive-thru pad site are three different retail businesses wearing the same zoning code. Commercial Lending Solutions finances LA retail from LA: pick your corridor below, {{ hood_count }} covered.</p>
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Get an LA Retail Quote &rarr;</a>
+</div>
+</section>
+
+{% for group in hood_groups %}
+<section class="content-section {{ 'alt' if loop.index is even }}">
+<div class="section-inner">
+  <div class="section-label reveal">{{ group.region }}</div>
+  <h2 class="section-title reveal">{{ group.region }}</h2>
+  <div class="cross-link-grid">
+    {% for h in group.hoods %}
+    <a href="{{ depth }}retail/la/{{ h.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ h.name }}</div>
+      <div class="cl-sub">{{ h.product_type }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endfor %}
+
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More LA Coverage</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}los-angeles/retail-mixed-use-construction-financing-la.html" class="cross-link-card reveal"><div class="cl-title">Retail &amp; Mixed-Use Construction</div><div class="cl-sub">Ground-up financing guide</div></a>
+    <a href="{{ depth }}los-angeles/investors.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Investors</div><div class="cl-sub">Net-lease and value-add</div></a>
+    <a href="{{ depth }}los-angeles/owner-users.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Owner-Users</div><div class="cl-sub">SBA and buy-vs-lease</div></a>
+    <a href="{{ depth }}los-angeles/index.html" class="cross-link-card reveal"><div class="cl-title">Los Angeles Hub</div><div class="cl-sub">All guides and tools</div></a>
+  </div>
+</div>
+</section>
+
+{% set cta_title = 'Get an LA Retail Quote' %}
+{% set cta_description = 'From Melrose storefronts to Valley strip centers, Commercial Lending Solutions matches LA retail deals to the lenders who want them. Free deal review, response within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

@@ -1,0 +1,185 @@
+"""
+Los Angeles construction and development financing guides -- round 2.
+
+4 guides (ED1 affordable, Adaptive Reuse Ordinance, industrial/cold-storage
+ground-up, retail/mixed-use ground-up) extending la_vertical.py's round-1
+guide set. Rendered through the same la_guide.html template at
+/los-angeles/{slug}.html; generate.py combines
+la_vertical.build_guides() + la_construction.build_guides() into one list.
+Authored 2026-07-11 via agent fan-out, matched to la_vertical.py's
+RAW_GUIDES voice and depth.
+"""
+
+RAW_GUIDES = [
+    {
+        "slug": "ed1-affordable-construction-financing-la",
+        "title": "ED1 Affordable Housing Construction Financing in Los Angeles",
+        "category": "Affordable Housing Development",
+        "seo": {
+            "h1": "Financing ED1 Affordable Construction Projects in Los Angeles",
+            "title": "ED1 Affordable Housing Construction Financing | Commercial Lending Solutions",
+            "meta_description": "How Los Angeles Executive Directive 1 (ED1) ministerial approval changes construction lending for 100% affordable projects: capital stack, timeline, and what lenders underwrite instead.",
+        },
+        "hero_intro": "Executive Directive 1 (ED1) has done something conventional Los Angeles entitlement rarely allows: it took 100% affordable housing projects off the discretionary approval track entirely. Qualifying projects get ministerial, by-right review instead of a hearing, a CEQA appeal, and the months, sometimes years, that come with either. For construction lenders and sponsors, that changes the risk profile of the deal before a single unit is framed. This guide covers what actually changes under ED1, how the capital stack typically layers, and where the real timeline still lives once entitlement risk is off the table.",
+        "key_facts": [
+            {"label": "Approval pathway", "value": "Ministerial, by-right (no discretionary hearing)"},
+            {"label": "CEQA exposure", "value": "Exempted for qualifying projects"},
+            {"label": "Eligible project type", "value": "100% affordable, income-restricted units"},
+            {"label": "Typical AMI target", "value": "60% AMI or below"},
+            {"label": "Unit count bonus", "value": "Significant increase above base zoning, site-specific"},
+            {"label": "Parking minimum", "value": "Reduced, often near zero near transit"},
+        ],
+        "sections": [
+            {
+                "heading": "Ministerial Approval, Not Just Faster Approval",
+                "body": "The distinction that matters to a construction lender is not that ED1 is quicker, it is that ED1 removes an entire category of risk. A conventional Los Angeles multifamily entitlement runs through discretionary review: a hearing, a window for third-party appeal, and CEQA environmental review that can add well over a year to a project timeline and give a single determined opponent real leverage to delay or kill a deal. ED1 takes qualifying 100% affordable projects off that track and processes them ministerially, meaning staff approve against an objective checklist rather than a discretionary vote, with CEQA exemption for qualifying projects.\n\nThat matters most to the lender writing the construction loan commitment. Entitlement risk is the hardest variable to underwrite in ground-up construction lending, because it is legal and political risk, not a cost or schedule risk a contractor can price. When a project qualifies for ED1, the lender's diligence shifts almost entirely to plan check, permitting mechanics, and the strength of the capital stack behind the project rather than whether the project will be approved at all. That is a meaningfully different, and generally more financeable, conversation.",
+            },
+            {
+                "heading": "How the Capital Stack Actually Layers",
+                "body": "ED1 projects are financed the way most 100% affordable ground-up deals in Los Angeles are financed, with senior construction debt sized to a share of total development cost, provided by CDFIs, community banks, or regional banks with an affordable housing lending platform. That construction lender wants firm commitments in hand for the rest of the capital stack before it will fund, not a projection.\n\nLow-Income Housing Tax Credit (LIHTC) equity is usually the largest single equity source underneath that senior debt, delivered either through 9% competitive credits, which provide more equity but face a competitive statewide allocation process, or 4% credits paired with tax-exempt bond financing, which are more predictable but provide a smaller equity contribution. Sponsor equity and deferred developer fee typically fill the remaining gap.\n\nHUD 221(d)(4) financing is technically available as a construction-to-permanent option for qualifying affordable projects, but its processing timeline frequently does not line up with a construction schedule already compressed by ED1. Most sponsors instead use a conventional permanent loan to stabilize the property, with HUD refinancing considered later once the asset has operating history. Structuring the construction loan with a clear, already-negotiated path to takeout, rather than assuming one will appear at completion, is what keeps an ED1 deal on schedule.",
+            },
+            {
+                "heading": "Where the Timeline Compression Actually Shows Up",
+                "body": "Removing discretionary entitlement risk does not make an ED1 deal instant, it removes the single biggest source of unpredictable delay from the front end of the project. Plan check, permitting, and the mechanics of assembling a full capital stack, LIHTC award timelines, bond issuance coordination, and firm permanent financing commitments, still take real time and remain the actual critical path on most deals. The compression shows up specifically in what used to be the riskiest, least predictable phase: whether the project gets approved to build at all.\n\nED1 activity in Los Angeles has clustered around transit-served neighborhoods with available sites and a receptive local entitlement environment, including pockets of Koreatown, Boyle Heights, and the San Fernando Valley. Sponsors with a specific site already under contract or in escrow should start the financing conversation immediately, since assembling firm permanent commitments alongside LIHTC and bond timelines is usually the longer pole in the tent, not the ED1 approval itself.",
+            },
+            {
+                "heading": "What Lenders Check Before Committing",
+                "body": "Even with entitlement risk removed, an ED1 construction lender still underwrites the fundamentals that make any construction loan work: a general contractor with relevant experience and bonding capacity, a construction budget that has priced in prevailing wage requirements, a common source of cost surprises on these deals, and a sponsor with a credible track record delivering affordable housing, LIHTC compliance, or both. None of that changes because the entitlement path is ministerial.\n\nThe practical order of operations for most ED1 sponsors is site control first, then a parallel track of finalizing the capital stack, LIHTC application or bond allocation, a permanent lender term sheet, and a construction lender commitment, while plan check and permitting run alongside. Sponsors who wait until permits are in hand to start that capital stack conversation lose much of the timeline advantage ED1 is designed to create.",
+            },
+        ],
+        "faqs": [
+            {"q": "What makes a Los Angeles project eligible for ED1 ministerial approval?", "a": "Eligibility generally requires the project to be 100% affordable, with units income-restricted for qualifying households, typically at 60% AMI or below depending on the funding source. Site-specific factors like zoning and location also affect the unit count bonus and parking relief available. Final eligibility is determined by the City of Los Angeles Planning Department, so a specific site should be reviewed against current program criteria before underwriting."},
+            {"q": "Does ED1 change how a construction lender underwrites the loan?", "a": "Yes. With discretionary approval and CEQA appeal risk removed, a construction lender's diligence shifts toward plan check and permitting mechanics and the strength of the rest of the capital stack, particularly whether LIHTC equity and permanent financing commitments are firm before the construction loan closes. That is a materially different, generally more financeable underwriting exercise than a conventional discretionary entitlement."},
+            {"q": "How long does an ED1 affordable construction deal actually take?", "a": "Removing entitlement risk compresses the least predictable phase of the project, but assembling a full capital stack still takes time. LIHTC award timelines, bond financing coordination, and firm permanent loan commitments are typically the longer pole, not the ED1 approval itself. Sponsors with a site under contract should begin the financing conversation immediately rather than waiting for approval to start assembling capital."},
+        ],
+    },
+    {
+        "slug": "adaptive-reuse-financing-la",
+        "title": "Adaptive Reuse (ARO) Conversion Financing in Los Angeles",
+        "category": "Adaptive Reuse & Conversion",
+        "seo": {
+            "h1": "Financing Adaptive Reuse Conversions in Los Angeles",
+            "title": "LA Adaptive Reuse (ARO) Financing Guide | Commercial Lending Solutions",
+            "meta_description": "How the Adaptive Reuse Ordinance lets older LA office and industrial buildings convert to residential, and how bridge and construction lenders finance the conversion scope.",
+        },
+        "hero_intro": "The Adaptive Reuse Ordinance (ARO) is Los Angeles's tool for turning obsolete office and industrial buildings into housing without a ground-up construction budget or a conventional zoning fight. It is most associated with Downtown LA's underused office stock, but the ordinance itself is eligible citywide for buildings that meet its criteria. For a lender, an ARO conversion reads less like new construction and more like a large-scale renovation with an entitlement shortcut built in, and financing it correctly means understanding exactly what is, and is not, being built.",
+        "key_facts": [
+            {"label": "Ordinance", "value": "Adaptive Reuse Ordinance (ARO), City of LA"},
+            {"label": "Eligible geography", "value": "Citywide by criteria; concentrated in DTLA"},
+            {"label": "Approval process", "value": "Streamlined, expedited plan check"},
+            {"label": "Parking requirement", "value": "Reduced from new-construction standard"},
+            {"label": "Density limit", "value": "None imposed on qualifying conversions"},
+            {"label": "Typical candidates", "value": "Older office, hotel, and industrial buildings"},
+        ],
+        "sections": [
+            {
+                "heading": "What ARO Actually Changes About the Project",
+                "body": "ARO lets an existing older commercial or industrial building convert to residential use with a streamlined approval process, reduced parking requirements relative to new construction, and no density limit imposed on the conversion. The building envelope, the concrete or steel structure, the floor plates, in most cases the existing footprint, already exists; the project scope is converting that shell into livable units rather than building one from the ground up.\n\nThat distinction changes what a lender is actually financing. A ground-up construction loan underwrites site work, foundation, vertical construction, and lease-up risk on a building that does not yet exist. An ARO conversion loan underwrites a renovation and system-upgrade scope, life safety, plumbing, electrical, unit demising, against a structure that is already standing. The construction risk profile is genuinely different, and often lower, than ground-up, even though the dollar scope of the work can still be substantial on an older building.",
+            },
+            {
+                "heading": "Which Buildings Actually Qualify",
+                "body": "ARO is most closely associated with Downtown LA, where a deep stock of older office towers, historic hotels, and institutional buildings near Metro Rail stations like 7th/Metro sits underused, but the ordinance itself is eligible citywide for buildings that meet its criteria, not limited to any single district. Older commercial and industrial buildings in North Hollywood's Arts District pocket and other legacy commercial corridors have also been floated as conversion candidates.\n\nBefore underwriting reduced parking or an expedited plan check timeline, a lender or sponsor needs to confirm a specific building actually qualifies under the ordinance's criteria rather than assuming eligibility from location or building type alone. Structural condition, floor plate depth, a shallow, well-lit floor plate converts to residential units far more efficiently than a deep, dark one, and existing systems all affect both eligibility in practice and total conversion cost.",
+            },
+            {
+                "heading": "Financing the Conversion: Bridge-to-Perm, Not a Straight Construction Loan",
+                "body": "Most ARO conversions are financed with bridge-to-permanent structures rather than a standard ground-up construction loan: a bridge lender funds the acquisition and the conversion scope in draws tied to renovation milestones, then a permanent lender, bank, agency, or life company, takes out the bridge once the building is converted, leased, and stabilized. Because the underlying structure already exists, draws are typically tied to specific systems and unit-conversion milestones rather than the foundation-to-roof sequence of a ground-up construction draw schedule.\n\nLenders comfortable with adaptive reuse specifically, rather than a generalist construction shop, are the better fit here: they understand how to underwrite an unusual mix of renovation risk, what is behind the walls of a fifty- or eighty-year-old building, alongside the entitlement certainty ARO provides. A conversion budget vetted by a contractor with adaptive reuse experience, not a generic per-square-foot renovation estimate, is typically what separates a financeable ARO deal from one that gets re-traded once the walls come open and unexpected conditions show up.",
+            },
+            {
+                "heading": "Diligence That Actually Drives the Numbers",
+                "body": "Two diligence items shape an ARO conversion budget more than anything else: structural condition and floor plate geometry. A building with a shallow floor plate and ample natural light converts efficiently to residential units with minimal reconfiguration; a deep floor plate designed for open office space often needs light wells, atriums, or other costly interventions to make interior units livable, which can add meaningfully to the conversion budget and should be priced before a lender commits.\n\nSeismic and life-safety systems are the other major variable. Older office and industrial buildings eligible for ARO were built to a different code era than new residential construction, and bringing fire sprinklers, egress, and in some cases seismic retrofit up to current residential standards is frequently the largest line item in the conversion budget after core and shell work. A lender reviewing an ARO deal will want a contractor's scope and cost estimate that reflects those building-specific realities, not a generic per-unit renovation assumption borrowed from a different project.",
+            },
+        ],
+        "faqs": [
+            {"q": "Does the Adaptive Reuse Ordinance only apply in Downtown LA?", "a": "No. ARO is most visible in Downtown LA because of the concentration of older office and hotel stock there, but the ordinance is eligible citywide for buildings that meet its criteria. Confirm a specific building's eligibility, rather than assuming it from location, before underwriting reduced parking or an expedited approval timeline."},
+            {"q": "How is financing an ARO conversion different from a ground-up construction loan?", "a": "An ARO conversion loan underwrites renovation and system-upgrade risk on a building that already exists, structure, floor plates, and often the footprint, rather than site work and vertical construction on a building that does not. Draws are typically tied to renovation and system milestones instead of a ground-up construction sequence, and the entitlement risk that dominates a conventional project is largely absent."},
+            {"q": "What loan structure is most common for adaptive reuse projects?", "a": "Bridge-to-permanent is the most common structure: a bridge lender funds acquisition and the conversion scope in milestone-based draws, then permanent debt, bank, agency, or life company financing, takes out the bridge once the building is converted, leased, and stabilized."},
+        ],
+    },
+    {
+        "slug": "industrial-cold-storage-construction-financing-la",
+        "title": "Industrial and Cold Storage Construction Financing in Los Angeles",
+        "category": "Industrial Construction",
+        "seo": {
+            "h1": "Financing Ground-Up Industrial and Cold Storage Construction in Los Angeles",
+            "title": "Industrial & Cold Storage Construction Financing | Commercial Lending Solutions",
+            "meta_description": "Ground-up industrial and cold storage construction financing in Los Angeles: zoning, the WAIRE Program's design impact, land basis, and stabilized takeout or sale-leaseback exits.",
+        },
+        "hero_intro": "Ground-up industrial construction in Los Angeles, especially large-format logistics and cold storage, is a different underwriting exercise than most product types the city produces: land basis is high, entitlement can move faster than residential once zoning is already in place, and a regional emissions program now shapes building design before the first drawing is finalized. This guide covers how land basis, entitlement timeline, and the South Coast Air Quality Management District's warehouse emissions program shape ground-up industrial and cold storage financing in LA, and how these projects typically get built and exited.",
+        "key_facts": [
+            {"label": "Base industrial zoning", "value": "M1, M2, M3 (light to heavy industrial)"},
+            {"label": "Buffer zoning near residential", "value": "MR1 / MR2 (restricted, limited industrial)"},
+            {"label": "WAIRE Program trigger", "value": "Warehouses roughly 100,000+ SF in South Coast Air Basin"},
+            {"label": "WAIRE compliance path", "value": "Compliance points or a mitigation fee"},
+            {"label": "Port drayage goal", "value": "Zero-emission fleet targeted by 2035 (Ports of LA / Long Beach)"},
+            {"label": "Rail connectivity", "value": "Alameda Corridor links the ports to downtown LA rail yards"},
+        ],
+        "sections": [
+            {
+                "heading": "Land Basis and Zoning: Where Ground-Up Industrial Actually Pencils",
+                "body": "Los Angeles industrial land is zoned across a range of intensities, from M1 (limited industrial, the lightest designation) through M2 (general industrial) to M3 (heavy industrial), with MR1 and MR2 restricted or limited industrial zones typically acting as a buffer where industrial uses sit close to residential neighborhoods and face tighter use and noise restrictions. Zoning varies block by block in LA's older industrial corridors, so confirming the actual zone on a specific parcel, not assuming it from the surrounding area, is the first step on any ground-up pro forma.\n\nLand basis for industrial development has climbed across the county as e-commerce and last-mile logistics demand has grown, particularly along freeway-served corridors like the 710, 105, and 91 that connect the ports and rail yards to the rest of the county. That has made entitled, already-zoned industrial land, land that does not need a zone change or variance to build the intended use, meaningfully more valuable than raw or miszoned parcels. A sponsor underwriting a ground-up industrial or cold storage project should treat confirmed zoning and a clean entitlement path as core to the land basis itself, not a formality layered on top of it.",
+            },
+            {
+                "heading": "Entitlement Timeline: Faster Than Residential, With Its Own Friction",
+                "body": "Ground-up industrial construction on already-zoned industrial land generally moves through entitlement faster than a comparable residential project, since it is not competing with the density bonus, affordable set-aside, and CEQA appeal exposure that shape so much of LA's residential entitlement environment. A straightforward warehouse or distribution building on clean M2 or M3 land can often move to permit meaningfully faster than a ground-up apartment project of similar size.\n\nThat said, industrial entitlement is not friction-free everywhere in the city. Parcels near the ports, rail yards, and residential-industrial interface zones in areas like South LA and Wilmington sit along designated truck routes and draw real community concern over diesel emissions and noise, which can extend the entitlement and community-engagement timeline on new industrial development in those specific corridors even when the underlying zoning is already industrial. Sponsors building in port-adjacent, residential-interface locations should budget more entitlement time than a comparable project in a purely industrial pocket like Vernon or Commerce.",
+            },
+            {
+                "heading": "WAIRE and What It Means for New Large Warehouse Design",
+                "body": "The South Coast Air Quality Management District's WAIRE Program (Rule 2305, Warehouse Actions and Investments to Reduce Emissions) applies to warehouses of roughly 100,000 square feet or larger operating in the South Coast Air Basin, which covers the LA industrial market. Operators earn compliance points through actions like adding zero-emission trucks to their fleet, installing solar, or adding EV charging infrastructure, or they can instead pay a mitigation fee; the exact point values and fee schedule are set by SCAQMD and should be confirmed directly rather than assumed.\n\nFor a ground-up project at or near that size threshold, WAIRE is a design question as much as an operating one: EV charging infrastructure, solar-ready roof structure, and truck court layout that can accommodate a future zero-emission fleet are increasingly built in at the shell stage rather than retrofitted later. Lenders financing large-format warehouse and cold storage construction should expect a WAIRE compliance strategy to be part of the sponsor's operating pro forma, not an afterthought discovered at lease-up.",
+            },
+            {
+                "heading": "Financing to a Stabilized Takeout or a Sale-Leaseback Exit",
+                "body": "Ground-up industrial and cold storage construction is typically financed with a construction loan sized against total project cost, funded in draws through vertical construction and building shell completion, from banks, credit unions, or bridge and debt fund lenders comfortable with speculative or build-to-suit industrial product. Cold storage carries a materially higher improvement cost than dry warehouse space given refrigeration systems and insulated envelope construction, which shifts the loan basis and the takeout lender's comfort with the specialized nature of the building if it is not pre-leased.\n\nTwo takeout paths dominate once construction is complete. A stabilized refinance, agency, bank, or life-company debt sized to in-place rent once the building is leased to a national 3PL, e-commerce, or cold-chain tenant, is the straightforward path for a sponsor planning to hold. A sale-leaseback exit, where the sponsor sells the completed, leased building to an investor and leases it back if the sponsor is also the operating tenant, is common among owner-users who want to free up the capital tied up in the real estate while keeping operational control. Rail-served sites along the Alameda Corridor in Vernon, Commerce, or Compton, and sites with Foreign Trade Zone eligibility for import/export-heavy tenants, can widen the buyer and tenant pool at exit.",
+            },
+        ],
+        "faqs": [
+            {"q": "What does the WAIRE Program mean for a new LA warehouse?", "a": "SCAQMD's WAIRE Program (Rule 2305) applies to warehouses of roughly 100,000 square feet or larger in the South Coast Air Basin, which covers Los Angeles. Operators earn compliance points through actions like zero-emission trucks, solar, or EV charging, or pay a mitigation fee instead. For ground-up projects near that size threshold, it is worth designing EV infrastructure and solar-ready roof structure into the shell rather than retrofitting later. Confirm current point values and fee amounts directly with SCAQMD before finalizing a compliance strategy."},
+            {"q": "Does ground-up industrial construction move faster than residential in LA?", "a": "Generally yes, on already-zoned industrial land, since it avoids the density bonus, affordable set-aside, and CEQA appeal exposure common to residential entitlement. Port-adjacent and residential-interface sites near truck routes in areas like South LA and Wilmington can still face longer community-engagement and entitlement timelines even on properly zoned industrial land, so location matters as much as zoning."},
+            {"q": "How are ground-up cold storage projects typically financed and exited?", "a": "Construction debt from banks, credit unions, or bridge and debt fund lenders funds the build in draws through shell completion, sized higher than dry warehouse given refrigeration and insulated-envelope costs. Exit is typically either a stabilized refinance once the building is leased, or a sale-leaseback where an owner-user sponsor sells the completed building and leases it back to free up capital while retaining operational control."},
+        ],
+    },
+    {
+        "slug": "retail-mixed-use-construction-financing-la",
+        "title": "Retail and Mixed-Use Construction Financing in Los Angeles",
+        "category": "Retail & Mixed-Use Construction",
+        "seo": {
+            "h1": "Financing Ground-Up Retail and Mixed-Use Construction in Los Angeles",
+            "title": "Retail & Mixed-Use Construction Financing LA | Commercial Lending Solutions",
+            "meta_description": "Financing ground-up retail and mixed-use construction in Los Angeles: zoning, CUP timelines for drive-thru and alcohol uses, anchor pre-leasing, and construction loan structure.",
+        },
+        "hero_intro": "Ground-up retail construction in Los Angeles rarely stands alone anymore. Most new retail delivers as the ground floor of a mixed-use building, residential or office above, retail below, or as a freestanding pad in a shopping center or corridor. Financing it means underwriting two different things at once: a retail leasing story and, on mixed-use product, a residential or office story layered on top of it. This guide covers anchor-tenant pre-leasing expectations, the entitlement path for uses like drive-thrus and alcohol sales, and how construction financing is typically structured for ground-up retail and mixed-use product in LA.",
+        "key_facts": [
+            {"label": "Core retail zoning", "value": "C1, C2, C4 (increasing intensity)"},
+            {"label": "Mixed commercial/industrial zone", "value": "CM (Commercial Manufacturing)"},
+            {"label": "CUP commonly required for", "value": "Alcohol sales, drive-thru, certain late-hour uses"},
+            {"label": "Common ground-up format", "value": "Ground-floor retail with residential or office above"},
+            {"label": "Owner-user-heavy segment", "value": "Freestanding auto and QSR / pad retail"},
+        ],
+        "sections": [
+            {
+                "heading": "Zoning and the CUP Question",
+                "body": "Los Angeles retail zoning runs from C1 (limited commercial) through C2 (commercial) to C4 (general commercial, the most intense designation), with CM (commercial manufacturing) allowing light industrial uses to sit alongside commercial ones, common in older mixed commercial-industrial corridors. Confirming the specific zone on a parcel, and what it actually permits by right versus what needs discretionary approval, is the first underwriting step on any ground-up retail project.\n\nA Conditional Use Permit (CUP) is commonly required in many LA commercial zones for alcohol sales, drive-thru restaurants, and certain late-hour uses, which matters directly to two of the most common ground-up retail formats in the city: quick-service restaurants with a drive-thru and any retail center anchored by a restaurant or grocer with a full liquor license. A CUP adds a discretionary review step to what is otherwise often a ministerial or administrative retail build, and that review timeline should be built into the construction loan schedule from the start, not treated as a formality that will clear on its own.",
+            },
+            {
+                "heading": "Anchor-Tenant Pre-Leasing: What Lenders Actually Want to See",
+                "body": "Ground-up retail and the retail component of a mixed-use project are almost always financed against a pre-leasing threshold, not a speculative build. Construction lenders want to see a credit-anchor lease, a grocer, a national or regional retailer, or a strong local operator with a demonstrated track record, signed before or shortly after the construction loan closes, since that anchor lease is what underwrites the debt service on the retail portion of the project.\n\nThe bar for pre-leasing varies by corridor and format. A grocery-anchored neighborhood center is underwritten almost entirely around that anchor's credit and lease terms, since the anchor tenant drives both the debt service coverage and the smaller shop-space leasing that follows it. A destination retail corridor like Abbot Kinney or Melrose, by contrast, leases up smaller, independent tenants one at a time, which means the construction lender is underwriting the sponsor's leasing track record and the corridor's fundamentals more than a single anchor lease. Ventura Boulevard's strip-center and freestanding pad retail running the length of the San Fernando Valley along the 101 corridor sits somewhere between the two, anchored enough to underwrite but leasing block by block. Ground-floor retail beneath residential or office product is often underwritten more conservatively still, since it is frequently the last piece of a mixed-use project to lease.",
+            },
+            {
+                "heading": "Mixed-Use Construction Financing: Two Underwriting Stories in One Loan",
+                "body": "A project with ground-floor retail and residential or office above is financed as a single construction loan but underwritten as two connected stories. The upper floors are underwritten on the same basis as a standalone apartment or office construction loan, unit mix, rent comps, and absorption for residential, or tenant demand and lease-up assumptions for office. The ground-floor retail is underwritten on its own leasing timeline and rent basis, and construction lenders want to know explicitly how the retail piece performs if it leases up slower than the residential or office component above it, since retail is frequently the last space in a mixed-use project to stabilize.\n\nConstruction lenders active in LA mixed-use, banks, bridge funds, and debt funds comfortable with a two-part leasing story, size the loan to blended project cost and typically require a completion guaranty and a credible, contractor-vetted budget given the added complexity of stacking retail and residential or office construction in a single building. Takeout financing usually splits along the same line: agency or bank debt for the residential component, and either a separate commercial takeout or a unified permanent loan sized to the blended, stabilized income once both the retail and upper-floor space are leased.",
+            },
+            {
+                "heading": "Owner-User Retail: A Different Financing Conversation",
+                "body": "Freestanding auto-related and quick-service retail, gas stations, car washes, and drive-thru restaurants, form a distinct, owner-user-heavy segment of LA's ground-up retail activity and a real part of CLS CRE's closed-deal mix. Many of these projects are built by the operator who will run the business on site, not a developer building on spec, which opens SBA financing (504 or 7(a)) as a genuine option alongside conventional construction debt, particularly for an owner-user with limited outside capital. CUP review for the drive-thru or fuel-dispensing use is still the central entitlement question on these projects regardless of financing source, and should be confirmed and budgeted for early, since it is often the long pole in an otherwise straightforward small-footprint build.",
+            },
+        ],
+        "faqs": [
+            {"q": "Does a drive-thru or alcohol license slow down a Los Angeles retail construction project?", "a": "It can. A Conditional Use Permit is commonly required in many LA commercial zones for drive-thru restaurants, alcohol sales, and certain late-hour uses, which adds a discretionary review step beyond the otherwise administrative retail build process. Build that CUP timeline into the construction loan schedule from the start rather than assuming it clears alongside standard permitting."},
+            {"q": "How much pre-leasing do I need before a retail construction loan closes?", "a": "It depends on the format. A grocery-anchored center is underwritten almost entirely around a signed anchor lease, while a destination retail corridor with smaller independent tenants leans more on the sponsor's leasing track record and corridor fundamentals. Ground-floor retail beneath residential or office space is often underwritten most conservatively, since it typically leases last in a mixed-use project."},
+            {"q": "Can an owner-user finance ground-up construction of their own retail building?", "a": "Yes. Freestanding auto and QSR/pad retail, gas stations, car washes, drive-thru restaurants, is frequently owner-user financed, which opens SBA 504 or 7(a) construction financing alongside conventional construction debt. The Conditional Use Permit review for a drive-thru or fuel use remains the central entitlement question regardless of financing source and should be budgeted for early."},
+        ],
+    },
+]
+
+
+def build_guides() -> list:
+    return RAW_GUIDES

@@ -888,7 +888,7 @@ RAW_HOODS = [
         "jurisdiction": "pasadena",
         "overview": (
             "Pasadena is an independently incorporated city with its own Measure H rent control "
-            "(adopted 2024), applied to an older apartment stock clustered around Old Town and the "
+            "(voter-approved November 2022), applied to an older apartment stock clustered around Old Town and the "
             "Playhouse District. JPL and Caltech anchor a stable, well-educated employment base that "
             "supports steady rental demand.\n\nInvestor interest spans long-hold regulated-building "
             "owners and newer buyers underwriting the impact of Measure H's 75%-of-CPI cap on future "

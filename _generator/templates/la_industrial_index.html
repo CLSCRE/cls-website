@@ -1,0 +1,72 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"LA Industrial Loans by Submarket","description":"{{ seo.meta_description }}","url":"https://clscre.com/industrial/la/","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Los Angeles","item":"https://clscre.com/los-angeles/"},{"@type":"ListItem","position":3,"name":"LA Industrial Loans","item":"https://clscre.com/industrial/la/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"https://clscre.com/industrial/la/","name":"{{ seo.title }}","description":"{{ seo.meta_description }}","datePublished":"2026-07-11","dateModified":"{{ current_date }}","lastReviewed":"{{ current_date }}","reviewedBy":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html"},"author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about/trevor-damyan.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}}}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}los-angeles/index.html">Los Angeles</a></li>
+  <li><span>Industrial Loans by Submarket</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">LA Industrial</div>
+  <h1 class="reveal">LA Industrial Loans, Submarket by Submarket</h1>
+  <div class="page-byline reveal" style="font-size:13px;color:var(--gray-500);margin:8px 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <span>Reviewed by</span>
+    <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+    <span>, Commercial Mortgage Broker (Los Angeles)</span>
+    <span aria-hidden="true">&middot;</span>
+    <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
+  </div>
+  <p class="reveal">A South Bay logistics building, a Vernon manufacturing plant, and a Sun Valley recycling yard are not the same underwriting exercise, even though all three are "LA industrial." Building stock, tenant mix, and entitlement friction change submarket by submarket. Commercial Lending Solutions finances LA industrial property from LA: pick your submarket below, {{ hood_count }} covered.</p>
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Get an LA Industrial Quote &rarr;</a>
+</div>
+</section>
+
+{% for group in hood_groups %}
+<section class="content-section {{ 'alt' if loop.index is even }}">
+<div class="section-inner">
+  <div class="section-label reveal">{{ group.region }}</div>
+  <h2 class="section-title reveal">{{ group.region }}</h2>
+  <div class="cross-link-grid">
+    {% for h in group.hoods %}
+    <a href="{{ depth }}industrial/la/{{ h.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ h.name }}</div>
+      <div class="cl-sub">{{ h.product_type }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endfor %}
+
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More LA Coverage</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}los-angeles/industrial-cold-storage-construction-financing-la.html" class="cross-link-card reveal"><div class="cl-title">Industrial &amp; Cold Storage Construction</div><div class="cl-sub">Ground-up financing guide</div></a>
+    <a href="{{ depth }}los-angeles/developers.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Developers</div><div class="cl-sub">Entitlement to takeout</div></a>
+    <a href="{{ depth }}los-angeles/owner-users.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Owner-Users</div><div class="cl-sub">SBA and buy-vs-lease</div></a>
+    <a href="{{ depth }}los-angeles/index.html" class="cross-link-card reveal"><div class="cl-title">Los Angeles Hub</div><div class="cl-sub">All guides and tools</div></a>
+  </div>
+</div>
+</section>
+
+{% set cta_title = 'Get an LA Industrial Quote' %}
+{% set cta_description = 'From South Bay logistics to Valley flex space, Commercial Lending Solutions matches LA industrial deals to the lenders who want them. Free deal review, response within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}
