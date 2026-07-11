@@ -1,20 +1,49 @@
 {% extends '_base.html' %}
 
+{% block extra_meta %}
+{% if rel_prev %}<link rel="prev" href="{{ rel_prev }}">
+{% endif %}
+{% if rel_next %}<link rel="next" href="{{ rel_next }}">
+{% endif %}
+{% endblock %}
+
 {% block schema %}
+{% if is_blog_root %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Blog","name":"CLS CRE Insights — Commercial Real Estate Finance Blog","url":"https://clscre.com/blog/","description":"Expert insights on commercial real estate financing, market trends, and investment strategies from CLS CRE.","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"Blog","name":"CLS CRE Insights | Commercial Real Estate Finance Blog","url":"https://clscre.com/blog/","description":"Expert insights on commercial real estate financing, market trends, and investment strategies from CLS CRE.","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
+{% endif %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://clscre.com/blog/"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://clscre.com/blog/"}{% if active_category %},{"@type":"ListItem","position":3,"name":"{{ active_category }}","item":"https://clscre.com/blog/category/{{ active_category_slug }}.html"}{% endif %}]}
 </script>
 {% endblock %}
 
 {% block content %}
+<style>
+a.blog-filter{text-decoration:none;display:inline-block}
+.blog-count{font-size:13px;color:var(--gray-500);margin:0 0 24px}
+.blog-pagination{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px;margin-top:48px}
+.blog-pagination a{text-decoration:none}
+.pg-btn,.pg-num{padding:8px 14px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid var(--gray-200);background:var(--white);color:var(--gray-600);transition:all .2s;font-family:var(--font-body)}
+.pg-btn:hover,.pg-num:hover{border-color:var(--green);color:var(--green)}
+.pg-num.pg-current{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.pg-num.pg-current:hover{color:var(--white)}
+.pg-ellipsis{padding:8px 4px;font-size:13px;color:var(--gray-400)}
+</style>
+
 <!-- BREADCRUMBS -->
 <nav class="breadcrumbs" aria-label="Breadcrumb">
 <ol>
   <li><a href="{{ depth }}index.html">Home</a></li>
+  {% if active_category %}
+  <li><a href="{{ depth }}blog/index.html">Insights</a></li>
+  <li><span>{{ active_category }}</span></li>
+  {% elif page_num > 1 %}
+  <li><a href="{{ depth }}blog/index.html">Insights</a></li>
+  <li><span>Page {{ page_num }}</span></li>
+  {% else %}
   <li><span>Insights</span></li>
+  {% endif %}
 </ol>
 </nav>
 
@@ -22,20 +51,22 @@
 <section class="page-hero">
 <div class="section-inner">
   <div class="section-label reveal">CLS CRE Blog</div>
-  <h1 class="reveal">Commercial Real Estate Insights</h1>
-  <p class="reveal">Expert analysis on CRE financing, market trends, investment strategies, and industry news from the CLS CRE team.</p>
+  <h1 class="reveal">{{ hero_title }}</h1>
+  <p class="reveal">{{ hero_intro }}</p>
 </div>
 </section>
 
-<!-- CATEGORY FILTER -->
+<!-- CATEGORY NAV -->
 <section class="content-section">
 <div class="section-inner">
   <div class="blog-filters">
-    <button class="blog-filter active" data-cat="all">All</button>
-    {% for cat in categories %}
-    <button class="blog-filter" data-cat="{{ cat|lower|replace(' ','-') }}">{{ cat }}</button>
+    <a class="blog-filter{% if not active_category %} active{% endif %}" href="{{ depth }}blog/index.html">All</a>
+    {% for cat in category_links %}
+    <a class="blog-filter{% if active_category == cat.name %} active{% endif %}" href="{{ depth }}{{ cat.href }}">{{ cat.name }}</a>
     {% endfor %}
   </div>
+
+  <p class="blog-count">Showing {{ page_start }} to {{ page_end }} of {{ total_articles }} articles, newest first</p>
 
   <!-- ARTICLE GRID -->
   <div class="blog-grid">
@@ -52,6 +83,27 @@
     </a>
     {% endfor %}
   </div>
+
+  {% if pagination.total > 1 %}
+  <!-- PAGINATION -->
+  <nav class="blog-pagination" aria-label="Blog pages">
+    {% if pagination.prev %}
+    <a class="pg-btn" href="{{ depth }}{{ pagination.prev }}" rel="prev">Previous</a>
+    {% endif %}
+    {% for item in pagination.pages %}
+    {% if item.ellipsis %}
+    <span class="pg-ellipsis">&hellip;</span>
+    {% elif item.current %}
+    <span class="pg-num pg-current" aria-current="page">{{ item.num }}</span>
+    {% else %}
+    <a class="pg-num" href="{{ depth }}{{ item.href }}">{{ item.num }}</a>
+    {% endif %}
+    {% endfor %}
+    {% if pagination.next %}
+    <a class="pg-btn" href="{{ depth }}{{ pagination.next }}" rel="next">Next</a>
+    {% endif %}
+  </nav>
+  {% endif %}
 </div>
 </section>
 
@@ -59,17 +111,4 @@
 {% set cta_title = 'Have a Deal to Discuss?' %}
 {% set cta_description = 'Get a free, no-obligation quote on your commercial real estate financing. We respond within 24 hours.' %}
 {% include '_contact_cta.html' %}
-
-<script>
-document.querySelectorAll('.blog-filter').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.blog-filter').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const cat=btn.dataset.cat;
-    document.querySelectorAll('.blog-card').forEach(card=>{
-      card.style.display=(cat==='all'||card.dataset.cat===cat)?'':'none';
-    });
-  });
-});
-</script>
 {% endblock %}

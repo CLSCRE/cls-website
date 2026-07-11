@@ -881,28 +881,184 @@ def main():
             })
         print(f"  [OK] property/{prop['slug']}-*.html  ({len(cities)} city pages)")
 
-    # ── 5. Blog Index Page ──────────────────────────────────────────────
+    # ── 5. Blog Index Pages (paginated) ────────────────────────────────
+    # The blog index used to render ALL articles on one page. At 4,451
+    # articles that was 3.2MB of HTML — bad for UX, page speed, and crawl
+    # efficiency. Now paginated: blog/index.html is page 1, then
+    # blog/page/2.html ... blog/page/N.html. The old client-side category
+    # filter is replaced by real category hub pages (also paginated) at
+    # blog/category/{slug}.html + blog/category/{slug}-{n}.html, so every
+    # article stays reachable by crawlers through two link paths.
+    # Every listing page is self-canonical (page 1 canonicalizes to /blog/
+    # as before); rel prev/next links are emitted via the extra_meta block.
     print("\n=== Generating Blog Pages ===")
     tpl_blog_index = env.get_template("blog_index.html")
     categories = sorted(set(a["category"] for a in articles))
-    html = tpl_blog_index.render(
-        **shared,
-        articles=articles,
-        categories=categories,
-        seo={
-            "title": "CRE Insights & Market Analysis | Commercial Lending Solutions",
-            "meta_description": "Expert insights on commercial real estate financing, interest rates, market trends, and investment strategies from Commercial Lending Solutions.",
-        },
-        canonical_path="blog/",
-        depth="../",
+
+    BLOG_PAGE_SIZE = 48
+
+    def _cat_slug(cat):
+        return re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-")
+
+    category_links = [
+        {"name": c, "slug": _cat_slug(c), "href": f"blog/category/{_cat_slug(c)}.html"}
+        for c in categories
+    ]
+
+    def _page_number_items(cur, total, href_for):
+        """Windowed page-number list: 1 2 ... cur-1 cur cur+1 ... N-1 N."""
+        nums = sorted(n for n in {1, 2, cur - 1, cur, cur + 1, total - 1, total}
+                      if 1 <= n <= total)
+        items, prev = [], 0
+        for n in nums:
+            if n - prev > 1:
+                items.append({"ellipsis": True})
+            items.append({"num": n, "current": n == cur, "href": href_for(n)})
+            prev = n
+        return items
+
+    _blog_listing_written = set()
+
+    def _render_blog_listing(listing_articles, *, href_for, out_path_for,
+                             canonical_for, depth_for, seo_for, hero_for,
+                             active_category, active_category_slug,
+                             priority_for):
+        """Render one paginated listing series (main index or one category)."""
+        nonlocal page_count
+        total_pages = max(1, -(-len(listing_articles) // BLOG_PAGE_SIZE))
+        for n in range(1, total_pages + 1):
+            chunk = listing_articles[(n - 1) * BLOG_PAGE_SIZE : n * BLOG_PAGE_SIZE]
+            hero = hero_for(n, total_pages)
+            html = tpl_blog_index.render(
+                **shared,
+                articles=chunk,
+                category_links=category_links,
+                active_category=active_category,
+                active_category_slug=active_category_slug,
+                is_blog_root=(active_category is None and n == 1),
+                pagination={
+                    "current": n,
+                    "total": total_pages,
+                    "prev": href_for(n - 1) if n > 1 else None,
+                    "next": href_for(n + 1) if n < total_pages else None,
+                    # key is "pages", not "items": pagination.items in Jinja
+                    # resolves to dict.items (the method), not the key
+                    "pages": _page_number_items(n, total_pages, href_for),
+                },
+                page_num=n,
+                total_articles=len(listing_articles),
+                page_start=(n - 1) * BLOG_PAGE_SIZE + 1,
+                page_end=(n - 1) * BLOG_PAGE_SIZE + len(chunk),
+                rel_prev=f"{BASE_URL}/{canonical_for(n - 1)}" if n > 1 else None,
+                rel_next=f"{BASE_URL}/{canonical_for(n + 1)}" if n < total_pages else None,
+                hero_title=hero["title"],
+                hero_intro=hero["intro"],
+                seo=seo_for(n, total_pages),
+                canonical_path=canonical_for(n),
+                depth=depth_for(n),
+            )
+            out_path = out_path_for(n)
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(html, encoding="utf-8")
+            _blog_listing_written.add(out_path)
+            page_count += 1
+            sitemap_urls.append({
+                "loc": f"{BASE_URL}/{canonical_for(n)}",
+                "lastmod": TODAY,
+                "changefreq": "weekly" if n == 1 else "monthly",
+                "priority": priority_for(n),
+            })
+        return total_pages
+
+    # Main chronological index: blog/ + blog/page/N.html
+    def _main_href(n):
+        return "blog/index.html" if n == 1 else f"blog/page/{n}.html"
+
+    def _main_seo(n, total):
+        if n == 1:
+            return {
+                "title": "CRE Insights & Market Analysis | Commercial Lending Solutions",
+                "meta_description": "Expert insights on commercial real estate financing, interest rates, market trends, and investment strategies from Commercial Lending Solutions.",
+            }
+        return {
+            "title": f"CRE Insights & Market Analysis | Page {n} of {total} | Commercial Lending Solutions",
+            "meta_description": f"Commercial real estate financing insights from Commercial Lending Solutions. Page {n} of {total}, newest articles first.",
+        }
+
+    def _main_hero(n, total):
+        intro = ("Expert analysis on CRE financing, market trends, investment "
+                 "strategies, and industry news from the CLS CRE team.")
+        if n > 1:
+            intro += f" Page {n} of {total}."
+        return {"title": "Commercial Real Estate Insights", "intro": intro}
+
+    _main_pages = _render_blog_listing(
+        articles,
+        href_for=_main_href,
+        out_path_for=lambda n: WEBSITE_DIR / "blog" / ("index.html" if n == 1 else f"page/{n}.html"),
+        canonical_for=lambda n: "blog/" if n == 1 else f"blog/page/{n}.html",
+        depth_for=lambda n: "../" if n == 1 else "../../",
+        seo_for=_main_seo,
+        hero_for=_main_hero,
+        active_category=None,
+        active_category_slug=None,
+        priority_for=lambda n: "0.8" if n == 1 else "0.3",
     )
-    (WEBSITE_DIR / "blog" / "index.html").write_text(html, encoding="utf-8")
-    page_count += 1
-    sitemap_urls.append({
-        "loc": f"{BASE_URL}/blog/",
-        "lastmod": TODAY, "changefreq": "weekly", "priority": "0.8",
-    })
-    print(f"  [OK] blog/index.html  ({len(articles)} articles)")
+    print(f"  [OK] blog/index.html + blog/page/*.html  ({len(articles)} articles across {_main_pages} pages)")
+
+    # Category hub pages: blog/category/{slug}.html + blog/category/{slug}-N.html
+    _cat_pages_total = 0
+    for _cl in category_links:
+        _cat_name, _slug = _cl["name"], _cl["slug"]
+        _cat_articles = [a for a in articles if a["category"] == _cat_name]
+        _cat_count = len(_cat_articles)
+        # Multiword categories read as a phrase ("Rate Commentary"); single
+        # words ("Educational") need a noun for the H1.
+        _cat_h1 = _cat_name if " " in _cat_name else f"{_cat_name} Articles"
+
+        def _cat_href(n, s=_slug):
+            return f"blog/category/{s}.html" if n == 1 else f"blog/category/{s}-{n}.html"
+
+        def _cat_seo(n, total, cat=_cat_name, count=_cat_count):
+            if n == 1:
+                return {
+                    "title": f"{cat} | CRE Insights | Commercial Lending Solutions",
+                    "meta_description": f"All {count} {cat} articles from Commercial Lending Solutions. Commercial real estate financing analysis, newest first.",
+                }
+            return {
+                "title": f"{cat} | Page {n} of {total} | Commercial Lending Solutions",
+                "meta_description": f"{cat} articles from Commercial Lending Solutions. Page {n} of {total}, newest articles first.",
+            }
+
+        def _cat_hero(n, total, h1=_cat_h1, cat=_cat_name, count=_cat_count):
+            intro = (f"All {count} {cat} articles from the CLS CRE team, "
+                     "newest first.")
+            if n > 1:
+                intro += f" Page {n} of {total}."
+            return {"title": h1, "intro": intro}
+
+        _cat_pages_total += _render_blog_listing(
+            _cat_articles,
+            href_for=_cat_href,
+            out_path_for=lambda n, s=_slug: WEBSITE_DIR / "blog" / "category" / (f"{s}.html" if n == 1 else f"{s}-{n}.html"),
+            canonical_for=_cat_href,
+            depth_for=lambda n: "../../",
+            seo_for=_cat_seo,
+            hero_for=_cat_hero,
+            active_category=_cat_name,
+            active_category_slug=_slug,
+            priority_for=lambda n: "0.4" if n == 1 else "0.3",
+        )
+    print(f"  [OK] blog/category/*.html  ({len(category_links)} categories across {_cat_pages_total} pages)")
+
+    # Remove stale listing pages (e.g. after the article count shrinks or a
+    # category disappears) so old paginated URLs never linger as orphans.
+    for _dir in (WEBSITE_DIR / "blog" / "page", WEBSITE_DIR / "blog" / "category"):
+        if _dir.exists():
+            for _old in _dir.glob("*.html"):
+                if _old not in _blog_listing_written:
+                    _old.unlink()
+                    print(f"  [cleanup] Removed stale blog listing {_old.name}")
 
     # ── 6. Blog Article Pages ─────────────────────────────────────────
     # Featured cities for cross-links (mix of large and emerging markets)
