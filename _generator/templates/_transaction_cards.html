@@ -6,7 +6,7 @@
   <p class="section-desc reveal">{{ txn_desc|default('A selection of deals we have closed in this category.') }}</p>
   <div class="txn-grid">
     {% for txn in transactions[:6] %}
-    <div class="txn-card reveal">
+    <a class="txn-card reveal" href="{{ depth }}{{ txn.target_url|default('track-record.html') }}">
       <img src="{{ depth }}{{ txn.image }}" alt="{{ txn.property_type }} - {{ txn.city }}, {{ txn.state }}" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge {{ txn.category }}">{{ txn.category|replace('perm','Permanent')|replace('constr','Construction')|replace('bridge','Bridge') }}</div>
@@ -15,7 +15,7 @@
         <div class="txn-loc">{{ txn.city }}, {{ txn.state }}</div>
         <div class="txn-summary">{{ txn.summary }}</div>
       </div>
-    </div>
+    </a>
     {% endfor %}
   </div>
 </div>

@@ -33,8 +33,52 @@
     <span aria-hidden="true">&middot;</span>
     <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
   </div>
-  <p class="reveal">Commercial Lending Solutions is headquartered on Wilshire Boulevard, and Los Angeles is the market we know building by building: which corridors are RSO, where the soft-story stock sits, what Measure ULA does to your exit, and which lenders actually want each submarket. This hub is the map: {{ hood_count }} neighborhood apartment financing pages, deep guides to the rules that move LA deal math, and tools you will not find anywhere else.</p>
+  <p class="reveal">Commercial Lending Solutions is headquartered on Wilshire Boulevard, and Los Angeles is the market we know building by building: which corridors are RSO, where the soft-story stock sits, what Measure ULA does to your exit, and which lenders actually want each submarket. This hub is the map: {{ hood_count }} apartment neighborhoods, {{ industrial_count }} industrial submarkets, {{ retail_count }} retail corridors, deep guides to construction and the rules that move LA deal math, and tools you will not find anywhere else.</p>
   <a href="{{ depth }}apply.html" class="btn-primary reveal">Get an LA Deal Quote &rarr;</a>
+</div>
+</section>
+
+<!-- PERSONA PICKER -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Start Here</div>
+  <h2 class="section-title reveal">What Kind of LA Deal Are You Working On?</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}los-angeles/investors.html" class="cross-link-card reveal" style="border-color:var(--green)">
+      <div class="cl-title">Investors</div>
+      <div class="cl-sub">Acquisition, value-add, and income financing across property types</div>
+    </a>
+    <a href="{{ depth }}los-angeles/developers.html" class="cross-link-card reveal" style="border-color:var(--green)">
+      <div class="cl-title">Developers</div>
+      <div class="cl-sub">Ground-up construction, TOC, ED1, ARO, and the takeout</div>
+    </a>
+    <a href="{{ depth }}los-angeles/owner-users.html" class="cross-link-card reveal" style="border-color:var(--green)">
+      <div class="cl-title">Owner-Users</div>
+      <div class="cl-sub">SBA financing to buy the building your business runs from</div>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- PROPERTY VERTICALS -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">By Property Type</div>
+  <h2 class="section-title reveal">LA Financing by Property Type and Submarket</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}multifamily/la/index.html" class="cross-link-card reveal">
+      <div class="cl-title">Multifamily</div>
+      <div class="cl-sub">{{ hood_count }} neighborhoods, rent-regulation-aware</div>
+    </a>
+    <a href="{{ depth }}industrial/la/index.html" class="cross-link-card reveal">
+      <div class="cl-title">Industrial</div>
+      <div class="cl-sub">{{ industrial_count }} submarkets, South Bay to the Valley</div>
+    </a>
+    <a href="{{ depth }}retail/la/index.html" class="cross-link-card reveal">
+      <div class="cl-title">Retail</div>
+      <div class="cl-sub">{{ retail_count }} corridors, Melrose to Ventura Blvd</div>
+    </a>
+  </div>
 </div>
 </section>
 
@@ -64,14 +108,15 @@
 </div>
 </section>
 
-<!-- GUIDES -->
-<section class="content-section alt">
+<!-- GUIDES BY CATEGORY -->
+{% for gcat in guide_groups %}
+<section class="content-section {{ 'alt' if loop.index is even }}">
 <div class="section-inner">
-  <div class="section-label reveal">The Rules of the Game</div>
-  <h2 class="section-title reveal">Los Angeles Deal Guides</h2>
-  <p class="section-desc reveal">The regulations that change LA loan structures, written by a broker who works around them weekly, with the financing implications competitors' explainers skip.</p>
+  <div class="section-label reveal">{{ gcat.category }}</div>
+  <h2 class="section-title reveal">{{ gcat.category }}</h2>
+  {% if loop.first %}<p class="section-desc reveal">The regulations that change LA loan structures, written by a broker who works around them weekly, with the financing implications competitors' explainers skip.</p>{% endif %}
   <div class="cross-link-grid">
-    {% for g in guides %}
+    {% for g in gcat.guides %}
     <a href="{{ depth }}los-angeles/{{ g.slug }}.html" class="cross-link-card reveal">
       <div class="cl-title">{{ g.title }}</div>
       <div class="cl-sub">{{ g.category }}</div>
@@ -80,6 +125,7 @@
   </div>
 </div>
 </section>
+{% endfor %}
 
 <!-- NEIGHBORHOODS BY REGION -->
 {% for group in hood_groups %}
@@ -92,6 +138,42 @@
     <a href="{{ depth }}multifamily/la/{{ h.slug }}.html" class="cross-link-card reveal">
       <div class="cl-title">{{ h.name }}</div>
       <div class="cl-sub">Apartment loans &middot; {{ h.jurisdiction }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endfor %}
+
+<!-- INDUSTRIAL BY REGION -->
+{% for group in industrial_groups %}
+<section class="content-section {{ 'alt' if loop.index is even }}">
+<div class="section-inner">
+  <div class="section-label reveal">Industrial Financing</div>
+  <h2 class="section-title reveal">{{ group.region }}</h2>
+  <div class="cross-link-grid">
+    {% for h in group.hoods %}
+    <a href="{{ depth }}industrial/la/{{ h.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ h.name }}</div>
+      <div class="cl-sub">{{ h.product_type }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endfor %}
+
+<!-- RETAIL BY REGION -->
+{% for group in retail_groups %}
+<section class="content-section {{ 'alt' if loop.index is even }}">
+<div class="section-inner">
+  <div class="section-label reveal">Retail Financing</div>
+  <h2 class="section-title reveal">{{ group.region }}</h2>
+  <div class="cross-link-grid">
+    {% for h in group.hoods %}
+    <a href="{{ depth }}retail/la/{{ h.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ h.name }}</div>
+      <div class="cl-sub">{{ h.product_type }}</div>
     </a>
     {% endfor %}
   </div>

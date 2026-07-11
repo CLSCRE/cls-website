@@ -24,6 +24,10 @@ from jinja2 import Environment, FileSystemLoader
 
 from generate_articles import main as generate_articles_main, pacific_today
 import la_vertical
+import la_industrial
+import la_retail
+import la_construction
+import la_personas as la_personas_mod
 
 
 # ── Paths ──────────────────────────────────────────────────────────────
@@ -1390,35 +1394,71 @@ def main():
         print(f"  [OK] {out_rel}")
 
     # ── 9a. Los Angeles Neighborhood Financing Vertical ─────────────────
-    # Hub + 6 deep regulatory/financing guides + neighborhood-by-neighborhood
-    # apartment financing index, one page per submarket (la_vertical.py).
-    # Curated ~30-submarket set, not a mail-merged canonical LA neighborhood
-    # list -- see la_vertical.py module docstring for the scope rationale.
-    # Templates authored 2026-07-10, data + wiring added 2026-07-11.
+    # Round 1 (2026-07-10/11): hub + 6 regulatory guides + neighborhood-by-
+    # neighborhood apartment financing index (la_vertical.py). Curated
+    # ~30-submarket set, not a mail-merged canonical LA neighborhood list --
+    # see la_vertical.py module docstring for the scope rationale.
+    # Round 2 (2026-07-11): + 9 industrial submarkets (la_industrial.py),
+    # 9 retail corridors (la_retail.py), 4 more construction guides folded
+    # into la_vertical.py's guide list, and 3 persona hub pages (investors/
+    # developers/owner-users, la_personas.py) rendered through the same
+    # la_guide.html template at /los-angeles/{slug}.html.
     print("\n=== Generating Los Angeles Vertical ===")
     la_hoods = la_vertical.build_hoods()
     la_hood_groups = la_vertical.build_hood_groups(la_hoods)
-    la_guides = la_vertical.build_guides()
+    la_guides = la_vertical.build_guides() + la_construction.build_guides()
     la_hood_count = len(la_hoods)
+
+    la_industrial_hoods = la_industrial.build_hoods()
+    la_industrial_groups = la_industrial.build_hood_groups(la_industrial_hoods)
+    la_industrial_count = len(la_industrial_hoods)
+
+    la_retail_hoods = la_retail.build_hoods()
+    la_retail_groups = la_retail.build_hood_groups(la_retail_hoods)
+    la_retail_count = len(la_retail_hoods)
+
+    la_personas = la_personas_mod.build_personas()
+
+    # Everything rendered at /los-angeles/{slug}.html shares one URL space
+    # and one related-articles pool, regardless of whether it's a
+    # regulatory guide or a persona hub page.
+    la_articles = la_guides + la_personas
 
     la_dir = WEBSITE_DIR / "los-angeles"
     la_dir.mkdir(exist_ok=True)
     mf_la_dir = WEBSITE_DIR / "multifamily" / "la"
     mf_la_dir.mkdir(parents=True, exist_ok=True)
+    ind_la_dir = WEBSITE_DIR / "industrial" / "la"
+    ind_la_dir.mkdir(parents=True, exist_ok=True)
+    ret_la_dir = WEBSITE_DIR / "retail" / "la"
+    ret_la_dir.mkdir(parents=True, exist_ok=True)
+
+    # Group guides (not personas -- those get their own hero cards) by
+    # category for the hub page, in first-seen order.
+    _la_guide_cats = []
+    for g in la_guides:
+        if g["category"] not in _la_guide_cats:
+            _la_guide_cats.append(g["category"])
+    la_guide_groups = [{"category": c, "guides": [g for g in la_guides if g["category"] == c]}
+                        for c in _la_guide_cats]
 
     # Hub: /los-angeles/index.html
     tpl_la_hub = env.get_template("la_hub.html")
     html = tpl_la_hub.render(
         **shared,
-        guides=la_guides,
+        guide_groups=la_guide_groups,
         hood_groups=la_hood_groups,
         hood_count=la_hood_count,
+        industrial_groups=la_industrial_groups,
+        industrial_count=la_industrial_count,
+        retail_groups=la_retail_groups,
+        retail_count=la_retail_count,
         seo={
             "title": "Los Angeles Commercial Real Estate Financing | Commercial Lending Solutions",
             "meta_description": (
-                "Los Angeles commercial real estate financing hub: RSO and rent-control guides, "
-                "Measure ULA, soft-story retrofits, and apartment loans across "
-                f"{la_hood_count} LA neighborhoods, from a broker headquartered on Wilshire Boulevard."
+                "Los Angeles commercial real estate financing hub: multifamily, industrial, and "
+                "retail by submarket, construction and rent-control guides, and tools, from a "
+                "broker headquartered on Wilshire Boulevard."
             ),
         },
         canonical_path="los-angeles/index.html",
@@ -1432,26 +1472,26 @@ def main():
     })
     print("  [OK] los-angeles/index.html")
 
-    # Guides: /los-angeles/{slug}.html
+    # Guides + personas: /los-angeles/{slug}.html
     tpl_la_guide = env.get_template("la_guide.html")
-    for guide in la_guides:
-        related = la_vertical.related_guides_for(la_guides, guide["slug"])
+    for article in la_articles:
+        related = [a for a in la_articles if a["slug"] != article["slug"]][:3]
         html = tpl_la_guide.render(
             **shared,
-            guide=guide,
+            guide=article,
             related_guides=related,
             hood_count=la_hood_count,
-            seo=guide["seo"],
-            canonical_path=f"los-angeles/{guide['slug']}.html",
+            seo=article["seo"],
+            canonical_path=f"los-angeles/{article['slug']}.html",
             depth="../",
         )
-        (la_dir / f"{guide['slug']}.html").write_text(html, encoding="utf-8")
+        (la_dir / f"{article['slug']}.html").write_text(html, encoding="utf-8")
         page_count += 1
         sitemap_urls.append({
-            "loc": f"{BASE_URL}/los-angeles/{guide['slug']}.html",
+            "loc": f"{BASE_URL}/los-angeles/{article['slug']}.html",
             "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8",
         })
-    print(f"  [OK] los-angeles/*.html  ({len(la_guides)} guides)")
+    print(f"  [OK] los-angeles/*.html  ({len(la_guides)} guides + {len(la_personas)} persona pages)")
 
     # Apartments index: /multifamily/la/index.html
     tpl_la_apt_index = env.get_template("la_apartments_index.html")
@@ -1497,6 +1537,89 @@ def main():
             "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
         })
     print(f"  [OK] multifamily/la/*.html  ({la_hood_count} neighborhood pages)")
+
+    # Industrial index + per-submarket pages: /industrial/la/*.html
+    tpl_la_ind_index = env.get_template("la_industrial_index.html")
+    html = tpl_la_ind_index.render(
+        **shared,
+        hood_groups=la_industrial_groups,
+        hood_count=la_industrial_count,
+        seo={
+            "title": "LA Industrial Loans by Submarket | Commercial Lending Solutions",
+            "meta_description": (
+                f"Industrial financing across {la_industrial_count} Los Angeles submarkets: South "
+                "Bay logistics, Vernon manufacturing, port-adjacent distribution. Bank, bridge, "
+                "SBA, and construction loans."
+            ),
+        },
+        canonical_path="industrial/la/index.html",
+        depth="../../",
+    )
+    (ind_la_dir / "index.html").write_text(html, encoding="utf-8")
+    page_count += 1
+    sitemap_urls.append({
+        "loc": f"{BASE_URL}/industrial/la/index.html",
+        "lastmod": TODAY, "changefreq": "weekly", "priority": "0.9",
+    })
+    tpl_la_ind_hood = env.get_template("la_industrial_page.html")
+    for hood in la_industrial_hoods:
+        nearby = la_industrial.nearby_hoods(la_industrial_hoods, hood["slug"], hood["region"])
+        html = tpl_la_ind_hood.render(
+            **shared,
+            hood=hood,
+            nearby=nearby,
+            seo=hood["seo"],
+            canonical_path=f"industrial/la/{hood['slug']}.html",
+            depth="../../",
+        )
+        (ind_la_dir / f"{hood['slug']}.html").write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/industrial/la/{hood['slug']}.html",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+        })
+    print(f"  [OK] industrial/la/*.html  ({la_industrial_count} submarket pages + 1 index)")
+
+    # Retail index + per-corridor pages: /retail/la/*.html
+    tpl_la_ret_index = env.get_template("la_retail_index.html")
+    html = tpl_la_ret_index.render(
+        **shared,
+        hood_groups=la_retail_groups,
+        hood_count=la_retail_count,
+        seo={
+            "title": "LA Retail Loans by Corridor | Commercial Lending Solutions",
+            "meta_description": (
+                f"Retail financing across {la_retail_count} Los Angeles corridors: Melrose, "
+                "Abbot Kinney, Ventura Blvd, and more. Net-lease, bridge, SBA, and construction loans."
+            ),
+        },
+        canonical_path="retail/la/index.html",
+        depth="../../",
+    )
+    (ret_la_dir / "index.html").write_text(html, encoding="utf-8")
+    page_count += 1
+    sitemap_urls.append({
+        "loc": f"{BASE_URL}/retail/la/index.html",
+        "lastmod": TODAY, "changefreq": "weekly", "priority": "0.9",
+    })
+    tpl_la_ret_hood = env.get_template("la_retail_page.html")
+    for hood in la_retail_hoods:
+        nearby = la_retail.nearby_hoods(la_retail_hoods, hood["slug"], hood["region"])
+        html = tpl_la_ret_hood.render(
+            **shared,
+            hood=hood,
+            nearby=nearby,
+            seo=hood["seo"],
+            canonical_path=f"retail/la/{hood['slug']}.html",
+            depth="../../",
+        )
+        (ret_la_dir / f"{hood['slug']}.html").write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/retail/la/{hood['slug']}.html",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+        })
+    print(f"  [OK] retail/la/*.html  ({la_retail_count} corridor pages + 1 index)")
 
     # ── 9b. State Hub Pages ─────────────────────────────────────────
     # /states/{slug}.html: one deep hub per state (all 50 + DC), the top
@@ -1700,7 +1823,7 @@ def main():
     _VERTICAL_SECTIONS = {
         "affordable-housing", "industrial", "multifamily", "commercial",
         "life-company", "data-centers", "medical-office", "self-storage",
-        "senior-living", "los-angeles",
+        "senior-living", "los-angeles", "retail",
     }
 
     def _categorize(url):
@@ -1725,6 +1848,8 @@ def main():
             return "states"
         if path.startswith("glossary/"):
             return "glossary"
+        if path.startswith("los-angeles/"):
+            return "los-angeles"
         _first = path.split("/")[0]
         if _first in _VERTICAL_SECTIONS:
             return _first  # -> sitemap-life-company.xml, sitemap-multifamily.xml, ...

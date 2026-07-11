@@ -2,26 +2,21 @@
  * Commercial Lending Solutions - clscre.com tracking
  *
  * Fires events on:
- *   - Contact clicks (mailto:, tel:) for ANY address (legacy compat)
- *   - "Web-sourced lead" specifically for the dedicated website-only
- *     channels (loans@clscre.com + 310-708-0690). These channels are
- *     reserved for clscre.com surfaces only, so a click there proves
- *     web origin and is the primary conversion event for paid ads.
+ *   - Contact clicks (mailto:, tel:, sms:) for ANY address (legacy compat)
+ *   - "Web-sourced lead" for website-only channels (loans@clscre.com,
+ *     phone 310-708-0690, text 310-758-3064)
  *
  * Events emitted (both dataLayer for GTM and gtag for direct GA4/Ads):
- *   - contact_click            - any tel:/mailto: click (legacy)
- *   - web_sourced_lead         - clicks on loans@ or 310-708-0690 only
+ *   - contact_click            - any tel:/mailto:/sms: click (legacy)
+ *   - web_sourced_lead         - website-only phone / SMS / email channels
  *   - tool_engagement          - 30+ second engagement on a calculator
- *   - exit_intent_engaged      - exit intent CTA click
  *   - (Ads conversion)         - Outlook "Book a Call" booking-link clicks
- *                                report straight to Google Ads action
- *                                7652984790 via its conversion label; the
- *                                GA4 book_a_call event stays GTM-owned so
- *                                it isn't double-counted in GA4
+ *                                report straight to Google Ads via send_to;
+ *                                GA4 book_a_call stays GTM-owned
  *
  * Configure in Google Ads:
  *   - Primary conversion: web_sourced_lead (Sources: GA4 imported event)
- *   - Secondary (form): generate_lead (already fired by form onclick)
+ *   - Secondary (form): generate_lead (already fired by form handlers)
  *   - Secondary (soft): tool_engagement (for retargeting / awareness)
  *
  * Configure in GA4:
@@ -54,21 +49,27 @@
   }
   window.gtag('config', ADS_ID);
 
-  // Website-only channel identifiers. Any contact click matching these
-  // values is provably web-sourced and triggers the web_sourced_lead
-  // conversion event in addition to the generic contact_click.
-  var WEBSITE_ONLY_PHONES = ['3107080690', '+13107080690', '310-708-0690', '310.708.0690'];
+  // Website-only channel identifiers. Match on last-10 digits so +1 /
+  // punctuation variants still count as web-sourced.
+  var WEBSITE_ONLY_PHONE_LAST10 = ['3107080690'];
+  var WEBSITE_ONLY_SMS_LAST10 = ['3107583064'];
   var WEBSITE_ONLY_EMAILS = ['loans@clscre.com'];
 
-  function normalizePhone(value) {
-    return (value || '').replace(/[^\d+]/g, '');
+  function digitsOnly(value) {
+    return (value || '').replace(/\D/g, '');
+  }
+
+  function last10(value) {
+    var d = digitsOnly(value);
+    return d.length <= 10 ? d : d.slice(-10);
   }
 
   function isWebsiteOnlyPhone(value) {
-    var n = normalizePhone(value);
-    return WEBSITE_ONLY_PHONES.some(function (p) {
-      return normalizePhone(p) === n;
-    });
+    return WEBSITE_ONLY_PHONE_LAST10.indexOf(last10(value)) !== -1;
+  }
+
+  function isWebsiteOnlySms(value) {
+    return WEBSITE_ONLY_SMS_LAST10.indexOf(last10(value)) !== -1;
   }
 
   function isWebsiteOnlyEmail(value) {
@@ -77,12 +78,8 @@
   }
 
   function fireEvent(eventName, params) {
-    // Push to dataLayer for GTM-mediated routing
     var payload = Object.assign({ event: eventName }, params || {});
     window.dataLayer.push(payload);
-
-    // Fire gtag directly so GA4 / Google Ads can ingest without GTM tag config.
-    // gtag is loaded by GTM, GA4 base tag, or Google Ads tag manually.
     if (typeof window.gtag === 'function') {
       window.gtag('event', eventName, params || {});
     }
@@ -119,6 +116,29 @@
             currency: 'USD'
           });
         }
+      } else if (href.indexOf('sms:') === 0) {
+        // sms:+13107583064 or sms:+13107583064?body=...
+        var smsTarget = href.replace('sms:', '').split('?')[0];
+        var webSourcedSms = isWebsiteOnlySms(smsTarget);
+
+        fireEvent('contact_click', {
+          contact_method: 'sms',
+          contact_value: smsTarget,
+          page_path: pagePath,
+          link_text: linkText,
+          website_only_channel: webSourcedSms
+        });
+
+        if (webSourcedSms) {
+          fireEvent('web_sourced_lead', {
+            channel: 'sms_3107583064',
+            contact_value: smsTarget,
+            page_path: pagePath,
+            link_text: linkText,
+            value: 1.0,
+            currency: 'USD'
+          });
+        }
       } else if (href.indexOf('mailto:') === 0) {
         var email = href.replace('mailto:', '').split('?')[0];
         var webSourcedEmail = isWebsiteOnlyEmail(email);
@@ -142,10 +162,7 @@
           });
         }
       } else if (href.indexOf('outlook.office.com/bookwithme') !== -1) {
-        // "Book a Call" — report the Google Ads conversion directly.
-        // The GA4 book_a_call event for this click is fired by GTM, so
-        // only the Ads side is reported here. The action counts once per
-        // ad click (ONE_PER_CLICK), so duplicate pings are deduplicated.
+        // Book a Call — Ads conversion only; GA4 book_a_call is GTM-owned.
         if (typeof window.gtag === 'function') {
           window.gtag('event', 'conversion', {
             send_to: BOOK_A_CALL_SEND_TO,
@@ -160,9 +177,7 @@
     { passive: true }
   );
 
-  // Tool engagement: fire if the user spends 30+ seconds on a calculator
-  // page AND interacts with at least one input. Useful for retargeting and
-  // for the Tools Soft Entry Google Ads campaign.
+  // Tool engagement: 30+ seconds on /tools/ with at least one input interaction.
   if (location.pathname.indexOf('/tools/') === 0) {
     var startedAt = Date.now();
     var hasInteracted = false;

@@ -62,7 +62,7 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 
 /* ===== TRANSACTION CARDS ===== */
 .txn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.txn-card{background:var(--white);border-radius:10px;border:1px solid var(--gray-200);transition:all .3s;overflow:hidden}
+.txn-card{background:var(--white);border-radius:10px;border:1px solid var(--gray-200);transition:all .3s;overflow:hidden;display:block;text-decoration:none;color:inherit;cursor:pointer}
 .txn-card:hover{border-color:var(--green);box-shadow:0 8px 24px rgba(0,0,0,.06);transform:translateY(-3px)}
 .txn-photo{width:100%;height:200px;object-fit:cover;display:block;background:var(--gray-100)}
 .txn-body{padding:20px}
