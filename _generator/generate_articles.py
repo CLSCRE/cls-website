@@ -371,6 +371,22 @@ def main():
             return prev
         return min(computed, today_iso)
 
+    # seo_title/seo_description are hand-curated CTR overrides (see the
+    # durable-title playbook). This dict rebuilds every _generated article
+    # from scratch each run, so any override must be carried forward
+    # explicitly or it silently reverts to the generic fallback title.
+    existing_seo_overrides = {
+        a.get("slug"): {k: a[k] for k in ("seo_title", "seo_description") if a.get(k)}
+        for a in existing_articles
+        if a.get("seo_title") or a.get("seo_description")
+    }
+
+    def carry_seo_overrides(slug, article):
+        overrides = existing_seo_overrides.get(slug)
+        if overrides:
+            article.update(overrides)
+        return article
+
     # ── Setup Jinja2 for content templates ────────────────────────────
     env = Environment(
         loader=FileSystemLoader(str(CONTENT_TEMPLATE_DIR)),
@@ -415,7 +431,7 @@ def main():
             "faqs": build_market_report_faqs(city, data),
             "_generated": True,
         }
-        generated_articles.append(article)
+        generated_articles.append(carry_seo_overrides(article["slug"], article))
         print(f"    [OK] {article['slug']}")
 
     # ── Type B: City × Loan Type Guides (90) ─────────────────────────
@@ -448,7 +464,7 @@ def main():
             "faqs": build_loan_guide_faqs(city, loan, data, loan_key),
             "_generated": True,
         }
-        generated_articles.append(article)
+        generated_articles.append(carry_seo_overrides(article["slug"], article))
         print(f"    [OK] {article['slug']}")
 
     # ── Type C: City × Property Type Guides (90) ─────────────────────
@@ -482,7 +498,7 @@ def main():
             "faqs": build_property_guide_faqs(city, prop, data, prop_key),
             "_generated": True,
         }
-        generated_articles.append(article)
+        generated_articles.append(carry_seo_overrides(article["slug"], article))
         print(f"    [OK] {article['slug']}")
 
     # ── Merge and write ──────────────────────────────────────────────
