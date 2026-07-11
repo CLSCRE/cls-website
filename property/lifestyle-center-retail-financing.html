@@ -629,7 +629,7 @@
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
         window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'generate_lead', form_type: 'newsletter', page_referrer: location.href});
+        window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

@@ -426,7 +426,7 @@
   <h2 class="section-title reveal">Recent Deals Near Kingman, Yuma</h2>
   <p class="section-desc reveal">Selected transactions in and around the Yuma market.</p>
   <div class="txn-grid">
-    <a class="txn-card reveal" href="../../property/industrial-phoenix.html">
+    <a class="txn-card reveal" href="../../blog/case-study-75m-industrial-warehouse-phoenix.html">
       <img src="../../images/deals/aerial-industrial-001.jpg" alt="Industrial Warehouse - Phoenix, AZ" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge perm">Permanent</div>
@@ -564,8 +564,9 @@
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'generate_lead', form_type: 'newsletter', page_referrer: location.href});
+                window.dataLayer = window.dataLayer || [];
+                // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+                window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

@@ -240,7 +240,7 @@
   <h2 class="section-title reveal">Retail Deals Near Dayton</h2>
   <p class="section-desc reveal">Selected retail transactions in and around the Dayton-Kettering market.</p>
   <div class="txn-grid">
-    <a class="txn-card reveal" href="../property/retail-toledo.html">
+    <a class="txn-card reveal" href="../blog/case-study-19m-net-lease-pharmacy-portfolio.html">
       <img src="../images/deals/aerial-retail-040.jpg" alt="Net Lease Pharmacies - Sylvania, OH" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge perm">Permanent</div>
@@ -596,7 +596,7 @@
       </div>
       <div class="rm-region-col ">
         <div class="rm-region-name">Mountain West</div>
-        <div class="rm-region-blurb">Sun Belt growth corridors with sustained in-migration and yield premiums.</div>
+        <div class="rm-region-blurb">High-growth Rocky Mountain and Intermountain markets with sustained in-migration and yield premiums.</div>
         <ul class="rm-city-list">
           <li><a href="../markets/albuquerque/">Albuquerque<span class="rm-city-state">, NM</span></a></li>
           <li><a href="../markets/billings/">Billings<span class="rm-city-state">, MT</span></a></li>
@@ -922,8 +922,9 @@
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'generate_lead', form_type: 'newsletter', page_referrer: location.href});
+                window.dataLayer = window.dataLayer || [];
+                // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+                window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

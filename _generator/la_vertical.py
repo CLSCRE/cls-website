@@ -1195,23 +1195,29 @@ RAW_GUIDES = [
         ),
         "key_facts": [
             {"label": "Effective date", "value": "April 1, 2023"},
-            {"label": "Tier 1 (up to $5M)", "value": "0.45% standard transfer tax"},
-            {"label": "Tier 2 ($5M-$10M)", "value": "4.05% combined rate"},
-            {"label": "Tier 3 (over $10M)", "value": "5.55% combined rate"},
+            {"label": "Tier 1 (up to ~$5M)", "value": "0.56% standard city + county transfer tax"},
+            {"label": "Tier 2 (~$5M-$10M)", "value": "roughly 4.56% combined rate"},
+            {"label": "Tier 3 (over ~$10M)", "value": "roughly 6.06% combined rate"},
         ],
         "sections": [
             {
                 "heading": "The Tax Tiers",
                 "body": (
                     "Measure ULA applies only to property sales within the City of Los Angeles, not "
-                    "countywide. Sales up to $5,000,000 pay the standard combined city and county "
-                    "documentary transfer tax of roughly 0.45%. Sales between $5,000,001 and $10,000,000 "
-                    "pay a combined rate of roughly 4.05%. Sales over $10,000,000 pay a combined rate of "
-                    "roughly 5.55%.\n\n"
-                    "On a $30 million sale, that top tier works out to roughly $1,665,000 in transfer "
-                    "tax, due at closing regardless of the seller's basis or gain. For a leveraged "
-                    "apartment building, that is real money coming off the top of proceeds before the "
-                    "loan is paid off and equity is returned.\n\n"
+                    "countywide. Every sale already pays the standard combined city and county "
+                    "documentary transfer tax of roughly 0.56% (0.45% city plus 0.11% county). On top of "
+                    "that base tax, Measure ULA adds 4% for the portion of a sale in its middle tier and "
+                    "5.5% for its top tier, for an all-in combined rate of roughly 4.56% and 6.06% "
+                    "respectively.\n\n"
+                    "The original 2023 tier breakpoints were $5,000,000 and $10,000,000, and the ordinance "
+                    "indexes those thresholds for inflation each year, so the current breakpoints run "
+                    "somewhat higher than the original figures. Sellers should confirm the exact "
+                    "current-year thresholds and combined rate with escrow or counsel before relying on a "
+                    "specific number.\n\n"
+                    "On a $30 million sale at the roughly 6.06% top-tier combined rate, transfer tax runs "
+                    "in the neighborhood of $1,800,000, due at closing regardless of the seller's basis or "
+                    "gain. For a leveraged apartment building, that is real money coming off the top of "
+                    "proceeds before the loan is paid off and equity is returned.\n\n"
                     "The tax has been challenged in court multiple times since it passed. It remains in "
                     "effect as of this writing, but sellers should confirm current status and exact "
                     "thresholds with escrow or counsel before finalizing a sale, since litigation and "
@@ -1291,7 +1297,7 @@ RAW_GUIDES = [
             "h1": "Financing Soft-Story Retrofits on LA Apartment Buildings",
             "title": "Soft-Story Retrofit Financing Guide | Commercial Lending Solutions",
             "meta_description": (
-                "How LA's soft-story (Ordinance 183893) and non-ductile concrete (Ordinance 186652) "
+                "How LA's soft-story and non-ductile concrete (Ordinance 183893) "
                 "seismic retrofit rules affect apartment underwriting, and how to finance the work."
             ),
         },
@@ -1304,7 +1310,7 @@ RAW_GUIDES = [
         "key_facts": [
             {"label": "Soft-story ordinance", "value": "183893, pre-1978 wood-frame"},
             {"label": "Typical soft-story retrofit cost", "value": "$60,000-$130,000+ per building"},
-            {"label": "Non-ductile concrete ordinance", "value": "186652, pre-1977 concrete"},
+            {"label": "Non-ductile concrete ordinance", "value": "183893 (separate division), pre-1977 concrete"},
             {"label": "Non-ductile retrofit cost", "value": "$80-$120 per square foot"},
         ],
         "sections": [
@@ -1317,8 +1323,8 @@ RAW_GUIDES = [
                     "building still non-compliant is a real, present diligence flag rather than a future "
                     "deadline to plan around. Typical retrofit cost runs $60,000 to $130,000 or more "
                     "depending on building size and configuration.\n\n"
-                    "A separate ordinance, 186652, targets non-ductile concrete buildings built before "
-                    "1977, which are structurally distinct from wood-frame soft-story buildings and "
+                    "A separate division of the same ordinance targets non-ductile concrete buildings "
+                    "built before 1977, which are structurally distinct from wood-frame soft-story buildings and "
                     "generally far more expensive to fix: retrofit costs can run $80 to $120 per square "
                     "foot, and on some buildings that number can exceed the value of the building itself.\n\n"
                     "A third category, unreinforced masonry (URM) buildings under the city's Division 88 "

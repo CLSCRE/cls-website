@@ -188,7 +188,7 @@
   </div>
   <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 24px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0">
     <strong style="color:var(--navy)">Quick answer:</strong>
-    Commercial Lending Solutions arranges apartment loans in Unincorporated LA County (Marina del Rey, Altadena, East LA) from $1 million to over $100 million: agency, bank, credit union, bridge, and construction debt, underwritten to this submarket's actual rent regulation and stock profile. LA is our home market; we finance Unincorporated LA County (Marina del Rey, Altadena, East LA) buildings from an office 20 minutes away, not a call center three time zones over.
+    Commercial Lending Solutions arranges apartment loans in Unincorporated LA County (Marina del Rey, Altadena, East LA) from $1 million to over $100 million: agency, bank, credit union, bridge, and construction debt, underwritten to this submarket's actual rent regulation and stock profile. LA is our home market; we finance Unincorporated LA County (Marina del Rey, Altadena, East LA) buildings from an LA office, not a call center three time zones over.
   </div>
   <p class="reveal">Unincorporated Los Angeles County pockets span an unusually wide range, from high-value Marina del Rey to more modest Altadena and East LA, all sharing county (not City of LA) planning, permitting, and rent-stabilization jurisdiction. This is a genuinely mixed submarket where basis and building character depend heavily on the specific pocket.</p>
   <p class="reveal">What unites these areas for financing purposes is jurisdictional: entitlements, permits, and rent-regulation questions all run through the county rather than the City of Los Angeles, which changes which offices and timelines a lender's diligence team should expect.</p>
@@ -346,8 +346,9 @@
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'generate_lead', form_type: 'newsletter', page_referrer: location.href});
+                window.dataLayer = window.dataLayer || [];
+                // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+                window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

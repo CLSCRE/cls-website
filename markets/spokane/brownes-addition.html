@@ -426,7 +426,7 @@
   <h2 class="section-title reveal">Recent Deals Near Browne's Addition, Spokane</h2>
   <p class="section-desc reveal">Selected transactions in and around the Spokane-Spokane Valley market.</p>
   <div class="txn-grid">
-    <a class="txn-card reveal" href="../../property/multifamily-seattle.html">
+    <a class="txn-card reveal" href="../../blog/case-study-60m-ground-up-multifamily-seattle.html">
       <img src="../../images/deals/aerial-multifamily-003.jpg" alt="125-Unit Ground Up - Seattle, WA" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge constr">Construction</div>
@@ -557,8 +557,9 @@
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'generate_lead', form_type: 'newsletter', page_referrer: location.href});
+                window.dataLayer = window.dataLayer || [];
+                // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+                window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

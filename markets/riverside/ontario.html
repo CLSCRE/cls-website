@@ -436,7 +436,7 @@
         <div class="txn-summary">Build-to-suit construction for a national credit tenant in Fairfield, combining development returns with investment-grade lease security.</div>
       </div>
     </a>
-    <a class="txn-card reveal" href="../../property/retail-los-angeles.html">
+    <a class="txn-card reveal" href="../../blog/case-study-43m-build-to-suit-inglewood.html">
       <img src="../../images/deals/aerial-retail-009.jpg" alt="Single Tenant Net Lease - Inglewood, CA" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge constr">Construction</div>
@@ -456,7 +456,7 @@
         <div class="txn-summary">Manufactured housing community portfolio refinancing in one of the nation's tightest and most expensive housing markets.</div>
       </div>
     </a>
-    <a class="txn-card reveal" href="../../property/industrial-los-angeles.html">
+    <a class="txn-card reveal" href="../../blog/case-study-34m-industrial-distribution-commerce-la.html">
       <img src="../../images/deals/aerial-industrial-014.jpg" alt="Industrial Distribution - Los Angeles, CA" class="txn-photo" loading="lazy" width="400" height="200">
       <div class="txn-body">
         <div class="txn-badge perm">Permanent</div>
@@ -578,8 +578,9 @@
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'generate_lead', form_type: 'newsletter', page_referrer: location.href});
+                window.dataLayer = window.dataLayer || [];
+                // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+                window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

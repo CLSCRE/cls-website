@@ -219,7 +219,7 @@
 <div class="section-inner">
   <div class="section-label reveal">Mountain West</div>
   <h2 class="section-title reveal">Mountain West</h2>
-  <p class="section-desc reveal">Sun Belt growth corridors with sustained in-migration and yield premiums.</p>
+  <p class="section-desc reveal">High-growth Rocky Mountain and Intermountain markets with sustained in-migration and yield premiums.</p>
   <div class="cross-link-grid">
     <a href="../states/arizona.html" class="cross-link-card reveal">
       <div class="cl-title">Arizona</div>
@@ -503,8 +503,9 @@
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'generate_lead', form_type: 'newsletter', page_referrer: location.href});
+                window.dataLayer = window.dataLayer || [];
+                // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+                window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

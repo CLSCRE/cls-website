@@ -188,7 +188,7 @@
   </div>
   <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 24px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0">
     <strong style="color:var(--navy)">Quick answer:</strong>
-    Commercial Lending Solutions arranges apartment loans in Culver City from $1 million to over $100 million: agency, bank, credit union, bridge, and construction debt, underwritten to this submarket's actual rent regulation and stock profile. LA is our home market; we finance Culver City buildings from an office 20 minutes away, not a call center three time zones over.
+    Commercial Lending Solutions arranges apartment loans in Culver City from $1 million to over $100 million: agency, bank, credit union, bridge, and construction debt, underwritten to this submarket's actual rent regulation and stock profile. LA is our home market; we finance Culver City buildings from an LA office, not a call center three time zones over.
   </div>
   <p class="reveal">Culver City is an independently incorporated city that has become a tech and media hub (Apple, Amazon Studios, HBO among the anchor tenants), with a mix of older regulated apartment buildings and new TOC-eligible construction along the Expo Line corridor. Rent growth has outpaced much of the westside as employment has grown.</p>
   <p class="reveal">Investor demand is strong for both the value-add regulated stock and ground-up TOC product, driven by the employment growth story as much as by the rent-control mechanics.</p>
@@ -346,8 +346,9 @@
         form.style.display = 'none';
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event: 'generate_lead', form_type: 'newsletter', page_referrer: location.href});
+                window.dataLayer = window.dataLayer || [];
+                // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+                window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
     .catch(function() {

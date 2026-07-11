@@ -295,7 +295,7 @@ REGION_ORDER = [
 
 REGION_DESCRIPTIONS = {
     "West Coast": "Pacific gateway markets driving tech, logistics, and entertainment capital flows.",
-    "Mountain West": "Sun Belt growth corridors with sustained in-migration and yield premiums.",
+    "Mountain West": "High-growth Rocky Mountain and Intermountain markets with sustained in-migration and yield premiums.",
     "Texas & Southwest": "America's fastest-growing metros, anchored by energy, tech, and population gains.",
     "Midwest": "Industrial Belt and Plains markets with deep manufacturing and logistics demand.",
     "Southeast": "High-growth Southeast and Sun Belt markets with strong fundamentals across asset classes.",
@@ -1458,7 +1458,7 @@ def main():
             "meta_description": (
                 "Los Angeles commercial real estate financing hub: multifamily, industrial, and "
                 "retail by submarket, construction and rent-control guides, and tools, from a "
-                "broker headquartered on Wilshire Boulevard."
+                "broker headquartered in Los Angeles."
             ),
         },
         canonical_path="los-angeles/index.html",
