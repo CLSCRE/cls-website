@@ -13,6 +13,11 @@
  *   - web_sourced_lead         - clicks on loans@ or 310-708-0690 only
  *   - tool_engagement          - 30+ second engagement on a calculator
  *   - exit_intent_engaged      - exit intent CTA click
+ *   - (Ads conversion)         - Outlook "Book a Call" booking-link clicks
+ *                                report straight to Google Ads action
+ *                                7652984790 via its conversion label; the
+ *                                GA4 book_a_call event stays GTM-owned so
+ *                                it isn't double-counted in GA4
  *
  * Configure in Google Ads:
  *   - Primary conversion: web_sourced_lead (Sources: GA4 imported event)
@@ -26,6 +31,15 @@
 (function () {
   if (typeof document === 'undefined') return;
   window.dataLayer = window.dataLayer || [];
+
+  // Google Ads conversion destination. The on-page gtag block in _base.html
+  // only configures GA4 (G-1S9151E1ZM); send_to targets are dropped unless
+  // the AW destination is registered with this gtag instance too.
+  var ADS_ID = 'AW-17966960701';
+  var BOOK_A_CALL_SEND_TO = ADS_ID + '/TIpaCNaPncEcEL2gqPdC';
+  if (typeof window.gtag === 'function') {
+    window.gtag('config', ADS_ID);
+  }
 
   // Website-only channel identifiers. Any contact click matching these
   // values is provably web-sourced and triggers the web_sourced_lead
@@ -112,6 +126,20 @@
             link_text: linkText,
             value: 1.0,
             currency: 'USD'
+          });
+        }
+      } else if (href.indexOf('outlook.office.com/bookwithme') !== -1) {
+        // "Book a Call" — report the Google Ads conversion directly.
+        // The GA4 book_a_call event for this click is fired by GTM, so
+        // only the Ads side is reported here. The action counts once per
+        // ad click (ONE_PER_CLICK), so duplicate pings are deduplicated.
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'conversion', {
+            send_to: BOOK_A_CALL_SEND_TO,
+            value: 1.0,
+            currency: 'USD',
+            transport_type: 'beacon',
+            page_path: pagePath
           });
         }
       }

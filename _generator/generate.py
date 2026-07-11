@@ -184,6 +184,7 @@ def build_neighborhood_faqs(city, neighborhood, city_data=None):
 STATE_TO_REGION = {
     # West Coast
     "CA": "West Coast", "OR": "West Coast", "WA": "West Coast", "HI": "West Coast",
+    "AK": "West Coast",
     # Mountain West
     "CO": "Mountain West", "UT": "Mountain West", "NV": "Mountain West",
     "ID": "Mountain West", "AZ": "Mountain West", "NM": "Mountain West",
@@ -1115,6 +1116,8 @@ def main():
     tool_pages = [
         ("tool_index.html", "tools/index.html", "tools/", "Calculators & Tools | Commercial Lending Solutions",
          "Free commercial real estate calculators for DSCR, cap rate, and loan payments.", "0.8"),
+        ("tool_qualifier.html", "tools/loan-qualifier.html", "tools/loan-qualifier.html", "What Commercial Loan Do I Qualify For? | Free CRE Tool",
+         "Answer six questions about your deal and see which commercial loan programs fit, with typical rates, terms, and leverage. Free qualifier from CLS CRE.", "0.9"),
         ("tool_dscr.html", "tools/dscr-calculator.html", "tools/dscr-calculator.html", "DSCR Calculator | Commercial Lending Solutions",
          "Free Debt Service Coverage Ratio calculator for commercial real estate.", "0.8"),
         ("tool_caprate.html", "tools/cap-rate-calculator.html", "tools/cap-rate-calculator.html", "Cap Rate Calculator | Commercial Lending Solutions",
@@ -1144,6 +1147,79 @@ def main():
             "lastmod": TODAY, "changefreq": "monthly", "priority": priority,
         })
         print(f"  [OK] {out_rel}")
+
+    # ── 9b. State Hub Pages ─────────────────────────────────────────
+    # /states/{slug}.html: one deep hub per state (all 50 + DC), the top
+    # layer of the hub-and-spoke structure. Data: data/states.json.
+    # Cities are derived from cities.json (state field), so newly added
+    # cities appear on their state page automatically on the next regen.
+    print("\n=== Generating State Pages ===")
+    states = load_json("states.json")
+    tpl_state = env.get_template("state_page.html")
+    states_dir = WEBSITE_DIR / "states"
+    states_dir.mkdir(exist_ok=True)
+
+    cities_by_state = {}
+    for c in cities:
+        cities_by_state.setdefault(c["state"], []).append(c)
+    for _lst in cities_by_state.values():
+        _lst.sort(key=lambda x: x["city"])
+
+    states_by_region = {}
+    for st in states:
+        states_by_region.setdefault(region_for_state(st["abbr"]), []).append(st)
+
+    for st in states:
+        region = region_for_state(st["abbr"])
+        st_cities = cities_by_state.get(st["abbr"], [])
+        related = [s for s in states_by_region.get(region, [])
+                   if s["slug"] != st["slug"]][:7]
+        txns = filter_transactions(transactions, state=st["abbr"])
+        html = tpl_state.render(
+            **shared,
+            state=st,
+            state_cities=st_cities,
+            related_states=related,
+            transactions=txns,
+            seo=st["seo"],
+            canonical_path=f"states/{st['slug']}.html",
+            depth="../",
+            current_region=region,
+        )
+        (states_dir / f"{st['slug']}.html").write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/states/{st['slug']}.html",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8",
+        })
+
+    tpl_states_index = env.get_template("states_index.html")
+    state_groups = []
+    for r in REGION_ORDER:
+        _sts = sorted(states_by_region.get(r, []), key=lambda s: s["name"])
+        if not _sts:
+            continue
+        state_groups.append({
+            "region": r,
+            "blurb": REGION_DESCRIPTIONS.get(r, ""),
+            "states": [{**s, "city_count": len(cities_by_state.get(s["abbr"], []))}
+                       for s in _sts],
+        })
+    html = tpl_states_index.render(
+        **shared,
+        state_groups=state_groups,
+        seo={"title": "Commercial Real Estate Loans by State | CLS CRE",
+             "meta_description": "Commercial real estate loans in all 50 states from $1M to $100M+. State-by-state foreclosure law, recording taxes, and lender coverage. Free quote from CLS CRE."},
+        canonical_path="states/",
+        depth="../",
+    )
+    (states_dir / "index.html").write_text(html, encoding="utf-8")
+    page_count += 1
+    sitemap_urls.append({
+        "loc": f"{BASE_URL}/states/",
+        "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+    })
+    print(f"  [OK] states/*.html  ({len(states)} state pages + 1 index)")
 
     # ── 10. CSS Minification ─────────────────────────────────────────
     print("\n=== Minifying CSS ===")
@@ -1233,6 +1309,8 @@ def main():
             return "research"
         if path.startswith("landing/"):
             return "landing"
+        if path.startswith("states/"):
+            return "states"
         _first = path.split("/")[0]
         if _first in _VERTICAL_SECTIONS:
             return _first  # -> sitemap-life-company.xml, sitemap-multifamily.xml, ...
