@@ -1,0 +1,126 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Debt Yield Calculator","description":"Free debt yield calculator for commercial real estate. Divide NOI by loan amount to see the metric lenders use to cap proceeds, plus typical minimums by lender type.","url":"https://clscre.com/tools/debt-yield-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a good debt yield for commercial real estate?","acceptedAnswer":{"@type":"Answer","text":"Most institutional lenders want a debt yield of 10% or higher, and CMBS credit committees treat 9% to 10% as a common floor for standard property types. Hotels and operationally intensive assets are typically held to higher minimums. Bridge lenders and debt funds accept lower going-in debt yields, often 6% to 7%, when the business plan credibly grows NOI to an acceptable stabilized level."}},{"@type":"Question","name":"How do you calculate debt yield?","acceptedAnswer":{"@type":"Answer","text":"Debt yield equals Net Operating Income divided by the loan amount, expressed as a percentage. For example, $850,000 of NOI on a $10,000,000 loan is an 8.5% debt yield. To find the maximum loan a lender's floor supports, divide NOI by the minimum debt yield: $850,000 / 0.10 = $8,500,000 at a 10% floor."}},{"@type":"Question","name":"Why do lenders use debt yield instead of LTV or DSCR?","acceptedAnswer":{"@type":"Answer","text":"DSCR moves with interest rates and amortization, and LTV moves with appraised value, so both can flatter a deal in a low-rate or aggressively valued market. Debt yield compares property income directly to loan dollars, which makes it immune to rate movements and appraisal assumptions. It answers the purest credit question: if the lender owned the property tomorrow, what return would the income produce on the money lent?"}},{"@type":"Question","name":"Which usually caps my loan first, debt yield or LTV?","acceptedAnswer":{"@type":"Answer","text":"In low-cap-rate markets, debt yield usually binds first. A property trading at a 4.5% cap rate hits a 10% debt yield floor at roughly 45% of value, far below a 65% to 75% LTV limit. In higher-cap-rate markets the LTV or DSCR test tends to bind instead. Maximum-leverage requests in gateway markets often route to debt funds or add mezzanine behind a conservatively sized senior loan for exactly this reason."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"Debt Yield Calculator","item":"https://clscre.com/tools/debt-yield-calculator.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}tools/index.html">Calculators</a></li>
+  <li><span>Debt Yield Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Calculator</div>
+  <h1 class="reveal">Debt Yield Calculator</h1>
+  <p class="reveal">Debt yield is the metric that often caps your loan before LTV does: NOI divided by loan amount. Most institutional lenders want 10% or better. Run your numbers and see the maximum loan each lender floor supports.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Calculate Your Debt Yield</h2>
+      <div class="calc-form">
+        <div class="calc-field">
+          <label for="dyNoi">Net Operating Income (Annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="dyNoi" inputmode="decimal" placeholder="850,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="dyLoan">Loan Amount</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="dyLoan" inputmode="decimal" placeholder="10,000,000"></div>
+        </div>
+        <button class="btn-primary" onclick="calcDY()" style="width:100%;justify-content:center;margin-top:8px">Calculate Debt Yield</button>
+      </div>
+    </div>
+    <div class="calc-result" id="dyResult" style="display:none">
+      <div class="calc-gauge" id="dyGauge">
+        <div class="gauge-value" id="dyValue">--</div>
+        <div class="gauge-label">Debt Yield</div>
+      </div>
+      <div class="calc-detail-grid">
+        <div class="calc-detail"><span class="calc-detail-label">Max Loan at 10% Floor</span><span class="calc-detail-value" id="dyMax10">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Max Loan at 9% Floor</span><span class="calc-detail-value" id="dyMax9">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Max Loan at 8% Floor</span><span class="calc-detail-value" id="dyMax8">--</span></div>
+      </div>
+      <div class="calc-verdict" id="dyVerdict"></div>
+      <div class="calc-thresholds">
+        <h3>Typical Lender Debt Yield Minimums</h3>
+        <div class="threshold-grid">
+          <div class="threshold-item"><span class="threshold-label">CMBS</span><span class="threshold-val">9%&ndash;10%+</span></div>
+          <div class="threshold-item"><span class="threshold-label">Life Insurance</span><span class="threshold-val">9%&ndash;11%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Conventional / Bank</span><span class="threshold-val">9%&ndash;10%</span></div>
+          <div class="threshold-item"><span class="threshold-label">Agency (Fannie/Freddie)</span><span class="threshold-val">Via DSCR/LTV grid</span></div>
+          <div class="threshold-item"><span class="threshold-label">Bridge / Debt Fund</span><span class="threshold-val">6%&ndash;8% going-in</span></div>
+          <div class="threshold-item"><span class="threshold-label">Hotels / Operating Assets</span><span class="threshold-val">11%&ndash;12%+</span></div>
+        </div>
+      </div>
+      <a href="{{ depth }}apply.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Apply for Financing &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- RELATED TOOLS -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">More Calculators</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}tools/loan-qualifier.html" class="cross-link-card reveal"><div class="cl-title">Loan Qualifier</div><div class="cl-sub">Which program fits your deal?</div></a>
+    <a href="{{ depth }}tools/dscr-calculator.html" class="cross-link-card reveal"><div class="cl-title">DSCR Calculator</div><div class="cl-sub">Debt service coverage</div></a>
+    <a href="{{ depth }}tools/noi-calculator.html" class="cross-link-card reveal"><div class="cl-title">NOI Calculator</div><div class="cl-sub">Net operating income</div></a>
+    <a href="{{ depth }}tools/ltv-calculator.html" class="cross-link-card reveal"><div class="cl-title">LTV Calculator</div><div class="cl-sub">Leverage analysis</div></a>
+    <a href="{{ depth }}tools/cap-rate-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cap Rate Calculator</div><div class="cl-sub">Property valuation</div></a>
+  </div>
+</div>
+</section>
+
+{% set faq_title = 'Debt Yield FAQ' %}
+{% set faq_alt = true %}
+{% set faqs = [
+  {"q": "What is a good debt yield for commercial real estate?", "a": "Most institutional lenders want a debt yield of 10% or higher, and CMBS credit committees treat 9% to 10% as a common floor for standard property types. Hotels and operationally intensive assets are typically held to higher minimums. Bridge lenders and debt funds accept lower going-in debt yields, often 6% to 7%, when the business plan credibly grows NOI to an acceptable stabilized level."},
+  {"q": "How do you calculate debt yield?", "a": "Debt yield equals Net Operating Income divided by the loan amount, expressed as a percentage. For example, $850,000 of NOI on a $10,000,000 loan is an 8.5% debt yield. To find the maximum loan a lender's floor supports, divide NOI by the minimum debt yield: $850,000 / 0.10 = $8,500,000 at a 10% floor."},
+  {"q": "Why do lenders use debt yield instead of LTV or DSCR?", "a": "DSCR moves with interest rates and amortization, and LTV moves with appraised value, so both can flatter a deal in a low-rate or aggressively valued market. Debt yield compares property income directly to loan dollars, which makes it immune to rate movements and appraisal assumptions. It answers the purest credit question: if the lender owned the property tomorrow, what return would the income produce on the money lent?"},
+  {"q": "Which usually caps my loan first, debt yield or LTV?", "a": "In low-cap-rate markets, debt yield usually binds first. A property trading at a 4.5% cap rate hits a 10% debt yield floor at roughly 45% of value, far below a 65% to 75% LTV limit. In higher-cap-rate markets the LTV or DSCR test tends to bind instead. Maximum-leverage requests in gateway markets often route to debt funds or add mezzanine behind a conservatively sized senior loan for exactly this reason."}
+] %}
+{% include '_faq_section.html' %}
+
+{% set cta_title = 'Get a Real Lender Quote' %}
+{% set cta_description = 'Calculators give you an estimate. Commercial Lending Solutions sizes your deal against debt yield, DSCR, and LTV across 1,000+ lenders and routes it to the capital sources whose constraints favor your structure.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+function parseNum(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0}
+function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+function calcDY(){
+  var noi=parseNum('dyNoi'),loan=parseNum('dyLoan');
+  if(!noi||!loan)return;
+  var dy=noi/loan*100;
+  document.getElementById('dyValue').textContent=dy.toFixed(2)+'%';
+  document.getElementById('dyMax10').textContent=fmt(noi/0.10);
+  document.getElementById('dyMax9').textContent=fmt(noi/0.09);
+  document.getElementById('dyMax8').textContent=fmt(noi/0.08);
+  var g=document.getElementById('dyGauge');
+  g.className='calc-gauge'+(dy>=10?' gauge-green':dy>=8?' gauge-yellow':' gauge-red');
+  var v=document.getElementById('dyVerdict');
+  if(dy>=10)v.innerHTML='<strong>Strong debt yield.</strong> Your loan request clears the floors most institutional lenders use, including CMBS and life company programs. Debt yield should not be your binding constraint at this sizing.';
+  else if(dy>=8)v.innerHTML='<strong>Workable, but tight for institutional debt.</strong> You clear many bank thresholds but sit below common CMBS and life company floors. Expect proceeds pressure from those lenders, or consider bridge or debt fund capital sized to the stabilized number.';
+  else v.innerHTML='<strong>Below institutional floors.</strong> At this debt yield, most permanent lenders will cut proceeds. Options: reduce the loan request, grow NOI before financing, or use bridge or debt fund capital that underwrites to your stabilized income, then refinance.';
+  document.getElementById('dyResult').style.display='block';
+  if(typeof gtag==='function')gtag('event','calculator_used',{calculator:'debt_yield'});
+}
+</script>
+{% endblock %}

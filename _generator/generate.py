@@ -13,6 +13,7 @@ Generates ~560+ static HTML pages for commercial lending SEO:
 import sys
 sys.stdout.reconfigure(encoding="utf-8")
 
+import hashlib
 import json
 import os
 import re
@@ -40,6 +41,79 @@ TODAY_HUMAN = pacific_today().strftime("%B %Y")  # e.g., "May 2026" — for visi
 def load_json(name: str):
     with open(DATA_DIR / name, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+# ── Asset cache-busting ────────────────────────────────────────────────
+# 2026-07-11: a fix to js/antispam.js shipped but Cloudflare edge + browser
+# caches (Cache-Control: max-age=14400) kept serving the stale file for up
+# to 4 hours, leaving pages blank for visitors after the fix was live.
+# Fix: every local js/css reference in every HTML page carries a
+# ?v=<content-hash> query string derived from the referenced file's bytes.
+# When the asset changes, the hash changes, the URL changes, and Cloudflare/
+# browsers treat it as a brand-new cache key — no purge needed. GitHub Pages
+# ignores the query string, so nothing else has to change.
+#
+# Implemented as a post-generation stamping pass over EVERY *.html on disk
+# (not just template edits) because large parts of the site are written by
+# one-off scripts outside this generator (life-company/, data-centers/,
+# expert-witness/, root pages like index.html, ...). The pass is idempotent:
+# an existing ?v=... is replaced with the current hash, so repeated bot runs
+# only rewrite files whose stamped version actually changed.
+# Standalone run: python generate.py --stamp-assets-only
+
+def compute_asset_versions():
+    """Map 'js/<name>' / 'css/<name>' / 'tools/<name>' -> 10-hex content
+    hash for every .js/.css file under website/js, website/css, and
+    website/tools (calculator scripts live next to their pages)."""
+    versions = {}
+    for sub in ("js", "css", "tools"):
+        d = WEBSITE_DIR / sub
+        if not d.exists():
+            continue
+        for f in sorted(d.iterdir()):
+            if f.is_file() and f.suffix in (".js", ".css"):
+                versions[f"{sub}/{f.name}"] = hashlib.md5(f.read_bytes()).hexdigest()[:10]
+    return versions
+
+
+def stamp_asset_versions():
+    """Rewrite src/href references to local js/css assets in every HTML file
+    so they carry ?v=<content-hash>. Skips external URLs and _generator/."""
+    print("\n=== Stamping asset versions (cache-busting) ===")
+    versions = compute_asset_versions()
+    if not versions:
+        print("  [skip] no js/css assets found")
+        return
+    alt = "|".join(re.escape(k) for k in sorted(versions, key=len, reverse=True))
+    pattern = re.compile(
+        r'((?:src|href)=")([^"]*?)(' + alt + r')(\?v=[0-9a-f]{4,32})?(")'
+    )
+
+    def _sub(m):
+        prefix = m.group(2)
+        # Local refs only: "", "/", "../", "../../", ... Never external CDNs
+        # ("https://x/js/foo.js") and never partial-name matches ("mycss/...").
+        if "//" in prefix or (prefix and not prefix.endswith("/")):
+            return m.group(0)
+        return f'{m.group(1)}{prefix}{m.group(3)}?v={versions[m.group(3)]}{m.group(5)}'
+
+    stamped = scanned = 0
+    for html_path in WEBSITE_DIR.rglob("*.html"):
+        rel = html_path.relative_to(WEBSITE_DIR).as_posix()
+        if rel.startswith(("_generator/", ".git/")):
+            continue
+        scanned += 1
+        try:
+            html = html_path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        new_html = pattern.sub(_sub, html)
+        if new_html != html:
+            html_path.write_text(new_html, encoding="utf-8")
+            stamped += 1
+    print(f"  [OK] {stamped} of {scanned} HTML files updated "
+          f"({len(versions)} assets: " +
+          ", ".join(f"{k}={v}" for k, v in sorted(versions.items())) + ")")
 
 
 def filter_transactions(transactions, loan_slug=None, prop_slug=None, city=None, state=None):
@@ -398,6 +472,10 @@ def main():
         "total_market_count": len(cities),
         "current_date": TODAY,            # ISO date for schema (dateModified, lastReviewed)
         "current_date_human": TODAY_HUMAN, # e.g., "May 2026" — for visible bylines
+        # Footer gate: the site-wide "CRE Glossary" footer link only renders
+        # once data/glossary.json exists and glossary pages actually generate
+        # (otherwise every page would carry a 404 link).
+        "has_glossary": (DATA_DIR / "glossary.json").exists(),
     }
 
     # Track all generated URLs for sitemap
@@ -1288,6 +1366,8 @@ def main():
          "Free cash-on-cash return calculator for commercial real estate. Enter cash invested and annual cash flow to see your return and what counts as good.", "0.8"),
         ("tool_noi.html", "tools/noi-calculator.html", "tools/noi-calculator.html", "NOI Calculator | Commercial Lending Solutions",
          "Free Net Operating Income calculator for commercial real estate. Calculate NOI from income and expenses.", "0.8"),
+        ("tool_debtyield.html", "tools/debt-yield-calculator.html", "tools/debt-yield-calculator.html", "Debt Yield Calculator | Commercial Lending Solutions",
+         "Free debt yield calculator for commercial real estate. NOI divided by loan amount, plus typical lender minimums and the max loan each floor supports.", "0.8"),
     ]
     for tpl_name, out_rel, canonical, title, desc, priority in tool_pages:
         tpl_tool = env.get_template(tpl_name)
@@ -1379,6 +1459,68 @@ def main():
     })
     print(f"  [OK] states/*.html  ({len(states)} state pages + 1 index)")
 
+    # ── 9c. Glossary Pages ──────────────────────────────────────────
+    # /glossary/{slug}.html: deep term pages (definition, formula, worked
+    # example, lender-type usage, FAQs) + /glossary/ index grouped by
+    # category. Data: data/glossary.json. DefinedTerm/DefinedTermSet schema.
+    # GUARDED: data/glossary.json does not exist yet (glossary content is
+    # work-in-progress). Without this guard, the content bot's scheduled
+    # generate.py run crashes on load_json() and the whole regen (pages,
+    # sitemaps, robots.txt) silently stops shipping. The footer link to
+    # /glossary/ is gated on the same condition via shared["has_glossary"].
+    if (DATA_DIR / "glossary.json").exists():
+        print("\n=== Generating Glossary Pages ===")
+        glossary = load_json("glossary.json")
+        tpl_gterm = env.get_template("glossary_term.html")
+        glossary_dir = WEBSITE_DIR / "glossary"
+        glossary_dir.mkdir(exist_ok=True)
+
+        _terms_by_slug = {t["slug"]: t for t in glossary}
+        for t in glossary:
+            related_entries = [_terms_by_slug[s] for s in t.get("related_terms", [])
+                               if s in _terms_by_slug]
+            html = tpl_gterm.render(
+                **shared,
+                term=t,
+                related_term_entries=related_entries,
+                seo=t["seo"],
+                canonical_path=f"glossary/{t['slug']}.html",
+                depth="../",
+            )
+            (glossary_dir / f"{t['slug']}.html").write_text(html, encoding="utf-8")
+            page_count += 1
+            sitemap_urls.append({
+                "loc": f"{BASE_URL}/glossary/{t['slug']}.html",
+                "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+            })
+
+        tpl_gindex = env.get_template("glossary_index.html")
+        _gcat_order = []
+        for t in glossary:
+            if t["category"] not in _gcat_order:
+                _gcat_order.append(t["category"])
+        term_groups = [{"category": c,
+                        "terms": [t for t in glossary if t["category"] == c]}
+                       for c in _gcat_order]
+        html = tpl_gindex.render(
+            **shared,
+            all_terms=glossary,
+            term_groups=term_groups,
+            seo={"title": "Commercial Real Estate Finance Glossary | CLS CRE",
+                 "meta_description": "Every CRE finance term that changes your loan, explained by a working broker: definitions, formulas, worked examples, and what lenders actually require."},
+            canonical_path="glossary/",
+            depth="../",
+        )
+        (glossary_dir / "index.html").write_text(html, encoding="utf-8")
+        page_count += 1
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/glossary/",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+        })
+        print(f"  [OK] glossary/*.html  ({len(glossary)} term pages + 1 index)")
+    else:
+        print("\n=== Glossary Pages: SKIPPED (data/glossary.json not found — WIP) ===")
+
     # ── 10. CSS Minification ─────────────────────────────────────────
     print("\n=== Minifying CSS ===")
     css_dir = WEBSITE_DIR / "css"
@@ -1469,6 +1611,8 @@ def main():
             return "landing"
         if path.startswith("states/"):
             return "states"
+        if path.startswith("glossary/"):
+            return "glossary"
         _first = path.split("/")[0]
         if _first in _VERTICAL_SECTIONS:
             return _first  # -> sitemap-life-company.xml, sitemap-multifamily.xml, ...
@@ -1523,6 +1667,11 @@ Sitemap: {BASE_URL}/sitemap.xml
     (WEBSITE_DIR / "robots.txt").write_text(robots, encoding="utf-8")
     print("  [OK] robots.txt")
 
+    # ── 13. Asset version stamping (cache-busting) ────────────────────
+    # Runs LAST so every page written above (and every page written by
+    # scripts outside this generator) leaves with ?v=<hash> js/css URLs.
+    stamp_asset_versions()
+
     # ── Summary ────────────────────────────────────────────────────────
     print(f"\n{'='*50}")
     print(f"  TOTAL PAGES GENERATED: {page_count}")
@@ -1532,4 +1681,9 @@ Sitemap: {BASE_URL}/sitemap.xml
 
 
 if __name__ == "__main__":
-    main()
+    if "--stamp-assets-only" in sys.argv:
+        # Cache-bust pass only: re-stamp ?v=<hash> on js/css references in
+        # all on-disk HTML without regenerating any pages or sitemaps.
+        stamp_asset_versions()
+    else:
+        main()
