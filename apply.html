@@ -245,8 +245,14 @@
 
   <div class="wizard-header">
     <h1>Apply for Financing</h1>
-    <p>Tell us about your deal. It takes about 2 minutes.</p>
-    <p style="font-size:14px;color:var(--gray-500);margin-top:12px">Prefer to talk first? <a href="https://outlook.office.com/bookwithme/user/c760895536d64481bd17039efdcead26@clscre.com?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;text-decoration:underline">Schedule a call</a> with our team.</p>
+    <p>Tell us about your deal. About 2 minutes. No obligation.</p>
+        <p style="font-size:13px;color:var(--gray-500);margin-top:10px;display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:center">
+          <span>&#10003; 24-hour response</span>
+          <span>&#10003; No upfront fees</span>
+          <span>&#10003; 100% confidential</span>
+          <span>&#10003; $1M+ preferred</span>
+        </p>
+        <p style="font-size:14px;color:var(--gray-500);margin-top:12px">Prefer to talk first? <a href="https://outlook.office.com/bookwithme/user/c760895536d64481bd17039efdcead26@clscre.com?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;text-decoration:underline">Schedule a call</a> or <a href="sms:+13107583064" style="color:var(--green);font-weight:600;text-decoration:underline">text us</a>.</p>
   </div>
 
   <!-- Progress Bar -->
@@ -453,8 +459,9 @@
       <div class="wiz-row">
         <div class="wiz-field" id="f_location">
           <label for="location">Property Address <span class="req">*</span></label>
-          <input type="text" id="location" placeholder="123 Main St, Los Angeles, CA 90012" required>
-          <span class="error-msg">Please enter the full property address</span>
+          <input type="text" id="location" placeholder="City, State or full address" required>
+          <span class="error-msg">Enter a city and state (street optional if under LOI)</span>
+          <div class="field-hint">City + state is enough to start. Full address helps underwriting later.</div>
         </div>
         <div class="wiz-field">
           <label for="property_value">Estimated Property Value</label>
@@ -483,7 +490,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           Back
         </button>
-        <button class="btn-next" id="next2" onclick="goToStep(3)">
+        <button class="btn-next" id="next2" onclick="goToStep(3)" disabled>
           Continue
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
@@ -574,7 +581,7 @@
         <div class="wiz-field" id="f_details">
           <label for="details">Tell us about the deal <span class="req">*</span></label>
           <textarea id="details" rows="5" required placeholder="Briefly describe the deal. What's the property (address or sub-market), what's the business plan (acquisition, refi, value-add, ground-up construction), the sponsor background, any timing pressure, and anything unique about the loan. The more you share, the faster we can match you with the right capital source."></textarea>
-          <div style="font-size:12px;color:var(--gray-500);margin-top:6px"><span id="details_count">0</span> characters (minimum 60 recommended for a usable response)</div>
+          <div style="font-size:12px;color:var(--gray-500);margin-top:6px"><span id="details_count">0</span> / 60 characters (helps us match the right lender faster)</div>
           <span class="error-msg">Please describe the deal in at least 60 characters so we can match you with the right capital source</span>
         </div>
       </div>
@@ -736,6 +743,8 @@
   <div class="phone-cta">
     <p>Prefer to talk to someone?</p>
     <a href="tel:+13107080690">310.708.0690</a>
+    <span style="margin:0 8px;color:var(--gray-400)">·</span>
+    <a href="sms:+13107583064" style="color:var(--green)">Text 310.758.3064</a>
   </div>
 
 </div>
@@ -812,8 +821,16 @@ document.querySelectorAll('.card-option').forEach(card => {
     });
     this.classList.add('selected');
     this.querySelector('input[type="radio"]').checked = true;
-    // Enable next button
-    if (group === 'purpose') document.getElementById('next1').disabled = false;
+    if (group === 'purpose') {
+      document.getElementById('next1').disabled = false;
+      // Auto-advance reduces step-1 abandon
+      setTimeout(function(){ if (currentStep === 1) goToStep(2); }, 280);
+    }
+    if (group === 'property_type') {
+      var n2 = document.getElementById('next2');
+      if (n2) n2.disabled = false;
+    }
+    scheduleDraftSave();
   });
 });
 
@@ -918,8 +935,18 @@ function goToStep(step) {
   // Populate review if step 5
   if (step === 5) populateReview();
 
-  // GA4 tracking (migrating to GTM)
-  if(typeof gtag==='function')gtag('event','wizard_step',{step_number:step,step_name:['purpose','property','loan','contact','review'][step-1]});
+  // GA4 + dataLayer funnel
+  var stepNames = ['purpose','property','loan','contact','review'];
+  var stepName = stepNames[step-1] || ('step_'+step);
+  if (typeof gtag === 'function') gtag('event','wizard_step',{step_number:step,step_name:stepName});
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({event:'wizard_step', step_number:step, step_name:stepName});
+  if (step === 2 && !window._clsFormStartFired) {
+    window._clsFormStartFired = true;
+    if (typeof gtag === 'function') gtag('event','form_start',{form_name:'apply_wizard'});
+    window.dataLayer.push({event:'form_start', form_name:'apply_wizard'});
+  }
+  scheduleDraftSave();
 
   // Scroll to top of wizard
   document.querySelector('.wizard-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -938,13 +965,9 @@ function validateStep(step) {
     const propType = document.querySelector('input[name="property_type"]:checked');
     const loc = document.getElementById('location').value.trim();
     if (!propType) { valid = false; }
-    if (!loc) {
+    // City + state is enough (e.g. "Dallas, TX"); full street optional
+    if (!loc || loc.length < 4) {
       document.getElementById('f_location').classList.add('error');
-      valid = false;
-    } else if (loc.length < 10) {
-      // Must be a reasonable address length
-      document.getElementById('f_location').classList.add('error');
-      document.getElementById('f_location').querySelector('.error-msg').textContent = 'Please enter the full property address';
       valid = false;
     } else {
       document.getElementById('f_location').classList.remove('error');
@@ -958,10 +981,10 @@ function validateStep(step) {
     else document.getElementById('f_loan_type').classList.remove('error');
     if (!tl) { document.getElementById('f_timeline').classList.add('error'); valid = false; }
     else document.getElementById('f_timeline').classList.remove('error');
-    // Minimum loan amount: $250,000
+    // Minimum loan amount: $1,000,000
     const rawAmt = amountDisplay.textContent.replace(/[^0-9]/g, '');
     if (rawAmt && parseInt(rawAmt) < 1000000) {
-      alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
+      showWizardNotice('Our focus is $1M+ CRE loans. For smaller loans, a local bank or credit union is usually a better fit.');
       valid = false;
     }
   }
@@ -1076,7 +1099,9 @@ var _applyLoadTime = Date.now();
 })();
 
 /* --- Submit --- */
+var _applySubmitting = false;
 function submitApplication() {
+  if (_applySubmitting) return;
   // Bot check 1: second honeypot
   var hp2 = document.getElementById('hp2_apply');
   if (hp2 && hp2.value) { window.location.href = 'thank-you.html'; return; }
@@ -1086,6 +1111,9 @@ function submitApplication() {
   // Bot check 3: JS token
   var token = document.getElementById('applyToken');
   if (!token || !token.value || !token.value.startsWith('cls_')) { window.location.href = 'thank-you.html'; return; }
+  _applySubmitting = true;
+  var submitBtn = document.querySelector('.btn-submit');
+  if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Submitting...'; }
 
   // Copy values to hidden form
   const purpose = document.querySelector('input[name="purpose"]:checked');
@@ -1125,14 +1153,19 @@ function submitApplication() {
     document.getElementById('wizardForm').appendChild(fi);
   }
 
-  // GA4 conversion event (migrating to GTM)
-  if(typeof gtag==='function')gtag('event','generate_lead',{
+  // GA4 + dataLayer conversion
+  var leadParams = {
     event_category:'form',
     event_label:'loan_application_wizard',
+    form_type:'apply_wizard',
     loan_amount:amountDisplay.textContent,
     loan_type:document.getElementById('loan_type').value,
     property_type:propType?propType.value:''
-  });
+  };
+  if(typeof gtag==='function') gtag('event','generate_lead', leadParams);
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(Object.assign({event:'generate_lead'}, leadParams));
+  try { localStorage.removeItem('cls_apply_draft_v1'); } catch(e) {}
 
   // Submit the hidden form
   // Apply page uses its own anti-bot (5-step wizard, 10s minimum, honeypot, token)
@@ -1188,6 +1221,142 @@ function removeFile(idx) {
   uploadedFiles.splice(idx, 1);
   renderFileList();
 }
+
+
+/* --- Inline notice (no alert) --- */
+function showWizardNotice(msg) {
+  var el = document.getElementById('wizNotice');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'wizNotice';
+    el.setAttribute('role','status');
+    el.style.cssText = 'margin:0 0 16px;padding:12px 14px;border-radius:8px;background:#FEF3C7;color:#92400E;font-size:13px;line-height:1.45;border:1px solid #FCD34D';
+    var card = document.querySelector('.wizard-card');
+    if (card) card.insertBefore(el, card.firstChild);
+  }
+  el.textContent = msg;
+  el.style.display = 'block';
+  el.scrollIntoView({behavior:'smooth', block:'nearest'});
+  setTimeout(function(){ if (el) el.style.display='none'; }, 8000);
+}
+
+/* --- Draft save / restore (reduce multi-step abandon) --- */
+var DRAFT_KEY = 'cls_apply_draft_v1';
+var _draftTimer = null;
+function scheduleDraftSave() {
+  clearTimeout(_draftTimer);
+  _draftTimer = setTimeout(saveDraft, 400);
+}
+function saveDraft() {
+  try {
+    var purpose = document.querySelector('input[name="purpose"]:checked');
+    var propType = document.querySelector('input[name="property_type"]:checked');
+    var data = {
+      step: currentStep,
+      purpose: purpose ? purpose.value : '',
+      property_type: propType ? propType.value : '',
+      location: (document.getElementById('location')||{}).value || '',
+      property_value: (document.getElementById('property_value')||{}).value || '',
+      units: (document.getElementById('units')||{}).value || '',
+      year_built: (document.getElementById('year_built')||{}).value || '',
+      occupancy: (document.getElementById('occupancy')||{}).value || '',
+      amount: amountDisplay ? amountDisplay.textContent : '',
+      loan_type: (document.getElementById('loan_type')||{}).value || '',
+      timeline: (document.getElementById('timeline')||{}).value || '',
+      noi: (document.getElementById('noi')||{}).value || '',
+      details: (document.getElementById('details')||{}).value || '',
+      first_name: (document.getElementById('first_name')||{}).value || '',
+      last_name: (document.getElementById('last_name')||{}).value || '',
+      email: (document.getElementById('email')||{}).value || '',
+      phone: (document.getElementById('phone')||{}).value || '',
+      company: (document.getElementById('company')||{}).value || '',
+      referral: (document.getElementById('referral')||{}).value || '',
+      savedAt: Date.now()
+    };
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(data));
+  } catch (e) {}
+}
+function restoreDraft() {
+  try {
+    var raw = localStorage.getItem(DRAFT_KEY);
+    if (!raw) return;
+    var data = JSON.parse(raw);
+    if (!data || !data.savedAt || (Date.now() - data.savedAt) > 7*24*3600*1000) {
+      localStorage.removeItem(DRAFT_KEY);
+      return;
+    }
+    function setVal(id, v) {
+      var el = document.getElementById(id);
+      if (el && v != null && v !== '') el.value = v;
+    }
+    function selectCard(name, value, nextId) {
+      if (!value) return;
+      var input = document.querySelector('input[name="'+name+'"][value="'+value.replace(/"/g,'')+'"]');
+      if (!input) return;
+      input.checked = true;
+      var card = input.closest('.card-option');
+      if (card) card.classList.add('selected');
+      if (nextId) {
+        var btn = document.getElementById(nextId);
+        if (btn) btn.disabled = false;
+      }
+    }
+    selectCard('purpose', data.purpose, 'next1');
+    selectCard('property_type', data.property_type, 'next2');
+    setVal('location', data.location);
+    setVal('property_value', data.property_value);
+    setVal('units', data.units);
+    setVal('year_built', data.year_built);
+    setVal('occupancy', data.occupancy);
+    setVal('loan_type', data.loan_type);
+    setVal('timeline', data.timeline);
+    setVal('noi', data.noi);
+    setVal('details', data.details);
+    setVal('first_name', data.first_name);
+    setVal('last_name', data.last_name);
+    setVal('email', data.email);
+    setVal('phone', data.phone);
+    setVal('company', data.company);
+    setVal('referral', data.referral);
+    if (data.amount && typeof slider !== 'undefined' && slider) {
+      var rawAmt = String(data.amount).replace(/[^0-9]/g,'');
+      if (rawAmt) {
+        var num = parseInt(rawAmt, 10);
+        if (num >= 1000000 && num <= 100000000) {
+          slider.value = num;
+          slider.dispatchEvent(new Event('input'));
+        } else if (amountDisplay) {
+          amountDisplay.textContent = data.amount;
+        }
+      }
+    }
+    var resume = Math.min(Math.max(parseInt(data.step,10)||1, 1), 4);
+    if (resume > 1) {
+      currentStep = resume;
+      document.querySelectorAll('.step-panel').forEach(function(panel){ panel.classList.remove('active'); });
+      document.getElementById('step' + currentStep).classList.add('active');
+      document.querySelectorAll('.progress-step').forEach(function(st){
+        var n = parseInt(st.dataset.step,10);
+        st.classList.remove('active','completed');
+        if (n === currentStep) st.classList.add('active');
+        else if (n < currentStep) st.classList.add('completed');
+      });
+      for (var i = 1; i < totalSteps; i++) {
+        var line = document.getElementById('line' + i);
+        if (line) {
+          if (i < currentStep) line.classList.add('filled');
+          else line.classList.remove('filled');
+        }
+      }
+      showWizardNotice('We restored your saved application. Continue where you left off.');
+    }
+  } catch (e) {}
+}
+document.querySelectorAll('.wiz-field input, .wiz-field select, .wiz-field textarea').forEach(function(el){
+  el.addEventListener('change', scheduleDraftSave);
+  el.addEventListener('blur', scheduleDraftSave);
+});
+setTimeout(restoreDraft, 0);
 
 /* --- Nav / scroll --- */
 const nav = document.getElementById('nav');
