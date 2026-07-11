@@ -12,6 +12,13 @@ on:
 jobs:
   expand:
     runs-on: ubuntu-latest
+    env:
+      # Stamp dates in Pacific, not UTC. Without this, any run after 5pm PT
+      # writes TOMORROW's date into dateModified/lastReviewed across ~17k
+      # pages (future-date freshness signal + churn vs local regens).
+      # generate.py also computes its date in America/Los_Angeles explicitly;
+      # this covers auto_expand.py's Monday check and the commit-message date.
+      TZ: America/Los_Angeles
     permissions:
       contents: write
       issues: write

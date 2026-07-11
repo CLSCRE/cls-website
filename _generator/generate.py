@@ -16,12 +16,12 @@ sys.stdout.reconfigure(encoding="utf-8")
 import json
 import os
 import re
-from datetime import date, datetime
+from datetime import datetime
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
-from generate_articles import main as generate_articles_main
+from generate_articles import main as generate_articles_main, pacific_today
 
 
 # ── Paths ──────────────────────────────────────────────────────────────
@@ -31,8 +31,10 @@ TEMPLATE_DIR = SCRIPT_DIR / "templates"
 WEBSITE_DIR = SCRIPT_DIR.parent  # website/
 
 BASE_URL = "https://clscre.com"
-TODAY = date.today().isoformat()
-TODAY_HUMAN = date.today().strftime("%B %Y")  # e.g., "May 2026" — for visible bylines
+# Pacific, not host-local: the UTC content bot would otherwise stamp
+# tomorrow's date on every run after 5pm PT (see pacific_today docstring).
+TODAY = pacific_today().isoformat()
+TODAY_HUMAN = pacific_today().strftime("%B %Y")  # e.g., "May 2026" — for visible bylines
 
 
 def load_json(name: str):

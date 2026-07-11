@@ -13,10 +13,25 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8")
 
 import json
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
+
+
+def pacific_today() -> date:
+    """Today's date in America/Los_Angeles, regardless of the host clock.
+
+    The GitHub Actions content bot runs on UTC — a naive date.today() there
+    stamps TOMORROW's Pacific date on every page generated after 5pm PT
+    (future-dated dateModified/lastReviewed across ~17k pages, plus daily
+    churn diffs against locally-run regens).
+    """
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("America/Los_Angeles")).date()
+    except Exception:  # no IANA tz data (e.g. Windows without the tzdata package)
+        return date.today()
 
 
 # ── Paths ──────────────────────────────────────────────────────────────
@@ -347,7 +362,7 @@ def main():
     # of combos otherwise extend years out, and the blog index (sorted by date
     # desc) leads with them while current posts get buried. Keep the date an
     # article already has if it's plausible; cap everything else at today.
-    today_iso = date.today().isoformat()
+    today_iso = pacific_today().isoformat()
     existing_dates = {a.get("slug"): a.get("date") for a in existing_articles}
 
     def resolve_date(slug, computed):
