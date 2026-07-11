@@ -343,6 +343,19 @@ def main():
     hand_written = [a for a in existing_articles if not a.get("_generated")]
     print(f"  Found {len(hand_written)} hand-written articles (preserved)")
 
+    # Dates must never be in the future: staggered schedules across thousands
+    # of combos otherwise extend years out, and the blog index (sorted by date
+    # desc) leads with them while current posts get buried. Keep the date an
+    # article already has if it's plausible; cap everything else at today.
+    today_iso = date.today().isoformat()
+    existing_dates = {a.get("slug"): a.get("date") for a in existing_articles}
+
+    def resolve_date(slug, computed):
+        prev = existing_dates.get(slug)
+        if prev and prev <= today_iso:
+            return prev
+        return min(computed, today_iso)
+
     # ── Setup Jinja2 for content templates ────────────────────────────
     env = Environment(
         loader=FileSystemLoader(str(CONTENT_TEMPLATE_DIR)),
@@ -373,7 +386,7 @@ def main():
             "seo_description": f"{city['city']} commercial real estate market 2026: cap rates, rent & vacancy trends by property type, and the financing outlook for office, multifamily & industrial.",
             "category": "Market Insights",
             "author": "Trevor Damyan",
-            "date": type_a_dates[i],
+            "date": resolve_date(f"cre-market-report-{city_slug}-2026", type_a_dates[i]),
             "excerpt": f"A comprehensive analysis of the {city['city']} commercial real estate market in 2026, covering multifamily, industrial, office, and retail sectors with key metrics, financing trends, and investment outlook.",
             "tags": [
                 "market report",
@@ -407,7 +420,7 @@ def main():
             "title": f"{loan['name']} in {city['city']}: What Borrowers Need to Know",
             "category": "Educational",
             "author": "Trevor Damyan",
-            "date": type_b_dates[i],
+            "date": resolve_date(f"{loan_slug}-{city_slug}-guide", type_b_dates[i]),
             "excerpt": f"Everything you need to know about {loan['name'].lower()} in {city['city']}, including current rates, qualification requirements, capital sources, and market-specific strategies for commercial real estate borrowers.",
             "tags": [
                 loan["name"].lower(),
@@ -441,7 +454,7 @@ def main():
             "title": f"{prop['name']} Investing in {city['city']}: A Complete Guide",
             "category": "Market Insights",
             "author": "Trevor Damyan",
-            "date": type_c_dates[i],
+            "date": resolve_date(f"{prop_slug}-investing-{city_slug}-guide", type_c_dates[i]),
             "excerpt": f"A comprehensive guide to {prop['name'].lower()} investing in {city['city']}, covering market metrics, property subtypes, financing options, top submarkets, and the investment thesis for 2026.",
             "tags": [
                 prop["name"].lower(),
