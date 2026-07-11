@@ -1,0 +1,196 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Real Estate Loans in {{ state.name }} | CLS CRE","url":"https://clscre.com/states/{{ state.slug }}.html","description":"{{ seo.meta_description }}","telephone":"+13107080690","email":"loans@clscre.com","areaServed":{"@type":"State","name":"{{ state.name }}"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"Commercial Real Estate Financing","provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com"},"areaServed":{"@type":"State","name":"{{ state.name }}"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"States","item":"https://clscre.com/states/"},{"@type":"ListItem","position":3,"name":"{{ state.name }}","item":"https://clscre.com/states/{{ state.slug }}.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in state.faqs %}{"@type":"Question","name":{{ faq.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a|tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"https://clscre.com/states/{{ state.slug }}.html","name":"{{ seo.title }}","description":"{{ seo.meta_description }}","datePublished":"2026-07-11","dateModified":"{{ current_date }}","lastReviewed":"{{ current_date }}","reviewedBy":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html"},"author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about/trevor-damyan.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"about":{"@type":"State","name":"{{ state.name }}"}}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}states/index.html">States</a></li>
+  <li><span>{{ state.name }}</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">{{ current_region }} Region</div>
+  <h1 class="reveal">{{ state.seo.h1 }}</h1>
+  <div class="page-byline reveal" style="font-size:13px;color:var(--gray-500);margin:8px 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <span>Reviewed by</span>
+    <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+    <span>, Commercial Mortgage Broker</span>
+    <span aria-hidden="true">&middot;</span>
+    <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
+  </div>
+  <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 24px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0">
+    <strong style="color:var(--navy)">Quick answer:</strong>
+    Commercial Lending Solutions arranges commercial real estate loans across {{ state.name }} from $1 million to over $100 million, spanning {{ all_loan_types|length }} loan programs and every major property type.{% if state_cities %} We maintain dedicated market coverage for {{ state_cities|length }} {{ state.name }} metro{{ 's' if state_cities|length > 1 }}, including {{ state_cities[0].city }}{% if state_cities|length > 1 %} and {{ state_cities[1].city }}{% endif %}.{% endif %} Below: how {{ state.name }}'s foreclosure process, recording taxes, and regulatory climate shape the loan terms lenders will offer here.
+  </div>
+  {% for para in state.overview.split('\n\n') %}
+  <p class="reveal">{{ para }}</p>
+  {% endfor %}
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Apply for {{ state.name }} Financing &rarr;</a>
+</div>
+</section>
+
+<!-- STATE LENDING FACTS -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Financing Climate</div>
+  <h2 class="section-title reveal">What Lenders Underwrite in {{ state.name }}</h2>
+  <div class="feature-grid">
+    <div class="feature-card reveal">
+      <div class="label">Foreclosure Process</div>
+      <div class="value">{{ state.financing_climate.foreclosure }}</div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="label">Mortgage Recording Tax</div>
+      <div class="value">{{ state.financing_climate.mortgage_tax }}</div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="label">Markets Covered</div>
+      <div class="value">{% if state_cities %}{{ state_cities|length }} metro{{ 's' if state_cities|length > 1 }}{% else %}Statewide{% endif %}</div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="label">Loan Range</div>
+      <div class="value">$1M to $100M+</div>
+    </div>
+  </div>
+  <div class="list-grid" style="margin-top:24px">
+    <div class="list-card reveal">
+      <h3>Foreclosure and Lender Appetite</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--gray-700);margin:0">{{ state.financing_climate.foreclosure_note }}</p>
+    </div>
+    <div class="list-card reveal">
+      <h3>Recording Taxes and Closing Costs</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--gray-700);margin:0">{{ state.financing_climate.mortgage_tax_note }}</p>
+    </div>
+  </div>
+  <p class="reveal" style="font-size:15px;line-height:1.7;color:var(--gray-700);margin-top:24px">{{ state.financing_climate.lending_notes }}</p>
+</div>
+</section>
+
+<!-- KEY SECTORS -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">Where Deals Get Done</div>
+  <h2 class="section-title reveal">Key Commercial Real Estate Sectors in {{ state.name }}</h2>
+  <div class="list-grid">
+    {% for sector in state.key_sectors %}
+    <div class="list-card reveal">
+      <h3>{{ sector.name }}</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--gray-700);margin:0">{{ sector.note }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- REGULATORY + LENDER LANDSCAPE -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Market Intelligence</div>
+  <h2 class="section-title reveal">Regulatory Environment</h2>
+  <p class="reveal" style="font-size:15px;line-height:1.7;color:var(--gray-700)">{{ state.regulatory }}</p>
+  <h2 class="section-title reveal" style="margin-top:40px">Which Lenders Are Active in {{ state.name }}</h2>
+  <p class="reveal" style="font-size:15px;line-height:1.7;color:var(--gray-700)">{{ state.lender_landscape }}</p>
+</div>
+</section>
+
+{% if state_cities %}
+<!-- CITY MARKETS -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Commercial Real Estate Markets We Cover in {{ state.name }}</h2>
+  <div class="cross-link-grid">
+    {% for c in state_cities %}
+    <a href="{{ depth }}markets/{{ c.slug }}/" class="cross-link-card reveal">
+      <div class="cl-title">{{ c.city }}</div>
+      <div class="cl-sub">{{ c.metro }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% else %}
+<!-- STATEWIDE COVERAGE (no dedicated city pages yet) -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Statewide {{ state.name }} Coverage</h2>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);max-width:720px">CLS CRE arranges financing throughout {{ state.name }}. Our lender network includes national and regional capital sources active across the state, and we underwrite deals in every {{ state.name }} market, not just the largest metros. Contact us with your property details for a market-specific read.</p>
+</div>
+</section>
+{% endif %}
+
+<!-- LOAN PROGRAMS -->
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">Loan Programs Available in {{ state.name }}</h2>
+  <p class="section-desc reveal">Every CLS CRE loan program is available for {{ state.name }} properties. Explore program details, typical terms, and lender sources.</p>
+  <div class="cross-link-grid">
+    {% for lt in all_loan_types %}
+    <a href="{{ depth }}financing/{{ lt.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ lt.name }}</div>
+      <div class="cl-sub">{{ lt.key_features.rates }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- TRANSACTIONS -->
+{% set txn_title = state.name + ' Closed Transactions' %}
+{% set txn_desc = 'A selection of commercial loans arranged in ' + state.name + ' and comparable markets.' %}
+{% set txn_alt = true %}
+{% include '_transaction_cards.html' %}
+
+<!-- FAQ -->
+{% set faqs = state.faqs %}
+{% set faq_title = 'Commercial Real Estate Lending in ' + state.name + ': FAQ' %}
+{% include '_faq_section.html' %}
+
+{% if related_states %}
+<!-- RELATED STATES -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">{{ current_region }}</div>
+  <h2 class="section-title reveal">Nearby States We Cover</h2>
+  <div class="cross-link-grid">
+    {% for rs in related_states %}
+    <a href="{{ depth }}states/{{ rs.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ rs.name }}</div>
+      <div class="cl-sub">Commercial real estate loans</div>
+    </a>
+    {% endfor %}
+    <a href="{{ depth }}states/index.html" class="cross-link-card reveal">
+      <div class="cl-title">All 50 States</div>
+      <div class="cl-sub">Browse coverage by state</div>
+    </a>
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- CTA -->
+{% set cta_title = 'Get Commercial Financing in ' + state.name %}
+{% set cta_description = 'Contact Commercial Lending Solutions for a free, no-obligation quote on commercial real estate financing anywhere in ' + state.name + '. We respond within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}

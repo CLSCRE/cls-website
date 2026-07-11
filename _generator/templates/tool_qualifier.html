@@ -1,0 +1,361 @@
+{% extends '_base.html' %}
+
+{% block extra_meta %}
+<style>
+.qz-progress{height:6px;background:var(--gray-200);border-radius:3px;margin:0 0 28px;overflow:hidden}
+.qz-progress-fill{height:100%;background:var(--green);border-radius:3px;width:0;transition:width .3s ease}
+.qz-step{display:none}
+.qz-step.active{display:block;animation:qzfade .25s ease}
+@keyframes qzfade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.qz-question{font-family:var(--font-display);font-size:clamp(20px,2.6vw,28px);color:var(--navy);margin:0 0 6px}
+.qz-hint{font-size:14px;color:var(--gray-500);margin:0 0 20px}
+.qz-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.qz-opt{display:block;width:100%;text-align:left;padding:16px 18px;background:var(--white);border:1.5px solid var(--gray-200);border-radius:10px;cursor:pointer;font-family:var(--font-body);font-size:15px;font-weight:600;color:var(--navy);transition:border-color .15s,box-shadow .15s,transform .15s}
+.qz-opt:hover,.qz-opt:focus-visible{border-color:var(--green);box-shadow:0 2px 12px rgba(0,106,78,.12);transform:translateY(-1px);outline:none}
+.qz-opt .qz-opt-sub{display:block;font-size:12.5px;font-weight:400;color:var(--gray-500);margin-top:3px}
+.qz-back{background:none;border:none;color:var(--gray-500);font-size:13.5px;cursor:pointer;padding:6px 0;margin-top:18px;font-family:var(--font-body)}
+.qz-back:hover{color:var(--navy);text-decoration:underline}
+.qz-result-card{border:1.5px solid var(--gray-200);border-radius:12px;padding:22px;background:var(--white);margin-bottom:14px;position:relative}
+.qz-result-card.qz-top{border-color:var(--green);box-shadow:0 4px 20px rgba(0,106,78,.10)}
+.qz-badge{position:absolute;top:-11px;left:18px;background:var(--green);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:20px}
+.qz-result-name{font-family:var(--font-display);font-size:20px;color:var(--navy);margin:0 0 4px}
+.qz-result-why{font-size:14px;color:var(--gray-700);line-height:1.6;margin:0 0 12px}
+.qz-result-stats{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px}
+.qz-result-stats span{font-size:12.5px;color:var(--gray-500)}
+.qz-result-stats strong{display:block;font-size:14px;color:var(--navy);font-weight:600}
+.qz-min-note{background:var(--gray-50);border-left:3px solid var(--navy);padding:16px 20px;border-radius:0 6px 6px 0;font-size:15px;line-height:1.7;color:var(--gray-700)}
+.qz-lead{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:26px;margin-top:26px}
+.qz-lead input{width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:10px;outline:none;transition:border-color .2s}
+.qz-lead input:focus{border-color:var(--green)}
+</style>
+{% endblock %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Commercial Loan Qualifier","description":"Free interactive tool: answer six questions about your commercial real estate deal and see which loan programs fit, with typical rates, terms, and leverage.","url":"https://clscre.com/tools/loan-qualifier.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What commercial loan do I qualify for?","acceptedAnswer":{"@type":"Answer","text":"It depends on five things: property type, loan purpose, property cash flow, your timeline, and loan size. Stabilized multifamily typically routes to agency (Fannie Mae/Freddie Mac), bank, or life company debt. Value-add and vacant properties route to bridge lenders. Ground-up projects need construction loans. Owner-occupied buildings unlock SBA programs. This qualifier walks those questions in about 60 seconds and shows the programs that fit."}},{"@type":"Question","name":"What credit score and net worth do commercial lenders require?","acceptedAnswer":{"@type":"Answer","text":"Most commercial lenders want a credit score of 660 or better, net worth roughly equal to the loan amount, and liquidity of 10 percent or more of the loan after closing. Agency and bank lenders are strictest; bridge lenders and debt funds weight the property and business plan more heavily than the sponsor's balance sheet. Exceptions get made for strong deals, which is exactly where a broker earns their fee."}},{"@type":"Question","name":"What is the minimum loan amount for commercial financing?","acceptedAnswer":{"@type":"Answer","text":"Commercial Lending Solutions arranges commercial real estate loans starting at $1 million, with no upper limit in practice ($100 million+ transactions are placed through institutional capital sources). Below $1 million, local banks and credit unions are usually the right fit and often the only economic option."}},{"@type":"Question","name":"How fast can a commercial loan close?","acceptedAnswer":{"@type":"Answer","text":"Bridge and hard money loans can close in 2 to 4 weeks. Bank balance sheet loans typically take 45 to 75 days. Agency, CMBS, and life company permanent loans run 45 to 90 days. If you are up against a hard deadline such as a 1031 exchange window or a maturing loan, bridge debt buys certainty of close and can be refinanced into permanent debt afterward."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"Loan Qualifier","item":"https://clscre.com/tools/loan-qualifier.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}tools/index.html">Calculators</a></li>
+  <li><span>Loan Qualifier</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Tool</div>
+  <h1 class="reveal">What Commercial Loan Do I Qualify For?</h1>
+  <p class="reveal">Answer six quick questions about your deal and see which of our loan programs fit, with typical rates, terms, and leverage. No signup, no credit pull, about 60 seconds.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner" style="max-width:860px">
+  <div class="qz-progress" aria-hidden="true"><div class="qz-progress-fill" id="qzFill"></div></div>
+  <div id="qzWizard">
+
+    <div class="qz-step active" data-step="1">
+      <h2 class="qz-question">What type of property are you financing?</h2>
+      <p class="qz-hint">Question 1 of 6</p>
+      <div class="qz-options">
+        <button class="qz-opt" onclick="qzAnswer('prop','multifamily')">Multifamily<span class="qz-opt-sub">Apartments, 5+ units</span></button>
+        <button class="qz-opt" onclick="qzAnswer('prop','industrial')">Industrial<span class="qz-opt-sub">Warehouse, flex, manufacturing</span></button>
+        <button class="qz-opt" onclick="qzAnswer('prop','retail')">Retail<span class="qz-opt-sub">Centers, single tenant, NNN</span></button>
+        <button class="qz-opt" onclick="qzAnswer('prop','office')">Office / Medical<span class="qz-opt-sub">Office, medical office, clinics</span></button>
+        <button class="qz-opt" onclick="qzAnswer('prop','hospitality')">Hospitality<span class="qz-opt-sub">Hotels, resorts, flagged or boutique</span></button>
+        <button class="qz-opt" onclick="qzAnswer('prop','storage')">Self-Storage<span class="qz-opt-sub">Climate controlled, drive-up</span></button>
+        <button class="qz-opt" onclick="qzAnswer('prop','senior')">Senior Living<span class="qz-opt-sub">Assisted living, memory care</span></button>
+        <button class="qz-opt" onclick="qzAnswer('prop','mixeduse')">Mixed-Use<span class="qz-opt-sub">Residential over retail, live-work</span></button>
+        <button class="qz-opt" onclick="qzAnswer('prop','land')">Land / Development<span class="qz-opt-sub">Entitled land, ground-up projects</span></button>
+      </div>
+    </div>
+
+    <div class="qz-step" data-step="2">
+      <h2 class="qz-question">What is the loan for?</h2>
+      <p class="qz-hint">Question 2 of 6</p>
+      <div class="qz-options">
+        <button class="qz-opt" onclick="qzAnswer('purpose','purchase')">Purchase<span class="qz-opt-sub">Acquiring a property</span></button>
+        <button class="qz-opt" onclick="qzAnswer('purpose','refi')">Refinance<span class="qz-opt-sub">Rate/term, maturing loan</span></button>
+        <button class="qz-opt" onclick="qzAnswer('purpose','cashout')">Cash-Out Refinance<span class="qz-opt-sub">Pull equity out</span></button>
+        <button class="qz-opt" onclick="qzAnswer('purpose','construction')">Ground-Up Construction<span class="qz-opt-sub">New development</span></button>
+        <button class="qz-opt" onclick="qzAnswer('purpose','valueadd')">Renovation / Value-Add<span class="qz-opt-sub">Reposition, rehab, lease-up</span></button>
+        <button class="qz-opt" onclick="qzAnswer('purpose','1031')">1031 Exchange Purchase<span class="qz-opt-sub">On an exchange deadline</span></button>
+      </div>
+      <button class="qz-back" onclick="qzBack()">&larr; Back</button>
+    </div>
+
+    <div class="qz-step" data-step="3">
+      <h2 class="qz-question">How much do you need to borrow?</h2>
+      <p class="qz-hint">Question 3 of 6</p>
+      <div class="qz-options">
+        <button class="qz-opt" onclick="qzAnswer('amount','sub1m')">Under $1 million</button>
+        <button class="qz-opt" onclick="qzAnswer('amount','1to3')">$1M to $3M</button>
+        <button class="qz-opt" onclick="qzAnswer('amount','3to10')">$3M to $10M</button>
+        <button class="qz-opt" onclick="qzAnswer('amount','10to25')">$10M to $25M</button>
+        <button class="qz-opt" onclick="qzAnswer('amount','25plus')">$25M+</button>
+      </div>
+      <button class="qz-back" onclick="qzBack()">&larr; Back</button>
+    </div>
+
+    <div class="qz-step" data-step="4">
+      <h2 class="qz-question">What shape is the property in today?</h2>
+      <p class="qz-hint">Question 4 of 6</p>
+      <div class="qz-options">
+        <button class="qz-opt" onclick="qzAnswer('status','stabilized')">Stabilized<span class="qz-opt-sub">90%+ occupied, steady income</span></button>
+        <button class="qz-opt" onclick="qzAnswer('status','partial')">Partially Leased<span class="qz-opt-sub">60% to 90% occupied</span></button>
+        <button class="qz-opt" onclick="qzAnswer('status','vacant')">Vacant / Heavy Value-Add<span class="qz-opt-sub">Under 60% occupied or major rehab</span></button>
+        <button class="qz-opt" onclick="qzAnswer('status','groundup')">Not Built Yet<span class="qz-opt-sub">Land or project in development</span></button>
+      </div>
+      <button class="qz-back" onclick="qzBack()">&larr; Back</button>
+    </div>
+
+    <div class="qz-step" data-step="5">
+      <h2 class="qz-question">Will your own business occupy the property?</h2>
+      <p class="qz-hint">Question 5 of 6</p>
+      <div class="qz-options">
+        <button class="qz-opt" onclick="qzAnswer('occupancy','investment')">No, Investment Property<span class="qz-opt-sub">Tenants pay the rent</span></button>
+        <button class="qz-opt" onclick="qzAnswer('occupancy','owner')">Yes, Owner-Occupied<span class="qz-opt-sub">My business uses 51%+ of the space</span></button>
+      </div>
+      <button class="qz-back" onclick="qzBack()">&larr; Back</button>
+    </div>
+
+    <div class="qz-step" data-step="6">
+      <h2 class="qz-question">How fast do you need to close?</h2>
+      <p class="qz-hint">Question 6 of 6</p>
+      <div class="qz-options">
+        <button class="qz-opt" onclick="qzAnswer('timeline','fast')">Under 30 Days<span class="qz-opt-sub">Hard deadline</span></button>
+        <button class="qz-opt" onclick="qzAnswer('timeline','normal')">30 to 60 Days</button>
+        <button class="qz-opt" onclick="qzAnswer('timeline','flexible')">60+ Days<span class="qz-opt-sub">Optimizing for best terms</span></button>
+      </div>
+      <button class="qz-back" onclick="qzBack()">&larr; Back</button>
+    </div>
+
+    <div class="qz-step" data-step="7" id="qzResults">
+      <div id="qzResultsBody"></div>
+      <div class="qz-lead" id="qzLead">
+        <h3 style="font-family:var(--font-display);font-size:20px;color:var(--navy);margin:0 0 6px">Get Real Quotes for This Deal</h3>
+        <p style="font-size:14px;color:var(--gray-500);margin:0 0 16px">This tool shows what typically fits. We will run your actual deal against 1,000+ lenders and respond within 24 hours with real options, free and no obligation.</p>
+        <form action="#" method="POST" id="qzLeadForm">
+          <input type="hidden" name="_subject" value="Loan Qualifier Lead, CLS CRE Website">
+          <input type="hidden" name="_next" value="https://clscre.com/thank-you.html?form=qualifier">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will review your deal and be in touch within 24 hours. For urgent inquiries, call 310.708.0690 or text 310.758.3064. - Trevor Damyan, CLS CRE | clscre.com">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website_url" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="_cls_token" value="">
+          <input type="hidden" name="Form Loaded At" value="">
+          <input type="hidden" name="Quiz Answers" id="qzAnswersField" value="">
+          <input type="hidden" name="Recommended Programs" id="qzRecsField" value="">
+          <input type="hidden" name="Source Page" value="https://clscre.com/tools/loan-qualifier.html">
+          <label for="qzName" class="sr-only">Your name</label>
+          <input type="text" name="Name" id="qzName" placeholder="Your name" autocomplete="name" required>
+          <label for="qzEmail" class="sr-only">Email address</label>
+          <input type="email" name="Email" id="qzEmail" placeholder="your@email.com" autocomplete="email" required>
+          <label for="qzPhone" class="sr-only">Phone</label>
+          <input type="tel" name="Phone" id="qzPhone" placeholder="Phone (optional)" autocomplete="tel">
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;cursor:pointer">Get My Lender Matches &rarr;</button>
+          <p style="font-size:11.5px;color:var(--gray-400);margin:10px 0 0;text-align:center">No spam. No credit pull. Just real financing options for your deal.</p>
+        </form>
+      </div>
+      <button class="qz-back" onclick="qzRestart()">&#8635; Start Over</button>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- RELATED TOOLS -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Run the Numbers</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}tools/dscr-calculator.html" class="cross-link-card reveal"><div class="cl-title">DSCR Calculator</div><div class="cl-sub">Will the income qualify?</div></a>
+    <a href="{{ depth }}tools/loan-calculator.html" class="cross-link-card reveal"><div class="cl-title">Loan Payment Calculator</div><div class="cl-sub">Monthly payment estimates</div></a>
+    <a href="{{ depth }}tools/ltv-calculator.html" class="cross-link-card reveal"><div class="cl-title">LTV Calculator</div><div class="cl-sub">Leverage analysis</div></a>
+    <a href="{{ depth }}tools/noi-calculator.html" class="cross-link-card reveal"><div class="cl-title">NOI Calculator</div><div class="cl-sub">Net operating income</div></a>
+  </div>
+</div>
+</section>
+
+{% set faq_title = 'Loan Qualification FAQ' %}
+{% set faq_alt = true %}
+{% set faqs = [
+  {"q": "What commercial loan do I qualify for?", "a": "It depends on five things: property type, loan purpose, property cash flow, your timeline, and loan size. Stabilized multifamily typically routes to agency (Fannie Mae/Freddie Mac), bank, or life company debt. Value-add and vacant properties route to bridge lenders. Ground-up projects need construction loans. Owner-occupied buildings unlock SBA programs. This qualifier walks those questions in about 60 seconds and shows the programs that fit."},
+  {"q": "What credit score and net worth do commercial lenders require?", "a": "Most commercial lenders want a credit score of 660 or better, net worth roughly equal to the loan amount, and liquidity of 10 percent or more of the loan after closing. Agency and bank lenders are strictest; bridge lenders and debt funds weight the property and business plan more heavily than the sponsor's balance sheet. Exceptions get made for strong deals, which is exactly where a broker earns their fee."},
+  {"q": "What is the minimum loan amount for commercial financing?", "a": "Commercial Lending Solutions arranges commercial real estate loans starting at $1 million, with no upper limit in practice ($100 million+ transactions are placed through institutional capital sources). Below $1 million, local banks and credit unions are usually the right fit and often the only economic option."},
+  {"q": "How fast can a commercial loan close?", "a": "Bridge and hard money loans can close in 2 to 4 weeks. Bank balance sheet loans typically take 45 to 75 days. Agency, CMBS, and life company permanent loans run 45 to 90 days. If you are up against a hard deadline such as a 1031 exchange window or a maturing loan, bridge debt buys certainty of close and can be refinanced into permanent debt afterward."}
+] %}
+{% include '_faq_section.html' %}
+
+{% set cta_title = 'Skip the Quiz, Talk to a Broker' %}
+{% set cta_description = 'Prefer a human read on your deal? Contact Commercial Lending Solutions and we will tell you exactly which capital sources want it. We respond within 24 hours.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+var PROGRAMS = {
+{% for lt in all_loan_types %}
+  "{{ lt.slug }}": {name: {{ lt.name|tojson }}, rates: {{ lt.key_features.rates|default('Varies by deal')|tojson }}, term: {{ lt.key_features.term|default('Varies')|tojson }}, ltv: {{ lt.key_features.ltv|default('Varies')|tojson }}, url: "{{ depth }}financing/{{ lt.slug }}.html"}{% if not loop.last %},{% endif %}
+{% endfor %}
+};
+
+var WHY = {
+  "bridge-loans": "Fast, flexible capital that closes on the asset's potential, not just today's income. The workhorse for acquisitions on a deadline, value-add plans, and lease-up stories.",
+  "permanent-loans": "Long-term fixed-rate debt from banks and institutional lenders for stabilized, cash-flowing property. The lowest-cost option when the income is in place.",
+  "construction-loans": "Ground-up development capital with draws tied to your budget and timeline, from banks, debt funds, and HUD depending on the project.",
+  "sba-loans": "Owner-occupied buildings unlock SBA 504 and 7(a): up to 90% financing with long fixed terms. Usually the best structure when your business is the tenant.",
+  "agency-loans": "Fannie Mae and Freddie Mac offer the most aggressive fixed-rate terms in the market for stabilized multifamily, with non-recourse structures and 30-year amortization.",
+  "hud-fha-loans": "The longest terms and highest leverage available for multifamily and healthcare assets: 35-year fully amortizing, non-recourse. Slower to close, unbeatable once locked.",
+  "cmbs-loans": "Non-recourse conduit debt for stabilized commercial assets, competitive at higher leverage where banks tap out. Best for cash-out and single-asset borrowers.",
+  "life-company-loans": "Life insurance companies write the tightest spreads in the market for high-quality stabilized assets at moderate leverage. Trophy pricing for institutional-grade deals.",
+  "net-lease-financing": "Purpose-built for single-tenant and NNN assets, sized to lease term and credit. Ideal for 1031 buyers of credit-tenant retail and industrial.",
+  "dscr-loans": "Sized to the property's cash flow rather than your tax returns. Streamlined underwriting for smaller stabilized investment deals.",
+  "hard-money-loans": "Asset-based capital that can close in days, not months. The right tool when speed or story outweighs rate.",
+  "mezzanine": "Subordinate debt layered behind a senior loan to push total leverage higher without giving up equity. For larger, well-structured transactions.",
+  "specialty": "Special-purpose and story assets need lenders who underwrite the operations, not just the real estate. We match these deals to niche capital sources weekly."
+};
+
+var qzState = {step: 1, answers: {}, history: []};
+var QZ_LABELS = {
+  prop: {multifamily:"Multifamily", industrial:"Industrial", retail:"Retail", office:"Office / Medical", hospitality:"Hospitality", storage:"Self-Storage", senior:"Senior Living", mixeduse:"Mixed-Use", land:"Land / Development"},
+  purpose: {purchase:"Purchase", refi:"Refinance", cashout:"Cash-out refinance", construction:"Ground-up construction", valueadd:"Renovation / value-add", "1031":"1031 exchange purchase"},
+  amount: {sub1m:"Under $1M", "1to3":"$1M to $3M", "3to10":"$3M to $10M", "10to25":"$10M to $25M", "25plus":"$25M+"},
+  status: {stabilized:"Stabilized", partial:"Partially leased", vacant:"Vacant / heavy value-add", groundup:"Not built yet"},
+  occupancy: {investment:"Investment property", owner:"Owner-occupied"},
+  timeline: {fast:"Under 30 days", normal:"30 to 60 days", flexible:"60+ days"}
+};
+
+function qzShow(step){
+  document.querySelectorAll('.qz-step').forEach(function(el){el.classList.remove('active');});
+  var el = document.querySelector('.qz-step[data-step="'+step+'"]');
+  if(el) el.classList.add('active');
+  document.getElementById('qzFill').style.width = Math.min(100, Math.round((step-1)/6*100)) + '%';
+  var wiz = document.getElementById('qzWizard');
+  if (wiz.getBoundingClientRect().top < 0) wiz.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function qzAnswer(key, val){
+  if (qzState.step === 1 && typeof gtag === 'function') gtag('event','quiz_start',{tool:'loan_qualifier'});
+  qzState.answers[key] = val;
+  qzState.history.push(qzState.step);
+  qzState.step += 1;
+  if (qzState.step >= 7){ qzScore(); }
+  qzShow(qzState.step);
+}
+
+function qzBack(){
+  if (!qzState.history.length) return;
+  qzState.step = qzState.history.pop();
+  qzShow(qzState.step);
+}
+
+function qzRestart(){
+  qzState = {step: 1, answers: {}, history: []};
+  qzShow(1);
+}
+
+function qzScore(){
+  var a = qzState.answers;
+  var s = {};
+  function add(slug, pts){ s[slug] = (s[slug]||0) + pts; }
+
+  // Property type
+  if (a.prop==='multifamily' || a.prop==='mixeduse'){ add('agency-loans',30); add('hud-fha-loans',15); add('dscr-loans',10); add('permanent-loans',10); add('life-company-loans',10); add('bridge-loans',5); }
+  if (a.prop==='industrial' || a.prop==='office'){ add('permanent-loans',15); add('cmbs-loans',10); add('life-company-loans',10); add('bridge-loans',5); }
+  if (a.prop==='retail'){ add('net-lease-financing',20); add('permanent-loans',12); add('cmbs-loans',10); add('bridge-loans',5); }
+  if (a.prop==='hospitality'){ add('specialty',15); add('bridge-loans',10); add('sba-loans',8); add('cmbs-loans',5); }
+  if (a.prop==='storage'){ add('permanent-loans',10); add('bridge-loans',10); add('cmbs-loans',5); add('sba-loans',5); }
+  if (a.prop==='senior'){ add('hud-fha-loans',18); add('specialty',12); add('bridge-loans',8); }
+  if (a.prop==='land'){ add('construction-loans',30); add('hard-money-loans',10); add('bridge-loans',5); add('agency-loans',-30); add('permanent-loans',-20); add('dscr-loans',-20); }
+
+  // Purpose
+  if (a.purpose==='purchase'){ add('bridge-loans',5); add('permanent-loans',5); }
+  if (a.purpose==='refi'){ add('permanent-loans',15); add('agency-loans',8); add('life-company-loans',5); add('cmbs-loans',5); }
+  if (a.purpose==='cashout'){ add('bridge-loans',10); add('dscr-loans',10); add('cmbs-loans',8); add('hard-money-loans',5); }
+  if (a.purpose==='construction'){ add('construction-loans',40); add('hud-fha-loans',8); add('permanent-loans',-20); add('dscr-loans',-20); add('agency-loans',-20); add('cmbs-loans',-20); add('net-lease-financing',-20); }
+  if (a.purpose==='valueadd'){ add('bridge-loans',30); add('hard-money-loans',10); add('mezzanine',5); }
+  if (a.purpose==='1031'){ add('bridge-loans',20); add('net-lease-financing',12); add('permanent-loans',10); add('dscr-loans',10); }
+
+  // Status
+  if (a.status==='stabilized'){ add('permanent-loans',15); add('agency-loans',10); add('life-company-loans',10); add('cmbs-loans',10); add('dscr-loans',10); add('net-lease-financing',5); }
+  if (a.status==='partial'){ add('bridge-loans',15); add('dscr-loans',3); }
+  if (a.status==='vacant'){ add('bridge-loans',25); add('hard-money-loans',10); add('agency-loans',-25); add('permanent-loans',-20); add('life-company-loans',-25); add('cmbs-loans',-20); add('dscr-loans',-15); add('net-lease-financing',-15); }
+  if (a.status==='groundup'){ add('construction-loans',30); add('permanent-loans',-15); add('agency-loans',-15); add('cmbs-loans',-15); add('dscr-loans',-15); }
+
+  // Occupancy
+  if (a.occupancy==='owner'){ add('sba-loans',35); add('permanent-loans',5); add('agency-loans',-30); add('dscr-loans',-25); add('net-lease-financing',-15); }
+  if (a.occupancy==='investment'){ add('sba-loans',-30); }
+
+  // Timeline
+  if (a.timeline==='fast'){ add('hard-money-loans',25); add('bridge-loans',15); add('agency-loans',-15); add('hud-fha-loans',-25); add('life-company-loans',-12); add('cmbs-loans',-10); add('sba-loans',-20); add('permanent-loans',-10); add('construction-loans',-10); }
+  if (a.timeline==='normal'){ add('bridge-loans',5); }
+  if (a.timeline==='flexible'){ add('permanent-loans',5); add('agency-loans',5); add('hud-fha-loans',5); add('life-company-loans',5); }
+
+  // Amount
+  if (a.amount==='1to3'){ add('dscr-loans',10); add('sba-loans',5); add('life-company-loans',-20); add('hud-fha-loans',-10); add('mezzanine',-25); }
+  if (a.amount==='3to10'){ add('cmbs-loans',5); add('agency-loans',5); add('mezzanine',-10); }
+  if (a.amount==='10to25'){ add('life-company-loans',10); add('hud-fha-loans',10); add('cmbs-loans',5); add('mezzanine',5); }
+  if (a.amount==='25plus'){ add('life-company-loans',15); add('hud-fha-loans',10); add('cmbs-loans',10); add('mezzanine',10); add('hard-money-loans',-10); add('dscr-loans',-15); }
+
+  var body = document.getElementById('qzResultsBody');
+  var lead = document.getElementById('qzLead');
+
+  if (a.amount==='sub1m'){
+    body.innerHTML = '<h2 class="qz-question">A Quick Heads-Up on Loan Size</h2>'
+      + '<div class="qz-min-note">Commercial Lending Solutions arranges commercial real estate loans starting at <strong>$1 million</strong>. Below that, the most competitive capital is almost always a local bank or credit union in your market, and we would rather point you the right way than waste your time. If your total project cost or future phases push past $1 million, we should absolutely talk.</div>';
+    lead.style.display = 'block';
+    document.getElementById('qzAnswersField').value = qzSummary();
+    document.getElementById('qzRecsField').value = 'Sub-$1M inquiry';
+    if (typeof gtag === 'function') gtag('event','quiz_complete',{tool:'loan_qualifier',result:'sub_1m'});
+    return;
+  }
+
+  var ranked = Object.keys(s).filter(function(k){return PROGRAMS[k] && s[k] > 0;})
+    .sort(function(x,y){return s[y]-s[x];}).slice(0,3);
+
+  if (!ranked.length){ ranked = ['bridge-loans','permanent-loans'].filter(function(k){return PROGRAMS[k];}); }
+
+  var html = '<h2 class="qz-question">Your Best-Fit Loan Programs</h2>'
+    + '<p class="qz-hint">Based on: ' + qzSummary() + '</p>';
+  ranked.forEach(function(slug, i){
+    var p = PROGRAMS[slug];
+    html += '<div class="qz-result-card' + (i===0?' qz-top':'') + '">'
+      + (i===0?'<div class="qz-badge">Best Match</div>':'')
+      + '<h3 class="qz-result-name">' + p.name + '</h3>'
+      + '<p class="qz-result-why">' + (WHY[slug]||'') + '</p>'
+      + '<div class="qz-result-stats">'
+      + '<span><strong>' + p.rates + '</strong>Typical rates</span>'
+      + '<span><strong>' + p.term + '</strong>Term</span>'
+      + '<span><strong>' + p.ltv + '</strong>Leverage</span>'
+      + '</div>'
+      + '<a href="' + p.url + '" class="btn-secondary">Learn About ' + p.name + ' &rarr;</a>'
+      + '</div>';
+  });
+  body.innerHTML = html;
+  lead.style.display = 'block';
+  document.getElementById('qzAnswersField').value = qzSummary();
+  document.getElementById('qzRecsField').value = ranked.map(function(k){return PROGRAMS[k].name;}).join(', ');
+  if (typeof gtag === 'function') gtag('event','quiz_complete',{tool:'loan_qualifier',result:ranked[0]||'none'});
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({event:'quiz_complete', quiz:'loan_qualifier', top_program: ranked[0]||'none'});
+}
+
+function qzSummary(){
+  var a = qzState.answers, out = [];
+  ['prop','purpose','amount','status','occupancy','timeline'].forEach(function(k){
+    if (a[k] && QZ_LABELS[k] && QZ_LABELS[k][a[k]]) out.push(QZ_LABELS[k][a[k]]);
+  });
+  return out.join(' | ');
+}
+</script>
+{% endblock %}

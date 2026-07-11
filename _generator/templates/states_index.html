@@ -1,0 +1,63 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"Commercial Real Estate Loans by State","description":"{{ seo.meta_description }}","url":"https://clscre.com/states/","publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"States","item":"https://clscre.com/states/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"https://clscre.com/states/","name":"{{ seo.title }}","description":"{{ seo.meta_description }}","datePublished":"2026-07-11","dateModified":"{{ current_date }}","lastReviewed":"{{ current_date }}","reviewedBy":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html"},"author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about/trevor-damyan.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}}}
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><span>States</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Nationwide Coverage</div>
+  <h1 class="reveal">Commercial Real Estate Loans by State</h1>
+  <div class="page-byline reveal" style="font-size:13px;color:var(--gray-500);margin:8px 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <span>Reviewed by</span>
+    <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+    <span>, Commercial Mortgage Broker</span>
+    <span aria-hidden="true">&middot;</span>
+    <span>Updated <time datetime="{{ current_date }}">{{ current_date_human }}</time></span>
+  </div>
+  <p class="reveal">Commercial Lending Solutions arranges commercial real estate loans in all 50 states and Washington, D.C., from $1 million to over $100 million. Every state has its own financing texture: foreclosure law, recording taxes, regulatory climate, and lender appetite all vary, and they change the terms you should expect. Pick your state below for a market-specific breakdown, or contact us directly and we will run your deal against 1,000+ lender relationships.</p>
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">Apply for Financing &rarr;</a>
+</div>
+</section>
+
+{% for group in state_groups %}
+<section class="content-section {{ 'alt' if loop.index is even }}">
+<div class="section-inner">
+  <div class="section-label reveal">{{ group.region }}</div>
+  <h2 class="section-title reveal">{{ group.region }}</h2>
+  <p class="section-desc reveal">{{ group.blurb }}</p>
+  <div class="cross-link-grid">
+    {% for st in group.states %}
+    <a href="{{ depth }}states/{{ st.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ st.name }}</div>
+      <div class="cl-sub">{% if st.city_count %}{{ st.city_count }} metro{{ 's' if st.city_count > 1 }} covered{% else %}Statewide coverage{% endif %}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endfor %}
+
+<!-- CTA -->
+{% set cta_title = 'Not Sure Where to Start?' %}
+{% set cta_description = 'Tell Commercial Lending Solutions about your deal and we will match it to the right capital source, in any state. We respond within 24 hours.' %}
+{% include '_contact_cta.html' %}
+{% endblock %}
