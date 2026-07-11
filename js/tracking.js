@@ -32,14 +32,27 @@
   if (typeof document === 'undefined') return;
   window.dataLayer = window.dataLayer || [];
 
-  // Google Ads conversion destination. The on-page gtag block in _base.html
-  // only configures GA4 (G-1S9151E1ZM); send_to targets are dropped unless
-  // the AW destination is registered with this gtag instance too.
+  // Google Ads conversion destination. Some pages (generated from _base.html)
+  // load gtag.js for GA4; hand-maintained pages (homepage etc.) run GTM only
+  // and have no window.gtag at all. Conversions reported via send_to need the
+  // gtag.js library with the AW destination registered on THIS page, so this
+  // block makes tracking.js self-sufficient on every page:
+  //   - define window.gtag if the page didn't
+  //   - load gtag.js (browser-cached; GTM loads the same library) if absent
+  //   - register the AW destination with the on-page gtag instance
   var ADS_ID = 'AW-17966960701';
   var BOOK_A_CALL_SEND_TO = ADS_ID + '/TIpaCNaPncEcEL2gqPdC';
-  if (typeof window.gtag === 'function') {
-    window.gtag('config', ADS_ID);
+  if (typeof window.gtag !== 'function') {
+    window.gtag = function gtag() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
   }
+  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+    var gtagScript = document.createElement('script');
+    gtagScript.async = true;
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + ADS_ID;
+    (document.head || document.documentElement).appendChild(gtagScript);
+  }
+  window.gtag('config', ADS_ID);
 
   // Website-only channel identifiers. Any contact click matching these
   // values is provably web-sourced and triggers the web_sourced_lead
