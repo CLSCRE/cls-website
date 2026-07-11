@@ -827,3 +827,31 @@
     initForms();
   }
 })();
+
+/* ── Scroll-reveal fallback ──────────────────────────────────────────
+   Some pages use the .reveal class (opacity:0 in global.css) but ship no
+   IntersectionObserver script, leaving their content permanently invisible.
+   This reveals any .reveal element still lacking .visible. Idempotent:
+   pages with their own observer are unaffected. */
+(function() {
+  'use strict';
+  function initReveal() {
+    var els = document.querySelectorAll('.reveal:not(.visible)');
+    if (!els.length) return;
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function(el) { obs.observe(el); });
+    } else {
+      els.forEach(function(el) { el.classList.add('visible'); });
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initReveal);
+  } else {
+    initReveal();
+  }
+})();
