@@ -85,6 +85,37 @@
     }
   }
 
+  // GA4 client ID capture for CRM-side lead-quality tracking. The client ID
+  // travels with a lead into Salesforce so a later stage change (qualified,
+  // closed) can fire the matching GA4 qualify_lead / close_convert_lead
+  // event via Measurement Protocol, tying paid lead quality back to Ads.
+  function getGA4ClientId() {
+    var m = document.cookie.match(/(?:^|;\s*)_ga=([^;]+)/);
+    if (!m) return '';
+    // Cookie format GA1.1.XXXXXXXXXX.XXXXXXXXXX; client_id is the last two
+    // dot-separated segments.
+    var parts = decodeURIComponent(m[1]).split('.');
+    return parts.length >= 4 ? parts.slice(-2).join('.') : '';
+  }
+  window.CLS_getGA4ClientId = getGA4ClientId;
+
+  function populateGA4ClientIdFields() {
+    var cid = getGA4ClientId();
+    if (!cid) return;
+    var fields = document.querySelectorAll('[data-ga-client-id-field]');
+    for (var i = 0; i < fields.length; i++) {
+      fields[i].value = cid;
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', populateGA4ClientIdFields);
+  } else {
+    populateGA4ClientIdFields();
+  }
+  // The _ga cookie may not be written yet on a brand-new session (gtag sets
+  // it asynchronously on first load), so retry once shortly after.
+  setTimeout(populateGA4ClientIdFields, 800);
+
   document.addEventListener(
     'click',
     function (e) {
