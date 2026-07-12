@@ -1325,10 +1325,13 @@ def main():
                 "loc": f"{BASE_URL}/{canonical}",
                 "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6",
             })
-        # Generate city market index page
+        # Generate city market index page.
+        # This hub page OWNS the generic "[city] commercial real estate loans" /
+        # "[city] commercial mortgage" head queries; the /financing/ and /property/
+        # spokes target their product-specific queries and link back here.
         seo_index = {
-            "title": f"Commercial Real Estate Financing in {city['city']}, {city['state']} | Commercial Lending Solutions",
-            "meta_description": f"Explore commercial lending options by neighborhood in {city['city']}, {city['state']}. Browse {len(neighborhoods)} submarkets with financing for every property type.",
+            "title": f"{city['city']}, {city['state']} Commercial Real Estate Loans & Mortgages | CLS CRE",
+            "meta_description": f"Commercial real estate loans in {city['city']}, {city['state']}: bridge, permanent, construction, SBA and every major program from 1,000+ lenders. Free quote from a commercial mortgage broker.",
         }
         featured = pick_featured_markets(city, cities, n_total=8)
         featured = [{**c, "teaser": first_sentence(c.get("context", ""), 140),

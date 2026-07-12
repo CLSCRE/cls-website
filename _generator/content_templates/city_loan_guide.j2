@@ -33,6 +33,10 @@
 </ul>
 <p>Rates in {{ city.city }} may vary from national averages based on local market conditions, property type, and sponsor experience. The {{ city.city }} market's {{ data.stats.multifamily_cap_rate }} multifamily cap rates and {{ data.stats.industrial_cap_rate }} industrial cap rates influence lender pricing as they underwrite to specific debt yield and coverage targets.</p>
 
+<div style="background:#F0F7F4;border-left:4px solid #006A4E;padding:16px 20px;margin:24px 0;border-radius:0 4px 4px 0">
+<p style="margin:0"><strong>Pricing a live deal?</strong> This guide covers how the market works. For current terms, program details, and a free quote, go to our <a href="../financing/{{ loan.slug }}-{{ city.link_slug or city.slug }}.html">{{ loan.name }} in {{ city.city }}, {{ city.state }}</a> page or call (310) 708-0690.</p>
+</div>
+
 <h2>Qualification Requirements</h2>
 <p>Qualifying for {{ loan.name.lower() }} in {{ city.city }} requires demonstrating both borrower strength and property fundamentals. Key requirements include:</p>
 <ul>
@@ -53,7 +57,7 @@
 
 <h2>Exit Strategy Considerations</h2>
 {% if loan_key == "bridge" %}
-<p>Every bridge loan in {{ city.city }} requires a clear exit strategy — typically either a permanent loan refinance or a property sale. Given the market's {{ data.stats.rent_growth }} rent growth and {{ data.stats.multifamily_cap_rate }} multifamily cap rates, well-executed value-add business plans can create significant equity value that supports attractive permanent refinancing terms or profitable dispositions.</p>
+<p>Every bridge loan in {{ city.city }} requires a clear exit strategy, typically either a permanent loan refinance or a property sale. Given the market's {{ data.stats.rent_growth }} rent growth and {{ data.stats.multifamily_cap_rate }} multifamily cap rates, well-executed value-add business plans can create significant equity value that supports attractive permanent refinancing terms or profitable dispositions.</p>
 <p>The key risk factors for bridge loan exits in {{ city.city }} include renovation timeline delays, market rent assumptions, and the pace of lease-up. Budget conservatively and build in a 6-month cushion on your bridge term to account for unforeseen circumstances.</p>
 {% elif loan_key == "permanent" %}
 <p>Permanent loans in {{ city.city }} are designed for long-term hold strategies, but borrowers should consider prepayment provisions carefully. Common structures include yield maintenance, defeasance, and declining prepayment penalties. The right prepayment structure depends on your expected hold period and the likelihood of refinancing or selling before maturity.</p>
@@ -62,12 +66,12 @@
 <p>Construction loans in {{ city.city }} are interim financing that must be replaced upon project completion. The typical exit is a permanent loan once the property is built and stabilized, or a sale to a long-term investor. The {{ city.city }} market's {{ data.stats.job_growth }} job growth and {{ data.stats.population_growth }} population growth support absorption assumptions, but borrowers should underwrite conservatively and have backup exit options.</p>
 {% elif loan_key == "sba" %}
 <p>SBA loans in {{ city.city }} are long-term financing designed for owner-occupied properties, so the primary exit is continued business operation and eventual loan payoff. The SBA 504 program features below-market fixed rates that make early repayment unnecessary for most borrowers. The 7(a) program offers more flexibility for business transitions.</p>
-<p>If you plan to sell the property before loan maturity, review your prepayment terms carefully — SBA 504 loans have declining prepayment penalties over the first 10 years, while 7(a) terms vary by lender.</p>
+<p>If you plan to sell the property before loan maturity, review your prepayment terms carefully: SBA 504 loans have declining prepayment penalties over the first 10 years, while 7(a) terms vary by lender.</p>
 {% elif loan_key == "mezzanine" %}
 <p>Mezzanine and preferred equity positions in {{ city.city }} are structured with clear exit timelines, typically aligning with the business plan execution period. The exit is usually through a refinance that consolidates the capital stack at a lower blended cost once the property's value has increased, or through a property sale that generates sufficient proceeds to repay all capital layers.</p>
 <p>Given {{ city.city }}'s {{ data.stats.rent_growth }} rent growth, well-executed value-add strategies can create the equity cushion needed to refinance into permanent financing that fully repays the mezzanine position.</p>
 {% else %}
-<p>Specialty financing exits in {{ city.city }} vary significantly by asset type and business plan. Some specialty properties — like self-storage and data centers — can transition to permanent agency or CMBS financing once stabilized. Others may require continued specialty lending or a sale to a specialized operator.</p>
+<p>Specialty financing exits in {{ city.city }} vary significantly by asset type and business plan. Some specialty properties, like self-storage and data centers, can transition to permanent agency or CMBS financing once stabilized. Others may require continued specialty lending or a sale to a specialized operator.</p>
 <p>The key is structuring the initial financing with a realistic exit timeline and identifying permanent capital sources early in the process. The {{ city.city }} market's {{ data.stats.job_growth }} job growth supports demand across specialty property types.</p>
 {% endif %}
 
@@ -79,8 +83,9 @@
 <p>CLS CRE provides {{ loan.name.lower() }} throughout the {{ city.metro }} metro area, with access to 1,000+ lenders competing for your deal. Our market expertise in {{ city.city }} commercial real estate helps you navigate the lending landscape and secure the most competitive terms available.</p>
 <p>Related resources:</p>
 <ul>
-<li><a href="../financing/{{ loan.slug }}.html">{{ loan.name }} — National Overview</a></li>
-<li><a href="../financing/{{ loan.slug }}-{{ city.slug }}.html">{{ loan.name }} in {{ city.city }}</a></li>
+<li><a href="../financing/{{ loan.slug }}.html">{{ loan.name }}: National Overview</a></li>
+<li><a href="../financing/{{ loan.slug }}-{{ city.link_slug or city.slug }}.html">{{ loan.name }} in {{ city.city }}: Rates &amp; Terms</a></li>
+<li><a href="../markets/{{ city.link_slug or city.slug }}/">Commercial Real Estate Loans in {{ city.city }}</a></li>
 <li><a href="multifamily-investing-{{ city.slug }}-guide.html">Multifamily Investing in {{ city.city }}</a></li>
 <li><a href="industrial-investing-{{ city.slug }}-guide.html">Industrial Investing in {{ city.city }}</a></li>
 <li><a href="cre-market-report-{{ city.slug }}-2026.html">{{ city.city }} Commercial Real Estate Market Report 2026</a></li>

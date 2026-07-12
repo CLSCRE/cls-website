@@ -26,7 +26,7 @@
 <li><strong>Cap Rate Spread:</strong> {{ city.city }} {{ prop.name.lower() }} cap rates at {{ data.stats[prop_key + '_cap_rate'] }} compare favorably to national averages, reflecting {{ "the market's premium fundamentals and institutional demand" if data.stats[prop_key + '_cap_rate'].split('-')[0].replace('%','').replace(' ','')|float < 5.5 else "attractive yields for investors seeking current cash flow" }}</li>
 <li><strong>Rent Growth Trajectory:</strong> {{ data.stats.rent_growth }} annual rent growth supports both value-add and core investment strategies</li>
 <li><strong>Supply Pipeline:</strong> New {{ prop.name.lower() }} construction activity should be evaluated relative to the market's absorption capacity</li>
-<li><strong>Tenant Quality:</strong> The {{ city.city }} metro's major employment sectors — {{ data.stats.major_employers }} — drive {{ prop.name.lower() }} tenant demand and creditworthiness</li>
+<li><strong>Tenant Quality:</strong> The {{ city.city }} metro's major employment sectors ({{ data.stats.major_employers }}) drive {{ prop.name.lower() }} tenant demand and creditworthiness</li>
 </ul>
 
 <h2>Financing Options for {{ prop.name }} in {{ city.city }}</h2>
@@ -38,11 +38,15 @@
 </ul>
 <p>The optimal financing structure depends on your business plan (core hold, value-add, or development), the property's current condition and occupancy, and your desired leverage and hold period. In the {{ city.city }} market, lenders are most competitive for well-located assets with strong fundamentals and experienced sponsors.</p>
 
+<div style="background:#F0F7F4;border-left:4px solid #006A4E;padding:16px 20px;margin:24px 0;border-radius:0 4px 4px 0">
+<p style="margin:0"><strong>Financing a {{ prop.name.lower() }} deal in {{ city.city }}?</strong> This guide covers the investment landscape. For current terms, capital sources, and a free quote, go to our <a href="../property/{{ prop.slug }}-{{ city.link_slug or city.slug }}.html">{{ prop.name }} Financing in {{ city.city }}, {{ city.state }}</a> page or call (310) 708-0690.</p>
+</div>
+
 <h2>Top Submarkets for {{ prop.name }} Investment</h2>
 <p>The {{ city.metro }} metro features several distinct submarkets for {{ prop.name.lower() }} investment, each with unique characteristics:</p>
 <ul>
 {% for neighborhood in city.neighborhoods %}
-<li><strong>{{ neighborhood }}</strong> — offering distinct opportunities within the broader {{ city.city }} {{ prop.name.lower() }} market</li>
+<li><strong>{{ neighborhood }}</strong>: offering distinct opportunities within the broader {{ city.city }} {{ prop.name.lower() }} market</li>
 {% endfor %}
 </ul>
 <p>The most active investment corridors for {{ prop.name.lower() }} in {{ city.city }} include {{ data.stats.top_submarkets }}. Submarket selection significantly impacts both returns and financing terms, as lenders evaluate location-specific metrics in their underwriting.</p>
@@ -57,12 +61,13 @@
 </ul>
 <p>{{ city.context }}</p>
 
-<h2>CLS CRE — {{ prop.name }} Financing in {{ city.city }}</h2>
+<h2>CLS CRE: {{ prop.name }} Financing in {{ city.city }}</h2>
 <p>CLS CRE specializes in {{ prop.name.lower() }} financing throughout the {{ city.metro }} metropolitan area. With access to 1,000+ lenders, we match your specific {{ prop.name.lower() }} investment with the right capital source at the most competitive terms available.</p>
 <p>Related resources:</p>
 <ul>
-<li><a href="../property/{{ prop.slug }}.html">{{ prop.name }} Financing — National Overview</a></li>
-<li><a href="../property/{{ prop.slug }}-{{ city.slug }}.html">{{ prop.name }} Financing in {{ city.city }}</a></li>
+<li><a href="../property/{{ prop.slug }}.html">{{ prop.name }} Financing: National Overview</a></li>
+<li><a href="../property/{{ prop.slug }}-{{ city.link_slug or city.slug }}.html">{{ prop.name }} Financing in {{ city.city }}: Rates &amp; Terms</a></li>
+<li><a href="../markets/{{ city.link_slug or city.slug }}/">Commercial Real Estate Loans in {{ city.city }}</a></li>
 <li><a href="bridge-loans-{{ city.slug }}-guide.html">Bridge Loans in {{ city.city }}</a></li>
 <li><a href="permanent-loans-{{ city.slug }}-guide.html">Permanent Loans in {{ city.city }}</a></li>
 <li><a href="construction-loans-{{ city.slug }}-guide.html">Construction Loans in {{ city.city }}</a></li>

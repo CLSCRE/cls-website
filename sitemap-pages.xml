@@ -115,6 +115,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://clscre.com/disclaimer.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/accessibility.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>yearly</changefreq>

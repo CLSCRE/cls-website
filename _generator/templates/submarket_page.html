@@ -47,7 +47,7 @@
 <section class="cross-links">
 <div class="section-inner">
   <h2 class="reveal">Financing Programs in {{ city.city }}</h2>
-  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore loan programs available for {{ neighborhood }} and the broader {{ city.city }} market.</p>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore loan programs available for {{ neighborhood }}, or see every option on our guide to <a href="{{ depth }}markets/{{ city.slug }}/" style="color:var(--green);font-weight:600">commercial real estate loans in {{ city.city }}, {{ city.state }}</a>.</p>
   <div class="cross-link-grid">
     {% for lt in all_loan_types %}
     <a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">

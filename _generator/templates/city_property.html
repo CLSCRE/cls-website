@@ -104,8 +104,12 @@
 <section class="content-section">
 <div class="section-inner">
   <h2 class="section-title reveal">Financing in {{ city.city }}</h2>
-  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore loan programs available for {{ city.city }} commercial properties.</p>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore loan programs available for {{ city.city }} commercial properties, or compare everything on our <a href="{{ depth }}markets/{{ city.slug }}/" style="color:var(--green);font-weight:600">commercial real estate loans in {{ city.city }}, {{ city.state }}</a> hub.</p>
   <div class="cross-link-grid">
+    <a href="{{ depth }}markets/{{ city.slug }}/" class="cross-link-card reveal">
+      <div class="cl-title">All {{ city.city }} Commercial Real Estate Loans</div>
+      <div class="cl-sub">Every loan program and property type in one place</div>
+    </a>
     {% for lt in all_loan_types %}
     <a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
       <div class="cl-title">{{ lt.name }}</div>

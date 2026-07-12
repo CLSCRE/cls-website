@@ -167,6 +167,24 @@ ALL_CITIES = [
     "brownsville", "laredo", "san-luis-obispo", "santa-cruz", "palm-springs",
 ]
 
+# Duplicate-city loser slugs (mirror of DUPLICATE_CITY_SLUGS in generate.py).
+# These cities' /financing/, /property/ and /markets/ pages exist only under
+# the winner slug; blog guides keep their own URLs but must LINK to winner
+# pages or every product/hub href on them is a 404.
+DUP_LINK_SLUG = {
+    "greenville": "greenville-sc",
+    "rockford": "rockford-il",
+    "oxnard": "oxnard-ventura",
+    "bridgeport": "bridgeport-stamford",
+    "albany-ny": "albany",
+}
+
+
+def link_city(city):
+    """City dict + link_slug: the slug under which its site pages exist."""
+    return {**city, "link_slug": DUP_LINK_SLUG.get(city["slug"], city["slug"])}
+
+
 # Loan slug → context key mapping
 LOAN_TYPES_MAP = [
     ("bridge-loans", "bridge"),
@@ -406,6 +424,7 @@ def main():
         data = city_data[city_slug]
 
         tpl = env.get_template("city_market_report.j2")
+        city = link_city(city)
         content = tpl.render(city=city, data=data)
 
         article = {
@@ -444,7 +463,7 @@ def main():
         data = city_data[city_slug]
 
         tpl = env.get_template("city_loan_guide.j2")
-        content = tpl.render(city=city, loan=loan, data=data, loan_key=loan_key)
+        content = tpl.render(city=link_city(city), loan=loan, data=data, loan_key=loan_key)
 
         article = {
             "slug": f"{loan_slug}-{city_slug}-guide",
@@ -478,7 +497,7 @@ def main():
 
         prop_key = PROP_STATS_KEY[prop_slug]
         tpl = env.get_template("city_property_guide.j2")
-        content = tpl.render(city=city, prop=prop, data=data, prop_key=prop_key)
+        content = tpl.render(city=link_city(city), prop=prop, data=data, prop_key=prop_key)
 
         article = {
             "slug": f"{prop_slug}-investing-{city_slug}-guide",
