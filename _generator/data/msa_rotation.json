@@ -1,5 +1,5 @@
 {
-  "cursor": 10,
+  "cursor": 20,
   "last_covered": {
     "new-york": "2026-07-06",
     "los-angeles": "2026-07-06",
@@ -10,6 +10,16 @@
     "philadelphia": "2026-07-06",
     "miami": "2026-07-06",
     "atlanta": "2026-07-06",
-    "phoenix": "2026-07-06"
+    "phoenix": "2026-07-06",
+    "boston": "2026-07-13",
+    "san-francisco": "2026-07-13",
+    "riverside": "2026-07-13",
+    "detroit": "2026-07-13",
+    "seattle": "2026-07-13",
+    "minneapolis": "2026-07-13",
+    "san-diego": "2026-07-13",
+    "tampa": "2026-07-13",
+    "denver": "2026-07-13",
+    "st-louis": "2026-07-13"
   }
 }
