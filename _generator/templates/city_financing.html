@@ -75,6 +75,30 @@
 {% set txn_alt = true %}
 {% include '_transaction_cards.html' %}
 
+{% if city.slug == 'los-angeles' %}
+<!-- LA DEEP DIVE — submarket-level content -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">{{ loan.name }} by LA Submarket and Buyer Type</h2>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">LA financing changes block by block and deal type by deal type. Go deeper below.</p>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}los-angeles/index.html" class="cross-link-card reveal" style="border-color:var(--green)"><div class="cl-title">Los Angeles CRE Hub</div><div class="cl-sub">Guides, tools, and every LA vertical</div></a>
+    {% if loan.slug == 'construction-loans' %}
+    <a href="{{ depth }}los-angeles/developers.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Developers</div><div class="cl-sub">TOC, ED1, ARO, construction to takeout</div></a>
+    <a href="{{ depth }}los-angeles/toc-density-bonus-construction-financing.html" class="cross-link-card reveal"><div class="cl-title">TOC Density Bonus Construction</div><div class="cl-sub">Guide</div></a>
+    {% elif loan.slug == 'sba-loans' %}
+    <a href="{{ depth }}los-angeles/owner-users.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Owner-Users</div><div class="cl-sub">SBA and buy-vs-lease</div></a>
+    {% else %}
+    <a href="{{ depth }}los-angeles/investors.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Investors</div><div class="cl-sub">Acquisition and value-add financing</div></a>
+    {% endif %}
+    <a href="{{ depth }}multifamily/la/index.html" class="cross-link-card reveal"><div class="cl-title">LA Apartments by Neighborhood</div><div class="cl-sub">30 submarkets</div></a>
+    <a href="{{ depth }}industrial/la/index.html" class="cross-link-card reveal"><div class="cl-title">LA Industrial by Submarket</div><div class="cl-sub">9 submarkets</div></a>
+    <a href="{{ depth }}retail/la/index.html" class="cross-link-card reveal"><div class="cl-title">LA Retail by Corridor</div><div class="cl-sub">9 corridors</div></a>
+  </div>
+</div>
+</section>
+{% endif %}
+
 <!-- OTHER LOAN TYPES IN THIS CITY -->
 <section class="cross-links">
 <div class="section-inner">

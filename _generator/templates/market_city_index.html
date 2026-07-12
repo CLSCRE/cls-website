@@ -55,6 +55,24 @@
 </div>
 </section>
 
+{% if city.slug == 'los-angeles' %}
+<!-- LA DEEP DIVE — the full submarket + persona vertical -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Our Home Market</div>
+  <h2 class="section-title reveal">The Full Los Angeles CRE Hub</h2>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Rent control, Measure ULA, soft-story retrofits, TOC construction, and 48 neighborhood and submarket pages across multifamily, industrial, and retail. This is the deepest LA content on the site.</p>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}los-angeles/index.html" class="cross-link-card reveal" style="border-color:var(--green)"><div class="cl-title">Los Angeles CRE Hub</div><div class="cl-sub">Start here: guides, tools, personas</div></a>
+    <a href="{{ depth }}multifamily/la/index.html" class="cross-link-card reveal"><div class="cl-title">LA Apartments by Neighborhood</div><div class="cl-sub">30 submarkets</div></a>
+    <a href="{{ depth }}industrial/la/index.html" class="cross-link-card reveal"><div class="cl-title">LA Industrial by Submarket</div><div class="cl-sub">9 submarkets</div></a>
+    <a href="{{ depth }}retail/la/index.html" class="cross-link-card reveal"><div class="cl-title">LA Retail by Corridor</div><div class="cl-sub">9 corridors</div></a>
+    <a href="{{ depth }}tools/la-rent-control-checker.html" class="cross-link-card reveal"><div class="cl-title">LA Rent Control Checker</div><div class="cl-sub">Free tool</div></a>
+  </div>
+</div>
+</section>
+{% endif %}
+
 <!-- NEIGHBORHOODS -->
 <section class="content-section">
 <div class="section-inner">
