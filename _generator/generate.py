@@ -27,6 +27,7 @@ import la_vertical
 import la_industrial
 import la_retail
 import la_construction
+import la_affordable
 import la_personas as la_personas_mod
 
 
@@ -1379,6 +1380,8 @@ def main():
          "Free debt yield calculator for commercial real estate. NOI divided by loan amount, plus typical lender minimums and the max loan each floor supports.", "0.8"),
         ("tool_la_rentcontrol.html", "tools/la-rent-control-checker.html", "tools/la-rent-control-checker.html", "LA Rent Control Checker | Commercial Lending Solutions",
          "Free tool: enter jurisdiction, year built, and unit count to see whether an LA-area apartment building falls under RSO, a municipal rent ordinance, or AB 1482, and what it means for financing.", "0.8"),
+        ("tool_welfare.html", "tools/welfare-exemption-calculator.html", "tools/welfare-exemption-calculator.html", "Welfare Exemption Equity Reduction Calculator | CLS CRE",
+         "Free tool for LA affordable developers: estimate the property tax savings, NOI lift, value lift, and reduced equity the California Welfare Exemption creates on your deal.", "0.8"),
     ]
     for tpl_name, out_rel, canonical, title, desc, priority in tool_pages:
         tpl_tool = env.get_template(tpl_name)
@@ -1410,7 +1413,7 @@ def main():
     print("\n=== Generating Los Angeles Vertical ===")
     la_hoods = la_vertical.build_hoods()
     la_hood_groups = la_vertical.build_hood_groups(la_hoods)
-    la_guides = la_vertical.build_guides() + la_construction.build_guides()
+    la_guides = la_vertical.build_guides() + la_construction.build_guides() + la_affordable.build_guides()
     la_hood_count = len(la_hoods)
 
     la_industrial_hoods = la_industrial.build_hoods()

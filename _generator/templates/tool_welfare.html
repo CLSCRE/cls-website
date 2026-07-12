@@ -1,0 +1,128 @@
+{% extends '_base.html' %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Welfare Exemption Equity Reduction Calculator","description":"Free tool for LA affordable developers: estimate the property tax savings, NOI lift, value lift, and reduced equity requirement the California Welfare Exemption creates on a ground-up affordable deal.","url":"https://clscre.com/tools/welfare-exemption-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does the California Welfare Exemption save on property taxes?","acceptedAnswer":{"@type":"Answer","text":"California property taxes run roughly 1.1% to 1.25% of assessed value per year. On qualifying affordable units, the Welfare Exemption eliminates that tax, which is 100% on fully qualifying low-income units and commonly 80% or more on a blended-project basis. On a $20 million affordable project that is roughly $220,000 to $250,000 of annual property tax that stays in the deal instead of going to the county."}},{"@type":"Question","name":"How does a property tax exemption increase my loan proceeds?","acceptedAnswer":{"@type":"Answer","text":"Property tax is an operating expense, so eliminating it raises Net Operating Income dollar for dollar. A lender that underwrites the exempt tax line sizes the loan to the higher NOI, which supports more debt at the same coverage. More debt proceeds means less equity the developer has to bring. The size of that benefit depends on the lender crediting the exemption correctly, which not all of them do."}},{"@type":"Question","name":"Do lenders actually credit the Welfare Exemption in underwriting?","acceptedAnswer":{"@type":"Answer","text":"Some do and some do not, and the difference is worth real proceeds. A lender fluent in California affordable structures will underwrite to the exempt tax line once the exemption is documented and the nonprofit-participation structure is in place. A generalist lender may underwrite a full market tax bill and cut your proceeds accordingly. Matching the deal to lenders who credit the exemption is where a specialized broker earns their fee."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"Welfare Exemption Calculator","item":"https://clscre.com/tools/welfare-exemption-calculator.html"}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><a href="{{ depth }}tools/index.html">Calculators</a></li>
+  <li><span>Welfare Exemption Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free LA Tool</div>
+  <h1 class="reveal">Welfare Exemption Equity Reduction Calculator</h1>
+  <p class="reveal">The California Welfare Exemption removes property tax from qualifying affordable units. That tax savings flows straight to NOI, lifts your value, and lets a lender advance more debt so you bring less equity. Estimate all four effects on your LA affordable deal.</p>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Estimate Your Exemption Benefit</h2>
+      <div class="calc-form">
+        <div class="calc-field">
+          <label for="weValue">Stabilized Project Value</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="weValue" inputmode="decimal" placeholder="20,000,000"></div>
+        </div>
+        <div class="calc-field">
+          <label for="weTaxRate">Property Tax Rate (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="weTaxRate" inputmode="decimal" value="1.15"><span class="calc-suffix">%</span></div>
+        </div>
+        <div class="calc-field">
+          <label for="weExemptPct">Portion of Tax Eliminated (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="weExemptPct" inputmode="decimal" value="80"><span class="calc-suffix">%</span></div>
+          <p style="font-size:11.5px;color:var(--gray-400);margin:4px 0 0">100% on fully qualifying units; blended projects often land near 80%.</p>
+        </div>
+        <div class="calc-field">
+          <label for="weCap">Underwriting Cap Rate (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="weCap" inputmode="decimal" placeholder="5.25"><span class="calc-suffix">%</span></div>
+        </div>
+        <div class="calc-field">
+          <label for="weLtv">Lender Max LTV (%)</label>
+          <div class="calc-input-wrap"><input type="text" id="weLtv" inputmode="decimal" value="70"><span class="calc-suffix">%</span></div>
+        </div>
+        <button class="btn-primary" onclick="calcWE()" style="width:100%;justify-content:center;margin-top:8px">Calculate Benefit</button>
+        <p style="font-size:11.5px;color:var(--gray-400);margin-top:10px">Estimate only, not tax or legal advice. Exemption eligibility and lender treatment vary; confirm with counsel, the county assessor, and your lender.</p>
+      </div>
+    </div>
+    <div class="calc-result" id="weResult" style="display:none">
+      <div class="calc-gauge gauge-green" id="weGauge">
+        <div class="gauge-value" id="weSavings">--</div>
+        <div class="gauge-label">Annual Tax Savings</div>
+      </div>
+      <div class="calc-detail-grid">
+        <div class="calc-detail"><span class="calc-detail-label">NOI Lift (per year)</span><span class="calc-detail-value" id="weNoi">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Value Lift (at cap rate)</span><span class="calc-detail-value" id="weValueLift">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Added Loan Proceeds</span><span class="calc-detail-value" id="weProceeds">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Equity You Save</span><span class="calc-detail-value" id="weEquity">--</span></div>
+      </div>
+      <div class="calc-verdict" id="weVerdict"></div>
+      <a href="{{ depth }}los-angeles/welfare-exemption-affordable-financing-la.html" class="btn-secondary" style="width:100%;justify-content:center;margin-top:14px;text-align:center;display:block">Read: The Welfare Exemption Financing Play &rarr;</a>
+      <a href="{{ depth }}apply.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:10px">Get This Deal Sized by a Specialist &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- RELATED -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Go Deeper on LA Affordable</h2>
+  <div class="cross-link-grid">
+    <a href="{{ depth }}los-angeles/welfare-exemption-affordable-financing-la.html" class="cross-link-card reveal"><div class="cl-title">Welfare Exemption Financing Play</div><div class="cl-sub">The full guide</div></a>
+    <a href="{{ depth }}los-angeles/ed1-welfare-exemption-100-affordable-la.html" class="cross-link-card reveal"><div class="cl-title">Financing 100% Affordable ED1 Projects</div><div class="cl-sub">ED1 + exemption combined</div></a>
+    <a href="{{ depth }}los-angeles/nonprofit-participation-entity-structure-la.html" class="cross-link-card reveal"><div class="cl-title">Nonprofit Participation Structures</div><div class="cl-sub">How the entity qualifies</div></a>
+    <a href="{{ depth }}los-angeles/developers.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Developers</div><div class="cl-sub">Construction to takeout</div></a>
+  </div>
+</div>
+</section>
+
+{% set faq_title = 'Welfare Exemption Calculator FAQ' %}
+{% set faq_alt = true %}
+{% set faqs = [
+  {"q": "How much does the California Welfare Exemption save on property taxes?", "a": "California property taxes run roughly 1.1% to 1.25% of assessed value per year. On qualifying affordable units, the Welfare Exemption eliminates that tax, which is 100% on fully qualifying low-income units and commonly 80% or more on a blended-project basis. On a $20 million affordable project that is roughly $220,000 to $250,000 of annual property tax that stays in the deal instead of going to the county."},
+  {"q": "How does a property tax exemption increase my loan proceeds?", "a": "Property tax is an operating expense, so eliminating it raises Net Operating Income dollar for dollar. A lender that underwrites the exempt tax line sizes the loan to the higher NOI, which supports more debt at the same coverage. More debt proceeds means less equity the developer has to bring. The size of that benefit depends on the lender crediting the exemption correctly, which not all of them do."},
+  {"q": "Do lenders actually credit the Welfare Exemption in underwriting?", "a": "Some do and some do not, and the difference is worth real proceeds. A lender fluent in California affordable structures will underwrite to the exempt tax line once the exemption is documented and the nonprofit-participation structure is in place. A generalist lender may underwrite a full market tax bill and cut your proceeds accordingly. Matching the deal to lenders who credit the exemption is where a specialized broker earns their fee."}
+] %}
+{% include '_faq_section.html' %}
+
+{% set cta_title = 'We Finance LA Affordable Deals Every Week' %}
+{% set cta_description = 'Commercial Lending Solutions is actively financing well over 1,000 affordable units in development across Los Angeles. Get your deal sized by a team that knows which lenders credit the exemption. Free review, response within 24 hours.' %}
+{% include '_contact_cta.html' %}
+
+<script>
+function parseNum(id){return parseFloat(document.getElementById(id).value.replace(/[^0-9.]/g,''))||0}
+function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+function calcWE(){
+  var val=parseNum('weValue'),tax=parseNum('weTaxRate')/100,ex=parseNum('weExemptPct')/100,cap=parseNum('weCap')/100,ltv=parseNum('weLtv')/100;
+  if(!val||!tax||!ex||!cap){return;}
+  var savings=val*tax*ex;
+  var valueLift=savings/cap;
+  var proceeds=valueLift*(ltv||0);
+  document.getElementById('weSavings').textContent=fmt(savings);
+  document.getElementById('weNoi').textContent='+'+fmt(savings);
+  document.getElementById('weValueLift').textContent='+'+fmt(valueLift);
+  document.getElementById('weProceeds').textContent=ltv?'+'+fmt(proceeds):'Enter LTV';
+  document.getElementById('weEquity').textContent=ltv?'-'+fmt(proceeds):'Enter LTV';
+  var v=document.getElementById('weVerdict');
+  v.innerHTML='<strong>The exemption is worth about '+fmt(valueLift)+' of value on this deal.</strong> Eliminating '+fmt(savings)+' of annual property tax lifts NOI by the same amount, which at a '+parseNum('weCap').toFixed(2)+'% cap rate adds roughly '+fmt(valueLift)+' of value'+(ltv?' and supports about '+fmt(proceeds)+' more debt, so you bring that much less equity':'')+'. The catch: only a lender that underwrites the exempt tax line delivers this. Matching the deal to the right capital source is the whole game.';
+  document.getElementById('weResult').style.display='block';
+  if(typeof gtag==='function')gtag('event','calculator_used',{calculator:'welfare_exemption'});
+}
+</script>
+{% endblock %}
