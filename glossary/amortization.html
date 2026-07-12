@@ -331,7 +331,7 @@
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
         window.dataLayer = window.dataLayer || [];
-        // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+        // Soft lead only, do NOT fire generate_lead (reserved for apply/real forms)
         window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })

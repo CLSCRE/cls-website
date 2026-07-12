@@ -102,6 +102,9 @@ MARKET_REPORT_CITIES = [
     # Batch 13 expansion — final Tier 2 metros
     "midland", "abilene", "tyler", "beaumont", "killeen", "round-rock",
     "brownsville", "laredo", "san-luis-obispo", "santa-cruz", "palm-springs",
+    # Batch 14 expansion — NJ + secondary WA/OR metros
+    "newark", "jersey-city", "tacoma", "olympia", "bellingham",
+    "eugene", "medford",
 ]
 
 # All Tier 1 cities used across all guide types
@@ -165,6 +168,9 @@ ALL_CITIES = [
     # Batch 13 expansion — final Tier 2 metros
     "midland", "abilene", "tyler", "beaumont", "killeen", "round-rock",
     "brownsville", "laredo", "san-luis-obispo", "santa-cruz", "palm-springs",
+    # Batch 14 expansion — NJ + secondary WA/OR metros
+    "newark", "jersey-city", "tacoma", "olympia", "bellingham",
+    "eugene", "medford",
 ]
 
 # Duplicate-city loser slugs (mirror of DUPLICATE_CITY_SLUGS in generate.py).

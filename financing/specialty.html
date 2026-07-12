@@ -1242,6 +1242,14 @@
       <div class="cl-title">Astoria, OR</div>
       <div class="cl-sub">Specialty Loans</div>
     </a>
+    <a href="../financing/specialty-newark.html" class="cross-link-card reveal">
+      <div class="cl-title">Newark, NJ</div>
+      <div class="cl-sub">Specialty Loans</div>
+    </a>
+    <a href="../financing/specialty-jersey-city.html" class="cross-link-card reveal">
+      <div class="cl-title">Jersey City, NJ</div>
+      <div class="cl-sub">Specialty Loans</div>
+    </a>
   </div>
 </div>
 </section>
@@ -1335,21 +1343,6 @@
   </div>
 </div>
 </section>
-
-<!-- RELATED CASE STUDIES -->
-<section style="padding:48px 0;background:var(--gray-50)">
-<div class="section-inner">
-  <div class="section-label reveal">Recent Deals</div>
-  <h2 class="section-title reveal">Related Transactions</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:20px">
-    <a href="../blog/case-study-12m-net-lease-auto-service-van-nuys.html" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:16px;text-decoration:none;transition:all .2s"><div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:4px">Permanent Loan</div><div style="font-size:14px;font-weight:600;color:var(--navy);line-height:1.4">$12,000,000 Net Lease Auto Service Center in Van Nuys, CA</div><div style="font-size:12px;color:var(--green);margin-top:6px">Read case study &rarr;</div></a>
-    <a href="../blog/case-study-12m-self-storage-bridge-glendale.html" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:16px;text-decoration:none;transition:all .2s"><div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:4px">Bridge Loan</div><div style="font-size:14px;font-weight:600;color:var(--navy);line-height:1.4">case-study-12m-self-storage-bridge-glendale</div><div style="font-size:12px;color:var(--green);margin-top:6px">Read case study &rarr;</div></a>
-    <a href="../blog/case-study-14m-boutique-hotel-adaptive-reuse-arts-district.html" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:16px;text-decoration:none;transition:all .2s"><div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:4px">Construction Loan</div><div style="font-size:14px;font-weight:600;color:var(--navy);line-height:1.4">case-study-14m-boutique-hotel-adaptive-reuse-arts-district</div><div style="font-size:12px;color:var(--green);margin-top:6px">Read case study &rarr;</div></a>
-    <a href="../blog/case-study-16m-boutique-hotel-bridge-miami-brickell.html" style="display:block;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:16px;text-decoration:none;transition:all .2s"><div style="font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:4px">Bridge Loan</div><div style="font-size:14px;font-weight:600;color:var(--navy);line-height:1.4">case-study-16m-boutique-hotel-bridge-miami-brickell</div><div style="font-size:12px;color:var(--green);margin-top:6px">Read case study &rarr;</div></a>
-  </div>
-  <p style="text-align:center;margin-top:20px"><a href="../track-record.html" style="color:var(--green);font-weight:600;text-decoration:none">View All 368 Case Studies &rarr;</a></p>
-</div>
-</section>
 <!-- CTA -->
 ﻿<section class="cta-section">
 <div class="section-inner" style="position:relative;z-index:1">
@@ -1400,7 +1393,7 @@
         document.getElementById('nlSuccess').style.display = 'block';
         if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
         window.dataLayer = window.dataLayer || [];
-        // Soft lead only — do NOT fire generate_lead (reserved for apply/real forms)
+        // Soft lead only, do NOT fire generate_lead (reserved for apply/real forms)
         window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
       } else { throw new Error('fail'); }
     })
