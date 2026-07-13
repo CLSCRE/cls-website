@@ -455,7 +455,6 @@ def main():
         "greenville": "greenville-sc",
         "rockford": "rockford-il",
         "oxnard": "oxnard-ventura",
-        "bridgeport": "bridgeport-stamford",
         "albany-ny": "albany",
     }
     cities = [c for c in cities if c["slug"] not in DUPLICATE_CITY_SLUGS]

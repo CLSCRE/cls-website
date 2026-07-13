@@ -82,7 +82,7 @@ MARKET_REPORT_CITIES = [
     "rochester-ny", "worcester", "albany-ny", "bakersfield",
     "dayton", "fort-myers", "wichita", "chattanooga",
     # Batch 7 expansion — next Tier 2 metros
-    "bridgeport-stamford", "new-haven", "oxnard-ventura", "allentown-lehigh-valley",
+    "bridgeport", "stamford", "new-haven", "oxnard-ventura", "allentown-lehigh-valley",
     "mcallen", "stockton", "columbia-sc", "winston-salem",
     # Batch 8 expansion — next Tier 2 metros
     "little-rock", "lakeland", "ogden", "augusta",
@@ -148,7 +148,7 @@ ALL_CITIES = [
     "rochester-ny", "worcester", "albany-ny", "bakersfield",
     "dayton", "fort-myers", "wichita", "chattanooga",
     # Batch 7 expansion — next Tier 2 metros
-    "bridgeport-stamford", "new-haven", "oxnard-ventura", "allentown-lehigh-valley",
+    "bridgeport", "stamford", "new-haven", "oxnard-ventura", "allentown-lehigh-valley",
     "mcallen", "stockton", "columbia-sc", "winston-salem",
     # Batch 8 expansion — next Tier 2 metros
     "little-rock", "lakeland", "ogden", "augusta",
@@ -181,7 +181,6 @@ DUP_LINK_SLUG = {
     "greenville": "greenville-sc",
     "rockford": "rockford-il",
     "oxnard": "oxnard-ventura",
-    "bridgeport": "bridgeport-stamford",
     "albany-ny": "albany",
 }
 

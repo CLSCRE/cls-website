@@ -1040,7 +1040,7 @@
     "city": "Savannah",
     "state": "GA",
     "metro": "Savannah-Hinesville-Statesboro",
-    "context": "Savannah has become one of the nation's most strategically important industrial and logistics markets, anchored by the Port of Savannah â€” the fastest-growing and third-busiest container port in the United States â€” which drives extraordinary warehouse and distribution demand across a rapidly expanding logistics corridor. Major occupiers including Amazon, Gulfstream Aerospace, and Hyundai's first U.S. EV manufacturing plant have transformed the metro into a premier Southeast industrial investment destination with vacancy rates at historic lows. Multifamily demand is supported by strong job creation and in-migration, while Savannah's historic district and growing tourism economy add retail and hospitality dimensions to a market increasingly attracting institutional capital.",
+    "context": "Savannah has become one of the nation's most strategically important industrial and logistics markets, anchored by the Port of Savannah \u00e2\u20ac\u201d the fastest-growing and third-busiest container port in the United States \u00e2\u20ac\u201d which drives extraordinary warehouse and distribution demand across a rapidly expanding logistics corridor. Major occupiers including Amazon, Gulfstream Aerospace, and Hyundai's first U.S. EV manufacturing plant have transformed the metro into a premier Southeast industrial investment destination with vacancy rates at historic lows. Multifamily demand is supported by strong job creation and in-migration, while Savannah's historic district and growing tourism economy add retail and hospitality dimensions to a market increasingly attracting institutional capital.",
     "neighborhoods": [
       "Downtown Savannah",
       "Pooler",
@@ -1575,33 +1575,41 @@
     ]
   },
   {
-    "slug": "bridgeport-stamford",
-    "city": "Bridgeport-Stamford",
+    "slug": "stamford",
+    "city": "Stamford",
     "state": "CT",
     "metro": "Bridgeport-Stamford-Norwalk",
-    "context": "The Bridgeport-Stamford-Norwalk metro is the wealthiest MSA in the United States by per-capita income and a dense concentration of financial services, headquartered companies, and luxury multifamily demand fed by commuters to Manhattan. Stamford is home to Charter Communications HQ, Synchrony Financial HQ, NBC Sports, WWE, Pitney Bowes, and one of the highest concentrations of hedge fund and private equity offices outside Manhattan. Bridgeport anchors the southern coast and is undergoing significant redevelopment around the Steel Point peninsula and the rail station. Lower Fairfield County submarkets, Greenwich, Westport, Darien, and New Canaan, support a robust market for trophy multifamily, mixed-use, and life sciences office.",
+    "context": "Stamford is the financial-services and corporate-headquarters anchor of Fairfield County, home to Charter Communications, Synchrony Financial, NBC Sports, WWE, Pitney Bowes, and one of the highest concentrations of hedge fund and private equity offices outside Manhattan. The Harbor Point and South End waterfront districts have driven substantial multifamily and mixed-use development, while Lower Fairfield County submarkets including Greenwich, Westport, Darien, and New Canaan support a robust market for trophy multifamily, mixed-use, and life sciences office fed by Manhattan-commuter demand.",
     "neighborhoods": [
       "Downtown Stamford",
       "South End Stamford",
       "Harbor Point",
-      "Downtown Bridgeport",
-      "Black Rock",
       "Norwalk",
       "Greenwich",
-      "Westport",
       "Darien",
       "New Canaan",
       "Wilton",
-      "Fairfield",
+      "Westport",
+      "Fairfield"
+    ]
+  },
+  {
+    "slug": "bridgeport",
+    "city": "Bridgeport",
+    "state": "CT",
+    "metro": "Bridgeport-Stamford-Norwalk",
+    "context": "Bridgeport is Connecticut's largest city and anchors the southern Fairfield County coast, undergoing significant redevelopment around the Steel Point peninsula and the Bridgeport rail station. The broader Greater Bridgeport submarket, including Stratford, Trumbull, Shelton, and Milford, supports a mix of value-add multifamily, industrial, and owner-user commercial financing, with Danbury and the Housatonic Valley towns rounding out a diverse secondary-market lending footprint north and west of the urban core.",
+    "neighborhoods": [
+      "Downtown Bridgeport",
+      "Black Rock",
       "Trumbull",
-      "Shelton",
       "Stratford",
       "Milford",
       "Derby",
+      "Shelton",
       "Monroe CT",
       "Newtown CT",
-      "Danbury",
-      "Stamford"
+      "Danbury"
     ]
   },
   {
@@ -3421,7 +3429,7 @@
     "city": "Laredo",
     "state": "TX",
     "metro": "Laredo",
-    "context": "Laredo functions as the single most consequential inland port on the U.S.-Mexico border, processing more than $300 billion in annual trade, a volume that places it ahead of every other U.S. land crossing and most major seaports by cargo value. That throughput is not abstract: it translates directly into relentless demand for Class A industrial product along the I-35 and Loop 20 corridors, where logistics operators, third-party warehouse providers, and maquiladora support companies lease cross-dock and bulk-distribution facilities tied to the manufacturing centers in Monterrey and the broader Nuevo León industrial corridor. World Trade Bridge and Colombia Solidarity Bridge together handle over 16,000 commercial crossings on peak days, and every capacity expansion on the Mexican side has historically triggered a wave of speculative industrial development on the Laredo side. The Webb County trade infrastructure, the Port of Laredo Foreign Trade Zone, and United Independent School District's concentration of logistics workforce training all reinforce the city's position as more than a transshipment point. Retail follows rooftops and cross-border shoppers: North Laredo's Mall del Norte and the surrounding power center strip along San Bernardo Avenue draw Mexican nationals who contribute materially to retail sales tax receipts, giving stabilized retail assets here a demand profile that is genuinely distinct from comparably sized Texas metros. Multifamily fundamentals are driven by a young, growing workforce tied to customs brokerage, freight forwarding, and port administration rather than any single large employer, and rent growth has been steady if unspectacular given the relative affordability of the housing stock. The underwriting risk that consistently distinguishes Laredo is concentration: the entire market moves with trade policy, USMCA compliance costs, and nearshoring investment decisions made in Mexico City and Monterrey, making tenant credit quality and lease term discipline more important here than in almost any other Texas industrial submarket.",
+    "context": "Laredo functions as the single most consequential inland port on the U.S.-Mexico border, processing more than $300 billion in annual trade, a volume that places it ahead of every other U.S. land crossing and most major seaports by cargo value. That throughput is not abstract: it translates directly into relentless demand for Class A industrial product along the I-35 and Loop 20 corridors, where logistics operators, third-party warehouse providers, and maquiladora support companies lease cross-dock and bulk-distribution facilities tied to the manufacturing centers in Monterrey and the broader Nuevo Le\u00f3n industrial corridor. World Trade Bridge and Colombia Solidarity Bridge together handle over 16,000 commercial crossings on peak days, and every capacity expansion on the Mexican side has historically triggered a wave of speculative industrial development on the Laredo side. The Webb County trade infrastructure, the Port of Laredo Foreign Trade Zone, and United Independent School District's concentration of logistics workforce training all reinforce the city's position as more than a transshipment point. Retail follows rooftops and cross-border shoppers: North Laredo's Mall del Norte and the surrounding power center strip along San Bernardo Avenue draw Mexican nationals who contribute materially to retail sales tax receipts, giving stabilized retail assets here a demand profile that is genuinely distinct from comparably sized Texas metros. Multifamily fundamentals are driven by a young, growing workforce tied to customs brokerage, freight forwarding, and port administration rather than any single large employer, and rent growth has been steady if unspectacular given the relative affordability of the housing stock. The underwriting risk that consistently distinguishes Laredo is concentration: the entire market moves with trade policy, USMCA compliance costs, and nearshoring investment decisions made in Mexico City and Monterrey, making tenant credit quality and lease term discipline more important here than in almost any other Texas industrial submarket.",
     "neighborhoods": [
       "Downtown Laredo",
       "North Laredo",
@@ -4632,27 +4640,6 @@
       "Wethersfield",
       "Enfield",
       "Rocky Hill"
-    ]
-  },
-  {
-    "slug": "bridgeport",
-    "city": "Bridgeport",
-    "state": "CT",
-    "metro": "Bridgeport-Stamford",
-    "context": "Fairfield County's economic engine runs on financial services concentration that has no peer outside Manhattan, with Greenwich and Stamford hosting a dense cluster of hedge funds, private equity firms, and asset managers including Bridgewater Associates, Point72, AQM Capital, and dozens of family offices that collectively manage trillions in assets. That employer base drives relentless demand for Class A office in Stamford's downtown core and along the I-95 and Merritt Parkway corridors, though suburban office elsewhere in the county has faced the same hybrid-work headwinds seen nationally, creating a bifurcated leasing environment where trophy product holds rent while commodity space struggles for absorption. Multifamily fundamentals are among the tightest in the Northeast: Stamford, Norwalk, and Danbury have absorbed significant new apartment supply driven by New York City commuters priced out of Brooklyn and Queens, and cap rates here compress accordingly, with life insurance companies and national banks both active on stabilized product. Bridgeport itself represents the county's most compelling repositioning story, with the University of Bridgeport, Housatonic Community College, and Bridgeport Hospital anchoring a residential conversion pipeline that has attracted value-add capital to underpriced multifamily and mixed-use assets. Industrial demand along the Route 8 corridor through Shelton and Derby reflects last-mile distribution pressure from the greater New York market. Connecticut's relatively high property tax environment and complex wetlands permitting add friction to ground-up development across the metro, which has historically constrained new supply and supported valuations for existing stabilized assets.",
-    "neighborhoods": [
-      "Downtown Bridgeport",
-      "Stratford",
-      "Milford",
-      "Shelton",
-      "Derby",
-      "Trumbull",
-      "Monroe CT",
-      "Newtown CT",
-      "Danbury",
-      "Norwalk",
-      "Stamford",
-      "Greenwich"
     ]
   },
   {
