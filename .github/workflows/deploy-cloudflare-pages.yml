@@ -1,0 +1,40 @@
+name: Deploy to Cloudflare Pages
+
+# Cloudflare Pages migration, Stage 1 (see docs/cloudflare-pages-evaluation.md).
+# Direct Upload only -- this workflow does NOT let Cloudflare build from source.
+# It uploads whatever static HTML already exists in website/ after the existing
+# generation pipeline (content-expansion.yml, the local rate-update cron, or a
+# manual regen) has already committed it. Runs on every push to main regardless
+# of which of those three writers pushed.
+#
+# Requires two repo secrets (Settings > Secrets and variables > Actions):
+#   CLOUDFLARE_API_TOKEN   -- scoped to Account.Cloudflare Pages:Edit (NOT the
+#                             zone-scoped token used elsewhere in this project)
+#   CLOUDFLARE_ACCOUNT_ID  -- 8afb77766fa8023f517c5e389360dc6d
+# Until both secrets exist this workflow will fail at the deploy step -- that
+# is expected and harmless; GitHub Pages remains the live origin throughout
+# Stage 1 and 2, so a failure here has zero effect on clscre.com.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: cloudflare-pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1   # shallow -- the .git history is 11GB, we only need the current tree
+
+      - name: Deploy to Cloudflare Pages (Direct Upload)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: '4'   # required for the 100,000-file-per-deployment ceiling on a paid plan
+          command: pages deploy website --project-name=cls-website --branch=main
