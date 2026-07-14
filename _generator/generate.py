@@ -485,6 +485,39 @@ def main():
     )
     print(f"  [noindex] {len(NOINDEX_PATHS)} paths flagged noindex + de-sitemapped")
 
+    # ── Redirect map (2026-07-13 URL audit, T2 cannibalization fix) ─────
+    # Source canonical_path -> full target URL. The audit found queries
+    # split across 2+ pages, all earning 0 clicks. For the clean cases
+    # (blog-guide twins, niche-variant financing pages, thin submarket
+    # pages losing to their own city hub) we consolidate the loser into
+    # the designated winner. Emitted as a static redirect stub (canonical +
+    # meta-refresh 0 + JS replace = Google-recognized soft 301) and dropped
+    # from the sitemap. True 301s are staged in cloudflare_bulk_redirects.csv
+    # for the Cloudflare Bulk Redirect import. Regenerate from the audit
+    # pipeline; never hand-edit. Missing file = empty (fail-open).
+    _redirect_file = DATA_DIR / "redirect_map.json"
+    REDIRECT_PATHS = (
+        json.loads(_redirect_file.read_text(encoding="utf-8"))
+        if _redirect_file.exists() else {}
+    )
+    print(f"  [redirect] {len(REDIRECT_PATHS)} paths emit redirect stubs")
+
+    def write_redirect_stub(out_path, target_url):
+        """Static soft-301 stub: canonical + meta-refresh + JS to target_url."""
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(
+            '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+            '<title>Redirecting</title>'
+            '<meta name="robots" content="noindex,follow">'
+            f'<link rel="canonical" href="{target_url}">'
+            f'<meta http-equiv="refresh" content="0; url={target_url}">'
+            f'<script>location.replace({json.dumps(target_url)})</script>'
+            '</head><body style="font-family:system-ui,sans-serif;padding:2rem">'
+            f'<p>This page has moved. If you are not redirected automatically, '
+            f'<a href="{target_url}">continue here</a>.</p></body></html>',
+            encoding="utf-8",
+        )
+
     # ── Setup Jinja2 ───────────────────────────────────────────────────
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATE_DIR)),
@@ -929,6 +962,11 @@ def main():
                          "region": region_for_state(c["state"]),
                          "cross_link_url": f"../financing/{loan['slug']}-{c['slug']}.html"}
                         for c in featured]
+            _redir = REDIRECT_PATHS.get(f"financing/{slug}.html")
+            if _redir:
+                write_redirect_stub(WEBSITE_DIR / "financing" / f"{slug}.html", _redir)
+                page_count += 1
+                continue
             _is_noindex = f"financing/{slug}.html" in NOINDEX_PATHS
             html = tpl_city_fin.render(
                 **shared,
@@ -974,6 +1012,11 @@ def main():
                          "region": region_for_state(c["state"]),
                          "cross_link_url": f"../property/{prop['slug']}-{c['slug']}.html"}
                         for c in featured]
+            _redir = REDIRECT_PATHS.get(f"property/{slug}.html")
+            if _redir:
+                write_redirect_stub(WEBSITE_DIR / "property" / f"{slug}.html", _redir)
+                page_count += 1
+                continue
             _is_noindex = f"property/{slug}.html" in NOINDEX_PATHS
             html = tpl_city_prop.render(
                 **shared,
@@ -1221,6 +1264,11 @@ def main():
             # Fill with other recent articles
             related = [a for a in articles if a["slug"] != article["slug"]][:3]
         related_cities = build_related_cities(article)
+        _redir = REDIRECT_PATHS.get(f"blog/{article['slug']}.html")
+        if _redir:
+            write_redirect_stub(WEBSITE_DIR / "blog" / f"{article['slug']}.html", _redir)
+            page_count += 1
+            continue
         _is_noindex = f"blog/{article['slug']}.html" in NOINDEX_PATHS
         html = tpl_blog_article.render(
             **shared,
@@ -1341,6 +1389,12 @@ def main():
                 "meta_description": f"Commercial real estate financing in {n_name}, {city['city']}, {city['state']}. Bridge, permanent, construction, and SBA loans from 1,000+ lenders. Get a free quote.",
             }
             canonical = f"markets/{city['slug']}/{n_slug}.html"
+            _redir = REDIRECT_PATHS.get(canonical)
+            if _redir:
+                write_redirect_stub(city_market_dir / f"{n_slug}.html", _redir)
+                page_count += 1
+                submarket_count += 1
+                continue
             _is_noindex = canonical in NOINDEX_PATHS
             html = tpl_submarket.render(
                 **shared,
@@ -1487,6 +1541,16 @@ def main():
     la_guide_groups = [{"category": c, "guides": [g for g in la_guides if g["category"] == c]}
                         for c in _la_guide_cats]
 
+    # LA submarket directory (Tier 2 /markets/la/*): link every submarket
+    # page that exists on disk from the hub, grouped by region. Source of
+    # truth is geo_landing.json's tier2_la_submarkets (same list generate.py
+    # already uses to sitemap them). Rendering this natively in the template
+    # keeps the 20 submarket pages from re-orphaning on a full regen -- a
+    # prior hand-edit to the rendered hub was silently wiped by the next run.
+    _geo_la = json.loads((DATA_DIR / "geo_landing.json").read_text(encoding="utf-8"))
+    la_submarkets = [s for s in _geo_la.get("tier2_la_submarkets", [])
+                     if (WEBSITE_DIR / "markets" / "la" / f"{s['slug']}.html").exists()]
+
     # Hub: /los-angeles/index.html
     tpl_la_hub = env.get_template("la_hub.html")
     html = tpl_la_hub.render(
@@ -1498,6 +1562,7 @@ def main():
         industrial_count=la_industrial_count,
         retail_groups=la_retail_groups,
         retail_count=la_retail_count,
+        la_submarkets=la_submarkets,
         seo={
             "title": "Los Angeles Commercial Real Estate Financing | Commercial Lending Solutions",
             "meta_description": (

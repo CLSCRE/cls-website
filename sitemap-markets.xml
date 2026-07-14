@@ -907,12 +907,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://clscre.com/markets/new-orleans/kenner.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://clscre.com/markets/new-orleans/westbank.html</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -1079,12 +1073,6 @@
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/riverside/downtown-riverside.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://clscre.com/markets/riverside/san-bernardino.html</loc>
@@ -1679,12 +1667,6 @@
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/new-haven/downtown-new-haven.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://clscre.com/markets/new-haven/wooster-square.html</loc>
@@ -3811,12 +3793,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://clscre.com/markets/laredo/rio-grande-city.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://clscre.com/markets/laredo/mission-tx.html</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -3929,12 +3905,6 @@
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/markets/salinas/downtown-salinas.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://clscre.com/markets/salinas/monterey.html</loc>

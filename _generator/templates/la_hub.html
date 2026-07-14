@@ -185,6 +185,25 @@
 </section>
 {% endfor %}
 
+<!-- LA SUBMARKET FINANCING GUIDES -->
+{% if la_submarkets %}
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Submarket Financing</div>
+  <h2 class="section-title reveal">Los Angeles Submarket Financing Guides</h2>
+  <p class="section-desc reveal">Deal-level commercial mortgage guidance for {{ la_submarkets|length }} LA submarkets, from the Westside and DTLA to the San Fernando and San Gabriel valleys.</p>
+  <div class="cross-link-grid">
+    {% for s in la_submarkets %}
+    <a href="{{ depth }}markets/la/{{ s.slug }}.html" class="cross-link-card reveal">
+      <div class="cl-title">{{ s.name }}</div>
+      <div class="cl-sub">{{ s.region }} &middot; {{ s.deal_size }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+{% endif %}
+
 <!-- BROADER LA -->
 <section class="cross-links">
 <div class="section-inner">
