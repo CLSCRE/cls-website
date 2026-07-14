@@ -1673,6 +1673,12 @@ def main():
     # cities appear on their state page automatically on the next regen.
     print("\n=== Generating State Pages ===")
     states = load_json("states.json")
+    # Hand-curated internal-link boost: link each listed state's hub page to
+    # its most important city's bridge-loans financing page (not just the
+    # national hub), part of the 2026-07-13 bridge loan MSA internal-linking
+    # pass. Only states with a real, verified gap are listed -- no guessing
+    # a "top city" for the other 48 without a real signal to key off.
+    state_featured_bridge_city = load_json("state_featured_bridge_city.json")
     tpl_state = env.get_template("state_page.html")
     states_dir = WEBSITE_DIR / "states"
     states_dir.mkdir(exist_ok=True)
@@ -1703,6 +1709,7 @@ def main():
             canonical_path=f"states/{st['slug']}.html",
             depth="../",
             current_region=region,
+            featured_bridge_city=state_featured_bridge_city.get(st["slug"]),
         )
         (states_dir / f"{st['slug']}.html").write_text(html, encoding="utf-8")
         page_count += 1
