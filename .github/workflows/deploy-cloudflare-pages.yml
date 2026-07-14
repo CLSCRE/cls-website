@@ -31,6 +31,17 @@ jobs:
         with:
           fetch-depth: 1   # shallow -- the .git history is 11GB, we only need the current tree
 
+      # Creates the Pages project on first run so no manual dashboard setup is
+      # needed. `|| true` because Cloudflare errors "project already exists" on
+      # every run after the first -- that's expected, not a failure.
+      - name: Ensure Cloudflare Pages project exists
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: '4'
+          command: pages project create cls-website --production-branch=main || true
+
       - name: Deploy to Cloudflare Pages (Direct Upload)
         uses: cloudflare/wrangler-action@v3
         with:
