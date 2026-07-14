@@ -460,8 +460,30 @@ def main():
         "rockford": "rockford-il",
         "oxnard": "oxnard-ventura",
         "albany-ny": "albany",
+        # 2026-07-13: columbia-sc-2 was a mis-slugged duplicate of columbia-sc
+        # (its hub context describes Columbia SC while its neighborhoods are the
+        # Rock Hill / York County metro). Zero organic impressions across all
+        # 67 pages. Excluded here; static files deleted; 301s staged at Cloudflare.
+        # If Rock Hill warrants its own market it should be added as a proper
+        # `rock-hill` slug post-freeze, demand-gated per the 2026-07-13 URL audit.
+        "columbia-sc-2": "columbia-sc",
     }
     cities = [c for c in cities if c["slug"] not in DUPLICATE_CITY_SLUGS]
+
+    # ── Noindex set (2026-07-13 URL inventory audit) ───────────────────
+    # Zero-impression programmatic permutations the audit flagged
+    # Consolidate/Noindex. Emitting robots=noindex,follow (internal link
+    # equity still flows) and dropping them from the sitemap concentrates
+    # crawl budget + ranking authority on the ~1,600 pages that actually earn
+    # organic clicks. Membership is keyed by canonical_path. This data file is
+    # the single source of truth -- regenerate it from the audit pipeline,
+    # never hand-edit. Missing file = empty set (fail-open: nothing noindexed).
+    _noindex_file = DATA_DIR / "noindex_paths.json"
+    NOINDEX_PATHS = (
+        set(json.loads(_noindex_file.read_text(encoding="utf-8")))
+        if _noindex_file.exists() else set()
+    )
+    print(f"  [noindex] {len(NOINDEX_PATHS)} paths flagged noindex + de-sitemapped")
 
     # ── Setup Jinja2 ───────────────────────────────────────────────────
     env = Environment(
@@ -907,6 +929,7 @@ def main():
                          "region": region_for_state(c["state"]),
                          "cross_link_url": f"../financing/{loan['slug']}-{c['slug']}.html"}
                         for c in featured]
+            _is_noindex = f"financing/{slug}.html" in NOINDEX_PATHS
             html = tpl_city_fin.render(
                 **shared,
                 loan=loan,
@@ -918,14 +941,16 @@ def main():
                 faqs=city_faqs,
                 featured_markets=featured,
                 current_region=region_for_state(city["state"]),
+                noindex=_is_noindex,
             )
             out_path = WEBSITE_DIR / "financing" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")
             page_count += 1
-            sitemap_urls.append({
-                "loc": f"{BASE_URL}/financing/{slug}.html",
-                "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
-            })
+            if not _is_noindex:
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/financing/{slug}.html",
+                    "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+                })
         print(f"  [OK] financing/{loan['slug']}-*.html  ({len(cities)} city pages)")
 
     # ── 4. City × Property Type Pages ──────────────────────────────────
@@ -949,6 +974,7 @@ def main():
                          "region": region_for_state(c["state"]),
                          "cross_link_url": f"../property/{prop['slug']}-{c['slug']}.html"}
                         for c in featured]
+            _is_noindex = f"property/{slug}.html" in NOINDEX_PATHS
             html = tpl_city_prop.render(
                 **shared,
                 prop=prop,
@@ -960,14 +986,16 @@ def main():
                 faqs=city_faqs,
                 featured_markets=featured,
                 current_region=region_for_state(city["state"]),
+                noindex=_is_noindex,
             )
             out_path = WEBSITE_DIR / "property" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")
             page_count += 1
-            sitemap_urls.append({
-                "loc": f"{BASE_URL}/property/{slug}.html",
-                "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
-            })
+            if not _is_noindex:
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/property/{slug}.html",
+                    "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+                })
         print(f"  [OK] property/{prop['slug']}-*.html  ({len(cities)} city pages)")
 
     # ── 5. Blog Index Pages (paginated) ────────────────────────────────
@@ -1193,6 +1221,7 @@ def main():
             # Fill with other recent articles
             related = [a for a in articles if a["slug"] != article["slug"]][:3]
         related_cities = build_related_cities(article)
+        _is_noindex = f"blog/{article['slug']}.html" in NOINDEX_PATHS
         html = tpl_blog_article.render(
             **shared,
             article=article,
@@ -1205,14 +1234,16 @@ def main():
             },
             canonical_path=f"blog/{article['slug']}.html",
             depth="../",
+            noindex=_is_noindex,
         )
         out_path = WEBSITE_DIR / "blog" / f"{article['slug']}.html"
         out_path.write_text(html, encoding="utf-8")
         page_count += 1
-        sitemap_urls.append({
-            "loc": f"{BASE_URL}/blog/{article['slug']}.html",
-            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8",
-        })
+        if not _is_noindex:
+            sitemap_urls.append({
+                "loc": f"{BASE_URL}/blog/{article['slug']}.html",
+                "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8",
+            })
     print(f"  [OK] blog/*.html  ({len(articles)} article pages)")
 
     # ── 6b. Blog articles generated outside articles.json ─────────────
@@ -1310,6 +1341,7 @@ def main():
                 "meta_description": f"Commercial real estate financing in {n_name}, {city['city']}, {city['state']}. Bridge, permanent, construction, and SBA loans from 1,000+ lenders. Get a free quote.",
             }
             canonical = f"markets/{city['slug']}/{n_slug}.html"
+            _is_noindex = canonical in NOINDEX_PATHS
             html = tpl_submarket.render(
                 **shared,
                 city=city,
@@ -1321,15 +1353,17 @@ def main():
                 depth="../../",
                 transactions=txns,
                 faqs=faqs,
+                noindex=_is_noindex,
             )
             out_path = city_market_dir / f"{n_slug}.html"
             out_path.write_text(html, encoding="utf-8")
             page_count += 1
             submarket_count += 1
-            sitemap_urls.append({
-                "loc": f"{BASE_URL}/{canonical}",
-                "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6",
-            })
+            if not _is_noindex:
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/{canonical}",
+                    "lastmod": TODAY, "changefreq": "monthly", "priority": "0.6",
+                })
         # Generate city market index page.
         # This hub page OWNS the generic "[city] commercial real estate loans" /
         # "[city] commercial mortgage" head queries; the /financing/ and /property/
