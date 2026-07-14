@@ -1,6 +1,6 @@
 name: Deploy to Cloudflare Pages
 
-# Cloudflare Pages migration, Stage 1 (see docs/cloudflare-pages-evaluation.md).
+# Cloudflare migration, Stage 1 (see docs/cloudflare-pages-evaluation.md).
 # Direct Upload only -- this workflow does NOT let Cloudflare build from source.
 # It uploads whatever static HTML already exists at the repo root after the
 # existing generation pipeline (content-expansion.yml, the local rate-update
@@ -9,6 +9,17 @@ name: Deploy to Cloudflare Pages
 # (CLSCRE/cls-website) IS the site root once checked out standalone -- there
 # is no nested "website/" folder here (that nesting only exists in the local
 # "SEO Programmatic" parent project, where this repo lives as a subfolder).
+#
+# NOTE (2026-07-14): switched from classic "wrangler pages deploy" to Workers
+# Static Assets ("wrangler deploy" + an [assets] block) because classic Pages
+# hard-redirects every /foo.html request to /foo with no documented way to
+# disable it -- a silent, sitewide URL-scheme change this site cannot absorb
+# (every canonical tag, the sitemap, and years of GSC-indexed URLs all use
+# explicit .html). Workers Static Assets exposes `html_handling = "none"`,
+# which serves .html files literally with no redirect, matching GitHub
+# Pages' current behavior exactly. Deploys as a Worker named cls-website-
+# static, a separate resource from the (now unused) cls-website Pages
+# project created during earlier debugging -- harmless to leave orphaned.
 #
 # Requires two repo secrets (Settings > Secrets and variables > Actions):
 #   CLOUDFLARE_API_TOKEN   -- scoped to Account.Cloudflare Pages:Edit (NOT the
@@ -34,28 +45,13 @@ jobs:
         with:
           fetch-depth: 1   # shallow -- the .git history is 11GB, we only need the current tree
 
-      # Creates the Pages project on first run so no manual dashboard setup is
-      # needed. `|| true` because Cloudflare errors "project already exists" on
-      # every run after the first -- that's expected, not a failure. Plain
-      # `run:` (not wrangler-action) because wrangler-action's `command:` input
-      # passes args straight to wrangler, not through a shell -- `||` there
-      # gets parsed as a literal CLI argument and errors immediately.
-      - name: Ensure Cloudflare Pages project exists
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: npx wrangler@4 pages project create cls-website --production-branch=main || true
-
-      # Cloudflare Pages Direct Upload has no documented file-exclude mechanism
-      # (checked: no --exclude flag, no confirmed .assetsignore support for
-      # this command as of wrangler 4.110). _generator/ is generator source +
-      # data (not site content) and contains a 45.8 MiB JSON file that trips
-      # Pages' 25 MiB per-file cap outright. .claude/ and scripts/ are also
-      # non-site internals that should never have been publicly servable in
-      # the first place (GitHub Pages has been serving them accidentally --
-      # worth a follow-up to remove them there too). Staging a clean folder
-      # sidesteps the size limit AND cuts ~thousands of files from the count
-      # that never needed to be part of the public site.
+      # _generator/ is generator source + data (not site content) and contains
+      # a 45.8 MiB JSON file that trips the 25 MiB per-file cap outright.
+      # .claude/ and scripts/ are also non-site internals that should never
+      # have been publicly servable in the first place (GitHub Pages has been
+      # serving them accidentally -- worth a follow-up to remove them there
+      # too). Staging a clean folder sidesteps the size limit AND cuts
+      # thousands of files that never needed to be part of the public site.
       - name: Stage deployable site (exclude generator source/data)
         run: |
           mkdir -p _deploy
@@ -69,10 +65,22 @@ jobs:
             ./ _deploy/
           echo "Staged file count: $(find _deploy -type f | wc -l)"
 
-      - name: Deploy to Cloudflare Pages (Direct Upload)
+      - name: Write wrangler config (html_handling=none, no redirect stripping)
+        run: |
+          cat > wrangler.toml <<'EOF'
+          name = "cls-website-static"
+          compatibility_date = "2026-07-14"
+
+          [assets]
+          directory = "./_deploy"
+          html_handling = "none"
+          not_found_handling = "404-page"
+          EOF
+
+      - name: Deploy to Cloudflare (Workers Static Assets, Direct Upload)
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: '4'   # required for the 100,000-file-per-deployment ceiling on a paid plan
-          command: pages deploy _deploy --project-name=cls-website --branch=main --commit-dirty=true
+          wranglerVersion: '4'
+          command: deploy
