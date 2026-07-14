@@ -22,7 +22,7 @@
       },
       "seo": {
         "title_suffix": "Assisted Living Facility Financing",
-        "meta_template": "Assisted living facility financing in {city}. HUD 232, life company, CMBS, and bridge lenders for licensed assisted living acquisitions, construction, and refinance."
+        "meta_template": "Assisted living facility financing in {city}. HUD 232, life company, CMBS, and bridge lenders for licensed assisted living acquisitions"
       }
     },
     {
@@ -47,7 +47,7 @@
       },
       "seo": {
         "title_suffix": "Memory Care Facility Financing",
-        "meta_template": "Memory care facility financing in {city}. Specialty seniors housing lenders, HUD 232, and bridge capital for Alzheimer's and dementia care acquisitions and development."
+        "meta_template": "Memory care facility financing in {city}. Specialty seniors housing lenders, HUD 232, and bridge capital for Alzheimer's and dementia care"
       }
     },
     {
@@ -73,7 +73,7 @@
       },
       "seo": {
         "title_suffix": "Independent Living Community Financing",
-        "meta_template": "Independent living community financing in {city}. Agency, life company, CMBS, and construction lenders for 55-plus and active senior communities."
+        "meta_template": "Independent living community financing in {city}. Agency, life company, CMBS, and construction lenders for 55-plus and active senior"
       }
     }
   ],
