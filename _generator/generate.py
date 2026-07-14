@@ -438,6 +438,10 @@ def main():
     cities = load_json("cities.json")
     faqs_data = load_json("faqs.json")
     article_city_data = load_json("article_city_data.json")
+    # Hand-curated title/meta overrides for specific city x loan-type pages
+    # (e.g. bridge-loans-<city>), keyed by slug. Same durable-override pattern
+    # as article seo_title/seo_description -- checked every run, never wiped.
+    city_financing_seo_overrides = load_json("city_financing_seo_overrides.json")
 
     # Duplicate city merge (2026-07-03): these 5 slugs are the same real-world
     # city as another entry already in cities.json (added twice across
@@ -891,11 +895,12 @@ def main():
             city_faqs = build_city_faqs(
                 faqs_data.get("city_templates", {}), loan=loan, city=city
             )
+            slug = f"{loan['slug']}-{city['slug']}"
             seo = {
                 "title": f"{loan['name']} {city['city']} {city['state']} | CRE Lenders | CLS CRE",
                 "meta_description": f"Commercial {loan['name'].lower()} in {city['city']} from {loan.get('min_loan_display', '$1M')}. 1,000+ lender relationships, competitive rates, fast approvals. Free quote. CLS CRE.",
             }
-            slug = f"{loan['slug']}-{city['slug']}"
+            seo.update(city_financing_seo_overrides.get(slug, {}))
             featured = pick_featured_markets(city, cities, n_total=8)
             # Attach a short context teaser + cross-link URL to each pick
             featured = [{**c, "teaser": first_sentence(c.get("context", ""), 140),
