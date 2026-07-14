@@ -33,14 +33,15 @@ jobs:
 
       # Creates the Pages project on first run so no manual dashboard setup is
       # needed. `|| true` because Cloudflare errors "project already exists" on
-      # every run after the first -- that's expected, not a failure.
+      # every run after the first -- that's expected, not a failure. Plain
+      # `run:` (not wrangler-action) because wrangler-action's `command:` input
+      # passes args straight to wrangler, not through a shell -- `||` there
+      # gets parsed as a literal CLI argument and errors immediately.
       - name: Ensure Cloudflare Pages project exists
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: '4'
-          command: pages project create cls-website --production-branch=main || true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler@4 pages project create cls-website --production-branch=main || true
 
       - name: Deploy to Cloudflare Pages (Direct Upload)
         uses: cloudflare/wrangler-action@v3
