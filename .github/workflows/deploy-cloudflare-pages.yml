@@ -46,10 +46,33 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx wrangler@4 pages project create cls-website --production-branch=main || true
 
+      # Cloudflare Pages Direct Upload has no documented file-exclude mechanism
+      # (checked: no --exclude flag, no confirmed .assetsignore support for
+      # this command as of wrangler 4.110). _generator/ is generator source +
+      # data (not site content) and contains a 45.8 MiB JSON file that trips
+      # Pages' 25 MiB per-file cap outright. .claude/ and scripts/ are also
+      # non-site internals that should never have been publicly servable in
+      # the first place (GitHub Pages has been serving them accidentally --
+      # worth a follow-up to remove them there too). Staging a clean folder
+      # sidesteps the size limit AND cuts ~thousands of files from the count
+      # that never needed to be part of the public site.
+      - name: Stage deployable site (exclude generator source/data)
+        run: |
+          mkdir -p _deploy
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.claude' \
+            --exclude='_generator' \
+            --exclude='scripts' \
+            --exclude='_deploy' \
+            ./ _deploy/
+          echo "Staged file count: $(find _deploy -type f | wc -l)"
+
       - name: Deploy to Cloudflare Pages (Direct Upload)
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: '4'   # required for the 100,000-file-per-deployment ceiling on a paid plan
-          command: pages deploy . --project-name=cls-website --branch=main --commit-dirty=true
+          command: pages deploy _deploy --project-name=cls-website --branch=main --commit-dirty=true
