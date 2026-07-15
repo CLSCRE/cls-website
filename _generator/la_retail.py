@@ -27,7 +27,7 @@ RAW_HOODS = [
         "seo": {
             "h1": "Melrose Avenue & Fairfax District Retail Property Financing",
             "title": "Melrose Avenue & Fairfax District Retail Financing | Commercial Lending Solutions",
-            "meta_description": "Acquisition, bridge, and SBA financing for independent fashion and streetwear retail buildings on Melrose Avenue and the Fairfax District. CLS CRE, $1M+.",
+            "meta_description": "Acquisition, bridge, and SBA financing for independent fashion and streetwear retail buildings on Melrose Avenue and the Fairfax District. Commercial Lending Solutions, $1M+.",
         },
     },
     {
@@ -45,7 +45,7 @@ RAW_HOODS = [
         "seo": {
             "h1": "Larchmont Village Retail Property Financing",
             "title": "Larchmont Village Retail Financing | Commercial Lending Solutions",
-            "meta_description": "Bridge, permanent, and refinance financing for boutique retail buildings on Larchmont Boulevard near Hancock Park. CLS CRE, $1 million minimum loan size.",
+            "meta_description": "Bridge, permanent, and refinance financing for boutique retail buildings on Larchmont Boulevard near Hancock Park. Commercial Lending Solutions, $1 million minimum loan size.",
         },
     },
     {

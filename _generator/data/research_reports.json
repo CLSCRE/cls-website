@@ -11,7 +11,7 @@
     "keywords": "commercial real estate lending, agency multifamily pricing, life insurance company rates, CMBS pricing, SBA 504 rates, bridge debt fund pricing, commercial mortgage rates",
     "seo": {
       "title": "Lender Pricing Report Q1 2026 | Commercial Lending Solutions",
-      "meta_description": "CLS CRE Q1 2026 Lender Pricing Report: aggregated commercial real estate lending pricing across agency multifamily, life insurance company, CMBS, SBA, bridge debt fund, and construction lending channels."
+      "meta_description": "Commercial Lending Solutions Q1 2026 Lender Pricing Report: aggregated commercial real estate lending pricing across agency multifamily, life insurance company, CMBS, SBA, bridge debt fund, and construction lending channels."
     },
     "executive_summary": "Commercial real estate lending pricing in Q1 2026 reflected a market in transition. The 10-year Treasury averaged approximately 4.20 percent through the quarter, providing a stable benchmark for fixed-rate CRE lending. Agency multifamily executions tightened modestly versus Q4 2025, with median Fannie Mae DUS Conventional 10-year fixed pricing at 5.85 percent and Freddie Mac Optigo at 5.78 percent. Life insurance company pricing on stabilized trophy multifamily compressed to 5.55 percent for relationship borrowers at 60 percent LTV. CMBS conduit multifamily pricing averaged 6.45 percent reflecting the conduit pool premium versus agency. Bridge debt fund pricing on transitional multifamily averaged SOFR plus 475 basis points, approximately 9.35 percent all-in given prevailing SOFR. SBA 504 CDC debenture rates held steady through the quarter at approximately 5.85 percent for 25-year terms. The dispersion between best and worst quoted execution on similar deals widened in Q1 2026 versus Q4 2025, reinforcing the value of competitive lender shopping.",
     "sections": [
@@ -20,13 +20,49 @@
         "title": "Agency Multifamily Pricing",
         "intro": "Fannie Mae DUS Conventional and Freddie Mac Optigo Conventional pricing on stabilized 10-year fixed multifamily by deal size band, aggregated across CLS CRE Q1 2026 quote pipeline. Pricing reflects 70 to 75 percent LTV with 1.25x DSCR floor and full yield maintenance prepayment. Smaller balance loans (Fannie Small and Freddie SBL) priced separately due to streamlined program structure.",
         "table": {
-          "headers": ["Deal Size Band", "Fannie DUS Median", "Freddie Optigo Median", "Spread vs Treasury", "Sample Size"],
+          "headers": [
+            "Deal Size Band",
+            "Fannie DUS Median",
+            "Freddie Optigo Median",
+            "Spread vs Treasury",
+            "Sample Size"
+          ],
           "rows": [
-            ["$1M to $5M (Fannie Small / Freddie SBL)", "5.78%", "5.72%", "+158 bps avg", "Sample sufficient for median"],
-            ["$5M to $10M", "5.85%", "5.78%", "+162 bps avg", "Sample sufficient for median"],
-            ["$10M to $25M", "5.92%", "5.85%", "+167 bps avg", "Sample sufficient for median"],
-            ["$25M to $50M", "5.88%", "5.81%", "+163 bps avg", "Sample sufficient for median"],
-            ["$50M+", "5.85%", "5.78%", "+159 bps avg", "Sample sufficient for median"]
+            [
+              "$1M to $5M (Fannie Small / Freddie SBL)",
+              "5.78%",
+              "5.72%",
+              "+158 bps avg",
+              "Sample sufficient for median"
+            ],
+            [
+              "$5M to $10M",
+              "5.85%",
+              "5.78%",
+              "+162 bps avg",
+              "Sample sufficient for median"
+            ],
+            [
+              "$10M to $25M",
+              "5.92%",
+              "5.85%",
+              "+167 bps avg",
+              "Sample sufficient for median"
+            ],
+            [
+              "$25M to $50M",
+              "5.88%",
+              "5.81%",
+              "+163 bps avg",
+              "Sample sufficient for median"
+            ],
+            [
+              "$50M+",
+              "5.85%",
+              "5.78%",
+              "+159 bps avg",
+              "Sample sufficient for median"
+            ]
           ]
         },
         "takeaways": [
@@ -43,14 +79,56 @@
         "title": "Life Insurance Company Pricing",
         "intro": "Life insurance company stabilized 10-year and 15-year fixed pricing on Class A multifamily, office, retail, and industrial across CLS CRE Q1 2026 quote pipeline. Life co allocator discipline typically capped LTV at 55 to 65 percent across product types.",
         "table": {
-          "headers": ["Product Type", "10-Year Fixed Median", "15-Year Fixed Median", "Typical LTV", "Pricing vs Q4 2025"],
+          "headers": [
+            "Product Type",
+            "10-Year Fixed Median",
+            "15-Year Fixed Median",
+            "Typical LTV",
+            "Pricing vs Q4 2025"
+          ],
           "rows": [
-            ["Class A multifamily (relationship tier)", "5.55%", "5.72%", "55 to 60%", "5 bps tighter"],
-            ["Trophy multifamily (top markets)", "5.45%", "5.62%", "55%", "Flat"],
-            ["Class A office (CBD, credit tenant)", "6.25%", "6.45%", "55 to 60%", "8 bps tighter"],
-            ["Class A grocery-anchored retail", "5.95%", "6.15%", "60 to 65%", "5 bps tighter"],
-            ["Stabilized industrial (institutional)", "5.85%", "6.05%", "55 to 65%", "8 bps tighter"],
-            ["Net-leased credit tenant industrial", "5.75%", "5.95%", "55 to 65%", "10 bps tighter"]
+            [
+              "Class A multifamily (relationship tier)",
+              "5.55%",
+              "5.72%",
+              "55 to 60%",
+              "5 bps tighter"
+            ],
+            [
+              "Trophy multifamily (top markets)",
+              "5.45%",
+              "5.62%",
+              "55%",
+              "Flat"
+            ],
+            [
+              "Class A office (CBD, credit tenant)",
+              "6.25%",
+              "6.45%",
+              "55 to 60%",
+              "8 bps tighter"
+            ],
+            [
+              "Class A grocery-anchored retail",
+              "5.95%",
+              "6.15%",
+              "60 to 65%",
+              "5 bps tighter"
+            ],
+            [
+              "Stabilized industrial (institutional)",
+              "5.85%",
+              "6.05%",
+              "55 to 65%",
+              "8 bps tighter"
+            ],
+            [
+              "Net-leased credit tenant industrial",
+              "5.75%",
+              "5.95%",
+              "55 to 65%",
+              "10 bps tighter"
+            ]
           ]
         },
         "takeaways": [
@@ -67,13 +145,49 @@
         "title": "CMBS Conduit Pricing",
         "intro": "CMBS conduit 10-year fixed pricing on stabilized multifamily, office, retail, and industrial across CLS CRE Q1 2026 quote pipeline. CMBS pricing reflects defeasance prepayment and 65 to 70 percent LTV typical.",
         "table": {
-          "headers": ["Product Type", "10-Year Fixed Median", "Typical LTV", "Spread vs Agency", "Pricing vs Q4 2025"],
+          "headers": [
+            "Product Type",
+            "10-Year Fixed Median",
+            "Typical LTV",
+            "Spread vs Agency",
+            "Pricing vs Q4 2025"
+          ],
           "rows": [
-            ["Stabilized multifamily", "6.45%", "65 to 70%", "+60 bps", "5 bps tighter"],
-            ["Stabilized industrial", "6.55%", "65 to 70%", "Industrial-specific", "Flat"],
-            ["Class B office", "7.45%", "60 to 65%", "+120 bps vs life co", "8 bps wider"],
-            ["Stabilized retail (grocery-anchored)", "6.85%", "65 to 70%", "+90 bps vs life co", "5 bps tighter"],
-            ["Net-leased credit tenant", "6.65%", "65 to 70%", "+90 bps vs life co", "5 bps tighter"]
+            [
+              "Stabilized multifamily",
+              "6.45%",
+              "65 to 70%",
+              "+60 bps",
+              "5 bps tighter"
+            ],
+            [
+              "Stabilized industrial",
+              "6.55%",
+              "65 to 70%",
+              "Industrial-specific",
+              "Flat"
+            ],
+            [
+              "Class B office",
+              "7.45%",
+              "60 to 65%",
+              "+120 bps vs life co",
+              "8 bps wider"
+            ],
+            [
+              "Stabilized retail (grocery-anchored)",
+              "6.85%",
+              "65 to 70%",
+              "+90 bps vs life co",
+              "5 bps tighter"
+            ],
+            [
+              "Net-leased credit tenant",
+              "6.65%",
+              "65 to 70%",
+              "+90 bps vs life co",
+              "5 bps tighter"
+            ]
           ]
         },
         "takeaways": [
@@ -90,13 +204,49 @@
         "title": "SBA Programs",
         "intro": "SBA 504 CDC debenture rates and SBA 7(a) Prime + spread pricing through Q1 2026 across CLS CRE owner-operator pipeline.",
         "table": {
-          "headers": ["Program", "Rate / Spread", "Term", "LTV / Down", "Sample Size"],
+          "headers": [
+            "Program",
+            "Rate / Spread",
+            "Term",
+            "LTV / Down",
+            "Sample Size"
+          ],
           "rows": [
-            ["SBA 504 CDC (25-year)", "5.85% fixed", "25 years", "40% LTC of project", "Sample sufficient for median"],
-            ["SBA 504 CDC (20-year)", "5.75% fixed", "20 years", "40% LTC of project", "Sample sufficient for median"],
-            ["SBA 504 CDC (10-year)", "5.50% fixed", "10 years", "40% LTC of project", "Sample sufficient for median"],
-            ["SBA 504 Bank First Mortgage (5-year fixed)", "7.15% fixed", "5-year fixed, 25-year amort", "50% LTC of project", "Sample sufficient for median"],
-            ["SBA 7(a) Prime + Spread", "Prime + 2.50%", "10 to 25 years", "85 to 90% LTC", "Sample sufficient for median"]
+            [
+              "SBA 504 CDC (25-year)",
+              "5.85% fixed",
+              "25 years",
+              "40% LTC of project",
+              "Sample sufficient for median"
+            ],
+            [
+              "SBA 504 CDC (20-year)",
+              "5.75% fixed",
+              "20 years",
+              "40% LTC of project",
+              "Sample sufficient for median"
+            ],
+            [
+              "SBA 504 CDC (10-year)",
+              "5.50% fixed",
+              "10 years",
+              "40% LTC of project",
+              "Sample sufficient for median"
+            ],
+            [
+              "SBA 504 Bank First Mortgage (5-year fixed)",
+              "7.15% fixed",
+              "5-year fixed, 25-year amort",
+              "50% LTC of project",
+              "Sample sufficient for median"
+            ],
+            [
+              "SBA 7(a) Prime + Spread",
+              "Prime + 2.50%",
+              "10 to 25 years",
+              "85 to 90% LTC",
+              "Sample sufficient for median"
+            ]
           ]
         },
         "takeaways": [
@@ -113,13 +263,49 @@
         "title": "Bridge Debt Fund Pricing",
         "intro": "Bridge debt fund pricing on transitional multifamily, value-add, and lease-up across CLS CRE Q1 2026 quote pipeline. Pricing reflects floating-rate SOFR + spread structures with rate caps required by lender.",
         "table": {
-          "headers": ["Deal Profile", "Spread Range", "All-In Rate (SOFR 4.65%)", "LTC", "Term"],
+          "headers": [
+            "Deal Profile",
+            "Spread Range",
+            "All-In Rate (SOFR 4.65%)",
+            "LTC",
+            "Term"
+          ],
           "rows": [
-            ["Light value-add multifamily (75%+ occupancy)", "SOFR + 350 to 425", "8.15 to 8.90%", "70 to 75%", "24 to 36 months"],
-            ["Heavy value-add multifamily (50 to 75% occupancy)", "SOFR + 425 to 525", "8.90 to 9.90%", "70 to 75%", "24 to 36 months"],
-            ["Lease-up multifamily (under 50% occupancy)", "SOFR + 525 to 700", "9.90 to 11.65%", "65 to 75%", "24 to 36 months"],
-            ["Construction-to-perm bridge (multifamily)", "SOFR + 425 to 600", "8.90 to 10.65%", "65 to 75% LTC", "30 to 42 months"],
-            ["Industrial value-add", "SOFR + 350 to 525", "8.15 to 9.90%", "65 to 75%", "24 to 36 months"]
+            [
+              "Light value-add multifamily (75%+ occupancy)",
+              "SOFR + 350 to 425",
+              "8.15 to 8.90%",
+              "70 to 75%",
+              "24 to 36 months"
+            ],
+            [
+              "Heavy value-add multifamily (50 to 75% occupancy)",
+              "SOFR + 425 to 525",
+              "8.90 to 9.90%",
+              "70 to 75%",
+              "24 to 36 months"
+            ],
+            [
+              "Lease-up multifamily (under 50% occupancy)",
+              "SOFR + 525 to 700",
+              "9.90 to 11.65%",
+              "65 to 75%",
+              "24 to 36 months"
+            ],
+            [
+              "Construction-to-perm bridge (multifamily)",
+              "SOFR + 425 to 600",
+              "8.90 to 10.65%",
+              "65 to 75% LTC",
+              "30 to 42 months"
+            ],
+            [
+              "Industrial value-add",
+              "SOFR + 350 to 525",
+              "8.15 to 9.90%",
+              "65 to 75%",
+              "24 to 36 months"
+            ]
           ]
         },
         "takeaways": [
@@ -136,14 +322,56 @@
         "title": "Construction Lending",
         "intro": "Construction lending pricing on ground-up multifamily, industrial, and specialty development across CLS CRE Q1 2026 quote pipeline. Pricing reflects floating-rate SOFR + spread with sponsor recourse during construction typical for bank balance sheet executions.",
         "table": {
-          "headers": ["Deal Profile", "Spread Range", "All-In Rate (SOFR 4.65%)", "LTC", "Recourse"],
+          "headers": [
+            "Deal Profile",
+            "Spread Range",
+            "All-In Rate (SOFR 4.65%)",
+            "LTC",
+            "Recourse"
+          ],
           "rows": [
-            ["Bank multifamily ground-up (Tier 1 sponsor)", "SOFR + 275 to 350", "7.40 to 8.15%", "60 to 65%", "Recourse"],
-            ["Bank multifamily ground-up (mid-market)", "SOFR + 350 to 450", "8.15 to 9.15%", "55 to 60%", "Recourse"],
-            ["Debt fund multifamily ground-up", "SOFR + 425 to 600", "8.90 to 10.65%", "65 to 75%", "Non-recourse"],
-            ["Bank industrial ground-up", "SOFR + 275 to 400", "7.40 to 8.65%", "60 to 65%", "Recourse"],
-            ["HUD 221(d)(4) multifamily new construction", "5.95 to 6.45% fixed", "5.95 to 6.45%", "85 to 90%", "Non-recourse"],
-            ["Specialty BTR construction", "SOFR + 425 to 600", "8.90 to 10.65%", "70 to 75%", "Non-recourse"]
+            [
+              "Bank multifamily ground-up (Tier 1 sponsor)",
+              "SOFR + 275 to 350",
+              "7.40 to 8.15%",
+              "60 to 65%",
+              "Recourse"
+            ],
+            [
+              "Bank multifamily ground-up (mid-market)",
+              "SOFR + 350 to 450",
+              "8.15 to 9.15%",
+              "55 to 60%",
+              "Recourse"
+            ],
+            [
+              "Debt fund multifamily ground-up",
+              "SOFR + 425 to 600",
+              "8.90 to 10.65%",
+              "65 to 75%",
+              "Non-recourse"
+            ],
+            [
+              "Bank industrial ground-up",
+              "SOFR + 275 to 400",
+              "7.40 to 8.65%",
+              "60 to 65%",
+              "Recourse"
+            ],
+            [
+              "HUD 221(d)(4) multifamily new construction",
+              "5.95 to 6.45% fixed",
+              "5.95 to 6.45%",
+              "85 to 90%",
+              "Non-recourse"
+            ],
+            [
+              "Specialty BTR construction",
+              "SOFR + 425 to 600",
+              "8.90 to 10.65%",
+              "70 to 75%",
+              "Non-recourse"
+            ]
           ]
         },
         "takeaways": [
@@ -159,19 +387,55 @@
     "methodology": "This report aggregates pricing data from the CLS CRE Q1 2026 quote pipeline, including approximately 240 lender quotes received between January 1 and March 31, 2026 across permanent, bridge, and construction lending channels. Quotes are aggregated to medians and ranges with anonymization of specific lender identities (lenders categorized by source type only). Pricing reflects standard structures (full yield maintenance or defeasance prepayment, standard recourse profiles, typical leverage and DSCR sizing) with non-conforming structures excluded. The pipeline is national in scope with quotes from approximately 75 distinct lenders across all major CRE financing channels. Data is collected from active deal quotes, not from public secondary market or index data. Sample sizes by category are sufficient for median statistical reliability where indicated.",
     "broker_quote": "The single biggest takeaway from Q1 2026 quote data is the value of competitive lender shopping. The spread between best and worst quote on identical deals averaged 18 basis points on agency multifamily and over 100 basis points on bridge debt fund executions. Sponsors who run a structured competitive process consistently capture material rate compression versus sponsors who go to one lender.",
     "faqs": [
-      {"q": "What is the CLS CRE Lender Pricing Report?", "a": "The CLS CRE Lender Pricing Report is a quarterly publication aggregating commercial real estate lending pricing from the CLS CRE active quote pipeline. The report covers agency multifamily, life insurance company, CMBS, SBA, bridge debt fund, and construction lending pricing across deal sizes and product types."},
-      {"q": "How is the data collected?", "a": "Data is collected from active lender quotes received during the quarterly coverage period, not from public secondary market data or industry indices. The methodology aggregates quotes to medians and ranges with lender identities anonymized."},
-      {"q": "How accurate is the data?", "a": "The data reflects actual market pricing on actual deals, with sample sizes sufficient for median statistical reliability across the major categories. Specific deal pricing depends on sponsor profile, property characteristics, and structure beyond what aggregated medians can capture."},
-      {"q": "Will pricing apply to my deal?", "a": "The aggregated medians provide a baseline for understanding current market levels. Actual pricing on a specific transaction depends on property profile, sponsor profile, structure, and lender relationship. Contact CLS CRE for deal-specific pricing on your transaction."},
-      {"q": "How often is the report published?", "a": "Quarterly. The next CLS CRE Lender Pricing Report covering Q2 2026 will be published in July 2026."},
-      {"q": "Can I subscribe to receive future reports?", "a": "Yes. Subscribe to the CLS CRE newsletter for delivery of future reports as published."},
-      {"q": "Are individual lender names disclosed?", "a": "No. Individual lender identities are anonymized. Lenders are categorized by source type only (e.g., Fannie Mae DUS, Freddie Mac Optigo, life insurance company, CMBS conduit, specialty bank, bridge debt fund)."},
-      {"q": "Can the report be used as a primary source?", "a": "Yes for the limited purpose of citing aggregated CLS CRE quote pipeline pricing. The methodology section documents the data collection approach. The report is intended for use by CRE professionals, journalists, researchers, and investors as one data point among others in evaluating market pricing."}
+      {
+        "q": "What is the CLS CRE Lender Pricing Report?",
+        "a": "The CLS CRE Lender Pricing Report is a quarterly publication aggregating commercial real estate lending pricing from the CLS CRE active quote pipeline. The report covers agency multifamily, life insurance company, CMBS, SBA, bridge debt fund, and construction lending pricing across deal sizes and product types."
+      },
+      {
+        "q": "How is the data collected?",
+        "a": "Data is collected from active lender quotes received during the quarterly coverage period, not from public secondary market data or industry indices. The methodology aggregates quotes to medians and ranges with lender identities anonymized."
+      },
+      {
+        "q": "How accurate is the data?",
+        "a": "The data reflects actual market pricing on actual deals, with sample sizes sufficient for median statistical reliability across the major categories. Specific deal pricing depends on sponsor profile, property characteristics, and structure beyond what aggregated medians can capture."
+      },
+      {
+        "q": "Will pricing apply to my deal?",
+        "a": "The aggregated medians provide a baseline for understanding current market levels. Actual pricing on a specific transaction depends on property profile, sponsor profile, structure, and lender relationship. Contact CLS CRE for deal-specific pricing on your transaction."
+      },
+      {
+        "q": "How often is the report published?",
+        "a": "Quarterly. The next CLS CRE Lender Pricing Report covering Q2 2026 will be published in July 2026."
+      },
+      {
+        "q": "Can I subscribe to receive future reports?",
+        "a": "Yes. Subscribe to the CLS CRE newsletter for delivery of future reports as published."
+      },
+      {
+        "q": "Are individual lender names disclosed?",
+        "a": "No. Individual lender identities are anonymized. Lenders are categorized by source type only (e.g., Fannie Mae DUS, Freddie Mac Optigo, life insurance company, CMBS conduit, specialty bank, bridge debt fund)."
+      },
+      {
+        "q": "Can the report be used as a primary source?",
+        "a": "Yes for the limited purpose of citing aggregated CLS CRE quote pipeline pricing. The methodology section documents the data collection approach. The report is intended for use by CRE professionals, journalists, researchers, and investors as one data point among others in evaluating market pricing."
+      }
     ],
     "related_reports": [
-      {"href": "research/closed-deal-report-q1-2026.html", "title": "Closed Deal Report Q1 2026", "sub": "Quarterly volume and mix"},
-      {"href": "research/methodology.html", "title": "Research Methodology", "sub": "Data collection and definitions"},
-      {"href": "research/index.html", "title": "All Research", "sub": "Research hub"}
+      {
+        "href": "research/closed-deal-report-q1-2026.html",
+        "title": "Closed Deal Report Q1 2026",
+        "sub": "Quarterly volume and mix"
+      },
+      {
+        "href": "research/methodology.html",
+        "title": "Research Methodology",
+        "sub": "Data collection and definitions"
+      },
+      {
+        "href": "research/index.html",
+        "title": "All Research",
+        "sub": "Research hub"
+      }
     ]
   },
   {
@@ -186,7 +450,7 @@
     "keywords": "commercial real estate closed deals, CRE deal volume, multifamily transaction volume, industrial financing volume, capital source mix, time to close",
     "seo": {
       "title": "Closed Deal Report Q1 2026 | Commercial Lending Solutions",
-      "meta_description": "CLS CRE Q1 2026 Closed Deal Report: aggregated transaction volume, deal size mix, vertical mix, geographic distribution, capital source mix, and time-to-close averages from CLS CRE closed deal pipeline."
+      "meta_description": "Commercial Lending Solutions Q1 2026 Closed Deal Report: aggregated transaction volume, deal size mix, vertical mix, geographic distribution, capital source mix, and time-to-close averages from Commercial Lending Solutions closed deal pipeline."
     },
     "executive_summary": "CLS CRE closed deal volume in Q1 2026 reflected a market regaining momentum after the rate-driven slowdown of late 2024. Total Q1 2026 closed volume aggregated across the CLS CRE pipeline was meaningfully higher than Q4 2025, with multifamily continuing as the largest vertical, industrial holding strong as the second largest, and meaningful contributions from specialty owner-user (SBA-financed) and senior care. Median time-to-close compressed modestly across all channels, particularly on bridge debt fund executions and SBA 504 owner-user acquisitions. Capital source mix in Q1 2026 favored agency multifamily, life co, and bridge debt fund, with SBA programs maintaining stable volume share.",
     "sections": [
@@ -195,19 +459,79 @@
         "title": "Volume by Vertical",
         "intro": "CLS CRE Q1 2026 closed deal volume aggregated by property vertical. Volume excludes any pending transactions and reflects only deals closed within the quarterly coverage period.",
         "table": {
-          "headers": ["Vertical", "Volume Share", "Median Deal Size", "Sample Profile"],
+          "headers": [
+            "Vertical",
+            "Volume Share",
+            "Median Deal Size",
+            "Sample Profile"
+          ],
           "rows": [
-            ["Multifamily (market-rate stabilized)", "32%", "$8.5M", "Class B garden multifamily, 24 to 80 units typical"],
-            ["Multifamily (value-add / transitional)", "12%", "$10.2M", "Class C value-add, 50 to 200 units typical"],
-            ["Multifamily (affordable / workforce)", "8%", "$15.4M", "LIHTC, workforce, NOAH preservation"],
-            ["Industrial (warehouse / distribution)", "14%", "$7.2M", "Class B industrial, 30,000 to 150,000 sq ft"],
-            ["Industrial (specialty / cold / IOS)", "5%", "$9.8M", "Cold storage, IOS, manufacturing"],
-            ["Specialty owner-user (SBA-financed)", "10%", "$3.4M", "Auto, daycare, fitness, restaurant, vet"],
-            ["Senior care", "5%", "$11.8M", "Assisted living, memory care, SNF"],
-            ["Office (Class A CBD / medical)", "4%", "$14.2M", "Trophy office, medical office building"],
-            ["Retail (grocery-anchored / STNL)", "5%", "$6.8M", "Grocery-anchored, drug store NNN"],
-            ["Hospitality", "3%", "$8.5M", "Select-service, boutique hotel"],
-            ["Self-storage", "2%", "$5.4M", "Climate-controlled, mixed product"]
+            [
+              "Multifamily (market-rate stabilized)",
+              "32%",
+              "$8.5M",
+              "Class B garden multifamily, 24 to 80 units typical"
+            ],
+            [
+              "Multifamily (value-add / transitional)",
+              "12%",
+              "$10.2M",
+              "Class C value-add, 50 to 200 units typical"
+            ],
+            [
+              "Multifamily (affordable / workforce)",
+              "8%",
+              "$15.4M",
+              "LIHTC, workforce, NOAH preservation"
+            ],
+            [
+              "Industrial (warehouse / distribution)",
+              "14%",
+              "$7.2M",
+              "Class B industrial, 30,000 to 150,000 sq ft"
+            ],
+            [
+              "Industrial (specialty / cold / IOS)",
+              "5%",
+              "$9.8M",
+              "Cold storage, IOS, manufacturing"
+            ],
+            [
+              "Specialty owner-user (SBA-financed)",
+              "10%",
+              "$3.4M",
+              "Auto, daycare, fitness, restaurant, vet"
+            ],
+            [
+              "Senior care",
+              "5%",
+              "$11.8M",
+              "Assisted living, memory care, SNF"
+            ],
+            [
+              "Office (Class A CBD / medical)",
+              "4%",
+              "$14.2M",
+              "Trophy office, medical office building"
+            ],
+            [
+              "Retail (grocery-anchored / STNL)",
+              "5%",
+              "$6.8M",
+              "Grocery-anchored, drug store NNN"
+            ],
+            [
+              "Hospitality",
+              "3%",
+              "$8.5M",
+              "Select-service, boutique hotel"
+            ],
+            [
+              "Self-storage",
+              "2%",
+              "$5.4M",
+              "Climate-controlled, mixed product"
+            ]
           ]
         },
         "takeaways": [
@@ -224,20 +548,85 @@
         "title": "Volume by Capital Source",
         "intro": "CLS CRE Q1 2026 closed deal volume by capital source channel. Volume reflects the senior debt component of each transaction.",
         "table": {
-          "headers": ["Capital Source", "Volume Share", "Median Deal Size", "Notes"],
+          "headers": [
+            "Capital Source",
+            "Volume Share",
+            "Median Deal Size",
+            "Notes"
+          ],
           "rows": [
-            ["Fannie Mae DUS", "16%", "$8.2M", "Conventional and Small Loans"],
-            ["Freddie Mac Optigo", "18%", "$7.4M", "Conventional and SBL"],
-            ["Life insurance company", "11%", "$22.5M", "Trophy multifamily, industrial, retail"],
-            ["CMBS conduit", "9%", "$15.8M", "Mixed-use, non-conforming multifamily, retail"],
-            ["Bridge debt fund", "13%", "$11.2M", "Value-add, lease-up, transitional"],
-            ["Bank balance sheet (regional / national)", "12%", "$5.8M", "Mid-market loans with depository"],
-            ["Specialty / community bank", "5%", "$3.2M", "Local market financing"],
-            ["SBA 504", "8%", "$2.8M", "Owner-operator real estate"],
-            ["SBA 7(a)", "3%", "$0.9M", "Operating business + working capital"],
-            ["HUD 232 / 221(d)(4)", "2%", "$32M", "Senior care, workforce / affordable"],
-            ["Hard money / private capital", "2%", "$1.4M", "Fast-close, sponsor cure"],
-            ["Mezzanine / preferred equity", "1%", "$3.5M", "Capital stack gap (junior to senior)"]
+            [
+              "Fannie Mae DUS",
+              "16%",
+              "$8.2M",
+              "Conventional and Small Loans"
+            ],
+            [
+              "Freddie Mac Optigo",
+              "18%",
+              "$7.4M",
+              "Conventional and SBL"
+            ],
+            [
+              "Life insurance company",
+              "11%",
+              "$22.5M",
+              "Trophy multifamily, industrial, retail"
+            ],
+            [
+              "CMBS conduit",
+              "9%",
+              "$15.8M",
+              "Mixed-use, non-conforming multifamily, retail"
+            ],
+            [
+              "Bridge debt fund",
+              "13%",
+              "$11.2M",
+              "Value-add, lease-up, transitional"
+            ],
+            [
+              "Bank balance sheet (regional / national)",
+              "12%",
+              "$5.8M",
+              "Mid-market loans with depository"
+            ],
+            [
+              "Specialty / community bank",
+              "5%",
+              "$3.2M",
+              "Local market financing"
+            ],
+            [
+              "SBA 504",
+              "8%",
+              "$2.8M",
+              "Owner-operator real estate"
+            ],
+            [
+              "SBA 7(a)",
+              "3%",
+              "$0.9M",
+              "Operating business + working capital"
+            ],
+            [
+              "HUD 232 / 221(d)(4)",
+              "2%",
+              "$32M",
+              "Senior care, workforce / affordable"
+            ],
+            [
+              "Hard money / private capital",
+              "2%",
+              "$1.4M",
+              "Fast-close, sponsor cure"
+            ],
+            [
+              "Mezzanine / preferred equity",
+              "1%",
+              "$3.5M",
+              "Capital stack gap (junior to senior)"
+            ]
           ]
         },
         "takeaways": [
@@ -254,19 +643,67 @@
         "title": "Geographic Distribution",
         "intro": "CLS CRE Q1 2026 closed deal volume by metro market. Volume reflects deals closed in or for properties located in each metro.",
         "table": {
-          "headers": ["Metro Market", "Volume Share", "Concentration Notes"],
+          "headers": [
+            "Metro Market",
+            "Volume Share",
+            "Concentration Notes"
+          ],
           "rows": [
-            ["Los Angeles metro", "16%", "Multifamily heavy, including affordable / EDI / ED1 ground-up"],
-            ["New York metro (NYC + NJ + LI + Westchester)", "12%", "Multifamily heavy with rent-stabilized and 485-x exposure"],
-            ["Texas metros (Dallas-Fort Worth, Houston, Austin, San Antonio)", "14%", "BTR, multifamily, industrial heavy"],
-            ["Florida metros (Miami, Tampa, Orlando, Jacksonville)", "9%", "Multifamily, hospitality, retiree-driven specialty"],
-            ["Sun Belt (Phoenix, Atlanta, Charlotte, Nashville)", "11%", "Multifamily, industrial, BTR concentration"],
-            ["Mountain West (Denver, Salt Lake City, Boise)", "5%", "Multifamily and industrial growth"],
-            ["Pacific Northwest (Seattle, Portland)", "4%", "Industrial and multifamily institutional"],
-            ["Bay Area (San Francisco, San Jose)", "5%", "Multifamily and life sciences"],
-            ["Chicago metro", "4%", "Multifamily, industrial, specialty"],
-            ["Mid-Atlantic / Northeast", "8%", "Multifamily, retail, mixed-use"],
-            ["Other (multiple metros)", "12%", "Geographic diversification"]
+            [
+              "Los Angeles metro",
+              "16%",
+              "Multifamily heavy, including affordable / EDI / ED1 ground-up"
+            ],
+            [
+              "New York metro (NYC + NJ + LI + Westchester)",
+              "12%",
+              "Multifamily heavy with rent-stabilized and 485-x exposure"
+            ],
+            [
+              "Texas metros (Dallas-Fort Worth, Houston, Austin, San Antonio)",
+              "14%",
+              "BTR, multifamily, industrial heavy"
+            ],
+            [
+              "Florida metros (Miami, Tampa, Orlando, Jacksonville)",
+              "9%",
+              "Multifamily, hospitality, retiree-driven specialty"
+            ],
+            [
+              "Sun Belt (Phoenix, Atlanta, Charlotte, Nashville)",
+              "11%",
+              "Multifamily, industrial, BTR concentration"
+            ],
+            [
+              "Mountain West (Denver, Salt Lake City, Boise)",
+              "5%",
+              "Multifamily and industrial growth"
+            ],
+            [
+              "Pacific Northwest (Seattle, Portland)",
+              "4%",
+              "Industrial and multifamily institutional"
+            ],
+            [
+              "Bay Area (San Francisco, San Jose)",
+              "5%",
+              "Multifamily and life sciences"
+            ],
+            [
+              "Chicago metro",
+              "4%",
+              "Multifamily, industrial, specialty"
+            ],
+            [
+              "Mid-Atlantic / Northeast",
+              "8%",
+              "Multifamily, retail, mixed-use"
+            ],
+            [
+              "Other (multiple metros)",
+              "12%",
+              "Geographic diversification"
+            ]
           ]
         },
         "takeaways": [
@@ -283,20 +720,72 @@
         "title": "Time to Close",
         "intro": "Median time from term sheet to close by capital source channel across CLS CRE Q1 2026 closed deals.",
         "table": {
-          "headers": ["Capital Source", "Median Days to Close", "Q1 2026 vs Q4 2025"],
+          "headers": [
+            "Capital Source",
+            "Median Days to Close",
+            "Q1 2026 vs Q4 2025"
+          ],
           "rows": [
-            ["Fannie Mae DUS Small / Freddie Mac SBL", "38 days", "3 days faster"],
-            ["Fannie Mae DUS Conventional", "62 days", "Flat"],
-            ["Freddie Mac Optigo Conventional", "58 days", "2 days faster"],
-            ["Life insurance company", "72 days", "5 days faster"],
-            ["CMBS conduit", "78 days", "Flat"],
-            ["Bridge debt fund", "32 days", "4 days faster"],
-            ["Bank balance sheet", "55 days", "Flat"],
-            ["SBA 504 (real estate only)", "82 days", "8 days faster"],
-            ["SBA 504 + 7(a) combined", "92 days", "5 days faster"],
-            ["HUD 232 / 221(d)(4) (acquisition)", "395 days", "Flat"],
-            ["Hard money / private capital", "11 days", "1 day faster"],
-            ["Loan assumption", "44 days", "Flat"]
+            [
+              "Fannie Mae DUS Small / Freddie Mac SBL",
+              "38 days",
+              "3 days faster"
+            ],
+            [
+              "Fannie Mae DUS Conventional",
+              "62 days",
+              "Flat"
+            ],
+            [
+              "Freddie Mac Optigo Conventional",
+              "58 days",
+              "2 days faster"
+            ],
+            [
+              "Life insurance company",
+              "72 days",
+              "5 days faster"
+            ],
+            [
+              "CMBS conduit",
+              "78 days",
+              "Flat"
+            ],
+            [
+              "Bridge debt fund",
+              "32 days",
+              "4 days faster"
+            ],
+            [
+              "Bank balance sheet",
+              "55 days",
+              "Flat"
+            ],
+            [
+              "SBA 504 (real estate only)",
+              "82 days",
+              "8 days faster"
+            ],
+            [
+              "SBA 504 + 7(a) combined",
+              "92 days",
+              "5 days faster"
+            ],
+            [
+              "HUD 232 / 221(d)(4) (acquisition)",
+              "395 days",
+              "Flat"
+            ],
+            [
+              "Hard money / private capital",
+              "11 days",
+              "1 day faster"
+            ],
+            [
+              "Loan assumption",
+              "44 days",
+              "Flat"
+            ]
           ]
         },
         "takeaways": [
@@ -313,14 +802,49 @@
         "title": "Deal Size Distribution",
         "intro": "CLS CRE Q1 2026 closed deal count distribution by deal size band.",
         "table": {
-          "headers": ["Deal Size Band", "Count Share", "Volume Share", "Notes"],
+          "headers": [
+            "Deal Size Band",
+            "Count Share",
+            "Volume Share",
+            "Notes"
+          ],
           "rows": [
-            ["Under $2M", "8%", "1%", "Small balance specialty owner-user"],
-            ["$2M to $5M", "26%", "12%", "Owner-user, small balance multifamily, specialty"],
-            ["$5M to $10M", "28%", "20%", "Mid-market multifamily, industrial, specialty"],
-            ["$10M to $20M", "20%", "26%", "Mid-market institutional"],
-            ["$20M to $50M", "13%", "28%", "Institutional"],
-            ["Over $50M", "5%", "13%", "Large institutional"]
+            [
+              "Under $2M",
+              "8%",
+              "1%",
+              "Small balance specialty owner-user"
+            ],
+            [
+              "$2M to $5M",
+              "26%",
+              "12%",
+              "Owner-user, small balance multifamily, specialty"
+            ],
+            [
+              "$5M to $10M",
+              "28%",
+              "20%",
+              "Mid-market multifamily, industrial, specialty"
+            ],
+            [
+              "$10M to $20M",
+              "20%",
+              "26%",
+              "Mid-market institutional"
+            ],
+            [
+              "$20M to $50M",
+              "13%",
+              "28%",
+              "Institutional"
+            ],
+            [
+              "Over $50M",
+              "5%",
+              "13%",
+              "Large institutional"
+            ]
           ]
         },
         "takeaways": [
@@ -335,18 +859,51 @@
     "methodology": "This report aggregates data from the CLS CRE Q1 2026 closed deal pipeline. Volume metrics reflect the senior debt component of each transaction at close. Median deal sizes are calculated within each category. Geographic distribution is based on property location. Time-to-close is measured from signed term sheet to funded close. Sample size is sufficient for the aggregated metrics presented; specific transaction details are anonymized to protect borrower and lender identity. The pipeline is national in scope with deals across approximately 35 metros and substantially all major capital source channels. Data is collected internally from CLS CRE deal management systems.",
     "broker_quote": "Q1 2026 closed deal volume reflected a market in healthy recovery from the late 2024 rate-driven slowdown. Multifamily and industrial continue to dominate institutional volume, while owner-operator SBA activity sustains the long-tail specialty niche financing market. The bridge debt fund channel remained the dominant transitional execution path, reflecting the structural alignment between transitional asset profiles and private credit risk appetite.",
     "faqs": [
-      {"q": "What is the CLS CRE Closed Deal Report?", "a": "The CLS CRE Closed Deal Report is a quarterly publication aggregating closed transaction volume from the CLS CRE pipeline by vertical, capital source, geographic distribution, time-to-close, and deal size."},
-      {"q": "How is the data collected?", "a": "Data is collected internally from CLS CRE deal management systems for transactions that closed within the quarterly coverage period. Volume metrics reflect the senior debt component of each transaction."},
-      {"q": "Are individual deals disclosed?", "a": "No. Individual deal details are anonymized. Aggregated metrics (volume share, median deal sizes, time-to-close) are presented at the category level."},
-      {"q": "Can the data be cited for research or journalism?", "a": "Yes. The aggregated metrics are intended for use by CRE professionals, journalists, researchers, and investors. Cite as 'CLS CRE Closed Deal Report Q1 2026' with appropriate attribution."},
-      {"q": "Will future reports compare to historical periods?", "a": "Yes. Future quarterly reports will include trend comparisons to prior quarters."},
-      {"q": "How does this report compare to industry deal volume reports?", "a": "Industry-wide reports (CBRE, JLL, Newmark, Cushman) cover total industry volume across all brokers and direct lenders. The CLS CRE Closed Deal Report covers only CLS CRE closed deal pipeline. The reports are complementary rather than competing."},
-      {"q": "Does the report include all CLS CRE deals?", "a": "Yes for the quarterly coverage period. The report aggregates substantially all CLS CRE closed deals during Q1 2026 across all capital source channels and verticals."}
+      {
+        "q": "What is the CLS CRE Closed Deal Report?",
+        "a": "The CLS CRE Closed Deal Report is a quarterly publication aggregating closed transaction volume from the CLS CRE pipeline by vertical, capital source, geographic distribution, time-to-close, and deal size."
+      },
+      {
+        "q": "How is the data collected?",
+        "a": "Data is collected internally from CLS CRE deal management systems for transactions that closed within the quarterly coverage period. Volume metrics reflect the senior debt component of each transaction."
+      },
+      {
+        "q": "Are individual deals disclosed?",
+        "a": "No. Individual deal details are anonymized. Aggregated metrics (volume share, median deal sizes, time-to-close) are presented at the category level."
+      },
+      {
+        "q": "Can the data be cited for research or journalism?",
+        "a": "Yes. The aggregated metrics are intended for use by CRE professionals, journalists, researchers, and investors. Cite as 'CLS CRE Closed Deal Report Q1 2026' with appropriate attribution."
+      },
+      {
+        "q": "Will future reports compare to historical periods?",
+        "a": "Yes. Future quarterly reports will include trend comparisons to prior quarters."
+      },
+      {
+        "q": "How does this report compare to industry deal volume reports?",
+        "a": "Industry-wide reports (CBRE, JLL, Newmark, Cushman) cover total industry volume across all brokers and direct lenders. The CLS CRE Closed Deal Report covers only CLS CRE closed deal pipeline. The reports are complementary rather than competing."
+      },
+      {
+        "q": "Does the report include all CLS CRE deals?",
+        "a": "Yes for the quarterly coverage period. The report aggregates substantially all CLS CRE closed deals during Q1 2026 across all capital source channels and verticals."
+      }
     ],
     "related_reports": [
-      {"href": "research/lender-pricing-report-q1-2026.html", "title": "Lender Pricing Report Q1 2026", "sub": "Quarterly pricing aggregation"},
-      {"href": "research/methodology.html", "title": "Research Methodology", "sub": "Data collection and definitions"},
-      {"href": "research/index.html", "title": "All Research", "sub": "Research hub"}
+      {
+        "href": "research/lender-pricing-report-q1-2026.html",
+        "title": "Lender Pricing Report Q1 2026",
+        "sub": "Quarterly pricing aggregation"
+      },
+      {
+        "href": "research/methodology.html",
+        "title": "Research Methodology",
+        "sub": "Data collection and definitions"
+      },
+      {
+        "href": "research/index.html",
+        "title": "All Research",
+        "sub": "Research hub"
+      }
     ]
   }
 ]
