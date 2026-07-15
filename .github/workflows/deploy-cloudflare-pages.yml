@@ -107,6 +107,13 @@ jobs:
           };
           EOF
 
+      # run_worker_first=true forces our fetch() handler to run for every
+      # request BEFORE Cloudflare's built-in asset-matching/not_found
+      # fallback. Without it, the two prior fix attempts (rebuilding the
+      # Request object different ways) both still 404'd on navigation
+      # requests -- strong evidence the built-in fallback was intercepting
+      # "/" before our rewrite logic ever ran, specifically for real
+      # top-level navigations (Sec-Fetch-Dest: document).
       - name: Write wrangler config (html_handling=none, no redirect stripping)
         run: |
           cat > wrangler.toml <<'EOF'
@@ -119,6 +126,7 @@ jobs:
           binding = "ASSETS"
           html_handling = "none"
           not_found_handling = "404-page"
+          run_worker_first = true
           EOF
 
       - name: Deploy to Cloudflare (Workers Static Assets, Direct Upload)
