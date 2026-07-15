@@ -81,13 +81,16 @@ jobs:
       # preserved for the pages that make up the vast majority of the site.
       #
       # BUG FOUND 2026-07-15 (live, post-cutover): real browser top-level page
-      # loads send `Sec-Fetch-Mode: navigate`, which Cloudflare's runtime
-      # surfaces as request.mode === "navigate" on the incoming Request. The
-      # Fetch API spec forbids constructing a new Request from an init whose
-      # mode is "navigate" -- `new Request(url, request)` threw, and Workers
-      # returned the 404 fallback. curl never reproduced this because curl
-      # doesn't send Sec-Fetch-Mode by default. Fix: build a fresh, minimal
-      # Request (method + headers only) instead of cloning the original.
+      # loads send `Sec-Fetch-Mode: navigate` (+ other Sec-Fetch-* headers).
+      # Reproduced with curl -H "Sec-Fetch-Mode: navigate": 404. First fix
+      # attempt (fresh Request with {method, headers: request.headers}) did
+      # NOT resolve it -- the Fetch spec forbids scripts from setting several
+      # of these browser-managed headers on a constructed Request, so copying
+      # the whole Headers object throws. curl never reproduced any of this
+      # because curl doesn't send Sec-Fetch-* by default. Real fix: don't
+      # forward headers at all for this internal rewrite -- it's a static
+      # asset fetch, not a proxy, so it doesn't need to replay the client's
+      # original headers.
       - name: Write directory-index rewrite worker
         run: |
           mkdir -p _worker
@@ -97,9 +100,7 @@ jobs:
               const url = new URL(request.url);
               if (url.pathname.endsWith("/")) {
                 url.pathname += "index.html";
-                return env.ASSETS.fetch(
-                  new Request(url, { method: request.method, headers: request.headers })
-                );
+                return env.ASSETS.fetch(new Request(url));
               }
               return env.ASSETS.fetch(request);
             },
