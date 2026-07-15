@@ -952,7 +952,7 @@ def main():
             )
             slug = f"{loan['slug']}-{city['slug']}"
             seo = {
-                "title": f"{loan['name']} {city['city']} {city['state']} | CRE Lenders | CLS CRE",
+                "title": f"{loan['name']} {city['city']} {city['state']} | CRE Lenders | Commercial Lending Solutions",
                 "meta_description": f"Commercial {loan['name'].lower()} in {city['city']} from {loan.get('min_loan_display', '$1M')}. 1,000+ lender relationships, competitive rates, fast approvals. Free quote. CLS CRE.",
             }
             seo.update(city_financing_seo_overrides.get(slug, {}))
@@ -1003,7 +1003,7 @@ def main():
                 faqs_data.get("city_templates", {}), prop=prop, city=city
             )
             seo = {
-                "title": f"{prop['name']} Loans {city['city']} {city['state']} | CLS CRE",
+                "title": f"{prop['name']} Loans {city['city']} {city['state']} | Commercial Lending Solutions",
                 "meta_description": f"{prop['name']} financing in {city['city']} from $1M. Banks, life companies, bridge and construction loans. 1,000+ lenders. Free quote. CLS CRE.",
             }
             slug = f"{prop['slug']}-{city['slug']}"
@@ -1423,7 +1423,7 @@ def main():
         # "[city] commercial mortgage" head queries; the /financing/ and /property/
         # spokes target their product-specific queries and link back here.
         seo_index = {
-            "title": f"{city['city']}, {city['state']} Commercial Real Estate Loans & Mortgages | CLS CRE",
+            "title": f"{city['city']}, {city['state']} Commercial Real Estate Loans & Mortgages | Commercial Lending Solutions",
             "meta_description": f"Commercial real estate loans in {city['city']}, {city['state']}: bridge, permanent, construction, SBA and every major program from 1,000+ lenders. Free quote from a commercial mortgage broker.",
         }
         featured = pick_featured_markets(city, cities, n_total=8)
@@ -1472,7 +1472,7 @@ def main():
          "Free debt yield calculator for commercial real estate. NOI divided by loan amount, plus typical lender minimums and the max loan each floor supports.", "0.8"),
         ("tool_la_rentcontrol.html", "tools/la-rent-control-checker.html", "tools/la-rent-control-checker.html", "LA Rent Control Checker | Commercial Lending Solutions",
          "Free tool: enter jurisdiction, year built, and unit count to see whether an LA-area apartment building falls under RSO, a municipal rent ordinance, or AB 1482, and what it means for financing.", "0.8"),
-        ("tool_welfare.html", "tools/welfare-exemption-calculator.html", "tools/welfare-exemption-calculator.html", "Welfare Exemption Equity Reduction Calculator | CLS CRE",
+        ("tool_welfare.html", "tools/welfare-exemption-calculator.html", "tools/welfare-exemption-calculator.html", "Welfare Exemption Equity Reduction Calculator | Commercial Lending Solutions",
          "Free tool for LA affordable developers: estimate the property tax savings, NOI lift, value lift, and reduced equity the California Welfare Exemption creates on your deal.", "0.8"),
     ]
     for tpl_name, out_rel, canonical, title, desc, priority in tool_pages:
@@ -1798,7 +1798,7 @@ def main():
     html = tpl_states_index.render(
         **shared,
         state_groups=state_groups,
-        seo={"title": "Commercial Real Estate Loans by State | CLS CRE",
+        seo={"title": "Commercial Real Estate Loans by State | Commercial Lending Solutions",
              "meta_description": "Commercial real estate loans in all 50 states from $1M to $100M+. State-by-state foreclosure law, recording taxes, and lender coverage. Free quote from CLS CRE."},
         canonical_path="states/",
         depth="../",
@@ -1858,7 +1858,7 @@ def main():
             **shared,
             all_terms=glossary,
             term_groups=term_groups,
-            seo={"title": "Commercial Real Estate Finance Glossary | CLS CRE",
+            seo={"title": "Commercial Real Estate Finance Glossary | Commercial Lending Solutions",
                  "meta_description": "Every CRE finance term that changes your loan, explained by a working broker: definitions, formulas, worked examples, and what lenders actually require."},
             canonical_path="glossary/",
             depth="../",

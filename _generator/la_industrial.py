@@ -117,7 +117,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Inglewood-Hawthorne Aerospace Corridor Industrial Financing",
-            "title": "Inglewood-Hawthorne Industrial Financing | CLS CRE",
+            "title": "Inglewood-Hawthorne Industrial Financing | Commercial Lending Solutions",
             "meta_description": "Bridge, SBA, and institutional financing for flex, R&D, and manufacturing buildings across the Inglewood-Hawthorne aerospace corridor, for investors and owner-users alike.",
         },
     },
@@ -135,7 +135,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Mid-Counties Industrial Financing: Santa Fe Springs & Cerritos",
-            "title": "Mid-Counties Industrial Financing | Santa Fe Springs & Cerritos | CLS CRE",
+            "title": "Mid-Counties Industrial Financing | Santa Fe Springs & Cerritos | Commercial Lending Solutions",
             "meta_description": "Distribution, manufacturing, and redevelopment financing across the Santa Fe Springs and Cerritos industrial corridor near the 5/605/91 freeway interchange.",
         },
     },
@@ -153,7 +153,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "South LA & Compton Industrial Financing",
-            "title": "South LA & Compton Industrial Financing | CLS CRE",
+            "title": "South LA & Compton Industrial Financing | Commercial Lending Solutions",
             "meta_description": "Bridge, SBA, and acquisition financing for lower-basis distribution and light-manufacturing buildings across South LA and Compton's Alameda Corridor industrial base.",
         },
     },
@@ -171,7 +171,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Sun Valley & Pacoima Industrial Financing",
-            "title": "Sun Valley & Pacoima Industrial Financing | CLS CRE",
+            "title": "Sun Valley & Pacoima Industrial Financing | Commercial Lending Solutions",
             "meta_description": "Owner-user, SBA, and bridge financing for recycling, building-materials, and light-manufacturing properties in Sun Valley and Pacoima.",
         },
     },

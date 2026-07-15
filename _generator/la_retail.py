@@ -26,7 +26,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Melrose Avenue & Fairfax District Retail Property Financing",
-            "title": "Melrose Avenue & Fairfax District Retail Financing | CLS CRE",
+            "title": "Melrose Avenue & Fairfax District Retail Financing | Commercial Lending Solutions",
             "meta_description": "Acquisition, bridge, and SBA financing for independent fashion and streetwear retail buildings on Melrose Avenue and the Fairfax District. CLS CRE, $1M+.",
         },
     },
@@ -44,7 +44,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Larchmont Village Retail Property Financing",
-            "title": "Larchmont Village Retail Financing | CLS CRE",
+            "title": "Larchmont Village Retail Financing | Commercial Lending Solutions",
             "meta_description": "Bridge, permanent, and refinance financing for boutique retail buildings on Larchmont Boulevard near Hancock Park. CLS CRE, $1 million minimum loan size.",
         },
     },
@@ -62,7 +62,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Abbot Kinney Boulevard Retail Financing",
-            "title": "Abbot Kinney Retail Property Financing | CLS CRE",
+            "title": "Abbot Kinney Retail Property Financing | Commercial Lending Solutions",
             "meta_description": "Financing for Abbot Kinney Boulevard retail buildings in Venice, one of the Westside's highest-rent corridors. Bridge, permanent, and investor financing.",
         },
     },
@@ -80,7 +80,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Ventura Boulevard Retail Property Financing",
-            "title": "Ventura Boulevard Retail Financing | CLS CRE",
+            "title": "Ventura Boulevard Retail Financing | Commercial Lending Solutions",
             "meta_description": "Bridge, permanent, and SBA financing for Ventura Boulevard strip centers and freestanding pad retail across Sherman Oaks, Encino, and Woodland Hills.",
         },
     },
@@ -98,7 +98,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Downtown Los Angeles Retail Property Financing",
-            "title": "Downtown LA Retail Financing | CLS CRE",
+            "title": "Downtown LA Retail Financing | Commercial Lending Solutions",
             "meta_description": "Financing for Downtown Los Angeles retail: Fashion District wholesale-retail buildings, Broadway Theatre District, and Arts District ground-floor space.",
         },
     },
@@ -116,7 +116,7 @@ RAW_HOODS = [
         ],
         "seo": {
             "h1": "Westwood Village Retail Property Financing",
-            "title": "Westwood Village Retail Property Financing | CLS CRE",
+            "title": "Westwood Village Retail Property Financing | Commercial Lending Solutions",
             "meta_description": "Commercial Lending Solutions arranges acquisition, bridge, and permanent financing for Westwood Village retail near UCLA, from a $1 million minimum.",
         },
     },
