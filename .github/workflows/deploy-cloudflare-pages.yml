@@ -21,6 +21,15 @@ name: Deploy to Cloudflare Pages
 # static, a separate resource from the (now unused) cls-website Pages
 # project created during earlier debugging -- harmless to leave orphaned.
 #
+# NOTE (2026-07-15): html_handling="none" turned out to disable ALL implicit
+# HTML resolution, not just the unwanted .html-stripping -- it also broke
+# "/" -> "/index.html" and "/markets/{city}/" -> ".../index.html", both of
+# which are real, already-GSC-indexed URL patterns this site depends on.
+# Fixed with a minimal custom Worker (_worker/index.js) that does ONLY the
+# directory -> index.html rewrite itself, internally (env.ASSETS.fetch, no
+# HTTP redirect visible to any client or crawler), and passes every other
+# path through untouched -- so .html files still serve literally at 200.
+#
 # Requires two repo secrets (Settings > Secrets and variables > Actions):
 #   CLOUDFLARE_API_TOKEN   -- scoped to Account.Cloudflare Pages:Edit (NOT the
 #                             zone-scoped token used elsewhere in this project)
@@ -65,14 +74,37 @@ jobs:
             ./ _deploy/
           echo "Staged file count: $(find _deploy -type f | wc -l)"
 
+      # Rewrites "/" and "/dir/" to their index.html internally (server-side,
+      # no HTTP redirect) so directory-index pages keep working. Everything
+      # else -- crucially every .html path -- passes straight through to
+      # ASSETS.fetch() untouched, so html_handling=none's literal serving is
+      # preserved for the pages that make up the vast majority of the site.
+      - name: Write directory-index rewrite worker
+        run: |
+          mkdir -p _worker
+          cat > _worker/index.js <<'EOF'
+          export default {
+            async fetch(request, env) {
+              const url = new URL(request.url);
+              if (url.pathname.endsWith("/")) {
+                url.pathname += "index.html";
+                return env.ASSETS.fetch(new Request(url, request));
+              }
+              return env.ASSETS.fetch(request);
+            },
+          };
+          EOF
+
       - name: Write wrangler config (html_handling=none, no redirect stripping)
         run: |
           cat > wrangler.toml <<'EOF'
           name = "cls-website-static"
+          main = "_worker/index.js"
           compatibility_date = "2026-07-14"
 
           [assets]
           directory = "./_deploy"
+          binding = "ASSETS"
           html_handling = "none"
           not_found_handling = "404-page"
           EOF
