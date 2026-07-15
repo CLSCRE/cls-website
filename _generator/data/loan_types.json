@@ -42,7 +42,7 @@
     "short_name": "Construction",
     "headline": "Ground-Up Construction & Renovation Financing",
     "description": "Construction loans fund ground-up development and major renovation projects for commercial real estate. These short-term facilities typically feature 12 to 36-month terms with interest-only payments during the build period, funded through progressive draws as construction milestones are met. Lenders include banks, debt funds, and specialized construction lenders.",
-    "description_extended": "Construction financing is inherently higher risk than permanent lending, which means lender selection and deal structuring are critical. Experienced borrowers with strong track records can access competitive bank construction loans, while more complex or speculative projects may require debt fund capital. Key considerations include loan-to-cost ratios, interest reserves, completion guarantees, and the exit strategy — whether that's a permanent loan take-out, sale, or refinance.",
+    "description_extended": "Construction financing is inherently higher risk than permanent lending, which means lender selection and deal structuring are critical. Experienced borrowers with strong track records can access competitive bank construction loans, while more complex or speculative projects may require debt fund capital. Key considerations include loan-to-cost ratios, interest reserves, completion guarantees, and the exit strategy, whether that's a permanent loan take-out, sale, or refinance.",
     "key_features": {
       "loan_amount": "$1M - $100M+",
       "term": "12 - 36 Months",
@@ -77,7 +77,7 @@
     "name": "Bridge Loans",
     "short_name": "Bridge",
     "headline": "Short-Term Bridge Financing for Transitional Assets",
-    "description": "Bridge loans provide short-term financing for commercial properties in transition — whether during lease-up, renovation, repositioning, or acquisition. These 6 to 36-month facilities offer speed and flexibility that traditional lenders cannot match, making them ideal for time-sensitive opportunities and value-add strategies.",
+    "description": "Bridge loans provide short-term financing for commercial properties in transition, whether during lease-up, renovation, repositioning, or acquisition. These 6 to 36-month facilities offer speed and flexibility that traditional lenders cannot match, making them ideal for time-sensitive opportunities and value-add strategies.",
     "description_extended": "Bridge lending fills the gap between acquisition or current state and permanent financing eligibility. Common use cases include acquiring a property that doesn't yet qualify for permanent debt, funding tenant improvements and lease-up, providing time for entitlement and permitting, or bridging to a construction loan start. Sources include debt funds, private lenders, and select banks willing to provide transitional capital.",
     "key_features": {
       "loan_amount": "$1M - $100M+",
@@ -148,7 +148,7 @@
     "short_name": "Mezzanine",
     "headline": "Mezzanine Debt & Preferred Equity Financing",
     "description": "Mezzanine and preferred equity fill the gap between senior debt and common equity in the commercial real estate capital stack. These subordinate capital positions allow borrowers to increase total leverage beyond what senior lenders provide, reducing the equity required for acquisitions, developments, and recapitalizations.",
-    "description_extended": "Mezzanine debt is secured by a pledge of ownership interest in the borrowing entity rather than a mortgage lien on the property, while preferred equity involves an actual equity investment with a preferred return. Both serve a similar function — increasing leverage and reducing sponsor equity requirements. These structures are commonly used for value-add acquisitions, development projects, and recapitalizations where senior lenders cap at 65-75% LTV.",
+    "description_extended": "Mezzanine debt is secured by a pledge of ownership interest in the borrowing entity rather than a mortgage lien on the property, while preferred equity involves an actual equity investment with a preferred return. Both serve a similar function, increasing leverage and reducing sponsor equity requirements. These structures are commonly used for value-add acquisitions, development projects, and recapitalizations where senior lenders cap at 65-75% LTV.",
     "key_features": {
       "loan_amount": "$5M - $50M+",
       "term": "1 - 5 Years",
@@ -611,7 +611,7 @@
     "name": "Acquisition Bridge Loans",
     "short_name": "Acquisition Bridge",
     "headline": "Fast-Close Acquisition Financing for Commercial Real Estate",
-    "description": "Acquisition bridge loans provide short-term capital to close commercial real estate purchases quickly — often in 10 to 21 days — when conventional financing is too slow, unavailable, or the asset does not yet qualify for permanent debt. Typical deal sizes run $2M to $30M, with loan-to-cost ratios up to 75-80% of purchase price. Debt funds, private lenders, and select commercial banks are the primary capital sources for acquisition bridge transactions.",
+    "description": "Acquisition bridge loans provide short-term capital to close commercial real estate purchases quickly, often in 10 to 21 days, when conventional financing is too slow, unavailable, or the asset does not yet qualify for permanent debt. Typical deal sizes run $2M to $30M, with loan-to-cost ratios up to 75-80% of purchase price. Debt funds, private lenders, and select commercial banks are the primary capital sources for acquisition bridge transactions.",
     "description_extended": "Commercial real estate acquisition is increasingly competitive. Off-market deals, auction purchases, note acquisitions, and distressed asset opportunities rarely accommodate the 60 to 90-day timeline that banks require. Acquisition bridge loans bridge that gap: non-bank lenders can commit and close in two to three weeks, giving buyers the certainty of execution that sellers and brokers demand. The bridge loan is then refinanced into permanent agency, CMBS, bank, or life company debt once the asset is stabilized and seasoned. Minimum loan size is $2 million; most active lenders in this space focus on the $3M to $25M range.",
     "min_loan_display": "$2M",
     "key_features": {
@@ -686,7 +686,7 @@
     "short_name": "1031 Bridge",
     "headline": "Bridge Financing to Meet 1031 Exchange Deadlines",
     "description": "1031 exchange bridge loans allow investors to close on replacement property within the IRS 45-day identification and 180-day closing deadlines without waiting for conventional financing. These short-term facilities close in 10 to 21 days, satisfying exchange timing requirements while a permanent loan is arranged post-close. Minimum deal size is $2 million, aligned with the equity profiles of investors doing tax-deferred exchanges in commercial real estate.",
-    "description_extended": "A failed 1031 exchange triggers full capital gains tax recognition on the relinquished property sale, often representing hundreds of thousands of dollars in immediate tax liability. The primary risk is not finding the right replacement property — it is failing to close on one in time. Conventional bank financing is simply not fast enough for most exchange timelines, particularly when the identified property requires due diligence, PCNA reports, or appraisals that banks require before commitment. A 1031 bridge loan from a debt fund or private lender eliminates the timing risk: the investor closes the exchange, locks in the tax deferral, and then refinances into permanent debt at leisure. Experienced 1031 exchange advisors and qualified intermediaries routinely recommend bridge lenders to their clients for exactly this reason.",
+    "description_extended": "A failed 1031 exchange triggers full capital gains tax recognition on the relinquished property sale, often representing hundreds of thousands of dollars in immediate tax liability. The primary risk is not finding the right replacement property, it is failing to close on one in time. Conventional bank financing is simply not fast enough for most exchange timelines, particularly when the identified property requires due diligence, PCNA reports, or appraisals that banks require before commitment. A 1031 bridge loan from a debt fund or private lender eliminates the timing risk: the investor closes the exchange, locks in the tax deferral, and then refinances into permanent debt at leisure. Experienced 1031 exchange advisors and qualified intermediaries routinely recommend bridge lenders to their clients for exactly this reason.",
     "min_loan_display": "$2M",
     "key_features": {
       "loan_amount": "$2M - $50M+",
@@ -982,7 +982,7 @@
     "short_name": "Construction-to-Perm",
     "headline": "One-Time Close Construction and Permanent Financing Combined",
     "description": "Construction-to-perm loans combine ground-up construction financing and long-term permanent debt into a single closing, eliminating the cost and uncertainty of a two-step financing process. During construction the loan functions as a draw facility; at completion it converts automatically to a permanent term loan. This structure eliminates refinancing risk, reduces closing costs, and locks in permanent financing terms before construction begins. Minimum loan size is $1 million.",
-    "description_extended": "The primary risk in any construction project is not the build itself — it is the refinancing event at completion. Markets shift, rates change, and permanent lenders tighten requirements precisely when developers need them most. Construction-to-perm financing eliminates this risk by locking in the permanent loan at the time of construction commitment. Banks are the primary source for construction-to-perm loans, particularly for multifamily, mixed-use, and owner-occupied commercial projects. Agency lenders including Fannie Mae and Freddie Mac offer construction-to-perm programs for qualifying multifamily projects. The structure is particularly valuable in rising rate environments where locking a permanent rate before construction completion provides meaningful economic benefit.",
+    "description_extended": "The primary risk in any construction project is not the build itself, it is the refinancing event at completion. Markets shift, rates change, and permanent lenders tighten requirements precisely when developers need them most. Construction-to-perm financing eliminates this risk by locking in the permanent loan at the time of construction commitment. Banks are the primary source for construction-to-perm loans, particularly for multifamily, mixed-use, and owner-occupied commercial projects. Agency lenders including Fannie Mae and Freddie Mac offer construction-to-perm programs for qualifying multifamily projects. The structure is particularly valuable in rising rate environments where locking a permanent rate before construction completion provides meaningful economic benefit.",
     "min_loan_display": "$1M",
     "key_features": {
       "loan_amount": "$1M - $50M+",
@@ -1009,7 +1009,7 @@
     ],
     "seo": {
       "title": "Construction-to-Perm Loans | One-Time Close Commercial Financing | Commercial Lending Solutions",
-      "meta_description": "Construction-to-perm loans from $1M. One-time close — lock in permanent financing at construction start and eliminate refinancing risk. Banks and agency lenders. Get a quote.",
+      "meta_description": "Construction-to-perm loans from $1M. One-time close, lock in permanent financing at construction start and eliminate refinancing risk. Banks and agency lenders. Get a quote.",
       "h1": "Construction-to-Perm Loans for Commercial Development"
     }
   },

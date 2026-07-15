@@ -135,7 +135,7 @@
     </div>
   </div>
 
-  <!-- Results — hidden until calc runs -->
+  <!-- Results, hidden until calc runs -->
   <div id="resultsCard" class="rc-card" style="display:none">
     <div class="rc-card-title">Your Refinance Snapshot</div>
     <div class="refi-compare" aria-label="Monthly payment comparison">
@@ -159,7 +159,7 @@
     <div id="qualifyBadge" class="qualify-badge" style="display:none" role="status"></div>
   </div>
 
-  <!-- Lead capture — shown after calc runs -->
+  <!-- Lead capture, shown after calc runs -->
   <div class="lead-card" id="leadCard">
     <h3>Want Actual Lender Options?</h3>
     <p>Leave your email and we'll come back within 24 hours with real quotes from lenders that match your scenario. No obligation.</p>
@@ -183,7 +183,7 @@
     </form>
     <div class="lead-success" id="leadSuccess">
       <div class="check">&#10003;</div>
-      <h3 style="color:var(--green-bright,#00A676);margin:0 0 6px">Got it — Thank You</h3>
+      <h3 style="color:var(--green-bright,#00A676);margin:0 0 6px">Got it, Thank You</h3>
       <p style="color:rgba(255,255,255,.75)">We'll review your scenario and reach out within 24 hours with lender options.</p>
     </div>
   </div>
@@ -244,13 +244,13 @@
     badge.style.display = '';
     if (qualifies) {
       badge.className = 'qualify-badge qualify-yes';
-      badge.textContent = 'You may qualify — Strong candidate for permanent refinancing';
+      badge.textContent = 'You may qualify, Strong candidate for permanent refinancing';
     } else if (nearQualifies) {
       badge.className = 'qualify-badge qualify-close';
-      badge.textContent = 'Possible — Likely options available. Details matter here.';
+      badge.textContent = 'Possible, Likely options available. Details matter here.';
     } else {
       badge.className = 'qualify-badge qualify-no';
-      badge.textContent = 'Challenging — Let\'s talk through creative structures.';
+      badge.textContent = 'Challenging, Let\'s talk through creative structures.';
     }
 
     document.getElementById('resultsCard').style.display = '';
@@ -284,7 +284,7 @@
         Email: email,
         Phone: document.getElementById('leadPhone').value.trim() || 'Not provided',
         Scenario: document.getElementById('leadScenario').value,
-        _subject: 'Refi Check Lead — CLS CRE',
+        _subject: 'Refi Check Lead, CLS CRE',
         _captcha: 'false',
         _template: 'table'
       })

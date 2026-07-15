@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Commercial Mortgage Refinance Calculator | Commercial Lending Solutions</title>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com"}</script>
-<meta name="description" content="Estimate your refinance savings in seconds. See your new payment, annual savings, 5-year savings, new LTV, and breakeven period — then connect with CLS">
+<meta name="description" content="Estimate your refinance savings in seconds. See your new payment, annual savings, 5-year savings, new LTV, and breakeven period, then connect with CLS">
 <link rel="canonical" href="https://clscre.com/refinance.html">
 <meta property="og:title" content="Commercial Mortgage Refinance Calculator | Commercial Lending Solutions">
 <meta property="og:description" content="Estimate your refinance savings in seconds. See new payment, annual savings, new LTV, and breakeven period.">
@@ -392,13 +392,13 @@ mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open');mob
     badge.style.display = '';
     if (qualifies) {
       badge.className = 'refi-qualify-badge refi-qualify-yes';
-      badge.textContent = 'You may qualify — Strong candidate for permanent refinancing (LTV ' + newLtv + '%, est. ' + CalcUtils.fmtUSD(annualSavings) + '/yr savings)';
+      badge.textContent = 'You may qualify, Strong candidate for permanent refinancing (LTV ' + newLtv + '%, est. ' + CalcUtils.fmtUSD(annualSavings) + '/yr savings)';
     } else if (nearQualifies) {
       badge.className = 'refi-qualify-badge refi-qualify-close';
-      badge.textContent = 'Close — Likely options available. Let\'s review your full picture.';
+      badge.textContent = 'Close, Likely options available. Let\'s review your full picture.';
     } else {
       badge.className = 'refi-qualify-badge refi-qualify-no';
-      badge.textContent = 'Challenging scenario — Call us to discuss creative structures.';
+      badge.textContent = 'Challenging scenario, Call us to discuss creative structures.';
     }
 
     document.getElementById('refiPlaceholder').style.display = 'none';
@@ -426,7 +426,7 @@ mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open');mob
       Email: email,
       Phone: document.getElementById('leadPhone').value.trim() || 'Not provided',
       Scenario: document.getElementById('leadScenario').value,
-      _subject: 'Refi Lead — CLS CRE Website',
+      _subject: 'Refi Lead, CLS CRE Website',
       _captcha: 'false',
       _template: 'table'
     };

@@ -84,7 +84,7 @@
 {% include '_transaction_cards.html' %}
 
 {% if city.slug == 'los-angeles' %}
-<!-- LA DEEP DIVE — submarket-level content -->
+<!-- LA DEEP DIVE, submarket-level content -->
 <section class="cross-links">
 <div class="section-inner">
   <h2 class="reveal">{{ prop.name }} Financing by LA Submarket</h2>
@@ -143,7 +143,7 @@
 </div>
 </section>
 
-<!-- RELATED MARKETS — editorial cross-market section -->
+<!-- RELATED MARKETS, editorial cross-market section -->
 {% set section_eyebrow = 'Nationwide Coverage' %}
 {% set section_headline = prop.name + ' Financing Beyond ' + city.city %}
 {% set section_intro = 'Commercial Lending Solutions places ' + prop.name|lower + ' capital across ' + total_market_count|string + ' U.S. metros each year. Below: the markets closest in profile to ' + city.city + ', plus the full national footprint we underwrite in every quarter.' %}

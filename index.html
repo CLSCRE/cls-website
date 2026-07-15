@@ -504,7 +504,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 <div class="section-inner">
   <div class="section-label reveal">Free Tools</div>
   <h2 style="font-family:var(--font-display);font-size:clamp(22px,3vw,34px);color:var(--navy);margin:0 0 6px" class="reveal">Instant Deal Analysis</h2>
-  <p style="color:var(--gray-500);font-size:15px;margin:0 0 28px" class="reveal">Get numbers before you call. All calculations run in your browser — no data shared.</p>
+  <p style="color:var(--gray-500);font-size:15px;margin:0 0 28px" class="reveal">Get numbers before you call. All calculations run in your browser, no data shared.</p>
   <!-- Tab switcher -->
   <div style="display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap" role="tablist" aria-label="Calculator tools">
     <button class="qc-tab qc-tab-active" data-tab="loan" role="tab" aria-selected="true" aria-controls="qcLoan" type="button">Loan Sizing</button>
@@ -642,8 +642,8 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
       <select id="qrSize" class="qr-filter" aria-label="Filter by loan size">
         <option value="">All Loan Sizes</option>
         <option value="small">Small Balance (&lt;$2M)</option>
-        <option value="mid">Mid-Market ($2M&ndash;$10M)</option>
-        <option value="large">Large ($10M&ndash;$50M)</option>
+        <option value="mid">Mid-Market ($2M-$10M)</option>
+        <option value="large">Large ($10M-$50M)</option>
         <option value="inst">Institutional ($50M+)</option>
       </select>
       <span id="qrCount" style="margin-left:auto;font-size:12px;color:var(--gray-400,#9ca3af);font-weight:600;white-space:nowrap"></span>
@@ -679,7 +679,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
         </div>
         <div class="qc-tool-body">
           <div class="qc-tool-name">DSCR Calculator</div>
-          <div class="qc-tool-desc">Debt service coverage ratio — see if your NOI qualifies</div>
+          <div class="qc-tool-desc">Debt service coverage ratio, see if your NOI qualifies</div>
         </div>
         <span class="qc-tool-arrow">&rarr;</span>
       </a>
@@ -847,7 +847,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
     document.getElementById('qcCapRate').textContent=capRate>0?qcPct(capRate):'--';
     // Quote CTA
     var prog=QC_PROGRAMS[document.getElementById('qcLoanType').value]||{};
-    var subject='Loan Inquiry: '+(loan>0?qcFmt(loan):'TBD')+' '+(prog.label||'Commercial Loan')+' — '+(pv>0?qcFmt(pv):'TBD')+' property';
+    var subject='Loan Inquiry: '+(loan>0?qcFmt(loan):'TBD')+' '+(prog.label||'Commercial Loan')+', '+(pv>0?qcFmt(pv):'TBD')+' property';
     document.getElementById('qcQuoteCTA').href='mailto:loans@clscre.com?subject='+encodeURIComponent(subject);
     // Active pill states
     qcPillActive('qcAmort',amort);
@@ -925,41 +925,41 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
   };
   var DATA=[
     // Bridge
-    {cat:'bridge',lender:'debt-fund',program:'Senior Bridge — Debt Fund',desc:'Value-add, repositioning, lease-up',rate:'8.00–10.00%',ltv:'65%',min:'$5M',term:'1–3 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O']},
-    {cat:'bridge',lender:'debt-fund',program:'Stretch Bridge — Debt Fund',desc:'Higher-leverage value-add plays',rate:'10.00–13.00%',ltv:'80%',min:'$3M',term:'1–3 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O','High LTV']},
-    {cat:'bridge',lender:'bank',program:'Bank Bridge Loan',desc:'Relationship-based, stabilized assets',rate:'7.50–9.50%',ltv:'65%',min:'$2M',term:'1–3 yr',amort:'I/O or P&I',mkt:'primary secondary tertiary',sz:'mid large',tags:['Recourse','Flexible']},
-    {cat:'bridge',lender:'private',program:'Private / Balance Sheet Bridge',desc:'Asset-based, fast close, creative structures',rate:'9.00–12.00%',ltv:'65%',min:'$1M',term:'12–24 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small mid',tags:['Fast Close','I/O']},
+    {cat:'bridge',lender:'debt-fund',program:'Senior Bridge, Debt Fund',desc:'Value-add, repositioning, lease-up',rate:'8.00-10.00%',ltv:'65%',min:'$5M',term:'1-3 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O']},
+    {cat:'bridge',lender:'debt-fund',program:'Stretch Bridge, Debt Fund',desc:'Higher-leverage value-add plays',rate:'10.00-13.00%',ltv:'80%',min:'$3M',term:'1-3 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O','High LTV']},
+    {cat:'bridge',lender:'bank',program:'Bank Bridge Loan',desc:'Relationship-based, stabilized assets',rate:'7.50-9.50%',ltv:'65%',min:'$2M',term:'1-3 yr',amort:'I/O or P&I',mkt:'primary secondary tertiary',sz:'mid large',tags:['Recourse','Flexible']},
+    {cat:'bridge',lender:'private',program:'Private / Balance Sheet Bridge',desc:'Asset-based, fast close, creative structures',rate:'9.00-12.00%',ltv:'65%',min:'$1M',term:'12-24 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small mid',tags:['Fast Close','I/O']},
     // Permanent
-    {cat:'permanent',lender:'life-co',program:'Life Company — Primary Markets',desc:'Core assets, best execution, 25-yr fixed',rate:'5.50–6.75%',ltv:'60%',min:'$5M',term:'10–25 yr',amort:'25–30 yr',mkt:'primary',sz:'large inst',tags:['Non-recourse','Best Rate']},
-    {cat:'permanent',lender:'life-co',program:'Life Company — Secondary Markets',desc:'Suburban core, net lease, credit tenants',rate:'5.75–7.00%',ltv:'55%',min:'$3M',term:'10–25 yr',amort:'25–30 yr',mkt:'secondary',sz:'mid large',tags:['Non-recourse']},
-    {cat:'permanent',lender:'bank',program:'Regional / Community Bank',desc:'Relationship-based, all market tiers',rate:'6.25–8.00%',ltv:'70%',min:'$1M',term:'3–10 yr',amort:'20–25 yr',mkt:'primary secondary tertiary',sz:'small mid large',tags:['Recourse','Flexible']},
-    {cat:'permanent',lender:'credit-union',program:'Credit Union',desc:'Owner-user, smaller deals, member rates',rate:'5.75–7.25%',ltv:'70%',min:'$500K',term:'5–15 yr',amort:'20–25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Recourse']},
-    {cat:'permanent',lender:'debt-fund',program:'Debt Fund — Permanent',desc:'Non-recourse, flexible underwriting criteria',rate:'7.00–9.00%',ltv:'70%',min:'$3M',term:'3–5 yr',amort:'30 yr',mkt:'primary secondary',sz:'mid large',tags:['Non-recourse']},
+    {cat:'permanent',lender:'life-co',program:'Life Company, Primary Markets',desc:'Core assets, best execution, 25-yr fixed',rate:'5.50-6.75%',ltv:'60%',min:'$5M',term:'10-25 yr',amort:'25-30 yr',mkt:'primary',sz:'large inst',tags:['Non-recourse','Best Rate']},
+    {cat:'permanent',lender:'life-co',program:'Life Company, Secondary Markets',desc:'Suburban core, net lease, credit tenants',rate:'5.75-7.00%',ltv:'55%',min:'$3M',term:'10-25 yr',amort:'25-30 yr',mkt:'secondary',sz:'mid large',tags:['Non-recourse']},
+    {cat:'permanent',lender:'bank',program:'Regional / Community Bank',desc:'Relationship-based, all market tiers',rate:'6.25-8.00%',ltv:'70%',min:'$1M',term:'3-10 yr',amort:'20-25 yr',mkt:'primary secondary tertiary',sz:'small mid large',tags:['Recourse','Flexible']},
+    {cat:'permanent',lender:'credit-union',program:'Credit Union',desc:'Owner-user, smaller deals, member rates',rate:'5.75-7.25%',ltv:'70%',min:'$500K',term:'5-15 yr',amort:'20-25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Recourse']},
+    {cat:'permanent',lender:'debt-fund',program:'Debt Fund, Permanent',desc:'Non-recourse, flexible underwriting criteria',rate:'7.00-9.00%',ltv:'70%',min:'$3M',term:'3-5 yr',amort:'30 yr',mkt:'primary secondary',sz:'mid large',tags:['Non-recourse']},
     // CMBS
-    {cat:'cmbs',lender:'cmbs',program:'CMBS Conduit',desc:'Non-recourse, broad property types, fixed',rate:'6.00–7.50%',ltv:'70%',min:'$2M',term:'5–10 yr',amort:'25–30 yr',mkt:'primary secondary',sz:'mid large',tags:['Non-recourse','Assumable']},
-    {cat:'cmbs',lender:'cmbs',program:'CMBS Large Loan',desc:'I/O periods, portfolio-level collateral',rate:'5.75–7.00%',ltv:'65%',min:'$20M',term:'5–10 yr',amort:'I/O + amort',mkt:'primary',sz:'inst',tags:['Non-recourse','I/O','Assumable']},
-    {cat:'cmbs',lender:'cmbs',program:'Single Asset Single Borrower (SASB)',desc:'Bespoke, major institutional transactions',rate:'5.50–6.75%',ltv:'65%',min:'$50M',term:'5–10 yr',amort:'I/O',mkt:'primary',sz:'inst',tags:['Non-recourse','I/O','Institutional']},
+    {cat:'cmbs',lender:'cmbs',program:'CMBS Conduit',desc:'Non-recourse, broad property types, fixed',rate:'6.00-7.50%',ltv:'70%',min:'$2M',term:'5-10 yr',amort:'25-30 yr',mkt:'primary secondary',sz:'mid large',tags:['Non-recourse','Assumable']},
+    {cat:'cmbs',lender:'cmbs',program:'CMBS Large Loan',desc:'I/O periods, portfolio-level collateral',rate:'5.75-7.00%',ltv:'65%',min:'$20M',term:'5-10 yr',amort:'I/O + amort',mkt:'primary',sz:'inst',tags:['Non-recourse','I/O','Assumable']},
+    {cat:'cmbs',lender:'cmbs',program:'Single Asset Single Borrower (SASB)',desc:'Bespoke, major institutional transactions',rate:'5.50-6.75%',ltv:'65%',min:'$50M',term:'5-10 yr',amort:'I/O',mkt:'primary',sz:'inst',tags:['Non-recourse','I/O','Institutional']},
     // Agency
-    {cat:'agency',lender:'agency',program:'Fannie Mae DUS',desc:'Conventional multifamily, all market tiers',rate:'5.50–6.50%',ltv:'80%',min:'$1M',term:'5–30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid large inst',tags:['Non-recourse','Multifamily Only']},
-    {cat:'agency',lender:'agency',program:'Freddie Mac Multifamily',desc:'Conventional + small balance programs',rate:'5.50–6.50%',ltv:'80%',min:'$1M',term:'5–30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid large inst',tags:['Non-recourse','Multifamily Only']},
-    {cat:'agency',lender:'agency',program:'Fannie Mae Small Balance Loan',desc:'5–50 unit properties, suburban markets',rate:'5.75–6.75%',ltv:'80%',min:'$750K',term:'5–30 yr',amort:'30 yr',mkt:'primary secondary',sz:'small mid',tags:['Non-recourse','Multifamily Only']},
-    {cat:'agency',lender:'agency',program:'HUD / FHA 223(f) — Refi',desc:'Stabilized multifamily, 35-yr fully amortizing',rate:'5.00–5.75%',ltv:'85%',min:'$2M',term:'35 yr',amort:'35 yr',mkt:'primary secondary tertiary',sz:'mid large',tags:['Non-recourse','Best Rate','Multifamily Only']},
+    {cat:'agency',lender:'agency',program:'Fannie Mae DUS',desc:'Conventional multifamily, all market tiers',rate:'5.50-6.50%',ltv:'80%',min:'$1M',term:'5-30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid large inst',tags:['Non-recourse','Multifamily Only']},
+    {cat:'agency',lender:'agency',program:'Freddie Mac Multifamily',desc:'Conventional + small balance programs',rate:'5.50-6.50%',ltv:'80%',min:'$1M',term:'5-30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid large inst',tags:['Non-recourse','Multifamily Only']},
+    {cat:'agency',lender:'agency',program:'Fannie Mae Small Balance Loan',desc:'5-50 unit properties, suburban markets',rate:'5.75-6.75%',ltv:'80%',min:'$750K',term:'5-30 yr',amort:'30 yr',mkt:'primary secondary',sz:'small mid',tags:['Non-recourse','Multifamily Only']},
+    {cat:'agency',lender:'agency',program:'HUD / FHA 223(f), Refi',desc:'Stabilized multifamily, 35-yr fully amortizing',rate:'5.00-5.75%',ltv:'85%',min:'$2M',term:'35 yr',amort:'35 yr',mkt:'primary secondary tertiary',sz:'mid large',tags:['Non-recourse','Best Rate','Multifamily Only']},
     // SBA
-    {cat:'sba',lender:'sba',program:'SBA 504 — Commercial Real Estate',desc:'Owner-occupied, fixed CDC tranche',rate:'5.50–6.50% (CDC)',ltv:'90%',min:'$500K',term:'10–25 yr',amort:'10–25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Owner-Occupied','Low Down']},
-    {cat:'sba',lender:'sba',program:'SBA 7(a) — Real Estate',desc:'Broad property types, mixed-use',rate:'Prime +1.50–3.50%',ltv:'85%',min:'$500K',term:'10–25 yr',amort:'10–25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Owner-Occupied','Flexible']},
+    {cat:'sba',lender:'sba',program:'SBA 504, Commercial Real Estate',desc:'Owner-occupied, fixed CDC tranche',rate:'5.50-6.50% (CDC)',ltv:'90%',min:'$500K',term:'10-25 yr',amort:'10-25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Owner-Occupied','Low Down']},
+    {cat:'sba',lender:'sba',program:'SBA 7(a), Real Estate',desc:'Broad property types, mixed-use',rate:'Prime +1.50-3.50%',ltv:'85%',min:'$500K',term:'10-25 yr',amort:'10-25 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['Owner-Occupied','Flexible']},
     // Construction
-    {cat:'construction',lender:'bank',program:'Bank Construction-to-Perm',desc:'One-close, converts to permanent',rate:'7.50–10.00%',ltv:'65% LTC',min:'$2M',term:'18–36 mo',amort:'I/O',mkt:'primary secondary',sz:'mid large',tags:['Recourse','Converts to Perm','I/O']},
-    {cat:'construction',lender:'debt-fund',program:'Debt Fund — Construction',desc:'Non-recourse, complex infill sites',rate:'9.00–12.00%',ltv:'75% LTC',min:'$5M',term:'18–36 mo',amort:'I/O',mkt:'primary secondary',sz:'large inst',tags:['Non-recourse','I/O']},
-    {cat:'construction',lender:'agency',program:'HUD 221(d)(4) — New Construction',desc:'Ground-up multifamily, max leverage',rate:'5.00–5.75%',ltv:'85% LTC',min:'$5M',term:'40 yr',amort:'40 yr',mkt:'primary secondary tertiary',sz:'mid large inst',tags:['Non-recourse','Best Rate','Multifamily Only']},
+    {cat:'construction',lender:'bank',program:'Bank Construction-to-Perm',desc:'One-close, converts to permanent',rate:'7.50-10.00%',ltv:'65% LTC',min:'$2M',term:'18-36 mo',amort:'I/O',mkt:'primary secondary',sz:'mid large',tags:['Recourse','Converts to Perm','I/O']},
+    {cat:'construction',lender:'debt-fund',program:'Debt Fund, Construction',desc:'Non-recourse, complex infill sites',rate:'9.00-12.00%',ltv:'75% LTC',min:'$5M',term:'18-36 mo',amort:'I/O',mkt:'primary secondary',sz:'large inst',tags:['Non-recourse','I/O']},
+    {cat:'construction',lender:'agency',program:'HUD 221(d)(4), New Construction',desc:'Ground-up multifamily, max leverage',rate:'5.00-5.75%',ltv:'85% LTC',min:'$5M',term:'40 yr',amort:'40 yr',mkt:'primary secondary tertiary',sz:'mid large inst',tags:['Non-recourse','Best Rate','Multifamily Only']},
     // Hard Money
-    {cat:'hard-money',lender:'private',program:'Hard Money — Residential Investor',desc:'Fix-and-flip, fast close, asset-based',rate:'9.00–13.00%',ltv:'65%',min:'$150K',term:'6–18 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small',tags:['Fast Close','Asset-Based','I/O']},
-    {cat:'hard-money',lender:'private',program:'Hard Money — Commercial',desc:'Light value-add, credit-light underwrite',rate:'10.00–14.00%',ltv:'60%',min:'$500K',term:'12–24 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small mid',tags:['Fast Close','Asset-Based','I/O']},
+    {cat:'hard-money',lender:'private',program:'Hard Money, Residential Investor',desc:'Fix-and-flip, fast close, asset-based',rate:'9.00-13.00%',ltv:'65%',min:'$150K',term:'6-18 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small',tags:['Fast Close','Asset-Based','I/O']},
+    {cat:'hard-money',lender:'private',program:'Hard Money, Commercial',desc:'Light value-add, credit-light underwrite',rate:'10.00-14.00%',ltv:'60%',min:'$500K',term:'12-24 mo',amort:'I/O',mkt:'primary secondary tertiary',sz:'small mid',tags:['Fast Close','Asset-Based','I/O']},
     // Mezz
-    {cat:'mezz',lender:'debt-fund',program:'Mezzanine Debt',desc:'Behind senior debt, fills leverage gap',rate:'12.00–16.00%',ltv:'85% CLTV',min:'$2M',term:'1–5 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O','2nd Lien']},
-    {cat:'mezz',lender:'debt-fund',program:'Preferred Equity',desc:'Equity position, waterfall structure',rate:'14.00–18.00%',ltv:'90% CLTV',min:'$3M',term:'1–5 yr',amort:'I/O',mkt:'primary',sz:'mid large inst',tags:['I/O','Equity Position']},
+    {cat:'mezz',lender:'debt-fund',program:'Mezzanine Debt',desc:'Behind senior debt, fills leverage gap',rate:'12.00-16.00%',ltv:'85% CLTV',min:'$2M',term:'1-5 yr',amort:'I/O',mkt:'primary secondary',sz:'mid large inst',tags:['Non-recourse','I/O','2nd Lien']},
+    {cat:'mezz',lender:'debt-fund',program:'Preferred Equity',desc:'Equity position, waterfall structure',rate:'14.00-18.00%',ltv:'90% CLTV',min:'$3M',term:'1-5 yr',amort:'I/O',mkt:'primary',sz:'mid large inst',tags:['I/O','Equity Position']},
     // DSCR
-    {cat:'dscr',lender:'agency',program:'DSCR — Agency (1–4 unit)',desc:'Rental income only, no W-2 required',rate:'6.50–8.00%',ltv:'75%',min:'$150K',term:'30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['No Income Verify']},
-    {cat:'dscr',lender:'debt-fund',program:'DSCR — Portfolio / Non-QM (5+ units)',desc:'Commercial DSCR, larger rental portfolios',rate:'7.00–9.00%',ltv:'70%',min:'$500K',term:'30 yr',amort:'30 yr',mkt:'primary secondary',sz:'small mid large',tags:['No Income Verify']}
+    {cat:'dscr',lender:'agency',program:'DSCR, Agency (1-4 unit)',desc:'Rental income only, no W-2 required',rate:'6.50-8.00%',ltv:'75%',min:'$150K',term:'30 yr',amort:'30 yr',mkt:'primary secondary tertiary',sz:'small mid',tags:['No Income Verify']},
+    {cat:'dscr',lender:'debt-fund',program:'DSCR, Portfolio / Non-QM (5+ units)',desc:'Commercial DSCR, larger rental portfolios',rate:'7.00-9.00%',ltv:'70%',min:'$500K',term:'30 yr',amort:'30 yr',mkt:'primary secondary',sz:'small mid large',tags:['No Income Verify']}
   ];
 
   function tag(t){var s=TAGS[t]||'background:rgba(107,114,128,.1);color:#374151';return '<span style="'+s+';font-size:10px;font-weight:600;padding:2px 6px;border-radius:4px;white-space:nowrap;display:inline-block;margin:1px 2px 1px 0">'+t+'</span>';}

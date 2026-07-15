@@ -2026,6 +2026,18 @@ Sitemap: {BASE_URL}/sitemap.xml
     # scripts outside this generator) leaves with ?v=<hash> js/css URLs.
     stamp_asset_versions()
 
+    # ── 14. Dash scrub (self-healing no-dash guardrail) ───────────────
+    # Trevor's strict no-em/en-dash rule. Sources (templates + data) are
+    # kept dash-free, but this final pass guarantees no em/en dash ever
+    # ships in generated OUTPUT even if a new source string slips one in
+    # (the reason the June 2026 scrub silently regressed). Idempotent;
+    # runs on every content-bot regen. See dash_scrub.py.
+    import sys as _sys, os as _os
+    _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+    from dash_scrub import scrub_tree as _scrub_dashes
+    _df, _dd = _scrub_dashes(WEBSITE_DIR)
+    print(f"  [dash-scrub] {_df} files cleaned, {_dd} dashes removed")
+
     # ── Summary ────────────────────────────────────────────────────────
     print(f"\n{'='*50}")
     print(f"  TOTAL PAGES GENERATED: {page_count}")

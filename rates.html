@@ -208,7 +208,7 @@
       </div>
     </div>
     <div class="rate-filter-group">
-      <div class="rate-filter-label">Max LTV Required &mdash; <strong id="ltvFilterDisplay">Any</strong></div>
+      <div class="rate-filter-label">Max LTV Required, <strong id="ltvFilterDisplay">Any</strong></div>
       <div class="ltv-filter-row">
         <span style="font-size:12px;color:var(--gray-400)">50%</span>
         <input type="range" id="ltvFilter" min="50" max="95" value="95" step="5" aria-label="Minimum max LTV filter" aria-valuenow="95" aria-valuemin="50" aria-valuemax="95">
@@ -256,7 +256,7 @@
 <section class="cta-section">
 <div class="section-inner" style="position:relative;z-index:1">
   <h2>Don't See Your Program?</h2>
-  <p>We work with 1,000+ lenders across every asset class. If you don't see what you're looking for, call us — we've placed loans that don't fit any standard box.</p>
+  <p>We work with 1,000+ lenders across every asset class. If you don't see what you're looking for, call us, we've placed loans that don't fit any standard box.</p>
   <a href="./apply.html" class="btn-primary">Submit Your Deal &rarr;</a>
   <div style="margin-top:20px">
     <a href="tel:+13107080690" style="color:rgba(255,255,255,.6);text-decoration:none;font-size:14px">Or call: 310.708.0690</a>
@@ -369,7 +369,7 @@
     <h3 class="exit-title">Get a Rate Quote for Your Deal</h3>
     <p class="exit-desc">We'll match your deal to the best program from 1,000+ lenders and send actual rate quotes.</p>
     <form class="exit-form" id="exitForm">
-      <input type="hidden" name="_subject" value="Rate Inquiry — CLS CRE Rates Page">
+      <input type="hidden" name="_subject" value="Rate Inquiry, CLS CRE Rates Page">
       <input type="hidden" name="_next" value="https://clscre.com/thank-you.html?form=exit">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
@@ -493,8 +493,8 @@ document.querySelectorAll('.nav-dropdown').forEach(dd => {
     for (var i = 0; i < filtered.length; i++) {
       var r = filtered[i];
       var badgeClass = productBadgeClass[r.product] || 'badge-permanent';
-      var rateStr = r.rateMin.toFixed(2) + '% &ndash; ' + r.rateMax.toFixed(2) + '%';
-      var subject = encodeURIComponent('Rate Inquiry: ' + r.product + ' — ' + r.rateMin.toFixed(2) + '%-' + r.rateMax.toFixed(2) + '%');
+      var rateStr = r.rateMin.toFixed(2) + '%, ' + r.rateMax.toFixed(2) + '%';
+      var subject = encodeURIComponent('Rate Inquiry: ' + r.product + ', ' + r.rateMin.toFixed(2) + '%-' + r.rateMax.toFixed(2) + '%');
       html += '<tr>';
       html += '<td><span class="rate-badge ' + badgeClass + '">' + r.product + '</span></td>';
       html += '<td class="rate-col">' + rateStr + '</td>';

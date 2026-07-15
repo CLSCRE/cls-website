@@ -56,7 +56,7 @@
 </section>
 
 {% if city.slug == 'los-angeles' %}
-<!-- LA DEEP DIVE — the full submarket + persona vertical -->
+<!-- LA DEEP DIVE, the full submarket + persona vertical -->
 <section class="content-section">
 <div class="section-inner">
   <div class="section-label reveal">Our Home Market</div>
@@ -147,7 +147,7 @@
 </div>
 </section>
 
-<!-- FAQ — use city-specific answers when available, fall back to generic -->
+<!-- FAQ, use city-specific answers when available, fall back to generic -->
 {% set _fa = city.faq_answers if city.faq_answers is defined else [] %}
 {% set faqs = [
   {"q": "What types of commercial real estate can I finance in " + city.city + "?",
@@ -164,7 +164,7 @@
 {% set faq_title = "Commercial Real Estate Loans in " + city.city + ": FAQ" %}
 {% include '_faq_section.html' %}
 
-<!-- RELATED MARKETS — editorial cross-market section -->
+<!-- RELATED MARKETS, editorial cross-market section -->
 {% set section_eyebrow = 'Nationwide Coverage' %}
 {% set section_headline = 'Beyond ' + city.city + ': Markets We Cover' %}
 {% set section_intro = 'Commercial Lending Solutions structures debt across ' + total_market_count|string + ' U.S. metros each year. Below: the markets closest in profile to ' + city.city + ', plus the full national footprint we underwrite in every quarter.' %}
