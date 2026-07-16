@@ -611,13 +611,24 @@ def main():
         for _m in _geo.get("tier1_metros", []):
             for _l in _geo.get("tier1_loan_types", []):
                 _geo_slug = f"{_m['slug']}-{_l['slug']}"
-                if (WEBSITE_DIR / "landing" / f"{_geo_slug}.html").exists():
-                    sitemap_urls.append({
-                        "loc": f"{BASE_URL}/landing/{_geo_slug}.html",
-                        "lastmod": TODAY,
-                        "changefreq": "weekly",
-                        "priority": "0.9",
-                    })
+                _geo_file = WEBSITE_DIR / "landing" / f"{_geo_slug}.html"
+                if not _geo_file.exists():
+                    continue
+                # /landing/ pages are noindex,nofollow ad LPs by rule. A noindex
+                # URL in the sitemap is a GSC error ("Submitted URL marked
+                # noindex"); this block previously added them unconditionally,
+                # which put 43 noindex LPs in the sitemap (2026-07-15 audit).
+                # Filter by the page's actual robots meta, matching the landing
+                # glob block below.
+                _geo_head = _geo_file.read_text(encoding="utf-8", errors="ignore")[:8000]
+                if re.search(r'name=["\']robots["\'][^>]*noindex', _geo_head, re.I):
+                    continue
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/landing/{_geo_slug}.html",
+                    "lastmod": TODAY,
+                    "changefreq": "weekly",
+                    "priority": "0.9",
+                })
         for _s in _geo.get("tier2_la_submarkets", []):
             if (WEBSITE_DIR / "markets" / "la" / f"{_s['slug']}.html").exists():
                 sitemap_urls.append({
