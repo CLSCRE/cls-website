@@ -1379,6 +1379,12 @@ def main():
         "downtown-la", "hollywood", "koreatown", "santa-monica", "beverly-hills",
         "long-beach", "pasadena", "glendale", "west-la", "el-segundo",
         "arts-district", "mid-wilshire", "playa-vista", "culver-city", "silver-lake",
+        # 2026-07-17 second pass: brentwood revived as-is; burbank + sherman-oaks
+        # added as new neighborhoods.json entries (previously only existed as
+        # /markets/la/ tier2 pages with no canonical 1:1 slug -- each carries
+        # genuinely distinct content, so they get their own pages rather than
+        # collapsing into the generic "San Fernando Valley" region entry).
+        "brentwood", "burbank", "sherman-oaks",
     }
     for city in cities:
         neighborhoods = city.get("neighborhoods", [])

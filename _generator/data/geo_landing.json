@@ -341,27 +341,6 @@
    "deal_size": "$10M to $80M"
   },
   {
-   "slug": "brentwood",
-   "name": "Brentwood",
-   "region": "Westside",
-   "property_focus": "Luxury multifamily, medical office, premium retail, creative office",
-   "deal_size": "$10M to $75M"
-  },
-  {
-   "slug": "sherman-oaks",
-   "name": "Sherman Oaks",
-   "region": "San Fernando Valley",
-   "property_focus": "Multifamily, mixed-use, retail strip centers, medical office",
-   "deal_size": "$5M to $40M"
-  },
-  {
-   "slug": "burbank",
-   "name": "Burbank",
-   "region": "San Fernando Valley",
-   "property_focus": "Studio / creative office, multifamily, mixed-use, retail, industrial near Burbank Airport",
-   "deal_size": "$5M to $60M"
-  },
-  {
    "slug": "pasadena",
    "name": "Pasadena",
    "region": "San Gabriel Valley",
