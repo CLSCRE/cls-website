@@ -60,6 +60,12 @@
 <li><strong>Growth Potential:</strong> {{ data.stats.rent_growth }} rent growth supports improving cash flows over the hold period</li>
 </ul>
 <p>{{ city.context }}</p>
+{% if city.slug == 'los-angeles' and blog_la_deepdive %}
+<h2>{{ blog_la_deepdive.heading }}</h2>
+{% for p in blog_la_deepdive.paragraphs %}
+<p>{{ p }}</p>
+{% endfor %}
+{% endif %}
 
 <h2>CLS CRE: {{ prop.name }} Financing in {{ city.city }}</h2>
 <p>CLS CRE specializes in {{ prop.name.lower() }} financing throughout the {{ city.metro }} metropolitan area. With access to 1,000+ lenders, we match your specific {{ prop.name.lower() }} investment with the right capital source at the most competitive terms available.</p>

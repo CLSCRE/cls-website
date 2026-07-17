@@ -78,6 +78,12 @@
 <h2>{{ city.city }} Market Context</h2>
 <p>{{ city.context }}</p>
 <p>Understanding the local market dynamics is critical for structuring the right financing. The {{ city.city }} metro's key commercial neighborhoods include {{ city.neighborhoods | join(', ') }}, each with distinct property characteristics and tenant demand profiles.</p>
+{% if city.slug == 'los-angeles' and blog_la_deepdive %}
+<h2>{{ blog_la_deepdive.heading }}</h2>
+{% for p in blog_la_deepdive.paragraphs %}
+<p>{{ p }}</p>
+{% endfor %}
+{% endif %}
 
 <h2>Get a {{ loan.short_name }} Loan Quote for {{ city.city }}</h2>
 <p>CLS CRE provides {{ loan.name.lower() }} throughout the {{ city.metro }} metro area, with access to 1,000+ lenders competing for your deal. Our market expertise in {{ city.city }} commercial real estate helps you navigate the lending landscape and secure the most competitive terms available.</p>

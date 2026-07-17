@@ -367,6 +367,16 @@ def main():
     property_types = load_json("property_types.json")
     city_data = load_json("article_city_data.json")
 
+    # LA pilot (2026-07-17): same JSON-keyed deepdive pattern as
+    # la_financing_deepdive.json / la_property_deepdive.json, for the
+    # _generated blog guide templates (city_loan_guide.j2, city_property_guide.j2,
+    # city_market_report.j2). These guides are cross-product mail-merge output
+    # rewritten every run, so hand-editing articles.json directly would silently
+    # revert -- extending the .j2 templates with an LA-only block is durable.
+    blog_la_loan_deepdive = load_json("blog_la_loan_deepdive.json")
+    blog_la_property_deepdive = load_json("blog_la_property_deepdive.json")
+    blog_la_market_report_deepdive = load_json("blog_la_market_report_deepdive.json")
+
     # Build lookup dicts
     city_by_slug = {c["slug"]: c for c in cities_list}
     loan_by_slug = {l["slug"]: l for l in loan_types}
@@ -430,7 +440,7 @@ def main():
 
         tpl = env.get_template("city_market_report.j2")
         city = link_city(city)
-        content = tpl.render(city=city, data=data)
+        content = tpl.render(city=city, data=data, blog_la_deepdive=blog_la_market_report_deepdive.get(city_slug))
 
         article = {
             "slug": f"cre-market-report-{city_slug}-2026",
@@ -468,7 +478,7 @@ def main():
         data = city_data[city_slug]
 
         tpl = env.get_template("city_loan_guide.j2")
-        content = tpl.render(city=link_city(city), loan=loan, data=data, loan_key=loan_key)
+        content = tpl.render(city=link_city(city), loan=loan, data=data, loan_key=loan_key, blog_la_deepdive=blog_la_loan_deepdive.get(loan_key))
 
         article = {
             "slug": f"{loan_slug}-{city_slug}-guide",
@@ -502,7 +512,7 @@ def main():
 
         prop_key = PROP_STATS_KEY[prop_slug]
         tpl = env.get_template("city_property_guide.j2")
-        content = tpl.render(city=link_city(city), prop=prop, data=data, prop_key=prop_key)
+        content = tpl.render(city=link_city(city), prop=prop, data=data, prop_key=prop_key, blog_la_deepdive=blog_la_property_deepdive.get(prop_key))
 
         article = {
             "slug": f"{prop_slug}-investing-{city_slug}-guide",

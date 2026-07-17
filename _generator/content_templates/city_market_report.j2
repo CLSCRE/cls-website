@@ -37,6 +37,12 @@
 
 <h2>Investment Outlook: {{ city.city }} 2026</h2>
 <p>{{ data.market_report.outlook }}</p>
+{% if city.slug == 'los-angeles' and blog_la_deepdive %}
+<h2>{{ blog_la_deepdive.heading }}</h2>
+{% for p in blog_la_deepdive.paragraphs %}
+<p>{{ p }}</p>
+{% endfor %}
+{% endif %}
 
 <h2>CLS CRE in {{ city.city }}</h2>
 <p>CLS CRE provides commercial mortgage brokerage services throughout the {{ city.metro }} metropolitan area, with access to 1,000+ lenders including banks, life insurance companies, CMBS conduits, agency lenders, debt funds, and credit unions. Whether you're acquiring, refinancing, or developing commercial property in {{ city.city }}, our market expertise and lender relationships help you secure the most competitive terms available.</p>

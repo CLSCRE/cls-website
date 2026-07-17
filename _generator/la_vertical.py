@@ -181,6 +181,7 @@ RAW_HOODS = [
             "Confirm whether a specific building qualifies for ARO before underwriting reduced parking or density.",
             "TOC affordable-unit set-asides (8-25% depending on tier) affect proceeds on new construction.",
             "Soft-story and non-ductile concrete retrofit status on older stock is a first diligence question.",
+            "RSO-core and ARO-conversion product trade on genuinely different bases -- pull comps from the matching product type, not a blended DTLA average.",
         ],
     },
     {
@@ -209,6 +210,7 @@ RAW_HOODS = [
             "Soft-story retrofit exposure is high on 1960s-70s dingbat stock -- verify completion before pricing.",
             "Turnover-based underwriting needs a realistic, unit-by-unit renovation and re-lease schedule.",
             "TOC density bonus parcels require affordable set-asides that change the pro forma.",
+            "Model cap rate off the actual in-place regulated rent roll, not an exempt-stock westside comp set -- Koreatown's RSO overlay and density both widen the spread versus unregulated product.",
         ],
     },
     {
@@ -313,6 +315,7 @@ RAW_HOODS = [
             "Hillside Ordinance parcels face FAR, grading, and fire-access (26-foot road) restrictions.",
             "Small unit counts mean per-unit renovation cost assumptions matter more than in larger assets.",
             "Verify RSO cutoff and any HPOZ overlay before assuming renovation scope.",
+            "Hillside topography structurally limits new competing supply here, which is a real part of the investment thesis: rent growth on the existing regulated stock has to clear a higher bar to justify basis, since a shortage of buildable sites, not softening demand, is what has driven pricing.",
         ],
     },
     {
@@ -457,6 +460,7 @@ RAW_HOODS = [
             "Coastal Development Permit review adds 6-18 months and real uncertainty to any major project.",
             "Mello Act 1:1 affordable-unit replacement applies to demolition of existing regulated units.",
             "Small, narrow lot sizes constrain unit-count expansion relative to inland submarkets.",
+            "Price the CDP timeline and Mello Act replacement obligation into the acquisition basis itself, not just the construction budget -- both extend the hold period on a redevelopment play well beyond what an inland LA underwriting model would assume.",
         ],
     },
     {
@@ -507,6 +511,7 @@ RAW_HOODS = [
             "Measure GS transfer tax (5.6%) applies to sales above roughly $8 million -- model it into exit math.",
             "Santa Monica's rent board rules and registration requirements are stricter than City of LA RSO.",
             "Verify soft-story and non-ductile concrete retrofit status on older beachside stock.",
+            "Institutional-quality Santa Monica multifamily typically trades at tighter cap rates than comparable City of LA RSO product, reflecting both coastal scarcity and the market's deep institutional ownership base.",
         ],
     },
     {
@@ -532,6 +537,7 @@ RAW_HOODS = [
             "Confirm the city's own July 1979 rent-ordinance cutoff, distinct from City of LA's 1978 line.",
             "Small lot sizes make assemblage economics, not per-parcel value, the key underwriting question.",
             "Verify soft-story retrofit status on older wood-frame buildings along commercial corridors.",
+            "Multi-parcel assemblage plays should underwrite each lot's contribution to a combined development site, not each building's standalone value in isolation.",
         ],
     },
     {
@@ -556,6 +562,7 @@ RAW_HOODS = [
             "Confirm Beverly Hills' own rent stabilization cap formula, distinct from City of LA RSO.",
             "Limited regulated multifamily supply means comps are thin; appraisal support matters more.",
             "Verify building-specific retrofit status given the age of much of the city's older stock.",
+            "Low transaction volume means most Beverly Hills multifamily financing is priced off direct lender relationships rather than a competitive-bid process -- budget more time for quote-gathering than in higher-volume submarkets.",
         ],
     },
     {
@@ -633,6 +640,7 @@ RAW_HOODS = [
             "Soft-story retrofit status (Ordinance 183893) is the top diligence item -- much of the stock is exactly this building type.",
             "Confirm RSO cutoff before assuming a building is regulated or exempt.",
             "Relocation cost exposure on any unit-vacate renovation plan should be budgeted conservatively.",
+            "Get a project-specific soft-story retrofit bid before underwriting the number -- published city program figures cite a wide range depending on unit count and structural scope, and a generic per-unit estimate is not a substitute for a contractor's actual scope of work on this specific building type.",
         ],
     },
     {
@@ -824,6 +832,7 @@ RAW_HOODS = [
             "Confirm Long Beach's own tenant-protection/relocation rules, distinct from a blanket rent cap.",
             "Verify building age against the AB 1482 15-year exemption window.",
             "Port and aerospace employment concentration should inform demand-durability assumptions.",
+            "Larger, more institutional asset sizes here support portfolio-level financing and REIT participation that is less common on the smaller, more granular building stock typical of City of LA RSO submarkets.",
         ],
     },
     {
@@ -849,6 +858,7 @@ RAW_HOODS = [
             "Confirm Inglewood's own 2019 rent control ordinance terms before underwriting a specific building.",
             "Stadium-district redevelopment momentum is a real catalyst but should not be over-assumed in rent growth.",
             "Verify soft-story retrofit status on older wood-frame stock.",
+            "Bridge lender appetite here has grown alongside the stadium-district story, but the most active lenders still underwrite to the building's current in-place rent roll and a conservative turnover schedule, not to a speculative future-value thesis tied to redevelopment momentum.",
         ],
     },
     {
@@ -903,6 +913,7 @@ RAW_HOODS = [
             "Measure H caps annual increases at 75% of CPI -- tighter than most other LA-area ordinances.",
             "Confirm the city's own rental board process, distinct from City of LA RSO administration.",
             "Verify soft-story retrofit status on older stock near Old Town and the Playhouse District.",
+            "Worked example: at 4% CPI, City of LA RSO's CPI-based formula allows close to the full 4% increase in a given year, while Measure H's 75%-of-CPI cap allows only about 3%; compounded over a 5-year hold, that roughly 1-point annual gap meaningfully understates rent growth if a sponsor models Pasadena off a City of LA RSO assumption instead of Measure H's own formula.",
         ],
     },
     {
