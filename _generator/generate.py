@@ -450,6 +450,11 @@ def main():
     # every run from this data.
     la_financing_deepdive = load_json("la_financing_deepdive.json")
 
+    # LA pilot (2026-07-17): same pattern as la_financing_deepdive, for the
+    # City x Property Type loop's city_property.html LA-only block. Keyed by
+    # property slug; missing entries render nothing.
+    la_property_deepdive = load_json("la_property_deepdive.json")
+
     # Duplicate city merge (2026-07-03): these 5 slugs are the same real-world
     # city as another entry already in cities.json (added twice across
     # different metro-naming batches), so their hub/financing/property/
@@ -1049,6 +1054,7 @@ def main():
                 featured_markets=featured,
                 current_region=region_for_state(city["state"]),
                 noindex=_is_noindex,
+                la_deepdive=la_property_deepdive.get(prop["slug"]),
             )
             out_path = WEBSITE_DIR / "property" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")

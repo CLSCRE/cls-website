@@ -83,6 +83,17 @@
 {% set txn_alt = true %}
 {% include '_transaction_cards.html' %}
 
+{% if city.slug == 'los-angeles' and la_deepdive %}
+<!-- LA PROPERTY DEEP DIVE, property-type-specific expert content -->
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="section-title reveal">{{ la_deepdive.heading }}</h2>
+  {% for p in la_deepdive.paragraphs %}
+  <p class="reveal">{{ p }}</p>
+  {% endfor %}
+</div>
+</section>
+{% endif %}
 {% if city.slug == 'los-angeles' %}
 <!-- LA DEEP DIVE, submarket-level content -->
 <section class="cross-links">
