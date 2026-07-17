@@ -442,6 +442,13 @@ def main():
     # (e.g. bridge-loans-<city>), keyed by slug. Same durable-override pattern
     # as article seo_title/seo_description -- checked every run, never wiped.
     city_financing_seo_overrides = load_json("city_financing_seo_overrides.json")
+    # LA pilot (2026-07-17): loan-type-specific expert prose for city.slug ==
+    # 'los-angeles', rendered by city_financing.html's existing LA-only block.
+    # Keyed by loan slug; missing entries render nothing (template checks
+    # `and la_deepdive`). Extend this file to deepen more LA loan pages --
+    # never hand-edit the rendered financing/*.html output, it is regenerated
+    # every run from this data.
+    la_financing_deepdive = load_json("la_financing_deepdive.json")
 
     # Duplicate city merge (2026-07-03): these 5 slugs are the same real-world
     # city as another entry already in cities.json (added twice across
@@ -991,6 +998,7 @@ def main():
                 featured_markets=featured,
                 current_region=region_for_state(city["state"]),
                 noindex=_is_noindex,
+                la_deepdive=la_financing_deepdive.get(loan["slug"]),
             )
             out_path = WEBSITE_DIR / "financing" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")
