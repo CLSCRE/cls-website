@@ -1368,6 +1368,18 @@ def main():
     tpl_submarket = env.get_template("submarket_page.html")
     tpl_market_index = env.get_template("market_city_index.html")
     submarket_count = 0
+    # Hand-authored LA neighborhood pages (2026-07-17 tier2 migration): these
+    # 15 slugs under markets/los-angeles/ carry real submarket-specific prose
+    # migrated from the retired /markets/la/ tier2 system, not the generic
+    # name-swapped submarket_page.html template. Skip regenerating them so a
+    # full regen doesn't stomp the content back to boilerplate -- still add
+    # to sitemap_urls below since they're live and indexable. To edit these,
+    # hand-edit website/markets/los-angeles/{slug}.html directly.
+    LA_HAND_AUTHORED_NEIGHBORHOODS = {
+        "downtown-la", "hollywood", "koreatown", "santa-monica", "beverly-hills",
+        "long-beach", "pasadena", "glendale", "west-la", "el-segundo",
+        "arts-district", "mid-wilshire", "playa-vista", "culver-city", "silver-lake",
+    }
     for city in cities:
         neighborhoods = city.get("neighborhoods", [])
         if not neighborhoods:
@@ -1405,6 +1417,15 @@ def main():
                 write_redirect_stub(city_market_dir / f"{n_slug}.html", _redir)
                 page_count += 1
                 submarket_count += 1
+                continue
+            if city["slug"] == "los-angeles" and n_slug in LA_HAND_AUTHORED_NEIGHBORHOODS:
+                # Hand-authored, do not overwrite -- see LA_HAND_AUTHORED_NEIGHBORHOODS above.
+                page_count += 1
+                submarket_count += 1
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/{canonical}",
+                    "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+                })
                 continue
             _is_noindex = canonical in NOINDEX_PATHS
             html = tpl_submarket.render(
