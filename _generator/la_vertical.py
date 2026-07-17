@@ -1144,6 +1144,29 @@ RAW_GUIDES = [
                     "proceeds from a retrade at the term sheet stage."
                 ),
             },
+            {
+                "heading": "A Turnover-Schedule Example, Worked",
+                "body": (
+                    "Here is why the turnover schedule matters in dollar terms, not just concept. Take an "
+                    "illustrative 40-unit RSO building where 15 units have turned over in the last five "
+                    "years and 25 have not. A market-rent underwrite that ignores the regulated roll "
+                    "entirely overstates income on all 40 units. A regulated-roll underwrite that assumes "
+                    "zero future turnover understates it, since some of the 25 long-tenured units will "
+                    "turn over during a typical hold. Neither is what a careful lender actually does.\n\n"
+                    "A credible underwrite instead prices the 25 non-turned units at their in-place RSO "
+                    "rent growing at the CPI-formula cap, and applies a turnover assumption, informed by "
+                    "the building's own historical turnover rate, to a portion of those units over the "
+                    "loan term. If the building has historically turned over roughly 15% of long-held "
+                    "units every year, that rate, not a blanket assumption that every unit turns or none "
+                    "do, is what a bridge lender underwriting a 24-month hold will actually use to size "
+                    "the exit rent roll.\n\n"
+                    "The gap between the two extremes is exactly where deals get won or lost at the term "
+                    "sheet. A sponsor who shows up with the building's own unit-by-unit tenancy history and "
+                    "a turnover assumption grounded in it, rather than a generic market pro forma, gives the "
+                    "lender a defensible basis to underwrite meaningful rent growth without the retrade risk "
+                    "of an assumption nobody can support in an appraisal or a servicer review."
+                ),
+            },
         ],
         "faqs": [
             {
@@ -1255,6 +1278,29 @@ RAW_GUIDES = [
                     "This is one of the clearest examples of a purely local regulation changing capital "
                     "markets behavior: financing structures that avoid a taxable sale event have become "
                     "measurably more attractive for City of LA assets above the ULA thresholds since 2023."
+                ),
+            },
+            {
+                "heading": "Deal Color: Timing a Sale Around the Tiers",
+                "body": (
+                    "Because the tier thresholds index for inflation every year, a sale that lands just "
+                    "above a breakpoint in one year might have landed just under it, or well into a "
+                    "different tier, in a different year. Sponsors with a sale value close to a threshold "
+                    "increasingly ask their broker and escrow to model the deal against both the current "
+                    "and prior year's published thresholds before setting an asking price or timing a "
+                    "close, since the difference between finishing a sale in December versus January can "
+                    "move which tier applies.\n\n"
+                    "Owners of multiple City of LA parcels have also asked whether phasing dispositions "
+                    "across separate closings, selling distinct legal parcels individually rather than as "
+                    "one assembled sale, changes the tax result. Whether a given portfolio or assemblage "
+                    "is treated as one transfer or several for ULA purposes is a structuring question with "
+                    "real stakes and a genuinely unsettled edge in some fact patterns, which is exactly the "
+                    "kind of question that needs dedicated ULA counsel before a sale is structured, not "
+                    "after escrow opens.\n\n"
+                    "The practical takeaway for anyone underwriting an eventual City of LA exit is to treat "
+                    "the exact thresholds as a moving target that needs a fresh check each time a sale is "
+                    "seriously contemplated, rather than a number memorized once and assumed to still be "
+                    "correct years later."
                 ),
             },
         ],
