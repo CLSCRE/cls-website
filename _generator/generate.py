@@ -1122,6 +1122,7 @@ def main():
         for n in range(1, total_pages + 1):
             chunk = listing_articles[(n - 1) * BLOG_PAGE_SIZE : n * BLOG_PAGE_SIZE]
             hero = hero_for(n, total_pages)
+            _is_noindex = canonical_for(n) in NOINDEX_PATHS
             html = tpl_blog_index.render(
                 **shared,
                 articles=chunk,
@@ -1149,18 +1150,20 @@ def main():
                 seo=seo_for(n, total_pages),
                 canonical_path=canonical_for(n),
                 depth=depth_for(n),
+                noindex=_is_noindex,
             )
             out_path = out_path_for(n)
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(html, encoding="utf-8")
             _blog_listing_written.add(out_path)
             page_count += 1
-            sitemap_urls.append({
-                "loc": f"{BASE_URL}/{canonical_for(n)}",
-                "lastmod": TODAY,
-                "changefreq": "weekly" if n == 1 else "monthly",
-                "priority": priority_for(n),
-            })
+            if not _is_noindex:
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/{canonical_for(n)}",
+                    "lastmod": TODAY,
+                    "changefreq": "weekly" if n == 1 else "monthly",
+                    "priority": priority_for(n),
+                })
         return total_pages
 
     # Main chronological index: blog/ + blog/page/N.html
@@ -1334,19 +1337,37 @@ def main():
     # not already in the sitemap so they are never orphaned.
     _blog_in_sitemap = {u["loc"] for u in sitemap_urls if "/blog/" in u["loc"]}
     _extra_blog = 0
+    _orphan_noindex_patched = 0
     for _blog_html in sorted((WEBSITE_DIR / "blog").glob("*.html")):
         if _blog_html.name == "index.html":
             continue
-        _blog_url = f"{BASE_URL}/blog/{_blog_html.name}"
+        _rel = f"blog/{_blog_html.name}"
+        _blog_url = f"{BASE_URL}/{_rel}"
+        try:
+            _blog_full = _blog_html.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            continue
+        _blog_head = _blog_full[:6000]
+        _has_noindex_tag = bool(re.search(r'name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', _blog_head, re.I))
+        # These files never pass through tpl_blog_article.render(), so a
+        # noindex_paths.json entry alone never reaches their markup -- patch
+        # the robots meta tag directly onto disk so the flag actually takes
+        # effect (2026-07-17: found via a URL audit follow-up).
+        if _rel in NOINDEX_PATHS and not _has_noindex_tag:
+            _patched, _n = re.subn(
+                r'(<link rel="canonical")',
+                '<meta name="robots" content="noindex,follow">\n\\1',
+                _blog_full, count=1,
+            )
+            if _n:
+                _blog_html.write_text(_patched, encoding="utf-8")
+                _has_noindex_tag = True
+                _orphan_noindex_patched += 1
         if _blog_url not in _blog_in_sitemap:
             # Skip noindexed internal docs (marketing playbooks, journalist
             # profiles, etc.) that live in blog/ but must stay out of the
             # sitemap (2026-07-09 sitemap-integrity audit found 4 listed).
-            try:
-                _blog_head = _blog_html.read_text(encoding="utf-8", errors="ignore")[:6000]
-            except OSError:
-                continue
-            if re.search(r'name=["\']robots["\'][^>]*content=["\'][^"\']*noindex', _blog_head, re.I):
+            if _has_noindex_tag:
                 continue
             sitemap_urls.append({
                 "loc": _blog_url,
@@ -1358,6 +1379,8 @@ def main():
             _extra_blog += 1
     if _extra_blog:
         print(f"  [OK] blog/*.html  (+{_extra_blog} extra articles found on disk, added to sitemap)")
+    if _orphan_noindex_patched:
+        print(f"  [noindex] patched robots meta tag onto {_orphan_noindex_patched} orphaned blog page(s)")
 
     # ── 7. Locations Page ──────────────────────────────────────────────
     print("\n=== Generating Locations Page ===")
