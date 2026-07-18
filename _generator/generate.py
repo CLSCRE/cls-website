@@ -1408,6 +1408,14 @@ def main():
         # collapsing into the generic "San Fernando Valley" region entry).
         "brentwood", "burbank", "sherman-oaks",
     }
+    # LA pilot (2026-07-18): guide directory + persona router for the
+    # markets/los-angeles/index.html LA-only block, folded in as part of
+    # retiring the separate los-angeles/index.html hub (Phase 5 merge).
+    # Computed once here (not per-city) since these are pure/static builds;
+    # the template only uses them under {% if city.slug == 'los-angeles' %}.
+    _la_hub_guides = la_vertical.build_guides() + la_construction.build_guides() + la_affordable.build_guides()
+    _la_hub_guide_groups = [{"category": c, "guides": [g for g in _la_hub_guides if g["category"] == c]}
+                            for c in dict.fromkeys(g["category"] for g in _la_hub_guides)]
     for city in cities:
         neighborhoods = city.get("neighborhoods", [])
         if not neighborhoods:
@@ -1500,6 +1508,7 @@ def main():
             depth="../../",
             featured_markets=featured,
             current_region=region_for_state(city["state"]),
+            la_hub_guide_groups=_la_hub_guide_groups,
         )
         (city_market_dir / "index.html").write_text(html, encoding="utf-8")
         page_count += 1
@@ -1611,36 +1620,20 @@ def main():
     la_submarkets = [s for s in _geo_la.get("tier2_la_submarkets", [])
                      if (WEBSITE_DIR / "markets" / "la" / f"{s['slug']}.html").exists()]
 
-    # Hub: /los-angeles/index.html
-    tpl_la_hub = env.get_template("la_hub.html")
-    html = tpl_la_hub.render(
-        **shared,
-        guide_groups=la_guide_groups,
-        hood_groups=la_hood_groups,
-        hood_count=la_hood_count,
-        industrial_groups=la_industrial_groups,
-        industrial_count=la_industrial_count,
-        retail_groups=la_retail_groups,
-        retail_count=la_retail_count,
-        la_submarkets=la_submarkets,
-        seo={
-            "title": "Los Angeles Commercial Real Estate Financing | Commercial Lending Solutions",
-            "meta_description": (
-                "Los Angeles commercial real estate financing hub: multifamily, industrial, and "
-                "retail by submarket, construction and rent-control guides, and tools, from a "
-                "broker headquartered in Los Angeles."
-            ),
-        },
-        canonical_path="los-angeles/index.html",
-        depth="../",
-    )
-    (la_dir / "index.html").write_text(html, encoding="utf-8")
-    page_count += 1
-    sitemap_urls.append({
-        "loc": f"{BASE_URL}/los-angeles/index.html",
-        "lastmod": TODAY, "changefreq": "weekly", "priority": "0.9",
-    })
-    print("  [OK] los-angeles/index.html")
+    # Hub: /los-angeles/index.html -- RETIRED 2026-07-18 (Phase 5 merge). This
+    # was a third overlapping LA hub competing with the canonical
+    # markets/los-angeles/ city index. Its two genuinely useful sections (the
+    # persona picker + the guide-by-category directory) were folded directly
+    # into market_city_index.html's LA-only block (see _la_hub_guide_groups
+    # above); every internal link that used to point here now points at
+    # markets/los-angeles/ instead (city_financing.html, city_property.html,
+    # la_guide.html, la_apartment_page.html, la_industrial_page.html,
+    # la_retail_page.html, la_apartments_index.html, la_industrial_index.html,
+    # la_retail_index.html, tool_la_rentcontrol.html, _footer.html). This
+    # write_redirect_stub call is a safety net only -- REDIRECT_PATHS also
+    # covers this path -- so the page still soft-redirects even if the
+    # skip-guard below were ever removed accidentally.
+    write_redirect_stub(la_dir / "index.html", "https://clscre.com/markets/los-angeles/")
 
     # Guides + personas: /los-angeles/{slug}.html
     tpl_la_guide = env.get_template("la_guide.html")
