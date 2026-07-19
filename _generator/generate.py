@@ -680,9 +680,15 @@ def main():
             for _c in _vdata.get("cities", []):
                 for _p in _vdata.get("programs", []):
                     _slug = f"{_c['slug']}-{_p['slug']}"
-                    if (WEBSITE_DIR / _vslug / "markets" / f"{_slug}.html").exists():
+                    _vrel = f"{_vslug}/markets/{_slug}.html"
+                    _vpath = WEBSITE_DIR / _vrel
+                    _vredir = REDIRECT_PATHS.get(_vrel)
+                    if _vredir:
+                        write_redirect_stub(_vpath, _vredir)
+                        continue
+                    if _vpath.exists():
                         sitemap_urls.append({
-                            "loc": f"{BASE_URL}/{_vslug}/markets/{_slug}.html",
+                            "loc": f"{BASE_URL}/{_vrel}",
                             "lastmod": TODAY,
                             "changefreq": "monthly",
                             "priority": "0.8",
