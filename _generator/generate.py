@@ -1448,6 +1448,16 @@ def main():
         # collapsing into the generic "San Fernando Valley" region entry).
         "brentwood", "burbank", "sherman-oaks",
     }
+    # 2026-07-20 Chicago pilot: same hand-authored pattern as LA, generalized to
+    # a per-city dict so future metro pilots just add a new key here instead of
+    # duplicating the LA-only branch below. Naperville/oak-brook/river-north/
+    # schaumburg were noindexed generic submarket_page.html boilerplate; revived
+    # with real submarket-specific content. Lincoln Park and The Loop stay on
+    # the generic template for now (already indexed, lower priority to deepen).
+    HAND_AUTHORED_NEIGHBORHOODS = {
+        "los-angeles": LA_HAND_AUTHORED_NEIGHBORHOODS,
+        "chicago": {"naperville", "oak-brook", "river-north", "schaumburg"},
+    }
     # LA pilot (2026-07-18): guide directory + persona router for the
     # markets/los-angeles/index.html LA-only block, folded in as part of
     # retiring the separate los-angeles/index.html hub (Phase 5 merge).
@@ -1494,8 +1504,8 @@ def main():
                 page_count += 1
                 submarket_count += 1
                 continue
-            if city["slug"] == "los-angeles" and n_slug in LA_HAND_AUTHORED_NEIGHBORHOODS:
-                # Hand-authored, do not overwrite -- see LA_HAND_AUTHORED_NEIGHBORHOODS above.
+            if n_slug in HAND_AUTHORED_NEIGHBORHOODS.get(city["slug"], ()):
+                # Hand-authored, do not overwrite -- see HAND_AUTHORED_NEIGHBORHOODS above.
                 page_count += 1
                 submarket_count += 1
                 sitemap_urls.append({
