@@ -282,7 +282,6 @@
  *   1. Sticky mobile contact bar (phone + book call) below 768px
  *   2. URL-param prefill for contact forms (?name=X&email=Y&phone=Z&message=M)
  *   3. Exit-intent fallback popup pointing users to call/book/email
- *   4. Inline "Text Trevor" SMS link next to existing phone links on mobile
  * Privacy: no tracking beyond existing GTM; no third-party requests.
  * ========================================================================== */
 (function () {
@@ -290,10 +289,6 @@
   try {
     var PHONE = '+13107080690';
     var PHONE_DISPLAY = '310.708.0690';
-    // Dedicated text-only line (separate number from the call line) so SMS
-    // inbound is unambiguously web-sourced. Call -> 310.708.0690, Text -> 310.758.3064.
-    var TEXT = '+13107583064';
-    var TEXT_DISPLAY = '310.758.3064';
     var EMAIL = 'loans@clscre.com';
     var BOOKING = 'https://outlook.office.com/bookwithme/user/c760895536d64481bd17039efdcead26@clscre.com?anonymous&ismsaljsauthenabled&ep=plink';
 
@@ -303,22 +298,18 @@
       var bar = document.createElement('div');
       bar.id = 'cls-mcb';
       bar.innerHTML = ''
-        + '<a href="tel:' + PHONE + '" class="cls-mcb-btn cls-mcb-primary" aria-label="Call Trevor at ' + PHONE_DISPLAY + '">'
+        + '<a href="tel:' + PHONE + '" class="cls-mcb-btn cls-mcb-primary" aria-label="Call us at ' + PHONE_DISPLAY + '">'
         +   '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'
         +   '<span>Call</span>'
         + '</a>'
-        + '<a href="sms:' + TEXT + '" class="cls-mcb-btn cls-mcb-secondary" aria-label="Text Trevor at ' + TEXT_DISPLAY + '">'
-        +   '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>'
-        +   '<span>Text</span>'
-        + '</a>'
-        + '<a href="' + BOOKING + '" target="_blank" rel="noopener" class="cls-mcb-btn cls-mcb-secondary" aria-label="Book a 15-min call with Trevor">'
+        + '<a href="' + BOOKING + '" target="_blank" rel="noopener" class="cls-mcb-btn cls-mcb-secondary" aria-label="Book a 15-minute call with our team">'
         +   '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>'
         +   '<span>Book</span>'
         + '</a>';
 
       var style = document.createElement('style');
       style.textContent = ''
-        + '#cls-mcb{position:fixed;left:0;right:0;bottom:0;display:none;grid-template-columns:2fr 1fr 1fr;gap:8px;padding:10px 12px 14px;background:#153D63;box-shadow:0 -4px 24px rgba(0,0,0,.18);z-index:998}'
+        + '#cls-mcb{position:fixed;left:0;right:0;bottom:0;display:none;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px 14px;background:#153D63;box-shadow:0 -4px 24px rgba(0,0,0,.18);z-index:998}'
         + '@media (max-width:768px){#cls-mcb{display:grid}body{padding-bottom:72px !important}}'
         + '#cls-mcb .cls-mcb-btn{display:flex;align-items:center;justify-content:center;gap:6px;height:44px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;letter-spacing:.2px}'
         + '#cls-mcb .cls-mcb-primary{background:#00A676;color:#fff}'
@@ -379,12 +370,11 @@
         +   '<button class="cls-exit-close" aria-label="Close">&times;</button>'
         +   '<div class="cls-exit-label">Before you go</div>'
         +   '<h3 id="cls-exit-title">Questions about your deal?</h3>'
-        +   '<p>Trevor personally reviews every inquiry. Call, text, book a time, or email, whichever is easiest.</p>'
+        +   '<p>Our team personally reviews every inquiry. Call, book a time, or email, whichever is easiest.</p>'
         +   '<div class="cls-exit-actions">'
         +     '<a href="tel:' + PHONE + '">Call ' + PHONE_DISPLAY + '</a>'
-        +     '<a href="sms:' + TEXT + '">Text ' + TEXT_DISPLAY + '</a>'
         +     '<a href="' + BOOKING + '" target="_blank" rel="noopener">Book 15 min</a>'
-        +     '<a href="mailto:' + EMAIL + '">Email Trevor</a>'
+        +     '<a href="mailto:' + EMAIL + '">Email CLS CRE</a>'
         +   '</div>'
         + '</div>';
       var style = document.createElement('style');
@@ -396,12 +386,11 @@
         + '#cls-exit-overlay .cls-exit-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#006A4E;font-weight:700;margin-bottom:8px}'
         + '#cls-exit-overlay .cls-exit-card h3{font-family:DM Serif Display,serif;font-size:26px;color:#153D63;margin:0 0 10px;line-height:1.2}'
         + '#cls-exit-overlay .cls-exit-card p{font-size:14px;color:#555;line-height:1.6;margin:0 0 22px}'
-        + '#cls-exit-overlay .cls-exit-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}'
+        + '#cls-exit-overlay .cls-exit-actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}'
         + '#cls-exit-overlay .cls-exit-actions a{display:flex;align-items:center;justify-content:center;padding:12px 10px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none}'
         + '#cls-exit-overlay .cls-exit-actions a:nth-child(1){background:#006A4E;color:#fff}'  /* Call */
-        + '#cls-exit-overlay .cls-exit-actions a:nth-child(2){background:#00A676;color:#fff}'  /* Text */
-        + '#cls-exit-overlay .cls-exit-actions a:nth-child(3){background:#153D63;color:#fff}'  /* Book */
-        + '#cls-exit-overlay .cls-exit-actions a:nth-child(4){background:#f3f4f6;color:#153D63}'  /* Email */
+        + '#cls-exit-overlay .cls-exit-actions a:nth-child(2){background:#153D63;color:#fff}'  /* Book */
+        + '#cls-exit-overlay .cls-exit-actions a:nth-child(3){background:#f3f4f6;color:#153D63}'  /* Email */
         + '@media (max-width:480px){#cls-exit-overlay .cls-exit-actions{grid-template-columns:1fr}}';
       document.head.appendChild(style);
       document.body.appendChild(overlay);
