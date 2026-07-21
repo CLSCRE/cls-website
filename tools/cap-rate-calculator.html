@@ -227,11 +227,26 @@
       <div class="calc-email-capture" id="emailCapture" style="display:none">
         <h3>Get Your Full Analysis</h3>
         <p>We'll email your results plus a personalized financing recommendation from 1,000+ lenders.</p>
-        <div class="calc-field"><input type="email" id="captureEmail" placeholder="your@email.com" class="calc-email-input"></div>
-        <div class="calc-field"><input type="text" id="captureName" placeholder="Your name" class="calc-email-input"></div>
-        <button class="btn-primary" onclick="sendResults('caprate')" style="width:100%;justify-content:center">Email My Results</button>
+        <form id="calcLeadForm" action="#" method="POST">
+          <input type="hidden" name="_subject" value="Calculator Lead (Cap Rate Calculator), Commercial Lending Solutions Website">
+          <input type="hidden" name="_next" value="https://clscre.com/thank-you.html?form=calculator">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_autoresponse" value="Thank you for using our Cap Rate Calculator! Your personalized analysis is on the way, a Commercial Lending Solutions advisor will follow up within 24 hours. For urgent inquiries, call 310.708.0690., Trevor Damyan, Commercial Lending Solutions | clscre.com">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website_url" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="_cls_token" value="">
+          <input type="hidden" name="Form Loaded At" value="">
+          <input type="hidden" name="Source Page" id="calcSourcePage" value="">
+          <input type="hidden" name="Calculator" value="Cap Rate Calculator">
+          <input type="hidden" name="Calculator Results" id="calcResultsField" value="">
+          <div class="calc-field"><input type="email" name="Email" id="captureEmail" placeholder="your@email.com" required class="calc-email-input"></div>
+          <div class="calc-field"><input type="text" name="Name" id="captureName" placeholder="Your name" class="calc-email-input"></div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center">Email My Results</button>
+        </form>
         <p style="font-size:12px;color:var(--gray-500);margin-top:8px">No spam. Just your results + how CLS CRE can help.</p>
       </div>
+
       <a href="../apply.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px">Apply for Financing &rarr;</a>
     </div>
   </div>
@@ -326,16 +341,22 @@ function calcCapRate(){
   document.getElementById('capResult').style.display='block';
   document.getElementById('emailCapture').style.display='block';
 }
-function sendResults(calc){
-  var email=document.getElementById('captureEmail').value;
-  var name=document.getElementById('captureName').value;
-  if(!email){alert('Please enter your email.');return;}
-  if(typeof gtag==='function')gtag('event','calculator_lead',{calculator:calc,page_url:window.location.href});
-  var leads=JSON.parse(localStorage.getItem('cls_calc_leads')||'[]');
-  leads.push({calculator:calc,email:email,name:name,url:window.location.href,timestamp:new Date().toISOString()});
-  localStorage.setItem('cls_calc_leads',JSON.stringify(leads));
-  document.getElementById('emailCapture').innerHTML='<div style="text-align:center;padding:20px"><div style="font-size:32px;margin-bottom:8px">&#10003;</div><h3 style="color:var(--green)">Thank You!</h3><p>We\'ll send your personalized analysis within 24 hours.</p></div>';
-}
+// Calculator lead form: stuff current results + source page in before antispam.js submits it
+(function(){
+  var f=document.getElementById('calcLeadForm');
+  if(!f)return;
+  var sp=document.getElementById('calcSourcePage');
+  if(sp)sp.value=location.href;
+  f.addEventListener('submit',function(){
+    var res=document.getElementById('calcResultsField');
+    if(res){
+      var vals=[];
+      document.querySelectorAll('.calc-result .gauge-value, .calc-result .calc-detail').forEach(function(el){vals.push(el.textContent.replace(/\s+/g,' ').trim());});
+      res.value=vals.join(' | ').slice(0,900);
+    }
+    if(typeof gtag==='function')gtag('event','calculator_lead',{calculator:'caprate',page_url:window.location.href});
+  },true);
+})();
 function calcCapValue(){
   var noi=parseNum('capNoi2'),cap=parseNum('capTarget');
   if(!noi||!cap)return;
@@ -408,6 +429,8 @@ function calcCapValue(){
   </div>
   <div class="footer-col">
     <h4>Financing</h4>
+    <a href="../financing/commercial-mortgage-rates.html">Today's Rates</a>
+    <a href="../comparisons/index.html">Loan Comparisons</a>
     <a href="../financing/permanent-loans.html">Permanent Loans</a>
     <a href="../financing/construction-loans.html">Construction Loans</a>
     <a href="../financing/bridge-loans.html">Bridge Loans</a>
@@ -467,6 +490,7 @@ function calcCapValue(){
   <div class="footer-col">
     <h4>Company</h4>
     <a href="../about.html">About Us</a>
+    <a href="../partners.html">Referral Partners</a>
     <a href="../blog/index.html">Insights</a>
     <a href="../index.html#transactions">Transactions</a>
     <a href="../market-data.html">Market Data</a>
