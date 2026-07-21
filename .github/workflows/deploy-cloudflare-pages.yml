@@ -98,6 +98,14 @@ jobs:
           export default {
             async fetch(request, env) {
               const url = new URL(request.url);
+              // Force HTTPS: plain-HTTP requests were serving 200 with no
+              // redirect after the Workers cutover (zone-level "Always Use
+              // HTTPS" is not enabled and the zone API token cannot flip it),
+              // so enforce the 301 here at the worker instead.
+              if (url.protocol === "http:") {
+                url.protocol = "https:";
+                return Response.redirect(url.toString(), 301);
+              }
               if (url.pathname.endsWith("/")) {
                 url.pathname += "index.html";
                 return env.ASSETS.fetch(new Request(url));
