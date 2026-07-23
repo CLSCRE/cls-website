@@ -590,7 +590,6 @@ def main():
             for _broker_path in sorted((WEBSITE_DIR / "financing").glob("commercial-mortgage-broker-*.html"))
         ],
         {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
-        {"loc": f"{BASE_URL}/submit-deal.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7"},
         {"loc": f"{BASE_URL}/tools/edi-eligibility-check.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
         # Root utility + standalone section pages that live outside the
         # programmatic cross-products (found missing in the 2026-07-09
@@ -603,7 +602,6 @@ def main():
                 ("rates.html", "weekly", "0.8"),
                 ("refinance.html", "monthly", "0.8"),
                 ("partners.html", "monthly", "0.7"),
-                ("broker-portal.html", "monthly", "0.6"),
                 # contact/index.html intentionally absent: it rel-canonicals
                 # to /contact.html (already listed above), so sitemapping it
                 # only produces "duplicate, not selected as canonical" noise in GSC.

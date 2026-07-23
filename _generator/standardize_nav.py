@@ -54,7 +54,6 @@ def get_nav_html(prefix: str) -> str:
     <a href="{p}blog/index.html">Insights</a>
     <a href="{p}market-data.html">Market Data</a>
     <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
-    <a href="{p}submit-deal.html">Submit Deal</a>
     <a href="{p}apply.html" class="nav-cta">Apply Now</a>
   </div>
   <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu">
