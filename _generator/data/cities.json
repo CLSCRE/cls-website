@@ -5202,5 +5202,24 @@
    "Bayonne",
    "Secaucus"
   ]
+ },
+ {
+  "city": "Eureka",
+  "slug": "eureka",
+  "state": "CA",
+  "metro": "Eureka-Arcata",
+  "context": "Eureka is the seat of Humboldt County and the commercial hub of California's rural North Coast, a historically isolated timber and fishing port now anchoring a small, tightly held commercial real estate market with limited institutional competition. Old Town Eureka's Victorian commercial core has drawn steady adaptive-reuse and hospitality investment tied to tourism along the Redwood Coast, while the Bayshore Mall corridor and Broadway commercial strip carry the market's retail and service-commercial base. Cal Poly Humboldt in neighboring Arcata supports student and workforce housing demand across both cities, and the deep-water Humboldt Bay port, along with renewed interest in offshore wind infrastructure, is drawing longer-term industrial and marine-commercial capital into the region. Because national lenders treat the North Coast as a thin, secondary market, borrowers here often rely on regional banks, credit unions, and life insurance company balance-sheet lenders willing to underwrite stabilized assets directly rather than through a securitized conduit, making direct capital-markets relationships unusually valuable relative to larger metros.",
+  "neighborhoods": [
+   "Old Town Eureka",
+   "Downtown Eureka",
+   "Henderson Center",
+   "Myrtletown",
+   "Cutten",
+   "Pine Hill",
+   "Bayshore Mall Corridor",
+   "Arcata",
+   "McKinleyville",
+   "Fortuna"
+  ]
  }
 ]
