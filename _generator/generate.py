@@ -732,13 +732,23 @@ def main():
                     "priority": "0.9",
                 })
         for _s in _geo.get("tier2_la_submarkets", []):
-            if (WEBSITE_DIR / "markets" / "la" / f"{_s['slug']}.html").exists():
-                sitemap_urls.append({
-                    "loc": f"{BASE_URL}/markets/la/{_s['slug']}.html",
-                    "lastmod": TODAY,
-                    "changefreq": "monthly",
-                    "priority": "0.8",
-                })
+            _la_path = WEBSITE_DIR / "markets" / "la" / f"{_s['slug']}.html"
+            if not _la_path.exists():
+                continue
+            # 2026-07-24: /markets/la/ tier2 system retired -- content migrated
+            # to hand-authored markets/los-angeles/ pages on 2026-07-17. Any
+            # slug in redirect_map.json gets a soft-301 stub and stays out of
+            # the sitemap (same pattern as the deal-size block above).
+            _la_redir = REDIRECT_PATHS.get(f"markets/la/{_s['slug']}.html")
+            if _la_redir:
+                write_redirect_stub(_la_path, _la_redir)
+                continue
+            sitemap_urls.append({
+                "loc": f"{BASE_URL}/markets/la/{_s['slug']}.html",
+                "lastmod": TODAY,
+                "changefreq": "monthly",
+                "priority": "0.8",
+            })
 
     # Vertical hubs + city x program programmatic pages (generated via
     # scripts/generate_city_{vertical}_pages.py; listed here so full regens
@@ -1752,7 +1762,10 @@ def main():
     # prior hand-edit to the rendered hub was silently wiped by the next run.
     _geo_la = json.loads((DATA_DIR / "geo_landing.json").read_text(encoding="utf-8"))
     la_submarkets = [s for s in _geo_la.get("tier2_la_submarkets", [])
-                     if (WEBSITE_DIR / "markets" / "la" / f"{s['slug']}.html").exists()]
+                     if (WEBSITE_DIR / "markets" / "la" / f"{s['slug']}.html").exists()
+                     # 2026-07-24: retired /markets/la/ pages that now soft-301
+                     # to markets/los-angeles/ twins must not be hub-linked.
+                     and f"markets/la/{s['slug']}.html" not in REDIRECT_PATHS]
 
     # Hub: /los-angeles/index.html -- RETIRED 2026-07-18 (Phase 5 merge). This
     # was a third overlapping LA hub competing with the canonical
