@@ -1592,15 +1592,15 @@
     "h1": "How to Qualify for a Life Company Loan in 2026",
     "hub_url": "life-company-loans.html",
     "hub_name": "Life Company Loans",
-    "quick_answer": "To qualify for a life company loan, you need a stabilized Class A or B+ commercial property in a primary or strong secondary market, 55 to 65 percent LTV, 1.30 to 1.50x DSCR on in-place income, a $5M to $10M minimum loan size, and an institutional-caliber sponsor with audited financials and a significant portfolio track record. Terms run 10 to 25 years fixed with 30-year amortization and non-recourse structure as standard.",
+    "quick_answer": "To qualify for a life company loan, you need a stabilized Class A or B+ commercial property in a primary or strong secondary market, 55 to 65 percent LTV, 1.25x to 1.40x in-place (often 1.30x+) on in-place income, a $5M practical minimum ($10M+ most competitive), and an institutional-caliber sponsor. Terms run 10 to 25 years fixed with 30-year amortization and non-recourse as standard.",
     "intro": "Life company loan qualification in May 2026 represents the tightest underwriting box in commercial real estate, designed specifically for institutional-quality assets generating durable, predictable cash flow. The program rewards sponsors and properties that need nothing: stabilized occupancy, seasoned tenancy, low leverage, and balance sheets that could survive a major economic disruption without lender intervention. Three independent boxes must close simultaneously: asset quality and market, borrower institutional capability, and deal economics that satisfy actuarial-grade stress testing.",
     "key_facts": {
-      "loan_amount": "$5M minimum, $10M+ preferred by most life companies",
-      "term": "10 to 25 years fixed, 30-year amortization typical",
-      "ltv": "55% to 65% of stabilized appraised value",
-      "dscr_min": "1.30x to 1.50x on in-place net operating income",
-      "recourse": "Non-recourse standard with standard carve-outs",
-      "credit_min": "Institutional sponsor with audited financials; personal FICO less relevant than balance sheet"
+      "loan_amount": "$5M to $100M+",
+      "term": "10 to 25 Years",
+      "ltv": "55% to 65% typical; rare stretch to ~70% on trophy primary-market assets",
+      "dscr_min": "1.25x to 1.40x in-place (often 1.30x+)",
+      "recourse": "Non-Recourse Standard",
+      "credit_min": "Institutional-caliber sponsor / audited financials preferred"
     },
     "requirements": [
       [
@@ -1750,7 +1750,7 @@
     "faqs": [
       [
         "What is the minimum loan size for a life company loan?",
-        "Most life companies have an effective minimum of $10M, with some correspondent programs accepting loans as low as $5M. Below $5M, the diligence and documentation requirements make life company execution uneconomic relative to alternatives like bank permanent or insurance conduit programs. For large institutional assets, life company loan sizes routinely reach $50M to $200M with no practical ceiling."
+        "Most life insurance companies set a practical minimum around $5M, with many correspondent programs most competitive at $10M+ for direct balance-sheet execution. Loans above $25M attract the sharpest pricing. Below $5M, bank portfolio or credit union permanent debt is usually the better fit."
       ],
       [
         "Why are life company loans non-recourse?",
@@ -1780,7 +1780,30 @@
         "What DSCR do life companies require at underwriting?",
         "Life companies typically require a minimum in-place DSCR of 1.30x, with most targeting 1.40x to 1.50x at the note rate on actual underwritten NOI. Underwritten NOI is not pro forma. Life company underwriters apply vacancy assumptions, management fee load, and capital reserve deductions even if the property is currently exceeding those metrics. Deals that pencil at exactly 1.30x in-place often underwrite to below the threshold after adjustments."
       ]
-    ]
+    ],
+    "process_steps": [
+      [
+        "Screen the deal against the life box",
+        "Confirm stabilized occupancy, primary or strong secondary market, roughly 55\u201365% LTV, 1.25x\u20131.40x in-place DSCR, and loan size generally $5M+ ($10M+ most competitive)."
+      ],
+      [
+        "Assemble the submission package",
+        "Prepare OM or summary, T12 and rent roll, sponsor resume and PFS, schedule of real estate owned, and a clear hold/refinance thesis."
+      ],
+      [
+        "Submit through a life-company correspondent",
+        "Life companies do not take retail applications. CLS CRE routes the package to desks with open allocation for the asset type, market, and size."
+      ],
+      [
+        "Negotiate term sheet and third parties",
+        "Compare spread, IO, reserves, assumption language, and yield-maintenance schedule; order appraisal and required third-party reports."
+      ],
+      [
+        "Underwrite and close",
+        "Typical life company permanent closings run about 60\u201390 days from a complete package, depending on third parties and sponsor responsiveness."
+      ]
+    ],
+    "date_modified": "2026-07-24"
   },
   {
     "slug": "dscr-loans",

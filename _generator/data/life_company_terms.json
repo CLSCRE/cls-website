@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-07",
+  "as_of_label": "July 2026",
+  "program_name": "Life Company Loans",
+  "short_name": "Life Company",
+  "slug": "life-company-loans",
+  "hub_url": "/financing/life-company-loans.html",
+  "rates_url": "/financing/life-company-loan-rates.html",
+  "qualify_url": "/financing/how-to-qualify-for-life-company-loans.html",
+  "explained_url": "/blog/life-insurance-company-loans-explained.html",
+  "apply_url": "/apply.html?program=life-company",
+  "rate_range": "5.00% to 6.50%",
+  "rate_range_compact": "5.00%–6.50%",
+  "spread_bps": "115 to 200 bps over matching-term Treasury",
+  "loan_amount": "$5M to $100M+",
+  "loan_amount_display_home": "$5M–$100M+",
+  "min_amount_usd": 5000000,
+  "min_practical": "$5M",
+  "min_competitive": "$10M+",
+  "term": "10 to 25 Years",
+  "term_display_home": "10–25 Years",
+  "term_alt_note": "Some desks quote 7-year money; 10–25 year fixed is standard for institutional holds.",
+  "ltv": "Up to 65% LTV",
+  "ltv_detail": "55% to 65% typical; rare stretch to ~70% on trophy primary-market assets",
+  "ltv_cap_numeric": 65,
+  "amortization": "25 to 30 Years",
+  "recourse": "Non-Recourse Standard",
+  "dscr": "1.25x to 1.40x in-place (often 1.30x+)",
+  "prepay": "Yield maintenance standard; late-term open or defeasance windows vary by desk",
+  "best_for": "Institutional multifamily, industrial, and credit net lease in primary markets",
+  "ideal_for": [
+    "Institutional multifamily in primary and strong secondary markets",
+    "Class A industrial and logistics with durable tenancy",
+    "Anchored retail with credit tenants",
+    "Net lease with investment-grade guarantors",
+    "Long-term hold strategies prioritizing rate and term over leverage",
+    "Sponsors with loan sizes generally $5M+ ($10M+ most competitive)"
+  ],
+  "lender_sources": [
+    "Top-Tier Life Insurance Companies",
+    "Mutual Life Companies",
+    "Mid-Sized Life Insurance Lenders",
+    "Correspondent Life Company Programs"
+  ],
+  "quick_answer": "Life company loans range from $5M to $100M+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions submits via direct life-company correspondent relationships across 1,000+ capital sources nationwide.",
+  "seo_meta": "Life insurance company CRE loans: 5.00%–6.50% fixed, 10–25 year terms, up to 65% LTV, non-recourse, $5M–$100M+. Direct correspondent access. Get a quote.",
+  "home_card_blurb": "Tightest long-term fixed rates in private CRE. Institutional stabilized assets, up to ~65% LTV, non-recourse. Most brokers cannot correspond directly — we can.",
+  "calculator_defaults": {
+    "rate": 5.75,
+    "amort": 30,
+    "ltv": 60,
+    "label": "Life Company"
+  },
+  "rate_table_primary": "5.50%–6.50%",
+  "rate_table_secondary": "5.75%–6.75%",
+  "howto_steps": [
+    {
+      "name": "Screen the deal against the life box",
+      "text": "Confirm stabilized occupancy, primary or strong secondary market, roughly 55–65% LTV, 1.25x–1.40x in-place DSCR, and loan size generally $5M+ ($10M+ most competitive)."
+    },
+    {
+      "name": "Assemble the submission package",
+      "text": "Prepare OM or summary, T12 and rent roll, sponsor resume and PFS, schedule of real estate owned, and a clear hold/refinance thesis."
+    },
+    {
+      "name": "Submit through a life-company correspondent",
+      "text": "Life companies do not take retail applications. CLS CRE routes the package to desks with open allocation for the asset type, market, and size."
+    },
+    {
+      "name": "Negotiate term sheet and third parties",
+      "text": "Compare spread, IO, reserves, assumption language, and yield-maintenance schedule; order appraisal and required third-party reports."
+    },
+    {
+      "name": "Underwrite and close",
+      "text": "Typical life company permanent closings run about 60–90 days from a complete package, depending on third parties and sponsor responsiveness."
+    }
+  ]
+}
