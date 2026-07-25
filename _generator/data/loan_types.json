@@ -422,7 +422,8 @@
     "quick_answer": "Life company loans range from $5M to $100M+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions submits via direct life-company correspondent relationships across 1,000+ capital sources nationwide.",
     "quick_answer_city": "Life company loans in {city}, {state} range from $5M to $100M+ at 5.00% to 6.50%, with terms of 10 to 25 years. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions sources life company financing for {city} commercial properties via direct correspondent desks and 1,000+ other capital sources nationwide.",
     "apply_query": "program=life-company",
-    "min_amount_usd": 5000000
+    "min_amount_usd": 5000000,
+    "min_loan_display": "$5M"
   },
   {
     "slug": "dscr-loans",
