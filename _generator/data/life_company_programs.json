@@ -5,7 +5,7 @@
       "name": "Life Insurance Company Multifamily Loans",
       "short_name": "Life Company Multifamily",
       "description": "Permanent long-term multifamily financing funded directly by life insurance company correspondent capital. Commercial Lending Solutions is a direct correspondent lender, meaning we underwrite, commit, and close these loans in our name -- no broker layer, no submission to a third party. Life company execution is the most competitive permanent option for stabilized Class A and B multifamily in primary and secondary markets.",
-      "typical_deal_range": "$3M to $75M stabilized multifamily",
+      "typical_deal_range": "$5M to $75M stabilized multifamily",
       "typical_stack": [
         "Life insurance company correspondent first mortgage (direct)",
         "10 to 25 year fixed-rate term",
@@ -18,7 +18,7 @@
         "amortization": "25 to 30 years; full-term interest-only available for select deals",
         "prepayment": "Declining prepayment schedule or yield maintenance; lockout periods negotiable",
         "recourse_structure": "Non-recourse standard with carve-outs for fraud, environmental, and voluntary bankruptcy",
-        "minimum_deal_size": "$3M; sweet spot $8M to $50M",
+        "minimum_deal_size": "$5M; sweet spot $8M to $50M",
         "hold_period": "10 to 25 year fixed terms suit long-term hold strategies"
       },
       "direct_lender_messaging": "As a direct correspondent lender, we commit our own capital and underwrite in-house. Borrowers get a single underwriting decision, one relationship, and faster closing timelines than deals that require submission and approval from a life company's home office.",
@@ -32,7 +32,7 @@
       "name": "Life Insurance Company Industrial Loans",
       "short_name": "Life Company Industrial",
       "description": "Permanent long-term financing for industrial, warehouse, logistics, and flex properties funded directly through life insurance company correspondent capital. Commercial Lending Solutions is a direct correspondent lender for industrial CRE -- we underwrite and close in-house. Industrial is among the most favored asset classes for life company permanent capital in 2025 and 2026, with compressed spreads for Class A logistics and distribution facilities.",
-      "typical_deal_range": "$3M to $100M stabilized industrial and logistics",
+      "typical_deal_range": "$5M to $100M stabilized industrial and logistics",
       "typical_stack": [
         "Life insurance company correspondent first mortgage (direct)",
         "10 to 25 year fixed-rate term, credit-tenant NNN for longer terms",
@@ -45,7 +45,7 @@
         "amortization": "25 to 30 years or interest-only",
         "prepayment": "Yield maintenance or declining schedule",
         "recourse_structure": "Non-recourse standard",
-        "minimum_deal_size": "$3M; preference for $10M plus",
+        "minimum_deal_size": "$5M; preference for $10M plus",
         "asset_preference": "Class A logistics, last-mile distribution, bulk warehouse, light industrial parks with strong tenancy"
       },
       "direct_lender_messaging": "Life companies compete aggressively for quality industrial. As a direct correspondent, we can move from term sheet to commitment faster than a broker placing the deal with a life company's correspondent desk.",
@@ -113,7 +113,7 @@
       "name": "Life Insurance Company Self Storage Loans",
       "short_name": "Life Company Self Storage",
       "description": "Permanent long-term financing for self storage facilities funded directly through life insurance company correspondent capital. Life companies have increased their self storage allocations significantly over the past decade as the sector has proven its recession resilience and income stability. Commercial Lending Solutions is a direct correspondent lender for self storage -- we underwrite stabilized facilities in-house with no broker layer.",
-      "typical_deal_range": "$3M to $50M stabilized self storage",
+      "typical_deal_range": "$5M to $50M stabilized self storage",
       "typical_stack": [
         "Life insurance company correspondent first mortgage (direct)",
         "10 to 20 year fixed-rate term",
@@ -126,7 +126,7 @@
         "amortization": "25 to 30 years",
         "prepayment": "Yield maintenance or declining schedule",
         "recourse_structure": "Non-recourse standard",
-        "minimum_deal_size": "$3M; climate-controlled urban preferred",
+        "minimum_deal_size": "$5M; climate-controlled urban preferred",
         "asset_preference": "Stabilized occupancy 85 percent plus; climate-controlled preferred; urban or suburban infill location"
       },
       "direct_lender_messaging": "Self storage is one of the fastest-growing life company allocations. As a direct correspondent, we can quote self storage deals quickly without the delays of indirect placement.",
