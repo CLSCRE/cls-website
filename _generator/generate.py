@@ -442,6 +442,77 @@ def build_article_map(articles, tag_to_slug):
     return slug_articles
 
 
+RATE_BADGE_CLASS = {
+    "Bridge": "badge-bridge", "Permanent": "badge-permanent",
+    "Construction": "badge-construction", "SBA 7(a)": "badge-sba",
+    "SBA 504": "badge-sba", "CMBS": "badge-cmbs",
+    "Agency (Fannie/Freddie)": "badge-agency", "HUD/FHA 223(f)": "badge-hud",
+    "Life Company": "badge-life", "Net Lease": "badge-net-lease",
+    "Hard Money": "badge-hard-money", "Mezzanine": "badge-mezzanine",
+}
+
+
+def render_rates_table():
+    """Bake rate rows from tools/rates-data.json into rates.html's tbody.
+
+    Mirrors the row markup produced by rates.html's renderTable() JS so
+    non-JS crawlers see identical content to what JS-rendering visitors get.
+    """
+    from urllib.parse import quote
+
+    print("\n=== Server-rendering rates.html table ===")
+    rates_html_path = WEBSITE_DIR / "rates.html"
+    rates_data_path = WEBSITE_DIR / "tools" / "rates-data.json"
+    if not rates_html_path.exists() or not rates_data_path.exists():
+        print("  [SKIP] rates.html or rates-data.json not found")
+        return
+
+    def fmt_mo(mo):
+        if mo % 12 == 0:
+            return f"{mo // 12} Yr"
+        return f"{mo} mo"
+
+    def fmt_loan(n):
+        if n >= 1_000_000:
+            v = n / 1_000_000
+            return f"${v:.0f}M" if n % 1_000_000 == 0 else f"${v:.1f}M"
+        if n >= 1000:
+            return f"${n // 1000}K"
+        return f"${n}"
+
+    data = json.loads(rates_data_path.read_text(encoding="utf-8"))
+    rows = []
+    for r in data:
+        badge = RATE_BADGE_CLASS.get(r["product"], "badge-permanent")
+        rate_str = f"{r['rateMin']:.2f}%, {r['rateMax']:.2f}%"
+        subject = quote(f"Rate Inquiry: {r['product']}, {r['rateMin']:.2f}%-{r['rateMax']:.2f}%")
+        rows.append(
+            "<tr>"
+            f"<td><span class=\"rate-badge {badge}\">{r['product']}</span></td>"
+            f"<td class=\"rate-col\">{rate_str}</td>"
+            f"<td>{fmt_mo(r['termMonths'])}</td>"
+            f"<td>{r['ltvMax']}%</td>"
+            f"<td>{r['amort']}</td>"
+            f"<td>{fmt_loan(r['minLoan'])}</td>"
+            f"<td style=\"font-size:13px\">{r['prepay']}</td>"
+            f"<td class=\"notes-col\">{r['notes']}</td>"
+            f"<td class=\"cta-col\"><a href=\"mailto:loans@clscre.com?subject={subject}\" class=\"rate-cta-btn\" "
+            f"data-product=\"{r['product']}\" data-rate=\"{r['rateMin']}-{r['rateMax']}\">Get This Rate &rarr;</a></td>"
+            "</tr>"
+        )
+
+    tbody = "<tbody id=\"rateTableBody\">\n        " + "\n        ".join(rows) + "\n      </tbody>"
+    html = rates_html_path.read_text(encoding="utf-8")
+    new_html, n = re.subn(
+        r'<tbody id="rateTableBody">.*?</tbody>', tbody, html, count=1, flags=re.DOTALL
+    )
+    if n == 0:
+        print("  [WARN] rateTableBody tbody not found in rates.html; skipped")
+        return
+    rates_html_path.write_text(new_html, encoding="utf-8")
+    print(f"  [OK] rates.html  ({len(rows)} rate rows baked into static HTML)")
+
+
 def main():
     # ── Pre-generate programmatic blog articles ───────────────────────
     generate_articles_main()
@@ -2143,6 +2214,13 @@ Sitemap: {BASE_URL}/sitemap-index.xml
 """
     (WEBSITE_DIR / "robots.txt").write_text(robots, encoding="utf-8")
     print("  [OK] robots.txt")
+
+    # ── 12b. Server-render rates.html table rows (AEO) ────────────────
+    # Non-JS crawlers (GPTBot, PerplexityBot) never see the rate table
+    # because it's populated client-side from tools/rates-data.json; this
+    # bakes the same rows into the static tbody. The page JS re-renders
+    # over them once loaded, so the interactive filters are unaffected.
+    render_rates_table()
 
     # ── 13. Asset version stamping (cache-busting) ────────────────────
     # Runs LAST so every page written above (and every page written by

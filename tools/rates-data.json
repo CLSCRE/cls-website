@@ -19,7 +19,7 @@
     "rateMax": 8.25,
     "termMonths": 120,
     "ltvMax": 75,
-    "amort": "25–30 Year",
+    "amort": "25-30 Year",
     "minLoan": 1000000,
     "maxLoan": 100000000,
     "prepay": "Step-Down or Yield Maintenance",
@@ -101,7 +101,7 @@
     "minLoan": 2000000,
     "maxLoan": 100000000,
     "prepay": "10-Year Lockout",
-    "notes": "Non-recourse. Best long-term rates available. 6–12 month processing."
+    "notes": "Non-recourse. Best long-term rates available. 6-12 month processing."
   },
   {
     "product": "Life Company",
@@ -110,7 +110,7 @@
     "rateMax": 6.50,
     "termMonths": 120,
     "ltvMax": 65,
-    "amort": "25–30 Year",
+    "amort": "25-30 Year",
     "minLoan": 5000000,
     "maxLoan": 200000000,
     "prepay": "Yield Maintenance",
@@ -123,7 +123,7 @@
     "rateMax": 7.50,
     "termMonths": 120,
     "ltvMax": 70,
-    "amort": "25–30 Year",
+    "amort": "25-30 Year",
     "minLoan": 1000000,
     "maxLoan": 50000000,
     "prepay": "Step-Down",
@@ -140,7 +140,7 @@
     "minLoan": 500000,
     "maxLoan": 20000000,
     "prepay": "None",
-    "notes": "Asset-based lending. Fast close 7–14 days. Credit-flexible."
+    "notes": "Asset-based lending. Fast close 7-14 days. Credit-flexible."
   },
   {
     "product": "Mezzanine",
@@ -153,6 +153,6 @@
     "minLoan": 2000000,
     "maxLoan": 50000000,
     "prepay": "Negotiated",
-    "notes": "Subordinate to first mortgage. Typically combined with senior debt for total leverage 80–90% LTC."
+    "notes": "Subordinate to first mortgage. Typically combined with senior debt for total leverage 80-90% LTC."
   }
 ]
