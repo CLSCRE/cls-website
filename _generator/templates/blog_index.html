@@ -16,6 +16,9 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://clscre.com/blog/"}{% if active_category %},{"@type":"ListItem","position":3,"name":"{{ active_category }}","item":"https://clscre.com/blog/category/{{ active_category_slug }}.html"}{% endif %}]}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"CLS CRE Insights — Latest Articles","itemListOrder":"https://schema.org/ItemListOrderDescending","numberOfItems":{{ articles|length }},"itemListElement":[{% for article in articles %}{"@type":"ListItem","position":{{ loop.index }},"url":"https://clscre.com/blog/{{ article.slug }}.html","name":{{ article.title|tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
 {% endblock %}
 
 {% block content %}
