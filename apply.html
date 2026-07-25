@@ -530,8 +530,11 @@
           <select id="loan_type" required>
             <option value="">Select loan type...</option>
             <option value="Permanent">Permanent</option>
+            <option value="Life Company">Life Company</option>
             <option value="Bridge">Bridge</option>
             <option value="Construction">Construction</option>
+            <option value="CMBS">CMBS</option>
+            <option value="Agency (Fannie/Freddie)">Agency (Fannie/Freddie)</option>
             <option value="SBA 504">SBA 504</option>
             <option value="SBA 7(a)">SBA 7(a)</option>
             <option value="Mezzanine">Mezzanine</option>
@@ -1356,6 +1359,48 @@ document.querySelectorAll('.wiz-field input, .wiz-field select, .wiz-field texta
   el.addEventListener('blur', scheduleDraftSave);
 });
 setTimeout(restoreDraft, 0);
+
+/* URL preselect: apply.html?program=life-company (and friends). Runs after draft restore so draft wins if present. */
+(function preselectProgramFromQuery(){
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var raw = (params.get('program') || params.get('loan_type') || params.get('loanType') || '').toLowerCase().trim();
+    if (!raw) return;
+    var map = {
+      'life-company': 'Life Company',
+      'life_company': 'Life Company',
+      'lifeco': 'Life Company',
+      'life': 'Life Company',
+      'permanent': 'Permanent',
+      'bridge': 'Bridge',
+      'construction': 'Construction',
+      'cmbs': 'CMBS',
+      'agency': 'Agency (Fannie/Freddie)',
+      'fannie': 'Agency (Fannie/Freddie)',
+      'freddie': 'Agency (Fannie/Freddie)',
+      'sba': 'SBA 504',
+      'sba-504': 'SBA 504',
+      'sba-7a': 'SBA 7(a)',
+      'mezz': 'Mezzanine',
+      'mezzanine': 'Mezzanine',
+      'pref': 'Preferred Equity',
+      'preferred-equity': 'Preferred Equity'
+    };
+    var target = map[raw] || null;
+    if (!target) return;
+    var sel = document.getElementById('loan_type');
+    if (!sel) return;
+    // Don't override a restored draft value
+    if (sel.value) return;
+    for (var i = 0; i < sel.options.length; i++) {
+      if (sel.options[i].value === target) {
+        sel.value = target;
+        sel.dispatchEvent(new Event('change', { bubbles: true }));
+        break;
+      }
+    }
+  } catch (e) {}
+})();
 
 /* --- Nav / scroll --- */
 const nav = document.getElementById('nav');
