@@ -41,8 +41,38 @@
     "name": "Construction Loans",
     "short_name": "Construction",
     "headline": "Ground-Up Construction & Renovation Financing",
-    "description": "Construction loans fund ground-up development and major renovation projects for commercial real estate. These short-term facilities typically feature 12 to 36-month terms with interest-only payments during the build period, funded through progressive draws as construction milestones are met. Lenders include banks, debt funds, and specialized construction lenders.",
+    "description": "Commercial construction loans offer 6.50% to 10.00% rates from banks for experienced sponsors, 9.00% to 14.00% from debt funds and private lenders for speculative or complex projects, and up to 85% loan-to-cost with 12 to 36 month interest-only terms funded through progressive draws. Lender selection drives pricing more than any other loan type: the same project can price 300 basis points apart depending on whether it fits a bank credit box or requires private capital.",
     "description_extended": "Construction financing is inherently higher risk than permanent lending, which means lender selection and deal structuring are critical. Experienced borrowers with strong track records can access competitive bank construction loans, while more complex or speculative projects may require debt fund capital. Key considerations include loan-to-cost ratios, interest reserves, completion guarantees, and the exit strategy, whether that's a permanent loan take-out, sale, or refinance.",
+    "rate_tiers_intro": "Construction loan pricing spans a wider range than any other commercial loan type because it depends on which lender tier a project qualifies for. Banks offer the lowest rates but the tightest credit box; debt funds and private lenders price higher in exchange for speed, leverage, and flexibility on speculative or complex deals.",
+    "rate_tiers": [
+      {
+        "lender_type": "Banks and Credit Unions",
+        "rates": "6.50% to 10.00%",
+        "leverage": "65 to 75% LTC",
+        "best_fit": "Experienced sponsors, pre-leased or de-risked projects, full recourse typical",
+        "link": "financing/construction-to-perm-loans.html"
+      },
+      {
+        "lender_type": "Agency and HUD-Backed (Multifamily)",
+        "rates": "6.50% to 11.00%",
+        "leverage": "Up to 85% LTC",
+        "best_fit": "Ground-up apartments, affordable housing, construction-to-perm executions",
+        "link": "financing/multifamily-construction-loans.html"
+      },
+      {
+        "lender_type": "Debt Funds",
+        "rates": "8.00% to 12.00%",
+        "leverage": "75 to 85% LTC",
+        "best_fit": "Value-add and spec projects, sponsors needing speed or higher leverage, non-recourse available"
+      },
+      {
+        "lender_type": "Private and Hard Money Lenders",
+        "rates": "9.00% to 14.00%",
+        "leverage": "65 to 75% LTC",
+        "best_fit": "Land and entitlement-stage deals, credit-story sponsors, fastest close",
+        "link": "financing/hard-money-loans.html"
+      }
+    ],
     "key_features": {
       "loan_amount": "$1M - $100M+",
       "term": "12 - 36 Months",

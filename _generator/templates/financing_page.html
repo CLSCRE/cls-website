@@ -54,8 +54,41 @@
 </div>
 </section>
 
-<!-- DESCRIPTION -->
+{% if loan.rate_tiers %}
+<!-- RATE TIERS BY LENDER TYPE -->
 <section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">Rates by Lender Type</div>
+  <h2 class="section-title reveal">{{ loan.name.rstrip('s') }} Rates by Lender Type</h2>
+  {% if loan.rate_tiers_intro %}<p class="reveal">{{ loan.rate_tiers_intro }}</p>{% endif %}
+  <div class="reveal" style="overflow-x:auto;margin-top:24px">
+    <table style="width:100%;border-collapse:collapse;font-size:15px;min-width:640px">
+      <thead>
+        <tr style="background:var(--navy);color:#fff;text-align:left">
+          <th style="padding:14px 16px;font-weight:600">Lender Type</th>
+          <th style="padding:14px 16px;font-weight:600">Rate Range</th>
+          <th style="padding:14px 16px;font-weight:600">Typical Leverage</th>
+          <th style="padding:14px 16px;font-weight:600">Best Fit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for tier in loan.rate_tiers %}
+        <tr style="border-bottom:1px solid var(--gray-200){% if loop.index is even %};background:var(--gray-50, #F9FAFB){% endif %}">
+          <td style="padding:14px 16px;font-weight:600">{% if tier.link %}<a href="{{ depth }}{{ tier.link }}">{{ tier.lender_type }}</a>{% else %}{{ tier.lender_type }}{% endif %}</td>
+          <td style="padding:14px 16px;white-space:nowrap">{{ tier.rates }}</td>
+          <td style="padding:14px 16px">{{ tier.leverage }}</td>
+          <td style="padding:14px 16px">{{ tier.best_fit }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+{% endif %}
+
+<!-- DESCRIPTION -->
+<section class="content-section{% if not loan.rate_tiers %} alt{% endif %}">
 <div class="section-inner">
   <div class="section-label reveal">Overview</div>
   <h2 class="section-title reveal">{{ loan.headline }}</h2>
