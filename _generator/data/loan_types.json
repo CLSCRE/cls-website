@@ -77,7 +77,7 @@
     "name": "Bridge Loans",
     "short_name": "Bridge",
     "headline": "Short-Term Bridge Financing for Transitional Assets",
-    "description": "Bridge loans provide short-term financing for commercial properties in transition, whether during lease-up, renovation, repositioning, or acquisition. These 6 to 36-month facilities offer speed and flexibility that traditional lenders cannot match, making them ideal for time-sensitive opportunities and value-add strategies.",
+    "description": "Bridge loans offer 6.79% to 13.04% rates, up to 75% LTV, and 6 to 36 month interest-only terms for commercial properties in transition, whether during lease-up, renovation, repositioning, or acquisition. These facilities offer speed and flexibility that traditional lenders cannot match, making them ideal for time-sensitive opportunities and value-add strategies.",
     "description_extended": "Bridge lending fills the gap between acquisition or current state and permanent financing eligibility. Common use cases include acquiring a property that doesn't yet qualify for permanent debt, funding tenant improvements and lease-up, providing time for entitlement and permitting, or bridging to a construction loan start. Sources include debt funds, private lenders, and select banks willing to provide transitional capital.",
     "key_features": {
       "loan_amount": "$1M - $100M+",
@@ -112,7 +112,7 @@
     "name": "SBA Loans",
     "short_name": "SBA",
     "headline": "SBA 504 & 7(a) Loans for Owner-Occupied Properties",
-    "description": "SBA loans offer below-market rates and high leverage for qualifying owner-occupied commercial properties. The SBA 504 program provides up to 90% financing with long-term fixed rates, while the 7(a) program offers flexible terms for business acquisitions, expansions, and working capital. These programs are specifically designed for small businesses that occupy at least 51% of the property.",
+    "description": "SBA loans offer 5.54% to 8.25% rates and up to 90% financing (as little as 10% down) for qualifying owner-occupied commercial properties. The SBA 504 program provides long-term fixed rates via a two-loan bank/CDC structure, while the 7(a) program offers flexible terms for business acquisitions, expansions, and working capital. These programs are specifically designed for small businesses that occupy at least 51% of the property.",
     "description_extended": "The U.S. Small Business Administration partners with banks and Certified Development Companies (CDCs) to provide guaranteed lending programs that reduce risk for lenders and increase access to capital for small business owners. The 504 program features a unique two-loan structure: a first mortgage from a bank (50% LTV) and a second position CDC/SBA loan (40% LTV), with only 10% borrower equity required. The 7(a) program provides a single-source loan with an SBA guarantee up to 85%.",
     "key_features": {
       "loan_amount": "$1M - $20M",
@@ -360,7 +360,7 @@
     "name": "Life Company Loans",
     "short_name": "Life Company",
     "headline": "Life Insurance Company Commercial Real Estate Financing",
-    "description": "Life insurance company loans deliver the most competitive rates available in commercial real estate for institutional-quality stabilized assets. Life companies prioritize long-term matched-asset investments, so they reward borrowers with premium properties, strong sponsors, and conservative leverage by offering the tightest spreads over treasuries in the market.",
+    "description": "Life insurance company loans offer 5.00% to 6.50% fixed rates, up to 65% LTV, and 7 to 25 year non-recourse terms for institutional-quality stabilized commercial real estate, the most competitive pricing available in the market. Life companies prioritize long-term matched-asset investments, rewarding borrowers with premium properties, strong sponsors, and conservative leverage with the tightest spreads over treasuries.",
     "description_extended": "Life insurance companies fund commercial mortgages directly from their general accounts, which means they can offer fixed-rate terms up to 25 years (and occasionally 30 years), prepayment flexibility other capital sources cannot, and non-recourse structures with minimal carve-outs. The tradeoff is more conservative underwriting: life companies typically cap leverage at 60 to 70% and focus on institutional-quality assets in primary and strong secondary markets. Commercial Lending Solutions has direct allocation relationships with the largest life company lenders and knows which desks have open appetite at any given moment.",
     "key_features": {
       "loan_amount": "$3M to $100M+",
