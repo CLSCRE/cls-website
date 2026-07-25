@@ -18,6 +18,11 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
 </script>
 {% endif %}
+{% if article.howto %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","name":"{{ article.howto.name }}","description":"{{ article.howto.description }}","step":[{% for s in article.howto.steps %}{"@type":"HowToStep","position":{{ loop.index }},"name":"{{ s.name }}","text":"{{ s.text }}"}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+{% endif %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://clscre.com/blog/"},{"@type":"ListItem","position":3,"name":"{{ article.title }}","item":"https://clscre.com/blog/{{ article.slug }}.html"}]}
 </script>
