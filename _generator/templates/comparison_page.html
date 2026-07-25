@@ -31,7 +31,10 @@
   <div class="section-label reveal">CRE Capital Source Comparison</div>
   <h1 class="reveal">{{ cmp.h1 }}</h1>
   <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:16px">By Trevor Damyan, Commercial Mortgage Broker at Commercial Lending Solutions</p>
-  <p class="reveal comparison-lead" style="font-size:18px;line-height:1.6;color:var(--gray-700);max-width:880px">{{ cmp.lead }}</p>
+  <div class="page-tldr reveal comparison-lead" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 20px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0;max-width:880px">
+    <strong style="color:var(--navy)">Quick answer:</strong>
+    {{ cmp.lead }}
+  </div>
   <a href="{{ depth }}apply.html" class="btn-primary reveal">Get Quotes from Both &rarr;</a>
 </div>
 </section>

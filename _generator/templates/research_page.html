@@ -30,7 +30,10 @@
   <h1 class="reveal">{{ rp.h1 }}</h1>
   <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:8px">By Trevor Damyan, Commercial Mortgage Broker at Commercial Lending Solutions</p>
   <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:16px"><strong>Report number:</strong> {{ rp.report_number }} | <strong>Coverage period:</strong> {{ rp.coverage_period }} | <strong>Published:</strong> {{ rp.date_pretty }}</p>
-  <p class="reveal" style="font-size:18px;line-height:1.6;color:var(--gray-700);max-width:880px">{{ rp.executive_summary }}</p>
+  <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 20px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0;max-width:880px">
+    <strong style="color:var(--navy)">Quick answer:</strong>
+    {{ rp.executive_summary }}
+  </div>
   <a href="{{ depth }}apply.html" class="btn-primary reveal">Get a Quote on Your Deal &rarr;</a>
 </div>
 </section>

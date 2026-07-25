@@ -34,7 +34,10 @@
   <div class="section-label reveal">{{ sp.category_label }}</div>
   <h1 class="reveal">{{ sp.h1 }}</h1>
   <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:16px">By Trevor Damyan, Commercial Mortgage Broker at Commercial Lending Solutions</p>
-  <p class="reveal specialty-lead" style="font-size:18px;line-height:1.6;color:var(--gray-700);max-width:880px">{{ sp.lead }}</p>
+  <div class="page-tldr reveal specialty-lead" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 20px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0;max-width:880px">
+    <strong style="color:var(--navy)">Quick answer:</strong>
+    {{ sp.lead }}
+  </div>
   <a href="{{ depth }}apply.html" class="btn-primary reveal">Get a {{ sp.short_name }} Quote &rarr;</a>
 </div>
 </section>

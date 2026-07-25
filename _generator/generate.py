@@ -22,6 +22,21 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
+import time as _time
+_orig_write_text = Path.write_text
+def _write_text_with_retry(self, *args, **kwargs):
+    # OneDrive's cloud filter driver intermittently locks files mid-sync during
+    # high-volume writes, raising OSError(22) on an otherwise-valid path/handle.
+    for attempt in range(6):
+        try:
+            return _orig_write_text(self, *args, **kwargs)
+        except OSError as e:
+            if e.errno == 22 and attempt < 5:
+                _time.sleep(0.5 * (attempt + 1))
+                continue
+            raise
+Path.write_text = _write_text_with_retry
+
 from generate_articles import main as generate_articles_main, pacific_today
 import la_vertical
 import la_industrial
@@ -251,8 +266,8 @@ def build_neighborhood_faqs(city, neighborhood, city_data=None):
             "a": f"{neighborhood} features a diverse mix of commercial real estate, including multifamily apartments, industrial and warehouse space, retail centers, office buildings, mixed-use developments, and hospitality properties. Commercial Lending Solutions finances all major property types in {neighborhood} and the broader {city_name} market.{vacancy_info}",
         },
         {
-            "q": f"How do I get a commercial mortgage in {neighborhood}, {city_name}?",
-            "a": f"Contact Commercial Lending Solutions for a free, no-obligation quote on commercial financing in {neighborhood}, {city_name}, {state}. Our team will analyze your property, business plan, and financial profile to identify the best lender match from our network of 1,000+ capital sources. Most borrowers receive term sheets within 48-72 hours of submitting a complete loan request.",
+            "q": f"How do I get financing for a commercial property in {neighborhood}?",
+            "a": f"Contact Commercial Lending Solutions for a free, no-obligation quote on commercial financing for your {neighborhood} property. Our team will analyze your property, business plan, and financial profile to identify the best lender match from our network of 1,000+ capital sources. Most borrowers receive term sheets within 48-72 hours of submitting a complete loan request. For lender options across all of {city_name}, {state}, see our full {city_name} commercial mortgage guide.",
         },
         {
             "q": f"What are commercial real estate rates in {neighborhood}?",
