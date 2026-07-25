@@ -892,6 +892,22 @@ def main():
     if _specialty_data.exists():
         for _sp in json.loads(_specialty_data.read_text(encoding="utf-8")):
             if f"property/{_sp['slug']}.html" in NOINDEX_PATHS:
+                # 2026-07-25: these are static files no render loop touches,
+                # so also patch the robots meta onto disk (same pattern as the
+                # blog/ static patcher) -- a noindex_paths.json entry alone
+                # never reaches their markup, leaving them de-sitemapped but
+                # crawl-indexable (found by cls-sitemap-integrity).
+                _sp_path = WEBSITE_DIR / "property" / f"{_sp['slug']}.html"
+                if _sp_path.exists():
+                    _sp_full = _sp_path.read_text(encoding="utf-8", errors="ignore")
+                    if not re.search(r'name=["\']robots["\'][^>]*noindex', _sp_full[:6000], re.I):
+                        _sp_patched, _sp_n = re.subn(
+                            r'(<link rel="canonical")',
+                            '<meta name="robots" content="noindex,follow">\n\\1',
+                            _sp_full, count=1,
+                        )
+                        if _sp_n:
+                            _sp_path.write_text(_sp_patched, encoding="utf-8")
                 continue
             sitemap_urls.append({
                 "loc": f"{BASE_URL}/property/{_sp['slug']}.html",
