@@ -37,6 +37,84 @@
     }
   },
   {
+    "slug": "commercial-mortgage-loans",
+    "name": "Commercial Mortgage Loans",
+    "short_name": "Commercial Mortgage",
+    "headline": "Commercial Mortgage Loans from $1M to $100M+",
+    "description": "Commercial mortgage loans finance the purchase, refinance, or recapitalization of income producing commercial real estate. Commercial Lending Solutions arranges commercial mortgages from $1 million to over $100 million through 1,000+ lender relationships, spanning banks, life insurance companies, CMBS conduits, agency lenders, debt funds, and private capital. The right commercial mortgage depends on property type, hold strategy, leverage needs, and timeline, and matching a deal to the right lender is where a broker earns their fee.",
+    "description_extended": "A commercial mortgage broker adds the most value at the point of lender selection. Banks, life insurance companies, CMBS conduits, agency lenders (Fannie Mae and Freddie Mac), debt funds, and private lenders each price risk differently, and the same property can see a 200 to 300 basis point spread in quoted rates depending on which lender type is approached first. Commercial Lending Solutions runs every eligible commercial mortgage through multiple capital sources simultaneously, using our CBRE and MMCC trained underwriting background to package deals so lenders see the strongest possible story from the first submission. This hub page is the starting point for every commercial mortgage program we arrange nationwide: permanent, bridge, construction, CMBS, agency, life company, and specialty structures for multifamily, industrial, retail, office, hospitality, and mixed-use assets.",
+    "key_features": {
+      "loan_amount": "$1M - $100M+",
+      "term": "1 - 30 Years",
+      "rates": "5.00% - 13.04%",
+      "ltv": "Up to 85% LTV/LTC",
+      "structure": "Fixed, Floating, and Interest-Only Available",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": [
+      "Banks and Credit Unions",
+      "Life Insurance Companies",
+      "CMBS Conduits",
+      "Fannie Mae / Freddie Mac",
+      "Debt Funds",
+      "Private Lenders"
+    ],
+    "ideal_for": [
+      "Stabilized multifamily, industrial, retail, and office acquisitions",
+      "Refinance of maturing commercial mortgage debt",
+      "Cash-out recapitalizations and partner buyouts",
+      "Value-add and transitional properties needing bridge to permanent execution",
+      "Ground-up construction and construction-to-permanent financing",
+      "Portfolio and multi-property commercial mortgage financing"
+    ],
+    "seo": {
+      "title": "Commercial Mortgage Loans $1M-$100M+ | Commercial Lending Solutions",
+      "meta_description": "Commercial mortgage loans from $1M to $100M+ nationwide. Banks, life insurance companies, CMBS, agency, and private lenders through 1,000+ relationships. Get a free quote.",
+      "h1": "Commercial Mortgage Loans"
+    },
+    "quick_answer": "Commercial mortgage loans typically range from $1M to $100M+, with rates from 5.00% to 13.04% depending on lender type, term, and leverage. Commercial Lending Solutions sources commercial mortgages nationwide from banks, life insurance companies, CMBS conduits, agency lenders, and private capital through 1,000+ lender relationships, matching each deal to the lender best suited to the property and business plan.",
+    "quick_answer_city": "Commercial mortgage loans in {city}, {state} typically range from $1M to $100M+, with rates from 5.00% to 13.04% depending on lender type, term, and leverage. Commercial Lending Solutions sources {city} commercial mortgage financing from banks, life insurance companies, CMBS conduits, agency lenders, and private capital through 1,000+ lender relationships nationwide."
+  },
+  {
+    "slug": "multifamily-loans",
+    "name": "Multifamily Loans",
+    "short_name": "Multifamily",
+    "headline": "Multifamily and Apartment Loans from $1M to $100M+",
+    "description": "Multifamily loans finance the acquisition, refinance, and recapitalization of apartment properties from small 5 unit buildings to large institutional portfolios. Commercial Lending Solutions arranges multifamily financing from $1 million to over $100 million through agency lenders (Fannie Mae and Freddie Mac), life insurance companies, CMBS conduits, banks, and debt funds, matching leverage, rate, and recourse structure to each sponsor's hold strategy.",
+    "description_extended": "Multifamily remains the most liquid asset class in commercial real estate, which means apartment owners have more lender choice, and more pricing spread between lenders, than almost any other property type. Agency lenders (Fannie Mae DUS and Freddie Mac Optigo) offer the deepest liquidity and longest fixed-rate terms for stabilized conventional and affordable apartments, life insurance companies compete aggressively for institutional-quality assets in primary markets, CMBS provides leverage for secondary market and value-add stories that agencies pass on, and bridge and debt fund capital covers lease-up, renovation, and repositioning before permanent financing is in place. Commercial Lending Solutions structures multifamily financing across every hold stage, from acquisition bridge through stabilized permanent takeout, for conventional, affordable, workforce, student, and senior housing communities nationwide.",
+    "key_features": {
+      "loan_amount": "$1M - $100M+",
+      "term": "1 - 35 Years",
+      "rates": "5.00% - 11.50%",
+      "ltv": "Up to 85% LTV/LTC",
+      "amortization": "25 - 35 Years",
+      "recourse": "Non-Recourse Available"
+    },
+    "lender_sources": [
+      "Fannie Mae / Freddie Mac",
+      "Life Insurance Companies",
+      "CMBS Conduits",
+      "Banks and Credit Unions",
+      "Debt Funds",
+      "HUD/FHA-Approved Lenders"
+    ],
+    "ideal_for": [
+      "Stabilized conventional apartment acquisitions and refinances",
+      "Value-add multifamily renovation and repositioning",
+      "Affordable and workforce housing preservation",
+      "Ground-up apartment development and construction-to-perm execution",
+      "Student and senior housing communities",
+      "Multifamily portfolio and blanket loan financing"
+    ],
+    "seo": {
+      "title": "Multifamily Loans $1M-$100M+ | Commercial Lending Solutions",
+      "meta_description": "Multifamily and apartment loans from $1M to $100M+ nationwide. Fannie Mae, Freddie Mac, life insurance companies, CMBS, and private lenders. Get a free quote.",
+      "h1": "Multifamily Loans"
+    },
+    "quick_answer": "Multifamily loans typically range from $1M to $100M+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources multifamily and apartment financing nationwide from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds through 1,000+ lender relationships.",
+    "quick_answer_city": "Multifamily loans in {city}, {state} typically range from $1M to $100M+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources {city} multifamily and apartment financing from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds nationwide."
+  },
+  {
     "slug": "construction-loans",
     "name": "Construction Loans",
     "short_name": "Construction",
@@ -416,7 +494,7 @@
     ],
     "seo": {
       "title": "Life Insurance Company Commercial Loans | Commercial Lending Solutions",
-      "meta_description": "Life insurance company CRE loans: 5.00%\u20136.50% fixed, 10\u201325 year terms, up to 65% LTV, non-recourse, $5M\u2013$100M+. Direct correspondent access. Get a quote.",
+      "meta_description": "Life insurance company CRE loans: 5.00%–6.50% fixed, 10–25 year terms, up to 65% LTV, non-recourse, $5M–$100M+. Direct correspondent access. Get a quote.",
       "h1": "Life Insurance Company Commercial Real Estate Loans"
     },
     "quick_answer": "Life company loans range from $5M to $100M+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions submits via direct life-company correspondent relationships across 1,000+ capital sources nationwide.",
