@@ -533,7 +533,8 @@
             <option value="Life Company">Life Company</option>
             <option value="Bridge">Bridge</option>
             <option value="Construction">Construction</option>
-            <option value="CMBS">CMBS</option>
+                        <option value="ED1 / Affordable Construction (LA)">ED1 / Affordable Construction (LA)</option>
+                        <option value="CMBS">CMBS</option>
             <option value="Agency (Fannie/Freddie)">Agency (Fannie/Freddie)</option>
             <option value="SBA 504">SBA 504</option>
             <option value="SBA 7(a)">SBA 7(a)</option>
@@ -1368,24 +1369,28 @@ setTimeout(restoreDraft, 0);
     if (!raw) return;
     var map = {
       'life-company': 'Life Company',
-      'life_company': 'Life Company',
-      'lifeco': 'Life Company',
-      'life': 'Life Company',
-      'permanent': 'Permanent',
-      'bridge': 'Bridge',
-      'construction': 'Construction',
-      'cmbs': 'CMBS',
-      'agency': 'Agency (Fannie/Freddie)',
-      'fannie': 'Agency (Fannie/Freddie)',
-      'freddie': 'Agency (Fannie/Freddie)',
-      'sba': 'SBA 504',
-      'sba-504': 'SBA 504',
-      'sba-7a': 'SBA 7(a)',
-      'mezz': 'Mezzanine',
-      'mezzanine': 'Mezzanine',
-      'pref': 'Preferred Equity',
-      'preferred-equity': 'Preferred Equity'
-    };
+            'life_company': 'Life Company',
+            'lifeco': 'Life Company',
+            'life': 'Life Company',
+            'permanent': 'Permanent',
+            'bridge': 'Bridge',
+            'construction': 'Construction',
+            'ed1': 'ED1 / Affordable Construction (LA)',
+            'ed1-construction': 'ED1 / Affordable Construction (LA)',
+            'edi': 'ED1 / Affordable Construction (LA)',
+            'affordable-construction': 'ED1 / Affordable Construction (LA)',
+            'cmbs': 'CMBS',
+            'agency': 'Agency (Fannie/Freddie)',
+            'fannie': 'Agency (Fannie/Freddie)',
+            'freddie': 'Agency (Fannie/Freddie)',
+            'sba': 'SBA 504',
+            'sba-504': 'SBA 504',
+            'sba-7a': 'SBA 7(a)',
+            'mezz': 'Mezzanine',
+            'mezzanine': 'Mezzanine',
+            'pref': 'Preferred Equity',
+            'preferred-equity': 'Preferred Equity'
+          };
     var target = map[raw] || null;
     if (!target) return;
     var sel = document.getElementById('loan_type');

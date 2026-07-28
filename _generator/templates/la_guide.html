@@ -64,6 +64,21 @@
   <p class="reveal" style="font-size:15px;line-height:1.75;color:var(--gray-700)">{{ para }}</p>
   {% endfor %}
   {% endfor %}
+
+  {% if guide.slug == 'ed1-affordable-construction-financing-la' %}
+  <div class="reveal" style="margin-top:28px;padding:18px 20px;border:1px solid var(--gray-200);border-radius:12px;background:#f8fafc">
+    <div class="section-label" style="margin-bottom:8px">Primary financing desk</div>
+    <p style="font-size:15px;line-height:1.7;color:var(--gray-700);margin:0 0 10px">Arrange ED1 construction debt through our apply flow (tracked as affordable construction).</p>
+    <p style="font-size:14px;line-height:1.65;color:var(--gray-600);margin:0">
+      Related money paths:
+      <a href="{{ depth }}financing/acquisition-bridge-loans.html">Acquisition bridge</a> ·
+      <a href="{{ depth }}financing/bridge-loans.html">Bridge overview</a> ·
+      <a href="{{ depth }}financing/construction-loans.html">National construction loans</a> ·
+      <a href="{{ depth }}blog/edi-ed1-ground-up-affordable-financing-los-angeles-2026.html">EDI/ED1 explainer</a> ·
+      <a href="{{ depth }}tools/edi-eligibility-check.html">EDI eligibility check</a>
+    </p>
+  </div>
+  {% endif %}
 </div>
 </section>
 
@@ -96,5 +111,10 @@
 <!-- CTA -->
 {% set cta_title = 'Talk to a Broker Who Lives These Rules' %}
 {% set cta_description = 'Commercial Lending Solutions is headquartered in Los Angeles. We structure deals around ULA, RSO, retrofit, and entitlement realities every week. Free deal review, response within 24 hours.' %}
+{% if guide.apply_program is defined and guide.apply_program %}
+{% set cta_href = depth ~ 'apply.html?program=' ~ guide.apply_program %}
+{% else %}
+{% set cta_href = depth ~ 'apply.html' %}
+{% endif %}
 {% include '_contact_cta.html' %}
 {% endblock %}
