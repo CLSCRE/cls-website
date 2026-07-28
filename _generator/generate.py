@@ -1834,8 +1834,17 @@ def main():
 
     # Guides + personas: /los-angeles/{slug}.html
     tpl_la_guide = env.get_template("la_guide.html")
+    _la_by_slug = {a["slug"]: a for a in la_articles}
     for article in la_articles:
-        related = [a for a in la_articles if a["slug"] != article["slug"]][:3]
+        # Prefer per-guide related_slugs (ED1 money URL, etc.); else first 3 peers.
+        related = []
+        for s in article.get("related_slugs") or []:
+            if s in _la_by_slug and s != article["slug"]:
+                related.append(_la_by_slug[s])
+        if not related:
+            related = [a for a in la_articles if a["slug"] != article["slug"]][:3]
+        else:
+            related = related[:6]
         html = tpl_la_guide.render(
             **shared,
             guide=article,

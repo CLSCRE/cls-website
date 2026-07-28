@@ -2,7 +2,7 @@
 <div class="section-inner" style="position:relative;z-index:1">
   <h2>{{ cta_title|default('Get a Free Quote') }}</h2>
   <p>{{ cta_description|default('Tell us about your deal. We respond within 24 hours with financing options tailored to your property and goals.') }}</p>
-  <a href="{{ depth }}apply.html" class="btn-primary">Apply for Financing &rarr;</a>
+  <a href="{{ cta_href|default(depth ~ 'apply.html') }}" class="btn-primary">Apply for Financing &rarr;</a>
   <div style="margin-top:20px">
     <a href="tel:+13107080690" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:14px">Call: 310.708.0690</a>
   </div>
