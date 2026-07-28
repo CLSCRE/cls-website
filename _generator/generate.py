@@ -205,6 +205,33 @@ def _slug_rate_text(slug):
     return f"{low} to {high}"
 
 
+def _loan_hub_link_html(loan, depth="../"):
+    """Inline anchor to a loan type's national hub page, used inside FAQ answers.
+    Uses single-quoted HTML attributes so it can sit inside a double-quoted
+    JSON-LD string without breaking the schema block."""
+    if not loan:
+        return ""
+    name = loan["name"]
+    slug = loan["slug"]
+    if slug == "life-company-loans":
+        return (
+            f"<a href='{depth}financing/life-company-loans.html'>{name} national overview</a> "
+            f"(see also <a href='{depth}financing/life-company-loan-rates.html'>current rates</a> "
+            f"and <a href='{depth}financing/how-to-qualify-for-life-company-loans.html'>how to qualify</a>)"
+        )
+    return f"<a href='{depth}financing/{slug}.html'>our national {name} guide</a>"
+
+
+def _loan_type_question(name):
+    """Natural 'What is/are {name}?' question, avoiding awkward plurals like
+    'What are Mezzanine & Preferred Equity?' or 'What are Specialty Financing?'.
+    Loan names ending in the plural noun 'Loans' read naturally with 'are';
+    everything else (Financing, Preferred Equity, Mezzanine & Preferred Equity,
+    etc.) reads naturally with 'is'."""
+    verb = "are" if name.endswith("Loans") else "is"
+    return f"What {verb} {name}?"
+
+
 def build_city_faqs(templates, loan=None, prop=None, city=None):
     """Build city-specific FAQs from templates with variable substitution."""
     key = "financing" if loan else "property"
@@ -217,11 +244,18 @@ def build_city_faqs(templates, loan=None, prop=None, city=None):
             "{city}": city["city"] if city else "",
             "{metro}": city["metro"] if city else "",
             "{loan_type}": loan["name"].lower() if loan else "",
+            "{loan_type_cap}": loan["name"] if loan else "",
+            "{loan_hub_link}": _loan_hub_link_html(loan) if loan else "",
             "{property_type}": prop["name"].lower() if prop else "",
             "{rate_low}": _loan_rate_range(loan)[0],
             "{rate_high}": _loan_rate_range(loan)[1],
             "{context_snippet}": (city.get("context", "")[:120] + "...") if city else "",
         }
+        # The "What are {loan_type}?" template needs proper is/are grammar
+        # per loan type name (fixes "What are Mezzanine?" / "What are
+        # Specialty?" reading wrong), swap it before the generic substitution.
+        if loan and q == "What are {loan_type}?":
+            q = _loan_type_question(loan["name"])
         for k, v in replacements.items():
             q = q.replace(k, v)
             a = a.replace(k, v)

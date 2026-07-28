@@ -576,6 +576,10 @@
   "city_templates": {
     "financing": [
       {
+        "q": "What are {loan_type}?",
+        "a": "{loan_type_cap} in {city} are sourced by Commercial Lending Solutions through {loan_hub_link}, a network of 1,000+ capital sources nationwide, matched to {metro} market conditions and local property fundamentals."
+      },
+      {
         "q": "What are the best commercial lenders in {city}?",
         "a": "The best commercial lenders in {city} depend on your property type and loan needs. CLS CRE works with 1,000+ banks, life insurance companies, debt funds, CMBS conduits, and agency lenders to find the most competitive {loan_type} financing for your {city} property. Contact us for a customized lender recommendation."
       },

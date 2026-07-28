@@ -8,7 +8,7 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":"{{ faq.q }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"{{ loan.name }}","item":"https://clscre.com/financing/{{ loan.slug }}.html"},{"@type":"ListItem","position":3,"name":"{{ city.city }}","item":"https://clscre.com/financing/{{ loan.slug }}-{{ city.slug }}.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Financing","item":"https://clscre.com/#financing"},{"@type":"ListItem","position":3,"name":"{{ loan.name }}","item":"https://clscre.com/financing/{{ loan.slug }}.html"},{"@type":"ListItem","position":4,"name":"{{ city.city }}","item":"https://clscre.com/financing/{{ loan.slug }}-{{ city.slug }}.html"}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LoanOrCredit","name":"{{ loan.name }} in {{ city.city }}, {{ city.state }}","description":"{{ seo.meta_description }}","loanType":"{{ loan.short_name }}","provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com","telephone":"+13107080690","email":"loans@clscre.com"},"url":"https://clscre.com/financing/{{ loan.slug }}-{{ city.slug }}.html","interestRate":{"@type":"QuantitativeValue","value":"{{ loan.key_features.rates }}"},"loanTerm":{"@type":"QuantitativeValue","value":"{{ loan.key_features.term }}"},"amount":{"@type":"MonetaryAmount","currency":"USD","minValue":{{ loan.min_amount_usd | default(1000000) }},"value":"{{ loan.key_features.loan_amount }}"},"areaServed":{"@type":"City","name":"{{ city.city }}","containedInPlace":{"@type":"State","name":"{{ city.state }}"}}}
@@ -26,6 +26,7 @@
 <nav class="breadcrumbs" aria-label="Breadcrumb">
 <ol>
   <li><a href="{{ depth }}index.html">Home</a></li>
+  <li><span>Financing</span></li>
   <li><a href="{{ depth }}financing/{{ loan.slug }}.html">{{ loan.name }}</a></li>
   <li><span>{{ city.city }}, {{ city.state }}</span></li>
 </ol>
@@ -47,11 +48,14 @@
     <strong style="color:var(--navy)">Quick answer:</strong>
     {% if loan.quick_answer_city %}{{ loan.quick_answer_city | replace('{city}', city.city) | replace('{state}', city.state) }}{% else %}{{ loan.name }} in {{ city.city }}, {{ city.state }} range from {{ loan.key_features.loan_amount }} at {{ loan.key_features.rates }}, with terms of {{ loan.key_features.term|lower }}. Best for {{ loan.ideal_for[0]|lower }}. Commercial Lending Solutions sources {{ loan.short_name }} financing for {{ city.city }} commercial properties from {{ loan.lender_sources[:3]|join(', ') }}, and 1,000+ other capital sources nationwide.{% endif %}
   </div>
-  {% if loan.slug == 'life-company-loans' %}
+  {% set tier0_hub_slugs = ['bridge-loans', 'construction-loans', 'dscr-loans', 'cmbs-loans', 'life-company-loans', 'commercial-mortgage-loans', 'multifamily-loans'] %}
+  {% if loan.slug in tier0_hub_slugs %}
   <p class="reveal" style="font-size:14px;margin:0 0 16px">
-    <a href="{{ depth }}financing/life-company-loans.html" style="color:var(--green);font-weight:600">Life company loans overview</a> ·
-    <a href="{{ depth }}financing/life-company-loan-rates.html" style="color:var(--green);font-weight:600">Current rates</a> ·
-    <a href="{{ depth }}financing/how-to-qualify-for-life-company-loans.html" style="color:var(--green);font-weight:600">How to qualify</a>
+    <a href="{{ depth }}financing/{{ loan.slug }}.html" style="color:var(--green);font-weight:600">{{ loan.name }} national overview</a>
+    {% if loan.slug == 'life-company-loans' %}
+    · <a href="{{ depth }}financing/life-company-loan-rates.html" style="color:var(--green);font-weight:600">Current rates</a>
+    · <a href="{{ depth }}financing/how-to-qualify-for-life-company-loans.html" style="color:var(--green);font-weight:600">How to qualify</a>
+    {% endif %}
   </p>
   {% endif %}
   <p class="reveal">{{ city.context }}</p>

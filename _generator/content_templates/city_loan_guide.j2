@@ -85,6 +85,12 @@
 {% endfor %}
 {% endif %}
 
+{% set tier0_hub_slugs = ['bridge-loans', 'construction-loans', 'dscr-loans', 'cmbs-loans', 'life-company-loans'] %}
+{% if loan.slug in tier0_hub_slugs %}
+<h2>Looking for {{ loan.name }} Nationally, Not Just {{ city.city }}?</h2>
+<p>This guide covers {{ loan.name.lower() }} specifically for the {{ city.city }} market. If you're comparing programs, terms, or lenders across the country, start with our <a href="../financing/{{ loan.slug }}.html">{{ loan.name }} national overview</a>{% if loan.slug == 'life-company-loans' %}, our <a href="../financing/life-company-loan-rates.html">current life company rates</a>, and <a href="../financing/how-to-qualify-for-life-company-loans.html">how to qualify for life company loans</a>{% endif %} for the full national picture, then come back here for {{ city.city }}-specific detail.</p>
+{% endif %}
+
 <h2>Get a {{ loan.short_name }} Loan Quote for {{ city.city }}</h2>
 <p>CLS CRE provides {{ loan.name.lower() }} throughout the {{ city.metro }} metro area, with access to 1,000+ lenders competing for your deal. Our market expertise in {{ city.city }} commercial real estate helps you navigate the lending landscape and secure the most competitive terms available.</p>
 <p>Related resources:</p>

@@ -130,10 +130,24 @@
 </div>
 </section>
 
-<!-- FINANCING PROGRAMS -->
+<!-- COMMERCIAL MORTGAGE, single preferred URL for the top-level city query -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Start Here</div>
+  <h2 class="section-title reveal">Commercial Mortgage in {{ city.city }}</h2>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Looking for a commercial mortgage broker in {{ city.city }}? Start with our dedicated {{ city.city }} commercial mortgage page for rates, terms, and lender types, then use the full program directory below for a specific loan program.</p>
+  <a href="{{ depth }}financing/commercial-mortgage-loans-{{ city.slug }}.html" class="cross-link-card reveal" style="border-color:var(--green);max-width:420px">
+    <div class="cl-title">Commercial Mortgage Loans in {{ city.city }}</div>
+    <div class="cl-sub">Rates, terms, and lender types for {{ city.city }}, {{ city.state }}</div>
+  </a>
+</div>
+</section>
+
+<!-- FINANCING PROGRAMS, full program-by-program directory -->
 <section class="cross-links">
 <div class="section-inner">
-  <h2 class="reveal">Financing Programs in {{ city.city }}</h2>
+  <h2 class="reveal">Every Financing Program in {{ city.city }}</h2>
+  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Comparing a specific program? Browse the full {{ city.city }} directory below.</p>
   <div class="cross-link-grid">
     {% for lt in all_loan_types %}
     <a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
