@@ -7,7 +7,7 @@
     "description": "Permanent loans provide long-term, fixed-rate financing for stabilized commercial real estate assets. These loans typically feature 5 to 25-year terms with competitive rates from banks, life insurance companies, CMBS conduits, and agency lenders. Ideal for cash-flowing properties with stable occupancy, permanent financing locks in predictable debt service and maximizes long-term returns.",
     "description_extended": "As the most common form of commercial real estate financing, permanent loans serve as the backbone of investment strategy for owners seeking to hold and operate income-producing properties. Sources include traditional banks, credit unions, life insurance companies, CMBS lenders, and government-sponsored agencies like Fannie Mae and Freddie Mac for multifamily assets. Each source offers different advantages in terms of rate, leverage, flexibility, and prepayment structure.",
     "key_features": {
-      "loan_amount": "$1M - $100M+",
+      "loan_amount": "$2MM - $100MM+",
       "term": "5 - 25 Years",
       "rates": "5.34% - 8.25%",
       "ltv": "Up to 75% LTV",
@@ -32,19 +32,22 @@
     ],
     "seo": {
       "title": "Permanent Commercial Loans | Commercial Lending Solutions",
-      "meta_description": "Long-term permanent commercial mortgage financing from $1M to $100M+. Competitive rates from banks, life insurance companies, CMBS, and agency lenders. Get a quote today.",
+      "meta_description": "Long-term permanent commercial mortgage financing from $2MM to $100MM+. Competitive rates from banks, life insurance companies, CMBS, and agency lenders. Get a quote today.",
       "h1": "Permanent Commercial Real Estate Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=permanent"
   },
   {
     "slug": "commercial-mortgage-loans",
     "name": "Commercial Mortgage Loans",
     "short_name": "Commercial Mortgage",
-    "headline": "Commercial Mortgage Loans from $1M to $100M+",
-    "description": "Commercial mortgage loans finance the purchase, refinance, or recapitalization of income producing commercial real estate. Commercial Lending Solutions arranges commercial mortgages from $1 million to over $100 million through 1,000+ lender relationships, spanning banks, life insurance companies, CMBS conduits, agency lenders, debt funds, and private capital. The right commercial mortgage depends on property type, hold strategy, leverage needs, and timeline, and matching a deal to the right lender is where a broker earns their fee.",
+    "headline": "Commercial Mortgage Loans from $2MM to $100MM+",
+    "description": "Commercial mortgage loans finance the purchase, refinance, or recapitalization of income producing commercial real estate. Commercial Lending Solutions arranges commercial mortgages from $2 million to over $100 million through 1,000+ lender relationships, spanning banks, life insurance companies, CMBS conduits, agency lenders, debt funds, and private capital. The right commercial mortgage depends on property type, hold strategy, leverage needs, and timeline, and matching a deal to the right lender is where a broker earns their fee.",
     "description_extended": "A commercial mortgage broker adds the most value at the point of lender selection. Banks, life insurance companies, CMBS conduits, agency lenders (Fannie Mae and Freddie Mac), debt funds, and private lenders each price risk differently, and the same property can see a 200 to 300 basis point spread in quoted rates depending on which lender type is approached first. Commercial Lending Solutions runs every eligible commercial mortgage through multiple capital sources simultaneously, using our CBRE and MMCC trained underwriting background to package deals so lenders see the strongest possible story from the first submission. This hub page is the starting point for every commercial mortgage program we arrange nationwide: permanent, bridge, construction, CMBS, agency, life company, and specialty structures for multifamily, industrial, retail, office, hospitality, and mixed-use assets.",
     "key_features": {
-      "loan_amount": "$1M - $100M+",
+      "loan_amount": "$2MM - $100MM+",
       "term": "1 - 30 Years",
       "rates": "5.00% - 13.04%",
       "ltv": "Up to 85% LTV/LTC",
@@ -68,22 +71,25 @@
       "Portfolio and multi-property commercial mortgage financing"
     ],
     "seo": {
-      "title": "Commercial Mortgage Loans $1M-$100M+ | Commercial Lending Solutions",
-      "meta_description": "Commercial mortgage loans from $1M to $100M+ nationwide. Banks, life insurance companies, CMBS, agency, and private lenders through 1,000+ relationships. Get a free quote.",
+      "title": "Commercial Mortgage Loans $2MM-$100MM+ | Commercial Lending Solutions",
+      "meta_description": "Commercial mortgage loans from $2MM to $100MM+ nationwide. Banks, life insurance companies, CMBS, agency, and private lenders through 1,000+ relationships. Get a free quote.",
       "h1": "Commercial Mortgage Loans"
     },
-    "quick_answer": "Commercial mortgage loans typically range from $1M to $100M+, with rates from 5.00% to 13.04% depending on lender type, term, and leverage. Commercial Lending Solutions sources commercial mortgages nationwide from banks, life insurance companies, CMBS conduits, agency lenders, and private capital through 1,000+ lender relationships, matching each deal to the lender best suited to the property and business plan.",
-    "quick_answer_city": "Commercial mortgage loans in {city}, {state} typically range from $1M to $100M+, with rates from 5.00% to 13.04% depending on lender type, term, and leverage. Commercial Lending Solutions sources {city} commercial mortgage financing from banks, life insurance companies, CMBS conduits, agency lenders, and private capital through 1,000+ lender relationships nationwide."
+    "quick_answer": "Commercial mortgage loans typically range from $2MM to $100MM+, with rates from 5.00% to 13.04% depending on lender type, term, and leverage. Commercial Lending Solutions sources commercial mortgages nationwide from banks, life insurance companies, CMBS conduits, agency lenders, and private capital through 1,000+ lender relationships, matching each deal to the lender best suited to the property and business plan.",
+    "quick_answer_city": "Commercial mortgage loans in {city}, {state} typically range from $2MM to $100MM+, with rates from 5.00% to 13.04% depending on lender type, term, and leverage. Commercial Lending Solutions sources {city} commercial mortgage financing from banks, life insurance companies, CMBS conduits, agency lenders, and private capital through 1,000+ lender relationships nationwide.",
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=commercial-mortgage"
   },
   {
     "slug": "multifamily-loans",
     "name": "Multifamily Loans",
     "short_name": "Multifamily",
-    "headline": "Multifamily and Apartment Loans from $1M to $100M+",
-    "description": "Multifamily loans finance the acquisition, refinance, and recapitalization of apartment properties from small 5 unit buildings to large institutional portfolios. Commercial Lending Solutions arranges multifamily financing from $1 million to over $100 million through agency lenders (Fannie Mae and Freddie Mac), life insurance companies, CMBS conduits, banks, and debt funds, matching leverage, rate, and recourse structure to each sponsor's hold strategy.",
+    "headline": "Multifamily and Apartment Loans from $2MM to $100MM+",
+    "description": "Multifamily loans finance the acquisition, refinance, and recapitalization of apartment properties from small 5 unit buildings to large institutional portfolios. Commercial Lending Solutions arranges multifamily financing from $2 million to over $100 million through agency lenders (Fannie Mae and Freddie Mac), life insurance companies, CMBS conduits, banks, and debt funds, matching leverage, rate, and recourse structure to each sponsor's hold strategy.",
     "description_extended": "Multifamily remains the most liquid asset class in commercial real estate, which means apartment owners have more lender choice, and more pricing spread between lenders, than almost any other property type. Agency lenders (Fannie Mae DUS and Freddie Mac Optigo) offer the deepest liquidity and longest fixed-rate terms for stabilized conventional and affordable apartments, life insurance companies compete aggressively for institutional-quality assets in primary markets, CMBS provides leverage for secondary market and value-add stories that agencies pass on, and bridge and debt fund capital covers lease-up, renovation, and repositioning before permanent financing is in place. Commercial Lending Solutions structures multifamily financing across every hold stage, from acquisition bridge through stabilized permanent takeout, for conventional, affordable, workforce, student, and senior housing communities nationwide.",
     "key_features": {
-      "loan_amount": "$1M - $100M+",
+      "loan_amount": "$2MM - $100MM+",
       "term": "1 - 35 Years",
       "rates": "5.00% - 11.50%",
       "ltv": "Up to 85% LTV/LTC",
@@ -107,12 +113,15 @@
       "Multifamily portfolio and blanket loan financing"
     ],
     "seo": {
-      "title": "Multifamily Loans $1M-$100M+ | Commercial Lending Solutions",
-      "meta_description": "Multifamily and apartment loans from $1M to $100M+ nationwide. Fannie Mae, Freddie Mac, life insurance companies, CMBS, and private lenders. Get a free quote.",
+      "title": "Multifamily Loans $2MM-$100MM+ | Commercial Lending Solutions",
+      "meta_description": "Multifamily and apartment loans from $2MM to $100MM+ nationwide. Fannie Mae, Freddie Mac, life insurance companies, CMBS, and private lenders. Get a free quote.",
       "h1": "Multifamily Loans"
     },
-    "quick_answer": "Multifamily loans typically range from $1M to $100M+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources multifamily and apartment financing nationwide from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds through 1,000+ lender relationships.",
-    "quick_answer_city": "Multifamily loans in {city}, {state} typically range from $1M to $100M+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources {city} multifamily and apartment financing from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds nationwide."
+    "quick_answer": "Multifamily loans typically range from $2MM to $100MM+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources multifamily and apartment financing nationwide from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds through 1,000+ lender relationships.",
+    "quick_answer_city": "Multifamily loans in {city}, {state} typically range from $2MM to $100MM+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources {city} multifamily and apartment financing from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds nationwide.",
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=multifamily"
   },
   {
     "slug": "construction-loans",
@@ -152,7 +161,7 @@
       }
     ],
     "key_features": {
-      "loan_amount": "$1M - $100M+",
+      "loan_amount": "$2MM - $100MM+",
       "term": "12 - 36 Months",
       "rates": "6.23% - 13.04%",
       "ltc": "Up to 85% LTC",
@@ -176,9 +185,12 @@
     ],
     "seo": {
       "title": "Construction Loans for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "Commercial construction financing from $1M to $100M+. Ground-up development, renovation, and build-to-suit loans. Banks, debt funds, and private lenders. Get a quote.",
+      "meta_description": "Commercial construction financing from $2MM to $100MM+. Ground-up development, renovation, and build-to-suit loans. Banks, debt funds, and private lenders. Get a quote.",
       "h1": "Commercial Construction Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=construction"
   },
   {
     "slug": "bridge-loans",
@@ -188,7 +200,7 @@
     "description": "Bridge loans offer 6.79% to 13.04% rates, up to 75% LTV, and 6 to 36 month interest-only terms for commercial properties in transition, whether during lease-up, renovation, repositioning, or acquisition. These facilities offer speed and flexibility that traditional lenders cannot match, making them ideal for time-sensitive opportunities and value-add strategies.",
     "description_extended": "Bridge lending fills the gap between acquisition or current state and permanent financing eligibility. Common use cases include acquiring a property that doesn't yet qualify for permanent debt, funding tenant improvements and lease-up, providing time for entitlement and permitting, or bridging to a construction loan start. Sources include debt funds, private lenders, and select banks willing to provide transitional capital.",
     "key_features": {
-      "loan_amount": "$1M - $100M+",
+      "loan_amount": "$2MM - $100MM+",
       "term": "6 - 36 Months",
       "rates": "6.79% - 13.04%",
       "ltv": "Up to 75% LTV",
@@ -210,10 +222,13 @@
       "Recapitalizations and partner buyouts"
     ],
     "seo": {
-      "title": "Commercial Bridge Loans $1M-$100M+ | Close in 2-3 Weeks",
+      "title": "Commercial Bridge Loans $2MM-$100MM+ | Close in 2-3 Weeks",
       "meta_description": "Fast commercial bridge financing for acquisition, value-add and repositioning. Interest-only and non-recourse options via 1,000+ lenders.",
       "h1": "Commercial Bridge Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=bridge"
   },
   {
     "slug": "sba-loans",
@@ -223,7 +238,7 @@
     "description": "SBA loans offer 5.54% to 8.25% rates and up to 90% financing (as little as 10% down) for qualifying owner-occupied commercial properties. The SBA 504 program provides long-term fixed rates via a two-loan bank/CDC structure, while the 7(a) program offers flexible terms for business acquisitions, expansions, and working capital. These programs are specifically designed for small businesses that occupy at least 51% of the property.",
     "description_extended": "The U.S. Small Business Administration partners with banks and Certified Development Companies (CDCs) to provide guaranteed lending programs that reduce risk for lenders and increase access to capital for small business owners. The 504 program features a unique two-loan structure: a first mortgage from a bank (50% LTV) and a second position CDC/SBA loan (40% LTV), with only 10% borrower equity required. The 7(a) program provides a single-source loan with an SBA guarantee up to 85%.",
     "key_features": {
-      "loan_amount": "$1M - $20M",
+      "loan_amount": "$2MM - $20M",
       "term": "5 - 25 Years",
       "rates": "5.54% - 8.25%",
       "ltv": "Up to 90% LTV (504)",
@@ -246,9 +261,12 @@
     ],
     "seo": {
       "title": "SBA 504 & 7(a) Commercial Loans | Commercial Lending Solutions",
-      "meta_description": "SBA 504 and 7(a) loans for owner-occupied commercial real estate. Up to 90% financing, below-market rates. $1M to $20M for small businesses. Get a quote.",
+      "meta_description": "SBA 504 and 7(a) loans for owner-occupied commercial real estate. Up to 90% financing, below-market rates. $2MM to $20M for small businesses. Get a quote.",
       "h1": "SBA 504 & 7(a) Commercial Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=sba"
   },
   {
     "slug": "mezzanine",
@@ -284,7 +302,10 @@
       "title": "Mezzanine & Preferred Equity Financing | Commercial Lending Solutions",
       "meta_description": "Mezzanine debt and preferred equity for commercial real estate. Fill the capital stack gap with subordinate financing from $5M to $50M+. Increase leverage, reduce equity.",
       "h1": "Mezzanine & Preferred Equity Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=mezzanine"
   },
   {
     "slug": "specialty",
@@ -294,7 +315,7 @@
     "description": "Specialty financing covers non-traditional property types and unique lending situations that require creative structuring and specialized lender relationships. From self-storage and data centers to marinas and religious facilities, these deals demand a broker who understands niche underwriting criteria and can source capital from lenders experienced in these asset classes.",
     "description_extended": "Specialty properties often fall outside standard underwriting guidelines, requiring lenders with specific experience and appetite for the asset class. CLS CRE's extensive network of 1,000+ lender relationships includes specialists in virtually every property type, enabling us to source competitive financing for assets that other brokers struggle to place. Our structuring expertise allows us to present deals in a way that maximizes lender comfort and borrower terms.",
     "key_features": {
-      "loan_amount": "$1M - $100M+",
+      "loan_amount": "$2MM - $100MM+",
       "term": "1 - 25 Years",
       "rates": "5.54% - 13.04%",
       "ltv": "Varies by Asset Class",
@@ -321,7 +342,10 @@
       "title": "Specialty Commercial Real Estate Financing | Commercial Lending Solutions",
       "meta_description": "Financing for specialty commercial properties: self-storage, data centers, marinas, entertainment venues, and more. Creative structuring with 1,000+ lender relationships.",
       "h1": "Specialty Commercial Real Estate Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=specialty"
   },
   {
     "slug": "agency-loans",
@@ -331,7 +355,7 @@
     "description": "Agency loans from Fannie Mae and Freddie Mac offer 5.34% to 6.75% fixed rates, up to 80% LTV, and 5 to 30 year non-recourse terms for stabilized multifamily properties, the most competitive execution available for conventional, affordable, and manufactured housing communities nationwide. These government-sponsored enterprise programs pair the deepest liquidity in commercial real estate with 30-year amortization schedules that keep debt service low over the life of the loan.",
     "description_extended": "Agency financing dominates the multifamily capital markets because Fannie Mae and Freddie Mac are purpose-built to provide liquidity for rental housing. Program options include Fannie Mae DUS and Small Balance Loans, Freddie Mac Optigo Conventional and Small Balance Loans, and specialized executions for affordable, seniors, student, and green-certified properties. Commercial Lending Solutions has direct relationships with every major agency DUS and Optigo lender, ensuring borrowers see the full menu of rate, term, and structure options before locking a quote.",
     "key_features": {
-      "loan_amount": "$1M to $100M+",
+      "loan_amount": "$2MM to $100MM+",
       "term": "5 to 30 Years",
       "rates": "5.34% to 6.75%",
       "ltv": "Up to 80% LTV",
@@ -354,9 +378,12 @@
     ],
     "seo": {
       "title": "Fannie Mae & Freddie Mac Agency Loans | Commercial Lending Solutions",
-      "meta_description": "Agency multifamily financing from Fannie Mae and Freddie Mac. Lowest rates, up to 80% LTV, non-recourse, 30-year amortization. $1M to $100M+. Get a free quote.",
+      "meta_description": "Agency multifamily financing from Fannie Mae and Freddie Mac. Lowest rates, up to 80% LTV, non-recourse, 30-year amortization. $2MM to $100MM+. Get a free quote.",
       "h1": "Fannie Mae & Freddie Mac Agency Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=agency"
   },
   {
     "slug": "hud-fha-loans",
@@ -366,7 +393,7 @@
     "description": "HUD and FHA multifamily loans offer the longest terms and highest leverage available in commercial real estate. Programs like 223(f) for refinance and acquisition, 221(d)(4) for new construction and substantial rehab, 223(a)(7) for streamlined refinance, and 232 for seniors housing and healthcare deliver 35 to 40 year fully amortizing non-recourse debt at below-market rates.",
     "description_extended": "FHA insurance, administered by HUD, allows lenders to provide loan terms that no other capital source can match. The tradeoff is a longer, more prescriptive closing process, typically 6 to 9 months, with detailed physical and financial underwriting. For borrowers who plan to hold assets long term, HUD/FHA is often the most accretive execution available. Commercial Lending Solutions works with a deep bench of HUD MAP-approved lenders to structure applications that move efficiently through FHA review.",
     "key_features": {
-      "loan_amount": "$5M to $100M+",
+      "loan_amount": "$5M to $100MM+",
       "term": "35 to 40 Years",
       "rates": "5.25% to 6.75%",
       "ltv": "Up to 85% LTV (90% for affordable)",
@@ -390,7 +417,10 @@
       "title": "HUD & FHA Multifamily Loans | Commercial Lending Solutions",
       "meta_description": "HUD and FHA multifamily financing with 35 to 40 year terms, non-recourse, up to 85% LTV. 223(f), 221(d)(4), 223(a)(7), 232 programs. $5M+. Get a free quote.",
       "h1": "HUD & FHA Multifamily Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=hud-fha"
   },
   {
     "slug": "cmbs-loans",
@@ -400,7 +430,7 @@
     "description": "CMBS (commercial mortgage-backed securities) loans offer 5.50% to 7.50% fixed rates, up to 75% LTV, and 5, 7, or 10 year non-recourse terms for stabilized commercial real estate, pooled into securities sold to institutional investors. CMBS is the most liquid source of capital for secondary-market assets and properties with complex stories, offering leverage and proceeds that banks and life insurance companies often cannot match on a credit-metrics-driven underwrite.",
     "description_extended": "CMBS lenders (also called conduits) typically offer 5, 7, and 10 year fixed-rate loans with 25 to 30 year amortization and non-recourse terms subject to standard carve-outs. The securitization process means the lender cares less about relationship and more about credit metrics, which works in favor of borrowers with strong properties but limited banking relationships, or for properties in markets where local bank appetite is thin. Commercial Lending Solutions runs every eligible deal through multiple CMBS desks simultaneously to capture the tightest spread.",
     "key_features": {
-      "loan_amount": "$5M to $100M+",
+      "loan_amount": "$5M to $100MM+",
       "term": "5, 7, or 10 Years",
       "rates": "5.50% to 7.50%",
       "ltv": "Up to 75% LTV",
@@ -422,19 +452,22 @@
     ],
     "seo": {
       "title": "CMBS Commercial Loans | Commercial Lending Solutions",
-      "meta_description": "CMBS conduit financing for stabilized commercial real estate. Non-recourse, 10-year fixed rates, up to 75% LTV, $5M to $100M+. All property types. Get a quote.",
+      "meta_description": "CMBS conduit financing for stabilized commercial real estate. Non-recourse, 10-year fixed rates, up to 75% LTV, $5M to $100MM+. All property types. Get a quote.",
       "h1": "CMBS Commercial Mortgage Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=cmbs"
   },
   {
     "slug": "net-lease-financing",
     "name": "Net Lease Financing",
     "short_name": "Net Lease",
     "headline": "Single Tenant Net Lease (NNN) Commercial Financing",
-    "description": "Net lease financing covers acquisition and refinance loans for single tenant NNN properties occupied by national credit tenants. Programs include bank STNL loans from $750,000 to $8 million, CMBS conduit loans for larger properties, and life insurance company permanent financing for investment-grade tenants. Commercial Lending Solutions has active relationships with dedicated net lease lenders who understand corporate lease structures, sale-leaseback transactions, and credit tenant underwriting.",
+    "description": "Net lease financing covers acquisition and refinance loans for single tenant NNN properties occupied by national credit tenants. Programs include bank STNL loans from $2 million to $8 million, CMBS conduit loans for larger properties, and life insurance company permanent financing for investment-grade tenants. Commercial Lending Solutions has active relationships with dedicated net lease lenders who understand corporate lease structures, sale-leaseback transactions, and credit tenant underwriting.",
     "description_extended": "The NNN financing market is divided by loan size. Smaller STNL deals under $8 million are typically best served by dedicated bank net lease programs that offer CMT-based pricing, flexible prepayment, and non-recourse structures starting at 60% LTV. Mid-size deals from $5 million to $20 million attract both CMBS conduits and life insurance companies, with CMBS offering higher leverage and life companies offering tighter spreads for trophy assets. Large portfolio transactions and institutional NNN properties access life company and CMBS executions with the most competitive long-term fixed rates. Common tenant categories include quick service restaurants, pharmacy chains, dollar retailers, auto parts stores, convenience stores, and other 500-plus location national brands.",
     "key_features": {
-      "loan_amount": "$750K to $100M+",
+      "loan_amount": "$2MM to $100MM+",
       "term": "5 to 25 Years",
       "rates": "CMT + 190 bps to 7.50%",
       "ltv": "Up to 75% LTV",
@@ -459,9 +492,12 @@
     ],
     "seo": {
       "title": "Net Lease (NNN) Financing | Commercial Lending Solutions",
-      "meta_description": "Single tenant net lease (NNN) financing nationwide. Bank programs from $750K, CMBS and life company loans to $100M+. QSR, pharmacy, dollar stores, auto parts, and more. Get a quote.",
+      "meta_description": "Single tenant net lease (NNN) financing nationwide. Bank programs from $2MM, CMBS and life company loans to $100MM+. QSR, pharmacy, dollar stores, auto parts, and more. Get a quote.",
       "h1": "Single Tenant Net Lease (NNN) Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=net-lease-financing"
   },
   {
     "slug": "life-company-loans",
@@ -471,7 +507,7 @@
     "description": "Life insurance company loans offer 5.00% to 6.50% fixed rates, up to 65% ltv, and 10 to 25 years non-recourse terms for institutional-quality stabilized commercial real estate, the most competitive pricing available in the private market. Life companies prioritize long-term matched-asset investments, rewarding borrowers with premium properties, strong sponsors, and conservative leverage with the tightest spreads over Treasuries.",
     "description_extended": "Life insurance companies fund commercial mortgages directly from their general accounts, which means they can offer fixed-rate terms up to 25 years (and occasionally 30 years), prepayment flexibility other capital sources cannot, and non-recourse structures with minimal carve-outs. The tradeoff is more conservative underwriting: life companies typically cap leverage at 60 to 70% and focus on institutional-quality assets in primary and strong secondary markets. Commercial Lending Solutions has direct allocation relationships with the largest life company lenders and knows which desks have open appetite at any given moment.",
     "key_features": {
-      "loan_amount": "$5M to $100M+",
+      "loan_amount": "$2MM to $100MM+",
       "term": "10 to 25 Years",
       "rates": "5.00% to 6.50%",
       "ltv": "Up to 65% LTV",
@@ -490,18 +526,18 @@
       "Anchored retail with credit tenants",
       "Net lease with investment-grade guarantors",
       "Long-term hold strategies prioritizing rate and term over leverage",
-      "Sponsors with loan sizes generally $5M+ ($10M+ most competitive)"
+      "Sponsors with loan sizes generally $2MM+ ($10M+ most competitive)"
     ],
     "seo": {
       "title": "Life Insurance Company Commercial Loans | Commercial Lending Solutions",
-      "meta_description": "Life insurance company CRE loans: 5.00%–6.50% fixed, 10–25 year terms, up to 65% LTV, non-recourse, $5M–$100M+. Direct correspondent access. Get a quote.",
+      "meta_description": "Life insurance company CRE loans: 5.00%–6.50% fixed, 10–25 year terms, up to 65% LTV, non-recourse, $2MM–$100MM+. Direct correspondent access. Get a quote.",
       "h1": "Life Insurance Company Commercial Real Estate Loans"
     },
-    "quick_answer": "Life company loans range from $5M to $100M+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions submits via direct life-company correspondent relationships across 1,000+ capital sources nationwide.",
-    "quick_answer_city": "Life company loans in {city}, {state} range from $5M to $100M+ at 5.00% to 6.50%, with terms of 10 to 25 years. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions sources life company financing for {city} commercial properties via direct correspondent desks and 1,000+ other capital sources nationwide.",
+    "quick_answer": "Life company loans range from $2MM to $100MM+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions submits via direct life-company correspondent relationships across 1,000+ capital sources nationwide.",
+    "quick_answer_city": "Life company loans in {city}, {state} range from $2MM to $100MM+ at 5.00% to 6.50%, with terms of 10 to 25 years. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions sources life company financing for {city} commercial properties via direct correspondent desks and 1,000+ other capital sources nationwide.",
     "apply_query": "program=life-company",
-    "min_amount_usd": 5000000,
-    "min_loan_display": "$5M"
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM"
   },
   {
     "slug": "dscr-loans",
@@ -511,7 +547,7 @@
     "description": "DSCR loans qualify borrowers based on property cash flow rather than personal income, making them ideal for real estate investors who own multiple properties, operate through LLCs, or whose tax returns do not reflect their true investment income. Commercial Lending Solutions sources DSCR financing from a national network of non-QM lenders, debt funds, and private capital sources for multifamily, mixed-use, and commercial investor portfolios.",
     "description_extended": "Debt Service Coverage Ratio (DSCR) lending evaluates a property on one simple question: does the gross rental income cover the debt service? If the property cash flows, the loan qualifies. This structure eliminates the need for tax returns, W-2s, pay stubs, or traditional income documentation, making DSCR a powerful tool for high-net-worth investors, self-employed borrowers, and portfolio landlords scaling their holdings. Typical DSCR thresholds range from 1.10 to 1.25, meaning the property generates 10 to 25 percent more income than the loan payment. Lenders include dedicated non-QM platforms, balance-sheet debt funds, and select private lenders with appetite for investor residential and small commercial assets.",
     "key_features": {
-      "loan_amount": "$1M - $10M",
+      "loan_amount": "$2MM - $10M",
       "term": "5 - 30 Years",
       "rates": "6.75% - 10.50%",
       "ltv": "Up to 80% LTV",
@@ -535,9 +571,12 @@
     ],
     "seo": {
       "title": "DSCR Loans for Real Estate Investors | Commercial Lending Solutions",
-      "meta_description": "DSCR loans that qualify on property cash flow, not personal income. No tax returns required. $1M to $10M for multifamily and commercial investor portfolios. Get a quote.",
+      "meta_description": "DSCR loans that qualify on property cash flow, not personal income. No tax returns required. $2MM to $10M for multifamily and commercial investor portfolios. Get a quote.",
       "h1": "DSCR Loans for Commercial Real Estate Investors"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=dscr"
   },
   {
     "slug": "hard-money-loans",
@@ -547,7 +586,7 @@
     "description": "Hard money loans provide asset-based, short-term financing for commercial real estate acquisitions, repositionings, and distressed property purchases where speed and flexibility matter more than rate. Commercial Lending Solutions works with a vetted network of private hard money lenders who can close in as little as one to two weeks, with underwriting driven by property value rather than borrower financials.",
     "description_extended": "Hard money lending is the fastest capital available in commercial real estate. Unlike bank or agency financing, hard money lenders focus almost entirely on the asset: the current value, the after-repair value (ARV), and the exit strategy. Borrower credit and income documentation requirements are minimal by design. This makes hard money ideal for auction purchases, foreclosure acquisitions, time-sensitive off-market deals, and properties that need work before qualifying for conventional financing. The tradeoff is higher rates and fees relative to institutional capital, which is why hard money is almost always used as a bridge to a permanent loan or sale. Commercial Lending Solutions matches each deal with the right private lender based on asset type, market, loan size, and timeline to ensure competitive terms even in this space.",
     "key_features": {
-      "loan_amount": "$1M - $20M",
+      "loan_amount": "$2MM - $20M",
       "term": "6 - 24 Months",
       "rates": "9.00% - 14.00%",
       "ltv": "Up to 70% LTV (75% ARV)",
@@ -571,9 +610,12 @@
     ],
     "seo": {
       "title": "Hard Money Loans for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "Fast hard money loans for commercial real estate. Close in 1 to 2 weeks. $1M to $20M, up to 70% LTV. Distressed, auction, and value-add acquisitions. Get a quote.",
+      "meta_description": "Fast hard money loans for commercial real estate. Close in 1 to 2 weeks. $2MM to $20M, up to 70% LTV. Distressed, auction, and value-add acquisitions. Get a quote.",
       "h1": "Commercial Hard Money Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=hard-money"
   },
   {
     "slug": "portfolio-loans",
@@ -583,7 +625,7 @@
     "description": "Portfolio loans allow real estate investors to finance multiple properties under a single loan facility, replacing individual property mortgages with one streamlined structure. Commercial Lending Solutions sources portfolio financing from balance-sheet lenders, debt funds, and specialty platforms that underwrite on the performance of the full portfolio rather than each asset individually, simplifying management and often unlocking better terms than property-by-property financing.",
     "description_extended": "As investors scale their holdings, managing individual loans across dozens of properties becomes operationally complex and expensive. A blanket portfolio loan consolidates these into one facility with a single lender, one payment, and unified loan covenants. Underwriting focuses on overall portfolio DSCR, blended occupancy, and total equity rather than the specific characteristics of each property. This structure is especially powerful for investors who hold a mix of asset types, have properties in multiple states, or own properties that individually would not qualify for agency or bank financing. Commercial Lending Solutions has relationships with portfolio lenders that specialize in this product and understand how to structure cross-collateralized facilities for maximum flexibility and borrower leverage.",
     "key_features": {
-      "loan_amount": "$5M - $100M+",
+      "loan_amount": "$5M - $100MM+",
       "term": "3 - 10 Years",
       "rates": "6.50% - 10.00%",
       "ltv": "Up to 75% LTV",
@@ -607,9 +649,12 @@
     ],
     "seo": {
       "title": "Portfolio Loans for Real Estate Investors | Commercial Lending Solutions",
-      "meta_description": "Blanket portfolio loans for institutional real estate investors. Finance multiple properties under one facility. $5M to $100M+, cross-collateralized. Get a quote.",
+      "meta_description": "Blanket portfolio loans for institutional real estate investors. Finance multiple properties under one facility. $5M to $100MM+, cross-collateralized. Get a quote.",
       "h1": "Blanket Portfolio Loans for Real Estate Investors"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=portfolio"
   },
   {
     "slug": "fix-and-flip-loans",
@@ -645,7 +690,10 @@
       "title": "Fix and Flip Loans for Commercial Real Estate | Commercial Lending Solutions",
       "meta_description": "Fix and flip loans for commercial value-add projects. Fast close, up to 85% of cost, draws tied to renovation progress. $5M to $50M+. Get a quote from Commercial Lending Solutions.",
       "h1": "Commercial Fix and Flip Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=fix-and-flip"
   },
   {
     "slug": "stated-income-loans",
@@ -681,7 +729,10 @@
       "title": "Stated Income Commercial Real Estate Loans | Commercial Lending Solutions",
       "meta_description": "Stated income and no-doc commercial loans for self-employed sponsors and high-net-worth investors. Bank statement and asset-depletion qualification. $5M to $50M+. Get a quote.",
       "h1": "Stated Income Commercial Real Estate Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=stated-income"
   },
   {
     "slug": "bridge-to-perm-loans",
@@ -691,7 +742,7 @@
     "description": "Bridge-to-perm loans combine a short-term acquisition or construction facility with a pre-committed permanent take-out under one lender, eliminating the refinance risk that comes with executing a separate take-out on a stabilized asset. Commercial Lending Solutions sources these structures from banks, debt funds with forward commitment programs, and agency lenders offering Forward Standby Commitments for multifamily.",
     "description_extended": "Traditional value-add or ground-up commercial real estate execution requires a sponsor to close a bridge or construction loan, complete the business plan, then refinance into permanent financing through a separate process. This exposes the sponsor to interest-rate risk during the construction or stabilization period and the execution risk of finding a permanent lender willing to underwrite on day-one stabilized fundamentals. A bridge-to-perm structure removes both. The bridge or construction phase prices and underwrites with the permanent take-out already in place, often at a locked rate or rate cap, and converts automatically upon meeting pre-agreed stabilization tests (DSCR, occupancy, NOI). This product is most powerful for ground-up multifamily that will convert to agency, value-add commercial that will convert to bank or life company, and large industrial developments with credit tenant pre-leases.",
     "key_features": {
-      "loan_amount": "$5M - $100M+",
+      "loan_amount": "$5M - $100MM+",
       "term": "Construction 24 to 36 mo plus Permanent 5 to 30 yr",
       "rates": "Construction SOFR plus 250 to 400, Permanent locked at close",
       "ltv": "Up to 75% LTC during construction, 70 to 75% LTV at conversion",
@@ -715,20 +766,23 @@
     ],
     "seo": {
       "title": "Bridge-to-Perm Loans for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "Bridge-to-permanent commercial real estate loans. Combine construction or bridge financing with a locked permanent take-out. $5M to $100M+. Eliminate refinance risk. Get a quote.",
+      "meta_description": "Bridge-to-permanent commercial real estate loans. Combine construction or bridge financing with a locked permanent take-out. $5M to $100MM+. Eliminate refinance risk. Get a quote.",
       "h1": "Bridge-to-Permanent Commercial Real Estate Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "program=bridge-to-perm"
   },
   {
     "slug": "acquisition-bridge-loans",
     "name": "Acquisition Bridge Loans",
     "short_name": "Acquisition Bridge",
     "headline": "Fast-Close Acquisition Financing for Commercial Real Estate",
-    "description": "Acquisition bridge loans provide short-term capital to close commercial real estate purchases quickly, often in 10 to 21 days, when conventional financing is too slow, unavailable, or the asset does not yet qualify for permanent debt. Typical deal sizes run $2M to $30M, with loan-to-cost ratios up to 75-80% of purchase price. Debt funds, private lenders, and select commercial banks are the primary capital sources for acquisition bridge transactions.",
+    "description": "Acquisition bridge loans provide short-term capital to close commercial real estate purchases quickly, often in 10 to 21 days, when conventional financing is too slow, unavailable, or the asset does not yet qualify for permanent debt. Typical deal sizes run $2MM to $30M, with loan-to-cost ratios up to 75-80% of purchase price. Debt funds, private lenders, and select commercial banks are the primary capital sources for acquisition bridge transactions.",
     "description_extended": "Commercial real estate acquisition is increasingly competitive. Off-market deals, auction purchases, note acquisitions, and distressed asset opportunities rarely accommodate the 60 to 90-day timeline that banks require. Acquisition bridge loans bridge that gap: non-bank lenders can commit and close in two to three weeks, giving buyers the certainty of execution that sellers and brokers demand. The bridge loan is then refinanced into permanent agency, CMBS, bank, or life company debt once the asset is stabilized and seasoned. Minimum loan size is $2 million; most active lenders in this space focus on the $3M to $25M range.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "6 - 24 Months",
       "rates": "7.50% - 12.00%",
       "ltv": "Up to 80% of Purchase Price",
@@ -752,9 +806,11 @@
     ],
     "seo": {
       "title": "Acquisition Bridge Loans for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "Fast-close acquisition bridge loans from $2M. Close commercial real estate in 10-21 days. Debt funds and private lenders for value-add, distressed, and off-market acquisitions. Get a quote.",
+      "meta_description": "Fast-close acquisition bridge loans from $2MM. Close commercial real estate in 10-21 days. Debt funds and private lenders for value-add, distressed, and off-market acquisitions. Get a quote.",
       "h1": "Acquisition Bridge Loans for Commercial Real Estate"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=acquisition-bridge"
   },
   {
     "slug": "value-add-bridge-loans",
@@ -763,9 +819,9 @@
     "headline": "Bridge Financing for Value-Add and Repositioning Strategies",
     "description": "Value-add bridge loans finance the acquisition and renovation of underperforming commercial real estate where the property does not yet qualify for permanent financing. These 12 to 36-month facilities fund both the purchase and capital improvement budget, allowing investors to execute the business plan, stabilize occupancy and rents, then refinance into long-term debt at the improved value. Minimum loan size is $2 million; most institutional value-add lenders focus on deals of $3M to $30M.",
     "description_extended": "Value-add investing is one of the most active strategies in commercial real estate, but it requires a capital structure that traditional lenders cannot provide. A bank will not lend on a 55%-occupied apartment building or a retail center with multiple vacant anchors. Value-add bridge lenders underwrite to the projected stabilized value and the sponsor's business plan, funding both acquisition and renovation through a single loan with a committed future funding facility. The exit is typically agency debt, CMBS, bank permanent, or a sale at stabilized pricing. Experienced sponsors with a credible business plan and skin in the game are the primary borrower profile.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "12 - 36 Months",
       "rates": "7.75% - 12.50%",
       "ltc": "Up to 85% LTC (Purchase + CapEx)",
@@ -789,9 +845,11 @@
     ],
     "seo": {
       "title": "Value-Add Bridge Loans for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "Value-add bridge loans from $2M. Finance the acquisition and renovation of underperforming commercial real estate. Up to 85% LTC with committed CapEx facility. Get a quote.",
+      "meta_description": "Value-add bridge loans from $2MM. Finance the acquisition and renovation of underperforming commercial real estate. Up to 85% LTC with committed CapEx facility. Get a quote.",
       "h1": "Value-Add Bridge Loans for Commercial Real Estate"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=value-add-bridge"
   },
   {
     "slug": "1031-exchange-bridge-loans",
@@ -800,9 +858,9 @@
     "headline": "Bridge Financing to Meet 1031 Exchange Deadlines",
     "description": "1031 exchange bridge loans allow investors to close on replacement property within the IRS 45-day identification and 180-day closing deadlines without waiting for conventional financing. These short-term facilities close in 10 to 21 days, satisfying exchange timing requirements while a permanent loan is arranged post-close. Minimum deal size is $2 million, aligned with the equity profiles of investors doing tax-deferred exchanges in commercial real estate.",
     "description_extended": "A failed 1031 exchange triggers full capital gains tax recognition on the relinquished property sale, often representing hundreds of thousands of dollars in immediate tax liability. The primary risk is not finding the right replacement property, it is failing to close on one in time. Conventional bank financing is simply not fast enough for most exchange timelines, particularly when the identified property requires due diligence, PCNA reports, or appraisals that banks require before commitment. A 1031 bridge loan from a debt fund or private lender eliminates the timing risk: the investor closes the exchange, locks in the tax deferral, and then refinances into permanent debt at leisure. Experienced 1031 exchange advisors and qualified intermediaries routinely recommend bridge lenders to their clients for exactly this reason.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "6 - 18 Months",
       "rates": "7.50% - 11.50%",
       "ltv": "Up to 75% of Purchase Price",
@@ -826,9 +884,11 @@
     ],
     "seo": {
       "title": "1031 Exchange Bridge Loans for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "1031 exchange bridge loans from $2M. Close on replacement property in 10-21 days and satisfy your exchange deadline. Debt funds and private lenders. Get a quote.",
+      "meta_description": "1031 exchange bridge loans from $2MM. Close on replacement property in 10-21 days and satisfy your exchange deadline. Debt funds and private lenders. Get a quote.",
       "h1": "1031 Exchange Bridge Loans for Commercial Real Estate"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=1031-exchange-bridge"
   },
   {
     "slug": "multifamily-bridge-loans",
@@ -837,9 +897,9 @@
     "headline": "Short-Term Bridge Financing for Apartment and Multifamily Assets",
     "description": "Multifamily bridge loans provide short-term capital for apartment acquisitions, value-add renovations, lease-up stabilization, and portfolio repositioning. These 12 to 36-month facilities close in 2 to 4 weeks and offer leverage up to 80% of cost, bridging the gap between acquisition or renovation and permanent agency, CMBS, or bank financing. Minimum loan size is $2 million, targeting 20-unit-and-up assets where institutional capital is active.",
     "description_extended": "Multifamily remains the most liquid and lender-competitive asset class in commercial real estate, which means multifamily bridge lenders are abundant and terms are competitive. Debt funds, bridge lending platforms, and select commercial banks all compete for well-structured multifamily bridge transactions. The typical use case is an investor acquiring a 30 to 200-unit apartment complex with below-market rents, financing the acquisition and renovation through a bridge loan, stabilizing occupancy, and then refinancing into agency debt (Fannie Mae or Freddie Mac) or a bank term loan at a lower permanent rate. Strong sponsors with proven value-add track records can access the most competitive pricing in this space.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $75M+",
+      "loan_amount": "$2MM - $75M+",
       "term": "12 - 36 Months",
       "rates": "7.00% - 11.50%",
       "ltv": "Up to 80% of Cost",
@@ -863,9 +923,11 @@
     ],
     "seo": {
       "title": "Multifamily Bridge Loans | Apartment Bridge Financing | Commercial Lending Solutions",
-      "meta_description": "Multifamily bridge loans from $2M. Value-add apartment acquisitions, lease-up, and repositioning. Close in 14-28 days. Debt funds and bridge lenders. Get a quote.",
+      "meta_description": "Multifamily bridge loans from $2MM. Value-add apartment acquisitions, lease-up, and repositioning. Close in 14-28 days. Debt funds and bridge lenders. Get a quote.",
       "h1": "Multifamily Bridge Loans for Apartment Investors"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=multifamily-bridge"
   },
   {
     "slug": "industrial-bridge-loans",
@@ -874,9 +936,9 @@
     "headline": "Bridge Financing for Industrial, Warehouse, and Logistics Properties",
     "description": "Industrial bridge loans provide short-term capital for warehouse, distribution, flex, manufacturing, and last-mile logistics property acquisitions and repositioning. These 12 to 36-month facilities close faster than conventional bank financing and offer leverage up to 75% of cost, making them ideal for time-sensitive industrial acquisitions and value-add plays in high-demand logistics corridors. Minimum loan size is $2 million.",
     "description_extended": "Industrial real estate has outperformed every other commercial property type over the past decade, driven by e-commerce distribution demand, nearshoring manufacturing, and last-mile logistics constraints in infill markets. This performance has made industrial the most competitive bridge lending category outside of multifamily, with debt funds and bridge platforms actively seeking well-located industrial assets. Typical bridge scenarios include acquiring a vacant or partially vacant industrial building, improving the asset, and stabilizing with credit tenants before refinancing into a CMBS, life company, or permanent bank loan. Sale-leaseback structures and owner-user acquisitions in SBA-ineligible situations also drive demand for industrial bridge capital.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $75M+",
+      "loan_amount": "$2MM - $75M+",
       "term": "12 - 36 Months",
       "rates": "7.25% - 11.50%",
       "ltv": "Up to 75% of Cost",
@@ -900,9 +962,11 @@
     ],
     "seo": {
       "title": "Industrial Bridge Loans | Warehouse & Logistics Financing | Commercial Lending Solutions",
-      "meta_description": "Industrial bridge loans from $2M. Warehouse, distribution, and logistics acquisitions and repositioning. Close in 14-30 days. Debt funds and bridge lenders. Get a quote.",
+      "meta_description": "Industrial bridge loans from $2MM. Warehouse, distribution, and logistics acquisitions and repositioning. Close in 14-30 days. Debt funds and bridge lenders. Get a quote.",
       "h1": "Industrial Bridge Loans for Warehouse and Logistics Properties"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=industrial-bridge"
   },
   {
     "slug": "office-bridge-loans",
@@ -911,9 +975,9 @@
     "headline": "Bridge Financing for Office Acquisitions and Conversions",
     "description": "Office bridge loans provide short-term capital for office building acquisitions, adaptive reuse conversions, and repositioning plays in a market fundamentally reshaped by remote work. These 12 to 36-month facilities are designed for investors buying distressed or vacant office assets at steep discounts and executing conversion or value-add strategies before refinancing into permanent debt. Minimum loan size is $2 million.",
     "description_extended": "The office market bifurcation of the post-2020 era has created the most compelling distressed acquisition opportunity in commercial real estate: well-located, functionally obsolete suburban office buildings trading at 40 to 70 cents on the dollar relative to replacement cost. Investors executing office-to-residential conversions, creative office repositioning, or medical office upgrades can acquire these assets at deep basis and create meaningful value. Traditional lenders have largely exited office bridge lending, creating a significant gap filled by specialized debt funds and private lenders who understand the conversion thesis and can underwrite to stabilized value rather than current income. Deals that combine a strong conversion plan, experienced sponsorship, and sub-replacement-cost basis are finding active bridge lender interest.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "12 - 36 Months",
       "rates": "8.00% - 13.00%",
       "ltv": "Up to 70% of Cost",
@@ -937,9 +1001,11 @@
     ],
     "seo": {
       "title": "Office Bridge Loans | Distressed Office & Conversion Financing | Commercial Lending Solutions",
-      "meta_description": "Office bridge loans from $2M. Distressed office acquisitions, adaptive reuse conversions, and repositioning. Debt funds and private lenders. Get a quote.",
+      "meta_description": "Office bridge loans from $2MM. Distressed office acquisitions, adaptive reuse conversions, and repositioning. Debt funds and private lenders. Get a quote.",
       "h1": "Office Bridge Loans for Acquisitions and Conversions"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=office-bridge"
   },
   {
     "slug": "retail-bridge-loans",
@@ -948,9 +1014,9 @@
     "headline": "Bridge Financing for Retail Property Acquisitions and Repositioning",
     "description": "Retail bridge loans provide short-term capital for shopping center acquisitions, anchored and unanchored retail repositioning, and ground lease or net lease retail plays requiring fast-close capital. These 12 to 36-month facilities offer leverage up to 70% of cost and close in 2 to 4 weeks, enabling investors to move quickly on distressed retail opportunities before refinancing into permanent CMBS, life company, or bank debt. Minimum loan size is $2 million.",
     "description_extended": "Retail real estate has been through a structural reset that has actually created opportunity at the bottom of the market. Well-located retail in dense, high-traffic corridors continues to outperform, while power centers and enclosed malls face structural obsolescence. The most compelling bridge loan use cases in retail involve acquiring anchored neighborhood centers or single-tenant NNN assets with lease rollover, stabilizing tenancy and cash flow, and refinancing into permanent debt at a lower rate. Mixed-use retail components of urban infill projects also drive bridge demand, as does the growing restaurant, medical, and experiential retail conversion trend in former big-box spaces.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "12 - 36 Months",
       "rates": "7.50% - 12.00%",
       "ltv": "Up to 70% of Cost",
@@ -974,9 +1040,11 @@
     ],
     "seo": {
       "title": "Retail Bridge Loans | Shopping Center & NNN Bridge Financing | Commercial Lending Solutions",
-      "meta_description": "Retail bridge loans from $2M. Shopping center acquisitions, NNN repositioning, and anchored retail plays. Debt funds and private lenders. Get a quote.",
+      "meta_description": "Retail bridge loans from $2MM. Shopping center acquisitions, NNN repositioning, and anchored retail plays. Debt funds and private lenders. Get a quote.",
       "h1": "Retail Bridge Loans for Shopping Centers and NNN Properties"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=retail-bridge"
   },
   {
     "slug": "mixed-use-bridge-loans",
@@ -985,9 +1053,9 @@
     "headline": "Bridge Financing for Mixed-Use and Urban Infill Properties",
     "description": "Mixed-use bridge loans provide short-term capital for properties combining residential, retail, office, and hospitality uses in urban and dense suburban locations. These 12 to 36-month facilities are designed for the complexity of mixed-use underwriting, where multiple income streams and use types require lenders with experience across asset classes. Minimum loan size is $2 million, targeting urban infill projects where conventional lenders lack the flexibility to move quickly.",
     "description_extended": "Mixed-use assets are among the most complex to finance because they blend residential and commercial underwriting criteria, often triggering regulatory requirements that vary by use percentage. Debt funds and experienced bridge lenders have filled the gap that conventional banks leave, offering single-loan solutions for the full mixed-use stack rather than requiring separate financing for the retail and residential components. Urban infill conversions, ground-floor retail with upper-floor residential, and live-work loft projects all represent active mixed-use bridge demand. Key markets include Los Angeles, New York, Miami, Seattle, and other dense metros where mixed-use development is incentivized by zoning and tenant demand.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "12 - 36 Months",
       "rates": "7.50% - 12.50%",
       "ltv": "Up to 75% of Cost",
@@ -1011,9 +1079,11 @@
     ],
     "seo": {
       "title": "Mixed-Use Bridge Loans | Urban Infill & Transit-Oriented Financing | Commercial Lending Solutions",
-      "meta_description": "Mixed-use bridge loans from $2M. Urban infill, transit-oriented development, and retail-residential acquisitions. Debt funds and private lenders. Get a quote.",
+      "meta_description": "Mixed-use bridge loans from $2MM. Urban infill, transit-oriented development, and retail-residential acquisitions. Debt funds and private lenders. Get a quote.",
       "h1": "Mixed-Use Bridge Loans for Urban Infill Properties"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=mixed-use-bridge"
   },
   {
     "slug": "multifamily-construction-loans",
@@ -1022,9 +1092,9 @@
     "headline": "Ground-Up Apartment and BTR Construction Financing",
     "description": "Multifamily construction loans fund ground-up apartment development, build-to-rent (BTR) communities, and major renovation projects for residential rental assets. These 18 to 36-month facilities provide interest-only draws as construction milestones are met, with loan-to-cost ratios up to 75-85% for experienced sponsors. Minimum loan size is $2 million, targeting 20-unit-and-up projects where institutional construction capital is active.",
     "description_extended": "Apartment construction remains one of the most active segments of commercial lending despite the rate environment, driven by persistent housing undersupply in most major U.S. markets. Lenders evaluate multifamily construction on sponsor track record, project feasibility, market absorption data, and the permanence of the take-out exit. Banks remain the dominant source for well-capitalized sponsors with prior multifamily construction experience; debt funds and CDFI lenders fill the gap for first-time developers, adaptive reuse projects, and projects in secondary markets where bank appetite is limited. Build-to-rent (BTR) has emerged as a distinct construction lending category with dedicated lender programs from several institutional debt funds.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $75M+",
+      "loan_amount": "$2MM - $75M+",
       "term": "18 - 36 Months",
       "rates": "6.50% - 11.00%",
       "ltc": "Up to 80-85% LTC",
@@ -1048,9 +1118,11 @@
     ],
     "seo": {
       "title": "Multifamily Construction Loans | Apartment Development Financing | Commercial Lending Solutions",
-      "meta_description": "Multifamily construction loans from $2M. Ground-up apartment development, BTR communities, and adaptive reuse. Banks, debt funds, and HUD lenders. Get a quote.",
+      "meta_description": "Multifamily construction loans from $2MM. Ground-up apartment development, BTR communities, and adaptive reuse. Banks, debt funds, and HUD lenders. Get a quote.",
       "h1": "Multifamily Construction Loans for Apartment Developers"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=multifamily-construction"
   },
   {
     "slug": "build-to-rent-loans",
@@ -1059,9 +1131,9 @@
     "headline": "Financing for Build-to-Rent Communities and Single-Family Rentals",
     "description": "Build-to-rent (BTR) loans finance ground-up construction and acquisition of purpose-built single-family and townhome rental communities. These facilities cover land acquisition, vertical construction, and lease-up phases, with takeout into permanent agency or CMBS debt once the community reaches stabilized occupancy. Minimum loan size is $2 million, targeting BTR developments of 20 homes or more where institutional capital is most active.",
     "description_extended": "Build-to-rent has emerged as one of the fastest-growing commercial real estate strategies in the United States, driven by millennial household formation, lifestyle renter demand, and the structural undersupply of entry-level for-sale housing. BTR communities offer investors the density and management efficiency of multifamily with the appeal and space of single-family housing. Institutional capital including Blackstone, Invitation Homes, and American Homes 4 Rent have validated the asset class at scale, and regional developers are now building BTR communities in Sun Belt and Mountain West markets with strong absorption. Lenders have responded with dedicated BTR programs covering construction, bridge-to-stabilization, and permanent financing.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $75M+",
+      "loan_amount": "$2MM - $75M+",
       "term": "18 - 36 Months (Construction) + Perm",
       "rates": "6.75% - 11.00%",
       "ltc": "Up to 80% LTC",
@@ -1085,20 +1157,22 @@
     ],
     "seo": {
       "title": "Build-to-Rent Loans | BTR Community Financing | Commercial Lending Solutions",
-      "meta_description": "Build-to-rent financing from $2M. BTR community construction, single-family rental development, and lease-up bridge loans. Banks and debt funds. Get a quote.",
+      "meta_description": "Build-to-rent financing from $2MM. BTR community construction, single-family rental development, and lease-up bridge loans. Banks and debt funds. Get a quote.",
       "h1": "Build-to-Rent Loans for BTR Community Developers"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=build-to-rent"
   },
   {
     "slug": "construction-to-perm-loans",
     "name": "Construction-to-Perm Loans",
     "short_name": "Construction-to-Perm",
     "headline": "One-Time Close Construction and Permanent Financing Combined",
-    "description": "Construction-to-perm loans combine ground-up construction financing and long-term permanent debt into a single closing, eliminating the cost and uncertainty of a two-step financing process. During construction the loan functions as a draw facility; at completion it converts automatically to a permanent term loan. This structure eliminates refinancing risk, reduces closing costs, and locks in permanent financing terms before construction begins. Minimum loan size is $1 million.",
+    "description": "Construction-to-perm loans combine ground-up construction financing and long-term permanent debt into a single closing, eliminating the cost and uncertainty of a two-step financing process. During construction the loan functions as a draw facility; at completion it converts automatically to a permanent term loan. This structure eliminates refinancing risk, reduces closing costs, and locks in permanent financing terms before construction begins. Minimum loan size is $2 million.",
     "description_extended": "The primary risk in any construction project is not the build itself, it is the refinancing event at completion. Markets shift, rates change, and permanent lenders tighten requirements precisely when developers need them most. Construction-to-perm financing eliminates this risk by locking in the permanent loan at the time of construction commitment. Banks are the primary source for construction-to-perm loans, particularly for multifamily, mixed-use, and owner-occupied commercial projects. Agency lenders including Fannie Mae and Freddie Mac offer construction-to-perm programs for qualifying multifamily projects. The structure is particularly valuable in rising rate environments where locking a permanent rate before construction completion provides meaningful economic benefit.",
-    "min_loan_display": "$1M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$1M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "12-36 Month Construction + 10-25 Year Perm",
       "rates": "6.50% - 10.00%",
       "ltc": "Up to 80% LTC",
@@ -1122,20 +1196,22 @@
     ],
     "seo": {
       "title": "Construction-to-Perm Loans | One-Time Close Commercial Financing | Commercial Lending Solutions",
-      "meta_description": "Construction-to-perm loans from $1M. One-time close, lock in permanent financing at construction start and eliminate refinancing risk. Banks and agency lenders. Get a quote.",
+      "meta_description": "Construction-to-perm loans from $2MM. One-time close, lock in permanent financing at construction start and eliminate refinancing risk. Banks and agency lenders. Get a quote.",
       "h1": "Construction-to-Perm Loans for Commercial Development"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=construction-to-perm"
   },
   {
     "slug": "land-loans",
     "name": "Land Loans",
     "short_name": "Land",
     "headline": "Commercial Land Acquisition and Pre-Development Financing",
-    "description": "Commercial land loans finance the acquisition of entitled, partially entitled, or raw land for future development. These short-term facilities cover land purchases, pre-development costs, and entitlement carrying costs while sponsors pursue permits, environmental clearances, and project approvals. Minimum loan size is $1 million. Lenders include private lenders, debt funds, and specialized land banks with appetite for predevelopment risk.",
+    "description": "Commercial land loans finance the acquisition of entitled, partially entitled, or raw land for future development. These short-term facilities cover land purchases, pre-development costs, and entitlement carrying costs while sponsors pursue permits, environmental clearances, and project approvals. Minimum loan size is $2 million. Lenders include private lenders, debt funds, and specialized land banks with appetite for predevelopment risk.",
     "description_extended": "Land financing is the highest-risk category in commercial real estate lending because collateral value depends entirely on entitlement outcomes and future development feasibility. Conventional banks rarely lend on unentitled or partially entitled land, leaving the market to private lenders, debt funds, and family offices with appetite for development risk. Key underwriting factors include entitlement status, sponsor track record, comparable development sales, market absorption data, and the path to a bankable construction loan. Entitled land with approved plans and permits commands significantly better terms than raw land. Deals in supply-constrained markets with documented developer experience are the most competitive.",
-    "min_loan_display": "$1M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$1M - $30M+",
+      "loan_amount": "$2MM - $30M+",
       "term": "12 - 36 Months",
       "rates": "8.00% - 14.00%",
       "ltv": "Up to 65% of Land Value",
@@ -1159,20 +1235,22 @@
     ],
     "seo": {
       "title": "Commercial Land Loans | Pre-Development Financing | Commercial Lending Solutions",
-      "meta_description": "Commercial land loans from $1M. Entitled and raw land acquisition, pre-development financing, and lot loans. Private lenders and debt funds. Get a quote.",
+      "meta_description": "Commercial land loans from $2MM. Entitled and raw land acquisition, pre-development financing, and lot loans. Private lenders and debt funds. Get a quote.",
       "h1": "Commercial Land Loans and Pre-Development Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=land"
   },
   {
     "slug": "self-storage-financing",
     "name": "Self-Storage Financing",
     "short_name": "Self-Storage",
     "headline": "Financing for Self-Storage Facilities and Climate-Controlled Storage",
-    "description": "Self-storage financing covers acquisition, construction, and refinancing of self-storage facilities, climate-controlled storage, and boat and RV storage. Self-storage is one of the most liquid and lender-competitive commercial asset classes, with strong lender appetite from CMBS conduits, life insurance companies, SBA lenders, and regional banks. Minimum loan size is $1 million, with most institutional capital focused on $3M and above.",
+    "description": "Self-storage financing covers acquisition, construction, and refinancing of self-storage facilities, climate-controlled storage, and boat and RV storage. Self-storage is one of the most liquid and lender-competitive commercial asset classes, with strong lender appetite from CMBS conduits, life insurance companies, SBA lenders, and regional banks. Minimum loan size is $2 million, with most institutional capital focused on $3M and above.",
     "description_extended": "Self-storage has outperformed nearly every other commercial real estate asset class over the past two decades, driven by demographic mobility, apartment downsizing trends, and low operating costs relative to revenue. Cap rates have compressed to 4.5-6.5% for Class A facilities in primary markets, attracting institutional capital including REITs, private equity, and life companies. The asset class is particularly resilient in downturns because both personal and business storage demand holds up during economic stress. New supply has been active in secondary and tertiary markets, creating opportunities for ground-up development alongside acquisition plays. Climate-controlled and Class A facilities in high-traffic suburban locations command the best financing terms.",
-    "min_loan_display": "$1M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$1M - $30M+",
+      "loan_amount": "$2MM - $30M+",
       "term": "5 - 25 Years",
       "rates": "5.50% - 9.00%",
       "ltv": "Up to 75% LTV",
@@ -1196,20 +1274,22 @@
     ],
     "seo": {
       "title": "Self-Storage Financing | Storage Facility Loans | Commercial Lending Solutions",
-      "meta_description": "Self-storage financing from $1M. Climate-controlled storage acquisition, construction, and refinancing. CMBS, life companies, SBA, and bank lenders. Get a quote.",
+      "meta_description": "Self-storage financing from $2MM. Climate-controlled storage acquisition, construction, and refinancing. CMBS, life companies, SBA, and bank lenders. Get a quote.",
       "h1": "Self-Storage Financing for Storage Facility Investors"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=self-storage-financing"
   },
   {
     "slug": "hotel-motel-financing",
     "name": "Hotel & Motel Financing",
     "short_name": "Hospitality",
     "headline": "Financing for Hotels, Motels, and Hospitality Properties",
-    "description": "Hotel and motel financing covers acquisition, renovation, refinancing, and ground-up construction for full-service hotels, select-service hotels, extended-stay properties, boutique hotels, and budget motels. Hospitality is one of the most specialized commercial lending categories, requiring lenders with deep franchise and brand relationship experience. Capital sources include CMBS conduits, SBA 504, debt funds, and specialized hospitality lenders. Minimum loan size is $1 million.",
+    "description": "Hotel and motel financing covers acquisition, renovation, refinancing, and ground-up construction for full-service hotels, select-service hotels, extended-stay properties, boutique hotels, and budget motels. Hospitality is one of the most specialized commercial lending categories, requiring lenders with deep franchise and brand relationship experience. Capital sources include CMBS conduits, SBA 504, debt funds, and specialized hospitality lenders. Minimum loan size is $2 million.",
     "description_extended": "Hospitality financing requires lenders who understand RevPAR, ADR, occupancy trends, brand standards, and the operational complexity of hotel assets. Most conventional banks have limited appetite for non-owner-operated hospitality, concentrating lending activity among CMBS conduits, specialized hospitality debt funds, and SBA programs for owner-operated properties. Franchise affiliation (Marriott, Hilton, IHG, Choice, Wyndham) significantly affects lender appetite and loan terms. Flag-affiliated limited-service and select-service hotels in markets with strong corporate and leisure demand are the most lendable. SBA 504 is particularly well-suited for owner-operated boutique and independent hotels seeking long-term fixed-rate financing.",
-    "min_loan_display": "$1M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$1M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "5 - 25 Years (Perm) / 12-36 Months (Bridge)",
       "rates": "6.00% - 12.00%",
       "ltv": "Up to 70% LTV",
@@ -1233,9 +1313,11 @@
     ],
     "seo": {
       "title": "Hotel & Motel Financing | Hospitality Loans | Commercial Lending Solutions",
-      "meta_description": "Hotel and motel financing from $1M. Acquisition, renovation, and refinancing for full-service, select-service, and boutique hotels. CMBS, SBA, and debt funds. Get a quote.",
+      "meta_description": "Hotel and motel financing from $2MM. Acquisition, renovation, and refinancing for full-service, select-service, and boutique hotels. CMBS, SBA, and debt funds. Get a quote.",
       "h1": "Hotel and Motel Financing for Hospitality Investors"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=hotel-motel-financing"
   },
   {
     "slug": "student-housing-loans",
@@ -1244,9 +1326,9 @@
     "headline": "Financing for Purpose-Built Student Housing Near Universities",
     "description": "Student housing loans finance the acquisition, construction, and refinancing of purpose-built student housing communities, off-campus apartment complexes, and mixed-use student housing near major universities and colleges. These assets offer strong occupancy, predictable demand, and parental guarantees that make them attractive to lenders. Capital sources include Fannie Mae, Freddie Mac, banks, CMBS, and debt funds with dedicated student housing programs. Minimum loan size is $2 million.",
     "description_extended": "Purpose-built student housing (PBSH) has matured into a distinct institutional asset class with dedicated lender programs and investor pools. Proximity to a tier-1 research university with 15,000 or more enrolled students is the primary underwriting criterion, followed by distance from campus, unit configuration (bed-per-bedroom pricing), and amenity package. Fannie Mae and Freddie Mac both have student housing loan programs with competitive permanent financing. CMBS conduits are active in PBSH deals near large universities. The asset class benefits from parental guarantors reducing credit risk, annual lease turnover creating mark-to-market rent opportunities, and university enrollment trends that have proven resilient even during economic downturns.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "5 - 25 Years",
       "rates": "5.75% - 9.50%",
       "ltv": "Up to 80% LTV",
@@ -1270,9 +1352,11 @@
     ],
     "seo": {
       "title": "Student Housing Loans | University Apartment Financing | Commercial Lending Solutions",
-      "meta_description": "Student housing financing from $2M. Purpose-built student housing acquisition, construction, and refinancing near universities. Fannie Mae, CMBS, and debt funds. Get a quote.",
+      "meta_description": "Student housing financing from $2MM. Purpose-built student housing acquisition, construction, and refinancing near universities. Fannie Mae, CMBS, and debt funds. Get a quote.",
       "h1": "Student Housing Loans for University Market Investors"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=student-housing"
   },
   {
     "slug": "senior-housing-financing",
@@ -1281,9 +1365,9 @@
     "headline": "Financing for Senior Living, Assisted Living, and Memory Care",
     "description": "Senior housing financing covers acquisition, construction, and refinancing of independent living communities, assisted living facilities, memory care communities, and continuing care retirement communities (CCRCs). This specialized segment requires lenders with healthcare regulatory expertise and operational underwriting capability. HUD 232, Fannie Mae, Freddie Mac, CMBS, and debt funds are primary capital sources. Minimum loan size is $2 million.",
     "description_extended": "Senior housing is one of the most demographically supported commercial real estate sectors of the next decade, driven by the aging of 77 million baby boomers. The National Investment Center for Seniors Housing and Care (NIC) tracks occupancy, absorption, and inventory across hundreds of markets, providing lenders with granular data on local supply and demand dynamics. Underwriting senior housing requires understanding the difference between real estate risk (cap rates, occupancy) and operating risk (labor costs, regulatory compliance, reimbursement rates for skilled nursing). Private-pay independent living and assisted living are most attractive to conventional real estate lenders; skilled nursing facilities with significant Medicaid exposure require specialized healthcare lenders. HUD 232 is the dominant long-term financing source for seniors housing due to non-recourse, fully amortizing structure and competitive fixed rates.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $75M+",
+      "loan_amount": "$2MM - $75M+",
       "term": "5 - 35 Years",
       "rates": "5.75% - 10.00%",
       "ltv": "Up to 75% LTV",
@@ -1307,20 +1391,22 @@
     ],
     "seo": {
       "title": "Senior Housing Financing | Assisted Living & Memory Care Loans | Commercial Lending Solutions",
-      "meta_description": "Senior housing financing from $2M. Assisted living, memory care, and independent living acquisition and construction. HUD, Fannie Mae, CMBS, and debt funds. Get a quote.",
+      "meta_description": "Senior housing financing from $2MM. Assisted living, memory care, and independent living acquisition and construction. HUD, Fannie Mae, CMBS, and debt funds. Get a quote.",
       "h1": "Senior Housing Financing for Senior Living Investors"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=senior-housing-financing"
   },
   {
     "slug": "medical-office-financing",
     "name": "Medical Office Financing",
     "short_name": "Medical Office",
     "headline": "Financing for Medical Office Buildings and Healthcare Real Estate",
-    "description": "Medical office financing covers acquisition, construction, and refinancing of medical office buildings (MOBs), surgery centers, urgent care facilities, and outpatient healthcare campuses. Medical office has emerged as one of the most resilient commercial real estate asset classes due to the non-discretionary nature of healthcare demand and the credit quality of medical tenant leases. Minimum loan size is $1 million, with strong lender appetite from life companies, CMBS, and SBA programs for owner-occupied facilities.",
+    "description": "Medical office financing covers acquisition, construction, and refinancing of medical office buildings (MOBs), surgery centers, urgent care facilities, and outpatient healthcare campuses. Medical office has emerged as one of the most resilient commercial real estate asset classes due to the non-discretionary nature of healthcare demand and the credit quality of medical tenant leases. Minimum loan size is $2 million, with strong lender appetite from life companies, CMBS, and SBA programs for owner-occupied facilities.",
     "description_extended": "Medical office buildings represent a convergence of real estate and healthcare fundamentals that makes them uniquely attractive to lenders and investors. Long lease terms (10 to 20 years) with credit healthcare system tenants, high tenant improvement buildout costs that create switching cost stickiness, and the non-cyclical nature of healthcare demand all support tight cap rates (4.5-6.5% in primary markets) and strong lender appetite. On-campus and near-campus hospital-affiliated MOBs command the best financing terms; off-campus single-tenant and multi-tenant medical office is also broadly lendable. SBA 504 is a compelling source for physician groups and healthcare operators purchasing their own buildings, offering long-term fixed-rate owner-occupied financing.",
-    "min_loan_display": "$1M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$1M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "5 - 25 Years",
       "rates": "5.25% - 8.50%",
       "ltv": "Up to 75% LTV",
@@ -1344,9 +1430,11 @@
     ],
     "seo": {
       "title": "Medical Office Financing | MOB Loans | Commercial Lending Solutions",
-      "meta_description": "Medical office financing from $1M. MOB acquisition, surgery center loans, and healthcare real estate. Life companies, CMBS, SBA, and bank lenders. Get a quote.",
+      "meta_description": "Medical office financing from $2MM. MOB acquisition, surgery center loans, and healthcare real estate. Life companies, CMBS, SBA, and bank lenders. Get a quote.",
       "h1": "Medical Office Financing for Healthcare Real Estate Investors"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=medical-office-financing"
   },
   {
     "slug": "sale-leaseback-financing",
@@ -1355,9 +1443,9 @@
     "headline": "CRE Sale-Leaseback Financing for Corporate Real Estate Owners",
     "description": "Sale-leaseback financing allows businesses and property owners to sell their commercial real estate to an investor and lease it back under a long-term net lease, unlocking 100% of the property equity while retaining full operational use. Commercial Lending Solutions structures sale-leaseback transactions and arranges acquisition financing for NNN investors purchasing corporate-occupied properties. Minimum transaction size is $2 million.",
     "description_extended": "Sale-leaseback transactions have surged as corporate real estate owners prioritize capital efficiency over property ownership. Businesses free up equity trapped in owned facilities to fund operations, acquisitions, or debt paydown, while investors acquire credit-tenant NNN assets backed by corporate guarantees. The financing structure on the investor side is typically NNN acquisition debt: CMBS, life company, or bank financing secured by the long-term lease and corporate guarantor. Commercial Lending Solutions works on both sides: advising sellers on optimal lease structures and arranging investor acquisition financing at the most competitive rates for the resulting NNN asset.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $100M+",
+      "loan_amount": "$2MM - $100MM+",
       "term": "10 - 25 Years (Permanent NNN)",
       "rates": "5.25% - 7.50%",
       "ltv": "Up to 75% LTV (NNN Acquisition)",
@@ -1381,9 +1469,11 @@
     ],
     "seo": {
       "title": "Sale-Leaseback Financing | CRE Sale-Leaseback Loans | Commercial Lending Solutions",
-      "meta_description": "Sale-leaseback financing for commercial real estate from $2M. Unlock 100% of property equity while retaining operations. NNN acquisition loans for investors. Life company and CMBS. Get a quote.",
+      "meta_description": "Sale-leaseback financing for commercial real estate from $2MM. Unlock 100% of property equity while retaining operations. NNN acquisition loans for investors. Life company and CMBS. Get a quote.",
       "h1": "Commercial Real Estate Sale-Leaseback Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=sale-leaseback-financing"
   },
   {
     "slug": "office-conversion-loans",
@@ -1392,9 +1482,9 @@
     "headline": "Office-to-Residential and Adaptive Reuse Conversion Financing",
     "description": "Office conversion loans provide construction and bridge financing for projects converting vacant or underperforming office buildings into residential, mixed-use, or alternative commercial uses. These 18 to 36-month facilities are structured for the complexity of adaptive reuse: phased draws, conversion cost reserves, and underwriting to post-conversion residential value rather than current office income. Minimum loan size is $2 million.",
     "description_extended": "The U.S. office market carries over 1 billion square feet of vacant or chronically underutilized space, driven by the permanent shift to hybrid and remote work. Office-to-residential conversion has emerged as a top priority for urban planners, municipalities offering tax incentives, and real estate investors who can acquire Class B and C office at steep discounts to replacement cost and convert to residential at a significant value premium. Specialized debt funds and select banks with adaptive reuse experience are the primary construction capital sources for conversion projects. Lenders focus on post-conversion residential income, location fundamentals, floor-plate conversion feasibility, and sponsor execution track record.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $75M+",
+      "loan_amount": "$2MM - $75M+",
       "term": "18 - 36 Months",
       "rates": "8.00% - 13.00%",
       "ltc": "Up to 80% of Total Conversion Cost",
@@ -1418,9 +1508,11 @@
     ],
     "seo": {
       "title": "Office Conversion Loans | Office-to-Residential Financing | Commercial Lending Solutions",
-      "meta_description": "Office conversion loans from $2M. Office-to-residential, adaptive reuse, and mixed-use conversion financing. Debt funds and private lenders. Up to 80% LTC. Get a quote.",
+      "meta_description": "Office conversion loans from $2MM. Office-to-residential, adaptive reuse, and mixed-use conversion financing. Debt funds and private lenders. Up to 80% LTC. Get a quote.",
       "h1": "Office Conversion and Adaptive Reuse Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=office-conversion"
   },
   {
     "slug": "preferred-equity",
@@ -1429,9 +1521,9 @@
     "headline": "Preferred Equity and JV Financing for CRE Capital Stacks",
     "description": "Preferred equity provides subordinate capital behind senior debt in commercial real estate capital stacks, offering investors higher returns than senior debt while giving sponsors access to leverage beyond what first mortgage lenders provide. Commercial Lending Solutions sources preferred equity from institutional debt funds, private equity firms, and family offices for value-add acquisitions, developments, and recapitalizations. Minimum investment size is $2 million.",
     "description_extended": "Preferred equity occupies the gap between senior debt and common equity in the CRE capital stack. Unlike mezzanine debt which is structured as a loan secured by a pledge of ownership interests, preferred equity is an actual equity position with a preferred return, typically 8 to 15 percent current or accruing, and priority in distributions before common equity receives any return. Preferred equity providers often have consent rights over major decisions and conversion rights to common equity if performance triggers are not met. This structure is common in development and value-add transactions where senior lenders cap at 55 to 65 percent LTV and sponsors want to reduce common equity requirements to improve IRR. Commercial Lending Solutions matches each deal with the right preferred equity provider based on deal size, business plan, and required return profile.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $50M+",
+      "loan_amount": "$2MM - $50M+",
       "term": "1 - 5 Years",
       "rates": "10% - 16% Preferred Return",
       "position": "Subordinate to Senior Debt, Senior to Common Equity",
@@ -1455,9 +1547,11 @@
     ],
     "seo": {
       "title": "Preferred Equity Financing for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "Preferred equity and JV financing for CRE capital stacks from $2M. 10-16% preferred returns. Fill the gap between senior debt and common equity. Get a quote.",
+      "meta_description": "Preferred equity and JV financing for CRE capital stacks from $2MM. 10-16% preferred returns. Fill the gap between senior debt and common equity. Get a quote.",
       "h1": "Preferred Equity Financing for Commercial Real Estate"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=preferred-equity"
   },
   {
     "slug": "industrial-construction-loans",
@@ -1466,9 +1560,9 @@
     "headline": "Construction Financing for Warehouse, Logistics, and Industrial Development",
     "description": "Industrial construction loans fund ground-up warehouse, distribution, flex industrial, and cold storage development projects. These 18 to 36-month facilities are structured for industrial development: phased construction draws, pre-lease or speculative underwriting, and exit to CMBS, life company, or agency permanent financing at stabilization. Minimum loan size is $2 million, targeting industrial developments in major logistics corridors.",
     "description_extended": "Industrial and logistics construction remains one of the most active development sectors, driven by persistent e-commerce demand, nearshoring and reshoring of manufacturing, and constrained infill land supply in primary distribution markets. Lenders evaluate industrial construction on market absorption data, sponsor track record in industrial development, pre-leasing percentage, and exit cap rate assumptions. Speculative industrial construction in supply-constrained markets continues to attract bank and debt fund capital. Pre-leased build-to-suit industrial attracts the most competitive terms given the credit-tenant lease backing the project.",
-    "min_loan_display": "$2M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$2M - $100M+",
+      "loan_amount": "$2MM - $100MM+",
       "term": "18 - 36 Months",
       "rates": "6.50% - 11.00%",
       "ltc": "Up to 75% LTC (Spec), 80% LTC (Pre-Leased)",
@@ -1492,20 +1586,22 @@
     ],
     "seo": {
       "title": "Industrial Construction Loans | Warehouse Development Financing | Commercial Lending Solutions",
-      "meta_description": "Industrial construction loans from $2M. Warehouse, distribution, cold storage, and flex industrial development. Banks and debt funds. Up to 80% LTC. Get a quote.",
+      "meta_description": "Industrial construction loans from $2MM. Warehouse, distribution, cold storage, and flex industrial development. Banks and debt funds. Up to 80% LTC. Get a quote.",
       "h1": "Industrial Construction Loans for Warehouse and Logistics Development"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=industrial-construction"
   },
   {
     "slug": "cpace-financing",
     "name": "C-PACE Financing",
     "short_name": "C-PACE",
     "headline": "Commercial Property Assessed Clean Energy (C-PACE) Financing",
-    "description": "C-PACE (Commercial Property Assessed Clean Energy) financing provides long-term, fixed-rate capital for energy efficiency, renewable energy, and sustainability improvements to commercial real estate. Repaid as a property tax assessment, C-PACE does not require senior lender consent in most states and can be placed behind existing first mortgages, making it a powerful tool for reducing capital expenditure while meeting sustainability goals. Minimum project size is $500,000.",
+    "description": "C-PACE (Commercial Property Assessed Clean Energy) financing provides long-term, fixed-rate capital for energy efficiency, renewable energy, and sustainability improvements to commercial real estate. Repaid as a property tax assessment, C-PACE does not require senior lender consent in most states and can be placed behind existing first mortgages, making it a powerful tool for reducing capital expenditure while meeting sustainability goals. Minimum project size is $2 million.",
     "description_extended": "C-PACE has become a mainstream component of the CRE capital stack as building owners face pressure from ESG requirements, utility cost reduction goals, and property renovation needs. Because C-PACE is structured as a property tax assessment rather than a loan, it repays through the property tax bill and transfers to the next owner at sale, eliminating personal guarantee requirements. Eligible improvements include HVAC systems, roofing and insulation, LED lighting, solar and battery storage, EV charging infrastructure, seismic retrofits, and water conservation systems. C-PACE providers operate in 38 or more states and the District of Columbia, with programs available for new construction, existing building retrofits, and ground-up development.",
-    "min_loan_display": "$500K",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$500K - $30M+",
+      "loan_amount": "$2MM - $30M+",
       "term": "10 - 30 Years",
       "rates": "6.50% - 8.50% Fixed",
       "position": "Repaid via Property Tax Assessment",
@@ -1529,20 +1625,22 @@
     ],
     "seo": {
       "title": "C-PACE Financing for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "C-PACE financing for commercial real estate energy efficiency and sustainability improvements. Fixed-rate, non-recourse, repaid via property tax. $500K to $30M+. Get a quote.",
+      "meta_description": "C-PACE financing for commercial real estate energy efficiency and sustainability improvements. Fixed-rate, non-recourse, repaid via property tax. $2MM to $30M+. Get a quote.",
       "h1": "C-PACE Commercial Property Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=cpace-financing"
   },
   {
     "slug": "owner-occupied-commercial",
     "name": "Owner-Occupied Commercial Loans",
     "short_name": "Owner-Occupied",
     "headline": "Commercial Real Estate Loans for Business Owner-Operators",
-    "description": "Owner-occupied commercial loans provide financing for businesses purchasing or refinancing the commercial property they operate from. Whether through SBA programs, conventional bank financing, or credit union balance-sheet loans, these facilities allow business owners to build equity in their operating real estate rather than paying rent. Commercial Lending Solutions sources owner-occupied financing for office, retail, industrial, medical, and mixed-use properties from $1 million and up.",
+    "description": "Owner-occupied commercial loans provide financing for businesses purchasing or refinancing the commercial property they operate from. Whether through SBA programs, conventional bank financing, or credit union balance-sheet loans, these facilities allow business owners to build equity in their operating real estate rather than paying rent. Commercial Lending Solutions sources owner-occupied financing for office, retail, industrial, medical, and mixed-use properties from $2 million and up.",
     "description_extended": "Owner-occupied commercial real estate financing is fundamentally different from investment property lending because the primary repayment source is the business itself, not property rental income. This means lenders evaluate global cash flow: the business earnings and personal income of the owner-operator, not just the property DSCR. SBA programs are the most popular execution for owner-occupied commercial because they allow up to 90 percent financing with below-market rates and long amortization. Conventional bank and credit union programs are the alternative for borrowers who exceed SBA size standards, have stronger financials, or need larger loan sizes than SBA maximum limits.",
-    "min_loan_display": "$1M",
+    "min_loan_display": "$2MM",
     "key_features": {
-      "loan_amount": "$1M - $20M",
+      "loan_amount": "$2MM - $20M",
       "term": "10 - 25 Years",
       "rates": "5.50% - 8.50%",
       "ltv": "Up to 90% (SBA) or 75% (Conventional)",
@@ -1566,8 +1664,10 @@
     ],
     "seo": {
       "title": "Owner-Occupied Commercial Real Estate Loans | Commercial Lending Solutions",
-      "meta_description": "Owner-occupied commercial real estate loans from $1M. SBA 504, SBA 7(a), and conventional bank financing for business owner-operators. Up to 90% LTV. Get a quote.",
+      "meta_description": "Owner-occupied commercial real estate loans from $2MM. SBA 504, SBA 7(a), and conventional bank financing for business owner-operators. Up to 90% LTV. Get a quote.",
       "h1": "Owner-Occupied Commercial Real Estate Loans"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "apply_query": "program=owner-occupied-commercial"
   }
 ]

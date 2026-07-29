@@ -17,6 +17,7 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 from datetime import datetime
 from pathlib import Path
 
@@ -85,7 +86,28 @@ def load_json(name: str):
 def compute_asset_versions():
     """Map 'js/<name>' / 'css/<name>' / 'tools/<name>' -> 10-hex content
     hash for every .js/.css file under website/js, website/css, and
-    website/tools (calculator scripts live next to their pages)."""
+    website/tools (calculator scripts live next to their pages).
+
+    Windows may check an asset out with different line endings than its Git
+    blob. Honor the line-ending form recorded in the index so generated URLs
+    match the exact bytes GitHub and Cloudflare deploy.
+    """
+    index_eols = {}
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "--eol", "--", "js", "css", "tools"],
+            cwd=WEBSITE_DIR,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        for line in result.stdout.splitlines():
+            match = re.match(r"i/(lf|crlf)\s+\S+\s+\S+\s+(.+)$", line)
+            if match:
+                index_eols[match.group(2)] = match.group(1)
+    except (OSError, subprocess.CalledProcessError):
+        pass
+
     versions = {}
     for sub in ("js", "css", "tools"):
         d = WEBSITE_DIR / sub
@@ -93,18 +115,19 @@ def compute_asset_versions():
             continue
         for f in sorted(d.iterdir()):
             if f.is_file() and f.suffix in (".js", ".css"):
-                versions[f"{sub}/{f.name}"] = hashlib.md5(f.read_bytes()).hexdigest()[:10]
+                content = f.read_bytes().replace(bytes((13, 10)), b"\n")
+                rel = f"{sub}/{f.name}"
+                if index_eols.get(rel) == "crlf":
+                    content = content.replace(b"\n", bytes((13, 10)))
+                versions[rel] = hashlib.md5(content).hexdigest()[:10]
     return versions
 
 
-def stamp_asset_versions():
-    """Rewrite src/href references to local js/css assets in every HTML file
-    so they carry ?v=<content-hash>. Skips external URLs and _generator/."""
-    print("\n=== Stamping asset versions (cache-busting) ===")
-    versions = compute_asset_versions()
+def stamp_html_asset_versions(html, versions=None):
+    """Return HTML with local JS/CSS references stamped by content hash."""
+    versions = versions or compute_asset_versions()
     if not versions:
-        print("  [skip] no js/css assets found")
-        return
+        return html
     alt = "|".join(re.escape(k) for k in sorted(versions, key=len, reverse=True))
     pattern = re.compile(
         r'((?:src|href)=")([^"]*?)(' + alt + r')(\?v=[0-9a-f]{4,32})?(")'
@@ -118,6 +141,17 @@ def stamp_asset_versions():
             return m.group(0)
         return f'{m.group(1)}{prefix}{m.group(3)}?v={versions[m.group(3)]}{m.group(5)}'
 
+    return pattern.sub(_sub, html)
+
+
+def stamp_asset_versions():
+    """Rewrite local JS/CSS references in every generated HTML file."""
+    print("\n=== Stamping asset versions (cache-busting) ===")
+    versions = compute_asset_versions()
+    if not versions:
+        print("  [skip] no js/css assets found")
+        return
+
     stamped = scanned = 0
     for html_path in WEBSITE_DIR.rglob("*.html"):
         rel = html_path.relative_to(WEBSITE_DIR).as_posix()
@@ -128,7 +162,7 @@ def stamp_asset_versions():
             html = html_path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):
             continue
-        new_html = pattern.sub(_sub, html)
+        new_html = stamp_html_asset_versions(html, versions)
         if new_html != html:
             html_path.write_text(new_html, encoding="utf-8")
             stamped += 1
@@ -1080,7 +1114,7 @@ def main():
 
     # ── 1. Loan Type Hub Pages ─────────────────────────────────────────
     print("\n=== Generating Loan Type Hub Pages ===")
-    tpl_financing = env.get_template("financing_page.html")
+    tpl_financing = env.get_template("financing_conversion_page.html")
     for loan in loan_types:
         txns = filter_transactions(transactions, loan_slug=loan["slug"])
         loan_faqs = faqs_data.get("loan_types", {}).get(loan["slug"], [])

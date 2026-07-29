@@ -9,9 +9,10 @@
     <a href="{{ depth }}financing/commercial-mortgage-rates.html">Today's Rates</a>
     <a href="{{ depth }}comparisons/index.html">Loan Comparisons</a>
     <a href="{{ depth }}loan-size/index.html">Loan Size Examples</a>
-    {% for lt in all_loan_types %}
+    {% for lt in (all_loan_types|default([]))[:13] %}
     <a href="{{ depth }}financing/{{ lt.slug }}.html">{{ lt.name }}</a>
     {% endfor %}
+    <a href="{{ depth }}index.html#programs">Explore All Financing Programs</a>
   </div>
   <div class="footer-col">
     <h4>Properties</h4>
