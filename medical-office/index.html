@@ -60,9 +60,42 @@
 .program-tile-detail{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--gray-100);font-size:13px}
 .program-tile-detail span:first-child{color:var(--gray-500)}
 .program-tile-detail span:last-child{color:var(--navy);font-weight:600}
-.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-.city-tile{background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:18px 20px}
-.city-tile-name{font-family:var(--font-display);font-size:15px;color:var(--navy);font-weight:600;margin:0 0 10px}
+/* SPECIALTY MARKET STUDIES */
+.market-studies{background:linear-gradient(180deg,#f6f8f7 0%,#fff 100%)}
+#market-studies-title{scroll-margin-top:110px}
+.market-studies .hub-section-inner{max-width:1180px}
+.market-study-intro{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:64px;align-items:end;margin-bottom:42px}
+.market-study-intro .hub-section-desc{max-width:700px;margin:0}
+.market-study-overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #dce3df;border-radius:14px;background:rgba(255,255,255,.78);overflow:hidden}
+.market-study-stat{padding:22px 24px;border-left:1px solid #dce3df}
+.market-study-stat:first-child{border-left:0}
+.market-study-stat strong{display:block;font-family:var(--font-display);font-size:26px;line-height:1;color:var(--navy);margin-bottom:6px}
+.market-study-stat span{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--gray-500);font-weight:700}
+.market-study-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.market-study-card{min-width:0;display:flex;flex-direction:column;background:#fff;border:1px solid #dce3df;border-radius:14px;padding:26px;box-shadow:0 14px 38px rgba(17,43,67,.05)}
+.market-study-card-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}
+.market-study-kicker{font-size:10px;letter-spacing:1.35px;text-transform:uppercase;color:var(--green);font-weight:800}
+.market-study-count{font-size:11px;color:var(--gray-500);white-space:nowrap}
+.market-study-card h3,.market-index-item h3{font-family:var(--font-display);color:var(--navy);margin:0}
+.market-study-card h3{font-size:24px;line-height:1.2;margin-bottom:10px}
+.market-study-card p{font-size:14px;line-height:1.6;color:var(--gray-600);margin:0 0 20px}
+.market-study-links{display:grid;gap:8px;margin-top:auto}
+.market-study-links a,.market-index-links a{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--navy);font-size:13px;font-weight:650;text-decoration:none;border-top:1px solid var(--gray-100);padding:10px 0 2px}
+.market-study-links a span:last-child,.market-index-links a span:last-child{color:var(--green);font-size:16px;transition:transform .2s}
+.market-study-links a:hover span:last-child,.market-index-links a:hover span:last-child{transform:translateX(3px)}
+.market-library{margin-top:28px;border:1px solid #dce3df;border-radius:14px;background:#fff;overflow:hidden}
+.market-library summary{display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;padding:22px 26px;color:var(--navy);font-size:15px;font-weight:700}
+.market-library summary::-webkit-details-marker{display:none}
+.market-library summary::after{content:'+';display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#edf3f0;color:var(--green);font-size:19px;font-weight:500}
+.market-library[open] summary::after{content:'−'}
+.market-library[open] summary{border-bottom:1px solid #dce3df}
+.market-index-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.market-index-item{min-width:0;padding:22px 26px;border-right:1px solid var(--gray-100);border-bottom:1px solid var(--gray-100)}
+.market-index-item:nth-child(3n){border-right:0}
+.market-index-item h3{font-size:17px;margin-bottom:10px}
+.market-index-links{display:grid;gap:2px}
+.market-index-links a{font-size:12px;padding:7px 0 2px}
+.market-studies-note{font-size:12px;line-height:1.55;color:var(--gray-500);margin:20px 0 0}
 .article-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
 .article-tile{display:block;background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:32px;text-decoration:none;transition:transform .2s,box-shadow .2s}
 .article-tile:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.06)}
@@ -81,7 +114,17 @@
 .hub-cta h3{font-family:var(--font-display);font-size:36px;color:#fff;margin:0 0 16px}
 .hub-cta p{font-size:17px;color:rgba(255,255,255,.8);max-width:640px;margin:0 auto 32px}
 .hub-cta .btn-primary{background:var(--green-bright,#00A676);color:#fff;padding:16px 32px;border-radius:6px;text-decoration:none;font-weight:600;font-size:16px;display:inline-block}
+.mobile-toggle{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.mobile-toggle span{display:block;width:24px;height:2px;background:var(--navy);margin:5px 0}
 @media (max-width:900px){
+ .nav-inner{height:88px;padding:0 20px}
+ .nav-logo{gap:10px}
+ .nav-logo img{height:68px;width:auto}
+ .nav-logo-text{font-size:18px}
+ .nav-phone,.nav-inner>.nav-cta{display:none!important}
+ .mobile-toggle{display:block;flex:0 0 auto}
+ .nav-links{display:none;position:fixed;top:88px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto}
+ .nav-links.nav-open{display:flex}
  .hub-hero{padding:100px 0 60px}
  .hub-hero h1{font-size:40px}
  .hub-hero p{font-size:17px}
@@ -89,7 +132,21 @@
  .hub-section-title{font-size:32px}
  .stats-pill{gap:32px;padding:32px 20px}
  .stats-pill-num{font-size:32px}
- .city-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+ .market-study-intro{grid-template-columns:1fr;gap:28px}
+ .market-study-grid,.market-index-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .market-index-item:nth-child(3n){border-right:1px solid var(--gray-100)}
+ .market-index-item:nth-child(2n){border-right:0}
+}
+</style>
+<style>
+@media (max-width:700px){
+ .market-study-grid,.market-index-grid{grid-template-columns:1fr}
+ .market-study-overview{grid-template-columns:1fr}
+ .market-study-stat{border-left:0;border-top:1px solid #dce3df}
+ .market-study-stat:first-child{border-top:0}
+ .market-index-item,.market-index-item:nth-child(2n),.market-index-item:nth-child(3n){border-right:0}
+ .market-library summary{padding:18px 20px}
+ .market-study-card,.market-index-item{padding:22px 20px}
 }
 </style>
 <style>
@@ -217,133 +274,280 @@
 </section>
 
 <!-- MARKETS -->
-<section class="hub-section">
+<section class="hub-section market-studies" aria-labelledby="market-studies-title">
 <div class="hub-section-inner">
- <span class="hub-section-label">30 Markets</span>
- <h2 class="hub-section-title">Coverage Across 30 US Markets</h2>
- <p class="hub-section-desc">City-specific market intelligence, active lender commentary, and program-level financing guides for every major US metropolitan market. Select a city to see lender appetite, underwriting notes, and deal structure for your specific program type.</p>
- <div class="city-grid">
-  <div class="city-tile">
-  <div class="city-tile-name">Los Angeles, CA</div>
-<a href="markets/los-angeles-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/los-angeles-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/los-angeles-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
+ <div class="market-study-intro">
+  <div>
+   <span class="hub-section-label">Market Case Studies</span>
+   <h2 class="hub-section-title" id="market-studies-title">See how market and asset profile shape the financing.</h2>
+   <p class="hub-section-desc">Each case study pairs local lender appetite and underwriting considerations with representative financing scenarios for a specific medical office profile. Start with a featured market or open the complete national library.</p>
   </div>
-  <div class="city-tile">
-  <div class="city-tile-name">New York, NY</div>
-<a href="markets/new-york-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/new-york-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/new-york-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Phoenix, AZ</div>
-<a href="markets/phoenix-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/phoenix-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/phoenix-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Dallas, TX</div>
-<a href="markets/dallas-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/dallas-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/dallas-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Houston, TX</div>
-<a href="markets/houston-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/houston-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/houston-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Miami, FL</div>
-<a href="markets/miami-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/miami-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/miami-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Atlanta, GA</div>
-<a href="markets/atlanta-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/atlanta-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/atlanta-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Chicago, IL</div>
-<a href="markets/chicago-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/chicago-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/chicago-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Denver, CO</div>
-<a href="markets/denver-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/denver-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/denver-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Seattle, WA</div>
-<a href="markets/seattle-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/seattle-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/seattle-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">San Diego, CA</div>
-<a href="markets/san-diego-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/san-diego-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/san-diego-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">San Francisco, CA</div>
-<a href="markets/san-francisco-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/san-francisco-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/san-francisco-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Austin, TX</div>
-<a href="markets/austin-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/austin-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/austin-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Nashville, TN</div>
-<a href="markets/nashville-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/nashville-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/nashville-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Tampa, FL</div>
-<a href="markets/tampa-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/tampa-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/tampa-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Charlotte, NC</div>
-<a href="markets/charlotte-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/charlotte-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/charlotte-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Minneapolis, MN</div>
-<a href="markets/minneapolis-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/minneapolis-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/minneapolis-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Portland, OR</div>
-<a href="markets/portland-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/portland-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/portland-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Las Vegas, NV</div>
-<a href="markets/las-vegas-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/las-vegas-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/las-vegas-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Orlando, FL</div>
-<a href="markets/orlando-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/orlando-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/orlando-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Philadelphia, PA</div>
-<a href="markets/philadelphia-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/philadelphia-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/philadelphia-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Washington DC, DC</div>
-<a href="markets/washington-dc-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/washington-dc-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/washington-dc-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Boston, MA</div>
-<a href="markets/boston-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/boston-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/boston-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">San Antonio, TX</div>
-<a href="markets/san-antonio-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/san-antonio-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/san-antonio-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Raleigh, NC</div>
-<a href="markets/raleigh-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/raleigh-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/raleigh-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Salt Lake City, UT</div>
-<a href="markets/salt-lake-city-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/salt-lake-city-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/salt-lake-city-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Columbus, OH</div>
-<a href="markets/columbus-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/columbus-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/columbus-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Kansas City, MO</div>
-<a href="markets/kansas-city-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/kansas-city-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/kansas-city-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">Indianapolis, IN</div>
-<a href="markets/indianapolis-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/indianapolis-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/indianapolis-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
-  </div>
-  <div class="city-tile">
-  <div class="city-tile-name">San Jose, CA</div>
-<a href="markets/san-jose-on-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Hospital-Affiliated &rarr;</a><a href="markets/san-jose-off-campus-mob.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Community Healthcare &rarr;</a><a href="markets/san-jose-outpatient-surgery-center.html" style="display:block;font-size:13px;color:var(--green);font-weight:500;text-decoration:none;padding:2px 0">Surgical Facility &rarr;</a>
+  <div class="market-study-overview" aria-label="Case study library summary">
+   <div class="market-study-stat"><strong>30</strong><span>Local Markets</span></div>
+   <div class="market-study-stat"><strong>90</strong><span>Scenario Studies</span></div>
+   <div class="market-study-stat"><strong>3</strong><span>Asset Profiles</span></div>
   </div>
  </div>
+ <div class="market-study-grid">
+ <article class="market-study-card" data-market="los-angeles">
+  <div class="market-study-card-head"><span class="market-study-kicker">Featured Market Study</span><span class="market-study-count">3 scenarios</span></div>
+  <h3>Los Angeles, CA</h3>
+  <p>Compare lender appetite, underwriting priorities, and representative structures across three medical office asset profiles.</p>
+  <div class="market-study-links" aria-label="Los Angeles, CA financing case studies">
+   <a href="markets/los-angeles-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/los-angeles-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/los-angeles-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </article>
+ <article class="market-study-card" data-market="new-york">
+  <div class="market-study-card-head"><span class="market-study-kicker">Featured Market Study</span><span class="market-study-count">3 scenarios</span></div>
+  <h3>New York, NY</h3>
+  <p>Compare lender appetite, underwriting priorities, and representative structures across three medical office asset profiles.</p>
+  <div class="market-study-links" aria-label="New York, NY financing case studies">
+   <a href="markets/new-york-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/new-york-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/new-york-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </article>
+ <article class="market-study-card" data-market="phoenix">
+  <div class="market-study-card-head"><span class="market-study-kicker">Featured Market Study</span><span class="market-study-count">3 scenarios</span></div>
+  <h3>Phoenix, AZ</h3>
+  <p>Compare lender appetite, underwriting priorities, and representative structures across three medical office asset profiles.</p>
+  <div class="market-study-links" aria-label="Phoenix, AZ financing case studies">
+   <a href="markets/phoenix-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/phoenix-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/phoenix-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </article>
+ <article class="market-study-card" data-market="dallas">
+  <div class="market-study-card-head"><span class="market-study-kicker">Featured Market Study</span><span class="market-study-count">3 scenarios</span></div>
+  <h3>Dallas, TX</h3>
+  <p>Compare lender appetite, underwriting priorities, and representative structures across three medical office asset profiles.</p>
+  <div class="market-study-links" aria-label="Dallas, TX financing case studies">
+   <a href="markets/dallas-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/dallas-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/dallas-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </article>
+ <article class="market-study-card" data-market="atlanta">
+  <div class="market-study-card-head"><span class="market-study-kicker">Featured Market Study</span><span class="market-study-count">3 scenarios</span></div>
+  <h3>Atlanta, GA</h3>
+  <p>Compare lender appetite, underwriting priorities, and representative structures across three medical office asset profiles.</p>
+  <div class="market-study-links" aria-label="Atlanta, GA financing case studies">
+   <a href="markets/atlanta-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/atlanta-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/atlanta-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </article>
+ <article class="market-study-card" data-market="chicago">
+  <div class="market-study-card-head"><span class="market-study-kicker">Featured Market Study</span><span class="market-study-count">3 scenarios</span></div>
+  <h3>Chicago, IL</h3>
+  <p>Compare lender appetite, underwriting priorities, and representative structures across three medical office asset profiles.</p>
+  <div class="market-study-links" aria-label="Chicago, IL financing case studies">
+   <a href="markets/chicago-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/chicago-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/chicago-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </article>
+ </div>
+ <details class="market-library">
+  <summary>Browse 24 additional markets</summary>
+  <div class="market-index-grid">
+ <div class="market-index-item" data-market="houston">
+  <h3>Houston, TX</h3>
+  <div class="market-index-links" aria-label="Houston, TX financing case studies">
+   <a href="markets/houston-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/houston-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/houston-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="miami">
+  <h3>Miami, FL</h3>
+  <div class="market-index-links" aria-label="Miami, FL financing case studies">
+   <a href="markets/miami-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/miami-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/miami-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="denver">
+  <h3>Denver, CO</h3>
+  <div class="market-index-links" aria-label="Denver, CO financing case studies">
+   <a href="markets/denver-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/denver-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/denver-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="seattle">
+  <h3>Seattle, WA</h3>
+  <div class="market-index-links" aria-label="Seattle, WA financing case studies">
+   <a href="markets/seattle-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/seattle-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/seattle-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="san-diego">
+  <h3>San Diego, CA</h3>
+  <div class="market-index-links" aria-label="San Diego, CA financing case studies">
+   <a href="markets/san-diego-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/san-diego-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/san-diego-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="san-francisco">
+  <h3>San Francisco, CA</h3>
+  <div class="market-index-links" aria-label="San Francisco, CA financing case studies">
+   <a href="markets/san-francisco-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/san-francisco-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/san-francisco-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="austin">
+  <h3>Austin, TX</h3>
+  <div class="market-index-links" aria-label="Austin, TX financing case studies">
+   <a href="markets/austin-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/austin-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/austin-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="nashville">
+  <h3>Nashville, TN</h3>
+  <div class="market-index-links" aria-label="Nashville, TN financing case studies">
+   <a href="markets/nashville-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/nashville-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/nashville-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="tampa">
+  <h3>Tampa, FL</h3>
+  <div class="market-index-links" aria-label="Tampa, FL financing case studies">
+   <a href="markets/tampa-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/tampa-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/tampa-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="charlotte">
+  <h3>Charlotte, NC</h3>
+  <div class="market-index-links" aria-label="Charlotte, NC financing case studies">
+   <a href="markets/charlotte-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/charlotte-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/charlotte-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="minneapolis">
+  <h3>Minneapolis, MN</h3>
+  <div class="market-index-links" aria-label="Minneapolis, MN financing case studies">
+   <a href="markets/minneapolis-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/minneapolis-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/minneapolis-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="portland">
+  <h3>Portland, OR</h3>
+  <div class="market-index-links" aria-label="Portland, OR financing case studies">
+   <a href="markets/portland-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/portland-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/portland-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="las-vegas">
+  <h3>Las Vegas, NV</h3>
+  <div class="market-index-links" aria-label="Las Vegas, NV financing case studies">
+   <a href="markets/las-vegas-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/las-vegas-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/las-vegas-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="orlando">
+  <h3>Orlando, FL</h3>
+  <div class="market-index-links" aria-label="Orlando, FL financing case studies">
+   <a href="markets/orlando-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/orlando-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/orlando-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="philadelphia">
+  <h3>Philadelphia, PA</h3>
+  <div class="market-index-links" aria-label="Philadelphia, PA financing case studies">
+   <a href="markets/philadelphia-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/philadelphia-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/philadelphia-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="washington-dc">
+  <h3>Washington, DC</h3>
+  <div class="market-index-links" aria-label="Washington, DC financing case studies">
+   <a href="markets/washington-dc-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/washington-dc-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/washington-dc-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="boston">
+  <h3>Boston, MA</h3>
+  <div class="market-index-links" aria-label="Boston, MA financing case studies">
+   <a href="markets/boston-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/boston-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/boston-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="san-antonio">
+  <h3>San Antonio, TX</h3>
+  <div class="market-index-links" aria-label="San Antonio, TX financing case studies">
+   <a href="markets/san-antonio-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/san-antonio-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/san-antonio-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="raleigh">
+  <h3>Raleigh, NC</h3>
+  <div class="market-index-links" aria-label="Raleigh, NC financing case studies">
+   <a href="markets/raleigh-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/raleigh-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/raleigh-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="salt-lake-city">
+  <h3>Salt Lake City, UT</h3>
+  <div class="market-index-links" aria-label="Salt Lake City, UT financing case studies">
+   <a href="markets/salt-lake-city-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/salt-lake-city-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/salt-lake-city-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="columbus">
+  <h3>Columbus, OH</h3>
+  <div class="market-index-links" aria-label="Columbus, OH financing case studies">
+   <a href="markets/columbus-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/columbus-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/columbus-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="kansas-city">
+  <h3>Kansas City, MO</h3>
+  <div class="market-index-links" aria-label="Kansas City, MO financing case studies">
+   <a href="markets/kansas-city-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/kansas-city-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/kansas-city-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="indianapolis">
+  <h3>Indianapolis, IN</h3>
+  <div class="market-index-links" aria-label="Indianapolis, IN financing case studies">
+   <a href="markets/indianapolis-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/indianapolis-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/indianapolis-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+ <div class="market-index-item" data-market="san-jose">
+  <h3>San Jose, CA</h3>
+  <div class="market-index-links" aria-label="San Jose, CA financing case studies">
+   <a href="markets/san-jose-on-campus-mob.html"><span>Hospital-Affiliated</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/san-jose-off-campus-mob.html"><span>Community Healthcare</span><span aria-hidden="true">&rarr;</span></a>
+   <a href="markets/san-jose-outpatient-surgery-center.html"><span>Surgical Facility</span><span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </div>
+  </div>
+ </details>
+ <p class="market-studies-note">These studies describe representative financing scenarios and market considerations. They are not presented as specific closed transactions unless expressly identified.</p>
 </div>
 </section>
 
