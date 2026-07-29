@@ -51,9 +51,12 @@
 .nl-archive-link{font-size:13px;color:#6b7280;margin-bottom:48px}
 .nl-archive-link a{color:var(--navy);text-decoration:none;font-weight:600}
 .nl-archive-link a:hover{text-decoration:underline}
+.nl-pagination{display:flex;justify-content:space-between;gap:16px;margin:0 0 28px}
+.nl-pagination a{color:var(--navy);font-size:13px;font-weight:700;text-decoration:none}
+.nl-pagination a:hover{text-decoration:underline}
 </style>
 
-<main id="main-content">
+<div>
   <div style="max-width:860px;margin:0 auto;padding:0 24px">
     <nav class="nl-breadcrumb" aria-label="Breadcrumb">
       <a href="{{ depth }}index.html">Home</a> &rsaquo;
@@ -96,9 +99,16 @@
     </div>
     {% endif %}
 
+    {% if prev_issue or next_issue %}
+    <nav class="nl-pagination" aria-label="Issue navigation">
+      <span>{% if prev_issue %}&larr; <a href="{{ depth }}insights/{{ newsletter_type }}/{{ prev_issue.slug }}/">Issue {{ prev_issue.number }}</a>{% endif %}</span>
+      <span>{% if next_issue %}<a href="{{ depth }}insights/{{ newsletter_type }}/{{ next_issue.slug }}/">Issue {{ next_issue.number }}</a> &rarr;{% endif %}</span>
+    </nav>
+    {% endif %}
+
     <p class="nl-archive-link">
       &larr; <a href="{{ depth }}insights/{{ newsletter_type }}/index.html">Back to all {{ newsletter_label }} issues</a>
     </p>
   </div>
-</main>
+</div>
 {% endblock %}
