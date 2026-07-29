@@ -33,6 +33,12 @@ class PropertyConversionSystemTests(unittest.TestCase):
         for prop in self.properties:
             html = rendered[prop["slug"]]
             with self.subTest(slug=prop["slug"]):
+                schema_blocks = re.findall(
+                    r'<script type="application/ld\+json">(.*?)</script>', html, re.DOTALL
+                )
+                self.assertGreaterEqual(len(schema_blocks), 4)
+                for block in schema_blocks:
+                    json.loads(block)
                 self.assertIn("css/financing-hub.css?v=", html)
                 self.assertIn("class=\"pf-hero\"", html)
                 self.assertIn("At a Glance", html)
@@ -45,6 +51,9 @@ class PropertyConversionSystemTests(unittest.TestCase):
                 )
                 self.assertNotIn("Quick answer:", html)
                 self.assertNotRegex(html, legacy_floor)
+                self.assertNotIn('"@type":"PriceSpecification"', html)
+                self.assertNotIn('"minPrice"', html)
+                self.assertRegex(html, re.compile(r"\$2MM\+?"))
                 self.assertEqual(len(re.findall(r"<h1(?:\s|>)", html)), 1)
                 self.assertLessEqual(html.count("pf-market-extra"), 6)
 
