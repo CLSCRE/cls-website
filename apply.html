@@ -308,6 +308,7 @@
       <input type="hidden" name="GA Client ID" data-ga-client-id-field value="">
       <input type="hidden" name="Loan Purpose" id="h_purpose">
       <input type="hidden" name="Property Type" id="h_property_type">
+<input type="hidden" name="Property Hub Source" id="h_property_source">
       <input type="hidden" name="Property Location" id="h_location">
       <input type="hidden" name="Property Value" id="h_property_value">
       <input type="hidden" name="Units or SF" id="h_units">
@@ -1403,6 +1404,39 @@ setTimeout(restoreDraft, 0);
 (function preselectProgramFromQuery(){
   try {
     var params = new URLSearchParams(window.location.search);
+    var propertyRaw = (params.get('property') || params.get('property_type') || '').toLowerCase().trim();
+    var propertySource = document.getElementById('h_property_source');
+    if (propertySource) propertySource.value = propertyRaw;
+    var propertyMap = {
+      "multifamily": "Multi-Family",
+      "industrial": "Industrial",
+      "retail": "Retail",
+      "office": "Office",
+      "mixed-use": "Mixed-Use",
+      "hospitality": "Hospitality",
+      "self-storage": "Self Storage",
+      "data-centers": "Other",
+      "senior-living": "Other",
+      "medical-office": "Other",
+      "manufactured-housing": "Other",
+      "parking": "Other"
+    };
+    if (propertyRaw && propertyMap[propertyRaw]) {
+      var saved = null;
+      try { saved = JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null'); } catch (_) {}
+      var freshSavedProperty = saved && saved.property_type && saved.savedAt && (Date.now() - saved.savedAt) <= 7*24*3600*1000;
+      if (!freshSavedProperty) {
+        var propertyTarget = propertyMap[propertyRaw];
+        var propertyInput = document.querySelector('input[name="property_type"][value="' + propertyTarget + '"]');
+        if (propertyInput) {
+          propertyInput.checked = true;
+          var propertyCard = propertyInput.closest('.card-option');
+          if (propertyCard) propertyCard.classList.add('selected');
+          var propertyNext = document.getElementById('next2');
+          if (propertyNext) propertyNext.disabled = false;
+        }
+      }
+    }
     var raw = (params.get('program') || params.get('loan_type') || params.get('loanType') || '').toLowerCase().trim();
     if (!raw) return;
     var map = {

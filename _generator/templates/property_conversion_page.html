@@ -1,0 +1,139 @@
+{% extends '_base.html' %}
+
+{% block extra_meta %}
+<link rel="stylesheet" href="{{ depth }}css/financing-hub.css">
+{% endblock %}
+
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":{{ ('Commercial Lending Solutions, ' ~ prop.name ~ ' Financing')|tojson }},"url":{{ ('https://clscre.com/property/' ~ prop.slug ~ '.html')|tojson }},"description":{{ seo.meta_description|tojson }},"telephone":"+13107080690","email":"loans@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"},"offers":{"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"USD","minPrice":{{ prop.min_amount_usd|tojson }}}}}
+</script>
+{% if faqs %}<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":{{ faq.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a|tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>{% endif %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Properties","item":"https://clscre.com/#properties"},{"@type":"ListItem","position":3,"name":{{ prop.name|tojson }},"item":{{ ('https://clscre.com/property/' ~ prop.slug ~ '.html')|tojson }}}]}
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="pf-wrap pf-breadcrumbs"><a href="{{ depth }}index.html">Home</a><span>/</span><a href="{{ depth }}index.html#properties">Properties</a><span>/</span>{{ prop.name }}</div>
+<section class="pf-hero">
+  <div class="pf-wrap pf-hero-grid">
+    <div>
+      <div class="pf-eyebrow">{{ prop.name }} capital</div>
+      <h1>{{ prop.seo.h1 }}</h1>
+      <p class="pf-lead">{{ prop.description }}</p>
+      <div class="pf-actions">
+        <a class="pf-btn" href="{{ depth }}apply.html?{{ prop.apply_query }}">Discuss your transaction &rarr;</a>
+        <a class="pf-btn pf-btn-link" href="#capital-options">Review capital options</a>
+      </div>
+    </div>
+    <aside class="pf-term-card" aria-label="{{ prop.name }} financing profile">
+      <h2>At a Glance</h2>
+      <div class="pf-term-row"><span>Minimum request</span><strong>{{ prop.min_loan_display }}+</strong></div>
+      <div class="pf-term-row"><span>Coverage</span><strong>Nationwide</strong></div>
+      <div class="pf-term-row"><span>Property profiles</span><strong>{{ prop.subtypes|length }} represented</strong></div>
+      <div class="pf-term-row"><span>Capital paths</span><strong>{{ prop.financing_options|length }} primary options</strong></div>
+      <p class="pf-term-note">Availability and structure depend on property performance, sponsorship, business plan, market conditions, and lender underwriting.</p>
+      <a class="pf-rate-link" href="{{ depth }}financing/commercial-mortgage-rates.html">View current market rates &rarr;</a>
+    </aside>
+  </div>
+</section>
+<section class="pf-cred" aria-label="CLS CRE capabilities">
+  <div class="pf-wrap pf-cred-grid">
+    <div class="pf-cred-item"><strong>Nationwide</strong><span>Market coverage</span></div>
+    <div class="pf-cred-item"><strong>1,000+</strong><span>Capital relationships</span></div>
+    <div class="pf-cred-item"><strong>$2MM+</strong><span>CLS engagement floor</span></div>
+    <div class="pf-cred-item"><strong>24 hours</strong><span>Initial response</span></div>
+  </div>
+</section>
+
+<section class="pf-section pf-paper" id="property-fit">
+  <div class="pf-wrap pf-split">
+    <div>
+      <div class="pf-kicker">Property fit</div>
+      <h2>Financing {{ prop.name|lower }} assets.</h2>
+      <p class="pf-intro">{{ prop.description_extended }}</p>
+      <p class="pf-note"><strong>Underwriting starts with the asset:</strong> income durability, tenancy or operations, physical condition, market position, sponsorship, and the proposed business plan shape the lender universe.</p>
+    </div>
+    <div class="pf-fit-list">
+      {% for subtype in prop.subtypes %}
+      <div class="pf-fit-row"><span class="pf-fit-number">{{ '%02d'|format(loop.index) }}</span><h3>{{ subtype }}</h3></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% from '_financing_source_context.html' import source_context %}
+<section class="pf-section" id="capital-options">
+  <div class="pf-wrap">
+    <div class="pf-kicker">Capital options</div>
+    <h2>How we approach {{ prop.name|lower }} financing.</h2>
+    <p class="pf-intro">We match the property, sponsorship, and business plan to lenders with current appetite, then compare proceeds, pricing, recourse, reserves, prepayment, and closing certainty.</p>
+    <div class="pf-table-wrap" tabindex="0" role="region" aria-label="{{ prop.name }} financing options">
+      <table class="pf-table">
+        <thead><tr><th>Financing path</th><th>Where it may fit</th></tr></thead>
+        <tbody>{% for option in financing_links %}<tr><td><a href="{{ depth }}financing/{{ option.slug }}.html">{{ option.label }}</a></td><td>{{ source_context(option.label) }}</td></tr>{% endfor %}</tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="pf-section pf-navy">
+  <div class="pf-wrap pf-process-grid">
+    <div>
+      <div class="pf-kicker">How we work</div>
+      <h2>One process. Multiple capital sources.</h2>
+      <p class="pf-intro">The objective is not simply to find a lender. It is to create a credible, comparable set of financing choices around the transaction.</p>
+      <p class="pf-quote">Property-level insight and lender appetite have to meet before pricing becomes meaningful.</p>
+    </div>
+    <div class="pf-process">
+      <article><div><h3>Underwrite the opportunity</h3><p>We review property performance, sponsorship, business plan, and financing priorities.</p></div></article>
+      <article><div><h3>Target active lender desks</h3><p>The request is matched to capital sources that understand the asset and market.</p></div></article>
+      <article><div><h3>Compare complete proposals</h3><p>Rate, proceeds, recourse, reserves, prepayment, and execution risk are evaluated together.</p></div></article>
+      <article><div><h3>Manage the closing</h3><p>We coordinate lender diligence, third-party reports, documentation, and issue resolution through funding.</p></div></article>
+    </div>
+  </div>
+</section>
+
+{% if transactions %}<section class="pf-section" id="track-record">
+  <div class="pf-wrap">
+    <div class="pf-deal-heading"><div><div class="pf-kicker">Selected closings</div><h2>{{ prop.name }} financing in practice.</h2></div><a class="pf-text-link" href="{{ depth }}index.html#transactions">View more transactions &rarr;</a></div>
+    <div class="pf-deal-grid">
+      {% for txn in transactions[:6] %}<a class="pf-deal" href="{{ depth }}{{ txn.target_url|default('track-record.html') }}">
+        <img src="{{ depth }}{{ txn.image }}" alt="{{ txn.property_type }} - {{ txn.city }}, {{ txn.state }}" loading="lazy" width="600" height="400">
+        <div class="pf-deal-copy"><div class="pf-deal-type">{{ prop.name }} financing</div><h3>{{ txn.property_type }}</h3><div class="pf-deal-amount">{{ txn.amount }}</div><div class="pf-deal-place">{{ txn.city }}, {{ txn.state }}</div><p class="pf-deal-desc">{{ txn.summary }}</p></div>
+      </a>{% endfor %}
+    </div>
+  </div>
+</section>{% endif %}
+
+<section class="pf-section pf-paper" id="markets">
+  <div class="pf-wrap pf-markets">
+    <div><div class="pf-kicker">National reach</div><h2>Market knowledge where the asset requires it.</h2><p class="pf-intro">We arrange {{ prop.name|lower }} financing nationwide while accounting for local property fundamentals and lender appetite.</p></div>
+    <div>
+      <div class="pf-market-list" id="pfMarketList">{% for city in all_cities[:15] %}<a class="{% if loop.index > 9 %}pf-market-extra{% endif %}" href="{{ depth }}property/{{ prop.slug }}-{{ city.slug }}.html">{{ city.city }}, {{ city.state }}</a>{% endfor %}</div>
+      <button type="button" class="pf-market-toggle" id="pfMarketToggle" aria-expanded="false" aria-controls="pfMarketList">Show more markets +</button>
+      <a class="pf-all-markets" href="{{ depth }}locations.html">Browse all markets &rarr;</a>
+    </div>
+  </div>
+</section>
+
+{% if faqs %}<section class="pf-section">
+  <div class="pf-wrap pf-faq-layout">
+    <div><div class="pf-kicker">Questions</div><h2>{{ prop.name }} financing, clarified.</h2><p class="pf-intro">The final structure depends on the property, sponsor, market, and requested execution.</p></div>
+    <div class="pf-faq-list">
+      {% for faq in faqs %}<div class="pf-faq-item {% if loop.first %}open{% endif %}">
+        <button type="button" class="pf-faq-q" id="pf-faq-button-{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}" aria-controls="pf-faq-panel-{{ loop.index }}"><span>{{ faq.q }}</span><span aria-hidden="true">+</span></button>
+        <div class="pf-faq-a" id="pf-faq-panel-{{ loop.index }}" role="region" aria-labelledby="pf-faq-button-{{ loop.index }}"{% if not loop.first %} hidden{% endif %}><div><p>{{ faq.a }}</p></div></div>
+      </div>{% endfor %}
+    </div>
+  </div>
+</section>{% endif %}
+
+<section class="pf-final">
+  <div class="pf-wrap pf-final-grid"><div><h2>Let's evaluate your {{ prop.name|lower }} financing request.</h2><p>Share the property and transaction. We will respond within 24 hours with an initial view.</p></div><a class="pf-btn" href="{{ depth }}apply.html?{{ prop.apply_query }}">Discuss your transaction &rarr;</a></div>
+</section>
+<script src="{{ depth }}js/financing-hub.js" defer></script>
+{% endblock %}

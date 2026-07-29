@@ -125,7 +125,7 @@
     <div class="sticky-cta-text">
       <strong>Need financing?</strong> Apply in 2 minutes. Response within 24 hours.
     </div>
-    <a href="{{ depth }}apply.html{% if loan is defined and loan.apply_query %}?{{ loan.apply_query }}{% endif %}" class="sticky-cta-btn">Apply Now &rarr;</a>
+    <a href="{{ depth }}apply.html{% if loan is defined and loan.apply_query %}?{{ loan.apply_query }}{% elif prop is defined and prop.apply_query %}?{{ prop.apply_query }}{% endif %}" class="sticky-cta-btn">Apply Now &rarr;</a>
   </div>
 </div>
 

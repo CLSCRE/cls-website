@@ -409,6 +409,33 @@ def first_sentence(text: str, max_chars: int = 160) -> str:
     return text[:max_chars].rstrip() + ("..." if len(text) > max_chars else "")
 
 
+def property_financing_slug(label: str) -> str:
+    """Map a property-page financing label to its closest program hub."""
+    normalized = label.lower()
+    rules = (
+        ("agency", "agency-loans"),
+        ("hud", "hud-fha-loans"),
+        ("life insurance", "life-company-loans"),
+        ("life company", "life-company-loans"),
+        ("cmbs", "cmbs-loans"),
+        ("sba", "sba-loans"),
+        ("mezzanine", "mezzanine"),
+        ("preferred equity", "preferred-equity"),
+        ("c-pace", "cpace-financing"),
+        ("value-add", "value-add-bridge-loans"),
+        ("bridge", "bridge-loans"),
+        ("construction-to-perm", "construction-to-perm-loans"),
+        ("construction", "construction-loans"),
+        ("bank permanent", "permanent-loans"),
+        ("specialty", "specialty"),
+        ("infrastructure", "specialty"),
+    )
+    return next(
+        (slug for needle, slug in rules if needle in normalized),
+        "commercial-mortgage-loans",
+    )
+
+
 def build_regional_groups(cities):
     """Group cities by region, ordered per REGION_ORDER. Returns list of
     {region, blurb, cities: [city...]} dicts, only for regions with cities."""
@@ -1140,7 +1167,7 @@ def main():
 
     # ── 2. Property Type Hub Pages ─────────────────────────────────────
     print("\n=== Generating Property Type Hub Pages ===")
-    tpl_property = env.get_template("property_page.html")
+    tpl_property = env.get_template("property_conversion_page.html")
     for prop in property_types:
         txns = filter_transactions(transactions, prop_slug=prop["slug"])
         prop_faqs = faqs_data.get("property_types", {}).get(prop["slug"], [])
@@ -1154,6 +1181,10 @@ def main():
             transactions=txns,
             faqs=prop_faqs,
             related_articles=rel_articles,
+            financing_links=[
+                {"label": label, "slug": property_financing_slug(label)}
+                for label in prop["financing_options"]
+            ],
         )
         out_path = WEBSITE_DIR / "property" / f"{prop['slug']}.html"
         out_path.write_text(html, encoding="utf-8")

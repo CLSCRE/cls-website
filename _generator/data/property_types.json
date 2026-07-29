@@ -25,9 +25,12 @@
     ],
     "seo": {
       "title": "Multifamily & Apartment Financing | Commercial Lending Solutions",
-      "meta_description": "Multifamily and apartment financing from $1M to $100M+. Agency, bank, life company, CMBS, bridge, and construction loans. Nationwide coverage. Get a quote.",
+      "meta_description": "Multifamily and apartment financing from $2MM to $100MM+. Agency, bank, life company, CMBS, bridge, and construction loans. Nationwide coverage. Get a quote.",
       "h1": "Multifamily & Apartment Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=multifamily"
   },
   {
     "slug": "industrial",
@@ -55,9 +58,12 @@
     ],
     "seo": {
       "title": "Industrial & Warehouse Financing | Commercial Lending Solutions",
-      "meta_description": "Industrial and warehouse financing for distribution, manufacturing, cold storage, data centers, and more. Competitive rates from $1M to $100M+. Get a quote.",
+      "meta_description": "Industrial and warehouse financing for distribution, manufacturing, cold storage, data centers, and more. Competitive rates from $2MM to $100MM+. Get a quote.",
       "h1": "Industrial & Warehouse Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=industrial"
   },
   {
     "slug": "retail",
@@ -87,7 +93,10 @@
       "title": "Retail & Shopping Center Financing | Commercial Lending Solutions",
       "meta_description": "Retail property financing for net lease, shopping centers, grocery-anchored, and multi-tenant assets. Life company, CMBS, bank, and bridge loans. Get a quote.",
       "h1": "Retail & Shopping Center Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=retail"
   },
   {
     "slug": "office",
@@ -115,9 +124,12 @@
     ],
     "seo": {
       "title": "Office Building Financing | Commercial Lending Solutions",
-      "meta_description": "Office building financing for Class A, B, and C properties. Banks, life companies, CMBS, bridge, and SBA loans. Nationwide coverage from $1M to $100M+. Get a quote.",
+      "meta_description": "Office building financing for Class A, B, and C properties. Banks, life companies, CMBS, bridge, and SBA loans. Nationwide coverage from $2MM to $100MM+. Get a quote.",
       "h1": "Office Building Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=office"
   },
   {
     "slug": "mixed-use",
@@ -147,7 +159,10 @@
       "title": "Mixed-Use Property Financing | Commercial Lending Solutions",
       "meta_description": "Mixed-use property financing for retail + residential, live-work, TOD, and adaptive reuse projects. Bank, bridge, construction, and CMBS loans. Get a quote.",
       "h1": "Mixed-Use Property Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=mixed-use"
   },
   {
     "slug": "hospitality",
@@ -177,7 +192,10 @@
       "title": "Hotel & Hospitality Financing | Commercial Lending Solutions",
       "meta_description": "Hotel and hospitality financing for full-service, boutique, limited-service, and specialty venues. Bank, CMBS, SBA, bridge, and construction loans. Get a quote.",
       "h1": "Hotel & Hospitality Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=hospitality"
   },
   {
     "slug": "self-storage",
@@ -206,9 +224,12 @@
     ],
     "seo": {
       "title": "Self-Storage Facility Financing | Commercial Lending Solutions",
-      "meta_description": "Self-storage facility financing from $1M to $50M+. Banks, life companies, CMBS, bridge, and construction loans for climate-controlled and drive-up facilities. Get a quote.",
+      "meta_description": "Self-storage facility financing from $2MM to $50MM+. Banks, life companies, CMBS, bridge, and construction loans for climate-controlled and drive-up facilities. Get a quote.",
       "h1": "Self-Storage Facility Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=self-storage"
   },
   {
     "slug": "data-centers",
@@ -237,9 +258,12 @@
     ],
     "seo": {
       "title": "Data Center Financing | Commercial Lending Solutions",
-      "meta_description": "Data center financing for hyperscale, colocation, edge, and enterprise facilities. Life company, bank, CMBS, bridge, and construction loans from $5M to $100M+. Get a quote.",
+      "meta_description": "Data center financing for hyperscale, colocation, edge, and enterprise facilities. Life company, bank, CMBS, bridge, and construction loans from $2MM to $100MM+. Get a quote.",
       "h1": "Data Center Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=data-centers"
   },
   {
     "slug": "senior-living",
@@ -268,9 +292,12 @@
     ],
     "seo": {
       "title": "Senior Living & Assisted Living Financing | Commercial Lending Solutions",
-      "meta_description": "Senior living financing for independent living, assisted living, memory care, and skilled nursing. HUD 232, bank, bridge, and construction loans from $2M to $50M+. Get a quote.",
+      "meta_description": "Senior living financing for independent living, assisted living, memory care, and skilled nursing. HUD 232, bank, bridge, and construction loans from $2MM to $50MM+. Get a quote.",
       "h1": "Senior Living & Assisted Living Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=senior-living"
   },
   {
     "slug": "medical-office",
@@ -299,9 +326,12 @@
     ],
     "seo": {
       "title": "Medical Office Building Financing | Commercial Lending Solutions",
-      "meta_description": "Medical office financing for MOBs, surgery centers, dental offices, and healthcare facilities. Life company, bank, CMBS, bridge, and SBA loans from $1M to $50M+. Get a quote.",
+      "meta_description": "Medical office financing for MOBs, surgery centers, dental offices, and healthcare facilities. Life company, bank, CMBS, bridge, and SBA loans from $2MM to $50MM+. Get a quote.",
       "h1": "Medical Office Building Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=medical-office"
   },
   {
     "slug": "manufactured-housing",
@@ -329,9 +359,12 @@
     ],
     "seo": {
       "title": "Manufactured Housing Community (MHC) Financing | Commercial Lending Solutions",
-      "meta_description": "Manufactured housing community (MHC) financing nationwide. Agency, bank, CMBS, and bridge loans for 3-star to 5-star parks, 55+ communities, and RV hybrids. $1M to $50M+. Get a quote.",
+      "meta_description": "Manufactured housing community (MHC) financing nationwide. Agency, bank, CMBS, and bridge loans for 3-star to 5-star parks, 55+ communities, and RV hybrids. $2MM to $50MM+. Get a quote.",
       "h1": "Manufactured Housing Community Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=manufactured-housing"
   },
   {
     "slug": "parking",
@@ -361,6 +394,9 @@
       "title": "Parking Facility and Garage Financing | Commercial Lending Solutions",
       "meta_description": "Commercial parking facility financing from Commercial Lending Solutions. Bank, CMBS, life company, and bridge loans for urban garages, surface lots, airport parking, and transit-oriented facilities. Get a quote.",
       "h1": "Parking Facility and Garage Financing"
-    }
+    },
+    "min_amount_usd": 2000000,
+    "min_loan_display": "$2MM",
+    "apply_query": "property=parking"
   }
 ]
