@@ -348,16 +348,335 @@
       });
     }
 
-    // ── 3) Exit-intent fallback popup (desktop-only, once per session) ────
+    // ── 3) One page-aware exit-intent controller ──────────────────────────
+    var EXIT_PROMPT_KEY = 'cls-exit-shown';
+    var LEGACY_EXIT_PROMPT_KEY = 'exitShown';
+    var exitPromptShownInMemory = false;
+    var exitSessionStorage = null;
+    var exitStoragePrototype = null;
+    var nativeStorageGet = null;
+    var nativeStorageSet = null;
+    var nativeStorageRemove = null;
+    try {
+      exitSessionStorage = window.sessionStorage;
+      exitStoragePrototype = Object.getPrototypeOf(exitSessionStorage);
+      nativeStorageGet = exitStoragePrototype.getItem;
+      nativeStorageSet = exitStoragePrototype.setItem;
+      nativeStorageRemove = exitStoragePrototype.removeItem;
+    } catch (e) {}
+
+    function readExitPromptState(key) {
+      if (!exitSessionStorage || !nativeStorageGet) return null;
+      try { return nativeStorageGet.call(exitSessionStorage, key); } catch (e) { return null; }
+    }
+
+    function writeExitPromptState(key) {
+      if (!exitSessionStorage || !nativeStorageSet) return;
+      try { nativeStorageSet.call(exitSessionStorage, key, '1'); } catch (e) {}
+    }
+
+    function installLegacyExitIntentGate() {
+      if (!exitSessionStorage || !exitStoragePrototype || !nativeStorageGet) return;
+      if (exitStoragePrototype.getItem.__clsExitIntentGate) return;
+      var previousGet = exitStoragePrototype.getItem;
+      function gatedStorageGet(key) {
+        if (this === exitSessionStorage && key === LEGACY_EXIT_PROMPT_KEY) return '1';
+        return previousGet.call(this, key);
+      }
+      gatedStorageGet.__clsExitIntentGate = true;
+      try { exitStoragePrototype.getItem = gatedStorageGet; } catch (e) {}
+    }
+
+    function exitPromptWasShown() {
+      return exitPromptShownInMemory || window.__clsExitPromptShown ||
+             readExitPromptState(EXIT_PROMPT_KEY) ||
+             readExitPromptState(LEGACY_EXIT_PROMPT_KEY);
+    }
+
+    function markExitPromptShown() {
+      exitPromptShownInMemory = true;
+      window.__clsExitPromptShown = true;
+      writeExitPromptState(EXIT_PROMPT_KEY);
+      // Existing generated pages still read the legacy key.
+      writeExitPromptState(LEGACY_EXIT_PROMPT_KEY);
+    }
+
+    function clearExitPromptState() {
+      exitPromptShownInMemory = false;
+      window.__clsExitPromptShown = false;
+      if (!exitSessionStorage || !nativeStorageRemove) return;
+      try { nativeStorageRemove.call(exitSessionStorage, EXIT_PROMPT_KEY); } catch (e) {}
+      try { nativeStorageRemove.call(exitSessionStorage, LEGACY_EXIT_PROMPT_KEY); } catch (e) {}
+    }
+
+    window.CLSExitIntent = {
+      shouldSuppress: shouldSuppressExitPrompt,
+      markShown: markExitPromptShown,
+      trackShown: trackExitPromptShown
+    };
+
+    function exitIntentAlreadyTracked() {
+      if (window.__clsExitIntentTracked) return true;
+      var layer = window.dataLayer || [];
+      for (var i = 0; i < layer.length; i++) {
+        if (layer[i] && layer[i][0] === 'event' && layer[i][1] === 'exit_intent_shown') {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    function trackExitPromptShown() {
+      if (exitIntentAlreadyTracked()) return;
+      window.__clsExitIntentTracked = true;
+      if (typeof gtag === 'function') {
+        try { gtag('event', 'exit_intent_shown', {page_url: location.href}); } catch (e) {}
+      }
+    }
+
+    function isVisible(element) {
+      if (!element) return false;
+      var current = element;
+      while (current && current.nodeType === 1) {
+        var style = window.getComputedStyle(current);
+        if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') {
+          return false;
+        }
+        current = current.parentElement;
+      }
+      return element.getClientRects().length > 0;
+    }
+
+    function isInViewport(element) {
+      if (!isVisible(element)) return false;
+      var rect = element.getBoundingClientRect();
+      return rect.width > 0 && rect.height > 0 &&
+        rect.bottom > 0 && rect.right > 0 &&
+        rect.top < window.innerHeight && rect.left < window.innerWidth;
+    }
+
+    function isSuppressedRoute() {
+      return /\/(?:apply|contact)(?:[/.]|$)|thank-you/i.test(location.pathname);
+    }
+
+    function hasActiveConversionTask(excludedOverlay) {
+      var active = document.activeElement;
+      if (active && active.matches &&
+          active.matches('input, select, textarea, button, [contenteditable="true"]')) {
+        return true;
+      }
+
+      if (document.querySelector('form[data-cls-exit-dirty="true"]')) return true;
+
+      var dialogs = document.querySelectorAll('[role="dialog"], [aria-modal="true"], .exit-overlay, #cls-exit-overlay');
+      for (var i = 0; i < dialogs.length; i++) {
+        if (dialogs[i] !== excludedOverlay &&
+            !(excludedOverlay && excludedOverlay.contains(dialogs[i])) &&
+            isVisible(dialogs[i])) return true;
+      }
+
+      var captcha = document.querySelectorAll(
+        'iframe[src*="challenges.cloudflare.com"], iframe[src*="recaptcha"], .cf-turnstile, .g-recaptcha'
+      );
+      for (var j = 0; j < captcha.length; j++) {
+        if (isInViewport(captcha[j])) return true;
+      }
+
+      return false;
+    }
+
+    function shouldSuppressExitPrompt(excludedOverlay) {
+      return Boolean(exitPromptWasShown() || isSuppressedRoute() ||
+        hasActiveConversionTask(excludedOverlay));
+    }
+
+    function activateExitDialog(overlay, dialog, closeDialog) {
+      if (!overlay || !dialog || overlay.dataset.clsDialogActive === 'true') {
+        return function () {};
+      }
+
+      overlay.dataset.clsDialogActive = 'true';
+      var previousFocus = document.activeElement;
+      var previousOverflow = document.body.style.overflow;
+      var inerted = [];
+
+      Array.prototype.forEach.call(document.body.children, function (child) {
+        if (child !== overlay && !child.inert) {
+          child.inert = true;
+          inerted.push(child);
+        }
+      });
+      document.body.style.overflow = 'hidden';
+
+      if (!dialog.hasAttribute('tabindex')) dialog.setAttribute('tabindex', '-1');
+
+      function focusableElements() {
+        return Array.prototype.filter.call(
+          dialog.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'),
+          isVisible
+        );
+      }
+
+      function handleKeydown(event) {
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          closeDialog();
+          return;
+        }
+        if (event.key !== 'Tab') return;
+
+        var focusable = focusableElements();
+        if (!focusable.length) {
+          event.preventDefault();
+          dialog.focus();
+          return;
+        }
+
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+
+      document.addEventListener('keydown', handleKeydown, true);
+      window.requestAnimationFrame(function () {
+        var initial = dialog.querySelector('input:not([type="hidden"]), button, a[href], [tabindex]:not([tabindex="-1"])');
+        (initial || dialog).focus();
+      });
+
+      return function deactivateExitDialog() {
+        if (overlay.dataset.clsDialogActive !== 'true') return;
+        delete overlay.dataset.clsDialogActive;
+        document.removeEventListener('keydown', handleKeydown, true);
+        document.body.style.overflow = previousOverflow;
+        inerted.forEach(function (child) { child.inert = false; });
+        if (previousFocus && previousFocus.isConnected && previousFocus.focus) {
+          var temporaryBodyTabindex = previousFocus === document.body &&
+            !document.body.hasAttribute('tabindex');
+          if (temporaryBodyTabindex) document.body.setAttribute('tabindex', '-1');
+          previousFocus.focus();
+          if (temporaryBodyTabindex) document.body.removeAttribute('tabindex');
+        }
+      };
+    }
+
+    function enhancePageSpecificDialog() {
+      var overlay = document.getElementById('exitOverlay');
+      if (!overlay) return;
+
+      var dialog = overlay.querySelector('.exit-popup');
+      var close = document.getElementById('exitClose');
+      if (!dialog || !close) return;
+
+      dialog.setAttribute('role', 'dialog');
+      dialog.setAttribute('aria-modal', 'true');
+      dialog.setAttribute('aria-labelledby', 'exitTitle');
+      close.setAttribute('type', 'button');
+      close.setAttribute('aria-label', 'Close this dialog');
+
+      var deactivate = null;
+      function setDormant(isDormant) {
+        overlay.hidden = isDormant;
+        overlay.inert = isDormant;
+        overlay.setAttribute('aria-hidden', isDormant ? 'true' : 'false');
+      }
+      function closeDialog() {
+        overlay.classList.remove('visible');
+      }
+      function syncDialogState() {
+        if (overlay.classList.contains('visible')) {
+          if (isSuppressedRoute() || hasActiveConversionTask(overlay)) {
+            overlay.classList.remove('visible');
+            clearExitPromptState();
+            setDormant(true);
+            return;
+          }
+          setDormant(false);
+          markExitPromptShown();
+          trackExitPromptShown();
+          if (!deactivate) deactivate = activateExitDialog(overlay, dialog, closeDialog);
+        } else {
+          if (deactivate) {
+            deactivate();
+            deactivate = null;
+          }
+          setDormant(true);
+        }
+      }
+
+      new MutationObserver(syncDialogState).observe(overlay, {attributes:true, attributeFilter:['class']});
+      close.addEventListener('click', closeDialog);
+      overlay.addEventListener('click', function (event) {
+        if (event.target === overlay) closeDialog();
+      });
+      syncDialogState();
+    }
+
+    function trackDirtyForms() {
+      function markDirty(event) {
+        var form = event.target && event.target.closest ? event.target.closest('form') : null;
+        if (form) form.dataset.clsExitDirty = 'true';
+      }
+      document.addEventListener('input', markDirty, true);
+      document.addEventListener('change', markDirty, true);
+    }
+
+    function guardPageSpecificExitIntent() {
+      var pageOverlay = document.getElementById('exitOverlay');
+      if (!pageOverlay) return;
+      installLegacyExitIntentGate();
+      var lastMobileScrollY = window.scrollY;
+      var mobileScrollUp = 0;
+
+      function stopCompetingPrompt(event) {
+        var isTopExit = event.type === 'mouseleave' ||
+          (event.type === 'mouseout' && event.clientY < 5 && event.relatedTarget === null);
+        var isMobileScroll = event.type === 'scroll' && window.innerWidth <= 768;
+
+        if (isMobileScroll) {
+          if (window.scrollY < lastMobileScrollY) mobileScrollUp++;
+          else mobileScrollUp = 0;
+          lastMobileScrollY = window.scrollY;
+          if (mobileScrollUp <= 15 || window.scrollY <= 300) return;
+          if (exitPromptWasShown()) return;
+          if (isSuppressedRoute() || hasActiveConversionTask(pageOverlay)) return;
+          markExitPromptShown();
+          pageOverlay.classList.add('visible');
+          return;
+        }
+
+        if (!isTopExit) return;
+        if (shouldSuppressExitPrompt(pageOverlay)) {
+          event.stopImmediatePropagation();
+          return;
+        }
+        if (isTopExit && window.innerWidth >= 768) {
+          event.stopImmediatePropagation();
+          markExitPromptShown();
+          pageOverlay.classList.add('visible');
+        }
+      }
+
+      // Capture runs before the older inline bubble listener on generated pages.
+      document.addEventListener('mouseout', stopCompetingPrompt, true);
+      document.addEventListener('mouseleave', stopCompetingPrompt, true);
+      window.addEventListener('scroll', stopCompetingPrompt, true);
+    }
+
     function setupExitIntent() {
-      if (sessionStorage.getItem('cls-exit-shown')) return;
-      if (location.pathname.indexOf('thank-you') > -1) return; // don't show on thank-you
+      if (document.getElementById('exitOverlay')) return;
+      if (exitPromptWasShown() || isSuppressedRoute()) return;
       var shown = false;
       document.addEventListener('mouseleave', function (e) {
-        if (shown || e.clientY > 10) return;
+        if (shown || e.clientY > 10 || shouldSuppressExitPrompt()) return;
         if (window.innerWidth < 768) return; // skip mobile
         shown = true;
-        sessionStorage.setItem('cls-exit-shown', '1');
+        markExitPromptShown();
         showExitPopup();
       });
     }
@@ -366,15 +685,15 @@
       var overlay = document.createElement('div');
       overlay.id = 'cls-exit-overlay';
       overlay.innerHTML = ''
-        + '<div class="cls-exit-card" role="dialog" aria-labelledby="cls-exit-title">'
-        +   '<button class="cls-exit-close" aria-label="Close">&times;</button>'
+        + '<div class="cls-exit-card" role="dialog" aria-modal="true" aria-labelledby="cls-exit-title">'
+        +   '<button type="button" class="cls-exit-close" aria-label="Close this dialog">&times;</button>'
         +   '<div class="cls-exit-label">Before you go</div>'
         +   '<h3 id="cls-exit-title">Questions about your deal?</h3>'
         +   '<p>Our team personally reviews every inquiry. Call, book a time, or email, whichever is easiest.</p>'
         +   '<div class="cls-exit-actions">'
         +     '<a href="tel:' + PHONE + '">Call ' + PHONE_DISPLAY + '</a>'
         +     '<a href="' + BOOKING + '" target="_blank" rel="noopener">Book 15 min</a>'
-        +     '<a href="mailto:' + EMAIL + '">Email CLS CRE</a>'
+        +     '<a href="mailto:' + EMAIL + '">Email Commercial Lending Solutions</a>'
         +   '</div>'
         + '</div>';
       var style = document.createElement('style');
@@ -394,21 +713,27 @@
         + '@media (max-width:480px){#cls-exit-overlay .cls-exit-actions{grid-template-columns:1fr}}';
       document.head.appendChild(style);
       document.body.appendChild(overlay);
-      overlay.querySelector('.cls-exit-close').addEventListener('click', function () {
+      var dialog = overlay.querySelector('.cls-exit-card');
+      var deactivate = null;
+      function closeDialog() {
+        if (deactivate) deactivate();
         overlay.remove();
-      });
-      overlay.addEventListener('click', function (e) {
-        if (e.target === overlay) overlay.remove();
-      });
-      if (typeof gtag === 'function') {
-        try { gtag('event', 'exit_popup_shown', {page_url: location.href}); } catch (e) {}
       }
+      deactivate = activateExitDialog(overlay, dialog, closeDialog);
+      overlay.querySelector('.cls-exit-close').addEventListener('click', closeDialog);
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) closeDialog();
+      });
+      trackExitPromptShown();
     }
 
     // ── Run on DOM ready ─────────────────────────────────────────────────
     function ready() {
       injectMobileBar();
+      trackDirtyForms();
       prefillFromParams();
+      guardPageSpecificExitIntent();
+      enhancePageSpecificDialog();
       setupExitIntent();
     }
     if (document.readyState === 'loading') {
