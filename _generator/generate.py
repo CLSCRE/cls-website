@@ -458,6 +458,78 @@ def build_regional_groups(cities):
     return out
 
 
+LOCATIONS_FEATURED_MARKET_SLUGS = (
+    "los-angeles", "new-york", "chicago", "dallas", "houston", "miami",
+    "atlanta", "phoenix", "denver", "san-francisco", "seattle", "boston",
+)
+LOCATIONS_FEATURED_PROGRAM_SLUGS = (
+    "permanent-loans", "bridge-loans", "construction-loans",
+    "life-company-loans", "multifamily-loans", "cmbs-loans",
+)
+LOCATIONS_FEATURED_PROPERTY_SLUGS = (
+    "multifamily", "industrial", "retail", "office", "mixed-use", "hospitality",
+)
+
+
+def build_locations_hub_context(cities, states, loan_types, property_types):
+    """Build the curated, authority-first context for locations.html."""
+    state_by_abbr = {state["abbr"]: state for state in states}
+    city_counts = {}
+    enriched_cities = []
+    for city in sorted(cities, key=lambda item: (item["state"], item["city"])):
+        city_counts[city["state"]] = city_counts.get(city["state"], 0) + 1
+        enriched_cities.append({
+            **city,
+            "state_name": state_by_abbr[city["state"]]["name"],
+        })
+
+    states_by_region = {}
+    for state in states:
+        region = region_for_state(state["abbr"])
+        states_by_region.setdefault(region, []).append({
+            **state,
+            "city_count": city_counts.get(state["abbr"], 0),
+        })
+    state_groups = [
+        {
+            "region": region,
+            "blurb": REGION_DESCRIPTIONS[region],
+            "states": sorted(
+                states_by_region.get(region, []), key=lambda item: item["name"]
+            ),
+        }
+        for region in REGION_ORDER
+        if states_by_region.get(region)
+    ]
+
+    city_by_slug = {city["slug"]: city for city in enriched_cities}
+    program_by_slug = {program["slug"]: program for program in loan_types}
+    property_by_slug = {
+        property_type["slug"]: property_type for property_type in property_types
+    }
+
+    def require_items(lookup, slugs, label):
+        missing = [slug for slug in slugs if slug not in lookup]
+        if missing:
+            raise ValueError(f"Missing curated {label}: {', '.join(missing)}")
+        return [lookup[slug] for slug in slugs]
+
+    return {
+        "cities": enriched_cities,
+        "states": sorted(states, key=lambda item: item["name"]),
+        "state_groups": state_groups,
+        "featured_markets": require_items(
+            city_by_slug, LOCATIONS_FEATURED_MARKET_SLUGS, "markets"
+        ),
+        "featured_programs": require_items(
+            program_by_slug, LOCATIONS_FEATURED_PROGRAM_SLUGS, "programs"
+        ),
+        "featured_property_types": require_items(
+            property_by_slug, LOCATIONS_FEATURED_PROPERTY_SLUGS, "property types"
+        ),
+    }
+
+
 def pick_featured_markets(current_city, cities, n_total=8):
     """Pick a curated set of ~8 markets to feature: regional peers + national anchors.
     Returns list of city dicts (excludes current_city)."""
@@ -1611,17 +1683,15 @@ def main():
     # ── 7. Locations Page ──────────────────────────────────────────────
     print("\n=== Generating Locations Page ===")
     tpl_locations = env.get_template("locations.html")
-    # Unique states, sorted
-    states_sorted = sorted(set(c["state"] for c in cities))
-    total_city_pages = len(cities) * (len(loan_types) + len(property_types))
+    locations_states = load_json("states.json")
     html = tpl_locations.render(
         **shared,
-        cities=cities,
-        states_sorted=states_sorted,
-        total_pages=total_city_pages,
+        **build_locations_hub_context(
+            cities, locations_states, loan_types, property_types
+        ),
         seo={
             "title": "Commercial Real Estate Financing Locations | Commercial Lending Solutions",
-            "meta_description": f"Commercial Lending Solutions provides commercial mortgage brokerage in {len(cities)} major U.S. metros. Browse financing programs and property types by city.",
+            "meta_description": f"Commercial Lending Solutions provides commercial mortgage brokerage in {len(cities)} major U.S. markets. Browse financing coverage by city and state.",
         },
         canonical_path="locations.html",
         depth="",

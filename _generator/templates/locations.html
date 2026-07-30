@@ -1,8 +1,89 @@
 ﻿{% extends '_base.html' %}
 
+{% block extra_meta %}
+<style>
+.locations-page{--locations-ink:#0d2d4b;--locations-blue:#153d63;--locations-green:#006a4e;--locations-mist:#f3f7f9;--locations-line:#dbe5eb}
+.locations-page *{box-sizing:border-box}
+.locations-shell{width:min(1180px,calc(100% - 40px));margin:0 auto}
+.locations-hero{position:relative;overflow:hidden;padding:92px 0 70px;background:linear-gradient(135deg,#0a2742 0%,#153d63 60%,#1c527c 100%);color:#fff}
+.locations-hero::after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-180px;top:-230px;box-shadow:0 0 0 80px rgba(255,255,255,.025),0 0 0 160px rgba(255,255,255,.02);pointer-events:none}
+.locations-kicker{display:inline-flex;align-items:center;gap:9px;margin:0 0 18px;font-size:12px;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:#bfe8d9}
+.locations-kicker::before{content:"";width:28px;height:2px;background:#43c59e}
+.locations-hero h1{max-width:820px;margin:0;font-family:var(--font-display);font-size:clamp(40px,6vw,72px);line-height:1.03;letter-spacing:-.025em;color:#fff}
+.locations-hero-copy{max-width:720px;margin:22px 0 0;font-size:clamp(17px,2vw,21px);line-height:1.7;color:#dce9f2}
+.locations-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.locations-primary,.locations-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:7px;font-size:15px;font-weight:700;text-decoration:none;transition:transform .18s ease,background .18s ease,border-color .18s ease}
+.locations-primary{background:#007a59;color:#fff}
+.locations-primary:hover{background:#006a4e;transform:translateY(-1px)}
+.locations-secondary{border:1px solid rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.04)}
+.locations-secondary:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.locations-primary:focus-visible,.locations-secondary:focus-visible,.locations-card:focus-visible,.locations-state-link:focus-visible,.locations-market-card:focus-visible,.locations-filter input:focus-visible,.locations-filter select:focus-visible,.locations-filter button:focus-visible{outline:3px solid #ffd166;outline-offset:3px}
+.locations-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-top:48px;max-width:760px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);border-radius:10px;overflow:hidden}
+.locations-stat{padding:18px 20px;background:rgba(8,35,59,.52)}
+.locations-stat strong{display:block;font-family:var(--font-display);font-size:30px;line-height:1;color:#fff}
+.locations-stat span{display:block;margin-top:7px;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#bcd0df}
+.locations-trust{position:relative;margin:-1px 0 0;background:#fff;border-bottom:1px solid var(--locations-line)}
+.locations-trust-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.locations-trust-item{padding:24px 26px;border-right:1px solid var(--locations-line)}
+.locations-trust-item:last-child{border-right:0}
+.locations-trust-item strong{display:block;color:var(--locations-ink);font-size:15px}
+.locations-trust-item span,.locations-trust-item a{display:block;margin-top:5px;color:#5b6d7b;font-size:13px;line-height:1.5}
+.locations-trust-item a{color:var(--locations-green);font-weight:650;text-decoration:none}
+.locations-section{padding:76px 0}
+.locations-section.alt{background:var(--locations-mist)}
+.locations-section-header{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:30px}
+.locations-section-header>div{max-width:760px}
+.locations-eyebrow{margin:0 0 9px;color:var(--locations-green);font-size:12px;font-weight:750;letter-spacing:.13em;text-transform:uppercase}
+.locations-section h2{margin:0;color:var(--locations-ink);font-family:var(--font-display);font-size:clamp(30px,4vw,45px);line-height:1.1}
+.locations-intro{margin:13px 0 0;color:#5a6d7b;font-size:16px;line-height:1.75}
+.locations-text-link{flex:0 0 auto;color:var(--locations-green);font-size:14px;font-weight:700;text-decoration:none}
+.locations-featured-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.locations-card{display:flex;min-width:0;flex-direction:column;min-height:152px;padding:22px;border:1px solid var(--locations-line);border-radius:10px;background:#fff;color:inherit;text-decoration:none;box-shadow:0 5px 18px rgba(16,45,72,.05);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.locations-card:hover{transform:translateY(-3px);border-color:#9eb8c8;box-shadow:0 10px 26px rgba(16,45,72,.1)}
+.locations-card-tag{color:var(--locations-green);font-size:11px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+.locations-card h3{margin:11px 0 6px;color:var(--locations-ink);font-size:18px;line-height:1.25}
+.locations-card p{margin:0;color:#647582;font-size:13px;line-height:1.55;overflow-wrap:anywhere}
+.locations-card-arrow{margin-top:auto;padding-top:16px;color:var(--locations-green);font-size:18px}
+.locations-state-regions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.locations-region{min-width:0;padding:26px;border:1px solid var(--locations-line);border-radius:12px;background:#fff}
+.locations-region h3{margin:0;color:var(--locations-ink);font-family:var(--font-display);font-size:24px}
+.locations-region>p{margin:7px 0 18px;color:#566a78;font-size:13px;line-height:1.55}
+.locations-state-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.locations-state-link{display:flex;min-width:0;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:7px;background:#f5f8fa;color:var(--locations-ink);font-size:13px;font-weight:650;text-decoration:none}
+.locations-state-link:hover{background:#e9f2f2;color:var(--locations-green)}
+.locations-state-link span:last-child{flex:0 0 auto;color:#526571;font-size:11px;font-weight:500}
+.locations-filter{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(180px,.7fr) auto;gap:12px;margin:26px 0 16px;padding:16px;border:1px solid var(--locations-line);border-radius:10px;background:#fff}
+.locations-filter label{display:block;margin-bottom:6px;color:var(--locations-ink);font-size:12px;font-weight:700}
+.locations-filter input,.locations-filter select{width:100%;height:46px;padding:0 13px;border:1px solid #b9c9d3;border-radius:7px;background:#fff;color:#233b4d;font:inherit;font-size:14px}
+.locations-filter button{align-self:end;height:46px;padding:0 18px;border:1px solid #9fb2bf;border-radius:7px;background:#f4f7f9;color:var(--locations-ink);font-weight:700;cursor:pointer}
+.locations-results{margin:0 0 18px;color:#687985;font-size:13px}
+.locations-market-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.locations-market-card{display:block;min-width:0;padding:15px 16px;border:1px solid var(--locations-line);border-radius:8px;background:#fff;color:inherit;text-decoration:none}
+.locations-market-card:hover{border-color:#78a995;background:#f7fbf9}
+.locations-market-city{display:block;color:var(--locations-ink);font-size:14px;font-weight:750;overflow-wrap:anywhere}
+.locations-market-meta{display:block;margin-top:4px;color:#526571;font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+.locations-market-card[hidden]{display:none}
+.locations-pathways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.locations-confidence{padding:76px 0;background:#0b2c49;color:#fff}
+.locations-confidence-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);gap:48px;align-items:center}
+.locations-confidence h2{color:#fff}
+.locations-confidence p{max-width:700px;margin:16px 0 0;color:#c8dae6;font-size:16px;line-height:1.75}
+.locations-credential-card{padding:27px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.06)}
+.locations-credential-card strong{display:block;font-family:var(--font-display);font-size:24px;color:#fff}
+.locations-credential-list{margin:17px 0 0;padding:0;list-style:none}
+.locations-credential-list li{position:relative;padding:9px 0 9px 25px;border-top:1px solid rgba(255,255,255,.12);color:#d9e6ed;font-size:14px}
+.locations-credential-list li::before{content:"✓";position:absolute;left:0;color:#43c59e;font-weight:800}
+.locations-credential-card a{display:inline-block;margin-top:18px;color:#75ddb9;font-size:14px;font-weight:700;text-decoration:none}
+#cls-mcb .cls-mcb-primary{background:#007a59!important}
+@media(max-width:900px){.locations-featured-grid,.locations-market-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.locations-confidence-grid{grid-template-columns:1fr}.locations-trust-grid{grid-template-columns:1fr}.locations-trust-item{border-right:0;border-bottom:1px solid var(--locations-line)}.locations-trust-item:last-child{border-bottom:0}}
+@media(max-width:700px){.locations-shell{width:min(100% - 28px,1180px)}.locations-hero{padding:76px 0 52px}.locations-stats{grid-template-columns:1fr}.locations-stat{display:flex;align-items:center;gap:12px}.locations-stat span{margin-top:0}.locations-section{padding:58px 0}.locations-section-header{display:block}.locations-text-link{display:inline-block;margin-top:14px}.locations-featured-grid,.locations-pathways,.locations-state-regions{grid-template-columns:1fr}.locations-state-list{grid-template-columns:1fr 1fr}.locations-filter{grid-template-columns:1fr}.locations-market-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:430px){.locations-state-list,.locations-market-grid{grid-template-columns:1fr}.locations-hero-actions a{width:100%}.locations-card{min-height:0}.locations-region{padding:20px}.locations-confidence-grid{gap:28px}}
+</style>
+{% endblock %}
+
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":"Commercial Lending Solutions, Nationwide CRE Financing","url":"https://clscre.com/locations.html","description":"{{ seo.meta_description }}","telephone":"+13107080690","email":"loans@clscre.com","areaServed":{"@type":"Country","name":"United States"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"CollectionPage","name":"Commercial Real Estate Financing Locations","description":"{{ seo.meta_description }}","url":"https://clscre.com/locations.html","about":{"@type":"Service","name":"Commercial Real Estate Financing","areaServed":{"@type":"Country","name":"United States"}},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Locations","item":"https://clscre.com/locations.html"}]}
@@ -10,173 +91,145 @@
 {% endblock %}
 
 {% block content %}
-<!-- BREADCRUMBS -->
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-<ol>
-  <li><a href="{{ depth }}index.html">Home</a></li>
-  <li><span>Locations</span></li>
-</ol>
-</nav>
+<div class="locations-page">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol><li><a href="{{ depth }}index.html">Home</a></li><li><span>Locations</span></li></ol>
+  </nav>
 
-<!-- HERO -->
-<section class="page-hero">
-<div class="section-inner">
-  <div class="section-label reveal">Nationwide Coverage</div>
-  <h1 class="reveal">Commercial Real Estate Financing in {{ cities|length }} Markets</h1>
-  <p class="reveal">CLS CRE provides commercial mortgage brokerage services across the nation's top metropolitan areas. Select your market below to explore financing options for every property type.</p>
-  <a href="{{ depth }}apply.html" class="btn-primary reveal">Apply for Financing &rarr;</a>
-</div>
-</section>
-
-<!-- STATS BAR -->
-<section class="content-section" style="padding:40px 0;border-bottom:1px solid var(--gray-200)">
-<div class="section-inner">
-  <div class="locations-stats">
-    <div class="loc-stat"><span class="loc-stat-num">{{ cities|length }}</span><span class="loc-stat-label">Metro Areas</span></div>
-    <div class="loc-stat"><span class="loc-stat-num">{{ all_loan_types|length }}</span><span class="loc-stat-label">Loan Programs</span></div>
-    <div class="loc-stat"><span class="loc-stat-num">{{ all_property_types|length }}</span><span class="loc-stat-label">Property Types</span></div>
-    <div class="loc-stat"><span class="loc-stat-num">{{ total_pages }}</span><span class="loc-stat-label">Local Pages</span></div>
-  </div>
-</div>
-</section>
-
-<!-- FILTER BAR -->
-<section class="content-section" style="padding:32px 0 0">
-<div class="section-inner">
-  <div class="locations-filter">
-    <input type="text" id="citySearch" class="loc-search" placeholder="Search cities..." autocomplete="off">
-    <div class="pill-links" id="stateFilter">
-      <button class="pill-link active" data-state="all">All States</button>
-      {% for state in states_sorted %}
-      <button class="pill-link" data-state="{{ state }}">{{ state }}</button>
-      {% endfor %}
+  <section class="locations-hero" aria-labelledby="locations-heading">
+    <div class="locations-shell">
+      <p class="locations-kicker">Nationwide capital access</p>
+      <h1 id="locations-heading">Commercial real estate financing, market by market.</h1>
+      <p class="locations-hero-copy">Commercial Lending Solutions structures loans of $2 million and above for acquisitions, refinances, construction, and transitional assets throughout the United States.</p>
+      <div class="locations-hero-actions">
+        <a class="locations-primary" href="{{ depth }}apply.html">Discuss your financing request &rarr;</a>
+        <a class="locations-secondary" href="#all-markets">Browse every market</a>
+      </div>
+      <div class="locations-stats" aria-label="Nationwide coverage summary">
+        <div class="locations-stat"><strong>{{ cities|length }}</strong><span>Market authorities</span></div>
+        <div class="locations-stat"><strong>{{ states|length }}</strong><span>State and district guides</span></div>
+        <div class="locations-stat"><strong>$2MM+</strong><span>Published loan minimum</span></div>
+      </div>
     </div>
-  </div>
-</div>
-</section>
+  </section>
 
-<!-- CITY CARDS -->
-<section class="content-section" style="padding:40px 0 80px">
-<div class="section-inner">
-  <div class="locations-grid" id="locationsGrid">
-    {% for city in cities %}
-    <div class="location-card" data-state="{{ city.state }}" data-city="{{ city.city|lower }}">
-      <div class="loc-card-header">
-        <h2><a href="{{ depth }}financing/permanent-loans-{{ city.slug }}.html">{{ city.city }}, {{ city.state }}</a></h2>
-        <span class="loc-card-metro">{{ city.metro }}</span>
+  <aside class="locations-trust" aria-label="Broker credentials and access">
+    <div class="locations-shell locations-trust-grid">
+      <div class="locations-trust-item"><strong>Broker-led execution</strong><a href="{{ depth }}about/trevor-damyan.html">Trevor Damyan, DRE 02244836</a></div>
+      <div class="locations-trust-item"><strong>Direct institutional access</strong><a href="{{ depth }}life-company/index.html">Life insurance company lending relationships</a></div>
+      <div class="locations-trust-item"><strong>Relevant transaction experience</strong><a href="{{ depth }}track-record.html">Review closed commercial loans</a></div>
+    </div>
+  </aside>
+
+  <section class="locations-section" aria-labelledby="featured-markets-heading">
+    <div class="locations-shell">
+      <div class="locations-section-header">
+        <div><p class="locations-eyebrow">Gateway and growth markets</p><h2 id="featured-markets-heading">Featured commercial real estate markets</h2><p class="locations-intro">Start with a major market authority for local financing context, underwriting considerations, and related submarkets.</p></div>
+        <a class="locations-text-link" href="#all-markets">View all {{ cities|length }} markets &rarr;</a>
       </div>
-      <p class="loc-card-context">{{ city.context[:160] }}...</p>
-      <div class="loc-card-links">
-        <div class="loc-card-section">
-          <h3>Financing Programs</h3>
-          <ul>
-            {% for lt in all_loan_types %}
-            <li><a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html">{{ lt.short_name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="loc-card-section">
-          <h3>Property Types</h3>
-          <ul>
-            {% for pt in all_property_types %}
-            <li><a href="{{ depth }}property/{{ pt.slug }}-{{ city.slug }}.html">{{ pt.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      <div class="loc-card-neighborhoods">
-        <a href="{{ depth }}markets/{{ city.slug }}/" class="loc-neighborhood loc-neighborhood-link" style="font-weight:600;color:var(--green-dark,var(--navy))">All Neighborhoods &rarr;</a>
-        {% for n in city.neighborhoods %}
-        <span class="loc-neighborhood">{{ n }}</span>
+      <div class="locations-featured-grid">
+        {% for city in featured_markets %}
+        <a class="locations-card" href="{{ depth }}markets/{{ city.slug }}/">
+          <span class="locations-card-tag">{{ city.state_name }}</span>
+          <h3>{{ city.city }}</h3>
+          <p>{{ city.metro }}</p>
+          <span class="locations-card-arrow" aria-hidden="true">&rarr;</span>
+        </a>
         {% endfor %}
       </div>
     </div>
-    {% endfor %}
-  </div>
-  <p class="locations-count" id="locationsCount">Showing {{ cities|length }} of {{ cities|length }} markets</p>
-</div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section class="cta-section">
-<div class="section-inner">
-  <h2>Don't See Your Market?</h2>
-  <p>CLS CRE finances commercial properties nationwide. Contact us for a free quote on any deal, anywhere in the United States.</p>
-  <a href="{{ depth }}contact.html" class="btn-primary">Contact Us &rarr;</a>
-</div>
-</section>
+  <section class="locations-section alt" aria-labelledby="states-heading">
+    <div class="locations-shell">
+      <div class="locations-section-header">
+        <div><p class="locations-eyebrow">State-level guidance</p><h2 id="states-heading">Financing coverage across every state</h2><p class="locations-intro">State authorities explain foreclosure process, recording taxes, lender appetite, and the active city markets in each jurisdiction.</p></div>
+        <a class="locations-text-link" href="{{ depth }}states/">Open the states index &rarr;</a>
+      </div>
+      <div class="locations-state-regions">
+        {% for group in state_groups %}
+        <article class="locations-region">
+          <h3>{{ group.region }}</h3>
+          <p>{{ group.blurb }}</p>
+          <div class="locations-state-list">
+            {% for state in group.states %}
+            <a class="locations-state-link" href="{{ depth }}states/{{ state.slug }}.html"><span>{{ state.name }}</span><span>{% if state.city_count %}{{ state.city_count }} market{{ 's' if state.city_count != 1 }}{% else %}statewide{% endif %}</span></a>
+            {% endfor %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-<style>
-.locations-stats{display:flex;justify-content:center;gap:60px;flex-wrap:wrap}
-.loc-stat{text-align:center}
-.loc-stat-num{display:block;font-family:var(--font-display);font-size:42px;color:var(--navy);line-height:1.1}
-.loc-stat-label{font-size:13px;font-weight:600;color:var(--gray-500);text-transform:uppercase;letter-spacing:.06em}
-.locations-filter{display:flex;flex-direction:column;gap:16px}
-.loc-search{width:100%;max-width:400px;padding:12px 20px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);color:var(--navy);transition:border-color .2s;outline:none}
-.loc-search:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(0,166,118,.1)}
-.locations-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:24px}
-.location-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:28px;transition:all .3s}
-.location-card:hover{border-color:var(--green);box-shadow:0 8px 28px rgba(0,0,0,.06)}
-.location-card.hidden{display:none}
-.loc-card-header h2{font-family:var(--font-display);font-size:22px;color:var(--navy);margin-bottom:4px}
-.loc-card-header h2 a{color:inherit;text-decoration:none;transition:color .2s}
-.loc-card-header h2 a:hover{color:var(--green)}
-.loc-card-metro{font-size:12px;font-weight:600;color:var(--gray-400);text-transform:uppercase;letter-spacing:.05em}
-.loc-card-context{font-size:13px;color:var(--gray-500);line-height:1.6;margin:12px 0 16px}
-.loc-card-links{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.loc-card-section h3{font-size:11px;font-weight:700;color:var(--gray-400);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
-.loc-card-section ul{list-style:none;padding:0;margin:0}
-.loc-card-section ul li{padding:3px 0}
-.loc-card-section ul li a{font-size:13px;color:var(--green-dark,var(--navy));text-decoration:none;font-weight:500;transition:color .2s}
-.loc-card-section ul li a:hover{color:var(--green)}
-.loc-card-neighborhoods{display:flex;flex-wrap:wrap;gap:6px;padding-top:12px;border-top:1px solid var(--gray-100)}
-.loc-neighborhood{font-size:11px;color:var(--gray-500);background:var(--gray-50);padding:3px 10px;border-radius:4px}
-.locations-count{text-align:center;font-size:13px;color:var(--gray-400);margin-top:24px}
-@media(max-width:768px){
-  .locations-stats{gap:30px}
-  .loc-stat-num{font-size:32px}
-  .locations-grid{grid-template-columns:1fr}
-  .loc-card-links{grid-template-columns:1fr}
-}
-</style>
+  <section class="locations-section" id="all-markets" aria-labelledby="all-markets-heading">
+    <div class="locations-shell">
+      <div class="locations-section-header">
+        <div><p class="locations-eyebrow">Complete market directory</p><h2 id="all-markets-heading">Find your market</h2><p class="locations-intro">Search the complete set of city authorities. Each destination is a canonical, indexable market hub rather than a generated financing permutation.</p></div>
+      </div>
+      <div class="locations-filter" role="search" aria-label="Filter commercial real estate markets">
+        <div><label for="market-search">Search by city or metro</label><input id="market-search" type="search" placeholder="Example: Los Angeles or Dallas" autocomplete="off"></div>
+        <div><label for="state-filter">Filter by state</label><select id="state-filter"><option value="">All states</option>{% for state in states %}<option value="{{ state.abbr }}">{{ state.name }}</option>{% endfor %}</select></div>
+        <button id="market-reset" type="button">Reset</button>
+      </div>
+      <p class="locations-results" id="market-results" role="status" aria-live="polite">Showing all {{ cities|length }} markets</p>
+      <div class="locations-market-grid" id="market-grid">
+        {% for city in cities %}
+        <a class="locations-market-card" href="{{ depth }}markets/{{ city.slug }}/" data-state="{{ city.state }}" data-search="{{ (city.city + ' ' + city.metro + ' ' + city.state_name + ' ' + city.state)|lower }}">
+          <span class="locations-market-city">{{ city.city }}, {{ city.state }}</span>
+          <span class="locations-market-meta">{{ city.metro }}</span>
+        </a>
+        {% endfor %}
+      </div>
+      <noscript><p class="locations-results">All markets remain available above. Enable JavaScript only if you want to filter the directory.</p></noscript>
+    </div>
+  </section>
+
+  <section class="locations-section alt" aria-labelledby="financing-pathways-heading">
+    <div class="locations-shell">
+      <div class="locations-section-header"><div><p class="locations-eyebrow">Financing pathways</p><h2 id="financing-pathways-heading">Start with the capital strategy</h2><p class="locations-intro">Use a national program guide when loan structure matters more than geography, or explore coverage by property type.</p></div></div>
+      <div class="locations-pathways">
+        {% for program in featured_programs %}
+        <a class="locations-card" href="{{ depth }}financing/{{ program.slug }}.html"><span class="locations-card-tag">Loan program</span><h3>{{ program.name }}</h3><p>{{ program.key_features.loan_amount }}</p><span class="locations-card-arrow" aria-hidden="true">&rarr;</span></a>
+        {% endfor %}
+        {% for property_type in featured_property_types %}
+        <a class="locations-card" href="{{ depth }}property/{{ property_type.slug }}.html"><span class="locations-card-tag">Property expertise</span><h3>{{ property_type.name }}</h3><p>Financing structures and lender considerations</p><span class="locations-card-arrow" aria-hidden="true">&rarr;</span></a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="locations-confidence" aria-labelledby="broker-guidance-heading">
+    <div class="locations-shell locations-confidence-grid">
+      <div><p class="locations-eyebrow">One broker, nationwide execution</p><h2 id="broker-guidance-heading">Local market context. National capital reach.</h2><p>Commercial Lending Solutions evaluates the property, sponsor, market, and business plan before approaching lenders. That disciplined process helps identify the capital source and structure that fit the transaction, rather than forcing every request into the same program.</p><div class="locations-hero-actions"><a class="locations-primary" href="{{ depth }}apply.html">Request a financing review &rarr;</a><a class="locations-secondary" href="{{ depth }}contact.html">Contact the broker</a></div></div>
+      <div class="locations-credential-card"><strong>Commercial Lending Solutions</strong><ul class="locations-credential-list"><li>California DRE license 02244836</li><li>Direct life insurance company access</li><li>Permanent, bridge, construction, and structured debt</li><li>Selected closed transactions available for review</li></ul><a href="{{ depth }}about/trevor-damyan.html">Meet Trevor Damyan &rarr;</a></div>
+    </div>
+  </section>
+</div>
 
 <script>
 (function(){
-  const search = document.getElementById('citySearch');
-  const grid = document.getElementById('locationsGrid');
-  const cards = grid.querySelectorAll('.location-card');
-  const countEl = document.getElementById('locationsCount');
-  const stateButtons = document.querySelectorAll('#stateFilter .pill-link');
-  let activeState = 'all';
-
-  function filterCards() {
-    const q = search.value.toLowerCase().trim();
-    let visible = 0;
-    cards.forEach(card => {
-      const city = card.dataset.city;
-      const state = card.dataset.state;
-      const matchState = activeState === 'all' || state === activeState;
-      const matchSearch = !q || city.includes(q) || state.toLowerCase().includes(q);
-      if (matchState && matchSearch) {
-        card.classList.remove('hidden');
-        visible++;
-      } else {
-        card.classList.add('hidden');
-      }
+  var search=document.getElementById('market-search');
+  var state=document.getElementById('state-filter');
+  var reset=document.getElementById('market-reset');
+  var status=document.getElementById('market-results');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.locations-market-card'));
+  if(!search||!state||!reset||!status||!cards.length)return;
+  function applyFilters(){
+    var query=search.value.trim().toLowerCase();
+    var stateValue=state.value;
+    var visible=0;
+    cards.forEach(function(card){
+      var matchesText=!query||card.getAttribute('data-search').indexOf(query)!==-1;
+      var matchesState=!stateValue||card.getAttribute('data-state')===stateValue;
+      card.hidden=!(matchesText&&matchesState);
+      if(!card.hidden)visible+=1;
     });
-    countEl.textContent = 'Showing ' + visible + ' of ' + cards.length + ' markets';
+    status.textContent=visible===cards.length?'Showing all '+cards.length+' markets':'Showing '+visible+' of '+cards.length+' markets';
   }
-
-  search.addEventListener('input', filterCards);
-
-  stateButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      stateButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeState = btn.dataset.state;
-      filterCards();
-    });
-  });
+  search.addEventListener('input',applyFilters);
+  state.addEventListener('change',applyFilters);
+  reset.addEventListener('click',function(){search.value='';state.value='';applyFilters();search.focus();});
 })();
 </script>
 {% endblock %}

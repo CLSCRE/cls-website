@@ -5,20 +5,20 @@
 <nav class="nav" id="nav" aria-label="Main navigation">
 <div class="nav-inner">
   <a href="{{ depth }}index.html" class="nav-logo"><img src="{{ depth }}images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="120" height="120"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
-  <div class="nav-links" id="navLinks" role="menubar">
+  <div class="nav-links" id="navLinks">
     <div class="nav-dropdown">
-      <a href="{{ depth }}index.html#programs" role="menuitem" aria-haspopup="true" aria-expanded="false" id="ddFinancing">Financing</a>
-      <div class="nav-dropdown-menu" role="menu" aria-labelledby="ddFinancing">
+      <a href="{{ depth }}index.html#programs" aria-haspopup="true" aria-expanded="false" id="ddFinancing">Financing</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddFinancing">
         {% for lt in all_loan_types %}
-        <a href="{{ depth }}financing/{{ lt.slug }}.html" role="menuitem">{{ lt.name }}</a>
+        <a href="{{ depth }}financing/{{ lt.slug }}.html">{{ lt.name }}</a>
         {% endfor %}
       </div>
     </div>
     <div class="nav-dropdown">
-      <a href="{{ depth }}index.html#transactions" role="menuitem" aria-haspopup="true" aria-expanded="false" id="ddProperties">Properties</a>
-      <div class="nav-dropdown-menu" role="menu" aria-labelledby="ddProperties">
+      <a href="{{ depth }}index.html#transactions" aria-haspopup="true" aria-expanded="false" id="ddProperties">Properties</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddProperties">
         {% for pt in all_property_types %}
-        <a href="{{ depth }}property/{{ pt.slug }}.html" role="menuitem">{{ pt.name }}</a>
+        <a href="{{ depth }}property/{{ pt.slug }}.html">{{ pt.name }}</a>
         {% endfor %}
       </div>
     </div>
