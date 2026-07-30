@@ -1060,9 +1060,9 @@ Student Housing Loans in Clarksville, TN range from $2MM - $50M+ at 5.75% - 9.50
 </div>
 
 <!-- Exit Intent Popup, page-specific lead magnet offers -->
-<div class="exit-overlay" id="exitOverlay">
-  <div class="exit-popup">
-    <button class="exit-close" id="exitClose">&times;</button>
+<div class="exit-overlay" id="exitOverlay" hidden aria-hidden="true" inert>
+  <div class="exit-popup" role="dialog" aria-modal="true" aria-labelledby="exitTitle">
+    <button class="exit-close" id="exitClose" type="button" aria-label="Close this dialog">&times;</button>
     <div class="exit-icon" id="exitIcon">&#128200;</div>
     <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
     <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
@@ -1173,11 +1173,27 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   document.getElementById('exitDesc').textContent = offer.desc;
   document.getElementById('exitBtn').textContent = offer.btn + ' \u2192';
   let fired = false;
+  function promptWasShown() {
+    try {
+      return sessionStorage.getItem('cls-exit-shown') || sessionStorage.getItem('exitShown');
+    } catch (e) {
+      return Boolean(window.__clsExitPromptShown);
+    }
+  }
+  function markPromptShown() {
+    window.__clsExitPromptShown = true;
+    try {
+      sessionStorage.setItem('cls-exit-shown', '1');
+      sessionStorage.setItem('exitShown', '1');
+    } catch (e) {}
+    if (window.CLSExitIntent) window.CLSExitIntent.markShown();
+  }
   function showPopup() {
-    if (fired || sessionStorage.getItem('exitShown')) return;
-    fired = true; sessionStorage.setItem('exitShown', '1');
+    if (fired || promptWasShown()) return;
+    if (window.CLSExitIntent && window.CLSExitIntent.shouldSuppress(overlay)) return;
+    fired = true;
+    markPromptShown();
     overlay.classList.add('visible');
-    if(typeof gtag==='function') gtag('event', 'exit_intent_shown', {page_type: path.split('/')[1] || 'home'});
   }
   document.addEventListener('mouseout', function(e) { if (e.clientY < 5 && e.relatedTarget === null) showPopup(); });
   // Mobile: detect rapid scroll up
@@ -1201,7 +1217,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 </script>
 <script src="../js/tracking.js?v=84ce86dbf8" defer></script>
 <script src="../js/antispam.js?v=78775f4c38" defer></script>
-<script src="../js/chatbot.js?v=625ea231cd" defer></script>
+<script src="../js/chatbot.js?v=5c50e2a63f" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
 <!-- LinkedIn Insight Tag -->
 <script type="text/javascript">
