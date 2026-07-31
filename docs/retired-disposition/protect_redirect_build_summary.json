@@ -1,0 +1,131 @@
+{
+  "prior_map": 82,
+  "new_map": 461,
+  "added": 379,
+  "retargeted": 28,
+  "removed": 0,
+  "added_sample": [
+    "blog/agency-loans-fort-lauderdale-guide.html",
+    "blog/agency-loans-new-york-guide.html",
+    "blog/agency-loans-west-palm-beach-guide.html",
+    "blog/agency-multifamily-financing-fannie-freddie-2026.html",
+    "blog/bridge-loans-myrtle-beach-guide.html",
+    "blog/cmbs-loans-durham-guide.html",
+    "blog/commercial-mortgage-rates-week-2026-03-23.html",
+    "blog/construction-loans-santa-cruz-guide.html",
+    "blog/construction-to-permanent-conversion-lihtc-deals.html",
+    "blog/hospitality-investing-madison-guide.html",
+    "blog/hospitality-investing-nashville-guide.html",
+    "blog/hospitality-investing-reno-guide.html",
+    "blog/hospitality-investing-west-palm-beach-guide.html",
+    "blog/hud-fha-loans-boulder-guide.html",
+    "blog/hud-fha-loans-cape-coral-guide.html",
+    "blog/hud-fha-loans-nashville-guide.html",
+    "blog/hud-fha-loans-reno-guide.html",
+    "blog/industrial-investing-lincoln-guide.html",
+    "blog/industrial-investing-madison-guide.html",
+    "blog/life-company-loans-huntsville-guide.html"
+  ],
+  "retargeted_sample": [
+    {
+      "src": "commercial/markets/miami-office-bridge.html",
+      "from": "https://clscre.com/financing/office-bridge-loans-miami.html",
+      "to": "https://clscre.com/property/office.html"
+    },
+    {
+      "src": "commercial/markets/houston-office-bridge.html",
+      "from": "https://clscre.com/financing/office-bridge-loans-houston.html",
+      "to": "https://clscre.com/property/office.html"
+    },
+    {
+      "src": "commercial/markets/houston-net-lease.html",
+      "from": "https://clscre.com/financing/net-lease-financing-houston.html",
+      "to": "https://clscre.com/"
+    },
+    {
+      "src": "commercial/markets/miami-retail-bridge.html",
+      "from": "https://clscre.com/financing/retail-bridge-loans-miami.html",
+      "to": "https://clscre.com/property/retail.html"
+    },
+    {
+      "src": "commercial/markets/dallas-medical-office.html",
+      "from": "https://clscre.com/property/medical-office-dallas.html",
+      "to": "https://clscre.com/markets/dallas/"
+    },
+    {
+      "src": "commercial/markets/atlanta-office.html",
+      "from": "https://clscre.com/property/office-atlanta.html",
+      "to": "https://clscre.com/markets/atlanta/"
+    },
+    {
+      "src": "commercial/markets/new-york-office.html",
+      "from": "https://clscre.com/property/office-new-york.html",
+      "to": "https://clscre.com/markets/new-york/"
+    },
+    {
+      "src": "commercial/markets/los-angeles-medical-office.html",
+      "from": "https://clscre.com/property/medical-office-los-angeles.html",
+      "to": "https://clscre.com/markets/los-angeles/"
+    },
+    {
+      "src": "commercial/markets/houston-medical-office.html",
+      "from": "https://clscre.com/property/medical-office-houston.html",
+      "to": "https://clscre.com/markets/houston/"
+    },
+    {
+      "src": "commercial/markets/houston-retail-bridge.html",
+      "from": "https://clscre.com/financing/retail-bridge-loans-houston.html",
+      "to": "https://clscre.com/property/retail.html"
+    },
+    {
+      "src": "commercial/markets/miami-medical-office.html",
+      "from": "https://clscre.com/property/medical-office-miami.html",
+      "to": "https://clscre.com/markets/miami/"
+    },
+    {
+      "src": "commercial/markets/los-angeles-office.html",
+      "from": "https://clscre.com/property/office-los-angeles.html",
+      "to": "https://clscre.com/markets/los-angeles/"
+    },
+    {
+      "src": "commercial/markets/houston-office.html",
+      "from": "https://clscre.com/property/office-houston.html",
+      "to": "https://clscre.com/markets/houston/"
+    },
+    {
+      "src": "commercial/markets/los-angeles-office-bridge.html",
+      "from": "https://clscre.com/financing/office-bridge-loans-los-angeles.html",
+      "to": "https://clscre.com/property/office.html"
+    },
+    {
+      "src": "commercial/markets/los-angeles-retail.html",
+      "from": "https://clscre.com/property/retail-los-angeles.html",
+      "to": "https://clscre.com/markets/los-angeles/"
+    },
+    {
+      "src": "commercial/markets/atlanta-retail-bridge.html",
+      "from": "https://clscre.com/financing/retail-bridge-loans-atlanta.html",
+      "to": "https://clscre.com/property/retail.html"
+    },
+    {
+      "src": "commercial/markets/new-york-office-bridge.html",
+      "from": "https://clscre.com/financing/office-bridge-loans-new-york.html",
+      "to": "https://clscre.com/property/office.html"
+    },
+    {
+      "src": "commercial/markets/los-angeles-retail-bridge.html",
+      "from": "https://clscre.com/financing/retail-bridge-loans-los-angeles.html",
+      "to": "https://clscre.com/property/retail.html"
+    },
+    {
+      "src": "commercial/markets/dallas-retail.html",
+      "from": "https://clscre.com/property/retail-dallas.html",
+      "to": "https://clscre.com/markets/dallas/"
+    },
+    {
+      "src": "commercial/markets/atlanta-medical-office.html",
+      "from": "https://clscre.com/property/medical-office-atlanta.html",
+      "to": "https://clscre.com/markets/atlanta/"
+    }
+  ]
+}
