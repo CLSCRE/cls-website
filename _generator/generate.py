@@ -22,6 +22,7 @@ from datetime import datetime
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
+from link_governance import LinkGovernor
 
 import time as _time
 _orig_write_text = Path.write_text
@@ -766,6 +767,8 @@ def main():
         if _redirect_file.exists() else {}
     )
     print(f"  [redirect] {len(REDIRECT_PATHS)} paths emit redirect stubs")
+    link_gov = LinkGovernor(WEBSITE_DIR)
+    print(f"  [link-gov] active={len(link_gov.active)} noindex={len(link_gov.noindex)} redirects={len(link_gov.redirects)}")
 
     def write_redirect_stub(out_path, target_url):
         """Static soft-301 stub: canonical + meta-refresh + JS to target_url."""
@@ -1227,6 +1230,7 @@ def main():
             transactions=txns,
             faqs=loan_faqs,
             related_articles=rel_articles,
+            market_links=link_gov.market_links_for_program(loan["slug"], limit=15),
         )
         out_path = WEBSITE_DIR / "financing" / f"{loan['slug']}.html"
         out_path.write_text(html, encoding="utf-8")
@@ -1257,6 +1261,7 @@ def main():
                 {"label": label, "slug": property_financing_slug(label)}
                 for label in prop["financing_options"]
             ],
+            market_links=link_gov.market_links_for_property(prop["slug"], limit=15),
         )
         out_path = WEBSITE_DIR / "property" / f"{prop['slug']}.html"
         out_path.write_text(html, encoding="utf-8")
@@ -1289,7 +1294,7 @@ def main():
             # Attach a short context teaser + cross-link URL to each pick
             featured = [{**c, "teaser": first_sentence(c.get("context", ""), 140),
                          "region": region_for_state(c["state"]),
-                         "cross_link_url": f"../financing/{loan['slug']}-{c['slug']}.html"}
+                         "cross_link_url": link_gov.featured_cross_link("financing", loan["slug"], c["slug"])}
                         for c in featured]
             _redir = REDIRECT_PATHS.get(f"financing/{slug}.html")
             if _redir:
@@ -1310,6 +1315,8 @@ def main():
                 current_region=region_for_state(city["state"]),
                 noindex=_is_noindex,
                 la_deepdive=la_financing_deepdive.get(loan["slug"]),
+                program_links_for_city=link_gov.program_links_for_city(city["slug"], exclude_loan=loan["slug"]),
+                property_links_for_city=link_gov.property_links_for_city(city["slug"]),
             )
             out_path = WEBSITE_DIR / "financing" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")
@@ -1340,7 +1347,7 @@ def main():
             featured = pick_featured_markets(city, cities, n_total=8)
             featured = [{**c, "teaser": first_sentence(c.get("context", ""), 140),
                          "region": region_for_state(c["state"]),
-                         "cross_link_url": f"../property/{prop['slug']}-{c['slug']}.html"}
+                         "cross_link_url": link_gov.featured_cross_link("property", prop["slug"], c["slug"])}
                         for c in featured]
             _redir = REDIRECT_PATHS.get(f"property/{slug}.html")
             if _redir:
@@ -1361,6 +1368,10 @@ def main():
                 current_region=region_for_state(city["state"]),
                 noindex=_is_noindex,
                 la_deepdive=la_property_deepdive.get(prop["slug"]),
+                program_links_for_city=link_gov.program_links_for_city(city["slug"]),
+                property_links_for_city=[
+                    x for x in link_gov.property_links_for_city(city["slug"]) if x["slug"] != prop["slug"]
+                ],
             )
             out_path = WEBSITE_DIR / "property" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")
@@ -1770,7 +1781,10 @@ def main():
             n_name = n_info["name"]
             n_slug = n_info["slug"]
             # Other neighborhoods for cross-links (exclude current)
-            other_neighborhoods = [nb for nb in neighborhood_list if nb["slug"] != n_slug]
+            other_neighborhoods = link_gov.neighborhood_links_for_city(
+                city["slug"],
+                [nb for nb in neighborhood_list if nb["slug"] != n_slug],
+            )
             faqs = build_neighborhood_faqs(city, n_name, city_data)
             seo = {
                 "title": f"{n_name} Commercial Loans | Commercial Lending Solutions",
@@ -1831,7 +1845,13 @@ def main():
         html = tpl_market_index.render(
             **shared,
             city=city,
-            neighborhoods=neighborhood_list,
+            program_links_for_city=link_gov.program_links_for_city(city["slug"]),
+            property_links_for_city=link_gov.property_links_for_city(city["slug"]),
+            specialty_links_for_city=link_gov.specialty_links_for_city(city["slug"]),
+            commercial_mortgage_href=link_gov.commercial_mortgage_href_for_city(city["slug"]),
+            neighborhoods=link_gov.neighborhood_links_for_city(
+                city["slug"], neighborhood_list
+            ),
             seo=seo_index,
             canonical_path=f"markets/{city['slug']}/",
             depth="../../",
@@ -2403,6 +2423,29 @@ def main():
     sitemap_xml = tpl_sitemap.render(urls=sitemap_urls)
     (WEBSITE_DIR / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
     print(f"  [OK] sitemap.xml  ({len(sitemap_urls)} URLs, backwards-compat)")
+
+    # Reload governance only after the final sitemap exists. The pre-generation
+    # active set is necessarily stale while inventory is being rebuilt; this
+    # final pass makes full regeneration fail-safe and idempotently removes or
+    # retargets any retired, misleading, duplicate, or self-referential links.
+    _scripts_dir = WEBSITE_DIR / "scripts"
+    _sys_path_added = str(_scripts_dir)
+    if _sys_path_added not in sys.path:
+        sys.path.insert(0, _sys_path_added)
+    from rewrite_active_retired_links import rewrite_active_corpus
+
+    _post_gov = LinkGovernor(WEBSITE_DIR)
+    _post_summary = rewrite_active_corpus(
+        _post_gov,
+        write_report=False,
+        progress=False,
+    )
+    print(
+        "  [link-gov-post] "
+        f"active={len(_post_gov.active)} "
+        f"files_changed={_post_summary['files_changed']} "
+        f"rewritten={_post_summary['totals'].get('rewritten', 0)}"
+    )
 
     # ── 12. Robots.txt ─────────────────────────────────────────────────
     # Only advertise sitemap-index.xml to crawlers. sitemap.xml (the flat

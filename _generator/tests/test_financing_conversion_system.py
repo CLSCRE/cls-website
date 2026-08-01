@@ -41,6 +41,7 @@ class FinancingConversionSystemTests(unittest.TestCase):
             transactions=[],
             faqs=self.faqs.get("loan_types", {}).get(loan["slug"], []),
             related_articles=[],
+            market_links=[{"city":"Dallas","state":"TX","slug":"dallas","path":"markets/dallas/index.html","href_suffix":"markets/dallas/"}],
         )
 
     def test_every_program_has_shared_minimum_and_application_route(self):
@@ -62,8 +63,9 @@ class FinancingConversionSystemTests(unittest.TestCase):
                 self.assertNotIn("Quick answer", html)
                 self.assertNotRegex(html, r"\$1M(?!M)|\$500K|\$500,000")
                 self.assertIn(f"apply.html?{loan['apply_query']}", html)
-                self.assertIn(f"financing/{loan['slug']}-", html)
-                self.assertLessEqual(html.count(f"financing/{loan['slug']}-"), 15)
+                # Market chips must not point at retired city×program URLs.
+                self.assertIn("markets/", html)
+                self.assertNotRegex(html, rf"financing/{loan['slug']}-[a-z0-9-]+\.html")
                 self.assertIn("At a Glance", html)
                 self.assertIn("How We Source", html)
 
