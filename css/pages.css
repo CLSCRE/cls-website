@@ -111,10 +111,21 @@
 
 /* ===== BLOG ARTICLE ===== */
 .blog-article{padding:60px 0}
+main>.blog-article:first-child{padding-top:200px}
 .article-header{margin-bottom:48px;max-width:800px}
 .article-header h1{font-family:var(--font-display);font-size:clamp(28px,3.5vw,44px);color:var(--navy);line-height:1.2;margin:16px 0 20px;letter-spacing:-.02em}
 .article-meta{display:flex;gap:20px;font-size:14px;color:var(--gray-500)}
 .article-author{font-weight:600;color:var(--navy)}
+.article-author-profile{display:flex;align-items:center;gap:16px;margin:22px 0 12px;padding:18px 0;border-top:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200)}
+.article-author-photo{display:block;width:68px;height:68px;flex:0 0 68px;border-radius:50%;overflow:hidden;border:2px solid var(--navy);box-shadow:0 2px 8px rgba(21,61,99,.12)}
+.article-author-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.article-author-details{min-width:0}
+.article-author-identity{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:2px}
+.article-author-name{font-size:15px;font-weight:750;color:var(--navy);text-decoration:none}
+.article-author-name:hover{color:var(--green)}
+.article-author-role{font-size:12px;font-weight:600;color:var(--gray-500)}
+.article-author-license{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--green);margin-bottom:5px}
+.article-author-summary{font-size:12.5px!important;line-height:1.5!important;color:var(--gray-600)!important;margin:0!important;max-width:670px!important}
 .article-layout{display:grid;grid-template-columns:1fr 300px;gap:60px;align-items:start}
 .article-body{font-size:16px;color:var(--gray-700);line-height:1.8;max-width:none}
 .article-body h2{font-family:var(--font-display);font-size:clamp(22px,2.5vw,30px);color:var(--navy);margin:48px 0 16px;letter-spacing:-.01em}
@@ -197,6 +208,14 @@
 }
 @media(max-width:768px){
 .page-hero{padding:120px 0 60px}
+.blog-article{padding:40px 0}
+main>.blog-article:first-child{padding-top:120px}
+.article-header{margin-bottom:36px}
+.article-author-profile{align-items:flex-start;gap:12px;margin-top:18px;padding:15px 0}
+.article-author-photo{width:56px;height:56px;flex-basis:56px}
+.article-author-identity{display:block}
+.article-author-role{display:block;margin-top:1px}
+.article-author-summary{font-size:12px!important}
 .breadcrumbs ol{padding:0 24px}
 .feature-grid{grid-template-columns:1fr}
 .cross-link-grid{grid-template-columns:1fr}

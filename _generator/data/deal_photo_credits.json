@@ -813,11 +813,9 @@
       "city": "Los Angeles",
       "state": "CA",
       "property_slug": "mixed-use",
-      "pexels_id": 33798862,
-      "photographer": "Magda Ehlers",
-      "photographer_url": "https://www.pexels.com/@magda-ehlers-pexels",
-      "pexels_url": "https://www.pexels.com/photo/aerial-view-of-modern-architecture-in-johannesburg-33798862/",
-      "src_url": "https://images.pexels.com/photos/33798862/pexels-photo-33798862.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "source": "Commercial Lending Solutions generated original",
+      "generator": "FAL.ai",
+      "asset_note": "Representative image of an unentitled Downtown Los Angeles development parcel; not the actual collateral"
     },
     {
       "transaction_index": 68,
@@ -1293,11 +1291,9 @@
       "city": "San Francisco",
       "state": "CA",
       "property_slug": "mixed-use",
-      "pexels_id": 11733152,
-      "photographer": "K",
-      "photographer_url": "https://www.pexels.com/@kelly",
-      "pexels_url": "https://www.pexels.com/photo/warehouses-in-a-town-11733152/",
-      "src_url": "https://images.pexels.com/photos/11733152/pexels-photo-11733152.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "source": "Commercial Lending Solutions generated original",
+      "generator": "FAL.ai",
+      "asset_note": "Representative image of an entitled San Francisco infill development site; not the actual collateral"
     },
     {
       "transaction_index": 108,
@@ -1629,11 +1625,9 @@
       "city": "Beverly Hills",
       "state": "CA",
       "property_slug": "retail",
-      "pexels_id": 4170430,
-      "photographer": "K",
-      "photographer_url": "https://www.pexels.com/@kelly",
-      "pexels_url": "https://www.pexels.com/photo/small-town-suburb-area-with-commerce-buildings-4170430/",
-      "src_url": "https://images.pexels.com/photos/4170430/pexels-photo-4170430.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "source": "Commercial Lending Solutions generated original",
+      "generator": "FAL.ai",
+      "asset_note": "Representative image of a Beverly Hills boutique retail property in tenant transition; not the actual collateral"
     },
     {
       "transaction_index": 136,
@@ -1677,11 +1671,9 @@
       "city": "Los Angeles",
       "state": "CA",
       "property_slug": "retail",
-      "pexels_id": 11466353,
-      "photographer": "Нурлан",
-      "photographer_url": "https://www.pexels.com/@165511592",
-      "pexels_url": "https://www.pexels.com/photo/people-walking-inside-the-shopping-mall-11466353/",
-      "src_url": "https://images.pexels.com/photos/11466353/pexels-photo-11466353.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "source": "Commercial Lending Solutions generated original",
+      "generator": "FAL.ai",
+      "asset_note": "Representative image of a neighborhood Los Angeles multi-tenant retail center in lease-up; not the actual collateral"
     },
     {
       "transaction_index": 140,
