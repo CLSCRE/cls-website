@@ -114,6 +114,7 @@
 {% endif %}
 
 <!-- NEIGHBORHOODS -->
+{% if neighborhoods %}
 <section class="content-section">
 <div class="section-inner">
   <div class="section-label reveal">Submarkets</div>
@@ -121,7 +122,7 @@
   <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore commercial lending options by neighborhood in the {{ city.metro }} market.</p>
   <div class="cross-link-grid">
     {% for n in neighborhoods %}
-    <a href="{{ depth }}markets/{{ city.slug }}/{{ n.slug }}.html" class="cross-link-card reveal">
+    <a href="{{ depth }}{{ n.href_suffix }}" class="cross-link-card reveal">
       <div class="cl-title">{{ n.name }}</div>
       <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
     </a>
@@ -129,6 +130,7 @@
   </div>
 </div>
 </section>
+{% endif %}
 
 <!-- COMMERCIAL MORTGAGE, single preferred URL for the top-level city query -->
 <section class="content-section">
@@ -136,70 +138,60 @@
   <div class="section-label reveal">Start Here</div>
   <h2 class="section-title reveal">Commercial Mortgage in {{ city.city }}</h2>
   <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Looking for a commercial mortgage broker in {{ city.city }}? Start with our dedicated {{ city.city }} commercial mortgage page for rates, terms, and lender types, then use the full program directory below for a specific loan program.</p>
-  <a href="{{ depth }}financing/commercial-mortgage-loans-{{ city.slug }}.html" class="cross-link-card reveal" style="border-color:var(--green);max-width:420px">
-    <div class="cl-title">Commercial Mortgage Loans in {{ city.city }}</div>
-    <div class="cl-sub">Rates, terms, and lender types for {{ city.city }}, {{ city.state }}</div>
-  </a>
-</div>
-</section>
-
-<!-- FINANCING PROGRAMS, full program-by-program directory -->
-<section class="cross-links">
-<div class="section-inner">
-  <h2 class="reveal">Every Financing Program in {{ city.city }}</h2>
-  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Comparing a specific program? Browse the full {{ city.city }} directory below.</p>
-  <div class="cross-link-grid">
-    {% for lt in all_loan_types %}
-    <a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
-      <div class="cl-title">{{ lt.name }}</div>
-      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
-    </a>
-    {% endfor %}
-  </div>
-</div>
-</section>
-
-<!-- PROPERTY TYPES -->
-<section class="content-section">
-<div class="section-inner">
-  <h2 class="section-title reveal">Property Types in {{ city.city }}</h2>
-  <div class="cross-link-grid">
-    {% for pt in all_property_types %}
-    <a href="{{ depth }}property/{{ pt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
-      <div class="cl-title">{{ pt.name }}</div>
-      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
-    </a>
-    {% endfor %}
-  </div>
-</div>
-</section>
-
-<!-- SPECIALTY VERTICALS -->
-<section class="content-section alt">
-<div class="section-inner">
-  <div class="section-label reveal">Specialty Asset Classes</div>
-  <h2 class="section-title reveal">Specialty Property Financing in {{ city.city }}</h2>
-  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Deep-dive financing guides for specialty commercial assets in the {{ city.metro }} market.</p>
-  <div class="cross-link-grid">
-    <a href="{{ depth }}self-storage/markets/{{ city.slug }}-climate-controlled.html" class="cross-link-card reveal">
-      <div class="cl-title">Self-Storage Financing</div>
-      <div class="cl-sub">{{ city.city }}: Climate-Controlled, Drive-Up, Multi-Story</div>
-    </a>
-    <a href="{{ depth }}senior-living/markets/{{ city.slug }}-assisted-living.html" class="cross-link-card reveal">
-      <div class="cl-title">Senior Living Financing</div>
-      <div class="cl-sub">{{ city.city }}: Assisted Living, Memory Care, Independent</div>
-    </a>
-    <a href="{{ depth }}medical-office/markets/{{ city.slug }}-off-campus-mob.html" class="cross-link-card reveal">
-      <div class="cl-title">Medical Office Financing</div>
-      <div class="cl-sub">{{ city.city }}: On-Campus, Off-Campus, Surgery Centers</div>
-    </a>
-    <a href="{{ depth }}data-centers/markets/{{ city.slug }}-colocation.html" class="cross-link-card reveal">
-      <div class="cl-title">Data Center Financing</div>
-      <div class="cl-sub">{{ city.city }}: Colocation, Hyperscale, Edge Computing</div>
+  <a href="{{ depth }}{{ commercial_mortgage_href }}" class="cross-link-card reveal" style="border-color:var(--green);max-width:420px">
+      <div class="cl-title">Commercial Mortgage Loans in {{ city.city }}</div>
+      <div class="cl-sub">Rates, terms, and lender types for {{ city.city }}, {{ city.state }}</div>
     </a>
   </div>
-</div>
-</section>
+  </section>
+
+  <!-- FINANCING PROGRAMS, full program-by-program directory -->
+  <section class="cross-links">
+  <div class="section-inner">
+    <h2 class="reveal">Every Financing Program in {{ city.city }}</h2>
+    <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Comparing a specific program? Browse the full {{ city.city }} directory below.</p>
+    <div class="cross-link-grid">
+      {% for link in program_links_for_city %}
+      <a href="{{ depth }}{{ link.href_suffix }}" class="cross-link-card reveal">
+        <div class="cl-title">{{ link.name }}</div>
+        <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  </section>
+
+  <!-- PROPERTY TYPES -->
+  <section class="content-section">
+  <div class="section-inner">
+    <h2 class="section-title reveal">Property Types in {{ city.city }}</h2>
+    <div class="cross-link-grid">
+      {% for link in property_links_for_city %}
+      <a href="{{ depth }}{{ link.href_suffix }}" class="cross-link-card reveal">
+        <div class="cl-title">{{ link.name }}</div>
+        <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  </section>
+
+  <!-- SPECIALTY VERTICALS -->
+  <section class="content-section alt">
+  <div class="section-inner">
+    <div class="section-label reveal">Specialty Asset Classes</div>
+    <h2 class="section-title reveal">Specialty Property Financing in {{ city.city }}</h2>
+    <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Deep-dive financing guides for specialty commercial assets in the {{ city.metro }} market.</p>
+    <div class="cross-link-grid">
+      {% for link in specialty_links_for_city %}
+      <a href="{{ depth }}{{ link.href_suffix }}" class="cross-link-card reveal">
+        <div class="cl-title">{{ link.name }}</div>
+        <div class="cl-sub">{{ link.subtitle }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  </section>
 
 <!-- FAQ, use city-specific answers when available, fall back to generic -->
 {% set _fa = city.faq_answers if city.faq_answers is defined else [] %}

@@ -21,6 +21,7 @@ from generate import (  # noqa: E402
     filter_transactions,
     stamp_html_asset_versions,
 )
+from link_governance import LinkGovernor  # noqa: E402
 
 DUPLICATE_CITY_SLUGS = {
     "greenville",
@@ -68,6 +69,7 @@ def render_hubs(slugs=None, write=True):
     ]
     transactions = load_json("transactions.json")
     faqs_data = load_json("faqs.json")
+    gov = LinkGovernor(WEBSITE_DIR)
 
     requested = set(slugs or [prop["slug"] for prop in properties])
     unknown = requested - {prop["slug"] for prop in properties}
@@ -91,10 +93,12 @@ def render_hubs(slugs=None, write=True):
             {"label": label, "slug": financing_slug(label)}
             for label in prop["financing_options"]
         ]
+        market_links = gov.market_links_for_property(prop["slug"], limit=15)
         html = template.render(
             all_loan_types=loans,
             all_property_types=properties,
             all_cities=cities,
+            market_links=market_links,
             regional_groups=build_regional_groups(cities),
             total_market_count=len(cities),
             current_date=TODAY,

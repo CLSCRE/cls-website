@@ -83,16 +83,18 @@
 {% include '_transaction_cards.html' %}
 
 <!-- OTHER NEIGHBORHOODS -->
+{% if other_neighborhoods %}
 <section class="content-section">
 <div class="section-inner">
   <h2 class="section-title reveal">Other Neighborhoods in {{ city.city }}</h2>
   <div class="pill-links">
     {% for n in other_neighborhoods %}
-    <a href="{{ depth }}markets/{{ city.slug }}/{{ n.slug }}.html" class="pill-link">{{ n.name }}</a>
+    <a href="{{ depth }}{{ n.href_suffix }}" class="pill-link">{{ n.name }}</a>
     {% endfor %}
   </div>
 </div>
 </section>
+{% endif %}
 
 <!-- FAQ -->
 {% set faq_title = 'Commercial Loans in ' + neighborhood + ', ' + city.city + ' FAQ' %}

@@ -1,0 +1,520 @@
+{
+  "dry_run": false,
+  "files_scanned": 6563,
+  "files_changed": 5952,
+  "totals": {
+    "bad_seen": 215439,
+    "rewritten": 207242,
+    "files_written": 5952,
+    "unresolved_for_omission": 8197,
+    "misleading_inline_unwrapped": 32,
+    "misleading_cards_removed": 8164,
+    "unresolved_link_tags_removed": 1,
+    "semantic_cards_retargeted": 169992,
+    "empty_link_sections_removed": 100,
+    "parent_market_pills_removed": 95,
+    "duplicate_adjacent_anchors_removed": 5
+  },
+  "samples": [
+    {
+      "file": "blog/1031-exchange-rules-2026-guide.html",
+      "sample": [
+        [
+          "financing/permanent-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/permanent-loans-phoenix.html",
+          "markets/phoenix/index.html"
+        ],
+        [
+          "financing/permanent-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/permanent-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "financing/permanent-loans-atlanta.html",
+          "markets/atlanta/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/ab-2011-early-deal-observations-2026-05-04.html",
+      "sample": [
+        [
+          "financing/permanent-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/permanent-loans-phoenix.html",
+          "markets/phoenix/index.html"
+        ],
+        [
+          "financing/permanent-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/permanent-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "financing/permanent-loans-atlanta.html",
+          "markets/atlanta/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/adaptive-reuse-conversion-commercial-2026-05-11.html",
+      "sample": [
+        [
+          "financing/permanent-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/permanent-loans-phoenix.html",
+          "markets/phoenix/index.html"
+        ],
+        [
+          "financing/permanent-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/permanent-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "financing/permanent-loans-atlanta.html",
+          "markets/atlanta/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/affordable-housing-developers-los-angeles.html",
+      "sample": [
+        [
+          "financing/permanent-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/permanent-loans-phoenix.html",
+          "markets/phoenix/index.html"
+        ],
+        [
+          "financing/permanent-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/permanent-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "financing/permanent-loans-atlanta.html",
+          "markets/atlanta/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/affordable-housing-financing-guide-2026.html",
+      "sample": [
+        [
+          "financing/permanent-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/permanent-loans-phoenix.html",
+          "markets/phoenix/index.html"
+        ],
+        [
+          "financing/permanent-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/permanent-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "financing/permanent-loans-atlanta.html",
+          "markets/atlanta/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-affordable-platform-update-2026-05-11.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/lihtc-investor-pricing-commentary-2026-07-13.html",
+          "blog/index.html"
+        ],
+        [
+          "blog/affordable-housing-construction-cost-trends-2026-07-06.html",
+          "blog/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-ann-arbor-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-ann-arbor.html",
+          "markets/ann-arbor/index.html"
+        ],
+        [
+          "financing/agency-loans-ann-arbor.html",
+          "markets/ann-arbor/index.html"
+        ],
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-atlanta-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/permanent-loans-bridgeport-guide.html",
+          "blog/index.html"
+        ],
+        [
+          "blog/permanent-loans-stamford-guide.html",
+          "blog/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-austin-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-austin.html",
+          "markets/austin/index.html"
+        ],
+        [
+          "financing/agency-loans-austin.html",
+          "markets/austin/index.html"
+        ],
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-boston-guide.html",
+      "sample": [
+        [
+          "blog/multifamily-investing-boston-guide.html",
+          "blog/index.html"
+        ],
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/permanent-loans-bridgeport-guide.html",
+          "blog/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-boulder-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/permanent-loans-bridgeport-guide.html",
+          "blog/index.html"
+        ],
+        [
+          "blog/permanent-loans-stamford-guide.html",
+          "blog/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-chicago-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/permanent-loans-bridgeport-guide.html",
+          "blog/index.html"
+        ],
+        [
+          "blog/permanent-loans-stamford-guide.html",
+          "blog/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-dallas-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-denver-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/permanent-loans-bridgeport-guide.html",
+          "blog/index.html"
+        ],
+        [
+          "blog/permanent-loans-stamford-guide.html",
+          "blog/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-des-moines-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/permanent-loans-bridgeport-guide.html",
+          "blog/index.html"
+        ],
+        [
+          "blog/permanent-loans-stamford-guide.html",
+          "blog/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-houston-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/permanent-loans-bridgeport-guide.html",
+          "blog/index.html"
+        ],
+        [
+          "blog/permanent-loans-stamford-guide.html",
+          "blog/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-lexington-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-lexington.html",
+          "markets/lexington/index.html"
+        ],
+        [
+          "financing/agency-loans-lexington.html",
+          "markets/lexington/index.html"
+        ],
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-los-angeles-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-madison-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-madison.html",
+          "markets/madison/index.html"
+        ],
+        [
+          "financing/agency-loans-madison.html",
+          "markets/madison/index.html"
+        ],
+        [
+          "blog/industrial-investing-madison-guide.html",
+          "markets/madison/index.html"
+        ],
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ]
+      ]
+    },
+    {
+      "file": "blog/agency-loans-phoenix-guide.html",
+      "sample": [
+        [
+          "financing/agency-loans-los-angeles.html",
+          "markets/los-angeles/index.html"
+        ],
+        [
+          "financing/agency-loans-dallas.html",
+          "markets/dallas/index.html"
+        ],
+        [
+          "financing/agency-loans-miami.html",
+          "markets/miami/index.html"
+        ],
+        [
+          "blog/permanent-loans-bridgeport-guide.html",
+          "blog/index.html"
+        ],
+        [
+          "blog/permanent-loans-stamford-guide.html",
+          "blog/index.html"
+        ]
+      ]
+    }
+  ]
+}

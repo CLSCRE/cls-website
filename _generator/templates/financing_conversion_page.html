@@ -132,8 +132,8 @@
     <div><div class="pf-kicker">National reach</div><h2>Market knowledge where the deal requires it.</h2><p class="pf-intro">We arrange {{ loan.short_name|lower }} financing nationwide while matching each transaction to capital sources active in that market and property type.</p></div>
     <div>
       <div class="pf-market-list" id="pfMarketList">
-        {% for city in all_cities[:15] %}<a class="{% if loop.index > 9 %}pf-market-extra{% endif %}" href="{{ depth }}financing/{{ loan.slug }}-{{ city.slug }}.html">{{ city.city }}, {{ city.state }}</a>{% endfor %}
-      </div>
+              {% for link in market_links %}<a class="{% if loop.index > 9 %}pf-market-extra{% endif %}" href="{{ depth }}{{ link.href_suffix }}">{{ link.city }}, {{ link.state }}</a>{% endfor %}
+            </div>
       <button type="button" class="pf-market-toggle" id="pfMarketToggle" aria-expanded="false" aria-controls="pfMarketList">Show more markets +</button>
       <a class="pf-all-markets" href="{{ depth }}locations.html">Browse all markets &rarr;</a>
     </div>

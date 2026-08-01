@@ -122,37 +122,35 @@
 <div class="section-inner">
   <h2 class="reveal">Other Property Types in {{ city.city }}</h2>
   <div class="cross-link-grid">
-    {% for pt in all_property_types %}
-    {% if pt.slug != prop.slug %}
-    <a href="{{ depth }}property/{{ pt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
-      <div class="cl-title">{{ pt.name }}</div>
-      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
-    </a>
-    {% endif %}
-    {% endfor %}
+      {% for link in property_links_for_city %}
+      <a href="{{ depth }}{{ link.href_suffix }}" class="cross-link-card reveal">
+        <div class="cl-title">{{ link.name }}</div>
+        <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+      </a>
+      {% endfor %}
+    </div>
   </div>
-</div>
-</section>
+  </section>
 
-<!-- FINANCING IN THIS CITY -->
-<section class="content-section">
-<div class="section-inner">
-  <h2 class="section-title reveal">Financing in {{ city.city }}</h2>
-  <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore loan programs available for {{ city.city }} commercial properties, or compare everything on our <a href="{{ depth }}markets/{{ city.slug }}/" style="color:var(--green);font-weight:600">commercial real estate loans in {{ city.city }}, {{ city.state }}</a> hub.</p>
-  <div class="cross-link-grid">
-    <a href="{{ depth }}markets/{{ city.slug }}/" class="cross-link-card reveal">
-      <div class="cl-title">All {{ city.city }} Commercial Real Estate Loans</div>
-      <div class="cl-sub">Every loan program and property type in one place</div>
-    </a>
-    {% for lt in all_loan_types %}
-    <a href="{{ depth }}financing/{{ lt.slug }}-{{ city.slug }}.html" class="cross-link-card reveal">
-      <div class="cl-title">{{ lt.name }}</div>
-      <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
-    </a>
-    {% endfor %}
+  <!-- FINANCING IN THIS CITY -->
+  <section class="content-section">
+  <div class="section-inner">
+    <h2 class="section-title reveal">Financing in {{ city.city }}</h2>
+    <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">Explore loan programs available for {{ city.city }} commercial properties, or compare everything on our <a href="{{ depth }}markets/{{ city.slug }}/" style="color:var(--green);font-weight:600">commercial real estate loans in {{ city.city }}, {{ city.state }}</a> hub.</p>
+    <div class="cross-link-grid">
+      <a href="{{ depth }}markets/{{ city.slug }}/" class="cross-link-card reveal">
+        <div class="cl-title">All {{ city.city }} Commercial Real Estate Loans</div>
+        <div class="cl-sub">Every loan program and property type in one place</div>
+      </a>
+      {% for link in program_links_for_city %}
+      <a href="{{ depth }}{{ link.href_suffix }}" class="cross-link-card reveal">
+        <div class="cl-title">{{ link.name }}</div>
+        <div class="cl-sub">{{ city.city }}, {{ city.state }}</div>
+      </a>
+      {% endfor %}
+    </div>
   </div>
-</div>
-</section>
+  </section>
 
 <!-- RELATED MARKETS, editorial cross-market section -->
 {% set section_eyebrow = 'Nationwide Coverage' %}
