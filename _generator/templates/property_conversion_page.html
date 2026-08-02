@@ -122,7 +122,7 @@
 
 {% if faqs %}<section class="pf-section">
   <div class="pf-wrap pf-faq-layout">
-    <div><div class="pf-kicker">Questions</div><h2>{{ prop.name }} financing, clarified.</h2><p class="pf-intro">The final structure depends on the property, sponsor, market, and requested execution.</p></div>
+    <div><div class="pf-kicker">Questions</div><h2>{{ prop.name }} financing, clarified.</h2><p class="pf-intro">The final structure depends on the property, sponsor, market, and requested execution.</p><p class="pf-intro"><!-- dpg-link -->Sizing your equity? See the <a class="pf-text-link" href="{{ depth }}blog/commercial-property-down-payment-guide.html">down payment guide for commercial property</a>: typically 20% to 30% down, with SBA owner occupied from 10%.</p></div>
     <div class="pf-faq-list">
       {% for faq in faqs %}<div class="pf-faq-item {% if loop.first %}open{% endif %}">
         <button type="button" class="pf-faq-q" id="pf-faq-button-{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}" aria-controls="pf-faq-panel-{{ loop.index }}"><span>{{ faq.q }}</span><span aria-hidden="true">+</span></button>

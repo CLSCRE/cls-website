@@ -143,7 +143,7 @@
 {% if faqs %}
 <section class="pf-section">
   <div class="pf-wrap pf-faq-layout">
-    <div><div class="pf-kicker">Questions</div><h2>{{ loan.short_name }} financing, clarified.</h2><p class="pf-intro">The final structure depends on the asset, sponsorship, and market. These are the starting parameters we discuss most often.</p></div>
+    <div><div class="pf-kicker">Questions</div><h2>{{ loan.short_name }} financing, clarified.</h2><p class="pf-intro">The final structure depends on the asset, sponsorship, and market. These are the starting parameters we discuss most often.</p><p class="pf-intro"><!-- dpg-link -->Working out equity? Our <a class="pf-text-link" href="{{ depth }}blog/commercial-property-down-payment-guide.html">commercial property down payment guide</a> covers typical requirements by loan type: 20% to 30% conventional, 10% for SBA owner occupied.</p></div>
     <div class="pf-faq-list">
       {% for faq in faqs %}
       <div class="pf-faq-item {% if loop.first %}open{% endif %}">
