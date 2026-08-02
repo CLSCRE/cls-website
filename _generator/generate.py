@@ -26,7 +26,40 @@ from link_governance import LinkGovernor
 
 import time as _time
 _orig_write_text = Path.write_text
+
+# ── Retired-path suppression (2026-08-01 cleanup pipeline) ─────────────
+# data/retired_paths.json = the delete_candidate set from the 2026-07-30
+# disposition audit. These pages are de-sitemapped, noindexed, and slated
+# for removal; NO generator may recreate them. Every Path.write_text in
+# this process (generate.py, generate_articles.py, la_* modules) funnels
+# through the wrapper below, so suppression is enforced at the choke
+# point rather than in each of the ~15 write sites. Disjoint from
+# redirect_map.json (verified at build time) so soft-301 stubs still
+# regenerate. Missing file = empty set (fail-open, nothing suppressed).
+# Regenerate from the audit pipeline; never hand-edit.
+_retired_file = Path(__file__).resolve().parent / "data" / "retired_paths.json"
+RETIRED_PATHS = (
+    frozenset(json.loads(_retired_file.read_text(encoding="utf-8")))
+    if _retired_file.exists() else frozenset()
+)
+_WEBSITE_ROOT = Path(__file__).resolve().parent.parent
+SUPPRESSED_WRITES = []
+
+def _retired_rel(p):
+    """Return the website-relative posix path if p is a retired output, else None."""
+    if not RETIRED_PATHS:
+        return None
+    try:
+        rel = Path(p).resolve().relative_to(_WEBSITE_ROOT).as_posix()
+    except ValueError:
+        return None
+    return rel if rel in RETIRED_PATHS else None
+
 def _write_text_with_retry(self, *args, **kwargs):
+    rel = _retired_rel(self)
+    if rel is not None:
+        SUPPRESSED_WRITES.append(rel)
+        return 0  # retired path: suppressed, never regenerated
     # OneDrive's cloud filter driver intermittently locks files mid-sync during
     # high-volume writes, raising OSError(22) on an otherwise-valid path/handle.
     for attempt in range(6):
@@ -2493,6 +2526,8 @@ Sitemap: {BASE_URL}/sitemap-index.xml
     print(f"\n{'='*50}")
     print(f"  TOTAL PAGES GENERATED: {page_count}")
     print(f"  Sitemap URLs: {len(sitemap_urls)}")
+    print(f"  Retired writes suppressed: {len(SUPPRESSED_WRITES)}"
+          f" (of {len(RETIRED_PATHS)} retired paths)")
     print(f"  Output: {WEBSITE_DIR}")
     print(f"{'='*50}\n")
 
