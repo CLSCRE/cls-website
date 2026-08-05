@@ -49,6 +49,72 @@
   }
   window.gtag('config', ADS_ID);
 
+  // Website call conversions (Ads action 7710241145, 60s minimum): swaps the
+  // displayed 310.708.0690 for a Google forwarding number for visitors who
+  // arrived via a Google Ads click, so direct dials count as conversions.
+  // The number string must match the on-page display format exactly.
+  window.gtag('config', ADS_ID + '/SuNlCPniw9wcEL2gqPdC', {
+    phone_conversion_number: '310.708.0690'
+  });
+
+  // Google Ads click-ID capture for offline conversion import: persist
+  // gclid/wbraid/gbraid from the landing URL for 90 days and inject them into
+  // every form (at DOM-ready AND at submit, so late-built forms like the
+  // exit-intent modal are covered). FormSubmit forwards all fields, so the
+  // click ID rides the lead email into Salesforce and can be uploaded back to
+  // Ads when the deal qualifies or closes.
+  var CLICK_ID_KEYS = ['gclid', 'wbraid', 'gbraid'];
+  var CLICK_ID_TTL_MS = 90 * 24 * 60 * 60 * 1000;
+  function storeClickIds() {
+    var params;
+    try { params = new URLSearchParams(window.location.search); } catch (e) { return; }
+    for (var i = 0; i < CLICK_ID_KEYS.length; i++) {
+      var v = params.get(CLICK_ID_KEYS[i]);
+      if (v) {
+        try {
+          localStorage.setItem('cls_' + CLICK_ID_KEYS[i], JSON.stringify({ v: v, t: Date.now() }));
+        } catch (e) {}
+      }
+    }
+  }
+  function getClickId(key) {
+    try {
+      var raw = localStorage.getItem('cls_' + key);
+      if (!raw) return '';
+      var obj = JSON.parse(raw);
+      if (!obj || !obj.v || Date.now() - (obj.t || 0) > CLICK_ID_TTL_MS) return '';
+      return obj.v;
+    } catch (e) { return ''; }
+  }
+  function injectClickIdsInto(form) {
+    for (var k = 0; k < CLICK_ID_KEYS.length; k++) {
+      var key = CLICK_ID_KEYS[k];
+      var val = getClickId(key);
+      if (!val) continue;
+      var name = key.toUpperCase();
+      var existing = form.querySelector('input[name="' + name + '"]');
+      if (existing) { existing.value = val; continue; }
+      var input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = val;
+      form.appendChild(input);
+    }
+  }
+  function injectClickIdFields() {
+    var forms = document.querySelectorAll('form');
+    for (var i = 0; i < forms.length; i++) injectClickIdsInto(forms[i]);
+  }
+  storeClickIds();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectClickIdFields);
+  } else {
+    injectClickIdFields();
+  }
+  document.addEventListener('submit', function (e) {
+    if (e.target && e.target.tagName === 'FORM') injectClickIdsInto(e.target);
+  }, true);
+
   // Website-only channel identifiers. Match on last-10 digits so +1 /
   // punctuation variants still count as web-sourced.
   var WEBSITE_ONLY_PHONE_LAST10 = ['3107080690'];
