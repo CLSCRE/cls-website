@@ -6,7 +6,7 @@
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FinancialService","name":{{ ('Commercial Lending Solutions, ' ~ loan.name)|tojson }},"url":{{ ('https://clscre.com/financing/' ~ loan.slug ~ '.html')|tojson }},"description":{{ seo.meta_description|tojson }},"telephone":"+13107080690","email":"loans@clscre.com","areaServed":"Nationwide","provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+{"@context":"https://schema.org","@type":"FinancialService","name":{{ ('Commercial Lending Solutions, ' ~ loan.name)|tojson }},"url":{{ ('https://clscre.com/financing/' ~ loan.slug ~ '.html')|tojson }},"description":{{ seo.meta_description|tojson }},"telephone":"+13107080690","email":"loans@clscre.com","image":"https://clscre.com/images/cls-logo-skyline.png","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"areaServed":"Nationwide"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs %}{"@type":"Question","name":{{ faq.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a|tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
