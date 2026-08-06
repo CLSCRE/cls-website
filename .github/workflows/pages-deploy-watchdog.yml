@@ -26,29 +26,47 @@ jobs:
           GH_REPO: CLSCRE/cls-website
         run: |
           set -e
-          RUN_JSON=$(gh run list --workflow="pages-build-deployment" --limit 1 \
-            --json databaseId,conclusion,status,attempt)
-          echo "$RUN_JSON"
+          # Watch BOTH deploy paths. deploy-cloudflare-pages.yml is the one that
+          # actually ships clscre.com since the 2026-07-15 Workers cutover;
+          # pages-build-deployment is the legacy GitHub Pages job kept for parity.
+          # Until 2026-08-06 only the legacy one was watched, so when the
+          # Cloudflare deploy failed twice during a GitHub runner incident that
+          # day nothing retried it and the site silently served stale content.
+          FAILED_ANY=0
 
-          STATUS=$(echo "$RUN_JSON" | jq -r '.[0].status')
-          CONCLUSION=$(echo "$RUN_JSON" | jq -r '.[0].conclusion')
-          RUN_ID=$(echo "$RUN_JSON" | jq -r '.[0].databaseId')
-          ATTEMPT=$(echo "$RUN_JSON" | jq -r '.[0].attempt')
+          for WF in "deploy-cloudflare-pages.yml" "pages-build-deployment"; do
+            RUN_JSON=$(gh run list --workflow="$WF" --limit 1 \
+              --json databaseId,conclusion,status,attempt 2>/dev/null || echo '[]')
 
-          if [ "$STATUS" != "completed" ]; then
-            echo "Latest deploy run ($RUN_ID) still in progress ($STATUS) -- nothing to do."
-            exit 0
-          fi
+            if [ "$(echo "$RUN_JSON" | jq -r 'length')" = "0" ]; then
+              echo "[$WF] no runs found -- skipping."
+              continue
+            fi
 
-          if [ "$CONCLUSION" == "success" ]; then
-            echo "Latest deploy run ($RUN_ID) succeeded -- nothing to do."
-            exit 0
-          fi
+            STATUS=$(echo "$RUN_JSON" | jq -r '.[0].status')
+            CONCLUSION=$(echo "$RUN_JSON" | jq -r '.[0].conclusion')
+            RUN_ID=$(echo "$RUN_JSON" | jq -r '.[0].databaseId')
+            ATTEMPT=$(echo "$RUN_JSON" | jq -r '.[0].attempt')
 
-          if [ "$ATTEMPT" -ge 3 ]; then
-            echo "::error::Pages deploy run $RUN_ID has failed $ATTEMPT times in a row. Not retrying again -- this needs a human look (check Actions tab, likely an artifact-size/timeout issue at current site scale, not a code problem)."
-            exit 1
-          fi
+            if [ "$STATUS" != "completed" ]; then
+              echo "[$WF] run $RUN_ID still in progress ($STATUS) -- nothing to do."
+              continue
+            fi
 
-          echo "Latest deploy run ($RUN_ID) failed (attempt $ATTEMPT) -- rerunning failed jobs."
-          gh run rerun "$RUN_ID" --repo CLSCRE/cls-website --failed
+            if [ "$CONCLUSION" = "success" ]; then
+              echo "[$WF] run $RUN_ID succeeded -- nothing to do."
+              continue
+            fi
+
+            if [ "$ATTEMPT" -ge 3 ]; then
+              echo "::error::[$WF] run $RUN_ID has failed $ATTEMPT times in a row. Not retrying again -- this needs a human look (check the Actions tab; likely an artifact-size/timeout issue at current site scale, or a GitHub runner incident, not a code problem)."
+              FAILED_ANY=1
+              continue
+            fi
+
+            echo "[$WF] run $RUN_ID failed (attempt $ATTEMPT, conclusion $CONCLUSION) -- rerunning failed jobs."
+            gh run rerun "$RUN_ID" --repo CLSCRE/cls-website --failed || \
+              echo "::warning::[$WF] rerun of $RUN_ID could not be queued (GitHub may be degraded); the next watchdog tick will retry."
+          done
+
+          exit $FAILED_ANY
