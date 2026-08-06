@@ -527,8 +527,8 @@
     "slug": "life-company-loans",
     "name": "Life Company Loans",
     "short_name": "Life Company",
-    "headline": "Life Insurance Company Commercial Real Estate Financing",
-    "description": "Life insurance company loans offer 5.00% to 6.50% fixed rates, up to 65% ltv, and 10 to 25 years non-recourse terms for institutional-quality stabilized commercial real estate, the most competitive pricing available in the private market. Life companies prioritize long-term matched-asset investments, rewarding borrowers with premium properties, strong sponsors, and conservative leverage with the tightest spreads over Treasuries.",
+    "headline": "Life Company Loans for Commercial Real Estate",
+    "description": "Life company loans offer 5.00% to 6.50% fixed rates, up to 65% ltv, and 10 to 25 years non-recourse terms for institutional-quality stabilized commercial real estate, the most competitive pricing available in the private market. Life company lenders fund these mortgages directly from insurance general accounts. Life companies prioritize long-term matched-asset investments, rewarding borrowers with premium properties, strong sponsors, and conservative leverage with the tightest spreads over Treasuries.",
     "description_extended": "Life insurance companies fund commercial mortgages directly from their general accounts, which means they can offer fixed-rate terms up to 25 years (and occasionally 30 years), prepayment flexibility other capital sources cannot, and non-recourse structures with minimal carve-outs. The tradeoff is more conservative underwriting: life companies typically cap leverage at 60 to 70% and focus on institutional-quality assets in primary and strong secondary markets. Commercial Lending Solutions has direct allocation relationships with the largest life company lenders and knows which desks have open appetite at any given moment.",
     "key_features": {
       "loan_amount": "$2MM to $100MM+",
@@ -553,15 +553,30 @@
       "Sponsors with loan sizes generally $2MM+ ($10M+ most competitive)"
     ],
     "seo": {
-      "title": "Life Insurance Company Commercial Loans | Commercial Lending Solutions",
-      "meta_description": "Life insurance company CRE loans: 5.00%–6.50% fixed, 10–25 year terms, up to 65% LTV, non-recourse, $2MM–$100MM+. Direct correspondent access. Get a quote.",
-      "h1": "Life Insurance Company Commercial Real Estate Loans"
+      "title": "Life Company Loans | Life Insurance Commercial Real Estate Loans",
+      "meta_description": "Life company loans from $2MM to $100MM+: 5.00% to 6.50% fixed, 10 to 25 year terms, up to 65% LTV, non-recourse. Direct access to life company lenders nationwide.",
+      "h1": "Life Company Loans for Commercial Real Estate"
     },
     "quick_answer": "Life company loans range from $2MM to $100MM+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions submits via direct life-company correspondent relationships across 1,000+ capital sources nationwide.",
     "quick_answer_city": "Life company loans in {city}, {state} range from $2MM to $100MM+ at 5.00% to 6.50%, with terms of 10 to 25 years. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions sources life company financing for {city} commercial properties via direct correspondent desks and 1,000+ other capital sources nationwide.",
     "apply_query": "program=life-company",
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
+    "related_links": [
+      { "href": "financing/life-company-loan-rates.html", "label": "Current life company loan rates" },
+      { "href": "financing/how-to-qualify-for-life-company-loans.html", "label": "How to qualify for a life company loan" },
+      { "href": "blog/life-insurance-company-loans-explained.html", "label": "Life insurance company loans explained" },
+      { "href": "comparisons/agency-vs-life-company-stabilized-multifamily.html", "label": "Agency vs life company for stabilized multifamily" },
+      { "href": "comparisons/cmbs-vs-life-company-office-retail.html", "label": "CMBS vs life company for office and retail" },
+      { "href": "comparisons/life-company-vs-pension-fund-permanent.html", "label": "Life company vs pension fund permanent debt" },
+      { "href": "life-company/index.html", "label": "Life company lending by city and asset type" },
+      { "href": "financing/life-company-loans-kansas-city.html", "label": "Life company loans in Kansas City" },
+      { "href": "financing/life-company-loans-knoxville.html", "label": "Life company loans in Knoxville" },
+      { "href": "financing/life-company-loans-new-haven.html", "label": "Life company loans in New Haven" },
+      { "href": "financing/life-company-loans-seattle.html", "label": "Life company loans in Seattle" },
+      { "href": "blog/life-company-loans-denver-guide.html", "label": "Life company loans in Denver" },
+      { "href": "blog/life-company-loans-nashville-guide.html", "label": "Life company loans in Nashville" }
+    ],
     "updated": "August 2026",
     "updated_iso": "2026-08-01"
   },

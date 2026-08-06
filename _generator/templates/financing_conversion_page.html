@@ -147,6 +147,19 @@
   </div>
 </section>
 
+{% if loan.related_links %}
+<section class="pf-section" id="related">
+  <div class="pf-wrap">
+    <div class="pf-kicker">Related</div>
+    <h2>More on {{ loan.name|lower }}.</h2>
+    <p class="pf-intro">Rates, qualification, and market coverage for {{ loan.name|lower }}, in one place.</p>
+    <div class="pf-related-grid">
+      {% for link in loan.related_links %}<a class="pf-related-link" href="{{ depth }}{{ link.href }}">{{ link.label }} &rarr;</a>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {% if faqs %}
 <section class="pf-section">
   <div class="pf-wrap pf-faq-layout">
