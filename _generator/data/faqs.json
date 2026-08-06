@@ -341,6 +341,644 @@
         "q": "Who are the best lenders for net lease properties?",
         "a": "Life insurance companies offer the most competitive rates for long-term investment-grade net lease deals, typically 5.00% to 6.25% for 10 to 25-year terms. CMBS conduits offer higher leverage (up to 75 percent LTV) for both investment-grade and sub-investment-grade tenants. Commercial banks are competitive for shorter lease terms and local or regional credit tenants. Commercial Lending Solutions has direct allocation relationships with the top life company and CMBS net lease desks nationally."
       }
+    ],
+    "commercial-mortgage-loans": [
+      {
+        "q": "What is a commercial mortgage loan?",
+        "a": "A commercial mortgage loan is debt secured by income-producing commercial real estate, used to purchase, refinance, or recapitalize the asset. Unlike a residential mortgage, it is underwritten primarily on the property's net operating income and the sponsor's track record rather than personal income. Loan sizes generally run from $2 million to over $100 million."
+      },
+      {
+        "q": "What are current commercial mortgage rates?",
+        "a": "Commercial mortgage rates currently range from 5.00% to 13.04%, and the spread is driven mostly by lender type. Life insurance companies and agency lenders price at the low end for stabilized, low-leverage assets, banks and CMBS conduits sit in the middle, and debt funds and private lenders occupy the top of the range for transitional or higher-leverage deals."
+      },
+      {
+        "q": "How much can I borrow on a commercial mortgage?",
+        "a": "Leverage reaches up to 85% of value or cost, though most stabilized executions land between 60% and 75% LTV depending on lender type and debt service coverage. Loan amounts run from $2 million to over $100 million, with terms of 1 to 30 years and fixed, floating, or interest-only structures available."
+      },
+      {
+        "q": "What do lenders look at when underwriting a commercial mortgage, and how long does closing take?",
+        "a": "Underwriting centers on the trailing twelve months of operating income, the rent roll and lease rollover schedule, debt service coverage (usually a 1.20x to 1.25x minimum), and the sponsor's net worth, liquidity, and experience with the asset type. Third-party appraisal, environmental, and property condition reports are standard. Most permanent executions close in 45 to 90 days."
+      },
+      {
+        "q": "Why does the choice of lender matter so much on a commercial mortgage?",
+        "a": "Because each capital source prices risk differently, the same property can draw quotes 200 to 300 basis points apart depending on which lender type is approached first. A life insurance company, a bank, a CMBS conduit, and a debt fund will each read the same rent roll and reach a different conclusion. Commercial Lending Solutions runs eligible deals to multiple sources simultaneously."
+      }
+    ],
+    "multifamily-loans": [
+      {
+        "q": "What counts as a multifamily property for financing purposes?",
+        "a": "Commercial multifamily financing starts at five units. Anything from a five unit building to an institutional apartment community or a multi-property portfolio is underwritten as commercial real estate, on the property's income rather than the borrower's personal debt-to-income ratio. Conventional, affordable, workforce, student, and senior housing all fall under the multifamily umbrella."
+      },
+      {
+        "q": "What are current multifamily loan rates and terms?",
+        "a": "Multifamily rates run from 5.00% to 11.50%. Agency lenders and life insurance companies anchor the low end on stabilized product, while bridge and debt fund capital for lease-up or renovation sits at the top. Terms range from 1 to 35 years, with amortization of 25 to 35 years and loan amounts from $2 million to over $100 million."
+      },
+      {
+        "q": "How much leverage can I get on an apartment loan?",
+        "a": "Leverage reaches up to 85% of value or cost. Agency permanent debt on stabilized conventional apartments typically tops out near 75% to 80% LTV, affordable and workforce deals can push higher, and bridge lenders underwrite to cost on value-add business plans. The binding constraint is usually debt service coverage, not the stated LTV cap."
+      },
+      {
+        "q": "What do agency lenders require to qualify a multifamily loan?",
+        "a": "Agency programs generally want 90% physical occupancy sustained for 90 days, debt service coverage of 1.25x, and a sponsor with net worth roughly equal to the loan amount plus liquidity of about 10%. Replacement reserves and a third-party physical needs assessment are standard. Agency closings run 45 to 75 days, while bridge executions can close in 2 to 4 weeks."
+      },
+      {
+        "q": "What is the catch on agency multifamily prepayment terms?",
+        "a": "The long fixed term comes with a prepayment structure that is expensive to break. Most agency loans carry yield maintenance or defeasance for all but the final 90 days, which can cost several points if rates fall or the asset sells early. Step-down prepayment is available on some programs at a slightly higher coupon, and it is worth pricing both."
+      }
+    ],
+    "portfolio-loans": [
+      {
+        "q": "What is a blanket portfolio loan?",
+        "a": "A blanket portfolio loan finances multiple properties under a single facility secured by a cross-collateralized lien across the whole pool. Instead of separate mortgages, separate servicers, and staggered maturities, the borrower has one loan, one payment, and one set of covenants. Facilities generally run from $5 million to over $100 million."
+      },
+      {
+        "q": "How many properties do I need for a portfolio loan?",
+        "a": "There is no fixed count, but the structure earns its keep somewhere around ten properties and scales to portfolios of a hundred or more. What matters more than the number is aggregate size: most portfolio lenders want a facility of at least $5 million. Mixed asset types and multiple states are generally acceptable."
+      },
+      {
+        "q": "What rates and terms do portfolio loans carry?",
+        "a": "Portfolio loan rates run from 6.50% to 10.00% with terms of 3 to 10 years and leverage up to 75% LTV on the pool. Pricing sits above single-asset permanent debt because the lender is holding concentrated exposure to one sponsor. Non-recourse structures are available on institutional-quality pools with sufficient diversification."
+      },
+      {
+        "q": "How is a portfolio loan underwritten?",
+        "a": "Underwriting runs at the pool level: blended debt service coverage, blended occupancy, and total equity across all assets, rather than a separate credit decision on each property. That is the structural advantage, since a weaker asset that would not clear agency or bank underwriting alone can be carried by the stronger ones. Expect 45 to 75 days to close."
+      },
+      {
+        "q": "Can I sell an individual property out of a blanket portfolio loan?",
+        "a": "Yes, but only through the release provision, and that clause deserves close reading before closing. Lenders typically require a release price of 110% to 125% of the allocated loan amount for that asset, plus a test that the remaining pool still meets coverage and occupancy covenants. Negotiating release terms up front is the single biggest lever in a portfolio facility."
+      }
+    ],
+    "owner-occupied-commercial": [
+      {
+        "q": "What is an owner-occupied commercial real estate loan?",
+        "a": "It is financing for a business buying or refinancing the building it operates from, rather than an investment property leased to third parties. The primary repayment source is the operating business, not rental income, so lenders underwrite company earnings alongside the real estate. Loan sizes typically run from $2 million to $20 million."
+      },
+      {
+        "q": "How much of the building does my business have to occupy?",
+        "a": "SBA programs require the business to occupy at least 51% of an existing building, or 60% of a newly constructed one with a plan to reach 80% over time. The remaining space can be leased out, and that rental income helps carry the debt. Conventional bank programs generally apply a similar majority-occupancy test."
+      },
+      {
+        "q": "What rates and terms should I expect on an owner-occupied loan?",
+        "a": "Rates run from 5.50% to 8.50% with terms of 10 to 25 years, and the long amortization is the real draw. SBA 504 pairs a bank first mortgage with a fixed-rate debenture second, producing a blended cost below most conventional commercial debt. Conventional bank and credit union programs are the alternative above SBA size limits."
+      },
+      {
+        "q": "How do lenders qualify an owner-occupied borrower?",
+        "a": "On global cash flow, meaning the business earnings plus the owner's personal income measured against total debt service, usually at a 1.20x to 1.25x minimum. Expect three years of business and personal tax returns, interim financials, and a debt schedule. Leverage reaches 90% through SBA and roughly 75% conventional, and full recourse with a personal guarantee is standard."
+      },
+      {
+        "q": "How long does an owner-occupied commercial loan take to close?",
+        "a": "Conventional bank and credit union executions close in 45 to 60 days. SBA 504 typically takes 60 to 90 days because the transaction involves two lenders, a certified development company, and a debenture funding calendar that settles monthly after closing. Building the credit package correctly at submission is what keeps that timeline from slipping."
+      }
+    ],
+    "fix-and-flip-loans": [
+      {
+        "q": "What is a commercial fix and flip loan?",
+        "a": "A commercial fix and flip loan is short-term financing, typically 12 to 24 months, that funds the acquisition and renovation of a distressed or underimproved commercial property held for resale or refinance. The facility covers purchase, carry costs, and renovation draws, and it is underwritten to the business plan and the after-repair value rather than current in-place income."
+      },
+      {
+        "q": "What are typical fix and flip loan rates and terms?",
+        "a": "Pricing generally runs 9.00% to 13.50%, interest-only over a 12 to 24 month term with extension options. Where a deal lands in that band depends on leverage, the depth of the renovation scope, sponsor track record, and whether the exit is a sale or a refinance. Origination points and an exit or extension fee are standard additions."
+      },
+      {
+        "q": "How much can I borrow on a commercial fix and flip loan?",
+        "a": "Sizing runs up to 85% of total project cost or 75% of after-repair value, whichever constrains first, on loan amounts from $5M to $50M and above. Acquisition proceeds fund at closing, while renovation dollars are held back and released in draws as work is inspected and verified against the approved budget."
+      },
+      {
+        "q": "How fast can a fix and flip loan close, and what does the lender need?",
+        "a": "Two to four weeks is realistic with private lenders and debt funds. Speed depends on how complete the file is at submission: a line-item renovation budget, a general contractor bid and schedule, verified after-repair value comparables, a schedule of completed comparable projects, and entity and title documents. Incomplete budgets are the usual cause of delay."
+      },
+      {
+        "q": "What is the most common mistake on a fix and flip deal?",
+        "a": "Underbudgeting the renovation. Draw facilities fund against an approved budget, so a cost overrun becomes the sponsor's out-of-pocket problem. The second recurring pitfall is a term shorter than the real permitting and construction calendar, which forces an extension fee or a refinance before the asset is ready to sell. Non-recourse structures are available on larger transactions."
+      }
+    ],
+    "stated-income-loans": [
+      {
+        "q": "What is a stated income commercial loan?",
+        "a": "A stated income or lite-doc commercial loan qualifies the sponsor without full tax return verification. The lender underwrites bank statement deposits, an asset depletion schedule, or the property's own net operating income instead of adjusted gross income. Terms run 5 to 30 years, so this is permanent financing with an alternative documentation path, not a short-term workaround."
+      },
+      {
+        "q": "What rates do stated income commercial loans carry?",
+        "a": "Expect 7.00% to 11.00%, generally 100 to 300 basis points above a fully documented bank or life company execution. The premium prices the reduced documentation, not a weaker asset. Sponsors with strong liquidity, seasoned property cash flow, and leverage well below the cap price at the tighter end of that range."
+      },
+      {
+        "q": "What is the maximum LTV on a stated income commercial loan?",
+        "a": "Leverage caps at 70% LTV, below the 75% to 80% available on fully documented programs. Lenders offset the thinner income file with a larger equity cushion, so the appraisal and the debt service coverage test become the binding constraints. Cash-out proceeds are usually held tighter than purchase proceeds, and non-recourse is available at lower leverage."
+      },
+      {
+        "q": "What documentation do I actually need for a no-doc commercial loan?",
+        "a": "No tax returns, but the file is not documentation-free. Plan on 12 to 24 months of bank statements or a schedule of liquid and retirement assets, a current rent roll with trailing operating statements, a personal financial statement, entity documents, and credit. Closings often run 30 to 45 days because there is no tax return review cycle."
+      },
+      {
+        "q": "Who qualifies for a stated income commercial loan?",
+        "a": "Self-employed sponsors whose depreciation and write-offs understate real cash flow, high-net-worth principals qualifying on assets, foreign nationals without U.S. tax history, and owners of multi-entity structures. The common misconception is that these are credit-impaired programs. They are not. Lenders still expect strong credit, verified reserves, and an asset that covers debt service on its own."
+      }
+    ],
+    "land-loans": [
+      {
+        "q": "What is a commercial land loan?",
+        "a": "A commercial land loan is short-term financing, typically 12 to 36 months, for acquiring entitled, partially entitled, or raw land held for future development. Proceeds cover the purchase price and, in many cases, pre-development and entitlement carrying costs. The loan is interest-only and is repaid by a construction loan takeout or a sale of the entitled parcel."
+      },
+      {
+        "q": "What rates and leverage apply to commercial land loans?",
+        "a": "Rates run 8.00% to 14.00% with leverage capped at 65% of land value, and most deals start at $2 million. Entitlement status drives the outcome: an approved, permit-ready parcel prices near the bottom of that range at full leverage, while raw land with no approvals typically clears well below the cap at the top of the range."
+      },
+      {
+        "q": "Why are land loans harder to get than other commercial mortgages?",
+        "a": "There is no income to underwrite and the collateral produces no cash flow to service debt. Value depends entirely on entitlement outcomes and development feasibility, so most banks stay out of the category. The market sits with private lenders, debt funds, and family offices that price development risk, and recourse is typical rather than optional."
+      },
+      {
+        "q": "What do land lenders need to see to approve a deal?",
+        "a": "Entitlement status and the remaining approval path, a sponsor development track record on comparable projects, land and finished-lot sale comparables, submarket absorption data, environmental and title work, and a credible route to a bankable construction loan. An interest reserve is usually sized into the loan since the parcel earns nothing. Closings commonly run 30 to 60 days."
+      },
+      {
+        "q": "What is the most common mistake sponsors make on a land loan?",
+        "a": "Sizing the term to an optimistic entitlement schedule. Approvals slip, and a 12-month loan against a 24-month approval path ends in an extension fee or a refinance at worse pricing under time pressure. Match the term to the realistic entitlement calendar, and confirm the interest reserve carries the parcel through it."
+      }
+    ],
+    "preferred-equity": [
+      {
+        "q": "What is preferred equity in a commercial real estate capital stack?",
+        "a": "Preferred equity is an equity position that sits behind senior debt and ahead of common equity. It earns a stated preferred return before common equity receives any distribution, and the provider generally holds consent rights over major decisions. Investments start around $2 million and run to $50 million and above, with terms of 1 to 5 years."
+      },
+      {
+        "q": "What return does preferred equity require?",
+        "a": "Current market is a 10% to 16% preferred return, structured as current pay, fully accruing, or a blend of the two. Development deals with no interim cash flow usually accrue and settle at a capital event, while stabilized recapitalizations pay currently. Deal size, business plan risk, and the attachment point set the number within that range."
+      },
+      {
+        "q": "How much total leverage can preferred equity get me?",
+        "a": "Combined with a senior loan, preferred equity commonly takes total capitalization to 85% to 90%. That matters when a senior lender caps at 55% to 65% of value or cost and the sponsor would otherwise have to write a much larger common equity check. The tradeoff is a higher blended cost of capital and a partner with approval rights."
+      },
+      {
+        "q": "How is preferred equity different from mezzanine debt?",
+        "a": "Mezzanine debt is a loan secured by a pledge of the ownership interests in the property-owning entity. Preferred equity is an actual equity interest with a priority return. The difference shows up in remedies: a mezzanine lender forecloses on the pledged interests under the UCC, while a preferred holder exercises contractual control rights and steps into management. Senior lenders often dictate which structure they permit."
+      },
+      {
+        "q": "What do sponsors most often overlook when taking preferred equity?",
+        "a": "The control and remedy provisions rather than the rate. Underperformance triggers, forced-sale rights, and conversion to a larger common position can move control of the deal on a single missed milestone. Read the trigger definitions and cure periods as closely as the preferred return. Expect 30 to 60 days to place and close, running parallel to the senior loan."
+      }
+    ],
+    "bridge-to-perm-loans": [
+      {
+        "q": "What is a bridge-to-perm loan?",
+        "a": "A bridge-to-perm loan combines a short-term bridge or construction facility and its permanent take-out in one loan from a single capital source, typically sized from $5M to $100MM and above. The property is financed through construction or stabilization, then converts automatically to long-term debt once pre-agreed performance tests are met, with no second closing."
+      },
+      {
+        "q": "What rates and terms apply to a bridge-to-perm loan?",
+        "a": "The construction or bridge phase typically prices at SOFR plus 250 to 400 basis points and runs 24 to 36 months. The permanent rate is locked or capped at the initial closing, then amortizes over a 5 to 30 year term. Locking the take-out rate up front is the main reason sponsors choose this structure."
+      },
+      {
+        "q": "How much leverage do bridge-to-perm loans provide, and are they non-recourse?",
+        "a": "Leverage runs up to 75% of total cost during the construction or bridge phase and 70% to 75% of stabilized value at conversion. Most structures carry recourse and a completion guaranty while the business plan is executed, then burn off to non-recourse once the asset hits its stabilization tests."
+      },
+      {
+        "q": "What has to happen for the loan to convert to permanent?",
+        "a": "Conversion is governed by tests written into the original loan documents, usually a minimum debt service coverage ratio, a physical and economic occupancy floor, and a trailing NOI threshold measured over three to twelve months. Missing those tests is the real risk in this structure: the loan stays in its bridge phase at the higher floating rate."
+      },
+      {
+        "q": "How is a bridge-to-perm loan different from a bridge loan plus a separate refinance?",
+        "a": "A separate take-out exposes the sponsor to two risks: where rates sit at stabilization, and whether any permanent lender underwrites the asset at all. A bridge-to-perm structure removes both by committing the take-out at day one. Regional banks, agency forward commitments, life insurance companies, and debt funds all offer versions; Commercial Lending Solutions arranges them across those sources."
+      }
+    ],
+    "acquisition-bridge-loans": [
+      {
+        "q": "What is an acquisition bridge loan?",
+        "a": "An acquisition bridge loan is short-term capital used to close a commercial property purchase when conventional financing is too slow or the asset does not yet qualify for permanent debt. Terms run 6 to 24 months, interest-only, and the loan is repaid by a refinance into agency, bank, CMBS, or life company debt, or by a sale."
+      },
+      {
+        "q": "What is the minimum loan size for an acquisition bridge loan?",
+        "a": "Minimum loan size is $2 million. Most active lenders in this space concentrate between $3M and $25M, and facilities run to $50M and above for institutional sponsors. Below $2 million the deal generally moves to a smaller private or hard money lender, where pricing is higher and structures are less flexible."
+      },
+      {
+        "q": "What rates and leverage do acquisition bridge loans carry?",
+        "a": "Rates generally run 7.50% to 12.00%, interest-only, with leverage up to 80% of the purchase price and non-recourse available on larger institutional transactions. Expect one to two points of origination and, in many cases, an exit fee or minimum interest period. Price the total cost of capital across the hold, not the coupon alone."
+      },
+      {
+        "q": "How fast can an acquisition bridge loan close?",
+        "a": "Ten to twenty-one days is typical once a term sheet is signed, against 45 to 90 days for bank or agency debt. Speed depends on third-party reports, appraisal, title, and survey, so ordering those at application rather than after diligence is what actually protects a hard closing date."
+      },
+      {
+        "q": "What do acquisition bridge lenders underwrite?",
+        "a": "Debt funds, private lenders, and family offices underwrite the exit first: whether the asset supports a permanent loan large enough to retire the bridge at the end of term. After that comes basis per unit or per square foot, sponsor liquidity and track record, and the credibility of the lease-up or repositioning plan."
+      }
+    ],
+    "value-add-bridge-loans": [
+      {
+        "q": "What is a value-add bridge loan?",
+        "a": "A value-add bridge loan funds both the purchase and the renovation budget of an underperforming commercial property in one facility, typically 12 to 36 months. Lenders underwrite to projected stabilized value rather than current income, which is why a 55% occupied apartment building can be financed here but not by a bank."
+      },
+      {
+        "q": "How does the renovation money get funded?",
+        "a": "The CapEx piece is a committed future funding facility sized and documented at closing, not a promise to look at draws later. Funds are advanced in draws as work is completed and inspected, usually on a reimbursement basis. Confirm the facility is committed rather than discretionary before signing a term sheet."
+      },
+      {
+        "q": "How much leverage can I get on a value-add deal?",
+        "a": "Up to 85% of total cost, purchase plus capital improvements, for strong sponsors with a credible business plan. Two constraints usually bind before that ceiling: the as-is advance the lender will make against the acquisition on day one, and a stabilized loan-to-value test that caps total dollars regardless of how the cost stack is built."
+      },
+      {
+        "q": "What rates and loan sizes apply to value-add bridge loans?",
+        "a": "Pricing runs 7.75% to 12.50%, floating in most cases, on loans from $2 million to $50M and above. Institutional value-add lenders concentrate in the $3M to $30M range. Non-recourse is available on institutional-quality transactions; smaller deals and first-time sponsors should expect a full or partial repayment guaranty."
+      },
+      {
+        "q": "What is the most common reason a value-add bridge deal fails?",
+        "a": "The interest reserve runs dry before the property stabilizes. Renovation schedules slip, lease-up takes longer than the model assumed, and the loan matures with the business plan half executed. Underwrite the reserve and the extension options to a timeline six months longer than the plan, and confirm what the extension test requires."
+      }
+    ],
+    "1031-exchange-bridge-loans": [
+      {
+        "q": "What is a 1031 exchange bridge loan?",
+        "a": "Short-term financing used to close on replacement property inside the IRS 45-day identification and 180-day closing windows. Terms run 6 to 18 months, interest-only, and the loan is refinanced into permanent debt after the exchange is complete. It exists to protect the tax deferral, not to be the long-term capital structure."
+      },
+      {
+        "q": "How fast can a 1031 exchange bridge loan close?",
+        "a": "Ten to twenty-one days is standard once a complete file is in hand: purchase contract, title, exchange documents from the qualified intermediary, and preliminary property information. Debt funds and private lenders underwrite the asset and the sponsor rather than waiting on a full bank credit committee cycle, which is what makes the timeline achievable."
+      },
+      {
+        "q": "What rates and leverage should I expect on 1031 exchange bridge financing?",
+        "a": "Pricing generally runs 7.50% to 11.50%, interest-only, with leverage up to 75% of purchase price and loan sizes from $2 million to $50 million and above. Capital comes from debt funds, private lenders, and family offices rather than banks. Commercial Lending Solutions arranges these facilities and places them with lenders already cleared on exchange timing."
+      },
+      {
+        "q": "What happens if I miss the 180-day exchange deadline?",
+        "a": "The exchange fails and the entire gain on the relinquished property becomes taxable in the current year, which on a mid-size commercial sale often means hundreds of thousands of dollars. Because the tax cost dwarfs a few months of bridge interest, most investors treat certainty of closing as the governing variable, not rate."
+      },
+      {
+        "q": "Do lenders underwrite the permanent takeout before funding a 1031 bridge loan?",
+        "a": "Yes. A bridge lender wants to see a credible path to permanent debt before it funds, because a 6 to 18 month term leaves little room for error. Expect underwriting of stabilized debt service coverage at conservative permanent rates. The common pitfall is over-levering to absorb boot, which leaves the property unable to support a takeout loan."
+      }
+    ],
+    "multifamily-bridge-loans": [
+      {
+        "q": "What is a multifamily bridge loan?",
+        "a": "Short-term financing for apartment assets that are not yet stabilized: value-add acquisitions, renovation and lease-up, or portfolio repositioning. Terms run 12 to 36 months, interest-only, with non-recourse structures available. The loan carries the property from acquisition through stabilization, then gets refinanced into agency, CMBS, or bank permanent debt."
+      },
+      {
+        "q": "What are current multifamily bridge loan rates and leverage?",
+        "a": "Rates generally run 7.00% to 11.50%, interest-only, with leverage up to 80% of cost including renovation dollars. Loan sizes start at $2 million and reach $75 million and above. Multifamily draws the deepest bridge lender pool of any property type, so pricing on a clean, well-sponsored deal sits at the low end of that range."
+      },
+      {
+        "q": "How do lenders underwrite a value-add apartment deal?",
+        "a": "Underwriting centers on the business plan: current rent roll versus achievable market rents, the renovation budget per unit, the projected lease-up pace, and whether the stabilized net operating income supports an agency or bank takeout. Sponsor track record on comparable repositioning matters as much as the asset, and liquidity plus net worth tests apply."
+      },
+      {
+        "q": "How long does a multifamily bridge loan take to close?",
+        "a": "Fourteen to twenty-eight days is typical. The gating items are third-party reports (appraisal, property condition, environmental), unit-level access for inspection, and a clean rent roll with trailing operating statements. Deals slip when the seller controls site access or when the rent roll and bank deposits do not reconcile."
+      },
+      {
+        "q": "Can I refinance a multifamily bridge loan into agency debt?",
+        "a": "Yes, and that is the intended exit for most of these deals. Agency lenders generally want 90 days of stabilized occupancy, usually 90% physical with trailing collections to prove it, before quoting. The common mistake is a 12-month bridge term on a renovation plan that realistically needs 18 to 24 months plus seasoning."
+      }
+    ],
+    "industrial-bridge-loans": [
+      {
+        "q": "What is an industrial bridge loan?",
+        "a": "Short-term financing for warehouse, distribution, flex, manufacturing, and last-mile logistics properties that are vacant, partially leased, or being repositioned. Terms run 12 to 36 months, interest-only, with non-recourse available. The loan funds the acquisition and improvements, and is repaid when the asset is leased and refinanced into permanent debt or sold."
+      },
+      {
+        "q": "What rates and leverage apply to industrial bridge financing?",
+        "a": "Rates generally run 7.25% to 11.50%, interest-only, with leverage up to 75% of cost and loan sizes from $2 million to $75 million and above. Capital comes from debt funds, bridge platforms, banks, life companies, and CMBS conduits. Commercial Lending Solutions arranges these loans and matches each deal to the lenders active in that submarket."
+      },
+      {
+        "q": "Why is industrial bridge leverage capped lower than multifamily?",
+        "a": "Industrial bridge leverage tops out around 75% of cost versus 80% for apartments because industrial cash flow is tenant-concentrated. A single vacancy in a 200,000 square foot box takes income to zero, while an apartment property loses one unit of many. Lenders size to that binary risk and to re-tenanting time in the submarket."
+      },
+      {
+        "q": "How long does an industrial bridge loan take to close, and what slows it down?",
+        "a": "Fourteen to thirty days is typical. Environmental diligence is the usual constraint: former manufacturing, auto, dry cleaning, or fuel storage uses often trigger a Phase II, which adds two to four weeks and can change loan sizing. Ordering the Phase I the day the contract is signed protects the timeline."
+      },
+      {
+        "q": "Can I get an industrial bridge loan on a vacant building?",
+        "a": "Yes. Vacant and partially vacant industrial is a core use case, though lenders will hold back proceeds in an interest reserve and a leasing reserve funded at closing. Sizing keys off stabilized value and market rent comparables rather than in-place income, so the leasing assumptions in your model get tested hard."
+      }
+    ],
+    "office-bridge-loans": [
+      {
+        "q": "What is an office bridge loan?",
+        "a": "An office bridge loan is short-term financing, typically 12 to 36 months, used to acquire, reposition, or convert an office building before it qualifies for permanent debt. It funds vacant and distressed office acquisitions, lease-up, and adaptive reuse plans, with repayment coming from a refinance or sale once the business plan is executed. Minimum loan size is $2 million."
+      },
+      {
+        "q": "What rates and terms should I expect on an office bridge loan?",
+        "a": "Pricing runs 8.00% to 13.00% on interest-only terms of 12 to 36 months, with loan sizes from $2 million to $50 million and above. Closings typically take 14 to 30 days. Rate depends on going-in occupancy, credibility of the lease-up or conversion plan, and sponsor experience. Vacant assets and speculative conversions price at the top of the range."
+      },
+      {
+        "q": "How much leverage can I get on a vacant office building?",
+        "a": "Leverage generally reaches 70% of total cost, including purchase price, capital expenditure budget, and interest reserve. Because vacant office produces no income, lenders size to as-stabilized value and to a basis test measured against replacement cost, not to current cash flow. Sponsors typically bring 30% or more equity, and the interest reserve is funded at closing."
+      },
+      {
+        "q": "Who lends on office bridge deals now that banks have pulled back?",
+        "a": "Debt funds, private lenders, specialty office lenders, bridge platforms, and family offices carry this market. Most regional banks stopped writing new office bridge paper after the 2020 demand shift, so the active capital is non-bank. These lenders underwrite the conversion or repositioning thesis rather than trailing office income, which is why a credible business plan matters more than historical occupancy."
+      },
+      {
+        "q": "What is the most common reason an office bridge loan falls apart?",
+        "a": "Basis. Lenders underwrite the purchase price against replacement cost and against realistic post-stabilization value, so a deal bought at a price the seller wants rather than at a true discount will not clear. The second failure point is an interest reserve sized to an optimistic lease-up curve, which leaves the loan short of cash before the property stabilizes."
+      }
+    ],
+    "retail-bridge-loans": [
+      {
+        "q": "What is a retail bridge loan and when does it make sense?",
+        "a": "A retail bridge loan is 12 to 36 month financing for a shopping center or single-tenant property that cannot yet support permanent debt. Typical uses include buying an anchored center with rollover, curing deferred maintenance, backfilling a vacant box, or closing quickly on a competitive bid. The loan is repaid by refinancing into CMBS, life company, or bank debt once tenancy stabilizes."
+      },
+      {
+        "q": "What do retail bridge loans cost?",
+        "a": "Rates run 7.50% to 12.00%, interest-only, on terms of 12 to 36 months and loan amounts from $2 million to $50 million and above. Grocery-anchored and necessity retail with credit tenancy price near the bottom of the range. Unanchored strip, single-tenant assets with near-term expirations, and former big-box space carry the wider spreads."
+      },
+      {
+        "q": "How do lenders underwrite a retail bridge deal?",
+        "a": "Underwriting starts with the rent roll: anchor lease term remaining, sales per square foot where reported, co-tenancy clauses, and the expiration schedule through the loan term. Lenders then test the lease-up assumptions behind vacant space, including realistic tenant improvement and leasing commission dollars. Trade area demographics and traffic counts matter more in retail than in any other asset class."
+      },
+      {
+        "q": "How much can I borrow and how fast can it close?",
+        "a": "Leverage reaches 70% of total cost, covering purchase price plus the capital budget, tenant improvement and leasing commission reserve, and interest carry. Loan sizes start at $2 million. Closings run 14 to 30 days when title, survey, environmental, and estoppels are ordered early. Estoppel and subordination collection from tenants is the item that most often delays a retail closing."
+      },
+      {
+        "q": "Can a retail bridge loan be non-recourse?",
+        "a": "Yes. Non-recourse structures are available from debt funds and institutional bridge lenders, subject to standard carve-out guarantees for fraud, misapplication of funds, and environmental liability. Deals with heavy lease-up risk or a single-tenant vacancy often carry a partial repayment guarantee that burns off as occupancy and debt service coverage hit agreed thresholds."
+      }
+    ],
+    "mixed-use-bridge-loans": [
+      {
+        "q": "What is a mixed-use bridge loan?",
+        "a": "A mixed-use bridge loan is short-term financing, 12 to 36 months, for a property combining residential, retail, office, or hospitality space under one roof. It funds acquisition, repositioning, and lease-up of the commercial component before the asset qualifies for permanent debt. One loan covers the entire stack instead of separate financings for each use. Minimum size is $2 million."
+      },
+      {
+        "q": "What leverage do mixed-use bridge lenders offer?",
+        "a": "Up to 75% of total cost, the highest leverage among the bridge property types, because the residential component usually delivers stable in-place income that offsets commercial vacancy risk. Sizing is driven by the blended stabilized value across uses. Projects that are majority residential by square footage and income generally price and lever better than commercial-heavy ones."
+      },
+      {
+        "q": "What rates and terms apply to mixed-use bridge financing?",
+        "a": "Mixed-use bridge loans price from 7.50% to 12.50% on interest-only terms of 12 to 36 months, with amounts from $2 million to $50 million and above. Closings take 14 to 30 days. Pricing tracks the share of income coming from the commercial space, the market's residential fundamentals, and whether the retail is leased or being built out."
+      },
+      {
+        "q": "Why do conventional banks struggle with mixed-use properties?",
+        "a": "Bank credit policy usually routes a property to either a commercial or a residential underwriting box, and a blended asset fits neither cleanly. Use percentages also trigger different regulatory and appraisal treatments. Debt funds, bridge platforms, and CDFI lenders underwrite the blend directly, which is why non-bank capital dominates urban infill and transit-oriented mixed-use deals."
+      },
+      {
+        "q": "What documentation should I have ready for a mixed-use bridge loan?",
+        "a": "Expect to provide a rent roll separated by use, trailing 12 month operating statements, the commercial lease abstracts, a residential unit mix with in-place versus market rents, the capital budget, and a sources and uses schedule. Zoning confirmation matters here more than elsewhere, since many mixed-use projects rely on density bonuses or ground-floor commercial requirements."
+      }
+    ],
+    "office-conversion-loans": [
+      {
+        "q": "What is an office conversion loan?",
+        "a": "An office conversion loan funds the purchase and adaptive reuse of a vacant or underperforming office building into residential, mixed-use, or another commercial use. Terms run 18 to 36 months, interest-only, with funds released in phased construction draws. Sizing is based on post-conversion value and income, not on the building's current office rent roll. Minimum loan is $2 million."
+      },
+      {
+        "q": "How much of the conversion cost will a lender fund?",
+        "a": "Up to 80% of total conversion cost, which includes acquisition, hard costs, soft costs, contingency, and interest carry through completion and initial lease-up. Loan amounts reach $75 million and above. Sponsor equity typically goes in first, and most lenders require a completion guarantee from a creditworthy principal even when the loan is otherwise non-recourse."
+      },
+      {
+        "q": "What makes an office building a good conversion candidate?",
+        "a": "Floor plate geometry decides most of it. Lenders and architects look for shallow depth from core to window wall, roughly 30 to 45 feet, so every unit gets light and air. Window operability, existing plumbing stack locations, floor-to-floor height, and residential zoning by right are the other gates. Deep 1980s suburban floor plates usually fail feasibility."
+      },
+      {
+        "q": "What rates should I expect, and how long does closing take?",
+        "a": "Conversion loans price from 8.00% to 13.00%, interest-only, with the spread set by entitlement status, the depth of the sponsor's adaptive reuse track record, and how much of the design work is complete at application. Underwriting takes longer than a straight bridge loan because the lender orders a plan and cost review before committing, so budget 45 to 60 days."
+      },
+      {
+        "q": "Are there incentive or subsidy programs for office-to-residential conversion?",
+        "a": "Many cities now offer tax abatements, expedited permitting, or density bonuses for conversions, and affordable component projects can reach HUD 221(d)(4) or CDFI capital at materially lower cost. Incentive programs change underwriting: the abatement schedule flows into post-conversion NOI, so document the approval before sizing the takeout. Commercial Lending Solutions arranges this financing across both conventional and incentive-backed structures."
+      }
+    ],
+    "multifamily-construction-loans": [
+      {
+        "q": "What is a multifamily construction loan?",
+        "a": "A multifamily construction loan funds ground-up apartment development, build-to-rent communities, and major renovation of rental housing. These facilities run 18 to 36 months, carry interest-only payments, and fund through progressive draws released as construction milestones are verified. Minimum loan size is $2 million, which in practice means projects of roughly 20 units and up."
+      },
+      {
+        "q": "What interest rates do multifamily construction loans carry?",
+        "a": "Pricing generally runs 6.50% to 11.00%. Banks sit at the low end for experienced, well-capitalized sponsors with deposit relationships. Debt funds and CDFI lenders price wider but will underwrite first-time developers, adaptive reuse conversions, and secondary markets where bank appetite thins. Most quotes float over an index, with an interest reserve sized into the budget."
+      },
+      {
+        "q": "How much equity do I need for an apartment construction loan?",
+        "a": "Leverage reaches 80% to 85% of total project cost for experienced sponsors, so plan on 15% to 20% equity, funded ahead of the first draw. Land already owned can count toward that equity at appraised value if it was held long enough to season. Mezzanine debt or preferred equity can fill part of the remaining gap."
+      },
+      {
+        "q": "Do lenders require prior apartment development experience?",
+        "a": "Most banks want two or more completed multifamily projects of comparable scale and product type before they will lead a construction loan. First-time developers are not shut out. Debt funds, CDFI lenders, and HUD 221(d)(4) programs will underwrite them, usually alongside an experienced co-developer, a bonded general contractor, and a stronger completion guarantee."
+      },
+      {
+        "q": "How does a multifamily construction loan get paid off at completion?",
+        "a": "The take-out drives the entire underwriting. Lenders size the loan against a stabilized value supported by agency, HUD, or bank permanent debt, then stress that exit against market absorption data and lease-up timing. Projects that pencil at construction cost but not at a realistic exit cap rate get resized or declined, which is where most apartment deals stall."
+      }
+    ],
+    "build-to-rent-loans": [
+      {
+        "q": "What is a build-to-rent loan?",
+        "a": "A build-to-rent loan finances purpose-built single-family and townhome rental communities, covering land, horizontal work, vertical construction, and lease-up. The construction phase runs 18 to 36 months and then converts or refinances into permanent debt once the community stabilizes. Minimum loan size is $2 million, which generally corresponds to communities of 20 homes or more."
+      },
+      {
+        "q": "How is BTR construction underwritten differently from apartment construction?",
+        "a": "The difference is phasing. Homes deliver in pods, so revenue starts while later phases are still in the ground, and lenders advance against completed units instead of one vertical structure. Horizontal costs for streets, utilities, and common area are front-loaded, so the early draw schedule looks heavier than a comparable mid-rise budget of the same size."
+      },
+      {
+        "q": "What rates and leverage are available on build-to-rent financing?",
+        "a": "Build-to-rent construction pricing generally runs 6.75% to 11.00%, with leverage up to 80% of total project cost. Debt funds and dedicated BTR bridge platforms are the most active sources, and banks stay competitive for sponsors who bring depository relationships. Payments are interest-only during construction, with an interest reserve funded inside the loan."
+      },
+      {
+        "q": "How long does it take to close a BTR construction loan?",
+        "a": "Most facilities close in 21 to 45 days once the sponsor delivers a complete package: budget, plans, entitlements and plat approvals, the general contractor agreement, an absorption study, and sponsor financials. Debt funds move toward the fast end of that range and bank credit committees toward the slow end. Unresolved entitlements are the usual cause of delay."
+      },
+      {
+        "q": "What is the permanent takeout for a stabilized BTR community?",
+        "a": "Stabilized communities typically refinance into agency debt from Fannie Mae or Freddie Mac, or into life company or CMBS permanent loans where agency execution is unavailable. Agencies want the homes in a single ownership entity on contiguous parcels under unified management. Scattered lots and HOA encumbrances complicate that exit, so confirm parcel and control requirements before platting."
+      }
+    ],
+    "construction-to-perm-loans": [
+      {
+        "q": "What is a construction-to-perm loan and how does the one-time close work?",
+        "a": "A construction-to-perm loan combines the construction facility and the permanent mortgage into a single closing. During the build it funds through draws with interest-only payments. At completion it converts to an amortizing term loan of 10 to 25 years with no second closing, no second set of legal and title costs, and no new underwriting."
+      },
+      {
+        "q": "Is the permanent rate locked when the construction loan closes?",
+        "a": "Pricing generally runs 6.50% to 10.00%. The construction period is usually floating, while the permanent rate is either set at closing or established through a forward rate lock priced at commitment. Locking early costs a premium in spread or a rate-lock deposit. That premium is what you pay to remove takeout risk from the project."
+      },
+      {
+        "q": "How does the loan actually convert to permanent financing?",
+        "a": "Conversion is condition-based, not automatic. Typical tests include a certificate of occupancy, completion within budget and schedule, an occupancy threshold often set at 85% to 90%, and a minimum debt service coverage ratio on trailing income, commonly 1.20x to 1.25x. Missing a test pushes the loan into a fee-bearing extension instead of into perm."
+      },
+      {
+        "q": "Is a construction-to-perm loan recourse?",
+        "a": "A completion guarantee applies throughout construction, and most bank facilities carry full or partial repayment recourse during that period. Lenders typically burn the guarantee down or release it once the project satisfies its conversion tests, leaving a permanent loan with standard carve-outs. Negotiate that burn-off language in the term sheet, not at conversion."
+      },
+      {
+        "q": "When does a one-time close beat two separate loans?",
+        "a": "The structure trades pricing for certainty. One closing saves a second origination fee, title premium, and legal bill, and it removes the refinance event that sinks projects when markets move. The tradeoff is permanent terms set years before delivery, usually a touch wider than a perm loan shopped at stabilization. Commercial Lending Solutions prices both structures side by side."
+      }
+    ],
+    "industrial-construction-loans": [
+      {
+        "q": "What is an industrial construction loan?",
+        "a": "An industrial construction loan funds ground-up warehouse, distribution, flex industrial, and cold storage development. Terms run 18 to 36 months, interest-only, funded through progressive draws verified by a third-party inspector. Minimum loan size is $2 million, and facilities scale past $100 million for portfolio developers building several buildings under one commitment."
+      },
+      {
+        "q": "Can I finance a speculative warehouse with no pre-leasing?",
+        "a": "Yes, speculative industrial remains financeable in supply-constrained logistics corridors, but leverage steps down. Expect up to 75% of total cost on a spec building versus up to 80% once space is pre-leased. Lenders substitute market evidence for a signed lease, so a current absorption study, comparable rents, and a credible lease-up budget carry the file."
+      },
+      {
+        "q": "What rates do industrial construction loans carry?",
+        "a": "Pricing generally runs 6.50% to 11.00%. Banks and life insurance companies compete hardest on pre-leased build-to-suit projects backed by a credit tenant lease. Debt funds and private lenders own the speculative and heavier-lift end of the market, quoting wider spreads in exchange for higher proceeds, looser covenants, and faster execution."
+      },
+      {
+        "q": "What do lenders underwrite on a warehouse development, and how long does it take?",
+        "a": "Underwriting turns on four things: the sponsor's completed industrial projects, a fixed-price or guaranteed maximum price contract with a qualified general contractor, verified market absorption, and an exit cap rate that supports a CMBS, life company, or bank takeout. Plan on 45 to 90 days from application, longer where entitlements, utilities, or environmental work are unresolved."
+      },
+      {
+        "q": "Is cold storage construction financed differently from dry warehouse?",
+        "a": "Cold storage underwrites as a hybrid of real estate and equipment. Refrigeration systems, insulated panels, and slab design push costs far above dry warehouse per square foot, and lenders discount those specialized improvements when sizing against stabilized value. Expect lower loan-to-cost, a longer lease-up assumption, and pressure to identify an end user before breaking ground."
+      }
+    ],
+    "self-storage-financing": [
+      {
+        "q": "What is self-storage financing?",
+        "a": "Self-storage financing funds the acquisition, refinance, ground-up construction, and conversion of storage facilities, including climate-controlled, multi-story urban infill, and boat and RV storage. Loan amounts run from $2 million to $30 million and above. Capital comes from CMBS conduits, life insurance companies, banks, and debt funds, all of which maintain dedicated storage appetite."
+      },
+      {
+        "q": "What rates and terms apply to a self-storage loan?",
+        "a": "Self-storage rates generally run 5.50% to 9.00% with terms of 5 to 25 years. Stabilized Class A facilities in dense suburban trade areas price at the low end through life insurance companies and CMBS conduits. Transitional or lease-up facilities land at the high end, usually in a bridge-to-perm structure that refinances once occupancy stabilizes."
+      },
+      {
+        "q": "How much can I borrow against a self-storage facility?",
+        "a": "Leverage reaches 75% of value on a stabilized facility with a documented operating history. Non-recourse is available from CMBS conduits and life insurance companies, while bank and construction debt usually carries a guarantee. On a lease-up facility, a bridge lender will size an initial advance on in-place income and hold back the balance until occupancy targets are met."
+      },
+      {
+        "q": "How do lenders underwrite a self-storage property?",
+        "a": "Storage leases are month to month, so underwriting leans on trailing twelve month performance rather than a rent roll. Lenders compare physical occupancy against economic occupancy, test in-place rents against published street rates, review concession and rate-increase policy, and measure competing square feet per capita in the three mile trade area. Nearby new supply is the fastest way to lose proceeds."
+      },
+      {
+        "q": "How long does it take to close a self-storage loan?",
+        "a": "Permanent financing through a life insurance company, bank, or CMBS conduit typically closes in 45 to 90 days, with appraisal, environmental work, and legal review setting the pace. Bridge debt on a lease-up facility or a conversion can fund in three to five weeks. Ground-up construction requests take longest because plans, budget, and contractor review are underwritten alongside the site."
+      }
+    ],
+    "hotel-motel-financing": [
+      {
+        "q": "What does hotel and motel financing cover?",
+        "a": "Hotel and motel financing covers acquisition, renovation, refinance, and ground-up construction for full-service, select-service, extended-stay, boutique, and budget properties. Loan amounts run from $2 million to $50 million and above. Because hospitality income resets nightly, most of the capital comes from CMBS conduits, debt funds, and hospitality-focused bridge lenders rather than conventional banks."
+      },
+      {
+        "q": "What are current hotel loan rates and terms?",
+        "a": "Hospitality pricing generally runs 6.00% to 12.00%, the widest spread of any commercial asset class. Permanent debt carries 5 to 25 year terms, fixed or floating, and prices at the low end for flag-affiliated select-service assets with steady trailing performance. Bridge and renovation debt runs 12 to 36 months and prices toward the top of that band."
+      },
+      {
+        "q": "What leverage is available on a hotel loan?",
+        "a": "Leverage tops out near 70% of value, lower than most commercial property types, because a hotel re-leases every room every night and has no contractual rent to underwrite. Proceeds are usually constrained further by debt service coverage and debt yield tests applied to trailing income. Non-recourse is available through CMBS conduits."
+      },
+      {
+        "q": "How do lenders underwrite a hotel or motel?",
+        "a": "Underwriters work from trailing twelve month RevPAR, average daily rate, and occupancy, then benchmark the property against its competitive set to see whether it is gaining or losing share. Remaining franchise term, brand quality scores, the reserve for furniture, fixtures, and equipment, and any pending property improvement plan all shape proceeds. An unfunded improvement plan is the most common deal killer."
+      },
+      {
+        "q": "How long does hotel financing take to close?",
+        "a": "Hospitality bridge and renovation debt typically funds in three to six weeks. CMBS and other permanent hotel loans run 45 to 90 days because franchise comfort letters, brand approvals, and third-party reports sit on the critical path. Commercial Lending Solutions arranges this financing and tracks which hospitality desks hold open appetite by flag and market."
+      }
+    ],
+    "student-housing-loans": [
+      {
+        "q": "What counts as student housing for financing purposes?",
+        "a": "Lenders treat purpose-built student housing, off-campus apartment communities with heavy student concentration, and mixed-use buildings in campus districts as student housing. Loan amounts run from $2 million to $50 million and above, funded by Fannie Mae and Freddie Mac programs, CMBS conduits, banks, life insurance companies, and debt funds with dedicated student housing platforms."
+      },
+      {
+        "q": "What rates and terms are available on student housing loans?",
+        "a": "Student housing pricing generally runs 5.75% to 9.50% over terms of 5 to 25 years. Agency permanent debt on a stabilized purpose-built community near a large university prices at the low end. Bridge-to-agency structures for acquisitions that need renovation or a full lease-up season price higher and carry a defined path to permanent takeout."
+      },
+      {
+        "q": "How much leverage can I get on a student housing property?",
+        "a": "Leverage reaches 80% of value through agency programs, higher than most commercial asset classes, because by-the-bed leases with parental guarantors reduce credit risk. Non-recourse is standard on agency and CMBS executions. Properties beyond a comfortable walk or shuttle ride from campus are usually sized lower regardless of current occupancy."
+      },
+      {
+        "q": "How do lenders underwrite student housing?",
+        "a": "The first test is the university itself: total enrollment, the multi-year enrollment trend, and whether it is a flagship or research institution. Next comes distance to campus, unit and bed configuration, and the amenity package measured against competing communities. Underwriters then review pre-leasing velocity for the coming academic year, since one missed leasing season resets income for twelve months."
+      },
+      {
+        "q": "How long does a student housing loan take to close?",
+        "a": "Agency and CMBS permanent loans generally close in 45 to 90 days, while bridge debt funds faster, in three to six weeks. Timing matters more here than in other asset classes because the entire rent roll turns over at once and lenders want the coming year's pre-leasing report. Commercial Lending Solutions places these loans through agency-approved lenders."
+      }
+    ],
+    "senior-housing-financing": [
+      {
+        "q": "What is senior housing financing and what property types does it cover?",
+        "a": "Senior housing financing funds acquisition, construction, and refinancing of independent living, assisted living, memory care, and continuing care retirement communities. Loans run $2 million to $75 million and above. Unlike conventional real estate lending, underwriting weighs operating performance (labor, census, regulatory compliance) alongside real estate value, so lenders with healthcare expertise dominate the space."
+      },
+      {
+        "q": "What rates and leverage are available for senior housing loans?",
+        "a": "Rates generally run 5.75% to 10.00%, with terms of 5 to 35 years and leverage up to 75% LTV. HUD 232 anchors the low end with 35-year fully amortizing non-recourse debt. Agency and CMBS execution prices in the middle. Debt funds financing census turnarounds sit at the top. A minimum debt service coverage test usually caps proceeds before LTV does."
+      },
+      {
+        "q": "What do lenders look for in a senior housing operator?",
+        "a": "Operator quality drives the credit decision. Lenders want a management company with a multi-property track record in the same care level, clean state survey history, stable census and staffing, and audited or reviewed operating statements. Owner-operators without that depth are often required to bring in a third-party manager as a condition of closing."
+      },
+      {
+        "q": "How long does it take to close senior housing financing?",
+        "a": "Timing varies widely by capital source. A debt fund bridge loan on an acquisition or lease-up can close in 30 to 45 days. Agency and CMBS permanent debt runs 60 to 90 days. HUD 232 delivers the best long-term terms but requires 6 to 9 months, including operator review, state survey history, and third-party reports."
+      },
+      {
+        "q": "How does payor mix affect senior housing financing?",
+        "a": "Payor mix is the sharpest dividing line in this asset class. Private-pay independent living and assisted living attract conventional real estate lenders and the best pricing. Communities with heavy Medicaid or skilled nursing exposure carry reimbursement risk and route to healthcare-specialty lenders or HUD 232, which underwrite operations far more deeply and take longer to close."
+      }
+    ],
+    "medical-office-financing": [
+      {
+        "q": "What is medical office financing?",
+        "a": "Medical office financing covers acquisition, construction, and refinancing of medical office buildings, ambulatory surgery centers, urgent care facilities, and outpatient campuses, starting at $2 million. Lenders treat medical office as a defensive asset class because healthcare demand is non-discretionary and tenant buildouts are expensive to replicate, which keeps renewal rates high and vacancy low relative to conventional office."
+      },
+      {
+        "q": "What rates, terms, and leverage apply to medical office loans?",
+        "a": "Medical office loans price from 5.25% to 8.50%, with terms of 5 to 25 years and leverage up to 75% LTV. Life insurance companies quote the tightest rates on stabilized, well-tenanted buildings at moderate leverage, and CMBS conduits reach the highest proceeds. Physician groups buying their own building can access long-term fixed-rate SBA 504 structures instead."
+      },
+      {
+        "q": "How do lenders underwrite medical office tenants?",
+        "a": "Underwriting centers on the rent roll: tenant credit (health system versus independent physician practice), weighted average remaining lease term, and whether leases extend beyond loan maturity. Lenders also review hospital affiliation and referral patterns. Multi-tenant buildings with staggered expirations and funded tenant improvement reserves underwrite far better than a building facing near-term rollover."
+      },
+      {
+        "q": "How long does it take to close a medical office loan?",
+        "a": "Bank and debt fund executions typically close in 45 to 60 days. Life insurance company and CMBS loans usually run 60 to 90 days, driven by appraisal, environmental and property condition reports, and lease review. Owner-occupied SBA 504 transactions take longer, generally 60 to 120 days, because of the second-position debenture funding process."
+      },
+      {
+        "q": "Does an on-campus location change medical office financing terms?",
+        "a": "Yes. Buildings on or adjacent to a hospital campus command the best pricing and leverage because the hospital relationship supports tenant retention. Off-campus multi-tenant and single-tenant medical office is broadly lendable but priced wider. The common trap is a ground lease under an on-campus building: lenders require the ground lease term to extend well beyond loan maturity."
+      }
+    ],
+    "sale-leaseback-financing": [
+      {
+        "q": "What is a commercial real estate sale-leaseback?",
+        "a": "In a sale-leaseback, a business sells the real estate it occupies to an investor and simultaneously signs a long-term net lease to stay in the building. The seller keeps full operational use of the facility and converts trapped equity into cash. The buyer acquires a net-leased asset backed by the operating company's lease and corporate guarantee."
+      },
+      {
+        "q": "How much capital does a sale-leaseback unlock compared with a mortgage?",
+        "a": "A sale-leaseback monetizes essentially 100% of the property's value, while a mortgage on the same asset typically advances 65% to 75% of value. The tradeoff is that the business gives up ownership and future appreciation, and takes on a long-term rent obligation in place of amortizing debt service."
+      },
+      {
+        "q": "What financing terms apply to the investor buying the property?",
+        "a": "NNN acquisition debt on sale-leaseback assets prices from 5.25% to 7.50%, with terms of 10 to 25 years and leverage up to 75% LTV. Life insurance companies and CMBS conduits are the deepest capital sources, non-recourse is available at institutional size, and closings generally run 45 to 90 days from application."
+      },
+      {
+        "q": "How do lenders underwrite the lease and the seller's credit?",
+        "a": "Lenders test three things: remaining lease term relative to loan maturity, the financial strength of the operating company guaranteeing the lease, and rent coverage measured against the tenant's earnings at that location. Investment-grade or audited private guarantors with 15 or more years of remaining lease term draw the best pricing and the highest proceeds."
+      },
+      {
+        "q": "What is the most common mistake in structuring a sale-leaseback?",
+        "a": "Setting rent above market. A seller can raise the sale price by agreeing to inflated rent, but appraisers and lenders underwrite to market rent, so the buyer's financing shrinks and the deal reprices or dies at the closing table. Rent set at a defensible market level, with modest annual escalations, keeps the transaction financeable. Commercial Lending Solutions arranges both sides of these transactions."
+      }
+    ],
+    "cpace-financing": [
+      {
+        "q": "What is C-PACE financing?",
+        "a": "C-PACE stands for Commercial Property Assessed Clean Energy. It is long-term fixed-rate capital for energy efficiency, renewable energy, resiliency, and related building improvements, repaid as a special assessment on the property tax bill rather than as a conventional mortgage. Programs are authorized state by state and are available in 38 or more states plus the District of Columbia."
+      },
+      {
+        "q": "What are C-PACE rates and terms?",
+        "a": "C-PACE pricing runs 6.50% to 8.50% fixed, with amortization matched to the useful life of the improvements, generally 10 to 30 years. Project sizes start at $2 million and run past $30 million. The assessment is non-recourse, requires no personal guarantee, and transfers to the next owner automatically when the property sells."
+      },
+      {
+        "q": "What improvements qualify for C-PACE?",
+        "a": "Eligible measures typically include HVAC replacement, roofing and insulation, LED lighting, windows, solar and battery storage, EV charging infrastructure, water conservation systems, and in many states seismic and fire code retrofits. Eligibility is set by the individual state or county program, so the qualifying scope and any retroactive lookback window vary by jurisdiction."
+      },
+      {
+        "q": "Does my existing mortgage lender have to approve C-PACE?",
+        "a": "Most enabling statutes do not require senior lender consent, but nearly every first mortgage document restricts new assessments against the property. In practice the mortgage holder signs a consent or acknowledgment before the assessment records. Securing that acknowledgment early is the single most common cause of delay in a C-PACE closing."
+      },
+      {
+        "q": "How much of a project can C-PACE fund?",
+        "a": "C-PACE usually covers 20% to 30% of total project cost and sits alongside, not in place of, senior debt and equity. Owners use it to lower the blended cost of capital, reduce the equity check, or fund improvements a construction lender will not advance against. Some programs also allow retroactive funding of recently completed work."
+      }
     ]
   },
   "property_types": {
