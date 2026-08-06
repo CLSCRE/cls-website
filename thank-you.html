@@ -5,8 +5,15 @@
 <script>
 window.dataLayer = window.dataLayer || [];
 (function(){
-  var raw = '';
-  try { raw = (new URLSearchParams(location.search).get('form') || '').toLowerCase(); } catch(e) {}
+  var raw = '', suppressed = false;
+  try {
+    var qs = new URLSearchParams(location.search);
+    raw = (qs.get('form') || '').toLowerCase();
+    // Bot traps redirect here with nc=1 so the visitor sees a success page
+    // without registering as a lead.
+    suppressed = qs.get('nc') === '1';
+  } catch(e) {}
+  if (suppressed) return;
   var allowed = {contact:1, apply:1, 'submit-deal':1, 'broker-portal':1, exit:1, newsletter:1, generic:1, partners:1};
   var formType = allowed[raw] ? raw : 'contact';
   window.dataLayer.push({

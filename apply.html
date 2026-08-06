@@ -1146,15 +1146,18 @@ var _applyLoadTime = Date.now();
 var _applySubmitting = false;
 function submitApplication() {
   if (_applySubmitting) return;
+  // Bot traps below send the bot to the thank-you page so it believes it succeeded.
+  // nc=1 tells that page to skip the generate_lead conversion, otherwise every
+  // trapped bot would register as a lead.
   // Bot check 1: second honeypot
   var hp2 = document.getElementById('hp2_apply');
-  if (hp2 && hp2.value) { window.location.href = 'thank-you.html'; return; }
+  if (hp2 && hp2.value) { window.location.href = 'thank-you.html?nc=1'; return; }
   // Bot check 2: time trap (5-step wizard in under 10 seconds = bot)
   var elapsed = (Date.now() - _applyLoadTime) / 1000;
-  if (elapsed < 10) { window.location.href = 'thank-you.html'; return; }
+  if (elapsed < 10) { window.location.href = 'thank-you.html?nc=1'; return; }
   // Bot check 3: JS token
   var token = document.getElementById('applyToken');
-  if (!token || !token.value || !token.value.startsWith('cls_')) { window.location.href = 'thank-you.html'; return; }
+  if (!token || !token.value || !token.value.startsWith('cls_')) { window.location.href = 'thank-you.html?nc=1'; return; }
   _applySubmitting = true;
   var submitBtn = document.querySelector('.btn-submit');
   if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Submitting...'; }
@@ -1197,7 +1200,9 @@ function submitApplication() {
     document.getElementById('wizardForm').appendChild(fi);
   }
 
-  // GA4 + dataLayer conversion
+  // Funnel event only. The generate_lead conversion fires once on thank-you.html
+  // after FormSubmit actually accepts the POST; firing it here too would double-count
+  // every successful lead and count abandoned/failed submits as leads.
   var leadParams = {
     event_category:'form',
     event_label:'loan_application_wizard',
@@ -1206,9 +1211,9 @@ function submitApplication() {
     loan_type:document.getElementById('loan_type').value,
     property_type:propType?propType.value:''
   };
-  if(typeof gtag==='function') gtag('event','generate_lead', leadParams);
+  if(typeof gtag==='function') gtag('event','generate_lead_attempt', leadParams);
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push(Object.assign({event:'generate_lead'}, leadParams));
+  window.dataLayer.push(Object.assign({event:'generate_lead_attempt'}, leadParams));
   try { localStorage.removeItem('cls_apply_draft_v1'); } catch(e) {}
 
   // Submit the hidden form
