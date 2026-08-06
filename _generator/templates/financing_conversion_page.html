@@ -26,6 +26,13 @@
     <div>
       <div class="pf-eyebrow">{{ loan.short_name }} financing</div>
       <h1>{{ loan.headline }}</h1>
+      <div class="pf-byline" style="font-size:13px;color:var(--gray-500);margin:10px 0 16px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+        <span>Reviewed by</span>
+        <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+        <span>, Commercial Mortgage Broker</span>
+        <span aria-hidden="true">·</span>
+        <span>Updated <time datetime="{{ loan.updated_iso|default('2026-08-01') }}">{{ loan.updated|default('August 2026') }}</time></span>
+      </div>
       <p class="pf-lead">{{ loan.description }}</p>
       <div class="pf-actions">
         <a class="pf-btn" href="{{ depth }}apply.html?{{ loan.apply_query }}">Discuss your transaction &rarr;</a>
@@ -72,7 +79,7 @@
   <div class="pf-wrap">
     <div class="pf-kicker">Lender selection</div>
     <h2>How We Source {{ loan.short_name }} Capital</h2>
-    <p class="pf-intro">We do not treat the lender list as a directory. We target the desks whose current appetite fits the asset, sponsorship, market, and business plan, then compare the full execution—not only the rate.</p>
+    <p class="pf-intro">We do not treat the lender list as a directory. We target the desks whose current appetite fits the asset, sponsorship, market, and business plan, then compare the full execution, not only the rate.</p>
     <div class="pf-table-wrap" tabindex="0" role="region" aria-label="{{ loan.name }} capital source comparison">
       <table class="pf-table">
         <thead><tr><th>Capital source</th><th>Where it may fit</th></tr></thead>

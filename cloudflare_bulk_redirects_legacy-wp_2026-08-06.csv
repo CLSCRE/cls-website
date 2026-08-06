@@ -1,0 +1,6 @@
+source_url,target_url,status_code,preserve_query_string,include_subdomains,subpath_matching,preserve_path_suffix
+https://clscre.com/about/,https://clscre.com/about.html,301,true,false,false,false
+https://clscre.com/about-2-2/,https://clscre.com/about.html,301,true,false,false,false
+https://clscre.com/privacy-policy-2/,https://clscre.com/privacy.html,301,true,false,false,false
+https://clscre.com/financing/,https://clscre.com/financing/commercial-mortgage-rates.html,301,true,false,false,false
+https://clscre.com/contact/,https://clscre.com/contact.html,301,true,false,false,false

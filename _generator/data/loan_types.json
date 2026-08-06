@@ -37,7 +37,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=permanent"
+    "apply_query": "program=permanent",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "commercial-mortgage-loans",
@@ -79,7 +81,9 @@
     "quick_answer_city": "Commercial mortgage loans in {city}, {state} typically range from $2MM to $100MM+, with rates from 5.00% to 13.04% depending on lender type, term, and leverage. Commercial Lending Solutions sources {city} commercial mortgage financing from banks, life insurance companies, CMBS conduits, agency lenders, and private capital through 1,000+ lender relationships nationwide.",
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=commercial-mortgage"
+    "apply_query": "program=commercial-mortgage",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "multifamily-loans",
@@ -121,7 +125,9 @@
     "quick_answer_city": "Multifamily loans in {city}, {state} typically range from $2MM to $100MM+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources {city} multifamily and apartment financing from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds nationwide.",
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=multifamily"
+    "apply_query": "program=multifamily",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "construction-loans",
@@ -190,7 +196,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=construction"
+    "apply_query": "program=construction",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "bridge-loans",
@@ -228,7 +236,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=bridge"
+    "apply_query": "program=bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "sba-loans",
@@ -266,7 +276,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=sba"
+    "apply_query": "program=sba",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "mezzanine",
@@ -305,7 +317,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=mezzanine"
+    "apply_query": "program=mezzanine",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "specialty",
@@ -345,7 +359,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=specialty"
+    "apply_query": "program=specialty",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "agency-loans",
@@ -383,7 +399,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=agency"
+    "apply_query": "program=agency",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "hud-fha-loans",
@@ -420,7 +438,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=hud-fha"
+    "apply_query": "program=hud-fha",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "cmbs-loans",
@@ -457,7 +477,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=cmbs"
+    "apply_query": "program=cmbs",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "net-lease-financing",
@@ -497,7 +519,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=net-lease-financing"
+    "apply_query": "program=net-lease-financing",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "life-company-loans",
@@ -537,7 +561,9 @@
     "quick_answer_city": "Life company loans in {city}, {state} range from $2MM to $100MM+ at 5.00% to 6.50%, with terms of 10 to 25 years. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions sources life company financing for {city} commercial properties via direct correspondent desks and 1,000+ other capital sources nationwide.",
     "apply_query": "program=life-company",
     "min_amount_usd": 2000000,
-    "min_loan_display": "$2MM"
+    "min_loan_display": "$2MM",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "dscr-loans",
@@ -576,7 +602,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=dscr"
+    "apply_query": "program=dscr",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "hard-money-loans",
@@ -615,7 +643,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=hard-money"
+    "apply_query": "program=hard-money",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "portfolio-loans",
@@ -654,7 +684,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=portfolio"
+    "apply_query": "program=portfolio",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "fix-and-flip-loans",
@@ -693,7 +725,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=fix-and-flip"
+    "apply_query": "program=fix-and-flip",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "stated-income-loans",
@@ -732,7 +766,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=stated-income"
+    "apply_query": "program=stated-income",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "bridge-to-perm-loans",
@@ -771,7 +807,9 @@
     },
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
-    "apply_query": "program=bridge-to-perm"
+    "apply_query": "program=bridge-to-perm",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "acquisition-bridge-loans",
@@ -810,7 +848,9 @@
       "h1": "Acquisition Bridge Loans for Commercial Real Estate"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=acquisition-bridge"
+    "apply_query": "program=acquisition-bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "value-add-bridge-loans",
@@ -849,7 +889,9 @@
       "h1": "Value-Add Bridge Loans for Commercial Real Estate"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=value-add-bridge"
+    "apply_query": "program=value-add-bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "1031-exchange-bridge-loans",
@@ -888,7 +930,9 @@
       "h1": "1031 Exchange Bridge Loans for Commercial Real Estate"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=1031-exchange-bridge"
+    "apply_query": "program=1031-exchange-bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "multifamily-bridge-loans",
@@ -927,7 +971,9 @@
       "h1": "Multifamily Bridge Loans for Apartment Investors"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=multifamily-bridge"
+    "apply_query": "program=multifamily-bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "industrial-bridge-loans",
@@ -966,7 +1012,9 @@
       "h1": "Industrial Bridge Loans for Warehouse and Logistics Properties"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=industrial-bridge"
+    "apply_query": "program=industrial-bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "office-bridge-loans",
@@ -1005,7 +1053,9 @@
       "h1": "Office Bridge Loans for Acquisitions and Conversions"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=office-bridge"
+    "apply_query": "program=office-bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "retail-bridge-loans",
@@ -1044,7 +1094,9 @@
       "h1": "Retail Bridge Loans for Shopping Centers and NNN Properties"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=retail-bridge"
+    "apply_query": "program=retail-bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "mixed-use-bridge-loans",
@@ -1083,7 +1135,9 @@
       "h1": "Mixed-Use Bridge Loans for Urban Infill Properties"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=mixed-use-bridge"
+    "apply_query": "program=mixed-use-bridge",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "multifamily-construction-loans",
@@ -1122,7 +1176,9 @@
       "h1": "Multifamily Construction Loans for Apartment Developers"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=multifamily-construction"
+    "apply_query": "program=multifamily-construction",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "build-to-rent-loans",
@@ -1161,7 +1217,9 @@
       "h1": "Build-to-Rent Loans for BTR Community Developers"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=build-to-rent"
+    "apply_query": "program=build-to-rent",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "construction-to-perm-loans",
@@ -1200,7 +1258,9 @@
       "h1": "Construction-to-Perm Loans for Commercial Development"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=construction-to-perm"
+    "apply_query": "program=construction-to-perm",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "land-loans",
@@ -1239,7 +1299,9 @@
       "h1": "Commercial Land Loans and Pre-Development Financing"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=land"
+    "apply_query": "program=land",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "self-storage-financing",
@@ -1278,7 +1340,9 @@
       "h1": "Self-Storage Financing for Storage Facility Investors"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=self-storage-financing"
+    "apply_query": "program=self-storage-financing",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "hotel-motel-financing",
@@ -1317,7 +1381,9 @@
       "h1": "Hotel and Motel Financing for Hospitality Investors"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=hotel-motel-financing"
+    "apply_query": "program=hotel-motel-financing",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "student-housing-loans",
@@ -1356,7 +1422,9 @@
       "h1": "Student Housing Loans for University Market Investors"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=student-housing"
+    "apply_query": "program=student-housing",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "senior-housing-financing",
@@ -1395,7 +1463,9 @@
       "h1": "Senior Housing Financing for Senior Living Investors"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=senior-housing-financing"
+    "apply_query": "program=senior-housing-financing",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "medical-office-financing",
@@ -1434,7 +1504,9 @@
       "h1": "Medical Office Financing for Healthcare Real Estate Investors"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=medical-office-financing"
+    "apply_query": "program=medical-office-financing",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "sale-leaseback-financing",
@@ -1473,7 +1545,9 @@
       "h1": "Commercial Real Estate Sale-Leaseback Financing"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=sale-leaseback-financing"
+    "apply_query": "program=sale-leaseback-financing",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "office-conversion-loans",
@@ -1512,7 +1586,9 @@
       "h1": "Office Conversion and Adaptive Reuse Loans"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=office-conversion"
+    "apply_query": "program=office-conversion",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "preferred-equity",
@@ -1551,7 +1627,9 @@
       "h1": "Preferred Equity Financing for Commercial Real Estate"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=preferred-equity"
+    "apply_query": "program=preferred-equity",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "industrial-construction-loans",
@@ -1590,7 +1668,9 @@
       "h1": "Industrial Construction Loans for Warehouse and Logistics Development"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=industrial-construction"
+    "apply_query": "program=industrial-construction",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "cpace-financing",
@@ -1629,7 +1709,9 @@
       "h1": "C-PACE Commercial Property Financing"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=cpace-financing"
+    "apply_query": "program=cpace-financing",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   },
   {
     "slug": "owner-occupied-commercial",
@@ -1668,6 +1750,8 @@
       "h1": "Owner-Occupied Commercial Real Estate Loans"
     },
     "min_amount_usd": 2000000,
-    "apply_query": "program=owner-occupied-commercial"
+    "apply_query": "program=owner-occupied-commercial",
+    "updated": "August 2026",
+    "updated_iso": "2026-08-01"
   }
 ]

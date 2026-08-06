@@ -29,6 +29,13 @@
 <div class="section-inner">
   <div class="section-label reveal">{{ loan.short_name }} Financing</div>
   <h1 class="reveal">{{ loan.seo.h1 }}</h1>
+  <div class="page-byline reveal" style="font-size:13px;color:var(--gray-500);margin:8px 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+    <span>Reviewed by</span>
+    <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+    <span>, Commercial Mortgage Broker</span>
+    <span aria-hidden="true">·</span>
+    <span>Updated <time datetime="{{ loan.updated_iso|default('2026-08-01') }}">{{ loan.updated|default('August 2026') }}</time></span>
+  </div>
   <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 24px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0">
     <strong style="color:var(--navy)">Quick answer:</strong>
     {% if loan.quick_answer %}{{ loan.quick_answer }}{% else %}{{ loan.name }} range from {{ loan.key_features.loan_amount }} at {{ loan.key_features.rates }}, with terms of {{ loan.key_features.term|lower }}. Best for {{ loan.ideal_for[0]|lower }}. Commercial Lending Solutions sources {{ loan.short_name }} financing from {{ loan.lender_sources[:3]|join(', ') }}, and 1,000+ other capital sources nationwide.{% endif %}
@@ -187,9 +194,11 @@
 {% include '_calculator_tools.html' %}
 
 <!-- FAQ -->
+{% if faqs %}
 {% set faq_title = loan.name + ' FAQ' %}
 {% set faq_alt = true %}
 {% include '_faq_section.html' %}
+{% endif %}
 
 <!-- CTA -->
 {% set cta_title = 'Ready to Get ' + loan.short_name + ' Financing?' %}
