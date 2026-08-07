@@ -47,6 +47,7 @@
 <div class="section-inner">
   <div class="section-label reveal">At a Glance</div>
   <h2 class="section-title reveal">{{ sp.name }} Financing Snapshot</h2>
+  <p class="reveal" style="line-height:1.7;color:var(--gray-700);margin-bottom:20px;max-width:880px">{% for fact in sp.snapshot %}{{ fact.label }}: {{ fact.value }}. {% endfor %}</p>
   <div class="feature-grid">
     {% for fact in sp.snapshot %}
     <div class="feature-card reveal">

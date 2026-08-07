@@ -1320,7 +1320,7 @@ def main():
             slug = f"{loan['slug']}-{city['slug']}"
             seo = {
                 "title": f"{loan['name']} {city['city']} {city['state']} | CRE Lenders | Commercial Lending Solutions",
-                "meta_description": f"Commercial {loan['name'].lower()} in {city['city']} from {loan.get('min_loan_display', '$1M')}. 1,000+ lender relationships, competitive rates, fast approvals. Free quote. Commercial Lending Solutions.",
+                "meta_description": f"Commercial {loan['name'].lower()} in {city['city']} from {loan.get('min_loan_display', '$2MM')}. 1,000+ lender relationships, competitive rates, fast approvals. Free quote. Commercial Lending Solutions.",
             }
             seo.update(city_financing_seo_overrides.get(slug, {}))
             featured = pick_featured_markets(city, cities, n_total=8)
@@ -1374,7 +1374,7 @@ def main():
             )
             seo = {
                 "title": f"{prop['name']} Loans {city['city']} {city['state']} | Commercial Lending Solutions",
-                "meta_description": f"{prop['name']} financing in {city['city']} from $1M. Banks, life companies, bridge and construction loans. 1,000+ lenders. Free quote. Commercial Lending Solutions.",
+                "meta_description": f"{prop['name']} financing in {city['city']} from $2MM. Banks, life companies, bridge and construction loans. 1,000+ lenders. Free quote. Commercial Lending Solutions.",
             }
             slug = f"{prop['slug']}-{city['slug']}"
             featured = pick_featured_markets(city, cities, n_total=8)
@@ -2246,7 +2246,7 @@ def main():
         **shared,
         state_groups=state_groups,
         seo={"title": "Commercial Real Estate Loans by State | Commercial Lending Solutions",
-             "meta_description": "Commercial real estate loans in all 50 states from $1M to $100M+. State-by-state foreclosure law, recording taxes, and lender coverage. Free quote from Commercial Lending Solutions."},
+             "meta_description": "Commercial real estate loans in all 50 states from $2MM to $100M+. State-by-state foreclosure law, recording taxes, and lender coverage. Free quote from Commercial Lending Solutions."},
         canonical_path="states/",
         depth="../",
     )
