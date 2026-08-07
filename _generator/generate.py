@@ -983,6 +983,24 @@ def main():
                     if _vredir:
                         write_redirect_stub(_vpath, _vredir)
                         continue
+                    if _vrel in NOINDEX_PATHS:
+                        # 2026-08-07 demand-gated prune (hub-and-spoke consolidation,
+                        # see docs/HUB_SPOKE_CONSOLIDATION_LOAN_SIZE_AFFORDABLE_HOUSING.md):
+                        # generator skips existing files, so the noindex meta tag already
+                        # patched onto disk is durable; re-patch here too in case a future
+                        # regen ever recreates the file so a bare data entry can't silently
+                        # go crawl-indexable again (same gotcha as the specialty block below).
+                        if _vpath.exists():
+                            _v_full = _vpath.read_text(encoding="utf-8", errors="ignore")
+                            if not re.search(r'name=["\']robots["\'][^>]*noindex', _v_full[:6000], re.I):
+                                _v_patched, _v_n = re.subn(
+                                    r'(<link rel="canonical")',
+                                    '<meta name="robots" content="noindex,follow">\n\\1',
+                                    _v_full, count=1,
+                                )
+                                if _v_n:
+                                    _vpath.write_text(_v_patched, encoding="utf-8")
+                        continue
                     if _vpath.exists():
                         sitemap_urls.append({
                             "loc": f"{BASE_URL}/{_vrel}",
@@ -1066,6 +1084,21 @@ def main():
         if _ds_redir:
             write_redirect_stub(_ds_html, _ds_redir)
             continue
+        if _ds_rel in NOINDEX_PATHS:
+            # 2026-08-07 demand-gated prune, see
+            # docs/HUB_SPOKE_CONSOLIDATION_LOAN_SIZE_AFFORDABLE_HOUSING.md. Static
+            # file, meta tag already patched onto disk; re-patch defensively in case
+            # anything ever restores this file from an older copy without the tag.
+            _ds_full = _ds_html.read_text(encoding="utf-8", errors="ignore")
+            if not re.search(r'name=["\']robots["\'][^>]*noindex', _ds_full[:6000], re.I):
+                _ds_patched, _ds_n = re.subn(
+                    r'(<link rel="canonical")',
+                    '<meta name="robots" content="noindex,follow">\n\\1',
+                    _ds_full, count=1,
+                )
+                if _ds_n:
+                    _ds_html.write_text(_ds_patched, encoding="utf-8")
+            continue
         sitemap_urls.append({
             "loc": f"{BASE_URL}/{_ds_rel}",
             "lastmod": TODAY,
@@ -1125,6 +1158,22 @@ def main():
     _loan_size_dir = WEBSITE_DIR / "loan-size"
     if _loan_size_dir.exists():
         for _ls_html in sorted(_loan_size_dir.glob("*.html")):
+            _ls_rel = f"loan-size/{_ls_html.name}"
+            if _ls_rel in NOINDEX_PATHS:
+                # 2026-08-07 demand-gated prune, see
+                # docs/HUB_SPOKE_CONSOLIDATION_LOAN_SIZE_AFFORDABLE_HOUSING.md. Static
+                # file, meta tag already patched onto disk; re-patch defensively in case
+                # anything ever restores this file from an older copy without the tag.
+                _ls_full = _ls_html.read_text(encoding="utf-8", errors="ignore")
+                if not re.search(r'name=["\']robots["\'][^>]*noindex', _ls_full[:6000], re.I):
+                    _ls_patched, _ls_n = re.subn(
+                        r'(<link rel="canonical")',
+                        '<meta name="robots" content="noindex,follow">\n\\1',
+                        _ls_full, count=1,
+                    )
+                    if _ls_n:
+                        _ls_html.write_text(_ls_patched, encoding="utf-8")
+                continue
             sitemap_urls.append({
                 "loc": f"{BASE_URL}/loan-size/{_ls_html.name}",
                 "lastmod": TODAY,
