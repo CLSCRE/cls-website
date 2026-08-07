@@ -42,7 +42,7 @@
   </div>
   <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 24px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0">
     <strong style="color:var(--navy)">Quick answer:</strong>
-    Commercial Lending Solutions arranges commercial real estate loans across {{ state.name }} from $1 million to over $100 million, spanning {{ all_loan_types|length }} loan programs and every major property type.{% if state_cities %} We maintain dedicated market coverage for {{ state_cities|length }} {{ state.name }} metro{{ 's' if state_cities|length > 1 }}, including {{ state_cities[0].city }}{% if state_cities|length > 1 %} and {{ state_cities[1].city }}{% endif %}.{% endif %} Below: how {{ state.name }}'s foreclosure process, recording taxes, and regulatory climate shape the loan terms lenders will offer here.
+    Commercial Lending Solutions arranges commercial real estate loans across {{ state.name }} from $2 million to over $100 million, spanning {{ all_loan_types|length }} loan programs and every major property type.{% if state_cities %} We maintain dedicated market coverage for {{ state_cities|length }} {{ state.name }} metro{{ 's' if state_cities|length > 1 }}, including {{ state_cities[0].city }}{% if state_cities|length > 1 %} and {{ state_cities[1].city }}{% endif %}.{% endif %} Below: how {{ state.name }}'s foreclosure process, recording taxes, and regulatory climate shape the loan terms lenders will offer here.
   </div>
   {% for para in state.overview.split('\n\n') %}
   <p class="reveal">{{ para }}</p>
@@ -71,7 +71,7 @@
     </div>
     <div class="feature-card reveal">
       <div class="label">Loan Range</div>
-      <div class="value">$1M to $100M+</div>
+      <div class="value">$2MM to $100M+</div>
     </div>
   </div>
   <div class="list-grid" style="margin-top:24px">

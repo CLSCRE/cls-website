@@ -15,7 +15,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $40M"
+        "value": "$2M to $40M"
       },
       {
         "label": "Maximum LTV",
@@ -362,7 +362,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $10M"
+        "value": "$2M to $10M"
       },
       {
         "label": "Maximum LTV",
@@ -533,7 +533,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $8M"
+        "value": "$2M to $8M"
       },
       {
         "label": "Maximum LTV",
@@ -700,7 +700,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $8M"
+        "value": "$2M to $8M"
       },
       {
         "label": "Maximum LTV",
@@ -2603,7 +2603,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $15M"
+        "value": "$2M to $15M"
       },
       {
         "label": "Maximum LTV",
@@ -3939,7 +3939,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $30M"
+        "value": "$2M to $30M"
       },
       {
         "label": "Maximum LTV",
@@ -4763,7 +4763,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $50M+"
+        "value": "$2M to $50M+"
       },
       {
         "label": "Maximum LTV",
@@ -5908,7 +5908,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $15M"
+        "value": "$2M to $15M"
       },
       {
         "label": "Maximum LTV",
@@ -6219,7 +6219,7 @@
     "snapshot": [
       {
         "label": "Typical loan size",
-        "value": "$1M to $5M"
+        "value": "$2M to $5M"
       },
       {
         "label": "Maximum LTV",

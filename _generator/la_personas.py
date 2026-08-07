@@ -38,7 +38,7 @@ RAW_PERSONAS = [
             "actual business plan, not a generic national underwriting box."
         ),
         "key_facts": [
-            {"label": "Loan range", "value": "$1M to $100M+"},
+            {"label": "Loan range", "value": "$2MM to $100M+"},
             {"label": "Property types", "value": "Multifamily, industrial, retail, mixed-use"},
             {"label": "Typical response", "value": "Term sheet in 24 to 72 hours"},
             {"label": "Lender network", "value": "1,000+ relationships, all capital sources"},
@@ -128,7 +128,7 @@ RAW_PERSONAS = [
                 "a": (
                     "Yes. Commercial Lending Solutions arranges commercial real estate loans nationwide "
                     "in all 50 states. LA is our home market and where our local knowledge runs deepest, "
-                    "but the same 1,000+ lender network and $1 million to $100 million-plus loan range "
+                    "but the same 1,000+ lender network and $2 million to $100 million-plus loan range "
                     "applies everywhere we work."
                 ),
             },
@@ -154,7 +154,7 @@ RAW_PERSONAS = [
             "timeline and a real takeout strategy."
         ),
         "key_facts": [
-            {"label": "Loan range", "value": "$1M to $100M+"},
+            {"label": "Loan range", "value": "$2MM to $100M+"},
             {"label": "Project types", "value": "TOC multifamily, ED1 affordable, ARO, industrial, retail"},
             {"label": "Structure", "value": "Construction to bridge-to-perm or agency/HUD takeout"},
             {"label": "Lender network", "value": "1,000+ relationships, all capital sources"},
@@ -275,7 +275,7 @@ RAW_PERSONAS = [
             {"label": "SBA 504 leverage", "value": "Up to 90% financing"},
             {"label": "Occupancy requirement", "value": "51%+ owner-occupied"},
             {"label": "Property types", "value": "Industrial, retail, office, medical"},
-            {"label": "Loan range", "value": "$1M to $100M+"},
+            {"label": "Loan range", "value": "$2MM to $100M+"},
         ],
         "sections": [
             {
@@ -325,7 +325,7 @@ RAW_PERSONAS = [
                 "body": (
                     "Many owner-user transactions land at the smaller end of the commercial spectrum "
                     "relative to large institutional deals, and Commercial Lending Solutions works these "
-                    "transactions starting at our $1 million minimum. At this size, local and regional "
+                    "transactions starting at our $2 million minimum. At this size, local and regional "
                     "banks and credit unions with SBA lending programs are frequently the most competitive "
                     "capital sources, and relationship depth with the right lender matters more than it "
                     "does on a large institutional deal shopped to a dozen life companies."
