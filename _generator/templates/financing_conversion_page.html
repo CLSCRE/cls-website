@@ -33,7 +33,7 @@
         <span aria-hidden="true">·</span>
         <span>Updated <time datetime="{{ loan.updated_iso|default('2026-08-01') }}">{{ loan.updated|default('August 2026') }}</time></span>
       </div>
-      <p class="pf-lead">{{ loan.description }}</p>
+      <div class="page-tldr pf-lead" role="doc-abstract" style="border-left:3px solid var(--pf-green);padding-left:18px"><strong style="color:var(--pf-navy)">Quick answer:</strong> {{ loan.description }}</div>
       <div class="pf-actions">
         <a class="pf-btn" href="{{ depth }}apply.html?{{ loan.apply_query }}">Discuss your transaction &rarr;</a>
         <a class="pf-btn pf-btn-link" href="#lender-sources">Review capital sources</a>

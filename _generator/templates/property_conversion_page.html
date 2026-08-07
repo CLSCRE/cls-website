@@ -23,7 +23,7 @@
     <div>
       <div class="pf-eyebrow">{{ prop.name }} capital</div>
       <h1>{{ prop.seo.h1 }}</h1>
-      <p class="pf-lead">{{ prop.description }}</p>
+      <div class="page-tldr pf-lead" role="doc-abstract" style="border-left:3px solid var(--pf-green);padding-left:18px"><strong style="color:var(--pf-navy)">Quick answer:</strong> {{ prop.description }}</div>
       <div class="pf-actions">
         <a class="pf-btn" href="{{ depth }}apply.html?{{ prop.apply_query }}">Discuss your transaction &rarr;</a>
         <a class="pf-btn pf-btn-link" href="#capital-options">Review capital options</a>
