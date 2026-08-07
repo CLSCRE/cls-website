@@ -43,7 +43,7 @@
       <h2>At a Glance</h2>
       {% set kf = loan.key_features %}
       {% set leverage = kf.ltv or kf.ltc or kf.position %}
-      <p class="pf-term-summary">{{ loan.short_name }} financing runs {{ kf.loan_amount }} at {{ kf.rates }}, over {{ kf.term }} terms{% if leverage %} with {{ leverage }}{% endif %}{% if kf.recourse %} ({{ kf.recourse }}){% endif %}.</p>
+      <p class="pf-term-summary">{{ loan.short_name }} financing runs {{ kf.loan_amount }} at {{ kf.rates }}, over {{ kf.term }} terms{% if leverage %} with {{ leverage }}{% endif %}.{% if kf.recourse %} {{ kf.recourse }}.{% endif %}</p>
       {% for key, value in loan.key_features.items() %}
       <div class="pf-term-row"><span>{{ key|replace('_', ' ')|title }}</span><strong>{{ value }}</strong></div>
       {% endfor %}
