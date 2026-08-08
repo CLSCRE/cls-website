@@ -319,6 +319,60 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://clscre.com/affordable-housing/4pct-lihtc/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/affordable-housing/9pct-lihtc/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/affordable-housing/edi-streamlined/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/affordable-housing/hud-221d4/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/affordable-housing/opportunity-zone-affordable/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/affordable-housing/permanent-supportive-housing/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/affordable-housing/tax-exempt-bonds/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/affordable-housing/transit-oriented-communities/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/affordable-housing/workforce-housing-noah/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/affordable-housing/markets/los-angeles-edi-streamlined.html</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -751,6 +805,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://clscre.com/industrial/la/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://clscre.com/industrial/markets/los-angeles-distribution-logistics.html</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -935,6 +995,12 @@
     <lastmod>2026-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://clscre.com/multifamily/la/index.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://clscre.com/multifamily/markets/los-angeles-agency-multifamily.html</loc>
@@ -44299,12 +44365,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://clscre.com/multifamily/la/index.html</loc>
-    <lastmod>2026-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://clscre.com/multifamily/la/downtown-la.html</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -44483,12 +44543,6 @@
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/la/index.html</loc>
-    <lastmod>2026-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://clscre.com/industrial/la/south-bay-industrial.html</loc>
