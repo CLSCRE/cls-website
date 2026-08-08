@@ -476,6 +476,25 @@ document.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('c
 // Landing page form: bot protection, validation, formatting
 (function(){
   var loadTime = Date.now();
+  // UTM-aware Lead Source attribution: if the page was reached from a tagged
+  // campaign (e.g. Legislative Edge newsletter), override the hidden Lead Source
+  // field so the form submission is attributed to that source instead of the
+  // hardcoded Google Ads default.
+  (function(){
+    try{
+      var qp = new URLSearchParams(window.location.search);
+      var src = qp.get('utm_source');
+      var camp = qp.get('utm_campaign');
+      if(src){
+        var label = src.replace(/[_-]+/g, ' ').replace(/\b\w/g, function(c){return c.toUpperCase();});
+        if(camp) label += ' / ' + camp;
+        document.querySelectorAll('input[name="Lead Source"]').forEach(function(el){ el.value = label; });
+        // Keep the email subject consistent with the source.
+        var subj = document.querySelector('input[name="_subject"]');
+        if(subj) subj.value = 'Lead: Construction Loans - ' + label;
+      }
+    }catch(e){ /* attribution is best-effort; never block the form */ }
+  })();
   // Set JS token + timestamp on all landing page forms
   document.querySelectorAll('form[method="POST"]').forEach(function(form){
     var token = 'cls_' + Math.random().toString(36).substr(2,9) + '_' + Date.now().toString(36);
