@@ -20,6 +20,7 @@ import re
 import subprocess
 from datetime import datetime
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 from jinja2 import Environment, FileSystemLoader
 from link_governance import LinkGovernor
@@ -2557,6 +2558,71 @@ Sitemap: {BASE_URL}/sitemap-index.xml
 """
     (WEBSITE_DIR / "robots.txt").write_text(robots, encoding="utf-8")
     print("  [OK] robots.txt")
+
+    # ── 12a-2. RSS feed (AEO) ─────────────────────────────────────────
+    # Perplexity and other feed-based ingesters pick up new posts from a
+    # feed far faster than from a 8k-URL sitemap. Carries the newest 50
+    # indexable articles only -- articles.json holds 4,700+, and a feed
+    # is a "what's new" signal, not an archive. Skips NOINDEX_PATHS so we
+    # never advertise a page we've deliberately de-indexed.
+    print("\n=== Generating rss.xml ===")
+
+    def _rfc822(iso_date):
+        """2026-08-03 -> Mon, 03 Aug 2026 00:00:00 +0000 (RSS needs RFC-822)."""
+        try:
+            dt = datetime.strptime(iso_date, "%Y-%m-%d")
+        except (ValueError, TypeError):
+            return None
+        return dt.strftime("%a, %d %b %Y 00:00:00 +0000")
+
+    rss_items = []
+    for a in articles:  # already sorted newest-first at step 1236
+        rel = f"blog/{a['slug']}.html"
+        if rel in NOINDEX_PATHS:
+            continue
+        pub = _rfc822(a.get("date"))
+        if not pub:
+            continue
+        rss_items.append(
+            "    <item>\n"
+            f"      <title>{escape(a['title'])}</title>\n"
+            f"      <link>{BASE_URL}/{rel}</link>\n"
+            f"      <guid isPermaLink=\"true\">{BASE_URL}/{rel}</guid>\n"
+            f"      <description>{escape(a.get('excerpt', ''))}</description>\n"
+            f"      <category>{escape(a.get('category', ''))}</category>\n"
+            f"      <dc:creator>{escape(a.get('author', 'Trevor Damyan'))}</dc:creator>\n"
+            f"      <pubDate>{pub}</pubDate>\n"
+            "    </item>"
+        )
+        if len(rss_items) >= 50:
+            break
+
+    rss_built = _rfc822(TODAY) or ""
+    rss = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" '
+        'xmlns:dc="http://purl.org/dc/elements/1.1/">\n'
+        "  <channel>\n"
+        "    <title>CLS CRE Insights | Commercial Real Estate Finance</title>\n"
+        f"    <link>{BASE_URL}/blog/</link>\n"
+        "    <description>Commercial real estate financing analysis, capital markets "
+        "commentary, and lender intelligence from Commercial Lending Solutions.</description>\n"
+        "    <language>en-us</language>\n"
+        "    <copyright>Commercial Lending Solutions</copyright>\n"
+        "    <managingEditor>loans@clscre.com (Trevor Damyan)</managingEditor>\n"
+        "    <webMaster>loans@clscre.com (Trevor Damyan)</webMaster>\n"
+        f"    <lastBuildDate>{rss_built}</lastBuildDate>\n"
+        f'    <atom:link href="{BASE_URL}/rss.xml" rel="self" type="application/rss+xml"/>\n'
+        "    <image>\n"
+        f"      <url>{BASE_URL}/images/cls-logo-skyline.png</url>\n"
+        "      <title>CLS CRE Insights | Commercial Real Estate Finance</title>\n"
+        f"      <link>{BASE_URL}/blog/</link>\n"
+        "    </image>\n"
+        + "\n".join(rss_items)
+        + "\n  </channel>\n</rss>\n"
+    )
+    (WEBSITE_DIR / "rss.xml").write_text(rss, encoding="utf-8")
+    print(f"  [OK] rss.xml  ({len(rss_items)} items)")
 
     # ── 12b. Server-render rates.html table rows (AEO) ────────────────
     # Non-JS crawlers (GPTBot, PerplexityBot) never see the rate table
