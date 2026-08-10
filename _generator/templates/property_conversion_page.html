@@ -113,6 +113,31 @@
   </div>
 </section>{% endif %}
 
+{# Written closed-deal case studies with real terms, distinct from the photo
+   cards above. Also the inbound link equity these posts need: before
+   2026-08-09 each had exactly one internal link (the hub). #}
+{% if case_studies %}
+<section class="pf-section" id="case-studies">
+  <div class="pf-wrap">
+    <div class="pf-deal-heading">
+      <div>
+        <div class="pf-kicker">Closed deal case studies</div>
+        <h2>Real {{ prop.name|lower }} closings, with the actual terms.</h2>
+      </div>
+      <a class="pf-text-link" href="{{ depth }}blog/case-studies.html">All 68 case studies &rarr;</a>
+    </div>
+    <div class="cross-link-grid">
+      {% for cs in case_studies %}
+      <a href="{{ cs.href }}" class="cross-link-card reveal">
+        <div class="cl-title">{{ cs.title }}</div>
+        <div class="cl-sub">{% if cs.amount %}{{ cs.amount }}{% if cs.location %} &middot; {% endif %}{% endif %}{{ cs.location }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="pf-section pf-paper" id="markets">
   <div class="pf-wrap pf-markets">
     <div><div class="pf-kicker">National reach</div><h2>Market knowledge where the asset requires it.</h2><p class="pf-intro">We arrange {{ prop.name|lower }} financing nationwide while accounting for local property fundamentals and lender appetite.</p></div>

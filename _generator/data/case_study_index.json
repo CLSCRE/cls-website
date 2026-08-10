@@ -1,0 +1,990 @@
+[
+ {
+  "slug": "little-tokyo-retail-cmbs-refinance-los-angeles-case-study",
+  "title": "Case Study: $31.4M Non-Recourse CMBS Refinance for a Little Tokyo Retail Center in Los Angeles",
+  "loan_slugs": [
+   "cmbs-loans",
+   "mezzanine",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "retail"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 31400000,
+  "amount_display": "$31,400,000",
+  "location": "Little Tokyo district, Los Angeles, California"
+ },
+ {
+  "slug": "industrial-portfolio-cmbs-refinance-vernon-perris-case-study",
+  "title": "Case Study: $28M Non-Recourse Industrial Portfolio Refinance Across Vernon and Perris",
+  "loan_slugs": [
+   "cmbs-loans",
+   "portfolio-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "industrial"
+  ],
+  "city_slug": "",
+  "amount": 28000000,
+  "amount_display": "$28,000,000",
+  "location": ""
+ },
+ {
+  "slug": "industrial-refinance-vernon-los-angeles-case-study",
+  "title": "Case Study: $27.5M Industrial Refinance in Vernon, California via CMBS Conduit",
+  "loan_slugs": [
+   "industrial-bridge-loans",
+   "cmbs-loans",
+   "bridge-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "industrial"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 27500000,
+  "amount_display": "$27,500,000",
+  "location": "Vernon, California (central Los Angeles industrial market)"
+ },
+ {
+  "slug": "multi-state-net-lease-portfolio-cmbs-refinance-case-study",
+  "title": "Case Study: $18M Multi-State Net-Lease Portfolio CMBS Loan",
+  "loan_slugs": [
+   "cmbs-loans",
+   "net-lease-financing",
+   "portfolio-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 18000000,
+  "amount_display": "$18,000,000",
+  "location": ""
+ },
+ {
+  "slug": "multifamily-cashout-refinance-reserve-structure-new-york-case-study",
+  "title": "Case Study: $16.5M Multifamily Cash-Out Refinance with a Layered Reserve Structure in New York",
+  "loan_slugs": [
+   "portfolio-loans",
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "new-york",
+  "amount": 16500000,
+  "amount_display": "$16,500,000",
+  "location": "New York, New York"
+ },
+ {
+  "slug": "industrial-acquisition-loan-life-insurance-lender-vista-case-study",
+  "title": "Case Study: $16.25M Industrial Acquisition Loan with a Life Insurance Lender in Vista",
+  "loan_slugs": [
+   "life-company-loans",
+   "net-lease-financing"
+  ],
+  "property_slugs": [
+   "industrial"
+  ],
+  "city_slug": "",
+  "amount": 16250000,
+  "amount_display": "$16,250,000",
+  "location": "Vista, California"
+ },
+ {
+  "slug": "entitled-land-bridge-loan-cash-out-downtown-los-angeles-case-study",
+  "title": "Case Study: $14M Entitled Land Bridge Loan with Cash-Out in Downtown Los Angeles",
+  "loan_slugs": [
+   "land-loans",
+   "bridge-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 14000000,
+  "amount_display": "$14,000,000",
+  "location": "Downtown Los Angeles, California"
+ },
+ {
+  "slug": "stabilized-value-refinance-hybrid-rate-los-angeles-case-study",
+  "title": "Case Study: $13.8M Refinance Sized to Stabilized Value with a Hybrid Rate in Los Angeles",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 13800000,
+  "amount_display": "Up to $13,800,000",
+  "location": "Los Angeles, California"
+ },
+ {
+  "slug": "spec-home-construction-loan-credit-union-bel-air-case-study",
+  "title": "Case Study: $13M Purchase Plus Construction Loan with a Credit Union in Bel Air",
+  "loan_slugs": [
+   "construction-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 13000000,
+  "amount_display": "$13,000,000",
+  "location": "Bel Air, Los Angeles, California"
+ },
+ {
+  "slug": "cahuenga-pass-credit-union-refinance-los-angeles-case-study",
+  "title": "Case Study: $12.6M Credit Union Refinance for a Cahuenga Pass Property in Los Angeles",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 12619000,
+  "amount_display": "$12,619,000",
+  "location": "Cahuenga Pass, Los Angeles, California"
+ },
+ {
+  "slug": "multifamily-158-unit-fort-worth-bank-loan-case-study",
+  "title": "Case Study: $12.5M Bank Loan on a 158-Unit Fort Worth Apartment Complex at SOFR + 2.25%",
+  "loan_slugs": [
+   "multifamily-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "fort-worth",
+  "amount": 12500000,
+  "amount_display": "$12,500,000",
+  "location": "Fort Worth, Texas"
+ },
+ {
+  "slug": "cross-collateralized-rd-portfolio-bridge-loan-sunnyvale-case-study",
+  "title": "Case Study: $11M Cross-Collateralized Bridge Loan for a Two-Building R&D Portfolio in Sunnyvale",
+  "loan_slugs": [
+   "industrial-bridge-loans",
+   "portfolio-loans",
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "industrial"
+  ],
+  "city_slug": "",
+  "amount": 11000000,
+  "amount_display": "$11,000,000",
+  "location": "Sunnyvale, California"
+ },
+ {
+  "slug": "multifamily-refinance-hybrid-rate-alameda-case-study",
+  "title": "Case Study: $9.5M Multifamily Refinance with an Interest-Only Period in Alameda, CA",
+  "loan_slugs": [
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "",
+  "amount": 9500000,
+  "amount_display": "$9,500,000",
+  "location": "Alameda, California"
+ },
+ {
+  "slug": "multi-guarantor-rental-property-loan-credit-union-malibu-case-study",
+  "title": "Case Study: $9.317M Multi-Guarantor Loan for a Malibu Rental Property",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "",
+  "amount": 9317000,
+  "amount_display": "$9,317,000",
+  "location": ""
+ },
+ {
+  "slug": "multifamily-bridge-loan-salinas-case-study",
+  "title": "Case Study: $9.3M Bridge Loan for a 68-Unit Value-Add Multifamily Acquisition in Salinas, CA",
+  "loan_slugs": [
+   "multifamily-bridge-loans",
+   "acquisition-bridge-loans",
+   "value-add-bridge-loans",
+   "multifamily-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "salinas",
+  "amount": 9285000,
+  "amount_display": "$9,285,000",
+  "location": "Salinas, California (Monterey County)"
+ },
+ {
+  "slug": "owner-occupied-refinance-banking-relationship-requirement-burbank-case-study",
+  "title": "Case Study: $9M Owner-Occupied Refinance with a Full Banking Relationship Requirement in Burbank",
+  "loan_slugs": [
+   "owner-occupied-commercial",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 9034000,
+  "amount_display": "$9,034,000",
+  "location": "Burbank, California"
+ },
+ {
+  "slug": "industrial-refinance-deposit-relationship-pricing-los-angeles-case-study",
+  "title": "Case Study: $8.75M Industrial Refinance With Deposit-Relationship Pricing in Los Angeles",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "industrial"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 8750000,
+  "amount_display": "$8,750,000",
+  "location": "Central Los Angeles Arts District, California"
+ },
+ {
+  "slug": "creative-office-cash-out-refinance-sherman-oaks-case-study",
+  "title": "Case Study: $8.5M Cash-Out Refinance of a Sherman Oaks Creative Office Property at 3.85% Fixed",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "office"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 8500000,
+  "amount_display": "$8,500,000",
+  "location": "Sherman Oaks, California (San Fernando Valley, Los Angeles)"
+ },
+ {
+  "slug": "office-cashout-refinance-mini-perm-bank-sherman-oaks-case-study",
+  "title": "Case Study: $8.5M Office Cash-Out Refinance with a Mini-Perm Bank Loan in Sherman Oaks",
+  "loan_slugs": [
+   "permanent-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "office"
+  ],
+  "city_slug": "",
+  "amount": 8500000,
+  "amount_display": "$8,500,000",
+  "location": "Sherman Oaks, California"
+ },
+ {
+  "slug": "multifamily-acquisition-bridge-loan-interest-reserve-los-angeles-case-study",
+  "title": "Case Study: $7.46M Multifamily Acquisition Bridge Loan with a Pre-Funded Interest Reserve in Los Angeles",
+  "loan_slugs": [
+   "multifamily-bridge-loans",
+   "acquisition-bridge-loans",
+   "multifamily-loans",
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 7455000,
+  "amount_display": "$7,455,000",
+  "location": "Los Angeles, California"
+ },
+ {
+  "slug": "assisted-living-conversion-bridge-loan-san-bernardino-case-study",
+  "title": "Case Study: $6.8M Hotel-to-Assisted-Living Conversion Bridge Loan in San Bernardino at 10.99% Interest-Only",
+  "loan_slugs": [
+   "hotel-motel-financing",
+   "senior-housing-financing",
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "hospitality",
+   "senior-living"
+  ],
+  "city_slug": "",
+  "amount": 6800000,
+  "amount_display": "$6,800,000",
+  "location": "San Bernardino, California"
+ },
+ {
+  "slug": "multifamily-bank-refinance-arlington-tx-case-study",
+  "title": "Case Study: $5.4M Bank Refinance Takes a 70-Unit Texas Multifamily Property Out of Hard Money at 6.0% Fixed",
+  "loan_slugs": [
+   "multifamily-bridge-loans",
+   "hard-money-loans",
+   "multifamily-loans",
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "dallas",
+  "amount": 5355000,
+  "amount_display": "$5,355,000 commitment",
+  "location": "Arlington, Texas (Dallas-Fort Worth metro)"
+ },
+ {
+  "slug": "auto-plaza-credit-union-loan-santa-monica-case-study",
+  "title": "Case Study: $5M Credit Union Loan for a Multi-Tenant Auto Plaza in Santa Monica",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "lincoln",
+  "amount": 5000000,
+  "amount_display": "$5,000,000",
+  "location": "Lincoln Boulevard, Santa Monica, California"
+ },
+ {
+  "slug": "auto-repair-property-refinance-santa-monica-case-study",
+  "title": "Case Study: $5M Auto Repair Property Refinance in Santa Monica at 6.50% Fixed",
+  "loan_slugs": [
+   "sba-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 5000000,
+  "amount_display": "$5,000,000",
+  "location": "Santa Monica, California (Westside Los Angeles)"
+ },
+ {
+  "slug": "sba-adjacent-conventional-refinance-owner-user-san-antonio-case-study",
+  "title": "Case Study: $4.995M Owner-User Refinance Plus Working Capital in San Antonio",
+  "loan_slugs": [
+   "sba-loans",
+   "owner-occupied-commercial",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "san-antonio",
+  "amount": 4995000,
+  "amount_display": "$4,995,000",
+  "location": "San Antonio, Texas"
+ },
+ {
+  "slug": "industrial-rd-building-bridge-loan-sunnyvale-case-study",
+  "title": "Case Study: $4.5M No-Prepay Bridge Loan for a Leased R&D Building in Sunnyvale",
+  "loan_slugs": [
+   "industrial-bridge-loans",
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "industrial"
+  ],
+  "city_slug": "",
+  "amount": 4500000,
+  "amount_display": "$4,500,000",
+  "location": "Sunnyvale, California"
+ },
+ {
+  "slug": "net-lease-retail-acquisition-loan-life-insurance-lender-murrieta-case-study",
+  "title": "Case Study: $4.3M Net-Lease Retail Acquisition Loan in Murrieta, CA",
+  "loan_slugs": [
+   "life-company-loans",
+   "net-lease-financing"
+  ],
+  "property_slugs": [
+   "industrial",
+   "retail"
+  ],
+  "city_slug": "",
+  "amount": 4300000,
+  "amount_display": "$4,300,000",
+  "location": "Murrieta, California"
+ },
+ {
+  "slug": "beverly-hills-land-bridge-loan-case-study",
+  "title": "Case Study: $4M Bridge Loan on Three Beverly Hills Parcels With No Prepayment Penalty",
+  "loan_slugs": [
+   "land-loans",
+   "bridge-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 4000000,
+  "amount_display": "$4,000,000",
+  "location": "Beverly Hills, California (90210)"
+ },
+ {
+  "slug": "mixed-use-purchase-loan-credit-union-los-angeles-case-study",
+  "title": "Case Study: $3.9M Mixed-Use Purchase Loan with a Credit Union in Los Angeles",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "mixed-use"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 3900000,
+  "amount_display": "$3,900,000",
+  "location": "Los Angeles, California"
+ },
+ {
+  "slug": "credit-union-commercial-refinance-compton-case-study",
+  "title": "Case Study: $3.66M Credit Union Refinance for a Commercial Building in Compton",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 3662000,
+  "amount_display": "$3,662,000",
+  "location": "El Segundo Boulevard, Compton, California"
+ },
+ {
+  "slug": "iowa-commercial-property-refinance-west-des-moines-case-study",
+  "title": "Case Study: $3.5M Community Bank Refinance for a Commercial Property in West Des Moines, Iowa",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "des-moines",
+  "amount": 3500000,
+  "amount_display": "$3,500,000",
+  "location": "West Des Moines, Iowa"
+ },
+ {
+  "slug": "multifamily-42-unit-arlington-tx-refinance-case-study",
+  "title": "Case Study: $3.08M Bank Refinance of a 42-Unit Arlington, TX Apartment Complex Through Mechanics Liens and a Lis Pendens",
+  "loan_slugs": [
+   "multifamily-bridge-loans",
+   "multifamily-loans",
+   "bridge-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "dallas",
+  "amount": 3077000,
+  "amount_display": "$3,077,000",
+  "location": "Arlington, Texas (Dallas-Fort Worth metroplex)"
+ },
+ {
+  "slug": "industrial-refinance-long-beach-case-study",
+  "title": "Case Study: $2.9M Industrial Refinance in Long Beach at 5.50% Fixed With 18 Months Interest Only",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "industrial",
+   "office"
+  ],
+  "city_slug": "",
+  "amount": 2900000,
+  "amount_display": "$2,900,000",
+  "location": "Long Beach, California"
+ },
+ {
+  "slug": "bank-branch-net-lease-acquisition-loan-martinez-case-study",
+  "title": "Case Study: $2.4M Bank-Branch Net Lease Financing in Martinez, CA",
+  "loan_slugs": [
+   "net-lease-financing"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 2400000,
+  "amount_display": "$2,400,000",
+  "location": "Martinez, California (Contra Costa County)"
+ },
+ {
+  "slug": "net-lease-retail-acquisition-bridge-loan-denver-case-study",
+  "title": "Case Study: $2.34M Net-Lease Retail Acquisition Bridge Loan in Denver",
+  "loan_slugs": [
+   "retail-bridge-loans",
+   "acquisition-bridge-loans",
+   "net-lease-financing",
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "retail"
+  ],
+  "city_slug": "denver",
+  "amount": 2337500,
+  "amount_display": "$2,337,500",
+  "location": "Denver, Colorado"
+ },
+ {
+  "slug": "probate-estate-bridge-refinance-los-angeles-case-study",
+  "title": "Case Study: $2.69M Probate Estate Bridge Refinance in Los Angeles at 8.90%",
+  "loan_slugs": [
+   "industrial-bridge-loans",
+   "portfolio-loans",
+   "bridge-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "industrial"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 2255000,
+  "amount_display": "$2,255,000 first trust deed + $430,000 private second",
+  "location": "Just west of downtown Los Angeles, California"
+ },
+ {
+  "slug": "bank-relationship-refinance-owner-user-hawthorne-case-study",
+  "title": "Case Study: $2.2M Owner-User Refinance with a bank in Hawthorne",
+  "loan_slugs": [
+   "sba-loans",
+   "owner-occupied-commercial",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 2200000,
+  "amount_display": "$2,200,000",
+  "location": "Hawthorne, California"
+ },
+ {
+  "slug": "net-lease-retail-strip-life-insurance-loan-calumet-city-case-study",
+  "title": "Case Study: $2.2M Net-Lease Retail Strip Loan with a Life Insurance Lender in Calumet City",
+  "loan_slugs": [
+   "life-company-loans",
+   "net-lease-financing",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "retail"
+  ],
+  "city_slug": "",
+  "amount": 2200000,
+  "amount_display": "$2,200,000",
+  "location": "Calumet City, Illinois"
+ },
+ {
+  "slug": "hospitality-cashout-refinance-credit-union-ojai-case-study",
+  "title": "Case Study: $2M Hospitality Cash-Out Refinance with a Credit Union in Ojai",
+  "loan_slugs": [
+   "hotel-motel-financing",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "hospitality"
+  ],
+  "city_slug": "",
+  "amount": 2000000,
+  "amount_display": "$2,000,000",
+  "location": "Ojai, California"
+ },
+ {
+  "slug": "gas-station-refinance-silicon-valley-case-study",
+  "title": "Case Study: $1.94M Gas Station Refinance in Silicon Valley at 6.85% Fixed",
+  "loan_slugs": [
+   "sba-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "san-jose",
+  "amount": 1940000,
+  "amount_display": "$1,940,000",
+  "location": "Campbell, California (San Jose / Silicon Valley)"
+ },
+ {
+  "slug": "adu-construction-refinance-los-angeles-case-study",
+  "title": "Case Study: $1.89M ADU Construction and Payoff Loan in Los Angeles at 12 Months on a 5-Unit Conversion",
+  "loan_slugs": [
+   "construction-loans",
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 1890000,
+  "amount_display": "$1,890,000",
+  "location": "West Los Angeles, California (90035 zip corridor)"
+ },
+ {
+  "slug": "low-leverage-life-insurance-loan-canoga-park-case-study",
+  "title": "Case Study: $1.8M Low-Leverage Life Insurance Loan in Canoga Park, CA",
+  "loan_slugs": [
+   "life-company-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 1800000,
+  "amount_display": "$1,800,000",
+  "location": "Canoga Park, California"
+ },
+ {
+  "slug": "net-lease-retail-refinance-chaska-minnesota-case-study",
+  "title": "Case Study: $1.78M Net Lease Retail Refinance in Chaska, Minnesota at 3.63% Fixed for 10 Years",
+  "loan_slugs": [
+   "net-lease-financing",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "retail"
+  ],
+  "city_slug": "minneapolis",
+  "amount": 1782000,
+  "amount_display": "$1,782,000",
+  "location": "Chaska, Minnesota (southwest Minneapolis suburbs, Carver County)"
+ },
+ {
+  "slug": "multifamily-construction-takeout-refinance-los-angeles-case-study",
+  "title": "Case Study: $1.675M Construction Take-Out Refinance of a 5-Unit Multifamily in Boyle Heights at 6.5% Fixed",
+  "loan_slugs": [
+   "multifamily-construction-loans",
+   "construction-loans",
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "multifamily",
+   "office"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 1675000,
+  "amount_display": "$1,675,000",
+  "location": "Boyle Heights, Los Angeles, California"
+ },
+ {
+  "slug": "small-multifamily-refinance-hybrid-rate-los-angeles-case-study",
+  "title": "Case Study: $1.675M Small Multifamily Refinance in Los Angeles, CA",
+  "loan_slugs": [
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "multifamily"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 1675000,
+  "amount_display": "$1,675,000, or 75% LTV, whichever is lower",
+  "location": "Los Angeles, California (Boyle Heights area)"
+ },
+ {
+  "slug": "single-tenant-net-lease-refinance-equity-recapture-michigan-case-study",
+  "title": "Case Study: $1.5M Single-Tenant Net Lease Refinance with Equity Recapture in Michigan",
+  "loan_slugs": [
+   "net-lease-financing",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 1500000,
+  "amount_display": "$1,500,000",
+  "location": "Chesterfield, Michigan"
+ },
+ {
+  "slug": "credit-union-relationship-pricing-refinance-santa-ana-case-study",
+  "title": "Case Study: $1.386M Credit Union Refinance with Relationship Pricing in Santa Ana",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 1386000,
+  "amount_display": "$1,386,000",
+  "location": "Santa Ana, California"
+ },
+ {
+  "slug": "restaurant-retail-refinance-santa-ana-case-study",
+  "title": "Case Study: $1.386M Restaurant Retail Refinance in Downtown Santa Ana at 6.875% Fixed",
+  "loan_slugs": [
+   "sba-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "retail",
+   "office"
+  ],
+  "city_slug": "",
+  "amount": 1386000,
+  "amount_display": "$1,386,000",
+  "location": "Downtown Santa Ana, California (Orange County)"
+ },
+ {
+  "slug": "commercial-condo-refinance-los-angeles-fashion-district-case-study",
+  "title": "Case Study: $1.325M Commercial Condo Refinance in the LA Fashion District at 7.25% Fixed",
+  "loan_slugs": [
+   "sba-loans",
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "office"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 1325000,
+  "amount_display": "$1,325,000",
+  "location": "Fashion District, downtown Los Angeles, California"
+ },
+ {
+  "slug": "downtown-la-commercial-condo-bank-loan-case-study",
+  "title": "Case Study: $1.325M Bank Loan for a Commercial Condo in Downtown Los Angeles",
+  "loan_slugs": [
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "office"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 1325000,
+  "amount_display": "$1,325,000",
+  "location": "Downtown Los Angeles, California"
+ },
+ {
+  "slug": "retail-refinance-relationship-discount-la-jolla-case-study",
+  "title": "Case Study: $1.3M Retail Refinance with Relationship Discount Pricing in La Jolla",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "retail"
+  ],
+  "city_slug": "",
+  "amount": 1300000,
+  "amount_display": "$1,300,000",
+  "location": "La Jolla, California"
+ },
+ {
+  "slug": "industrial-refinance-hybrid-rate-credit-union-dallas-case-study",
+  "title": "Case Study: $1.28M Industrial Refinance with a Hybrid-Rate Credit Union Loan in Dallas",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "industrial"
+  ],
+  "city_slug": "dallas",
+  "amount": 1280000,
+  "amount_display": "Up to $1,280,000",
+  "location": "Dallas, Texas"
+ },
+ {
+  "slug": "residential-portfolio-probate-refinance-los-angeles-case-study",
+  "title": "Case Study: $955K Probate Portfolio Cash-Out Refinance in Los Angeles",
+  "loan_slugs": [
+   "portfolio-loans",
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 955000,
+  "amount_display": "$955,000",
+  "location": "Pico-Union district, Los Angeles, California"
+ },
+ {
+  "slug": "multi-parcel-second-mortgage-cashout-los-angeles-case-study",
+  "title": "Case Study: $870K Second-Position Cash-Out Loan on a Four-Parcel Rental Portfolio in Los Angeles",
+  "loan_slugs": [
+   "portfolio-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 870000,
+  "amount_display": "$870,000",
+  "location": "Los Angeles, California"
+ },
+ {
+  "slug": "commercial-condo-portfolio-bank-refinance-los-angeles-case-study",
+  "title": "Case Study: $725K Bank Refinance for a Commercial Condo Unit in Los Angeles' Arts District",
+  "loan_slugs": [
+   "portfolio-loans",
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "office"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 725000,
+  "amount_display": "$725,000",
+  "location": "Los Angeles Arts District, California"
+ },
+ {
+  "slug": "sfr-new-construction-loan-houston-case-study",
+  "title": "Case Study: $686K Ground-Up SFR Construction Loan in Houston's Near Northside",
+  "loan_slugs": [
+   "construction-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "houston",
+  "amount": 686200,
+  "amount_display": "$686,200",
+  "location": "Near Northside, Houston, Texas"
+ },
+ {
+  "slug": "acquisition-construction-loan-spec-home-houston-case-study",
+  "title": "Case Study: $636K Combined Acquisition and Construction Loan for a Houston Spec Home",
+  "loan_slugs": [
+   "construction-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "houston",
+  "amount": 635600,
+  "amount_display": "$635,600",
+  "location": "Houston, Texas"
+ },
+ {
+  "slug": "auto-service-center-net-lease-refinance-zanesville-ohio-case-study",
+  "title": "Case Study: $500K Credit Union Loan for a Net-Leased Auto Service Center in Zanesville, Ohio",
+  "loan_slugs": [
+   "net-lease-financing",
+   "permanent-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "",
+  "amount": 500000,
+  "amount_display": "$500,000",
+  "location": "Zanesville, Ohio"
+ },
+ {
+  "slug": "small-balance-credit-union-refinance-studio-city-case-study",
+  "title": "Case Study: $440K Small-Balance Credit Union Refinance in Studio City",
+  "loan_slugs": [
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 440000,
+  "amount_display": "$440,000",
+  "location": "Studio City area, Los Angeles, California"
+ },
+ {
+  "slug": "private-bridge-loan-non-owner-occupied-los-angeles-case-study",
+  "title": "Case Study: $200K Private Bridge Loan on a Non-Owner-Occupied Property in Los Angeles",
+  "loan_slugs": [
+   "owner-occupied-commercial",
+   "bridge-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 200000,
+  "amount_display": "$200,000",
+  "location": "Los Angeles, California"
+ },
+ {
+  "slug": "owner-user-hard-money-takeout-houston-case-study",
+  "title": "Case Study: $5.5M Refinance Takes Out Expensive Private Debt on a Special-Purpose Property in Houston",
+  "loan_slugs": [
+   "hard-money-loans",
+   "owner-occupied-commercial",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "houston",
+  "amount": 5,
+  "amount_display": "$5.5 million",
+  "location": "Houston metro, Texas"
+ },
+ {
+  "slug": "beverly-hills-retail-bridge-loan-case-study",
+  "title": "Case Study: $5.5M Bridge Loan for a Retail Property on Canon Drive in Beverly Hills",
+  "loan_slugs": [
+   "retail-bridge-loans",
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "retail"
+  ],
+  "city_slug": "",
+  "amount": 0,
+  "amount_display": "",
+  "location": "Canon Drive, Beverly Hills, California"
+ },
+ {
+  "slug": "build-to-suit-mezzanine-loan-sale-leaseback-exit-fort-myers-case-study",
+  "title": "Case Study: $3.24M Build-to-Suit Mezzanine Loan Exiting Into a Sale-Leaseback in Fort Myers",
+  "loan_slugs": [
+   "construction-loans",
+   "sale-leaseback-financing",
+   "mezzanine"
+  ],
+  "property_slugs": [],
+  "city_slug": "fort-myers",
+  "amount": 0,
+  "amount_display": "",
+  "location": "Fort Myers, Florida"
+ },
+ {
+  "slug": "commercial-condo-portfolio-refinance-los-angeles-case-study",
+  "title": "Case Study: $6.49M Commercial Condo Portfolio Refinance in Downtown Los Angeles at 7.50% Fixed",
+  "loan_slugs": [
+   "sba-loans",
+   "portfolio-loans",
+   "multifamily-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "retail",
+   "office"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 0,
+  "amount_display": "",
+  "location": "Fashion District, downtown Los Angeles, California"
+ },
+ {
+  "slug": "construction-loan-payoff-plus-draws-santa-barbara-case-study",
+  "title": "Case Study: $10M Payoff-Plus-Construction Line for a Santa Barbara Property",
+  "loan_slugs": [
+   "construction-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "santa-barbara",
+  "amount": 0,
+  "amount_display": "",
+  "location": "Santa Barbara, California"
+ },
+ {
+  "slug": "multi-property-portfolio-refinance-credit-union-beverly-hills-case-study",
+  "title": "Case Study: $19.1M Multi-Property Portfolio Refinance with a Credit Union in Beverly Hills",
+  "loan_slugs": [
+   "portfolio-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "los-angeles",
+  "amount": 0,
+  "amount_display": "",
+  "location": "Beverly Hills and Los Angeles, California"
+ },
+ {
+  "slug": "net-lease-industrial-bridge-to-permanent-takeout-tulare-case-study",
+  "title": "Case Study: Permanent Takeout on a Net-Leased Industrial Acquisition in Tulare",
+  "loan_slugs": [
+   "industrial-bridge-loans",
+   "acquisition-bridge-loans",
+   "bridge-to-perm-loans",
+   "net-lease-financing"
+  ],
+  "property_slugs": [
+   "industrial",
+   "office"
+  ],
+  "city_slug": "",
+  "amount": 0,
+  "amount_display": "",
+  "location": "Tulare, California"
+ },
+ {
+  "slug": "syndicated-bridge-loan-mixed-use-los-angeles-case-study",
+  "title": "Case Study: $2.685M Syndicated Bridge Loan for Two Los Angeles Properties",
+  "loan_slugs": [
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "mixed-use"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 0,
+  "amount_display": "",
+  "location": "Los Angeles, California"
+ }
+]

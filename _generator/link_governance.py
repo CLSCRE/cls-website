@@ -535,6 +535,54 @@ class LinkGovernor:
         )
         return public_href(resolved, depth="")
 
+    def case_studies_for(self, *, loan_slug: str | None = None,
+                         property_slug: str | None = None,
+                         city_slug: str | None = None,
+                         limit: int = 3, depth: str = "") -> list[dict]:
+        """Closed-deal case studies that prove a given program, property type, or city.
+
+        Feeds the "Deals We Have Closed" block on the financing and property
+        hubs. Sorted by loan amount descending, so the biggest, most credible
+        deal leads.
+
+        Why this exists: on 2026-08-09 the 68 published case studies were found
+        with exactly ONE inbound internal link each (the hub page). Zero of the
+        10,318 financing pages and zero property pages linked to any of them,
+        which is the same starved-link-graph pattern that left the LA broker hub
+        with zero GSC impressions for six weeks. This gives each case study real
+        equity from pages Google already indexes, and simultaneously puts closing
+        proof on the money pages.
+
+        Returns [] when nothing matches, so templates guard with {% if %}.
+        """
+        # Defensive: this index is a generated artifact (see
+        # scripts/build_case_study_index.py). A missing or malformed file must
+        # degrade to "no case-study links", never break a 23k-page build.
+        try:
+            index = _load_json("case_study_index.json") or []
+        except (OSError, ValueError):
+            return []
+        out = []
+        for rec in index:
+            if loan_slug and loan_slug not in rec.get("loan_slugs", []):
+                continue
+            if property_slug and property_slug not in rec.get("property_slugs", []):
+                continue
+            if city_slug and rec.get("city_slug") != city_slug:
+                continue
+            path = f"blog/{rec['slug']}.html"
+            if not self.is_active(path):
+                continue
+            out.append({
+                "title": rec["title"],
+                "amount": rec.get("amount_display", ""),
+                "location": rec.get("location", ""),
+                "href": public_href(path, depth=depth),
+            })
+            if len(out) >= limit:
+                break
+        return out
+
     def broker_hub_href_for_city(self, city_slug: str, depth: str = "") -> str | None:
         """Href for a metro broker-hire hub, or None if that city has no hub.
 

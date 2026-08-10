@@ -83,6 +83,7 @@ def render_hubs(slugs=None, write=True):
             transactions=filter_transactions(transactions, loan_slug=loan["slug"]),
             faqs=faqs_data.get("loan_types", {}).get(loan["slug"], []),
             related_articles=[],
+            case_studies=gov.case_studies_for(loan_slug=loan["slug"], limit=3, depth="../"),
         )
         html = html.replace("\u2013", "-").replace("\u2014", "-")
         html = stamp_html_asset_versions(html)

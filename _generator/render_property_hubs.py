@@ -111,6 +111,7 @@ def render_hubs(slugs=None, write=True):
             transactions=filter_transactions(transactions, prop_slug=prop["slug"]),
             faqs=faqs_data.get("property_types", {}).get(prop["slug"], []),
             financing_links=links,
+            case_studies=gov.case_studies_for(property_slug=prop["slug"], limit=3, depth="../"),
         )
         html = html.replace("\u2013", "-").replace("\u2014", "-")
         html = stamp_html_asset_versions(html)
