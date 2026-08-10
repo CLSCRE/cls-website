@@ -4,7 +4,7 @@
   "title": "Case Study: $31.4M Non-Recourse CMBS Refinance for a Little Tokyo Retail Center in Los Angeles",
   "loan_slugs": [
    "cmbs-loans",
-   "mezzanine",
+   "permanent-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -21,6 +21,7 @@
   "loan_slugs": [
    "cmbs-loans",
    "portfolio-loans",
+   "permanent-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -35,9 +36,8 @@
   "slug": "industrial-refinance-vernon-los-angeles-case-study",
   "title": "Case Study: $27.5M Industrial Refinance in Vernon, California via CMBS Conduit",
   "loan_slugs": [
-   "industrial-bridge-loans",
    "cmbs-loans",
-   "bridge-loans",
+   "permanent-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -55,6 +55,7 @@
    "cmbs-loans",
    "net-lease-financing",
    "portfolio-loans",
+   "permanent-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [],
@@ -67,7 +68,6 @@
   "slug": "multifamily-cashout-refinance-reserve-structure-new-york-case-study",
   "title": "Case Study: $16.5M Multifamily Cash-Out Refinance with a Layered Reserve Structure in New York",
   "loan_slugs": [
-   "portfolio-loans",
    "multifamily-loans",
    "commercial-mortgage-loans"
   ],
@@ -84,7 +84,7 @@
   "title": "Case Study: $16.25M Industrial Acquisition Loan with a Life Insurance Lender in Vista",
   "loan_slugs": [
    "life-company-loans",
-   "net-lease-financing"
+   "permanent-loans"
   ],
   "property_slugs": [
    "industrial"
@@ -314,10 +314,8 @@
   "slug": "multifamily-bank-refinance-arlington-tx-case-study",
   "title": "Case Study: $5.4M Bank Refinance Takes a 70-Unit Texas Multifamily Property Out of Hard Money at 6.0% Fixed",
   "loan_slugs": [
-   "multifamily-bridge-loans",
-   "hard-money-loans",
    "multifamily-loans",
-   "bridge-loans"
+   "commercial-mortgage-loans"
   ],
   "property_slugs": [
    "multifamily"
@@ -386,7 +384,8 @@
   "title": "Case Study: $4.3M Net-Lease Retail Acquisition Loan in Murrieta, CA",
   "loan_slugs": [
    "life-company-loans",
-   "net-lease-financing"
+   "net-lease-financing",
+   "permanent-loans"
   ],
   "property_slugs": [
    "industrial",
@@ -402,8 +401,7 @@
   "title": "Case Study: $4M Bridge Loan on Three Beverly Hills Parcels With No Prepayment Penalty",
   "loan_slugs": [
    "land-loans",
-   "bridge-loans",
-   "commercial-mortgage-loans"
+   "bridge-loans"
   ],
   "property_slugs": [],
   "city_slug": "",
@@ -453,9 +451,7 @@
   "slug": "multifamily-42-unit-arlington-tx-refinance-case-study",
   "title": "Case Study: $3.08M Bank Refinance of a 42-Unit Arlington, TX Apartment Complex Through Mechanics Liens and a Lis Pendens",
   "loan_slugs": [
-   "multifamily-bridge-loans",
    "multifamily-loans",
-   "bridge-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -514,8 +510,6 @@
   "slug": "probate-estate-bridge-refinance-los-angeles-case-study",
   "title": "Case Study: $2.69M Probate Estate Bridge Refinance in Los Angeles at 8.90%",
   "loan_slugs": [
-   "industrial-bridge-loans",
-   "portfolio-loans",
    "bridge-loans",
    "commercial-mortgage-loans"
   ],
@@ -547,6 +541,7 @@
   "loan_slugs": [
    "life-company-loans",
    "net-lease-financing",
+   "permanent-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -606,7 +601,7 @@
   "title": "Case Study: $1.8M Low-Leverage Life Insurance Loan in Canoga Park, CA",
   "loan_slugs": [
    "life-company-loans",
-   "commercial-mortgage-loans"
+   "permanent-loans"
   ],
   "property_slugs": [],
   "city_slug": "",
@@ -708,7 +703,6 @@
   "title": "Case Study: $1.325M Commercial Condo Refinance in the LA Fashion District at 7.25% Fixed",
   "loan_slugs": [
    "sba-loans",
-   "multifamily-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -723,7 +717,6 @@
   "slug": "downtown-la-commercial-condo-bank-loan-case-study",
   "title": "Case Study: $1.325M Bank Loan for a Commercial Condo in Downtown Los Angeles",
   "loan_slugs": [
-   "multifamily-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -767,7 +760,6 @@
   "title": "Case Study: $955K Probate Portfolio Cash-Out Refinance in Los Angeles",
   "loan_slugs": [
    "portfolio-loans",
-   "multifamily-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [],
@@ -860,8 +852,7 @@
   "title": "Case Study: $200K Private Bridge Loan on a Non-Owner-Occupied Property in Los Angeles",
   "loan_slugs": [
    "owner-occupied-commercial",
-   "bridge-loans",
-   "commercial-mortgage-loans"
+   "bridge-loans"
   ],
   "property_slugs": [],
   "city_slug": "los-angeles",
@@ -918,7 +909,6 @@
   "loan_slugs": [
    "sba-loans",
    "portfolio-loans",
-   "multifamily-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -959,10 +949,10 @@
   "slug": "net-lease-industrial-bridge-to-permanent-takeout-tulare-case-study",
   "title": "Case Study: Permanent Takeout on a Net-Leased Industrial Acquisition in Tulare",
   "loan_slugs": [
-   "industrial-bridge-loans",
-   "acquisition-bridge-loans",
    "bridge-to-perm-loans",
-   "net-lease-financing"
+   "net-lease-financing",
+   "permanent-loans",
+   "commercial-mortgage-loans"
   ],
   "property_slugs": [
    "industrial",

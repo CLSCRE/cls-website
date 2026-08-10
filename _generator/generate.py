@@ -1526,11 +1526,13 @@ def main():
                 program_links_for_city=link_gov.program_links_for_city(city["slug"], exclude_loan=loan["slug"]),
                 property_links_for_city=link_gov.property_links_for_city(city["slug"]),
                 broker_hub_href=link_gov.broker_hub_href_for_city(city["slug"], depth="../"),
-                # City-matched closings first (a Salinas deal on the Salinas
-                # page), falling back to loan-type matches so the block is not
-                # empty on the ~150 cities with no published case study.
+                # Loan type is the non-negotiable filter: a CMBS permanent
+                # execution must never appear on a bridge page (Trevor,
+                # 2026-08-10). Prefer a deal matching BOTH this program and this
+                # city, then fall back to the program anywhere. Never city-only.
                 case_studies=(
-                    link_gov.case_studies_for(city_slug=city["slug"], limit=2, depth="../")
+                    link_gov.case_studies_for(loan_slug=loan["slug"], city_slug=city["slug"],
+                                              limit=2, depth="../")
                     or link_gov.case_studies_for(loan_slug=loan["slug"], limit=2, depth="../")
                 ),
             )
