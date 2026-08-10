@@ -715,6 +715,120 @@ def render_rates_table():
     print(f"  [OK] rates.html  ({len(rows)} rate rows baked into static HTML)")
 
 
+def render_homepage_rate_table():
+    """Bake the homepage loan-program comparison rows into index.html's tbody.
+
+    index.html's program table is built client-side by qrBuild() from a
+    hardcoded `var DATA=[...]` array into an empty <tbody id="qrTbody">, so
+    non-JS crawlers (GPTBot, PerplexityBot, OAI-SearchBot) saw an EMPTY table
+    -- the most citable block on the highest-authority page on the domain was
+    invisible to answer engines (2026-08-09 AEO cross-check). This mirrors
+    qrBuild()'s markup exactly and bakes it in. The page JS still runs
+    tbody.innerHTML=html on load, so the interactive filters are unaffected;
+    same approach as render_rates_table() above does for rates.html.
+
+    Parses DATA/CAT/TAGS straight out of index.html rather than duplicating
+    them here, so the JS array stays the single source of truth.
+    """
+    print("\n=== Server-rendering homepage rate table ===")
+    index_path = WEBSITE_DIR / "index.html"
+    if not index_path.exists():
+        print("  [SKIP] index.html not found")
+        return
+    html = index_path.read_text(encoding="utf-8")
+
+    # ── Parse `var DATA=[ {...}, {...} ]` ─────────────────────────────
+    d_start = html.find("var DATA=[")
+    if d_start == -1:
+        print("  [WARN] var DATA=[ not found in index.html; skipped")
+        return
+    d_end = html.find("\n  ];", d_start)
+    if d_end == -1:
+        print("  [WARN] end of DATA array not found; skipped")
+        return
+    data_block = html[d_start:d_end]
+
+    records = []
+    # Records contain no nested braces, so [^{}]* is both sufficient and safe.
+    # (A non-greedy .*? with a lookahead silently dropped 8 of 27 records here,
+    # because the `// Permanent`-style comments between groups break a
+    # `,\s*\{` lookahead. Don't "simplify" this back.)
+    for rec in re.findall(r"\{cat:[^{}]*\}", data_block):
+        row = dict(re.findall(r"(\w+):'([^']*)'", rec))
+        tags_m = re.search(r"tags:\[([^\]]*)\]", rec)
+        row["tags"] = re.findall(r"'([^']*)'", tags_m.group(1)) if tags_m else []
+        records.append(row)
+    if not records:
+        print("  [WARN] parsed 0 DATA records; skipped")
+        return
+
+    # ── Parse `var CAT={...}` and `var TAGS={...}` ────────────────────
+    def _parse_map(var_name, value_re):
+        start = html.find(f"var {var_name}={{")
+        if start == -1:
+            return {}
+        block = html[start:html.find("};", start)]
+        return dict(re.findall(value_re, block))
+
+    cat_block_start = html.find("var CAT={")
+    cat_block = html[cat_block_start:html.find("};", cat_block_start)] if cat_block_start != -1 else ""
+    CAT = {}
+    for key, bg, tx, label in re.findall(
+        r"'?([\w-]+)'?:\s*\{bg:'([^']*)',tx:'([^']*)',label:'([^']*)'\}", cat_block
+    ):
+        CAT[key] = {"bg": bg, "tx": tx, "label": label}
+
+    TAGS = _parse_map("TAGS", r"'([^']+)':\s*'([^']*)'")
+
+    def tag_span(t):
+        style = TAGS.get(t, "background:rgba(107,114,128,.1);color:#374151")
+        return (
+            f'<span style="{style};font-size:10px;font-weight:600;padding:2px 6px;'
+            'border-radius:4px;white-space:nowrap;display:inline-block;'
+            f'margin:1px 2px 1px 0">{t}</span>'
+        )
+
+    # ── Build rows, mirroring qrBuild() ──────────────────────────────
+    CELL = "padding:9px 14px;white-space:nowrap;font-size:13px;color:#374151;vertical-align:top"
+    rows, last_cat = [], ""
+    for d in records:
+        if d.get("cat") != last_cat:
+            c = CAT.get(d.get("cat"), {"bg": "#f9fafb", "tx": "#374151", "label": d.get("cat", "")})
+            rows.append(
+                f'<tr class="qr-cat" data-cat="{d["cat"]}" style="background:{c["bg"]}">'
+                '<td colspan="7" style="padding:7px 14px;font-size:10px;font-weight:700;'
+                f'text-transform:uppercase;letter-spacing:.07em;color:{c["tx"]}">{c["label"]}</td></tr>'
+            )
+            last_cat = d["cat"]
+        rows.append(
+            f'<tr class="qr-row" data-cat="{d["cat"]}" data-lender="{d["lender"]}" '
+            f'data-mkt="{d["mkt"]}" data-sz="{d["sz"]}" '
+            'style="border-bottom:1px solid #f3f4f6;cursor:default">'
+            '<td style="padding:9px 14px;vertical-align:top">'
+            '<div style="font-size:13px;font-weight:600;color:var(--navy,#153D63);'
+            f'margin-bottom:2px">{d["program"]}</div>'
+            f'<div style="font-size:11px;color:#9ca3af">{d["desc"]}</div></td>'
+            '<td style="padding:9px 14px;white-space:nowrap;font-weight:700;'
+            f'color:var(--navy,#153D63);font-size:13px;vertical-align:top">{d["rate"]}</td>'
+            f'<td style="{CELL}">{d["ltv"]}</td>'
+            f'<td style="{CELL}">{d["min"]}</td>'
+            f'<td style="{CELL}">{d["term"]}</td>'
+            f'<td style="{CELL}">{d["amort"]}</td>'
+            '<td style="padding:9px 14px;vertical-align:top;min-width:160px">'
+            f'{"".join(tag_span(t) for t in d["tags"])}</td></tr>'
+        )
+
+    tbody = '<tbody id="qrTbody">\n        ' + "\n        ".join(rows) + "\n      </tbody>"
+    new_html, n = re.subn(
+        r'<tbody id="qrTbody">.*?</tbody>', tbody, html, count=1, flags=re.DOTALL
+    )
+    if n == 0:
+        print("  [WARN] qrTbody tbody not found in index.html; skipped")
+        return
+    index_path.write_text(new_html, encoding="utf-8")
+    print(f"  [OK] index.html  ({len(records)} programs baked into static HTML)")
+
+
 def main():
     # ── Pre-generate programmatic blog articles ───────────────────────
     generate_articles_main()
@@ -2630,6 +2744,7 @@ Sitemap: {BASE_URL}/sitemap-index.xml
     # bakes the same rows into the static tbody. The page JS re-renders
     # over them once loaded, so the interactive filters are unaffected.
     render_rates_table()
+    render_homepage_rate_table()
 
     # ── 13. Asset version stamping (cache-busting) ────────────────────
     # Runs LAST so every page written above (and every page written by
