@@ -1525,6 +1525,7 @@ def main():
                 la_deepdive=la_financing_deepdive.get(loan["slug"]),
                 program_links_for_city=link_gov.program_links_for_city(city["slug"], exclude_loan=loan["slug"]),
                 property_links_for_city=link_gov.property_links_for_city(city["slug"]),
+                broker_hub_href=link_gov.broker_hub_href_for_city(city["slug"], depth="../"),
             )
             out_path = WEBSITE_DIR / "financing" / f"{slug}.html"
             out_path.write_text(html, encoding="utf-8")
@@ -2057,6 +2058,7 @@ def main():
             property_links_for_city=link_gov.property_links_for_city(city["slug"]),
             specialty_links_for_city=link_gov.specialty_links_for_city(city["slug"]),
             commercial_mortgage_href=link_gov.commercial_mortgage_href_for_city(city["slug"]),
+            broker_hub_href=link_gov.broker_hub_href_for_city(city["slug"], depth="../../"),
             neighborhoods=link_gov.neighborhood_links_for_city(
                 city["slug"], neighborhood_list
             ),

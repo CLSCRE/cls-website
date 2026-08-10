@@ -535,6 +535,28 @@ class LinkGovernor:
         )
         return public_href(resolved, depth="")
 
+    def broker_hub_href_for_city(self, city_slug: str, depth: str = "") -> str | None:
+        """Href for a metro broker-hire hub, or None if that city has no hub.
+
+        These are the hand-built `financing/commercial-mortgage-broker-{city}.html`
+        pages (currently Los Angeles only) that target broker-HIRE intent
+        ("commercial mortgage broker los angeles") rather than product intent
+        ("commercial mortgage loans los angeles", which
+        commercial_mortgage_href_for_city already covers). Keep the two separate:
+        they answer different queries.
+
+        Returns None when no hub exists, so templates can wrap the link in a
+        simple `{% if %}` and any future metro hub lights up automatically
+        without touching a template again.
+
+        Why this exists: on 2026-08-09 the LA hub was found with ~2 internal
+        inlinks across a 23,800-page site and ZERO GSC impressions in 90 days,
+        while the homepage absorbed its terms at position 22. It was indexable
+        and in the sitemap; it simply had no internal link equity.
+        """
+        resolved = self.resolve(f"financing/commercial-mortgage-broker-{city_slug}.html")
+        return public_href(resolved, depth=depth) if resolved else None
+
     def featured_cross_link(self, family: str, slug: str, city_slug: str) -> str:
         preferred = f"{family}/{slug}-{city_slug}.html"
         resolved = self.resolve(preferred)

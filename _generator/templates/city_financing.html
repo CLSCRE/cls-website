@@ -105,6 +105,9 @@
   <p class="reveal" style="font-size:15px;color:var(--gray-500);margin-bottom:24px">LA financing changes block by block and deal type by deal type. Go deeper below.</p>
   <div class="cross-link-grid">
     <a href="{{ depth }}markets/los-angeles/" class="cross-link-card reveal" style="border-color:var(--green)"><div class="cl-title">Los Angeles CRE Hub</div><div class="cl-sub">Guides, tools, and every LA vertical</div></a>
+    {% if broker_hub_href %}
+    <a href="{{ broker_hub_href }}" class="cross-link-card reveal"><div class="cl-title">Los Angeles Commercial Mortgage Brokers</div><div class="cl-sub">How local placement wins, and who we place with</div></a>
+    {% endif %}
     {% if loan.slug == 'construction-loans' %}
     <a href="{{ depth }}los-angeles/developers.html" class="cross-link-card reveal"><div class="cl-title">LA CRE for Developers</div><div class="cl-sub">TOC, ED1, ARO, construction to takeout</div></a>
     <a href="{{ depth }}los-angeles/toc-density-bonus-construction-financing.html" class="cross-link-card reveal"><div class="cl-title">TOC Density Bonus Construction</div><div class="cl-sub">Guide</div></a>
