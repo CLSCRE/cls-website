@@ -864,7 +864,6 @@
   "slug": "owner-user-hard-money-takeout-houston-case-study",
   "title": "Case Study: $5.5M Refinance Takes Out Expensive Private Debt on a Special-Purpose Property in Houston",
   "loan_slugs": [
-   "hard-money-loans",
    "owner-occupied-commercial",
    "commercial-mortgage-loans"
   ],
@@ -876,7 +875,7 @@
  },
  {
   "slug": "beverly-hills-retail-bridge-loan-case-study",
-  "title": "Case Study: $5.5M Bridge Loan for a Retail Property on Canon Drive in Beverly Hills",
+  "title": "Case Study: $5.5M Bridge Loan for a Retail Property in the Beverly Hills Golden Triangle",
   "loan_slugs": [
    "retail-bridge-loans",
    "bridge-loans"
@@ -887,7 +886,7 @@
   "city_slug": "",
   "amount": 0,
   "amount_display": "",
-  "location": "Canon Drive, Beverly Hills, California"
+  "location": "the Golden Triangle retail district, Beverly Hills, California"
  },
  {
   "slug": "build-to-suit-mezzanine-loan-sale-leaseback-exit-fort-myers-case-study",
