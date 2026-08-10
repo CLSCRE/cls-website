@@ -262,21 +262,6 @@
   "location": "Sherman Oaks, California (San Fernando Valley, Los Angeles)"
  },
  {
-  "slug": "office-cashout-refinance-mini-perm-bank-sherman-oaks-case-study",
-  "title": "Case Study: $8.5M Office Cash-Out Refinance with a Mini-Perm Bank Loan in Sherman Oaks",
-  "loan_slugs": [
-   "permanent-loans",
-   "commercial-mortgage-loans"
-  ],
-  "property_slugs": [
-   "office"
-  ],
-  "city_slug": "",
-  "amount": 8500000,
-  "amount_display": "$8,500,000",
-  "location": "Sherman Oaks, California"
- },
- {
   "slug": "multifamily-acquisition-bridge-loan-interest-reserve-los-angeles-case-study",
   "title": "Case Study: $7.46M Multifamily Acquisition Bridge Loan with a Pre-Funded Interest Reserve in Los Angeles",
   "loan_slugs": [
@@ -332,22 +317,10 @@
    "commercial-mortgage-loans"
   ],
   "property_slugs": [],
-  "city_slug": "lincoln",
+  "city_slug": "",
   "amount": 5000000,
   "amount_display": "$5,000,000",
-  "location": "Lincoln Boulevard, Santa Monica, California"
- },
- {
-  "slug": "auto-repair-property-refinance-santa-monica-case-study",
-  "title": "Case Study: $5M Auto Repair Property Refinance in Santa Monica at 6.50% Fixed",
-  "loan_slugs": [
-   "commercial-mortgage-loans"
-  ],
-  "property_slugs": [],
-  "city_slug": "los-angeles",
-  "amount": 5000000,
-  "amount_display": "$5,000,000",
-  "location": "Santa Monica, California (Westside Los Angeles)"
+  "location": "Santa Monica, California (Westside)"
  },
  {
   "slug": "sba-adjacent-conventional-refinance-owner-user-san-antonio-case-study",
@@ -431,7 +404,7 @@
   "city_slug": "",
   "amount": 3662000,
   "amount_display": "$3,662,000",
-  "location": "El Segundo Boulevard, Compton, California"
+  "location": "Compton, California (South Bay)"
  },
  {
   "slug": "iowa-commercial-property-refinance-west-des-moines-case-study",
@@ -667,18 +640,6 @@
   "location": "Chesterfield, Michigan"
  },
  {
-  "slug": "credit-union-relationship-pricing-refinance-santa-ana-case-study",
-  "title": "Case Study: $1.386M Credit Union Refinance with Relationship Pricing in Santa Ana",
-  "loan_slugs": [
-   "commercial-mortgage-loans"
-  ],
-  "property_slugs": [],
-  "city_slug": "",
-  "amount": 1386000,
-  "amount_display": "$1,386,000",
-  "location": "Santa Ana, California"
- },
- {
   "slug": "restaurant-retail-refinance-santa-ana-case-study",
   "title": "Case Study: $1.386M Restaurant Retail Refinance in Downtown Santa Ana at 6.875% Fixed",
   "loan_slugs": [
@@ -692,20 +653,6 @@
   "amount": 1386000,
   "amount_display": "$1,386,000",
   "location": "Downtown Santa Ana, California (Orange County)"
- },
- {
-  "slug": "commercial-condo-refinance-los-angeles-fashion-district-case-study",
-  "title": "Case Study: $1.325M Commercial Condo Refinance in the LA Fashion District at 7.25% Fixed",
-  "loan_slugs": [
-   "commercial-mortgage-loans"
-  ],
-  "property_slugs": [
-   "office"
-  ],
-  "city_slug": "los-angeles",
-  "amount": 1325000,
-  "amount_display": "$1,325,000",
-  "location": "Fashion District, downtown Los Angeles, California"
  },
  {
   "slug": "downtown-la-commercial-condo-bank-loan-case-study",
