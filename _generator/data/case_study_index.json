@@ -341,7 +341,6 @@
   "slug": "auto-repair-property-refinance-santa-monica-case-study",
   "title": "Case Study: $5M Auto Repair Property Refinance in Santa Monica at 6.50% Fixed",
   "loan_slugs": [
-   "sba-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [],
@@ -354,7 +353,6 @@
   "slug": "sba-adjacent-conventional-refinance-owner-user-san-antonio-case-study",
   "title": "Case Study: $4.995M Owner-User Refinance Plus Working Capital in San Antonio",
   "loan_slugs": [
-   "sba-loans",
    "owner-occupied-commercial",
    "commercial-mortgage-loans"
   ],
@@ -383,7 +381,7 @@
   "slug": "net-lease-retail-acquisition-loan-life-insurance-lender-murrieta-case-study",
   "title": "Case Study: $4.3M Net-Lease Retail Acquisition Loan in Murrieta, CA",
   "loan_slugs": [
-   "life-company-loans",
+   "cmbs-loans",
    "net-lease-financing",
    "permanent-loans"
   ],
@@ -525,7 +523,6 @@
   "slug": "bank-relationship-refinance-owner-user-hawthorne-case-study",
   "title": "Case Study: $2.2M Owner-User Refinance with a bank in Hawthorne",
   "loan_slugs": [
-   "sba-loans",
    "owner-occupied-commercial",
    "commercial-mortgage-loans"
   ],
@@ -571,7 +568,6 @@
   "slug": "gas-station-refinance-silicon-valley-case-study",
   "title": "Case Study: $1.94M Gas Station Refinance in Silicon Valley at 6.85% Fixed",
   "loan_slugs": [
-   "sba-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [],
@@ -686,7 +682,6 @@
   "slug": "restaurant-retail-refinance-santa-ana-case-study",
   "title": "Case Study: $1.386M Restaurant Retail Refinance in Downtown Santa Ana at 6.875% Fixed",
   "loan_slugs": [
-   "sba-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -702,7 +697,6 @@
   "slug": "commercial-condo-refinance-los-angeles-fashion-district-case-study",
   "title": "Case Study: $1.325M Commercial Condo Refinance in the LA Fashion District at 7.25% Fixed",
   "loan_slugs": [
-   "sba-loans",
    "commercial-mortgage-loans"
   ],
   "property_slugs": [
@@ -851,7 +845,6 @@
   "slug": "private-bridge-loan-non-owner-occupied-los-angeles-case-study",
   "title": "Case Study: $200K Private Bridge Loan on a Non-Owner-Occupied Property in Los Angeles",
   "loan_slugs": [
-   "owner-occupied-commercial",
    "bridge-loans"
   ],
   "property_slugs": [],
@@ -906,7 +899,6 @@
   "slug": "commercial-condo-portfolio-refinance-los-angeles-case-study",
   "title": "Case Study: $6.49M Commercial Condo Portfolio Refinance in Downtown Los Angeles at 7.50% Fixed",
   "loan_slugs": [
-   "sba-loans",
    "portfolio-loans",
    "commercial-mortgage-loans"
   ],
