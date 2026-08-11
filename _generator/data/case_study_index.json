@@ -49,6 +49,22 @@
   "location": "Vernon, California (central Los Angeles industrial market)"
  },
  {
+  "slug": "multi-property-portfolio-refinance-credit-union-beverly-hills-case-study",
+  "title": "Case Study: $19.1M Multi-Property Portfolio Refinance with a Credit Union in Beverly Hills",
+  "loan_slugs": [
+   "portfolio-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "office",
+   "mixed-use"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 19100000,
+  "amount_display": "$19,100,000",
+  "location": "Beverly Hills and Los Angeles, California"
+ },
+ {
   "slug": "multi-state-net-lease-portfolio-cmbs-refinance-case-study",
   "title": "Case Study: $18M Multi-State Net-Lease Portfolio CMBS Loan",
   "loan_slugs": [
@@ -117,7 +133,7 @@
   "property_slugs": [],
   "city_slug": "los-angeles",
   "amount": 13800000,
-  "amount_display": "Up to $13,800,000",
+  "amount_display": "$13,800,000",
   "location": "Los Angeles, California"
  },
  {
@@ -173,6 +189,18 @@
   "amount": 11000000,
   "amount_display": "$11,000,000",
   "location": "Sunnyvale, California"
+ },
+ {
+  "slug": "construction-loan-payoff-plus-draws-santa-barbara-case-study",
+  "title": "Case Study: $10M Payoff-Plus-Construction Line for a Santa Barbara Property",
+  "loan_slugs": [
+   "construction-loans"
+  ],
+  "property_slugs": [],
+  "city_slug": "santa-barbara",
+  "amount": 10000000,
+  "amount_display": "$10,000,000",
+  "location": "Santa Barbara, California"
  },
  {
   "slug": "multifamily-refinance-hybrid-rate-alameda-case-study",
@@ -296,6 +324,37 @@
   "location": "San Bernardino, California"
  },
  {
+  "slug": "commercial-condo-portfolio-refinance-los-angeles-case-study",
+  "title": "Case Study: $6.49M Commercial Condo Portfolio Refinance in Downtown Los Angeles at 7.50% Fixed",
+  "loan_slugs": [
+   "portfolio-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "retail",
+   "office"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 6490000,
+  "amount_display": "$6,490,000",
+  "location": "Fashion District, downtown Los Angeles, California"
+ },
+ {
+  "slug": "beverly-hills-retail-bridge-loan-case-study",
+  "title": "Case Study: $5.5M Bridge Loan for a Retail Property in the Beverly Hills Golden Triangle",
+  "loan_slugs": [
+   "retail-bridge-loans",
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "retail"
+  ],
+  "city_slug": "",
+  "amount": 5500000,
+  "amount_display": "$5,500,000",
+  "location": "the Golden Triangle retail district, Beverly Hills, California"
+ },
+ {
   "slug": "multifamily-bank-refinance-arlington-tx-case-study",
   "title": "Case Study: $5.4M Bank Refinance Takes a 70-Unit Texas Multifamily Property Out of Hard Money at 6.0% Fixed",
   "loan_slugs": [
@@ -307,7 +366,7 @@
   ],
   "city_slug": "dallas",
   "amount": 5355000,
-  "amount_display": "$5,355,000 commitment",
+  "amount_display": "$5,355,000",
   "location": "Arlington, Texas (Dallas-Fort Worth metro)"
  },
  {
@@ -351,7 +410,7 @@
   "location": "Sunnyvale, California"
  },
  {
-  "slug": "net-lease-retail-acquisition-loan-life-insurance-lender-murrieta-case-study",
+  "slug": "net-lease-retail-acquisition-cmbs-loan-murrieta-case-study",
   "title": "Case Study: $4.3M Net-Lease Retail Acquisition Loan in Murrieta, CA",
   "loan_slugs": [
    "cmbs-loans",
@@ -359,7 +418,6 @@
    "permanent-loans"
   ],
   "property_slugs": [
-   "industrial",
    "retail"
   ],
   "city_slug": "",
@@ -419,6 +477,20 @@
   "location": "West Des Moines, Iowa"
  },
  {
+  "slug": "build-to-suit-mezzanine-loan-sale-leaseback-exit-fort-myers-case-study",
+  "title": "Case Study: $3.24M Build-to-Suit Mezzanine Loan Exiting Into a Sale-Leaseback in Fort Myers",
+  "loan_slugs": [
+   "construction-loans",
+   "sale-leaseback-financing",
+   "mezzanine"
+  ],
+  "property_slugs": [],
+  "city_slug": "fort-myers",
+  "amount": 3237400,
+  "amount_display": "$3,237,400",
+  "location": "Fort Myers, Florida"
+ },
+ {
   "slug": "multifamily-42-unit-arlington-tx-refinance-case-study",
   "title": "Case Study: $3.08M Bank Refinance of a 42-Unit Arlington, TX Apartment Complex Through Mechanics Liens and a Lis Pendens",
   "loan_slugs": [
@@ -447,6 +519,20 @@
   "amount": 2900000,
   "amount_display": "$2,900,000",
   "location": "Long Beach, California"
+ },
+ {
+  "slug": "syndicated-bridge-loan-mixed-use-los-angeles-case-study",
+  "title": "Case Study: $2.685M Syndicated Bridge Loan for Two Los Angeles Properties",
+  "loan_slugs": [
+   "bridge-loans"
+  ],
+  "property_slugs": [
+   "mixed-use"
+  ],
+  "city_slug": "los-angeles",
+  "amount": 2685000,
+  "amount_display": "$2,685,000",
+  "location": "Los Angeles, California"
  },
  {
   "slug": "bank-branch-net-lease-acquisition-loan-martinez-case-study",
@@ -489,7 +575,7 @@
   ],
   "city_slug": "los-angeles",
   "amount": 2255000,
-  "amount_display": "$2,255,000 first trust deed + $430,000 private second",
+  "amount_display": "$2,255,000",
   "location": "Just west of downtown Los Angeles, California"
  },
  {
@@ -623,7 +709,7 @@
   ],
   "city_slug": "los-angeles",
   "amount": 1675000,
-  "amount_display": "$1,675,000, or 75% LTV, whichever is lower",
+  "amount_display": "$1,675,000",
   "location": "Los Angeles, California (Boyle Heights area)"
  },
  {
@@ -693,7 +779,7 @@
   ],
   "city_slug": "dallas",
   "amount": 1280000,
-  "amount_display": "Up to $1,280,000",
+  "amount_display": "$1,280,000",
   "location": "Dallas, Texas"
  },
  {
@@ -810,78 +896,8 @@
   "property_slugs": [],
   "city_slug": "houston",
   "amount": 5,
-  "amount_display": "$5.5 million",
+  "amount_display": "$5",
   "location": "Houston metro, Texas"
- },
- {
-  "slug": "beverly-hills-retail-bridge-loan-case-study",
-  "title": "Case Study: $5.5M Bridge Loan for a Retail Property in the Beverly Hills Golden Triangle",
-  "loan_slugs": [
-   "retail-bridge-loans",
-   "bridge-loans"
-  ],
-  "property_slugs": [
-   "retail"
-  ],
-  "city_slug": "",
-  "amount": 0,
-  "amount_display": "",
-  "location": "the Golden Triangle retail district, Beverly Hills, California"
- },
- {
-  "slug": "build-to-suit-mezzanine-loan-sale-leaseback-exit-fort-myers-case-study",
-  "title": "Case Study: $3.24M Build-to-Suit Mezzanine Loan Exiting Into a Sale-Leaseback in Fort Myers",
-  "loan_slugs": [
-   "construction-loans",
-   "sale-leaseback-financing",
-   "mezzanine"
-  ],
-  "property_slugs": [],
-  "city_slug": "fort-myers",
-  "amount": 0,
-  "amount_display": "",
-  "location": "Fort Myers, Florida"
- },
- {
-  "slug": "commercial-condo-portfolio-refinance-los-angeles-case-study",
-  "title": "Case Study: $6.49M Commercial Condo Portfolio Refinance in Downtown Los Angeles at 7.50% Fixed",
-  "loan_slugs": [
-   "portfolio-loans",
-   "commercial-mortgage-loans"
-  ],
-  "property_slugs": [
-   "retail",
-   "office"
-  ],
-  "city_slug": "los-angeles",
-  "amount": 0,
-  "amount_display": "",
-  "location": "Fashion District, downtown Los Angeles, California"
- },
- {
-  "slug": "construction-loan-payoff-plus-draws-santa-barbara-case-study",
-  "title": "Case Study: $10M Payoff-Plus-Construction Line for a Santa Barbara Property",
-  "loan_slugs": [
-   "construction-loans"
-  ],
-  "property_slugs": [],
-  "city_slug": "santa-barbara",
-  "amount": 0,
-  "amount_display": "",
-  "location": "Santa Barbara, California"
- },
- {
-  "slug": "multi-property-portfolio-refinance-credit-union-beverly-hills-case-study",
-  "title": "Case Study: $19.1M Multi-Property Portfolio Refinance with a Credit Union in Beverly Hills",
-  "loan_slugs": [
-   "portfolio-loans",
-   "commercial-mortgage-loans"
-  ],
-  "property_slugs": [],
-  "city_slug": "los-angeles",
-  "amount": 0,
-  "amount_display": "",
-  "location": "Beverly Hills and Los Angeles, California"
  },
  {
   "slug": "net-lease-industrial-bridge-to-permanent-takeout-tulare-case-study",
@@ -900,19 +916,5 @@
   "amount": 0,
   "amount_display": "",
   "location": "Tulare, California"
- },
- {
-  "slug": "syndicated-bridge-loan-mixed-use-los-angeles-case-study",
-  "title": "Case Study: $2.685M Syndicated Bridge Loan for Two Los Angeles Properties",
-  "loan_slugs": [
-   "bridge-loans"
-  ],
-  "property_slugs": [
-   "mixed-use"
-  ],
-  "city_slug": "los-angeles",
-  "amount": 0,
-  "amount_display": "",
-  "location": "Los Angeles, California"
  }
 ]
