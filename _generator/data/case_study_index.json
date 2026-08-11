@@ -535,6 +535,24 @@
   "location": "Los Angeles, California"
  },
  {
+  "slug": "net-lease-industrial-bridge-to-permanent-takeout-tulare-case-study",
+  "title": "Case Study: Permanent Takeout on a Net-Leased Industrial Acquisition in Tulare",
+  "loan_slugs": [
+   "bridge-to-perm-loans",
+   "net-lease-financing",
+   "permanent-loans",
+   "commercial-mortgage-loans"
+  ],
+  "property_slugs": [
+   "industrial",
+   "office"
+  ],
+  "city_slug": "",
+  "amount": 2500000,
+  "amount_display": "$2,500,000",
+  "location": "Tulare, California"
+ },
+ {
   "slug": "bank-branch-net-lease-acquisition-loan-martinez-case-study",
   "title": "Case Study: $2.4M Bank-Branch Net Lease Financing in Martinez, CA",
   "loan_slugs": [
@@ -898,23 +916,5 @@
   "amount": 5,
   "amount_display": "$5",
   "location": "Houston metro, Texas"
- },
- {
-  "slug": "net-lease-industrial-bridge-to-permanent-takeout-tulare-case-study",
-  "title": "Case Study: Permanent Takeout on a Net-Leased Industrial Acquisition in Tulare",
-  "loan_slugs": [
-   "bridge-to-perm-loans",
-   "net-lease-financing",
-   "permanent-loans",
-   "commercial-mortgage-loans"
-  ],
-  "property_slugs": [
-   "industrial",
-   "office"
-  ],
-  "city_slug": "",
-  "amount": 0,
-  "amount_display": "",
-  "location": "Tulare, California"
  }
 ]
