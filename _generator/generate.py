@@ -2565,6 +2565,25 @@ def main():
         print(f"  [dedup] Removed {_dup_count} duplicate sitemap entries")
     sitemap_urls = _deduped
 
+    # Never advertise a URL we serve as a soft-301 stub or noindex. The ~15
+    # append sites above each check REDIRECT_PATHS/NOINDEX_PATHS themselves,
+    # but the vertical-hub sites were missed: the 2026-08-07 consolidation
+    # left 96 stub URLs in the sitemap (all 91 of sitemap-senior-living.xml
+    # among them), which GSC reports as "Submitted URL is a redirect".
+    # This is the one chokepoint every sitemap URL passes through, so
+    # enforcing it here also covers append sites added later.
+    _retired_locs = []
+    _kept_urls = []
+    for _u in sitemap_urls:
+        _rel = _u["loc"].replace(BASE_URL, "").lstrip("/")
+        if _rel in REDIRECT_PATHS or _rel in NOINDEX_PATHS:
+            _retired_locs.append(_rel)
+        else:
+            _kept_urls.append(_u)
+    if _retired_locs:
+        print(f"  [retired] Dropped {len(_retired_locs)} redirect-stub/noindex URLs from the sitemap")
+    sitemap_urls = _kept_urls
+
     # Categorize each URL into a segmented sitemap. Categorization is
     # path-based: the first path segment after the domain determines bucket.
     # Each vertical section gets its OWN sitemap-<vertical>.xml (split from
