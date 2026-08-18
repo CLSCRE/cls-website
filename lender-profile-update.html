@@ -34,16 +34,38 @@
 <div class="wrap">
   <img class="logo" src="https://clscre.com/images/cls-logo-emblem.png" alt="Commercial Lending Solutions">
   <h1 id="pageTitle">Update your lender profile</h1>
-  <p class="lede" id="pageLede">Help us route sharper opportunities your way. Fill in whatever you can below, everything is optional except what's marked required.</p>
+  <p class="lede" id="pageLede">Help us route sharper opportunities your way. Fill in whatever you can below. Only the starred fields are required.</p>
 
-  <form action="https://formsubmit.co/loans@clscre.com" method="POST">
+  <form action="https://formsubmit.co/trevor@clscre.com" method="POST">
     <input type="hidden" name="_subject" id="subjectField" value="Lender Profile Update">
     <input type="hidden" name="_next" value="https://clscre.com/thank-you.html?form=lender-profile">
-    <input type="hidden" name="_cc" value="andi@clscre.com,lou@clscre.com">
+    <input type="hidden" name="_cc" value="andrea@clscre.com">
     <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="Lender Name" id="lenderNameField" value="">
     <input type="hidden" name="Salesforce Loan Program Id" id="lenderIdField" value="">
     <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+    <fieldset>
+      <legend>Who you are</legend>
+      <div>
+        <label class="field-label" for="lenderNameField">Lender / firm name <span style="color:#b00">*</span></label>
+        <input type="text" id="lenderNameField" name="Lender Name" required placeholder="as it should read in our system">
+        <p class="hint">If you run more than one desk or program, add it here too, for example bridge vs balance sheet.</p>
+      </div>
+      <div class="grid2" style="margin-top:14px">
+        <div>
+          <label class="field-label" for="contactName">Your name <span style="color:#b00">*</span></label>
+          <input type="text" id="contactName" name="Your Name" required>
+        </div>
+        <div>
+          <label class="field-label" for="contactEmail">Your email <span style="color:#b00">*</span></label>
+          <input type="email" id="contactEmail" name="Your Email" required>
+        </div>
+      </div>
+      <div style="margin-top:14px">
+        <label class="field-label" for="contactPhone">Your phone</label>
+        <input type="text" id="contactPhone" name="Your Phone">
+      </div>
+    </fieldset>
 
     <fieldset>
       <legend>Loan size</legend>
@@ -152,12 +174,14 @@
   var name = params.get('name') || '';
   var id = params.get('id') || '';
   if (name) {
-    document.getElementById('lenderNameField').value = name;
+    var nf = document.getElementById('lenderNameField');
+    if (nf && !nf.value) { nf.value = name; }
     document.getElementById('subjectField').value = 'Lender Profile Update: ' + name;
     document.getElementById('pageTitle').textContent = 'Update your lender profile, ' + name;
   }
   if (id) {
-    document.getElementById('lenderIdField').value = id;
+    var idf = document.getElementById('lenderIdField');
+    if (idf) { idf.value = id; }
   }
 })();
 </script>
