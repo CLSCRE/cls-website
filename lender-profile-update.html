@@ -68,6 +68,29 @@
     </fieldset>
 
     <fieldset>
+      <legend>What kind of lender you are</legend>
+      <div class="check-grid">
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="Bank"> Bank</label>
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="Credit Company"> Credit Company</label>
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="Life Company"> Life Company</label>
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="Debt Fund"> Debt Fund</label>
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="CMBS"> CMBS</label>
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="Equity"> Equity</label>
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="Agency"> Agency</label>
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="CDC"> CDC</label>
+        <label class="check-item"><input type="checkbox" name="Lender Type" value="Private/Hard Money"> Private/Hard Money</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Capital you provide</legend>
+      <div class="check-grid">
+        <label class="check-item"><input type="checkbox" name="Capital Type" value="Senior Debt"> Senior Debt</label>
+        <label class="check-item"><input type="checkbox" name="Capital Type" value="Equity/Mezzanine"> Equity/Mezzanine</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
       <legend>Loan size</legend>
       <div class="grid2">
         <div>
@@ -80,6 +103,22 @@
         </div>
       </div>
       <p class="hint">If you have a preferred sweet spot separate from your hard floor and ceiling, mention it in the comments below.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Equity or mezzanine size</legend>
+      <div class="check-grid" style="grid-template-columns:1fr 1fr 1fr">
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="0 - 5"> 0 - 5</label>
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="6 - 10"> 6 - 10</label>
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="11 - 15"> 11 - 15</label>
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="16 - 20"> 16 - 20</label>
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="21-30"> 21-30</label>
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="31-50"> 31-50</label>
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="51-75"> 51-75</label>
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="76-100"> 76-100</label>
+        <label class="check-item"><input type="checkbox" name="Equity Investment Size" value="100+"> 100+</label>
+      </div>
+      <p class="hint">In millions. Only if you provide equity or mezzanine.</p>
     </fieldset>
 
     <fieldset>
@@ -137,10 +176,21 @@
       <label class="field-label" for="states">States you lend in</label>
       <input type="text" id="states" name="States" placeholder="e.g. CA, NV, AZ, or Nationwide">
       <p class="hint">Two letter state codes, comma separated, or just say "Nationwide" if that applies.</p>
+      <div style="margin-top:14px">
+        <label class="field-label" for="metros">Target metros</label>
+        <input type="text" id="metros" name="Metro Area" placeholder="e.g. Los Angeles, Phoenix, DFW">
+        <p class="hint">Only if you focus on specific metros rather than whole states.</p>
+      </div>
     </fieldset>
 
     <fieldset>
       <legend>Structure</legend>
+      <div style="margin-bottom:14px">
+        <label class="field-label">Do you do ground up construction?</label>
+        <label><input type="radio" name="Ground Up Construction" value="Yes"> Yes</label>
+        &nbsp;&nbsp;
+        <label><input type="radio" name="Ground Up Construction" value="No"> No</label>
+      </div>
       <label class="field-label">Recourse required?</label>
       <div class="radio-row" style="margin-bottom:14px">
         <label><input type="radio" name="Recourse Required" value="Yes"> Yes</label>
@@ -154,6 +204,52 @@
         <label><input type="radio" name="Prepayment Penalty" value="Yield Maintenance"> Yield maintenance</label>
         <label><input type="radio" name="Prepayment Penalty" value="Defeasance"> Defeasance</label>
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Special situations you will consider</legend>
+      <div class="check-grid">
+        <label class="check-item"><input type="checkbox" name="Special Situations" value="Agriculture"> Agriculture</label>
+        <label class="check-item"><input type="checkbox" name="Special Situations" value="Bond Financing"> Bond Financing</label>
+        <label class="check-item"><input type="checkbox" name="Special Situations" value="Cannabis"> Cannabis</label>
+        <label class="check-item"><input type="checkbox" name="Special Situations" value="CTL"> CTL</label>
+        <label class="check-item"><input type="checkbox" name="Special Situations" value="Golf"> Golf</label>
+        <label class="check-item"><input type="checkbox" name="Special Situations" value="Historic Tax Credits"> Historic Tax Credits</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Leverage and pricing</legend>
+      <div class="grid2">
+        <div>
+          <label class="field-label" for="ltv">Maximum LTV</label>
+          <input type="text" id="ltv" name="Max LTV" placeholder="e.g. 70%">
+        </div>
+        <div>
+          <label class="field-label" for="ltc">Maximum LTC</label>
+          <input type="text" id="ltc" name="Max LTC" placeholder="e.g. 80%">
+        </div>
+      </div>
+      <div class="grid2" style="margin-top:14px">
+        <div>
+          <label class="field-label" for="dscr">Minimum DSCR</label>
+          <input type="text" id="dscr" name="Min DSCR" placeholder="e.g. 1.25x">
+        </div>
+        <div>
+          <label class="field-label" for="fee">Origination fee</label>
+          <input type="text" id="fee" name="Origination Fee" placeholder="e.g. 1%">
+        </div>
+      </div>
+      <div style="margin-top:14px">
+        <label class="field-label" for="rate">Indicative rate or spread today</label>
+        <input type="text" id="rate" name="Indicative Rate" placeholder="e.g. 6.75% fixed, or SOFR plus 275">
+        <p class="hint">Ranges are fine. We never share your pricing with another lender.</p>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>What we get wrong</legend>
+      <textarea id="wrong" name="What We Get Wrong" placeholder="Deals we send that you never want to see, and the deal you would take tomorrow"></textarea>
     </fieldset>
 
     <fieldset>
