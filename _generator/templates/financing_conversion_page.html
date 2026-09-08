@@ -36,7 +36,19 @@
         <span aria-hidden="true">·</span>
         <span>Updated <time datetime="{{ loan.updated_iso|default('2026-08-01') }}">{{ loan.updated|default('August 2026') }}</time></span>
       </div>
+      {% if loan.slug == 'life-company-loans' %}
+      <div class="pf-answer" role="doc-abstract" style="background:var(--pf-paper,#f8f7f4);border:1px solid var(--gray-200,#d9dde3);border-radius:12px;padding:20px 22px;margin:14px 0 4px">
+        <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pf-green,#2e7d5b);font-weight:700;margin-bottom:10px">The short answer</div>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:var(--pf-navy,#12263f)">{{ loan.quick_answer or loan.description }}</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          {% for kf_label, kf_value in [('Rates', loan.key_features.rates), ('Fixed term', loan.key_features.term), ('Leverage', loan.key_features.ltv), ('Amortization', loan.key_features.amortization), ('Recourse', loan.key_features.recourse), ('Loan size', loan.key_features.loan_amount)] %}
+          <span style="background:#fff;border:1px solid var(--gray-200,#d9dde3);border-radius:8px;padding:7px 12px;font-size:12.5px"><span style="color:var(--gray-500,#5b6770);font-weight:600">{{ kf_label }}:</span> <strong style="color:var(--pf-navy,#12263f)">{{ kf_value }}</strong></span>
+          {% endfor %}
+        </div>
+      </div>
+      {% else %}
       <div class="page-tldr pf-lead" role="doc-abstract" style="border-left:3px solid var(--pf-green);padding-left:18px"><strong style="color:var(--pf-navy)">Quick answer:</strong> {{ loan.description }}</div>
+      {% endif %}
       <div class="pf-actions">
         <a class="pf-btn" href="{{ depth }}apply.html?{{ loan.apply_query }}">Discuss your transaction &rarr;</a>
         <a class="pf-btn pf-btn-link" href="#lender-sources">Review capital sources</a>
@@ -123,6 +135,65 @@
     </div>
   </div>
 </section>
+
+{% if loan.slug == 'life-company-loans' %}
+<section class="pf-section pf-paper" id="life-co-depth">
+  <div class="pf-wrap">
+    <div class="pf-kicker">Why life companies win</div>
+    <h2>Who life company lenders are &mdash; and why their pricing beats the market.</h2>
+    <div class="pf-split" style="margin-top:18px">
+      <div>
+        <p class="pf-intro">Life insurance companies lend from their <strong>general account</strong> &mdash; the pooled premium reserve backing their policyholder obligations. That funding base is long-duration, stable, and does not mark to market, which is why life companies can commit to <strong>fixed rates for 10, 20, even 25 years</strong> when banks reprice every 3 to 5 and CMBS carries refinancing and defeasance risk at the balloon.</p>
+        <p class="pf-intro">The trade-off is discipline. Life companies underwrite to <strong>hold the loan to maturity</strong>, not to sell it, so they concentrate on institutional-quality assets, proven sponsorship, and conservative leverage &mdash; typically 55&ndash;65% LTV and 1.25x+ DSCR. When a deal fits that box, the pricing is consistently the tightest available in the private market.</p>
+        <p class="pf-intro"><strong>What we place with them:</strong> stabilized multifamily, Class A industrial and logistics, anchored retail, net lease with credit tenancy, and medical or creative office with durable income. Loan sizes from $5M, with the most competitive execution at $10M+.</p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;margin-bottom:12px">How we source life company capital</h3>
+        <div class="pf-table-wrap" tabindex="0" role="region" aria-label="Life company capital source comparison">
+          <table class="pf-table">
+            <thead><tr><th>Capital source</th><th>Typical spread</th><th>Where it may fit</th></tr></thead>
+            <tbody>
+              <tr><td>Top-tier national life companies</td><td>Tightest &mdash; best assets only</td><td>$15M+ institutional assets in primary markets</td></tr>
+              <tr><td>Mutual life companies</td><td>Very competitive</td><td>Long-term hold sponsors prioritizing rate certainty</td></tr>
+              <tr><td>Mid-sized life companies</td><td>Competitive, faster close</td><td>$5&ndash;20M deals, secondary markets, special-use assets</td></tr>
+              <tr><td>Correspondent life company programs</td><td>Competitive at smaller scale</td><td>Smaller loan sizes where direct desks don't quote</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pf-note" style="margin-top:12px">The desk that quotes tightest on a Class A Los Angeles industrial portfolio may not quote at all on a special-use creative office asset &mdash; appetite is deal-by-deal. We run the transaction across the desks currently competing for the asset type, then compare the full execution: rate, proceeds, recourse carve-outs, reserves, prepayment structure, and closing certainty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pf-section" id="life-co-underwriting">
+  <div class="pf-wrap pf-split">
+    <div>
+      <div class="pf-kicker">Underwriting</div>
+      <h2>What gets a life company loan approved.</h2>
+      <p class="pf-intro">Life companies reward boring, durable income. The criteria that matter most:</p>
+      <div class="pf-fit-list">
+        <div class="pf-fit-row"><span class="pf-fit-number">01</span><h3>Stabilized, documented NOI</h3></div>
+        <div class="pf-fit-row"><span class="pf-fit-number">02</span><h3>Institutional-quality asset in a proven market</h3></div>
+        <div class="pf-fit-row"><span class="pf-fit-number">03</span><h3>Conservative leverage &mdash; 55&ndash;65% LTV, 1.25x+ DSCR</h3></div>
+        <div class="pf-fit-row"><span class="pf-fit-number">04</span><h3>Net worth and liquidity of the sponsor group</h3></div>
+        <div class="pf-fit-row"><span class="pf-fit-number">05</span><h3>Clean leverage story and marketable lease rollover</h3></div>
+      </div>
+    </div>
+    <div>
+      <div class="pf-kicker">Structures we negotiate</div>
+      <h2>Where the real value hides.</h2>
+      <p class="pf-intro">Beyond the headline rate, life company term sheets differ materially on:</p>
+      <ul class="pf-intro" style="padding-left:18px;line-height:1.9">
+        <li><strong>Prepayment:</strong> lockout + defeasance vs. yield maintenance vs. declining penalty &mdash; we model the hold-period economics, not just the coupon</li>
+        <li><strong>Recourse carve-outs:</strong> non-recourse is standard, but the carve-out definitions (and guaranty scope) vary desk to desk</li>
+        <li><strong>Fixed-rate periods:</strong> 3+3, 5+3, and 5+2 reset structures vs. full-term fixed &mdash; the reset spread is negotiable</li>
+        <li><strong>Amortization:</strong> 25- and 30-year schedules materially beat bank 20- or 25-year balloons on cash flow</li>
+        <li><strong>Proceeds:</strong> some desks stretch leverage for strong sponsors; we know which ones are stretching today</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endif %}
 
 {% if transactions %}
 <section class="pf-section" id="track-record">
