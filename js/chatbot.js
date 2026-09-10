@@ -728,13 +728,13 @@
     }
 
     // ── Run on DOM ready ─────────────────────────────────────────────────
-    function ready() {
+        function ready() {
       injectMobileBar();
       trackDirtyForms();
       prefillFromParams();
-      guardPageSpecificExitIntent();
-      enhancePageSpecificDialog();
-      setupExitIntent();
+      // Exit-intent popups REMOVED 2026-09-10 per Trevor (198 shown / 8 captured).
+      // guardPageSpecificExitIntent / enhancePageSpecificDialog / setupExitIntent no longer called;
+      // all three self-guard when #exitOverlay is absent, so leaving the dead code harms nothing.
     }
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', ready);

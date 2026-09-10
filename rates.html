@@ -373,35 +373,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup -->
-<div class="exit-overlay" id="exitOverlay">
-  <div class="exit-popup">
-    <button class="exit-close" id="exitClose">&times;</button>
-    <div class="exit-icon">&#128202;</div>
-    <h3 class="exit-title">Get a Rate Quote for Your Deal</h3>
-    <p class="exit-desc">We'll match your deal to the best program from 1,000+ lenders and send actual rate quotes.</p>
-    <form class="exit-form" id="exitForm">
-      <input type="hidden" name="_subject" value="Rate Inquiry, CLS CRE Rates Page">
-      <input type="hidden" name="_next" value="https://clscre.com/thank-you.html?form=exit">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="_cls_token" id="exitToken" value="">
-      <input type="hidden" name="Form Loaded At" id="exitTimestamp" value="">
-      <input type="hidden" name="Source Page" id="exitSourcePage" value="">
-      <label for="exitEmail" class="sr-only">Email address</label>
-      <input type="email" name="Email" id="exitEmail" placeholder="your@email.com" required autocomplete="email" style="width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:8px;outline:none">
-      <label for="exitName" class="sr-only">Your name</label>
-      <input type="text" name="Name" id="exitName" placeholder="Your name" autocomplete="name" style="width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:8px;outline:none">
-      <button type="submit" class="exit-btn" style="width:100%;cursor:pointer">Get My Rate Quote &rarr;</button>
-    </form>
-    <div class="exit-success" id="exitSuccess" style="display:none;text-align:center;padding:20px 0">
-      <div style="font-size:48px;margin-bottom:8px;color:var(--green)">&#10003;</div>
-      <h3 style="color:var(--green);margin:0 0 8px">Thank You!</h3>
-      <p style="color:var(--gray-500);margin:0">We'll be in touch within 24 hours.</p>
-    </div>
-    <div class="exit-phone">Or call us: <a href="tel:+13107080690">310.708.0690</a></div>
-  </div>
+<!-- Exit intent popup removed 2026-09-10 -->
 </div>
 
 <script>
@@ -425,17 +397,7 @@ document.querySelectorAll('.nav-dropdown').forEach(dd => {
   let shown = false;
   window.addEventListener('scroll', function(){ if(window.scrollY>600&&!shown){bar.classList.add('visible');shown=true;} });
 })();
-(function(){
-  const overlay = document.getElementById('exitOverlay');
-  if(!overlay) return;
-  var sp = document.getElementById('exitSourcePage'); if(sp) sp.value = location.href;
-  let fired = false;
-  function show(){if(fired||sessionStorage.getItem('exitShown'))return;fired=true;sessionStorage.setItem('exitShown','1');overlay.classList.add('visible');}
-  document.addEventListener('mouseout',function(e){if(e.clientY<5&&e.relatedTarget===null)show();});
-  document.getElementById('exitClose').addEventListener('click',()=>overlay.classList.remove('visible'));
-  overlay.addEventListener('click',e=>{if(e.target===overlay)overlay.classList.remove('visible');});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')overlay.classList.remove('visible');});
-})();
+// Exit intent popup removed 2026-09-10
 </script>
 
 <script src="./tools/analytics.js?v=04408c6dad"></script>

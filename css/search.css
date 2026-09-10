@@ -1,0 +1,18 @@
+/* clscre.com site search styles */
+.cls-search{position:relative}
+.cls-search-box{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.96);border:1.5px solid var(--gray-200,#d9dde3);border-radius:10px;padding:8px 12px;transition:border-color .2s,box-shadow .2s}
+.cls-search-box:focus-within{border-color:var(--gold,#b08d57);box-shadow:0 0 0 3px rgba(176,141,87,.15)}
+.cls-search-box svg{flex:none;width:16px;height:16px;stroke:var(--gray-400,#9aa2ab)}
+.cls-search-input{border:none;outline:none;background:transparent;font-family:inherit;font-size:13.5px;color:var(--navy,#12263f);width:100%}
+.cls-search-input::placeholder{color:var(--gray-400,#9aa2ab)}
+.cls-search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--gray-200,#d9dde3);border-radius:10px;box-shadow:0 12px 40px rgba(18,38,63,.14);z-index:9999;max-height:380px;overflow-y:auto;display:none}
+.cls-search-results-list{list-style:none;margin:0;padding:6px}
+.cls-search-item{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 12px;border-radius:8px;text-decoration:none;color:var(--navy,#12263f);font-size:13.5px;line-height:1.4}
+.cls-search-item:hover{background:var(--gray-100,#f4f6f8)}
+.cls-search-item-title{font-weight:600}
+.cls-search-item-section{flex:none;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-400,#9aa2ab)}
+.cls-search-empty{padding:12px;font-size:13px;color:var(--gray-400,#9aa2ab)}
+/* hero variant: on dark background */
+.cls-search--hero .cls-search-box{background:rgba(255,255,255,.98);border:none;box-shadow:0 8px 32px rgba(0,0,0,.18);padding:12px 16px;border-radius:12px}
+.cls-search--hero .cls-search-input{font-size:15px}
+.cls-search--hero .cls-search-results{left:-8px;right:-8px}

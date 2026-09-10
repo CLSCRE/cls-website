@@ -380,45 +380,7 @@
   </div>
 </div>
 
-<!-- Exit Intent Popup, page-specific lead magnet offers -->
-<div class="exit-overlay" id="exitOverlay">
-  <div class="exit-popup">
-    <button class="exit-close" id="exitClose">&times;</button>
-    <div class="exit-icon" id="exitIcon">&#128200;</div>
-    <h3 class="exit-title" id="exitTitle">Before You Go&hellip;</h3>
-    <p class="exit-desc" id="exitDesc">Get matched with the right lender from our network of 1,000+ capital sources.</p>
-    <form class="exit-form" id="exitForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="Exit Intent Lead, CLS CRE Website">
-      <input type="hidden" name="_next" value="https://clscre.com/thank-you.html?form=exit">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your interest! A CLS CRE advisor will be in touch within 24 hours. For urgent inquiries, call 310.708.0690. - Commercial Lending Solutions | clscre.com">
-      <!-- Bot protection: honeypot (hidden from humans) -->
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-      <!-- Bot protection: hidden field bots love to fill -->
-      <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="website_url" tabindex="-1" autocomplete="off"></div>
-      <!-- Bot protection: JS token (bots don't execute JS) -->
-      <input type="hidden" name="_cls_token" id="exitToken" value="">
-      <!-- Bot protection: timestamp (reject < 3 second submissions) -->
-      <input type="hidden" name="Form Loaded At" id="exitTimestamp" value="">
-      <input type="hidden" name="Source Page" id="exitSourcePage" value="">
-      <input type="hidden" name="Page Type" id="exitPageType" value="">
-      <label for="exitEmail" class="sr-only">Email address</label>
-      <input type="email" name="Email" id="exitEmail" placeholder="your@email.com" required autocomplete="email" aria-required="true" style="width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:8px;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--gray-200)'">
-      <label for="exitName" class="sr-only">Your name</label>
-      <input type="text" name="Name" id="exitName" placeholder="Your name" autocomplete="name" style="width:100%;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:15px;font-family:var(--font-body);margin-bottom:8px;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--gray-200)'">
-      <button type="submit" class="exit-btn" id="exitBtn" style="width:100%;cursor:pointer">Get My Free Quote &rarr;</button>
-    </form>
-    <div class="exit-success" id="exitSuccess" style="display:none;text-align:center;padding:20px 0">
-      <div style="font-size:48px;margin-bottom:8px;color:var(--green)">&#10003;</div>
-      <h3 style="color:var(--green);margin:0 0 8px">Thank You!</h3>
-      <p style="color:var(--gray-500);margin:0">We'll be in touch within 24 hours.</p>
-    </div>
-    <div class="exit-phone">Call: <a href="tel:+13107080690">310.708.0690</a></div>
-    <p style="font-size:11px;color:var(--gray-500);margin:8px 0 0;text-align:center">No spam. Unsubscribe anytime.</p>
-  </div>
-</div>
-
+<!-- Exit intent popup removed 2026-09-10 -->
 <script>
 // Sticky nav
 const nav = document.getElementById('nav');
@@ -468,57 +430,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
   });
 })();
-// Exit intent popup, page-specific offers, fires once per session
-(function(){
-  const overlay = document.getElementById('exitOverlay');
-  if (!overlay || location.pathname.includes('apply') || location.pathname.includes('thank-you')) return;
-  // Page-specific offers
-  var path = location.pathname;
-  var offer = {icon:'&#128200;', title:'Free Quote in 24 Hours', desc:'Get rate quotes from 1,000+ commercial lenders, no obligation.', btn:'Get My Free Quote'};
-  if (path.includes('/financing/')) {
-    var loanName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' in ')[0] : 'Loan';
-    offer = {icon:'&#128176;', title:'Free Rate Sheet: '+loanName, desc:'Current rates from 1,000+ lenders for your specific deal. Delivered to your inbox.', btn:'Get My Rate Sheet'};
-  } else if (path.includes('/property/')) {
-    var propName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' Financing')[0] : 'Property';
-    offer = {icon:'&#128203;', title:'Free Guide: '+propName+' Financing', desc:'Checklist of requirements, typical terms, and lender options for your property type.', btn:'Get My Free Guide'};
-  } else if (path.includes('/tools/')) {
-    offer = {icon:'&#128202;', title:'Get Your Personalized Analysis', desc:'We\'ll review your numbers and send quotes from lenders that match your deal.', btn:'Get My Analysis'};
-  } else if (path.includes('/blog/')) {
-    offer = {icon:'&#128232;', title:'Free Weekly Rate Alert', desc:'Stay ahead of commercial mortgage rate changes. One email per week, unsubscribe anytime.', btn:'Subscribe Free'};
-  } else if (path.includes('/markets/')) {
-    var cityName = document.querySelector('h1') ? document.querySelector('h1').textContent.split(' Commercial')[0] : 'Local';
-    offer = {icon:'&#127961;', title:'Free Market Report: '+cityName, desc:'Current cap rates, deal volume, and financing trends for your target market.', btn:'Get My Report'};
-  }
-  document.getElementById('exitIcon').innerHTML = offer.icon;
-  document.getElementById('exitTitle').textContent = offer.title;
-  document.getElementById('exitDesc').textContent = offer.desc;
-  document.getElementById('exitBtn').textContent = offer.btn + ' \u2192';
-  let fired = false;
-  function showPopup() {
-    if (fired || sessionStorage.getItem('exitShown')) return;
-    fired = true; sessionStorage.setItem('exitShown', '1');
-    overlay.classList.add('visible');
-    if(typeof gtag==='function') gtag('event', 'exit_intent_shown', {page_type: path.split('/')[1] || 'home'});
-  }
-  document.addEventListener('mouseout', function(e) { if (e.clientY < 5 && e.relatedTarget === null) showPopup(); });
-  // Mobile: detect rapid scroll up
-  var lastY = 0, scrollUp = 0;
-  window.addEventListener('scroll', function() {
-    if (window.scrollY < lastY) scrollUp++; else scrollUp = 0;
-    lastY = window.scrollY;
-    if (scrollUp > 15 && window.scrollY > 300) showPopup();
-  });
-  document.getElementById('exitClose').addEventListener('click', function() { overlay.classList.remove('visible'); });
-  overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('visible'); });
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') overlay.classList.remove('visible'); });
-})();
-// --- Exit form metadata setup (antispam.js handles all validation) ---
-(function(){
-  var sp = document.getElementById('exitSourcePage');
-  if(sp) sp.value = location.href;
-  var pt = document.getElementById('exitPageType');
-  if(pt) pt.value = location.pathname.split('/')[1] || 'home';
-})();
+// Exit intent popup removed 2026-09-10
 </script>
 <script src="../js/tracking.js?v=3d3cf8908a" defer></script>
 <script src="../js/antispam.js?v=78775f4c38" defer></script>
