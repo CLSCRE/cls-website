@@ -1,0 +1,124 @@
+{
+  "_comment": "Named life company capital sources. All parameters verified from lender websites 2026-09-07/10. Spreads shown as 'spread over Treasury' not absolute rates (deal-by-deal). access: 'direct' = open-market submission accepted; 'correspondent' = placed via CLS correspondent relationships.",
+  "access_statement": "Commercial Lending Solutions places loans with life companies through two channels: direct open-market desks that accept broker submissions, and correspondent programs where our mortgage banking relationships give access to program pricing. In practice this means access to every major life company program below, matched deal-by-deal to whichever desk is actively competing.",
+  "lenders": [
+    {
+      "name": "New York Life Real Estate Investors",
+      "short": "New York Life",
+      "channel": "Direct + correspondent",
+      "loan_size": "$25M–$300M+ (portfolios higher)",
+      "fixed_term": "3–30 years; floating ≤7 years",
+      "leverage": "Up to 80% LTV, 1.30x+ DSCR",
+      "programs": "Permanent fixed; floating-rate; bridge/CTP; subordinated debt from $20M",
+      "spread": "Tightest in market for institutional assets",
+      "standout": "#1 US insurance mortgage originator (CMA 2025); $73B AUM",
+      "best_fit": "$25M+ institutional multifamily, industrial, office in primary markets"
+    },
+    {
+      "name": "Northwestern Mutual Real Estate",
+      "short": "Northwestern Mutual",
+      "channel": "Direct",
+      "loan_size": "$30M–$500M",
+      "fixed_term": "5–25 years; fixed over UST or floating over SOFR",
+      "leverage": "Up to 75% LTV, 1.25x+ DSCR",
+      "programs": "Permanent fixed/floating; JV equity available; in-house appraisal (free to borrower)",
+      "spread": "Competitive; structured amortization a strength",
+      "standout": "$50B+ mortgage portfolio; typically non-recourse",
+      "best_fit": "$30M+ long-term holds wanting maximum rate certainty"
+    },
+    {
+      "name": "MetLife Investment Management",
+      "short": "MetLife",
+      "channel": "Direct",
+      "loan_size": "$10M–$200M+ per property",
+      "fixed_term": "3–30 years; fixed and floating",
+      "leverage": "~65% LTV typical, higher select",
+      "programs": "Permanent; bridge; construction; mezzanine; interest-only options",
+      "spread": "Very competitive on multifamily and industrial",
+      "standout": "Sectors: multi, industrial, retail, office (selective), hotel, student housing, MH, BTR",
+      "best_fit": "$10M–$100M core plus with flexible structure needs"
+    },
+    {
+      "name": "Manulife Real Estate Finance (John Hancock)",
+      "short": "Manulife",
+      "channel": "Direct",
+      "loan_size": "$10M–$300M+ (US)",
+      "fixed_term": "Fixed-rate core; forward commitments",
+      "leverage": "Not published; deal-by-deal",
+      "programs": "Permanent; mezzanine; B-notes; participations; forward commitments",
+      "spread": "Competitive",
+      "standout": "38 states; office, multi, industrial, retail, medical office, MHC, self-storage, parking",
+      "best_fit": "$10M+ sponsors wanting one desk for debt plus mezz"
+    },
+    {
+      "name": "PGIM Real Estate (Prudential)",
+      "short": "PGIM",
+      "channel": "Direct",
+      "loan_size": "Not published (top-5 national originator)",
+      "fixed_term": "Core and core-plus; structured debt",
+      "leverage": "Deal-by-deal",
+      "programs": "Core debt; core-plus; structured; agency overlays",
+      "spread": "Competitive for institutional scale",
+      "standout": "California DFPI-licensed (60DBO-105210); all sectors",
+      "best_fit": "Institutional-scale portfolios and structured executions"
+    },
+    {
+      "name": "Principal Real Estate Investors",
+      "short": "Principal",
+      "channel": "Direct + correspondent",
+      "loan_size": "$10M–$100M+ per transaction",
+      "fixed_term": "Under 3 to 30 years",
+      "leverage": "Deal-by-deal",
+      "programs": "Commercial mortgage loans; construction-permanent program",
+      "spread": "Competitive",
+      "standout": "Active in mid-market CML; construction-to-perm single close",
+      "best_fit": "$10M–$50M deals wanting construction-perm in one close"
+    },
+    {
+      "name": "Guardian Life — Real Estate Debt",
+      "short": "Guardian",
+      "channel": "Direct",
+      "loan_size": "Not published",
+      "fixed_term": "Fixed-rate core",
+      "leverage": "Deal-by-deal",
+      "programs": "Real estate debt investments; core fixed",
+      "spread": "Competitive",
+      "standout": "Active origination team in the Western US",
+      "best_fit": "Western US stabilized assets, relationship-driven execution"
+    },
+    {
+      "name": "Symetra Life Insurance Company",
+      "short": "Symetra",
+      "channel": "Active CLS relationship — proven closings",
+      "loan_size": "$1M–$20M+ (program flexes for strong assets)",
+      "fixed_term": "5–10 year structures; 3+3, 5+3, 5+2 resets",
+      "leverage": "Deal-by-deal",
+      "programs": "Fixed-rate permanent; special-use assets; single-tenant strength",
+      "spread": "2.25%–2.85% over UST on our recent closings",
+      "standout": "Four CLS closings shown below — repeat execution, fast quotes",
+      "best_fit": "$5M–$20M stabilized and special-use, especially California"
+    },
+    {
+      "name": "Protective Life — Commercial Mortgages",
+      "short": "Protective",
+      "channel": "Correspondent",
+      "loan_size": "$3M–$50M per asset",
+      "fixed_term": "Fixed-rate permanent",
+      "leverage": "Up to 75% LTV",
+      "programs": "Permanent fixed-rate on stabilized income property",
+      "spread": "Competitive at this size band",
+      "standout": "Useful check-size complement between Symetra and the $25M+ desks",
+      "best_fit": "$3M–$50M stabilized multifamily and commercial"
+    }
+  ],
+  "structure_notes": [
+    "Fully amortizing schedules to 30 years — no balloon risk on the permanent loan",
+    "Interest-only periods negotiable for strong sponsorship",
+    "Forward commitments: lock today's spread for a delivery 6–18 months out",
+    "Non-recourse standard with negotiated, limited carve-outs",
+    "Prepayment flexibility structured to the business plan: yield maintenance, declining penalty, or defeasance",
+    "Future funding facilities and earn-outs on lease-up assets",
+    "Fixed-rate terms to 25–30 years — the longest private-market duration available"
+  ],
+  "sources_note": "Program parameters verified from lender-published materials, September 2026. Rates and spreads are indicative and set deal-by-deal; terms shown reflect recently executed transactions and current desk guidance."
+}

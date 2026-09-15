@@ -836,6 +836,7 @@ def main():
     # ── Load data ──────────────────────────────────────────────────────
     transactions = load_json("transactions.json")
     loan_types = load_json("loan_types.json")
+    life_company_lenders = load_json("life_company_lenders.json")
     property_types = load_json("property_types.json")
     cities = load_json("cities.json")
     faqs_data = load_json("faqs.json")
@@ -1439,6 +1440,7 @@ def main():
             faqs=loan_faqs,
             related_articles=rel_articles,
             market_links=link_gov.market_links_for_program(loan["slug"], limit=15),
+            life_lenders=life_company_lenders if loan["slug"] == "life-company-loans" else None,
         )
         out_path = WEBSITE_DIR / "financing" / f"{loan['slug']}.html"
         out_path.write_text(html, encoding="utf-8")

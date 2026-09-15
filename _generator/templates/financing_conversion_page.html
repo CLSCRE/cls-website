@@ -98,6 +98,26 @@
     <div class="pf-kicker">Lender selection</div>
     <h2>How We Source {{ loan.short_name }} Capital</h2>
     <p class="pf-intro">We do not treat the lender list as a directory. We target the desks whose current appetite fits the asset, sponsorship, market, and business plan, then compare the full execution, not only the rate.</p>
+    {% if life_lenders %}
+    <p class="pf-intro"><strong>Our access runs two channels:</strong> direct open-market desks that accept broker submissions from us, and correspondent programs where our mortgage-banking relationships carry program pricing. Between the two, we can reach every program below and match your deal to whichever desk is actively competing that week. <strong>Symetra is our proven repeat relationship</strong> &mdash; four recent closings are shown in the track record below.</p>
+    <div class="pf-table-wrap" tabindex="0" role="region" aria-label="Named life company lenders and their programs">
+      <table class="pf-table">
+        <thead><tr><th>Life company lender</th><th>Loan size</th><th>Terms &amp; leverage</th><th>Programs</th><th>Best fit</th></tr></thead>
+        <tbody>
+          {% for lender in life_lenders.lenders %}
+          <tr{% if 'Symetra' in lender.name %} style="background:#f2f8f4"{% endif %}>
+            <td><strong>{{ lender.short }}</strong><br><span style="font-size:12px;color:var(--gray-500,#5b6770)">{{ lender.channel }}</span></td>
+            <td>{{ lender.loan_size }}</td>
+            <td>{{ lender.fixed_term }}<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">{{ lender.leverage }}</span></td>
+            <td>{{ lender.programs }}</td>
+            <td>{{ lender.best_fit }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="pf-note" style="margin-top:12px">{{ life_lenders.sources_note }}</p>
+    {% else %}
     <div class="pf-table-wrap" tabindex="0" role="region" aria-label="{{ loan.name }} capital source comparison">
       <table class="pf-table">
         <thead><tr><th>Capital source</th><th>Where it may fit</th></tr></thead>
@@ -108,6 +128,7 @@
         </tbody>
       </table>
     </div>
+    {% endif %}
     {% if loan.rate_tiers %}
     <div class="pf-table-wrap" tabindex="0" role="region" aria-label="{{ loan.name }} indicative lender tiers">
       <table class="pf-table">
@@ -162,6 +183,18 @@
         </div>
         <p class="pf-note" style="margin-top:12px">The desk that quotes tightest on a Class A Los Angeles industrial portfolio may not quote at all on a special-use creative office asset &mdash; appetite is deal-by-deal. We run the transaction across the desks currently competing for the asset type, then compare the full execution: rate, proceeds, recourse carve-outs, reserves, prepayment structure, and closing certainty.</p>
       </div>
+    </div>
+    <div style="margin-top:26px">
+      <div class="pf-kicker">Program features</div>
+      <h3 style="font-size:19px;margin-bottom:12px">The structural advantages life company execution delivers.</h3>
+      {% if life_lenders %}
+      <div class="pf-market-list" style="margin-top:14px">
+        {% for note in life_lenders.structure_notes %}
+        <span class="pf-feature-chip">{{ note }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <p class="pf-intro" style="margin-top:14px">Fully amortizing 30-year schedules, negotiated interest-only periods, forward commitments that lock today's spread for future delivery, and prepayment structures built around your hold period &mdash; these are the terms banks and debt funds cannot match, and they are what we negotiate on every life company execution.</p>
     </div>
   </div>
 </section>
