@@ -51,9 +51,11 @@
       {% set kf = loan.key_features %}
       {% set leverage = kf.ltv or kf.ltc or kf.position %}
       <p class="pf-term-summary">{{ loan.short_name }} financing runs {{ kf.loan_amount }} at {{ kf.rates }}, over {{ kf.term }} terms{% if leverage %} with {{ leverage }}{% endif %}.{% if kf.recourse %} {{ kf.recourse }}.{% endif %}</p>
-      {% for key, value in loan.key_features.items() %}
-      <div class="pf-term-row"><span>{{ key|replace('_', ' ')|title }}</span><strong>{{ value }}</strong></div>
-      {% endfor %}
+      <dl class="pf-term-dl">
+        {% for key, value in loan.key_features.items() %}
+        <div class="pf-term-row"><dt>{{ key|replace('_', ' ')|title }}</dt><dd><strong>{{ value }}</strong></dd></div>
+        {% endfor %}
+      </dl>
       <p class="pf-term-note">Terms are indicative and subject to property, sponsorship, market conditions, and lender underwriting.</p>
       <a class="pf-rate-link" href="{{ depth }}financing/commercial-mortgage-rates.html">View current market rates &rarr;</a>
     </aside>

@@ -18,3 +18,4 @@
 
 .pf-lede{font-size:18.5px;line-height:1.6;color:var(--pf-navy,#12263f);max-width:62ch;margin:0 0 8px}
 @media(max-width:650px){.pf-lede{font-size:16.5px}}
+.pf-term-dl{margin:0}.pf-term-dl dt{margin:0}.pf-term-dl dd{margin:0}
