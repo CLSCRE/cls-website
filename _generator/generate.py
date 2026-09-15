@@ -1163,6 +1163,15 @@ def main():
                     "changefreq": "monthly",
                     "priority": "0.8",
                 })
+        _vlenders = _vdir / "lenders"
+        if _vlenders.exists():
+            for _vhtml in sorted(_vlenders.glob("*.html")):
+                sitemap_urls.append({
+                    "loc": f"{BASE_URL}/{_vslug}/lenders/{_vhtml.name}",
+                    "lastmod": TODAY,
+                    "changefreq": "monthly",
+                    "priority": "0.9",
+                })
 
     # Professional-referral hubs, insights/newsletter archive, and resource
     # guides — hand-built sections outside the programmatic cross-products.
