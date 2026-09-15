@@ -37,15 +37,7 @@
         <span>Updated <time datetime="{{ loan.updated_iso|default('2026-08-01') }}">{{ loan.updated|default('August 2026') }}</time></span>
       </div>
       {% if loan.slug == 'life-company-loans' %}
-      <div class="pf-answer" role="doc-abstract" style="background:var(--pf-paper,#f8f7f4);border:1px solid var(--gray-200,#d9dde3);border-radius:12px;padding:20px 22px;margin:14px 0 4px">
-        <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pf-green,#2e7d5b);font-weight:700;margin-bottom:10px">The short answer</div>
-        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:var(--pf-navy,#12263f)">{{ loan.quick_answer or loan.description }}</p>
-        <div style="display:flex;flex-wrap:wrap;gap:8px">
-          {% for kf_label, kf_value in [('Rates', loan.key_features.rates), ('Fixed term', loan.key_features.term), ('Leverage', loan.key_features.ltv), ('Amortization', loan.key_features.amortization), ('Recourse', loan.key_features.recourse), ('Loan size', loan.key_features.loan_amount)] %}
-          <span style="background:#fff;border:1px solid var(--gray-200,#d9dde3);border-radius:8px;padding:7px 12px;font-size:12.5px"><span style="color:var(--gray-500,#5b6770);font-weight:600">{{ kf_label }}:</span> <strong style="color:var(--pf-navy,#12263f)">{{ kf_value }}</strong></span>
-          {% endfor %}
-        </div>
-      </div>
+      <p class="pf-lede" role="doc-abstract">{{ loan.quick_answer or loan.description }}</p>
       {% else %}
       <div class="page-tldr pf-lead" role="doc-abstract" style="border-left:3px solid var(--pf-green);padding-left:18px"><strong style="color:var(--pf-navy)">Quick answer:</strong> {{ loan.description }}</div>
       {% endif %}
