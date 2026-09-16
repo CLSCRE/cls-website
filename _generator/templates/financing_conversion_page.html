@@ -102,7 +102,8 @@
           <tr{% if 'Symetra' in lender.name %} style="background:#f2f8f4"{% endif %}>
             <td>
                 {% if lender.lender_page %}<a href="{{ depth }}life-company/lenders/{{ lender.lender_page }}" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
-                  <span aria-hidden="true" style="flex:0 0 auto;width:38px;height:38px;border-radius:9px;background:{{ lender.brand_color }};color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 13px var(--font-body);letter-spacing:.03em">{{ lender.monogram }}</span>
+                  {% if lender.logo_file %}<img src="{{ depth }}images/lenders/{{ lender.logo_file }}" alt="{{ lender.short }} logo" width="72" height="26" loading="lazy" style="flex:0 0 auto;width:72px;height:26px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--gray-200,#d9dde3)">
+                  {% else %}<span aria-hidden="true" style="flex:0 0 auto;width:38px;height:38px;border-radius:9px;background:{{ lender.brand_color }};color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 13px var(--font-body);letter-spacing:.03em">{{ lender.monogram }}</span>{% endif %}
                   <span><strong style="color:var(--pf-navy,#12263f)">{{ lender.short }}</strong></span>
                 </a><br>{% else %}<strong>{{ lender.short }}</strong><br>{% endif %}
                 <span style="font-size:12px;color:var(--gray-500,#5b6770)">{{ lender.channel }}</span></td>

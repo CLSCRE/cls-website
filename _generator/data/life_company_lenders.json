@@ -15,7 +15,8 @@
       "best_fit": "$25M+ institutional multifamily, industrial, office in primary markets",
       "monogram": "ny",
       "brand_color": "#1b3a6b",
-      "lender_page": "new-york-life-commercial-mortgage-loans.html"
+      "lender_page": "new-york-life-commercial-mortgage-loans.html",
+      "logo_file": "nyl.png"
     },
     {
       "name": "Northwestern Mutual Real Estate",
@@ -30,7 +31,8 @@
       "best_fit": "$30M+ long-term holds wanting maximum rate certainty",
       "monogram": "nm",
       "brand_color": "#0f2b5b",
-      "lender_page": "northwestern-mutual-commercial-real-estate-loans.html"
+      "lender_page": "northwestern-mutual-commercial-real-estate-loans.html",
+      "logo_file": null
     },
     {
       "name": "MetLife Investment Management",
@@ -45,7 +47,8 @@
       "best_fit": "$10M–$100M core plus with flexible structure needs",
       "monogram": "mt",
       "brand_color": "#007681",
-      "lender_page": "metlife-commercial-mortgage-loans.html"
+      "lender_page": "metlife-commercial-mortgage-loans.html",
+      "logo_file": "metlife.png"
     },
     {
       "name": "Manulife Real Estate Finance (John Hancock)",
@@ -60,7 +63,8 @@
       "best_fit": "$10M+ sponsors wanting one desk for debt plus mezz",
       "monogram": "ma",
       "brand_color": "#7a003c",
-      "lender_page": "manulife-john-hancock-commercial-mortgage-loans.html"
+      "lender_page": "manulife-john-hancock-commercial-mortgage-loans.html",
+      "logo_file": "manulife.png"
     },
     {
       "name": "PGIM Real Estate (Prudential)",
@@ -75,7 +79,8 @@
       "best_fit": "Institutional-scale portfolios and structured executions",
       "monogram": "pj",
       "brand_color": "#e4002b",
-      "lender_page": "pgim-commercial-mortgage-loans.html"
+      "lender_page": "pgim-commercial-mortgage-loans.html",
+      "logo_file": null
     },
     {
       "name": "Principal Real Estate Investors",
@@ -90,7 +95,8 @@
       "best_fit": "$10M–$50M deals wanting construction-perm in one close",
       "monogram": "pg",
       "brand_color": "#0a4e8c",
-      "lender_page": "principal-life-commercial-mortgage-loans.html"
+      "lender_page": "principal-life-commercial-mortgage-loans.html",
+      "logo_file": "principal.png"
     },
     {
       "name": "Guardian Life — Real Estate Debt",
@@ -105,7 +111,8 @@
       "best_fit": "Western US stabilized assets, relationship-driven execution",
       "monogram": "gu",
       "brand_color": "#00539b",
-      "lender_page": "guardian-life-commercial-real-estate-loans.html"
+      "lender_page": "guardian-life-commercial-real-estate-loans.html",
+      "logo_file": "guardian.png"
     },
     {
       "name": "Symetra Life Insurance Company",
@@ -120,7 +127,8 @@
       "best_fit": "$5M–$20M stabilized and special-use, especially California",
       "monogram": "sy",
       "brand_color": "#1d5c8f",
-      "lender_page": "symetra-commercial-mortgage-loans.html"
+      "lender_page": "symetra-commercial-mortgage-loans.html",
+      "logo_file": "symetra.png"
     },
     {
       "name": "Protective Life — Commercial Mortgages",
@@ -135,7 +143,8 @@
       "best_fit": "$3M–$50M stabilized multifamily and commercial",
       "monogram": "pt",
       "brand_color": "#f0a500",
-      "lender_page": "protective-life-commercial-mortgage-loans.html"
+      "lender_page": "protective-life-commercial-mortgage-loans.html",
+      "logo_file": "protective.png"
     }
   ],
   "structure_notes": [
