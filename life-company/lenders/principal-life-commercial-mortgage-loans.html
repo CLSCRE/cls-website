@@ -58,6 +58,13 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 .cta-inner h2{font-family:var(--font-display);font-size:34px;color:#fff;margin:0 0 12px}
 .cta-inner p{color:#c5d1d8;margin:0 0 22px}
 .cta-btn{display:inline-block;background:#fff;color:var(--navy)!important;font-weight:700;padding:14px 30px;border-radius:8px;text-decoration:none}
+.pf-lender-badge{display:inline-flex;align-items:center;gap:12px;text-decoration:none;margin:0 0 14px}
+.pf-lender-badge .pf-badge-tile{width:52px;height:52px;border-radius:12px;background:BADGECOLOR;color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 18px var(--font-body);letter-spacing:.04em}
+.pf-lender-badge .pf-badge-text{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-500);font-weight:600}
+.sib-strip{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 18px}
+.sib-strip a{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gray-200);border-radius:10px;padding:8px 14px 8px 8px;text-decoration:none;font-size:13.5px;font-weight:600;color:var(--navy)}
+.sib-strip a:hover{border-color:var(--green)}
+.sib-strip .pf-badge-tile{width:26px;height:26px;border-radius:7px;background:var(--sibc,#12263f);color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 10px var(--font-body)}
 @media(max-width:650px){.cap-hero{padding:120px 0 44px}.cap-hero h1{font-size:34px}.cap-body{padding:40px 20px}.why-grid{grid-template-columns:1fr}.cap-body h2{font-size:24px}}
 </style>
 </head>
@@ -65,8 +72,11 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 <main>
   <section class="cap-hero">
     <div class="cap-hero-inner">
-      <div class="cap-hero-label">Life company lender program</div>
-      <h1>Principal Life Commercial Mortgage Loans</h1>
+      <a class="pf-lender-badge" href="../../financing/life-company-loans.html" aria-label="Back to the full life company lender table">
+        <span class="pf-badge-tile" aria-hidden="true" style="background:#0a4e8c">pg</span>
+        <span class="pf-badge-text">Life company lender program &mdash; full lender table</span>
+      </a>
+      <h1 style="margin-top:4px">Principal Life Commercial Mortgage Loans</h1>
       <div class="byline">Reviewed by <strong>Trevor Damyan</strong>, Commercial Mortgage Broker (CA DRE 02244836) &middot; Updated 2026-09-10</div>
     </div>
   </section>
@@ -90,7 +100,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
   <section class="hub-links">
     <div class="hub-links-inner">
       <h2 style="font-family:var(--font-display);font-size:26px;color:var(--navy);margin:0 0 18px">Other life company lender programs</h2>
-      <a href="symetra-commercial-mortgage-loans.html">Symetra Commercial Mortgage Loans</a><a href="metlife-commercial-mortgage-loans.html">MetLife Commercial Mortgage Loans</a><a href="northwestern-mutual-commercial-real-estate-loans.html">Northwestern Mutual Commercial Real Estate Loans</a><a href="new-york-life-commercial-mortgage-loans.html">New York Life Commercial Mortgage Loans</a><a href="manulife-john-hancock-commercial-mortgage-loans.html">Manulife (John Hancock) Commercial Mortgage Loans</a><a href="pgim-commercial-mortgage-loans.html">PGIM Commercial Mortgage Loans</a><a href="guardian-life-commercial-real-estate-loans.html">Guardian Life Commercial Real Estate Loans</a><a href="protective-life-commercial-mortgage-loans.html">Protective Life Commercial Mortgage Loans</a>
+      <div class="sib-strip"><a href="symetra-commercial-mortgage-loans.html"><span class="pf-badge-tile" style="background:#1d5c8f">sy</span>Symetra</a><a href="metlife-commercial-mortgage-loans.html"><span class="pf-badge-tile" style="background:#007681">mt</span>MetLife</a><a href="northwestern-mutual-commercial-real-estate-loans.html"><span class="pf-badge-tile" style="background:#0f2b5b">nm</span>Northwestern Mutual</a><a href="new-york-life-commercial-mortgage-loans.html"><span class="pf-badge-tile" style="background:#1b3a6b">ny</span>New York Life</a><a href="manulife-john-hancock-commercial-mortgage-loans.html"><span class="pf-badge-tile" style="background:#7a003c">ma</span>Manulife (John Hancock)</a><a href="pgim-commercial-mortgage-loans.html"><span class="pf-badge-tile" style="background:#e4002b">pj</span>PGIM</a><a href="guardian-life-commercial-real-estate-loans.html"><span class="pf-badge-tile" style="background:#00539b">gu</span>Guardian Life</a><a href="protective-life-commercial-mortgage-loans.html"><span class="pf-badge-tile" style="background:#f0a500">pt</span>Protective Life</a></div>
     </div>
   </section>
   <section class="cta">

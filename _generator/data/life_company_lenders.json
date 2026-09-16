@@ -12,7 +12,10 @@
       "programs": "Permanent fixed; floating-rate; bridge/CTP; subordinated debt from $20M",
       "spread": "Tightest in market for institutional assets",
       "standout": "#1 US insurance mortgage originator (CMA 2025); $73B AUM",
-      "best_fit": "$25M+ institutional multifamily, industrial, office in primary markets"
+      "best_fit": "$25M+ institutional multifamily, industrial, office in primary markets",
+      "monogram": "ny",
+      "brand_color": "#1b3a6b",
+      "lender_page": "new-york-life-commercial-mortgage-loans.html"
     },
     {
       "name": "Northwestern Mutual Real Estate",
@@ -24,7 +27,10 @@
       "programs": "Permanent fixed/floating; JV equity available; in-house appraisal (free to borrower)",
       "spread": "Competitive; structured amortization a strength",
       "standout": "$50B+ mortgage portfolio; typically non-recourse",
-      "best_fit": "$30M+ long-term holds wanting maximum rate certainty"
+      "best_fit": "$30M+ long-term holds wanting maximum rate certainty",
+      "monogram": "nm",
+      "brand_color": "#0f2b5b",
+      "lender_page": "northwestern-mutual-commercial-real-estate-loans.html"
     },
     {
       "name": "MetLife Investment Management",
@@ -36,7 +42,10 @@
       "programs": "Permanent; bridge; construction; mezzanine; interest-only options",
       "spread": "Very competitive on multifamily and industrial",
       "standout": "Sectors: multi, industrial, retail, office (selective), hotel, student housing, MH, BTR",
-      "best_fit": "$10M–$100M core plus with flexible structure needs"
+      "best_fit": "$10M–$100M core plus with flexible structure needs",
+      "monogram": "mt",
+      "brand_color": "#007681",
+      "lender_page": "metlife-commercial-mortgage-loans.html"
     },
     {
       "name": "Manulife Real Estate Finance (John Hancock)",
@@ -48,7 +57,10 @@
       "programs": "Permanent; mezzanine; B-notes; participations; forward commitments",
       "spread": "Competitive",
       "standout": "38 states; office, multi, industrial, retail, medical office, MHC, self-storage, parking",
-      "best_fit": "$10M+ sponsors wanting one desk for debt plus mezz"
+      "best_fit": "$10M+ sponsors wanting one desk for debt plus mezz",
+      "monogram": "ma",
+      "brand_color": "#7a003c",
+      "lender_page": "manulife-john-hancock-commercial-mortgage-loans.html"
     },
     {
       "name": "PGIM Real Estate (Prudential)",
@@ -60,7 +72,10 @@
       "programs": "Core debt; core-plus; structured; agency overlays",
       "spread": "Competitive for institutional scale",
       "standout": "California DFPI-licensed (60DBO-105210); all sectors",
-      "best_fit": "Institutional-scale portfolios and structured executions"
+      "best_fit": "Institutional-scale portfolios and structured executions",
+      "monogram": "pj",
+      "brand_color": "#e4002b",
+      "lender_page": "pgim-commercial-mortgage-loans.html"
     },
     {
       "name": "Principal Real Estate Investors",
@@ -72,7 +87,10 @@
       "programs": "Commercial mortgage loans; construction-permanent program",
       "spread": "Competitive",
       "standout": "Active in mid-market CML; construction-to-perm single close",
-      "best_fit": "$10M–$50M deals wanting construction-perm in one close"
+      "best_fit": "$10M–$50M deals wanting construction-perm in one close",
+      "monogram": "pg",
+      "brand_color": "#0a4e8c",
+      "lender_page": "principal-life-commercial-mortgage-loans.html"
     },
     {
       "name": "Guardian Life — Real Estate Debt",
@@ -84,7 +102,10 @@
       "programs": "Real estate debt investments; core fixed",
       "spread": "Competitive",
       "standout": "Active origination team in the Western US",
-      "best_fit": "Western US stabilized assets, relationship-driven execution"
+      "best_fit": "Western US stabilized assets, relationship-driven execution",
+      "monogram": "gu",
+      "brand_color": "#00539b",
+      "lender_page": "guardian-life-commercial-real-estate-loans.html"
     },
     {
       "name": "Symetra Life Insurance Company",
@@ -96,7 +117,10 @@
       "programs": "Fixed-rate permanent; special-use assets; single-tenant strength",
       "spread": "2.25%–2.85% over UST on our recent closings",
       "standout": "Four CLS closings shown below — repeat execution, fast quotes",
-      "best_fit": "$5M–$20M stabilized and special-use, especially California"
+      "best_fit": "$5M–$20M stabilized and special-use, especially California",
+      "monogram": "sy",
+      "brand_color": "#1d5c8f",
+      "lender_page": "symetra-commercial-mortgage-loans.html"
     },
     {
       "name": "Protective Life — Commercial Mortgages",
@@ -108,7 +132,10 @@
       "programs": "Permanent fixed-rate on stabilized income property",
       "spread": "Competitive at this size band",
       "standout": "Useful check-size complement between Symetra and the $25M+ desks",
-      "best_fit": "$3M–$50M stabilized multifamily and commercial"
+      "best_fit": "$3M–$50M stabilized multifamily and commercial",
+      "monogram": "pt",
+      "brand_color": "#f0a500",
+      "lender_page": "protective-life-commercial-mortgage-loans.html"
     }
   ],
   "structure_notes": [
