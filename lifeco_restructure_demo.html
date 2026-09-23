@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEMO — Life Company Loans restructure proposal (not live)</title>
+  <link rel="stylesheet" href="css/financing-hub.css">
+  <link rel="stylesheet" href="css/global.min.css">
+  <link rel="stylesheet" href="css/pages.min.css?v=2524254017">
+<style>
+  .demo-banner {position:sticky;top:0;z-index:999;background:#b3541e;color:#fff;font:600 13px/1.4 sans-serif;padding:8px 16px;text-align:center}
+  /* ---- spacing tightening: kill the 98px section rhythm + double padding ---- */
+  main .pf-section{padding:54px 0 !important}
+  main .lc-proof{padding:44px 0 40px}
+  main .lc-cta-band{padding:42px 24px}
+  main .lc-glance{padding:30px 0}
+  main .lc-guide{padding:24px 24px 20px}
+  main .lc-guide h3{margin-bottom:8px}
+  main .lc-guide p{margin-bottom:14px}
+  .pf-deal-heading{margin-bottom:20px}
+  @media(max-width:820px){main .pf-section{padding:40px 0 !important}}
+  main .pf-table td{padding:13px 16px}
+  main .pf-table th{padding-bottom:9px}
+  main .pf-card{padding:24px 26px}
+  /* view-more: proper link button */
+  .lc-more-link{display:inline-flex;align-items:center;gap:8px;font:600 15px/1 var(--font-body,sans-serif);color:var(--pf-navy,#12263f);border:1.5px solid var(--pf-navy,#12263f);border-radius:999px;padding:11px 22px;text-decoration:none;white-space:nowrap;transition:background .18s ease,color .18s ease}
+  .lc-more-link:hover{background:var(--pf-navy,#12263f);color:#fff}
+  .lc-more-link .lc-arrow{transition:transform .18s ease}
+  .lc-more-link:hover .lc-arrow{transform:translateX(4px)}
+  /* hero override: no split bg, no circle */
+  .lc-hero{background:#fff;border-bottom:1px solid var(--gray-200,#d9dde3)}
+  .lc-hero:after{display:none}
+  .lc-hero .pf-lede{max-width:none;font-size:19px;line-height:1.55;margin-top:20px}
+  /* proof-first band */
+  .lc-proof {background:#f7f8fa;padding:64px 0 56px}
+  .lc-proof-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:1200px;margin:0 auto;padding:0 24px}
+  .lc-cta-band {background:#12263f;color:#fff;text-align:center;padding:52px 24px}
+  .lc-cta-band h2 {font-family:Georgia,serif;font-size:30px;margin:0 0 10px}
+  .lc-cta-band p {max-width:640px;margin:0 auto 22px;color:#c9d2de;font-size:16px}
+  .lc-cta-btn {display:inline-block;background:#2e7d32;color:#fff;font-weight:700;padding:14px 34px;border-radius:8px;text-decoration:none}
+  .lc-glance{max-width:1180px;margin:0 auto;padding:30px 0}
+  .lc-compact {font-size:15px}
+
+  .lc-guide-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:1180px}
+  @media(max-width:820px){.lc-guide-grid{grid-template-columns:1fr}}
+  .lc-guide{display:flex;flex-direction:column;background:#fff;border:1px solid var(--gray-200,#d9dde3);border-radius:12px;padding:28px 28px 22px;text-decoration:none;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}
+  .lc-guide:hover{border-color:var(--green,#2e7d32);box-shadow:0 8px 28px rgba(18,38,63,.09);transform:translateY(-2px)}
+  .lc-guide-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .lc-guide-num{font:700 13px/1 var(--font-body,sans-serif);color:var(--gray-400,#98a2ad);letter-spacing:1px}
+  .lc-guide-tag{font:600 11px/1 var(--font-body,sans-serif);letter-spacing:1.8px;text-transform:uppercase;color:var(--green,#2e7d32);background:rgba(46,125,50,.08);padding:5px 10px;border-radius:20px}
+  .lc-guide h3{font-family:var(--font-display,Georgia,serif);font-size:21px;line-height:1.3;color:var(--pf-navy,#12263f);margin:0 0 10px}
+  .lc-guide p{font-size:15px;line-height:1.6;color:#3c4a5c;margin:0 0 18px;flex:1}
+  .lc-guide-link{font:600 14px/1 var(--font-body,sans-serif);color:var(--green,#2e7d32)}
+  .lc-guide .lc-arrow{display:inline-block;transition:transform .18s ease}
+  .lc-guide:hover .lc-arrow{transform:translateX(4px)}
+
+</style>
+</head>
+<body>
+<div class="demo-banner">DEMO MOCKUP — not live. Proposal of the restructured life-company page.</div>
+<nav class="nav" id="nav" aria-label="Main navigation">
+<div class="nav-inner">
+  <a href="../index.html" class="nav-logo"><img src="images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="120" height="120"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
+  <div class="nav-links" id="navLinks">
+    <div class="nav-dropdown">
+      <a href="../index.html#programs" aria-haspopup="true" aria-expanded="false" id="ddFinancing">Financing</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddFinancing">
+        
+        <a href="../financing/permanent-loans.html">Permanent Loans</a>
+        
+        <a href="../financing/commercial-mortgage-loans.html">Commercial Mortgage Loans</a>
+        
+        <a href="../financing/multifamily-loans.html">Multifamily Loans</a>
+        
+        <a href="../financing/construction-loans.html">Construction Loans</a>
+        
+        <a href="../financing/bridge-loans.html">Bridge Loans</a>
+        
+        <a href="../financing/sba-loans.html">SBA Loans</a>
+        
+        <a href="../financing/mezzanine.html">Mezzanine & Preferred Equity</a>
+        
+        <a href="../financing/specialty.html">Specialty Financing</a>
+        
+        <a href="../financing/agency-loans.html">Agency Loans</a>
+        
+        <a href="../financing/hud-fha-loans.html">HUD/FHA Multifamily Loans</a>
+        
+        <a href="../financing/cmbs-loans.html">CMBS Loans</a>
+        
+        <a href="../financing/net-lease-financing.html">Net Lease Financing</a>
+        
+        <a href="../financing/life-company-loans.html">Life Company Loans</a>
+        
+        <a href="../financing/dscr-loans.html">DSCR Loans</a>
+        
+        <a href="../financing/hard-money-loans.html">Hard Money Loans</a>
+        
+        <a href="../financing/portfolio-loans.html">Portfolio Loans</a>
+        
+        <a href="../financing/fix-and-flip-loans.html">Fix and Flip Loans</a>
+        
+        <a href="../financing/stated-income-loans.html">Stated Income Loans</a>
+        
+        <a href="../financing/bridge-to-perm-loans.html">Bridge-to-Perm Loans</a>
+        
+        <a href="../financing/acquisition-bridge-loans.html">Acquisition Bridge Loans</a>
+        
+        <a href="../financing/value-add-bridge-loans.html">Value-Add Bridge Loans</a>
+        
+        <a href="../financing/1031-exchange-bridge-loans.html">1031 Exchange Bridge Loans</a>
+        
+        <a href="../financing/multifamily-bridge-loans.html">Multifamily Bridge Loans</a>
+        
+        <a href="../financing/industrial-bridge-loans.html">Industrial Bridge Loans</a>
+        
+        <a href="../financing/office-bridge-loans.html">Office Bridge Loans</a>
+        
+        <a href="../financing/retail-bridge-loans.html">Retail Bridge Loans</a>
+        
+        <a href="../financing/mixed-use-bridge-loans.html">Mixed-Use Bridge Loans</a>
+        
+        <a href="../financing/multifamily-construction-loans.html">Multifamily Construction Loans</a>
+        
+        <a href="../financing/build-to-rent-loans.html">Build-to-Rent Loans</a>
+        
+        <a href="../financing/construction-to-perm-loans.html">Construction-to-Perm Loans</a>
+        
+        <a href="../financing/land-loans.html">Land Loans</a>
+        
+        <a href="../financing/self-storage-financing.html">Self-Storage Financing</a>
+        
+        <a href="../financing/hotel-motel-financing.html">Hotel & Motel Financing</a>
+        
+        <a href="../financing/student-housing-loans.html">Student Housing Loans</a>
+        
+        <a href="../financing/senior-housing-financing.html">Senior Housing Financing</a>
+        
+        <a href="../financing/medical-office-financing.html">Medical Office Financing</a>
+        
+        <a href="../financing/sale-leaseback-financing.html">Sale-Leaseback Financing</a>
+        
+        <a href="../financing/office-conversion-loans.html">Office Conversion Loans</a>
+        
+        <a href="../financing/preferred-equity.html">Preferred Equity</a>
+        
+        <a href="../financing/industrial-construction-loans.html">Industrial Construction Loans</a>
+        
+        <a href="../financing/cpace-financing.html">C-PACE Financing</a>
+        
+        <a href="../financing/owner-occupied-commercial.html">Owner-Occupied Commercial Loans</a>
+        
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="index.html#transactions" aria-haspopup="true" aria-expanded="false" id="ddProperties">Properties</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddProperties">
+        
+        <a href="../property/multifamily.html">Multifamily</a>
+        
+        <a href="../property/industrial.html">Industrial</a>
+        
+        <a href="../property/retail.html">Retail</a>
+        
+        <a href="../property/office.html">Office</a>
+        
+        <a href="../property/mixed-use.html">Mixed-Use</a>
+        
+        <a href="../property/hospitality.html">Hospitality</a>
+        
+        <a href="../property/self-storage.html">Self-Storage</a>
+        
+        <a href="../property/data-centers.html">Data Centers</a>
+        
+        <a href="../property/senior-living.html">Senior Living</a>
+        
+        <a href="../property/medical-office.html">Medical Office</a>
+        
+        <a href="../property/manufactured-housing.html">Manufactured Housing</a>
+        
+        <a href="../property/parking.html">Parking</a>
+        
+      </div>
+    </div>
+    <a href="../affordable-housing/index.html">Affordable &amp; EDI</a>
+    <a href="../industrial/index.html">Industrial</a>
+    <a href="../multifamily/index.html">Multifamily</a>
+    <a href="../commercial/index.html">Commercial</a>
+    <a href="index.html#transactions">Transactions</a>
+    <a href="../locations.html">Locations</a>
+    <a href="../about.html">About</a>
+    <a href="../insights/index.html">Insights</a>
+    <a href="../market-data.html">Market Data</a>
+    <a href="../tools/index.html">Calculators</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+        <a href="tel:+13107080690" class="nav-phone" style="display:inline-flex;align-items:center;gap:6px;color:var(--navy);font-weight:700;font-size:14px;margin-right:8px" aria-label="Call 310.708.0690">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      310.708.0690
+    </a>
+    <a href="../apply.html?program=life-company" class="nav-cta">Apply Now</a>
+  </div>
+  <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</nav>
+
+<main>
+  <!-- 1. HERO: shorter, proof headline -->
+  <section class="pf-hero lc-hero" style="margin-top:140px">
+    <div style="width:min(calc(100% - 48px),1180px);margin:0 auto;padding:44px 0 30px">
+      <div style="font:600 12px/1 var(--font-body,sans-serif);letter-spacing:2.5px;text-transform:uppercase;color:var(--green,#2e7d32);margin-bottom:16px">Life company lending</div>
+      <h1 style="font-size:clamp(44px,4.6vw,58px)">Life Company Loans for Commercial Real Estate</h1>
+      <p class="pf-lede">Life company loans range from $5M to $100M+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Desks quote spreads over Treasury: tight execution runs 120 to 180 bps, so apply the current bond yield to estimate your rate. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions accesses the full life company market through two channels: direct open-market desks (New York Life, Northwestern Mutual, MetLife, Manulife, PGIM) and correspondent programs — see the named lender table below.</p>
+    </div>
+  </section>
+
+  <!-- 2. PROOF FIRST: recent closings -->
+  <section class="lc-proof">
+    <div class="pf-deal-heading" style="width:min(calc(100% - 48px),1180px);margin:0 auto;margin-bottom:12px">
+      <div><div class="pf-kicker">Selected closings &mdash; all Symetra placements</div>
+      <h2 style="font-size:32px">Recent life company closings.</h2></div>
+      <a class="lc-more-link" href="track-record.html">View more transactions <span class="lc-arrow">&rarr;</span></a>
+    </div>
+    <div class="pf-deal-grid">
+      
+      <a class="pf-deal" href="track-record.html">
+        <img src="images/deals/symetra-vista-industrial.jpg" alt="Industrial R&D - Vista, CA" loading="lazy" width="600" height="400">
+        <div class="pf-deal-copy"><div class="pf-deal-type">Life Company financing</div><h3>Industrial R&D</h3><div class="pf-deal-amount">$16,250,000</div><div class="pf-deal-place">Vista, CA</div><p class="pf-deal-desc">Single-tenant industrial R&D headquarters placed with a life insurance company lender at 225 bps over the 5-year Treasury - a 5-year fixed, 30-year amortization structure that bank and CMBS quotes could not match on a non-recourse basis.</p></div>
+      </a>
+      
+      <a class="pf-deal" href="track-record.html">
+        <img src="images/deals/symetra-cahuenga-creative-office.jpg" alt="Creative Office / Mixed-Use - Los Angeles, CA" loading="lazy" width="600" height="400">
+        <div class="pf-deal-copy"><div class="pf-deal-type">Life Company financing</div><h3>Creative Office / Mixed-Use</h3><div class="pf-deal-amount">$11,500,000</div><div class="pf-deal-place">Los Angeles, CA</div><p class="pf-deal-desc">Post-production and creative office campus across from Universal Studios financed at 285 bps over the 3-year Treasury, 6-year term (3+3) with 25-year amortization - structured around short-term media leases with a master-lease credit enhance from the sponsor group.</p></div>
+      </a>
+      
+      <a class="pf-deal" href="track-record.html">
+        <img src="images/deals/symetra-1415-cahuenga-office.jpg" alt="Special-Use Office - Hollywood, CA" loading="lazy" width="600" height="400">
+        <div class="pf-deal-copy"><div class="pf-deal-type">Life Company financing</div><h3>Special-Use Office</h3><div class="pf-deal-amount">$8,715,000</div><div class="pf-deal-place">Hollywood, CA</div><p class="pf-deal-desc">Special-use office building on Cahuenga financed at 250 bps over the 3-year Treasury - a 6-year term (3+2+1) with 25-year amortization tailored to a single-tenant media occupant.</p></div>
+      </a>
+      
+      <a class="pf-deal" href="track-record.html">
+        <img src="images/deals/aerial-office-032.jpg" alt="Office / Flex - Burbank, CA" loading="lazy" width="600" height="400">
+        <div class="pf-deal-copy"><div class="pf-deal-type">Life Company financing</div><h3>Office / Flex</h3><div class="pf-deal-amount">$6,000,000</div><div class="pf-deal-place">Burbank, CA</div><p class="pf-deal-desc">Office/flex building near the Burbank media corridors placed with a life company at 260 bps over the 5-year Treasury - an 8-year term (5+3) with 25-year amortization for a long-term hold sponsor.</p></div>
+      </a>
+      
+    </div>
+  </div>
+
+    <p style="color:#6b7686;font-size:14px;margin:16px 0 0">
+      Spreads shown are actual executed rates over matching-term Treasuries. Structures, lender selection and pricing vary by asset.
+    </p>
+  </section>
+
+  <!-- 3. CTA BAND: capture intent right after proof -->
+  <section class="lc-cta-band">
+    <h2>Have a deal a life company should see?</h2>
+    <p>Share the property and financing request. We will respond with the desks whose current appetite fits, and indicative terms for each.</p>
+    <a class="lc-cta-btn" href="apply.html">Get indicative terms &rarr;</a>
+  </section>
+
+  <!-- 4. AT A GLANCE: terms strip -->
+  <section class="lc-glance">
+    <div class="pf-card">
+      <h2 style="font-size:22px">Life company loan terms at a glance</h2>
+      <dl class="pf-term-dl">
+        
+        <div class="pf-term-row"><dt>Loan Amount</dt><dd><strong>$5M to $100M+</strong></dd></div>
+        
+        <div class="pf-term-row"><dt>Term</dt><dd><strong>10 to 25 Years</strong></dd></div>
+        
+        <div class="pf-term-row"><dt>Rates</dt><dd><strong>5.00% to 6.50%</strong></dd></div>
+        
+        <div class="pf-term-row"><dt>Ltv</dt><dd><strong>Up to 65% LTV</strong></dd></div>
+        
+        <div class="pf-term-row"><dt>Amortization</dt><dd><strong>25 to 30 Years</strong></dd></div>
+        
+        <div class="pf-term-row"><dt>Recourse</dt><dd><strong>Non-Recourse Standard</strong></dd></div>
+        
+        <div class="pf-term-row"><dt>Typical Spread</dt><dd><strong>120 to 180 bps over UST</strong></dd></div>
+        
+      </dl>
+    </div>
+  </section>
+
+  <!-- 5. WHO'S AT THE TABLE: compact named-lender table -->
+  <section class="pf-section">
+    <div style="width:min(calc(100% - 48px),1180px);margin:0 auto">
+      <h2 style="font-size:30px">The desks we place with.</h2>
+      <p style="color:#3c4a5c;max-width:95ch">Program parameters for nine life company lenders. Each links to a dedicated page with qualification guidance and current spread context.</p>
+      <div class="lc-compact">
+      <table class="pf-table">
+        <thead><tr><th>Life company lender</th><th>Loan size</th><th>Terms &amp; leverage</th><th>Programs</th><th>Best fit</th></tr></thead>
+        <tbody>
+          
+          <tr>
+            <td>
+                <a href="../life-company/lenders/new-york-life-commercial-mortgage-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <img src="images/lenders/nyl.png" alt="New York Life logo" width="72" height="26" loading="lazy" style="flex:0 0 auto;width:72px;height:26px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--gray-200,#d9dde3)">
+                  
+                  <span><strong style="color:var(--pf-navy,#12263f)">New York Life</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Direct + correspondent</span></td>
+            <td>$25M–$300M+ (portfolios higher)</td>
+            <td>3–30 years; floating ≤7 years<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">Up to 80% LTV, 1.30x+ DSCR</span></td>
+            <td>Permanent fixed; floating-rate; bridge/CTP; subordinated debt from $20M</td>
+            <td>$25M+ institutional multifamily, industrial, office in primary markets</td>
+          </tr>
+          
+          <tr>
+            <td>
+                <a href="../life-company/lenders/northwestern-mutual-commercial-real-estate-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <span aria-hidden="true" style="flex:0 0 auto;width:38px;height:38px;border-radius:9px;background:#0f2b5b;color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 13px var(--font-body);letter-spacing:.03em">nm</span>
+                  <span><strong style="color:var(--pf-navy,#12263f)">Northwestern Mutual</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Direct</span></td>
+            <td>$30M–$500M</td>
+            <td>5–25 years; fixed over UST or floating over SOFR<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">Up to 75% LTV, 1.25x+ DSCR</span></td>
+            <td>Permanent fixed/floating; JV equity available; in-house appraisal (free to borrower)</td>
+            <td>$30M+ long-term holds wanting maximum rate certainty</td>
+          </tr>
+          
+          <tr>
+            <td>
+                <a href="../life-company/lenders/metlife-commercial-mortgage-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <img src="images/lenders/metlife.png" alt="MetLife logo" width="72" height="26" loading="lazy" style="flex:0 0 auto;width:72px;height:26px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--gray-200,#d9dde3)">
+                  
+                  <span><strong style="color:var(--pf-navy,#12263f)">MetLife</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Direct</span></td>
+            <td>$10M–$200M+ per property</td>
+            <td>3–30 years; fixed and floating<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">~65% LTV typical, higher select</span></td>
+            <td>Permanent; bridge; construction; mezzanine; interest-only options</td>
+            <td>$10M–$100M core plus with flexible structure needs</td>
+          </tr>
+          
+          <tr>
+            <td>
+                <a href="../life-company/lenders/manulife-john-hancock-commercial-mortgage-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <img src="images/lenders/manulife.png" alt="Manulife logo" width="72" height="26" loading="lazy" style="flex:0 0 auto;width:72px;height:26px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--gray-200,#d9dde3)">
+                  
+                  <span><strong style="color:var(--pf-navy,#12263f)">Manulife</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Direct</span></td>
+            <td>$10M–$300M+ (US)</td>
+            <td>Fixed-rate core; forward commitments<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">Not published; deal-by-deal</span></td>
+            <td>Permanent; mezzanine; B-notes; participations; forward commitments</td>
+            <td>$10M+ sponsors wanting one desk for debt plus mezz</td>
+          </tr>
+          
+          <tr>
+            <td>
+                <a href="../life-company/lenders/pgim-commercial-mortgage-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <span aria-hidden="true" style="flex:0 0 auto;width:38px;height:38px;border-radius:9px;background:#e4002b;color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 13px var(--font-body);letter-spacing:.03em">pj</span>
+                  <span><strong style="color:var(--pf-navy,#12263f)">PGIM</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Direct</span></td>
+            <td>Not published (top-5 national originator)</td>
+            <td>Core and core-plus; structured debt<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">Deal-by-deal</span></td>
+            <td>Core debt; core-plus; structured; agency overlays</td>
+            <td>Institutional-scale portfolios and structured executions</td>
+          </tr>
+          
+          <tr>
+            <td>
+                <a href="../life-company/lenders/principal-life-commercial-mortgage-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <img src="images/lenders/principal.png" alt="Principal logo" width="72" height="26" loading="lazy" style="flex:0 0 auto;width:72px;height:26px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--gray-200,#d9dde3)">
+                  
+                  <span><strong style="color:var(--pf-navy,#12263f)">Principal</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Direct + correspondent</span></td>
+            <td>$10M–$100M+ per transaction</td>
+            <td>Under 3 to 30 years<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">Deal-by-deal</span></td>
+            <td>Commercial mortgage loans; construction-permanent program</td>
+            <td>$10M–$50M deals wanting construction-perm in one close</td>
+          </tr>
+          
+          <tr>
+            <td>
+                <a href="../life-company/lenders/guardian-life-commercial-real-estate-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <img src="images/lenders/guardian.png" alt="Guardian logo" width="72" height="26" loading="lazy" style="flex:0 0 auto;width:72px;height:26px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--gray-200,#d9dde3)">
+                  
+                  <span><strong style="color:var(--pf-navy,#12263f)">Guardian</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Direct</span></td>
+            <td>Not published</td>
+            <td>Fixed-rate core<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">Deal-by-deal</span></td>
+            <td>Real estate debt investments; core fixed</td>
+            <td>Western US stabilized assets, relationship-driven execution</td>
+          </tr>
+          
+          <tr style="background:#f2f8f4">
+            <td>
+                <a href="../life-company/lenders/symetra-commercial-mortgage-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <img src="images/lenders/symetra.png" alt="Symetra logo" width="72" height="26" loading="lazy" style="flex:0 0 auto;width:72px;height:26px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--gray-200,#d9dde3)">
+                  
+                  <span><strong style="color:var(--pf-navy,#12263f)">Symetra</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Active CLS relationship — proven closings</span></td>
+            <td>$1M–$20M+ (program flexes for strong assets)</td>
+            <td>5–10 year structures; 3+3, 5+3, 5+2 resets<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">Deal-by-deal</span></td>
+            <td>Fixed-rate permanent; special-use assets; single-tenant strength</td>
+            <td>$5M–$20M stabilized and special-use, especially California</td>
+          </tr>
+          
+          <tr>
+            <td>
+                <a href="../life-company/lenders/protective-life-commercial-mortgage-loans.html" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  <img src="images/lenders/protective.png" alt="Protective logo" width="72" height="26" loading="lazy" style="flex:0 0 auto;width:72px;height:26px;object-fit:contain;background:#fff;border-radius:6px;padding:3px;border:1px solid var(--gray-200,#d9dde3)">
+                  
+                  <span><strong style="color:var(--pf-navy,#12263f)">Protective</strong></span>
+                </a><br>
+                <span style="font-size:12px;color:var(--gray-500,#5b6770)">Correspondent</span></td>
+            <td>$3M–$50M per asset</td>
+            <td>Fixed-rate permanent<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">Up to 75% LTV</span></td>
+            <td>Permanent fixed-rate on stabilized income property</td>
+            <td>$3M–$50M stabilized multifamily and commercial</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. DEEP-DIVE LINKS (page split) -->
+  <section class="pf-section pf-paper">
+    <div style="width:min(calc(100% - 48px),1180px);margin:0 auto">
+      <div style="margin-bottom:24px">
+        <div style="font:600 12px/1 var(--font-body,sans-serif);letter-spacing:2.5px;text-transform:uppercase;color:var(--green,#2e7d32);margin-bottom:12px">Continue reading</div>
+        <h2 style="font-size:32px;font-family:var(--font-display,Georgia,serif);margin:0">The life company playbook.</h2>
+        <p style="font-size:16px;color:#3c4a5c;line-height:1.65;margin:14px 0 0">Four guides, each doing one job well. Written the way we underwrite: specific, dated, no filler.</p>
+      </div>
+      <div class="lc-guide-grid">
+        <a class="lc-guide" href="financing/life-company-loan-rates.html">
+          <div class="lc-guide-head"><span class="lc-guide-num">01</span><span class="lc-guide-tag">Rates</span></div>
+          <h3>Life company loan rates & spreads</h3>
+          <p>Current leverage-tier rate table, how desks quote spreads over Treasury, and the math to price any deal yourself.</p>
+          <span class="lc-guide-link">Open the rate table <span class="lc-arrow">&rarr;</span></span>
+        </a>
+        <a class="lc-guide" href="financing/how-to-qualify-for-life-company-loans.html">
+          <div class="lc-guide-head"><span class="lc-guide-num">02</span><span class="lc-guide-tag">Qualification</span></div>
+          <h3>How to qualify for a life company loan</h3>
+          <p>The box a desk needs you in, the documents to have ready, and a realistic timeline from term sheet to close.</p>
+          <span class="lc-guide-link">See the qualification box <span class="lc-arrow">&rarr;</span></span>
+        </a>
+        <a class="lc-guide" href="financing/life-company-loan-process.html">
+          <div class="lc-guide-head"><span class="lc-guide-num">03</span><span class="lc-guide-tag">Process</span></div>
+          <h3>How we run a life company placement</h3>
+          <p>Sourcing, matching to current appetite, diligence coordination, and closing, with a weekly update while it is in flight.</p>
+          <span class="lc-guide-link">Walk the process <span class="lc-arrow">&rarr;</span></span>
+        </a>
+        <a class="lc-guide" href="financing/life-company-loan-approval.html">
+          <div class="lc-guide-head"><span class="lc-guide-num">04</span><span class="lc-guide-tag">Underwriting</span></div>
+          <h3>What gets a life company loan approved</h3>
+          <p>Sponsorship depth, DSCR, leverage, market tier, and prepay structure, ranked by what actually moves a credit committee.</p>
+          <span class="lc-guide-link">See the approval factors <span class="lc-arrow">&rarr;</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+<div class="footer-grid">
+  <div class="footer-brand">
+    <img src="images/cls-logo-skyline.png" alt="Commercial Lending Solutions" style="height:60px" loading="lazy">
+    <p>Over $1 billion in commercial loans closed. Institutional expertise. Personal service. Every deal, every time.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Financing</h4>
+    <a href="../financing/commercial-mortgage-rates.html">Today's Rates</a>
+    <a href="../comparisons/index.html">Loan Comparisons</a>
+    <a href="../loan-size/index.html">Loan Size Examples</a>
+    
+    <a href="../financing/permanent-loans.html">Permanent Loans</a>
+    
+    <a href="../financing/commercial-mortgage-loans.html">Commercial Mortgage Loans</a>
+    
+    <a href="../financing/multifamily-loans.html">Multifamily Loans</a>
+    
+    <a href="../financing/construction-loans.html">Construction Loans</a>
+    
+    <a href="../financing/bridge-loans.html">Bridge Loans</a>
+    
+    <a href="../financing/sba-loans.html">SBA Loans</a>
+    
+    <a href="../financing/mezzanine.html">Mezzanine & Preferred Equity</a>
+    
+    <a href="../financing/specialty.html">Specialty Financing</a>
+    
+    <a href="../financing/agency-loans.html">Agency Loans</a>
+    
+    <a href="../financing/hud-fha-loans.html">HUD/FHA Multifamily Loans</a>
+    
+    <a href="../financing/cmbs-loans.html">CMBS Loans</a>
+    
+    <a href="../financing/net-lease-financing.html">Net Lease Financing</a>
+    
+    <a href="../financing/life-company-loans.html">Life Company Loans</a>
+    
+    <a href="../index.html#programs">Explore All Financing Programs</a>
+  </div>
+  <div class="footer-col">
+    <h4>Properties</h4>
+    
+    <a href="../property/multifamily.html">Multifamily</a>
+    
+    <a href="../property/industrial.html">Industrial</a>
+    
+    <a href="../property/retail.html">Retail</a>
+    
+    <a href="../property/office.html">Office</a>
+    
+    <a href="../property/mixed-use.html">Mixed-Use</a>
+    
+    <a href="../property/hospitality.html">Hospitality</a>
+    
+    <a href="../property/self-storage.html">Self-Storage</a>
+    
+    <a href="../property/data-centers.html">Data Centers</a>
+    
+    <a href="../property/senior-living.html">Senior Living</a>
+    
+    <a href="../property/medical-office.html">Medical Office</a>
+    
+    <a href="../property/manufactured-housing.html">Manufactured Housing</a>
+    
+    <a href="../property/parking.html">Parking</a>
+    
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="../about.html">About Us</a>
+    <a href="../partners.html">Referral Partners</a>
+    <a href="../blog/index.html">Insights</a>
+    <a href="index.html#transactions">Transactions</a>
+    <a href="../market-data.html">Market Data</a>
+    <a href="../tools/index.html">Calculators</a>
+    <a href="../resources/cre-financing-guide.html">CRE Financing Guide</a>
+    <a href="../resources/welfare-exemption.html">Welfare Exemption Guide</a>
+    <a href="../locations.html">Locations</a>
+    <a href="../markets/los-angeles/">Los Angeles CRE</a>
+    <a href="../states/index.html">Loans by State</a>
+    <a href="../professionals/index.html">For Professionals</a>
+    <a href="../expert-witness/index.html">Expert Witness Services</a>
+    <a href="../glossary/index.html">CRE Glossary</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../privacy.html">Privacy Policy</a>
+    <a href="../terms.html">Terms of Service</a>
+    <a href="../accessibility.html">Accessibility</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>&copy; 2026 Commercial Lending Solutions. All rights reserved. DRE #02244836</span>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/commercialloanbroker" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/mycommercialloanbroker/" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</div>
+</footer>
+</body>
+</html>

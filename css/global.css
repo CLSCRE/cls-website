@@ -177,3 +177,8 @@ a.footer-logo img{height:40px;width:auto;margin-bottom:0}
 .footer-inner{flex-direction:column;gap:32px}
 .footer-links{grid-template-columns:1fr;gap:24px}
 }
+
+/* case-study hero image */
+.cs-hero{max-width:min(100% - 48px,1100px);margin:24px auto 8px}
+.cs-hero img{width:100%;height:auto;border-radius:10px;display:block}
+.cs-hero figcaption{font-size:12.5px;color:#6b7686;margin-top:8px}
