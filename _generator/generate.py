@@ -1435,11 +1435,13 @@ def main():
     # ── 1. Loan Type Hub Pages ─────────────────────────────────────────
     print("\n=== Generating Loan Type Hub Pages ===")
     tpl_financing = env.get_template("financing_conversion_page.html")
+    tpl_lifeco_hub = env.get_template("life_company_hub.html")
     for loan in loan_types:
         txns = filter_transactions(transactions, loan_slug=loan["slug"])
         loan_faqs = faqs_data.get("loan_types", {}).get(loan["slug"], [])
         rel_articles = article_map.get(loan["slug"], [])[:3]
-        html = tpl_financing.render(
+        _use_lifeco_tpl = loan["slug"] == "life-company-loans"
+        html = (tpl_lifeco_hub if _use_lifeco_tpl else tpl_financing).render(
             **shared,
             loan=loan,
             seo=loan["seo"],

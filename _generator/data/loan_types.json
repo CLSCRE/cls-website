@@ -535,8 +535,8 @@
       "term": "10 to 25 Years",
       "rates": "5.00% to 6.50%",
       "ltv": "Up to 65% LTV",
-      "amortization": "25 to 30 Years",
-      "recourse": "Non-Recourse Standard",
+      "amortization": "15 to 30 Years; 10-year options; interest-only available",
+      "recourse": "Non-recourse standard; structures negotiable",
       "typical_spread": "120 to 180 bps over UST"
     },
     "lender_sources": [
@@ -558,7 +558,7 @@
       "meta_description": "Life company loans from $5M to $100M+: 5.00% to 6.50% fixed, 10 to 25 year terms, up to 65% LTV, non-recourse. Direct access to life company lenders nationwide.",
       "h1": "Life Company Loans for Commercial Real Estate"
     },
-    "quick_answer": "Life company loans range from $5M to $100M+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Desks quote spreads over Treasury: tight execution runs 120 to 180 bps, so apply the current bond yield to estimate your rate. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions accesses the full life company market through two channels: direct open-market desks (New York Life, Northwestern Mutual, MetLife, Manulife, PGIM) and correspondent programs — see the named lender table below.",
+    "quick_answer": "Life company loans range from $5M to $100M+ at 5.00% to 6.50% fixed, typically 10 to 25 years, up to about 65% LTV, non-recourse. Desks quote spreads over Treasury: tight execution runs 120 to 180 bps, so apply the current bond yield to estimate your rate. Best for institutional multifamily, industrial, and credit net lease in primary markets. Commercial Lending Solutions accesses the full life company market through two channels: direct open-market desks (New York Life, Northwestern Mutual, MetLife, Manulife, PGIM) and correspondent programs. The named lender table below shows the desks and programs.",
     "quick_answer_city": "Life company loans in {city}, {state} range from $5M to $100M+ at 5.00% to 6.50%, with terms of 10 to 25 years. Best for institutional multifamily, industrial, and credit net lease. Commercial Lending Solutions sources life company financing for {city} commercial properties via correspondent desks and 1,000+ capital sources nationwide.",
     "apply_query": "program=life-company",
     "min_amount_usd": 5000000,
@@ -618,39 +618,39 @@
       },
       {
         "href": "life-company/lenders/symetra-commercial-mortgage-loans.html",
-        "label": "Symetra commercial mortgage loans — 4 closed CLS deals"
+        "label": "Symetra commercial mortgage loans: 4 closed CLS deals"
       },
       {
         "href": "life-company/lenders/metlife-commercial-mortgage-loans.html",
-        "label": "MetLife commercial mortgage loans — program terms"
+        "label": "MetLife commercial mortgage loans: program terms"
       },
       {
         "href": "life-company/lenders/principal-life-commercial-mortgage-loans.html",
-        "label": "Principal Life commercial mortgage loans — construction-perm"
+        "label": "Principal Life commercial mortgage loans: construction-perm"
       },
       {
         "href": "life-company/lenders/northwestern-mutual-commercial-real-estate-loans.html",
-        "label": "Northwestern Mutual CRE loans — $30M–$500M"
+        "label": "Northwestern Mutual CRE loans: $30M–$500M"
       },
       {
         "href": "life-company/lenders/new-york-life-commercial-mortgage-loans.html",
-        "label": "New York Life commercial mortgage loans — #1 US insurer originator"
+        "label": "New York Life commercial mortgage loans: #1 US insurer originator"
       },
       {
         "href": "life-company/lenders/manulife-john-hancock-commercial-mortgage-loans.html",
-        "label": "Manulife (John Hancock) commercial mortgage loans — debt + mezz, 38 states"
+        "label": "Manulife (John Hancock) commercial mortgage loans: debt + mezz, 38 states"
       },
       {
         "href": "life-company/lenders/pgim-commercial-mortgage-loans.html",
-        "label": "PGIM commercial mortgage loans — CA-licensed, structured debt"
+        "label": "PGIM commercial mortgage loans: CA-licensed, structured debt"
       },
       {
         "href": "life-company/lenders/guardian-life-commercial-real-estate-loans.html",
-        "label": "Guardian Life CRE loans — Western US direct desk"
+        "label": "Guardian Life CRE loans: Western US direct desk"
       },
       {
         "href": "life-company/lenders/protective-life-commercial-mortgage-loans.html",
-        "label": "Protective Life commercial mortgage loans — $3M–$50M fixed"
+        "label": "Protective Life commercial mortgage loans: $3M–$50M fixed"
       },
       {
         "href": "tools/life-company-spread-calculator.html",

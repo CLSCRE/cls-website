@@ -1,0 +1,181 @@
+{% extends '_base.html' %}
+{% set body_class = 'lc-hub' %}
+{% block extra_meta %}
+<link rel="stylesheet" href="{{ depth }}css/financing-hub.css">
+{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FinancialService","name":{{ ('Commercial Lending Solutions, ' ~ loan.name)|tojson }},"url":{{ ('https://clscre.com/financing/' ~ loan.slug ~ '.html')|tojson }},"description":{{ seo.meta_description|tojson }},"telephone":"+13102730690","email":"loans@clscre.com","image":"https://clscre.com/images/cls-logo-skyline.png","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"areaServed":"Nationwide"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in faqs[:4] %}{"@type":"Question","name":{{ faq.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a|tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LoanOrCredit","name":{{ loan.name|tojson }},"description":{{ seo.meta_description|tojson }},"loanType":{{ loan.short_name|tojson }},"provider":{"@type":"FinancialService","name":"Commercial Lending Solutions","url":"https://clscre.com","telephone":"+13102730690","email":"loans@clscre.com"},"url":{{ ('https://clscre.com/financing/' ~ loan.slug ~ '.html')|tojson }},"interestRate":{"@type":"QuantitativeValue","value":{{ loan.key_features.rates|tojson }}},"loanTerm":{"@type":"QuantitativeValue","value":{{ loan.key_features.term|tojson }}},"amount":{"@type":"MonetaryAmount","currency":"USD","minValue":{{ loan.min_amount_usd|tojson }},"value":{{ loan.key_features.loan_amount|tojson }}}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Financing","item":"https://clscre.com/#programs"},{"@type":"ListItem","position":3,"name":{{ loan.name|tojson }},"item":{{ ('https://clscre.com/financing/' ~ loan.slug ~ '.html')|tojson }}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":{{ ('https://clscre.com/' ~ canonical_path)|tojson }},"name":{{ seo.title|tojson }},"description":{{ seo.meta_description|tojson }},"dateModified":"{{ current_date }}","lastReviewed":"{{ current_date }}","reviewedBy":{"@type":"Person","name":"Trevor Damyan","jobTitle":"Commercial Mortgage Broker","url":"https://clscre.com/about/trevor-damyan.html"},"author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about/trevor-damyan.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"about":{"@type":"FinancialProduct","name":{{ loan.name|tojson }}}}
+</script>
+{% endblock %}
+{% block content %}
+
+  <section class="pf-hero lc-hero" style="margin-top:140px">
+    <div style="width:min(calc(100% - 48px),1180px);margin:0 auto;padding:44px 0 30px">
+      <div style="font:600 12px/1 var(--font-body,sans-serif);letter-spacing:2.5px;text-transform:uppercase;color:var(--green,#2e7d32);margin-bottom:16px">Life company lending</div>
+      <h1 style="font-size:clamp(44px,4.6vw,58px)">{{ loan.headline }}</h1>
+      <div class="pf-byline" style="font-size:13px;color:var(--gray-500);margin:14px 0 0;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+        <span>Reviewed by</span>
+        <a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>
+        <span>, Commercial Mortgage Broker</span>
+        <span aria-hidden="true">&middot;</span>
+        <span>Updated <time datetime="{{ loan.updated_iso|default('2026-09-01') }}">{{ loan.updated|default('September 2026') }}</time></span>
+      </div>
+      <p class="pf-lede" style="margin-top:20px">{{ loan.quick_answer or loan.description }}</p>
+    </div>
+  </section>
+
+  <section class="lc-proof" aria-label="Recent life company closings">
+    <div class="pf-deal-heading" style="width:min(calc(100% - 48px),1180px);margin:0 auto;margin-bottom:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div><div class="pf-kicker">Selected closings: all Symetra placements</div>
+      <h2 style="font-size:32px">Recent life company closings.</h2></div>
+      <a class="lc-more-link" href="{{ depth }}track-record.html">View more transactions <span class="lc-arrow">&rarr;</span></a>
+    </div>
+    <div class="pf-deal-grid">
+      {% for txn in transactions[:4] %}
+      <a class="pf-deal" href="{{ depth }}track-record.html">
+        <img src="{{ depth }}{{ txn.image }}" alt="{{ txn.property_type }} - {{ txn.city }}, {{ txn.state }}" loading="lazy" width="600" height="400">
+        <div class="pf-deal-copy"><div class="pf-deal-type">Life Company financing</div><h3>{{ txn.property_type }}</h3><div class="pf-deal-amount">{{ txn.amount }}</div><div class="pf-deal-place">{{ txn.city }}, {{ txn.state }}</div><p class="pf-deal-desc">{{ txn.summary }}</p></div>
+      </a>
+      {% endfor %}
+    </div>
+    <div style="width:min(calc(100% - 48px),1180px);margin:0 auto">
+      <p style="color:#6b7686;font-size:14px;margin:16px 0 0">Spreads shown are actual executed rates over matching-term Treasuries. Structures, lender selection and pricing vary by asset.</p>
+    </div>
+  </section>
+
+  <section class="lc-cta-band">
+    <h2>Have a deal a life company should see?</h2>
+    <p>Share the property and financing request. We will respond with the desks whose current appetite fits, and indicative terms for each.</p>
+    <a class="lc-cta-btn" href="{{ depth }}apply.html?{{ loan.apply_query }}">Get indicative terms &rarr;</a>
+  </section>
+
+  <section class="lc-glance" aria-label="{{ loan.name }} indicative terms">
+    <div class="lc-glance-grid">
+      <div class="pf-card lc-glance-card">
+        <h2 style="font-size:22px">Life company loan terms at a glance</h2>
+        {% set kf = loan.key_features %}
+        {% set leverage = kf.ltv or kf.ltc or kf.position %}
+        <dl class="pf-term-dl lc-term-cols">
+          <div class="pf-term-row"><dt>Loan Amount</dt><dd><strong>{{ kf.loan_amount }}</strong></dd></div>
+          <div class="pf-term-row"><dt>Term</dt><dd><strong>{{ kf.term }}</strong></dd></div>
+          <div class="pf-term-row"><dt>Rates</dt><dd><strong>{{ kf.rates }}</strong></dd></div>
+          <div class="pf-term-row"><dt>LTV</dt><dd><strong>{{ leverage }}</strong></dd></div>
+          {% if kf.amortization %}<div class="pf-term-row"><dt>Amortization</dt><dd><strong>{{ kf.amortization }}</strong></dd></div>{% endif %}
+          {% if kf.recourse %}<div class="pf-term-row"><dt>Recourse</dt><dd><strong>{{ kf.recourse }}</strong></dd></div>{% endif %}
+          {% if kf.typical_spread %}<div class="pf-term-row"><dt>Typical Spread</dt><dd><strong>{{ kf.typical_spread }}</strong></dd></div>{% endif %}
+        </dl>
+        <p class="lc-glance-note"><strong>These are starting points, not the shelf.</strong> Amortization as tight as 10 or 15 years, interest-only periods, and structured executions are all on the table when the deal supports them. That flexibility is the reason sponsors bring us life company placements.</p>
+        <p style="font-size:12.5px;color:var(--gray-500);margin:12px 0 0;line-height:1.55">Terms are indicative and subject to property, sponsorship, market conditions, and lender underwriting. Price a deal at today's yields with the <a href="{{ depth }}tools/life-company-spread-calculator.html" style="color:var(--pf-green)">life company spread calculator</a>.</p>
+      </div>
+      {% if transactions %}
+      <figure class="lc-glance-photo">
+        <img src="{{ depth }}{{ transactions[0].image }}" alt="{{ transactions[0].property_type }} financed with a life company loan, {{ transactions[0].city }}, {{ transactions[0].state }}" loading="lazy" width="640" height="480">
+        <figcaption>
+          <strong>{{ transactions[0].property_type }}</strong> &middot; {{ transactions[0].city }}, {{ transactions[0].state }}<br>
+          <span>{{ transactions[0].amount }}, an actual executed life company spread. <a href="{{ depth }}track-record.html">See the track record &rarr;</a></span>
+        </figcaption>
+      </figure>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="pf-section" id="lender-sources" aria-label="Life company lender programs">
+    <div style="width:min(calc(100% - 48px),1180px);margin:0 auto">
+      <h2 style="font-size:30px">The desks we place with.</h2>
+      <p style="color:#3c4a5c;max-width:95ch">Program parameters for nine life company lenders. Each links to a dedicated page with qualification guidance and current spread context.</p>
+      <div class="lc-compact pf-table-wrap" tabindex="0" role="region" aria-label="Life company lender program comparison">
+      <table class="pf-table">
+        <thead><tr><th>Life company lender</th><th>Loan size</th><th>Terms &amp; leverage</th><th>Programs</th><th>Best fit</th></tr></thead>
+        <tbody>
+          {% for lender in life_lenders.lenders %}
+          <tr{% if 'Symetra' in lender.name %} style="background:#f2f8f4"{% endif %}>
+            <td>
+                {% if lender.lender_page %}<a href="{{ depth }}life-company/lenders/{{ lender.lender_page }}" class="pf-lender-link" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+                  {% if lender.logo_file %}<img src="{{ depth }}images/lenders/{{ lender.logo_file }}" alt="{{ lender.short }} logo" width="88" height="28" loading="lazy" class="lc-lender-logo">
+                  {% elif lender.monogram %}<span aria-hidden="true" class="lc-lender-mono" style="background:{{ lender.brand_color }}">{{ lender.monogram }}</span>{% endif %}
+                  <span><strong style="color:var(--pf-navy,#12263f)">{{ lender.short }}</strong></span>
+                </a><br>{% else %}<strong>{{ lender.short }}</strong><br>{% endif %}
+                </td>
+            <td>{{ lender.loan_size }}</td>
+            <td>{{ lender.fixed_term }}<br><span style="font-size:12px;color:var(--gray-500,#5b6770)">{{ lender.leverage }}</span></td>
+            <td>{{ lender.programs }}</td>
+            <td>{{ lender.best_fit }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+      <p class="pf-note" style="margin-top:12px">{{ life_lenders.sources_note }}</p>
+    </div>
+  </section>
+
+  <section class="pf-section pf-paper" aria-label="Life company guides">
+    <div style="width:min(calc(100% - 48px),1180px);margin:0 auto">
+      <div style="margin-bottom:24px">
+        <div style="font:600 12px/1 var(--font-body,sans-serif);letter-spacing:2.5px;text-transform:uppercase;color:var(--green,#2e7d32);margin-bottom:12px">Continue reading</div>
+        <h2 style="font-size:32px;font-family:var(--font-display,Georgia,serif);margin:0">The life company playbook.</h2>
+        <p style="font-size:16px;color:#3c4a5c;line-height:1.65;margin:14px 0 0">Four guides, each doing one job well. Written the way we underwrite: specific, dated, no filler.</p>
+      </div>
+      <div class="lc-guide-grid">
+        <a class="lc-guide" href="{{ depth }}financing/life-company-loan-rates.html">
+          <div class="lc-guide-head"><span class="lc-guide-num">01</span><span class="lc-guide-tag">Rates</span></div>
+          <h3>Life company loan rates &amp; spreads</h3>
+          <p>Current leverage-tier rate table, how desks quote spreads over Treasury, and the math to price any deal yourself.</p>
+          <span class="lc-guide-link">Open the rate table <span class="lc-arrow">&rarr;</span></span>
+        </a>
+        <a class="lc-guide" href="{{ depth }}financing/how-to-qualify-for-life-company-loans.html">
+          <div class="lc-guide-head"><span class="lc-guide-num">02</span><span class="lc-guide-tag">Qualification</span></div>
+          <h3>How to qualify for a life company loan</h3>
+          <p>The box a desk needs you in, the documents to have ready, and a realistic timeline from term sheet to close.</p>
+          <span class="lc-guide-link">See the qualification box <span class="lc-arrow">&rarr;</span></span>
+        </a>
+        <a class="lc-guide" href="{{ depth }}financing/life-company-loan-process.html">
+          <div class="lc-guide-head"><span class="lc-guide-num">03</span><span class="lc-guide-tag">Process</span></div>
+          <h3>How we run a life company placement</h3>
+          <p>Sourcing, matching to current appetite, diligence coordination, and closing, with a weekly update while it is in flight.</p>
+          <span class="lc-guide-link">Walk the process <span class="lc-arrow">&rarr;</span></span>
+        </a>
+        <a class="lc-guide" href="{{ depth }}financing/life-company-loan-approval.html">
+          <div class="lc-guide-head"><span class="lc-guide-num">04</span><span class="lc-guide-tag">Underwriting</span></div>
+          <h3>What gets a life company loan approved</h3>
+          <p>Sponsorship depth, DSCR, leverage, market tier, and prepay structure, ranked by what actually moves a credit committee.</p>
+          <span class="lc-guide-link">See the approval factors <span class="lc-arrow">&rarr;</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {% if faqs %}
+  <section class="pf-section">
+    <div class="pf-wrap pf-faq-layout">
+      <div><div class="pf-kicker">Questions</div><h2>{{ loan.short_name }} financing, clarified.</h2><p class="pf-intro">The final structure depends on the asset, sponsorship, and market. These are the starting parameters we discuss most often.</p></div>
+      <div class="pf-faq-list">
+        {% for faq in faqs[:4] %}
+        <div class="pf-faq-item {% if loop.first %}open{% endif %}">
+          <button type="button" class="pf-faq-q" id="pf-faq-button-{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}" aria-controls="pf-faq-panel-{{ loop.index }}">
+            <span>{{ faq.q }}</span><span aria-hidden="true">+</span>
+          </button>
+          <div class="pf-faq-a" id="pf-faq-panel-{{ loop.index }}" role="region" aria-labelledby="pf-faq-button-{{ loop.index }}"{% if not loop.first %} hidden{% endif %}><div><p>{{ faq.a }}</p></div></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+
+<script src="{{ depth }}js/financing-hub.js" defer></script>
+{% endblock %}

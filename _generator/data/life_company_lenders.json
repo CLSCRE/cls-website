@@ -29,10 +29,10 @@
       "spread": "Competitive; structured amortization a strength",
       "standout": "$50B+ mortgage portfolio; typically non-recourse",
       "best_fit": "$30M+ long-term holds wanting maximum rate certainty",
-      "monogram": "nm",
+      "monogram": "",
       "brand_color": "#0f2b5b",
       "lender_page": "northwestern-mutual-commercial-real-estate-loans.html",
-      "logo_file": null
+      "logo_file": "northwestern.svg"
     },
     {
       "name": "MetLife Investment Management",
@@ -77,10 +77,10 @@
       "spread": "Competitive for institutional scale",
       "standout": "California DFPI-licensed (60DBO-105210); all sectors",
       "best_fit": "Institutional-scale portfolios and structured executions",
-      "monogram": "pj",
+      "monogram": "",
       "brand_color": "#e4002b",
       "lender_page": "pgim-commercial-mortgage-loans.html",
-      "logo_file": null
+      "logo_file": "pgim.svg"
     },
     {
       "name": "Principal Real Estate Investors",
