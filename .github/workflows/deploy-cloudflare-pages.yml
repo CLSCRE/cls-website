@@ -106,6 +106,12 @@ jobs:
                 url.protocol = "https:";
                 return Response.redirect(url.toString(), 301);
               }
+              // 410 Gone: cleansed loan-program families (stated-income, dscr,
+              // fix-and-flip, sba). Removed from the site 2026-09; serve Gone so
+              // Google drops them from the index quickly instead of soft-404.
+              if (/\/(stated-income|dscr|fix-and-flip|sba)[-a-z0-9]*\.html?$/.test(url.pathname)) {
+                return new Response("<!doctype html><html><body><h1>410 Gone</h1><p>This program page has been retired. See current loan programs at https://clscre.com/financing/</p></body></html>", { status: 410, headers: { "Content-Type": "text/html; charset=utf-8" } });
+              }
               if (url.pathname.endsWith("/")) {
                 url.pathname += "index.html";
                 return env.ASSETS.fetch(new Request(url));
