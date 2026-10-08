@@ -576,6 +576,28 @@
     try { banner.scrollIntoView({behavior: 'smooth', block: 'center'}); } catch (e) {}
   }
 
+  // Delivery failed after the checks passed (worker 4xx/5xx or network error).
+  // Keep the visitor on the form, restore the button, and point them to phone/email.
+  function _submitFailed(form, btn, reason) {
+    if (btn) {
+      try {
+        btn.disabled = false;
+        btn.classList && btn.classList.remove('loading');
+        if (btn._originalText) btn.textContent = btn._originalText;
+      } catch (e) {}
+    }
+    _showInlineError(form, 'We could not deliver your message just now. Please try again in a moment.');
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', 'form_submission_failed', {
+          form_id: form ? form.id : 'unknown',
+          reason: reason,
+          page_url: location.href
+        });
+      }
+    } catch (e) {}
+  }
+
   // ── Initialize all forms ────────────────────────────────────────────
   function initForms() {
     var forms = document.querySelectorAll('form');
@@ -798,18 +820,19 @@
       formData.append('_cc', 'staff@clscre.com');
       fetch(form._realAction, { method: 'POST', body: formData, mode: 'cors', redirect: 'follow' })
         .then(function(resp) {
-          // Worker returns 303 redirect to thank-you on success
-          if (resp.redirected) {
-            window.location.href = resp.url;
+          // Worker returns 303 redirect to thank-you on success. Never show the
+          // thank-you page when delivery failed: that hid a dead form for two weeks.
+          if (resp.ok) {
+            return resp.json().catch(function() { return {}; }).then(function(data) {
+              var redirectUrl = form.querySelector('[name="_next"]');
+              window.location.href = (data && data.redirect) || (redirectUrl && redirectUrl.value) || 'thank-you.html';
+            });
           } else {
-            var redirectUrl = form.querySelector('[name="_next"]');
-            window.location.href = (redirectUrl && redirectUrl.value) || 'thank-you.html';
+            _submitFailed(form, submitBtn, 'http_' + resp.status);
           }
         })
         .catch(function() {
-          // Fallback: redirect to thank-you anyway
-          var redirectUrl = form.querySelector('[name="_next"]');
-          window.location.href = (redirectUrl && redirectUrl.value) || 'thank-you.html';
+          _submitFailed(form, submitBtn, 'network');
         });
       return;
     }
