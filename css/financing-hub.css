@@ -125,3 +125,26 @@ body.lc-guide-page .lc-cluster .lc-more-link{font-size:13.5px;padding:9px 16px}
 body.lc-guide-page .lc-rate-display{font-family:var(--font-display);font-size:clamp(40px,5.6vw,64px);line-height:1.05;color:var(--pf-green);letter-spacing:-.02em;margin:6px 0 4px}
 body.lc-guide-page .lc-rate-label{font:600 13px/1.2 var(--font-body,sans-serif);letter-spacing:2px;text-transform:uppercase;color:#6b7686;margin-top:26px}
 body.lc-guide-page .lc-hero .pf-actions{margin-top:22px}
+
+/* ==== Life company guides: process + approval components (body.lc-guide-page), added 2026-10-09 ==== */
+body.lc-guide-page .lc-prose p{font-size:16.5px;line-height:1.75;color:#2b3a4d;max-width:78ch;margin:0 0 14px}
+body.lc-guide-page .lc-prose a,body.lc-guide-page .lc-steps a,body.lc-guide-page .lc-prose-links a{color:var(--pf-green);font-weight:600}
+body.lc-guide-page .lc-steps{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:18px;max-width:none}
+body.lc-guide-page .lc-step{display:grid;grid-template-columns:52px minmax(0,1fr);gap:22px;align-items:start}
+body.lc-guide-page .lc-step-num{width:48px;height:48px;border-radius:50%;background:var(--pf-navy,#12263f);color:#fff;display:flex;align-items:center;justify-content:center;font:400 21px/1 var(--font-display)}
+body.lc-guide-page .lc-step-body h2{font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1.25;color:var(--pf-navy);margin:8px 0 12px;text-wrap:balance}
+body.lc-guide-page .lc-step-body p{font-size:15.5px;line-height:1.7;color:#3c4a5c;margin:0 0 12px;max-width:none}
+body.lc-guide-page .lc-step-body p:last-child{margin-bottom:0}
+body.lc-guide-page .lc-step-body .pf-table-wrap{margin:16px 0 4px}
+body.lc-guide-page .lc-step-body .lc-step-title{font-family:var(--font-display);font-size:21px;line-height:1.3;color:var(--pf-navy);margin:9px 0 8px}
+body.lc-guide-page .lc-label{display:block;font:700 11px/1.2 var(--font-body,sans-serif);letter-spacing:.12em;text-transform:uppercase;color:#6b7686;margin-bottom:5px}
+@media(max-width:560px){body.lc-guide-page .lc-step{grid-template-columns:minmax(0,1fr);gap:12px}}
+body.lc-guide-page .lc-checklist{list-style:none;padding:0;margin:22px 0 20px;display:grid;gap:14px;max-width:80ch}
+body.lc-guide-page .lc-checklist li{position:relative;padding-left:34px;font-size:16px;line-height:1.65;color:#3c4a5c}
+body.lc-guide-page .lc-checklist li:before{content:"\2713";position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;background:var(--pf-green);color:#fff;font:700 12px/22px var(--font-body,sans-serif);text-align:center}
+body.lc-guide-page .lc-checklist strong{color:var(--pf-navy)}
+body.lc-guide-page .lc-callout{border:1px solid #ead9bd;border-left:4px solid #b7791f;background:#fffaf1;border-radius:10px;padding:22px 26px;max-width:85ch;margin-top:18px}
+body.lc-guide-page .lc-callout p{margin:0}
+body.lc-guide-page .lc-statement p{font-family:var(--font-display);font-size:19px;line-height:1.6;color:var(--pf-navy);max-width:64ch}
+@media(max-width:650px){body.lc-guide-page .lc-statement p{font-size:17.5px}}
+body.lc-guide-page .lc-faq summary{font-size:16px}
