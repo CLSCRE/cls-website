@@ -1215,16 +1215,32 @@ function submitApplication() {
   if(typeof gtag==='function') gtag('event','generate_lead_attempt', leadParams);
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(Object.assign({event:'generate_lead_attempt'}, leadParams));
-  try { localStorage.removeItem('cls_apply_draft_v1'); } catch(e) {}
-
-  // Submit the hidden form
-  // Apply page uses its own anti-bot (5-step wizard, 10s minimum, honeypot, token)
-  // so it submits directly to FormSubmit, not through the Worker proxy
+  // Submit the hidden form to the cls-form-proxy Worker (2026-10-09): it stores the application and
+  // emails it, with any files, to loans@clscre.com. Before this the wizard posted straight to FormSubmit
+  // for inquiries@, a mailbox nobody reads. The page's own bot checks (5 steps, 10s minimum, honeypots,
+  // token) are re-checked by the Worker. If the Worker cannot take it, fall back to the old direct
+  // FormSubmit post so the application is never lost.
   var wf = document.getElementById('wizardForm');
-  wf.setAttribute('action', wf._realAction || wf._directAction);
-  wf.setAttribute('method', 'POST');
-  HTMLFormElement.prototype.submit.call(wf);
+  var fallback = function() {
+    wf.setAttribute('action', wf._realAction || wf._directAction);
+    wf.setAttribute('method', 'POST');
+    HTMLFormElement.prototype.submit.call(wf);
+  };
+  fetch(APPLY_ENDPOINT, { method: 'POST', body: new FormData(wf), mode: 'cors' })
+    .then(function(resp) {
+      if (!resp.ok) throw new Error('http_' + resp.status);
+      return resp.json().catch(function() { return {}; });
+    })
+    .then(function(data) {
+      try { localStorage.removeItem('cls_apply_draft_v1'); } catch(e) {}
+      window.location.href = (data && data.redirect) || 'thank-you.html?form=apply';
+    })
+    .catch(function(err) {
+      try { if (typeof gtag === 'function') gtag('event', 'form_submission_failed', { form_id: 'wizardForm', reason: String(err && err.message || err), fallback: 'formsubmit' }); } catch(e) {}
+      fallback();
+    });
 }
+var APPLY_ENDPOINT = 'https://cls-form-proxy.clscre.workers.dev/apply';
 
 /* --- File upload --- */
 const uploadZone = document.getElementById('uploadZone');
