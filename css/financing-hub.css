@@ -148,3 +148,15 @@ body.lc-guide-page .lc-callout p{margin:0}
 body.lc-guide-page .lc-statement p{font-family:var(--font-display);font-size:19px;line-height:1.6;color:var(--pf-navy);max-width:64ch}
 @media(max-width:650px){body.lc-guide-page .lc-statement p{font-size:17.5px}}
 body.lc-guide-page .lc-faq summary{font-size:16px}
+
+/* ==== Life company guides: qualify page components (body.lc-guide-page), added 2026-10-09 ==== */
+body.lc-guide-page .lc-quick{background:#f0faf6;border:1px solid #b9e2d3;border-left:4px solid var(--pf-green);border-radius:10px;padding:18px 22px;margin:0 0 30px;font-size:16px;line-height:1.7;color:#2b3a4d;max-width:85ch}
+body.lc-guide-page .lc-quick strong{display:block;font:700 11px/1.2 var(--font-body,sans-serif);letter-spacing:.12em;text-transform:uppercase;color:var(--pf-green);margin-bottom:8px}
+body.lc-guide-page .pf-table.lc-req td:first-child{width:13%;font-size:14px;white-space:nowrap}
+body.lc-guide-page .pf-table.lc-req td:nth-child(2){width:26%;font-weight:600;color:var(--pf-navy)}
+body.lc-guide-page .lc-checklist.lc-two{grid-template-columns:1fr 1fr;column-gap:36px;max-width:none}
+@media(max-width:760px){body.lc-guide-page .lc-checklist.lc-two{grid-template-columns:1fr}}
+body.lc-guide-page .lc-card-grid .lc-pos{border-left:4px solid var(--pf-green)}
+body.lc-guide-page .lc-card-grid .lc-neg{border-left:4px solid #b42318}
+body.lc-guide-page .lc-cta-band h3{font-family:Georgia,serif;font-size:31px;font-weight:400;color:#fff;margin:0 0 12px;letter-spacing:.01em}
+body.lc-guide-page .lc-glance-card .pf-kicker{display:block}
