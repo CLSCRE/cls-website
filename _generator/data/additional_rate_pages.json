@@ -659,7 +659,7 @@
     "drivers": [
       [
         "10-Year Treasury Benchmark",
-        "Life companies price fixed-rate loans as a spread over the corresponding Treasury. A 10-year life company loan is quoted as a spread over the 10-year Treasury yield, and a 15-year loan over the 15-year Treasury. When Treasury yields move 25 basis points, quoted rates move nearly in lockstep. The spread itself, typically 115 to 200 basis points over Treasury on quality deals, reflects credit and market risk, not benchmark volatility."
+        "Life companies price fixed-rate loans as a spread over the corresponding Treasury. A 10-year life company loan is quoted as a spread over the 10-year Treasury yield, and a 15-year loan over the 15-year Treasury. When Treasury yields move 25 basis points, quoted rates move nearly in lockstep. The spread itself, typically 120 to 180 basis points over Treasury on quality deals, reflects credit and market risk, not benchmark volatility."
       ],
       [
         "Asset Quality and Market Tier",
@@ -711,11 +711,11 @@
     "faqs": [
       [
         "What are current life insurance company loan rates?",
-        "Life insurance company permanent loan rates in May 2026 range from 5.00% to 6.50% on 10-year fixed terms for stabilized institutional-grade commercial real estate. Rates are quoted as a fixed spread over the corresponding Treasury yield, typically 115 to 200 basis points, and tightest spreads go to primary-market multifamily and industrial assets with conservative leverage at 55% to 60% LTV and strong sponsorship."
+        "Life insurance company permanent loan rates in May 2026 range from 5.00% to 6.50% on 10-year fixed terms for stabilized institutional-grade commercial real estate. Rates are quoted as a fixed spread over the corresponding Treasury yield, typically 120 to 180 basis points, and tightest spreads go to primary-market multifamily and industrial assets with conservative leverage at 55% to 60% LTV and strong sponsorship."
       ],
       [
         "How do life companies set their loan rates?",
-        "Life companies price permanent loans as a fixed spread over the corresponding Treasury benchmark, matching the loan term to their liability duration. A 10-year loan is spread over the 10-year Treasury, a 15-year loan over the 15-year Treasury. The credit spread, typically 115 to 200 basis points on quality deals, reflects asset type, market, leverage, and sponsorship. Treasury movements pass through to quoted rates within days."
+        "Life companies price permanent loans as a fixed spread over the corresponding Treasury benchmark, matching the loan term to their liability duration. A 10-year loan is spread over the 10-year Treasury, a 15-year loan over the 15-year Treasury. The credit spread, typically 120 to 180 basis points on quality deals, reflects asset type, market, leverage, and sponsorship. Treasury movements pass through to quoted rates within days."
       ],
       [
         "What property types do life companies lend on?",

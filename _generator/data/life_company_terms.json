@@ -11,7 +11,7 @@
   "apply_url": "/apply.html?program=life-company",
   "rate_range": "5.00% to 6.50%",
   "rate_range_compact": "5.00%–6.50%",
-  "spread_bps": "115 to 200 bps over matching-term Treasury",
+  "spread_bps": "120 to 180 bps over matching-term Treasury",
   "loan_amount": "$5M to $100M+",
   "loan_amount_display_home": "$5M–$100M+",
   "min_amount_usd": 5000000,
