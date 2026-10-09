@@ -252,11 +252,13 @@
     const deal = messages.filter(m => m.role === 'user').map(m => m.content).join(' | ');
 
     try {
-      await fetch(WORKER_URL + '/lead', {
+      const leadResp = await fetch(WORKER_URL + '/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, phone, deal }),
       });
+      // A failed delivery must not show the thank-you message (the Worker returns 502 if it could not save or email)
+      if (!leadResp.ok) throw new Error('lead delivery failed: ' + leadResp.status);
 
       leadCaptured = true;
       hideLeadForm();
