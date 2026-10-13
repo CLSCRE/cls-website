@@ -2,41 +2,41 @@
   {
     "slug": "bridge-to-perm-loan-rates",
     "title": "Bridge-to-Perm Loan Rates 2026: Current Rates, Terms, and What Lenders Are Pricing",
-    "meta": "Bridge-to-perm loan rates in 2026 range from 7.00% to 10.50% floating during construction, then 5.50% to 7.25% fixed at conversion. See rate tables, drivers, and program mechanics.",
+    "meta": "Bridge-to-perm loan rates in 2026 range from 7.25% to 10.75% floating during construction, then 6.25% to 8.00% fixed at conversion. See rate tables, drivers, and program mechanics.",
     "h1": "Bridge-to-Perm Loan Rates 2026",
     "h2_intro": "Two-Phase Pricing Explained for Borrowers",
-    "rate_range": "Construction/bridge 7.00% to 10.50% floating, permanent 5.50% to 7.25% locked at close",
+    "rate_range": "Construction/bridge 7.25% to 10.75% floating, permanent 6.25% to 8.00% locked at close",
     "rate_type": "Floating SOFR-based during construction or bridge phase, fixed rate locked at origination for the permanent phase",
     "term": "Construction/bridge phase 12 to 36 months, permanent phase 5 to 30 years",
     "typical_ltv": "65% to 75% of stabilized value on the permanent commitment, 55% to 70% on the construction facility",
     "amortization": "Interest only during the bridge or construction phase, amortizing (typically 25 to 30 years) or interest only available on the permanent phase depending on program",
     "hub_url": "bridge-to-perm-loans.html",
     "hub_name": "Bridge-to-Perm Loans",
-    "intro": "Bridge-to-perm loan rates in May 2026 carry two distinct pricing components: a floating construction or bridge rate of 7.00% to 10.50% (SOFR plus 250 to 400 basis points) during the build or stabilization period, and a permanent rate of 5.50% to 7.25% that is locked at origination and activates at conversion. The core borrower benefit is eliminating refinance risk by securing the permanent take-out before construction begins, even as the floating bridge rate fluctuates with SOFR over the intervening months. Forward commitments are available through Fannie Mae, Freddie Mac, life companies, and regional banks, with pricing on each phase reflecting the respective risk profile of that component.",
+    "intro": "Bridge-to-perm loan rates in October 2026 carry two distinct pricing components: a floating construction or bridge rate of 7.75% to 11.25% (SOFR plus 250 to 400 basis points) during the build or stabilization period, and a permanent rate of 6.25% to 8.00% that is locked at origination and activates at conversion. The core borrower benefit is eliminating refinance risk by securing the permanent take-out before construction begins, even as the floating bridge rate fluctuates with SOFR over the intervening months. Forward commitments are available through Fannie Mae, Freddie Mac, life companies, and regional banks, with pricing on each phase reflecting the respective risk profile of that component.",
     "rate_table": [
       {
         "tier": "Bridge Phase, Conservative (55% to 60% LTC)",
-        "rate": "7.00% to 8.25%",
+        "rate": "7.25% to 8.50%",
         "note": "Lower leverage construction or bridge draw facility, strong sponsorship"
       },
       {
         "tier": "Bridge Phase, Standard (65% to 70% LTC)",
-        "rate": "8.25% to 9.50%",
+        "rate": "8.50% to 9.75%",
         "note": "Most common range for multifamily and mixed-use construction bridge"
       },
       {
         "tier": "Bridge Phase, Higher Leverage (70% to 75% LTC)",
-        "rate": "9.50% to 10.50%",
+        "rate": "9.75% to 10.75%",
         "note": "Requires strong market, experienced sponsor, and solid permanent commitment"
       },
       {
         "tier": "Permanent Phase, Agency Forward (Fannie Mae or Freddie Mac)",
-        "rate": "5.50% to 6.25%",
+        "rate": "6.25% to 7.25%",
         "note": "Rate locked at origination, activates upon stabilization and conversion"
       },
       {
         "tier": "Permanent Phase, Life Company or Bank",
-        "rate": "6.00% to 7.25%",
+        "rate": "6.75% to 8.00%",
         "note": "Balance sheet permanent commitment, fixed for 5 to 15 years at conversion"
       }
     ],
@@ -73,34 +73,34 @@
     "comparisons": [
       [
         "Standalone Construction Loan plus Separate Permanent Refinance",
-        "Bridge phase 7.50% to 11.00%, permanent refinance at market rate at completion",
+        "Bridge phase 7.75% to 11.25%, permanent refinance at market rate at completion",
         "Standalone construction gives flexibility to shop the permanent loan at stabilization but exposes the borrower to rate risk and refinance execution risk at the worst possible time, when the project is newly stabilized and capital markets may have moved. Bridge-to-perm eliminates that risk by locking the permanent rate now, at the cost of a modest forward commitment premium."
       ],
       [
         "Standalone Bridge Loan",
-        "7.50% to 11.50% floating",
+        "7.75% to 11.75% floating",
         "A standalone bridge loan carries no forward commitment and leaves the borrower to arrange permanent financing at stabilization. Pricing on the bridge itself is similar, but the borrower absorbs all refinance risk. Bridge-to-perm is the better structure when interest rate visibility matters more than flexibility."
       ],
       [
         "Agency Permanent Loan (Fannie Mae or Freddie Mac)",
-        "5.50% to 6.50%",
+        "6.25% to 7.25%",
         "Agency permanent loans require existing stabilization, typically 90% occupancy for 90 days. They cannot fund construction or lease-up. Bridge-to-perm uses the same agency programs as the permanent phase but adds the construction facility upfront, making it the path to agency execution for projects not yet stabilized."
       ],
       [
         "HUD or FHA Construction to Permanent (221(d)(4))",
-        "5.25% to 6.00% all-in, fixed for 40 years",
+        "6.00% to 6.75% all-in, fixed for 40 years",
         "HUD 221(d)(4) offers the lowest long-term fixed rate available for multifamily construction and is a single-close structure similar to bridge-to-perm. The tradeoff is timeline, typically 12 to 18 months to close, Davis-Bacon prevailing wage requirements, and significant compliance overhead. Bridge-to-perm closes faster and works for asset types HUD does not finance."
       ],
       [
         "DSCR Permanent Loan",
-        "6.50% to 9.00%",
+        "7.25% to 9.75%",
         "DSCR loans require a fully stabilized, income-producing property and cannot accommodate construction or lease-up phases. They are a take-out option after stabilization but are not a construction vehicle. Bridge-to-perm is appropriate when the asset needs to be built or stabilized before any permanent financing is possible."
       ]
     ],
     "faqs": [
       [
         "What are current bridge-to-perm loan rates?",
-        "Bridge-to-perm loan rates in May 2026 have two components. The construction or bridge phase floats at 7.00% to 10.50%, priced at SOFR plus 250 to 400 basis points depending on leverage and sponsorship. The permanent phase rate is locked at origination and ranges from 5.50% to 7.25% depending on the permanent lender program, property type, and loan term selected."
+        "Bridge-to-perm loan rates in October 2026 have two components. The construction or bridge phase floats at 7.75% to 11.25%, priced at SOFR plus 250 to 400 basis points depending on leverage and sponsorship. The permanent phase rate is locked at origination and ranges from 6.25% to 8.00% depending on the permanent lender program, property type, and loan term selected."
       ],
       [
         "When is the permanent rate locked in a bridge-to-perm loan?",
@@ -120,7 +120,7 @@
       ],
       [
         "How does bridge-to-perm compare to HUD 221(d)(4) for multifamily construction?",
-        "HUD 221(d)(4) is also a single-close construction-to-permanent program and typically offers the lowest long-term fixed rate, around 5.25% to 6.00%, amortizing over 40 years. Bridge-to-perm closes in 60 to 90 days versus 12 to 18 months for HUD, has no Davis-Bacon wage requirements, and works for property types HUD does not finance. Borrowers who can meet HUD requirements and tolerate the timeline often prefer it for the rate, but bridge-to-perm wins on speed and flexibility."
+        "HUD 221(d)(4) is also a single-close construction-to-permanent program and typically offers the lowest long-term fixed rate, around 6.00% to 6.75%, amortizing over 40 years. Bridge-to-perm closes in 60 to 90 days versus 12 to 18 months for HUD, has no Davis-Bacon wage requirements, and works for property types HUD does not finance. Borrowers who can meet HUD requirements and tolerate the timeline often prefer it for the rate, but bridge-to-perm wins on speed and flexibility."
       ],
       [
         "What is a typical loan-to-cost for the construction phase of a bridge-to-perm loan?",
@@ -131,41 +131,41 @@
   {
     "slug": "agency-loan-rates",
     "title": "Agency Multifamily Loan Rates 2026: Current Rates, Terms, and Pricing Mechanics",
-    "meta": "Agency multifamily loan rates range from 5.50% to 6.50% in 2026. See Fannie Mae DUS and Freddie Mac Optigo rate tiers, spread drivers, and how Tier pricing affects your all-in cost.",
+    "meta": "Agency multifamily loan rates range from 6.25% to 7.25% in 2026. See Fannie Mae DUS and Freddie Mac Optigo rate tiers, spread drivers, and how Tier pricing affects your all-in cost.",
     "h1": "Agency Multifamily Loan Rates 2026 (Fannie Mae DUS & Freddie Mac Optigo)",
     "h2_intro": "What Stabilized Multifamily Is Pricing At",
-    "rate_range": "5.50% to 6.50%",
+    "rate_range": "6.25% to 7.25%",
     "rate_type": "Fixed rate, priced as 10-year Treasury plus a lender spread (Tier 1 through Tier 4)",
     "term": "5 to 30 years, with 10-year fixed being the dominant execution",
     "typical_ltv": "65% to 80% of stabilized value",
     "amortization": "30-year amortization standard, with full-term or partial interest-only periods available on qualified deals",
     "hub_url": "agency-loans.html",
     "hub_name": "Agency Loans (Fannie Mae & Freddie Mac)",
-    "intro": "Agency multifamily loan rates in May 2026 range from 5.50% to 6.50% for a standard 10-year fixed conventional execution, priced as the 10-year Treasury yield plus a spread that reflects market tier, DSCR, and loan size. Fannie Mae DUS and Freddie Mac Optigo remain the lowest all-in cost permanent execution available for stabilized multifamily, with non-recourse structure, 30-year amortization, and optional interest-only periods unavailable in most bank or debt fund products. Small Balance programs (DUS Small Loans and Optigo SBL) serve the $1M to $9M range with expedited underwriting and competitive pricing on the same Treasury-based pricing grid.",
+    "intro": "Agency multifamily loan rates in October 2026 range from 6.25% to 7.25% for a standard 10-year fixed conventional execution, priced as the 10-year Treasury yield plus a spread that reflects market tier, DSCR, and loan size. Fannie Mae DUS and Freddie Mac Optigo remain the lowest all-in cost permanent execution available for stabilized multifamily, with non-recourse structure, 30-year amortization, and optional interest-only periods unavailable in most bank or debt fund products. Small Balance programs (DUS Small Loans and Optigo SBL) serve the $1M to $9M range with expedited underwriting and competitive pricing on the same Treasury-based pricing grid.",
     "rate_table": [
       {
         "tier": "Tier 1 (Top Markets, DSCR 1.35x or above, 65% LTV or below)",
-        "rate": "5.50% to 5.85%",
+        "rate": "6.25% to 6.60%",
         "note": "Best execution, major MSAs, strong cash flow, partial or full IO often available"
       },
       {
         "tier": "Tier 2 (Primary Markets, DSCR 1.25x to 1.35x, LTV 65% to 70%)",
-        "rate": "5.85% to 6.15%",
+        "rate": "6.60% to 6.90%",
         "note": "Most common execution for well-located stabilized assets"
       },
       {
         "tier": "Tier 3 (Secondary Markets or DSCR 1.20x to 1.25x, LTV 70% to 75%)",
-        "rate": "6.15% to 6.40%",
+        "rate": "6.90% to 7.15%",
         "note": "Secondary market assets or moderate leverage with acceptable debt coverage"
       },
       {
         "tier": "Tier 4 (Tertiary Markets or Higher Leverage up to 80% LTV)",
-        "rate": "6.40% to 6.50%",
+        "rate": "7.15% to 7.25%",
         "note": "Maximum agency leverage, limited IO availability, smaller loan amounts relative to NOI"
       },
       {
         "tier": "Small Balance (DUS Small Loans or Optigo SBL, $1M to $9M)",
-        "rate": "5.65% to 6.50%",
+        "rate": "6.40% to 7.25%",
         "note": "Streamlined underwriting, faster close, pricing follows same Treasury-plus-spread grid"
       }
     ],
@@ -202,34 +202,34 @@
     "comparisons": [
       [
         "Bank Permanent Loans",
-        "5.75% to 7.50%",
+        "6.50% to 8.25%",
         "Bank loans offer recourse or partial recourse structures and may close faster for smaller loans, but they lack the non-recourse protection, 30-year amortization depth, and IO availability of agency execution. Agency wins on cost and terms for any stabilized deal above $1M where non-recourse matters to the sponsor."
       ],
       [
         "Life Company Loans",
-        "5.25% to 6.25%",
+        "6.50% to 7.10%",
         "Life companies can price inside agency on trophy-quality multifamily in primary markets at 50% to 55% LTV, often at comparable or tighter spreads over Treasury. However, life company programs cap LTV well below agency maximums, have limited appetite outside core markets, and offer far fewer loans per year. Agency is the default choice for anything above 60% LTV or in a secondary market."
       ],
       [
         "CMBS Conduit Loans",
-        "6.00% to 7.25%",
+        "6.50% to 8.25%",
         "CMBS executes across more property types than agency but prices wider for multifamily because agency programs carry an implicit government backstop that compresses spreads. CMBS offers more flexibility on unusual collateral (student housing, manufactured housing, mixed-use) but lacks the IO availability, non-recourse consistency, and execution speed of agency for standard garden or mid-rise apartments."
       ],
       [
         "Bridge Loans",
-        "7.50% to 11.50%",
+        "7.75% to 11.75%",
         "Bridge loans are floating-rate, short-term, and sized to current or near-current value for properties that do not yet meet agency occupancy or DSCR thresholds. The typical business plan is to stabilize the asset and then refinance into an agency permanent loan, which is where this rate table becomes relevant. Agency is the target exit, not the entry point, for value-add deals."
       ],
       [
         "HUD or FHA Multifamily Loans (221(d)(4) and 223(f))",
-        "5.00% to 5.75%",
+        "5.75% to 6.50%",
         "HUD loans price inside agency on a fully amortizing 35-year or 40-year basis and are fully non-recourse, but they require 6 to 18 months to close depending on processing queue and deal complexity. Agency is the preferred execution when speed and certainty of close matter. HUD is used when the lowest possible rate and longest amortization period are the primary objectives and timeline is flexible."
       ]
     ],
     "faqs": [
       [
         "What are current Fannie Mae and Freddie Mac multifamily loan rates?",
-        "Agency multifamily loan rates in May 2026 range from 5.50% to 6.50% for a 10-year fixed conventional execution. Rates are priced as the 10-year Treasury yield plus a spread of roughly 140 to 215 basis points depending on Tier classification, DSCR, LTV, and loan size. Tier 1 deals in major markets with strong debt coverage price at the tight end of that range."
+        "Agency multifamily loan rates in October 2026 range from 6.25% to 7.25% for a 10-year fixed conventional execution. Rates are priced as the 10-year Treasury yield plus a spread of roughly 140 to 215 basis points depending on Tier classification, DSCR, LTV, and loan size. Tier 1 deals in major markets with strong debt coverage price at the tight end of that range."
       ],
       [
         "How is the Tier system used in agency multifamily pricing?",
@@ -260,36 +260,36 @@
   {
     "slug": "hud-fha-loan-rates",
     "title": "HUD / FHA Loan Rates 2026: Current Rates, Terms, and Program Mechanics",
-    "meta": "HUD 223(f) rates range from 5.00% to 6.00% and HUD 221(d)(4) from 5.25% to 6.25% in 2026. See rate tables, MIP costs, program comparisons, and timeline realities.",
+    "meta": "HUD 223(f) rates range from 5.75% to 6.75% and HUD 221(d)(4) from 6.00% to 7.00% in 2026. See rate tables, MIP costs, program comparisons, and timeline realities.",
     "h1": "HUD / FHA Multifamily and Healthcare Loan Rates 2026",
     "h2_intro": "What the Market Is Actually Pricing",
-    "rate_range": "5.00% to 6.25% depending on program",
+    "rate_range": "5.75% to 7.00% depending on program",
     "rate_type": "Fixed rate for the full loan term, set at rate lock with FHA-approved lender",
     "term": "35 years (HUD 223f), 40 years plus construction period (HUD 221d4)",
     "typical_ltv": "80% to 87% LTV or LTC depending on program and property type",
     "amortization": "Fully amortizing fixed-rate for the entire loan term, no balloon payment",
     "hub_url": "hud-fha-loans.html",
     "hub_name": "HUD / FHA Loans",
-    "intro": "HUD and FHA multifamily loan rates in May 2026 range from 5.00% to 6.00% for stabilized acquisition and refinance under HUD 223(f) and from 5.25% to 6.25% for ground-up construction under HUD 221(d)(4), making these programs among the lowest fixed rates available in commercial real estate. The rate advantage comes bundled with full non-recourse liability, maximum leverage up to 87% LTV on affordable properties, and 35 to 40-year fully amortizing terms with no balloon risk. The tradeoff is a closing timeline of 6 to 12 months and an ongoing Mortgage Insurance Premium that adds 25 to 65 basis points annually to the effective cost of capital.",
+    "intro": "HUD and FHA multifamily loan rates in October 2026 range from 5.75% to 6.75% for stabilized acquisition and refinance under HUD 223(f) and from 6.00% to 7.00% for ground-up construction under HUD 221(d)(4), making these programs among the lowest fixed rates available in commercial real estate. The rate advantage comes bundled with full non-recourse liability, maximum leverage up to 87% LTV on affordable properties, and 35 to 40-year fully amortizing terms with no balloon risk. The tradeoff is a closing timeline of 6 to 12 months and an ongoing Mortgage Insurance Premium that adds 25 to 65 basis points annually to the effective cost of capital.",
     "rate_table": [
       {
         "tier": "HUD 223(f) Stabilized Multifamily Refinance or Acquisition",
-        "rate": "5.00% to 6.00%",
+        "rate": "5.75% to 6.75%",
         "note": "35-year fixed, up to 85% LTV, fully amortizing, non-recourse"
       },
       {
         "tier": "HUD 221(d)(4) Ground-Up Multifamily Construction",
-        "rate": "5.25% to 6.25%",
+        "rate": "6.00% to 7.00%",
         "note": "40-year fixed permanent term plus construction period, up to 85% LTC"
       },
       {
         "tier": "HUD 232 Assisted Living and Nursing Facility",
-        "rate": "5.10% to 6.10%",
+        "rate": "5.85% to 6.85%",
         "note": "Healthcare-specific underwriting, up to 80% LTV, fully amortizing"
       },
       {
         "tier": "HUD 223(a)(7) HUD-to-HUD Streamline Refinance",
-        "rate": "5.00% to 5.75%",
+        "rate": "5.75% to 6.50%",
         "note": "Fastest HUD execution, existing HUD loans only, reduced underwriting"
       }
     ],
@@ -322,29 +322,29 @@
     "comparisons": [
       [
         "Agency Loans (Fannie Mae or Freddie Mac)",
-        "5.50% to 7.00%",
+        "6.25% to 7.25%",
         "Agency loans close in 45 to 90 days versus 6 to 12 months for HUD, and offer more flexible prepayment and partial release structures. HUD wins on maximum term (35 to 40 years versus 30 years), higher leverage on affordable product, and full non-recourse without carve-out exposure. For market-rate stabilized multifamily where speed and prepayment flexibility matter, agency is often preferred."
       ],
       [
         "Life Company Loans",
-        "5.25% to 6.50%",
+        "6.50% to 7.10%",
         "Life companies offer competitive fixed rates and close in 60 to 90 days, but cap leverage at 65% to 70% LTV with full recourse on some executions. HUD is the clear winner on leverage and non-recourse terms. Life company loans suit low-leverage borrowers who want a quiet, relationship-driven execution without HUD's MIP or processing timeline."
       ],
       [
         "Bank or Credit Union Permanent Loans",
-        "6.00% to 8.00%",
+        "6.75% to 8.75%",
         "Regional banks and credit unions close faster than HUD and have more flexible underwriting criteria, but carry 5 to 10-year balloon maturities and partial recourse. A borrower who cannot tolerate refinance risk at balloon should seriously evaluate HUD's 35-year fully amortizing structure even at the cost of a longer close timeline."
       ],
       [
         "Bridge Loans",
-        "7.50% to 11.50%",
+        "7.75% to 11.75%",
         "Bridge financing is the path to HUD, not a substitute for it. A property that does not yet meet HUD's occupancy or DSCR minimums will need 12 to 36 months of stabilization on a bridge loan before it qualifies for a HUD 223(f) refinance. Borrowers should model the blended cost of the bridge period plus the HUD takeout when evaluating a construction or value-add deal."
       ]
     ],
     "faqs": [
       [
         "What are current HUD FHA multifamily loan rates?",
-        "HUD 223(f) stabilized multifamily rates range from 5.00% to 6.00% and HUD 221(d)(4) construction rates range from 5.25% to 6.25% in May 2026. Rates are fixed at rate lock for the full 35 to 40-year loan term and move with the 10-year Treasury. The Mortgage Insurance Premium of 25 to 65 basis points annually adds to the effective all-in cost."
+        "HUD 223(f) stabilized multifamily rates range from 5.75% to 6.75% and HUD 221(d)(4) construction rates range from 6.00% to 7.00% in October 2026. Rates are fixed at rate lock for the full 35 to 40-year loan term and move with the 10-year Treasury. The Mortgage Insurance Premium of 25 to 65 basis points annually adds to the effective all-in cost."
       ],
       [
         "How long does it take to close a HUD FHA multifamily loan?",
@@ -364,47 +364,47 @@
       ],
       [
         "What properties qualify for HUD 232 healthcare loans?",
-        "HUD 232 finances assisted living facilities, skilled nursing facilities, board and care homes, and intermediate care facilities. Properties must meet minimum occupancy thresholds and HUD's healthcare-specific operational and licensing requirements. Rates range from 5.10% to 6.10% in May 2026 on fully amortizing 35-year fixed terms, at up to 80% LTV, with the same non-recourse and MIP structure as other HUD programs."
+        "HUD 232 finances assisted living facilities, skilled nursing facilities, board and care homes, and intermediate care facilities. Properties must meet minimum occupancy thresholds and HUD's healthcare-specific operational and licensing requirements. Rates range from 5.85% to 6.85% in October 2026 on fully amortizing 35-year fixed terms, at up to 80% LTV, with the same non-recourse and MIP structure as other HUD programs."
       ],
       [
         "What is a HUD 223(a)(7) streamline refinance?",
-        "HUD 223(a)(7) is a streamlined refinance program available exclusively to borrowers who already have an existing HUD-insured loan. It allows a rate reduction and term extension without full underwriting, using a significantly abbreviated review process. Closing timelines are 3 to 6 months versus 6 to 12 months for standard HUD executions, and rates range from 5.00% to 5.75% in May 2026, making it the fastest and lowest-friction HUD execution available."
+        "HUD 223(a)(7) is a streamlined refinance program available exclusively to borrowers who already have an existing HUD-insured loan. It allows a rate reduction and term extension without full underwriting, using a significantly abbreviated review process. Closing timelines are 3 to 6 months versus 6 to 12 months for standard HUD executions, and rates range from 5.75% to 6.50% in October 2026, making it the fastest and lowest-friction HUD execution available."
       ]
     ]
   },
   {
     "slug": "cmbs-loan-rates",
     "title": "CMBS Conduit Loan Rates 2026: Current Rates, Terms, and Pricing Mechanics",
-    "meta": "CMBS conduit loan rates range from 5.75% to 7.50% for 10-year fixed non-recourse financing. See current rate tiers by property type, spread drivers, and how conduit pricing works in May 2026.",
+    "meta": "CMBS conduit loan rates range from 6.50% to 8.25% for 10-year fixed non-recourse financing. See current rate tiers by property type, spread drivers, and how conduit pricing works in October 2026.",
     "h1": "CMBS Conduit Loan Rates 2026",
     "h2_intro": "What the Bond Market Is Pricing Today",
-    "rate_range": "5.75% to 7.50%",
+    "rate_range": "6.50% to 8.25%",
     "rate_type": "Fixed rate, 10-year Treasury plus CMBS bond spread (175 to 250 bps)",
     "term": "10 years (standard conduit structure)",
     "typical_ltv": "55% to 75% of stabilized value",
     "amortization": "30-year amortization; interest-only periods of 2 to 5 years common on stronger deals",
     "hub_url": "cmbs-loans.html",
     "hub_name": "CMBS Loans",
-    "intro": "CMBS conduit loan rates in May 2026 range from 5.75% to 7.50% for 10-year fixed non-recourse permanent financing, with pricing determined by the 10-year Treasury yield plus a CMBS bond spread currently running 175 to 250 basis points depending on property type, leverage, and deal structure. Loans are pooled with other commercial mortgages, securitized, and sold as bonds, which means underwriting standards are set by the bond market rather than a single lender's credit committee. Loan sizes typically run from $3 million to well over $250 million, covering office, retail, multifamily, industrial, hospitality, and self-storage assets on a non-recourse basis.",
+    "intro": "CMBS conduit loan rates in October 2026 range from 6.50% to 8.25% for 10-year fixed non-recourse permanent financing, with pricing determined by the 10-year Treasury yield plus a CMBS bond spread typically running 175 to 250 basis points depending on property type, leverage, and deal structure. Loans are pooled with other commercial mortgages, securitized, and sold as bonds, which means underwriting standards are set by the bond market rather than a single lender's credit committee. Loan sizes typically run from $3 million to well over $250 million, covering office, retail, multifamily, industrial, hospitality, and self-storage assets on a non-recourse basis.",
     "rate_table": [
       {
         "tier": "Industrial or Multifamily, 55% to 60% LTV",
-        "rate": "5.75% to 6.25%",
+        "rate": "6.50% to 7.00%",
         "note": "Tightest spreads, preferred bond collateral, often qualifies for IO"
       },
       {
         "tier": "Anchored Retail or Self-Storage, 60% to 65% LTV",
-        "rate": "6.25% to 6.75%",
+        "rate": "7.00% to 7.50%",
         "note": "Stable cash flow assets priced near mid-range"
       },
       {
         "tier": "Hospitality or Mixed-Use, 60% to 65% LTV",
-        "rate": "6.75% to 7.25%",
+        "rate": "7.50% to 8.00%",
         "note": "Operator-dependent assets carry wider CMBS spreads"
       },
       {
         "tier": "Office or Secondary-Market Retail, 55% to 65% LTV",
-        "rate": "7.00% to 7.50%",
+        "rate": "7.75% to 8.25%",
         "note": "Elevated bond spread reflects current investor risk aversion to office collateral"
       }
     ],
@@ -415,7 +415,7 @@
       ],
       [
         "CMBS Bond Spread",
-        "The spread over Treasuries is set by demand from bond investors for the CMBS security, not by the originating lender. B-piece buyer demand, current CMBS issuance volume, and overall credit market conditions drive spreads. In May 2026, spreads on investment-grade conduit issuances are running 175 to 250 basis points over the 10-year Treasury."
+        "The spread over Treasuries is set by demand from bond investors for the CMBS security, not by the originating lender. B-piece buyer demand, current CMBS issuance volume, and overall credit market conditions drive spreads. Spreads on investment-grade conduit issuances typically run 175 to 250 basis points over the 10-year Treasury."
       ],
       [
         "Property Type and Collateral Quality",
@@ -441,34 +441,34 @@
     "comparisons": [
       [
         "Agency Loans (Fannie Mae or Freddie Mac)",
-        "5.50% to 6.75%",
+        "6.25% to 7.25%",
         "Agency rates are often 25 to 75 basis points tighter than CMBS for qualifying multifamily assets and offer more flexible prepayment structures, including step-down prepay. CMBS covers non-multifamily property types that agencies do not, making it the default permanent execution for retail, office, hospitality, and mixed-use."
       ],
       [
         "Life Company Loans",
-        "5.50% to 6.50%",
+        "6.50% to 7.10%",
         "Life companies typically price 25 to 50 basis points inside CMBS conduit on core assets, offer more prepayment flexibility, and allow partial recourse structures. However, life companies are selective on property type and market, concentrate on lower-leverage deals, and have smaller individual allocations. CMBS accommodates a wider range of assets and leverage points."
       ],
       [
         "Bank Portfolio Loans",
-        "6.00% to 7.50%",
+        "6.75% to 8.25%",
         "Regional and community banks offer recourse permanent loans with more flexible prepayment (often step-down or open after a lockout), shorter fixed periods (3 to 10 years), and quicker credit decisions. CMBS wins on non-recourse, larger loan sizes, longer fixed terms, and access to higher leverage on cash-flowing assets."
       ],
       [
         "Debt Fund Bridge Loans",
-        "8.50% to 11.50%",
+        "8.75% to 11.75%",
         "Bridge financing is transitional and priced 250 to 400 basis points above stabilized CMBS rates. The standard execution path for a value-add acquisition is bridge financing during the lease-up period followed by CMBS conduit takeout once the asset stabilizes and qualifies for permanent fixed-rate debt."
       ],
       [
         "SBA 504 Loans",
-        "5.50% to 6.50%",
+        "6.25% to 7.25%",
         "SBA 504 financing covers owner-occupied commercial real estate at competitive fixed rates with 10 or 25-year terms and requires the borrower to occupy at least 51% of the property. CMBS serves investor-owned income-producing properties with no owner-occupancy requirement and substantially larger loan sizes."
       ]
     ],
     "faqs": [
       [
         "What are current CMBS conduit loan rates?",
-        "CMBS conduit loan rates in May 2026 range from 5.75% to 7.50% for 10-year fixed non-recourse loans. Pricing is determined by the 10-year Treasury yield plus a CMBS bond spread of 175 to 250 basis points. Industrial and multifamily collateral prices at the tight end; office and hospitality in secondary markets price near the wide end of the range."
+        "CMBS conduit loan rates in October 2026 range from 6.50% to 8.25% for 10-year fixed non-recourse loans. Pricing is determined by the 10-year Treasury yield plus a CMBS bond spread of 175 to 250 basis points. Industrial and multifamily collateral prices at the tight end; office and hospitality in secondary markets price near the wide end of the range."
       ],
       [
         "How is a CMBS loan rate calculated?",
@@ -499,36 +499,36 @@
   {
     "slug": "net-lease-loan-rates",
     "title": "Net Lease Loan Rates 2026: Current STNL Rates, Terms, and Lender Pricing",
-    "meta": "STNL loan rates range from 5.25% to 8.00% in 2026. See rate tables by tenant credit tier, key pricing drivers, and which lender type wins on net lease deals.",
+    "meta": "STNL loan rates range from 6.00% to 8.75% in 2026. See rate tables by tenant credit tier, key pricing drivers, and which lender type wins on net lease deals.",
     "h1": "Single-Tenant Net Lease (STNL) Loan Rates 2026",
     "h2_intro": "What Lenders Are Actually Pricing Today",
-    "rate_range": "5.25% to 8.00%",
+    "rate_range": "6.00% to 8.75%",
     "rate_type": "Fixed rate, benchmarked to the 10-year Treasury; some floating-rate options from banks and debt funds",
     "term": "10 to 25 years for permanent financing; 3 to 5 years for bank and CMBS execution",
     "typical_ltv": "60% to 75% of appraised value",
     "amortization": "25 to 30 years, with some life company and CMBS programs offering partial or full interest-only on strong credit-tenant deals",
     "hub_url": "net-lease-financing.html",
     "hub_name": "Net Lease Financing",
-    "intro": "Single-tenant net lease loan rates in May 2026 range from 5.25% to 7.00% for investment-grade credit-tenant properties and 6.00% to 8.00% for non-credit or franchise-operator assets, with the spread between tiers reflecting the degree to which debt service is backstopped by corporate covenant rather than real estate cash flow. Life companies dominate best-execution on long-WALT credit-tenant deals, CMBS handles standard STNL at moderate leverage, and regional banks step in for smaller loans or operators below investment grade. The most important pricing variables are tenant credit rating, weighted average lease term remaining, rent escalation structure, and the cap rate relationship to the loan constant.",
+    "intro": "Single-tenant net lease loan rates in October 2026 range from 6.00% to 7.75% for investment-grade credit-tenant properties and 6.75% to 8.75% for non-credit or franchise-operator assets, with the spread between tiers reflecting the degree to which debt service is backstopped by corporate covenant rather than real estate cash flow. Life companies dominate best-execution on long-WALT credit-tenant deals, CMBS handles standard STNL at moderate leverage, and regional banks step in for smaller loans or operators below investment grade. The most important pricing variables are tenant credit rating, weighted average lease term remaining, rent escalation structure, and the cap rate relationship to the loan constant.",
     "rate_table": [
       {
         "tier": "Investment-Grade Credit Tenant, 10+ Years WALT",
-        "rate": "5.25% to 6.00%",
+        "rate": "6.00% to 6.75%",
         "note": "Life company best execution; long-term fixed, partial or full IO available"
       },
       {
         "tier": "Investment-Grade Credit Tenant, 5 to 10 Years WALT",
-        "rate": "5.75% to 6.50%",
+        "rate": "6.50% to 7.25%",
         "note": "CMBS or life company; shorter lease term adds 25 to 50 bps"
       },
       {
         "tier": "Non-Credit Franchise Operator, Strong Brand",
-        "rate": "6.25% to 7.25%",
+        "rate": "7.00% to 8.00%",
         "note": "CMBS or bank execution; 100 to 150 bps wider than investment-grade comp"
       },
       {
         "tier": "Non-Credit Independent or Local Operator",
-        "rate": "6.75% to 8.00%",
+        "rate": "7.50% to 8.75%",
         "note": "Bank or debt fund; underwriting leans heavily on real estate residual value"
       }
     ],
@@ -565,34 +565,34 @@
     "comparisons": [
       [
         "CMBS Conduit Loans",
-        "5.75% to 7.25%",
+        "6.50% to 8.25%",
         "CMBS is the default non-recourse execution for standard STNL deals where the tenant is not investment-grade or the loan size is too small for life company interest. STNL-specific CMBS pricing runs close to life company rates on credit-tenant product but accepts a wider range of operators and property types."
       ],
       [
         "Life Company Permanent Loans",
-        "5.25% to 6.25%",
+        "6.50% to 7.10%",
         "Life companies provide the lowest rates and longest fixed-rate terms on qualifying credit-tenant STNL deals, often with full or partial interest-only and minimal prepayment flexibility. The tradeoff is strict eligibility: investment-grade tenant, 10 or more years WALT, major or secondary MSA, and minimum loan sizes that exclude smaller assets."
       ],
       [
         "SBA 504 Loans",
-        "5.50% to 7.00%",
+        "6.25% to 7.75%",
         "SBA 504 applies when the owner of the business also owns the real estate and occupies at least 51% of the building, which is structurally incompatible with third-party net lease investment. For owner-user single-tenant buildings SBA 504 competes directly, but for investor-owned NNN assets it is not an available option."
       ],
       [
         "Bridge Loans",
-        "7.50% to 11.50%",
+        "7.75% to 11.75%",
         "Bridge financing enters the STNL picture when lease term is too short for permanent execution, the tenant is in credit distress, or the property was recently acquired and permanent lenders want seasoning. Bridge rates are 200 to 400 basis points higher than permanent STNL rates and are floating, making them a transitional tool only."
       ],
       [
         "Portfolio Bank Loans",
-        "6.00% to 8.00%",
+        "6.75% to 8.75%",
         "Regional and community banks are the primary execution channel for STNL deals under $3M, non-credit operators, or markets where CMBS and life companies decline to lend. Bank loans carry recourse, shorter amortization periods, and typically 5 to 7 year fixed-rate terms with balloon maturities, but close faster and involve fewer third-party costs."
       ]
     ],
     "faqs": [
       [
         "What are current net lease loan rates?",
-        "Net lease loan rates in May 2026 range from 5.25% to 7.00% for investment-grade credit-tenant properties and 6.00% to 8.00% for non-credit or franchise-operator assets. Life companies set the floor on qualifying deals at 125 to 175 basis points over the 10-year Treasury, while bank and CMBS execution on non-credit STNL runs 200 to 250 basis points wider than that benchmark."
+        "Net lease loan rates in October 2026 range from 6.00% to 7.75% for investment-grade credit-tenant properties and 6.75% to 8.75% for non-credit or franchise-operator assets. Life companies set the floor on qualifying deals at 125 to 175 basis points over the 10-year Treasury, while bank and CMBS execution on non-credit STNL runs 200 to 250 basis points wider than that benchmark."
       ],
       [
         "How much does tenant credit quality affect the rate?",
@@ -742,36 +742,36 @@
   {
     "slug": "portfolio-loan-rates",
     "title": "Blanket Portfolio Loan Rates 2026: Current Rates, Terms, and What Lenders Are Pricing",
-    "meta": "Portfolio loan rates range from 6.50% to 9.00% for cross-collateralized blanket facilities. See rate tables by LTV tier, key pricing drivers, and program mechanics for May 2026.",
+    "meta": "Portfolio loan rates range from 7.25% to 9.75% for cross-collateralized blanket facilities. See rate tables by LTV tier, key pricing drivers, and program mechanics for October 2026.",
     "h1": "Blanket / Portfolio Loan Rates 2026",
     "h2_intro": "What Lenders Are Pricing on Multi-Property Facilities",
-    "rate_range": "6.50% to 9.00%",
+    "rate_range": "7.25% to 9.75%",
     "rate_type": "Fixed or floating; fixed options tied to the 5 or 10-year Treasury, floating options tied to SOFR",
     "term": "3 to 10 years",
     "typical_ltv": "Up to 75% LTV on blended portfolio value",
     "amortization": "25 to 30-year amortization, some interest-only periods available on larger facilities",
     "hub_url": "portfolio-loans.html",
     "hub_name": "Portfolio Loans",
-    "intro": "Blanket and portfolio loan rates in May 2026 range from 6.50% to 9.00% for cross-collateralized multi-property facilities, with pricing driven primarily by blended portfolio DSCR, aggregate loan size, property type mix, and sponsorship strength. Institutional balance-sheet lenders and debt funds with dedicated portfolio programs dominate this space, typically requiring $5M minimums and underwriting the facility as a single credit decision across all collateral. Borrowers accept a modest premium over single-asset financing in exchange for one closing, one payment, and a single underwriting cycle covering the entire portfolio.",
+    "intro": "Blanket and portfolio loan rates in October 2026 range from 7.25% to 9.75% for cross-collateralized multi-property facilities, with pricing driven primarily by blended portfolio DSCR, aggregate loan size, property type mix, and sponsorship strength. Institutional balance-sheet lenders and debt funds with dedicated portfolio programs dominate this space, typically requiring $5M minimums and underwriting the facility as a single credit decision across all collateral. Borrowers accept a modest premium over single-asset financing in exchange for one closing, one payment, and a single underwriting cycle covering the entire portfolio.",
     "rate_table": [
       {
         "tier": "Conservative Blended LTV (55% to 60%)",
-        "rate": "6.50% to 7.25%",
+        "rate": "7.25% to 8.00%",
         "note": "Strong blended DSCR above 1.35x, stabilized assets, experienced sponsor"
       },
       {
         "tier": "Standard Portfolio (65% to 70% LTV)",
-        "rate": "7.25% to 8.00%",
+        "rate": "8.00% to 8.75%",
         "note": "Most common range for mixed residential and commercial portfolios"
       },
       {
         "tier": "Higher Leverage (70% to 75% LTV)",
-        "rate": "8.00% to 8.75%",
+        "rate": "8.75% to 9.50%",
         "note": "Requires strong individual asset performance to support blended DSCR"
       },
       {
         "tier": "Mixed or Value-Add Portfolio",
-        "rate": "8.25% to 9.00%",
+        "rate": "9.00% to 9.75%",
         "note": "One or more assets in lease-up or light transition; debt fund execution"
       }
     ],
@@ -808,34 +808,34 @@
     "comparisons": [
       [
         "Single-Asset Permanent Loans",
-        "5.75% to 7.50%",
+        "6.50% to 8.25%",
         "Single-asset loans price tighter because lenders underwrite one discrete collateral package with no cross-collateral complexity. Portfolio loans trade at a modest premium but eliminate the cost and time of multiple loan originations, making the all-in economics favorable for sponsors managing five or more properties."
       ],
       [
         "Agency Multifamily Loans (Fannie Mae / Freddie Mac)",
-        "5.50% to 6.75%",
+        "6.25% to 7.25%",
         "Agency executions offer the lowest rates available for qualifying multifamily but require each property to meet GSE standards individually, and portfolio-level blanket structures are not available. Sponsors with mixed property types or non-conforming assets cannot use agency programs and must turn to portfolio lenders."
       ],
       [
         "Bridge Loans",
-        "7.50% to 11.50%",
+        "7.75% to 11.75%",
         "Bridge loans accommodate transitional or value-add portfolios that cannot support a permanent facility today. Rate is significantly higher, terms are short (12 to 36 months), and the program is designed for execution speed rather than long-term hold. Portfolio permanent loans are the takeout once stabilization is achieved."
       ],
       [
         "DSCR Rental Loans",
-        "6.50% to 9.00%",
+        "7.25% to 9.75%",
         "DSCR rental programs underwrite one property at a time using gross rental income without borrower income verification. They work well for smaller investors financing individual single-family or small multifamily assets but are not designed for commercial portfolios above $5M or for assets requiring cross-collateralization mechanics."
       ],
       [
         "Hard Money Portfolio Lines",
-        "9.50% to 13.00%",
+        "9.75% to 13.25%",
         "Hard money lenders offer the fastest execution and the most flexible underwriting for portfolios in distress or transition, but at substantially higher cost. Private lenders and hard money sources are appropriate for short-term portfolio acquisitions or workouts, not for long-term stabilized hold financing."
       ]
     ],
     "faqs": [
       [
         "What are current blanket portfolio loan rates?",
-        "Blanket and portfolio loan rates in May 2026 range from 6.50% to 9.00% for cross-collateralized multi-property facilities. Pricing depends on blended DSCR, aggregate loan size, property type mix, and term selection. Conservative leverage portfolios with strong blended income performance price at the low end of that range, while mixed or higher-leverage facilities price toward 9.00%."
+        "Blanket and portfolio loan rates in October 2026 range from 7.25% to 9.75% for cross-collateralized multi-property facilities. Pricing depends on blended DSCR, aggregate loan size, property type mix, and term selection. Conservative leverage portfolios with strong blended income performance price at the low end of that range, while mixed or higher-leverage facilities price toward 9.75%."
       ],
       [
         "What is the minimum loan size for a portfolio facility?",
