@@ -43,18 +43,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://clscre.com/industrial/markets/phoenix-distribution-logistics.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/phoenix-cold-storage.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://clscre.com/industrial/markets/phoenix-data-centers.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -62,12 +50,6 @@
   </url>
   <url>
     <loc>https://clscre.com/industrial/markets/phoenix-manufacturing-heavy-industrial.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/phoenix-industrial-bridge.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -103,67 +85,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://clscre.com/industrial/markets/dallas-distribution-logistics.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/dallas-cold-storage.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/dallas-data-centers.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/dallas-manufacturing-heavy-industrial.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/dallas-industrial-bridge.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/houston-distribution-logistics.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://clscre.com/industrial/markets/houston-cold-storage.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/houston-data-centers.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/houston-manufacturing-heavy-industrial.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/houston-industrial-bridge.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/atlanta-distribution-logistics.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -176,18 +98,6 @@
   </url>
   <url>
     <loc>https://clscre.com/industrial/markets/atlanta-data-centers.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/atlanta-manufacturing-heavy-industrial.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clscre.com/industrial/markets/atlanta-industrial-bridge.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -2585,11 +2585,21 @@ def main():
     # among them), which GSC reports as "Submitted URL is a redirect".
     # This is the one chokepoint every sitemap URL passes through, so
     # enforcing it here also covers append sites added later.
+    # The cleanse kill list (pages the edge worker serves as 410 Gone, incl.
+    # the 2026-10 LA/CA prune) is checked here too, so a regen can never
+    # re-advertise a removed page.
+    _kill_file = DATA_DIR / "_cleanse_kill_list.txt"
+    _KILLED = {
+        _l.strip().lstrip("/")
+        for _l in (_kill_file.read_text(encoding="utf-8").splitlines() if _kill_file.exists() else [])
+        if _l.strip() and not _l.startswith("#")
+    }
     _retired_locs = []
     _kept_urls = []
     for _u in sitemap_urls:
         _rel = _u["loc"].replace(BASE_URL, "").lstrip("/")
-        if _rel in REDIRECT_PATHS or _rel in NOINDEX_PATHS:
+        _file = _rel + "index.html" if (_rel == "" or _rel.endswith("/")) else _rel
+        if _rel in REDIRECT_PATHS or _rel in NOINDEX_PATHS or _rel in _KILLED or _file in _KILLED:
             _retired_locs.append(_rel)
         else:
             _kept_urls.append(_u)
