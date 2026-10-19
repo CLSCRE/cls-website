@@ -95,11 +95,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url><url>
-    <loc>https://clscre.com/markets/houston/the-woodlands.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
     <loc>https://clscre.com/markets/san-diego/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -115,57 +110,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url><url>
-    <loc>https://clscre.com/markets/nashville/franklin.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
     <loc>https://clscre.com/markets/san-jose/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url><url>
-    <loc>https://clscre.com/markets/philadelphia/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/baltimore/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
     <loc>https://clscre.com/markets/sacramento/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/cincinnati/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/memphis/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/louisville/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/new-orleans/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/tucson/marana.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/tulsa/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -176,26 +126,6 @@
     <priority>0.6</priority>
   </url><url>
     <loc>https://clscre.com/markets/riverside/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/fort-worth/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/fort-lauderdale/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/west-palm-beach/palm-beach-gardens.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/huntsville/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -229,146 +159,6 @@
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/greensboro/jamestown.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/akron/kent.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/toledo/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/lancaster-pa/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/chattanooga/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/harrisburg/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/asheville/west-asheville.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/asheville/biltmore-forest.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/pensacola/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/shreveport/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/greenville-sc/boiling-springs.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/fayetteville-nc/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/myrtle-beach/north-myrtle-beach.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/myrtle-beach/loris.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/montgomery/downtown-montgomery.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/roanoke/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/fredericksburg/woodbridge.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/columbia-mo/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/fargo/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/cedar-rapids/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/peoria/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/south-bend/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/canton/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/green-bay/wrightstown.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/wausau/downtown-wausau.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/lubbock/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/midland/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/brownsville/harlingen.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url><url>
     <loc>https://clscre.com/markets/santa-barbara/</loc>
     <lastmod>2026-09-09</lastmod>
@@ -436,56 +226,6 @@
     <priority>0.7</priority>
   </url><url>
     <loc>https://clscre.com/markets/modesto/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/bozeman/south-bozeman.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/minot/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/atlantic-city/egg-harbor-township.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/york-pa/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/state-college/williamsport.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/albany/downtown-albany.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/binghamton/elmira.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/binghamton/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/medford/ashland-or.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>https://clscre.com/markets/medford/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
