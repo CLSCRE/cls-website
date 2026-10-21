@@ -41,11 +41,11 @@
     <div class="pf-deal-heading" style="width:min(calc(100% - 48px),1180px);margin:0 auto;margin-bottom:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap">
       <div><div class="pf-kicker">Selected closings: all Symetra placements</div>
       <h2 style="font-size:32px">Recent life company closings.</h2></div>
-      <a class="lc-more-link" href="{{ depth }}track-record.html">View more transactions <span class="lc-arrow">&rarr;</span></a>
+      <a class="lc-more-link" href="{{ depth }}blog/case-studies.html">View more transactions <span class="lc-arrow">&rarr;</span></a>
     </div>
     <div class="pf-deal-grid">
       {% for txn in transactions[:4] %}
-      <a class="pf-deal" href="{{ depth }}track-record.html">
+      <a class="pf-deal" href="{{ depth }}blog/case-studies.html">
         <img src="{{ depth }}{{ txn.image }}" alt="{{ txn.property_type }} - {{ txn.city }}, {{ txn.state }}" loading="lazy" width="600" height="400">
         <div class="pf-deal-copy"><div class="pf-deal-type">Life Company financing</div><h3>{{ txn.property_type }}</h3><div class="pf-deal-amount">{{ txn.amount }}</div><div class="pf-deal-place">{{ txn.city }}, {{ txn.state }}</div><p class="pf-deal-desc">{{ txn.summary }}</p></div>
       </a>
@@ -85,7 +85,7 @@
         <img src="{{ depth }}{{ transactions[0].image }}" alt="{{ transactions[0].property_type }} financed with a life company loan, {{ transactions[0].city }}, {{ transactions[0].state }}" loading="lazy" width="640" height="480">
         <figcaption>
           <strong>{{ transactions[0].property_type }}</strong> &middot; {{ transactions[0].city }}, {{ transactions[0].state }}<br>
-          <span>{{ transactions[0].amount }}, an actual executed life company spread. <a href="{{ depth }}track-record.html">See the track record &rarr;</a></span>
+          <span>{{ transactions[0].amount }}, an actual executed life company spread. <a href="{{ depth }}blog/case-studies.html">See the track record &rarr;</a></span>
         </figcaption>
       </figure>
       {% endif %}

@@ -23,6 +23,19 @@ def get_nav_html(prefix: str) -> str:
 <div class="nav-inner">
   <a href="{logo_href}" class="nav-logo"><img src="{p}images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="140" height="140"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
   <div class="nav-links" id="navLinks">
+    <style id="la-nav-fit">@media (min-width:769px) and (max-width:1280px){{.nav-links{{gap:16px!important}}.nav-links .nav-phone{{font-size:0!important;margin-right:0!important}}.nav-logo-text{{display:none!important}}}}</style>
+    <div class="nav-dropdown">
+      <a href="{p}financing/commercial-mortgage-broker-los-angeles.html" aria-haspopup="true" aria-expanded="false" id="ddLosAngeles">Los Angeles</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddLosAngeles">
+        <a href="{p}financing/commercial-mortgage-broker-los-angeles.html">LA Commercial Mortgage Broker</a>
+        <a href="{p}markets/los-angeles/">Los Angeles Market</a>
+        <a href="{p}la-california-closed-deals.html">LA &amp; California Closed Deals</a>
+        <a href="{p}states/california.html">California Financing</a>
+        <a href="{p}markets/san-diego/">San Diego</a>
+        <a href="{p}index.html#meet-us-in-la">Meet Us in LA</a>
+        <a href="{p}locations.html">All Locations</a>
+      </div>
+    </div>
     <div class="nav-dropdown">
       <a href="{p}index.html#programs">Financing</a>
       <div class="nav-dropdown-menu">

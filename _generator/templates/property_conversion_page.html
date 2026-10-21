@@ -105,7 +105,7 @@
   <div class="pf-wrap">
     <div class="pf-deal-heading"><div><div class="pf-kicker">Selected closings</div><h2>{{ prop.name }} financing in practice.</h2></div><a class="pf-text-link" href="{{ depth }}index.html#transactions">View more transactions &rarr;</a></div>
     <div class="pf-deal-grid">
-      {% for txn in transactions[:6] %}<a class="pf-deal" href="{{ depth }}{{ txn.target_url|default('track-record.html') }}">
+      {% for txn in transactions[:6] %}<a class="pf-deal" href="{{ depth }}{{ txn.target_url|default('blog/case-studies.html') }}">
         <img src="{{ depth }}{{ txn.image }}" alt="{{ txn.property_type }} - {{ txn.city }}, {{ txn.state }}" loading="lazy" width="600" height="400">
         <div class="pf-deal-copy"><div class="pf-deal-type">{{ prop.name }} financing</div><h3>{{ txn.property_type }}</h3><div class="pf-deal-amount">{{ txn.amount }}</div><div class="pf-deal-place">{{ txn.city }}, {{ txn.state }}</div><p class="pf-deal-desc">{{ txn.summary }}</p></div>
       </a>{% endfor %}
