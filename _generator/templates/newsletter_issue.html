@@ -6,6 +6,11 @@
 <meta property="article:section" content="{{ newsletter_label }}">
 {% endblock %}
 {% block schema %}
+{% if article_schema %}
+<script type="application/ld+json">
+{{ article_schema }}
+</script>
+{% else %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -19,6 +24,7 @@
   "url": "https://clscre.com/{{ canonical_path }}"
 }
 </script>
+{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -28,7 +34,7 @@
 .nl-breadcrumb a:hover{text-decoration:underline}
 .nl-hero{background:var(--navy);color:#fff;padding:48px 0 36px}
 .nl-hero-inner{max-width:860px;margin:0 auto;padding:0 24px}
-.nl-badge{display:inline-block;background:var(--green-bright,#00A676);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:16px}
+.nl-badge{display:inline-block;background:{{ accent_bright|default('var(--green-bright,#00A676)') }};color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:16px}
 .nl-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.25;margin:0 0 12px}
 .nl-hero .nl-meta{font-size:14px;opacity:.8}
 .nl-body{max-width:860px;margin:0 auto;padding:36px 24px}
@@ -39,11 +45,15 @@
 .nl-embed img{max-width:100%!important;height:auto!important}
 /* Override email inline font sizes for readability */
 .nl-embed p,.nl-embed li{font-size:15px!important;line-height:1.65!important}
-.nl-cta-box{background:#f0f9f6;border:1px solid var(--green,#006A4E);border-radius:8px;padding:28px 32px;margin-bottom:36px}
+.nl-cta-box{background:{{ cta_bg|default('#f0f9f6') }};border:1px solid {{ accent|default('var(--green,#006A4E)') }};border-radius:8px;padding:28px 32px;margin-bottom:36px}
 .nl-cta-box h3{font-family:'DM Serif Display',serif;color:var(--navy);font-size:1.2rem;margin:0 0 8px}
 .nl-cta-box p{color:#374151;font-size:14px;margin:0 0 16px}
 .nl-cta-box .nl-cta-btn{display:inline-block;background:var(--navy);color:#fff;font-weight:700;font-size:14px;padding:12px 24px;border-radius:4px;text-decoration:none}
-.nl-cta-box .nl-cta-btn:hover{background:var(--green)}
+.nl-cta-box .nl-cta-btn:hover{background:{{ accent|default('var(--green)') }}}
+.nl-national{border-left:4px solid {{ accent|default('var(--green,#006A4E)') }};background:#f7f9fb;border-radius:0 8px 8px 0;padding:20px 24px;margin-bottom:36px}
+.nl-national p{color:var(--navy);font-size:15px;font-weight:600;margin:0 0 8px}
+.nl-national a{color:{{ accent|default('var(--green,#006A4E)') }};font-size:14px;font-weight:700;text-decoration:none}
+.nl-national a:hover{text-decoration:underline}
 .nl-related{margin-bottom:36px}
 .nl-related h3{font-family:'DM Serif Display',serif;color:var(--navy);font-size:1.1rem;margin:0 0 14px}
 .nl-related-grid{display:flex;flex-wrap:wrap;gap:10px}
@@ -89,9 +99,16 @@
       <a href="{{ depth }}index.html#newsletter" class="nl-cta-btn">Subscribe Free &rarr;</a>
     </div>
 
+    {% if national_cta %}
+    <div class="nl-national">
+      <p>{{ national_cta.text }}</p>
+      <a href="{{ depth }}{{ national_cta.path }}">{{ national_cta.label }} &rarr;</a>
+    </div>
+    {% endif %}
+
     {% if cross_links %}
     <div class="nl-related">
-      <h3>Related Financing Programs</h3>
+      <h3>{{ cross_links_heading|default('Related Financing Programs') }}</h3>
       <div class="nl-related-grid">
         {% for label, url in cross_links %}
         <a href="{{ depth.rstrip('/') }}{{ url }}">{{ label }}</a>
