@@ -25,7 +25,7 @@ def get_nav_html(prefix: str) -> str:
   <div class="nav-links" id="navLinks">
     <style id="la-nav-fit">@media (min-width:769px) and (max-width:1280px){{.nav-links{{gap:16px!important}}.nav-links .nav-phone{{font-size:0!important;margin-right:0!important}}.nav-logo-text{{display:none!important}}}}</style>
     <div class="nav-dropdown">
-      <a href="{p}financing/commercial-mortgage-broker-los-angeles.html" aria-haspopup="true" aria-expanded="false" id="ddLosAngeles">Los Angeles</a>
+      <a href="{p}financing/commercial-mortgage-broker-los-angeles.html" aria-haspopup="true" aria-expanded="false" id="ddLosAngeles">Markets</a>
       <div class="nav-dropdown-menu" aria-labelledby="ddLosAngeles">
         <a href="{p}financing/commercial-mortgage-broker-los-angeles.html">LA Commercial Mortgage Broker</a>
         <a href="{p}markets/los-angeles/">Los Angeles Market</a>
