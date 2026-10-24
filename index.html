@@ -466,56 +466,91 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 </div>
 </section>
 
-<!-- STATS BAR -->
-<section class="stats-bar">
-<div class="stats-grid">
-  <div class="stat-item reveal"><div class="stat-num">$1B+</div><div class="stat-label">Aggregate Loan Volume</div></div>
-  <div class="stat-item reveal"><div class="stat-num">1,000+</div><div class="stat-label">Lender Relationships</div></div>
-  <div class="stat-item reveal"><div class="stat-num">$250-400M</div><div class="stat-label">Originated Annually</div></div>
-  <div class="stat-item reveal"><div class="stat-num">$12M</div><div class="stat-label">Average Deal Size</div></div>
-</div>
-</section>
-
-<!-- TRUST BAR: AFFILIATIONS + MEMBERSHIPS -->
-<section class="trust-bar" aria-label="Affiliations and memberships" style="padding:40px 0;background:#fff;border-bottom:1px solid var(--gray-100)">
-<div class="section-inner" style="text-align:center">
-  <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gray-500);font-weight:600;margin-bottom:18px">Accredited &amp; Affiliated With</div>
-  <div style="display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;color:var(--navy);font-weight:700">
-    <a href="https://www.bbb.org/us/ca/los-angeles/profile/real-estate-loans/commercial-lending-solutions-1216-1000067041" target="_blank" rel="noopener" style="color:var(--navy);text-decoration:none;font-size:15px;padding:10px 18px;border-radius:8px;border:1.5px solid var(--gray-200);transition:all .2s" title="Commercial Lending Solutions BBB Accredited Business, A+ Rating">BBB <span style="color:var(--gray-400);font-weight:400;font-size:13px">A+</span></a>
-    <a href="about.html#memberships" style="color:var(--navy);text-decoration:none;font-size:15px;padding:10px 18px;border-radius:8px;border:1.5px solid var(--gray-200);transition:all .2s" title="Mortgage Bankers Association member">MBA <span style="color:var(--gray-400);font-weight:400;font-size:13px">Member</span></a>
-    <a href="about.html#memberships" style="color:var(--navy);text-decoration:none;font-size:15px;padding:10px 18px;border-radius:8px;border:1.5px solid var(--gray-200);transition:all .2s" title="Urban Land Institute member">ULI <span style="color:var(--gray-400);font-weight:400;font-size:13px">Member</span></a>
-    <a href="about.html#memberships" style="color:var(--navy);text-decoration:none;font-size:15px;padding:10px 18px;border-radius:8px;border:1.5px solid var(--gray-200);transition:all .2s" title="NAIOP Commercial Real Estate Development Association member">NAIOP <span style="color:var(--gray-400);font-weight:400;font-size:13px">Member</span></a>
-    <a href="about.html#memberships" style="color:var(--navy);text-decoration:none;font-size:15px;padding:10px 18px;border-radius:8px;border:1.5px solid var(--gray-200);transition:all .2s" title="ICSC member">ICSC <span style="color:var(--gray-400);font-weight:400;font-size:13px">Member</span></a>
-    <a href="https://www2.dre.ca.gov/PublicASP/pplinfo.asp" target="_blank" rel="noopener" style="color:var(--navy);text-decoration:none;font-size:15px;padding:10px 18px;border-radius:8px;border:1.5px solid var(--gray-200);transition:all .2s" title="California DRE License #02244836">CA DRE <span style="color:var(--gray-400);font-weight:400;font-size:13px">#02244836</span></a>
+<!-- CREDENTIALS BAND: track record + licensing -->
+<style id="cred-band-css">
+.cred-band{background:var(--navy);color:#fff;padding:72px 0 0}
+.cred-band .cb-inner{max-width:1280px;margin:0 auto;padding:0 40px}
+.cb-eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:600;margin-bottom:36px}
+.cb-stats{display:grid;grid-template-columns:repeat(4,1fr)}
+.cb-stat{padding:0 32px;border-left:1px solid rgba(255,255,255,.16)}
+.cb-stat:first-child{padding-left:0;border-left:0}
+.cb-num{font-family:var(--font-display);font-size:clamp(40px,4.4vw,60px);line-height:1;letter-spacing:-.02em;color:#fff}
+.cb-label{margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.88);font-weight:600}
+.cb-note{margin-top:8px;font-size:14px;line-height:1.55;color:rgba(255,255,255,.6);max-width:240px}
+.cb-note a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+.cb-note a:hover{border-color:#fff}
+.cb-creds{margin-top:64px;border-top:1px solid rgba(255,255,255,.16);padding:22px 0 24px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.cb-creds-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:600}
+.cb-creds ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0}
+.cb-creds li{font-size:13px;letter-spacing:.06em;color:rgba(255,255,255,.82);padding:0 18px;border-left:1px solid rgba(255,255,255,.2)}
+.cb-creds li:first-child{border-left:0;padding-left:0}
+.cb-creds a{color:inherit;text-decoration:none}
+.cb-creds a:hover{color:#fff}
+.how-we-work{background:#fff;padding:88px 0;border-bottom:1px solid var(--gray-200)}
+.how-we-work .hw-inner{max-width:1280px;margin:0 auto;padding:0 40px}
+.hw-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+.hw-eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:12px}
+.hw-title{font-family:var(--font-display);font-size:clamp(28px,3vw,40px);color:var(--navy);line-height:1.15;margin:0;max-width:620px;font-weight:400}
+.hw-link{font-size:14px;font-weight:600;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--navy);padding-bottom:2px;white-space:nowrap}
+.hw-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.hw-item{border-top:2px solid var(--navy);padding-top:22px}
+.hw-idx{font-family:var(--font-display);font-size:15px;color:var(--green);margin-bottom:14px}
+.hw-item h3{font-size:18px;font-weight:600;color:var(--navy);margin:0 0 10px;letter-spacing:-.005em}
+.hw-item p{font-size:15px;line-height:1.6;color:var(--gray-600,#4b5563);margin:0}
+@media (max-width:900px){
+  .cb-stats{grid-template-columns:repeat(2,1fr);row-gap:40px}
+  .cb-stat:nth-child(3){padding-left:0;border-left:0}
+  .hw-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .cred-band{padding-top:56px}
+  .cred-band .cb-inner,.how-we-work .hw-inner{padding:0 20px}
+  .cb-stat{padding:0 16px}
+  .cb-note{font-size:13px}
+  .cb-creds{gap:14px}
+  .cb-creds li{padding:4px 16px 4px 0;border-left:0}
+  .hw-grid{grid-template-columns:1fr;gap:32px}
+  .how-we-work{padding:64px 0}
+}
+</style>
+<section class="cred-band" aria-label="Track record and licensing">
+<div class="cb-inner">
+  <div class="cb-eyebrow">Track Record</div>
+  <div class="cb-stats">
+    <div class="cb-stat reveal"><div class="cb-num">$1B+</div><div class="cb-label">Loans arranged</div><div class="cb-note">Aggregate commercial real estate debt placed by our team.</div></div>
+    <div class="cb-stat reveal"><div class="cb-num">1,000+</div><div class="cb-label">Capital sources</div><div class="cb-note">Banks, credit unions, life companies, CMBS, debt funds and agency lenders.</div></div>
+    <div class="cb-stat reveal"><div class="cb-num">46</div><div class="cb-label">California closings</div><div class="cb-note">Documented from executed loan documents. <a href="la-california-closed-deals.html">See every deal</a></div></div>
+    <div class="cb-stat reveal"><div class="cb-num">$334M</div><div class="cb-label">California volume</div><div class="cb-note">Across those closings, $200K to $31.4M, 32 of them in Los Angeles County.</div></div>
+  </div>
+  <div class="cb-creds">
+    <div class="cb-creds-label">Licensing &amp; Affiliations</div>
+    <ul>
+      <li><a href="https://www2.dre.ca.gov/PublicASP/pplinfo.asp" target="_blank" rel="noopener">California DRE #02244836</a></li>
+      <li><a href="https://www.bbb.org/us/ca/los-angeles/profile/real-estate-loans/commercial-lending-solutions-1216-1000067041" target="_blank" rel="noopener">BBB Accredited, A+</a></li>
+      <li><a href="about.html#memberships">MBA</a></li>
+      <li><a href="about.html#memberships">ULI</a></li>
+      <li><a href="about.html#memberships">NAIOP</a></li>
+      <li><a href="about.html#memberships">ICSC</a></li>
+    </ul>
   </div>
 </div>
 </section>
-<style>.trust-bar a:hover{border-color:var(--green) !important;background:var(--gray-50)}</style>
 
-<!-- SERVICE PROMISES -->
-<section style="padding:32px 0;background:#fff;border-bottom:1px solid var(--gray-100)">
-<div class="section-inner">
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;text-align:center">
-    <div style="padding:16px 24px;border-right:1px solid var(--gray-200)">
-      <div style="font-size:22px;margin-bottom:6px">&#9201;</div>
-      <div style="font-size:15px;font-weight:700;color:var(--navy)">24-Hour Response</div>
-      <div style="font-size:13px;color:var(--gray-500);margin-top:2px">Every deal inquiry answered same day</div>
+<!-- HOW WE WORK -->
+<section class="how-we-work" aria-label="How we work">
+<div class="hw-inner">
+  <div class="hw-head">
+    <div>
+      <div class="hw-eyebrow">How We Work</div>
+      <h2 class="hw-title">One Los Angeles advisor, the full capital market behind every loan.</h2>
     </div>
-    <div style="padding:16px 24px;border-right:1px solid var(--gray-200)">
-      <div style="font-size:22px;margin-bottom:6px">&#127758;</div>
-      <div style="font-size:15px;font-weight:700;color:var(--navy)">Active in All 50 States</div>
-      <div style="font-size:13px;color:var(--gray-500);margin-top:2px">Lender relationships coast to coast</div>
-    </div>
-    <div style="padding:16px 24px;border-right:1px solid var(--gray-200)">
-      <div style="font-size:22px;margin-bottom:6px">&#128197;</div>
-      <div style="font-size:15px;font-weight:700;color:var(--navy)">30-90 Day Closings</div>
-      <div style="font-size:13px;color:var(--gray-500);margin-top:2px">Bridge in weeks, agency in 60-90 days</div>
-    </div>
-    <div style="padding:16px 24px">
-      <div style="font-size:22px;margin-bottom:6px">&#9989;</div>
-      <div style="font-size:15px;font-weight:700;color:var(--navy)">No Upfront Fees</div>
-      <div style="font-size:13px;color:var(--gray-500);margin-top:2px">Broker fee collected at closing only</div>
-    </div>
+    <a class="hw-link" href="about.html">About Commercial Lending Solutions &rarr;</a>
+  </div>
+  <div class="hw-grid">
+    <div class="hw-item reveal"><div class="hw-idx">01</div><h3>Same-day response</h3><p>Every loan request is read and answered the day it arrives, with a first view on structure and leverage.</p></div>
+    <div class="hw-item reveal"><div class="hw-idx">02</div><h3>A competitive process</h3><p>Your request goes to the lenders built for it, across every capital source, so terms are won rather than accepted.</p></div>
+    <div class="hw-item reveal"><div class="hw-idx">03</div><h3>Closings on schedule</h3><p>Bridge loans close in weeks. Bank, life company and agency loans close in 30 to 90 days.</p></div>
+    <div class="hw-item reveal"><div class="hw-idx">04</div><h3>Paid at closing</h3><p>No upfront broker fee. We are paid when your loan funds, which keeps our interests aligned with yours.</p></div>
   </div>
 </div>
 </section>
