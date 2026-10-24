@@ -27,12 +27,10 @@ def get_nav_html(prefix: str) -> str:
     <div class="nav-dropdown">
       <a href="{p}financing/commercial-mortgage-broker-los-angeles.html" aria-haspopup="true" aria-expanded="false" id="ddLosAngeles">Markets</a>
       <div class="nav-dropdown-menu" aria-labelledby="ddLosAngeles">
-        <a href="{p}financing/commercial-mortgage-broker-los-angeles.html">LA Commercial Mortgage Broker</a>
-        <a href="{p}markets/los-angeles/">Los Angeles Market</a>
-        <a href="{p}la-california-closed-deals.html">LA &amp; California Closed Deals</a>
-        <a href="{p}states/california.html">California Financing</a>
+        <a href="{p}markets/los-angeles/">Los Angeles</a>
+        <a href="{p}states/california.html">California</a>
         <a href="{p}markets/san-diego/">San Diego</a>
-        <a href="{p}index.html#meet-us-in-la">Meet Us in LA</a>
+        <a href="{p}la-california-closed-deals.html">Closed Deals</a>
         <a href="{p}locations.html">All Locations</a>
       </div>
     </div>
