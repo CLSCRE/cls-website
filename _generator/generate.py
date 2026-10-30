@@ -2608,6 +2608,31 @@ def main():
         print(f"  [retired] Dropped {len(_retired_locs)} redirect-stub/noindex URLs from the sitemap")
     sitemap_urls = _kept_urls
 
+    # Advertise each directory page under its own canonical. The glob-based
+    # append sites emit ".../index.html", but most of those pages canonicalize
+    # to ".../" and GSC reports them "Alternate page with proper canonical
+    # tag" (55 of 76 such URLs on 2026-10-30). Read the canonical off disk and
+    # switch only the index.html -> directory form; then drop any duplicate
+    # this creates with an entry that already used the directory form.
+    _canon_fixed, _seen_locs, _canon_urls = 0, set(), []
+    for _u in sitemap_urls:
+        _loc = _u["loc"]
+        if _loc.endswith("/index.html"):
+            _page = WEBSITE_DIR / _loc.replace(BASE_URL, "").lstrip("/")
+            if _page.exists():
+                _m = re.search(r'<link rel="canonical" href="([^"]+)"',
+                               _page.read_text(encoding="utf-8", errors="ignore"))
+                if _m and _m.group(1) == _loc[: -len("index.html")]:
+                    _u = {**_u, "loc": _m.group(1)}
+                    _canon_fixed += 1
+        if _u["loc"] in _seen_locs:
+            continue
+        _seen_locs.add(_u["loc"])
+        _canon_urls.append(_u)
+    if _canon_fixed:
+        print(f"  [canonical] {_canon_fixed} index.html sitemap URLs switched to their directory canonical")
+    sitemap_urls = _canon_urls
+
     # Categorize each URL into a segmented sitemap. Categorization is
     # path-based: the first path segment after the domain determines bucket.
     # Each vertical section gets its OWN sitemap-<vertical>.xml (split from
