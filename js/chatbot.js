@@ -318,7 +318,7 @@
         + '#cls-mcb .cls-mcb-secondary{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25)}'
         + '#cls-mcb .cls-mcb-btn:active{opacity:.85}'
         // Nudge the floating chatbot button up so it doesn't collide with the bar
-        + '@media (max-width:768px){#cls-chat-btn{bottom:88px !important}}';
+        + '@media (max-width:768px){#cls-chat{bottom:88px !important}}';
       document.head.appendChild(style);
       document.body.appendChild(bar);
     }

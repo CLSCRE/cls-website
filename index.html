@@ -32,7 +32,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="CLS CRE Insights" href="https://clscre.com/rss.xml">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":["FinancialService","LocalBusiness"],"name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","description":"Commercial mortgage brokerage in Los Angeles. Over $1 billion in aggregate loan volume. Permanent, construction, bridge, SBA, CMBS, and specialty financing nationwide.","telephone":"+13107080690","email":"loans@clscre.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"18","bestRating":"5"},"image":"https://clscre.com/images/cls-og-image.png","logo":"https://clscre.com/images/cls-logo-skyline.png","priceRange":"$$$","currenciesAccepted":"USD","openingHours":"Mo-Fr 09:00-17:00","areaServed":[{"@type":"City","name":"Los Angeles"},{"@type":"State","name":"California"},{"@type":"Country","name":"United States"}],"address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":"34.0736","longitude":"-118.3695"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"],"memberOf":[{"@type":"Organization","name":"Better Business Bureau","url":"https://www.bbb.org/"},{"@type":"Organization","name":"Urban Land Institute","url":"https://uli.org/"},{"@type":"Organization","name":"NAIOP Commercial Real Estate Development Association","url":"https://www.naiop.org/"}],"founder":{"@type":"Person","name":"Trevor Damyan","jobTitle":"CEO / Founder","memberOf":[{"@type":"Organization","name":"Urban Land Institute","url":"https://uli.org/"},{"@type":"Organization","name":"NAIOP Commercial Real Estate Development Association","url":"https://www.naiop.org/"}]},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"license","name":"California DRE License","recognizedBy":{"@type":"Organization","name":"California Department of Real Estate"},"identifier":"02244836"}}
+{"@context":"https://schema.org","@type":["FinancialService","LocalBusiness"],"name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","description":"Commercial mortgage brokerage in Los Angeles. Over $1 billion in aggregate loan volume. Permanent, construction, bridge, CMBS, life company and specialty financing nationwide.","telephone":"+13107080690","email":"loans@clscre.com","image":"https://clscre.com/images/cls-og-image.png","logo":"https://clscre.com/images/cls-logo-skyline.png","priceRange":"$$$","currenciesAccepted":"USD","openingHours":"Mo-Fr 09:00-17:00","areaServed":[{"@type":"City","name":"Los Angeles"},{"@type":"State","name":"California"},{"@type":"Country","name":"United States"}],"address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":"34.0736","longitude":"-118.3695"},"sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commercialloanbroker","https://www.facebook.com/mycommercialloanbroker/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"],"memberOf":[{"@type":"Organization","name":"Better Business Bureau","url":"https://www.bbb.org/"},{"@type":"Organization","name":"Urban Land Institute","url":"https://uli.org/"},{"@type":"Organization","name":"NAIOP Commercial Real Estate Development Association","url":"https://www.naiop.org/"}],"founder":{"@type":"Person","name":"Trevor Damyan","jobTitle":"CEO / Founder","memberOf":[{"@type":"Organization","name":"Urban Land Institute","url":"https://uli.org/"},{"@type":"Organization","name":"NAIOP Commercial Real Estate Development Association","url":"https://www.naiop.org/"}]},"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"license","name":"California DRE License","recognizedBy":{"@type":"Organization","name":"California Department of Real Estate"},"identifier":"02244836"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com/"}
@@ -301,14 +301,15 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 .nav-links .nav-cta,.nav-links .nav-cta-broker{margin-top:16px;text-align:center;display:block!important;padding:14px 24px!important}
 .nav-links .nav-dropdown-menu{display:none!important}
 .nav-mobile{display:block}
-.hero{padding:140px 0 60px}
+.hero{padding:172px 0 60px}
 .hero-inner{padding:0 24px;grid-template-columns:1fr}
+.hero-inner>*{min-width:0}
 .hero-video-bg{display:none}
 .hero h1{color:var(--navy)}
 .hero-sub{color:var(--gray-500)}
 .hero-label{color:var(--green)}
 .hero-label::before{background:var(--green)}
-.hero .btn-secondary{color:var(--navy)}
+.hero .btn-secondary{color:var(--navy)!important}
 .stats-grid{grid-template-columns:repeat(2,1fr);gap:24px}
 .programs-grid{grid-template-columns:1fr}
 .txn-grid{grid-template-columns:1fr}
@@ -570,7 +571,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
     <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:24px;align-items:start">
       <!-- Input card -->
       <div style="background:#fff;border:1px solid var(--gray-200,#e5e7eb);border-radius:12px;padding:28px">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div class="qc-fields" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
           <div class="calc-field">
             <label for="qcPropVal">Property Value</label>
             <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="qcPropVal" inputmode="decimal" placeholder="10,000,000" aria-label="Property value"></div>
@@ -590,10 +591,8 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
                 <option value="permanent">Permanent Loan</option>
                 <option value="bridge">Bridge Loan</option>
                 <option value="construction">Construction Loan</option>
-                <option value="sba">SBA 504 / 7(a)</option>
                 <option value="agency">Agency / CMBS</option>
                 <option value="life-co">Life Company</option>
-                <option value="dscr">DSCR Loan</option>
                 <option value="hard-money">Hard Money</option>
               </select>
               <span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--gray-400,#9ca3af)"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
@@ -844,6 +843,8 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 .qc-tool-card:hover .qc-tool-arrow{color:var(--green,#006A4E)}
 @media(max-width:768px){#qcLoan>div{grid-template-columns:1fr!important}}
 @media(max-width:640px){#qcLoan .calc-field:nth-child(n){grid-column:span 1}.qr-filter{min-width:calc(50% - 4px)}}
+.qc-fields>.calc-field{min-width:0}
+@media(max-width:640px){.qc-fields{grid-template-columns:1fr!important}#qcLoan>div>div:first-child{padding:20px!important}}
 </style>
 <script src="./tools/calc-utils.js?v=de71b3b5d5"></script>
 <script src="./tools/analytics.js?v=04408c6dad"></script>
@@ -1106,25 +1107,25 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
     <a href="financing/self-storage-financing.html" class="vertical-card" style="display:block;background:#f9fafb;border:1px solid var(--gray-200);border-radius:14px;padding:32px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s">
       <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:12px">Owner-Op &amp; Investment</div>
       <h3 style="font-family:var(--font-display);font-size:24px;line-height:1.2;color:var(--navy);margin:0 0 12px">Self-Storage</h3>
-      <p style="font-size:14px;line-height:1.55;color:var(--gray-600);margin:0 0 16px">Climate-controlled, drive-up standard, and multi-story urban facilities. Life company, CMBS, bank, and SBA execution across 30 markets.</p>
+      <p style="font-size:14px;line-height:1.55;color:var(--gray-600);margin:0 0 16px">Climate-controlled, drive-up standard, and multi-story urban facilities. Life company, CMBS and bank execution.</p>
       <span style="font-size:13px;color:var(--green);font-weight:600">Explore self-storage &rarr;</span>
     </a>
     <a href="financing/senior-housing-financing.html" class="vertical-card" style="display:block;background:#f9fafb;border:1px solid var(--gray-200);border-radius:14px;padding:32px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s">
       <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:12px">Healthcare Real Estate</div>
       <h3 style="font-family:var(--font-display);font-size:24px;line-height:1.2;color:var(--navy);margin:0 0 12px">Senior Living</h3>
-      <p style="font-size:14px;line-height:1.55;color:var(--gray-600);margin:0 0 16px">Assisted living, memory care, and independent living communities. HUD 232, USDA, bridge, and life company execution across 30 markets.</p>
+      <p style="font-size:14px;line-height:1.55;color:var(--gray-600);margin:0 0 16px">Assisted living, memory care, and independent living communities. HUD 232, USDA, bridge and life company execution.</p>
       <span style="font-size:13px;color:var(--green);font-weight:600">Explore senior living &rarr;</span>
     </a>
     <a href="financing/medical-office-financing.html" class="vertical-card" style="display:block;background:#f9fafb;border:1px solid var(--gray-200);border-radius:14px;padding:32px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s">
       <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:12px">Healthcare Real Estate</div>
       <h3 style="font-family:var(--font-display);font-size:24px;line-height:1.2;color:var(--navy);margin:0 0 12px">Medical Office</h3>
-      <p style="font-size:14px;line-height:1.55;color:var(--gray-600);margin:0 0 16px">On-campus MOBs, off-campus MOBs, and outpatient surgery centers. Life company, CMBS, bank, and SBA execution across 30 markets.</p>
+      <p style="font-size:14px;line-height:1.55;color:var(--gray-600);margin:0 0 16px">On-campus MOBs, off-campus MOBs, and outpatient surgery centers. Life company, CMBS and bank execution.</p>
       <span style="font-size:13px;color:var(--green);font-weight:600">Explore medical office &rarr;</span>
     </a>
     <a href="data-centers/index.html" class="vertical-card" style="display:block;background:#f9fafb;border:1px solid var(--gray-200);border-radius:14px;padding:32px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s">
       <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:12px">Critical Infrastructure</div>
       <h3 style="font-family:var(--font-display);font-size:24px;line-height:1.2;color:var(--navy);margin:0 0 12px">Data Centers</h3>
-      <p style="font-size:14px;line-height:1.55;color:var(--gray-600);margin:0 0 16px">Colocation, hyperscale powered shell, and enterprise single-tenant facilities. Life company, CMBS, and specialty debt fund execution across 30 markets.</p>
+      <p style="font-size:14px;line-height:1.55;color:var(--gray-600);margin:0 0 16px">Colocation, hyperscale powered shell, and enterprise single-tenant facilities. Life company, CMBS and specialty debt fund execution.</p>
       <span style="font-size:13px;color:var(--green);font-weight:600">Explore data centers &rarr;</span>
     </a>
   </div>
@@ -1142,45 +1143,45 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
     <a class="program-card reveal" id="prog-bank" href="financing/permanent-loans.html">
       <h3>Bank Loans</h3>
       <p>Competitive for cash-flowing scenarios and construction for strong borrowers. Long a staple of the commercial mortgage market.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$2MM, $75M+</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$2MM–$75M+</span></div>
       <div class="program-detail"><span>Term</span><span>5, 7, or 10 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>5.54%, 8.25%</span></div>
+      <div class="program-detail"><span>Rates</span><span>5.54%–8.25%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Available</span></div>
       <span class="program-link">Learn More &rarr;</span>
     </a>
     <a class="program-card reveal" id="prog-credit-union" href="financing/permanent-loans.html">
       <h3>Credit Union Loans</h3>
       <p>Alternative lending that works well for local commercial real estate projects with competitive terms.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$2MM, $10M+</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$2MM–$10M+</span></div>
       <div class="program-detail"><span>Term</span><span>5, 7, or 10 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>5.54%, 8.25%</span></div>
+      <div class="program-detail"><span>Rates</span><span>5.54%–8.25%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>No</span></div>
       <span class="program-link">Learn More &rarr;</span>
     </a>
     <a class="program-card reveal" id="prog-agency" href="financing/permanent-loans.html">
       <h3>Agency Multifamily</h3>
       <p>Fannie Mae and Freddie Mac programs including Small Loans capped at $5M. Best long-term rates for multifamily assets.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$2MM, $100M+</span></div>
-      <div class="program-detail"><span>Term</span><span>5, 30 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>5.34%, 6.98%</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$2MM–$100M+</span></div>
+      <div class="program-detail"><span>Term</span><span>5–30 Years</span></div>
+      <div class="program-detail"><span>Rates</span><span>5.34%–6.98%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Yes</span></div>
       <span class="program-link">Learn More &rarr;</span>
     </a>
     <a class="program-card reveal" id="prog-cmbs" href="financing/permanent-loans.html">
       <h3>CMBS Loans</h3>
       <p>Securitized lending for $3M+ stabilized office, industrial, retail, hospitality, and multifamily assets.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$3M, $100M+</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$3M–$100M+</span></div>
       <div class="program-detail"><span>Term</span><span>5, 7, or 10 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>6.79%, 13.04%</span></div>
+      <div class="program-detail"><span>Rates</span><span>6.79%–13.04%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Available</span></div>
       <span class="program-link">Learn More &rarr;</span>
     </a>
     <a class="program-card reveal" id="prog-debt-fund" href="financing/bridge-loans.html">
       <h3>Debt Fund Loans</h3>
       <p>Private lending with quicker, more flexible execution than traditional sources. Bridge and transitional assets.</p>
-      <div class="program-detail"><span>Loan Amount</span><span>$2MM, $100M+</span></div>
-      <div class="program-detail"><span>Term</span><span>1, 3 Years</span></div>
-      <div class="program-detail"><span>Rates</span><span>6.79%, 13.04%</span></div>
+      <div class="program-detail"><span>Loan Amount</span><span>$2MM–$100M+</span></div>
+      <div class="program-detail"><span>Term</span><span>1–3 Years</span></div>
+      <div class="program-detail"><span>Rates</span><span>6.79%–13.04%</span></div>
       <div class="program-detail"><span>Non-Recourse</span><span>Available</span></div>
       <span class="program-link">Learn More &rarr;</span>
     </a>
@@ -1197,7 +1198,7 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
     <a class="program-card reveal" id="prog-private-equity" href="financing/mezzanine.html">
       <h3>Private Equity</h3>
       <p>Direct equity investment for development and value-add projects. Joint ventures and preferred equity structures.</p>
-      <div class="program-detail"><span>Check Size</span><span>$5M, $100M+</span></div>
+      <div class="program-detail"><span>Check Size</span><span>$5M–$100M+</span></div>
       <div class="program-detail"><span>Structure</span><span>JV / Pref Equity</span></div>
       <div class="program-detail"><span>Strategy</span><span>Value-Add / Dev</span></div>
       <div class="program-detail"><span>Returns</span><span>Market IRR</span></div>
@@ -1745,7 +1746,7 @@ document.querySelectorAll('.txn-tab').forEach(tab => {
   });
 })();
 </script>
-<script src="js/chatbot.js?v=70f37fb366" defer></script>
+<script src="js/chatbot.js?v=21a0d5a54f" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
 <script src="js/tracking.js?v=3d3cf8908a" defer></script>
 <!-- LinkedIn Insight Tag -->

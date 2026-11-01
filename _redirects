@@ -1,0 +1,8 @@
+# True HTTP redirects for Cloudflare Workers Static Assets (clscre.com).
+# Format: <source path> <destination> <status>. Limits: 2,000 static rules.
+# Prefer this over redirect_map.json soft-301 stubs for any page that had
+# real traffic or backlinks (stubs are meta-refresh + noindex, not a 301).
+
+# 2026-10-06: retired DSCR article (4.5k GSC impressions in July 2026) was
+# serving a bare 404. Consolidate into the live DSCR glossary entry.
+/blog/what-is-dscr-commercial-real-estate.html /glossary/debt-service-coverage-ratio.html 301
