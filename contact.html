@@ -271,6 +271,10 @@
           <textarea id="c_message" name="Message" rows="5" required minlength="60" placeholder="Tell us about the deal or question. The more detail you share (property type, sub-market, loan amount, business plan, timing), the faster we can get you a useful answer. Minimum 60 characters so the spam filter doesn't catch you." style="width:100%;padding:12px 14px;border:1px solid var(--gray-200);border-radius:8px;font-family:inherit;font-size:14px;color:var(--navy);background:#fff;resize:vertical;min-height:120px"></textarea>
           <div style="font-size:12px;color:var(--gray-500);margin-top:6px"><span id="c_message_count">0</span> characters (minimum 60)</div>
         </div>
+        <div style="margin-bottom:16px;display:flex;gap:10px;align-items:flex-start">
+          <input type="checkbox" id="c_sms_consent" name="SMS Consent" value="Yes - agreed to receive texts" style="margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--green)">
+          <label for="c_sms_consent" style="font-size:12px;line-height:1.5;color:var(--gray-500)">(Optional) I agree to receive text messages from Commercial Lending Solutions about my loan inquiry, such as scheduling, document requests and loan status updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of service. See our <a href="privacy.html#sms" style="color:var(--green)">Privacy Policy</a> and <a href="terms.html#sms" style="color:var(--green)">Terms</a>.</label>
+        </div>
         <button type="submit" class="btn-primary" style="width:100%;font-size:15px;padding:14px;border:none;cursor:pointer">Send Message &rarr;</button>
         <div style="margin-top:16px;text-align:center;font-size:12px;color:var(--gray-500)">
           Prefer a full loan application? <a href="apply.html" style="color:var(--green);text-decoration:none;font-weight:600">Start the 2-minute wizard &rarr;</a>

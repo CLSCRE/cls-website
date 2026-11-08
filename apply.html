@@ -339,6 +339,7 @@
       <input type="hidden" name="Company" id="h_company">
       <input type="hidden" name="Deal Details" id="h_details">
       <input type="hidden" name="Referral Source" id="h_referral">
+      <input type="hidden" name="SMS Consent" id="h_sms_consent">
       <input type="hidden" name="Source Page" value="Multi-Step Application Wizard">
     </form>
 
@@ -660,6 +661,12 @@
           <label for="phone">Phone <span class="req">*</span></label>
           <input type="tel" id="phone" required autocomplete="tel" placeholder="(310) 555-1234">
           <span class="error-msg">Please enter your phone number</span>
+        </div>
+      </div>
+      <div class="wiz-row single">
+        <div style="display:flex;gap:10px;align-items:flex-start">
+          <input type="checkbox" id="sms_consent" style="margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--green)">
+          <label for="sms_consent" style="font-size:12px;line-height:1.5;color:var(--gray-500);font-weight:400">(Optional) I agree to receive text messages from Commercial Lending Solutions about my loan inquiry, such as scheduling, document requests and loan status updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of service. See our <a href="privacy.html#sms" style="color:var(--green)">Privacy Policy</a> and <a href="terms.html#sms" style="color:var(--green)">Terms</a>.</label>
         </div>
       </div>
       <div class="wiz-row single">
@@ -1197,6 +1204,7 @@ function submitApplication() {
   document.getElementById('h_company').value = document.getElementById('company').value;
   document.getElementById('h_details').value = document.getElementById('details').value;
   document.getElementById('h_referral').value = document.getElementById('referral').value;
+  document.getElementById('h_sms_consent').value = document.getElementById('sms_consent').checked ? 'Yes - agreed to receive texts' : 'No';
 
   // Attach uploaded files to hidden form
   const existingFileInputs = document.querySelectorAll('#wizardForm input[type="file"]');
