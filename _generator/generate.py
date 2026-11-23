@@ -2842,6 +2842,16 @@ Sitemap: {BASE_URL}/sitemap-index.xml
     _df, _dd = _scrub_dashes(WEBSITE_DIR)
     print(f"  [dash-scrub] {_df} files cleaned, {_dd} dashes removed")
 
+    # ── 15. Entity and schema consistency (self-healing) ──────────────
+    # One @id for the firm and the founder, one address, one sameAs list,
+    # one founder job title, FAQPage built from visible FAQ blocks, one H1.
+    # 26 templates and many hand-written pages emit their own Organization
+    # node, so this final pass is what keeps them identical. Idempotent.
+    # See schema_consistency.py.
+    from schema_consistency import run as _schema_consistency
+    _sc = _schema_consistency(WEBSITE_DIR)
+    print(f"  [schema-consistency] {_sc} pages updated")
+
     # ── Summary ────────────────────────────────────────────────────────
     print(f"\n{'='*50}")
     print(f"  TOTAL PAGES GENERATED: {page_count}")
