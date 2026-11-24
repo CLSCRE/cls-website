@@ -41,7 +41,7 @@ ORG_ID = "https://clscre.com/#organization"
 PERSON_ID = "https://clscre.com/about/trevor-damyan.html#person"
 FIRM_NAME = "Commercial Lending Solutions"
 FOUNDER_NAME = "Trevor Damyan"
-FOUNDER_TITLE = "Founder and Commercial Mortgage Broker"
+FOUNDER_TITLE = "Commercial Mortgage Broker"  # the role people search for and the wording ~550 visible bylines use; founder is expressed by Organization.founder
 
 ADDRESS = {
     "@type": "PostalAddress",
