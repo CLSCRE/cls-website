@@ -70,7 +70,7 @@ ORG_TYPES = {"Organization", "FinancialService", "ProfessionalService", "LocalBu
 CONTACT_KEYS = ("address", "telephone", "email", "sameAs")
 
 LD_RE = re.compile(r'(<script[^>]*application/ld\+json[^>]*>)(.*?)(</script>)', re.S | re.I)
-AVE_RE = re.compile(r"7951 Blackburn Ave(?![A-Za-z])(\.?)")
+AVE_RE = re.compile(r"Blackburn Ave(?![A-Za-z])(\.?)")
 
 
 # ── JSON-LD normalisation ────────────────────────────────────────────────────
@@ -151,7 +151,7 @@ def normalize_ld_blocks(text):
 # ── Visible text fixes ───────────────────────────────────────────────────────
 
 def fix_visible_text(text):
-    text = AVE_RE.sub(lambda m: "7951 Blackburn Avenue" + m.group(1), text)
+    text = AVE_RE.sub(lambda m: "Blackburn Avenue" + m.group(1), text)
     for rx, rep in STALE_SOCIAL:
         text = rx.sub(rep, text)
     return text
