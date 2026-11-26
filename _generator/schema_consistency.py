@@ -19,7 +19,9 @@ entity on every indexable page, instead of a fresh copy per template:
      get the canonical one (ORG_NODE).
   8. Breadcrumb "Financing" parents that point at an anchor or the redirecting /financing/
      point at the real page it resolves to.
-  9. One H1 per page: later H1 tags (email-layout archives, repeated blog titles)
+  9. Trevor Damyan Person nodes carry his three personal profile URLs as sameAs; the office
+     GeoCoordinates are one value (GEO).
+ 10. One H1 per page: later H1 tags (email-layout archives, repeated blog titles)
      become H2.
 
 Why a post-pass and not template edits: 26 templates emit their own copy of the
@@ -74,6 +76,12 @@ STALE_SOCIAL = [
     (re.compile(r"https://www\.instagram\.com/commercialloanbroker/?"),
      "https://www.instagram.com/commerciallendingsolutions/"),
 ]
+GEO = {"@type": "GeoCoordinates", "latitude": 34.0736, "longitude": -118.3695}  # 7951 Blackburn Avenue
+FOUNDER_SAME_AS = [
+    "https://www.linkedin.com/in/trevor-damyan-42636397/",
+    "https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb",
+    "https://traded.co/agent/trevor-damyan/",
+]
 ORG_TYPES = {"Organization", "FinancialService", "ProfessionalService", "LocalBusiness"}
 CONTACT_KEYS = ("address", "telephone", "email", "sameAs")
 
@@ -106,6 +114,15 @@ FINANCING_CRUMB_STALE = {"https://clscre.com/#financing", "https://clscre.com/#p
 def normalize_node(node):
     ty = _types(node)
     name = node.get("name")
+    if "GeoCoordinates" in ty:
+        try:
+            near = (abs(float(node.get("latitude")) - GEO["latitude"]) < 0.02
+                    and abs(float(node.get("longitude")) - GEO["longitude"]) < 0.02)
+        except (TypeError, ValueError):
+            near = False
+        if near and (node.get("latitude") != GEO["latitude"] or node.get("longitude") != GEO["longitude"]):
+            node["latitude"], node["longitude"] = GEO["latitude"], GEO["longitude"]
+        return
     if ("ListItem" in ty and name in ("Financing", "Financing Programs")
             and node.get("item") in FINANCING_CRUMB_STALE):
         # Breadcrumb parent must be a real, crawlable page, not an anchor or a redirect.
@@ -134,6 +151,8 @@ def normalize_node(node):
             _put_id_first(node, PERSON_ID)
         if "jobTitle" in node and node["jobTitle"] != FOUNDER_TITLE:
             node["jobTitle"] = FOUNDER_TITLE
+        if "sameAs" not in node:
+            node["sameAs"] = list(FOUNDER_SAME_AS)
 
 
 def walk(x):
