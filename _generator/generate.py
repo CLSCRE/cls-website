@@ -1755,6 +1755,11 @@ def main():
         priority_for=lambda n: "0.8" if n == 1 else "0.3",
     )
     print(f"  [OK] blog/index.html + blog/page/*.html  ({len(articles)} articles across {_main_pages} pages)")
+    try:  # every sitemap blog post gets a link from /blog/ (2026-11-26 audit)
+        import blog_all_guides as _blog_all_guides
+        print("  [OK] blog/index.html all-guides block:", _blog_all_guides.inject(write=True))
+    except Exception as _ag_err:
+        print(f"  [WARN] all-guides block skipped: {_ag_err}")
 
     # Category hub pages: blog/category/{slug}.html + blog/category/{slug}-N.html
     _cat_pages_total = 0
