@@ -2724,6 +2724,15 @@ def main():
     (WEBSITE_DIR / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
     print(f"  [OK] sitemap.xml  ({len(sitemap_urls)} URLs, backwards-compat)")
 
+    # lastmod only advances when a page's normalized content changes (2026-11-26).
+    # Without this every rebuild above stamps TODAY on all URLs.
+    try:
+        import lastmod_sidecar as _lastmod_sidecar
+        _lm = _lastmod_sidecar.apply(TODAY, write=True)
+        print(f"  [OK] sitemap lastmod via content hash: {_lm}")
+    except Exception as _lm_err:  # never block a regen on this
+        print(f"  [WARN] lastmod sidecar skipped: {_lm_err}")
+
     # Reload governance only after the final sitemap exists. The pre-generation
     # active set is necessarily stale while inventory is being rebuilt; this
     # final pass makes full regeneration fail-safe and idempotently removes or
