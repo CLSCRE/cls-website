@@ -1057,6 +1057,18 @@ def main():
             _h2 = stamp_html_asset_versions(_h, _versions)
             if _h2 != _h:
                 _p.write_text(_h2, encoding="utf-8")
+        # Same link-governance pass a full run ends with: retargets or drops links to retired pages
+        # (the nav and footer still carry sba-loans, dscr-loans and similar 301s).
+        _sd = str(WEBSITE_DIR / "scripts")
+        if _sd not in sys.path:
+            sys.path.insert(0, _sd)
+        from rewrite_active_retired_links import rewrite_file as _rewrite_file
+        _gov_bl = LinkGovernor(WEBSITE_DIR)
+        _bl_changed = sum(
+            1 for _p in _written
+            if _rewrite_file(_p.relative_to(WEBSITE_DIR).as_posix(), _gov_bl)["changed"]
+        )
+        print(f"  [link-gov] {_bl_changed} listing pages retargeted")
         print(f"  [OK] {_n} listing pages written for {len(_live_posts)} live posts")
         return
 
