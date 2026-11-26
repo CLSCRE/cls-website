@@ -8,7 +8,7 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in guide.faqs %}{"@type":"Question","name":{{ faq.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.a|tojson }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Los Angeles","item":"https://clscre.com/los-angeles/"},{"@type":"ListItem","position":3,"name":{{ guide.title|tojson }},"item":"https://clscre.com/los-angeles/{{ guide.slug }}.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Los Angeles","item":"https://clscre.com/markets/los-angeles/"},{"@type":"ListItem","position":3,"name":{{ guide.title|tojson }},"item":"https://clscre.com/los-angeles/{{ guide.slug }}.html"}]}
 </script>
 {% endblock %}
 {% block og_type %}article{% endblock %}

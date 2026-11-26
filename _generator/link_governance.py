@@ -273,9 +273,9 @@ class LinkGovernor:
             if city:
                 candidates.append(f"markets/{city}/index.html")
             vertical_hub = {
-                "self-storage": "property/self-storage.html",
-                "senior-living": "property/senior-living.html",
-                "medical-office": "property/medical-office.html",
+                "self-storage": "financing/self-storage-financing.html",
+                "senior-living": "financing/senior-housing-financing.html",
+                "medical-office": "financing/medical-office-financing.html",
                 "data-centers": "property/data-centers.html",
                 "affordable-housing": "financing/affordable-housing-loans.html",
                 "commercial": None,
@@ -484,19 +484,19 @@ class LinkGovernor:
                 f"self-storage/markets/{city_slug}-climate-controlled.html",
                 "Self-Storage Financing",
                 f"{city.get('city')}: Climate-Controlled, Drive-Up, Multi-Story",
-                "property/self-storage.html",
+                "financing/self-storage-financing.html",
             ),
             (
                 f"senior-living/markets/{city_slug}-assisted-living.html",
                 "Senior Living Financing",
                 f"{city.get('city')}: Assisted Living, Memory Care, Independent",
-                "property/senior-living.html",
+                "financing/senior-housing-financing.html",
             ),
             (
                 f"medical-office/markets/{city_slug}-off-campus-mob.html",
                 "Medical Office Financing",
                 f"{city.get('city')}: On-Campus, Off-Campus, Surgery Centers",
-                "property/medical-office.html",
+                "financing/medical-office-financing.html",
             ),
             (
                 f"data-centers/markets/{city_slug}-colocation.html",
