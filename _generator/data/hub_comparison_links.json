@@ -1,0 +1,142 @@
+{
+ "mezzanine": [
+  {
+   "slug": "mezzanine-vs-preferred-equity",
+   "title": "Mezzanine vs Preferred Equity: How to Choose for the Capital Stack"
+  },
+  {
+   "slug": "mezzanine-vs-bridge-junior",
+   "title": "Mezzanine vs Bridge Junior Debt: Two Forms of Subordinate CRE Capital"
+  },
+  {
+   "slug": "bridge-loan-vs-preferred-equity",
+   "title": "Bridge Loan vs Preferred Equity: Senior Debt or Gap Capital"
+  }
+ ],
+ "preferred-equity": [
+  {
+   "slug": "mezzanine-vs-preferred-equity",
+   "title": "Mezzanine vs Preferred Equity: How to Choose for the Capital Stack"
+  },
+  {
+   "slug": "bridge-loan-vs-preferred-equity",
+   "title": "Bridge Loan vs Preferred Equity: Senior Debt or Gap Capital"
+  },
+  {
+   "slug": "preferred-equity-vs-common-equity-jv",
+   "title": "Preferred Equity vs Common Equity Joint Venture: How to Choose"
+  }
+ ],
+ "bridge-loans": [
+  {
+   "slug": "bridge-loan-vs-permanent-refinance",
+   "title": "Bridge Loan vs Permanent Refinance: Reposition First or Lock Rate Now"
+  },
+  {
+   "slug": "hard-money-vs-bridge-loan",
+   "title": "Hard Money vs Bridge Loan: How to Choose for Commercial Real Estate"
+  },
+  {
+   "slug": "mezzanine-vs-bridge-junior",
+   "title": "Mezzanine vs Bridge Junior Debt: Two Forms of Subordinate CRE Capital"
+  },
+  {
+   "slug": "bridge-debt-fund-vs-bank-balance-sheet",
+   "title": "Bridge Debt Fund vs Bank Balance Sheet for Value-Add CRE: How to Choose"
+  }
+ ],
+ "hard-money-loans": [
+  {
+   "slug": "hard-money-vs-bridge-loan",
+   "title": "Hard Money vs Bridge Loan: How to Choose for Commercial Real Estate"
+  },
+  {
+   "slug": "bridge-loan-vs-permanent-refinance",
+   "title": "Bridge Loan vs Permanent Refinance: Reposition First or Lock Rate Now"
+  }
+ ],
+ "life-company-loans": [
+  {
+   "slug": "cmbs-vs-life-company-office-retail",
+   "title": "CMBS vs Life Company for Office and Retail: How to Choose"
+  },
+  {
+   "slug": "agency-vs-life-company-stabilized-multifamily",
+   "title": "Agency vs Life Company for Stabilized Multifamily: How to Choose"
+  },
+  {
+   "slug": "life-company-vs-pension-fund-permanent",
+   "title": "Life Company vs Pension Fund Permanent CRE Loans: The Quietest Two Lender Pools in the Market"
+  }
+ ],
+ "cmbs-loans": [
+  {
+   "slug": "cmbs-vs-life-company-office-retail",
+   "title": "CMBS vs Life Company for Office and Retail: How to Choose"
+  },
+  {
+   "slug": "agency-vs-cmbs-stabilized-multifamily",
+   "title": "Agency vs CMBS for Stabilized Multifamily: How to Choose"
+  },
+  {
+   "slug": "cmbs-conduit-vs-single-borrower-cmbs",
+   "title": "CMBS Conduit vs Single-Borrower CMBS: Two Different CMBS Markets for Different Deal Sizes"
+  }
+ ],
+ "agency-loans": [
+  {
+   "slug": "agency-vs-life-company-stabilized-multifamily",
+   "title": "Agency vs Life Company for Stabilized Multifamily: How to Choose"
+  },
+  {
+   "slug": "agency-vs-cmbs-stabilized-multifamily",
+   "title": "Agency vs CMBS for Stabilized Multifamily: How to Choose"
+  },
+  {
+   "slug": "agency-vs-bank-stabilized-multifamily",
+   "title": "Agency vs Bank for Stabilized Multifamily: Rate, Recourse, and Structure Trade-Offs"
+  }
+ ],
+ "permanent-loans": [
+  {
+   "slug": "bridge-loan-vs-permanent-refinance",
+   "title": "Bridge Loan vs Permanent Refinance: Reposition First or Lock Rate Now"
+  },
+  {
+   "slug": "cmbs-vs-life-company-office-retail",
+   "title": "CMBS vs Life Company for Office and Retail: How to Choose"
+  },
+  {
+   "slug": "life-company-vs-pension-fund-permanent",
+   "title": "Life Company vs Pension Fund Permanent CRE Loans: The Quietest Two Lender Pools in the Market"
+  },
+  {
+   "slug": "bank-vs-credit-union-permanent",
+   "title": "Bank vs Credit Union for $5M to $15M CRE Permanent: How to Choose"
+  }
+ ],
+ "multifamily-loans": [
+  {
+   "slug": "agency-vs-life-company-stabilized-multifamily",
+   "title": "Agency vs Life Company for Stabilized Multifamily: How to Choose"
+  },
+  {
+   "slug": "agency-vs-bank-stabilized-multifamily",
+   "title": "Agency vs Bank for Stabilized Multifamily: Rate, Recourse, and Structure Trade-Offs"
+  },
+  {
+   "slug": "bridge-loan-vs-agency-value-add-multifamily",
+   "title": "Bridge Loan vs Agency Financing for Value-Add Multifamily"
+  }
+ ],
+ "bridge-to-perm-loans": [
+  {
+   "slug": "bridge-to-perm-vs-direct-permanent",
+   "title": "Bridge to Perm vs Direct Permanent Financing: How to Choose"
+  },
+  {
+   "slug": "bridge-loan-vs-permanent-refinance",
+   "title": "Bridge Loan vs Permanent Refinance: Reposition First or Lock Rate Now"
+  }
+ ]
+}

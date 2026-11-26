@@ -60,6 +60,9 @@ def render_hubs(slugs=None, write=True):
         trim_blocks=True,
         lstrip_blocks=True,
     )
+    env.globals["hub_comparison_links"] = json.loads(
+        (DATA_DIR / "hub_comparison_links.json").read_text(encoding="utf-8")
+    )
     template = env.get_template("financing_conversion_page.html")
     rendered = {}
 

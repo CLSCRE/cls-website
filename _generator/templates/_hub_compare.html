@@ -1,0 +1,21 @@
+{% set _cmp = (hub_comparison_links or {}).get(loan.slug) %}
+{% if _cmp %}
+<!-- cls-hub-compare -->
+<section class="pf-section" id="compare">
+  <div class="pf-wrap">
+    <div class="pf-deal-heading">
+      <div>
+        <div class="pf-kicker">Compare your options</div>
+        <h2>Side by side: how to choose between structures.</h2>
+      </div>
+      <a class="pf-text-link" href="{{ depth }}comparisons/index.html">All comparisons &rarr;</a>
+    </div>
+    <div class="cross-link-grid">
+      {% for c in _cmp %}
+      <a href="{{ depth }}comparisons/{{ c.slug }}.html" class="cross-link-card reveal"><div class="cl-title">{{ c.title }}</div><div class="cl-sub">Side-by-side guide</div></a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /cls-hub-compare -->
+{% endif %}

@@ -969,6 +969,11 @@ def main():
         trim_blocks=True,
         lstrip_blocks=True,
     )
+    # Hub to comparison page links (templates/_hub_compare.html); also applied
+    # to existing pages by scripts/add_hub_comparison_links.py
+    env.globals["hub_comparison_links"] = json.loads(
+        (DATA_DIR / "hub_comparison_links.json").read_text(encoding="utf-8")
+    )
 
     # Shared context for nav/footer
     regional_groups = build_regional_groups(cities)
