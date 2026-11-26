@@ -631,11 +631,11 @@
     "industrial-bridge-loans": [
       {
         "q": "What is an industrial bridge loan?",
-        "a": "Short-term financing for warehouse, distribution, flex, manufacturing, and last-mile logistics properties that are vacant, partially leased, or being repositioned. Terms run 12 to 36 months, interest-only, with non-recourse available. The loan funds the acquisition and improvements, and is repaid when the asset is leased and refinanced into permanent debt or sold."
+        "a": "Short-term financing for warehouse, distribution, flex, manufacturing, and last-mile logistics properties that are vacant, partially leased, or being repositioned. Terms run 12 to 36 months, interest-only, with non-recourse available on select deals. The loan funds the acquisition and improvements, and is repaid when the asset is leased and refinanced into permanent debt or sold."
       },
       {
         "q": "What rates and leverage apply to industrial bridge financing?",
-        "a": "Rates generally run 7.25% to 11.50%, interest-only, with leverage up to 75% of cost and loan sizes from $2 million to $75 million and above. Capital comes from debt funds, bridge platforms, banks, life companies, and CMBS conduits. Commercial Lending Solutions arranges these loans and matches each deal to the lenders active in that submarket."
+        "a": "Industrial bridge loans price at SOFR plus 225 to 450 basis points, with floors common, interest-only, with leverage up to 75% of cost and loan sizes from $2 million to $75 million and above. Capital comes from debt funds, bridge platforms, banks, life companies, and CMBS conduits. Commercial Lending Solutions arranges these loans and matches each deal to the lenders active in that submarket."
       },
       {
         "q": "Why is industrial bridge leverage capped lower than multifamily?",
@@ -643,11 +643,27 @@
       },
       {
         "q": "How long does an industrial bridge loan take to close, and what slows it down?",
-        "a": "Fourteen to thirty days is typical. Environmental diligence is the usual constraint: former manufacturing, auto, dry cleaning, or fuel storage uses often trigger a Phase II, which adds two to four weeks and can change loan sizing. Ordering the Phase I the day the contract is signed protects the timeline."
+        "a": "Fourteen to thirty days is typical from a complete package, and we have closed within five days. Environmental diligence is the usual constraint: former manufacturing, auto, dry cleaning, or fuel storage uses often trigger a Phase II, which adds two to four weeks and can change loan sizing. Ordering the Phase I the day the contract is signed protects the timeline."
       },
       {
         "q": "Can I get an industrial bridge loan on a vacant building?",
         "a": "Yes. Vacant and partially vacant industrial is a core use case, though lenders will hold back proceeds in an interest reserve and a leasing reserve funded at closing. Sizing keys off stabilized value and market rent comparables rather than in-place income, so the leasing assumptions in your model get tested hard."
+      },
+      {
+        "q": "Do industrial bridge loans require a personal guaranty?",
+        "a": "Not always. Non-recourse is available on select deals, depending on the lender, the asset and the sponsor. Two of our documented Sunnyvale, California industrial bridge loans, a $4.5 million loan and an $11 million loan, closed with no personal guaranty. Recourse terms vary by lender and are set deal by deal."
+      },
+      {
+        "q": "Can an industrial bridge loan be prepaid early?",
+        "a": "It depends on the lender. Some bridge lenders charge a minimum interest period or a prepayment fee, and some do not. Our documented Sunnyvale industrial bridge loans, $4.5 million and $11 million, closed with no prepayment penalty. Compare prepayment terms, extension fees and exit fees alongside the rate."
+      },
+      {
+        "q": "What are typical fees on an industrial bridge loan?",
+        "a": "A typical example is 1 point to the lender and a 1 point broker fee, as in our documented Sunnyvale industrial bridge loans. In those deals an extension cost 1 point and a 0.50% rate step-up. Fees vary by lender, leverage and complexity."
+      },
+      {
+        "q": "Has Commercial Lending Solutions closed industrial bridge loans?",
+        "a": "Yes. We arranged a $4,500,000 first trust deed bridge loan on a leased R&D and industrial building in Sunnyvale, California at 8.40% fixed, interest-only for 12 months, and a follow-on $11,000,000 cross-collateralized bridge loan on two Sunnyvale buildings at 7.90% fixed. Both closed with no prepayment penalty and no personal guaranty, within five days of a complete package, with a California private debt fund. Rates reflect the market at closing and are not current quotes."
       }
     ],
     "office-bridge-loans": [

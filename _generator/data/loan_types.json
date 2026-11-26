@@ -1075,16 +1075,17 @@
     "name": "Industrial Bridge Loans",
     "short_name": "Industrial Bridge",
     "headline": "Bridge Financing for Industrial, Warehouse, and Logistics Properties",
-    "description": "Industrial bridge loans provide short-term capital for warehouse, distribution, flex, manufacturing, and last-mile logistics property acquisitions and repositioning. These 12 to 36-month facilities close faster than conventional bank financing and offer leverage up to 75% of cost, making them ideal for time-sensitive industrial acquisitions and value-add plays in high-demand logistics corridors. Minimum loan size is $2 million.",
+    "description": "Industrial bridge loans provide short-term capital for warehouse, distribution, flex, manufacturing, and last-mile logistics acquisitions and repositioning. They price at SOFR plus 225 to 450 basis points with floors common, up to 75% of cost, interest-only, for 12 to 36 months, from a $2 million minimum. The most competitive terms for transitional industrial usually come from private debt funds and bridge platforms. Banks, credit unions and life companies price off other benchmarks and generally want more stabilization. Closing is typically 14 to 30 days, and we have closed within 5 days of a complete package. Non-recourse is available on select deals.",
     "description_extended": "Industrial real estate has outperformed every other commercial property type over the past decade, driven by e-commerce distribution demand, nearshoring manufacturing, and last-mile logistics constraints in infill markets. This performance has made industrial the most competitive bridge lending category outside of multifamily, with debt funds and bridge platforms actively seeking well-located industrial assets. Typical bridge scenarios include acquiring a vacant or partially vacant industrial building, improving the asset, and stabilizing with credit tenants before refinancing into a CMBS, life company, or permanent bank loan. Sale-leaseback structures and owner-user acquisitions in SBA-ineligible situations also drive demand for industrial bridge capital.",
     "min_loan_display": "$2MM",
     "key_features": {
       "loan_amount": "$2MM - $75M+",
       "term": "12 - 36 Months",
-      "rates": "7.25% - 11.50%",
+      "rates": "SOFR + 225 to 450 bps, floors common",
       "ltv": "Up to 75% of Cost",
-      "structure": "Interest-Only, Non-Recourse Available",
-      "close_time": "14 to 30 Days Typical"
+      "structure": "Interest-Only, Non-Recourse on Select Deals",
+      "close_time": "14 to 30 Days Typical, Fastest Within 5 Days",
+      "fees": "1 Point Lender + 1 Point Broker (Typical)"
     },
     "lender_sources": [
       "Debt Funds",
@@ -1108,8 +1109,42 @@
     },
     "min_amount_usd": 2000000,
     "apply_query": "program=industrial-bridge",
-    "updated": "August 2026",
-    "updated_iso": "2026-08-01"
+    "updated": "November 2026",
+    "updated_iso": "2026-11-25",
+    "quick_answer": "Industrial bridge loans price at SOFR plus 225 to 450 basis points with floors common, up to 75% of cost, interest-only, for 12 to 36 months, from a $2 million minimum. The most competitive terms for transitional industrial usually come from private debt funds and bridge platforms. Banks, credit unions and life companies price off other benchmarks and generally want more stabilization. Closing is typically 14 to 30 days, and we have closed within 5 days of a complete package. Non-recourse is available on select deals.",
+    "rate_tiers_intro": "Lender type drives pricing, leverage and speed. These are starting points, not quotes. The right desk depends on the asset, the business plan and the sponsor.",
+    "rate_tiers": [
+      {
+        "lender_type": "Debt Funds",
+        "rates": "SOFR + 225 to 450 bps, floors common",
+        "leverage": "Up to 75% of cost",
+        "best_fit": "Vacant or transitional industrial, lease-up and repositioning, fast closes, non-recourse on select deals"
+      },
+      {
+        "lender_type": "Bridge Lending Platforms",
+        "rates": "SOFR + 225 to 450 bps, floors common",
+        "leverage": "Up to 75% of cost",
+        "best_fit": "Acquisition, renovation and lease-up business plans with a clear permanent takeout"
+      },
+      {
+        "lender_type": "Banks and Credit Unions",
+        "rates": "Quoted per deal, relationship-priced",
+        "leverage": "Conservative, recourse often considered",
+        "best_fit": "Partly or fully leased industrial with an existing banking relationship and a longer timeline"
+      },
+      {
+        "lender_type": "Life Insurance Companies",
+        "rates": "Fixed-rate",
+        "leverage": "Conservative",
+        "best_fit": "High-quality stabilized assets and experienced sponsors, often the takeout for a bridge"
+      },
+      {
+        "lender_type": "CMBS Conduits",
+        "rates": "Fixed-rate",
+        "leverage": "Quoted per deal",
+        "best_fit": "Non-recourse takeout of a stabilized industrial asset"
+      }
+    ]
   },
   {
     "slug": "office-bridge-loans",

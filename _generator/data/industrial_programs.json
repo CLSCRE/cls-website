@@ -108,8 +108,8 @@
         "Exit to a life company, CMBS, or bank permanent loan at stabilization"
       ],
       "key_features": {
-        "rate_environment_2026": "SOFR + 350 to 600 bps, floor rates common",
-        "typical_ltv_ltc": "70 to 80 percent LTC, 65 to 75 percent of stabilized value",
+        "rate_environment_2026": "SOFR + 225 to 450 bps, floor rates common",
+        "typical_ltv_ltc": "Up to 75 percent of cost",
         "term": "1 to 3 years with extension options",
         "prepayment": "Open after a short lockout period",
         "recourse_structure": "Often non-recourse with bad-boy carve-outs; partial recourse on heavier lease-up risk",
