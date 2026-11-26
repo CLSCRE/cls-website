@@ -4,8 +4,8 @@
  * Fires events on:
  *   - Contact clicks (mailto:, tel:, sms:) for ANY address (legacy compat)
  *   - "Web-sourced lead" for website-only channels (loans@clscre.com,
- *     tel: clicks on the site for 310-758-4042 (retired 310-708-0690 too),
- *     text 310-758-3064)
+ *     tel: clicks on the site for 310-758-4042, retired 310-708-0690 too;
+ *     texting retired 2026-11-25)
  *
  * Events emitted (both dataLayer for GTM and gtag for direct GA4/Ads):
  *   - contact_click            - any tel:/mailto:/sms: click (legacy)
@@ -124,7 +124,10 @@
   // a tel: click on the site is a web click for either number. The retired
   // 310.708.0690 stays listed for cached pages.
   var WEBSITE_ONLY_PHONE_LAST10 = ['3107584042', '3107080690'];
-  var WEBSITE_ONLY_SMS_LAST10 = ['3107583064'];
+  // Texting was retired 2026-11-25 (Trevor: text leads were low quality), so no
+  // sms: number counts as a website channel any more. Left empty, not removed,
+  // so any stale sms: link on a cached page is still logged as a plain contact_click.
+  var WEBSITE_ONLY_SMS_LAST10 = [];
   var WEBSITE_ONLY_EMAILS = ['loans@clscre.com'];
 
   function digitsOnly(value) {
