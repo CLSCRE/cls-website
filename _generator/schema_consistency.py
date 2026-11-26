@@ -17,7 +17,9 @@ entity on every indexable page, instead of a fresh copy per template:
   7. Per-page FinancialService/ProfessionalService nodes get an @id and
      parentOrganization pointing at ORG_ID; pages with no top-level organization node
      get the canonical one (ORG_NODE).
-  8. One H1 per page: later H1 tags (email-layout archives, repeated blog titles)
+  8. Breadcrumb "Financing" parents that point at an anchor or the redirecting /financing/
+     point at the real page it resolves to.
+  9. One H1 per page: later H1 tags (email-layout archives, repeated blog titles)
      become H2.
 
 Why a post-pass and not template edits: 26 templates emit their own copy of the
@@ -96,9 +98,19 @@ def _put_id_first(node, ident):
     node.update(rest)
 
 
+FINANCING_CRUMB = "https://clscre.com/financing/commercial-mortgage-rates.html"  # where /financing/ 301s to
+FINANCING_CRUMB_STALE = {"https://clscre.com/#financing", "https://clscre.com/#programs",
+                         "https://clscre.com/financing/", "https://clscre.com/financing"}
+
+
 def normalize_node(node):
     ty = _types(node)
     name = node.get("name")
+    if ("ListItem" in ty and name in ("Financing", "Financing Programs")
+            and node.get("item") in FINANCING_CRUMB_STALE):
+        # Breadcrumb parent must be a real, crawlable page, not an anchor or a redirect.
+        node["item"] = FINANCING_CRUMB
+        return
     if ty & ORG_TYPES and name == FIRM_NAME:
         if node.get("@id") != ORG_ID:
             _put_id_first(node, ORG_ID)
