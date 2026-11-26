@@ -43,6 +43,16 @@
     window.gtag = function gtag() { window.dataLayer.push(arguments); };
     window.gtag('js', new Date());
   }
+  // Privacy opt-out: pages that carry the inline head script already set window.clsOptOut;
+  // for any other page, work it out here (Global Privacy Control or a saved opt-out) and
+  // tell Google tags to stay denied BEFORE gtag.js loads.
+  if (typeof window.clsOptOut === 'undefined') {
+    try { window.clsOptOut = navigator.globalPrivacyControl === true || localStorage.getItem('cls_privacy_optout') === '1'; }
+    catch (e) { window.clsOptOut = navigator.globalPrivacyControl === true; }
+  }
+  if (window.clsOptOut) {
+    window.gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
+  }
   if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
     var gtagScript = document.createElement('script');
     gtagScript.async = true;
@@ -70,6 +80,7 @@
   var CLICK_ID_KEYS = ['gclid', 'wbraid', 'gbraid'];
   var CLICK_ID_TTL_MS = 90 * 24 * 60 * 60 * 1000;
   function storeClickIds() {
+    if (window.clsOptOut) return; // privacy opt-out / Global Privacy Control: do not store ad click IDs
     var params;
     try { params = new URLSearchParams(window.location.search); } catch (e) { return; }
     for (var i = 0; i < CLICK_ID_KEYS.length; i++) {
@@ -82,6 +93,7 @@
     }
   }
   function getClickId(key) {
+    if (window.clsOptOut) return '';
     try {
       var raw = localStorage.getItem('cls_' + key);
       if (!raw) return '';

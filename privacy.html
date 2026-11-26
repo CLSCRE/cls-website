@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var o=false;try{o=navigator.globalPrivacyControl===true||localStorage.getItem('cls_privacy_optout')==='1'}catch(e){o=navigator.globalPrivacyControl===true}window.clsOptOut=o;if(o)gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'})})();</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PH6TD3TC');</script>
 <!-- End Google Tag Manager -->
@@ -55,7 +56,7 @@
 .nav-dropdown:focus-within .nav-dropdown-menu{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
 </style>
 <!-- Microsoft Clarity (project xwb62nsa5g, UX behavior analytics; added 2026-08-02) -->
-<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};var go=function(){if(go.d)return;go.d=1;t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);};c.addEventListener("load",function(){["pointerdown","keydown","scroll","touchstart"].forEach(function(e){c.addEventListener(e,go,{once:true,passive:true});});setTimeout(go,4000);});})(window,document,"clarity","script","xwb62nsa5g");</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};var go=function(){if(go.d||c.clsOptOut)return;go.d=1;t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);};c.addEventListener("load",function(){["pointerdown","keydown","scroll","touchstart"].forEach(function(e){c.addEventListener(e,go,{once:true,passive:true});});setTimeout(go,4000);});})(window,document,"clarity","script","xwb62nsa5g");</script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -190,10 +191,10 @@
   <li><strong>LinkedIn Insight Tag:</strong> We use LinkedIn tracking to measure the performance of our LinkedIn campaigns and understand professional demographics of our visitors.</li>
   <li><strong>Essential cookies:</strong> Required for basic website functionality, including navigation, form submissions and spam protection (Cloudflare Turnstile).</li>
 </ul>
-<p>Most web browsers allow you to control cookies through their settings. You can set your browser to refuse cookies or alert you when cookies are being sent. Please note that disabling cookies may affect the functionality of our website.</p>
+<p>You can opt out of the advertising and analytics tools above at any time using the Your Privacy Choices link in the footer of every page; see Your Privacy Choices below. Most web browsers allow you to control cookies through their settings. You can set your browser to refuse cookies or alert you when cookies are being sent. Please note that disabling cookies may affect the functionality of our website.</p>
 
 <h2>Third-Party Sharing</h2>
-<p>We do not sell your personal information. We may share your information with the following third parties in connection with our services:</p>
+<p>We do not sell your personal information for money. Our advertising tags from Google and LinkedIn may count as "sharing" for cross-context behavioral advertising under California law, and you can opt out as described under Your Privacy Choices below. We may share your information with the following third parties in connection with our services:</p>
 <ul>
   <li><strong>Lenders and capital sources:</strong> When you engage us for financing, we share relevant property and financial information with prospective lenders to obtain loan quotes and facilitate transactions. This is a core part of our brokerage service.</li>
   <li><strong>Cloudflare and our form processing:</strong> Our contact, application and subscribe forms run on our own service hosted by Cloudflare. A submission is emailed to our loans mailbox and kept in Cloudflare storage for up to 180 days. Cloudflare also provides our website hosting and spam and bot protection.</li>
@@ -229,10 +230,15 @@
   <li><strong>Right to know:</strong> You may request details about the categories and specific pieces of personal information we have collected about you.</li>
   <li><strong>Right to delete:</strong> You may request that we delete personal information we have collected from you, subject to certain exceptions.</li>
   <li><strong>Right to correct:</strong> You may request that we correct inaccurate personal information.</li>
-  <li><strong>Right to opt out of sale or sharing:</strong> We do not sell your personal information. If this changes, we will provide a clear opt-out mechanism.</li>
+  <li><strong>Right to opt out of sale or sharing:</strong> We do not sell your personal information for money. Advertising tags from Google and LinkedIn may share browsing activity with those companies for cross-context behavioral advertising, which California law calls "sharing." You can opt out at any time with the Your Privacy Choices link in the footer of every page or the button below, and we honor the Global Privacy Control signal automatically.</li>
   <li><strong>Right to non-discrimination:</strong> We will not discriminate against you for exercising any of your privacy rights.</li>
 </ul>
 <p>To exercise any of these rights, please contact us using the information provided below. We will respond to verifiable requests within 45 days as required by law.</p>
+
+<h2 id="privacy-choices">Your Privacy Choices</h2>
+<p>Advertising and analytics tracking on this site is currently: <strong data-cls-privacy-status>ON</strong></p>
+<p>Opting out turns off Google Ads and Google Analytics measurement, LinkedIn advertising and Microsoft Clarity for this browser. It takes full effect on your next page view, and your choice is remembered on this device only. If your browser sends a Global Privacy Control signal, we treat it as an opt-out automatically. Cookies needed for forms and spam protection stay on.</p>
+<p><button type="button" data-cls-privacy-choices style="background:#153D63;color:#fff;border:0;border-radius:6px;padding:12px 22px;font:600 14px Inter,system-ui,sans-serif;cursor:pointer">Manage your privacy choices</button></p>
 
 <h2>Third-Party Links</h2>
 <p>Our website may contain links to third-party websites, including lender platforms, social media profiles, and external tools. We are not responsible for the privacy practices of these third-party sites. We encourage you to review the privacy policies of any website you visit through links on our site.</p>
@@ -329,7 +335,7 @@ const reveals=document.querySelectorAll('.reveal');const observer=new Intersecti
 const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
 </script>
 <script src="js/chatbot.js?v=f86dccd638" defer></script>
-<script src="js/tracking.js?v=18bb955ead" defer></script>
+<script src="js/tracking.js?v=ad56306f28" defer></script>
 <!-- LinkedIn Insight Tag -->
 <script type="text/javascript">
 _linkedin_partner_id = "9523884";
@@ -339,7 +345,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);
 (function(l) {
 if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
 window.lintrk.q=[]}
-var go = function(){ if (go.d) return; go.d = 1; var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s); };
+var go = function(){ if (go.d || window.clsOptOut) return; go.d = 1; var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s); };
 var arm = function(){ ["pointerdown","keydown","scroll","touchstart"].forEach(function(e){ window.addEventListener(e, go, {once:true, passive:true}); }); setTimeout(go, 4000); };
 if (document.readyState === "complete") arm(); else window.addEventListener("load", arm);
 })(window.lintrk);
@@ -348,5 +354,6 @@ if (document.readyState === "complete") arm(); else window.addEventListener("loa
 <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9523884&fmt=gif" />
 </noscript>
 <!-- End LinkedIn Insight Tag -->
+<script src="/js/consent.js?v=8a0b583419" defer></script>
 </body>
 </html>
