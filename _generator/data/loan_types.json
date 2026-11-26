@@ -134,7 +134,7 @@
     "name": "Construction Loans",
     "short_name": "Construction",
     "headline": "Ground-Up Construction & Renovation Financing",
-    "description": "Commercial construction loans offer 6.50% to 10.00% rates from banks for experienced sponsors, 9.00% to 14.00% from debt funds and private lenders for speculative or complex projects, and up to 85% loan-to-cost with 12 to 36 month interest-only terms funded through progressive draws. Lender selection drives pricing more than any other loan type: the same project can price 300 basis points apart depending on whether it fits a bank credit box or requires private capital.",
+    "description": "Commercial construction loans offer 6.50% to 10.00% rates from banks for experienced sponsors, 9.00% to 14.00% from debt funds and private lenders for speculative or complex projects, and up to 75% loan-to-cost with 12 to 36 month interest-only terms funded through progressive draws. Lender selection drives pricing more than any other loan type: the same project can price 300 basis points apart depending on whether it fits a bank credit box or requires private capital.",
     "description_extended": "Construction financing is inherently higher risk than permanent lending, which means lender selection and deal structuring are critical. Experienced borrowers with strong track records can access competitive bank construction loans, while more complex or speculative projects may require debt fund capital. Key considerations include loan-to-cost ratios, interest reserves, completion guarantees, and the exit strategy, whether that's a permanent loan take-out, sale, or refinance.",
     "rate_tiers_intro": "Construction loan pricing spans a wider range than any other commercial loan type because it depends on which lender tier a project qualifies for. Banks offer the lowest rates but the tightest credit box; debt funds and private lenders price higher in exchange for speed, leverage, and flexibility on speculative or complex deals.",
     "rate_tiers": [
@@ -169,10 +169,12 @@
     "key_features": {
       "loan_amount": "$2MM - $100MM+",
       "term": "12 - 36 Months",
-      "rates": "6.23% - 13.04%",
-      "ltc": "Up to 85% LTC",
+      "rates": "SOFR + 225 to 600 bps",
+      "ltc": "Up to 75% LTC",
       "structure": "Interest-Only, Progressive Draws",
-      "recourse": "Recourse Typical, Non-Recourse Available"
+      "recourse": "Recourse Typical, Non-Recourse Available",
+      "fees": "1 Point Lender (Typical)",
+      "close_time": "Under 30 Days When Needed"
     },
     "lender_sources": [
       "Banks",
@@ -197,8 +199,8 @@
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
     "apply_query": "program=construction",
-    "updated": "August 2026",
-    "updated_iso": "2026-08-01"
+    "updated": "November 2026",
+    "updated_iso": "2026-11-25"
   },
   {
     "slug": "bridge-loans",
@@ -288,12 +290,12 @@
     "description": "Mezzanine and preferred equity fill the gap between senior debt and common equity in the commercial real estate capital stack. These subordinate capital positions allow borrowers to increase total leverage beyond what senior lenders provide, reducing the equity required for acquisitions, developments, and recapitalizations.",
     "description_extended": "Mezzanine debt is secured by a pledge of ownership interest in the borrowing entity rather than a mortgage lien on the property, while preferred equity involves an actual equity investment with a preferred return. Both serve a similar function, increasing leverage and reducing sponsor equity requirements. These structures are commonly used for value-add acquisitions, development projects, and recapitalizations where senior lenders cap at 65-75% LTV.",
     "key_features": {
-      "loan_amount": "$5M - $50M+",
+      "loan_amount": "$10M+",
       "term": "1 - 5 Years",
-      "rates": "10% - 18%",
+      "rates": "8% - 14%",
       "position": "Behind Senior Debt",
       "structure": "Interest-Only or Accruing",
-      "total_leverage": "Up to 85-90% LTC"
+      "total_leverage": "Up to 85% LTC"
     },
     "lender_sources": [
       "Debt Funds",
@@ -312,14 +314,14 @@
     ],
     "seo": {
       "title": "Mezzanine & Preferred Equity Financing | Commercial Lending Solutions",
-      "meta_description": "Mezzanine debt and preferred equity for commercial real estate. Fill the capital stack gap with subordinate financing from $5M to $50M+. Increase leverage, reduce equity.",
+      "meta_description": "Mezzanine debt and preferred equity for commercial real estate. Fill the capital stack gap with subordinate financing from $10M. Increase leverage, reduce equity.",
       "h1": "Mezzanine & Preferred Equity Financing"
     },
-    "min_amount_usd": 2000000,
-    "min_loan_display": "$2MM",
+    "min_amount_usd": 10000000,
+    "min_loan_display": "$10MM",
     "apply_query": "program=mezzanine",
-    "updated": "August 2026",
-    "updated_iso": "2026-08-01"
+    "updated": "November 2026",
+    "updated_iso": "2026-11-25"
   },
   {
     "slug": "specialty",
@@ -993,7 +995,7 @@
     "name": "1031 Exchange Bridge Loans",
     "short_name": "1031 Bridge",
     "headline": "Bridge Financing to Meet 1031 Exchange Deadlines",
-    "description": "1031 exchange bridge loans allow investors to close on replacement property within the IRS 45-day identification and 180-day closing deadlines without waiting for conventional financing. These short-term facilities close in 10 to 21 days, satisfying exchange timing requirements while a permanent loan is arranged post-close. Minimum deal size is $2 million, aligned with the equity profiles of investors doing tax-deferred exchanges in commercial real estate.",
+    "description": "1031 exchange bridge loans allow investors to close on replacement property within the IRS 45-day identification and 180-day closing deadlines without waiting for conventional financing. Most of our exchanges close on time with permanent financing, so a bridge loan is a backstop we rarely need. When timing requires it, a short-term facility holds the exchange together while a permanent loan is arranged post-close. We recently closed one on the last day of the exchange window for a learning center in Mesa, Arizona. Minimum deal size is $2 million, aligned with the equity profiles of investors doing tax-deferred exchanges in commercial real estate.",
     "description_extended": "A failed 1031 exchange triggers full capital gains tax recognition on the relinquished property sale, often representing hundreds of thousands of dollars in immediate tax liability. The primary risk is not finding the right replacement property, it is failing to close on one in time. Conventional bank financing is simply not fast enough for most exchange timelines, particularly when the identified property requires due diligence, PCNA reports, or appraisals that banks require before commitment. A 1031 bridge loan from a debt fund or private lender eliminates the timing risk: the investor closes the exchange, locks in the tax deferral, and then refinances into permanent debt at leisure. Experienced 1031 exchange advisors and qualified intermediaries routinely recommend bridge lenders to their clients for exactly this reason.",
     "min_loan_display": "$2MM",
     "key_features": {
@@ -1001,7 +1003,7 @@
       "term": "6 - 18 Months",
       "rates": "7.50% - 11.50%",
       "ltv": "Up to 75% of Purchase Price",
-      "close_time": "10 to 21 Days to Satisfy Exchange Deadline",
+      "close_time": "Backstop Only, Timed to Your Exchange Deadline",
       "structure": "Interest-Only, Bridge to Permanent Refinance"
     },
     "lender_sources": [
@@ -1021,13 +1023,13 @@
     ],
     "seo": {
       "title": "1031 Exchange Bridge Loans for Commercial Real Estate | Commercial Lending Solutions",
-      "meta_description": "1031 exchange bridge loans from $2MM. Close on replacement property in 10-21 days and satisfy your exchange deadline. Debt funds and private lenders. Get a quote.",
+      "meta_description": "1031 exchange bridge loans from $2MM, a backstop when permanent financing cannot close before your deadline. Debt funds and private lenders. Get a quote.",
       "h1": "1031 Exchange Bridge Loans for Commercial Real Estate"
     },
     "min_amount_usd": 2000000,
     "apply_query": "program=1031-exchange-bridge",
-    "updated": "August 2026",
-    "updated_iso": "2026-08-01"
+    "updated": "November 2026",
+    "updated_iso": "2026-11-25"
   },
   {
     "slug": "multifamily-bridge-loans",
