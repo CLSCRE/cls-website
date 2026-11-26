@@ -96,7 +96,7 @@
       "loan_amount": "$2MM - $100MM+",
       "term": "1 - 35 Years",
       "rates": "5.00% - 11.50%",
-      "ltv": "Up to 85% LTV/LTC",
+      "ltv": "Up to 80% LTV (85% LTC for HUD-backed construction)",
       "amortization": "25 - 35 Years",
       "recourse": "Non-Recourse Available"
     },
@@ -155,7 +155,7 @@
       {
         "lender_type": "Debt Funds",
         "rates": "8.00% to 12.00%",
-        "leverage": "75 to 85% LTC",
+        "leverage": "Up to 75% LTC",
         "best_fit": "Value-add and spec projects, sponsors needing speed or higher leverage, non-recourse available"
       },
       {
@@ -1276,14 +1276,14 @@
     "name": "Multifamily Construction Loans",
     "short_name": "Multifamily Construction",
     "headline": "Ground-Up Apartment and BTR Construction Financing",
-    "description": "Multifamily construction loans fund ground-up apartment development, build-to-rent (BTR) communities, and major renovation projects for residential rental assets. These 18 to 36-month facilities provide interest-only draws as construction milestones are met, with loan-to-cost ratios up to 75-85% for experienced sponsors. Minimum loan size is $2 million, targeting 20-unit-and-up projects where institutional construction capital is active.",
+    "description": "Multifamily construction loans fund ground-up apartment development, build-to-rent (BTR) communities, and major renovation projects for residential rental assets. These 18 to 36-month facilities provide interest-only draws as construction milestones are met, with loan-to-cost ratios up to 75%, and up to 85% on HUD-backed executions, for experienced sponsors. Minimum loan size is $2 million, targeting 20-unit-and-up projects where institutional construction capital is active.",
     "description_extended": "Apartment construction remains one of the most active segments of commercial lending despite the rate environment, driven by persistent housing undersupply in most major U.S. markets. Lenders evaluate multifamily construction on sponsor track record, project feasibility, market absorption data, and the permanence of the take-out exit. Banks remain the dominant source for well-capitalized sponsors with prior multifamily construction experience; debt funds and CDFI lenders fill the gap for first-time developers, adaptive reuse projects, and projects in secondary markets where bank appetite is limited. Build-to-rent (BTR) has emerged as a distinct construction lending category with dedicated lender programs from several institutional debt funds.",
     "min_loan_display": "$2MM",
     "key_features": {
       "loan_amount": "$2MM - $75M+",
       "term": "18 - 36 Months",
       "rates": "6.50% - 11.00%",
-      "ltc": "Up to 80-85% LTC",
+      "ltc": "Up to 75% LTC (85% HUD-backed)",
       "structure": "Interest-Only, Progressive Draws",
       "recourse": "Completion Guarantee Typically Required"
     },
@@ -1365,7 +1365,7 @@
       "loan_amount": "$2MM - $50M+",
       "term": "12-36 Month Construction + 10-25 Year Perm",
       "rates": "6.50% - 10.00%",
-      "ltc": "Up to 80% LTC",
+      "ltc": "Up to 75% LTC",
       "structure": "Single-Close, Auto-Converting to Perm",
       "recourse": "Completion Guarantee Required During Construction"
     },
