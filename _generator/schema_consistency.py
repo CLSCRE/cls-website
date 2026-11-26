@@ -67,7 +67,7 @@ SAME_AS = [
     "https://traded.co/agent/trevor-damyan/",
     "https://x.com/LAloanbroker",
     "https://www.bbb.org/us/ca/los-angeles/profile/real-estate-loans/commercial-lending-solutions-1216-1000067041",
-    "https://www.youtube.com/@commercialmortagebroker",  # the handle really is spelled "mortage" (Trevor's channel)
+    "https://www.youtube.com/@clscre",  # renamed 2026-11-26 from the misspelled @commercialmortagebroker (channel ID UCCxd31kfZ8stk9wqc0L4YWA)
 ]
 STALE_SOCIAL = [
     # (regex, replacement). Old vanity handles auto-resolve to the new pages.
