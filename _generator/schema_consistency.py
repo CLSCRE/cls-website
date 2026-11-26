@@ -14,7 +14,10 @@ entity on every indexable page, instead of a fresh copy per template:
   5. Pages with a visible FAQ block and no FAQPage markup get FAQPage JSON-LD built
      FROM that visible block, so markup and page text cannot disagree.
   6. Blog report posts that carry no JSON-LD at all get Article and BreadcrumbList.
-  7. One H1 per page: later H1 tags (email-layout archives, repeated blog titles)
+  7. Per-page FinancialService/ProfessionalService nodes get an @id and
+     parentOrganization pointing at ORG_ID; pages with no top-level organization node
+     get the canonical one (ORG_NODE).
+  8. One H1 per page: later H1 tags (email-layout archives, repeated blog titles)
      become H2.
 
 Why a post-pass and not template edits: 26 templates emit their own copy of the
@@ -104,6 +107,16 @@ def normalize_node(node):
                 node["address"] = copy.deepcopy(ADDRESS)
             if node.get("sameAs") != SAME_AS:
                 node["sameAs"] = list(SAME_AS)
+    elif (ty & {"FinancialService", "ProfessionalService"} and isinstance(name, str)
+          and name != FIRM_NAME and node.get("@id") != ORG_ID
+          and str(node.get("url", "")).startswith("https://clscre.com/")):
+        # Per-page service node (e.g. "Commercial Lending Solutions, Permanent Loans"):
+        # give it its own id and tie it to the one organization.
+        url = node.get("url")
+        if "@id" not in node and isinstance(url, str) and url.startswith("https://clscre.com/"):
+            _put_id_first(node, url.split("#")[0] + "#service")
+        if node.get("parentOrganization") != {"@id": ORG_ID}:
+            node["parentOrganization"] = {"@id": ORG_ID}
     elif "Person" in ty and name == FOUNDER_NAME:
         if node.get("@id") != PERSON_ID:
             _put_id_first(node, PERSON_ID)
@@ -149,6 +162,37 @@ def normalize_ld_blocks(text):
             return m.group(0)
         return head + _dump_like(block, obj) + tail
     return LD_RE.sub(sub, text)
+
+
+ORG_NODE = {
+    "@context": "https://schema.org", "@type": "Organization", "@id": ORG_ID,
+    "name": FIRM_NAME, "alternateName": "CLS CRE", "url": "https://clscre.com",
+    "logo": "https://clscre.com/images/cls-logo-skyline.png",
+    "image": "https://clscre.com/images/cls-og-image.png",
+    "telephone": "+13107584042", "email": "loans@clscre.com",
+    "address": ADDRESS, "sameAs": SAME_AS,
+}
+
+
+def has_top_org(text):
+    """True if some top-level JSON-LD node is the full canonical organization."""
+    for m in LD_RE.finditer(text):
+        try:
+            obj = json.loads(m.group(2), strict=False)
+        except Exception:
+            continue
+        nodes = obj.get("@graph", [obj]) if isinstance(obj, dict) else obj
+        for n in nodes if isinstance(nodes, list) else []:
+            if (isinstance(n, dict) and n.get("@id") == ORG_ID
+                    and _types(n) & ORG_TYPES and "sameAs" in n):
+                return True
+    return False
+
+
+def add_org_node(text):
+    if has_top_org(text) or "</head>" not in text.lower():
+        return text
+    return _insert_ld(text, ORG_NODE)
 
 
 # ── Visible text fixes ───────────────────────────────────────────────────────
@@ -380,6 +424,7 @@ def process(text, rel):
     out = fix_visible_text(out)
     out = add_faq_schema(out)
     out = add_report_post_schema(out, rel)
+    out = add_org_node(out)
     return out
 
 
