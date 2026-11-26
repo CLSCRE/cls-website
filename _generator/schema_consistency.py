@@ -52,12 +52,15 @@ ADDRESS = {
     "addressCountry": "US",
 }
 SAME_AS = [
+    "https://www.linkedin.com/company/clscre",
     "https://www.linkedin.com/in/trevor-damyan-42636397/",
     "https://www.instagram.com/commerciallendingsolutions/",
     "https://www.facebook.com/profile.php?id=61591993674306",
     "https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb",
     "https://traded.co/agent/trevor-damyan/",
     "https://x.com/LAloanbroker",
+    "https://www.bbb.org/us/ca/los-angeles/profile/real-estate-loans/commercial-lending-solutions-1216-1000067041",
+    "https://www.youtube.com/@commercialmortagebroker",  # the handle really is spelled "mortage" (Trevor's channel)
 ]
 STALE_SOCIAL = [
     # (regex, replacement). Old vanity handles auto-resolve to the new pages.
