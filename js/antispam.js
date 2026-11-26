@@ -21,24 +21,38 @@
 
   // Cloudflare Worker form proxy — server-side validation
   // Set to your Worker URL after deploying (e.g., 'https://cls-form-proxy.xxx.workers.dev')
-  // When set, forms submit to the Worker instead of directly to FormSubmit
+  // Every form submits to the Worker (there is no direct fallback any more)
   var WORKER_ENDPOINT = 'https://cls-form-proxy.clscre.workers.dev';
 
   // Legacy reCAPTCHA v3 — kept as fallback if Turnstile is not configured
   var RECAPTCHA_SITE_KEY = '6LeB3JMsAAAAAKwoYS1jZKGPfsqVcl3IjVidDWZw';
 
-  // ── Obfuscated endpoint ─────────────────────────────────────────────
-  // Form endpoint ONLY exists in JavaScript. HTML has action="#".
-  // XOR-encoded endpoint parts — NOT plain char codes, requires decode logic
-  var _aX=[104,108,114,113,108,116,110,100,113]; // user part
-  var _bX=[98,110,112,103,119,99,41,98,109,110]; // domain part
-  var _cP=[104,116,116,112,115,58,47,47,102,111,114,109,115,117,98,109,105,116,46,99,111,47]; // host
-  function _buildEndpoint(){
-    var user='';for(var i=0;i<_aX.length;i++)user+=String.fromCharCode(_aX[i]^(i%7+1));
-    var dom='';for(var i=0;i<_bX.length;i++)dom+=String.fromCharCode(_bX[i]^(i%7+1));
-    var host='';for(var i=0;i<_cP.length;i++)host+=String.fromCharCode(_cP[i]);
-    return host+user+'@'+dom;
+  // ── Delivery ────────────────────────────────────────────────────────
+  // Every form posts to the Worker (WORKER_ENDPOINT), which stores the lead and emails loans@. The old
+  // FormSubmit fallback (an obfuscated inquiries@ endpoint) was removed 2026-11-26: it sent leads to a
+  // mailbox nobody reads, and showed the visitor a success page for a lead that was never delivered.
+  var SUPPORT_LINE = 'call 310.758.4042 or email loans@clscre.com';
+
+  // One id per visitor submission, kept across retries, so the Worker can recognise a double click.
+  function _newSubmissionId() {
+    var a = '';
+    try {
+      var buf = new Uint8Array(12);
+      (window.crypto || window.msCrypto).getRandomValues(buf);
+      for (var i = 0; i < buf.length; i++) a += ('0' + buf[i].toString(16)).slice(-2);
+    } catch (e) {
+      a = Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2);
+    }
+    return 'sid-' + a + '-' + Date.now().toString(36);
   }
+
+  // The one place a lead gets counted: called only after the Worker says it saved the lead. thank-you.html
+  // fires its conversion and generate_lead only if this flag exists, then clears it.
+  function _markLeadConfirmed(id) {
+    try { sessionStorage.setItem('cls_lead_pending', JSON.stringify({ id: id || '', t: Date.now() })); } catch (e) {}
+  }
+  window._clsMarkLeadConfirmed = _markLeadConfirmed;
+  window._clsNewSubmissionId = _newSubmissionId;
 
   // ── Turnstile / reCAPTCHA loader ────────────────────────────────────
   var captchaReady = false;
@@ -51,11 +65,11 @@
     tsScript.async = true;
     tsScript.defer = true;
     // If Turnstile fails to load (ad blocker, network, etc.), fall back so forms
-    // still submit via FormSubmit direct path instead of getting silently stuck.
+    // still submit: the Worker accepts them with extra checks and labels the lead.
     tsScript.onerror = function() {
       try { console.warn('Turnstile failed to load; falling back to direct submission.'); } catch (e) {}
       captchaType = 'none';
-      captchaReady = true; // unblock waiters
+      captchaReady = true; // unblock waiters (the form then posts with _captcha_unavailable=1)
     };
     document.head.appendChild(tsScript);
     window._clsTurnstileReady = function() { captchaReady = true; };
@@ -579,6 +593,8 @@
   // Delivery failed after the checks passed (worker 4xx/5xx or network error).
   // Keep the visitor on the form, restore the button, and point them to phone/email.
   function _submitFailed(form, btn, reason) {
+    if (form) form._clsInflight = false;
+    try { if (window.turnstile && captchaType === 'turnstile') window.turnstile.reset(); } catch (e) {}
     if (btn) {
       try {
         btn.disabled = false;
@@ -586,7 +602,7 @@
         if (btn._originalText) btn.textContent = btn._originalText;
       } catch (e) {}
     }
-    _showInlineError(form, 'We could not deliver your message just now. Please try again in a moment.');
+    _showInlineError(form, 'We could not deliver your message just now. Please try again in a moment, or ' + SUPPORT_LINE + '.');
     try {
       if (typeof gtag === 'function') {
         gtag('event', 'form_submission_failed', {
@@ -601,31 +617,17 @@
   // ── Initialize all forms ────────────────────────────────────────────
   function initForms() {
     var forms = document.querySelectorAll('form');
-    var endpoint = _buildEndpoint();
 
     forms.forEach(function(form) {
-      // Set real endpoint, prefer Worker proxy, fallback to FormSubmit direct
-      // Apply wizard has its own anti-bot (5-step, 10s min) so it goes direct to FormSubmit
-      var originalAction = form.getAttribute('action') || '';
+      // Every form posts to the Worker. The apply wizard is posted by apply.html itself (to /apply), so
+      // this script only blocks its native submit.
       var isApplyWizard = (form.id === 'wizardForm');
-      if (WORKER_ENDPOINT && !isApplyWizard) {
-        // Worker mode: forms submit to the Cloudflare Worker for Turnstile validation
+      if (!isApplyWizard) {
         form._realAction = WORKER_ENDPOINT;
         form._useWorker = true;
-        form.setAttribute('action', '#');
-        form.removeAttribute('method');
-      } else if (originalAction.indexOf('formsubmit') > -1) {
-        form._realAction = originalAction;
-        form.setAttribute('action', '#');
-        form.removeAttribute('method');
-      } else if (isApplyWizard) {
-        // Apply wizard goes direct to FormSubmit (not Worker)
-        form._realAction = endpoint;
-        form.setAttribute('action', '#');
-        form.removeAttribute('method');
-      } else if (originalAction === '#' || originalAction === '') {
-        form._realAction = endpoint;
       }
+      form.setAttribute('action', '#');
+      form.removeAttribute('method');
 
       // Determine thank-you path based on page depth
       var depth = '';
@@ -694,21 +696,27 @@
       // ── Intercept form submission ─────────────────────────────────
       form.addEventListener('submit', function(e) {
         e.preventDefault();
+        if (form.id === 'wizardForm') return false; // apply.html posts the wizard itself
 
         // Run anti-spam checks
         if (!window.clsAntiSpam(form)) {
           return false;
         }
 
-        // For non-FormSubmit forms (like Google Sheets dealForm)
+        // Forms with no Worker endpoint (none today; the apply wizard returned above)
         if (!form._realAction) {
           if (form.id === 'dealForm') return;
           form.submit();
           return;
         }
 
+        // Double-submit guard: a second click or Enter while one is in flight does nothing.
+        if (form._clsInflight) return false;
+        form._clsInflight = true;
+
         var submitBtn = form.querySelector('[type="submit"]');
         if (submitBtn) {
+          if (!submitBtn._originalText) submitBtn._originalText = submitBtn.textContent;
           submitBtn.disabled = true;
           submitBtn.textContent = 'Verifying...';
         }
@@ -718,6 +726,7 @@
           var tsResponse = form.querySelector('[name="cf-turnstile-response"]');
           if (!tsResponse || !tsResponse.value) {
             // Turnstile challenge not completed — block submission
+            form._clsInflight = false;
             if (submitBtn) {
               submitBtn.disabled = false;
               submitBtn.textContent = 'Please complete the verification';
@@ -739,6 +748,7 @@
               _doFormSubmit(form, submitBtn);
             }).catch(function() {
               // reCAPTCHA FAILED — block submission (fail-closed)
+              form._clsInflight = false;
               if (submitBtn) {
                 submitBtn.disabled = false;
                 submitBtn.textContent = 'Verification failed — please try again';
@@ -755,92 +765,70 @@
   }
 
   function _doFormSubmit(form, submitBtn) {
-    // If Turnstile failed to load and fell back to 'none', the Worker will silently
-    // drop the submission (no token = fake success, no email delivered). Fall back
-    // to submitting directly to FormSubmit so legitimate leads still reach Trevor.
-    if (form._useWorker && captchaType === 'none') {
-      form._useWorker = false;
-      form._realAction = _buildEndpoint();
-    }
-
     // Track active form for _silentBlock's inline error messaging
     _activeForm = form;
     _activeSubmitBtn = submitBtn;
-    // Preserve submit button text so we can restore it on error
-    if (submitBtn && !submitBtn._originalText) {
-      submitBtn._originalText = submitBtn.textContent;
-    }
+    if (submitBtn && !submitBtn._originalText) submitBtn._originalText = submitBtn.textContent;
+    if (!form._clsSid) form._clsSid = _newSubmissionId(); // same id on a retry, so the Worker can de-duplicate
 
-    // Fire form_submission event to GA so Trevor can see attempt volume
+    // Attempt volume only. The lead itself is counted once, on the thank-you page (or here for the exit form),
+    // and only after the Worker confirms it saved the lead.
     try {
       if (typeof gtag === 'function') {
-        gtag('event', 'form_submission', {
-          form_id: form.id || 'unknown',
-          form_type: form._useWorker ? 'worker' : 'formsubmit',
-          page_url: location.href
-        });
+        gtag('event', 'form_submission', { form_id: form.id || 'unknown', form_type: 'worker', page_url: location.href });
       }
     } catch (e) {}
 
-    // ── Exit intent form: fetch + success message (no redirect) ─────
-    if (form.id === 'exitForm') {
-      var pageType = location.pathname.split('/')[1] || 'home';
-      if (typeof gtag === 'function') {
-        gtag('event', 'exit_lead_capture', {page_type: pageType, page_url: location.href});
-      }
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({event: 'generate_lead', form_type: 'exit', page_type: pageType, page_referrer: location.href});
-      // localStorage backup
+    var isExit = (form.id === 'exitForm');
+    var pageType = location.pathname.split('/')[1] || 'home';
+    if (isExit) {
+      // localStorage backup of the address, in case the visitor never gets a confirmation
       var exitEmail = (form.querySelector('[name="Email"]') || {}).value || '';
       var exitName = (form.querySelector('[name="Name"]') || {}).value || '';
       try {
         var leads = JSON.parse(localStorage.getItem('cls_exit_leads') || '[]');
-        leads.push({
-          email: exitEmail, name: exitName, page: location.href,
-          type: pageType, timestamp: new Date().toISOString()
-        });
+        leads.push({ email: exitEmail, name: exitName, page: location.href, type: pageType, timestamp: new Date().toISOString() });
         localStorage.setItem('cls_exit_leads', JSON.stringify(leads));
-      } catch(ex) {}
-
-      var formData = new FormData(form);
-      formData.append('_cc', 'staff@clscre.com');
-      // Tag as exit form so Worker knows not to redirect
-      if (form._useWorker) formData.append('_exit_form', 'true');
-      var fetchMode = form._useWorker ? 'cors' : 'no-cors';
-      fetch(form._realAction, { method: 'POST', body: formData, mode: fetchMode }).catch(function(){});
-      form.style.display = 'none';
-      var success = document.getElementById('exitSuccess');
-      if (success) success.style.display = 'block';
-      return;
+      } catch (ex) {}
     }
 
-    // ── Worker mode: submit via fetch, then redirect on success ────
-    if (form._useWorker) {
-      var formData = new FormData(form);
-      formData.append('_cc', 'staff@clscre.com');
-      fetch(form._realAction, { method: 'POST', body: formData, mode: 'cors', redirect: 'follow' })
-        .then(function(resp) {
-          // Worker returns 303 redirect to thank-you on success. Never show the
-          // thank-you page when delivery failed: that hid a dead form for two weeks.
-          if (resp.ok) {
-            return resp.json().catch(function() { return {}; }).then(function(data) {
-              var redirectUrl = form.querySelector('[name="_next"]');
-              window.location.href = (data && data.redirect) || (redirectUrl && redirectUrl.value) || 'thank-you.html';
-            });
-          } else {
-            _submitFailed(form, submitBtn, 'http_' + resp.status);
+    var formData = new FormData(form);
+    formData.set('_submission_id', form._clsSid);
+    formData.set('_cc', 'staff@clscre.com');
+    // Turnstile could not load in this browser: the Worker takes the post only if its other checks pass.
+    if (captchaType === 'none') formData.set('_captcha_unavailable', '1');
+    if (isExit) formData.set('_exit_form', 'true');
+
+    fetch(form._realAction, { method: 'POST', body: formData, mode: 'cors', redirect: 'follow' })
+      .then(function(resp) {
+        // Success is shown only when the Worker says it saved the lead. A failure keeps the visitor on the
+        // form (the thank-you page once hid a dead form for two weeks).
+        if (!resp.ok) { _submitFailed(form, submitBtn, 'http_' + resp.status); return; }
+        return resp.json().then(function(data) {
+          if (!data || data.success !== true) { _submitFailed(form, submitBtn, 'bad_reply'); return; }
+          // A real acceptance carries an id or a redirect. A bot's fake success has neither and is never counted.
+          var confirmed = !!(data.id || data.redirect);
+          if (isExit) {
+            if (confirmed && !form._clsCounted) {
+              form._clsCounted = true;
+              try { if (typeof gtag === 'function') gtag('event', 'exit_lead_capture', { page_type: pageType, page_url: location.href }); } catch (e) {}
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({ event: 'generate_lead', form_type: 'exit', page_type: pageType, page_referrer: location.href, lead_id: data.id || '' });
+            }
+            form.style.display = 'none';
+            var success = document.getElementById('exitSuccess');
+            if (success) success.style.display = 'block';
+            return;
           }
-        })
-        .catch(function() {
-          _submitFailed(form, submitBtn, 'network');
+          // data-no-conversion: a form that is not a borrower lead (lender profile update) is saved but never counted
+          if (confirmed && !form.hasAttribute('data-no-conversion')) _markLeadConfirmed(data.id);
+          var nextEl = form.querySelector('[name="_next"]');
+          window.location.href = data.redirect || (nextEl && nextEl.value) || 'thank-you.html';
         });
-      return;
-    }
-
-    // ── Direct FormSubmit mode: restore action + native submit ─────
-    form.setAttribute('action', form._realAction);
-    form.setAttribute('method', 'POST');
-    HTMLFormElement.prototype.submit.call(form);
+      })
+      .catch(function() {
+        _submitFailed(form, submitBtn, 'network');
+      });
   }
 
   // ── Boot ─────────────────────────────────────────────────────────

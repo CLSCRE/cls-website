@@ -1,24 +1,33 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Conversion event: push generate_lead before GTM loads so the event is in the dataLayer queue when tags fire -->
+<!-- Conversion event: push generate_lead before GTM loads so the event is in the dataLayer queue when tags fire.
+     A lead is counted once and only when a form just confirmed it: js/antispam.js (or apply.html) sets the
+     sessionStorage flag cls_lead_pending after the Worker says the lead was saved, and this page consumes it.
+     A reload, a bookmark, a bot trap (nc=1) or a form that failed therefore counts nothing. (2026-11-26) -->
 <script>
 window.dataLayer = window.dataLayer || [];
+window.__clsLead = null;
 (function(){
-  var raw = '', suppressed = false;
+  var raw = '', suppressed = false, lead = null;
   try {
     var qs = new URLSearchParams(location.search);
     raw = (qs.get('form') || '').toLowerCase();
     // Bot traps redirect here with nc=1 so the visitor sees a success page
     // without registering as a lead.
     suppressed = qs.get('nc') === '1';
+    var p = JSON.parse(sessionStorage.getItem('cls_lead_pending') || 'null');
+    if (p && p.t && Date.now() - p.t < 30 * 60 * 1000) lead = p;
+    sessionStorage.removeItem('cls_lead_pending'); // consumed on every load, counted at most once
   } catch(e) {}
-  if (suppressed) return;
+  if (suppressed || !lead) return;
+  window.__clsLead = lead;
   var allowed = {contact:1, apply:1, 'submit-deal':1, 'broker-portal':1, exit:1, newsletter:1, generic:1, partners:1};
   var formType = allowed[raw] ? raw : 'contact';
   window.dataLayer.push({
     event: 'generate_lead',
     form_type: formType,
+    lead_id: lead.id || '',
     page_referrer: document.referrer || ''
   });
 })();
@@ -38,7 +47,7 @@ window.dataLayer = window.dataLayer || [];
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preload" href="fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/global.min.css?v=6e57fad9465b">
+<link rel="stylesheet" href="css/global.min.css?v=6e57fad946">
 <link rel="stylesheet" href="css/pages.min.css?v=3cbb23d80d">
 <style>
 .skip-link{position:absolute;top:-40px;left:0;background:#153D63;color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
@@ -78,12 +87,16 @@ window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-17966960701');
-  // Fire conversion on page load (form submit redirected here)
-  gtag('event', 'conversion', {
-    'send_to': 'AW-17966960701/S9lwCOH9yKEcEL2gqPdC',
-    'value': 200.0,
-    'currency': 'USD'
-  });
+  // Fire the conversion only for a lead a form just confirmed (see the head script); transaction_id lets
+  // Google Ads drop a repeat of the same lead.
+  if (window.__clsLead) {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17966960701/S9lwCOH9yKEcEL2gqPdC',
+      'value': 200.0,
+      'currency': 'USD',
+      'transaction_id': window.__clsLead.id || ''
+    });
+  }
 </script>
 <!-- Microsoft Clarity (project xwb62nsa5g, UX behavior analytics; added 2026-08-02) -->
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xwb62nsa5g");</script>
@@ -260,8 +273,8 @@ window.dataLayer = window.dataLayer || [];
 const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
 const mobileToggle=document.getElementById('mobileToggle');const navLinks=document.getElementById('navLinks');mobileToggle.addEventListener('click',()=>{navLinks.classList.toggle('open');const open=navLinks.classList.contains('open');mobileToggle.setAttribute('aria-expanded',open)});navLinks.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{navLinks.classList.remove('open')})});
 </script>
-<script src="js/tracking.js?v=3d3cf8908a" defer></script>
-<script src="js/chatbot.js?v=70f37fb366" defer></script>
+<script src="js/tracking.js?v=4bff7c1b1f" defer></script>
+<script src="js/chatbot.js?v=f86dccd638" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
 <!-- LinkedIn Insight Tag -->
 <script type="text/javascript">

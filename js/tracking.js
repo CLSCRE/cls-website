@@ -89,7 +89,59 @@
       return obj.v;
     } catch (e) { return ''; }
   }
+  // Lead source: which campaign, which outside site and which page brought the visitor. Remembered for 30 days
+  // (a new UTM tag or ad click id replaces it) and written into every form as hidden fields, so each lead
+  // record and the Worker's lead_accepted log line say where it came from. Added 2026-11-26.
+  var SRC_KEY = 'cls_lead_src';
+  var SRC_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+  var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+  function readLeadSource() {
+    try {
+      var o = JSON.parse(localStorage.getItem(SRC_KEY) || 'null');
+      if (o && o.t && Date.now() - o.t < SRC_TTL_MS) return o;
+    } catch (e) {}
+    return null;
+  }
+  function captureLeadSource() {
+    var params = null;
+    try { params = new URLSearchParams(window.location.search); } catch (e) {}
+    var cur = { t: Date.now(), landing: window.location.pathname, referrer: '' };
+    var campaignTouch = false;
+    if (params) {
+      for (var i = 0; i < UTM_KEYS.length; i++) {
+        var v = params.get(UTM_KEYS[i]);
+        if (v) { cur[UTM_KEYS[i]] = v.slice(0, 120); campaignTouch = true; }
+      }
+      if (params.get('gclid') || params.get('wbraid') || params.get('gbraid')) campaignTouch = true;
+    }
+    try {
+      var host = document.referrer ? new URL(document.referrer).hostname : '';
+      if (host && !/(^|\.)clscre\.com$/.test(host)) cur.referrer = document.referrer.slice(0, 200);
+    } catch (e) {}
+    // Keep the first touch unless this visit carries a new campaign tag; record the first visit either way.
+    if (campaignTouch || !readLeadSource()) {
+      try { localStorage.setItem(SRC_KEY, JSON.stringify(cur)); } catch (e) {}
+    }
+  }
+  function injectSourceInto(form) {
+    var o = readLeadSource();
+    if (!o) return;
+    var pairs = [['UTM_Source', o.utm_source], ['UTM_Medium', o.utm_medium], ['UTM_Campaign', o.utm_campaign],
+                 ['UTM_Term', o.utm_term], ['UTM_Content', o.utm_content], ['Landing_Page', o.landing], ['Referrer', o.referrer]];
+    for (var p = 0; p < pairs.length; p++) {
+      var name = pairs[p][0], val = pairs[p][1];
+      if (!val) continue;
+      var existing = form.querySelector('input[name="' + name + '"]');
+      if (existing) { existing.value = val; continue; }
+      var input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = val;
+      form.appendChild(input);
+    }
+  }
   function injectClickIdsInto(form) {
+    injectSourceInto(form);
     for (var k = 0; k < CLICK_ID_KEYS.length; k++) {
       var key = CLICK_ID_KEYS[k];
       var val = getClickId(key);
@@ -109,6 +161,9 @@
     for (var i = 0; i < forms.length; i++) injectClickIdsInto(forms[i]);
   }
   storeClickIds();
+  captureLeadSource();
+  // apply.html builds its FormData by hand, so it asks for a fresh injection just before it does.
+  window.clsInjectLeadFields = injectClickIdsInto;
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectClickIdFields);
   } else {

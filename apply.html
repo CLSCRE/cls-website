@@ -33,7 +33,7 @@
 </script>
 <link rel="preload" href="fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/global.min.css?v=6e57fad9465b">
+<link rel="stylesheet" href="css/global.min.css?v=6e57fad946">
 <link rel="stylesheet" href="css/pages.min.css?v=3cbb23d80d">
 <style>
 .skip-link{position:absolute;top:-40px;left:0;background:#153D63;color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
@@ -1180,6 +1180,7 @@ function submitApplication() {
   if (!token || !token.value || !token.value.startsWith('cls_')) { window.location.href = 'thank-you.html?nc=1'; return; }
   _applySubmitting = true;
   var submitBtn = document.querySelector('.btn-submit');
+  var submitBtnLabel = submitBtn ? submitBtn.textContent : '';
   if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Submitting...'; }
 
   // Copy values to hidden form
@@ -1235,31 +1236,48 @@ function submitApplication() {
   if(typeof gtag==='function') gtag('event','generate_lead_attempt', leadParams);
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(Object.assign({event:'generate_lead_attempt'}, leadParams));
-  // Submit the hidden form to the cls-form-proxy Worker (2026-10-09): it stores the application and
-  // emails it, with any files, to loans@clscre.com. Before this the wizard posted straight to FormSubmit
-  // for inquiries@, a mailbox nobody reads. The page's own bot checks (5 steps, 10s minimum, honeypots,
-  // token) are re-checked by the Worker. If the Worker cannot take it, fall back to the old direct
-  // FormSubmit post so the application is never lost.
+  // Submit the hidden form to the cls-form-proxy Worker (/apply): it stores the application and emails it, with
+  // any files, to loans@clscre.com. The old direct FormSubmit fallback was removed 2026-11-26 (it went to
+  // inquiries@, a mailbox nobody reads, and hid failures). If the Worker cannot take the application the
+  // visitor stays here, the button comes back, and the message gives the phone and email.
   var wf = document.getElementById('wizardForm');
-  var fallback = function() {
-    wf.setAttribute('action', wf._realAction || wf._directAction);
-    wf.setAttribute('method', 'POST');
-    HTMLFormElement.prototype.submit.call(wf);
+  try { if (window.clsInjectLeadFields) window.clsInjectLeadFields(wf); } catch (e) {}  // campaign, referrer, landing page
+  if (!wf._clsSid) wf._clsSid = (window._clsNewSubmissionId ? window._clsNewSubmissionId() : 'sid-' + Date.now().toString(36) + Math.random().toString(36).slice(2) + 'apply');
+  var fd = new FormData(wf);
+  fd.set('_submission_id', wf._clsSid);
+  var failed = function(reason) {
+    _applySubmitting = false;
+    if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitBtnLabel || 'Submit Application'; }
+    var box = document.getElementById('applyError');
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'applyError';
+      box.setAttribute('role', 'alert');
+      box.style.cssText = 'margin:16px 0;padding:14px 18px;border-left:4px solid #b91c1c;background:#fef2f2;color:#7f1d1d;font-size:15px;line-height:1.5;border-radius:0 4px 4px 0';
+      if (submitBtn && submitBtn.parentNode) submitBtn.parentNode.insertBefore(box, submitBtn);
+      else wf.parentNode.insertBefore(box, wf);
+    }
+    box.textContent = 'We could not submit your application just now. Your answers are still on this page. Please try again in a moment, or call 310.758.4042 or email loans@clscre.com.';
+    try { box.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
+    try { if (typeof gtag === 'function') gtag('event', 'form_submission_failed', { form_id: 'wizardForm', reason: String(reason) }); } catch (e) {}
   };
-  fetch(APPLY_ENDPOINT, { method: 'POST', body: new FormData(wf), mode: 'cors' })
+  fetch(APPLY_ENDPOINT, { method: 'POST', body: fd, mode: 'cors' })
     .then(function(resp) {
       if (!resp.ok) throw new Error('http_' + resp.status);
-      return resp.json().catch(function() { return {}; });
+      return resp.json();
     })
     .then(function(data) {
+      if (!data || data.success !== true) throw new Error('bad_reply');
       try { localStorage.removeItem('cls_apply_draft_v1'); } catch(e) {}
-      window.location.href = (data && data.redirect) || 'thank-you.html?form=apply';
+      // Count the lead once: thank-you.html fires the conversion only when this flag exists (real id or redirect).
+      if (data.id || data.redirect) { try { if (window._clsMarkLeadConfirmed) window._clsMarkLeadConfirmed(data.id); } catch (e) {} }
+      window.location.href = data.redirect || 'thank-you.html?form=apply';
     })
     .catch(function(err) {
-      try { if (typeof gtag === 'function') gtag('event', 'form_submission_failed', { form_id: 'wizardForm', reason: String(err && err.message || err), fallback: 'formsubmit' }); } catch(e) {}
-      fallback();
+      failed(err && err.message || err);
     });
 }
+
 var APPLY_ENDPOINT = 'https://cls-form-proxy.clscre.workers.dev/apply';
 
 /* --- File upload --- */
@@ -1565,10 +1583,10 @@ const navLinks = document.getElementById('navLinks');
 mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); const open = navLinks.classList.contains('open'); mobileToggle.setAttribute('aria-expanded', open); });
 navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); }); });
 </script>
-<script src="js/chatbot.js?v=21a0d5a54f" defer></script>
+<script src="js/chatbot.js?v=f86dccd638" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f636fddd62c1e184578646aff650e5f7"})});</script>
-<script src="js/antispam.js?v=1378ef5915" defer></script>
-<script src="js/tracking.js?v=3d3cf8908a" defer></script>
+<script src="js/antispam.js?v=a0c5f3b24c" defer></script>
+<script src="js/tracking.js?v=4bff7c1b1f" defer></script>
 <!-- LinkedIn Insight Tag -->
 <script type="text/javascript">
 _linkedin_partner_id = "9523884";
