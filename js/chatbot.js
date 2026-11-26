@@ -179,7 +179,7 @@
       const data = await res.json();
       removeTyping();
 
-      const reply = data.reply || 'I apologize for the technical difficulty. Please call us at 310.708.0690.';
+      const reply = data.reply || 'I apologize for the technical difficulty. Please call us at 310.758.4042.';
       addMessage('assistant', reply);
       messages.push({ role: 'assistant', content: reply });
 
@@ -192,7 +192,7 @@
       }
     } catch (err) {
       removeTyping();
-      addMessage('assistant', 'I apologize for the technical difficulty. Please call us at 310.708.0690 or visit our contact page.');
+      addMessage('assistant', 'I apologize for the technical difficulty. Please call us at 310.758.4042 or visit our contact page.');
     }
 
     isLoading = false;
@@ -262,7 +262,7 @@
 
       leadCaptured = true;
       hideLeadForm();
-      addMessage('assistant', 'Thank you, ' + name + '! A Commercial Lending Solutions advisor will reach out within 24 hours. In the meantime, you can apply directly at clscre.com/apply.html or call us at 310.708.0690.');
+      addMessage('assistant', 'Thank you, ' + name + '! A Commercial Lending Solutions advisor will reach out within 24 hours. In the meantime, you can apply directly at clscre.com/apply.html or call us at 310.758.4042.');
 
       // GA4 event
       if (typeof gtag === 'function') {
@@ -271,7 +271,7 @@
     } catch (err) {
       leadSubmit.disabled = false;
       leadSubmit.textContent = 'Send My Info';
-      addMessage('assistant', 'There was an issue submitting your info. Please try our contact page or call 310.708.0690.');
+      addMessage('assistant', 'There was an issue submitting your info. Please try our contact page or call 310.758.4042.');
       hideLeadForm();
     }
   });
@@ -289,8 +289,8 @@
 (function () {
   'use strict';
   try {
-    var PHONE = '+13107080690';
-    var PHONE_DISPLAY = '310.708.0690';
+    var PHONE = '+13107584042';
+    var PHONE_DISPLAY = '310.758.4042';
     var EMAIL = 'loans@clscre.com';
     var BOOKING = 'https://outlook.office.com/bookwithme/user/c760895536d64481bd17039efdcead26@clscre.com?anonymous&ismsaljsauthenabled&ep=plink';
 

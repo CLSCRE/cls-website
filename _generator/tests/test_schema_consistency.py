@@ -11,7 +11,7 @@ import schema_consistency as sc  # noqa: E402
 LD = re.compile(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', re.S)
 
 PAGE = """<!doctype html><html><head><title>t</title>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","telephone":"+13107080690","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Ave"},"sameAs":["https://www.facebook.com/mycommercialloanbroker/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","telephone":"+13107584042","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Ave"},"sameAs":["https://www.facebook.com/mycommercialloanbroker/"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"h","author":{"@type":"Person","name":"Trevor Damyan","jobTitle":"President"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}</script>
 </head><body><h1>Title</h1><p>Visit 7951 Blackburn Ave, Los Angeles.</p>
 <div class="faq-list">

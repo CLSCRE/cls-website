@@ -4,7 +4,8 @@
  * Fires events on:
  *   - Contact clicks (mailto:, tel:, sms:) for ANY address (legacy compat)
  *   - "Web-sourced lead" for website-only channels (loans@clscre.com,
- *     phone 310-708-0690, text 310-758-3064)
+ *     tel: clicks on the site for 310-758-4042 (retired 310-708-0690 too),
+ *     text 310-758-3064)
  *
  * Events emitted (both dataLayer for GTM and gtag for direct GA4/Ads):
  *   - contact_click            - any tel:/mailto:/sms: click (legacy)
@@ -50,11 +51,13 @@
   window.gtag('config', ADS_ID);
 
   // Website call conversions (Ads action 7710241145, 60s minimum): swaps the
-  // displayed 310.708.0690 for a Google forwarding number for visitors who
+  // displayed 310.758.4042 for a Google forwarding number for visitors who
   // arrived via a Google Ads click, so direct dials count as conversions.
   // The number string must match the on-page display format exactly.
+  // (Site standardized from 310.708.0690 to the main line 310.758.4042 on
+  // 2026-11-25 at Trevor's direction.)
   window.gtag('config', ADS_ID + '/SuNlCPniw9wcEL2gqPdC', {
-    phone_conversion_number: '310.708.0690'
+    phone_conversion_number: '310.758.4042'
   });
 
   // Google Ads click-ID capture for offline conversion import: persist
@@ -117,7 +120,10 @@
 
   // Website-only channel identifiers. Match on last-10 digits so +1 /
   // punctuation variants still count as web-sourced.
-  var WEBSITE_ONLY_PHONE_LAST10 = ['3107080690'];
+  // Since 2026-11-25 the site shows the main line (310.758.4042) everywhere, so
+  // a tel: click on the site is a web click for either number. The retired
+  // 310.708.0690 stays listed for cached pages.
+  var WEBSITE_ONLY_PHONE_LAST10 = ['3107584042', '3107080690'];
   var WEBSITE_ONLY_SMS_LAST10 = ['3107583064'];
   var WEBSITE_ONLY_EMAILS = ['loans@clscre.com'];
 
@@ -205,7 +211,7 @@
 
         if (webSourced) {
           fireEvent('web_sourced_lead', {
-            channel: 'phone_3107080690',
+            channel: 'phone_' + last10(phone),
             contact_value: phone,
             page_path: pagePath,
             link_text: linkText,
