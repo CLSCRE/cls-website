@@ -58,29 +58,76 @@
   var captchaReady = false;
   var captchaType = 'none'; // 'turnstile' | 'recaptcha' | 'none'
 
-  if (TURNSTILE_SITE_KEY) {
-    captchaType = 'turnstile';
+  // Turnstile is loaded ONCE, and only when a visitor first touches a form (focus, tap, key press) or submits.
+  // It used to load on every page and render a challenge in every form, including the chat box (about 3 MB
+  // per page). Changed 2026-11-26 (audit item 12). Widgets are rendered explicitly, one per form that is used.
+  var tsState = 'idle'; // idle | loading | ready | failed
+  var tsQueue = [];
+
+  function _renderTurnstileFor(form) {
+    if (captchaType !== 'turnstile' || !form) return;
+    var div = form.querySelector('.cf-turnstile');
+    if (!div || div._clsRendered) return;
+    if (tsState === 'ready' && window.turnstile) {
+      try {
+        div._clsWidget = window.turnstile.render(div, { sitekey: TURNSTILE_SITE_KEY, size: 'compact', theme: 'light' });
+        div._clsRendered = true;
+      } catch (e) {}
+    } else {
+      if (tsQueue.indexOf(form) === -1) tsQueue.push(form);
+      _loadTurnstile();
+    }
+  }
+
+  function _loadTurnstile() {
+    if (captchaType !== 'turnstile' || tsState !== 'idle') return;
+    tsState = 'loading';
     var tsScript = document.createElement('script');
-    tsScript.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_clsTurnstileReady';
+    tsScript.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=_clsTurnstileReady';
     tsScript.async = true;
     tsScript.defer = true;
     // If Turnstile fails to load (ad blocker, network, etc.), fall back so forms
     // still submit: the Worker accepts them with extra checks and labels the lead.
     tsScript.onerror = function() {
       try { console.warn('Turnstile failed to load; falling back to direct submission.'); } catch (e) {}
+      tsState = 'failed';
       captchaType = 'none';
       captchaReady = true; // unblock waiters (the form then posts with _captcha_unavailable=1)
     };
     document.head.appendChild(tsScript);
-    window._clsTurnstileReady = function() { captchaReady = true; };
+    window._clsTurnstileReady = function() {
+      captchaReady = true;
+      tsState = 'ready';
+      var queued = tsQueue.splice(0);
+      for (var q = 0; q < queued.length; q++) _renderTurnstileFor(queued[q]);
+    };
     // Watchdog: if Turnstile hasn't marked ready in 8 seconds, assume failure
     setTimeout(function() {
       if (!captchaReady) {
         try { console.warn('Turnstile did not load within 8s; falling back.'); } catch (e) {}
+        tsState = 'failed';
         captchaType = 'none';
         captchaReady = true;
       }
     }, 8000);
+  }
+
+  // Wait for the visitor's challenge token (up to 12 s). Calls back 'ok', 'none' (Turnstile unavailable, the
+  // post goes out labelled) or 'timeout' (the challenge needs the visitor, so the form says so).
+  function _waitForTurnstile(form, done) {
+    var waited = 0;
+    (function poll() {
+      var t = form.querySelector('[name="cf-turnstile-response"]');
+      if (t && t.value) return done('ok');
+      if (captchaType !== 'turnstile') return done('none');
+      if (waited >= 12000) return done('timeout');
+      waited += 250;
+      setTimeout(poll, 250);
+    })();
+  }
+
+  if (TURNSTILE_SITE_KEY) {
+    captchaType = 'turnstile';
   } else if (RECAPTCHA_SITE_KEY) {
     captchaType = 'recaptcha';
     var rcScript = document.createElement('script');
@@ -594,7 +641,12 @@
   // Keep the visitor on the form, restore the button, and point them to phone/email.
   function _submitFailed(form, btn, reason) {
     if (form) form._clsInflight = false;
-    try { if (window.turnstile && captchaType === 'turnstile') window.turnstile.reset(); } catch (e) {}
+    try {
+      if (window.turnstile && captchaType === 'turnstile') {
+        var tsd = form && form.querySelector('.cf-turnstile');
+        if (tsd && tsd._clsWidget !== undefined) window.turnstile.reset(tsd._clsWidget);
+      }
+    } catch (e) {}
     if (btn) {
       try {
         btn.disabled = false;
@@ -685,6 +737,15 @@
         }
       }
 
+      // First touch of this form starts Turnstile (one script for the whole page, one widget for this form).
+      if (captchaType === 'turnstile' && !isApplyWizard) {
+        var _tsTouch = function() {
+          ['focusin', 'pointerdown', 'touchstart', 'keydown'].forEach(function(ev) { form.removeEventListener(ev, _tsTouch, true); });
+          _renderTurnstileFor(form);
+        };
+        ['focusin', 'pointerdown', 'touchstart', 'keydown'].forEach(function(ev) { form.addEventListener(ev, _tsTouch, true); });
+      }
+
       // Add reCAPTCHA token field (legacy fallback)
       if (captchaType === 'recaptcha' && !form.querySelector('[name="g-recaptcha-response"]')) {
         var rcInput = document.createElement('input');
@@ -724,18 +785,27 @@
         // ── Turnstile verification (FAIL-CLOSED) ───────────────────
         if (captchaType === 'turnstile') {
           var tsResponse = form.querySelector('[name="cf-turnstile-response"]');
-          if (!tsResponse || !tsResponse.value) {
-            // Turnstile challenge not completed — block submission
+          if (tsResponse && tsResponse.value) {
+            // Turnstile passed — proceed to submit
+            _doFormSubmit(form, submitBtn);
+            return;
+          }
+          // No token yet (the widget starts on first touch, so a very fast submit gets here first):
+          // start it if needed and wait for the token before deciding.
+          _renderTurnstileFor(form);
+          _waitForTurnstile(form, function(state) {
+            if (state === 'ok' || state === 'none') {
+              _doFormSubmit(form, submitBtn);
+              return;
+            }
+            // Challenge needs the visitor: FAIL-CLOSED, keep them on the form
             form._clsInflight = false;
             if (submitBtn) {
               submitBtn.disabled = false;
               submitBtn.textContent = 'Please complete the verification';
             }
             alert('Please complete the security verification before submitting.');
-            return false;
-          }
-          // Turnstile passed — proceed to submit
-          _doFormSubmit(form, submitBtn);
+          });
           return;
         }
 
