@@ -2168,13 +2168,19 @@ def main():
             seo=hood["seo"],
             canonical_path=f"multifamily/la/{hood['slug']}.html",
             depth="../../",
+            # 2026-11-26 (audit row 7): 29 of 31 neighborhood pages were never
+            # indexed (about 850 words each, near-twins of the hand-written
+            # markets/los-angeles/ pages). They are noindex,follow and out of
+            # the sitemap via noindex_paths.json; the index and Inglewood stay.
+            noindex=f"multifamily/la/{hood['slug']}.html" in NOINDEX_PATHS,
         )
         (mf_la_dir / f"{hood['slug']}.html").write_text(html, encoding="utf-8")
         page_count += 1
-        sitemap_urls.append({
-            "loc": f"{BASE_URL}/multifamily/la/{hood['slug']}.html",
-            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
-        })
+        if f"multifamily/la/{hood['slug']}.html" not in NOINDEX_PATHS:
+            sitemap_urls.append({
+                "loc": f"{BASE_URL}/multifamily/la/{hood['slug']}.html",
+                "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+            })
     print(f"  [OK] multifamily/la/*.html  ({la_hood_count} neighborhood pages)")
 
     # Industrial index + per-submarket pages: /industrial/la/*.html
