@@ -37,6 +37,7 @@
   //   - load gtag.js (browser-cached; GTM loads the same library) if absent
   //   - register the AW destination with the on-page gtag instance
   var ADS_ID = 'AW-17966960701';
+  var GA4_ID = 'G-1S9151E1ZM';
   var BOOK_A_CALL_SEND_TO = ADS_ID + '/TIpaCNaPncEcEL2gqPdC';
   if (typeof window.gtag !== 'function') {
     window.gtag = function gtag() { window.dataLayer.push(arguments); };
@@ -211,7 +212,14 @@
     var payload = Object.assign({ event: eventName }, params || {});
     window.dataLayer.push(payload);
     if (typeof window.gtag === 'function') {
+      // Goes to the Google Ads tag (the AW destination registered above).
       window.gtag('event', eventName, params || {});
+      // 2026-11-26: the same event must also reach GA4. A 11/26 live click test
+      // showed gtag() events from this file reached the Ads tag only, so GA4 got
+      // no contact_click / web_sourced_lead (zero since Oct) and the GA4-imported
+      // Ads conversion starved. send_to limits this call to the GA4 stream, so
+      // nothing is counted twice.
+      window.gtag('event', eventName, Object.assign({}, params || {}, { send_to: GA4_ID }));
     }
   }
 
