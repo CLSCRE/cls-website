@@ -2722,6 +2722,17 @@ Sitemap: {BASE_URL}/sitemap-index.xml
     render_rates_table()
     render_homepage_rate_table()
 
+    # ── 12c. Related Articles blocks on every live blog post ──────────
+    # (audit row 10, 2026-11-26) Topical, inbound-balanced cards built from
+    # each post's own HTML, so the 169 posts that have no articles.json
+    # entry get links too. Idempotent; reads the sitemap-blog.xml written
+    # in step 11. See related_posts.py.
+    try:
+        import related_posts as _related_posts
+        _related_posts.run(WEBSITE_DIR)
+    except Exception as _rp_err:  # never fail a regen over cross-links
+        print(f"  [WARN] related_posts skipped: {_rp_err}")
+
     # ── 13. Asset version stamping (cache-busting) ────────────────────
     # Runs LAST so every page written above (and every page written by
     # scripts outside this generator) leaves with ?v=<hash> js/css URLs.
