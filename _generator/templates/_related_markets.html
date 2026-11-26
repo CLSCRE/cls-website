@@ -47,7 +47,7 @@
         <div class="rm-region-name">{{ group.region }}</div>
         <div class="rm-region-blurb">{{ group.blurb }}</div>
         <ul class="rm-city-list">
-          {% for c in group.cities %}
+          {% for c in group.cities if c.slug != 'bridgeport' %}{# /markets/bridgeport/ 301s; no link to a redirect (2026-11-26 audit) #}
           <li><a href="{{ depth }}markets/{{ c.slug }}/">{{ c.city }}<span class="rm-city-state">, {{ c.state }}</span></a></li>
           {% endfor %}
         </ul>
