@@ -2168,13 +2168,19 @@ def main():
             seo=hood["seo"],
             canonical_path=f"multifamily/la/{hood['slug']}.html",
             depth="../../",
+            # 2026-11-26 (audit row 7): 29 of 31 neighborhood pages were never
+            # indexed (about 850 words each, near-twins of the hand-written
+            # markets/los-angeles/ pages). They are noindex,follow and out of
+            # the sitemap via noindex_paths.json; the index and Inglewood stay.
+            noindex=f"multifamily/la/{hood['slug']}.html" in NOINDEX_PATHS,
         )
         (mf_la_dir / f"{hood['slug']}.html").write_text(html, encoding="utf-8")
         page_count += 1
-        sitemap_urls.append({
-            "loc": f"{BASE_URL}/multifamily/la/{hood['slug']}.html",
-            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
-        })
+        if f"multifamily/la/{hood['slug']}.html" not in NOINDEX_PATHS:
+            sitemap_urls.append({
+                "loc": f"{BASE_URL}/multifamily/la/{hood['slug']}.html",
+                "lastmod": TODAY, "changefreq": "monthly", "priority": "0.7",
+            })
     print(f"  [OK] multifamily/la/*.html  ({la_hood_count} neighborhood pages)")
 
     # Industrial index + per-submarket pages: /industrial/la/*.html
@@ -2715,6 +2721,17 @@ Sitemap: {BASE_URL}/sitemap-index.xml
     # over them once loaded, so the interactive filters are unaffected.
     render_rates_table()
     render_homepage_rate_table()
+
+    # ── 12c. Related Articles blocks on every live blog post ──────────
+    # (audit row 10, 2026-11-26) Topical, inbound-balanced cards built from
+    # each post's own HTML, so the 169 posts that have no articles.json
+    # entry get links too. Idempotent; reads the sitemap-blog.xml written
+    # in step 11. See related_posts.py.
+    try:
+        import related_posts as _related_posts
+        _related_posts.run(WEBSITE_DIR)
+    except Exception as _rp_err:  # never fail a regen over cross-links
+        print(f"  [WARN] related_posts skipped: {_rp_err}")
 
     # ── 13. Asset version stamping (cache-busting) ────────────────────
     # Runs LAST so every page written above (and every page written by
