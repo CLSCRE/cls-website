@@ -26,6 +26,7 @@ from jinja2 import Environment, FileSystemLoader
 from link_governance import LinkGovernor
 
 import time as _time
+import title_rules as _title_rules
 _orig_write_text = Path.write_text
 
 # ── Retired-path suppression (2026-08-01 cleanup pipeline) ─────────────
@@ -61,6 +62,17 @@ def _write_text_with_retry(self, *args, **kwargs):
     if rel is not None:
         SUPPRESSED_WRITES.append(rel)
         return 0  # retired path: suppressed, never regenerated
+    # Title length rule (2026-11-25 SEO audit): shorten the brand suffix on
+    # SERP titles for the path prefixes in title_rules.TITLE_RULE_PREFIXES.
+    # Applied here so every generator write path is covered and a regen
+    # reproduces the shipped titles instead of reverting them.
+    if args and isinstance(args[0], str) and str(self).endswith(".html"):
+        try:
+            _rel = Path(self).resolve().relative_to(_WEBSITE_ROOT).as_posix()
+        except ValueError:
+            _rel = None
+        if _rel is not None:
+            args = (_title_rules.apply_to_html(args[0], _rel),) + args[1:]
     # OneDrive's cloud filter driver intermittently locks files mid-sync during
     # high-volume writes, raising OSError(22) on an otherwise-valid path/handle.
     for attempt in range(6):
