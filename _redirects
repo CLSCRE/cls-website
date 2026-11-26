@@ -6,3 +6,10 @@
 # 2026-10-06: retired DSCR article (4.5k GSC impressions in July 2026) was
 # serving a bare 404. Consolidate into the live DSCR glossary entry.
 /blog/what-is-dscr-commercial-real-estate.html /glossary/debt-service-coverage-ratio.html 301
+
+# 2026-11-26: three property pages that duplicated the financing pages the
+# 2026-08-07 consolidation chose as the winners. They were live, indexable,
+# in no sitemap and absent from the keep/kill list. Consolidate with 301s.
+/property/medical-office.html /financing/medical-office-financing.html 301
+/property/self-storage.html /financing/self-storage-financing.html 301
+/property/senior-living.html /financing/senior-housing-financing.html 301

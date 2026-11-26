@@ -27,6 +27,7 @@ from link_governance import LinkGovernor
 
 import time as _time
 import title_rules as _title_rules
+import schema_rules as _schema_rules
 _orig_write_text = Path.write_text
 
 # ── Retired-path suppression (2026-08-01 cleanup pipeline) ─────────────
@@ -72,7 +73,7 @@ def _write_text_with_retry(self, *args, **kwargs):
         except ValueError:
             _rel = None
         if _rel is not None:
-            args = (_title_rules.apply_to_html(args[0], _rel),) + args[1:]
+            args = (_schema_rules.apply_to_html(_title_rules.apply_to_html(args[0], _rel), _rel),) + args[1:]
     # OneDrive's cloud filter driver intermittently locks files mid-sync during
     # high-volume writes, raising OSError(22) on an otherwise-valid path/handle.
     for attempt in range(6):
