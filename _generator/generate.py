@@ -87,6 +87,7 @@ def _write_text_with_retry(self, *args, **kwargs):
 Path.write_text = _write_text_with_retry
 
 from generate_articles import main as generate_articles_main, pacific_today
+import rate_table
 import la_vertical
 import la_industrial
 import la_retail
@@ -110,7 +111,9 @@ TODAY_HUMAN = pacific_today().strftime("%B %Y")  # e.g., "May 2026" — for visi
 
 def load_json(name: str):
     with open(DATA_DIR / name, "r", encoding="utf-8") as f:
-        return json.load(f)
+        # Rate tokens ({rt:permanent}) and the loan_types overlay resolve from the single rate
+        # table (data/rate_table.json); see rate_table.py.
+        return rate_table.resolve_data(name, json.load(f))
 
 
 # ── Asset cache-busting ────────────────────────────────────────────────
@@ -238,28 +241,33 @@ def filter_transactions(transactions, loan_slug=None, prop_slug=None, city=None,
 
 
 # ── Per-loan-type FAQ rate ranges ────────────────────────────────────────
-# Fix (2026-07-08): city and neighborhood FAQs previously hardcoded the
-# permanent range (5.34% to 8.25%) for every loan type. Ranges now come
-# from loan_types.json key_features.rates, the single source of truth.
+# Every range comes from the single rate table (data/rate_table.json, written by
+# scripts/cmr_rate_sync.py). load_json("loan_types.json") overlays the table's range on each
+# loan type the table prices (rate_table.SLUG_KEY); products the table does not price
+# (mezzanine, preferred equity, hard money, fix and flip, ...) keep their own loan_types.json
+# range. There is no hard-coded fallback range any more: a loan type with no range of its
+# own gets the table's all-programs span.
 _RATE_RANGE_RE = re.compile(r"(\d+(?:\.\d+)?%)\s*(?:-|to)\s*(\d+(?:\.\d+)?%)")
 
-# Display strings that are not simple ranges. If rate_low / rate_high
-# fields are ever added to loan_types.json entries, those win instead.
+# Display strings that are not simple ranges and are not priced in the table.
 _RATE_OVERRIDES = {
     "net-lease-financing": ("5.00%", "6.75%"),
-    "bridge-to-perm-loans": ("6.50%", "10.00%"),
 }
 
 _LOAN_RATES_CACHE = None
 
 
 def _loan_rates_by_slug():
-    """slug -> (rate_low, rate_high) from loan_types.json."""
+    """slug -> (rate_low, rate_high): the rate table first, then loan_types.json."""
     global _LOAN_RATES_CACHE
     if _LOAN_RATES_CACHE is None:
         table = {}
         for lt in load_json("loan_types.json"):
             slug = lt.get("slug", "")
+            priced = rate_table.for_slug(slug)
+            if priced:
+                table[slug] = priced
+                continue
             if lt.get("rate_low") and lt.get("rate_high"):
                 table[slug] = (lt["rate_low"], lt["rate_high"])
                 continue
@@ -275,15 +283,15 @@ def _loan_rates_by_slug():
 
 
 def _loan_rate_range(loan):
-    """(rate_low, rate_high) for a loan dict; all-programs span fallback."""
-    default = ("5.34%", "13.04%")
+    """(rate_low, rate_high) for a loan dict; the table's all-programs span if it has none."""
+    default = rate_table.all_programs()
     if not loan:
         return default
     return _loan_rates_by_slug().get(loan.get("slug", ""), default)
 
 
 def _slug_rate_text(slug):
-    low, high = _loan_rates_by_slug().get(slug, ("5.34%", "13.04%"))
+    low, high = _loan_rates_by_slug().get(slug, rate_table.all_programs())
     return f"{low} to {high}"
 
 
@@ -695,6 +703,10 @@ def render_rates_table():
             return f"${n // 1000}K"
         return f"${n}"
 
+    # rates-data.json also feeds the page's own JS table, so it is rewritten from the rate table
+    # (the 2-hourly bot does the same); the baked rows below then always agree with it.
+    if rate_table.sync_rates_data(rates_data_path):
+        print("  [OK] tools/rates-data.json set from the rate table")
     data = json.loads(rates_data_path.read_text(encoding="utf-8"))
     rows = []
     for r in data:
@@ -2009,6 +2021,10 @@ def main():
          "Free tool for LA affordable developers: estimate the property tax savings, NOI lift, value lift, and reduced equity the California Welfare Exemption creates on your deal.", "0.8"),
     ]
     for tpl_name, out_rel, canonical, title, desc, priority in tool_pages:
+        if not (TEMPLATE_DIR / tpl_name).exists():
+            # The Oct 2026 prune retired this tool (tool_dscr.html) along with its template.
+            print(f"  [skip] {out_rel}: template {tpl_name} retired")
+            continue
         tpl_tool = env.get_template(tpl_name)
         html = tpl_tool.render(
             **shared,
@@ -2607,6 +2623,16 @@ def main():
         print(f"  [OK] sitemap lastmod via content hash: {_lm}")
     except Exception as _lm_err:  # never block a regen on this
         print(f"  [WARN] lastmod sidecar skipped: {_lm_err}")
+
+    # Visible "Updated" dates and JSON-LD dateModified / lastReviewed follow the same per-page
+    # dates (rate pages: the rate table's changed_on). This pass runs after every page is on
+    # disk, so it does not matter which writer produced a page or in what order.
+    try:
+        import freshness as _freshness
+        _fr = _freshness.apply(TODAY, write=True)
+        print(f"  [OK] page dates from the per-page sidecar: {_fr}")
+    except Exception as _fr_err:  # never block a regen on this
+        print(f"  [WARN] page dates pass skipped: {_fr_err}")
 
     # Reload governance only after the final sitemap exists. The pre-generation
     # active set is necessarily stale while inventory is being rebuilt; this

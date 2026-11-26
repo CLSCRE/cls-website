@@ -268,8 +268,9 @@ PROP_STATS_KEY = dict(PROP_TYPES_MAP)
 
 
 def load_json(name: str):
+    import rate_table  # single rate table: expands {rt:...} tokens, overlays loan_types ranges
     with open(DATA_DIR / name, "r", encoding="utf-8") as f:
-        return json.load(f)
+        return rate_table.resolve_data(name, json.load(f))
 
 
 def stagger_dates(start_date_str, count, interval_days):

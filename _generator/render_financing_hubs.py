@@ -33,7 +33,8 @@ DUPLICATE_CITY_SLUGS = {
 
 
 def load_json(name):
-    return json.loads((DATA_DIR / name).read_text(encoding="utf-8-sig"))
+    import rate_table  # single rate table: expands {rt:...} tokens, overlays loan_types ranges
+    return rate_table.resolve_data(name, json.loads((DATA_DIR / name).read_text(encoding="utf-8-sig")))
 
 
 def render_hubs(slugs=None, write=True):

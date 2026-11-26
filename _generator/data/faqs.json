@@ -7,7 +7,7 @@
       },
       {
         "q": "What are the typical rates for permanent commercial loans?",
-        "a": "Permanent commercial loan rates typically range from 5.34% to 8.25%, depending on the lender type, property quality, borrower strength, and market conditions. Life insurance companies and agency lenders (Fannie Mae, Freddie Mac) generally offer the most competitive rates for qualifying properties."
+        "a": "Permanent commercial loan rates typically range from {rt:permanent}, depending on the lender type, property quality, borrower strength, and market conditions. Life insurance companies and agency lenders (Fannie Mae, Freddie Mac) generally offer the most competitive rates for qualifying properties."
       },
       {
         "q": "What is the maximum LTV for a permanent commercial loan?",
@@ -41,7 +41,7 @@
       },
       {
         "q": "What are construction loan interest rates?",
-        "a": "Construction loan rates typically range from 6.79% to 13.04%, depending on the lender type and project risk profile. Bank construction loans for experienced developers are at the lower end, while debt fund and private lender rates are higher but offer more flexibility."
+        "a": "Construction loan rates typically range from {rt:construction}, depending on the lender type and project risk profile. Bank construction loans for experienced developers are at the lower end, while debt fund and private lender rates are higher but offer more flexibility."
       },
       {
         "q": "What is a construction-to-permanent loan?",
@@ -63,7 +63,7 @@
       },
       {
         "q": "What are typical bridge loan rates?",
-        "a": "Bridge loan rates typically range from 6.79% to 13.04%, depending on the lender, leverage level, and property risk profile. Rates are higher than permanent financing to compensate for the shorter term and transitional nature of the asset."
+        "a": "Bridge loan rates typically range from {rt:bridge}, depending on the lender, leverage level, and property risk profile. Rates are higher than permanent financing to compensate for the shorter term and transitional nature of the asset."
       },
       {
         "q": "Can I get a non-recourse bridge loan?",
@@ -171,7 +171,7 @@
       },
       {
         "q": "What are current agency multifamily rates?",
-        "a": "Fannie Mae and Freddie Mac agency rates typically range from 5.34% to 6.75% depending on term, leverage, and property quality. Green-certified and affordable properties often qualify for additional rate discounts of 10 to 20 basis points."
+        "a": "Fannie Mae and Freddie Mac agency rates typically range from {rt:agency} depending on term, leverage, and property quality. Green-certified and affordable properties often qualify for additional rate discounts of 10 to 20 basis points."
       },
       {
         "q": "Are agency loans non-recourse?",
@@ -349,7 +349,7 @@
       },
       {
         "q": "What are current commercial mortgage rates?",
-        "a": "Commercial mortgage rates currently range from 5.00% to 13.04%, and the spread is driven mostly by lender type. Life insurance companies and agency lenders price at the low end for stabilized, low-leverage assets, banks and CMBS conduits sit in the middle, and debt funds and private lenders occupy the top of the range for transitional or higher-leverage deals."
+        "a": "Commercial mortgage rates currently range from {rt:all}, and the spread is driven mostly by lender type. Life insurance companies and agency lenders price at the low end for stabilized, low-leverage assets, banks and CMBS conduits sit in the middle, and debt funds and private lenders occupy the top of the range for transitional or higher-leverage deals."
       },
       {
         "q": "How much can I borrow on a commercial mortgage?",
@@ -1009,7 +1009,7 @@
       },
       {
         "q": "What are current multifamily loan rates?",
-        "a": "Multifamily loan rates range from 5.34% to 8.25% depending on the lender type and deal specifics. Agency loans (Fannie Mae, Freddie Mac) offer the most competitive rates, typically 5.34% to 6.50% for stabilized properties with strong fundamentals."
+        "a": "Multifamily loan rates range from {rt:permanent} depending on the lender type and deal specifics. Agency loans (Fannie Mae, Freddie Mac) offer the most competitive rates, typically {rt:agency} for stabilized properties with strong fundamentals."
       },
       {
         "q": "Can I finance manufactured housing communities?",
@@ -1031,7 +1031,7 @@
       },
       {
         "q": "What are current industrial loan rates?",
-        "a": "Industrial loan rates range from 5.34% to 8.25% for permanent financing, with rates on the lower end for long-term credit-tenant net lease assets. Construction loans range from 6.79% to 10%+, and bridge loans fall in the 7-12% range depending on the transition strategy."
+        "a": "Industrial loan rates range from {rt:permanent} for permanent financing, with rates on the lower end for long-term credit-tenant net lease assets. Construction loans range from {rt:construction}, and bridge loans fall in the {rt:bridge} range depending on the transition strategy."
       },
       {
         "q": "Can I finance cold storage and food processing facilities?",
@@ -1061,7 +1061,7 @@
       },
       {
         "q": "What are current retail property loan rates?",
-        "a": "Retail property loan rates range from 5.34% to 8.25% for permanent financing, with credit-tenant net lease assets at the lower end. Multi-tenant shopping centers may see rates at the higher end depending on tenancy strength and market location."
+        "a": "Retail property loan rates range from {rt:permanent} for permanent financing, with credit-tenant net lease assets at the lower end. Multi-tenant shopping centers may see rates at the higher end depending on tenancy strength and market location."
       },
       {
         "q": "Can I finance a restaurant with a commercial loan?",
@@ -1261,7 +1261,7 @@
       },
       {
         "q": "What are current {property_type} loan rates in {city}?",
-        "a": "Current {property_type} loan rates in {city} range based on the financing type: permanent loans from 5.34% to 8.25%, bridge loans from 6.79% to 13.04%, and construction loans from 6.79% to 13.04%. Contact CLS CRE for rate quotes specific to your property."
+        "a": "Current {property_type} loan rates in {city} range based on the financing type: permanent loans from {rt:permanent}, bridge loans from {rt:bridge}, and construction loans from {rt:construction}. Contact CLS CRE for rate quotes specific to your property."
       },
       {
         "q": "How is the {property_type} market in {city}?",

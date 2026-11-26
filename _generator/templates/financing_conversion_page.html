@@ -33,7 +33,7 @@
         <span>Reviewed by</span>
         <span><a href="{{ depth }}about/trevor-damyan.html" rel="author" style="color:var(--navy);text-decoration:none;font-weight:600">Trevor Damyan</a>, Commercial Mortgage Broker</span>
         <span aria-hidden="true">·</span>
-        <span>Updated <time datetime="{{ loan.updated_iso|default('2026-08-01') }}">{{ loan.updated|default('August 2026') }}</time></span>
+        <span>Updated <time datetime="{{ loan.updated_iso|default(current_date) }}">{{ loan.updated|default(current_date_human) }}</time></span>
       </div>
       {% if loan.slug == 'life-company-loans' %}
       <p class="pf-lede" role="doc-abstract">{{ loan.quick_answer or loan.description }}</p>

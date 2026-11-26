@@ -62,6 +62,13 @@ def content_hash(html):
     return hashlib.sha1(normalize(html).encode("utf-8")).hexdigest()
 
 
+def _rel(loc):
+    path = loc.replace(BASE, "").lstrip("/")
+    if path == "" or path.endswith("/"):
+        path += "index.html"
+    return path
+
+
 def _page_for(loc):
     path = loc.replace(BASE, "").lstrip("/")
     if path == "" or path.endswith("/"):
@@ -107,7 +114,10 @@ def apply(today, write=True, verbose=False):
                     stats["missing_page"] += 1
                     final = cur_val
                 else:
-                    h = content_hash(page.read_bytes().decode("utf-8", "replace"))
+                    # freshness.page_hash = the same normalization, with rate figures masked on
+                    # the rate-table pages (their date follows the rate table's changed_on)
+                    import freshness
+                    h = freshness.page_hash(_rel(loc), page.read_bytes().decode("utf-8", "replace"))
                     rec = side.get(loc)
                     if rec is None:
                         # Seed from the existing sitemap value, but never from a
@@ -123,6 +133,8 @@ def apply(today, write=True, verbose=False):
                     else:
                         final = rec["lastmod"]
                         stats["kept"] += 1
+                import freshness
+                final = freshness.effective_date(_rel(loc), final)
                 cache[loc] = final
             newest = max(newest, final)
             if _LASTMOD.search(block):
