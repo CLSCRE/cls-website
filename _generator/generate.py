@@ -2592,6 +2592,16 @@ def main():
         category_files.append((filename, len(urls)))
         print(f"  [OK] {filename}  ({len(urls)} URLs)")
 
+    # Image sitemap for the closed deal photos (sitemap-images.xml). Reads the pages on disk, so it must run
+    # after the category sitemaps above; adding it to category_files keeps it out of the stale cleanup below
+    # and lists it in sitemap-index.xml.
+    try:
+        import image_sitemap as _image_sitemap
+        _n_img = _image_sitemap.run(WEBSITE_DIR, BASE_URL)
+        category_files.append(("sitemap-images.xml", _n_img))
+    except Exception as _img_err:
+        print(f"  [WARN] image sitemap skipped: {_img_err}")
+
     # Remove stale segmented sitemaps from renamed/retired buckets (e.g. the
     # pre-2026-07-09 shared sitemap-vertical.xml). A stale file would keep
     # serving old URLs and mask orphans in the integrity check.
