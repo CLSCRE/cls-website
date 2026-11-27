@@ -434,7 +434,7 @@
     </div>
     <div class="faq-item">
       <button class="faq-question">What size commercial loans do you handle?</button>
-      <div class="faq-answer"><div class="faq-answer-inner">We arrange commercial loans from $500,000 to over $100 million. Our core range is $2MM to $30M, but we regularly close larger and smaller transactions. There is no strict minimum or maximum, if the deal makes sense, we can find financing for it.</div></div>
+      <div class="faq-answer"><div class="faq-answer-inner">We arrange commercial loans from $2 million to over $100 million. Our core range is $2MM to $30M, and we regularly close larger transactions. Our minimum loan size is $2 million; below that, a local bank or credit union is usually the better fit.</div></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">What are current commercial mortgage rates?</button>
@@ -589,12 +589,12 @@ document.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('c
       var digits = phoneEl.value.replace(/\D/g, '');
       if(digits.length < 10){ alert('Please enter a valid phone number with at least 10 digits.'); phoneEl.focus(); return false; }
     }
-    // Loan amount validation: minimum $1,000,000
+    // Loan amount validation: minimum $2,000,000
     var amtEl = form.querySelector('input[name="Loan Amount"]') || form.querySelector('input[name="Current Loan Balance"]');
     if(amtEl){
       var rawAmt = amtEl.value.replace(/[^0-9]/g, '');
-      if(!rawAmt || parseInt(rawAmt) < 1000000){
-        alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
+      if(!rawAmt || parseInt(rawAmt) < 2000000){
+        alert('Our minimum loan amount is $2,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
         amtEl.focus(); return false;
       }
     }

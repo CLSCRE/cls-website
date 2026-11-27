@@ -450,15 +450,15 @@
       }
     }
 
-    // ─ Check 9: Loan amount minimum ($1,000,000) ─
+    // ─ Check 9: Loan amount minimum ($2,000,000) ─
     var loanEl = form.querySelector('[name="Loan_Amount"]') ||
                  form.querySelector('[name="Loan Amount"]') ||
                  form.querySelector('[name="Current Loan Balance"]');
     if (loanEl && loanEl.value) {
       var amt = loanEl.value.replace(/[^0-9]/g, '');
       var num = parseInt(amt);
-      if (amt && num > 0 && num < 1000000) {
-        alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
+      if (amt && num > 0 && num < 2000000) {
+        alert('Our minimum loan amount is $2,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
         loanEl.focus();
         return false;
       }

@@ -252,8 +252,8 @@
       <h2 class="qz-question">How much do you need to borrow?</h2>
       <p class="qz-hint">Question 3 of 6</p>
       <div class="qz-options">
-        <button class="qz-opt" onclick="qzAnswer('amount','sub1m')">Under $1 million</button>
-        <button class="qz-opt" onclick="qzAnswer('amount','1to3')">$1M to $3M</button>
+        <button class="qz-opt" onclick="qzAnswer('amount','sub1m')">Under $2 million</button>
+        <button class="qz-opt" onclick="qzAnswer('amount','1to3')">$2M to $3M</button>
         <button class="qz-opt" onclick="qzAnswer('amount','3to10')">$3M to $10M</button>
         <button class="qz-opt" onclick="qzAnswer('amount','10to25')">$10M to $25M</button>
         <button class="qz-opt" onclick="qzAnswer('amount','25plus')">$25M+</button>
@@ -400,7 +400,7 @@ var qzState = {step: 1, answers: {}, history: []};
 var QZ_LABELS = {
   prop: {multifamily:"Multifamily", industrial:"Industrial", retail:"Retail", office:"Office / Medical", hospitality:"Hospitality", storage:"Self-Storage", senior:"Senior Living", mixeduse:"Mixed-Use", land:"Land / Development"},
   purpose: {purchase:"Purchase", refi:"Refinance", cashout:"Cash-out refinance", construction:"Ground-up construction", valueadd:"Renovation / value-add", "1031":"1031 exchange purchase"},
-  amount: {sub1m:"Under $1M", "1to3":"$1M to $3M", "3to10":"$3M to $10M", "10to25":"$10M to $25M", "25plus":"$25M+"},
+  amount: {sub1m:"Under $2M", "1to3":"$2M to $3M", "3to10":"$3M to $10M", "10to25":"$10M to $25M", "25plus":"$25M+"},
   status: {stabilized:"Stabilized", partial:"Partially leased", vacant:"Vacant / heavy value-add", groundup:"Not built yet"},
   occupancy: {investment:"Investment property", owner:"Owner-occupied"},
   timeline: {fast:"Under 30 days", normal:"30 to 60 days", flexible:"60+ days"}
@@ -483,10 +483,10 @@ function qzScore(){
 
   if (a.amount==='sub1m'){
     body.innerHTML = '<h2 class="qz-question">A Quick Heads-Up on Loan Size</h2>'
-      + '<div class="qz-min-note">Commercial Lending Solutions arranges commercial real estate loans starting at <strong>$2 million</strong>. Below that, the most competitive capital is almost always a local bank or credit union in your market, and we would rather point you the right way than waste your time. If your total project cost or future phases push past $1 million, we should absolutely talk.</div>';
+      + '<div class="qz-min-note">Commercial Lending Solutions arranges commercial real estate loans starting at <strong>$2 million</strong>. Below that, the most competitive capital is almost always a local bank or credit union in your market, and we would rather point you the right way than waste your time. If your total project cost or future phases push past $2 million, we should absolutely talk.</div>';
     lead.style.display = 'block';
     document.getElementById('qzAnswersField').value = qzSummary();
-    document.getElementById('qzRecsField').value = 'Sub-$1M inquiry';
+    document.getElementById('qzRecsField').value = 'Sub-$2M inquiry';
     if (typeof gtag === 'function') gtag('event','quiz_complete',{tool:'loan_qualifier',result:'sub_1m'});
     return;
   }

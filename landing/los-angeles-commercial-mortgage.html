@@ -595,8 +595,8 @@ document.querySelectorAll('.faq-question').forEach(btn=>{btn.addEventListener('c
     var amtEl = form.querySelector('input[name="Loan Amount"]') || form.querySelector('input[name="Current Loan Balance"]');
     if(amtEl){
       var rawAmt = amtEl.value.replace(/[^0-9]/g, '');
-      if(!rawAmt || parseInt(rawAmt) < 1000000){
-        alert('Our minimum loan amount is $1,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
+      if(!rawAmt || parseInt(rawAmt) < 2000000){
+        alert('Our minimum loan amount is $2,000,000. For smaller loans, we recommend contacting a local bank or credit union.');
         amtEl.focus(); return false;
       }
     }
