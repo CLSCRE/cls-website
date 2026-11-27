@@ -2155,6 +2155,17 @@ def main():
             "loc": f"{BASE_URL}/los-angeles/{article['slug']}.html",
             "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8",
         })
+    # Hand-authored LA pages (2026-11-27 Peec gap slice): static files in los-angeles/ that are
+    # not in la_articles. Never rendered or overwritten here; listed so a full regen keeps them
+    # in the sitemap. Guarded by .exists() via the glob and by NOINDEX_PATHS.
+    _la_rendered = {f"{a['slug']}.html" for a in la_articles} | {"index.html"}
+    for _hp in sorted(la_dir.glob("*.html")):
+        if _hp.name in _la_rendered or f"los-angeles/{_hp.name}" in NOINDEX_PATHS:
+            continue
+        sitemap_urls.append({
+            "loc": f"{BASE_URL}/los-angeles/{_hp.name}",
+            "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8",
+        })
     print(f"  [OK] los-angeles/*.html  ({len(la_guides)} guides + {len(la_personas)} persona pages)")
 
     # Apartments index: /multifamily/la/index.html
