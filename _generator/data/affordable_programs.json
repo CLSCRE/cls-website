@@ -20,7 +20,7 @@
         "ceqa_treatment": "Exempt or streamlined for qualifying projects",
         "density_bonus": "Available above base zoning",
         "parking_requirements": "Reduced or waived in most cases",
-        "prevailing_wage": "Required for most paths (SB 35, AB 2011, all LIHTC)",
+        "prevailing_wage": "Depends on the pathway and on the other subsidies in the stack (LIHTC equity alone does not trigger it)",
         "affordability_covenant": "55 years (LIHTC baseline) or longer depending on program"
       },
       "seo": {
@@ -141,18 +141,18 @@
       "slug": "hud-221d4",
       "name": "HUD 221(d)(4) Multifamily Construction-to-Permanent Financing",
       "short_name": "HUD 221(d)(4)",
-      "description": "HUD Section 221(d)(4) provides FHA-insured, non-recourse construction-to-permanent mortgage financing for multifamily projects of five or more units. The program offers up to 87.5% LTC for market-rate and 90% LTC for affordable projects, with a 40-year fully amortizing term at a fixed rate. It is the most favorable long-term capital available for affordable and workforce multifamily construction when the timeline and complexity can be absorbed.",
+      "description": "HUD Section 221(d)(4) provides FHA-insured, non-recourse construction-to-permanent mortgage financing for multifamily projects of five or more units. The program offers high leverage, up to 85% loan to cost (confirm current HUD limits with the MAP lender), with a 40-year fully amortizing term at a fixed rate. It is the most favorable long-term capital available for affordable and workforce multifamily construction when the timeline and complexity can be absorbed.",
       "typical_deal_range": "$10M to $200M+ total development cost",
       "typical_stack": [
         "HUD 221(d)(4) first mortgage (FHA-insured, non-recourse, construction-to-perm)",
         "4% or 9% LIHTC investor equity where affordable set-asides qualify",
-        "Tax-exempt bond financing (often the same lender as HUD MAP lender on single-close structures)",
+        "Tax-exempt bond financing (issued by a public issuer; one MAP lender can coordinate both pieces)",
         "State soft debt: MHP, AHSC, NPLH where eligible",
         "Local soft debt: city housing trust funds, HOME, CDBG",
         "Sponsor equity and deferred developer fee"
       ],
       "key_features": {
-        "ltc": "Up to 87.5% for market-rate; 90% for affordable (50%+ affordable units at 80% AMI or below)",
+        "ltc": "Up to 85% loan to cost (confirm current HUD limits with the MAP lender)",
         "term": "40 years fully amortizing plus construction period (typically 24-36 months)",
         "rate": "Fixed rate set at loan commitment; long-term favorable rate",
         "recourse": "Non-recourse except for standard carve-outs (fraud, waste, environmental)",
