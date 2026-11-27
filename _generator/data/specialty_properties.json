@@ -58,7 +58,7 @@
         "source": "SBA 7(a)",
         "rate": "Prime + 2.25 to 2.75% (9.75 to 10.25%)",
         "ltv": "90 percent",
-        "best_fit": "Owner-user acquisitions $1M to $5M, working capital + real estate combined"
+        "best_fit": "Owner-user acquisitions $2M to $5M, working capital + real estate combined"
       },
       {
         "source": "Specialty bank balance sheet",
@@ -234,7 +234,7 @@
         "source": "SBA 7(a)",
         "rate": "Prime + 2.25 to 2.75% (9.75 to 10.25%)",
         "ltv": "90 percent",
-        "best_fit": "Owner-operator $1M to $5M, working capital + real estate combined"
+        "best_fit": "Owner-operator $2M to $5M, working capital + real estate combined"
       },
       {
         "source": "Specialty marine bank",
@@ -399,7 +399,7 @@
         "source": "SBA 504",
         "rate": "Bank 1st 6.75 to 7.75% / CDC 5.50 to 6.00% fixed",
         "ltv": "90 percent (real estate)",
-        "best_fit": "Owner-operator real estate purchase or build-out, $1M to $10M total"
+        "best_fit": "Owner-operator real estate purchase or build-out, $2M to $10M total"
       },
       {
         "source": "SBA 7(a)",
@@ -570,7 +570,7 @@
         "source": "SBA 504",
         "rate": "Bank 1st 6.75 to 7.75% / CDC 5.50 to 6.00% fixed",
         "ltv": "90 percent (real estate, 80 percent for special-purpose)",
-        "best_fit": "Owner-operator real estate acquisition or ground-up, $1M to $8M total"
+        "best_fit": "Owner-operator real estate acquisition or ground-up, $2M to $8M total"
       },
       {
         "source": "SBA 7(a)",
@@ -737,7 +737,7 @@
         "source": "SBA 504",
         "rate": "Bank 1st 6.75 to 7.75% / CDC 5.50 to 6.00% fixed",
         "ltv": "90 percent real estate",
-        "best_fit": "Owner-operator real estate acquisition or ground-up, $1M to $8M total"
+        "best_fit": "Owner-operator real estate acquisition or ground-up, $2M to $8M total"
       },
       {
         "source": "SBA 7(a)",
@@ -1637,7 +1637,7 @@
         "source": "Specialty MHC bank",
         "rate": "6.85 to 8.25 percent",
         "ltv": "65 to 75 percent",
-        "best_fit": "$1M to $10M MHC, including value-add and lease-up"
+        "best_fit": "$2M to $10M MHC, including value-add and lease-up"
       },
       {
         "source": "Bridge debt fund",
@@ -2640,7 +2640,7 @@
         "source": "SBA 504",
         "rate": "Bank 1st 6.75 to 7.75% / CDC 5.50 to 6.00% fixed",
         "ltv": "90 percent (real estate)",
-        "best_fit": "Owner-operator real estate $1M to $10M total project"
+        "best_fit": "Owner-operator real estate $2M to $10M total project"
       },
       {
         "source": "SBA 7(a)",
@@ -5945,7 +5945,7 @@
         "source": "SBA 504",
         "cost": "Bank 1st 7.00% / CDC 5.85% fixed",
         "ltv": "80 percent (special-purpose 20% down)",
-        "best_fit": "Owner-operator funeral home real estate $1M to $10M"
+        "best_fit": "Owner-operator funeral home real estate $2M to $10M"
       },
       {
         "source": "SBA 7(a)",

@@ -6650,7 +6650,7 @@
       },
       {
         "feature": "Typical loan size",
-        "side_a": "$1M to $30M most common; larger on big-box and portfolio STNL",
+        "side_a": "$2M to $30M most common; larger on big-box and portfolio STNL",
         "side_b": "$3M to $50M most common; grocery-anchored and power centers can run larger"
       },
       {
@@ -8983,8 +8983,8 @@
       },
       {
         "feature": "Loan size band",
-        "side_a": "$1M to $50M+ (permanent); $2M to $30M (bridge/construction)",
-        "side_b": "$1M to $50M+ (permanent); $2M to $50M (bridge/construction)"
+        "side_a": "$2M to $50M+ (permanent); $2M to $30M (bridge/construction)",
+        "side_b": "$2M to $50M+ (permanent); $2M to $50M (bridge/construction)"
       },
       {
         "feature": "Maximum LTV",
