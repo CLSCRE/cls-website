@@ -33,7 +33,7 @@
       },
       {
         "q": "What is the typical loan-to-cost ratio for construction loans?",
-        "a": "Construction loans typically offer 65-80% of total project cost (loan-to-cost or LTC), depending on the lender, borrower experience, and project type. The remaining 20-35% must come from borrower equity, though mezzanine or preferred equity can fill part of the gap."
+        "a": "Construction loans fund up to 75% of total project cost (loan-to-cost, or LTC), depending on the lender, borrower experience, and project type. Only HUD-backed multifamily executions go higher, up to 85%. The remaining 25% or more of total project cost must come from borrower equity, which can include land contributed at its appraised value."
       },
       {
         "q": "Do I need experience to get a construction loan?",
@@ -50,6 +50,26 @@
       {
         "q": "How are construction loan draws managed?",
         "a": "Construction loan draws are released based on completed work verified by an independent inspector. The borrower submits draw requests with supporting documentation, the lender's inspector verifies the work, and funds are released (typically within 5-10 business days). An interest reserve is usually built into the loan to cover debt service during construction."
+      },
+      {
+        "q": "How are construction loan draws funded?",
+        "a": "Draws are released as work is completed. The general contractor submits a draw request with invoices and lien waivers, the lender's inspector confirms the work on site, a title date-down checks for new liens, and funds are typically released within 5 to 10 business days. The lender holds back 5% to 10% of each draw as retainage until completion. Sponsor equity is spent first, and interest accrues only on the amount drawn."
+      },
+      {
+        "q": "How much equity do I need for a commercial construction loan?",
+        "a": "At up to 75% loan-to-cost, equity is at least 25% of total project cost, and most lenders land between 25% and 40% depending on property type, sponsor experience and pre-leasing. Land you own free and clear counts as equity, usually at its appraised value less a 10% to 20% discount. HUD-backed multifamily loans can go up to 85% of cost, which lowers the equity requirement."
+      },
+      {
+        "q": "How long does it take to close a construction loan?",
+        "a": "Bank and credit union construction loans typically close in 45 to 90 days. Debt funds and private lenders can close in under 30 days when the package is complete and speed matters. HUD 221(d)(4) loans take 12 to 24 months from first lender engagement to construction loan close."
+      },
+      {
+        "q": "Who qualifies for a commercial construction loan?",
+        "a": "Borrowers with two or more comparable completed projects, a licensed and bonded general contractor on a fixed-price or guaranteed maximum price contract, permits in hand or at final approval, net worth at least equal to the loan amount, and a credible exit qualify most easily. First-time developers can qualify with an experienced co-sponsor, more equity or additional guarantees."
+      },
+      {
+        "q": "Does Commercial Lending Solutions make construction loans?",
+        "a": "No. Commercial Lending Solutions (CLS CRE) is a Los Angeles commercial mortgage broker and correspondent, never the lender of record. We arrange construction financing from $2 million to $100 million and up through more than 1,000 lender relationships, including banks, credit unions, debt funds and HUD-backed multifamily lenders, and compare proposals on rate, proceeds, recourse and closing certainty."
       }
     ],
     "bridge-loans": [
@@ -1039,7 +1059,7 @@
       },
       {
         "q": "What is the typical LTV for industrial financing?",
-        "a": "Industrial property LTV ratios range from 65% to 75% for permanent financing, with banks and life companies at the higher end for strong deals. Construction loans offer 65-80% of total project cost, and bridge loans provide 65-75% of as-is value."
+        "a": "Industrial property LTV ratios range from 65% to 75% for permanent financing, with banks and life companies at the higher end for strong deals. Construction loans offer up to 75% of total project cost, and bridge loans provide 65-75% of as-is value."
       },
       {
         "q": "Do industrial properties qualify for SBA loans?",
