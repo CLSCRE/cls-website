@@ -1148,7 +1148,7 @@
       "title": "Mezzanine vs Preferred Equity for CRE Capital Stacks | Commercial Lending Solutions",
       "meta_description": "Side-by-side comparison of mezzanine debt and preferred equity financing for commercial real estate. Pricing, intercreditor dynamics, control rights, and structural differences."
     },
-    "lead": "Mezzanine debt and preferred equity both occupy the gap between senior debt and common equity in the commercial real estate capital stack. They look similar to a sponsor seeking 70 to 85 percent LTC on a deal: each provides incremental capital above what the senior lender will fund and below where common equity sits. They are fundamentally different in structure, lien position, control rights, intercreditor dynamics, and tax treatment. Choosing the wrong one can lock the sponsor into structural restrictions that compromise execution, or create lender conflicts that hold up financing. The decision is rarely about pricing alone; it is about what the senior lender allows, how the sponsor wants control allocated, and how the structure flows through the partnership.",
+    "lead": "Mezzanine debt and preferred equity both occupy the gap between senior debt and common equity in the commercial real estate capital stack. They look similar to a sponsor seeking up to 85 percent of cost on a deal: each provides incremental capital above what the senior lender will fund and below where common equity sits. They are fundamentally different in structure, lien position, control rights, intercreditor dynamics, and tax treatment. Choosing the wrong one can lock the sponsor into structural restrictions that compromise execution, or create lender conflicts that hold up financing. The decision is rarely about pricing alone; it is about what the senior lender allows, how the sponsor wants control allocated, and how the structure flows through the partnership.",
     "table": [
       {
         "feature": "Position in stack",
@@ -1156,14 +1156,14 @@
         "side_b": "Equity instrument; preferred return + capital account"
       },
       {
-        "feature": "Pricing range (Apr 2026)",
-        "side_a": "10 to 14 percent current pay (some PIK)",
-        "side_b": "11 to 18 percent total return (current + accrual)"
+        "feature": "Pricing on deals we arrange",
+        "side_a": "8 to 14 percent, current pay or accruing",
+        "side_b": "8 to 14 percent preferred return, current pay or accruing"
       },
       {
-        "feature": "Typical leverage",
-        "side_a": "5 to 15 percent of capital stack on top of senior",
-        "side_b": "10 to 25 percent of capital stack on top of senior"
+        "feature": "Size and leverage",
+        "side_a": "From a $10M minimum; combined with the senior loan, up to 85 percent of cost",
+        "side_b": "From a $10M minimum; combined with the senior loan, up to 85 percent of cost"
       },
       {
         "feature": "Lien position",
@@ -1215,26 +1215,26 @@
     "when_a_bullets": [
       "Agency multifamily acquisition or refinance where Fannie or Freddie approved mezz lender is available",
       "Sponsor wants interest deductibility for partnership tax purposes",
-      "Capital stack where 5 to 15 percent of additional leverage is needed and pricing in the 10 to 14 percent range works",
+      "Capital stack where the gap above the senior loan is a $10M or larger layer and pricing in the 8 to 14 percent range works",
       "Senior lender that permits mezz with an intercreditor agreement (most agencies, some banks)",
       "Sponsor with a clean balance sheet and modest mezz lender appetite for the standstill provisions"
     ],
-    "when_b_intro": "Preferred equity wins when the senior lender prohibits or restricts mezz, when the sponsor wants stronger investor control rights tied to the equity-level position, or when the deal needs 15 to 25 percent of incremental leverage above senior. CMBS deals and transitional bridge deals are common preferred equity use cases.",
+    "when_b_intro": "Preferred equity wins when the senior lender prohibits or restricts mezz, when the sponsor wants stronger investor control rights tied to the equity-level position, or when the deal needs a layer the senior loan documents allow only as equity. CMBS deals and transitional bridge deals are common preferred equity use cases.",
     "when_b_bullets": [
       "CMBS senior loan that prohibits or heavily restricts mezz layering",
       "Transitional or value-add deal where the senior lender has not approved a mezz lender",
-      "Sponsor needs 15 to 25 percent of additional capital that is too much for typical mezz programs",
+      "Sponsor needs a layer that the senior loan documents allow as equity but not as debt",
       "Preferred equity investor wants stronger remedies (force-sale, capital call) that mezz intercreditor would not allow",
       "Deal where the partnership structure benefits from equity-level participation rather than debt",
       "Bridge or construction execution where senior lender flexibility on equity layers is greater than on debt layers"
     ],
     "decision_framework": [
       "Start with the senior lender. Most agency multifamily senior loans permit mezzanine financing under specific intercreditor terms with approved mezz lenders. Most CMBS senior loans either prohibit mezz outright or impose terms that make mezz uneconomical. Bank balance sheet senior loans are mixed; some permit mezz and some prohibit. The senior lender's mezz position is the first gating question.",
-      "Calculate the after-tax cost. Mezz interest is deductible at the partnership level; preferred equity returns are typically not deductible. For sponsors in high-tax partnership structures, the after-tax cost of mezz at 12 percent can be similar to preferred equity at 14 to 15 percent, narrowing the apparent pricing gap.",
+      "Calculate the after-tax cost. Mezz interest is deductible at the partnership level; preferred equity returns are typically not deductible. For sponsors in high-tax partnership structures, the after-tax cost of mezz can come out closer to preferred equity than the headline rates suggest, narrowing the apparent pricing gap. Confirm the treatment with your tax advisor.",
       "Evaluate control rights. Mezz lenders are constrained by intercreditor agreements that typically include a standstill (no foreclosure for 90 days or longer after senior loan default) and limited remedies. Preferred equity investors typically have stronger remedies including force-sale rights, capital call rights, and conversion to common equity. Sponsors who want minimal investor interference favor mezz; investors who want governance favor preferred equity.",
       "On execution speed and complexity, preferred equity typically closes faster because it does not require an intercreditor agreement with the senior lender. Mezz requires negotiating the intercreditor terms, which can extend close timelines by 30 to 60 days on top of senior loan close. For deals on tight timelines, preferred equity often wins on execution."
     ],
-    "real_deal_example": "On a $40M Class B multifamily acquisition with a Fannie Mae senior at 70 percent LTC and a 15 percent gap to the sponsor's 85 percent LTC equity-light target, two execution paths emerged. Option one was a Fannie-approved mezz lender providing $6M (15 percent of LTC) at 12 percent current pay with a Fannie intercreditor on standard agency terms. Option two was a private credit preferred equity provider offering $6M at 14 percent total return (10 percent current pay, 4 percent accrual) with force-sale rights at year 5 if the property had not exited. The sponsor took the mezz execution because the senior was Fannie (which has a clean intercreditor framework with its approved mezz list), the after-tax cost on the mezz was approximately 8.5 percent versus 10 percent on the preferred (assuming a 30 percent partnership tax rate), and the standstill protected the sponsor from forced action during the planned value-add period.",
+    "real_deal_example": "Illustration with round numbers, not a specific closed loan. On a $100M multifamily project with a senior loan at 75 percent of cost ($75M), a sponsor wants to reach 85 percent combined leverage and cut its equity from $25M to $15M. Option one is a $10M mezzanine loan: the senior lender must consent and sign an intercreditor agreement, the lender's remedy is to foreclose on the pledged ownership interests, and the layer costs between $0.8M and $1.4M a year at 8 to 14 percent. Option two is $10M of preferred equity at the same price range: no second loan to repay, but the investor's operating agreement rights can include control triggers if agreed tests are missed. The decision turns first on what the senior loan documents permit, then on how much control the sponsor will give up if the plan slips.",
     "expert_quote": "Mezz versus pref usually starts with the senior lender. If your senior allows clean mezz with a standard intercreditor, mezz almost always wins on after-tax cost. If the senior is CMBS, pref equity is often the only path.",
     "faqs": [
       {
@@ -1259,7 +1259,7 @@
       },
       {
         "q": "How much does mezzanine cost compared to common equity?",
-        "a": "Mezz typically prices at 10 to 14 percent current pay (sometimes with PIK accrual). Common equity typically targets 15 to 22 percent IRR, depending on deal risk profile. Mezz fills the gap between senior debt and common equity at a cost between the two."
+        "a": "On the deals we arrange, mezzanine has generally priced at 8 to 14 percent, current pay or accruing. Common equity has no fixed rate: it keeps whatever is left after every layer above it is paid, so investors underwrite it to a higher return than either layer. Mezz fills the gap between senior debt and common equity at a cost between the two."
       },
       {
         "q": "Can a sponsor have both mezzanine and preferred equity in the same capital stack?",
