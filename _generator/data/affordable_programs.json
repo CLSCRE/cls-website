@@ -37,14 +37,14 @@
       "typical_stack": [
         "Construction loan (often the same lender as bond issuer on single-close structures)",
         "Tax-exempt private activity bond issuance (bond-financed deal qualifies for 4% credit)",
-        "4% LIHTC investor equity (~30% of TDC)",
+        "4% LIHTC investor equity (credit sized to about 30% of eligible basis)",
         "State soft debt: MHP, AHSC, NPLH where applicable",
         "Local soft debt: city trust funds, linkage fees, HOME",
         "Sponsor equity and deferred developer fee"
       ],
       "key_features": {
-        "credit_equity": "Approximately 30% of total development cost",
-        "allocation": "Non-competitive, automatic with qualifying bond financing",
+        "credit_equity": "About 30% of eligible basis (present value)",
+        "allocation": "Credit is non-competitive once the project holds a bond allocation (competitive through CDLAC in California)",
         "scoring": "No competitive scoring round; CDLAC bond allocation is gating",
         "minimum_deal_size": "Practical floor around $15M TDC due to bond issuance overhead",
         "affordability_covenant": "55 years",
@@ -63,7 +63,7 @@
       "typical_deal_range": "$8M to $25M total development cost",
       "typical_stack": [
         "Construction loan (bank, CDFI, or mission-focused lender)",
-        "9% LIHTC investor equity (~70% of TDC)",
+        "9% LIHTC investor equity (credit sized to about 70% of eligible basis)",
         "Permanent loan (smaller than 4% deals because credit equity is larger)",
         "State soft debt: MHP, AHSC, HHAP, NPLH for qualifying profiles",
         "Local soft debt where needed to close the gap",
@@ -100,7 +100,7 @@
         "issuer_types": "Local agencies, regional authorities, state housing finance agencies",
         "allocation": "State housing finance agency allocates private activity bond cap annually",
         "bond_structure": "Often issued as variable-rate demand obligations or fixed-rate bonds, with credit enhancement from letter of credit or bond insurance",
-        "lihtc_coupling": "Bond-financed deals automatically qualify for 4% LIHTC",
+        "lihtc_coupling": "Bond-financed deals can claim the 4% LIHTC without a credit scoring round once the bond allocation is won",
         "minimum_deal_size": "Practical floor around $15M TDC due to issuance costs",
         "affordability_covenant": "55 years, often longer depending on issuer"
       },
