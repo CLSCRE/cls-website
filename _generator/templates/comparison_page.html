@@ -35,7 +35,7 @@
     <strong style="color:var(--navy)">Quick answer:</strong>
     {{ cmp.lead }}
   </div>
-  <a href="{{ depth }}apply.html" class="btn-primary reveal">Get Quotes from Both &rarr;</a>
+  <a href="{{ depth }}apply.html" class="btn-primary reveal">{{ cmp.cta_button|default('Get Quotes from All Three' if cmp.name_c else 'Get Quotes from Both') }} &rarr;</a>
 </div>
 </section>
 
@@ -43,7 +43,7 @@
 <section class="content-section">
 <div class="section-inner">
   <div class="section-label reveal">Side-by-Side</div>
-  <h2 class="section-title reveal">{{ cmp.name_a }} vs {{ cmp.name_b }}</h2>
+  <h2 class="section-title reveal">{{ cmp.name_a }} vs {{ cmp.name_b }}{% if cmp.name_c %} vs {{ cmp.name_c }}{% endif %}</h2>
   <div style="overflow-x:auto;margin-top:24px">
     <table class="comparison-table reveal" style="width:100%;border-collapse:collapse;font-size:15px;border:1px solid var(--gray-200);border-radius:8px;overflow:hidden">
       <thead>
@@ -51,6 +51,7 @@
           <th style="padding:14px 16px;text-align:left;font-weight:600;width:28%">Feature</th>
           <th style="padding:14px 16px;text-align:left;font-weight:600">{{ cmp.name_a }}</th>
           <th style="padding:14px 16px;text-align:left;font-weight:600">{{ cmp.name_b }}</th>
+          {% if cmp.name_c %}<th style="padding:14px 16px;text-align:left;font-weight:600">{{ cmp.name_c }}</th>{% endif %}
         </tr>
       </thead>
       <tbody>
@@ -59,12 +60,13 @@
           <td style="padding:14px 16px;font-weight:600;color:var(--navy)">{{ row.feature }}</td>
           <td style="padding:14px 16px;color:var(--gray-700)">{{ row.side_a }}</td>
           <td style="padding:14px 16px;color:var(--gray-700)">{{ row.side_b }}</td>
+          {% if cmp.name_c %}<td style="padding:14px 16px;color:var(--gray-700)">{{ row.side_c }}</td>{% endif %}
         </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
-  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">Rate ranges reflect indicative pricing as of {{ current_date_human }}, sourced from active CLS CRE quote pipeline. Pricing is property, sponsor, and structure dependent.</p>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">{{ cmp.rate_note|default('Rate ranges reflect indicative pricing as of ' ~ current_date_human ~ ', sourced from active CLS CRE quote pipeline. Pricing is property, sponsor, and structure dependent.') }}</p>
 </div>
 </section>
 
@@ -96,28 +98,46 @@
 </div>
 </section>
 
+{% if cmp.name_c %}
+<!-- WHEN C WINS -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">{{ cmp.name_c }} Wins When</div>
+  <h2 class="section-title reveal">When {{ cmp.name_c }} Is the Right Call</h2>
+  <p class="reveal" style="line-height:1.7;color:var(--gray-700)">{{ cmp.when_c_intro }}</p>
+  <ul class="reveal" style="line-height:1.9;color:var(--gray-700);margin-top:16px;padding-left:20px">
+    {% for item in cmp.when_c_bullets %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+{% endif %}
+
 <!-- DECISION FRAMEWORK -->
 <section class="content-section alt">
 <div class="section-inner">
   <div class="section-label reveal">Decision Framework</div>
-  <h2 class="section-title reveal">How to Choose Between {{ cmp.name_a }} and {{ cmp.name_b }}</h2>
+  <h2 class="section-title reveal">{{ cmp.decision_title|default('How to Choose Between ' ~ cmp.name_a ~ (', ' if cmp.name_c else ' and ') ~ cmp.name_b ~ ((' and ' ~ cmp.name_c) if cmp.name_c else '')) }}</h2>
   {% for para in cmp.decision_framework %}
   <p class="reveal" style="line-height:1.8;color:var(--gray-700);margin-top:16px;max-width:880px">{{ para }}</p>
   {% endfor %}
 </div>
 </section>
 
+{% if cmp.real_deal_example %}
 <!-- REAL DEAL EXAMPLE -->
 <section class="content-section">
 <div class="section-inner">
-  <div class="section-label reveal">From the CLS CRE Pipeline</div>
-  <h2 class="section-title reveal">A Real Decision in Action</h2>
+  <div class="section-label reveal">{{ cmp.example_label|default('From the CLS CRE Pipeline') }}</div>
+  <h2 class="section-title reveal">{{ cmp.example_title|default('A Real Decision in Action') }}</h2>
   <div class="reveal" style="background:var(--gray-50);border-left:4px solid var(--green);padding:24px 28px;border-radius:8px;margin-top:16px;max-width:880px">
     <p style="line-height:1.8;color:var(--gray-700);margin:0">{{ cmp.real_deal_example }}</p>
   </div>
-  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">All deal references anonymize borrower and lender identities and use city-level geography only.</p>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-top:12px;font-style:italic">{{ cmp.example_note|default('All deal references anonymize borrower and lender identities and use city-level geography only.') }}</p>
 </div>
 </section>
+{% endif %}
 
 <!-- EXPERT QUOTE -->
 {% if cmp.expert_quote %}
@@ -184,7 +204,7 @@
 </section>
 
 <!-- CTA -->
-{% set cta_title = 'Get Quotes from Both ' + cmp.name_a + ' and ' + cmp.name_b %}
-{% set cta_description = 'Tell us about your deal. We will run it past lenders on both sides and send you side-by-side terms within 48 hours.' %}
+{% set cta_title = cmp.cta_title|default('Get Quotes from Both ' + cmp.name_a + ' and ' + cmp.name_b) %}
+{% set cta_description = cmp.cta_description|default('Tell us about your deal. We will run it past lenders on both sides and send you side-by-side terms within 48 hours.') %}
 {% include '_contact_cta.html' %}
 {% endblock %}
