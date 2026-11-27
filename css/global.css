@@ -13,7 +13,9 @@
 --gray-100:#F3F4F6;
 --gray-200:#E5E7EB;
 --gray-300:#D1D5DB;
+--gray-400:#6B7280;
 --gray-500:#6B7280;
+--gray-600:#4B5563;
 --gray-700:#374151;
 --gray-900:#111827;
 --gold:#C5A355;
@@ -35,8 +37,8 @@ body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);
 .nav-links>a:hover,.nav-dropdown:hover>a{color:var(--green)}
 .nav-cta{background:var(--navy);color:var(--white)!important;padding:10px 24px!important;border-radius:6px;font-weight:600!important;font-size:14px;text-decoration:none;transition:all .2s;display:inline-block}
 .nav-cta:hover{background:var(--green);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,106,78,.2)}
-.nav-mobile{display:none;background:none;border:none;cursor:pointer;padding:8px}
-.nav-mobile span{display:block;width:22px;height:2px;background:var(--gray-700);margin:5px 0;transition:.3s}
+.nav-mobile,.mobile-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.nav-mobile span,.mobile-toggle span{display:block;width:22px;height:2px;background:var(--gray-700);margin:5px 0;transition:.3s}
 .nav-dropdown{position:relative}
 .nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 8px);left:-16px;background:var(--white);border:1px solid var(--gray-200);border-radius:10px;box-shadow:0 12px 40px rgba(0,0,0,.08);min-width:260px;padding:8px 0;z-index:100}
 .nav-dropdown:hover .nav-dropdown-menu{display:block}
@@ -120,7 +122,8 @@ footer{background:var(--gray-900);padding:64px 0 32px;color:rgba(255,255,255,.55
 .nav-links>a,.nav-dropdown>a{padding:16px 0!important;border-bottom:1px solid var(--gray-100);font-size:16px!important;width:100%;display:block}
 .nav-links .nav-cta{margin-top:16px;text-align:center;display:block!important;padding:14px 24px!important}
 .nav-links .nav-dropdown-menu{display:none!important}
-.nav-mobile{display:block}
+.nav-mobile,.mobile-toggle{display:block}
+.nav-inner>.nav-phone,.nav-inner>.nav-cta{display:none!important}
 .section-inner{padding:0 24px}
 .txn-grid{grid-template-columns:1fr}
 .footer-grid{grid-template-columns:1fr;gap:32px}
@@ -182,3 +185,22 @@ a.footer-logo img{height:40px;width:auto;margin-bottom:0}
 .cs-hero{max-width:min(100% - 48px,1100px);margin:24px auto 8px}
 .cs-hero img{width:100%;height:auto;border-radius:10px;display:block}
 .cs-hero figcaption{font-size:12.5px;color:#6b7686;margin-top:8px}
+
+/* ===== SITE-BEAUTY 2026-11-26 =====
+   --gray-400/--gray-600 were referenced by ~3,000 inline styles and pages.css but never
+   defined, so those declarations were invalid (cards rendered default link blue). Defined
+   above; --gray-400 maps to the accessible #6B7280, not a light gray. */
+.blog-card,.blog-card:visited{color:var(--gray-700)}
+.blog-card-meta,.blog-card-meta span{color:var(--gray-500)}
+/* global footer{} styles were also hitting <footer> inside blockquotes (black attribution box) */
+blockquote>footer{background:none;padding:0;color:var(--gray-500)}
+blockquote>footer::before{content:none}
+/* hand-written breadcrumb line on money pages */
+.crumbs a,.crumbs a:visited{color:var(--gray-500);text-decoration:none}
+.crumbs a:hover{color:var(--green);text-decoration:underline}
+/* generators sometimes emit an empty <li> (stray bullet) */
+li:empty{display:none}
+/* footer skyline logo is a cream square; present it as a deliberate rounded badge on navy */
+footer img[src*="cls-logo-skyline"]{height:72px!important;width:72px;border-radius:12px;object-fit:cover}
+/* mobile already has the fixed Call/Book bar; the second dark sticky CTA stacked behind it */
+@media(max-width:768px){body:has(#cls-mcb) .sticky-cta{display:none!important}}

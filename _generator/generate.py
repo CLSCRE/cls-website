@@ -640,6 +640,10 @@ def minify_css(src_path: Path, dst_path: Path):
     css = re.sub(r'\s+', ' ', css)
     css = re.sub(r'\s*([{}:;,>~+])\s*', r'\1', css)
     css = re.sub(r';\s*}', '}', css)
+    # The symbol-collapse above strips the spaces CSS requires around + inside
+    # calc(), producing invalid `calc(100%+8px)`. Restore them.
+    css = re.sub(r'calc\(([^()]*)\)',
+                 lambda m: 'calc(' + re.sub(r'\s*\+\s*', ' + ', m.group(1)) + ')', css)
     dst_path.write_text(css.strip(), encoding="utf-8")
     orig = src_path.stat().st_size
     mini = dst_path.stat().st_size

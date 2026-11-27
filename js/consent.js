@@ -149,6 +149,20 @@
         notice.style.bottom = (bar.offsetHeight + 12) + 'px';
       }
     } catch (e) {}
+    // Desktop: the dark sticky CTA bar slides in at the bottom and used to sit under
+    // this notice, hiding its text. Ride above it whenever it is showing.
+    try {
+      var sb = document.querySelector('.sticky-cta');
+      if (sb && window.MutationObserver) {
+        var fit = function () {
+          if (window.innerWidth <= 768) return;
+          var shown = sb.classList.contains('visible') && getComputedStyle(sb).display !== 'none';
+          notice.style.bottom = shown ? (sb.offsetHeight + 12) + 'px' : '16px';
+        };
+        new MutationObserver(fit).observe(sb, { attributes: true, attributeFilter: ['class'] });
+        fit();
+      }
+    } catch (e) {}
   }
 
   var lastFocus = null;
