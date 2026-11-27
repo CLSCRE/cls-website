@@ -391,7 +391,7 @@
       },
       {
         "q": "What are current multifamily loan rates and terms?",
-        "a": "Multifamily rates run from 5.00% to 11.50%. Agency lenders and life insurance companies anchor the low end on stabilized product, while bridge and debt fund capital for lease-up or renovation sits at the top. Terms range from 1 to 35 years, with amortization of 25 to 35 years and loan amounts from $2 million to over $100 million."
+        "a": "Permanent multifamily rates currently run from {rt:permanent}. Agency lenders and life insurance companies anchor the low end on stabilized product, with banks and CMBS above them. Bridge and debt fund capital for lease-up or renovation prices higher, at {rt:bridge}. Terms range from 1 to 35 years, with amortization of 25 to 35 years and loan amounts from $2 million to over $100 million."
       },
       {
         "q": "How much leverage can I get on an apartment loan?",
@@ -404,6 +404,10 @@
       {
         "q": "What is the catch on agency multifamily prepayment terms?",
         "a": "The long fixed term comes with a prepayment structure that is expensive to break. Most agency loans carry yield maintenance or defeasance for all but the final 90 days, which can cost several points if rates fall or the asset sells early. Step-down prepayment is available on some programs at a slightly higher coupon, and it is worth pricing both."
+      },
+      {
+        "q": "How do lenders size a multifamily loan?",
+        "a": "Lenders size a multifamily loan to the smallest result of three tests: maximum loan to value, minimum debt service coverage ratio (usually 1.25x) and minimum debt yield (typically 9% to 10% for CMBS and life companies). At current rates the coverage test almost always binds first. In our worked example, a 40 unit building with $517,466 of underwritten net operating income and a $9.5 million value could not reach its 75% loan to value amount of $7.1 million and was capped by DSCR at about $5.46 million. The multifamily underwriting guide at clscre.com/resources/multifamily-underwriting-guide.html shows the full calculation."
       }
     ],
     "portfolio-loans": [

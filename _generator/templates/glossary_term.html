@@ -88,7 +88,7 @@
     {% for link in term.related_links %}
     <a href="{{ depth }}{{ link.href }}" class="cross-link-card reveal" style="border-color:var(--green)">
       <div class="cl-title">{{ link.label }}</div>
-      <div class="cl-sub">{% if link.href.startswith('tools/') %}Free tool{% else %}Financing program{% endif %}</div>
+      <div class="cl-sub">{% if link.href.startswith('tools/') %}Free tool{% elif link.href.startswith('resources/') %}Guide{% else %}Financing program{% endif %}</div>
     </a>
     {% endfor %}
   </div>

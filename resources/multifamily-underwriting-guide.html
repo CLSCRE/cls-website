@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var o=false;try{o=navigator.globalPrivacyControl===true||localStorage.getItem('cls_privacy_optout')==='1'}catch(e){o=navigator.globalPrivacyControl===true}window.clsOptOut=o;if(o)gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'})})();</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PH6TD3TC');</script>
+<!-- End Google Tag Manager -->
+<!-- gtag helper for inline event calls (calculator_lead, newsletter_subscribe).
+     GA4 page view tracking is handled by the GA4 - All Pages tag inside
+     GTM-PH6TD3TC. Page views are NOT registered here (send_page_view:false)
+     so sessions don't double-count. Events still push to dataLayer where GTM
+     can pick them up via custom event triggers. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multifamily Underwriting Guide with Worked Example | CLS CRE</title>
+<meta name="description" content="How lenders underwrite multifamily loans: NOI adjustments, DSCR, debt yield and LTV sizing, with a worked 40 unit example, lender type comparison and bridge takeout test.">
+<link rel="canonical" href="https://clscre.com/resources/multifamily-underwriting-guide.html">
+<meta property="og:title" content="Multifamily Underwriting Guide with Worked Example | CLS CRE">
+<meta property="og:description" content="How lenders underwrite multifamily loans: NOI adjustments, DSCR, debt yield and LTV sizing, with a worked 40 unit example, lender type comparison and bridge takeout test.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Commercial Lending Solutions">
+<meta property="og:url" content="https://clscre.com/resources/multifamily-underwriting-guide.html">
+<meta property="og:image" content="https://clscre.com/images/cls-og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://clscre.com/images/cls-og-image.png">
+<meta name="twitter:title" content="Multifamily Underwriting Guide with Worked Example | CLS CRE">
+<meta name="twitter:description" content="How lenders underwrite multifamily loans: NOI adjustments, DSCR, debt yield and LTV sizing, with a worked 40 unit example, lender type comparison and bridge takeout test.">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preload" href="../fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://clscre.com/#organization","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","logo":"https://clscre.com/images/cls-logo-skyline.png","image":"https://clscre.com/images/cls-og-image.png","telephone":"+13107584042","email":"loans@clscre.com","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"sameAs":["https://www.linkedin.com/company/clscre","https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commerciallendingsolutions/","https://www.facebook.com/profile.php?id=61591993674306","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/","https://x.com/LAloanbroker","https://www.bbb.org/us/ca/los-angeles/profile/real-estate-loans/commercial-lending-solutions-1216-1000067041","https://www.youtube.com/@clscre"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com"}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Multifamily Underwriting: DSCR, Debt Yield and LTV, With a Worked Loan Sizing Example","description":"How lenders underwrite multifamily loans: NOI adjustments, DSCR, debt yield and LTV sizing, with a worked 40 unit example, lender type comparison and bridge takeout test.","author":{"@type":"Person","@id":"https://clscre.com/about/trevor-damyan.html#person","name":"Trevor Damyan","url":"https://clscre.com/about.html","sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/"]},"publisher":{"@type":"Organization","@id":"https://clscre.com/#organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"datePublished":"2026-11-27","dateModified":"2026-11-27","mainEntityOfPage":{"@type":"WebPage","@id":"https://clscre.com/resources/multifamily-underwriting-guide.html"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What DSCR do multifamily lenders require?","acceptedAnswer":{"@type":"Answer","text":"Most permanent multifamily lenders size to a minimum DSCR of 1.25x. Agency programs center on 1.25x for market rate apartments, banks usually want 1.20x to 1.30x, CMBS conduits 1.25x to 1.35x, and life insurance companies often show effective coverage of 1.35x or more because they lend at lower leverage. Bridge lenders can fund transitional deals with going in coverage below 1.0x by relying on an interest reserve and the stabilized business plan."}},{"@type":"Question","name":"What is the difference between DSCR and debt yield?","acceptedAnswer":{"@type":"Answer","text":"DSCR compares NOI to the loan payment, so it moves with the interest rate and amortization schedule. Debt yield compares NOI directly to the loan amount, so it ignores rate and appraisal assumptions. In the example above a 1.25x DSCR at 6.50 percent and 30 year amortization produces a debt yield of about 9.5 percent, so a lender requiring 10 percent debt yield would size the loan lower."}},{"@type":"Question","name":"Why is the lender's NOI lower than the seller's NOI?","acceptedAnswer":{"@type":"Answer","text":"Underwriters rebuild the operating statement. They apply a vacancy floor of at least 5 percent even on a full building, add a 3 percent management fee even when the owner self manages, reassess property taxes to the purchase price on an acquisition, and deduct replacement reserves. In the example those four adjustments reduce a seller NOI of $638,900 to $517,466, which cuts loan proceeds by roughly $1.28 million at a 1.25x DSCR."}},{"@type":"Question","name":"How much does each $10,000 of NOI change the loan amount?","acceptedAnswer":{"@type":"Answer","text":"At a 1.25x DSCR, a 6.50 percent rate and 30 year amortization, each $10,000 of underwritten NOI supports about $105,500 of additional loan. The ratio changes with rate and amortization, but the rule of thumb is that one dollar of NOI is worth about ten dollars and fifty cents of loan at today's pricing."}},{"@type":"Question","name":"Is maximum LTV or DSCR usually the binding constraint?","acceptedAnswer":{"@type":"Answer","text":"At current rates DSCR almost always binds first on stabilized apartments. With a 30 year amortization schedule, a 1.25x DSCR test only gives way to a 75 percent LTV cap when the interest rate falls to roughly 4.1 percent in the example. At rates above that, lenders cannot reach their stated maximum leverage without breaking their own coverage minimum."}},{"@type":"Question","name":"How does a bridge loan get underwritten differently?","acceptedAnswer":{"@type":"Answer","text":"A bridge lender sizes to cost or as-is value rather than to in-place coverage, funds renovation costs through a future funding facility, and reserves interest during the business plan. The test that matters is the takeout: whether the stabilized NOI will support a permanent loan large enough to repay the bridge. When it will not, the borrower faces an equity gap at refinance, which the bridge example above shows at about $1.27 million."}},{"@type":"Question","name":"Do rent control and rent stabilization change multifamily underwriting?","acceptedAnswer":{"@type":"Answer","text":"Yes. Lenders underwrite the rents the property can legally collect, not market rents the owner hopes to reach. In Los Angeles that means separating units under the Rent Stabilization Ordinance from exempt units, using the allowed annual increase on regulated units and checking the effect on value. A building with a large share of regulated units often appraises on a higher cap rate, which tightens LTV and debt yield."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Multifamily","item":"https://clscre.com/multifamily/index.html"},{"@type":"ListItem","position":3,"name":"Underwriting Guide","item":"https://clscre.com/resources/multifamily-underwriting-guide.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".faq-section",".comparison-lead"]}}
+</script>
+<link rel="stylesheet" href="../css/global.min.css?v=87671edc28">
+<link rel="stylesheet" href="../css/pages.min.css?v=3cbb23d80d">
+<style>
+.skip-link{position:absolute;top:-40px;left:0;background:var(--navy,#153D63);color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
+.skip-link:focus{top:0;outline:3px solid #00A676;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+<!-- Microsoft Clarity (project xwb62nsa5g, UX behavior analytics; added 2026-08-02) -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};var go=function(){if(go.d||c.clsOptOut)return;go.d=1;t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);};c.addEventListener("load",function(){["pointerdown","keydown","scroll","touchstart"].forEach(function(e){c.addEventListener(e,go,{once:true,passive:true});});setTimeout(go,4000);});})(window,document,"clarity","script","xwb62nsa5g");</script>
+<style>
+.mf-table{width:100%;border-collapse:collapse;font-size:15px;border:1px solid var(--gray-200);border-radius:8px;overflow:hidden}
+.mf-table thead tr{background:var(--navy);color:var(--white)}
+.mf-table td{padding:12px 14px;color:var(--gray-700);border-bottom:1px solid var(--gray-200);vertical-align:top}
+.mf-table tr.alt td{background:var(--gray-50)}
+.mf-note{font-size:13px;color:var(--gray-500);margin-top:10px;font-style:italic;max-width:880px}
+.mf-lead{line-height:1.75;color:var(--gray-700);max-width:880px;margin-top:14px}
+.mf-h3{font-family:var(--font-display);color:var(--navy);font-size:22px;margin:32px 0 6px}
+.mf-callout{background:var(--gray-50);border-left:4px solid var(--green);padding:20px 24px;border-radius:8px;margin-top:20px;max-width:880px;line-height:1.7;color:var(--gray-700)}
+@media (max-width:640px){.mf-table{font-size:13px}.mf-table td,.mf-table th{padding:9px 10px!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH6TD3TC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<style>
+/* Keyboard-accessible dropdowns: show on focus-within in addition to hover */
+.nav-dropdown:focus-within .nav-dropdown-menu{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+</style>
+<nav class="nav" id="nav" aria-label="Main navigation">
+<div class="nav-inner">
+  <a href="../index.html" class="nav-logo"><img src="../images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="120" height="120"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
+  <div class="nav-links" id="navLinks" role="menubar">
+    <style id="la-nav-fit">@media (min-width:769px) and (max-width:1280px){.nav-links{gap:16px!important}.nav-links .nav-phone{font-size:0!important;margin-right:0!important}.nav-logo-text{display:none!important}}</style>
+    <div class="nav-dropdown">
+      <a href="../financing/commercial-mortgage-broker-los-angeles.html" aria-haspopup="true" aria-expanded="false" id="ddLosAngeles">Markets</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddLosAngeles">
+        <a href="../markets/los-angeles/">Los Angeles</a>
+        <a href="../markets/san-diego/">San Diego</a>
+        <a href="../states/california.html">California</a>
+        <a href="../la-california-closed-deals.html">Closed Deals</a>
+        <a href="../locations.html">All Locations</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="../index.html#programs" role="menuitem" aria-haspopup="true" aria-expanded="false" id="ddFinancing">Financing</a>
+      <div class="nav-dropdown-menu" role="menu" aria-labelledby="ddFinancing">
+        <a href="../financing/permanent-loans.html" role="menuitem">Permanent Loans</a>
+        <a href="../financing/construction-loans.html" role="menuitem">Construction Loans</a>
+        <a href="../financing/bridge-loans.html" role="menuitem">Bridge Loans</a>
+        
+        <a href="../financing/mezzanine.html" role="menuitem">Mezzanine & Preferred Equity</a>
+        <a href="../financing/specialty.html" role="menuitem">Specialty Financing</a>
+        <a href="../financing/agency-loans.html" role="menuitem">Agency Loans</a>
+        <a href="../financing/hud-fha-loans.html" role="menuitem">HUD/FHA Multifamily Loans</a>
+        <a href="../financing/cmbs-loans.html" role="menuitem">CMBS Loans</a>
+        <a href="../financing/net-lease-financing.html" role="menuitem">Net Lease Financing</a>
+        <a href="../financing/life-company-loans.html" role="menuitem">Life Company Loans</a>
+        
+        <a href="../financing/hard-money-loans.html" role="menuitem">Hard Money Loans</a>
+        <a href="../financing/portfolio-loans.html" role="menuitem">Portfolio Loans</a>
+        
+        
+        <a href="../financing/bridge-to-perm-loans.html" role="menuitem">Bridge-to-Perm Loans</a>
+        <a href="../financing/acquisition-bridge-loans.html" role="menuitem">Acquisition Bridge Loans</a>
+        <a href="../financing/value-add-bridge-loans.html" role="menuitem">Value-Add Bridge Loans</a>
+        <a href="../financing/1031-exchange-bridge-loans.html" role="menuitem">1031 Exchange Bridge Loans</a>
+        <a href="../financing/multifamily-bridge-loans.html" role="menuitem">Multifamily Bridge Loans</a>
+        <a href="../financing/industrial-bridge-loans.html" role="menuitem">Industrial Bridge Loans</a>
+        <a href="../financing/office-bridge-loans.html" role="menuitem">Office Bridge Loans</a>
+        <a href="../financing/retail-bridge-loans.html" role="menuitem">Retail Bridge Loans</a>
+        <a href="../financing/mixed-use-bridge-loans.html" role="menuitem">Mixed-Use Bridge Loans</a>
+        <a href="../financing/multifamily-construction-loans.html" role="menuitem">Multifamily Construction Loans</a>
+        <a href="../financing/build-to-rent-loans.html" role="menuitem">Build-to-Rent Loans</a>
+        <a href="../financing/construction-to-perm-loans.html" role="menuitem">Construction-to-Perm Loans</a>
+        <a href="../financing/land-loans.html" role="menuitem">Land Loans</a>
+        <a href="../financing/self-storage-financing.html" role="menuitem">Self-Storage Financing</a>
+        <a href="../financing/hotel-motel-financing.html" role="menuitem">Hotel & Motel Financing</a>
+        <a href="../financing/student-housing-loans.html" role="menuitem">Student Housing Loans</a>
+        <a href="../financing/senior-housing-financing.html" role="menuitem">Senior Housing Financing</a>
+        <a href="../financing/medical-office-financing.html" role="menuitem">Medical Office Financing</a>
+        <a href="../financing/sale-leaseback-financing.html" role="menuitem">Sale-Leaseback Financing</a>
+        <a href="../financing/office-conversion-loans.html" role="menuitem">Office Conversion Loans</a>
+        <a href="../financing/preferred-equity.html" role="menuitem">Preferred Equity</a>
+        <a href="../financing/industrial-construction-loans.html" role="menuitem">Industrial Construction Loans</a>
+        <a href="../financing/cpace-financing.html" role="menuitem">C-PACE Financing</a>
+        <a href="../financing/owner-occupied-commercial.html" role="menuitem">Owner-Occupied Commercial Loans</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="../index.html#transactions" role="menuitem" aria-haspopup="true" aria-expanded="false" id="ddProperties">Properties</a>
+      <div class="nav-dropdown-menu" role="menu" aria-labelledby="ddProperties">
+        <a href="../property/multifamily.html" role="menuitem">Multifamily</a>
+        <a href="../property/industrial.html" role="menuitem">Industrial</a>
+        <a href="../property/retail.html" role="menuitem">Retail</a>
+        <a href="../property/office.html" role="menuitem">Office</a>
+        <a href="../property/mixed-use.html" role="menuitem">Mixed-Use</a>
+        <a href="../property/hospitality.html" role="menuitem">Hospitality</a>
+        <a href="../financing/self-storage-financing.html" role="menuitem">Self-Storage</a>
+        <a href="../property/data-centers.html" role="menuitem">Data Centers</a>
+        <a href="../financing/senior-housing-financing.html" role="menuitem">Senior Living</a>
+        <a href="../financing/medical-office-financing.html" role="menuitem">Medical Office</a>
+        <a href="../property/manufactured-housing.html" role="menuitem">Manufactured Housing</a>
+        <a href="../property/parking.html" role="menuitem">Parking</a>
+        <a href="../affordable-housing/index.html">Affordable &amp; EDI Hub</a>
+        <a href="../multifamily/index.html">Multifamily Hub</a>
+        <a href="../industrial/index.html">Industrial Hub</a>
+        <a href="../commercial/index.html">Commercial Hub</a>
+      </div>
+    </div>
+    <a href="../about.html">About</a>
+    <a href="../insights/index.html">Insights</a>
+    <a href="../market-data.html">Market Data</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+        <a href="tel:+13107584042" class="nav-phone" style="display:inline-flex;align-items:center;gap:6px;color:var(--navy);font-weight:700;font-size:14px;margin-right:8px" aria-label="Call 310.758.4042">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      310.758.4042
+    </a>
+    <a href="../apply.html" class="nav-cta">Apply Now</a>
+  </div>
+  <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</nav>
+<main id="main-content">
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="../multifamily/index.html">Multifamily</a></li>
+  <li><span>Underwriting Guide</span></li>
+</ol>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Multifamily Underwriting Guide</div>
+  <h1 class="reveal">Multifamily Underwriting: DSCR, Debt Yield and LTV, With a Worked Loan Sizing Example</h1>
+  <p class="reveal" style="font-size:13px;color:var(--gray-500);margin-bottom:16px">By Trevor Damyan, Commercial Mortgage Broker at Commercial Lending Solutions &middot; Updated November 2026</p>
+  <div class="page-tldr reveal comparison-lead" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:8px 0 20px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0;max-width:880px">
+    <strong style="color:var(--navy)">Quick answer:</strong> Lenders size a multifamily loan to the smallest of three amounts: a maximum loan to value, a minimum debt service coverage ratio (DSCR) and a minimum debt yield. In the worked example below, a 40 unit apartment building with $517,466 of underwritten net operating income (NOI) and a $9,500,000 value could carry a $7,125,000 loan on the leverage test alone, but the 1.25x DSCR test caps it at about $5.46 million, or 57 percent of value. Headline leverage is rarely the real limit. Coverage is, and the NOI the lender underwrites is usually well below the NOI the seller advertises.
+  </div>
+  <a href="../apply.html" class="btn-primary reveal">Get Your Deal Underwritten &rarr;</a>
+</div>
+</section>
+
+<!-- THREE TESTS -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">The Three Tests</div>
+  <h2 class="section-title reveal">How a Lender Sizes a Multifamily Loan</h2>
+  <p class="reveal mf-lead">Every multifamily lender, from an agency seller servicer to a regional bank to a debt fund, runs the same three arithmetic checks on the property's income and value. The loan is the smallest number that comes out. Knowing which test binds on your deal tells you whether to chase a higher appraisal, a lower rate, a longer amortization or a different lender type.</p>
+  <div style="overflow-x:auto;margin-top:20px"><table class="mf-table"><thead><tr><th style="padding:12px 14px;text-align:left;font-weight:600">Test</th><th style="padding:12px 14px;text-align:left;font-weight:600">Formula</th><th style="padding:12px 14px;text-align:left;font-weight:600">Where lenders set the line</th><th style="padding:12px 14px;text-align:left;font-weight:600">What it protects against</th></tr></thead><tbody>
+<tr><td>Loan to value (LTV)</td><td>Loan amount ÷ appraised value</td><td>Agency up to 80 percent, CMBS up to 75, banks 65 to 75, life companies 50 to 65, bridge 65 to 75 of as-is value</td><td>A falling appraisal</td></tr>
+<tr class="alt"><td>Debt service coverage (DSCR)</td><td>NOI ÷ annual debt service</td><td>Most permanent lenders 1.25x; life companies often 1.35x or more; bridge lenders may accept under 1.0x going in</td><td>A rate reset or an NOI miss</td></tr>
+<tr><td>Debt yield</td><td>NOI ÷ loan amount</td><td>CMBS 9 to 10 percent or better; life companies similar; bridge 6 to 8 percent going in; agency embeds it in its DSCR and LTV grid</td><td>Weak appraisals and low rates that flatter LTV and DSCR</td></tr>
+</tbody></table></div>
+<p class="mf-note">Ranges are market norms, not a quote. Each lender sets its own grid by property type, market and sponsor.</p>
+  <p class="reveal mf-lead" style="margin-top:20px">Related definitions with their own examples: <a href="../glossary/debt-service-coverage-ratio.html">DSCR</a>, <a href="../glossary/debt-yield.html">debt yield</a>, <a href="../glossary/loan-to-value-ratio.html">LTV</a>, <a href="../glossary/cap-rate.html">cap rate</a> and <a href="../glossary/amortization.html">amortization</a>.</p>
+</div>
+</section>
+
+<!-- STEP 1 NOI -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">Step 1</div>
+  <h2 class="section-title reveal">Build the Lender's NOI, Not the Seller's</h2>
+  <p class="reveal mf-lead">Our example is an illustrative 40 unit garden apartment building under contract at $9,500,000, or $237,500 per unit. It is a teaching case, not a transaction and not a market quote. The statement below is what an underwriter builds from the rent roll and trailing operating history.</p>
+  <div style="overflow-x:auto;margin-top:20px"><table class="mf-table"><thead><tr><th style="padding:12px 14px;text-align:left;font-weight:600">Line item</th><th style="padding:12px 14px;text-align:left;font-weight:600">Annual amount</th></tr></thead><tbody>
+<tr><td>Gross potential rent (40 units at $1,850 a month)</td><td>$888,000</td></tr>
+<tr class="alt"><td>Other income (laundry, parking, utility reimbursements)</td><td>$36,000</td></tr>
+<tr><td>Gross potential income</td><td>$924,000</td></tr>
+<tr class="alt"><td>Less vacancy and credit loss at the 5 percent floor</td><td>($46,200)</td></tr>
+<tr><td><strong>Effective gross income</strong></td><td><strong>$877,800</strong></td></tr>
+<tr class="alt"><td>Property taxes (reassessed at the purchase price)</td><td>($114,000)</td></tr>
+<tr><td>Insurance</td><td>($44,000)</td></tr>
+<tr class="alt"><td>Utilities</td><td>($52,000)</td></tr>
+<tr><td>Repairs and maintenance</td><td>($40,000)</td></tr>
+<tr class="alt"><td>Payroll</td><td>($42,000)</td></tr>
+<tr><td>Contract services (trash, landscaping, pest)</td><td>($18,000)</td></tr>
+<tr class="alt"><td>General, administrative and marketing</td><td>($14,000)</td></tr>
+<tr><td>Management fee at 3 percent of effective gross income</td><td>($26,334)</td></tr>
+<tr class="alt"><td><strong>Operating expenses</strong> (40 percent of effective gross income)</td><td><strong>($350,334)</strong></td></tr>
+<tr><td>Net operating income before reserves</td><td>$527,466</td></tr>
+<tr class="alt"><td>Replacement reserves at $250 per unit</td><td>($10,000)</td></tr>
+<tr><td><strong>Underwritten NOI</strong></td><td><strong>$517,466</strong></td></tr>
+</tbody></table></div>
+<p class="mf-note">Underwritten NOI is $517,466. At the $9,500,000 price that is a 5.45 percent cap rate on the lender's NOI.</p>
+  <h3 class="mf-h3 reveal">Why the seller's number is higher</h3>
+  <p class="reveal mf-lead">The offering memorandum for the same building shows a trailing 12 month NOI of $638,900, a 6.73 percent cap rate. The gap is not an error. It is four routine underwriting adjustments.</p>
+  <div style="overflow-x:auto;margin-top:20px"><table class="mf-table"><thead><tr><th style="padding:12px 14px;text-align:left;font-weight:600">Bridge from seller NOI to underwritten NOI</th><th style="padding:12px 14px;text-align:left;font-weight:600">Annual amount</th></tr></thead><tbody>
+<tr><td>Seller's reported trailing 12 month NOI</td><td>$638,900</td></tr>
+<tr class="alt"><td>Property tax reassessment (seller pays $52,000, buyer reassesses to $114,000)</td><td>($62,000)</td></tr>
+<tr><td>Management fee (seller self manages, lender underwrites 3 percent)</td><td>($26,334)</td></tr>
+<tr class="alt"><td>Vacancy floor (seller ran 2.5 percent, lender uses 5 percent)</td><td>($23,100)</td></tr>
+<tr><td>Replacement reserves</td><td>($10,000)</td></tr>
+<tr class="alt"><td><strong>Underwritten NOI</strong></td><td><strong>$517,466</strong></td></tr>
+</tbody></table></div>
+<p class="mf-note">The $121,434 difference is 19 percent of the seller's NOI and removes about $1.28 million of loan proceeds at a 1.25x DSCR.</p>
+  <p class="reveal mf-lead">Other adjustments that move NOI on real deals: using in-place rents instead of market rents on units that are below market, capping rent growth on regulated units, normalizing a one time insurance credit or tax abatement, and excluding other income the lender cannot verify. California acquisitions deserve special attention because the sale reassesses property taxes, so the seller's tax line is rarely the buyer's.</p>
+</div>
+</section>
+
+<!-- STEP 2 SIZING -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Step 2</div>
+  <h2 class="section-title reveal">Run the Three Tests on $517,466 of NOI</h2>
+  <div style="overflow-x:auto;margin-top:20px"><table class="mf-table"><thead><tr><th style="padding:12px 14px;text-align:left;font-weight:600">Test</th><th style="padding:12px 14px;text-align:left;font-weight:600">Calculation</th><th style="padding:12px 14px;text-align:left;font-weight:600">Maximum loan</th></tr></thead><tbody>
+<tr><td>LTV at 75 percent</td><td>$9,500,000 × 75 percent</td><td><strong>$7,125,000</strong></td></tr>
+<tr class="alt"><td>DSCR at 1.25x</td><td>$517,466 ÷ 1.25 = $413,973 of debt service, at 6.50 percent and 30 year amortization (a 7.585 percent annual constant)</td><td><strong>$5,457,915</strong></td></tr>
+<tr><td>Debt yield at 8 percent</td><td>$517,466 ÷ 0.08</td><td><strong>$6,468,325</strong></td></tr>
+<tr class="alt"><td>Debt yield at 9 percent</td><td>$517,466 ÷ 0.09</td><td><strong>$5,749,622</strong></td></tr>
+<tr><td>Debt yield at 10 percent</td><td>$517,466 ÷ 0.10</td><td><strong>$5,174,660</strong></td></tr>
+</tbody></table></div>
+<p class="mf-note">The 6.50 percent rate is an illustrative assumption inside the current indicative agency and life company range, not a quote.</p>
+  <div class="reveal mf-callout">
+    <strong>Result.</strong> The binding test is DSCR at about $5.46 million. That is 57.5 percent LTV, a 9.48 percent debt yield and $4,042,085 of equity before closing costs, nearly 43 percent of the price. A buyer who underwrote 75 percent leverage on the seller's NOI would be short by roughly $1.67 million at closing. If the lender's debt yield floor were 10 percent the loan would fall again to $5,174,660.
+  </div>
+  <h3 class="mf-h3 reveal">When does LTV actually bind?</h3>
+  <p class="reveal mf-lead">Only when rates are low or coverage minimums are loose. In this example a 30 year amortizing loan reaches the 75 percent LTV cap before it hits a 1.25x DSCR only if the rate falls to about 4.1 percent. At any higher rate the lender runs out of coverage before it runs out of leverage. That is why the "up to 80 percent LTV" on a program page and the loan you actually receive can be 20 points apart.</p>
+  <h3 class="mf-h3 reveal">Rate and amortization sensitivity</h3>
+  <p class="reveal mf-lead">Maximum loan at 1.25x DSCR on $517,466 of NOI. Interest-only is shown at the interest-only payment, which is the optimistic case because many lenders still size interest-only loans on an amortizing payment.</p>
+  <div style="overflow-x:auto;margin-top:20px"><table class="mf-table"><thead><tr><th style="padding:12px 14px;text-align:left;font-weight:600">Interest rate</th><th style="padding:12px 14px;text-align:left;font-weight:600">25 year amortization</th><th style="padding:12px 14px;text-align:left;font-weight:600">30 year amortization</th><th style="padding:12px 14px;text-align:left;font-weight:600">Interest only</th></tr></thead><tbody>
+<tr><td>6.00 percent</td><td>$5,354,285</td><td>$5,753,933</td><td>$6,899,547</td></tr>
+<tr class="alt"><td>6.50 percent</td><td>$5,109,207</td><td>$5,457,915</td><td>$6,368,812</td></tr>
+<tr><td>7.00 percent</td><td>$4,880,977</td><td>$5,185,270</td><td>$5,913,897</td></tr>
+</tbody></table></div>
+<p class="mf-note">Rule of thumb at 6.50 percent and 30 years: each $10,000 of NOI is worth about $105,500 of loan proceeds.</p>
+</div>
+</section>
+
+<!-- STEP 3 LENDERS -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">Step 3</div>
+  <h2 class="section-title reveal">Same Building, Four Lender Types, Four Loan Amounts</h2>
+  <p class="reveal mf-lead">The same $517,466 of NOI produces different proceeds depending on the lender's coverage minimum, amortization and pricing. The table applies each lender type's typical grid and the midpoint of our indicative ranges as of November 24, 2026. It is an illustration of why proceeds differ, not a quote, and real grids vary by lender, market and sponsor. Current ranges are on the <a href="../financing/commercial-mortgage-rates.html">commercial mortgage rates</a> page.</p>
+  <div style="overflow-x:auto;margin-top:20px"><table class="mf-table"><thead><tr><th style="padding:12px 14px;text-align:left;font-weight:600">Lender type</th><th style="padding:12px 14px;text-align:left;font-weight:600">Minimum DSCR</th><th style="padding:12px 14px;text-align:left;font-weight:600">Leverage test</th><th style="padding:12px 14px;text-align:left;font-weight:600">Amortization and rate used</th><th style="padding:12px 14px;text-align:left;font-weight:600">Resulting maximum loan</th><th style="padding:12px 14px;text-align:left;font-weight:600">Binding test</th></tr></thead><tbody>
+<tr><td>Agency (Fannie Mae DUS, Freddie Mac Optigo)</td><td>1.25x</td><td>80 percent</td><td>30 years at 6.64 percent</td><td><strong>$5,379,000</strong> (57 percent of value)</td><td>DSCR</td></tr>
+<tr class="alt"><td>CMBS conduit</td><td>1.30x</td><td>75 percent and 9 percent debt yield</td><td>30 years at 6.91 percent</td><td><strong>$5,031,000</strong> (53 percent of value)</td><td>DSCR</td></tr>
+<tr><td>Life insurance company</td><td>1.35x</td><td>65 percent</td><td>25 years at 6.40 percent</td><td><strong>$4,775,000</strong> (50 percent of value)</td><td>DSCR</td></tr>
+<tr class="alt"><td>Bank balance sheet</td><td>1.25x</td><td>70 percent</td><td>25 years at 7.54 percent</td><td><strong>$4,652,000</strong> (49 percent of value)</td><td>DSCR</td></tr>
+</tbody></table></div>
+<p class="mf-note">Rates are the midpoints of the indicative ranges in effect on November 24, 2026: agency 6.16 to 7.11 percent, CMBS 6.41 to 7.41, life company 6.10 to 6.70, bank 6.91 to 8.16. HUD insured loans and bridge loans size differently and are covered below.</p>
+  <p class="reveal mf-lead" style="margin-top:20px">DSCR binds for every lender type in this case, so the loan amounts spread by coverage minimum and payment constant, not by headline leverage. Agency executes largest because it pairs a 1.25x minimum with 30 year amortization. The bank loan is smallest because its shorter amortization and higher rate raise the payment constant. A life company lends less than agency or CMBS here but is typically the lowest priced of the four and carries the longest fixed terms. The right answer depends on whether the sponsor values proceeds, rate, recourse, prepayment flexibility or closing speed. Our side by side guides cover those trade offs: <a href="../comparisons/agency-vs-life-company-stabilized-multifamily.html">agency vs life company</a>, <a href="../comparisons/agency-vs-bank-stabilized-multifamily.html">agency vs bank</a> and <a href="../comparisons/agency-vs-cmbs-stabilized-multifamily.html">agency vs CMBS</a>.</p>
+  <h3 class="mf-h3 reveal">HUD insured and affordable programs</h3>
+  <p class="reveal mf-lead">HUD 223(f) and 221(d)(4) loans underwrite to lower coverage than conventional lenders and reach higher leverage (up to 85 percent, and more on qualifying affordable deals) over 35 to 40 year fully amortizing terms, in exchange for longer processing and program requirements. Run the same three tests with the program's own coverage minimum. See <a href="../financing/hud-fha-loans.html">HUD and FHA multifamily loans</a>.</p>
+</div>
+</section>
+
+<!-- BRIDGE -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Value-Add Deals</div>
+  <h2 class="section-title reveal">Underwriting a Bridge Loan: The Takeout Test</h2>
+  <p class="reveal mf-lead">A value-add bridge lender looks past in-place coverage. Suppose the buyer plans $1,200,000 of renovation on the same building, for a total cost of $10,700,000. A 75 percent loan to cost bridge loan is $8,025,000, interest-only for two to three years, with renovation funds released against completed work. The in-place NOI cannot service that loan on an amortizing basis, and the lender knows it. The question that decides the deal is whether the stabilized NOI will refinance it.</p>
+  <div class="reveal mf-callout">
+    <strong>Takeout test.</strong> If renovations lift underwritten NOI to $640,000, a permanent lender at 1.25x DSCR, 6.50 percent and 30 year amortization sizes at about $6,750,328. That is $1,274,672 short of the $8,025,000 bridge balance, so the sponsor must repay the gap with equity, a cash-out from a later phase or a larger NOI. Bridge underwriting is largely the work of making that gap small, or showing where the equity will come from. Compare your options on <a href="../financing/multifamily-bridge-loans.html">multifamily bridge loans</a> and <a href="../comparisons/bridge-loan-vs-agency-value-add-multifamily.html">bridge vs agency for value-add</a>.
+  </div>
+</div>
+</section>
+
+<!-- CHECKLIST -->
+<section class="content-section alt">
+<div class="section-inner">
+  <div class="section-label reveal">Preparation</div>
+  <h2 class="section-title reveal">What to Have Ready Before You Ask for Terms</h2>
+  <ul class="reveal" style="line-height:1.9;color:var(--gray-700);padding-left:20px;max-width:880px">
+    <li>A current rent roll with unit mix, in-place rents, lease expirations and any regulated units flagged</li>
+    <li>Trailing 12 month and trailing 3 month operating statements, plus two years of history if available</li>
+    <li>The latest property tax bill, an estimate of the reassessed tax on a purchase, and the insurance quote or declarations page</li>
+    <li>A capital improvement scope and budget if the business plan includes renovation</li>
+    <li>Sponsor financial statement and a schedule of real estate owned, since agency lenders look for net worth near the loan amount and meaningful post closing liquidity</li>
+    <li>Your own underwritten NOI built with the lender adjustments above, so you start the conversation at the number the lender will use</li>
+  </ul>
+  <p class="reveal mf-lead" style="margin-top:20px">Run your numbers with the free <a href="../tools/noi-calculator.html">NOI calculator</a>, <a href="../tools/debt-yield-calculator.html">debt yield calculator</a>, <a href="../tools/ltv-calculator.html">LTV calculator</a>, <a href="../tools/loan-calculator.html">loan payment calculator</a> and <a href="../tools/cap-rate-calculator.html">cap rate calculator</a>.</p>
+</div>
+</section>
+
+<!-- MISTAKES -->
+<section class="content-section">
+<div class="section-inner">
+  <div class="section-label reveal">Common Mistakes</div>
+  <h2 class="section-title reveal">Five Underwriting Mistakes That Cost Proceeds</h2>
+  <ol class="reveal" style="line-height:1.9;color:var(--gray-700);padding-left:22px;max-width:880px">
+    <li><strong>Underwriting to the seller's NOI.</strong> The reassessment, management fee, vacancy floor and reserves adjustments above are routine and rarely negotiable.</li>
+    <li><strong>Treating stated LTV as the loan.</strong> Coverage and debt yield usually bind first, so size the deal on the tightest test before you set the offer price.</li>
+    <li><strong>Ignoring the appraisal.</strong> On an acquisition most term sheets size to the lesser of price or appraised value, so a low appraisal cuts proceeds even when the purchase price is fair.</li>
+    <li><strong>Skipping the rate stress.</strong> A 50 basis point move changes the example loan by about $273,000 on a 30 year schedule. Model the quote and the quote plus 50 basis points.</li>
+    <li><strong>Planning a bridge exit on stabilized NOI that is not yet proven.</strong> Lenders credit in-place performance at the takeout, not a pro forma.</li>
+  </ol>
+</div>
+</section>
+
+<!-- RELATED -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Related Multifamily Resources</h2>
+  <div class="cross-link-grid">
+    <a href="../multifamily/index.html" class="cross-link-card reveal"><div class="cl-title">Multifamily Financing Hub</div><div class="cl-sub">Every capital source side by side</div></a>
+    <a href="../financing/multifamily-loans.html" class="cross-link-card reveal"><div class="cl-title">Multifamily Loans</div><div class="cl-sub">$2 million to $100 million and up</div></a>
+    <a href="../financing/agency-loans.html" class="cross-link-card reveal"><div class="cl-title">Agency Loans</div><div class="cl-sub">Fannie Mae DUS and Freddie Mac Optigo</div></a>
+    <a href="../financing/hud-fha-loans.html" class="cross-link-card reveal"><div class="cl-title">HUD and FHA Loans</div><div class="cl-sub">223(f) and 221(d)(4)</div></a>
+    <a href="../comparisons/index.html" class="cross-link-card reveal"><div class="cl-title">All Loan Comparisons</div><div class="cl-sub">Side by side guides by capital source</div></a>
+    <a href="../financing/commercial-mortgage-rates.html" class="cross-link-card reveal"><div class="cl-title">Current Commercial Mortgage Rates</div><div class="cl-sub">Indicative ranges by lender type</div></a>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section alt" id="faq">
+<div class="section-inner">
+  <div class="section-label reveal">FAQ</div>
+  <h2 class="section-title reveal">Multifamily Underwriting FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-question">What DSCR do multifamily lenders require?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Most permanent multifamily lenders size to a minimum DSCR of 1.25x. Agency programs center on 1.25x for market rate apartments, banks usually want 1.20x to 1.30x, CMBS conduits 1.25x to 1.35x, and life insurance companies often show effective coverage of 1.35x or more because they lend at lower leverage. Bridge lenders can fund transitional deals with going in coverage below 1.0x by relying on an interest reserve and the stabilized business plan.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">What is the difference between DSCR and debt yield?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">DSCR compares NOI to the loan payment, so it moves with the interest rate and amortization schedule. Debt yield compares NOI directly to the loan amount, so it ignores rate and appraisal assumptions. In the example above a 1.25x DSCR at 6.50 percent and 30 year amortization produces a debt yield of about 9.5 percent, so a lender requiring 10 percent debt yield would size the loan lower.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">Why is the lender&#x27;s NOI lower than the seller&#x27;s NOI?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Underwriters rebuild the operating statement. They apply a vacancy floor of at least 5 percent even on a full building, add a 3 percent management fee even when the owner self manages, reassess property taxes to the purchase price on an acquisition, and deduct replacement reserves. In the example those four adjustments reduce a seller NOI of $638,900 to $517,466, which cuts loan proceeds by roughly $1.28 million at a 1.25x DSCR.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">How much does each $10,000 of NOI change the loan amount?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">At a 1.25x DSCR, a 6.50 percent rate and 30 year amortization, each $10,000 of underwritten NOI supports about $105,500 of additional loan. The ratio changes with rate and amortization, but the rule of thumb is that one dollar of NOI is worth about ten dollars and fifty cents of loan at today&#x27;s pricing.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">Is maximum LTV or DSCR usually the binding constraint?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">At current rates DSCR almost always binds first on stabilized apartments. With a 30 year amortization schedule, a 1.25x DSCR test only gives way to a 75 percent LTV cap when the interest rate falls to roughly 4.1 percent in the example. At rates above that, lenders cannot reach their stated maximum leverage without breaking their own coverage minimum.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">How does a bridge loan get underwritten differently?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">A bridge lender sizes to cost or as-is value rather than to in-place coverage, funds renovation costs through a future funding facility, and reserves interest during the business plan. The test that matters is the takeout: whether the stabilized NOI will support a permanent loan large enough to repay the bridge. When it will not, the borrower faces an equity gap at refinance, which the bridge example above shows at about $1.27 million.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">Do rent control and rent stabilization change multifamily underwriting?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Yes. Lenders underwrite the rents the property can legally collect, not market rents the owner hopes to reach. In Los Angeles that means separating units under the Rent Stabilization Ordinance from exempt units, using the allowed annual increase on regulated units and checking the effect on value. A building with a large share of regulated units often appraises on a higher cap rate, which tightens LTV and debt yield.</div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+<div class="section-inner" style="position:relative;z-index:1">
+  <h2>Want Your Building Underwritten the Way a Lender Will?</h2>
+  <p>Send the rent roll and trailing statements. We will build the lender's NOI, run the sizing across agency, life company, CMBS, bank and bridge capital, and show you which test binds.</p>
+  <a href="../apply.html" class="btn-primary">Submit Your Deal &rarr;</a>
+  <div style="margin-top:20px">
+    <a href="tel:+13107584042" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:14px">Call: 310.758.4042</a>
+  </div>
+</div>
+</section></main>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter-bar" id="newsletter" style="padding:48px 0;background:var(--gray-50);border-top:1px solid var(--gray-200)">
+<div class="section-inner" style="max-width:700px;text-align:center">
+  <h2 style="font-family:var(--font-display);font-size:clamp(20px,2.5vw,28px);color:var(--navy);margin:0 0 8px">Weekly Market Intelligence</h2>
+  <p style="font-size:14px;color:var(--gray-500);margin:0 0 20px">Rate updates, deal insights, and capital markets analysis. One email per week. Unsubscribe anytime.</p>
+  <form id="newsletterForm" style="display:flex;gap:8px;max-width:480px;margin:0 auto;flex-wrap:wrap">
+    <label for="nlEmail" class="sr-only">Email address</label>
+    <input type="email" id="nlEmail" placeholder="your@email.com" required autocomplete="email" style="flex:1;min-width:200px;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:var(--font-body);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--gray-200)'">
+    <button type="submit" style="padding:12px 24px;background:var(--green);color:var(--white);border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap">Subscribe</button>
+  </form>
+  <div id="nlSuccess" style="display:none;color:var(--green);font-weight:600;font-size:14px;margin-top:12px">You are subscribed. Welcome aboard.</div>
+  <div id="nlError" style="display:none;color:#dc2626;font-size:13px;margin-top:12px"></div>
+  <p style="font-size:11px;color:var(--gray-400);margin:12px 0 0">No spam. No selling your data. Just market intelligence from a working broker.</p>
+</div>
+</section>
+<script>
+(function(){
+  var form = document.getElementById('newsletterForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('nlEmail').value.trim();
+    if (!email) return;
+    var btn = form.querySelector('button');
+    btn.textContent = 'Subscribing...';
+    btn.disabled = true;
+    fetch('https://cls-form-proxy.clscre.workers.dev/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email })
+    })
+    .then(function(resp) {
+      if (resp.ok) {
+        form.style.display = 'none';
+        document.getElementById('nlSuccess').style.display = 'block';
+        if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
+        window.dataLayer = window.dataLayer || [];
+        // Soft lead only, do NOT fire generate_lead (reserved for apply/real forms)
+        window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
+      } else { throw new Error('fail'); }
+    })
+    .catch(function() {
+      document.getElementById('nlError').textContent = 'Something went wrong. Please try again or email loans@clscre.com.';
+      document.getElementById('nlError').style.display = 'block';
+      btn.textContent = 'Subscribe';
+      btn.disabled = false;
+    });
+  });
+})();
+</script>
+
+<footer>
+<div class="footer-grid">
+  <div class="footer-brand">
+    <img src="../images/cls-logo-skyline.png" alt="Commercial Lending Solutions" style="height:60px" loading="lazy">
+    <p>Over $1 billion in commercial loans closed. Institutional expertise. Personal service. Every deal, every time.</p>
+    <div class="footer-col footer-la" style="margin-top:24px">
+      <h4>Los Angeles Headquarters</h4>
+      <p style="margin:0 0 10px">7951 Blackburn Avenue<br>Los Angeles, CA 90048</p>
+      <a href="../financing/commercial-mortgage-broker-los-angeles.html">LA Commercial Mortgage Broker</a>
+      <a href="../la-california-closed-deals.html">LA &amp; California Closed Deals</a>
+      <a href="../states/california.html">California Financing</a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Financing</h4>
+    <a href="../financing/commercial-mortgage-rates.html">Today's Rates</a>
+    <a href="../comparisons/index.html">Loan Comparisons</a>
+    <a href="../loan-size/index.html">Loan Size Examples</a>
+    <a href="../financing/permanent-loans.html">Permanent Loans</a>
+    <a href="../financing/construction-loans.html">Construction Loans</a>
+    <a href="../financing/bridge-loans.html">Bridge Loans</a>
+    
+    <a href="../financing/mezzanine.html">Mezzanine & Preferred Equity</a>
+    <a href="../financing/specialty.html">Specialty Financing</a>
+    <a href="../financing/agency-loans.html">Agency Loans</a>
+    <a href="../financing/hud-fha-loans.html">HUD/FHA Multifamily Loans</a>
+    <a href="../financing/cmbs-loans.html">CMBS Loans</a>
+    <a href="../financing/net-lease-financing.html">Net Lease Financing</a>
+    <a href="../financing/life-company-loans.html">Life Company Loans</a>
+    
+    <a href="../financing/hard-money-loans.html">Hard Money Loans</a>
+    <a href="../financing/portfolio-loans.html">Portfolio Loans</a>
+    
+    
+    <a href="../financing/bridge-to-perm-loans.html">Bridge-to-Perm Loans</a>
+    <a href="../financing/acquisition-bridge-loans.html">Acquisition Bridge Loans</a>
+    <a href="../financing/value-add-bridge-loans.html">Value-Add Bridge Loans</a>
+    <a href="../financing/1031-exchange-bridge-loans.html">1031 Exchange Bridge Loans</a>
+    <a href="../financing/multifamily-bridge-loans.html">Multifamily Bridge Loans</a>
+    <a href="../financing/industrial-bridge-loans.html">Industrial Bridge Loans</a>
+    <a href="../financing/office-bridge-loans.html">Office Bridge Loans</a>
+    <a href="../financing/retail-bridge-loans.html">Retail Bridge Loans</a>
+    <a href="../financing/mixed-use-bridge-loans.html">Mixed-Use Bridge Loans</a>
+    <a href="../financing/multifamily-construction-loans.html">Multifamily Construction Loans</a>
+    <a href="../financing/build-to-rent-loans.html">Build-to-Rent Loans</a>
+    <a href="../financing/construction-to-perm-loans.html">Construction-to-Perm Loans</a>
+    <a href="../financing/land-loans.html">Land Loans</a>
+    <a href="../financing/self-storage-financing.html">Self-Storage Financing</a>
+    <a href="../financing/hotel-motel-financing.html">Hotel & Motel Financing</a>
+    <a href="../financing/student-housing-loans.html">Student Housing Loans</a>
+    <a href="../financing/senior-housing-financing.html">Senior Housing Financing</a>
+    <a href="../financing/medical-office-financing.html">Medical Office Financing</a>
+    <a href="../financing/sale-leaseback-financing.html">Sale-Leaseback Financing</a>
+    <a href="../financing/office-conversion-loans.html">Office Conversion Loans</a>
+    <a href="../financing/preferred-equity.html">Preferred Equity</a>
+    <a href="../financing/industrial-construction-loans.html">Industrial Construction Loans</a>
+    <a href="../financing/cpace-financing.html">C-PACE Financing</a>
+    <a href="../financing/owner-occupied-commercial.html">Owner-Occupied Commercial Loans</a>
+  </div>
+  <div class="footer-col">
+    <h4>Properties</h4>
+    <a href="../property/multifamily.html">Multifamily</a>
+    <a href="../property/industrial.html">Industrial</a>
+    <a href="../property/retail.html">Retail</a>
+    <a href="../property/office.html">Office</a>
+    <a href="../property/mixed-use.html">Mixed-Use</a>
+    <a href="../property/hospitality.html">Hospitality</a>
+    <a href="../financing/self-storage-financing.html">Self-Storage</a>
+    <a href="../property/data-centers.html">Data Centers</a>
+    <a href="../financing/senior-housing-financing.html">Senior Living</a>
+    <a href="../financing/medical-office-financing.html">Medical Office</a>
+    <a href="../property/manufactured-housing.html">Manufactured Housing</a>
+    <a href="../property/parking.html">Parking</a>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="../about.html">About Us</a>
+    <a href="../partners.html">Referral Partners</a>
+    <a href="../blog/index.html">Insights</a>
+    <a href="../index.html#transactions">Transactions</a>
+    <a href="../market-data.html">Market Data</a>
+    <a href="../tools/index.html">Calculators</a>
+    <a href="../resources/cre-financing-guide.html">CRE Financing Guide</a>
+    <a href="../resources/welfare-exemption.html">Welfare Exemption Guide</a>
+    <a href="../locations.html">Locations</a>
+    <a href="../markets/los-angeles/">Los Angeles CRE</a>
+    <a href="../states/california.html">California Loans</a>
+    <a href="../professionals/index.html">For Professionals</a>
+    <a href="../expert-witness/index.html">Expert Witness Services</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../privacy.html">Privacy Policy</a>
+    <a href="../terms.html">Terms of Service</a>
+    <a href="../accessibility.html">Accessibility</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>&copy; 2026 Commercial Lending Solutions. All rights reserved. DRE #02244836</span>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/commerciallendingsolutions/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61591993674306" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</div>
+</footer>
+<!-- Sticky Bottom CTA Bar -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-inner">
+    <div class="sticky-cta-text">
+      <strong>Need financing?</strong> Apply in 2 minutes. Response within 24 hours.
+    </div>
+    <a href="../apply.html" class="sticky-cta-btn">Apply Now &rarr;</a>
+  </div>
+</div>
+
+<!-- Exit intent popup removed 2026-09-10 -->
+<script>
+// Sticky nav
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+// Mobile nav
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); const open = navLinks.classList.contains('open'); mobileToggle.setAttribute('aria-expanded', open); });
+navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); mobileToggle.setAttribute('aria-expanded', 'false'); }); });
+// Keyboard-accessible dropdown: sync aria-expanded with focus state
+document.querySelectorAll('.nav-dropdown').forEach(dd => {
+  const trigger = dd.querySelector('[aria-haspopup]');
+  if (!trigger) return;
+  dd.addEventListener('focusin', () => trigger.setAttribute('aria-expanded', 'true'));
+  dd.addEventListener('focusout', () => { setTimeout(() => { if (!dd.contains(document.activeElement)) trigger.setAttribute('aria-expanded', 'false'); }, 50); });
+});
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-answer').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+</script>
+<script>
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
+(function(){
+  const bar = document.getElementById('stickyCta');
+  if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
+  let shown = false;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
+  });
+})();
+// Exit intent popup removed 2026-09-10
+</script>
+<script src="../js/tracking.js?v=ad56306f28" defer></script>
+<script src="../js/antispam.js?v=7e0a076eb0" defer></script>
+<script src="../js/chatbot.js?v=f86dccd638" defer></script>
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "9523884";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var go = function(){ if (go.d || window.clsOptOut) return; go.d = 1; var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s); };
+var arm = function(){ ["pointerdown","keydown","scroll","touchstart"].forEach(function(e){ window.addEventListener(e, go, {once:true, passive:true}); }); setTimeout(go, 4000); };
+if (document.readyState === "complete") arm(); else window.addEventListener("load", arm);
+})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9523884&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<script src="/js/consent.js?v=45150b2a35" defer></script>
+</body>
+</html>

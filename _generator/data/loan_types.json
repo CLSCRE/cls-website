@@ -91,7 +91,7 @@
     "key_features": {
       "loan_amount": "$2MM - $100MM+",
       "term": "1 - 35 Years",
-      "rates": "5.00% - 11.50%",
+      "rates": "{rt:permanent|dash}",
       "ltv": "Up to 80% LTV (85% LTC for HUD-backed construction)",
       "amortization": "25 - 35 Years",
       "recourse": "Non-Recourse Available"
@@ -117,8 +117,8 @@
       "meta_description": "Multifamily and apartment loans from $2MM to $100MM+ nationwide. Fannie Mae, Freddie Mac, life insurance companies, CMBS, and private lenders. Get a free quote.",
       "h1": "Multifamily Loans"
     },
-    "quick_answer": "Multifamily loans typically range from $2MM to $100MM+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources multifamily and apartment financing nationwide from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds through 1,000+ lender relationships.",
-    "quick_answer_city": "Multifamily loans in {city}, {state} typically range from $2MM to $100MM+, with rates from 5.00% to 11.50% depending on lender type, leverage, and term. Commercial Lending Solutions sources {city} multifamily and apartment financing from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds nationwide.",
+    "quick_answer": "Multifamily loans typically range from $2MM to $100MM+, with permanent rates from {rt:permanent} depending on lender type, leverage, and term. Commercial Lending Solutions sources multifamily and apartment financing nationwide from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds through 1,000+ lender relationships.",
+    "quick_answer_city": "Multifamily loans in {city}, {state} typically range from $2MM to $100MM+, with permanent rates from {rt:permanent} depending on lender type, leverage, and term. Commercial Lending Solutions sources {city} multifamily and apartment financing from Fannie Mae, Freddie Mac, life insurance companies, CMBS conduits, banks, and debt funds nationwide.",
     "min_amount_usd": 2000000,
     "min_loan_display": "$2MM",
     "apply_query": "program=multifamily"
@@ -397,7 +397,7 @@
     "key_features": {
       "loan_amount": "$5M to $100MM+",
       "term": "35 to 40 Years",
-      "rates": "5.25% to 6.75%",
+      "rates": "{rt:hud}",
       "ltv": "Up to 85% LTV (90% for affordable)",
       "amortization": "Fully Amortizing",
       "recourse": "Non-Recourse"
