@@ -204,3 +204,14 @@ li:empty{display:none}
 footer img[src*="cls-logo-skyline"]{height:72px!important;width:72px;border-radius:12px;object-fit:cover}
 /* mobile already has the fixed Call/Book bar; the second dark sticky CTA stacked behind it */
 @media(max-width:768px){body:has(#cls-mcb) .sticky-cta{display:none!important}}
+/* mobile header fit: the 28px two-line wordmark + 120px emblem + toggle was wider than a phone on
+   some page families (affordable hubs scrolled sideways to 612px) */
+@media(max-width:768px){
+.nav-inner{padding:0 16px}
+.nav-logo{min-width:0;gap:10px}
+.nav-logo img{height:96px;width:auto}
+.nav-logo-text{font-size:20px}
+}
+/* four vertical hubs (affordable, multifamily, industrial, commercial) inline a 4-column footer grid
+   with no mobile rule, which widened the whole page to 612px on phones */
+@media(max-width:768px){footer div[style*="grid-template-columns:2fr 1fr 1fr 1fr"]{grid-template-columns:1fr 1fr!important;gap:28px!important}}
