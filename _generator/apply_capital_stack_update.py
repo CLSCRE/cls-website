@@ -300,15 +300,136 @@ def cmp_html(t):
     return t
 
 
-def cmp_json(t):
-    def f(s):
-        for old, new in CMP_PAIRS:
-            s = rep(s, old, new)
-        return s
-    a = t.index('"slug": "mezzanine-vs-preferred-equity"')
+def cmp_json_slug(t, slug, fn):
+    a = t.index(f'"slug": "{slug}"')
     b = t.find('"slug": "', a + 40)
     b = len(t) if b < 0 else b
-    return t[:a] + f(t[a:b]) + t[b:]
+    return t[:a] + fn(t[a:b]) + t[b:]
+
+
+def cmp_json(t):
+    t = cmp_json_slug(t, "mezzanine-vs-preferred-equity",
+                      lambda s: _apply_pairs(s, CMP_PAIRS))
+    for slug in CMP3:
+        t = cmp_json_slug(t, slug, lambda s, slug=slug: _apply_cmp3(s, slug))
+    return t
+
+
+def _apply_pairs(s, pairs):
+    for old, new in pairs:
+        s = rep(s, old, new)
+    return s
+
+
+# ----------------------------------------------------------------------------- three more comparison pages
+# Aligned 2026-11-27 (Trevor: "Yes, align them") to the confirmed terms: mezzanine and preferred
+# equity from a $10M minimum, up to 85 percent combined leverage, 8 to 14 percent. Unconfirmed
+# pipeline stories become labeled illustrations. Bridge, B-note and term figures that Trevor has not
+# confirmed are left as they were and listed in the report.
+FOOT_OLD = ("Rate ranges reflect indicative pricing as of May 2026, sourced from active CLS CRE quote pipeline. "
+            "Pricing is property, sponsor, and structure dependent.")
+FOOT_OLD_JUNE = FOOT_OLD.replace("May 2026", "June 2026")
+LABEL_OLD = ('<div class="section-label reveal">From the CLS CRE Pipeline</div>\n'
+             '  <h2 class="section-title reveal">A Real Decision in Action</h2>')
+LABEL_NEW = ('<div class="section-label reveal">Worked example</div>\n'
+             '  <h2 class="section-title reveal">A Decision in Action</h2>')
+ANON_OLD = "All deal references anonymize borrower and lender identities and use city-level geography only."
+ANON_NEW = "Illustrative numbers only. Not a specific loan, not an offer."
+
+CMP3 = {
+    "preferred-equity-vs-common-equity-jv": {
+        "pairs": [
+            ("Preferred return (typically 11 to 18% total)", "Preferred return (8 to 14% on deals we arrange)"),
+            ("acceptable to sponsor (typically 11 to 18% total)", "acceptable to sponsor (8 to 14% on deals we arrange)"),
+            ("(typically 11 to 18% total, often a mix of current pay and accrual)",
+             "(8 to 14% on deals we arrange, current pay or accruing)"),
+            ("10 to 25% of stack", "From $10M; with the senior loan, up to 85% of cost"),
+            ("30 to 65% of stack", "The remainder after the debt and preferred layers"),
+            ("Capital stack at the gap between senior debt and common (10 to 25% of project)",
+             "Capital stack with a gap of $10M or more between senior debt and common"),
+            ("Larger institutional partnership ($10M to $50M+ of equity)",
+             "Larger institutional partnership ($10M or more of equity)"),
+            ("Pref equity at 14 percent total return on 20 percent of the stack costs less than common equity JV at 18 percent IRR on 30 percent of the stack with the GP promote layered on top. Run side-by-side waterfall scenarios under realistic deal returns.",
+             "A preferred layer priced inside the 8 to 14 percent range usually costs the sponsor less than common equity JV underwritten to a higher return, with the GP promote layered on top. Only a side-by-side waterfall shows it for a given deal, so run both under realistic deal returns."),
+            ("above a hurdle (often 8 to 10 percent) and the sponsor promote", "above a hurdle return and the sponsor promote"),
+            ("Total preferred returns typically range from 11 to 18 percent depending on deal risk profile, capital provider, and structure. Higher-risk transitional deals price at the wider end; stabilized lower-risk deals at the tighter end. Returns are typically split between current pay (cash) and accrual (deferred).",
+             "On the deals CLS CRE arranges, preferred equity returns have generally ranged from 8 to 14 percent, depending on deal risk profile, capital provider, and structure. Higher-risk transitional deals price at the wider end; stabilized lower-risk deals at the tighter end. The return can be paid currently in cash, accrue and be paid later, or a mix of the two."),
+        ],
+        "regex": [
+            (r"On a \$40M multifamily acquisition with \$26M of senior debt.*?favored pref equity for sponsor returns\.",
+             "Illustration with round numbers, not a specific closed loan. On a $100M multifamily project with a senior loan at 75 percent of cost ($75M), a sponsor wants to reach 85 percent combined leverage and cut its equity from $25M to $15M, and weighs two ways to raise the $10M. Option one is $10M of preferred equity: the investor earns a capped return in the 8 to 14 percent range, about $0.8M to $1.4M a year, and the sponsor keeps the upside above it. Option two is $10M of common equity from a joint venture partner: there is no fixed return, but the partner shares in the profit alongside the sponsor under the partnership agreement, so the sponsor gives up a share of the upside. The choice turns on how much upside the sponsor expects to keep and how much control it will share.",
+             "A preferred layer priced inside"),
+        ],
+        "html_only": [(FOOT_OLD,
+                       "Ranges are those CLS CRE arranges on transactions from a $10M minimum, with combined leverage up to 85 percent of cost. They are not offers, and pricing depends on the property, sponsor and structure."),
+                      (LABEL_OLD, LABEL_NEW), (ANON_OLD, ANON_NEW)],
+    },
+    "bridge-loan-vs-preferred-equity": {
+        "pairs": [
+            ("Roughly 11 to 15 percent, often part current pay and part accrual",
+             "8 to 14 percent on deals we arrange, current pay or accruing"),
+            ("Pushes total capitalization to 85 to 90 percent stacked on a senior",
+             "From a $10M minimum, pushes total capitalization up to 85 percent of cost stacked on a senior"),
+            ("Total proceeds need to reach 85 to 90 percent of cost, beyond senior leverage",
+             "Total proceeds need to reach up to 85 percent of cost, beyond senior leverage, with a layer of $10M or more"),
+        ],
+        "regex": [
+            (r"A sponsor under contract on a transitional mixed-use asset.*?preserving the in-place senior rate\.",
+             "Illustration with round numbers, not a specific closed loan. A sponsor is under contract on a $100M transitional mixed-use asset with an assumable senior loan at 75 percent of cost ($75M) and needs $10M more to fund repositioning. Option one is to refinance the senior into a new bridge, which gives up the in-place senior rate. Option two is $10M of preferred equity layered above the senior, which lifts total capitalization to 85 percent of cost and leaves the senior untouched. The layer costs about $0.8M to $1.4M a year at 8 to 14 percent, and the investor will want control rights if the plan slips. The choice turns on how the in-place senior rate compares with current bridge pricing and how much control the sponsor will share.",
+             "Option one is to refinance the senior"),
+        ],
+        "html_only": [(FOOT_OLD_JUNE,
+                       "Preferred equity ranges are those CLS CRE arranges on transactions from a $10M minimum, with combined leverage up to 85 percent of cost. Bridge loan pricing is indicative and varies with the property, sponsor and structure. None of it is an offer."),
+                      (LABEL_OLD, LABEL_NEW), (ANON_OLD, ANON_NEW)],
+    },
+    "mezzanine-vs-bridge-junior": {
+        "pairs": [
+            ("Both sit behind the senior, both carry all-in coupons in the 10 to 15 percent range, and both fund the gap",
+             "Both sit behind the senior and both fund the gap"),
+            ("Rate range (May 2026)", "Pricing on deals we arrange"),
+            ("11 to 15 percent (fixed or floating, all-in)", "Mezzanine has generally priced at 8 to 14 percent (fixed or floating, all-in)"),
+            ("10 to 14 percent (fixed or floating, all-in)", "Set deal by deal (fixed or floating, all-in)"),
+            ("Mezz tranche typically covers 60 to 75 percent LTV band",
+             "Sits above the senior loan; combined leverage up to 85 percent of cost"),
+            ("$3M to $50M+ mezz tranche", "From a $10M minimum"),
+            ("Pricing between the two structures is comparable but not identical, and the spread reflects the remedy differential.",
+             "Pricing between the two structures can differ, and the remedy differential is one reason."),
+            ("Bridge junior lenders accept a slower second-mortgage foreclosure path, which they price slightly tighter (10 to 14 percent versus 11 to 15 percent for mezz) because the direct real-property collateral is more familiar to capital markets investors and easier to model in a workout scenario. On deals where both structures are available, the 50 to 100 basis point pricing difference between mezz and a B-note may matter less than the operational simplicity of a same-lender whole-loan split.",
+             "Bridge junior lenders accept a slower second-mortgage foreclosure path, and some price that more tightly because the direct real-property collateral is more familiar to capital markets investors and easier to model in a workout scenario. On the deals we arrange, mezzanine has generally priced at 8 to 14 percent, and B-note pricing is set deal by deal. Where both structures are available, the pricing difference may matter less than the operational simplicity of a same-lender whole-loan split."),
+            ("(typically 12 to 16 percent)", "(8 to 14 percent on the deals we arrange)"),
+            ("which coupon is 50 basis points tighter", "which coupon looks tighter"),
+            ("As of May 2026, mezzanine debt is pricing in the 11 to 15 percent all-in range depending on leverage, asset type, market, and deal complexity. Bridge junior debt and B-notes are pricing slightly tighter, in the 10 to 14 percent range, because the direct real-property collateral carries less structural risk premium for capital providers.",
+             "On the deals CLS CRE arranges, mezzanine debt has generally priced at 8 to 14 percent all-in, depending on leverage, asset type, market, and deal complexity. Bridge junior debt and B-notes are priced deal by deal, and the direct real-property collateral can carry less structural risk premium for some capital providers."),
+            ("a higher implied cost of capital in the 12 to 16 percent range",
+             "a cost of capital above senior debt, in the 8 to 14 percent range on the deals we arrange"),
+        ],
+        "regex": [
+            (r"On a 210-unit value-add multifamily acquisition.*?intercreditor risk premium\.",
+             "Illustration with round numbers, not a specific closed loan. On a $100M multifamily project, the sponsor wants more proceeds than the senior lender will provide and compares two paths. Path one is a whole loan from a single bridge lender, split into an A-note and a B-note: one lender holds both tranches, so there is no intercreditor negotiation and one set of loan documents. Path two is a $10M mezzanine loan from a separate provider: the senior lender must consent, an intercreditor agreement has to be negotiated, the lender takes a pledge of the ownership interests, and the layer costs between $0.8M and $1.4M a year at 8 to 14 percent. The decision turns first on what the senior lender permits, then on how much time the intercreditor agreement adds.",
+             "Path one is a whole loan from a single bridge lender"),
+        ],
+        "html_only": [(FOOT_OLD,
+                       "The mezzanine range is that CLS CRE arranges on transactions from a $10M minimum, with combined leverage up to 85 percent of cost. B-note pricing is set deal by deal. None of it is an offer, and pricing depends on the property, sponsor and structure."),
+                      (LABEL_OLD, LABEL_NEW), (ANON_OLD, ANON_NEW)],
+    },
+}
+
+
+def _apply_cmp3(s, slug, html=False):
+    spec = CMP3[slug]
+    s = _apply_pairs(s, spec["pairs"])
+    for pat, new, done_marker in spec["regex"]:
+        if re.search(pat, s, re.S):
+            s = re.sub(pat, lambda m, new=new: new, s, flags=re.S)
+        else:
+            assert done_marker in s, f"story not found for {slug}"
+    if html:
+        s = _apply_pairs(s, spec["html_only"])
+    return s
+
+
+def _cmp3_html(slug):
+    return lambda t: _apply_cmp3(t, slug, html=True)
 
 
 # ----------------------------------------------------------------------------- discovery files
@@ -364,6 +485,9 @@ TRANSFORMS = {
     "glossary/preferred-equity.html": glossary_html("preferred-equity"),
     "comparisons/mezzanine-vs-preferred-equity.html": cmp_html,
     "_generator/data/comparisons.json": cmp_json,
+    "comparisons/preferred-equity-vs-common-equity-jv.html": _cmp3_html("preferred-equity-vs-common-equity-jv"),
+    "comparisons/bridge-loan-vs-preferred-equity.html": _cmp3_html("bridge-loan-vs-preferred-equity"),
+    "comparisons/mezzanine-vs-bridge-junior.html": _cmp3_html("mezzanine-vs-bridge-junior"),
     "blog/index.html": blog_index,
     "sitemap-blog.xml": sitemap,
     "sitemap.xml": sitemap,

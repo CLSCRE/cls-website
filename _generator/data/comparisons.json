@@ -3293,7 +3293,7 @@
       },
       {
         "feature": "Return structure",
-        "side_a": "Preferred return (typically 11 to 18% total)",
+        "side_a": "Preferred return (8 to 14% on deals we arrange)",
         "side_b": "Pari passu pro rata; full upside participation"
       },
       {
@@ -3343,8 +3343,8 @@
       },
       {
         "feature": "Capital stack typical",
-        "side_a": "10 to 25% of stack",
-        "side_b": "30 to 65% of stack"
+        "side_a": "From $10M; with the senior loan, up to 85% of cost",
+        "side_b": "The remainder after the debt and preferred layers"
       }
     ],
     "when_a_intro": "Preferred equity wins when the sponsor wants to maximize promote economics on the upside, when the capital provider has a defined return target rather than full upside participation, or when the sponsor wants more control over governance and exit timing.",
@@ -3352,13 +3352,13 @@
       "Sponsor wants to maximize sponsor promote on the upside",
       "Capital provider has defined return target (e.g., specialty pref equity fund)",
       "Sponsor wants control over governance and decision-making",
-      "Capital stack at the gap between senior debt and common (10 to 25% of project)",
+      "Capital stack with a gap of $10M or more between senior debt and common",
       "Senior lender prohibits or restricts mezz, making pref equity the alternative",
-      "Preferred return cost is acceptable to sponsor (typically 11 to 18% total)"
+      "Preferred return cost is acceptable to sponsor (8 to 14% on deals we arrange)"
     ],
     "when_b_intro": "Common equity JV wins when the sponsor wants institutional capital partnership with shared upside, when the deal benefits from operational and capital partnership beyond just funding, or when the deal size and complexity require a true joint venture structure.",
     "when_b_bullets": [
-      "Larger institutional partnership ($10M to $50M+ of equity)",
+      "Larger institutional partnership ($10M or more of equity)",
       "Sponsor wants operational partner beyond just capital",
       "Capital partner provides specific operational expertise (development, property management, leasing)",
       "Pari passu return structure aligns sponsor and capital partner interests",
@@ -3366,17 +3366,17 @@
       "Deal complexity requires shared decision-making"
     ],
     "decision_framework": [
-      "Calculate the after-promote economics. Pref equity at 14 percent total return on 20 percent of the stack costs less than common equity JV at 18 percent IRR on 30 percent of the stack with the GP promote layered on top. Run side-by-side waterfall scenarios under realistic deal returns.",
-      "Evaluate the sponsor promote structure. Pref equity preserves promote on the upside above the preferred return. Common equity JV typically has a sponsor promote layered above a hurdle (often 8 to 10 percent) and the sponsor promote can exceed the pref equity equivalent on strong deals.",
+      "Calculate the after-promote economics. A preferred layer priced inside the 8 to 14 percent range usually costs the sponsor less than common equity JV underwritten to a higher return, with the GP promote layered on top. Only a side-by-side waterfall shows it for a given deal, so run both under realistic deal returns.",
+      "Evaluate the sponsor promote structure. Pref equity preserves promote on the upside above the preferred return. Common equity JV typically has a sponsor promote layered above a hurdle return and the sponsor promote can exceed the pref equity equivalent on strong deals.",
       "Consider governance preference. Pref equity provides limited control rights (consent on major decisions, force-sale at milestone). Common equity JV provides full pari passu governance with co-management. Sponsors who want operational control prefer pref equity; sponsors who want institutional partnership prefer common JV.",
       "Evaluate capital provider profile. Specialty pref equity funds and mezz-with-equity providers offer pref equity. Institutional capital partners (REIT, family office, pension fund partners) typically offer common equity JV. The capital partner's typical structure shapes the available product."
     ],
-    "real_deal_example": "On a $40M multifamily acquisition with $26M of senior debt at 70 percent LTV and a $14M equity gap, the sponsor evaluated $14M of preferred equity at 14 percent total return versus $14M of common equity JV at projected 19 percent IRR with a 90/10 sponsor promote above an 8 percent hurdle. Under base case projections (16 percent total project IRR), the pref equity structure delivered the sponsor approximately $2.4M of promote economics and the capital partner received exactly 14 percent. The common equity JV delivered the sponsor approximately $1.6M of promote (smaller because the capital partner participated pari passu). On the upside scenario (20 percent project IRR), the pref equity structure preserved more upside for the sponsor; the common equity JV captured more upside for the capital partner. The sponsor took preferred equity because the deal economics under realistic scenarios favored pref equity for sponsor returns.",
+    "real_deal_example": "Illustration with round numbers, not a specific closed loan. On a $100M multifamily project with a senior loan at 75 percent of cost ($75M), a sponsor wants to reach 85 percent combined leverage and cut its equity from $25M to $15M, and weighs two ways to raise the $10M. Option one is $10M of preferred equity: the investor earns a capped return in the 8 to 14 percent range, about $0.8M to $1.4M a year, and the sponsor keeps the upside above it. Option two is $10M of common equity from a joint venture partner: there is no fixed return, but the partner shares in the profit alongside the sponsor under the partnership agreement, so the sponsor gives up a share of the upside. The choice turns on how much upside the sponsor expects to keep and how much control it will share.",
     "expert_quote": "Preferred equity versus common equity JV is fundamentally a question of who captures the upside. Pref equity caps the capital provider's return; common JV shares it. Sponsors with confidence in deal returns favor pref equity; sponsors who want stable institutional partnerships favor common JV.",
     "faqs": [
       {
         "q": "What is preferred equity?",
-        "a": "Preferred equity is a junior equity instrument that sits between senior debt and common equity in the capital stack. It receives a fixed preferred return (typically 11 to 18% total, often a mix of current pay and accrual) before common equity receives any distributions."
+        "a": "Preferred equity is a junior equity instrument that sits between senior debt and common equity in the capital stack. It receives a fixed preferred return (8 to 14% on deals we arrange, current pay or accruing) before common equity receives any distributions."
       },
       {
         "q": "Is preferred equity debt or equity?",
@@ -3404,7 +3404,7 @@
       },
       {
         "q": "What is the typical preferred return level?",
-        "a": "Total preferred returns typically range from 11 to 18 percent depending on deal risk profile, capital provider, and structure. Higher-risk transitional deals price at the wider end; stabilized lower-risk deals at the tighter end. Returns are typically split between current pay (cash) and accrual (deferred)."
+        "a": "On the deals CLS CRE arranges, preferred equity returns have generally ranged from 8 to 14 percent, depending on deal risk profile, capital provider, and structure. Higher-risk transitional deals price at the wider end; stabilized lower-risk deals at the tighter end. The return can be paid currently in cash, accrue and be paid later, or a mix of the two."
       }
     ],
     "related_links": [
@@ -6145,12 +6145,12 @@
       "title": "Mezzanine Debt vs Bridge Junior Debt / B-Notes | Commercial Lending Solutions",
       "meta_description": "Side-by-side comparison of mezzanine debt and bridge junior debt (B-notes) for CRE. Structure, pricing, intercreditor mechanics, and when each subordinate capital path wins."
     },
-    "lead": "When a senior lender caps proceeds at 60 to 65 percent LTV but a sponsor needs 75 to 80 percent of total cost, two subordinate-capital paths exist: mezzanine debt and bridge junior debt, also called B-notes or B-pieces. Both sit behind the senior, both carry all-in coupons in the 10 to 15 percent range, and both fund the gap between senior LTV and total capitalization. The structural mechanics, however, are fundamentally different. Mezzanine debt is secured by a pledge of the borrower's equity interests in the property-owning entity, not by a direct mortgage lien. Bridge junior debt is a recorded second mortgage on the real estate itself. That distinction drives everything downstream: foreclosure remedy, intercreditor requirements, lender appetite, and deal timeline. Understanding which path fits your deal, your senior lender's preferences, and your exit horizon is the difference between a clean close and a costly restructuring.",
+    "lead": "When a senior lender caps proceeds at 60 to 65 percent LTV but a sponsor needs 75 to 80 percent of total cost, two subordinate-capital paths exist: mezzanine debt and bridge junior debt, also called B-notes or B-pieces. Both sit behind the senior and both fund the gap between senior LTV and total capitalization. The structural mechanics, however, are fundamentally different. Mezzanine debt is secured by a pledge of the borrower's equity interests in the property-owning entity, not by a direct mortgage lien. Bridge junior debt is a recorded second mortgage on the real estate itself. That distinction drives everything downstream: foreclosure remedy, intercreditor requirements, lender appetite, and deal timeline. Understanding which path fits your deal, your senior lender's preferences, and your exit horizon is the difference between a clean close and a costly restructuring.",
     "table": [
       {
-        "feature": "Rate range (May 2026)",
-        "side_a": "11 to 15 percent (fixed or floating, all-in)",
-        "side_b": "10 to 14 percent (fixed or floating, all-in)"
+        "feature": "Pricing on deals we arrange",
+        "side_a": "Mezzanine has generally priced at 8 to 14 percent (fixed or floating, all-in)",
+        "side_b": "Set deal by deal (fixed or floating, all-in)"
       },
       {
         "feature": "Security instrument",
@@ -6159,12 +6159,12 @@
       },
       {
         "feature": "Loan-to-value range",
-        "side_a": "Mezz tranche typically covers 60 to 75 percent LTV band",
+        "side_a": "Sits above the senior loan; combined leverage up to 85 percent of cost",
         "side_b": "B-note tranche typically covers 60 to 80 percent LTV band"
       },
       {
         "feature": "Typical loan size",
-        "side_a": "$3M to $50M+ mezz tranche",
+        "side_a": "From a $10M minimum",
         "side_b": "$2M to $100M+ B-note tranche (whole-loan splits common)"
       },
       {
@@ -6229,11 +6229,11 @@
     "decision_framework": [
       "The first question is not pricing, it is what your senior lender will permit. A conduit CMBS lender or an agency program will flatly reject a recorded second mortgage but will often consent to mezzanine debt subject to an intercreditor agreement they have pre-approved. A bridge lender originating a whole loan can split it internally into an A-note and B-note without any intercreditor friction at all, because the same entity holds both pieces. Knowing your senior lender's constraints before you approach junior capital providers saves weeks of wasted outreach.",
       "Intercreditor negotiation is the most underestimated variable in mezz deal timelines. A standard intercreditor agreement governs the mezz lender's cure rights (how long the mezz lender has to cure a senior default before the senior can accelerate), the standstill period (how long the mezz lender must wait before exercising its own remedies), and the purchase option (the mezz lender's right to acquire the senior loan at par). Negotiating a non-standard intercreditor from scratch between two parties who have not worked together before can add 30 to 45 days to close. If speed matters, ask whether the senior lender has an approved intercreditor form before engaging a mezz provider.",
-      "Pricing between the two structures is comparable but not identical, and the spread reflects the remedy differential. Mezzanine lenders accept a UCC foreclosure path that is faster in theory but can be contested if the borrower challenges the pledge. Bridge junior lenders accept a slower second-mortgage foreclosure path, which they price slightly tighter (10 to 14 percent versus 11 to 15 percent for mezz) because the direct real-property collateral is more familiar to capital markets investors and easier to model in a workout scenario. On deals where both structures are available, the 50 to 100 basis point pricing difference between mezz and a B-note may matter less than the operational simplicity of a same-lender whole-loan split.",
-      "Preferred equity is the third path, and sponsors should understand where it sits relative to mezz and B-notes before ruling it out. Preferred equity is not debt at all; it is an equity investment in the property-owning entity that carries a preferred return (typically 12 to 16 percent) and a promoted interest or redemption right. It does not require a mortgage lien or a UCC pledge and does not trigger intercreditor requirements in the same way. However, preferred equity investors have fewer legal protections than secured lenders in a default scenario, and their remedy path (forcing a sale or buyout of their interest) is governed by the operating agreement rather than by foreclosure law. Preferred equity is most common when both mezz and B-note structures are blocked by the senior lender's restrictions, or when the sponsor wants to avoid the debt-service load of a high-coupon subordinate loan on an asset with thin current cash flow."
+      "Pricing between the two structures can differ, and the remedy differential is one reason. Mezzanine lenders accept a UCC foreclosure path that is faster in theory but can be contested if the borrower challenges the pledge. Bridge junior lenders accept a slower second-mortgage foreclosure path, and some price that more tightly because the direct real-property collateral is more familiar to capital markets investors and easier to model in a workout scenario. On the deals we arrange, mezzanine has generally priced at 8 to 14 percent, and B-note pricing is set deal by deal. Where both structures are available, the pricing difference may matter less than the operational simplicity of a same-lender whole-loan split.",
+      "Preferred equity is the third path, and sponsors should understand where it sits relative to mezz and B-notes before ruling it out. Preferred equity is not debt at all; it is an equity investment in the property-owning entity that carries a preferred return (8 to 14 percent on the deals we arrange) and a promoted interest or redemption right. It does not require a mortgage lien or a UCC pledge and does not trigger intercreditor requirements in the same way. However, preferred equity investors have fewer legal protections than secured lenders in a default scenario, and their remedy path (forcing a sale or buyout of their interest) is governed by the operating agreement rather than by foreclosure law. Preferred equity is most common when both mezz and B-note structures are blocked by the senior lender's restrictions, or when the sponsor wants to avoid the debt-service load of a high-coupon subordinate loan on an asset with thin current cash flow."
     ],
-    "real_deal_example": "On a 210-unit value-add multifamily acquisition in a major West Coast market, the sponsor needed a 78 percent loan-to-cost capital stack. A regional debt fund provided a senior bridge loan at 65 percent LTC. The gap was filled with a B-note originated by the same debt fund and structured as a whole-loan split, with the senior A-note at 65 percent LTC priced at SOFR plus 275 and the B-note covering the 65 to 78 percent band priced at a fixed 12.5 percent. Because the same lender held both tranches, there was no intercreditor negotiation, and the transaction closed in 31 days. The sponsor initially explored a separate mezz provider but the whole-loan B-note path saved an estimated three to four weeks and roughly 50 basis points in all-in cost, because the single-lender structure eliminated the mezz provider's intercreditor risk premium.",
-    "expert_quote": "Most sponsors see mezz and B-notes as interchangeable gap-fillers. They are not. The collateral, the remedy, and the intercreditor mechanics are different products entirely. The right answer is usually determined by what your senior lender will allow, not by which coupon is 50 basis points tighter on a term sheet.",
+    "real_deal_example": "Illustration with round numbers, not a specific closed loan. On a $100M multifamily project, the sponsor wants more proceeds than the senior lender will provide and compares two paths. Path one is a whole loan from a single bridge lender, split into an A-note and a B-note: one lender holds both tranches, so there is no intercreditor negotiation and one set of loan documents. Path two is a $10M mezzanine loan from a separate provider: the senior lender must consent, an intercreditor agreement has to be negotiated, the lender takes a pledge of the ownership interests, and the layer costs between $0.8M and $1.4M a year at 8 to 14 percent. The decision turns first on what the senior lender permits, then on how much time the intercreditor agreement adds.",
+    "expert_quote": "Most sponsors see mezz and B-notes as interchangeable gap-fillers. They are not. The collateral, the remedy, and the intercreditor mechanics are different products entirely. The right answer is usually determined by what your senior lender will allow, not by which coupon looks tighter on a term sheet.",
     "faqs": [
       {
         "q": "What is the difference between mezzanine debt and a B-note in commercial real estate?",
@@ -6253,7 +6253,7 @@
       },
       {
         "q": "What are current mezzanine debt and B-note rates in 2026?",
-        "a": "As of May 2026, mezzanine debt is pricing in the 11 to 15 percent all-in range depending on leverage, asset type, market, and deal complexity. Bridge junior debt and B-notes are pricing slightly tighter, in the 10 to 14 percent range, because the direct real-property collateral carries less structural risk premium for capital providers. Both tranches are typically floating-rate on bridge deals and fixed on longer-term perm structures."
+        "a": "On the deals CLS CRE arranges, mezzanine debt has generally priced at 8 to 14 percent all-in, depending on leverage, asset type, market, and deal complexity. Bridge junior debt and B-notes are priced deal by deal, and the direct real-property collateral can carry less structural risk premium for some capital providers. Both tranches are typically floating-rate on bridge deals and fixed on longer-term perm structures."
       },
       {
         "q": "What is a whole-loan structure and how does it relate to B-notes?",
@@ -6261,7 +6261,7 @@
       },
       {
         "q": "When should a sponsor consider preferred equity instead of mezzanine or a B-note?",
-        "a": "Preferred equity is the right path when both mezzanine and B-note structures are blocked by the senior lender's restrictions, or when the asset's current cash flow is too thin to service a high-coupon subordinate debt obligation. Preferred equity carries no fixed debt-service requirement, only a preferred return accrued to redemption. The tradeoff is weaker legal protection for the investor compared to a secured lender, and a higher implied cost of capital in the 12 to 16 percent range."
+        "a": "Preferred equity is the right path when both mezzanine and B-note structures are blocked by the senior lender's restrictions, or when the asset's current cash flow is too thin to service a high-coupon subordinate debt obligation. Preferred equity carries no fixed debt-service requirement, only a preferred return accrued to redemption. The tradeoff is weaker legal protection for the investor compared to a secured lender, and a cost of capital above senior debt, in the 8 to 14 percent range on the deals we arrange."
       },
       {
         "q": "Which asset types are best suited to mezzanine debt versus B-notes?",
@@ -9269,12 +9269,12 @@
       {
         "feature": "Typical cost (2026)",
         "side_a": "Roughly 7 to 10.5 percent, SOFR + 350 to 700 bps",
-        "side_b": "Roughly 11 to 15 percent, often part current pay and part accrual"
+        "side_b": "8 to 14 percent on deals we arrange, current pay or accruing"
       },
       {
         "feature": "Leverage reach",
         "side_a": "70 to 80 percent of value as a single instrument",
-        "side_b": "Pushes total capitalization to 85 to 90 percent stacked on a senior"
+        "side_b": "From a $10M minimum, pushes total capitalization up to 85 percent of cost stacked on a senior"
       },
       {
         "feature": "Security",
@@ -9308,7 +9308,7 @@
     "when_b_intro": "Preferred equity wins when a senior loan is already in place or maxed out and the deal needs additional proceeds without disturbing the senior.",
     "when_b_bullets": [
       "An attractive existing senior loan is in place and refinancing it would be expensive or impossible",
-      "Total proceeds need to reach 85 to 90 percent of cost, beyond senior leverage",
+      "Total proceeds need to reach up to 85 percent of cost, beyond senior leverage, with a layer of $10M or more",
       "Gap capital is needed for acquisition, renovation, or a partner buyout above the senior",
       "The provider will accept an equity pledge and control rights rather than a property lien",
       "The sponsor wants to preserve common equity upside while filling a defined funding gap"
@@ -9318,7 +9318,7 @@
       "Size the gap: if a good senior is already in place and you only need the top slice of capital, preferred equity fills it without touching the senior.",
       "Price the blended cost: compare the all-in cost of one bridge versus a senior plus preferred equity stack, and weigh the control rights the preferred provider will require."
     ],
-    "real_deal_example": "A sponsor under contract on a transitional mixed-use asset had a favorable assumable senior loan but needed additional proceeds to fund repositioning. Rather than refinance the senior into a new bridge, preferred equity layered above it covered the gap, pushing total leverage near 88 percent while preserving the in-place senior rate.",
+    "real_deal_example": "Illustration with round numbers, not a specific closed loan. A sponsor is under contract on a $100M transitional mixed-use asset with an assumable senior loan at 75 percent of cost ($75M) and needs $10M more to fund repositioning. Option one is to refinance the senior into a new bridge, which gives up the in-place senior rate. Option two is $10M of preferred equity layered above the senior, which lifts total capitalization to 85 percent of cost and leaves the senior untouched. The layer costs about $0.8M to $1.4M a year at 8 to 14 percent, and the investor will want control rights if the plan slips. The choice turns on how the in-place senior rate compares with current bridge pricing and how much control the sponsor will share.",
     "expert_quote": "If you do not have a senior worth keeping, a single bridge is almost always cleaner and cheaper. Preferred equity earns its higher cost when there is a good senior in place and you only need the top slice of the stack.",
     "faqs": [
       {
