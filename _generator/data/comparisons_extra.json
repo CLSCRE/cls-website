@@ -691,5 +691,173 @@
   "cta_title": "Get a Broker Quote Next to Your Bank's",
   "cta_description": "Send us the deal, and your bank's offer if you have one. We will show you what the wider market looks like.",
   "decision_title": "How to Decide Between a Broker and Your Bank"
+ },
+ {
+  "slug": "owner-occupied-vs-investment-mixed-use",
+  "short_title": "Owner-User vs Investor Mixed-Use",
+  "h1": "Owner-User vs Investor Mixed-Use Financing: Who Occupies the Building Decides the Lender",
+  "name_a": "Owner-User Mixed-Use",
+  "name_b": "Investor-Owned Mixed-Use",
+  "published": "2026-05-28",
+  "seo": {
+   "title": "Owner-User vs Investor Mixed-Use Financing | CLS CRE",
+   "meta_description": "Owner-user vs investor mixed-use financing compared: current rate ranges, leverage, DSCR, recourse, prepayment and which lender fits apartments over retail."
+  },
+  "lead": "Mixed-use buildings, apartments over ground-floor retail or office, are financed one of two ways depending on who controls the commercial space. When the owner or an affiliate occupies part of the building, a bank usually underwrites the building and the occupant together, on a full-recourse portfolio loan. When the owner is an investor who leases everything to third parties, the loan is sized on the building's net operating income alone, and agency, CMBS, life company and bank lenders can all compete. As of November 24, 2026, the CLS CRE rate table shows agency loans at 6.16 to 7.11 percent, CMBS at 6.41 to 7.41 percent and bank loans at 6.91 to 8.16 percent. CLS CRE arranges commercial mortgages from $2 million to $100 million and up, so this page is about loans on the building, not loans to a business. Below $2 million, a local bank or credit union is usually the right call.",
+  "table": [
+   {
+    "feature": "Rate range (Nov 24, 2026)",
+    "side_a": "6.91 to 8.16 percent (bank portfolio loan, the usual lender for owner-users)",
+    "side_b": "6.16 to 7.11 percent (agency, residential-heavy buildings); 6.41 to 7.41 percent (CMBS); 6.91 to 8.16 percent (bank)"
+   },
+   {
+    "feature": "Who the lender underwrites",
+    "side_a": "The building plus the occupying operator: their financials, their banking relationship and their guarantee",
+    "side_b": "The building's net operating income and the sponsor's balance sheet; no operator to underwrite"
+   },
+   {
+    "feature": "Typical lender",
+    "side_a": "Regional or community bank, or credit union, often with a deposit relationship expected",
+    "side_b": "Agency lender, CMBS conduit, life company or bank portfolio, depending on the residential share and loan size"
+   },
+   {
+    "feature": "Maximum LTV",
+    "side_a": "Up to about 75 percent on a bank portfolio loan, set by the lender and the operator's strength",
+    "side_b": "70 to 75 percent (bank portfolio); 65 to 70 percent (CMBS or life company)"
+   },
+   {
+    "feature": "Loan size through CLS CRE",
+    "side_a": "$2 million and up; smaller owner-user loans usually go directly to a local bank or credit union",
+    "side_b": "$2 million to $100 million and up, depending on the capital source"
+   },
+   {
+    "feature": "Recourse",
+    "side_a": "Full recourse to the borrower and guarantors is typical",
+    "side_b": "Full recourse on bank loans; non-recourse with standard carve outs on CMBS and agency execution"
+   },
+   {
+    "feature": "Minimum DSCR",
+    "side_a": "1.20x to 1.30x, sometimes blended with the operator's own cash flow",
+    "side_b": "1.20x to 1.30x on property net operating income (bank); 1.25x (CMBS)"
+   },
+   {
+    "feature": "Commercial space limits",
+    "side_a": "No fixed cap, but the lender wants the owner's use documented and any lease to an affiliate at market rent",
+    "side_b": "Agency programs generally limit commercial income to a minority share of the property (commonly around 20 percent); CMBS and bank loans have no fixed cap"
+   },
+   {
+    "feature": "Amortization",
+    "side_a": "20 to 25 years, often with a 5 to 10 year term and a balloon",
+    "side_b": "20 to 25 years (bank); 25 to 30 years (CMBS); agency terms run longer on residential-heavy buildings"
+   },
+   {
+    "feature": "Prepayment",
+    "side_a": "Negotiated, often a step-down over 3 to 5 years",
+    "side_b": "Bank: negotiated; CMBS: yield maintenance or defeasance; agency: yield maintenance or a declining schedule"
+   },
+   {
+    "feature": "Closing timeline",
+    "side_a": "45 to 75 days",
+    "side_b": "45 to 75 days (bank); 60 to 90 days (CMBS); 90 to 120 days (agency)"
+   },
+   {
+    "feature": "After closing",
+    "side_a": "A covenant to stay owner-occupied is common; moving out or leasing the owner space to a third party can need lender consent or a repricing",
+    "side_b": "Standard reporting and DSCR tests; no occupancy requirement and no restriction on future tenants"
+   }
+  ],
+  "when_a_intro": "An owner-user structure fits when the person or company buying the building will actually use part of it and wants a lender who values that relationship. Banks that hold loans on their own balance sheet can weigh the occupant's financial strength alongside the building's income, which sometimes lets the loan size closer to the leverage cap than the building could support alone.",
+  "when_a_bullets": [
+   "The buyer or an affiliated company will occupy a meaningful share of the commercial space and plans to stay for the life of the loan",
+   "The occupant has strong, documented financials that add to the building's cash flow in the lender's coverage test",
+   "The buyer already banks with a regional or community lender and values a single relationship covering the loan and the operating accounts",
+   "Full recourse is acceptable in exchange for a simpler process and a lender that knows the local market",
+   "The building is a stable, mostly leased property where the owner space is a small part of total income, so lease-up risk is low",
+   "A 5 to 10 year term with a balloon fits the plan, with a refinance or sale expected before maturity"
+  ],
+  "when_b_intro": "An investor structure fits when every unit and storefront is leased to third parties, or will be after lease-up. With no occupant to underwrite, the building's net operating income sizes the loan, and that opens the door to non-recourse agency or CMBS execution on larger deals and to the widest range of lenders.",
+  "when_b_bullets": [
+   "The buyer is an investor or entity with no operating business that would occupy the commercial space",
+   "Residential units produce most of the income, which can qualify the building for agency execution at the lowest range in the rate table",
+   "Non-recourse financing matters, which points to CMBS or agency rather than a bank portfolio loan",
+   "The loan is large enough, $2 million and up, that conduit, life company and agency lenders will quote alongside banks",
+   "The commercial space is vacant or in lease-up and will be leased to third parties at stabilization, a plan an owner-user covenant would restrict",
+   "The sponsor wants no occupancy covenant, so the building can be re-tenanted, refinanced or sold without lender consent on use"
+  ],
+  "decision_framework": [
+   "Start with one question: who will occupy the commercial space, and for how long? Write down the square footage the owner or an affiliate will use, the square footage leased to others, and the income each produces. That one page decides which lenders to approach, because a bank evaluating an owner-user loan and an agency lender evaluating an investor loan are answering different questions.",
+   "Next, size the loan on both tests, because the lower one wins. Leverage caps the loan at a percentage of value, and coverage caps it at the debt the net operating income can carry at the minimum DSCR. On many mixed-use buildings in today's rate range, coverage is the binding limit, not leverage. An owner-user loan can sometimes get closer to the leverage cap because the lender counts the occupant's cash flow; an investor loan is sized on the building alone.",
+   "Then weigh recourse and flexibility against price. Bank portfolio loans are usually full recourse and carry an owner-occupancy covenant on owner-user deals. CMBS and agency loans are non-recourse with standard carve outs, but they bring defeasance or yield maintenance and a longer closing. If the owner may leave the building within a few years, price the loan as if the occupancy covenant will be tested, and ask the lender in advance what happens when the owner space is leased out.",
+   "Finally, check the loan against the $2 million floor. CLS CRE arranges commercial mortgages from $2 million to $100 million and up. A smaller building is usually better served by a local bank or credit union directly, and a loan that is large enough can be shopped across the agency, CMBS, life company and bank channels at the same time, which is where the pricing spread in the rate table comes from."
+  ],
+  "real_deal_example": "Take a $12 million mixed-use building in Los Angeles with 14 apartments over a retail floor, producing $780,000 of net operating income. An investor leasing every space to third parties is sized on that income. At the 1.25x CMBS coverage standard and a 7.5 percent rate on a 25-year amortization, the building carries about $7.0 million of debt, roughly 58 percent of value, below the 70 percent leverage cap, so coverage sets the loan. If the buyer's own company occupies part of the retail floor and the bank counts that company's cash flow, the same building can sometimes support a larger loan that sits closer to the leverage cap, in exchange for full recourse and an occupancy covenant. The takeaway is that the same property produces two different loans depending on who occupies it, and the structure should be chosen before any lender is approached.",
+  "faqs": [
+   {
+    "q": "What is the difference between owner-user and investor mixed-use financing?",
+    "a": "Owner-user financing is for a building where the owner or an affiliate occupies part of the commercial space; a bank usually underwrites the building and the occupant together on a full-recourse loan. Investor financing is for a building leased entirely to third parties; the loan is sized on net operating income and agency, CMBS, life company and bank lenders can all quote."
+   },
+   {
+    "q": "What does mixed-use financing cost right now?",
+    "a": "As of November 24, 2026, the CLS CRE rate table shows agency loans at 6.16 to 7.11 percent, CMBS at 6.41 to 7.41 percent and bank loans at 6.91 to 8.16 percent. Agency pricing applies to residential-heavy buildings; bank loans are the usual route for owner-users. Final pricing depends on the property, sponsor and structure."
+   },
+   {
+    "q": "Does the lender care how much of the building I occupy?",
+    "a": "Yes. Occupancy changes who the lender underwrites and which lenders will quote. A bank may write an owner-user loan that is tied to an occupancy covenant, while agency and CMBS lenders look at the building's income as an investment. Document your occupied square footage and the income from every other space before you approach a lender."
+   },
+   {
+    "q": "Can I get a mixed-use loan under $2 million through CLS CRE?",
+    "a": "CLS CRE arranges commercial mortgages from $2 million to $100 million and up through 1,000+ lenders. For a loan below $2 million, a local bank or credit union approached directly is usually the better fit."
+   },
+   {
+    "q": "Can agency financing work on a mixed-use building?",
+    "a": "Sometimes. Agency programs are built for residential buildings and generally limit commercial income to a minority share of the property, commonly around 20 percent. Buildings with more retail or office income usually go to CMBS, a life company or a bank. Confirm the current limit with the lender, since it varies by program."
+   },
+   {
+    "q": "What happens to an owner-user loan if I move out of the owner space?",
+    "a": "Many owner-user loans carry a covenant to stay owner-occupied. Leasing the owner space to a third party can require lender consent or a repricing toward investor terms. Ask the lender before closing how that situation is handled."
+   },
+   {
+    "q": "Is non-recourse financing available on mixed-use buildings?",
+    "a": "Yes, on investor-owned buildings. CMBS and agency loans are generally non-recourse with standard carve outs, while bank portfolio loans are usually full recourse. Non-recourse execution tends to need a larger loan and a stabilized building."
+   },
+   {
+    "q": "How long does a mixed-use loan take to close?",
+    "a": "Typical timelines are 45 to 75 days for a bank loan, 60 to 90 days for CMBS and 90 to 120 days for agency. A clean rent roll, leases for every space and a clear occupancy plan shorten all of them."
+   }
+  ],
+  "related_links": [
+   {
+    "href": "property/mixed-use.html",
+    "title": "Mixed-Use Property Financing",
+    "sub": "All capital sources for mixed-use buildings"
+   },
+   {
+    "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+    "title": "Agency vs CMBS for Stabilized Multifamily",
+    "sub": "How the two non-recourse channels compare"
+   },
+   {
+    "href": "comparisons/cmbs-vs-bank-middle-market-permanent.html",
+    "title": "CMBS vs Bank for Permanent Loans",
+    "sub": "Conduit and balance sheet execution compared"
+   },
+   {
+    "href": "comparisons/multifamily-vs-mixed-use-financing.html",
+    "title": "Multifamily vs Mixed-Use Financing",
+    "sub": "How the commercial share changes the lender"
+   },
+   {
+    "href": "financing/bridge-loans.html",
+    "title": "Bridge Loans",
+    "sub": "Short-term financing for mixed-use acquisitions and rehab"
+   },
+   {
+    "href": "property/multifamily.html",
+    "title": "Multifamily Financing",
+    "sub": "Agency and conventional apartment lending"
+   }
+  ],
+  "rate_note": "Ranges dated November 24, 2026 come from the CLS CRE rate table, which is built from current Treasury, SOFR and prime benchmarks. Pricing depends on the property, sponsor and structure.",
+  "decision_title": "How to Choose Between Owner-User and Investor Financing"
  }
 ]
