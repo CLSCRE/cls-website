@@ -247,7 +247,7 @@
       },
       {
         "q": "What are typical CMBS rates and terms?",
-        "a": "CMBS loans are typically fixed-rate 5, 7, or 10 year terms with 25 to 30 year amortization. Current rates range from 5.50% to 7.50% depending on the property type, leverage, and market. The rate is a spread over the matching-term treasury or swap rate, locked at securitization."
+        "a": "CMBS loans are typically fixed-rate 5, 7, or 10 year terms with 25 to 30 year amortization. Current rates range from {rt:cmbs} depending on the property type, leverage, and market. The rate is a spread over the matching-term treasury or swap rate, locked at securitization."
       },
       {
         "q": "Can I get a cash-out refinance with CMBS?",
