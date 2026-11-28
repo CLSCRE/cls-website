@@ -281,16 +281,10 @@ CMP_PAIRS = [
      "the after-tax cost of mezz can come out closer to preferred equity than the headline rates suggest, narrowing the apparent pricing gap. Confirm the treatment with your tax advisor."),
     ("Mezz typically prices at 10 to 14 percent current pay (sometimes with PIK accrual). Common equity typically targets 15 to 22 percent IRR, depending on deal risk profile. Mezz fills the gap between senior debt and common equity at a cost between the two.",
      "On the deals we arrange, mezzanine has generally priced at 8 to 14 percent, current pay or accruing. Common equity has no fixed rate: it keeps whatever is left after every layer above it is paid, so investors underwrite it to a higher return than either layer. Mezz fills the gap between senior debt and common equity at a cost between the two."),
-    ("On a $40M Class B multifamily acquisition with a Fannie Mae senior at 70 percent LTC and a 15 percent gap to the sponsor's 85 percent LTC equity-light target, two execution paths emerged. Option one was a Fannie-approved mezz lender providing $6M (15 percent of LTC) at 12 percent current pay with a Fannie intercreditor on standard agency terms. Option two was a private credit preferred equity provider offering $6M at 14 percent total return (10 percent current pay, 4 percent accrual) with force-sale rights at year 5 if the property had not exited. The sponsor took the mezz execution because the senior was Fannie (which has a clean intercreditor framework with its approved mezz list), the after-tax cost on the mezz was approximately 8.5 percent versus 10 percent on the preferred (assuming a 30 percent partnership tax rate), and the standstill protected the sponsor from forced action during the planned value-add period.",
-     "Illustration with round numbers, not a specific closed loan. On a $100M multifamily project with a senior loan at 75 percent of cost ($75M), a sponsor wants to reach 85 percent combined leverage and cut its equity from $25M to $15M. Option one is a $10M mezzanine loan: the senior lender must consent and sign an intercreditor agreement, the lender's remedy is to foreclose on the pledged ownership interests, and the layer costs between $0.8M and $1.4M a year at 8 to 14 percent. Option two is $10M of preferred equity at the same price range: no second loan to repay, but the investor's operating agreement rights can include control triggers if agreed tests are missed. The decision turns first on what the senior loan documents permit, then on how much control the sponsor will give up if the plan slips."),
 ]
 CMP_HTML_ONLY = [
     ("Rate ranges reflect indicative pricing as of May 2026, sourced from active CLS CRE quote pipeline. Pricing is property, sponsor, and structure dependent.",
      "Ranges are those CLS CRE arranges on transactions from a $10M minimum, with combined leverage up to 85 percent of cost. They are not offers, and pricing depends on the property, sponsor and structure."),
-    ('<div class="section-label reveal">From the CLS CRE Pipeline</div>\n  <h2 class="section-title reveal">A Real Decision in Action</h2>',
-     '<div class="section-label reveal">Worked example</div>\n  <h2 class="section-title reveal">A Decision in Action</h2>'),
-    ("All deal references anonymize borrower and lender identities and use city-level geography only.",
-     "Illustrative numbers only. Not a specific loan, not an offer."),
 ]
 
 
@@ -355,14 +349,10 @@ CMP3 = {
             ("Total preferred returns typically range from 11 to 18 percent depending on deal risk profile, capital provider, and structure. Higher-risk transitional deals price at the wider end; stabilized lower-risk deals at the tighter end. Returns are typically split between current pay (cash) and accrual (deferred).",
              "On the deals CLS CRE arranges, preferred equity returns have generally ranged from 8 to 14 percent, depending on deal risk profile, capital provider, and structure. Higher-risk transitional deals price at the wider end; stabilized lower-risk deals at the tighter end. The return can be paid currently in cash, accrue and be paid later, or a mix of the two."),
         ],
-        "regex": [
-            (r"On a \$40M multifamily acquisition with \$26M of senior debt.*?favored pref equity for sponsor returns\.",
-             "Illustration with round numbers, not a specific closed loan. On a $100M multifamily project with a senior loan at 75 percent of cost ($75M), a sponsor wants to reach 85 percent combined leverage and cut its equity from $25M to $15M, and weighs two ways to raise the $10M. Option one is $10M of preferred equity: the investor earns a capped return in the 8 to 14 percent range, about $0.8M to $1.4M a year, and the sponsor keeps the upside above it. Option two is $10M of common equity from a joint venture partner: there is no fixed return, but the partner shares in the profit alongside the sponsor under the partnership agreement, so the sponsor gives up a share of the upside. The choice turns on how much upside the sponsor expects to keep and how much control it will share.",
-             "A preferred layer priced inside"),
-        ],
+        "regex": [],
         "html_only": [(FOOT_OLD,
                        "Ranges are those CLS CRE arranges on transactions from a $10M minimum, with combined leverage up to 85 percent of cost. They are not offers, and pricing depends on the property, sponsor and structure."),
-                      (LABEL_OLD, LABEL_NEW), (ANON_OLD, ANON_NEW)],
+                      ],
     },
     "bridge-loan-vs-preferred-equity": {
         "pairs": [
@@ -373,14 +363,10 @@ CMP3 = {
             ("Total proceeds need to reach 85 to 90 percent of cost, beyond senior leverage",
              "Total proceeds need to reach up to 85 percent of cost, beyond senior leverage, with a layer of $10M or more"),
         ],
-        "regex": [
-            (r"A sponsor under contract on a transitional mixed-use asset.*?preserving the in-place senior rate\.",
-             "Illustration with round numbers, not a specific closed loan. A sponsor is under contract on a $100M transitional mixed-use asset with an assumable senior loan at 75 percent of cost ($75M) and needs $10M more to fund repositioning. Option one is to refinance the senior into a new bridge, which gives up the in-place senior rate. Option two is $10M of preferred equity layered above the senior, which lifts total capitalization to 85 percent of cost and leaves the senior untouched. The layer costs about $0.8M to $1.4M a year at 8 to 14 percent, and the investor will want control rights if the plan slips. The choice turns on how the in-place senior rate compares with current bridge pricing and how much control the sponsor will share.",
-             "Option one is to refinance the senior"),
-        ],
+        "regex": [],
         "html_only": [(FOOT_OLD_JUNE,
                        "Preferred equity ranges are those CLS CRE arranges on transactions from a $10M minimum, with combined leverage up to 85 percent of cost. Bridge loan pricing is indicative and varies with the property, sponsor and structure. None of it is an offer."),
-                      (LABEL_OLD, LABEL_NEW), (ANON_OLD, ANON_NEW)],
+                      ],
     },
     "mezzanine-vs-bridge-junior": {
         "pairs": [
@@ -403,14 +389,10 @@ CMP3 = {
             ("a higher implied cost of capital in the 12 to 16 percent range",
              "a cost of capital above senior debt, in the 8 to 14 percent range on the deals we arrange"),
         ],
-        "regex": [
-            (r"On a 210-unit value-add multifamily acquisition.*?intercreditor risk premium\.",
-             "Illustration with round numbers, not a specific closed loan. On a $100M multifamily project, the sponsor wants more proceeds than the senior lender will provide and compares two paths. Path one is a whole loan from a single bridge lender, split into an A-note and a B-note: one lender holds both tranches, so there is no intercreditor negotiation and one set of loan documents. Path two is a $10M mezzanine loan from a separate provider: the senior lender must consent, an intercreditor agreement has to be negotiated, the lender takes a pledge of the ownership interests, and the layer costs between $0.8M and $1.4M a year at 8 to 14 percent. The decision turns first on what the senior lender permits, then on how much time the intercreditor agreement adds.",
-             "Path one is a whole loan from a single bridge lender"),
-        ],
+        "regex": [],
         "html_only": [(FOOT_OLD,
                        "The mezzanine range is that CLS CRE arranges on transactions from a $10M minimum, with combined leverage up to 85 percent of cost. B-note pricing is set deal by deal. None of it is an offer, and pricing depends on the property, sponsor and structure."),
-                      (LABEL_OLD, LABEL_NEW), (ANON_OLD, ANON_NEW)],
+                      ],
     },
 }
 
