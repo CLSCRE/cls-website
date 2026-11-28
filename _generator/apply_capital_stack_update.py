@@ -291,7 +291,7 @@ CMP_HTML_ONLY = [
 def cmp_html(t):
     for old, new in CMP_PAIRS + CMP_HTML_ONLY:
         t = rep(t, old, new)
-    return t
+    return add_anon_note(t)
 
 
 def cmp_json_slug(t, slug, fn):
@@ -329,6 +329,15 @@ LABEL_NEW = ('<div class="section-label reveal">Worked example</div>\n'
              '  <h2 class="section-title reveal">A Decision in Action</h2>')
 ANON_OLD = "All deal references anonymize borrower and lender identities and use city-level geography only."
 ANON_NEW = "Illustrative numbers only. Not a specific loan, not an offer."
+ANON_NOTE = ("The $10M minimum and the 85 percent combined leverage cited on this page are typical, not hard limits, "
+             "and individual transactions can fall outside them.")
+
+
+def add_anon_note(t):
+    """Trevor 2026-11-27: the real deals in these stories sit outside the typical terms, so say so."""
+    if ANON_NOTE in t:
+        return t
+    return rep(t, ANON_OLD, ANON_OLD + " " + ANON_NOTE, count=1)
 
 CMP3 = {
     "preferred-equity-vs-common-equity-jv": {
@@ -407,6 +416,7 @@ def _apply_cmp3(s, slug, html=False):
             assert done_marker in s, f"story not found for {slug}"
     if html:
         s = _apply_pairs(s, spec["html_only"])
+        s = add_anon_note(s)
     return s
 
 
