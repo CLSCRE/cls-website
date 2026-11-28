@@ -1,0 +1,734 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}(function(){var o=false;try{o=navigator.globalPrivacyControl===true||localStorage.getItem('cls_privacy_optout')==='1'}catch(e){o=navigator.globalPrivacyControl===true}window.clsOptOut=o;if(o)gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'})})();</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PH6TD3TC');</script>
+<!-- End Google Tag Manager -->
+<!-- Microsoft Clarity (project xwb62nsa5g, UX behavior analytics; added 2026-08-02) -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};var go=function(){if(go.d||c.clsOptOut)return;go.d=1;t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);};c.addEventListener("load",function(){["pointerdown","keydown","scroll","touchstart"].forEach(function(e){c.addEventListener(e,go,{once:true,passive:true});});setTimeout(go,4000);});})(window,document,"clarity","script","xwb62nsa5g");</script>
+<!-- gtag helper for inline event calls (calculator_lead, newsletter_subscribe).
+     GA4 page view tracking is handled by the GA4 - All Pages tag inside
+     GTM-PH6TD3TC. Page views are NOT registered here (send_page_view:false)
+     so sessions don't double-count. Events still push to dataLayer where GTM
+     can pick them up via custom event triggers. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msvalidate.01" content="225BB642F6747A2334CFA00B98891AA8" />
+<title>Multifamily Loan Sizing Calculator: LTV, DSCR, Debt Yield</title>
+<meta name="description" content="Free multifamily loan sizing calculator: enter value, NOI and rate to see the maximum loan under LTV, DSCR and debt yield tests by lender type.">
+<link rel="canonical" href="https://clscre.com/tools/multifamily-loan-sizing-calculator.html">
+<meta property="og:title" content="Multifamily Loan Sizing Calculator: LTV, DSCR, Debt Yield">
+<meta property="og:description" content="Free multifamily loan sizing calculator: enter value, NOI and rate to see the maximum loan under LTV, DSCR and debt yield tests by lender type.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Commercial Lending Solutions">
+<meta property="og:url" content="https://clscre.com/tools/multifamily-loan-sizing-calculator.html">
+<meta property="og:image" content="https://clscre.com/images/cls-og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://clscre.com/images/cls-og-image.png">
+<meta name="twitter:title" content="Multifamily Loan Sizing Calculator: LTV, DSCR, Debt Yield">
+<meta name="twitter:description" content="Free multifamily loan sizing calculator: enter value, NOI and rate to see the maximum loan under LTV, DSCR and debt yield tests by lender type.">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="CLS CRE Insights" href="https://clscre.com/rss.xml">
+<link rel="preload" href="../fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://clscre.com/#organization","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com","logo":"https://clscre.com/images/cls-logo-skyline.png","image":"https://clscre.com/images/cls-og-image.png","telephone":"+13107584042","email":"loans@clscre.com","address":{"@type":"PostalAddress","streetAddress":"7951 Blackburn Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90048","addressCountry":"US"},"sameAs":["https://www.linkedin.com/company/clscre","https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.instagram.com/commerciallendingsolutions/","https://www.facebook.com/profile.php?id=61591993674306","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/","https://x.com/LAloanbroker","https://www.bbb.org/us/ca/los-angeles/profile/real-estate-loans/commercial-lending-solutions-1216-1000067041","https://www.youtube.com/@clscre"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Commercial Lending Solutions","alternateName":"CLS CRE","url":"https://clscre.com"}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Multifamily Loan Sizing Calculator","description":"Free multifamily loan sizing calculator: enter value, NOI and rate to see the maximum loan under LTV, DSCR and debt yield tests by lender type.","url":"https://clscre.com/tools/multifamily-loan-sizing-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"All","dateModified":"2026-11-27","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the maximum multifamily loan calculated?","acceptedAnswer":{"@type":"Answer","text":"Lenders size a multifamily loan to the smallest result of three tests. Loan to value multiplies the property value by the maximum LTV. Debt service coverage divides net operating income by the minimum DSCR and by the annual loan constant, which comes from the interest rate and amortization. Debt yield divides net operating income by the minimum debt yield. The calculator runs all three and reports the lowest as the maximum loan, along with the test that sets it."}},{"@type":"Question","name":"Why is my DSCR loan so much lower than my LTV loan?","acceptedAnswer":{"@type":"Answer","text":"At current rates the coverage test usually binds first. A 1.25x DSCR at a 6.5% rate and 30 year amortization supports roughly 10.5 times net operating income as a loan, while a 75% LTV on a building trading at a 5.5% cap rate supports about 13.6 times. Leverage only binds when rates fall, cap rates rise, or the building is valued conservatively. The multifamily underwriting guide at clscre.com/resources/multifamily-underwriting-guide.html walks through a full example."}},{"@type":"Question","name":"What net operating income should I enter?","acceptedAnswer":{"@type":"Answer","text":"Enter underwritten NOI, not the seller's trailing 12 month figure. Lenders rebuild income and expenses with a vacancy floor, a market management fee, reassessed property taxes and replacement reserves, which typically lowers NOI. If you only have the seller's number, run the NOI calculator first, or expect the lender's figure to come in lower than yours."}},{"@type":"Question","name":"What interest rate should I use?","acceptedAnswer":{"@type":"Answer","text":"Each lender preset uses the midpoint of CLS CRE's indicative range as of November 24, 2026: agency 6.16% to 7.11%, CMBS 6.41% to 7.41%, life insurance companies 6.10% to 6.70% and banks 6.91% to 8.16%. Your actual rate depends on leverage, property quality, term and the day you lock, so overwrite the rate field with a lender's quote when you have one."}},{"@type":"Question","name":"Can I use this calculator for a bridge loan?","acceptedAnswer":{"@type":"Answer","text":"Not directly. Bridge lenders size to loan to cost or after repair value and look at a takeout at stabilization rather than a permanent coverage test today. You can still use the calculator to test the permanent takeout: enter the stabilized NOI and projected value, pick a lender type, and compare the result with the bridge balance. The guide includes a worked bridge takeout test."}},{"@type":"Question","name":"Is this a loan quote?","acceptedAnswer":{"@type":"Answer","text":"No. The calculator shows how the three standard tests interact so you can see what drives your proceeds. Actual terms depend on the lender, the property, the sponsor and the market on the day of the quote. CLS CRE can size your deal against 1,000+ lenders and tell you which structures fit."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clscre.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://clscre.com/tools/"},{"@type":"ListItem","position":3,"name":"Multifamily Loan Sizing Calculator","item":"https://clscre.com/tools/multifamily-loan-sizing-calculator.html"}]}
+</script>
+<link rel="stylesheet" href="../css/global.min.css?v=87671edc28">
+<link rel="stylesheet" href="../css/pages.min.css?v=3cbb23d80d">
+<style>
+.skip-link{position:absolute;top:-40px;left:0;background:var(--navy,#153D63);color:#fff;padding:8px 16px;font-size:14px;font-weight:600;text-decoration:none;border-radius:0 0 4px 0;z-index:10000;transition:top .15s}
+.skip-link:focus{top:0;outline:3px solid #00A676;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH6TD3TC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+﻿<style>
+/* Keyboard-accessible dropdowns: show on focus-within in addition to hover */
+.nav-dropdown:focus-within .nav-dropdown-menu{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+</style>
+<nav class="nav" id="nav" aria-label="Main navigation">
+<div class="nav-inner">
+  <a href="../index.html" class="nav-logo"><img src="../images/cls-logo-emblem.png" alt="Commercial Lending Solutions" width="120" height="120"><span class="nav-logo-text">Commercial<br>Lending Solutions</span></a>
+  <div class="nav-links" id="navLinks">
+    <style id="la-nav-fit">@media (min-width:769px) and (max-width:1280px){.nav-links{gap:16px!important}.nav-links .nav-phone{font-size:0!important;margin-right:0!important}.nav-logo-text{display:none!important}}</style>
+    <div class="nav-dropdown">
+      <a href="../financing/commercial-mortgage-broker-los-angeles.html" aria-haspopup="true" aria-expanded="false" id="ddLosAngeles">Markets</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddLosAngeles">
+        <a href="../markets/los-angeles/">Los Angeles</a>
+        <a href="../markets/san-diego/">San Diego</a>
+        <a href="../states/california.html">California</a>
+        <a href="../la-california-closed-deals.html">Closed Deals</a>
+        <a href="../locations.html">All Locations</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="../index.html#programs" aria-haspopup="true" aria-expanded="false" id="ddFinancing">Financing</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddFinancing">
+        <a href="../financing/permanent-loans.html">Permanent Loans</a>
+        <a href="../financing/commercial-mortgage-loans.html">Commercial Mortgage Loans</a>
+        <a href="../financing/multifamily-loans.html">Multifamily Loans</a>
+        <a href="../financing/construction-loans.html">Construction Loans</a>
+        <a href="../financing/bridge-loans.html">Bridge Loans</a>
+        
+        <a href="../financing/mezzanine.html">Mezzanine & Preferred Equity</a>
+        <a href="../financing/specialty.html">Specialty Financing</a>
+        <a href="../financing/agency-loans.html">Agency Loans</a>
+        <a href="../financing/hud-fha-loans.html">HUD/FHA Multifamily Loans</a>
+        <a href="../financing/cmbs-loans.html">CMBS Loans</a>
+        <a href="../financing/net-lease-financing.html">Net Lease Financing</a>
+        <a href="../financing/life-company-loans.html">Life Company Loans</a>
+        
+        <a href="../financing/hard-money-loans.html">Hard Money Loans</a>
+        <a href="../financing/portfolio-loans.html">Portfolio Loans</a>
+        
+        
+        <a href="../financing/bridge-to-perm-loans.html">Bridge-to-Perm Loans</a>
+        <a href="../financing/acquisition-bridge-loans.html">Acquisition Bridge Loans</a>
+        <a href="../financing/value-add-bridge-loans.html">Value-Add Bridge Loans</a>
+        <a href="../financing/1031-exchange-bridge-loans.html">1031 Exchange Bridge Loans</a>
+        <a href="../financing/multifamily-bridge-loans.html">Multifamily Bridge Loans</a>
+        <a href="../financing/industrial-bridge-loans.html">Industrial Bridge Loans</a>
+        <a href="../financing/office-bridge-loans.html">Office Bridge Loans</a>
+        <a href="../financing/retail-bridge-loans.html">Retail Bridge Loans</a>
+        <a href="../financing/mixed-use-bridge-loans.html">Mixed-Use Bridge Loans</a>
+        <a href="../financing/multifamily-construction-loans.html">Multifamily Construction Loans</a>
+        <a href="../financing/build-to-rent-loans.html">Build-to-Rent Loans</a>
+        <a href="../financing/construction-to-perm-loans.html">Construction-to-Perm Loans</a>
+        <a href="../financing/land-loans.html">Land Loans</a>
+        <a href="../financing/self-storage-financing.html">Self-Storage Financing</a>
+        <a href="../financing/hotel-motel-financing.html">Hotel & Motel Financing</a>
+        <a href="../financing/student-housing-loans.html">Student Housing Loans</a>
+        <a href="../financing/senior-housing-financing.html">Senior Housing Financing</a>
+        <a href="../financing/medical-office-financing.html">Medical Office Financing</a>
+        <a href="../financing/sale-leaseback-financing.html">Sale-Leaseback Financing</a>
+        <a href="../financing/office-conversion-loans.html">Office Conversion Loans</a>
+        <a href="../financing/preferred-equity.html">Preferred Equity</a>
+        <a href="../financing/industrial-construction-loans.html">Industrial Construction Loans</a>
+        <a href="../financing/cpace-financing.html">C-PACE Financing</a>
+        <a href="../financing/owner-occupied-commercial.html">Owner-Occupied Commercial Loans</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="../index.html#transactions" aria-haspopup="true" aria-expanded="false" id="ddProperties">Properties</a>
+      <div class="nav-dropdown-menu" aria-labelledby="ddProperties">
+        <a href="../property/multifamily.html">Multifamily</a>
+        <a href="../property/industrial.html">Industrial</a>
+        <a href="../property/retail.html">Retail</a>
+        <a href="../property/office.html">Office</a>
+        <a href="../property/mixed-use.html">Mixed-Use</a>
+        <a href="../property/hospitality.html">Hospitality</a>
+        <a href="../financing/self-storage-financing.html">Self-Storage</a>
+        <a href="../property/data-centers.html">Data Centers</a>
+        <a href="../financing/senior-housing-financing.html">Senior Living</a>
+        <a href="../financing/medical-office-financing.html">Medical Office</a>
+        <a href="../property/manufactured-housing.html">Manufactured Housing</a>
+        <a href="../property/parking.html">Parking</a>
+        <a href="../affordable-housing/index.html">Affordable &amp; EDI Hub</a>
+        <a href="../multifamily/index.html">Multifamily Hub</a>
+        <a href="../industrial/index.html">Industrial Hub</a>
+        <a href="../commercial/index.html">Commercial Hub</a>
+      </div>
+    </div>
+    <a href="../about.html">About</a>
+    <a href="../insights/index.html">Insights</a>
+    <a href="../market-data.html">Market Data</a>
+    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+        <a href="tel:+13107584042" class="nav-phone" style="display:inline-flex;align-items:center;gap:6px;color:var(--navy);font-weight:700;font-size:14px;margin-right:8px" aria-label="Call 310.758.4042">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      310.758.4042
+    </a>
+    <a href="../apply.html" class="nav-cta">Apply Now</a>
+  </div>
+  <button class="nav-mobile" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</nav>
+<main id="main-content">
+<style>
+.ms-tabs{flex-wrap:wrap}.ms-tabs .calc-tab{flex:1 1 auto;min-width:88px}
+.calc-field select{width:100%;height:44px;padding:0 14px;border:1px solid var(--gray-200);border-radius:6px;font-size:15px;font-family:var(--font-body);background:var(--white);color:var(--gray-700)}
+.calc-field select:focus{outline:none;border-color:var(--green)}
+.ms-hint{font-size:12px;color:var(--gray-500);margin:4px 0 0;line-height:1.5}
+.ms-detail-binding{background:rgba(0,106,78,.07);padding:10px 12px;margin:0 -12px;border-radius:6px}
+.ms-detail-binding .calc-detail-label,.ms-detail-binding .calc-detail-value{color:var(--green);font-weight:700}
+.ms-table-wrap{overflow-x:auto;margin-top:16px;-webkit-overflow-scrolling:touch}
+.ms-table-wrap .calc-table{min-width:560px}
+.ms-table-wrap .calc-table td.num,.ms-table-wrap .calc-table th.num{text-align:right;white-space:nowrap}
+.ms-table-wrap .calc-table tr.ms-sel td{background:rgba(0,106,78,.07);font-weight:600}
+.ms-section-note{font-size:13px;color:var(--gray-500);max-width:800px;line-height:1.6;margin-top:12px}
+.ms-error{color:#b91c1c;font-size:13px;margin-top:6px;display:none}
+.ms-steps{max-width:800px;margin:16px 0 0;padding:0 0 0 20px}.ms-steps li{font-size:15px;color:var(--gray-700);line-height:1.7;margin-bottom:10px}
+</style>
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<ol>
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="../tools/index.html">Calculators</a></li>
+  <li><span>Multifamily Loan Sizing Calculator</span></li>
+</ol>
+</nav>
+
+<section class="page-hero">
+<div class="section-inner">
+  <div class="section-label reveal">Free Calculator</div>
+  <h1 class="reveal">Multifamily Loan Sizing Calculator</h1>
+  <p class="reveal">Lenders do not lend what you ask for. They lend the smallest amount that passes three tests: loan to value, debt service coverage and debt yield. Enter your property value and net operating income, pick a lender type, and see which test sets your loan.</p>
+  <div class="page-tldr reveal" role="doc-abstract" style="background:var(--gray-50);border-left:3px solid var(--green);padding:14px 18px;margin:16px 0 8px;font-size:15px;line-height:1.6;color:var(--gray-700);border-radius:0 4px 4px 0;text-align:left">
+    <strong style="color:var(--navy)">Quick answer:</strong> A 40 unit building worth $9.5 million with $517,466 of underwritten NOI qualifies for $7.6 million on an 80% agency LTV, but only about $5.38 million on a 1.25x DSCR at 6.64% over 30 years. Coverage, not leverage, sets the loan. The calculator below is preloaded with that example so you can change the inputs and watch the answer move.
+  </div>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <div class="calc-layout">
+    <div class="calc-panel">
+      <h2 class="section-title">Size Your Loan</h2>
+      <div class="calc-tabs ms-tabs" id="msPresets" role="group" aria-label="Lender type">
+        <button type="button" class="calc-tab active" data-preset="agency">Agency</button>
+        <button type="button" class="calc-tab" data-preset="cmbs">CMBS</button>
+        <button type="button" class="calc-tab" data-preset="life">Life Co</button>
+        <button type="button" class="calc-tab" data-preset="bank">Bank</button>
+        <button type="button" class="calc-tab" data-preset="custom">Custom</button>
+      </div>
+      <div class="calc-form">
+        <div class="calc-field">
+          <label for="msValue">Property value or purchase price (lower of the two)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="msValue" inputmode="decimal" value="9,500,000" autocomplete="off"></div>
+        </div>
+        <div class="calc-field">
+          <label for="msNoi">Underwritten net operating income (annual)</label>
+          <div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="text" id="msNoi" inputmode="decimal" value="517,466" autocomplete="off"></div>
+          <p class="ms-hint">Use the lender's NOI, after a vacancy floor, market management fee, reassessed taxes and reserves, not the seller's trailing 12 months.</p>
+        </div>
+        <div class="calc-row">
+          <div class="calc-field">
+            <label for="msRate">Interest rate</label>
+            <div class="calc-input-wrap"><input type="text" id="msRate" inputmode="decimal" value="6.64" autocomplete="off"><span class="calc-suffix">%</span></div>
+          </div>
+          <div class="calc-field">
+            <label for="msAmort">Amortization</label>
+            <select id="msAmort">
+              <option value="25">25 years</option>
+              <option value="30" selected>30 years</option>
+              <option value="35">35 years</option>
+              <option value="40">40 years</option>
+              <option value="0">Interest only</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-field">
+            <label for="msLtv">Maximum LTV</label>
+            <div class="calc-input-wrap"><input type="text" id="msLtv" inputmode="decimal" value="80" autocomplete="off"><span class="calc-suffix">%</span></div>
+          </div>
+          <div class="calc-field">
+            <label for="msDscr">Minimum DSCR</label>
+            <div class="calc-input-wrap"><input type="text" id="msDscr" inputmode="decimal" value="1.25" autocomplete="off"><span class="calc-suffix">x</span></div>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="msDy">Minimum debt yield (leave at 0 if the lender has no floor)</label>
+          <div class="calc-input-wrap"><input type="text" id="msDy" inputmode="decimal" value="0" autocomplete="off"><span class="calc-suffix">%</span></div>
+        </div>
+        <div class="ms-error" id="msError" role="alert">Enter a property value and a net operating income greater than zero.</div>
+        <p class="ms-hint" id="msPresetNote">Agency preset: 80% LTV, 1.25x DSCR, 30 year amortization, 6.64% (midpoint of the 6.16% to 7.11% indicative range, November 24, 2026). Every field is editable.</p>
+      </div>
+    </div>
+
+    <div class="calc-result" id="msResult" aria-live="polite">
+      <div class="calc-gauge gauge-green" id="msGauge">
+        <div class="gauge-value" id="msMax">--</div>
+        <div class="gauge-label">Maximum Loan</div>
+      </div>
+      <div class="calc-detail-grid">
+        <div class="calc-detail" id="msRowLtv"><span class="calc-detail-label" id="msLblLtv">Loan at the LTV limit</span><span class="calc-detail-value" id="msByLtv">--</span></div>
+        <div class="calc-detail" id="msRowDscr"><span class="calc-detail-label" id="msLblDscr">Loan at the DSCR limit</span><span class="calc-detail-value" id="msByDscr">--</span></div>
+        <div class="calc-detail" id="msRowDy"><span class="calc-detail-label" id="msLblDy">Loan at the debt yield floor</span><span class="calc-detail-value" id="msByDy">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Binding test</span><span class="calc-detail-value" id="msBinding">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Loan to value at maximum loan</span><span class="calc-detail-value" id="msImpLtv">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">DSCR at maximum loan</span><span class="calc-detail-value" id="msImpDscr">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Debt yield at maximum loan</span><span class="calc-detail-value" id="msImpDy">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Annual debt service</span><span class="calc-detail-value" id="msDebtService">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Monthly payment</span><span class="calc-detail-value" id="msMonthly">--</span></div>
+        <div class="calc-detail"><span class="calc-detail-label">Equity required (value less loan)</span><span class="calc-detail-value" id="msEquity">--</span></div>
+      </div>
+      <div class="calc-verdict" id="msVerdict"></div>
+      <a href="../apply.html" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px">Get This Deal Sized by a Broker &rarr;</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="content-section alt">
+<div class="section-inner">
+  <h2 class="reveal">Same Building, Four Lender Types</h2>
+  <p class="reveal">The table below applies each lender preset to the value and NOI you entered, so you can see how much loan each source supports on the same property. Rates are the midpoints of CLS CRE's indicative ranges as of November 24, 2026, and the leverage, coverage and debt yield levels are market norms, not quotes.</p>
+  <div class="ms-table-wrap reveal">
+    <table class="calc-table" id="msCompare">
+      <thead><tr><th>Lender type</th><th class="num">Maximum loan</th><th class="num">% of value</th><th>Binding test</th><th>Assumptions</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2 class="reveal" style="margin-top:48px">What a Rate Move Does to Your Loan</h2>
+  <p class="reveal">Because DSCR usually binds, the rate matters more than the leverage limit. This table reruns the selected lender's tests at rates above and below the one you entered.</p>
+  <div class="ms-table-wrap reveal">
+    <table class="calc-table" id="msSens">
+      <thead><tr><th>Interest rate</th><th class="num">Maximum loan</th><th class="num">Change vs. your rate</th><th>Binding test</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+</section>
+
+<section class="content-section">
+<div class="section-inner">
+  <h2 class="reveal">How the Calculator Sizes a Loan</h2>
+  <ol class="ms-steps reveal">
+    <li><strong>Loan to value:</strong> property value multiplied by the maximum LTV. Agency lenders go up to 80%, CMBS up to 75%, banks 65% to 75%, and life companies 50% to 65%.</li>
+    <li><strong>Debt service coverage:</strong> net operating income divided by the minimum DSCR, divided by the annual loan constant. The constant is the first year's principal and interest per dollar borrowed, so a 6.50% rate over 30 years is a 7.585% constant.</li>
+    <li><strong>Debt yield:</strong> net operating income divided by the minimum debt yield. CMBS and life company lenders commonly want 9% to 10% or better.</li>
+    <li><strong>Maximum loan:</strong> the smallest of the three. The test that produces it is the one to work on if you need more proceeds.</li>
+  </ol>
+  <p class="ms-section-note reveal">For a line by line example, including how a seller's $638,900 of NOI becomes $517,466 in a lender's model, read the <a href="../resources/multifamily-underwriting-guide.html" style="color:var(--green)">multifamily underwriting guide</a>. To build your NOI first, use the <a href="../tools/noi-calculator.html" style="color:var(--green)">NOI calculator</a>. To see which loan programs fit your deal, try the <a href="../tools/loan-qualifier.html" style="color:var(--green)">loan qualifier</a>.</p>
+</div>
+</section>
+
+<!-- RELATED TOOLS -->
+<section class="cross-links">
+<div class="section-inner">
+  <h2 class="reveal">Related Tools and Guides</h2>
+  <div class="cross-link-grid">
+    <a href="../resources/multifamily-underwriting-guide.html" class="cross-link-card reveal"><div class="cl-title">Multifamily Underwriting Guide</div><div class="cl-sub">The worked example behind this calculator</div></a>
+    <a href="../financing/multifamily-loans.html" class="cross-link-card reveal"><div class="cl-title">Multifamily Loans</div><div class="cl-sub">Agency, HUD, life company, CMBS, bank and bridge</div></a>
+    <a href="../tools/noi-calculator.html" class="cross-link-card reveal"><div class="cl-title">NOI Calculator</div><div class="cl-sub">Net operating income</div></a>
+    <a href="../tools/debt-yield-calculator.html" class="cross-link-card reveal"><div class="cl-title">Debt Yield Calculator</div><div class="cl-sub">NOI divided by loan amount</div></a>
+    <a href="../tools/ltv-calculator.html" class="cross-link-card reveal"><div class="cl-title">LTV Calculator</div><div class="cl-sub">Leverage analysis</div></a>
+    <a href="../tools/cap-rate-calculator.html" class="cross-link-card reveal"><div class="cl-title">Cap Rate Calculator</div><div class="cl-sub">Property valuation</div></a>
+  </div>
+</div>
+</section>
+
+<section class="faq-section alt" id="faq">
+<div class="section-inner">
+  <div class="section-label reveal">FAQ</div>
+  <h2 class="section-title reveal">Multifamily Loan Sizing FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-question">How is the maximum multifamily loan calculated?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Lenders size a multifamily loan to the smallest result of three tests. Loan to value multiplies the property value by the maximum LTV. Debt service coverage divides net operating income by the minimum DSCR and by the annual loan constant, which comes from the interest rate and amortization. Debt yield divides net operating income by the minimum debt yield. The calculator runs all three and reports the lowest as the maximum loan, along with the test that sets it.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">Why is my DSCR loan so much lower than my LTV loan?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">At current rates the coverage test usually binds first. A 1.25x DSCR at a 6.5% rate and 30 year amortization supports roughly 10.5 times net operating income as a loan, while a 75% LTV on a building trading at a 5.5% cap rate supports about 13.6 times. Leverage only binds when rates fall, cap rates rise, or the building is valued conservatively. The multifamily underwriting guide at clscre.com/resources/multifamily-underwriting-guide.html walks through a full example.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">What net operating income should I enter?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Enter underwritten NOI, not the seller's trailing 12 month figure. Lenders rebuild income and expenses with a vacancy floor, a market management fee, reassessed property taxes and replacement reserves, which typically lowers NOI. If you only have the seller's number, run the NOI calculator first, or expect the lender's figure to come in lower than yours.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">What interest rate should I use?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Each lender preset uses the midpoint of CLS CRE's indicative range as of November 24, 2026: agency 6.16% to 7.11%, CMBS 6.41% to 7.41%, life insurance companies 6.10% to 6.70% and banks 6.91% to 8.16%. Your actual rate depends on leverage, property quality, term and the day you lock, so overwrite the rate field with a lender's quote when you have one.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">Can I use this calculator for a bridge loan?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">Not directly. Bridge lenders size to loan to cost or after repair value and look at a takeout at stabilization rather than a permanent coverage test today. You can still use the calculator to test the permanent takeout: enter the stabilized NOI and projected value, pick a lender type, and compare the result with the bridge balance. The guide includes a worked bridge takeout test.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question">Is this a loan quote?</button>
+      <div class="faq-answer"><div class="faq-answer-inner">No. The calculator shows how the three standard tests interact so you can see what drives your proceeds. Actual terms depend on the lender, the property, the sponsor and the market on the day of the quote. CLS CRE can size your deal against 1,000+ lenders and tell you which structures fit.</div></div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="cta-section">
+<div class="section-inner" style="position:relative;z-index:1">
+  <h2>Get a Real Lender Quote</h2>
+  <p>Calculators give you an estimate. Commercial Lending Solutions sizes multifamily deals against agency, HUD, life company, CMBS, bank and bridge capital across 1,000+ lenders and routes yours to the sources whose constraints favor your structure.</p>
+  <a href="../apply.html" class="btn-primary">Apply for Financing &rarr;</a>
+  <div style="margin-top:20px">
+    <a href="tel:+13107584042" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:14px">Call: 310.758.4042</a>
+  </div>
+</div>
+</section>
+<script>
+(function(){
+  var PRESETS={
+    agency:{ltv:80,dscr:1.25,dy:0,amort:30,rate:6.64,label:'Agency (Fannie Mae DUS, Freddie Mac Optigo)',short:'Agency',range:'6.16% to 7.11%'},
+    cmbs:{ltv:75,dscr:1.30,dy:9,amort:30,rate:6.91,label:'CMBS conduit',short:'CMBS',range:'6.41% to 7.41%'},
+    life:{ltv:65,dscr:1.35,dy:9,amort:25,rate:6.40,label:'Life insurance company',short:'Life company',range:'6.10% to 6.70%'},
+    bank:{ltv:70,dscr:1.25,dy:9,amort:25,rate:7.54,label:'Bank balance sheet',short:'Bank',range:'6.91% to 8.16%'}
+  };
+  var current='agency', used=false;
+  function $(id){return document.getElementById(id)}
+  function num(id){return parseFloat(($(id).value||'').replace(/[^0-9.]/g,''))||0}
+  function usd(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0})}
+  function pct(n,d){return n.toFixed(d===undefined?1:d)+'%'}
+  function constant(rate,amort){
+    if(!amort) return rate/100;
+    var r=rate/1200,n=amort*12;
+    if(r<=0) return 1/amort;
+    return 12*r/(1-Math.pow(1+r,-n));
+  }
+  function size(value,noi,p){
+    var k=constant(p.rate,p.amort);
+    var byLtv=p.ltv>0?value*p.ltv/100:Infinity;
+    var byDscr=(p.dscr>0&&k>0)?noi/(p.dscr*k):Infinity;
+    var byDy=p.dy>0?noi/(p.dy/100):Infinity;
+    var max=Math.min(byLtv,byDscr,byDy);
+    var bind='';
+    if(max===byDscr) bind='DSCR'; else if(max===byDy) bind='Debt yield'; else bind='LTV';
+    return {k:k,byLtv:byLtv,byDscr:byDscr,byDy:byDy,max:max,bind:bind};
+  }
+  function readParams(){
+    return {ltv:num('msLtv'),dscr:num('msDscr'),dy:num('msDy'),amort:parseInt($('msAmort').value,10)||0,rate:num('msRate')};
+  }
+  function setParams(p){
+    $('msLtv').value=String(p.ltv);$('msDscr').value=p.dscr.toFixed(2);$('msDy').value=String(p.dy);
+    $('msRate').value=p.rate.toFixed(2);$('msAmort').value=String(p.amort);
+  }
+  function fmtField(id){var v=num(id);if(v)$(id).value=v.toLocaleString('en-US',{maximumFractionDigits:0})}
+  function setTab(key){
+    current=key;
+    var tabs=document.querySelectorAll('#msPresets .calc-tab');
+    for(var i=0;i<tabs.length;i++) tabs[i].classList.toggle('active',tabs[i].getAttribute('data-preset')===key);
+    var note=$('msPresetNote');
+    if(key==='custom') note.textContent='Custom: enter the leverage, coverage, debt yield, rate and amortization from a lender quote or term sheet.';
+    else {var p=PRESETS[key];note.textContent=p.short+' preset: '+p.ltv+'% LTV, '+p.dscr.toFixed(2)+'x DSCR'+(p.dy?', '+p.dy+'% debt yield':'')+', '+p.amort+' year amortization, '+p.rate.toFixed(2)+'% (midpoint of the '+p.range+' indicative range, November 24, 2026). Every field is editable.';}
+  }
+  function mark(rowId,on){var r=$(rowId);if(r){r.classList.toggle('ms-detail-binding',!!on)}}
+  function calc(){
+    var value=num('msValue'),noi=num('msNoi'),p=readParams();
+    var err=$('msError');
+    if(value<=0||noi<=0){
+      err.style.display='block';
+      ['msMax','msByLtv','msByDscr','msByDy','msBinding','msImpLtv','msImpDscr','msImpDy','msDebtService','msMonthly','msEquity'].forEach(function(id){$(id).textContent='--'});
+      $('msVerdict').textContent='';$('msCompare').tBodies[0].innerHTML='';$('msSens').tBodies[0].innerHTML='';
+      mark('msRowLtv',false);mark('msRowDscr',false);mark('msRowDy',false);
+      return;
+    }
+    err.style.display='none';
+    var r=size(value,noi,p);
+    if(!isFinite(r.max)){
+      $('msMax').textContent='--';$('msVerdict').textContent='Enter at least one lender test (a maximum LTV, a minimum DSCR or a minimum debt yield).';
+      return;
+    }
+    var loan=r.max,ds=loan*r.k;
+    $('msMax').textContent=usd(loan);
+    $('msLblLtv').textContent='Loan at the LTV limit ('+(p.ltv?pct(p.ltv,0):'none')+')';
+    $('msLblDscr').textContent='Loan at the DSCR limit ('+(p.dscr?p.dscr.toFixed(2)+'x':'none')+')';
+    $('msLblDy').textContent='Loan at the debt yield floor ('+(p.dy?pct(p.dy,1):'none')+')';
+    $('msByLtv').textContent=isFinite(r.byLtv)?usd(r.byLtv):'Not applied';
+    $('msByDscr').textContent=isFinite(r.byDscr)?usd(r.byDscr):'Not applied';
+    $('msByDy').textContent=isFinite(r.byDy)?usd(r.byDy):'Not applied';
+    $('msBinding').textContent=r.bind==='LTV'?'Loan to value':(r.bind==='DSCR'?'Debt service coverage':'Debt yield');
+    $('msImpLtv').textContent=pct(loan/value*100,1);
+    $('msImpDscr').textContent=(noi/ds).toFixed(2)+'x';
+    $('msImpDy').textContent=pct(noi/loan*100,2);
+    $('msDebtService').textContent=usd(ds);
+    $('msMonthly').textContent=usd(ds/12);
+    $('msEquity').textContent=usd(value-loan)+' ('+pct((value-loan)/value*100,1)+' of value)';
+    mark('msRowLtv',r.bind==='LTV');mark('msRowDscr',r.bind==='DSCR');mark('msRowDy',r.bind==='Debt yield');
+
+    var v='';
+    var per10k=p.dscr>0?10000/(p.dscr*r.k):0;
+    if(r.bind==='DSCR'){
+      v='<strong>Coverage sets this loan.</strong> ';
+      if(isFinite(r.byLtv)&&r.byLtv>loan) v+='Your LTV limit would allow '+usd(r.byLtv)+', but at '+p.rate.toFixed(2)+'% over '+(p.amort?p.amort+' years':'an interest only term')+' the DSCR test caps proceeds at '+usd(loan)+', or '+pct(loan/value*100,1)+' of value. ';
+      else v+='At '+p.rate.toFixed(2)+'% the DSCR test caps proceeds at '+usd(loan)+'. ';
+      v+='Each $10,000 of additional NOI adds about '+usd(per10k)+' of loan, and a lower rate or longer amortization lifts the cap too.';
+    } else if(r.bind==='Debt yield'){
+      v='<strong>Debt yield sets this loan.</strong> A '+pct(p.dy,1)+' floor on '+usd(noi)+' of NOI limits the loan to '+usd(loan)+', below the DSCR result of '+(isFinite(r.byDscr)?usd(r.byDscr):'n/a')+'. Raising NOI is the main lever; a lower rate will not help this test.';
+    } else {
+      v='<strong>Leverage sets this loan.</strong> Value times the '+pct(p.ltv,0)+' LTV limit gives '+usd(loan)+', which your income already supports at '+(noi/ds).toFixed(2)+'x coverage. More NOI will not raise the loan until the other tests catch up; a higher value or a higher LTV program would.';
+    }
+    $('msVerdict').innerHTML=v;
+
+    var rows='',keys=['agency','cmbs','life','bank'];
+    keys.forEach(function(k){
+      var q=PRESETS[k],s=size(value,noi,q);
+      var bt=s.bind==='LTV'?'Loan to value':(s.bind==='DSCR'?'DSCR':'Debt yield');
+      rows+='<tr'+(current===k?' class="ms-sel"':'')+'><td>'+q.label+'</td><td class="num">'+usd(s.max)+'</td><td class="num">'+pct(s.max/value*100,0)+'</td><td>'+bt+'</td><td>'+q.ltv+'% LTV, '+q.dscr.toFixed(2)+'x'+(q.dy?', '+q.dy+'% DY':'')+', '+(q.amort?q.amort+' yr':'IO')+', '+q.rate.toFixed(2)+'%</td></tr>';
+    });
+    $('msCompare').tBodies[0].innerHTML=rows;
+
+    var srows='',deltas=[-1,-0.5,0,0.5,1];
+    deltas.forEach(function(d){
+      var rate=p.rate+d;if(rate<=0)return;
+      var s=size(value,noi,{ltv:p.ltv,dscr:p.dscr,dy:p.dy,amort:p.amort,rate:rate});
+      var diff=s.max-loan;
+      var bt=s.bind==='LTV'?'Loan to value':(s.bind==='DSCR'?'DSCR':'Debt yield');
+      srows+='<tr'+(d===0?' class="ms-sel"':'')+'><td>'+rate.toFixed(2)+'%'+(d===0?' (yours)':'')+'</td><td class="num">'+usd(s.max)+'</td><td class="num">'+(d===0?'--':(diff>=0?'+':'-')+usd(Math.abs(diff)))+'</td><td>'+bt+'</td></tr>';
+    });
+    $('msSens').tBodies[0].innerHTML=srows;
+  }
+  function track(){
+    if(used) return; used=true;
+    if(typeof gtag==='function') gtag('event','calculator_used',{calculator:'multifamily_loan_sizing'});
+  }
+  var tabs=document.querySelectorAll('#msPresets .calc-tab');
+  for(var i=0;i<tabs.length;i++){
+    tabs[i].addEventListener('click',function(){
+      var key=this.getAttribute('data-preset');
+      if(key!=='custom') setParams(PRESETS[key]);
+      setTab(key);calc();track();
+    });
+  }
+  ['msValue','msNoi'].forEach(function(id){
+    $(id).addEventListener('input',function(){calc();track()});
+    $(id).addEventListener('blur',function(){fmtField(id)});
+  });
+  ['msRate','msLtv','msDscr','msDy'].forEach(function(id){
+    $(id).addEventListener('input',function(){if(current!=='custom')setTab('custom');calc();track()});
+  });
+  $('msAmort').addEventListener('change',function(){if(current!=='custom')setTab('custom');calc();track()});
+  setTab('agency');calc();
+})();
+</script>
+</main>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-bar" id="newsletter" style="padding:48px 0;background:var(--gray-50);border-top:1px solid var(--gray-200)">
+<div class="section-inner" style="max-width:700px;text-align:center">
+  <h2 style="font-family:var(--font-display);font-size:clamp(20px,2.5vw,28px);color:var(--navy);margin:0 0 8px">Weekly Market Intelligence</h2>
+  <p style="font-size:14px;color:var(--gray-500);margin:0 0 20px">Rate updates, deal insights, and capital markets analysis. One email per week. Unsubscribe anytime.</p>
+  <form id="newsletterForm" style="display:flex;gap:8px;max-width:480px;margin:0 auto;flex-wrap:wrap">
+    <label for="nlEmail" class="sr-only">Email address</label>
+    <input type="email" id="nlEmail" placeholder="your@email.com" required autocomplete="email" style="flex:1;min-width:200px;padding:12px 16px;border:1px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:var(--font-body);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--green)'" onblur="this.style.borderColor='var(--gray-200)'">
+    <button type="submit" style="padding:12px 24px;background:var(--green);color:var(--white);border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap">Subscribe</button>
+  </form>
+  <div id="nlSuccess" style="display:none;color:var(--green);font-weight:600;font-size:14px;margin-top:12px">You are subscribed. Welcome aboard.</div>
+  <div id="nlError" style="display:none;color:#dc2626;font-size:13px;margin-top:12px"></div>
+  <p style="font-size:11px;color:var(--gray-400);margin:12px 0 0">No spam. No selling your data. Just market intelligence from a working broker.</p>
+</div>
+</section>
+<script>
+(function(){
+  var form = document.getElementById('newsletterForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('nlEmail').value.trim();
+    if (!email) return;
+    var btn = form.querySelector('button');
+    btn.textContent = 'Subscribing...';
+    btn.disabled = true;
+    fetch('https://cls-form-proxy.clscre.workers.dev/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email })
+    })
+    .then(function(resp) {
+      if (resp.ok) {
+        form.style.display = 'none';
+        document.getElementById('nlSuccess').style.display = 'block';
+        if (typeof gtag === 'function') gtag('event', 'newsletter_subscribe', { method: 'footer' });
+        window.dataLayer = window.dataLayer || [];
+        // Soft lead only, do NOT fire generate_lead (reserved for apply/real forms)
+        window.dataLayer.push({event: 'newsletter_subscribe', form_type: 'newsletter', page_referrer: location.href});
+      } else { throw new Error('fail'); }
+    })
+    .catch(function() {
+      document.getElementById('nlError').textContent = 'Something went wrong. Please try again or email loans@clscre.com.';
+      document.getElementById('nlError').style.display = 'block';
+      btn.textContent = 'Subscribe';
+      btn.disabled = false;
+    });
+  });
+})();
+</script>
+
+<footer>
+<div class="footer-grid">
+  <div class="footer-brand">
+    <img src="../images/cls-logo-skyline.png" alt="Commercial Lending Solutions" style="height:60px" loading="lazy">
+    <p>Over $1 billion in commercial loans closed. Institutional expertise. Personal service. Every deal, every time.</p>
+    <div class="footer-col footer-la" style="margin-top:24px">
+      <h4>Los Angeles Headquarters</h4>
+      <p style="margin:0 0 10px">7951 Blackburn Avenue<br>Los Angeles, CA 90048</p>
+      <a href="../financing/commercial-mortgage-broker-los-angeles.html">LA Commercial Mortgage Broker</a>
+      <a href="../la-california-closed-deals.html">LA &amp; California Closed Deals</a>
+      <a href="../states/california.html">California Financing</a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Financing</h4>
+    <a href="../financing/commercial-mortgage-rates.html">Today's Rates</a>
+    <a href="../comparisons/index.html">Loan Comparisons</a>
+    <a href="../loan-size/index.html">Loan Size Examples</a>
+    <a href="../financing/permanent-loans.html">Permanent Loans</a>
+    <a href="../financing/commercial-mortgage-loans.html">Commercial Mortgage Loans</a>
+    <a href="../financing/multifamily-loans.html">Multifamily Loans</a>
+    <a href="../financing/construction-loans.html">Construction Loans</a>
+    <a href="../financing/bridge-loans.html">Bridge Loans</a>
+    
+    <a href="../financing/mezzanine.html">Mezzanine & Preferred Equity</a>
+    <a href="../financing/specialty.html">Specialty Financing</a>
+    <a href="../financing/agency-loans.html">Agency Loans</a>
+    <a href="../financing/hud-fha-loans.html">HUD/FHA Multifamily Loans</a>
+    <a href="../financing/cmbs-loans.html">CMBS Loans</a>
+    <a href="../financing/net-lease-financing.html">Net Lease Financing</a>
+    <a href="../financing/life-company-loans.html">Life Company Loans</a>
+    <a href="../index.html#programs">Explore All Financing Programs</a>
+  </div>
+  <div class="footer-col">
+    <h4>Properties</h4>
+    <a href="../property/multifamily.html">Multifamily</a>
+    <a href="../property/industrial.html">Industrial</a>
+    <a href="../property/retail.html">Retail</a>
+    <a href="../property/office.html">Office</a>
+    <a href="../property/mixed-use.html">Mixed-Use</a>
+    <a href="../property/hospitality.html">Hospitality</a>
+    <a href="../financing/self-storage-financing.html">Self-Storage</a>
+    <a href="../property/data-centers.html">Data Centers</a>
+    <a href="../financing/senior-housing-financing.html">Senior Living</a>
+    <a href="../financing/medical-office-financing.html">Medical Office</a>
+    <a href="../property/manufactured-housing.html">Manufactured Housing</a>
+    <a href="../property/parking.html">Parking</a>
+  </div>
+  <div class="footer-col">
+    <h4>Company</h4>
+    <a href="../about.html">About Us</a>
+    <a href="../partners.html">Referral Partners</a>
+    <a href="../blog/index.html">Insights</a>
+    <a href="../index.html#transactions">Transactions</a>
+    <a href="../market-data.html">Market Data</a>
+    <a href="../tools/index.html">Calculators</a>
+    <a href="../resources/cre-financing-guide.html">CRE Financing Guide</a>
+    <a href="../resources/welfare-exemption.html">Welfare Exemption Guide</a>
+    <a href="../locations.html">Locations</a>
+    <a href="../markets/los-angeles/">Los Angeles CRE</a>
+    <a href="../states/california.html">California Loans</a>
+    <a href="../professionals/index.html">For Professionals</a>
+    <a href="../expert-witness/index.html">Expert Witness Services</a>
+<a href="../glossary/index.html">CRE Glossary</a>    <a href="https://clscre.ai" target="_blank" rel="noopener">AI Tools</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../privacy.html">Privacy Policy</a>
+    <a href="../terms.html">Terms of Service</a>
+    <a href="../accessibility.html">Accessibility</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>&copy; 2026 Commercial Lending Solutions. All rights reserved. DRE #02244836</span>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/trevor-damyan-42636397/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/commerciallendingsolutions/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61591993674306" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</div>
+</footer>
+<!-- Sticky Bottom CTA Bar -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-inner">
+    <div class="sticky-cta-text">
+      <strong>Need financing?</strong> Apply in 2 minutes. Response within 24 hours.
+    </div>
+    <a href="../apply.html" class="sticky-cta-btn">Apply Now &rarr;</a>
+  </div>
+</div>
+
+<!-- Exit Intent Popup REMOVED 2026-09-10 per Trevor: 198 shown / 8 captured (4%) = silly.
+     Abandon-capture now handled by wizard localStorage drafts + GA4 form_start remarketing audience. -->
+
+<script>
+// Sticky nav
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+// Mobile nav
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+mobileToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); const open = navLinks.classList.contains('open'); mobileToggle.setAttribute('aria-expanded', open); });
+navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); mobileToggle.setAttribute('aria-expanded', 'false'); }); });
+// Keyboard-accessible dropdown: sync aria-expanded with focus state
+document.querySelectorAll('.nav-dropdown').forEach(dd => {
+  const trigger = dd.querySelector('[aria-haspopup]');
+  if (!trigger) return;
+  dd.addEventListener('focusin', () => trigger.setAttribute('aria-expanded', 'true'));
+  dd.addEventListener('focusout', () => { setTimeout(() => { if (!dd.contains(document.activeElement)) trigger.setAttribute('aria-expanded', 'false'); }, 50); });
+});
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-answer').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
+</script>
+<script>
+// Sticky CTA bar, show after scrolling 600px, hide on apply page
+(function(){
+  const bar = document.getElementById('stickyCta');
+  if (!bar || location.pathname.includes('apply')) { if(bar) bar.style.display='none'; return; }
+  let shown = false;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 600 && !shown) { bar.classList.add('visible'); shown = true; }
+  });
+})();
+// Exit intent popup REMOVED 2026-09-10 per Trevor (198 shown / 8 captured).
+// Exit metadata setup also removed (was only used by the removed popup form).
+</script>
+<script src="../js/tracking.js?v=ad56306f28" defer></script>
+<script src="../js/antispam.js?v=7e0a076eb0" defer></script>
+<script src="../js/chatbot.js?v=f86dccd638" defer></script>
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "9523884";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var go = function(){ if (go.d || window.clsOptOut) return; go.d = 1; var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s); };
+var arm = function(){ ["pointerdown","keydown","scroll","touchstart"].forEach(function(e){ window.addEventListener(e, go, {once:true, passive:true}); }); setTimeout(go, 4000); };
+if (document.readyState === "complete") arm(); else window.addEventListener("load", arm);
+})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9523884&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<script src="/js/consent.js?v=45150b2a35" defer></script>
+</body>
+</html>

@@ -1033,6 +1033,7 @@ def main():
         ],
         {"loc": f"{BASE_URL}/contact.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
         {"loc": f"{BASE_URL}/tools/edi-eligibility-check.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.9"},
+        {"loc": f"{BASE_URL}/tools/multifamily-loan-sizing-calculator.html", "lastmod": TODAY, "changefreq": "monthly", "priority": "0.8"},
         # Root utility + standalone section pages that live outside the
         # programmatic cross-products (found missing in the 2026-07-09
         # sitemap-integrity audit) — guarded so a deleted page drops out.
