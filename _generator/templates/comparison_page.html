@@ -2,7 +2,7 @@
 
 {% block schema %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"{{ cmp.h1 }}","description":"{{ cmp.seo.meta_description }}","author":{"@type":"Person","name":"Trevor Damyan","url":"https://clscre.com/about.html"},"publisher":{"@type":"Organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"datePublished":"{{ cmp.published }}","dateModified":"{{ today }}","mainEntityOfPage":{"@type":"WebPage","@id":"https://clscre.com/comparisons/{{ cmp.slug }}.html"}}
+{"@context":"https://schema.org","@type":"Article","headline":"{{ cmp.h1 }}","description":"{{ cmp.seo.meta_description }}","author":{"@type":"Person","@id":"https://clscre.com/about/trevor-damyan.html#person","name":"Trevor Damyan","url":"https://clscre.com/about.html","sameAs":["https://www.linkedin.com/in/trevor-damyan-42636397/","https://www.loopnet.com/commercial-real-estate-brokers/profile/trevor-damyan/5t2wr8mb","https://traded.co/agent/trevor-damyan/"]},"publisher":{"@type":"Organization","@id":"https://clscre.com/#organization","name":"Commercial Lending Solutions","url":"https://clscre.com","logo":{"@type":"ImageObject","url":"https://clscre.com/images/cls-logo-skyline.png"}},"datePublished":"{{ cmp.published }}","dateModified":"{{ today }}","mainEntityOfPage":{"@type":"WebPage","@id":"https://clscre.com/comparisons/{{ cmp.slug }}.html"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for faq in cmp.faqs %}{"@type":"Question","name":"{{ faq.q|e }}","acceptedAnswer":{"@type":"Answer","text":"{{ faq.a|e }}"}}{% if not loop.last %},{% endif %}{% endfor %}]}
