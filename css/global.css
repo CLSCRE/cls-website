@@ -215,3 +215,25 @@ footer img[src*="cls-logo-skyline"]{height:72px!important;width:72px;border-radi
 /* four vertical hubs (affordable, multifamily, industrial, commercial) inline a 4-column footer grid
    with no mobile rule, which widened the whole page to 612px on phones */
 @media(max-width:768px){footer div[style*="grid-template-columns:2fr 1fr 1fr 1fr"]{grid-template-columns:1fr 1fr!important;gap:28px!important}}
+
+/* slim header (2026-11-27): 140px was about a sixth of a phone screen. The first element after the fixed
+   nav is pulled up by exactly the amount the header shrank, so every page keeps its own hard-coded top
+   offset relationship to the header without per-page edits. */
+:root{--nav-h:88px;--nav-shift:-52px}
+.nav-inner{height:var(--nav-h)}
+.nav-logo{gap:14px}
+.nav-logo img{height:64px;width:auto}
+.nav-logo-text{font-size:22px}
+.nav.scrolled .nav-inner{height:72px}
+.nav.scrolled .nav-logo img{height:52px}
+.nav+*{margin-top:var(--nav-shift)}
+@media(max-width:768px){
+:root{--nav-h:64px;--nav-shift:-76px}
+.nav-inner{padding:0 16px}
+.nav-logo{gap:10px}
+.nav-logo img{height:44px}
+.nav-logo-text{font-size:17px}
+.nav.scrolled .nav-inner{height:64px}
+.nav.scrolled .nav-logo img{height:44px}
+.nav-links{top:var(--nav-h)}
+}
