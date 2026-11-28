@@ -6799,148 +6799,157 @@
   },
   {
     "slug": "owner-occupied-vs-investment-mixed-use",
-    "short_title": "Owner-Occupied vs Investment Mixed-Use",
-    "h1": "Owner-Occupied vs Investment Mixed-Use Property Financing: SBA Eligibility Changes Everything",
-    "name_a": "Owner-Occupied Mixed-Use (SBA)",
-    "name_b": "Pure Investment Mixed-Use (Conventional)",
+    "short_title": "Owner-User vs Investor Mixed-Use",
+    "h1": "Owner-User vs Investor Mixed-Use Financing: Who Occupies the Building Decides the Lender",
+    "name_a": "Owner-User Mixed-Use",
+    "name_b": "Investor-Owned Mixed-Use",
     "published": "2026-05-28",
     "seo": {
-      "title": "Owner-Occupied vs Investment Mixed-Use Financing | Commercial Lending Solutions",
-      "meta_description": "SBA 7(a) vs conventional mixed-use financing compared side by side. LTV, rates, occupancy tests, and underwriting differences explained for 2026."
+      "title": "Owner-User vs Investor Mixed-Use Financing | CLS CRE",
+      "meta_description": "Owner-user vs investor mixed-use financing compared: current rate ranges, leverage, DSCR, recourse, prepayment and which lender fits apartments over retail."
     },
-    "lead": "The financing market for mixed-use properties splits into two fundamentally different universes the moment you ask one question: will the business owner occupy at least 51 percent of the commercial square footage? If yes, SBA 7(a) and SBA 504 programs become available, delivering 85 to 90 percent LTV, 25-year amortization, and business-cash-flow underwriting that conventional lenders cannot match on leverage. If no, the deal falls to conventional bank portfolio lending, CMBS, or agency execution where maximum LTV drops to 65 to 75 percent and property-level income coverage is the controlling metric. The occupancy threshold is a bright-line rule, not a soft guideline: 50 percent existing occupancy or 59 percent new construction occupancy means no SBA, full stop. Understanding which universe your deal lives in before you approach a lender is the single most consequential step in mixed-use financing.",
+    "lead": "Mixed-use buildings, apartments over ground-floor retail or office, are financed one of two ways depending on who controls the commercial space. When the owner or an affiliate occupies part of the building, a bank usually underwrites the building and the occupant together, on a full-recourse portfolio loan. When the owner is an investor who leases everything to third parties, the loan is sized on the building's net operating income alone, and agency, CMBS, life company and bank lenders can all compete. As of November 24, 2026, the CLS CRE rate table shows agency loans at 6.16 to 7.11 percent, CMBS at 6.41 to 7.41 percent and bank loans at 6.91 to 8.16 percent. CLS CRE arranges commercial mortgages from $2 million to $100 million and up, so this page is about loans on the building, not loans to a business. Below $2 million, a local bank or credit union is usually the right call.",
     "table": [
       {
-        "feature": "Rate range (May 2026)",
-        "side_a": "7.25 to 8.50 percent (SBA 7(a) variable, WSJ Prime-linked); 5.90 to 6.60 percent (SBA 504 fixed 25-year debenture portion)",
-        "side_b": "6.25 to 7.50 percent (conventional bank fixed or floating); 6.80 to 7.80 percent (CMBS fixed 5 to 10 year)"
+        "feature": "Rate range (Nov 24, 2026)",
+        "side_a": "6.91 to 8.16 percent (bank portfolio loan, the usual lender for owner-users)",
+        "side_b": "6.16 to 7.11 percent (agency, residential-heavy buildings); 6.41 to 7.41 percent (CMBS); 6.91 to 8.16 percent (bank)"
+      },
+      {
+        "feature": "Who the lender underwrites",
+        "side_a": "The building plus the occupying operator: their financials, their banking relationship and their guarantee",
+        "side_b": "The building's net operating income and the sponsor's balance sheet; no operator to underwrite"
+      },
+      {
+        "feature": "Typical lender",
+        "side_a": "Regional or community bank, or credit union, often with a deposit relationship expected",
+        "side_b": "Agency lender, CMBS conduit, life company or bank portfolio, depending on the residential share and loan size"
       },
       {
         "feature": "Maximum LTV",
-        "side_a": "85 percent (SBA 7(a) existing building); 90 percent (SBA 504 new construction or substantial rehab)",
-        "side_b": "70 to 75 percent (regional bank portfolio); 65 to 70 percent (CMBS or life company execution)"
+        "side_a": "Up to about 75 percent on a bank portfolio loan, set by the lender and the operator's strength",
+        "side_b": "70 to 75 percent (bank portfolio); 65 to 70 percent (CMBS or life company)"
       },
       {
-        "feature": "Minimum owner-occupancy requirement",
-        "side_a": "51 percent of usable square footage (existing building); 60 percent (new construction)",
-        "side_b": "No owner-occupancy requirement; property is valued purely as an investment"
-      },
-      {
-        "feature": "Loan size band",
-        "side_a": "Up to $5M (SBA 7(a)); $500K to $20M+ (SBA 504, no statutory cap on 504 project size)",
-        "side_b": "$500K to $100M+ depending on capital source; CMBS floor typically $2M"
-      },
-      {
-        "feature": "Amortization",
-        "side_a": "25 years fully amortizing (real estate portion, both programs)",
-        "side_b": "20 to 25 years (bank portfolio); 25 to 30 years (CMBS); shorter terms common on bank mini-perm"
+        "feature": "Loan size through CLS CRE",
+        "side_a": "$2 million and up; smaller owner-user loans usually go directly to a local bank or credit union",
+        "side_b": "$2 million to $100 million and up, depending on the capital source"
       },
       {
         "feature": "Recourse",
-        "side_a": "Full recourse to operating business and principals with personal guarantee required",
-        "side_b": "Full recourse on bank portfolio loans; non-recourse with carve-outs on CMBS and agency execution"
-      },
-      {
-        "feature": "Primary underwriting basis",
-        "side_a": "Global business cash flow of the occupying entity plus rental income from residential or commercial tenants",
-        "side_b": "Property-level net operating income and DSCR; business cash flow not considered"
+        "side_a": "Full recourse to the borrower and guarantors is typical",
+        "side_b": "Full recourse on bank loans; non-recourse with standard carve outs on CMBS and agency execution"
       },
       {
         "feature": "Minimum DSCR",
-        "side_a": "1.15x to 1.25x global cash flow (lender-specific); SBA does not publish a minimum, lenders set overlays",
-        "side_b": "1.20x to 1.30x property-level NOI (bank portfolio); 1.25x (CMBS standard)"
+        "side_a": "1.20x to 1.30x, sometimes blended with the operator's own cash flow",
+        "side_b": "1.20x to 1.30x on property net operating income (bank); 1.25x (CMBS)"
+      },
+      {
+        "feature": "Commercial space limits",
+        "side_a": "No fixed cap, but the lender wants the owner's use documented and any lease to an affiliate at market rent",
+        "side_b": "Agency programs generally limit commercial income to a minority share of the property (commonly around 20 percent); CMBS and bank loans have no fixed cap"
+      },
+      {
+        "feature": "Amortization",
+        "side_a": "20 to 25 years, often with a 5 to 10 year term and a balloon",
+        "side_b": "20 to 25 years (bank); 25 to 30 years (CMBS); agency terms run longer on residential-heavy buildings"
       },
       {
         "feature": "Prepayment",
-        "side_a": "SBA 7(a): prepayment penalty 5, 3, 1 percent for first three years if term exceeds 15 years; none after year 3. SBA 504: debenture prepayment steps down over 10 years",
-        "side_b": "Bank portfolio: negotiated, often step-down 3 to 5 years; CMBS: yield maintenance or defeasance"
-      },
-      {
-        "feature": "Residential component cap",
-        "side_a": "Residential rental income must remain below 50 percent of total property income; exceeding the cap disqualifies SBA eligibility",
-        "side_b": "No residential income cap; lender may apply residential classification rules if multifamily portion exceeds commercial portion"
+        "side_a": "Negotiated, often a step-down over 3 to 5 years",
+        "side_b": "Bank: negotiated; CMBS: yield maintenance or defeasance; agency: yield maintenance or a declining schedule"
       },
       {
         "feature": "Closing timeline",
-        "side_a": "60 to 90 days for SBA 7(a); 90 to 120 days for SBA 504 (CDC involvement adds time)",
-        "side_b": "45 to 75 days (bank portfolio); 60 to 90 days (CMBS); 90 to 120 days (agency if multifamily-heavy)"
+        "side_a": "45 to 75 days",
+        "side_b": "45 to 75 days (bank); 60 to 90 days (CMBS); 90 to 120 days (agency)"
       },
       {
-        "feature": "Post-close compliance",
-        "side_a": "Annual occupancy certification required; SBA may audit; failure to maintain occupancy threshold triggers default provisions",
-        "side_b": "No occupancy monitoring; standard financial reporting covenants and DSCR maintenance tests apply"
+        "feature": "After closing",
+        "side_a": "A covenant to stay owner-occupied is common; moving out or leasing the owner space to a third party can need lender consent or a repricing",
+        "side_b": "Standard reporting and DSCR tests; no occupancy requirement and no restriction on future tenants"
       }
     ],
-    "when_a_intro": "Owner-occupied mixed-use financing through SBA 7(a) or SBA 504 is the right path when the business occupying the building is creditworthy, the occupancy test is met with a clear margin, and the borrower needs leverage that conventional lenders simply will not provide. SBA programs are the only institutional channel that routinely delivers 85 to 90 percent LTV on mixed-use commercial real estate, and for an established small business with strong operating cash flow, the rate premium over conventional is almost always justified by the equity preservation.",
+    "when_a_intro": "An owner-user structure fits when the person or company buying the building will actually use part of it and wants a lender who values that relationship. Banks that hold loans on their own balance sheet can weigh the occupant's financial strength alongside the building's income, which sometimes lets the loan size closer to the leverage cap than the building could support alone.",
     "when_a_bullets": [
-      "Borrower's business occupies 51 percent or more of existing square footage with lease documentation or ownership records that clearly support the threshold, leaving no ambiguity at underwriting",
-      "Purchase price requires higher leverage than conventional lenders will extend, typically deals where the borrower can put 10 to 15 percent down but not the 25 to 35 percent that conventional programs demand",
-      "New construction or substantial rehabilitation where the 60 percent owner-occupancy requirement is met and the SBA 504 structure allows the business to combine real estate acquisition with equipment or working capital",
-      "Business has 2 to 3 years of profitable operating history with global cash flow that comfortably covers the proposed debt service, even if the property-level NOI from upper-floor residential tenants alone would not satisfy conventional DSCR tests",
-      "Borrower wants a 25-year fully amortizing fixed-rate structure, particularly through SBA 504, to lock long-term occupancy costs for business planning without facing a balloon payment in 5 to 7 years",
-      "Upper-floor residential rents provide supplemental income that stays below 50 percent of total property income, keeping the deal solidly SBA-eligible while contributing meaningful cash flow to global coverage"
+      "The buyer or an affiliated company will occupy a meaningful share of the commercial space and plans to stay for the life of the loan",
+      "The occupant has strong, documented financials that add to the building's cash flow in the lender's coverage test",
+      "The buyer already banks with a regional or community lender and values a single relationship covering the loan and the operating accounts",
+      "Full recourse is acceptable in exchange for a simpler process and a lender that knows the local market",
+      "The building is a stable, mostly leased property where the owner space is a small part of total income, so lease-up risk is low",
+      "A 5 to 10 year term with a balloon fits the plan, with a refinance or sale expected before maturity"
     ],
-    "when_b_intro": "Pure investment mixed-use financing through conventional bank, CMBS, or agency channels is the correct execution when no single tenant or owner-user controls 51 percent of the commercial space, when the borrower is an investor rather than an operating business, or when the upper-floor residential component is heavy enough to push income above the SBA residential cap. Conventional execution offers non-recourse optionality on larger deals, does not require post-close occupancy monitoring, and imposes no restrictions on future tenanting of the commercial space.",
+    "when_b_intro": "An investor structure fits when every unit and storefront is leased to third parties, or will be after lease-up. With no occupant to underwrite, the building's net operating income sizes the loan, and that opens the door to non-recourse agency or CMBS execution on larger deals and to the widest range of lenders.",
     "when_b_bullets": [
-      "Property has multiple commercial tenants on the ground floor with no single occupying business meeting the 51 percent threshold, making SBA eligibility structurally unavailable regardless of borrower preference",
-      "Borrower is a real estate investor or LLC without an operating business to occupy the space, a profile that SBA programs explicitly exclude since the business-use requirement is a foundational eligibility condition",
-      "Upper-floor residential rents exceed or are projected to exceed 50 percent of total property income, disqualifying the deal from SBA treatment and routing it to conventional or agency execution",
-      "Loan size exceeds the practical SBA 7(a) ceiling of $5M and the SBA 504 structure does not fit the capital stack, making CMBS or a regional bank portfolio loan the most efficient execution",
-      "Borrower is an institutional investor or sophisticated sponsor who requires non-recourse financing, a structure that SBA programs do not offer and that CMBS or agency execution can deliver at 65 to 70 percent LTV",
-      "Commercial space is currently vacant or in lease-up and will be rented to a third-party tenant at stabilization, a forward-looking investment strategy that SBA programs do not accommodate because there is no owner-occupant"
+      "The buyer is an investor or entity with no operating business that would occupy the commercial space",
+      "Residential units produce most of the income, which can qualify the building for agency execution at the lowest range in the rate table",
+      "Non-recourse financing matters, which points to CMBS or agency rather than a bank portfolio loan",
+      "The loan is large enough, $2 million and up, that conduit, life company and agency lenders will quote alongside banks",
+      "The commercial space is vacant or in lease-up and will be leased to third parties at stabilization, a plan an owner-user covenant would restrict",
+      "The sponsor wants no occupancy covenant, so the building can be re-tenanted, refinanced or sold without lender consent on use"
     ],
     "decision_framework": [
-      "The first question to answer on any mixed-use financing inquiry is the occupancy calculation, and it must be answered precisely before approaching any lender. SBA uses usable square footage as the primary measurement, not income. For existing buildings, divide the square footage the operating business will use by total usable commercial square footage. If that number is 51 percent or higher, SBA eligibility exists. If it is 50 percent or below, it does not. There is no rounding, no averaging across floors, and no discretionary override. Borrowers who discover they are at 49 percent often ask whether a minor layout change can push them over the line. Sometimes yes, but the change must be real, documented, and defensible at SBA review. Do not present a stretched square footage calculation to an SBA lender as a strategy. They will catch it, and the deal will collapse at the worst possible moment.",
-      "Once SBA eligibility is confirmed, the 7(a) versus 504 choice turns on deal size, rate preference, and capital stack complexity. SBA 7(a) is a single-lender, single-loan product with a statutory cap of $5M, a variable rate tied to WSJ Prime, and a faster close of 60 to 90 days. SBA 504 is a two-loan structure: a first mortgage from a conventional lender covering roughly 50 percent of the project cost, and a second mortgage debenture funded through a Certified Development Company at a fixed rate for 25 years covering roughly 40 percent, with the borrower contributing 10 percent. The 504 debenture rate as of May 2026 has been running 5.90 to 6.60 percent fixed, which is materially below SBA 7(a) variable rates and below most conventional bank alternatives. For deals above $3M to $4M where the borrower wants long-term rate certainty, SBA 504 is almost always the better economic choice, even though the dual-lender structure adds 30 to 45 days to the close.",
-      "The residential component cap is the most commonly misunderstood constraint in owner-occupied mixed-use SBA financing. SBA rules require that the residential rental income from upper floors not exceed 49 percent of total property income, calculated on a stabilized basis. This means the deal can have residential tenants, and in many urban mixed-use buildings the residential rents are substantial, but the commercial activity, including the owner-occupant business revenue attributed to the real estate, must remain the dominant income source. A building where the ground-floor restaurant generates $80,000 per year in attributable rent and the four upper apartments generate $120,000 per year in residential rent fails this test, and no amount of creative underwriting changes the math. Lenders calculate this before submitting to SBA, and deals that fail the residential cap are declined at the lender level before SBA even sees them.",
-      "For borrowers who do not meet the SBA occupancy test, the conventional investment mixed-use market requires careful capital source selection based on the commercial-to-residential income split and the loan size. Regional and community banks are the most flexible capital source on investment mixed-use deals under $5M, particularly when the borrower has a deposit relationship and the property has a track record. These lenders underwrite to property-level NOI and set DSCR floors between 1.20x and 1.30x, with LTV caps of 70 to 75 percent. CMBS becomes relevant above $3M to $5M when the borrower wants non-recourse execution, a longer fixed-rate term, or a higher loan amount than a bank portfolio program will allow. Agency execution through Fannie Mae or Freddie Mac is available if the residential component of the mixed-use building is dominant enough to qualify the property as multifamily with incidental commercial, a test that varies by agency guidelines but generally requires at least 80 percent of income to derive from residential units."
+      "Start with one question: who will occupy the commercial space, and for how long? Write down the square footage the owner or an affiliate will use, the square footage leased to others, and the income each produces. That one page decides which lenders to approach, because a bank evaluating an owner-user loan and an agency lender evaluating an investor loan are answering different questions.",
+      "Next, size the loan on both tests, because the lower one wins. Leverage caps the loan at a percentage of value, and coverage caps it at the debt the net operating income can carry at the minimum DSCR. On many mixed-use buildings in today's rate range, coverage is the binding limit, not leverage. An owner-user loan can sometimes get closer to the leverage cap because the lender counts the occupant's cash flow; an investor loan is sized on the building alone.",
+      "Then weigh recourse and flexibility against price. Bank portfolio loans are usually full recourse and carry an owner-occupancy covenant on owner-user deals. CMBS and agency loans are non-recourse with standard carve outs, but they bring defeasance or yield maintenance and a longer closing. If the owner may leave the building within a few years, price the loan as if the occupancy covenant will be tested, and ask the lender in advance what happens when the owner space is leased out.",
+      "Finally, check the loan against the $2 million floor. CLS CRE arranges commercial mortgages from $2 million to $100 million and up. A smaller building is usually better served by a local bank or credit union directly, and a loan that is large enough can be shopped across the agency, CMBS, life company and bank channels at the same time, which is where the pricing spread in the rate table comes from."
     ],
-    "real_deal_example": "A bakery owner in Los Angeles sought to acquire a 6,000-square-foot mixed-use building with 3,200 square feet of ground-floor commercial space and four upper-floor apartments. The bakery would occupy the full ground floor, representing 53 percent of usable commercial square footage, clearing the SBA 51 percent threshold. We structured the deal as an SBA 504: a conventional first mortgage at 50 percent of the $2.1M purchase price from a community bank at a floating rate, and a CDC debenture at 40 percent of project cost carrying a 6.15 percent fixed 25-year rate. Total borrower equity was $210,000, or 10 percent. The four apartments generated $7,800 per month, representing 42 percent of total stabilized property income, keeping the deal inside the SBA residential income cap. A conventional bank investment loan on the same property would have required 25 to 30 percent down, roughly $525,000 to $630,000, versus the $210,000 the SBA 504 structure required. The borrower preserved over $315,000 in capital that was redeployed into bakery equipment, which was financed in the same SBA 504 project.",
-    "expert_quote": "The SBA occupancy test is a bright line, not a negotiating position. Get the square footage calculation right before you go to market. Deals that arrive with a 49 percent occupancy figure and a story about why it should be treated as 51 percent do not close. Deals that arrive at 55 percent with clean documentation close in 75 days.",
+    "real_deal_example": "Take a $12 million mixed-use building in Los Angeles with 14 apartments over a retail floor, producing $780,000 of net operating income. An investor leasing every space to third parties is sized on that income. At the 1.25x CMBS coverage standard and a 7.5 percent rate on a 25-year amortization, the building carries about $7.0 million of debt, roughly 58 percent of value, below the 70 percent leverage cap, so coverage sets the loan. If the buyer's own company occupies part of the retail floor and the bank counts that company's cash flow, the same building can sometimes support a larger loan that sits closer to the leverage cap, in exchange for full recourse and an occupancy covenant. The takeaway is that the same property produces two different loans depending on who occupies it, and the structure should be chosen before any lender is approached.",
     "faqs": [
       {
-        "q": "What is the minimum owner-occupancy percentage for SBA mixed-use financing?",
-        "a": "SBA requires the operating business to occupy at least 51 percent of the usable commercial square footage in an existing building, or at least 60 percent in a new construction project. Occupancy is measured by square footage, not by income or lease value. Failing to meet the threshold by even one percentage point disqualifies the deal from all SBA programs, with no waiver or exception available."
+        "q": "What is the difference between owner-user and investor mixed-use financing?",
+        "a": "Owner-user financing is for a building where the owner or an affiliate occupies part of the commercial space; a bank usually underwrites the building and the occupant together on a full-recourse loan. Investor financing is for a building leased entirely to third parties; the loan is sized on net operating income and agency, CMBS, life company and bank lenders can all quote."
       },
       {
-        "q": "Can residential rental income from upper floors disqualify an SBA mixed-use deal?",
-        "a": "Yes. SBA guidelines require that residential rental income remain below 50 percent of total stabilized property income. If the upper-floor apartments generate more income than the commercial portion of the building, including the owner-occupant's attributed rental value, the deal fails the residential income cap test. Lenders calculate this before submitting to SBA. Deals where residential income dominates must be financed through conventional investment channels."
+        "q": "What does mixed-use financing cost right now?",
+        "a": "As of November 24, 2026, the CLS CRE rate table shows agency loans at 6.16 to 7.11 percent, CMBS at 6.41 to 7.41 percent and bank loans at 6.91 to 8.16 percent. Agency pricing applies to residential-heavy buildings; bank loans are the usual route for owner-users. Final pricing depends on the property, sponsor and structure."
       },
       {
-        "q": "What is the difference between SBA 7(a) and SBA 504 for mixed-use real estate?",
-        "a": "SBA 7(a) is a single loan up to $5M from one lender, typically at a variable rate tied to WSJ Prime, closing in 60 to 90 days. SBA 504 is a two-loan structure combining a conventional first mortgage at roughly 50 percent of project cost with a CDC debenture at 40 percent carrying a fixed 25-year rate. For deals above $3M where long-term rate certainty matters, SBA 504 typically produces a lower blended rate despite the more complex structure."
+        "q": "Does the lender care how much of the building I occupy?",
+        "a": "Yes. Occupancy changes who the lender underwrites and which lenders will quote. A bank may write an owner-user loan that is tied to an occupancy covenant, while agency and CMBS lenders look at the building's income as an investment. Document your occupied square footage and the income from every other space before you approach a lender."
       },
       {
-        "q": "What LTV can I expect on an owner-occupied mixed-use purchase versus a pure investment mixed-use purchase?",
-        "a": "Owner-occupied mixed-use through SBA programs delivers 85 percent LTV on SBA 7(a) and up to 90 percent on SBA 504 new construction. Pure investment mixed-use through conventional bank portfolio lenders typically caps at 70 to 75 percent LTV. CMBS and life company execution on investment mixed-use generally runs 65 to 70 percent. The leverage gap between SBA and conventional often represents $200,000 to $500,000 in required equity on a $2M to $3M deal."
+        "q": "Can I get a mixed-use loan under $2 million through CLS CRE?",
+        "a": "CLS CRE arranges commercial mortgages from $2 million to $100 million and up through 1,000+ lenders. For a loan below $2 million, a local bank or credit union approached directly is usually the better fit."
       },
       {
-        "q": "Does SBA mixed-use financing require post-closing occupancy monitoring?",
-        "a": "Yes. SBA borrowers on owner-occupied mixed-use deals must certify ongoing compliance with the occupancy requirement, and lenders are required to monitor this. If the occupying business vacates or reduces its footprint below 51 percent after closing, the loan may be called or restructured. Borrowers who plan to grow out of the space, sublet the commercial floor, or transition to a new business model should disclose this to the lender before closing."
+        "q": "Can agency financing work on a mixed-use building?",
+        "a": "Sometimes. Agency programs are built for residential buildings and generally limit commercial income to a minority share of the property, commonly around 20 percent. Buildings with more retail or office income usually go to CMBS, a life company or a bank. Confirm the current limit with the lender, since it varies by program."
       },
       {
-        "q": "How does a conventional lender underwrite investment mixed-use versus how SBA underwriters approach owner-occupied mixed-use?",
-        "a": "Conventional investment mixed-use lenders underwrite exclusively on property-level net operating income, setting a minimum DSCR of 1.20x to 1.30x based on actual rents from all tenants. SBA lenders underwrite on global business cash flow, combining the operating company's net income, depreciation, and owner compensation with the property's rental income from non-owner tenants. A business with strong cash flow but modest residential rents can qualify for SBA where conventional property-level underwriting would fall short."
+        "q": "What happens to an owner-user loan if I move out of the owner space?",
+        "a": "Many owner-user loans carry a covenant to stay owner-occupied. Leasing the owner space to a third party can require lender consent or a repricing toward investor terms. Ask the lender before closing how that situation is handled."
       },
       {
-        "q": "Is non-recourse financing available on mixed-use properties?",
-        "a": "SBA programs are full-recourse to both the operating business and the principals, with personal guarantees required from all owners holding 20 percent or more. Non-recourse is not available under any SBA program. For investment mixed-use deals financed through CMBS or certain agency executions, non-recourse with standard carve-outs is available, typically at 65 to 70 percent LTV. Borrowers who require non-recourse financing must pursue conventional investment channels."
+        "q": "Is non-recourse financing available on mixed-use buildings?",
+        "a": "Yes, on investor-owned buildings. CMBS and agency loans are generally non-recourse with standard carve outs, while bank portfolio loans are usually full recourse. Non-recourse execution tends to need a larger loan and a stabilized building."
       },
       {
-        "q": "Can a mixed-use property with mostly residential units qualify for agency multifamily financing instead of a commercial loan?",
-        "a": "Possibly. Fannie Mae and Freddie Mac allow incidental commercial space in multifamily properties, generally up to 20 percent of gross rental income from commercial uses, without reclassifying the asset as a commercial mixed-use property. If residential income represents 80 percent or more of total property income and the building has five or more residential units, agency execution may be available at 75 to 80 percent LTV with non-recourse terms, often producing better pricing than commercial mixed-use programs."
+        "q": "How long does a mixed-use loan take to close?",
+        "a": "Typical timelines are 45 to 75 days for a bank loan, 60 to 90 days for CMBS and 90 to 120 days for agency. A clean rent roll, leases for every space and a clear occupancy plan shorten all of them."
       }
     ],
     "related_links": [
       {
-        "href": "financing/sba-loans.html",
-        "title": "SBA Commercial Real Estate Loans",
-        "sub": "SBA 7(a) and SBA 504 program overview"
-      },
-      {
         "href": "property/mixed-use.html",
         "title": "Mixed-Use Property Financing",
         "sub": "All capital sources for mixed-use buildings"
+      },
+      {
+        "href": "comparisons/agency-vs-cmbs-stabilized-multifamily.html",
+        "title": "Agency vs CMBS for Stabilized Multifamily",
+        "sub": "How the two non-recourse channels compare"
+      },
+      {
+        "href": "comparisons/cmbs-vs-bank-middle-market-permanent.html",
+        "title": "CMBS vs Bank for Permanent Loans",
+        "sub": "Conduit and balance sheet execution compared"
+      },
+      {
+        "href": "comparisons/multifamily-vs-mixed-use-financing.html",
+        "title": "Multifamily vs Mixed-Use Financing",
+        "sub": "How the commercial share changes the lender"
       },
       {
         "href": "financing/bridge-loans.html",
@@ -6951,18 +6960,10 @@
         "href": "property/multifamily.html",
         "title": "Multifamily Financing",
         "sub": "Agency and conventional apartment lending"
-      },
-      {
-        "href": "financing/hard-money-loans.html",
-        "title": "Hard Money Loans",
-        "sub": "Fast-close options for mixed-use value-add deals"
-      },
-      {
-        "href": "financing/small-business-real-estate.html",
-        "title": "Small Business Real Estate Financing",
-        "sub": "Owner-occupied commercial property capital solutions"
       }
-    ]
+    ],
+    "rate_note": "Ranges dated November 24, 2026 come from the CLS CRE rate table, which is built from current Treasury, SOFR and prime benchmarks. Pricing depends on the property, sponsor and structure.",
+    "decision_title": "How to Choose Between Owner-User and Investor Financing"
   },
   {
     "slug": "fannie-mae-sbl-vs-freddie-mac-sbl",
