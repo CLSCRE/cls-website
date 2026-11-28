@@ -974,9 +974,15 @@ def main():
         lstrip_blocks=True,
     )
     # Hub to comparison page links (templates/_hub_compare.html); also applied
-    # to existing pages by scripts/add_hub_comparison_links.py
+    # to existing pages by _generator/apply_hub_comparison_links.py
     env.globals["hub_comparison_links"] = json.loads(
         (DATA_DIR / "hub_comparison_links.json").read_text(encoding="utf-8")
+    )
+    # LA answer-first blocks on the LA bridge, construction and multifamily
+    # pages (templates/_la_answer.html); also applied to existing pages by
+    # _generator/apply_la_answer_blocks.py
+    env.globals["la_answer_blocks"] = json.loads(
+        (DATA_DIR / "la_answer_blocks.json").read_text(encoding="utf-8")
     )
 
     # Shared context for nav/footer

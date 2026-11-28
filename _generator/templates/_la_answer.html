@@ -1,0 +1,18 @@
+{% set _ans = (la_answer_blocks or {}).get(loan.slug) %}
+{% if city.slug == 'los-angeles' and _ans %}
+<!-- cls-la-answer -->
+<section class="content-section" id="la-answer">
+<div class="section-inner">
+  <div class="section-label reveal">{{ _ans.label }}</div>
+  <h2 class="section-title reveal">{{ _ans.heading }}</h2>
+  {% for it in _ans['items'] %}
+  <h3 class="reveal" style="font-size:18px;color:var(--navy);margin:22px 0 6px">{{ it.q }}</h3>
+  <p class="reveal">{{ it.a|replace('@@DEPTH@@', depth)|safe }}</p>
+  {% endfor %}
+  <p class="reveal" style="font-size:15px;margin-top:22px"><strong style="color:var(--navy)">{{ _ans.closed_label }}:</strong>
+  {% for c in _ans.closed %}<a href="{{ depth }}{{ c.href }}" style="color:var(--green);font-weight:600">{{ c.text }}</a>{% if not loop.last %} &middot; {% endif %}{% endfor %}
+  </p>
+</div>
+</section>
+<!-- /cls-la-answer -->
+{% endif %}
